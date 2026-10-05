@@ -220,13 +220,19 @@ function who_() {
  * never for a web-app visitor.
  */
 function requireSheetUser_() {
+  // Inside the spreadsheet (its menus, or a dialog opened from them) the sheet's UI exists;
+  // from the web-app link it never does. That decides on its own, so it works whether or
+  // not the email permission in appsscript.json has been granted.
+  try { SpreadsheetApp.getUi(); return; } catch (e) { /* not in the sheet's UI */ }
+  // Apps Script editor's Run button and the hourly trigger: the script runs as the person
+  // who started it, so the two accounts are the same.
   var active = '', effective = '';
   try { active = Session.getActiveUser().getEmail(); } catch (e) {}
   try { effective = Session.getEffectiveUser().getEmail(); } catch (e) {}
-  if (!effective || active !== effective) {
-    throw new Error('This can only be run from the spreadsheet (Extensions or the sheet\'s menus), ' +
-      'not from the dashboard link.');
-  }
+  if (effective && active === effective) return;
+  throw new Error('Run this from the spreadsheet\'s menus (Qiddiya Setup or Pacing dashboard). It cannot be ' +
+    'run from the dashboard link' + (effective ? '.' : ', and from the Apps Script editor it needs the ' +
+    'permissions in the latest appsscript.json.'));
 }
 
 /**
@@ -939,12 +945,22 @@ function getPacingDashboardData(opts) {
   // the pacing formulas read "Adjust Clean" once Fix this workbook has built it; asTab reads
   // what they read, the dashboard itself reads Adjust Raw through the same corrections
   var adjCleanSh = ss.getSheetByName(CFG.ADJUST_CLEAN), ash = null;
-  try { ash = asTab && adjCleanSh ? adjCleanSh : _sheet(CFG.ADJUST); } catch (eA) {
+  // whether the pacing formulas read "Adjust Clean" (Fix this workbook installs them; Undo
+  // takes them back) — decided from the formulas, not from the tab existing
+  var tabsReadClean = !!(pac && String(pac.getRange('L7').getFormula()).indexOf(CFG.ADJUST_CLEAN) >= 0);
+  try { ash = asTab && adjCleanSh && tabsReadClean ? adjCleanSh : _sheet(CFG.ADJUST); } catch (eA) {
     issue('crit', 'Tab "' + CFG.ADJUST + '" is missing (renamed or deleted) — pacing columns K, L and X read it ' +
       'through "' + CFG.ADJUST_CLEAN + '", and this dashboard has no Adjust installs, bookings or revenue.');
   }
   var av = ash ? ash.getDataRange().getValues() : [[]];
   var cleanState = '';
+  // The cleaning runs on every dashboard load and refresh: "Adjust Clean" is built the first
+  // time and rebuilt whenever Adjust Raw has changed since the last build.
+  if (!asTab && ash && !adjCleanSh) {
+    try {
+      if (_refreshAdjustClean_(true)) { adjCleanSh = ss.getSheetByName(CFG.ADJUST_CLEAN); cleanState = 'built'; }
+    } catch (eBuild) { /* the in-memory correction below still applies */ }
+  }
   if (!asTab && adjCleanSh && ash) {
     if (PropertiesService.getDocumentProperties().getProperty('adjustCleanFp') !== _adjustFingerprint_(av)) {
       try { cleanState = _refreshAdjustClean_(false) ? 'rebuilt' : 'stale'; } catch (eRb) { cleanState = 'stale'; }
@@ -1084,7 +1100,7 @@ function getPacingDashboardData(opts) {
           ' bookings instead of ' + count(Math.round(c.inst)) + ' / ' + count(Math.round(c.book)));
       }
     });
-    if (adjCleanSh) {
+    if (adjCleanSh && tabsReadClean) {
       issue('warn', 'Adjust Raw has ' + parts.join(', ') + '. They are corrected in "' + CFG.ADJUST_CLEAN +
         '", which both the pacing tabs and this dashboard read' + (cleanState === 'stale' ? ' — but it is ' +
         'out of date and could not be rebuilt just now; press Refresh in a minute' : '') +

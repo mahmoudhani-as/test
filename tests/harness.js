@@ -244,9 +244,15 @@ function loadServer(files, ss) {
   ctx.__logs = logs;
   return ctx;
 }
-function putPacing(ss, vals) {
+function putPacing(ss, vals, spec) {
   PACING_TABS.forEach(function (tab) {
     var sh = ss.getSheetByName(tab);
+    // the cells keep their formulas, as on a real tab (the dashboard reads L7's to see which
+    // Adjust tab the formulas read)
+    if (spec && spec[tab]) Object.keys(spec[tab]).forEach(function (a1) {
+      var m = /^([A-Z]+)(\d+)$/.exec(a1);
+      if (spec[tab][a1]) sh.f[m[2] + ',' + (colIndex(m[1]) + 1)] = spec[tab][a1];
+    });
     vals[tab].forEach(function (row, ri) {
       row.forEach(function (v, ci) {
         if (ri === 1 && (ci === 1 || ci === 2)) return;            // keep B2:C2 as dates
@@ -524,7 +530,7 @@ function runVersion(label, files, opts) {
   if (opts.newRawData && ctx._refreshAdjustClean_) ctx._refreshAdjustClean_(true);
   var spec = opts.newRawData ? ctx.buildPacingSpec_() : ctx.PACING_ALL;
   var vals = evaluatePacing(sheetToWb(ss), spec);
-  putPacing(ss, vals);
+  putPacing(ss, vals, opts.newRawData ? spec : null);
 
   var payload = ctx.getPacingDashboardData();
   try { ctx.validateDashboard(); } catch (e) { console.log('validateDashboard threw: ' + e.message); }
@@ -560,8 +566,9 @@ function runVersion(label, files, opts) {
 
 /* Evaluate the tab from the sheet as it is now, then compare server and page with it. */
 function recheck(label, ctx, ss, files) {
-  var vals = evaluatePacing(sheetToWb(ss), ctx.buildPacingSpec_());
-  putPacing(ss, vals);
+  var spec = ctx.buildPacingSpec_();
+  var vals = evaluatePacing(sheetToWb(ss), spec);
+  putPacing(ss, vals, spec);
   var p = ctx.getPacingDashboardData();
   ctx.validateDashboard();
   var vsh = ss.getSheetByName('Dashboard Validation');
@@ -601,8 +608,9 @@ function main() {
   var msg = cur.ctx.cleanAdjustRaw();
   console.log(msg.split('\n').map(function (l) { return '   ' + l; }).join('\n'));
   var wb2 = sheetToWb(cur.ss);
-  var vals2 = evaluatePacing(wb2, cur.ctx.buildPacingSpec_());
-  putPacing(cur.ss, vals2);
+  var spec2 = cur.ctx.buildPacingSpec_();
+  var vals2 = evaluatePacing(wb2, spec2);
+  putPacing(cur.ss, vals2, spec2);
   var p2 = cur.ctx.getPacingDashboardData();
   cur.ctx.validateDashboard();
   var vsh2 = cur.ss.getSheetByName('Dashboard Validation');
