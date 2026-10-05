@@ -303,7 +303,7 @@ td.mute{color:var(--ink-4)}
     </div>
     <nav id="nav"></nav>
     <div class="rail-foot">
-      <div>Built from <b>Raw data</b>, <b>APPLE1</b>, <b>Raw manual</b>, <b>Adjust Raw</b> (as cleaned into <b>Adjust Clean</b>), <b>GA4</b> — the cells the pacing tabs read</div>
+      <div id="srcFoot">Built from <b>Raw data</b>, <b>APPLE1</b>, <b>Raw manual</b>, <b>Adjust Raw</b> (with the corrections <b>Adjust Clean</b> holds), <b>GA4</b></div>
       <div id="stamp" style="margin-top:5px"></div>
     </div>
   </aside>
@@ -626,6 +626,10 @@ function init(p,keepFilters){
   document.getElementById('app').style.display='block';
   document.getElementById('fxChip').textContent='1 USD = '+p.meta.fx+' SAR';
   document.getElementById('stamp').textContent=p.meta.generated||'';
+  document.getElementById('srcFoot').innerHTML='Built from <b>Raw data</b>, <b>APPLE1</b>, <b>Raw manual</b>, '+
+    '<b>Adjust Raw</b> (with the corrections <b>Adjust Clean</b> holds), <b>GA4</b>'+
+    (tabsReadClean()===true?' — the cells the pacing tabs read':
+      tabsReadClean()===false?' — the pacing tabs\' Adjust columns read Adjust Raw as it stands':'');
   document.getElementById('nav').innerHTML=VIEWS.map(function(v){
     return '<button onclick="setView(\''+v[0]+'\')" data-v="'+v[0]+'"><span class="bar"></span>'+v[1]+'</button>';
   }).join('');
@@ -1300,9 +1304,26 @@ function render(){
   drawAll();
 }
 
+/* Whether the pacing tabs' K / L / X formulas read "Adjust Clean": true, false, or null when the
+   payload does not say. Only the server can tell (from the formulas installed on the tabs), and
+   the tab merely existing is not enough — after Undo "Fix this workbook" it stays while the
+   restored formulas read Adjust Raw again — so the page claims it only when the payload does. */
+function tabsReadClean(){
+  var m=DATA&&DATA.meta||{};
+  var keys=['tabsReadClean','tabsReadAdjustClean','tabsClean'];
+  for(var i=0;i<keys.length;i++) if(typeof m[keys[i]]==='boolean') return m[keys[i]];
+  return null;
+}
+/* "Adjust Clean, …" — what the pacing tabs do with it, as far as the payload says */
+function cleanTabsClause(){
+  var t=tabsReadClean();
+  return t===true?'the tab pacing columns K, L and X read':
+    t===false?'which pacing columns K, L and X do not read: their formulas still sum Adjust Raw as it stands (see the banner)':
+    'the corrected copy that Fix this workbook points pacing columns K, L and X at';
+}
 /* Data problems in the source tabs. Adjust Raw is corrected the same way here and in
-   "Adjust Clean" (which the pacing tabs read), so those notes are about the source; the
-   others say whether they affect the pacing tabs, this dashboard or both. */
+   "Adjust Clean", so those notes are about the source; the others say whether they affect
+   the pacing tabs, this dashboard or both. */
 /* The banner opens by itself when there is something to fix, and then stays the way the user
    leaves it — every click re-renders it — until the number of problems changes. */
 var HEALTH={open:false,crit:-1};
@@ -1619,8 +1640,8 @@ function vAttribution(){
   var gaTot=gb.reduce(function(t,g){t.tx+=g.tx;t.revenue+=g.revenue;return t;},{tx:0,revenue:0});
   return ''+
   '<div class="callout"><b>Two meters, '+(DATA.meta.webRevenueFromGa4?'never both on the same row':'never added together')+
-    '.</b> The app side comes from <b>Adjust Raw</b>, read through the same corrections as <b>Adjust Clean</b> — '+
-    'the tab pacing columns K, L and X read. The web side comes from <b>GA4</b>, counted when the session\'s default channel '+
+    '.</b> The app side comes from <b>Adjust Raw</b>, read through the same corrections as <b>Adjust Clean</b>, '+
+    cleanTabsClause()+'. The web side comes from <b>GA4</b>, counted when the session\'s default channel '+
     'group is Paid Search or Paid Social (pacing column M and rows 47-49). '+
     (DATA.meta.webRevenueFromGa4?'Column X reads GA4 on the four web rows and Adjust everywhere else.':
       'Column X — and so revenue and ROAS here — is Adjust on every row; GA4 web revenue is shown, not added.')+
@@ -1660,7 +1681,9 @@ var RECON_WHY=[
   ['text','+ numbers stored as text — SUM() cannot see them'],
   ['inmobi_copy','− InMobi rows: copies of Raw manual (row 24 reads Raw manual and the backup)'],
   ['apple_copy','− Apple rows: row 22 reads APPLE1'],
-  ['not_inmobi','− Bidease and other rows: copies of Raw data (rows 23 and 25 read Raw data)'],
+  ['not_inmobi','− Bidease and other rows: copies found in Raw data (rows 23 and 25 read Raw data)'],
+  ['manual_missing','− not in Raw data: the source workbook\'s Raw data reads Raw manual only from row 50 down, '+
+    'so nothing counts these'],
   ['inmobi_out','− InMobi outside this tab\'s dates (Raw manual from 3 Aug, backup 2 Jul – 2 Aug)'],
   ['outside','− dated outside the dashboard\'s dates'],
   ['nodate','− date not readable (SUMIFS skips it too)'],
@@ -1741,7 +1764,7 @@ function reconAdjustPanel(){
   body+='<tr><td><b>= counted</b></td><td><b>'+n0(cnt.i)+'</b></td><td><b>'+n0(cnt.o)+'</b></td><td><b>'+n0(cnt.r)+
     '</b></td><td></td></tr>';
   if(fixd.n) body+=row('<span class="mute">of which: rows whose date was stored as text or day/month-swapped '+
-    '— counted on their real day, as in Adjust Clean, the tab the pacing formulas read</span>',fixd,1);
+    '— counted on their real day, as in Adjust Clean, '+cleanTabsClause()+'</span>',fixd,1);
   var cards={i:0,o:0};
   DATA.adjust.forEach(function(a){if(brandMatch(a.brand)&&a.day>=F.from&&a.day<=F.to){cards.i+=a.inst;cards.o+=a.bookings;}});
   var ok=Math.abs(cards.i-cnt.i)<0.5&&Math.abs(cards.o-cnt.o)<0.5,filt=F.plat.length>0||F.obj.length>0,fa=totals(lines());
@@ -1770,14 +1793,25 @@ function vMethod(){
       'Read from <b>Raw data</b> — one row per campaign per day, straight from each platform\'s export — '+
       'with two exceptions the pacing tab also makes: Apple from <b>APPLE1</b> (row 22), and InMobi, typed in by '+
       'hand, from <b>Raw manual</b> from 3 Aug plus the Raw data backup for 2 Jul – 2 Aug (row 24). Bidease and '+
-      'InMotion (rows 23 and 25) read Raw data like every other platform; their copies in Raw manual are not read. '+
-      'Every row is counted once per occurrence, exactly as SUMIFS counts it.',
+      'InMotion (rows 23 and 25) read Raw data like every other platform, so their rows in Raw manual count only '+
+      'through Raw data, and the source workbook\'s Raw data takes Raw manual only from row 50 down; the check '+
+      'table above lists any row it left out. Every row is counted once per occurrence, exactly as SUMIFS counts it. '+
+      '<b>Link clicks</b> (column J) are each export\'s own measure — '+LPV_DEF+'. J28 and the table total add '+
+      'these different measures, so they are not comparable across platforms.',
       'Now showing '+usd(t.spend)+' across '+rowsRaw().length+' rows.')+
-    step('2','Which line a campaign lands on',
-      'Raw data column <b>P</b> holds the objective: one ARRAYFORMULA in P2, generated from one token table '+
-      '(OBJECTIVE_TOKENS in Code.gs). P sits outside the imported columns A:O, so an imported Raw data keeps working. '+
-      'Every campaign gets exactly one objective, so a name that matches two wildcards is no longer counted twice, '+
-      'and nothing falls between the lines. The pacing formulas read the same column.',
+    step('2','Which portal and line a campaign lands on',
+      'The portal comes from the campaign name: Raw data column <b>Q</b> (one ARRAYFORMULA in Q2) files a name '+
+      'containing <code>SFQC</code> or <code>Six Flags</code> — and a Snapchat <code>First Story</code> buy — under '+
+      'Six Flags, and one containing <code>AAQC</code>, <code>AQQC</code>, <code>AQC-</code> / <code>AQC_</code> or '+
+      '<code>Aquarabia</code> under Aquarabia; only a name with neither falls back to column <b>B</b>. APPLE1 rows '+
+      'take the portal from the app column, Raw manual rows from column B. '+
+      'Column <b>P</b> holds the objective: one ARRAYFORMULA in P2, generated from one token table '+
+      '(OBJECTIVE_TOKENS in Code.gs). P and Q sit outside the imported columns A:O, so an imported Raw data keeps '+
+      'working. Every campaign gets exactly one portal and one objective, so a name that matches two wildcards is '+
+      'no longer counted twice, and nothing falls between the lines. '+
+      (DATA.meta.tabsReadObjective===false?'The pacing tabs do not read these columns right now — their formulas '+
+        'are the ones from before Fix this workbook (see the banner).':
+        'Fix this workbook points the pacing formulas at the same columns.'),
       lines().filter(function(l){return l.media&&l.spend;}).length+' lines with spend on screen.')+
     step('3','X spend gets divided by '+DATA.meta.fx,
       'Every delivering X campaign sits on a <b>SAR</b> funding instrument, but X reports it into a column headed '+
@@ -1787,11 +1821,17 @@ function vMethod(){
       'Read from <b>Adjust Raw</b> by the app column (Six Flags / Aquarabia), the channel and the objective. '+
       'Organic is never counted; channels with no row of their own go to row 26 (Other), so no paid install '+
       'disappears. Adjust Raw itself is never changed (it can stay an import). The script writes a corrected copy, '+
-      '<b>Adjust Clean</b>, and that is the tab the pacing formulas read: dates stored as text or day/month-swapped '+
+      '<b>Adjust Clean</b>'+(tabsReadClean()===true?', and that is the tab the pacing formulas read':
+        tabsReadClean()===false?', but the pacing formulas do not read it right now: they are the ones from before '+
+          'Fix this workbook (after Undo, or edited by hand) and sum Adjust Raw as it stands — run Qiddiya Setup → '+
+          'Fix this workbook to point them at it':
+        ', which Fix this workbook points the pacing formulas at')+
+      '. In it, dates stored as text or day/month-swapped '+
       'are put on their real day, rows repeated by overlapping imports are kept once, and exports pasted a second '+
       'time under the other app (cross-app copies) are removed. Adjust Clean is rebuilt every hour, by <b>Clean '+
       'Adjust Raw</b>, by <b>Fix this workbook</b> and whenever this dashboard finds Adjust Raw changed; the dashboard '+
-      'applies the same corrections as it reads, so the two agree.',
+      'applies the same corrections as it reads'+(tabsReadClean()===false?'.':', so the two agree once Adjust Clean '+
+        'has been rebuilt (until then the banner says it is out of date).'),
       n0(a.adjInst)+' installs · '+n0(a.bookings)+' bookings · '+n0(a.adjRev)+' SAR.')+
     step('5','Website purchases',
       'Read from the <b>GA4</b> tab: sessions whose default channel group is Paid Search or Paid Social, split '+
@@ -1807,7 +1847,8 @@ function vMethod(){
   '</div></div>'+
   '<div class="grid g2">'+
   '<div class="panel"><div class="ph"><h3>Which Adjust rows each line counts</h3>'+
-    '<div class="note">the K / L / X columns · read from Adjust Clean</div></div>'+
+    '<div class="note">the K / L / X columns'+(tabsReadClean()===true?' · read from Adjust Clean':
+      tabsReadClean()===false?' · what this dashboard counts; the tabs read Adjust Raw as it stands':'')+'</div></div>'+
     '<div class="tw"><table><thead><tr><th>Adjust channel</th><th style="text-align:left">Lands on</th></tr></thead><tbody>'+
     [['Meta · Apple · Bidease · InMobi · InMotion','their own row, every objective'],
      ['Google','YouTube / Awareness → row 10 · Search → row 16 · anything else → row 21'],
@@ -1858,25 +1899,40 @@ function windowNote(){
     '<b>7d</b> and <b>14d</b> end on '+lastAllDay()+', the last day both media and Adjust have reached for this '+
     'selection, so a cost per install never divides spend by installs that have not arrived yet.';
 }
-/* Plain-language version of the rule each line matches on — the words of OBJECTIVE_TOKENS. */
+/* Plain-language version of the rule each line matches on — the words of OBJECTIVE_TOKENS
+   (Code.gs). When the payload carries the table (meta.objectiveTokens) ruleText() spells the words
+   out from it, so the text cannot fall behind the classification; these are the fallback. */
 var LINE_RULE={
-  'Snapchat|Awareness':'Campaign name contains <code>snapchat_awr</code>, <code>_awrn_</code>, <code>takeover</code> / <code>take over</code>, or <code>first story</code>',
+  'Snapchat|Awareness':'Campaign name contains <code>snapchat_awr</code>, <code>_awrn_</code>, <code>takeover</code> / '+
+    '<code>take over</code> / <code>take-over</code>, or <code>first story</code> / <code>first_story</code> / <code>first-story</code>',
   'Snapchat|Conversion':'Every other Snapchat campaign (the app buys) — from 2 Jul',
   'TikTok|Awareness':'Name contains <code>tiktok_awr</code> or <code>_awrn_</code> (the RF / TopFeed buys)',
-  'TikTok|Search':'Name contains <code>_tt_search</code> or <code>_conv_sal_</code>',
+  'TikTok|Search':'Name contains <code>_tt_search</code>, <code>_conv_sal_</code>, <code>_search_cu</code> or '+
+    '<code>_web_bra+gen</code> (Awareness words are tested first)',
   'TikTok|Conversion':'Every other TikTok campaign',
-  'X|Awareness':'Name contains <code>x_awr</code>',
+  'X|Awareness':'Name contains <code>x_awr</code> or <code>_awrn_</code>',
   'X|Conversion':'Every other X campaign — from 2 Jul',
   'Google|Awareness':'Name contains <code>_yt_</code> — the YouTube buys',
-  'Google|Search':'Name contains <code>sem</code> — from 2 Jul',
+  'Google|Search':'Name contains <code>sem</code> (Awareness words are tested first) — from 2 Jul',
   'Google|Conversion':'Every other Google campaign (the app campaigns) — from 2 Jul',
   'Meta|Conversion':'Every Meta campaign — from 2 Jul (AAQC from 1 Jul)',
   'Apple|Conversion':'Every Apple Search Ads campaign, from APPLE1 — from 2 Jul',
   'InMobi|Conversion':'InMobi DSP — entered by hand: Raw manual from 3 Aug, the Raw data backup for 2 Jul – 2 Aug',
-  'Bidease|Conversion':'Bidease rows in Raw data — from 2 Jul (the copies in Raw manual are not read)',
+  'Bidease|Conversion':'Bidease rows in Raw data — from 2 Jul (Raw manual\'s Bidease rows count only once they '+
+    'reach Raw data, which takes Raw manual from row 50 down)',
   'InMotion|Conversion':'InMotion rows in Raw data — from 2 Jul',
   'Other|Other':'No media. Adjust channels with no row of their own, and paid GA4 sources no other row reads'
 };
+/* what LINE_RULE adds after the words of a token line */
+var LINE_RULE_TAIL={'TikTok|Awareness':' (the RF / TopFeed buys)','Google|Awareness':' — the YouTube buys',
+  'Google|Search':' — from 2 Jul'};
+function ruleText(key){
+  var p=key.split('|'),tok=DATA.meta.objectiveTokens,rules=tok&&tok[p[0]],t=rules&&rules[p[1]];
+  if(!t||!t.length) return LINE_RULE[key]||'—';
+  var w=t.map(function(x){return '<code>'+esc(x)+'</code>';});
+  return 'Name contains '+(w.length>1?w.slice(0,-1).join(', ')+' or '+w[w.length-1]:w[0])+
+    (p[1]==='Search'&&rules.Awareness?' (Awareness words are tested first)':'')+(LINE_RULE_TAIL[key]||'');
+}
 
 function lineExplainer(){
   var ln=lines(), cs=campaigns();
@@ -1894,7 +1950,7 @@ function lineExplainer(){
         '<span class="exm">'+mine.length+' campaign'+(mine.length===1?'':'s')+'</span>'+
         '<span class="exv">'+usd(l.spend)+'</span></summary>'+
       '<div class="exb">'+
-        '<div class="exrow"><span>Matched because</span><span>'+(LINE_RULE[l.key]||'—')+'</span></div>'+
+        '<div class="exrow"><span>Matched because</span><span>'+ruleText(l.key)+'</span></div>'+
         '<div class="exrow"><span>Revenue from</span><span>'+revFrom+'</span></div>'+
         '<div class="exrow"><span>Result</span><span>'+usd(l.spend)+' spend · '+
           n0(l.adjInst)+' installs · '+n0(l.bookings)+' bookings · '+n0(l.ga4Tx)+' GA4 purchases · '+n0(l.revenue)+' SAR'+
@@ -1953,6 +2009,16 @@ function sortList(list){
     return d*(x-y);
   });
 }
+/* Link clicks (pacing column J, Raw data H) is each export's own measure, and two platforms are
+   never asked for one: the source workbook's Raw data writes 0 in H on every Snapchat and Google row
+   (their swipes and clicks go to Clicks, I). Their lines show — rather than a 0 that reads as "no
+   link clicks"; the total stays J28's, which adds the different measures. */
+var NO_LINK_CLICKS={Snapchat:1,Google:1};
+var LPV_DEF='Meta link clicks, TikTok clicks (destination), X clicks and Apple taps, with Bidease, InMobi and '+
+  'InMotion as entered in column H; Snapchat and Google report none (their swipes and clicks are in Clicks), '+
+  'so their lines show —';
+var LPV_TIP='Pacing column J, each export\'s own measure: '+LPV_DEF+'. The total adds them all, as J28 does, '+
+  'so it is not comparable across platforms.';
 /* Column set mirrors the pacing tab, E through X. src marks where each number
    is measured: raw = the platform export, adj = Adjust, ga4 = GA4, rev = column X. */
 var PACING_COLS=[
@@ -1963,7 +2029,7 @@ var PACING_COLS=[
   {k:'impr',   h:'Impressions',     src:'raw', core:1, f:n0},
   {k:'views',  h:'Views',           src:'raw', f:n0},
   {k:'clicks', h:'Clicks',          src:'raw', core:1, f:n0},
-  {k:'lpv',    h:'Link clicks',     src:'raw', f:n0},
+  {k:'lpv',    h:'Link clicks',     src:'raw', f:n0, why:LPV_TIP},
   {k:'bookings',h:'Adjust purchase',src:'adj', core:1, f:n0, adj:1},
   {k:'adjInst',h:'Adjust install',  src:'adj', core:1, f:n0, adj:1},
   {k:'ga4Tx',  h:'GA4 purchase',    src:'ga4', core:1, f:n0},
@@ -2014,6 +2080,8 @@ function lineTable(list,sortable){
         : '<td><span class="tag">'+(o.plat==='Other'?'Adjust / GA4 only':o.obj)+'</span></td>';
     }
     if(!isTot&&!o.media&&c.src==='raw') return '<td class="mute">—</td>';
+    if(c.k==='lpv'&&(isTot||NO_LINK_CLICKS[o.plat]&&!o.lpv))
+      return '<td'+(isTot?'':' class="mute"')+' title="'+LPV_TIP+'">'+(isTot?c.f(o.lpv):'—')+'</td>';
     var flag=!isTot&&c.adj&&o.noFeed?' <span class="tag frz" title="'+NOFEED_TIP+'">no feed</span>':
       !isTot&&c.k==='adjInst'&&o.feedDrop?' <span class="tag frz" title="'+DROP_TIP+'">feed dropped?</span>':'';
     if(c.roas){
@@ -2026,7 +2094,7 @@ function lineTable(list,sortable){
   }
   function head(c){
     var tag=c.src==='rev'?revTag():SRC_TAG[c.src]||'';
-    var title=SRC_WHY[c.src]?' title="'+SRC_WHY[c.src]+'"':'';
+    var why=c.why||SRC_WHY[c.src],title=why?' title="'+why+'"':'';
     if(!sortable) return '<th'+title+'>'+c.h+tag+'</th>';
     var on=SORT.key===c.k;
     return '<th'+title+' class="sortable'+(on?' sorted'+(SORT.dir>0?' asc':''):'')+
