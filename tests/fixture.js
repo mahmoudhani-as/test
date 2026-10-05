@@ -263,6 +263,14 @@ function brandOf(text, plat, newRule) {
   if ((newRule ? /AAQC|AQQC|AQC[-_]|AQUARABIA/ : /AAQC|AQC[-_]|AQUARABIA/).test(u)) return 'AAQC';
   return 'UNMAPPED';
 }
+/* Column Q, as Fix this workbook's Q2 formula produces it: the name decides, column B where the
+   name carries no portal, UNMAPPED where neither does. */
+function portalOf(plat, camp, b) {
+  var byName = brandOf(camp, plat, true);
+  if (byName !== 'UNMAPPED') return byName;
+  var bb = String(b).toUpperCase();
+  return bb === 'SFQC' || bb === 'AAQC' ? bb : 'UNMAPPED';
+}
 function rawData(tabs, manual, newRule) {
   function hdr(t) { var h = {}; t[0].forEach(function (x, i) { h[x] = i; }); return h; }
   function v(x) { return x === '' || x === null || x === undefined ? 0 : x; }
@@ -274,14 +282,19 @@ function rawData(tabs, manual, newRule) {
       v(r[m['Mobile app installs']]), v(r[m['Mobile app purchases']])]);
   });
   var t = hdr(tabs.TikTok);
+  // purchases: Purchase events + Complete payment events. "Purchase events (SKAN)" is a second
+  // measurement of the same iOS purchases (as SKAN installs are of installs), so it is not added.
   tabs.TikTok.slice(1).forEach(function (r) {
     out.push(['TikTok', brandOf(r[1], 'TikTok', newRule), r[1], r[0], v(r[t.Reach]), v(r[t.Impressions]), v(r[t.Cost]),
       v(r[t.Clicks]), v(r[t['Clicks (All)']]), v(r[t['2-second video views']]), v(r[t['App installs']]),
-      v(r[t['Purchase events']]) + v(r[t['Purchase events (SKAN)']]) + v(r[t['Complete payment events']])]);
+      v(r[t['Purchase events']]) + v(r[t['Complete payment events']])]);
   });
   var s = hdr(tabs.Snapchat);
   tabs.Snapchat.slice(1).forEach(function (r) {
-    out.push(['Snapchat', brandOf(r[1], 'Snapchat', newRule), r[1], r[0], 0, v(r[s.Impressions]), v(r[s.Cost]), 0,
+    // the live source files every name that does not start with "SFQC" under AAQC in column B, so
+    // the "First Story" takeover arrives as AAQC; only column Q (the name) puts it under SFQC
+    var b = /^first story/i.test(String(r[1])) ? 'AAQC' : brandOf(r[1], 'Snapchat', newRule);
+    out.push(['Snapchat', b, r[1], r[0], 0, v(r[s.Impressions]), v(r[s.Cost]), 0,
       v(r[s.Swipes]), v(r[s['Video views']]), v(r[s['Total app installs']]), v(r[s.Purchases])]);
   });
   // Google purchases = Conversions on every campaign, as in the pasted live Raw data (RAW_FORMULA now
@@ -311,11 +324,12 @@ function rawData(tabs, manual, newRule) {
   rows[0][13] = 'From'; rows[0][14] = 'Till';
   rows[1] = rows[1].slice(); while (rows[1].length < 15) rows[1].push('');
   rows[1][13] = D(WINDOW.from); rows[1][14] = D(WINDOW.till);
-  // column P: the objective, as Fix this workbook's P2 formula produces it
+  // columns P and Q: the objective and the portal, as Fix this workbook's P2 and Q2 formulas produce them
   if (newRule) {
     rows.forEach(function (r, i) {
-      while (r.length < 16) r.push('');
+      while (r.length < 17) r.push('');
       r[15] = i === 0 ? 'Objective' : objective(r[0], String(r[2]));
+      r[16] = i === 0 ? 'Portal' : portalOf(r[0], String(r[2]), r[1]);
     });
   }
   return rows;
@@ -339,4 +353,4 @@ function workbook(newRule) {
   return wb;
 }
 
-module.exports = { workbook: workbook, WINDOW: WINDOW, D: D, iso: iso };
+module.exports = { workbook: workbook, WINDOW: WINDOW, D: D, iso: iso, portalOf: portalOf };

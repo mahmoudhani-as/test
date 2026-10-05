@@ -1304,16 +1304,17 @@ function render(){
   drawAll();
 }
 
-/* Whether the pacing tabs' K / L / X formulas read "Adjust Clean": true, false, or null when the
-   payload does not say. Only the server can tell (from the formulas installed on the tabs), and
-   the tab merely existing is not enough — after Undo "Fix this workbook" it stays while the
-   restored formulas read Adjust Raw again — so the page claims it only when the payload does. */
-function tabsReadClean(){
-  var m=DATA&&DATA.meta||{};
-  var keys=['tabsReadClean','tabsReadAdjustClean','tabsClean'];
-  for(var i=0;i<keys.length;i++) if(typeof m[keys[i]]==='boolean') return m[keys[i]];
-  return null;
+/* What the formulas installed on the pacing tabs read (meta.tabsReadClean / tabsReadObjective /
+   tabsReadPortal) — what: 'clean' (K / L / X read "Adjust Clean"), 'objective' (Raw data column P),
+   'portal' (column Q). true, false, or null when the payload does not say (an older Code.gs).
+   Only the server can tell, and a tab or column merely existing is not enough — after Undo "Fix
+   this workbook" they stay while the restored formulas read Adjust Raw and column B again — so
+   the page claims it only when the payload does. */
+function tabsRead(what){
+  var v=DATA&&DATA.meta?DATA.meta['tabsRead'+what.charAt(0).toUpperCase()+what.slice(1)]:null;
+  return typeof v==='boolean'?v:null;
 }
+function tabsReadClean(){return tabsRead('clean');}
 /* "Adjust Clean, …" — what the pacing tabs do with it, as far as the payload says */
 function cleanTabsClause(){
   var t=tabsReadClean();
@@ -1708,7 +1709,14 @@ function reconPanel(){
     body+='<tr class="grp"><td colspan="4">'+esc(sd[1])+'</td></tr>'+
       '<tr><td>SUM() of the tab — '+brandTag()+' '+sum.n.toLocaleString('en-US')+' rows</td><td>'+n0(sum.i)+'</td><td>'+
         usd(sum.p)+'</td><td class="mute">what you see summing the column</td></tr>';
-    RECON_WHY.forEach(function(w){
+    // a reason this page does not know yet (a newer Code.gs) still gets its line, so the steps add up
+    var why=RECON_WHY.slice(),known={sum:1,counted:1};
+    why.forEach(function(w){known[w[0]]=1;});
+    Object.keys(agg).forEach(function(k){
+      var p=k.split('|');
+      if(p[0]===sd[0]&&!known[p[1]]){known[p[1]]=1;why.push([p[1],'− '+p[1]]);}
+    });
+    why.forEach(function(w){
       var x=g(sd[0],w[0]);
       if(Math.abs(x.i)<0.5&&Math.abs(x.p)<0.5) return;
       var sign=w[0]==='text'?1:-1;
@@ -1760,7 +1768,9 @@ function reconAdjustPanel(){
   }
   var sum=g('sum'),cnt=g('counted'),fixd=g('dateFixed');
   var body=row('SUM() of Adjust Raw — '+brandTag()+' app rows',sum,1,sum.n.toLocaleString('en-US')+' rows · what you see summing the columns');
-  RECON_ADJ_WHY.forEach(function(w){var x=g(w[0]);if(x.n)body+=row(esc(w[1]),x,-1);});
+  var known={sum:1,counted:1,dateFixed:1};
+  RECON_ADJ_WHY.forEach(function(w){known[w[0]]=1;var x=g(w[0]);if(x.n)body+=row(esc(w[1]),x,-1);});
+  Object.keys(agg).forEach(function(k){if(!known[k]&&agg[k].n)body+=row(esc('− '+k),agg[k],-1);});
   body+='<tr><td><b>= counted</b></td><td><b>'+n0(cnt.i)+'</b></td><td><b>'+n0(cnt.o)+'</b></td><td><b>'+n0(cnt.r)+
     '</b></td><td></td></tr>';
   if(fixd.n) body+=row('<span class="mute">of which: rows whose date was stored as text or day/month-swapped '+
@@ -1800,7 +1810,9 @@ function vMethod(){
       'these different measures, so they are not comparable across platforms.',
       'Now showing '+usd(t.spend)+' across '+rowsRaw().length+' rows.')+
     step('2','Which portal and line a campaign lands on',
-      'The portal comes from the campaign name: Raw data column <b>Q</b> (one ARRAYFORMULA in Q2) files a name '+
+      'The portal comes from the campaign name: Raw data column <b>Q</b> (one ARRAYFORMULA in Q2'+
+        (DATA.meta.portalColumn===false?', which Fix this workbook adds; until then this dashboard applies the same '+
+          'rule itself':'')+') files a name '+
       'containing <code>SFQC</code> or <code>Six Flags</code> — and a Snapchat <code>First Story</code> buy — under '+
       'Six Flags, and one containing <code>AAQC</code>, <code>AQQC</code>, <code>AQC-</code> / <code>AQC_</code> or '+
       '<code>Aquarabia</code> under Aquarabia; only a name with neither falls back to column <b>B</b>. APPLE1 rows '+
@@ -1809,9 +1821,7 @@ function vMethod(){
       '(OBJECTIVE_TOKENS in Code.gs). P and Q sit outside the imported columns A:O, so an imported Raw data keeps '+
       'working. Every campaign gets exactly one portal and one objective, so a name that matches two wildcards is '+
       'no longer counted twice, and nothing falls between the lines. '+
-      (DATA.meta.tabsReadObjective===false?'The pacing tabs do not read these columns right now — their formulas '+
-        'are the ones from before Fix this workbook (see the banner).':
-        'Fix this workbook points the pacing formulas at the same columns.'),
+      stepColumnsRead(),
       lines().filter(function(l){return l.media&&l.spend;}).length+' lines with spend on screen.')+
     step('3','X spend gets divided by '+DATA.meta.fx,
       'Every delivering X campaign sits on a <b>SAR</b> funding instrument, but X reports it into a column headed '+
@@ -1965,6 +1975,16 @@ function lineExplainer(){
       '</div></details>';
   }).join('');
 }
+/* Whether the pacing formulas read Raw data P and Q — only what the payload says (tabsRead) */
+function stepColumnsRead(){
+  var o=tabsRead('objective')===false,q=tabsRead('portal')===false;
+  if(o||q) return 'The pacing tabs do not read '+(o&&q?'these columns':o?'column P':'column Q')+' right now: their '+
+    'formulas are the ones from before Fix this workbook (after Undo, or edited by hand), so they still '+
+    (o?'use the old wildcard sums':'')+(o&&q?' and ':'')+(q?'file rows by column B':'')+'. Run Qiddiya Setup → '+
+    'Fix this workbook to point them at '+(o&&q?'both':'it')+'.';
+  return tabsRead('objective')&&tabsRead('portal')?'The pacing formulas read the same columns.':
+    'Fix this workbook points the pacing formulas at the same columns.';
+}
 function step(n,title,body,fact){
   return '<div style="display:grid;grid-template-columns:26px 1fr;gap:11px;padding:11px 0;'+
     'border-bottom:1px solid var(--line-soft)">'+
@@ -2015,8 +2035,8 @@ function sortList(list){
    link clicks"; the total stays J28's, which adds the different measures. */
 var NO_LINK_CLICKS={Snapchat:1,Google:1};
 var LPV_DEF='Meta link clicks, TikTok clicks (destination), X clicks and Apple taps, with Bidease, InMobi and '+
-  'InMotion as entered in column H; Snapchat and Google report none (their swipes and clicks are in Clicks), '+
-  'so their lines show —';
+  'InMotion as entered in their source tab\'s column H; Snapchat and Google report none (their swipes and clicks '+
+  'are in Clicks), so their lines show —';
 var LPV_TIP='Pacing column J, each export\'s own measure: '+LPV_DEF+'. The total adds them all, as J28 does, '+
   'so it is not comparable across platforms.';
 /* Column set mirrors the pacing tab, E through X. src marks where each number

@@ -10,7 +10,11 @@
  *      pacing tab, for SFQC and AAQC;
  *   5. runs "Clean Adjust Raw" and checks again;
  *   6. runs Qiddiya Setup → Fix this workbook end to end on the workbook as it was before the
- *      fix (pasted Raw data, then an IMPORTRANGE copy), checks every step, then Undo.
+ *      fix (pasted Raw data, then an IMPORTRANGE copy), checks every step — Adjust Raw changing
+ *      afterwards, a rebuild that cannot run or fails half-way — then Undo;
+ *   7. calls every public function as an anonymous visitor of the dashboard link;
+ *   8. checks the day/month-swap rule, Raw manual rows missing from Raw data and the standalone
+ *      export on hand-made inputs.
  * The original code (git HEAD~ files passed with --old) goes through the same steps so the
  * before/after difference is measured, not asserted.
  *
@@ -20,7 +24,7 @@
 'use strict';
 var fs = require('fs'), vm = require('vm'), path = require('path');
 var HyperFormula = require('hyperformula').HyperFormula;
-var JSDOM = require('jsdom').JSDOM;
+var JSDOM = require('jsdom').JSDOM, VirtualConsole = require('jsdom').VirtualConsole;
 var fx = require('./fixture');
 
 var ROOT = path.join(__dirname, '..');
@@ -215,9 +219,10 @@ function formatDate(date, tz, fmt) {
     .replace('mm', p.minute).replace('ss', p.second);
 }
 function loadServer(files, ss) {
-  var logs = [], triggers = [], store = {};
+  var logs = [], triggers = [], store = {}, uid = 0;
   var props = { getProperty: function (k) { return store[k] == null ? null : store[k]; },
-                setProperty: function (k, v) { store[k] = String(v); } };
+                setProperty: function (k, v) { store[k] = String(v); },
+                deleteProperty: function (k) { delete store[k]; } };
   var ctx = {
     SpreadsheetApp: {
       getActive: function () { return ss; }, getActiveSpreadsheet: function () { return ss; },
@@ -227,6 +232,7 @@ function loadServer(files, ss) {
     },
     Utilities: { formatDate: formatDate },
     Logger: { log: function () { logs.push([].slice.call(arguments).join(' ')); } },
+    // one account runs everything unless a test swaps these (an anonymous /exec visitor: active '')
     Session: { getEffectiveUser: function () { return { getEmail: function () { return 'test@example.com'; } }; },
                getActiveUser: function () { return { getEmail: function () { return 'test@example.com'; } }; } },
     LockService: { getDocumentLock: function () { return { waitLock: function () {}, releaseLock: function () {} }; },
@@ -234,7 +240,8 @@ function loadServer(files, ss) {
     PropertiesService: { getDocumentProperties: function () { return props; } },
     ScriptApp: { getProjectTriggers: function () { return triggers.slice(); },
       newTrigger: function (fn) { var b = { timeBased: function () { return b; }, everyHours: function () { return b; },
-        create: function () { triggers.push({ getHandlerFunction: function () { return fn; } }); } }; return b; },
+        create: function () { var id = 'trig' + (++uid); triggers.push({ getHandlerFunction: function () { return fn; },
+          getUniqueId: function () { return id; } }); } }; return b; },
       deleteTrigger: function (t) { triggers.splice(triggers.indexOf(t), 1); } },
     HtmlService: {}, DriveApp: {}, MimeType: {}, console: console,
     Date: Date            // one realm, so instanceof Date works on the fixture's cells
@@ -242,6 +249,7 @@ function loadServer(files, ss) {
   vm.createContext(ctx);
   files.forEach(function (f) { vm.runInContext(fs.readFileSync(f, 'utf8'), ctx, { filename: f }); });
   ctx.__logs = logs;
+  ctx.__props = store;
   return ctx;
 }
 function putPacing(ss, vals) {
@@ -262,22 +270,25 @@ function sheetToWb(ss) {
 }
 
 /* ------------------------------------------------------------------ the browser */
+function stubCanvas(w) {
+  var ctx2d = new Proxy({}, {
+    get: function (t, p) {
+      if (p === 'createLinearGradient') return function () { return { addColorStop: function () {} }; };
+      if (p === 'measureText') return function () { return { width: 10 }; };
+      if (p in t) return t[p];
+      return function () {};
+    },
+    set: function (t, p, v) { t[p] = v; return true; }
+  });
+  w.HTMLCanvasElement.prototype.getContext = function () { return ctx2d; };
+}
 function loadClient(htmlFile, payload) {
   var html = fs.readFileSync(htmlFile, 'utf8');
   var json = JSON.stringify(payload);                       // google.script.run serialises
   var dom = new JSDOM(html, {
     runScripts: 'dangerously', pretendToBeVisual: true,
     beforeParse: function (w) {
-      var ctx2d = new Proxy({}, {
-        get: function (t, p) {
-          if (p === 'createLinearGradient') return function () { return { addColorStop: function () {} }; };
-          if (p === 'measureText') return function () { return { width: 10 }; };
-          if (p in t) return t[p];
-          return function () {};
-        },
-        set: function (t, p, v) { t[p] = v; return true; }
-      });
-      w.HTMLCanvasElement.prototype.getContext = function () { return ctx2d; };
+      stubCanvas(w);
       var handler = null;
       var run = {
         withSuccessHandler: function (fn) { handler = fn; return run; },
@@ -390,6 +401,21 @@ function objectiveFromFormula(f) {
     return 'Conversion';
   };
 }
+/* Reads the generated portal ARRAYFORMULA (column Q) the way Sheets would, without Code.gs:
+   REGEXMATCH on the upper-cased name, "=" comparisons case-insensitive, B kept (upper-cased)
+   where the name carries no portal. */
+function portalFromFormula(f) {
+  var m = /REGEXMATCH\(vname,"([^"]+)"\)\+\(A2:A="([^"]+)"\)\*REGEXMATCH\(vname,"([^"]+)"\),"([A-Z]+)",IF\(REGEXMATCH\(vname,"([^"]+)"\),"([A-Z]+)",IF\(\(B2:B="([A-Z]+)"\)\+\(B2:B="([A-Z]+)"\),UPPER\(B2:B\),"([A-Z]+)"\)/.exec(f);
+  if (!m) throw new Error('unexpected portal formula: ' + f);
+  var re1 = new RegExp(m[1]), plat = m[2].toLowerCase(), re2 = new RegExp(m[3]), re3 = new RegExp(m[5]);
+  var keep = [m[7].toLowerCase(), m[8].toLowerCase()];
+  return function (a, b, c) {
+    var name = String(c == null ? '' : c).toUpperCase();
+    if (re1.test(name) || (String(a).toLowerCase() === plat && re2.test(name))) return m[4];
+    if (re3.test(name)) return m[6];
+    return keep.indexOf(String(b).toLowerCase()) >= 0 ? String(b).toUpperCase() : m[9];
+  };
+}
 function fixStage(files) {
   console.log('\n==================== Qiddiya Setup → Fix this workbook (synthetic, before any fix) ====================');
   var fails = [];
@@ -414,6 +440,20 @@ function fixStage(files) {
     raw.put(r, col, o);                                       // what Sheets shows once the formula runs
   }
   check(differ === 0, 'the objective formula, read independently, equals Code.gs _objective() on every row (' + differ + ' differ)');
+  var pcol = ctx.CFG.PORTAL_COL.charCodeAt(0) - 64, q2 = raw.getRange(ctx.CFG.PORTAL_COL + '2').getFormula();
+  check(raw.cell(1, pcol) === 'Portal' && q2 === ctx.portalColumnFormula_(),
+    'Raw data ' + ctx.CFG.PORTAL_COL + '1 = Portal and ' + ctx.CFG.PORTAL_COL + '2 holds the portal ARRAYFORMULA');
+  var portalOf = portalFromFormula(q2), pDiffer = 0, moved = {};
+  for (var rq = 2; rq <= raw.getLastRow(); rq++) {
+    if (raw.cell(rq, 1) === '') continue;
+    var q = portalOf(raw.cell(rq, 1), raw.cell(rq, 2), raw.cell(rq, 3));
+    if (q !== (ctx._rawPortal_(raw.cell(rq, 1), raw.cell(rq, 3), raw.cell(rq, 2)) || 'UNMAPPED')) pDiffer++;
+    if (q !== String(raw.cell(rq, 2)).toUpperCase()) moved[raw.cell(rq, 3) + ': B ' + raw.cell(rq, 2) + ' -> ' + q] = 1;
+    raw.put(rq, pcol, q);                                     // what Sheets shows once the formula runs
+  }
+  check(pDiffer === 0, 'the portal formula, read independently, equals Code.gs _rawPortal_() on every row (' + pDiffer + ' differ)');
+  check(moved['First Story Takeover Jul: B AAQC -> SFQC'] && moved['AQQC_Meta_Retarget: B UNMAPPED -> AAQC'],
+    'column Q files by the name where column B does not (' + Object.keys(moved).join('; ') + ')');
   var textNums = 0;
   ss.getSheetByName('Raw manual').v.slice(1).forEach(function (row) {
     row.slice(4, 12).forEach(function (x) { if (typeof x === 'string' && /^[\d,.\s$-]+$/.test(x) && /\d/.test(x)) textNums++; });
@@ -468,6 +508,48 @@ function fixStage(files) {
   d.slice(0, 5).forEach(function (x) { console.log('      ' + x); });
   check(d.length === 0, 'Dashboard page = pacing tabs, line by line and in total (' + d.length + ' differ)');
   w.close();
+
+  // ---- Adjust Raw changes after Fix (an import refresh, a paste). Sheets recalculates the tabs
+  //      after every rebuild of Adjust Clean; the mock does that here.
+  function recalc() {
+    var wbN = sheetToWb(ss);
+    Object.keys(wbN).forEach(function (n) { if (/ Pacing_Daily BACKUP /.test(n)) delete wbN[n]; });
+    putPacing(ss, evaluatePacing(wbN, ctx.buildPacingSpec_()));
+  }
+  var realRefresh = ctx._refreshAdjustClean_;
+  ctx._refreshAdjustClean_ = function () { var res = realRefresh.apply(null, arguments); if (res && res.rebuilt) recalc(); return res; };
+  var adj = ss.getSheetByName('Adjust Raw');
+  function addAdjust(tag) {
+    adj.v.push([fx.D('2026-09-10'), 'Facebook Installs', 'SFQC_Meta_App_iOS_' + tag, 'Six Flags', 5000, 5000, 20, 250, 20, 'Meta', 'Conversion']);
+  }
+  addAdjust('late1');
+  var v1 = ctx.validateDashboard();
+  var bad1 = ss.getSheetByName('Dashboard Validation').v.filter(function (x) { return x[5] === 'CHECK' && x[0] !== 'FIX' && x[0] !== 'RESULT'; });
+  bad1.slice(0, 3).forEach(function (x) { console.log('      CHECK ' + x.slice(0, 5).join(' | ')); });
+  check(v1.bad === 0 && bad1.length === 0, 'Validate right after Adjust Raw changed rebuilds Adjust Clean first: every figure matches (' + v1.bad + ' differ)');
+  addAdjust('late2');
+  var realLock = ctx.LockService.getScriptLock;
+  ctx.LockService.getScriptLock = function () { return { tryLock: function () { return false; }, waitLock: function () { throw new Error('busy'); }, releaseLock: function () {} }; };
+  var pStale = ctx.getPacingDashboardData();
+  var v2 = ctx.validateDashboard();
+  ctx.LockService.getScriptLock = realLock;
+  check(pStale.meta.health.issues.some(function (i) { return i.level === 'crit' && /could not be rebuilt/.test(i.text); }) && v2.critical > 0,
+    'an Adjust Clean that is behind Adjust Raw and cannot be rebuilt is a critical issue, on the dashboard and in Validate');
+  // a rebuild whose write fails (a time-out) leaves the previous copy and is retried
+  var cleanSh = ss.getSheetByName(ctx.CFG.ADJUST_CLEAN), rowsBefore = cleanSh.getLastRow();
+  var RP = Object.getPrototypeOf(cleanSh.getRange('A1')), realSet = RP.setValues, failed = 0;
+  RP.setValues = function (v) {
+    if (this.sh === cleanSh && v.length > 1 && !failed++) throw new Error('Service Spreadsheets timed out');
+    return realSet.apply(this, arguments);
+  };
+  try { ctx.cleanAdjustRaw_(); } catch (e) { /* the menu run reports it */ }
+  RP.setValues = realSet;
+  check(failed === 1 && cleanSh.getLastRow() === rowsBefore && ctx.__props.adjustCleanFp == null,
+    'a failed rebuild keeps the previous Adjust Clean (' + (cleanSh.getLastRow() - 1) + ' rows) and forgets its fingerprint');
+  ctx.getPacingDashboardData();
+  check(cleanSh.getLastRow() === rowsBefore + 1 && ctx.__props.adjustCleanFp != null, 'the next dashboard load rebuilds it');
+  ctx._refreshAdjustClean_ = realRefresh;
+
   var qc = '';
   try { ctx.verifyOnly(); } catch (e) { qc = e.message; }
   // the fixture's deliberate no-portal campaigns are a genuine coverage problem; nothing else may fail
@@ -479,6 +561,18 @@ function fixStage(files) {
   var restored = PACING_TABS.every(function (t) { return JSON.stringify(formulaGrid(ss.getSheetByName(t))) === before[t]; });
   check(restored, 'Undo "Fix this workbook" restores both pacing tabs to the formulas they had before the first run');
   check(ctx.ScriptApp.getProjectTriggers().length === 0, 'Undo removes the hourly trigger');
+  // the dashboard sees from the formulas that the tabs read Adjust Raw and column B again
+  var pu = ctx.getPacingDashboardData(), iu = pu.meta.health.issues;
+  var adjU = iu.filter(function (i) { return /^Adjust Raw has/.test(i.text); });
+  check(adjU.length === 1 && adjU[0].level === 'crit' && !iu.some(function (i) { return /which both the pacing tabs and this dashboard read/.test(i.text); }) &&
+    pu.meta.tabsReadClean === false, 'after Undo the banner says (crit) that the tabs read Adjust Raw as it stands');
+  check(iu.some(function (i) { return /do not read Raw data's Objective column/.test(i.text); }), 'after Undo the banner says the tabs do not read the Objective column');
+  check(iu.some(function (i) { return i.level === 'crit' && /First Story Takeover Jul/.test(i.text) && /still filter on column B/.test(i.text); }),
+    'after Undo the banner says (crit) the tabs file "First Story" by column B again');
+  check(ctx.__props.adjustCleanOff === '1', 'Undo switches the hourly refresh off for every account');
+  ctx.ScriptApp.newTrigger('refreshAdjustClean').timeBased().everyHours(1).create();     // one another account installed
+  var tr = ctx.refreshAdjustClean({ triggerUid: 'trig-other' });
+  check(tr === undefined && ctx.ScriptApp.getProjectTriggers().length === 0, 'a refresh trigger left behind removes itself at its next run after Undo');
 
   /* ---- V4: Raw data, Raw manual, Adjust Raw and APPLE1 are IMPORTRANGE mirrors ---- */
   console.log('   -- the same repair when the sources are IMPORTRANGE mirrors --');
@@ -507,6 +601,129 @@ function fixStage(files) {
   return fails.length;
 }
 
+/* ------------------------------------------------------------------ the dashboard link */
+/* The web app runs as the owner for anyone with the link, and google.script.run can call every
+   function whose name does not end in "_". An anonymous visitor (active account '', effective
+   account the owner's) must not change anything, before Fix this workbook or after it. */
+function visitorStage(files) {
+  console.log('\n==================== the dashboard link: an anonymous visitor calls every public function ====================');
+  var fails = [];
+  function check(ok, what) { console.log('   ' + (ok ? 'ok  ' : 'FAIL') + ' ' + what); if (!ok) fails.push(what); }
+  var src = files.gs.map(function (f) { return fs.readFileSync(f, 'utf8'); }).join('\n');
+  var pub = [], re = /^function\s+([A-Za-z0-9_$]+)\s*\(/gm, m;
+  while ((m = re.exec(src))) if (!/_$/.test(m[1])) pub.push(m[1]);
+  function state(ss, ctx) {
+    return JSON.stringify({ tabs: ss.sheets.map(function (x) { return [x.name, x.hidden, x.v, x.f]; }),
+      props: ctx.__props, triggers: ctx.ScriptApp.getProjectTriggers().length });
+  }
+  function asVisitor(ctx) {
+    ctx.Session.getEffectiveUser = function () { return { getEmail: function () { return 'owner@example.com'; } }; };
+    ctx.Session.getActiveUser = function () { return { getEmail: function () { return ''; } }; };
+  }
+  [['before Fix this workbook', false], ['after Fix this workbook (Adjust Clean current)', true]].forEach(function (st) {
+    var ss = makeSpreadsheet(fx.workbook(false), 'UTC'), ctx = loadServer(files.gs, ss);
+    if (st[1]) {
+      ctx.writeFormulas_(ss, ctx.PACING_ALL);
+      ctx.fixThisWorkbook();
+    }
+    asVisitor(ctx);
+    var wrote = [], leaked = [];
+    pub.forEach(function (name) {
+      var before = state(ss, ctx), args = name === 'refreshAdjustClean' ? [{ triggerUid: 1 }] :
+        name === 'step1b_addQueries' ? ['x'] : /^(importAdjustCsv|replaceAdjustCurrent)$/.test(name) ? [[[['day']]]] : [];
+      var out;
+      try { out = ctx[name].apply(null, args); } catch (e) { out = undefined; }
+      if (state(ss, ctx) !== before) wrote.push(name);
+      if (typeof out === 'string' && out.indexOf('@') >= 0) leaked.push(name);
+      if (name === 'refreshAdjustClean' && out !== undefined) leaked.push(name + ' returned data');
+    });
+    check(!wrote.length, st[0] + ': none of the ' + pub.length + ' public functions changes the workbook, its properties or ' +
+      'triggers' + (wrote.length ? ' — ' + wrote.join(', ') : ''));
+    check(!leaked.length, st[0] + ': no account name or Adjust data is returned' + (leaked.length ? ' — ' + leaked.join(', ') : ''));
+  });
+  // the gate tells an unreadable account (an appsscript.json without userinfo.email) from a visitor
+  var ctxG = loadServer(files.gs, makeSpreadsheet({}, 'UTC')), msgs = [];
+  ctxG.Session.getEffectiveUser = function () { return { getEmail: function () { throw new Error('Specified permissions are not sufficient'); } }; };
+  try { ctxG.requireSheetUser_(); } catch (e) { msgs.push(e.message); }
+  asVisitor(ctxG);
+  try { ctxG.requireSheetUser_(); } catch (e) { msgs.push(e.message); }
+  check(msgs.length === 2 && /appsscript\.json/.test(msgs[0]) && /userinfo\.email/.test(msgs[0]) && /dashboard link/.test(msgs[1]),
+    'the gate says "replace appsscript.json" when the account cannot be read, and "not from the dashboard link" to a visitor');
+  console.log('   The dashboard link: ' + (fails.length ? fails.length + ' check(s) failed' : 'every check passed'));
+  return fails.length;
+}
+
+/* Rules checked on hand-made inputs: the short-paste swap rule, Raw manual rows that never
+   reached Raw data, and the standalone export's escaping. */
+function unitStage(files) {
+  console.log('\n==================== rules on hand-made inputs ====================');
+  var fails = [];
+  function check(ok, what) { console.log('   ' + (ok ? 'ok  ' : 'FAIL') + ' ' + what); if (!ok) fails.push(what); }
+  var ss = makeSpreadsheet(fx.workbook(true), 'UTC'), ctx = loadServer(files.gs, ss);
+
+  // ---- day/month swaps: only a short paste that continues the rows before it is re-dated
+  function R(d, inst) { return [d, 'Facebook Installs', 'SFQC_Meta_App', 'Six Flags', 100, 100, 10, inst, 1, 'Meta', 'Conversion']; }
+  function span(a, b) {
+    var out = [];
+    for (var t = fx.D(a).getTime(); t <= fx.D(b).getTime(); t += 864e5) out.push(R(new Date(t), 1));
+    return out;
+  }
+  var win = { auto: true, hi: '2026-10-05' };
+  function marked(rows) {
+    return Object.keys(ctx._adjustReversedRows(rows, 0, 'UTC', win)).map(function (i) { return fx.iso(rows[i][0]); }).join(', ');
+  }
+  var head = [ctx.ADJUST_LAYOUT];
+  var genuine = head.concat(span('2026-06-01', '2026-07-31'));
+  var backfill = genuine.concat(span('2026-06-01', '2026-06-12'));
+  var paste = head.concat(span('2026-06-22', '2026-09-30'),
+    [R(fx.D('2026-01-10'), 1), R(fx.D('2026-01-10'), 2), R(fx.D('2026-02-10'), 1), R(fx.D('2026-02-10'), 2)]);
+  var afterBlank = paste.slice(0, paste.length - 4).concat([['', '', '', '', '', '', '', '', '', '', '']], paste.slice(paste.length - 4));
+  check(marked(genuine) === '', 'genuine rows from 1 Jun are not re-dated (' + (marked(genuine) || 'none') + ')');
+  check(marked(backfill) === '', 'a 1-12 Jun backfill pasted at the bottom is not re-dated (' + (marked(backfill) || 'none') + ')');
+  check(marked(paste) === '2026-01-10, 2026-01-10, 2026-02-10, 2026-02-10',
+    '01/10 + 02/10 pasted as 10 Jan / 10 Feb after rows ending 30 Sep are re-dated (' + (marked(paste) || 'none') + ')');
+  check(marked(afterBlank) === '2026-01-10, 2026-01-10, 2026-02-10, 2026-02-10', 'the same paste after a blank row is re-dated too');
+
+  // ---- "Clean Adjust Raw" run before Fix this workbook: the tab exists, the formulas do not read it
+  var ssC = makeSpreadsheet(fx.workbook(false), 'UTC'), ctxC = loadServer(files.gs, ssC);
+  ctxC.writeFormulas_(ssC, ctxC.PACING_ALL);
+  ctxC.cleanAdjustRaw_();
+  var pc = ctxC.getPacingDashboardData();
+  check(!!ssC.getSheetByName(ctxC.CFG.ADJUST_CLEAN) && pc.meta.tabsReadClean === false &&
+    pc.meta.health.issues.some(function (i) { return i.level === 'crit' && /^Adjust Raw has/.test(i.text) && /still read the tab as it stands/.test(i.text); }),
+    '"Clean Adjust Raw" before Fix: the banner still says (crit) that the tabs read Adjust Raw as it stands');
+
+  // ---- a Raw manual row that never reached Raw data (above row 50 in the source workbook)
+  var rd = ss.getSheetByName('Raw data'), cut = 0;
+  rd.v = rd.v.filter(function (r, i) {
+    var drop = i > 1 && r[0] === 'Bidease' && r[3] instanceof Date && fx.iso(r[3]) >= '2026-09-04' && fx.iso(r[3]) <= '2026-09-06';
+    if (drop) cut++;
+    return !drop;
+  });
+  var pm = ctx.getPacingDashboardData();
+  check(cut === 3 && pm.meta.health.issues.some(function (i) { return i.level === 'crit' && /^3 Raw manual row\(s\) are not in Raw data/.test(i.text); }) &&
+    pm.recon.filter(function (e) { return e.k === 'manual_missing'; }).length === 3,
+    'Raw manual Bidease rows missing from Raw data are a critical issue and "manual_missing" in the check table');
+
+  // ---- the standalone export: no campaign name can break or escape the embedded payload
+  var name = 'sale <!--<script> promo </script><script>window.PWN=1</script>   end';
+  var realGet = ctx.getPacingDashboardData, saved = null;
+  ctx.getPacingDashboardData = function () { var p = realGet.apply(this, arguments); p.camps[0] = name; return p; };
+  ctx.HtmlService = { createHtmlOutputFromFile: function () { return { getContent: function () { return fs.readFileSync(files.html, 'utf8'); } }; } };
+  ctx.DriveApp = { createFile: function (n, h) { saved = h; return { getUrl: function () { return 'drive://x'; } }; } };
+  ctx.MimeType = { HTML: 'text/html' };
+  ctx.exportStandalone();
+  var vc = new VirtualConsole(), pageErr = '';
+  vc.on('jsdomError', function (e) { pageErr = pageErr || String(e.message).split('\n')[0].slice(0, 80); });
+  var dom = new JSDOM(saved, { runScripts: 'dangerously', pretendToBeVisual: true, beforeParse: stubCanvas, virtualConsole: vc });
+  var ep = dom.window.EMBEDDED_PAYLOAD;
+  check(!!ep && ep.camps[0] === name && !!dom.window.document.getElementById('app') && !dom.window.PWN && !pageErr,
+    'the standalone export round-trips a campaign name holding <!--<script>, </script> and U+2028' + (pageErr ? ' — ' + pageErr : ''));
+  dom.window.close();
+  console.log('   Rules: ' + (fails.length ? fails.length + ' check(s) failed' : 'every check passed'));
+  return fails.length;
+}
+
 /* ------------------------------------------------------------------ run */
 function runVersion(label, files, opts) {
   console.log('\n==================== ' + label + ' ====================');
@@ -524,7 +741,8 @@ function runVersion(label, files, opts) {
   if (opts.newRawData && ctx._refreshAdjustClean_) ctx._refreshAdjustClean_(true);
   var spec = opts.newRawData ? ctx.buildPacingSpec_() : ctx.PACING_ALL;
   var vals = evaluatePacing(sheetToWb(ss), spec);
-  putPacing(ss, vals);
+  ctx.writeFormulas_(ss, spec);                 // the formulas (the server reads what they read) ...
+  putPacing(ss, vals);                          // ... and the values Sheets shows for them
 
   var payload = ctx.getPacingDashboardData();
   try { ctx.validateDashboard(); } catch (e) { console.log('validateDashboard threw: ' + e.message); }
@@ -616,13 +834,21 @@ function main() {
   failures += d2.length + vsh2.v.filter(function (r) { return r[5] === 'CHECK' && r[0] !== 'FIX' && r[0] !== 'RESULT'; }).length;
   var adjustLeft = p2.meta.health.issues.filter(function (i) { return /Adjust/.test(i.text) && i.level === 'crit'; }).length;
   if (adjustLeft) { console.log('FAIL: critical Adjust issues remain after cleaning'); failures++; }
-  // Adjust Raw is never modified; a second rebuild of Adjust Clean changes nothing
+  // Adjust Raw is never modified; a second rebuild of Adjust Clean changes nothing. M1 carries the
+  // build time ("Built ... at yyyy-MM-dd HH:mm"), so it is left out of the comparison.
+  function cleanSnapshot() {
+    var v = JSON.parse(JSON.stringify(cur.ss.getSheetByName('Adjust Clean').v));
+    if (v[0]) v[0][12] = null;
+    return JSON.stringify(v);
+  }
   var rawBefore = JSON.stringify(cur.ss.getSheetByName('Adjust Raw').v);
-  var before = JSON.stringify(cur.ss.getSheetByName('Adjust Clean').v);
+  var before = cleanSnapshot();
   cur.ctx.cleanAdjustRaw();
-  if (JSON.stringify(cur.ss.getSheetByName('Adjust Clean').v) !== before) { console.log('FAIL: second clean changed Adjust Clean'); failures++; }
-  if (JSON.stringify(cur.ss.getSheetByName('Adjust Raw').v) !== rawBefore) { console.log('FAIL: clean modified Adjust Raw'); failures++; }
-  else console.log('Second "Clean Adjust Raw" run: no changes (idempotent)');
+  var cleanSame = cleanSnapshot() === before;
+  var rawSame = JSON.stringify(cur.ss.getSheetByName('Adjust Raw').v) === rawBefore;
+  if (!cleanSame) { console.log('FAIL: second clean changed Adjust Clean'); failures++; }
+  if (!rawSame) { console.log('FAIL: clean modified Adjust Raw'); failures++; }
+  if (cleanSame && rawSame) console.log('Second "Clean Adjust Raw" run: no changes (idempotent)');
   w2.close();
 
   /* ---- the CSV importer writes into Adjust Raw and replaces the days it covers ---- */
@@ -662,6 +888,8 @@ function main() {
   cur.ctx.CFG.WEB_REVENUE_FROM_GA4 = ga4Default;
 
   failures += fixStage(files);
+  failures += visitorStage(files);
+  failures += unitStage(files);
 
   console.log('\n' + (failures ? 'FAILED — ' + failures + ' problem(s)' : 'PASSED — the dashboard equals the pacing tabs, line by line and in total'));
   process.exit(failures ? 1 : 0);
