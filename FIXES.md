@@ -17,8 +17,10 @@ setup menu and the pacing formulas. `Dashboard.html` is the page, `appsscript.js
    including Six Flags' $50,000 "First Story" takeover on 4 Oct. V4 now takes the portal from the
    campaign name, in Raw data column Q (section 3).
 6. **Adjust Clean holds exactly what is counted.** Its installs, bookings and revenue columns add up
-   to the dashboard and row 28 (77,020 installs on the 5 Oct copy, against 84,639 in Adjust Raw). It is
-   rebuilt **every time the dashboard loads or refreshes** if Adjust Raw has changed (section 3).
+   to the dashboard's *All* view (Both portals) and row 28 (77,020 installs on the 5 Oct copy, against
+   84,639 in Adjust Raw). Today's partial day is left out until the day is over, as the dashboard and
+   C2 = TODAY()-1 leave it out. It is rebuilt **every time the dashboard loads or refreshes** if Adjust
+   Raw has changed or a new day has started (section 3).
 7. **A few fixes belong in the source workbook**, which V4 imports from: TikTok purchases are counted
    twice there, and Raw manual rows above row 50 never reach Raw data (section 6).
 
@@ -100,14 +102,18 @@ the script works around the mirrors:
 | Each media row's objective | Raw data **column P** (`CFG.OBJECTIVE_COL`), outside the imported A:O. P1 = "Objective", plus one ARRAYFORMULA in P2 generated from `OBJECTIVE_TOKENS`. Leave column P empty below P2. |
 | Each media row's portal | Raw data **column Q** (`CFG.PORTAL_COL`), also outside A:O. Q1 = "Portal", plus one ARRAYFORMULA in Q2 generated from `PORTAL_TOKENS`: a name containing SFQC or Six Flags (on Snapchat also First Story) is SFQC; AAQC, AQQC, AQC- / AQC_ or Aquarabia is AAQC; any other name keeps column B, and UNMAPPED when B is neither. **Why:** the source sets column B with "starts with SFQC, else AAQC" (L8). The media rows and C39 filter on Q, and the dashboard applies the same rule. On the live copy this moves only "DNU SFQC-…" (X, $387) from AAQC to SFQC row 20; once the source window passes 4 Oct, the $50,000 "First Story 4/10 ARB" takeover lands on SFQC row 7. |
 | Corrected Adjust data | The pacing formulas (K, L, X and C42–C44) read **Adjust Clean**, a tab the script owns and rebuilds from Adjust Raw. **Adjust Raw is never modified.** |
-| Keeping Adjust Clean current | **Every dashboard load or refresh** builds Adjust Clean if it is missing and rebuilds it whenever Adjust Raw (or the old `Adjust Current` tab) has changed since the last build, whether or not the pacing tabs read it yet. Nothing has to be run by hand. It is also rebuilt by an **hourly trigger** (`refreshAdjustClean`, which keeps an existing tab current), by *Pacing dashboard → Clean Adjust Raw*, by *Fix this workbook* and by *Validate*. If a rebuild cannot run, the banner says (critical) that K, L and X still show the previous build. |
+| Keeping Adjust Clean current | **Every dashboard load or refresh** builds Adjust Clean if it is missing and rebuilds it whenever Adjust Raw (or the old `Adjust Current` tab) has changed since the last build, or a new day has started, whether or not the pacing tabs read it yet. Nothing has to be run by hand. It is also rebuilt by an **hourly trigger** (`refreshAdjustClean`, which keeps an existing tab current), by *Pacing dashboard → Clean Adjust Raw*, by *Fix this workbook* and by *Validate*. If a rebuild cannot run, the banner says (critical) that K, L and X still show the previous build. |
 | Raw manual numbers stored as text | A mirror is left as it is. Row 24 and the dashboard read the text numbers with VALUE(SUBSTITUTE()). A pasted Raw manual is converted, with a backup. |
 | Adjust CSV import | Refuses a mirrored Adjust Raw: paste the export into the source workbook instead. In a file where Adjust Raw is a pasted table, the import writes into it. |
 | Step 3 (Supermetrics formula) | Refuses a mirrored Raw data. |
 | A broken or loading import | `#REF!` or `Loading…` in A1, a missing tab, a moved header, or a Raw data with no rows while Adjust and GA4 have some each raise a critical banner. *Validate* then starts with "CHECK — n critical data issue(s)" before the match count. |
 
-**What Adjust Clean holds: only the rows the dashboard and row 28 count.** So a SUM of its installs,
-bookings or revenue column equals the dashboard. On the 5 Oct copy:
+**What Adjust Clean holds: only the rows the dashboard counts under *All*.** So a SUM of its installs,
+bookings or revenue column equals the dashboard's *All* view with Both portals, and row 28 of the two
+tabs together when C2 is yesterday. Its days run from SFQC B2 to C2 or yesterday, whichever is later.
+**Today is left out until it is over**: an Adjust feed that already has part of today would otherwise
+put those installs in Adjust Clean but not on the dashboard or the tabs. When the day rolls over, the
+next dashboard load or hourly run adds it. On the 5 Oct copy:
 
 | Adjust installs | |
 |---|---:|
@@ -120,7 +126,9 @@ bookings or revenue column equals the dashboard. On the 5 Oct copy:
 | **Adjust Clean = dashboard = L28 (SFQC 37,526 + AAQC 39,494)** | **77,020** |
 
 The rows left out are listed, with their totals, at the top of the "Adjust Raw cleanup log" tab: rows
-with no readable day, rows that are not paid (Organic), and rows dated before their line's first day.
+for an app other than Six Flags / Aquarabia, rows with no readable day, rows that are not paid
+(Organic), rows outside the report's days (today, or before B2), and rows dated before their line's
+first day.
 
 What Adjust Clean corrects:
 

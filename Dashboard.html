@@ -1838,8 +1838,10 @@ function vMethod(){
         ', which Fix this workbook points the pacing formulas at')+
       '. In it, dates stored as text or day/month-swapped '+
       'are put on their real day, rows repeated by overlapping imports are kept once, and exports pasted a second '+
-      'time under the other app (cross-app copies) are removed. Adjust Clean is rebuilt every hour, by <b>Clean '+
-      'Adjust Raw</b>, by <b>Fix this workbook</b> and whenever this dashboard finds Adjust Raw changed; the dashboard '+
+      'time under the other app (cross-app copies) are removed. It holds only the rows counted under <b>All</b> '+
+      '(today is added once it is over), so a SUM of its installs column equals the Both / All card. '+
+      'Adjust Clean is rebuilt every hour, by <b>Clean '+
+      'Adjust Raw</b>, by <b>Fix this workbook</b> and whenever this dashboard finds Adjust Raw changed or a new day started; the dashboard '+
       'applies the same corrections as it reads'+(tabsReadClean()===false?'.':', so the two agree once Adjust Clean '+
         'has been rebuilt (until then the banner says it is out of date).'),
       n0(a.adjInst)+' installs · '+n0(a.bookings)+' bookings · '+n0(a.adjRev)+' SAR.')+

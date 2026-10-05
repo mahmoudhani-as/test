@@ -554,6 +554,50 @@ function fixStage(files) {
     'a failed rebuild keeps the previous Adjust Clean (' + (cleanSh.getLastRow() - 1) + ' rows) and forgets its fingerprint');
   ctx.getPacingDashboardData();
   check(cleanSh.getLastRow() === rowsBefore + 1 && ctx.__props.adjustCleanFp != null, 'the next dashboard load rebuilds it');
+
+  // ---- a plain SUM of Adjust Clean equals the dashboard's "All" (Both portals, every line):
+  //      today's partial day, an app that is neither portal and a day before B2 are in Adjust
+  //      Raw, and the fixture already starts two days before B2
+  var tz0 = ss.getSpreadsheetTimeZone(), today0 = formatDate(new Date(), tz0, 'yyyy-MM-dd');
+  adj.v.push([fx.D(today0), 'Facebook Installs', 'SFQC_Meta_App_iOS', 'Six Flags', 700, 700, 30, 341, 7, 'Meta', 'Conversion']);
+  adj.v.push([fx.D('2026-09-11'), 'Facebook Installs', 'SFQC_Meta_App_iOS', 'Qiddiya City', 900, 900, 40, 120, 9, 'Meta', 'Conversion']);
+  adj.v.push([fx.D('2026-06-20'), 'Snapchat Installs', 'SFQC_snapchat_awr_Reach', 'Six Flags', 300, 300, 5, 55, 3, 'Snapchat', 'Awareness']);
+  var pAll = ctx.getPacingDashboardData();                    // Adjust Raw changed: rebuilds Adjust Clean
+  function n0(x) { return typeof x === 'number' ? x : Number(String(x).replace(/,/g, '')) || 0; }
+  var sumC = { inst: 0, bookings: 0, revenue: 0 }, sumD = { inst: 0, bookings: 0, revenue: 0 }, strays = 0;
+  // the window worked out here, not by the code under test: B2 to C2 or yesterday, whichever is later
+  var sfP = ss.getSheetByName(PACING_TABS[0]), y0 = new Date(today0 + 'T00:00:00Z');
+  y0.setUTCDate(y0.getUTCDate() - 1);
+  var c2 = formatDate(sfP.cell(2, 3), tz0, 'yyyy-MM-dd'), yIso = y0.toISOString().slice(0, 10);
+  var win0 = { from: formatDate(sfP.cell(2, 2), tz0, 'yyyy-MM-dd'), till: c2 > yIso ? c2 : yIso };
+  cleanSh.v.slice(1).forEach(function (r) {
+    sumC.inst += n0(r[7]); sumC.bookings += n0(r[8]); sumC.revenue += n0(r[4]);
+    var dd = r[0] instanceof Date ? formatDate(r[0], tz0, 'yyyy-MM-dd') : '';
+    if (!dd || dd < win0.from || dd > win0.till || !/^(six flags|aquarabia)$/i.test(String(r[3]))) strays++;
+  });
+  pAll.adjust.forEach(function (e) { sumD.inst += e.inst; sumD.bookings += e.bookings; sumD.revenue += e.revenue; });
+  check(close(sumC.inst, sumD.inst) && close(sumC.bookings, sumD.bookings) && Math.abs(sumC.revenue - sumD.revenue) < 0.05,
+    'SUM of Adjust Clean = the dashboard\'s All: ' + sumC.inst + ' / ' + sumD.inst + ' installs, ' + sumC.bookings + ' / ' +
+    sumD.bookings + ' bookings, ' + Math.round(sumC.revenue) + ' / ' + Math.round(sumD.revenue) + ' revenue');
+  check(strays === 0 && win0.till < today0, 'Adjust Clean holds no row from today (' + today0 + '), before B2 (' + win0.from +
+    ') or for another app (' + strays + ')');
+  var wAll = loadClient(files.html, pAll), kAll = kpis(wAll, 'BOTH');
+  wAll.close();
+  check(n0(kAll['Installs — Adjust']) === Math.round(sumC.inst) && n0(kAll['Bookings — Adjust']) === Math.round(sumC.bookings),
+    'the page\'s Both / All cards show the same: ' + kAll['Installs — Adjust'] + ' installs, ' + kAll['Bookings — Adjust'] + ' bookings');
+  var logT = ss.getSheetByName('Adjust Raw cleanup log').v.map(function (r) { return r.join(' '); }).join('\n');
+  check(/Left out of "Adjust Clean": 1 rows dated after/.test(logT) && /rows for an app other than/.test(logT) &&
+    /rows dated before the report starts/.test(logT), 'the cleanup log lists the rows left out: today, another app, before B2');
+  // the day rolling over is a change: the next load or hourly run takes the new day in
+  var fpNow = ctx.__props.adjustCleanFp, realY = ctx._yesterday;
+  ctx._yesterday = function () { return today0; };
+  check(ctx._adjustFingerprint_(adj.getDataRange().getValues(), ss) !== fpNow, 'a new day changes the fingerprint, so Adjust Clean is rebuilt to take it in');
+  ctx.getPacingDashboardData();
+  var hasToday = cleanSh.v.slice(1).some(function (r) { return r[0] instanceof Date && formatDate(r[0], tz0, 'yyyy-MM-dd') === today0; });
+  ctx._yesterday = realY;
+  check(hasToday, 'once that day is over, the next dashboard load adds its rows to Adjust Clean');
+  adj.v.splice(adj.v.length - 3, 3);
+  ctx.getPacingDashboardData();
   ctx._refreshAdjustClean_ = realRefresh;
 
   var qc = '';

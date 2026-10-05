@@ -1118,8 +1118,8 @@ function getPacingDashboardData(opts) {
   var av = ash ? ash.getDataRange().getValues() : [[]];
   var cleanState = '', cleanErr = '';
   // The cleaning runs on every dashboard load and refresh: "Adjust Clean" is built the first
-  // time and rebuilt whenever Adjust Raw has changed since the last build — whether or not
-  // the pacing tabs read it yet (they do once Fix this workbook has run).
+  // time and rebuilt whenever Adjust Raw (or the day) has changed since the last build —
+  // whether or not the pacing tabs read it yet (they do once Fix this workbook has run).
   if (!asTab && ash && (!adjCleanSh ||
       PropertiesService.getDocumentProperties().getProperty('adjustCleanFp') !== _adjustFingerprint_(av, ss))) {
     try {
@@ -1290,7 +1290,7 @@ function getPacingDashboardData(opts) {
   } else if (tabsClean && !asTab && cd && adjCleanSh) {
     // a rebuild that failed half-way (Adjust Clean cleared, the rows never written) leaves it short
     var have = Math.max(0, adjCleanSh.getLastRow() - 1);
-    var want = cd.data.rows.filter(function (row) { return !_adjustLeftOut_(row); }).length;
+    var want = cd.data.rows.filter(function (row) { return !_adjustLeftOut_(row, { from: from, till: loadTill }); }).length;
     if (have < want) {
       issue('crit', '"' + CFG.ADJUST_CLEAN + '" holds ' + count(have) + ' rows where Adjust Raw gives ' + count(want) +
         ' (its last rebuild did not finish), so pacing columns K, L and X and row 28 are understated. Run ' +
@@ -2088,11 +2088,29 @@ function _adjustDropMislabelled_(data, log) {
   return runRows + twinRows;
 }
 
-/** Why a corrected Adjust row is not counted on any pacing row ('' when it is counted). */
-function _adjustLeftOut_(row) {
+/**
+ * The days the dashboard's "All" counts: SFQC Pacing_Daily B2 to C2 or yesterday, whichever is
+ * later (today is left out until it is over, as C2 = TODAY()-1 does). getPacingDashboardData
+ * loads exactly this window, and Adjust Clean holds exactly these days.
+ */
+function _reportWindow_(ss) {
+  var tz = ss.getSpreadsheetTimeZone(), pac = ss.getSheetByName(CFG.PACING);
+  var from = pac ? _day(pac.getRange('B2').getValue(), tz) : '';
+  var till = pac ? _day(pac.getRange('C2').getValue(), tz) : '';
+  return { from: from, till: _later(till, _yesterday(tz)) };
+}
+
+/**
+ * Why a corrected Adjust row is not counted by the dashboard's "All" ('' when it is counted) —
+ * the same tests, in the same order, as the dashboard's own loop. win = _reportWindow_().
+ */
+function _adjustLeftOut_(row, win) {
+  if (!_matchBrand(CFG.ADJUST_APP, row.v[3])) return 'noapp';
   if (!row.day) return 'nodate';
   var line = _adjustLine(row.v[9], row.v[10]);
   if (!line) return 'organic';
+  if (win && win.from && row.day < win.from) return 'before';
+  if (win && win.till && row.day > win.till) return 'after';
   var fl = _adjustFloor(LINE_BY_KEY[line]);
   return fl && row.day < fl ? 'prefloor' : '';
 }
@@ -2103,7 +2121,7 @@ function _adjustLeftOut_(row) {
  * tests), in order, every column, and the old "Adjust Current" tab it folds in. ADJUST_CLEAN_RULES
  * is bumped whenever the cleaner's rules change, so the next hourly run rebuilds Adjust Clean.
  */
-var ADJUST_CLEAN_RULES = '3';                  // 3: only counted rows are written
+var ADJUST_CLEAN_RULES = '4';   // 3: only counted rows are written; 4: and only the days "All" counts
 function _adjustFingerprint_(values, ss) {
   var h = 0, rows = 0;
   function mix(t) { for (var c = 0; c < t.length; c++) h = (h * 31 + t.charCodeAt(c)) | 0; }
@@ -2119,7 +2137,10 @@ function _adjustFingerprint_(values, ss) {
     mix('#legacy\n');
     lg.getDataRange().getValues().forEach(function (r) { mix(r.map(cell).join('|') + '\n'); });
   }
-  return ADJUST_CLEAN_RULES + ':' + rows + ':' + h;
+  // the window is part of it: when the day rolls over (or B2:C2 change) Adjust Clean takes in
+  // the new day at the next dashboard load or hourly run, even if Adjust Raw has not changed
+  var win = ss ? _reportWindow_(ss) : { from: '', till: '' };
+  return ADJUST_CLEAN_RULES + ':' + win.from + '..' + win.till + ':' + rows + ':' + h;
 }
 /** Adjust Clean is read by the pacing tabs and no longer matches Adjust Raw. */
 function _adjustCleanStale_(ss) {
@@ -2133,9 +2154,9 @@ function _adjustCleanStale_(ss) {
 /**
  * Rebuilds "Adjust Clean" from Adjust Raw (and any old "Adjust Current" rows).
  *   force: always (Fix this workbook, Clean Adjust Raw, the CSV import — all gated); creates the tab.
- *   not forced (dashboard load, hourly trigger): only when the pacing tabs read Adjust Clean and
- *   Adjust Raw has changed since the last build; never creates the tab, and decides that before
- *   taking the script lock.
+ *   not forced (dashboard load, hourly trigger): only when Adjust Raw or the report window (a new
+ *   day) has changed since the last build; never creates the tab (the dashboard forces the first
+ *   build), and decides that before taking the script lock.
  * waitMs: how long to wait for another run's rebuild (default 60 s forced, 5 s not).
  * Returns { rebuilt: true, log, cd, rows, at }, { current: true, at } when nothing had changed,
  * { unused: true } when the tabs do not read Adjust Clean, or { busy: true } when another run
@@ -2175,16 +2196,21 @@ function _refreshAdjustClean_(force, waitMs) {
     // until the write has finished the stored fingerprint matches nothing, so a write that fails
     // or times out is retried by the next dashboard load or hourly run, forced or not
     props.deleteProperty('adjustCleanFp');
-    // Only rows that count go into the tab: organic (incl. Untrusted Devices and WhatsApp
-    // shares), rows dated before their pacing row starts and rows with no readable day are
-    // left out — the formulas would skip them anyway — so SUM of its installs column is the
-    // installs the pacing tabs and the dashboard count.
-    var left = {}, LEFT_WHY = {
+    // Only rows the dashboard's "All" counts go into the tab: rows for another app, organic
+    // (incl. Untrusted Devices and WhatsApp shares), rows outside the report's days (today
+    // until it is over), rows dated before their pacing row starts and rows with no readable
+    // day are left out — the formulas would skip them anyway — so SUM of its installs column
+    // is the installs the dashboard shows under All and row 28 counts.
+    var win = _reportWindow_(ss), left = {}, LEFT_WHY = {
+      noapp: 'for an app other than ' + Object.keys(CFG.ADJUST_APP).map(function (b) {
+        return CFG.ADJUST_APP[b]; }).join(' / ') + ' (column D)',
+      nodate: 'with no readable day',
       organic: 'not paid (Organic, Untrusted Devices, WhatsApp shares)',
-      prefloor: 'before their pacing row starts (' + CFG.ADJUST_FROM + ' on the conversion rows)',
-      nodate: 'no readable day' };
+      before: 'dated before the report starts (SFQC Pacing_Daily B2, ' + win.from + ')',
+      after: 'dated after ' + win.till + ' (today and later: a day is added once it is over)',
+      prefloor: 'dated before their pacing row starts (' + CFG.ADJUST_FROM + ' on the conversion rows)' };
     var counted = cd.data.rows.filter(function (row) {
-      var v = row.v, why = _adjustLeftOut_(row);
+      var v = row.v, why = _adjustLeftOut_(row, win);
       if (!why) return true;
       var e = left[why] || (left[why] = { rows: 0, inst: 0, book: 0, rev: 0 });
       e.rows++; e.inst += _cellNum(v[7]); e.book += _cellNum(v[8]); e.rev += _cellNum(v[4]);
@@ -2197,8 +2223,9 @@ function _refreshAdjustClean_(force, waitMs) {
     var rows = _adjustWrite_(dst, { rows: counted, width: cd.data.width });
     var at = Utilities.formatDate(new Date(), tz, 'yyyy-MM-dd HH:mm');
     dst.getRange('M1').setValue('Built by the script from "' + CFG.ADJUST + '" at ' + at + ' — only the rows ' +
-      'the pacing tabs count (copies, duplicates, organic and pre-launch rows left out; see "Adjust Raw ' +
-      'cleanup log"). Do not edit; the pacing tabs read this tab.');
+      'the dashboard counts under All, ' + win.from + ' to ' + win.till + ' (copies, duplicates, organic, other ' +
+      'apps, today and pre-launch rows left out; see "Adjust Raw cleanup log"). Do not edit; the pacing tabs ' +
+      'read this tab.');
     props.setProperty('adjustCleanFp', fp);
     props.setProperty('adjustCleanAt', at);
     _writeLog(ss, 'Adjust Clean · ' + at, log);   // every rebuild, so the log never lags the tab
