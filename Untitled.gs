@@ -979,6 +979,10 @@ function buildValidationTab() {
 function repairPacingFormulas() {
   requireSheetUser_();
   var ss = SpreadsheetApp.getActive();
+  // the formulas filter on Raw data P (objective) and Q (portal): make sure both columns exist
+  // first (each writes only its own column, outside an IMPORTRANGE of A:O), or every media row is 0
+  objectiveColumn_(ss);
+  portalColumn_(ss);
   var spec = buildPacingSpec_();
   writeFormulas_(ss, spec);
   SpreadsheetApp.flush();

@@ -232,13 +232,20 @@ function who_() {
  * instead of the web-link one.
  */
 function requireSheetUser_() {
+  // Inside the spreadsheet (its menus, or a dialog opened from them) the sheet's UI exists;
+  // from the web-app link it never does. That decides on its own, so menu commands work
+  // whether or not the email permission in appsscript.json has been granted.
+  try { SpreadsheetApp.getUi(); return; } catch (eUi) { /* not in the sheet's UI */ }
+  // Apps Script editor's Run button and the hourly trigger: the script runs as the person
+  // who started it, so the two accounts are the same.
   var effective = '', err = null;
   try { effective = Session.getEffectiveUser().getEmail(); } catch (e) { err = e; }
   if (!effective) {
-    throw new Error('The script cannot read which Google account is running it' +
-      (err ? ' (' + (err.message || err) + ')' : '') + '. In the Apps Script editor open Project Settings, tick ' +
-      '"Show appsscript.json", replace appsscript.json with the one from FIXES.md (it adds the userinfo.email ' +
-      'scope), save, reload the sheet, run this again and accept the authorisation prompt.');
+    throw new Error('Run this from the spreadsheet\'s menus (Qiddiya Setup or Pacing dashboard). From the ' +
+      'Apps Script editor it needs to read which Google account is running it' +
+      (err ? ' (' + (err.message || err) + ')' : '') + ': open Project Settings, tick "Show appsscript.json", ' +
+      'replace appsscript.json with the one from FIXES.md (it adds the userinfo.email scope), save and run ' +
+      'it again, accepting the authorisation prompt.');
   }
   var active = '';
   try { active = Session.getActiveUser().getEmail(); } catch (e) {}
@@ -664,7 +671,7 @@ function _brandCell(v) {
  * does NOT follow this rule: it files every name that does not start with "SFQC" under AAQC.
  * Plain regular expressions that read the same in JavaScript and in Sheets' REGEXMATCH (RE2).
  */
-var PORTAL_TOKENS = { SFQC: 'SFQC|SIX[ _-]?FLAGS', SFQC_SNAPCHAT: 'FIRST STORY', AAQC: 'AAQC|AQQC|AQC[-_]|AQUARABIA' };
+var PORTAL_TOKENS = { SFQC: 'SFQC|SIX[ _-]?FLAGS', SFQC_SNAPCHAT: 'FIRST[ _-]?STORY', AAQC: 'AAQC|AQQC|AQC[-_]|AQUARABIA' };
 function _campaignPortal_(plat, camp) {
   var u = String(camp == null ? '' : camp).toUpperCase();
   if (new RegExp(PORTAL_TOKENS.SFQC).test(u) ||
@@ -877,7 +884,15 @@ function getPacingDashboardData(opts) {
   // the portal: column Q once Fix this workbook has added it (what the pacing formulas filter
   // on), otherwise the same rule worked out here
   var portalIdx = _portalIndex_(rawHdr), hasPortal = portalIdx >= 0;
-  var tabsUseB = !hasPortal || !reads.portal;
+  var tabsUseB = !reads.portal;
+  if (reads.portal && !hasPortal) {
+    issue('crit', 'The pacing formulas filter on Raw data column ' + CFG.PORTAL_COL + ' (Portal), but that column has ' +
+      'no "Portal" header, so media rows 7-21, 23 and 25 count 0. Run Qiddiya Setup → Fix this workbook.');
+  }
+  if (reads.objective && !hasObjective) {
+    issue('crit', 'The pacing formulas filter on Raw data column ' + CFG.OBJECTIVE_COL + ' (Objective), but that column ' +
+      'has no "Objective" header, so media rows 7-21, 23 and 25 count 0. Run Qiddiya Setup → Fix this workbook.');
+  }
   function rowPortal(r) { return hasPortal ? _brandCell(r[portalIdx]) : _rawPortal_(r[0], r[2], r[1]); }
   var unmapped = { spend: 0, names: {} }, offLine = {}, rawBadDates = 0, rawInWindow = 0, crossPortal = {};
   // what Raw data holds per platform | portal (column B) | day, to find Raw manual rows that never reached it
@@ -940,6 +955,7 @@ function getPacingDashboardData(opts) {
   // Raw data's own window ends at O2 ("Till", the source's report window, imported with A:O),
   // else on its last day: Raw manual rows after that are outside it, not missing from it
   var rawTill = (String(rawHdr[14] == null ? '' : rawHdr[14]).trim() === 'Till' && rv[1] && _dateCell(rv[1][14], tz)) || rawLast;
+  var rawFrom = String(rawHdr[13] == null ? '' : rawHdr[13]).trim() === 'From' && rv[1] && _dateCell(rv[1][13], tz) || '';
   if (unmapped.spend > 0.5) {
     var top = Object.keys(unmapped.names).sort(function (a, b) {
       return unmapped.names[b] - unmapped.names[a];
@@ -1065,7 +1081,8 @@ function getPacingDashboardData(opts) {
   Object.keys(mGroups).forEach(function (k) {
     var g = mGroups[k], want = 0, have = rawSeen[k];
     g.forEach(function (m) { want += _valueNum(m.r[6]); });
-    var there = (rawTill && g[0].d > rawTill) || (have != null && have + 0.01 >= want * 0.995);
+    var there = (rawTill && g[0].d > rawTill) || (rawFrom && g[0].d < rawFrom) ||
+      (have != null && have + 0.01 >= want * 0.995);
     g.forEach(function (m) {
       reconRow(m.b, 'manual', m.d, m.r[5], m.r[6], there ? 'not_inmobi' : 'manual_missing');
       if (!there) { missing.push(m); missingSpend += _valueNum(m.r[6]); }
@@ -1100,13 +1117,16 @@ function getPacingDashboardData(opts) {
   }
   var av = ash ? ash.getDataRange().getValues() : [[]];
   var cleanState = '', cleanErr = '';
-  if (!asTab && tabsClean && ash) {
-    if (PropertiesService.getDocumentProperties().getProperty('adjustCleanFp') !== _adjustFingerprint_(av, ss)) {
-      try {
-        var rr = _refreshAdjustClean_(false);
-        cleanState = rr.busy ? 'stale' : rr.rebuilt ? 'rebuilt' : '';
-      } catch (eRb) { cleanState = 'stale'; cleanErr = String(eRb && eRb.message || eRb); }
-    }
+  // The cleaning runs on every dashboard load and refresh: "Adjust Clean" is built the first
+  // time and rebuilt whenever Adjust Raw has changed since the last build — whether or not
+  // the pacing tabs read it yet (they do once Fix this workbook has run).
+  if (!asTab && ash && (!adjCleanSh ||
+      PropertiesService.getDocumentProperties().getProperty('adjustCleanFp') !== _adjustFingerprint_(av, ss))) {
+    try {
+      var rr = _refreshAdjustClean_(!adjCleanSh);
+      cleanState = rr.busy ? 'stale' : rr.rebuilt ? 'rebuilt' : '';
+      if (rr.rebuilt && !adjCleanSh) { adjCleanSh = ss.getSheetByName(CFG.ADJUST_CLEAN); tabsClean = !!adjCleanSh && reads.clean; }
+    } catch (eRb) { cleanState = 'stale'; cleanErr = String(eRb && eRb.message || eRb); }
   }
   if (ash) {
     _headerProblems(av[0] || [], ADJUST_EXPECT, CFG.ADJUST).forEach(function (p) {
@@ -1270,7 +1290,7 @@ function getPacingDashboardData(opts) {
   } else if (tabsClean && !asTab && cd && adjCleanSh) {
     // a rebuild that failed half-way (Adjust Clean cleared, the rows never written) leaves it short
     var have = Math.max(0, adjCleanSh.getLastRow() - 1);
-    var want = cd.data.rows.filter(function (row) { return row.day; }).length;
+    var want = cd.data.rows.filter(function (row) { return !_adjustLeftOut_(row); }).length;
     if (have < want) {
       issue('crit', '"' + CFG.ADJUST_CLEAN + '" holds ' + count(have) + ' rows where Adjust Raw gives ' + count(want) +
         ' (its last rebuild did not finish), so pacing columns K, L and X and row 28 are understated. Run ' +
@@ -1470,6 +1490,7 @@ function getPacingDashboardData(opts) {
       // stands), Raw data's Objective column and its Portal column (else column B)
       tabsReadClean: tabsClean, tabsReadObjective: reads.objective, tabsReadPortal: reads.portal,
       portalColumn: hasPortal,
+      objectiveTokens: OBJECTIVE_TOKENS,          // the page spells the line rules from these
       health: { issues: issues, noAdjustFeed: Object.keys(noAdjustFeed).sort(), spendGaps: spendGaps },
       sourceCoverage: {
         media: _coverageValues(mediaCoverage),
@@ -2067,13 +2088,22 @@ function _adjustDropMislabelled_(data, log) {
   return runRows + twinRows;
 }
 
+/** Why a corrected Adjust row is not counted on any pacing row ('' when it is counted). */
+function _adjustLeftOut_(row) {
+  if (!row.day) return 'nodate';
+  var line = _adjustLine(row.v[9], row.v[10]);
+  if (!line) return 'organic';
+  var fl = _adjustFloor(LINE_BY_KEY[line]);
+  return fl && row.day < fl ? 'prefloor' : '';
+}
+
 /*
  * Tells whether Adjust Clean is current: changes whenever anything the cleaner reads changes —
  * every Adjust Raw row that is not fully blank (a dateless row splits the runs the cross-app rule
  * tests), in order, every column, and the old "Adjust Current" tab it folds in. ADJUST_CLEAN_RULES
  * is bumped whenever the cleaner's rules change, so the next hourly run rebuilds Adjust Clean.
  */
-var ADJUST_CLEAN_RULES = '2';
+var ADJUST_CLEAN_RULES = '3';                  // 3: only counted rows are written
 function _adjustFingerprint_(values, ss) {
   var h = 0, rows = 0;
   function mix(t) { for (var c = 0; c < t.length; c++) h = (h * 31 + t.charCodeAt(c)) | 0; }
@@ -2115,7 +2145,9 @@ function _refreshAdjustClean_(force, waitMs) {
   var props = PropertiesService.getDocumentProperties();
   if (!force) {
     var ss0 = _ss();
-    if (!ss0.getSheetByName(CFG.ADJUST_CLEAN) || !_pacingReads_(ss0).clean) return { unused: true };
+    // a stale-only rebuild keeps an existing tab current whether or not the pacing tabs read it
+    // yet; creating it is left to forced runs and the dashboard's first load
+    if (!ss0.getSheetByName(CFG.ADJUST_CLEAN)) return { unused: true };
     var fp0 = _adjustFingerprint_(_sheet(CFG.ADJUST).getDataRange().getValues(), ss0);
     if (props.getProperty('adjustCleanFp') === fp0) return { current: true, at: props.getProperty('adjustCleanAt') };
   }
@@ -2143,10 +2175,30 @@ function _refreshAdjustClean_(force, waitMs) {
     // until the write has finished the stored fingerprint matches nothing, so a write that fails
     // or times out is retried by the next dashboard load or hourly run, forced or not
     props.deleteProperty('adjustCleanFp');
-    var rows = _adjustWrite_(dst, cd.data);
+    // Only rows that count go into the tab: organic (incl. Untrusted Devices and WhatsApp
+    // shares), rows dated before their pacing row starts and rows with no readable day are
+    // left out — the formulas would skip them anyway — so SUM of its installs column is the
+    // installs the pacing tabs and the dashboard count.
+    var left = {}, LEFT_WHY = {
+      organic: 'not paid (Organic, Untrusted Devices, WhatsApp shares)',
+      prefloor: 'before their pacing row starts (' + CFG.ADJUST_FROM + ' on the conversion rows)',
+      nodate: 'no readable day' };
+    var counted = cd.data.rows.filter(function (row) {
+      var v = row.v, why = _adjustLeftOut_(row);
+      if (!why) return true;
+      var e = left[why] || (left[why] = { rows: 0, inst: 0, book: 0, rev: 0 });
+      e.rows++; e.inst += _cellNum(v[7]); e.book += _cellNum(v[8]); e.rev += _cellNum(v[4]);
+      return false;
+    });
+    Object.keys(left).forEach(function (k) {
+      log.push(['', 'Left out of "' + CFG.ADJUST_CLEAN + '": ' + left[k].rows + ' rows ' + LEFT_WHY[k],
+        '', left[k].inst + ' installs, ' + left[k].book + ' bookings, ' + Math.round(left[k].rev) + ' revenue']);
+    });
+    var rows = _adjustWrite_(dst, { rows: counted, width: cd.data.width });
     var at = Utilities.formatDate(new Date(), tz, 'yyyy-MM-dd HH:mm');
-    dst.getRange('M1').setValue('Built by the script from "' + CFG.ADJUST + '" at ' + at +
-      ' — do not edit; the pacing tabs read this tab.');
+    dst.getRange('M1').setValue('Built by the script from "' + CFG.ADJUST + '" at ' + at + ' — only the rows ' +
+      'the pacing tabs count (copies, duplicates, organic and pre-launch rows left out; see "Adjust Raw ' +
+      'cleanup log"). Do not edit; the pacing tabs read this tab.');
     props.setProperty('adjustCleanFp', fp);
     props.setProperty('adjustCleanAt', at);
     _writeLog(ss, 'Adjust Clean · ' + at, log);   // every rebuild, so the log never lags the tab

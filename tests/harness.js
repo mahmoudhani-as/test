@@ -252,9 +252,15 @@ function loadServer(files, ss) {
   ctx.__props = store;
   return ctx;
 }
-function putPacing(ss, vals) {
+function putPacing(ss, vals, spec) {
   PACING_TABS.forEach(function (tab) {
     var sh = ss.getSheetByName(tab);
+    // the cells keep their formulas, as on a real tab (the dashboard reads L7's to see which
+    // Adjust tab the formulas read)
+    if (spec && spec[tab]) Object.keys(spec[tab]).forEach(function (a1) {
+      var m = /^([A-Z]+)(\d+)$/.exec(a1);
+      if (spec[tab][a1]) sh.f[m[2] + ',' + (colIndex(m[1]) + 1)] = spec[tab][a1];
+    });
     vals[tab].forEach(function (row, ri) {
       row.forEach(function (v, ci) {
         if (ri === 1 && (ci === 1 || ci === 2)) return;            // keep B2:C2 as dates
@@ -612,9 +618,15 @@ function visitorStage(files) {
   var src = files.gs.map(function (f) { return fs.readFileSync(f, 'utf8'); }).join('\n');
   var pub = [], re = /^function\s+([A-Za-z0-9_$]+)\s*\(/gm, m;
   while ((m = re.exec(src))) if (!/_$/.test(m[1])) pub.push(m[1]);
-  function state(ss, ctx) {
-    return JSON.stringify({ tabs: ss.sheets.map(function (x) { return [x.name, x.hidden, x.v, x.f]; }),
-      props: ctx.__props, triggers: ctx.ScriptApp.getProjectTriggers().length });
+  function state(ss, ctx, derivedOk) {
+    // A dashboard load may build or refresh "Adjust Clean" (a derived copy) and its cleanup
+    // log — that is the "clean on every refresh" behaviour — but must change nothing else.
+    var DERIVED = { 'Adjust Clean': 1, 'Adjust Raw cleanup log': 1 };
+    var props = {};
+    Object.keys(ctx.__props || {}).forEach(function (k) { if (!(derivedOk && /^adjustClean/.test(k))) props[k] = ctx.__props[k]; });
+    return JSON.stringify({ tabs: ss.sheets.filter(function (x) { return !(derivedOk && DERIVED[x.name]); })
+      .map(function (x) { return [x.name, x.hidden, x.v, x.f]; }),
+      props: props, triggers: ctx.ScriptApp.getProjectTriggers().length });
   }
   function asVisitor(ctx) {
     ctx.Session.getEffectiveUser = function () { return { getEmail: function () { return 'owner@example.com'; } }; };
@@ -629,16 +641,17 @@ function visitorStage(files) {
     asVisitor(ctx);
     var wrote = [], leaked = [];
     pub.forEach(function (name) {
-      var before = state(ss, ctx), args = name === 'refreshAdjustClean' ? [{ triggerUid: 1 }] :
+      var derivedOk = name === 'getPacingDashboardData';
+      var before = state(ss, ctx, derivedOk), args = name === 'refreshAdjustClean' ? [{ triggerUid: 1 }] :
         name === 'step1b_addQueries' ? ['x'] : /^(importAdjustCsv|replaceAdjustCurrent)$/.test(name) ? [[[['day']]]] : [];
       var out;
       try { out = ctx[name].apply(null, args); } catch (e) { out = undefined; }
-      if (state(ss, ctx) !== before) wrote.push(name);
+      if (state(ss, ctx, derivedOk) !== before) wrote.push(name);
       if (typeof out === 'string' && out.indexOf('@') >= 0) leaked.push(name);
       if (name === 'refreshAdjustClean' && out !== undefined) leaked.push(name + ' returned data');
     });
     check(!wrote.length, st[0] + ': none of the ' + pub.length + ' public functions changes the workbook, its properties or ' +
-      'triggers' + (wrote.length ? ' — ' + wrote.join(', ') : ''));
+      'triggers (a dashboard load only builds/refreshes "Adjust Clean")' + (wrote.length ? ' — ' + wrote.join(', ') : ''));
     check(!leaked.length, st[0] + ': no account name or Adjust data is returned' + (leaked.length ? ' — ' + leaked.join(', ') : ''));
   });
   // the gate tells an unreadable account (an appsscript.json without userinfo.email) from a visitor
@@ -778,8 +791,9 @@ function runVersion(label, files, opts) {
 
 /* Evaluate the tab from the sheet as it is now, then compare server and page with it. */
 function recheck(label, ctx, ss, files) {
-  var vals = evaluatePacing(sheetToWb(ss), ctx.buildPacingSpec_());
-  putPacing(ss, vals);
+  var spec = ctx.buildPacingSpec_();
+  var vals = evaluatePacing(sheetToWb(ss), spec);
+  putPacing(ss, vals, spec);
   var p = ctx.getPacingDashboardData();
   ctx.validateDashboard();
   var vsh = ss.getSheetByName('Dashboard Validation');
@@ -819,8 +833,9 @@ function main() {
   var msg = cur.ctx.cleanAdjustRaw();
   console.log(msg.split('\n').map(function (l) { return '   ' + l; }).join('\n'));
   var wb2 = sheetToWb(cur.ss);
-  var vals2 = evaluatePacing(wb2, cur.ctx.buildPacingSpec_());
-  putPacing(cur.ss, vals2);
+  var spec2 = cur.ctx.buildPacingSpec_();
+  var vals2 = evaluatePacing(wb2, spec2);
+  putPacing(cur.ss, vals2, spec2);
   var p2 = cur.ctx.getPacingDashboardData();
   cur.ctx.validateDashboard();
   var vsh2 = cur.ss.getSheetByName('Dashboard Validation');

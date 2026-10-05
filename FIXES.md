@@ -16,7 +16,10 @@ setup menu and the pacing formulas. `Dashboard.html` is the page, `appsscript.js
 5. **Raw data column B files every campaign whose name does not start with "SFQC" under Aquarabia**,
    including Six Flags' $50,000 "First Story" takeover on 4 Oct. V4 now takes the portal from the
    campaign name, in Raw data column Q (section 3).
-6. **A few fixes belong in the source workbook**, which V4 imports from: TikTok purchases are counted
+6. **Adjust Clean holds exactly what is counted.** Its installs, bookings and revenue columns add up
+   to the dashboard and row 28 (77,020 installs on the 5 Oct copy, against 84,639 in Adjust Raw). It is
+   rebuilt **every time the dashboard loads or refreshes** if Adjust Raw has changed (section 3).
+7. **A few fixes belong in the source workbook**, which V4 imports from: TikTok purchases are counted
    twice there, and Raw manual rows above row 50 never reach Raw data (section 6).
 
 Every counting rule now lives in `Code.gs`, and the pacing formulas are generated from the same rules,
@@ -97,11 +100,27 @@ the script works around the mirrors:
 | Each media row's objective | Raw data **column P** (`CFG.OBJECTIVE_COL`), outside the imported A:O. P1 = "Objective", plus one ARRAYFORMULA in P2 generated from `OBJECTIVE_TOKENS`. Leave column P empty below P2. |
 | Each media row's portal | Raw data **column Q** (`CFG.PORTAL_COL`), also outside A:O. Q1 = "Portal", plus one ARRAYFORMULA in Q2 generated from `PORTAL_TOKENS`: a name containing SFQC or Six Flags (on Snapchat also First Story) is SFQC; AAQC, AQQC, AQC- / AQC_ or Aquarabia is AAQC; any other name keeps column B, and UNMAPPED when B is neither. **Why:** the source sets column B with "starts with SFQC, else AAQC" (L8). The media rows and C39 filter on Q, and the dashboard applies the same rule. On the live copy this moves only "DNU SFQC-…" (X, $387) from AAQC to SFQC row 20; once the source window passes 4 Oct, the $50,000 "First Story 4/10 ARB" takeover lands on SFQC row 7. |
 | Corrected Adjust data | The pacing formulas (K, L, X and C42–C44) read **Adjust Clean**, a tab the script owns and rebuilds from Adjust Raw. **Adjust Raw is never modified.** |
-| Keeping Adjust Clean current | It is rebuilt by an **hourly trigger** (`refreshAdjustClean`), by *Pacing dashboard → Clean Adjust Raw*, by *Fix this workbook*, by *Validate*, and by the dashboard whenever it finds Adjust Raw (or the old `Adjust Current` tab) has changed since the last build. The hourly run and the dashboard rebuild it only while the pacing formulas read it. If a rebuild cannot run, the banner says (critical) that K, L and X still show the previous build. |
+| Keeping Adjust Clean current | **Every dashboard load or refresh** builds Adjust Clean if it is missing and rebuilds it whenever Adjust Raw (or the old `Adjust Current` tab) has changed since the last build, whether or not the pacing tabs read it yet. Nothing has to be run by hand. It is also rebuilt by an **hourly trigger** (`refreshAdjustClean`, which keeps an existing tab current), by *Pacing dashboard → Clean Adjust Raw*, by *Fix this workbook* and by *Validate*. If a rebuild cannot run, the banner says (critical) that K, L and X still show the previous build. |
 | Raw manual numbers stored as text | A mirror is left as it is. Row 24 and the dashboard read the text numbers with VALUE(SUBSTITUTE()). A pasted Raw manual is converted, with a backup. |
 | Adjust CSV import | Refuses a mirrored Adjust Raw: paste the export into the source workbook instead. In a file where Adjust Raw is a pasted table, the import writes into it. |
 | Step 3 (Supermetrics formula) | Refuses a mirrored Raw data. |
 | A broken or loading import | `#REF!` or `Loading…` in A1, a missing tab, a moved header, or a Raw data with no rows while Adjust and GA4 have some each raise a critical banner. *Validate* then starts with "CHECK — n critical data issue(s)" before the match count. |
+
+**What Adjust Clean holds: only the rows the dashboard and row 28 count.** So a SUM of its installs,
+bookings or revenue column equals the dashboard. On the 5 Oct copy:
+
+| Adjust installs | |
+|---|---:|
+| Adjust Raw, whole column | 84,639 |
+| − cross-app copy (section 4) | −3,924 |
+| − rows repeated by overlapping imports | −2,315 |
+| − Untrusted Devices (not paid: Organic) | −917 |
+| − WhatsApp Organic Share (not paid: Organic) | −161 |
+| − rows before their pacing line starts (2 Jul floor) | −302 |
+| **Adjust Clean = dashboard = L28 (SFQC 37,526 + AAQC 39,494)** | **77,020** |
+
+The rows left out are listed, with their totals, at the top of the "Adjust Raw cleanup log" tab: rows
+with no readable day, rows that are not paid (Organic), and rows dated before their line's first day.
 
 What Adjust Clean corrects:
 
@@ -117,7 +136,7 @@ Every rebuild rewrites the "Adjust Raw cleanup log" tab with each correction. A 
 old rows and then trims what is left, so a failed write keeps the previous copy and is retried by the
 next dashboard load or hourly run; a short Adjust Clean raises a critical banner. The dashboard reads
 Adjust Raw through the same code in memory, so its Adjust figures are right even before *Fix this
-workbook* has run. *Validate* reads what the formulas read (Adjust Clean after *Fix*).
+workbook* has run (until then the pacing tabs still read Adjust Raw, and the banner says so). *Validate* reads what the formulas read (Adjust Clean after *Fix*).
 
 ## 4. The cross-app copy in Adjust Raw (rows 9861–10911)
 
@@ -150,20 +169,22 @@ These included the old *Undo everything* (it replaced Raw data with the 7 Aug ba
 *Fix this workbook*, the formula reverts and *Check the setup*.
 
 Now every menu function, and every function that imports, exports or writes your source or pacing tabs,
-starts with `requireSheetUser_()`. It runs only when the person running it is the account the script
-runs as: from the sheet's menus, the editor or a trigger. A visitor using the web link gets "This can
+starts with `requireSheetUser_()`. Run from the spreadsheet's menus it always goes through (the sheet's
+menus cannot be reached from the web link). Run from the editor or a trigger, it goes through only when
+the person running it is the account the script runs as. A visitor using the web link gets "This can
 only be run from the spreadsheet…". Two paths stay open, and neither can change a number: a dashboard
-load, and `refreshAdjustClean` (the hourly trigger's handler). Both only rebuild an existing Adjust
-Clean that the pacing formulas read, when Adjust Raw has changed, with the same result every time, and
-`refreshAdjustClean` returns nothing. The test suite has an anonymous visitor call all 62 public
+load, and `refreshAdjustClean` (the hourly trigger's handler). A dashboard load builds or rebuilds
+Adjust Clean from Adjust Raw when Adjust Raw has changed; the hourly handler only refreshes an existing
+Adjust Clean. Both give the same result every time, and `refreshAdjustClean` returns nothing. The test suite has an anonymous visitor call all 62 public
 functions before and after *Fix*: nothing in the workbook, its properties or its triggers changes, and
-no Adjust data or account name comes back. The dashboard itself still loads from the link, and
+no Adjust data or account name comes back (a dashboard load may only build or refresh Adjust Clean and
+its log). The dashboard itself still loads from the link, and
 **anyone with the link can still see the numbers**. Change `access` if that is not intended.
 
 Two scopes were added: `userinfo.email` (the guard compares emails) and `script.scriptapp` (the hourly
-trigger). **Everyone who uses the menus must authorise once more.** Without the new manifest the script
-cannot read the account, and every menu item says "The script cannot read which Google account is
-running it…" (section 6, step 2). You must also **deploy a new version of the web app** (section 6,
+trigger). **Everyone who uses the menus must authorise once more.** The menus work with the old manifest
+too, but the hourly trigger, and anything run from the editor, need the new one; without it, those say
+"Run this from the spreadsheet's menus… replace appsscript.json" (section 6, step 2). You must also **deploy a new version of the web app** (section 6,
 step 6). Until then the link runs the old, unguarded code.
 
 ## 6. Install
@@ -177,8 +198,9 @@ rebuilt once, on the first dashboard load or hourly run, because its fingerprint
 1. Open V4 → **Extensions → Apps Script**. Replace **Code.gs**, **Untitled.gs** and **Dashboard.html**
    with the files in this folder.
 2. **Project Settings** (gear icon) → tick **Show "appsscript.json" manifest file in editor**. Back in the
-   editor, open `appsscript.json`, replace its contents with this folder's file, and save. If a menu
-   item later says "The script cannot read which Google account is running it", this step was skipped.
+   editor, open `appsscript.json`, replace its contents with this folder's file, and save. If something
+   run from the editor later says "replace appsscript.json", this step was skipped. (The menus work
+   either way.)
 3. Reload the spreadsheet. The **Qiddiya Setup** and **Pacing dashboard** menus appear.
 4. **Qiddiya Setup → Fix this workbook (one run).** Google asks you to authorise the new permissions.
    Allow them, then run it again if it stopped there. It does the following:
@@ -205,8 +227,8 @@ rebuilt once, on the first dashboard load or hourly run, because its fingerprint
 **From then on**
 
 - **Adjust:** paste new Adjust exports into the source workbook's Adjust Raw, as today. Adjust Clean
-  follows within the hour, or straight away with *Pacing dashboard → Clean Adjust Raw*, or when the
-  dashboard is opened.
+  follows the next time the dashboard is opened or refreshed, or within the hour, or straight away with
+  *Pacing dashboard → Clean Adjust Raw*. Nothing has to be run from the dashboard link.
 - **Raw data columns P and Q:** leave the formulas in P2 and Q2 alone, and the cells below them empty.
   If Raw data is ever a pasted table, paste A:O only.
 - **Rule changes:** after editing `OBJECTIVE_TOKENS`, `PORTAL_TOKENS` or any other rule in Code.gs,
@@ -355,7 +377,8 @@ shows ROAS 4.34×, CPI $16.33 and CPA $79.90.
     The restored formulas ignore them, so you can delete them by hand.
   - The dashboard reads from the formulas what the tabs count. After Undo it says so: critical banners
     that the tabs read Adjust Raw as it stands and file "DNU SFQC-…" by column B, and a note that they
-    do not read column P. It stops rebuilding Adjust Clean.
+    do not read column P. Opening the dashboard still keeps Adjust Clean current, which the restored
+    formulas do not read.
   - Later runs of *Fix this workbook* make no new pacing backups, so Undo always goes back to the tabs
     as they were before the first fix.
 - **Install the original doc formulas (not an undo)** installs `PACING_ALL`, the formula set from the
@@ -548,6 +571,8 @@ Checks run on the typed copy of the live workbook, outside the repo:
 
 - *Fix this workbook*, then *Validate*: 350 compared, 350 match. The page against the tabs: 0 differ.
   The column-Q formula, read independently, equals Code.gs on every row.
+- Adjust Clean after *Fix*: 7,777 rows whose columns add up to the dashboard: 77,020 installs (SFQC
+  37,526, AAQC 39,494), 8,889 bookings.
 - An independent Python recount from the raw rows, with the portal taken from the name: 416 pacing
   cells, 0 differ.
 - A simulation of V4's IMPORTRANGE tabs: 0 writes into imported columns, the Q formula agrees with
