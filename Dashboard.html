@@ -1562,11 +1562,49 @@ function reconPanel(){
       'stored as text and misses InMobi kept only in the hidden backup tab. This table does each step for you; '+
       'spend in the tab column is as typed (X in SAR).</span></div></div></div>';
 }
+var RECON_ADJ_WHY=[
+  ['organic','− Organic (never counted)'],
+  ['dup','− rows repeated by overlapping imports (the later import is kept)'],
+  ['prefloor','− before the row starts (2 Jul; the awareness rows count from the first day)'],
+  ['outside','− dated outside the dashboard\'s dates'],
+  ['nodate','− date not readable']];
+function reconAdjustPanel(){
+  var rec=DATA.reconAdjust||[];
+  if(!rec.length) return '';
+  var agg={},full=isFullPeriod();
+  rec.forEach(function(e){
+    if(!brandMatch(e.b)) return;
+    if(e.d?(e.d<F.from||e.d>F.to):!full) return;
+    var x=agg[e.k]||(agg[e.k]={i:0,o:0,r:0,n:0});x.i+=e.i;x.o+=e.o;x.r+=e.r;x.n+=e.n;
+  });
+  function g(k){return agg[k]||{i:0,o:0,r:0,n:0};}
+  function row(label,x,sign,note){
+    return '<tr><td>'+label+'</td><td>'+n0(sign*x.i)+'</td><td>'+n0(sign*x.o)+'</td><td>'+n0(sign*x.r)+'</td>'+
+      '<td class="mute">'+(note||x.n.toLocaleString('en-US')+' rows')+'</td></tr>';
+  }
+  var sum=g('sum'),cnt=g('counted'),fixd=g('dateFixed');
+  var body=row('SUM() of Adjust Raw — '+brandTag()+' app rows',sum,1,sum.n.toLocaleString('en-US')+' rows · what you see summing the columns');
+  RECON_ADJ_WHY.forEach(function(w){var x=g(w[0]);if(x.n)body+=row(esc(w[1]),x,-1);});
+  body+='<tr><td><b>= counted</b></td><td><b>'+n0(cnt.i)+'</b></td><td><b>'+n0(cnt.o)+'</b></td><td><b>'+n0(cnt.r)+
+    '</b></td><td></td></tr>';
+  if(fixd.n) body+=row('<span class="mute">of which: rows whose date was stored as text or day/month-swapped '+
+    '— counted on their real day; the pacing tabs miss them until Clean Adjust Raw runs</span>',fixd,1);
+  var cards={i:0,o:0};
+  DATA.adjust.forEach(function(a){if(brandMatch(a.brand)&&a.day>=F.from&&a.day<=F.to){cards.i+=a.inst;cards.o+=a.bookings;}});
+  var ok=Math.abs(cards.i-cnt.i)<0.5&&Math.abs(cards.o-cnt.o)<0.5;
+  return '<div class="grid"><div class="panel"><div class="ph"><h3>Check it against the tabs — Adjust</h3>'+
+    '<div class="note">'+brandTag()+' · '+F.from+' → '+F.to+' · Adjust Raw columns H, I, E</div></div>'+
+    '<div class="tw"><table><thead><tr><th>Adjust Raw</th><th>Installs</th><th>Bookings</th><th>Revenue SAR</th><th></th></tr></thead>'+
+    '<tbody>'+body+'</tbody><tfoot><tr><td>Dashboard'+(ok?'':' — does NOT match the cards: '+n0(cards.i)+' / '+n0(cards.o))+'</td><td>'+
+      n0(cards.i)+'</td><td>'+n0(cards.o)+'</td><td></td><td>'+(ok?'= Installs and Bookings cards':'')+'</td></tr></tfoot></table></div>'+
+    '<div class="legend"><span>The Revenue card uses this Adjust revenue on the app rows and GA4 revenue on the four '+
+      'web rows (Snapchat and TikTok awareness, TikTok Search, Google Search).</span></div></div></div>';
+}
 function vMethod(){
   var bn=BRANDS[BRAND];
   var t=sumRaw(rowsRaw()),ln=lines(),a=totals(ln);
   var gb=ga4ByBucket();
-  return reconPanel()+
+  return reconPanel()+reconAdjustPanel()+
   '<div class="grid">'+
   '<div class="panel"><div class="ph"><h3>Where each number comes from</h3>'+
     '<div class="note">'+bn+'</div></div><div class="pb">'+
@@ -1588,7 +1626,9 @@ function vMethod(){
     step('4','App installs, bookings and revenue',
       'Read from <b>Adjust Raw</b> — the same tab the pacing formulas read — by the app column (Six Flags / '+
       'Aquarabia), the channel and the objective. Organic is never counted; channels with no row of their own go '+
-      'to row 26 (Other), so no paid install disappears.',
+      'to row 26 (Other), so no paid install disappears. Dates stored as text or day/month-swapped and rows '+
+      'repeated by overlapping imports are corrected as the tab is read — the same corrections '+
+      '<b>Clean Adjust Raw</b> writes into the tab, so the pacing tabs match once it has run.',
       n0(a.adjInst)+' installs · '+n0(a.bookings)+' bookings · '+n0(a.adjRev)+' SAR.')+
     step('5','Website purchases',
       'Read from the <b>GA4</b> tab: sessions whose default channel group is Paid Search or Paid Social, split '+

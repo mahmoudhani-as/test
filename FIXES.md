@@ -141,6 +141,14 @@ evaluated the real pacing formulas on it with a spreadsheet engine:
   621,306 = 378,575,659) → + 145,090,770 text-stored InMobi (115,027,745 in Raw manual, 30,063,025 in
   Raw data) − 36,827,172 Raw data InMobi copies − 23,701,280 Raw manual Bidease copies + 41,150,927
   InMobi in the backup tab = **504,288,904**.
+- **Adjust is read through the cleaner's corrections.** Text dates, day/month swaps, overlapping
+  imports, text numbers and mislabelled channels are corrected in memory as the dashboard reads
+  Adjust Raw (the same code *Clean Adjust Raw* writes back), so its installs, bookings and revenue
+  are right before the tab is cleaned. On the live file this moved SFQC September from 459 to 8,572
+  installs. Until *Clean Adjust Raw* runs, a banner says how far the pacing tabs are off.
+  *Validate* still compares the formulas with the dashboard reading the tab as it stands.
+  **Check it against the tabs — Adjust** walks Adjust Raw from its SUM() to the cards (SFQC:
+  38,159 − 147 duplicate imports − 18 before 2 Jul = 37,994 installs).
 - To go back: unhide the "… BACKUP yyyyMMdd-HHmm" tabs that *Fix this workbook* made.
 
 ## 6. What will move in the report

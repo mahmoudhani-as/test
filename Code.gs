@@ -564,7 +564,9 @@ var GA4_EXPECT = { 1: 'GA4 property', 2: 'Date', 3: 'Session campaign name',
 
 /* ------------------------------------------------------------------ payload */
 
-function getPacingDashboardData() {
+function getPacingDashboardData(opts) {
+  // opts.asTab: read Adjust Raw exactly as the pacing formulas do (validateDashboard uses it)
+  var asTab = !!(opts && opts.asTab);
   var ss = _ss();
   var tz = ss.getSpreadsheetTimeZone ? ss.getSpreadsheetTimeZone() : CFG.TZ;
   _campReset();
@@ -772,6 +774,14 @@ function getPacingDashboardData() {
     return _matchBrand(CFG.ADJUST_APP, av[j][3]);
   }).length;
   var aAgg = {}, seenKeys = {}, channelsSeen = {};
+  function addAdjust(agg, appBrand, lineKey, channel, d, camp, revenue, paidInst, inst, bookings) {
+    var ci = _campIndex(String(camp == null ? '' : camp));
+    var channelName = String(channel == null ? '' : channel) || '(blank)';
+    var ak = [appBrand, lineKey, channelName, d, ci].join('\u0001');
+    var e = agg[ak] || (agg[ak] = { brand: appBrand, line: lineKey, channel: channelName,
+      day: d, ci: ci, revenue: 0, paidInst: 0, inst: 0, bookings: 0 });
+    e.revenue += revenue; e.paidInst += paidInst; e.inst += inst; e.bookings += bookings;
+  }
   var adjustDataRows = 0, textDates = 0, dupRows = 0, textNums = 0, blankChannel = 0;
   for (var j = 1; j < av.length; j++) {
     var a = av[j];
@@ -792,15 +802,54 @@ function getPacingDashboardData() {
     var aFloor = _adjustFloor(aLine);
     if (aFloor && d < aFloor) continue;
     if (_isTextNum(a[4]) || _isTextNum(a[6]) || _isTextNum(a[7]) || _isTextNum(a[8])) textNums++;
-    var aCamp = String(a[2] == null ? '' : a[2]), ci = _campIndex(aCamp);
-    var channelName = String(a[9] == null ? '' : a[9]) || '(blank)';
-    var ak = [appBrand, lineKey, channelName, d, ci].join('\u0001');
-    var e = aAgg[ak] || (aAgg[ak] = { brand: appBrand, line: lineKey, channel: channelName,
-      day: d, ci: ci, revenue: 0, paidInst: 0, inst: 0, bookings: 0 });
-    e.revenue += _cellNum(a[4]);
-    e.paidInst += _cellNum(a[6]);
-    e.inst += _cellNum(a[7]);
-    e.bookings += _cellNum(a[8]);
+    addAdjust(aAgg, appBrand, lineKey, a[9], d, a[2], _cellNum(a[4]), _cellNum(a[6]), _cellNum(a[7]), _cellNum(a[8]));
+  }
+  var legacy = ss.getSheetByName(CFG.ADJUST_LEGACY);
+  var legacyRows = legacy && legacy.getLastRow() > 1 ? legacy.getLastRow() - 1 : 0;
+
+  /* Text dates, day/month swaps, overlapping imports, text numbers, blank or mislabelled
+     channels: the dashboard reads Adjust Raw through the same corrections "Clean Adjust Raw"
+     writes into the tab, so its installs, bookings and revenue are right before the tab is
+     cleaned. The pacing formulas still read the tab as it stands — the banner says by how much. */
+  var tabAgg = aAgg, cleanLog = null, adjRecon = {};
+  // the "Check it against the tabs" table: every Adjust Raw row by what happens to it
+  function adjTally(b, d, k, v) {
+    var key = b + '|' + d + '|' + k;
+    var e = adjRecon[key] || (adjRecon[key] = { b: b, d: d, k: k, i: 0, o: 0, r: 0, n: 0 });
+    e.i += _cellNum(v[7]); e.o += _cellNum(v[8]); e.r += _cellNum(v[4]); e.n++;
+  }
+  if (!asTab) {
+    try {
+      cleanLog = [];
+      var cd = _adjustCleanData_(ss, ash, tz, cleanLog);
+      aAgg = {};
+      (cd.data.removed || []).forEach(function (row) {
+        var rb = _matchBrand(CFG.ADJUST_APP, row.v[3]);
+        if (!rb) return;
+        adjTally(rb, row.day, 'sum', row.v);
+        adjTally(rb, row.day, 'dup', row.v);
+      });
+      cd.data.rows.forEach(function (row) {
+        var v = row.v, cdDay = row.day;
+        var cBrand = _matchBrand(CFG.ADJUST_APP, v[3]);
+        if (!cBrand) return;
+        adjTally(cBrand, cdDay, 'sum', v);
+        if (!cdDay) { adjTally(cBrand, cdDay, 'nodate', v); return; }
+        var cLine = _adjustLine(v[9], v[10]);
+        if (!cLine) { adjTally(cBrand, cdDay, 'organic', v); return; }
+        channelsSeen[cBrand + '|' + cLine.split('|')[0]] = 1;
+        if (!inWindow(cdDay)) { adjTally(cBrand, cdDay, 'outside', v); return; }
+        var cFloor = _adjustFloor(LINE_BY_KEY[cLine]);
+        if (cFloor && cdDay < cFloor) { adjTally(cBrand, cdDay, 'prefloor', v); return; }
+        if (row.dateFixed) adjTally(cBrand, cdDay, 'dateFixed', v);
+        adjTally(cBrand, cdDay, 'counted', v);
+        addAdjust(aAgg, cBrand, cLine, v[9], cdDay, v[2], _cellNum(v[4]), _cellNum(v[6]), _cellNum(v[7]), _cellNum(v[8]));
+      });
+    } catch (err) {
+      aAgg = tabAgg; cleanLog = null; adjRecon = {};
+      issue('warn', 'Adjust Raw could not be corrected while reading it (' + err.message + '), so its ' +
+        'figures are shown as the tab stands.');
+    }
   }
   var adjust = Object.keys(aAgg).map(function (k) {
     var e = aAgg[k];
@@ -809,26 +858,65 @@ function getPacingDashboardData() {
   });
   var fixHint = ' Run Pacing dashboard → Clean Adjust Raw: it repairs the tab both the pacing ' +
     'formulas and this dashboard read (a backup and a change log are kept).';
-  if (textDates) {
+  var needsClean = cleanLog && cleanLog.some(function (r) {
+    return /Text date|swap|Duplicate|Number stored as text|Twitter|Missing channel|replaced|folded/.test(r[1]);
+  });
+  if (needsClean) {
+    var kinds = {};
+    cleanLog.forEach(function (r) {
+      var k = /Text date/.test(r[1]) ? 'text' : /swap/.test(r[1]) ? 'swap' : /Duplicate/.test(r[1]) ? 'dup'
+        : /Number stored as text/.test(r[1]) ? 'num' : /Twitter|Missing channel/.test(r[1]) ? 'label'
+        : /replaced|folded/.test(r[1]) ? 'legacy' : '';
+      if (k) kinds[k] = (kinds[k] || 0) + 1;
+    });
+    var parts = [];
+    if (kinds.text) parts.push(count(kinds.text) + ' days stored as text (e.g. 13/09/2026)');
+    if (kinds.swap) parts.push(count(kinds.swap) + ' day/month-swapped dates');
+    if (kinds.dup) parts.push(count(kinds.dup) + ' rows repeated by overlapping imports');
+    if (kinds.num) parts.push(count(kinds.num) + ' numbers stored as text');
+    if (kinds.label) parts.push(count(kinds.label) + ' rows with a missing or wrong channel');
+    if (legacyRows) parts.push(count(legacyRows) + ' rows still in "' + CFG.ADJUST_LEGACY + '"');
+    // what the pacing tabs show for their own dates, against the corrected figures
+    var cmp = [];
+    ['SFQC', 'AAQC'].forEach(function (b) {
+      var t = { inst: 0, book: 0 }, c = { inst: 0, book: 0 };
+      [[tabAgg, t], [aAgg, c]].forEach(function (pair) {
+        Object.keys(pair[0]).forEach(function (k) {
+          var e = pair[0][k];
+          if (e.brand !== b || (from && e.day < from) || (till && e.day > till)) return;
+          pair[1].inst += e.inst; pair[1].book += e.bookings;
+        });
+      });
+      if (Math.round(t.inst) !== Math.round(c.inst) || Math.round(t.book) !== Math.round(c.book)) {
+        cmp.push(b + ' ' + count(Math.round(t.inst)) + ' installs / ' + count(Math.round(t.book)) +
+          ' bookings instead of ' + count(Math.round(c.inst)) + ' / ' + count(Math.round(c.book)));
+      }
+    });
+    issue('crit', 'Adjust Raw needs cleaning: ' + parts.join(', ') + '. This dashboard corrects them as ' +
+      'it reads the tab, so the Adjust installs, bookings and revenue shown here are right. The pacing ' +
+      'tabs read the tab as it stands' + (cmp.length ? ' and show ' + cmp.join('; ') + ' for ' +
+      from + ' → ' + till : '') + '. Run Pacing dashboard → Clean Adjust Raw once (Qiddiya Setup → ' +
+      'Fix this workbook includes it) and the tabs will match.');
+  } else if (textDates && !cleanLog) {
     issue('crit', count(textDates) + ' Adjust Raw rows hold their day as text (e.g. 13/09/2026). ' +
       'SUMIFS cannot read a text date, so neither the pacing tab nor this dashboard counts their ' +
       'installs, bookings or revenue.' + fixHint);
   }
-  if (swappedRows) {
+  if (swappedRows && !needsClean) {
     issue('crit', count(swappedRows) + ' Adjust Raw dates look day/month-swapped by Sheets ' +
       '(01/09 stored as 9 January). Those rows are counted on the wrong day — usually outside the ' +
       'window, i.e. not at all.' + fixHint);
   }
-  if (dupRows) {
+  if (dupRows && !needsClean) {
     issue('crit', count(dupRows) + ' Adjust Raw rows repeat a day + app + network + campaign that is ' +
       'already in the tab (overlapping imports), so the pacing tab and this dashboard add them twice.' +
       fixHint);
   }
-  if (textNums) {
+  if (textNums && !needsClean) {
     issue('warn', count(textNums) + ' Adjust Raw rows in the window have a number stored as text; ' +
       'SUMIFS counts those cells as 0.' + fixHint);
   }
-  if (blankChannel) {
+  if (blankChannel && !needsClean) {
     issue('warn', count(blankChannel) + ' Adjust Raw rows have no channel (column J); they are ' +
       'counted on the Other row.' + fixHint);
   }
@@ -836,8 +924,7 @@ function getPacingDashboardData() {
     issue('crit', 'Adjust Raw has exactly 5,000 data rows — the size at which an Adjust export ' +
       'truncates. Re-export the period in smaller date batches and import them.');
   }
-  var legacy = ss.getSheetByName(CFG.ADJUST_LEGACY);
-  if (legacy && legacy.getLastRow() > 1) {
+  if (legacyRows && !needsClean) {
     issue('warn', '"' + CFG.ADJUST_LEGACY + '" still holds ' + count(legacy.getLastRow() - 1) +
       ' imported rows that neither the pacing tab nor this dashboard reads.' + fixHint);
   }
@@ -930,6 +1017,11 @@ function getPacingDashboardData() {
       generated: 'Refreshed ' + Utilities.formatDate(new Date(), CFG.TZ, 'yyyy-MM-dd HH:mm')
     },
     raw: raw, adjust: adjust, ga4: ga4, camps: _campList,
+    reconAdjust: Object.keys(adjRecon).map(function (k) {
+      var e = adjRecon[k];
+      e.r = Math.round(e.r * 100) / 100;
+      return e;
+    }),
     recon: Object.keys(reconMap).map(function (k) {
       var e = reconMap[k];
       e.i = Math.round(e.i * 100) / 100; e.p = Math.round(e.p * 100) / 100;
@@ -978,7 +1070,10 @@ function _lineTotals(p, brand) {
  */
 function validateDashboard() {
   var ss = _ss();
-  var p = getPacingDashboardData();
+  // Lines: the dashboard's counting against the formulas, both reading Adjust Raw as it stands.
+  // Data quality: what the dashboard banner says (including how far the tabs are off).
+  var p = getPacingDashboardData({ asTab: true });
+  var shown = getPacingDashboardData();
   var out = [], bad = 0, total = 0;
   function row(a, b, c, d, e, f) { out.push([a, b, c, d, e, f]); }
   function cmp(brand, line, metric, dash, pacing) {
@@ -1045,7 +1140,7 @@ function validateDashboard() {
     cmp(brand, 'Check block', 'Spend not on a line (C41)', 0, cell(41, 3));
   });
 
-  var issues = p.meta.health.issues;
+  var issues = shown.meta.health.issues;
   row('', '', '', '', '', '');
   row('DATA QUALITY', issues.length ? issues.length + ' issue(s)' : 'no issues', '', '', '', '');
   issues.forEach(function (it) {
@@ -1192,6 +1287,7 @@ function _adjustReadClean_(sh, tz, log) {
       rows.push({ v: v, day: '' });
       continue;
     }
+    var dateFixed = !(v[0] instanceof Date) || iso !== _day(v[0], tz);
     if (!(v[0] instanceof Date)) log.push([j + 1, 'Text date converted to a real date', shown, iso]);
     else if (iso !== _day(v[0], tz)) log.push([j + 1, 'Day/month swap reversed', shown, iso]);
     v[0] = iso;
@@ -1220,7 +1316,7 @@ function _adjustReadClean_(sh, tz, log) {
       if (_blank(v[9])) v[9] = cls.channel;
       if (_blank(v[10])) v[10] = cls.objective;
     }
-    rows.push({ v: v, day: iso });
+    rows.push({ v: v, day: iso, dateFixed: dateFixed });
   }
   return { header: header, width: width, rows: rows };
 }
@@ -1256,6 +1352,7 @@ function _adjustDedupe_(data, log) {
         'installs ' + v[7] + ', bookings ' + v[8] + ', revenue ' + v[4]]);
     });
   });
+  data.removed = (data.removed || []).concat(data.rows.filter(function (r, i) { return drop[i]; }));
   data.rows = data.rows.filter(function (r, i) { return !drop[i]; });
   return Object.keys(drop).length;
 }
@@ -1335,6 +1432,45 @@ function _writeLog(ss, title, log) {
 }
 
 /**
+ * Adjust Raw read and corrected in memory — real days, numbers and labels, the rows still in
+ * the old "Adjust Current" tab folded in, overlapping imports de-duplicated. Nothing is
+ * written: "Clean Adjust Raw" writes the result back, the dashboard reads it directly.
+ */
+function _adjustCleanData_(ss, sh, tz, log) {
+  var data = _adjustReadClean_(sh, tz, log);
+  var merged = null, legacy = ss.getSheetByName(CFG.ADJUST_LEGACY);
+  if (legacy && legacy.getLastRow() > 1) {
+    var lv = legacy.getDataRange().getValues(), lh = lv[0].map(function (h) { return String(h).trim(); });
+    var pos = {}; lh.forEach(function (h, i) { pos[h] = i; });
+    var sums = {}, incoming = [];
+    lv.slice(1).forEach(function (r) {
+      var day = _dateCell(r[pos.day], tz) || String(r[pos.day] || '').slice(0, 10);
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(day)) return;
+      var network = String(r[pos.network] || '').trim();
+      var campaign = String(r[pos.campaign_network] || '').trim();
+      var app = String(r[pos.app] || '').trim();
+      // One export: a repeated key is a further breakdown of the same day, so add it up.
+      var key = JSON.stringify([day, app.toLowerCase(), network, campaign]);
+      var e = sums[key];
+      if (!e) {
+        // The old importer had no YouTube / awareness rules, so its labels are redone.
+        var cls = _adjustClassify(network, campaign);
+        e = sums[key] = [day, network, campaign, app, 0, 0, 0, 0, 0, cls.channel, cls.objective];
+        incoming.push(e);
+      }
+      e[4] += _num(r[pos.all_revenue]);
+      e[5] += pos['general revenue_revenue_est'] == null ? 0 : _num(r[pos['general revenue_revenue_est']]);
+      e[6] += _num(r[pos.paid_installs]);
+      e[7] += _num(r[pos.installs]);
+      e[8] += _num(r[pos.bookingconfirmed_events]);
+    });
+    if (incoming.length) merged = _adjustUpsert_(data, incoming, CFG.ADJUST_LEGACY, log);
+  }
+  var dropped = _adjustDedupe_(data, log);
+  return { data: data, merged: merged, legacy: legacy, dropped: dropped };
+}
+
+/**
  * Repairs Adjust Raw in place so the pacing formulas and the dashboard both read it
  * correctly: text and day/month-swapped dates become real dates, overlapping imports are
  * de-duplicated, numbers stored as text become numbers, Twitter Installs move from Other to
@@ -1355,36 +1491,8 @@ function cleanAdjustRaw_() {
     var ss = _ss(), tz = ss.getSpreadsheetTimeZone(), stamp = _stamp();
     var sh = _sheet(CFG.ADJUST), log = [];
     var before = Math.max(0, sh.getLastRow() - 1);
-    var data = _adjustReadClean_(sh, tz, log);
-    var merged = null, legacy = ss.getSheetByName(CFG.ADJUST_LEGACY);
-    if (legacy && legacy.getLastRow() > 1) {
-      var lv = legacy.getDataRange().getValues(), lh = lv[0].map(function (h) { return String(h).trim(); });
-      var pos = {}; lh.forEach(function (h, i) { pos[h] = i; });
-      var sums = {}, incoming = [];
-      lv.slice(1).forEach(function (r) {
-        var day = _dateCell(r[pos.day], tz) || String(r[pos.day] || '').slice(0, 10);
-        if (!/^\d{4}-\d{2}-\d{2}$/.test(day)) return;
-        var network = String(r[pos.network] || '').trim();
-        var campaign = String(r[pos.campaign_network] || '').trim();
-        var app = String(r[pos.app] || '').trim();
-        // One export: a repeated key is a further breakdown of the same day, so add it up.
-        var key = JSON.stringify([day, app.toLowerCase(), network, campaign]);
-        var e = sums[key];
-        if (!e) {
-          // The old importer had no YouTube / awareness rules, so its labels are redone.
-          var cls = _adjustClassify(network, campaign);
-          e = sums[key] = [day, network, campaign, app, 0, 0, 0, 0, 0, cls.channel, cls.objective];
-          incoming.push(e);
-        }
-        e[4] += _num(r[pos.all_revenue]);
-        e[5] += pos['general revenue_revenue_est'] == null ? 0 : _num(r[pos['general revenue_revenue_est']]);
-        e[6] += _num(r[pos.paid_installs]);
-        e[7] += _num(r[pos.installs]);
-        e[8] += _num(r[pos.bookingconfirmed_events]);
-      });
-      if (incoming.length) merged = _adjustUpsert_(data, incoming, CFG.ADJUST_LEGACY, log);
-    }
-    var dropped = _adjustDedupe_(data, log);
+    var cd = _adjustCleanData_(ss, sh, tz, log);
+    var data = cd.data, merged = cd.merged, legacy = cd.legacy, dropped = cd.dropped;
     _backupValues(ss, sh, CFG.ADJUST + ' BACKUP ' + stamp);
     var after = _adjustWrite_(sh, data);
     if (merged) legacy.setName(CFG.ADJUST_LEGACY + ' (merged ' + stamp + ')').hideSheet();

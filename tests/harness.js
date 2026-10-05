@@ -322,6 +322,11 @@ function renderAllViews(w) {
       if (w.DATA.recon && w.DATA.recon.length && (!foot || !/= Impressions and Spend cards/.test(foot.textContent))) {
         problems.push(b + ': source-tab check does not match the cards (' + (foot ? foot.textContent : 'no table') + ')');
       }
+      var feet = w.document.querySelectorAll('tfoot');
+      if (w.DATA.reconAdjust && w.DATA.reconAdjust.length &&
+          ![].some.call(feet, function (f) { return /= Installs and Bookings cards/.test(f.textContent); })) {
+        problems.push(b + ': Adjust check does not match the cards');
+      }
     } catch (e) { problems.push(b + '/recon: ' + e.message); }
     ['summary', 'trend', 'platforms', 'campaigns', 'attribution', 'method'].forEach(function (v) {
       try { w.setView(v); } catch (e) { problems.push(b + '/' + v + ': ' + e.message); }
@@ -369,7 +374,17 @@ function runVersion(label, files, opts) {
   }
 
   var w = loadClient(files.html, payload);
-  var diffs = compareClient(w, vals, label);
+  // The fixed dashboard reads Adjust Raw through the corrections "Clean Adjust Raw" writes, so
+  // before the tab is cleaned its figures must already equal the cleaned tab's.
+  var expect = vals;
+  if (opts.newRawData) {
+    var ssC = makeSpreadsheet(fx.workbook(true), 'UTC');
+    var ctxC = loadServer(files.gs, ssC);
+    ctxC.cleanAdjustRaw_();
+    expect = evaluatePacing(sheetToWb(ssC), ctxC.buildPacingSpec_());
+    console.log('(page compared with the pacing tab as it will be after "Clean Adjust Raw")');
+  }
+  var diffs = compareClient(w, expect, label);
   console.log('Dashboard page vs pacing tab: ' + diffs.length + ' line/total figures differ');
   diffs.slice(0, 40).forEach(function (d) { console.log('   ' + d); });
   ['SFQC', 'AAQC'].forEach(function (b) {
