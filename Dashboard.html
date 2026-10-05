@@ -1508,11 +1508,65 @@ function vAttribution(){
     '<div class="note">which meter each line is read from</div></div><div class="pb">'+revenueBars(ln)+'</div></div></div>';
 }
 
+/* "Check it against the tabs": every impression and dollar from the source tabs, from what a
+   plain SUM() of the tab shows to what the dashboard counts, for the portal and dates on screen. */
+var RECON_SRC=[['raw','Raw data'],['manual','Raw manual'],['backup','Raw data BACKUP 20260807-1642 · InMobi rows'],
+  ['apple','APPLE1']];
+var RECON_WHY=[
+  ['text','+ numbers stored as text — SUM() cannot see them'],
+  ['inmobi_copy','− InMobi rows: copies of Raw manual (row 24 reads Raw manual and the backup)'],
+  ['apple_copy','− Apple rows: row 22 reads APPLE1'],
+  ['not_inmobi','− Bidease and other rows: copies of Raw data (rows 23 and 25 read Raw data)'],
+  ['inmobi_out','− InMobi outside this tab\'s dates (Raw manual from 1 Sep, backup 2 Jul – 31 Aug)'],
+  ['prefloor','− before the row starts (2 Jul; AAQC Meta 1 Jul)'],
+  ['offline','− no pacing row for this platform / objective'],
+  ['textSkipped','− stored as text: the pacing tab\'s SUMIFS skips it too'],
+  ['fx','− X spend is in SAR: ÷ {fx}']];
+function reconPanel(){
+  var rec=DATA.recon||[];
+  if(!rec.length) return '';
+  var agg={};
+  rec.forEach(function(e){
+    if(!brandMatch(e.b)||e.d<F.from||e.d>F.to) return;
+    var k=e.s+'|'+e.k,x=agg[k]||(agg[k]={i:0,p:0,n:0});x.i+=e.i;x.p+=e.p;x.n+=e.n;
+  });
+  function g(src,k){return agg[src+'|'+k]||{i:0,p:0,n:0};}
+  var tot={i:0,p:0},body='';
+  RECON_SRC.forEach(function(sd){
+    var sum=g(sd[0],'sum'),cnt=g(sd[0],'counted');
+    if(!sum.n) return;
+    body+='<tr class="grp"><td colspan="4">'+esc(sd[1])+'</td></tr>'+
+      '<tr><td>SUM() of the tab — '+brandTag()+' '+sum.n.toLocaleString('en-US')+' rows</td><td>'+n0(sum.i)+'</td><td>'+
+        usd(sum.p)+'</td><td class="mute">what you see summing the column</td></tr>';
+    RECON_WHY.forEach(function(w){
+      var x=g(sd[0],w[0]);
+      if(Math.abs(x.i)<0.5&&Math.abs(x.p)<0.5) return;
+      var sign=w[0]==='text'?1:-1;
+      body+='<tr><td>'+esc(w[1].replace('{fx}',DATA.meta.fx))+'</td><td>'+(Math.abs(x.i)<0.5?'':n0(sign*x.i))+'</td><td>'+
+        (Math.abs(x.p)<0.5?'':usd(sign*x.p))+'</td><td class="mute">'+x.n.toLocaleString('en-US')+' rows</td></tr>';
+    });
+    body+='<tr><td><b>= counted from '+esc(sd[1].split(' · ')[0])+'</b></td><td><b>'+n0(cnt.i)+'</b></td><td><b>'+
+      usd(cnt.p)+'</b></td><td></td></tr>';
+    tot.i+=cnt.i;tot.p+=cnt.p;
+  });
+  // the same figure the KPI cards add up, without the Platform / Objective filters
+  var all={i:0,p:0};
+  DATA.raw.forEach(function(r){if(brandMatch(r[B])&&r[D]>=F.from&&r[D]<=F.to){all.i+=r[IMP];all.p+=r[SPD];}});
+  var ok=Math.abs(all.i-tot.i)<1&&Math.abs(all.p-tot.p)<1;
+  return '<div class="grid"><div class="panel"><div class="ph"><h3>Check it against the tabs</h3>'+
+    '<div class="note">'+brandTag()+' · '+F.from+' → '+F.to+' · all platforms</div></div>'+
+    '<div class="tw"><table><thead><tr><th>Source tab</th><th>Impressions</th><th>Spend</th><th></th></tr></thead>'+
+    '<tbody>'+body+'</tbody><tfoot><tr><td>Dashboard total'+(ok?'':' — does NOT match the cards: '+n0(all.i))+'</td><td>'+
+      n0(tot.i)+'</td><td>'+usd(tot.p)+'</td><td>'+(ok?'= Impressions and Spend cards':'')+'</td></tr></tfoot></table></div>'+
+    '<div class="legend"><span>Adding up the tabs by hand double counts the rows that sit in two tabs, misses numbers '+
+      'stored as text and misses InMobi kept only in the hidden backup tab. This table does each step for you; '+
+      'spend in the tab column is as typed (X in SAR).</span></div></div></div>';
+}
 function vMethod(){
   var bn=BRANDS[BRAND];
   var t=sumRaw(rowsRaw()),ln=lines(),a=totals(ln);
   var gb=ga4ByBucket();
-  return ''+
+  return reconPanel()+
   '<div class="grid">'+
   '<div class="panel"><div class="ph"><h3>Where each number comes from</h3>'+
     '<div class="note">'+bn+'</div></div><div class="pb">'+

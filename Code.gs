@@ -592,6 +592,30 @@ function getPacingDashboardData() {
   var loadTill = _later(till, _yesterday(tz));
   function inWindow(day) { return !!day && (!from || day >= from) && day <= loadTill; }
 
+  /* Per source tab and day: what a plain SUM() of the tab sees, what is stored as text, what
+     is left out and why, and what is counted — the Method page's "Check it against the tabs"
+     table, so every total can be traced back to the tabs by hand. */
+  var reconMap = {};
+  function tally(brand, src, day, cat, impr, spend) {
+    var k = brand + '|' + src + '|' + day + '|' + cat;
+    var e = reconMap[k] || (reconMap[k] = { b: brand, s: src, d: day, k: cat, i: 0, p: 0, n: 0 });
+    e.i += impr; e.p += spend; e.n++;
+  }
+  // outcome: 'counted' or the reason the row is left out. readsText: the pacing row reads the
+  // cells with VALUE() (InMobi), not SUMIFS (which skips text). spendDiv: 3.78 for X.
+  function reconRow(brand, src, day, imprCell, spendCell, outcome, readsText, spendDiv) {
+    var vi = _valueNum(imprCell), vs = _valueNum(spendCell);
+    var ni = _cellNum(imprCell), ns = _cellNum(spendCell);
+    tally(brand, src, day, 'sum', ni, ns);
+    if (vi !== ni || vs !== ns) tally(brand, src, day, 'text', vi - ni, vs - ns);
+    if (outcome !== 'counted') { tally(brand, src, day, outcome, vi, vs); return; }
+    var ci = readsText ? vi : ni, cs = readsText ? vs : ns;
+    if (ci !== vi || cs !== vs) tally(brand, src, day, 'textSkipped', vi - ci, vs - cs);
+    var div = spendDiv || 1;
+    if (div !== 1) tally(brand, src, day, 'fx', 0, cs - cs / div);
+    tally(brand, src, day, 'counted', ci, cs / div);
+  }
+
   var raw = [], dayset = {}, platset = {};
   function addRaw(line, brand, camp, day, m) {
     // [platform, brand, campaign, day, reach, impressions, spend, link clicks, clicks,
@@ -631,16 +655,21 @@ function getPacingDashboardData() {
     }
     // Apple is row 22 (APPLE1) and InMobi is row 24 (Raw manual + backup) on the pacing
     // tab; their Raw data copies are never read there, so they are not read here either.
-    if (plat === 'Apple' || plat === 'InMobi') continue;
+    if (plat === 'Apple' || plat === 'InMobi') {
+      reconRow(brand, 'raw', day, r[5], r[6], plat === 'InMobi' ? 'inmobi_copy' : 'apple_copy');
+      continue;
+    }
     var obj = hasObjective ? String(r[12] == null ? '' : r[12]) : _objective(plat, camp);
     var line = plat ? LINE_BY_KEY[plat + '|' + obj] : null;
     if (!line || line.source) {
       var ok = String(r[0]) + ' / ' + obj + ' / ' + brand;
       offLine[ok] = (offLine[ok] || 0) + spend;
+      reconRow(brand, 'raw', day, r[5], r[6], 'offline');
       continue;
     }
     var floor = _mediaFloor(line, brand);
-    if (floor && day < floor) continue;
+    if (floor && day < floor) { reconRow(brand, 'raw', day, r[5], r[6], 'prefloor'); continue; }
+    reconRow(brand, 'raw', day, r[5], r[6], 'counted', false, plat === 'X' ? CFG.FX : 1);
     // X reports nothing in "Clicks (all)" — its pacing rows read link clicks (I9=J9, I20=J20)
     addRaw(line, brand, camp, day,
       [_cellNum(r[4]), _cellNum(r[5]), spend, _cellNum(r[7]),
@@ -681,7 +710,11 @@ function getPacingDashboardData() {
     if (!appleBrand) continue;
     var appleDay = _dateCell(ar[0], tz);
     if (!inWindow(appleDay)) continue;
-    if (appleDay < _mediaFloor(appleLine, appleBrand)) continue;
+    if (appleDay < _mediaFloor(appleLine, appleBrand)) {
+      reconRow(appleBrand, 'apple', appleDay, ar[4], ar[3], 'prefloor');
+      continue;
+    }
+    reconRow(appleBrand, 'apple', appleDay, ar[4], ar[3], 'counted');
     var taps = _cellNum(ar[5]);
     addRaw(appleLine, appleBrand, String(ar[appleCampCol] == null ? '' : ar[appleCampCol]), appleDay,
       [0, _cellNum(ar[4]), _cellNum(ar[3]), taps, taps, 0, _cellNum(ar[6]), 0]);
@@ -690,7 +723,7 @@ function getPacingDashboardData() {
   /* ---- InMobi (row 24): Raw manual from 1 Sep, the Raw data backup for 2 Jul - 31 Aug,
           rows 2-10000, numbers parsed with VALUE(), exactly as the row's SUMPRODUCTs ---- */
   var inmobiLine = LINE_BY_KEY['InMobi|Conversion'];
-  function readInMobi(sheetName, lo, hi) {
+  function readInMobi(sheetName, lo, hi, src) {
     var sh = ss.getSheetByName(sheetName);
     if (!sh) {
       issue('crit', 'Tab "' + sheetName + '" is missing — pacing row 24 (InMobi) reads it.');
@@ -700,11 +733,20 @@ function getPacingDashboardData() {
     var last = Math.min(v.length, CFG.INMOBI_LAST_ROW);
     for (var mi = 1; mi < last; mi++) {
       var mr = v[mi];
-      if (String(mr[0] == null ? '' : mr[0]).toLowerCase() !== 'inmobi') continue;
-      var mb = _brandCell(mr[1]);
-      if (!mb) continue;
-      var md = _dateCell(mr[3], tz), lower = _later(from, lo), upper = _sooner(loadTill, hi);
-      if (!md || (lower && md < lower) || (upper && md > upper)) continue;
+      var mb = _brandCell(mr[1]), md = _dateCell(mr[3], tz);
+      if (!mb || !inWindow(md)) continue;
+      if (String(mr[0] == null ? '' : mr[0]).toLowerCase() !== 'inmobi') {
+        // Raw manual's other rows (Bidease) are copies of Raw data rows, which rows 23/25 read;
+        // the backup's other rows are an old copy of Raw data and are not shown at all.
+        if (src === 'manual') reconRow(mb, src, md, mr[5], mr[6], 'not_inmobi');
+        continue;
+      }
+      var lower = _later(from, lo), upper = _sooner(loadTill, hi);
+      if ((lower && md < lower) || (upper && md > upper)) {
+        reconRow(mb, src, md, mr[5], mr[6], 'inmobi_out');
+        continue;
+      }
+      reconRow(mb, src, md, mr[5], mr[6], 'counted', true);
       addRaw(inmobiLine, mb, String(mr[2] == null ? '' : mr[2]), md,
         [_valueNum(mr[4]), _valueNum(mr[5]), _valueNum(mr[6]), _valueNum(mr[7]),
          _valueNum(mr[8]), _valueNum(mr[9]), _valueNum(mr[10]), _valueNum(mr[11])]);
@@ -713,8 +755,8 @@ function getPacingDashboardData() {
       issue('warn', sheetName + ' has rows below row 10,000; pacing row 24 stops reading there.');
     }
   }
-  readInMobi(CFG.RAW_MANUAL, CFG.INMOBI_MANUAL_FROM, '');
-  readInMobi(CFG.RAW_BACKUP, FLOOR_JUL2, CFG.INMOBI_BACKUP_TILL);
+  readInMobi(CFG.RAW_MANUAL, CFG.INMOBI_MANUAL_FROM, '', 'manual');
+  readInMobi(CFG.RAW_BACKUP, FLOOR_JUL2, CFG.INMOBI_BACKUP_TILL, 'backup');
 
   /* ---- Adjust Raw (columns K, L, X): by position, like the formulas — A day, D app,
           E revenue, G paid installs, H installs, I bookings, J channel, K objective.
@@ -887,7 +929,12 @@ function getPacingDashboardData() {
       },
       generated: 'Refreshed ' + Utilities.formatDate(new Date(), CFG.TZ, 'yyyy-MM-dd HH:mm')
     },
-    raw: raw, adjust: adjust, ga4: ga4, camps: _campList
+    raw: raw, adjust: adjust, ga4: ga4, camps: _campList,
+    recon: Object.keys(reconMap).map(function (k) {
+      var e = reconMap[k];
+      e.i = Math.round(e.i * 100) / 100; e.p = Math.round(e.p * 100) / 100;
+      return e;
+    })
   };
 }
 

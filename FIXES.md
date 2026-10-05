@@ -133,6 +133,14 @@ evaluated the real pacing formulas on it with a spreadsheet engine:
   yesterday), whatever C2 says, and the dashboard opens on it. While C2 is earlier than the data, a
   **Tab period** button appears that shows exactly the dates the pacing tabs count, and a banner says
   so. *Validate against the pacing tabs* always compares the tab period.
+- **How it adds up → Check it against the tabs** reconciles every source tab, for the portal and
+  dates on screen: what a plain SUM() of the tab shows, numbers stored as text that SUM() cannot
+  see, rows left out and why (InMobi rows in Raw data and Bidease rows in Raw manual are copies of
+  each other's tab; X spend is SAR), and what is counted. The counted lines add up to the cards.
+  Example, SFQC, all dates: your three SUMs (Raw data 354,253,073 + Raw manual 23,701,280 + APPLE1
+  621,306 = 378,575,659) → + 145,090,770 text-stored InMobi (115,027,745 in Raw manual, 30,063,025 in
+  Raw data) − 36,827,172 Raw data InMobi copies − 23,701,280 Raw manual Bidease copies + 41,150,927
+  InMobi in the backup tab = **504,288,904**.
 - To go back: unhide the "… BACKUP yyyyMMdd-HHmm" tabs that *Fix this workbook* made.
 
 ## 6. What will move in the report

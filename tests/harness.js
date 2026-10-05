@@ -315,6 +315,14 @@ function renderAllViews(w) {
   var problems = [];
   ['SFQC', 'AAQC', 'BOTH'].forEach(function (b) {
     w.setBrand(b);
+    // "Check it against the tabs" must end on the same total as the KPI cards
+    try {
+      w.setView('method');
+      var foot = w.document.querySelector('tfoot');
+      if (w.DATA.recon && w.DATA.recon.length && (!foot || !/= Impressions and Spend cards/.test(foot.textContent))) {
+        problems.push(b + ': source-tab check does not match the cards (' + (foot ? foot.textContent : 'no table') + ')');
+      }
+    } catch (e) { problems.push(b + '/recon: ' + e.message); }
     ['summary', 'trend', 'platforms', 'campaigns', 'attribution', 'method'].forEach(function (v) {
       try { w.setView(v); } catch (e) { problems.push(b + '/' + v + ': ' + e.message); }
     });
