@@ -1,0 +1,2109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Qiddiya Media Pacing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0E1726; --ink-2:#33415A; --ink-3:#6B7A93; --ink-4:#94A2B8;
+  --bg:#F4F7FA; --surface:#FFFFFF; --line:#DFE6EE; --line-soft:#EDF2F7;
+  --sf-1:#ED1D23; --sf-2:#3EAAE0;
+  --aq-1:#0C98DF; --aq-2:#55C4CE;
+  --good:#1F8A5B; --good-bg:#E3F3EB;
+  --warn:#B57A0C; --warn-bg:#FBF0DA;
+  --crit:#C0392F; --crit-bg:#FBE7E5;
+  --accent:var(--sf-1); --accent-2:var(--sf-2);
+  --display:'Outfit',system-ui,sans-serif; --body:'Outfit',system-ui,sans-serif;
+  --mono:ui-monospace,SFMono-Regular,'SF Mono',Menlo,monospace;
+  --r:10px; --shadow:0 1px 2px rgba(14,23,38,.05),0 6px 20px -12px rgba(14,23,38,.18);
+}
+html[data-brand="AAQC"]{
+  --accent:var(--aq-1); --accent-2:var(--aq-2);
+  --display:'Montserrat',system-ui,sans-serif; --body:'Montserrat',system-ui,sans-serif;
+}
+html[data-brand="BOTH"]{ --accent:#1D2B57; --accent-2:#5A6B99; }
+@media (prefers-color-scheme:dark){:root{
+  --ink:#EAF0F7; --ink-2:#B9C6D6; --ink-3:#8695AB; --ink-4:#5F6E85;
+  --bg:#0D1725; --surface:#141F30; --line:#243146; --line-soft:#1B2739;
+  --good:#57C994; --good-bg:#16302A; --warn:#E0B457; --warn-bg:#312717; --crit:#F2857C; --crit-bg:#341D1E;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 28px -16px rgba(0,0,0,.8);}}
+:root[data-theme="dark"]{
+  --ink:#EAF0F7; --ink-2:#B9C6D6; --ink-3:#8695AB; --ink-4:#5F6E85;
+  --bg:#0D1725; --surface:#141F30; --line:#243146; --line-soft:#1B2739;
+  --good:#57C994; --good-bg:#16302A; --warn:#E0B457; --warn-bg:#312717; --crit:#F2857C; --crit-bg:#341D1E;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 28px -16px rgba(0,0,0,.8);}
+:root[data-theme="light"]{
+  --ink:#0E1726; --ink-2:#33415A; --ink-3:#6B7A93; --ink-4:#94A2B8;
+  --bg:#F4F7FA; --surface:#FFFFFF; --line:#DFE6EE; --line-soft:#EDF2F7;
+  --good:#1F8A5B; --good-bg:#E3F3EB; --warn:#B57A0C; --warn-bg:#FBF0DA; --crit:#C0392F; --crit-bg:#FBE7E5;
+  --shadow:0 1px 2px rgba(14,23,38,.05),0 6px 20px -12px rgba(14,23,38,.18);}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:14px;
+  line-height:1.5;-webkit-font-smoothing:antialiased}
+h1,h2,h3{margin:0;font-family:var(--display);text-wrap:balance}
+button,input,select{font:inherit;color:inherit}
+button{cursor:pointer;border:0;background:none}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+.shell{display:grid;grid-template-columns:212px 1fr;min-height:100vh}
+@media(max-width:900px){.shell{grid-template-columns:1fr}}
+.rail{background:var(--surface);border-right:1px solid var(--line);display:flex;flex-direction:column;
+  position:sticky;top:0;height:100vh;overflow-y:auto}
+@media(max-width:900px){.rail{position:static;height:auto}}
+.mark{padding:20px 18px 15px;border-bottom:1px solid var(--line-soft)}
+.mark .kicker{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-4);font-weight:600}
+.mark .name{font-family:var(--display);font-size:19px;font-weight:700;letter-spacing:-.02em;margin-top:3px;
+  display:flex;align-items:center;gap:8px}
+.mark .dot{width:9px;height:9px;border-radius:50%;background:var(--accent);flex:none}
+nav{padding:10px;display:flex;flex-direction:column;gap:2px}
+nav button{display:flex;align-items:center;gap:9px;padding:9px 10px;border-radius:8px;font-size:13px;
+  color:var(--ink-2);text-align:left;transition:.12s;width:100%}
+nav button:hover{background:var(--line-soft)}
+nav button[aria-current="true"]{background:var(--line-soft);color:var(--ink);font-weight:600}
+nav button[aria-current="true"] .bar{background:var(--accent)}
+nav .bar{width:3px;height:15px;border-radius:2px;background:transparent;flex:none}
+.rail-foot{margin-top:auto;padding:14px;border-top:1px solid var(--line-soft);font-size:11px;color:var(--ink-4)}
+.rail-foot b{color:var(--ink-3);font-weight:600}
+
+main{padding:20px 24px 60px;max-width:1600px;width:100%;min-width:0}
+.head{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-bottom:14px}
+.head h1{font-size:22px;font-weight:600;letter-spacing:-.02em}
+.head .sub{font-size:12.5px;color:var(--ink-3);margin-top:2px}
+.head .sub b{color:var(--ink-2);font-weight:600;font-variant-numeric:tabular-nums}
+
+/* ---- filter bar ---- */
+.filters{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:10px 12px;background:var(--surface);
+  border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);margin-bottom:16px}
+.fgroup{display:flex;align-items:center;gap:7px}
+.flabel{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-4);font-weight:600}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.seg button{padding:6px 11px;font-size:12px;color:var(--ink-3);border-right:1px solid var(--line);transition:.12s}
+.seg button:last-child{border-right:0}
+.seg.wrap{flex-wrap:wrap;max-width:640px}
+.seg.wrap button{border-bottom:1px solid var(--line)}
+.filters{align-items:flex-start}
+.fgroup{align-items:flex-start}
+.fgroup .flabel{padding-top:7px}
+.seg button:hover{background:var(--line-soft)}
+.seg button[aria-pressed="true"]{background:var(--accent);color:#fff}
+input[type="date"],.filters select{padding:5px 8px;border:1px solid var(--line);border-radius:7px;
+  background:var(--surface);font-size:12px;color:var(--ink);font-variant-numeric:tabular-nums}
+.filters select{padding-right:24px;cursor:pointer;font-weight:500}
+.fsep{width:1px;height:24px;background:var(--line);margin:0 2px}
+.reset{font-size:12px;color:var(--ink-3);padding:6px 10px;border-radius:7px;border:1px solid transparent}
+.reset:hover{border-color:var(--line);color:var(--ink)}
+.fhint{font-size:11px;color:var(--ink-4);align-self:center;margin-left:auto}
+.chip{padding:5px 10px;border:1px solid var(--line);border-radius:999px;font-size:11.5px;
+  color:var(--ink-2);background:var(--surface);font-weight:500;white-space:nowrap}
+.chip.live{display:inline-flex;align-items:center;gap:6px}
+.chip.live::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--good)}
+.chip.bad{border-color:var(--crit);color:var(--crit)}
+.chip.bad::before{background:var(--crit)}
+.refresh-btn{display:inline-flex;align-items:center;padding:6px 10px;border:1px solid var(--line);
+  border-radius:8px;background:var(--surface);font-size:12px;font-weight:600;color:var(--ink-2);white-space:nowrap}
+.refresh-btn:hover:not(:disabled){border-color:var(--accent);color:var(--accent)}
+.refresh-btn:disabled{opacity:.65;cursor:wait}
+.refresh-btn.snapshot:disabled{cursor:not-allowed}
+.refresh-status{font-size:11px;color:var(--ink-3);max-width:250px}
+.refresh-status.bad{color:var(--crit)}
+
+/* ---- kpi ---- */
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px}
+@media(max-width:1180px){.kpis{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.kpis{grid-template-columns:1fr}}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:12px 14px;
+  box-shadow:var(--shadow);position:relative;overflow:hidden}
+.kpi::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--accent);opacity:.85}
+.kpi.frozen::before{background:var(--ink-4);opacity:.45}
+.kpi .k{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-4);font-weight:600;
+  display:flex;align-items:center;gap:6px}
+.kpi .v{font-family:var(--display);font-size:22px;font-weight:600;letter-spacing:-.025em;margin-top:4px;
+  font-variant-numeric:tabular-nums}
+.kpi .s{font-size:11.5px;color:var(--ink-3);margin-top:2px;font-variant-numeric:tabular-nums}
+.kpi .spark{margin-top:7px;display:block;width:100%;height:26px;cursor:crosshair}
+
+/* ---- panels ---- */
+.grid{display:grid;gap:13px;margin-bottom:13px}
+.g2{grid-template-columns:1fr 1fr}
+.g21{grid-template-columns:1.6fr 1fr}
+.g12{grid-template-columns:1fr 1.6fr}
+@media(max-width:1180px){.g2,.g21,.g12{grid-template-columns:1fr}}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);
+  display:flex;flex-direction:column;min-width:0}
+.panel.frozen{border-style:dashed}
+.ph{padding:12px 15px;border-bottom:1px solid var(--line-soft);display:flex;align-items:center;
+  justify-content:space-between;gap:12px;flex-wrap:wrap}
+.ph h3{font-size:13.5px;font-weight:600;letter-spacing:-.01em}
+.ph .note{font-size:11.5px;color:var(--ink-4)}
+.pb{padding:13px 15px}
+.pb.flush{padding:0}
+canvas{display:block;width:100%}
+
+/* ---- tables ---- */
+.tw{overflow-x:auto}
+.tw.cap{max-height:340px;overflow-y:auto}
+table{width:100%;border-collapse:collapse;font-size:12.5px}
+th,td{padding:8px 9px;text-align:right;white-space:nowrap;border-bottom:1px solid var(--line-soft)}
+th:first-child,td:first-child{text-align:left;white-space:normal;min-width:140px;padding-left:14px}
+th:last-child,td:last-child{padding-right:14px}
+thead th{font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-4);font-weight:600;
+  background:var(--surface);position:sticky;top:0;z-index:1;border-bottom:1px solid var(--line)}
+tbody tr:hover{background:var(--line-soft)}
+tbody td{font-variant-numeric:tabular-nums;color:var(--ink-2)}
+tbody td:first-child{color:var(--ink);font-weight:500}
+tfoot td{font-weight:700;color:var(--ink);border-top:2px solid var(--line);border-bottom:0;
+  font-variant-numeric:tabular-nums;background:var(--surface)}
+tbody tr.grp td{background:var(--line-soft);font-weight:700;color:var(--ink);
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+tbody tr.grp:hover td{background:var(--line-soft)}
+tbody tr.grp td:first-child{font-size:12.5px}
+tbody tr.syn td{font-style:italic;color:var(--ink-3)}
+tbody tr.grp .cnt{font-weight:600;font-size:10.5px;color:var(--ink-3);background:var(--surface);
+  padding:1px 6px;border-radius:999px;margin-left:6px}
+sup.src{font-size:8.5px;font-weight:700;padding:1px 3px;border-radius:3px;margin-left:2px;vertical-align:2px}
+sup.src.adj{background:#E3F3EB;color:#1F8A5B}
+sup.src.ga4{background:#E7EEFB;color:#3155A4}
+:root[data-theme="dark"] sup.src.adj,html:not([data-theme]) sup.src.adj{background:#16302A;color:#57C994}
+:root[data-theme="dark"] sup.src.ga4,html:not([data-theme]) sup.src.ga4{background:#1B2A47;color:#8FB0EC}
+:root[data-theme="light"] sup.src.adj{background:#E3F3EB;color:#1F8A5B}
+:root[data-theme="light"] sup.src.ga4{background:#E7EEFB;color:#3155A4}
+.srckey{display:flex;flex-wrap:wrap;gap:14px;padding:9px 14px;font-size:11px;color:var(--ink-4);
+  border-top:1px solid var(--line-soft)}
+.srckey span{display:flex;align-items:center;gap:5px}
+.sortable{cursor:pointer;user-select:none}
+.sorted::after{content:"▾";margin-left:4px;font-size:9px}
+.sorted.asc::after{content:"▴"}
+
+/* ---- bits ---- */
+.pill{display:inline-flex;align-items:center;gap:4px;padding:2px 8px;border-radius:999px;font-size:10.5px;font-weight:600}
+.pill.good{background:var(--good-bg);color:var(--good)}
+.pill.warn{background:var(--warn-bg);color:var(--warn)}
+.pill.crit{background:var(--crit-bg);color:var(--crit)}
+.pill.mute{background:var(--line-soft);color:var(--ink-3)}
+.tag{display:inline-block;padding:1px 7px;border-radius:5px;font-size:10.5px;font-weight:600;
+  background:var(--line-soft);color:var(--ink-3)}
+.tag.frz{background:var(--warn-bg);color:var(--warn)}
+.pdot{display:inline-block;width:7px;height:7px;border-radius:2px;margin-right:6px;vertical-align:1px}
+.delta{font-weight:600;font-variant-numeric:tabular-nums}
+.delta.up{color:var(--good)} .delta.down{color:var(--crit)} .delta.flat{color:var(--ink-4)}
+.legend{display:flex;flex-wrap:wrap;gap:9px 15px;padding:9px 15px 13px;font-size:11.5px;color:var(--ink-3)}
+.legend span{display:flex;align-items:center;gap:6px}
+.empty{padding:24px;text-align:center;color:var(--ink-4);font-size:13px}
+.callout{display:block;padding:10px 13px;border-radius:9px;background:var(--warn-bg);
+  border:1px solid color-mix(in srgb,var(--warn) 25%,transparent);font-size:12.5px;color:var(--ink-2);
+  margin-bottom:13px;line-height:1.6}
+.callout b{color:var(--ink);font-weight:600}
+.loading,.error{padding:60px 20px;text-align:center;color:var(--ink-3)}
+.error{color:var(--crit)}
+
+/* ---- insights ---- */
+.ins{display:flex;flex-direction:column;gap:0}
+.ins li{display:grid;grid-template-columns:26px 1fr auto;gap:10px;align-items:baseline;padding:10px 0;
+  border-bottom:1px solid var(--line-soft);list-style:none}
+.ins li:last-child{border-bottom:0}
+.ins .ico{font-size:15px;line-height:1;text-align:center}
+.ins .txt{font-size:12.5px;color:var(--ink-2)}
+.ins .txt b{color:var(--ink);font-weight:600}
+.ins .val{font-family:var(--display);font-size:13px;font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
+
+/* ---- ranked list ---- */
+.rank{list-style:none;margin:0;padding:0}
+.rank li{display:grid;grid-template-columns:20px 1fr auto;align-items:center;gap:10px;padding:9px 0;
+  border-bottom:1px solid var(--line-soft)}
+.rank li:last-child{border-bottom:0}
+.rank .rk{font-size:11px;font-weight:700;color:var(--ink-4);font-variant-numeric:tabular-nums}
+.rank .rn{min-width:0;font-size:12.5px;color:var(--ink);font-weight:500;overflow:hidden;
+  text-overflow:ellipsis;white-space:nowrap}
+.rank .rn em{display:block;font-style:normal;font-size:11px;color:var(--ink-4);font-weight:400;margin-top:2px;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rank .rv{font-family:var(--display);font-size:15px;font-weight:600;color:var(--ink);
+  font-variant-numeric:tabular-nums;white-space:nowrap}
+
+/* ---- small multiples ---- */
+.sm{display:grid;grid-template-columns:repeat(auto-fill,minmax(212px,1fr));gap:11px}
+.smc{border:1px solid var(--line);border-radius:9px;padding:11px 12px;background:var(--surface)}
+.smc .t{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.smc .t .nm{font-size:12.5px;font-weight:600;display:flex;align-items:center;gap:6px}
+.smc .v{font-family:var(--display);font-size:17px;font-weight:600;margin-top:5px;font-variant-numeric:tabular-nums}
+.smc .m{font-size:11px;color:var(--ink-4);font-variant-numeric:tabular-nums}
+.smc canvas{margin-top:7px;height:38px;cursor:crosshair}
+
+/* ---- claimed vs verified ---- */
+.cv{display:flex;flex-direction:column;gap:12px}
+.cvr .h{display:flex;justify-content:space-between;align-items:baseline;font-size:12.5px;margin-bottom:5px}
+.cvr .h .nm{font-weight:600;display:flex;align-items:center;gap:6px}
+.cvbar{position:relative;height:10px;border-radius:5px;background:var(--line-soft);overflow:hidden}
+.cvbar i{position:absolute;left:0;top:0;bottom:0;border-radius:5px}
+.cvbar .claim{background:var(--ink-4);opacity:.35}
+.cvbar .ver{background:var(--accent)}
+.cvr .f{display:flex;justify-content:space-between;font-size:11px;color:var(--ink-4);margin-top:4px;
+  font-variant-numeric:tabular-nums}
+
+/* ---- tooltip ---- */
+#tip{position:fixed;pointer-events:none;z-index:99;background:var(--ink);color:var(--bg);
+  padding:8px 10px;border-radius:7px;font-size:11.5px;line-height:1.45;box-shadow:0 8px 24px rgba(0,0,0,.28);
+  opacity:0;transition:opacity .1s;max-width:250px;font-variant-numeric:tabular-nums}
+#tip.on{opacity:1}
+#tip .tt{font-weight:700;margin-bottom:3px;font-size:12px}
+#tip .tr{display:flex;justify-content:space-between;gap:14px}
+#tip .tr span:first-child{opacity:.7}
+/* ---- line explainer ---- */
+.ex{border:1px solid var(--line);border-radius:9px;margin-bottom:8px;overflow:hidden;background:var(--surface)}
+.ex[open]{border-color:var(--accent)}
+.ex summary{display:grid;grid-template-columns:auto 1fr auto auto auto;align-items:center;gap:10px;
+  padding:11px 13px;cursor:pointer;list-style:none;font-size:13px}
+.ex summary::-webkit-details-marker{display:none}
+.ex summary::after{content:"+";font-size:15px;color:var(--ink-4);width:14px;text-align:center;order:5}
+.ex[open] summary::after{content:"−"}
+.ex summary:hover{background:var(--line-soft)}
+.ex .exn{font-weight:600;display:flex;align-items:center;gap:7px}
+.ex .exm{font-size:11.5px;color:var(--ink-4)}
+.ex .exv{font-family:var(--display);font-weight:600;font-variant-numeric:tabular-nums;min-width:76px;text-align:right}
+.exb{padding:0 13px 13px;border-top:1px solid var(--line-soft)}
+.exrow{display:grid;grid-template-columns:130px 1fr;gap:12px;padding:8px 0;font-size:12.5px;
+  border-bottom:1px solid var(--line-soft)}
+.exrow>span:first-child{color:var(--ink-4);font-size:10.5px;letter-spacing:.09em;
+  text-transform:uppercase;font-weight:600;padding-top:2px}
+.exrow>span:last-child{color:var(--ink-2)}
+.exrow code{background:var(--line-soft);padding:1px 5px;border-radius:4px;font-family:var(--mono);font-size:11.5px}
+#views .tw table{font-size:12px}
+#views .tw th,#views .tw td{padding:7px 7px}
+#views .tw th:first-child,#views .tw td:first-child{min-width:132px;padding-left:12px}
+.extab{margin-top:11px;font-size:12px}
+.extab th{font-size:10px;padding:6px 8px}
+.extab td{padding:6px 8px}
+.extab td:first-child{min-width:0;font-size:11.5px;font-weight:400;color:var(--ink-2);
+  word-break:break-all;white-space:normal}
+.exnote{margin-top:11px;padding:10px 12px;background:var(--warn-bg);border-radius:7px;
+  font-size:12px;color:var(--ink-2)}
+.view{display:none}.view.on{display:block}
+</style>
+</head>
+<body>
+<div id="tip"></div>
+<div class="shell">
+  <aside class="rail">
+    <div class="mark">
+      <div class="kicker">Qiddiya City</div>
+      <div class="name"><span class="dot"></span><span id="brandName">Six Flags</span></div>
+    </div>
+    <nav id="nav"></nav>
+    <div class="rail-foot">
+      <div>Built from <b>Raw data</b>, <b>Adjust Raw</b>, <b>GA4</b></div>
+      <div id="stamp" style="margin-top:5px"></div>
+    </div>
+  </aside>
+  <main>
+    <div id="loading" class="loading">Reading the sheets…</div>
+    <div id="error" class="error" style="display:none"></div>
+    <div id="app" style="display:none">
+      <div class="head">
+        <div>
+          <h1 id="title">Summary</h1>
+          <div class="sub" id="sub"></div>
+        </div>
+        <div style="display:flex;gap:7px;align-items:center;flex-wrap:wrap">
+          <button class="refresh-btn" id="refreshBtn" type="button" onclick="refreshDashboard()">↻ Refresh</button>
+          <span class="refresh-status" id="refreshStatus" role="status" aria-live="polite"></span>
+          <span class="chip live" id="checkChip">reconciled</span>
+          <span class="chip" id="fxChip"></span>
+        </div>
+      </div>
+      <div class="filters" id="filters"></div>
+      <div class="kpis" id="kpis"></div>
+      <div id="views"></div>
+    </div>
+  </main>
+</div>
+
+<script>
+/* ================================================================
+ * state
+ * ================================================================ */
+var DATA=null, BRAND='SFQC', VIEW='summary';
+/* obj and plat are multi-select: an empty list means no restriction. */
+var F={from:null,to:null,obj:[],plat:[]};
+var SORT={key:'spend',dir:-1};
+var DAILY_METRIC='spend', EFF_METRIC='cpi';
+var GROUP='plat', CSORT={key:'spend',dir:-1}, COLSET='core';
+var REFRESHING=false, RANGE_PRESET=null;
+
+var VIEWS=[['summary','Summary'],['trend','Trend'],['platforms','Platforms'],
+           ['campaigns','Campaigns'],['attribution','Attribution'],['method','How it adds up']];
+
+var PLAT_COLOR={Snapchat:'#F5C518',TikTok:'#25C4C4',Meta:'#4B7BEC',Google:'#E8734A',
+  X:'#7A8699',Apple:'#9B7EDE',InMobi:'#C0567E',InMotion:'#5AA469',Bidease:'#8C7B6B'};
+
+/* raw row indices */
+var P=0,B=1,C=2,D=3,RCH=4,IMP=5,SPD=6,LPV=7,CLK=8,VW=9,INS=10,PUR=11,OBJ=12;
+
+/* ================================================================
+ * formatting
+ * ================================================================ */
+function n0(v){return v==null||isNaN(v)?'—':Math.round(v).toLocaleString('en-US');}
+function n2(v){return v==null||isNaN(v)?'—':v.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});}
+function usd(v){return v==null||isNaN(v)?'—':'$'+Math.round(v).toLocaleString('en-US');}
+function usd2(v){return v==null||isNaN(v)?'—':'$'+v.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});}
+function sar(v){return v==null||isNaN(v)?'—':Math.round(v).toLocaleString('en-US')+' SAR';}
+function pct(v){return v==null||isNaN(v)?'—':v.toFixed(2)+'%';}
+var BRANDS={SFQC:'Six Flags',AAQC:'Aquarabia',BOTH:'Both portals'};
+function brandMatch(b){return BRAND==='BOTH'?true:b===BRAND;}
+function brandList(){return BRAND==='BOTH'?['SFQC','AAQC']:[BRAND];}
+function brandTag(){return '<span class="tag">'+(BRAND==='BOTH'?'SFQC + AAQC':BRAND)+'</span>';}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function shortDay(d){var p=d.split('-');return p[2]+'/'+p[1];}
+
+/* ================================================================
+ * classification — mirrors the pacing wildcards exactly
+ * ================================================================ */
+function objOf(plat,camp){
+  var c=String(camp||'').toLowerCase();
+  if(plat==='Snapchat') return (c.indexOf('snapchat_awr')>=0||c.indexOf('_awrn_')>=0||
+    c.indexOf('takeover')>=0||c.indexOf('take over')>=0||c.indexOf('take-over')>=0||
+    c.indexOf('first story')>=0||c.indexOf('first_story')>=0||c.indexOf('first-story')>=0)
+    ?'Awareness':'Conversion';
+  if(plat==='TikTok'){
+    /* _awrn_, not just _rf_awrn_ — the reservation/TopFeed buys carry it too */
+    if(c.indexOf('tiktok_awr')>=0||c.indexOf('_awrn_')>=0) return 'Awareness';
+    /* _conv_sal_ sits on the TikTok Search line of the pacing tab, not the app line */
+    if(c.indexOf('_tt_search')>=0||c.indexOf('_conv_sal_')>=0) return 'Search';
+    return 'Conversion';
+  }
+  if(plat==='X') return c.indexOf('x_awr')>=0?'Awareness':'Conversion';
+  if(plat==='Google'){
+    if(c.indexOf('_yt_')>=0) return 'Awareness';
+    if(c.indexOf('sem')>=0) return 'Search';
+    return 'Conversion';
+  }
+  return 'Conversion';
+}
+/* New payloads carry the server's classification at index 12. objOf remains only
+   as backward compatibility for an old standalone export or cached deployment. */
+function rawObj(r){return r[OBJ]||objOf(r[P],r[C]);}
+/* Which Adjust (channel, objective) pairs each pacing line actually reads.
+   null = every objective for that channel. Anything not listed here — Organic,
+   Other, Snapchat awareness, TikTok search — is deliberately NOT counted,
+   exactly as on the pacing tabs. Change one and they stop agreeing. */
+/* Every pacing line reads Adjust for its OWN channel and objective. Row 8
+   (TikTok awareness) reads Adjust TikTok/Awareness, row 15 reads TikTok/Search,
+   row 10 reads Google/YouTube. Organic and Other are never counted. */
+var ADJ_CHANNELS=['Snapchat','TikTok','Meta','Google','Apple','X','Bidease','InMobi','InMotion'];
+/* These channels get one line each, so whatever objective Adjust recorded is
+   filed under Conversion. */
+var LUMPED=['Meta','Apple','Bidease','InMobi','InMotion'];
+var ADJ_RULE={X:null,Snapchat:null,TikTok:null,Google:null,Meta:null,Apple:null,
+              Bidease:null,InMobi:null,InMotion:null};
+function adjAllowed(ch,ob){ return ADJ_CHANNELS.indexOf(ch)>=0; }
+function lineObj(ch,ob){
+  if(LUMPED.indexOf(ch)>=0) return 'Conversion';
+  if(ch==='Google'&&ob==='YouTube') return 'Awareness';   // the YouTube line
+  return ob;
+}
+/* GA4 buckets the pacing reads. Everything else (Meta, X, email, organic) is not. */
+var GA_READ=['Snapchat','TikTok','TikTok-cpc','Google','Meta'];
+/* Which GA4 buckets belong to which platform. Buckets not listed (Meta, X,
+   Other) are not read by any pacing line, so no platform claims them. */
+var GA_OF_PLAT={Snapchat:['Snapchat'],TikTok:['TikTok','TikTok-cpc'],Google:['Google'],Meta:['Meta']};
+/* GA4 bucket -> the pacing line that reads it. */
+var GA_LINE_MAP={Snapchat:'Snapchat|Awareness','TikTok':'TikTok|Awareness',
+                 'TikTok-cpc':'TikTok|Search',Google:'Google|Search',
+                 /* Meta shows GA4 transactions but books Adjust revenue. It is
+                    deliberately kept out of GA_LINE_KEYS so the same sale is
+                    never counted on both meters. */
+                 Meta:'Meta|Conversion'};
+var GA_LINE_KEYS=['Snapchat|Awareness','TikTok|Awareness','TikTok|Search','Google|Search'];
+/* Campaign names are the join between Raw data, Adjust and GA4. They agree
+   character for character on the overwhelming majority of the volume, so this
+   only folds the three things that are typography rather than identity: case,
+   en/em dashes, and runs of whitespace. Nothing here can merge two campaigns
+   that are actually different — that is the whole point. */
+function normCamp(s){
+  return String(s==null?'':s).trim().toLowerCase()
+    .replace(/[–—]/g,'-').replace(/\s+/g,' ');
+}
+/* Adjust and GA4 name a campaign that Raw data never spent on — it ran before
+   the window, or the platform export does not carry it. Those are real numbers,
+   so they get their own row rather than being folded into a campaign that did
+   not earn them. These are the names that are not campaigns at all. */
+var NOT_A_CAMPAIGN={'unknown':1,'anonymous ips':1,'expired attributions':1,
+  'organic share':1,'anomaly':1,'untrusted devices':1,'$campaign_name':1,'':1};
+function isNamelessCamp(c){ return NOT_A_CAMPAIGN[normCamp(c)]===1; }
+/* Every platform the user can filter to: whatever spends, plus the Adjust-only
+   partners (Bidease, InMotion) that book revenue without ever appearing in Raw data. */
+function platOptions(){
+  var s={};
+  DATA.raw.forEach(function(r){ if(brandMatch(r[B])) s[r[P]]=1; });
+  DATA.adjust.forEach(function(a){
+    if(brandMatch(a.brand)&&adjAllowed(a.channel,a.objective)) s[a.channel]=1;
+  });
+  return Object.keys(s).sort();
+}
+function platMatch(p){ return !F.plat.length||F.plat.indexOf(p)>=0; }
+function objMatch(o){ return !F.obj.length||F.obj.indexOf(o)>=0; }
+/* Which GA4 buckets an objective can legitimately claim. */
+var GA_OF_OBJ={Awareness:['Snapchat','TikTok'],Search:['TikTok-cpc','Google'],Conversion:['Meta']};
+function gaBucketAllowed(bucket){
+  if(F.plat.length){
+    var okP=[];
+    F.plat.forEach(function(p){ okP=okP.concat(GA_OF_PLAT[p]||[]); });
+    if(okP.indexOf(bucket)<0) return false;
+  }
+  if(F.obj.length){
+    var okO=[];
+    F.obj.forEach(function(o){ okO=okO.concat(GA_OF_OBJ[o]||[]); });
+    if(okO.indexOf(bucket)<0) return false;
+  }
+  return true;
+}
+function sourceCoverageStatus(){
+  var coverage=DATA&&DATA.meta&&DATA.meta.sourceCoverage;
+  if(!coverage)return null;
+  var brands=brandList(), selectedPlatforms=F.plat.length?F.plat:platOptions();
+  function latest(rows,allowed){
+    var last='';
+    (rows||[]).forEach(function(r){
+      if(brands.indexOf(r.brand)<0||!allowed(r))return;
+      if(r.last>last)last=r.last;
+    });
+    return last;
+  }
+  var mediaLast=latest(coverage.media,function(r){
+    return selectedPlatforms.indexOf(r.platform)>=0&&objMatch(r.objective);
+  });
+  var adjustLast=latest(coverage.adjust,function(r){
+    return selectedPlatforms.indexOf(r.platform)>=0&&objMatch(lineObj(r.platform,r.objective));
+  });
+  var gaBuckets=[];
+  selectedPlatforms.forEach(function(p){gaBuckets=gaBuckets.concat(GA_OF_PLAT[p]||[]);});
+  var gaLast=latest(coverage.ga4,function(r){
+    return gaBuckets.indexOf(r.bucket)>=0&&gaBucketAllowed(r.bucket);
+  });
+  var parts=[];
+  if(mediaLast)parts.push('Media '+shortDay(mediaLast));
+  if(adjustLast)parts.push('Adjust '+shortDay(adjustLast));
+  if(gaLast)parts.push('GA4 '+shortDay(gaLast));
+  if(!parts.length)return null;
+  return {text:parts.join(' · '),bad:[mediaLast,adjustLast,gaLast].some(function(d){
+    return d&&d<F.to;
+  })};
+}
+
+/* ================================================================
+ * boot
+ * ================================================================ */
+function boot(){
+  if(typeof EMBEDDED_PAYLOAD!=='undefined'&&EMBEDDED_PAYLOAD){
+    document.getElementById('refreshBtn').classList.add('snapshot');
+    init(EMBEDDED_PAYLOAD);
+    setRefreshState(false,'Snapshot — re-export from the sheet for new numbers');
+    return;
+  }
+  google.script.run.withSuccessHandler(init).withFailureHandler(fail).getPacingDashboardData();
+}
+function setRefreshState(pending,message,bad){
+  REFRESHING=pending;
+  var button=document.getElementById('refreshBtn');
+  button.disabled=pending||(typeof EMBEDDED_PAYLOAD!=='undefined'&&!!EMBEDDED_PAYLOAD);
+  button.textContent=pending?'↻ Refreshing…':'↻ Refresh';
+  var status=document.getElementById('refreshStatus');
+  status.textContent=message||'';
+  status.className='refresh-status'+(bad?' bad':'');
+}
+function refreshDashboard(){
+  if(REFRESHING)return;
+  if(typeof EMBEDDED_PAYLOAD!=='undefined'&&EMBEDDED_PAYLOAD){
+    setRefreshState(false,'Snapshot — re-export from the sheet for new numbers',true);
+    return;
+  }
+  if(typeof google==='undefined'||!google.script||!google.script.run){
+    setRefreshState(false,'Live sheet refresh is unavailable here',true);
+    return;
+  }
+  setRefreshState(true,'Reading latest sheet data…');
+  google.script.run.withSuccessHandler(function(p){
+    try{
+      if(!p||!p.meta||!p.raw||!p.adjust||!p.ga4)
+        throw new Error('Incomplete sheet response');
+      init(p,true);
+      setRefreshState(false,p.meta.generated||'Updated from sheets');
+    }catch(e){
+      setRefreshState(false,'Refresh failed: '+(e&&e.message?e.message:e),true);
+    }
+  }).withFailureHandler(function(e){
+    setRefreshState(false,'Refresh failed: '+(e&&e.message?e.message:e),true);
+  }).getPacingDashboardData();
+}
+function fail(e){
+  document.getElementById('loading').style.display='none';
+  var el=document.getElementById('error');el.style.display='block';
+  el.textContent='Could not read the sheets: '+(e&&e.message?e.message:e);
+}
+function init(p,keepFilters){
+  var previous=keepFilters&&DATA?{
+    from:F.from,to:F.to,full:isFullPeriod(),preset:RANGE_PRESET,
+    obj:F.obj.slice(),plat:F.plat.slice()
+  }:null;
+  /* The payload ships campaign names once in p.camps and has every Adjust and
+     GA4 row point at one by index. Put the name back on the row here, once, so
+     nothing downstream has to know the table exists. Older payloads have no
+     camps array — those rows simply carry no name and fall through to the
+     unattributed line, which is exactly what they were before. */
+  if(p.camps){
+    (p.raw||[]).forEach(function(r){ r[C]=p.camps[r[C]]||''; });
+    (p.adjust||[]).forEach(function(a){ a.camp=p.camps[a.ci]||''; });
+    (p.ga4||[]).forEach(function(g){ g.camp=p.camps[g.ci]||''; });
+  }
+  DATA=p;
+  if(previous){
+    F.obj=previous.obj;F.plat=previous.plat;RANGE_PRESET=previous.preset;
+    if(RANGE_PRESET===7||RANGE_PRESET===14){
+      var days=p.meta.days||[];
+      F.from=days[Math.max(0,days.length-RANGE_PRESET)]||p.meta.start;
+      F.to=p.meta.end;
+    }else if(previous.full){
+      F.from=p.meta.start;F.to=p.meta.end;
+    }else{
+      F.from=previous.from<p.meta.start?p.meta.start:previous.from>p.meta.end?p.meta.end:previous.from;
+      F.to=previous.to<p.meta.start?p.meta.start:previous.to>p.meta.end?p.meta.end:previous.to;
+    }
+  }else{F.from=p.meta.start;F.to=p.meta.end;RANGE_PRESET=null;}
+  document.getElementById('loading').style.display='none';
+  document.getElementById('app').style.display='block';
+  document.getElementById('fxChip').textContent='1 USD = '+p.meta.fx+' SAR';
+  document.getElementById('stamp').textContent=p.meta.generated||'';
+  document.getElementById('nav').innerHTML=VIEWS.map(function(v){
+    return '<button onclick="setView(\''+v[0]+'\')" data-v="'+v[0]+'"><span class="bar"></span>'+v[1]+'</button>';
+  }).join('');
+  render();
+}
+function setBrand(b){
+  BRAND=b;document.documentElement.setAttribute('data-brand',b);
+  document.getElementById('brandName').textContent=BRANDS[b];
+  _pfx={};
+  // the other portal may not run this platform — don't leave the user on an empty screen
+  var avail=platOptions();
+  F.plat=F.plat.filter(function(p){return avail.indexOf(p)>=0;});
+  render();
+}
+function setView(v){VIEW=v;render();}
+function toggleIn(list,v){
+  var i=list.indexOf(v);
+  if(i>=0) list.splice(i,1); else list.push(v);
+  return list;
+}
+function setObj(o){ if(o==='all')F.obj=[]; else toggleIn(F.obj,o); render(); }
+function setPlat(p){ if(p==='all')F.plat=[]; else toggleIn(F.plat,p); render(); }
+function setGroup(g){GROUP=g;render();}
+function setColset(c){COLSET=c;render();}
+function csortBy(k){CSORT=CSORT.key===k?{key:k,dir:-CSORT.dir}:{key:k,dir:-1};render();}
+function setRange(from,to){F.from=from;F.to=to;RANGE_PRESET=null;render();}
+function clearFilters(){
+  F.from=DATA.meta.start;F.to=DATA.meta.end;F.obj=[];F.plat=[];RANGE_PRESET=null;render();
+}
+function preset(days){
+  RANGE_PRESET=days;
+  var all=DATA.meta.days;
+  if(days==null){F.from=DATA.meta.start;F.to=DATA.meta.end;}
+  else{var i=Math.max(0,all.length-days);F.from=all[i];F.to=DATA.meta.end;}
+  render();
+}
+function onDate(which,val){
+  if(!val) return;
+  RANGE_PRESET=null;
+  if(which==='from') F.from=val; else F.to=val;
+  if(F.from>F.to){var t=F.from;F.from=F.to;F.to=t;}
+  render();
+}
+function isFullPeriod(){return F.from===DATA.meta.start&&F.to===DATA.meta.end;}
+function isFiltered(){return !isFullPeriod()||F.obj.length>0||F.plat.length>0;}
+
+/* ================================================================
+ * selection
+ * ================================================================ */
+function rowsRaw(){
+  return DATA.raw.filter(function(r){
+    if(!brandMatch(r[B])) return false;
+    if(!platMatch(r[P])) return false;
+    if(r[D]<F.from||r[D]>F.to) return false;
+    if(!objMatch(rawObj(r))) return false;
+    return true;
+  });
+}
+function daysInRange(){
+  return DATA.meta.days.filter(function(d){return d>=F.from&&d<=F.to;});
+}
+function sumRaw(rs){
+  var t={spend:0,impr:0,clicks:0,lpv:0,views:0,inst:0,purch:0};
+  rs.forEach(function(r){
+    t.spend+=r[SPD];t.impr+=r[IMP];t.clicks+=r[CLK];t.lpv+=r[LPV];
+    t.views+=r[VW];t.inst+=r[INS];t.purch+=r[PUR];
+  });
+  t.cpm=t.impr?t.spend/t.impr*1000:null;
+  t.cpc=t.clicks?t.spend/t.clicks:null;
+  t.ctr=t.impr?t.clicks/t.impr*100:null;
+  t.cpiPlat=t.inst?t.spend/t.inst:null;
+  return t;
+}
+/* Every Adjust row carries its own day, so the date picker moves installs,
+   bookings and revenue exactly the way it moves spend. */
+function adjustRows(){
+  return DATA.adjust.filter(function(a){
+    if(a.day&&(a.day<F.from||a.day>F.to)) return false;
+    if(!brandMatch(a.brand)) return false;
+    if(!platMatch(a.channel)) return false;
+    if(!adjAllowed(a.channel,a.objective)) return false;
+    if(!objMatch(lineObj(a.channel,a.objective))) return false;
+    return true;
+  });
+}
+/* An empty Adjust slice is not proof of zero conversions. In particular, a
+   platform may spend in Raw data while its app/channel is absent from the
+   manually supplied Adjust Raw export altogether. */
+function adjustSourceGaps(){
+  var seen={},missing={};
+  adjustRows().forEach(function(a){seen[a.brand+'|'+a.channel+'|'+lineObj(a.channel,a.objective)]=1;});
+  rowsRaw().forEach(function(r){
+    if(r[SPD]<=0)return;
+    var key=r[B]+'|'+r[P]+'|'+rawObj(r);
+    if(!seen[key])missing[key]=1;
+  });
+  return missing;
+}
+/* Totals must come from the LINES, not from a flat sum of Adjust, because the
+   four web lines take their revenue from GA4 and their Adjust revenue is
+   deliberately not counted. Summing Adjust flat would overstate revenue. */
+function adjustTotals(){
+  var t={inst:0,paidInst:0,bookings:0,revenue:0};
+  lines().forEach(function(l){
+    t.inst+=l.adjInst; t.bookings+=l.bookings;
+    if(l.revSrc!=='GA4') t.revenue+=l.revenue;
+  });
+  adjustRows().forEach(function(a){ t.paidInst+=a.paidInst; });
+  return t;
+}
+function ga4Rows(){
+  return DATA.ga4.filter(function(g){
+    if(g.day&&(g.day<F.from||g.day>F.to)) return false;
+    if(!brandMatch(g.brand)) return false;
+    if(GA_READ.indexOf(g.bucket)<0) return false;
+    return gaBucketAllowed(g.bucket);
+  });
+}
+function ga4Totals(){
+  var t={tx:0,revenue:0};
+  lines().forEach(function(l){
+    t.tx+=l.ga4Tx||0;
+    if(l.revSrc==='GA4') t.revenue+=l.revenue;
+  });
+  return t;
+}
+function revenueTotal(){return adjustTotals().revenue+ga4Totals().revenue;}
+
+/* by-day series over the active range */
+function series(){
+  var rs=rowsRaw(), days=daysInRange(), map={};
+  days.forEach(function(d){map[d]={day:d,spend:0,impr:0,clicks:0,inst:0,purch:0,views:0,
+    adjInst:0,bookings:0,adjRev:0,ga4Tx:0,ga4Rev:0,byPlat:{}};});
+  rs.forEach(function(r){
+    var e=map[r[D]];if(!e)return;
+    e.spend+=r[SPD];e.impr+=r[IMP];e.clicks+=r[CLK];e.inst+=r[INS];e.purch+=r[PUR];e.views+=r[VW];
+    e.byPlat[r[P]]=(e.byPlat[r[P]]||0)+r[SPD];
+  });
+  /* Adjust and GA4 land on their own day, so a CPI on a row divides two figures
+     measured over the same 24 hours. Revenue follows the same split the pacing
+     tab uses: the four web lines are GA4, every other line is Adjust. */
+  adjustRows().forEach(function(a){
+    var e=map[a.day];if(!e)return;
+    e.adjInst+=a.inst; e.bookings+=a.bookings;
+    if(GA_LINE_KEYS.indexOf(a.channel+'|'+lineObj(a.channel,a.objective))<0) e.adjRev+=a.revenue;
+  });
+  ga4Rows().forEach(function(x){
+    var e=map[x.day];if(!e)return;
+    e.ga4Tx+=x.tx;
+    if(GA_LINE_KEYS.indexOf(GA_LINE_MAP[x.bucket])>=0) e.ga4Rev+=x.revenue;
+  });
+  days.forEach(function(d){var e=map[d];e.revenue=e.adjRev+e.ga4Rev;});
+  return days.map(function(d){return map[d];});
+}
+function platsActive(){
+  var s={};rowsRaw().forEach(function(r){s[r[P]]=1;});
+  return DATA.meta.plats.filter(function(p){return s[p];});
+}
+/* pacing lines = platform × objective, which reproduces the 15 sheet rows */
+function lines(){
+  var m={};
+  rowsRaw().forEach(function(r){
+    var o=rawObj(r),k=r[P]+'|'+o;
+    var e=m[k]||(m[k]={plat:r[P],obj:o,spend:0,impr:0,clicks:0,views:0,lpv:0,inst:0,purch:0});
+    e.spend+=r[SPD];e.impr+=r[IMP];e.clicks+=r[CLK];e.views+=r[VW];e.lpv+=r[LPV];
+    e.inst+=r[INS];e.purch+=r[PUR];
+  });
+  var adj={};
+  adjustRows().forEach(function(a){
+    var k=a.channel+'|'+lineObj(a.channel,a.objective);
+    var e=adj[k]||(adj[k]={inst:0,bookings:0,revenue:0});
+    e.inst+=a.inst;e.bookings+=a.bookings;e.revenue+=a.revenue;
+  });
+  /* Bidease and InMotion book revenue but never appear in Raw data — without
+     this they would silently vanish and the totals would come up short. */
+  Object.keys(adj).forEach(function(k){
+    if(m[k])return;
+    var parts=k.split('|');
+    m[k]={plat:parts[0],obj:parts[1],spend:0,impr:0,clicks:0,views:0,lpv:0,inst:0,purch:0};
+  });
+  /* Web revenue lands on the four lines the pacing reads from GA4. */
+  var GA_LINE=GA_LINE_MAP;
+  var ga={};
+  ga4Rows().forEach(function(x){
+    var k=GA_LINE[x.bucket];if(!k)return;
+    var e=ga[k]||(ga[k]={tx:0,revenue:0});
+    e.tx+=x.tx;e.revenue+=x.revenue;
+  });
+  /* Same guard for the web side: a line that earned GA4 revenue without spending
+     or installing would otherwise have nowhere to land, and the campaign table —
+     which does give it a row — would stop agreeing with this one. */
+  GA_LINE_KEYS.forEach(function(k){
+    if(m[k]||!ga[k]||!ga[k].revenue)return;
+    var parts=k.split('|');
+    m[k]={plat:parts[0],obj:parts[1],spend:0,impr:0,clicks:0,views:0,lpv:0,inst:0,purch:0};
+  });
+  return Object.keys(m).map(function(k){
+    var e=m[k],a=adj[k]||{inst:0,bookings:0,revenue:0},w=ga[k]||{tx:0,revenue:0};
+    e.adjInst=a.inst;e.bookings=a.bookings;e.ga4Tx=w.tx;
+    /* Column X: the four web lines take revenue from GA4, every other line from
+       Adjust. Never both — the same sale would be counted twice. */
+    var isWebLine=GA_LINE_KEYS.indexOf(k)>=0;
+    e.revenue=isWebLine?w.revenue:a.revenue;
+    e.revSrc=isWebLine?'GA4':'Adjust';
+    /* Columns E..X, matching the pacing tab one for one.
+       Money metrics divide spend; conversion metrics use the platform's own
+       counts (N and O on the sheet); revenue, installs, bookings and ROAS all
+       come from Adjust or GA4 — never from the platform. */
+    e.spendSar=e.spend*DATA.meta.fx;                                   // F
+    e.cpm=e.impr?e.spend/e.impr*1000:null;                             // Q
+    e.cpv=e.views?e.spend/e.views:null;                                // R
+    e.cpc=e.clicks?e.spend/e.clicks:null;                              // S
+    e.ctr=e.impr?e.clicks/e.impr*100:null;                             // T
+    e.vtr=e.impr?e.views/e.impr*100:null;                              // U
+    e.cvrPurch=e.clicks?e.purch/e.clicks*100:null;                     // V
+    e.cvrInst=e.clicks?e.inst/e.clicks*100:null;                       // W
+    e.cpi=(e.spend>0&&e.adjInst)?e.spend/e.adjInst:null;               // spend / Adjust installs
+    e.cpa=(e.spend>0&&e.bookings)?e.spend/e.bookings:null;             // spend / Adjust bookings
+    e.roas=e.spendSar?e.revenue/e.spendSar:null;                       // P = X / F
+    return e;
+  }).sort(function(x,y){return y.spend-x.spend;});
+}
+function campaigns(){
+  var m={};
+  rowsRaw().forEach(function(r){
+    var ck=r[B]+'|'+r[C];
+    var e=m[ck]||(m[ck]={name:r[C],brand:r[B],plat:r[P],obj:rawObj(r),spend:0,impr:0,clicks:0,
+      inst:0,purch:0,views:0,days:{}});
+    e.spend+=r[SPD];e.impr+=r[IMP];e.clicks+=r[CLK];e.inst+=r[INS];e.purch+=r[PUR];
+    e.views+=r[VW];e.days[r[D]]=1;
+  });
+  var list=Object.keys(m).map(function(k){return m[k];});
+  list.forEach(function(c){ c.adjInst=0;c.bookings=0;c.adjRev=0;c.ga4Tx=0;c.ga4Rev=0; });
+
+  /* Adjust and GA4 both name the campaign, and it is the same name Raw data
+     carries. So installs, bookings and revenue are LOOKED UP per campaign, not
+     shared out by spend: what a row shows is what that campaign actually did.
+
+     The key is brand + platform + objective + name. Objective is in the key so a
+     campaign can only ever receive numbers filed on its own pacing line — that
+     is what keeps every column adding back to the pacing tab exactly. */
+  var idx={};
+  list.forEach(function(c){ idx[c.brand+'|'+c.plat+'|'+c.obj+'|'+normCamp(c.name)]=c; });
+
+  /* Anything Adjust or GA4 names that Raw data never spent on gets its own row.
+     Two kinds land here and both are real: a campaign that ran outside the
+     window or is missing from the platform export, and Adjust's own non-campaign
+     buckets — "unknown", "Anonymous IPs", "Expired Attributions". Giving them a
+     row is the only way the table can be measured everywhere and still total to
+     the pacing tab. Folding them into the spending campaigns is what the old
+     spend-share allocation did, and it is what made every CPI on this screen
+     identical. */
+  var extra={};
+  function unmatched(brand,plat,obj,name){
+    var nm=isNamelessCamp(name)
+      ? (String(name||'').trim()||'no campaign name')+' — '+plat+' · not tied to a campaign'
+      : String(name).trim();
+    var k=brand+'|'+plat+'|'+obj+'|'+normCamp(nm);
+    var e=extra[k];
+    if(!e) e=extra[k]={name:nm,brand:brand,plat:plat,obj:obj,spend:0,impr:0,clicks:0,
+      inst:0,purch:0,views:0,days:{},nDays:0,adjInst:0,bookings:0,adjRev:0,ga4Tx:0,ga4Rev:0,
+      noSpend:true,synthetic:isNamelessCamp(name)};
+    return e;
+  }
+  adjustRows().forEach(function(a){
+    var obj=lineObj(a.channel,a.objective);
+    var t=idx[a.brand+'|'+a.channel+'|'+obj+'|'+normCamp(a.camp)]||
+          unmatched(a.brand,a.channel,obj,a.camp);
+    t.adjInst+=a.inst; t.bookings+=a.bookings; t.adjRev+=a.revenue;
+  });
+  ga4Rows().forEach(function(g){
+    var line=GA_LINE_MAP[g.bucket]; if(!line) return;
+    var p=line.split('|'), plat=p[0], obj=p[1];
+    if(!platMatch(plat)) return;
+    var t=idx[g.brand+'|'+plat+'|'+obj+'|'+normCamp(g.camp)]||
+          unmatched(g.brand,plat,obj,g.camp);
+    t.ga4Tx+=g.tx; t.ga4Rev+=g.revenue;
+  });
+  Object.keys(extra).forEach(function(k){ list.push(extra[k]); });
+
+  /* Apple Search Ads hands Adjust the string "unknown" instead of a campaign, so
+     its spending campaigns measure zero while a nameless row holds the installs.
+     Saying so on the row beats a bare dash.
+
+     But only where the platform really is the blind one. Nearly every line has a
+     small nameless bucket — Adjust's "Expired Attributions" is two bookings on a
+     line carrying hundreds — and a campaign that simply delivered nothing this
+     window has to keep reading zero, not "not measured". So a line counts as
+     blind only when the nameless rows hold MORE of it than the named campaigns
+     do, which is true of Apple and of nothing else. */
+  var named={},nameless={};
+  list.forEach(function(c){
+    var k=c.plat+'|'+c.obj, v=c.adjInst+c.bookings;
+    if(c.synthetic) nameless[k]=(nameless[k]||0)+v; else named[k]=(named[k]||0)+v;
+  });
+  list.forEach(function(c){
+    var k=c.plat+'|'+c.obj;
+    c.blindLine=!!(c.spend>0&&!c.adjInst&&!c.bookings&&(nameless[k]||0)>(named[k]||0));
+  });
+
+  /* Revenue follows the same rule the pacing tab uses, campaign by campaign:
+     the four web lines are read from GA4, everything else from Adjust. Never
+     both — the same sale would be counted twice. */
+  list.forEach(function(c){
+    var isWebLine=GA_LINE_KEYS.indexOf(c.plat+'|'+c.obj)>=0;
+    c.revenue=isWebLine?c.ga4Rev:c.adjRev;
+    c.revSrc=isWebLine?'GA4':'Adjust';
+    c.nDays=Object.keys(c.days).length;
+    c.cpm=c.impr?c.spend/c.impr*1000:null;
+    c.cpc=c.clicks?c.spend/c.clicks:null;
+    c.ctr=c.impr?c.clicks/c.impr*100:null;
+    c.cpiPlat=c.inst?c.spend/c.inst:null;
+    c.cpi=(c.spend>0&&c.adjInst>=0.5)?c.spend/c.adjInst:null;
+    c.cpa=(c.spend>0&&c.bookings>=0.5)?c.spend/c.bookings:null;
+    c.roas=c.spend?c.revenue/(c.spend*DATA.meta.fx):null;
+  });
+  return list.filter(function(c){
+      return c.spend>0||c.revenue>0||c.adjInst>0||c.bookings>0;
+    }).sort(function(a,b){return b.spend-a.spend||b.adjInst-a.adjInst;});
+}
+/* platform-claimed installs vs Adjust-verified, over the dates on screen */
+function claimVsVerified(){
+  var claim={},ver={};
+  DATA.raw.forEach(function(r){
+    if(r[D]<F.from||r[D]>F.to)return;
+    if(!brandMatch(r[B])||!platMatch(r[P]))return;
+    claim[r[P]]=(claim[r[P]]||0)+r[INS];
+  });
+  DATA.adjust.forEach(function(a){
+    if(a.day&&(a.day<F.from||a.day>F.to))return;
+    if(!brandMatch(a.brand)||!platMatch(a.channel)||!adjAllowed(a.channel,a.objective))return;
+    ver[a.channel]=(ver[a.channel]||0)+a.inst;
+  });
+  var keys={};Object.keys(claim).forEach(function(k){keys[k]=1;});Object.keys(ver).forEach(function(k){keys[k]=1;});
+  return Object.keys(keys).map(function(k){
+    return {plat:k,claimed:claim[k]||0,verified:ver[k]||0,
+      ratio:(ver[k]?(claim[k]||0)/ver[k]:null)};
+  }).filter(function(x){return x.claimed>0||x.verified>0;})
+    .sort(function(a,b){return b.verified-a.verified;});
+}
+
+/* ================================================================
+ * week-over-week
+ * ================================================================ */
+function splitWeeks(){
+  var s=series();
+  if(s.length<4) return null;
+  var n=Math.min(7,Math.floor(s.length/2));
+  return {cur:s.slice(-n),prev:s.slice(-2*n,-n),n:n};
+}
+function wow(){
+  var w=splitWeeks();if(!w)return null;
+  function agg(list){
+    var t={spend:0,impr:0,clicks:0,inst:0,purch:0};
+    list.forEach(function(d){t.spend+=d.spend;t.impr+=d.impr;t.clicks+=d.clicks;t.inst+=d.inst;t.purch+=d.purch;});
+    t.cpm=t.impr?t.spend/t.impr*1000:null;
+    t.cpc=t.clicks?t.spend/t.clicks:null;
+    t.ctr=t.impr?t.clicks/t.impr*100:null;
+    t.cpi=t.inst?t.spend/t.inst:null;
+    return t;
+  }
+  return {n:w.n,cur:agg(w.cur),prev:agg(w.prev)};
+}
+function wowByPlat(){
+  var w=splitWeeks();if(!w)return[];
+  var out={};
+  function add(list,key){
+    list.forEach(function(d){
+      for(var p in d.byPlat){
+        var e=out[p]||(out[p]={plat:p,curSpend:0,prevSpend:0,curInst:0,prevInst:0});
+        e[key+'Spend']+=d.byPlat[p];
+      }
+    });
+  }
+  add(w.cur,'cur');add(w.prev,'prev');
+  // installs by platform need a second pass over raw
+  var curDays={},prevDays={};
+  w.cur.forEach(function(d){curDays[d.day]=1;});
+  w.prev.forEach(function(d){prevDays[d.day]=1;});
+  rowsRaw().forEach(function(r){
+    var e=out[r[P]];if(!e)return;
+    if(curDays[r[D]]) e.curInst+=r[INS];
+    else if(prevDays[r[D]]) e.prevInst+=r[INS];
+  });
+  return Object.keys(out).map(function(k){
+    var e=out[k];
+    e.dSpend=e.prevSpend?(e.curSpend-e.prevSpend)/e.prevSpend*100:null;
+    e.curCpi=e.curInst?e.curSpend/e.curInst:null;
+    e.prevCpi=e.prevInst?e.prevSpend/e.prevInst:null;
+    e.dCpi=(e.curCpi&&e.prevCpi)?(e.curCpi-e.prevCpi)/e.prevCpi*100:null;
+    return e;
+  }).sort(function(a,b){return b.curSpend-a.curSpend;});
+}
+
+/* ================================================================
+ * insights — generated, not hand-written
+ * ================================================================ */
+function insights(){
+  var out=[],w=wow(),wp=wowByPlat(),cv=claimVsVerified();
+  if(w&&w.prev.spend>0){
+    var d=(w.cur.spend-w.prev.spend)/w.prev.spend*100;
+    out.push({ico:'◈',txt:'Spend over the last <b>'+w.n+' days</b> is '+
+      (d>=0?'up':'down')+' vs the '+w.n+' before it',
+      val:(d>=0?'+':'')+d.toFixed(0)+'%',cls:d>=0?'up':'down'});
+  }
+  if(w&&w.prev.cpi&&w.cur.cpi){
+    var c=(w.cur.cpi-w.prev.cpi)/w.prev.cpi*100;
+    out.push({ico:c<0?'▼':'▲',
+      txt:'Cost per install is '+(c<0?'improving':'getting worse')+' (platform count — daily only)',
+      val:usd2(w.prev.cpi)+' → '+usd2(w.cur.cpi),cls:c<0?'up':'down'});
+  }
+  var best=wp.filter(function(p){return p.dCpi!=null&&p.dCpi<-2&&p.curSpend>300;})
+    .sort(function(a,b){return a.dCpi-b.dCpi;})[0];
+  if(best) out.push({ico:'★',txt:'<b>'+best.plat+'</b> improved its cost per install the most',
+    val:best.dCpi.toFixed(0)+'%',cls:'up'});
+  else if(wp.filter(function(p){return p.dCpi!=null&&p.curSpend>300;}).length)
+    out.push({ico:'◦',txt:'No platform brought its cost per install down this week',
+      val:'—',cls:'flat'});
+  var worst=wp.filter(function(p){return p.dCpi!=null&&p.curSpend>300;})
+    .sort(function(a,b){return b.dCpi-a.dCpi;})[0];
+  if(worst&&best&&worst.plat!==best.plat&&worst.dCpi>5)
+    out.push({ico:'!',txt:'<b>'+worst.plat+'</b> got more expensive per install — worth a look',
+      val:'+'+worst.dCpi.toFixed(0)+'%',cls:'down'});
+  var stopped=wp.filter(function(p){return p.prevSpend>200&&p.curSpend<p.prevSpend*0.15;});
+  stopped.forEach(function(p){
+    out.push({ico:'◌',txt:'<b>'+p.plat+'</b> has nearly stopped delivering',
+      val:usd(p.prevSpend)+' → '+usd(p.curSpend),cls:'down'});
+  });
+  var over=cv.filter(function(x){return x.ratio&&x.ratio>1.4&&x.verified>200;})
+    .sort(function(a,b){return b.ratio-a.ratio;})[0];
+  if(over) out.push({ico:'⚑',
+    txt:'<b>'+over.plat+'</b> reports far more installs than Adjust verifies',
+    val:over.ratio.toFixed(2)+'× over',cls:'down'});
+  return out;
+}
+/* pacing projection */
+function pacing(){
+  var s=series();if(!s.length)return null;
+  var spent=s.reduce(function(a,d){return a+d.spend;},0);
+  var perDay=spent/s.length;
+  var all=DATA.meta.days.length, elapsed=s.length;
+  return {spent:spent,perDay:perDay,elapsed:elapsed,total:all,
+    projected:perDay*all, share:elapsed/all*100};
+}
+
+/* ================================================================
+ * tooltip
+ * ================================================================ */
+var TIP=document.getElementById('tip');
+function showTip(x,y,html){
+  TIP.innerHTML=html;TIP.classList.add('on');
+  var r=TIP.getBoundingClientRect();
+  var left=x+14, top=y-r.height-10;
+  if(left+r.width>window.innerWidth-8) left=x-r.width-14;
+  if(top<8) top=y+16;
+  TIP.style.left=left+'px';TIP.style.top=top+'px';
+}
+function hideTip(){TIP.classList.remove('on');}
+function tipRows(title,rows){
+  return '<div class="tt">'+esc(title)+'</div>'+rows.map(function(r){
+    return '<div class="tr"><span>'+esc(r[0])+'</span><span>'+r[1]+'</span></div>';
+  }).join('');
+}
+
+/* ================================================================
+ * charts
+ * ================================================================ */
+function css(v){return getComputedStyle(document.documentElement).getPropertyValue(v).trim();}
+function hidpi(cv,h){
+  var w=cv.clientWidth||cv.parentNode.clientWidth||600,r=window.devicePixelRatio||1;
+  cv.width=w*r;cv.height=h*r;cv.style.height=h+'px';
+  var c=cv.getContext('2d');c.setTransform(r,0,0,r,0,0);
+  return {c:c,w:w,h:h};
+}
+function bindHover(cv,hit){
+  cv.onmousemove=function(e){
+    var b=cv.getBoundingClientRect();
+    var h=hit(e.clientX-b.left,e.clientY-b.top);
+    if(h) showTip(e.clientX,e.clientY,h); else hideTip();
+  };
+  cv.onmouseleave=hideTip;
+}
+
+/** Sparkline with a hover readout. */
+function sparkline(cv,days,vals,fmt,label){
+  var g=hidpi(cv,26),c=g.c,w=g.w,h=g.h;
+  if(!vals.length)return;
+  var mx=Math.max.apply(null,vals),mn=Math.min.apply(null,vals.concat([0]));
+  var sx=function(i){return vals.length<2?0:i/(vals.length-1)*(w-2)+1;};
+  var sy=function(v){return mx===mn?h/2:h-2-(v-mn)/(mx-mn)*(h-5);};
+  var acc=css('--accent');
+  c.beginPath();c.moveTo(sx(0),h);
+  vals.forEach(function(v,i){c.lineTo(sx(i),sy(v));});
+  c.lineTo(sx(vals.length-1),h);c.closePath();c.fillStyle=acc+'1f';c.fill();
+  c.beginPath();vals.forEach(function(v,i){i?c.lineTo(sx(i),sy(v)):c.moveTo(sx(i),sy(v));});
+  c.strokeStyle=acc;c.lineWidth=1.5;c.lineJoin='round';c.stroke();
+  c.beginPath();c.arc(sx(vals.length-1),sy(vals[vals.length-1]),2.4,0,7);c.fillStyle=acc;c.fill();
+  bindHover(cv,function(mx2){
+    if(vals.length<2)return null;
+    var i=Math.round((mx2-1)/(w-2)*(vals.length-1));
+    i=Math.max(0,Math.min(vals.length-1,i));
+    return tipRows(days[i],[[label,fmt(vals[i])]]);
+  });
+}
+
+/** Stacked daily columns with a full per-platform tooltip. */
+function stackedDaily(cv,dd,plats,metric,fmt,label){
+  var g=hidpi(cv,290),c=g.c,w=g.w,h=g.h;
+  var PL=54,PR=14,PT=14,PB=34,iw=w-PL-PR,ih=h-PT-PB;
+  var tot=dd.map(function(d){
+    if(metric!=='spend')return d[metric]||0;
+    var s=0;for(var k in d.byPlat)s+=d.byPlat[k];return s;
+  });
+  var mx=Math.max.apply(null,tot.concat([1]));
+  var step=Math.pow(10,Math.floor(Math.log(mx)/Math.LN10));
+  var top=Math.ceil(mx/step)*step||1;
+  var line=css('--line-soft'),ink4=css('--ink-4');
+  c.font='10px '+css('--mono');
+  for(var i=0;i<=4;i++){
+    var y=PT+ih-ih*i/4,v=top*i/4;
+    c.strokeStyle=line;c.lineWidth=1;
+    c.beginPath();c.moveTo(PL,y+.5);c.lineTo(w-PR,y+.5);c.stroke();
+    c.fillStyle=ink4;c.textAlign='right';c.textBaseline='middle';
+    c.fillText(v>=1000?(v/1000).toFixed(v>=10000?0:1)+'k':Math.round(v),PL-7,y);
+  }
+  var bw=iw/dd.length,gap=Math.min(3,bw*.22),cw=Math.max(1,bw-gap);
+  dd.forEach(function(d,i){
+    var x=PL+i*bw+gap/2,y=PT+ih;
+    if(metric==='spend'){
+      plats.forEach(function(p){
+        var v=d.byPlat[p]||0;if(!v)return;
+        var bh=v/top*ih;y-=bh;
+        c.fillStyle=PLAT_COLOR[p]||'#888';c.fillRect(x,y,cw,bh);
+      });
+    }else{
+      var v=d[metric]||0,bh=v/top*ih;y-=bh;
+      c.fillStyle=css('--accent');c.fillRect(x,y,cw,bh);
+    }
+  });
+  c.fillStyle=ink4;c.textAlign='center';c.textBaseline='top';c.font='9.5px '+css('--mono');
+  var every=Math.max(1,Math.ceil(dd.length/11)), last=dd.length-1;
+  dd.forEach(function(d,i){
+    if(i%every&&i!==last)return;
+    if(i!==last&&last-i<every)return;   // keep a clear gap before the final label
+    c.fillText(shortDay(d.day),PL+i*bw+bw/2,PT+ih+8);
+  });
+  bindHover(cv,function(x){
+    var i=Math.floor((x-PL)/bw);
+    if(i<0||i>=dd.length)return null;
+    var d=dd[i],rows=[];
+    if(metric==='spend'){
+      plats.forEach(function(p){if(d.byPlat[p])rows.push([p,usd(d.byPlat[p])]);});
+      rows.push(['Total',usd(tot[i])]);
+    }else rows.push([label,fmt(d[metric]||0)]);
+    return tipRows(d.day,rows);
+  });
+}
+
+/** Efficiency over time: a 7-day rolling cost metric, so noise doesn't mask trend. */
+function effLine(cv,dd,metric){
+  var g=hidpi(cv,270),c=g.c,w=g.w,h=g.h;
+  var PL=56,PR=14,PT=16,PB=34,iw=w-PL-PR,ih=h-PT-PB;
+  var win=7,pts=[];
+  for(var i=0;i<dd.length;i++){
+    var a=Math.max(0,i-win+1),s=0,imp=0,clk=0,ins=0,vin=0,bk=0,rv=0;
+    for(var j=a;j<=i;j++){s+=dd[j].spend;imp+=dd[j].impr;clk+=dd[j].clicks;ins+=dd[j].inst;
+      vin+=dd[j].adjInst||0;bk+=dd[j].bookings||0;rv+=dd[j].revenue||0;}
+    var v=metric==='cpi'?(vin?s/vin:null):                 /* Adjust-verified */
+          metric==='cpiPlat'?(ins?s/ins:null):             /* what the platform claims */
+          metric==='cpa'?(bk?s/bk:null):
+          metric==='roas'?(s?rv/(s*DATA.meta.fx):null):
+          metric==='cpm'?(imp?s/imp*1000:null):
+          metric==='cpc'?(clk?s/clk:null):(imp?clk/imp*100:null);
+    pts.push(v);
+  }
+  var vals=pts.filter(function(v){return v!=null;});
+  if(!vals.length){
+    c.fillStyle=css('--ink-4');c.font='12px '+css('--body');c.textAlign='center';
+    c.fillText('No data for this metric in range',w/2,h/2);return;
+  }
+  var mx=Math.max.apply(null,vals),mn=Math.min.apply(null,vals);
+  var pad=(mx-mn)*.18||mx*.2||1;mx+=pad;mn=Math.max(0,mn-pad);
+  var line=css('--line-soft'),ink4=css('--ink-4'),acc=css('--accent');
+  var isPct=metric==='ctr',isX=metric==='roas';
+  c.font='10px '+css('--mono');
+  for(var k=0;k<=4;k++){
+    var y=PT+ih-ih*k/4,v=mn+(mx-mn)*k/4;
+    c.strokeStyle=line;c.beginPath();c.moveTo(PL,y+.5);c.lineTo(w-PR,y+.5);c.stroke();
+    c.fillStyle=ink4;c.textAlign='right';c.textBaseline='middle';
+    c.fillText(isPct?v.toFixed(2)+'%':isX?v.toFixed(2)+'×':'$'+v.toFixed(2),PL-7,y);
+  }
+  var sx=function(i){return PL+(dd.length<2?0:i/(dd.length-1)*iw);};
+  var sy=function(v){return PT+ih-(v-mn)/(mx-mn)*ih;};
+  c.beginPath();var started=false;
+  pts.forEach(function(v,i){if(v==null)return;started?c.lineTo(sx(i),sy(v)):(c.moveTo(sx(i),sy(v)),started=true);});
+  c.strokeStyle=acc;c.lineWidth=2;c.lineJoin='round';c.stroke();
+  var lastI=-1;pts.forEach(function(v,i){if(v!=null)lastI=i;});
+  if(lastI>=0){c.beginPath();c.arc(sx(lastI),sy(pts[lastI]),3.6,0,7);c.fillStyle=acc;c.fill();}
+  c.fillStyle=ink4;c.textAlign='center';c.textBaseline='top';c.font='9.5px '+css('--mono');
+  var every=Math.max(1,Math.ceil(dd.length/11)), last=dd.length-1;
+  dd.forEach(function(d,i){
+    if(i%every&&i!==last)return;
+    if(i!==last&&last-i<every)return;
+    c.fillText(shortDay(d.day),sx(i),PT+ih+8);
+  });
+  bindHover(cv,function(x){
+    if(dd.length<2)return null;
+    var i=Math.round((x-PL)/iw*(dd.length-1));
+    i=Math.max(0,Math.min(dd.length-1,i));
+    if(pts[i]==null)return null;
+    var lbl={cpi:'CPI (7-day)',cpm:'CPM (7-day)',cpc:'CPC (7-day)',ctr:'CTR (7-day)'}[metric];
+    return tipRows(dd[i].day,[[lbl,isPct?pts[i].toFixed(2)+'%':usd2(pts[i])],
+      ['Spend that day',usd(dd[i].spend)]]);
+  });
+}
+
+/** Cumulative spend against an even-pace reference. */
+function cumulative(cv,dd){
+  var g=hidpi(cv,270),c=g.c,w=g.w,h=g.h;
+  var PL=56,PR=14,PT=16,PB=34,iw=w-PL-PR,ih=h-PT-PB;
+  var run=0,cum=dd.map(function(d){run+=d.spend;return run;});
+  var top=Math.max.apply(null,cum.concat([1]))*1.04;
+  var line=css('--line-soft'),acc=css('--accent'),ink4=css('--ink-4');
+  c.font='10px '+css('--mono');
+  for(var i=0;i<=4;i++){
+    var y=PT+ih-ih*i/4,v=top*i/4;
+    c.strokeStyle=line;c.beginPath();c.moveTo(PL,y+.5);c.lineTo(w-PR,y+.5);c.stroke();
+    c.fillStyle=ink4;c.textAlign='right';c.textBaseline='middle';
+    c.fillText('$'+(v>=1000?(v/1000).toFixed(0)+'k':Math.round(v)),PL-7,y);
+  }
+  var sx=function(i){return PL+(dd.length<2?0:i/(dd.length-1)*iw);};
+  var sy=function(v){return PT+ih-v/top*ih;};
+  var fin=cum[cum.length-1];
+  c.setLineDash([4,4]);c.strokeStyle=ink4;c.lineWidth=1;
+  c.beginPath();c.moveTo(sx(0),sy(fin/dd.length));c.lineTo(sx(dd.length-1),sy(fin));c.stroke();
+  c.setLineDash([]);
+  c.beginPath();c.moveTo(sx(0),PT+ih);
+  cum.forEach(function(v,i){c.lineTo(sx(i),sy(v));});
+  c.lineTo(sx(cum.length-1),PT+ih);c.closePath();
+  var grd=c.createLinearGradient(0,PT,0,PT+ih);
+  grd.addColorStop(0,acc+'38');grd.addColorStop(1,acc+'05');c.fillStyle=grd;c.fill();
+  c.beginPath();cum.forEach(function(v,i){i?c.lineTo(sx(i),sy(v)):c.moveTo(sx(i),sy(v));});
+  c.strokeStyle=acc;c.lineWidth=2;c.lineJoin='round';c.stroke();
+  c.beginPath();c.arc(sx(cum.length-1),sy(fin),3.6,0,7);c.fillStyle=acc;c.fill();
+  c.fillStyle=ink4;c.textAlign='center';c.textBaseline='top';c.font='9.5px '+css('--mono');
+  var every=Math.max(1,Math.ceil(dd.length/11)), last=dd.length-1;
+  dd.forEach(function(d,i){
+    if(i%every&&i!==last)return;
+    if(i!==last&&last-i<every)return;
+    c.fillText(shortDay(d.day),sx(i),PT+ih+8);
+  });
+  bindHover(cv,function(x){
+    if(dd.length<2)return null;
+    var i=Math.round((x-PL)/iw*(dd.length-1));
+    i=Math.max(0,Math.min(dd.length-1,i));
+    var even=fin/dd.length*(i+1);
+    return tipRows(dd[i].day,[['Spent to date',usd(cum[i])],['Even pace would be',usd(even)],
+      ['Difference',(cum[i]>=even?'+':'')+usd(cum[i]-even)]]);
+  });
+}
+
+/** Tiny sparkline inside a small-multiple card. */
+function miniLine(cv,days,vals,label,fmt){
+  var g=hidpi(cv,38),c=g.c,w=g.w,h=g.h;
+  var mx=Math.max.apply(null,vals.concat([1])),mn=0;
+  var sx=function(i){return vals.length<2?0:i/(vals.length-1)*(w-2)+1;};
+  var sy=function(v){return h-3-(v-mn)/(mx-mn||1)*(h-7);};
+  var acc=css('--accent');
+  c.beginPath();c.moveTo(sx(0),h);
+  vals.forEach(function(v,i){c.lineTo(sx(i),sy(v));});
+  c.lineTo(sx(vals.length-1),h);c.closePath();c.fillStyle=acc+'1a';c.fill();
+  c.beginPath();vals.forEach(function(v,i){i?c.lineTo(sx(i),sy(v)):c.moveTo(sx(i),sy(v));});
+  c.strokeStyle=acc;c.lineWidth=1.6;c.lineJoin='round';c.stroke();
+  bindHover(cv,function(x){
+    if(vals.length<2)return null;
+    var i=Math.round((x-1)/(w-2)*(vals.length-1));
+    i=Math.max(0,Math.min(vals.length-1,i));
+    return tipRows(days[i],[[label,fmt(vals[i])]]);
+  });
+}
+
+/* ================================================================
+ * render
+ * ================================================================ */
+function render(){
+  if(!DATA)return;
+  document.querySelectorAll('#nav button').forEach(function(b){
+    b.setAttribute('aria-current',b.dataset.v===VIEW);
+  });
+  var v=VIEWS.filter(function(x){return x[0]===VIEW;})[0];
+  document.getElementById('title').textContent=v?v[1]:'Summary';
+  var dr=daysInRange();
+  document.getElementById('sub').innerHTML='<b>'+F.from+'</b> → <b>'+F.to+'</b> · <b>'+dr.length+
+    '</b> days'+(F.obj.length?' · <b>'+F.obj.join(' + ')+'</b>':'')+
+    (F.plat.length?' · <b>'+F.plat.join(' + ')+'</b>':'')+' · USD unless marked SAR';
+  renderFilters();
+  var rs=rowsRaw(),tot=sumRaw(rs),ln=lines();
+  var lnSum=ln.reduce(function(a,l){return a+l.spend;},0);
+  var ok=Math.abs(lnSum-tot.spend)<1;
+  var cc=document.getElementById('checkChip'),coverage=sourceCoverageStatus();
+  cc.textContent=!ok?'line mismatch '+n2(lnSum-tot.spend):
+    (coverage?coverage.text:'line totals ✓');
+  cc.title=ok?'Delivery line totals reconcile. Dates show the latest row actually read from each source.':
+    'Delivery lines do not add up to the displayed total.';
+  cc.className='chip live'+(ok&&!(coverage&&coverage.bad)?'':' bad');
+  renderKpis();
+  document.getElementById('views').innerHTML=({
+    summary:vSummary,trend:vTrend,platforms:vPlatforms,campaigns:vCampaigns,
+    attribution:vAttribution,method:vMethod
+  }[VIEW]||vSummary)();
+  drawAll();
+}
+
+function renderFilters(){
+  var all=DATA.meta.days;
+  var objs=[['all','All'],['Awareness','Awareness'],['Search','Search'],['Conversion','Conversion']];
+  document.getElementById('filters').innerHTML=
+    '<div class="fgroup"><span class="flabel">Portal</span><div class="seg">'+
+      [['SFQC','SFQC'],['AAQC','AAQC'],['BOTH','Both']].map(function(b){
+        return '<button onclick="setBrand(\''+b[0]+'\')" aria-pressed="'+(BRAND===b[0])+'">'+b[1]+'</button>';}).join('')+
+    '</div></div><div class="fsep"></div>'+
+    '<div class="fgroup"><span class="flabel">Objective</span><div class="seg">'+
+      objs.map(function(o){
+        var on=o[0]==='all'?!F.obj.length:F.obj.indexOf(o[0])>=0;
+        return '<button onclick="setObj(\''+o[0]+'\')" aria-pressed="'+on+'">'+o[1]+'</button>';}).join('')+
+    '</div></div><div class="fsep"></div>'+
+    '<div class="fgroup"><span class="flabel">Platform</span><div class="seg wrap">'+
+      '<button onclick="setPlat(\'all\')" aria-pressed="'+(!F.plat.length)+'">All</button>'+
+      platOptions().map(function(p){
+        var on=F.plat.indexOf(p)>=0;
+        return '<button onclick="setPlat(\''+p+'\')" aria-pressed="'+on+'">'+p+'</button>';}).join('')+
+    '</div></div><div class="fsep"></div>'+
+    '<div class="fgroup"><span class="flabel">Dates</span>'+
+      '<input type="date" value="'+F.from+'" min="'+all[0]+'" max="'+all[all.length-1]+'" '+
+        'onchange="onDate(\'from\',this.value)" aria-label="From">'+
+      '<span style="color:var(--ink-4)">→</span>'+
+      '<input type="date" value="'+F.to+'" min="'+all[0]+'" max="'+all[all.length-1]+'" '+
+        'onchange="onDate(\'to\',this.value)" aria-label="To">'+
+      '<div class="seg" style="margin-left:4px">'+
+        '<button onclick="preset(7)" aria-pressed="'+(RANGE_PRESET===7)+'">7d</button>'+
+        '<button onclick="preset(14)" aria-pressed="'+(RANGE_PRESET===14)+'">14d</button>'+
+        '<button onclick="preset(null)" aria-pressed="'+(RANGE_PRESET===null&&isFullPeriod())+'">All</button>'+
+      '</div></div>'+
+    (isFiltered()?'<button class="reset" onclick="clearFilters()">Clear filters</button>':'')+
+    '<span class="fhint">Objective and Platform stack — pick as many as you like</span>';
+}
+
+function renderKpis(){
+  var rs=rowsRaw(),t=sumRaw(rs),a=adjustTotals(),g=ga4Totals(),s=series();
+  var missing=Object.keys(adjustSourceGaps()).length>0;
+  // A partner can have valid Adjust outcomes without any media-cost feed. Showing
+  // $0 in that case falsely claims zero spend; an em dash states the source truth.
+  var mediaMissing=!rs.length&&adjustRows().length>0;
+  var days=s.map(function(d){return d.day;});
+  var rev=a.revenue+g.revenue, spendSar=t.spend*DATA.meta.fx;
+  var frozen=false;
+  var frz='';
+  var cards=[
+    {k:'Spend',v:mediaMissing?'—':usd(t.spend),s:mediaMissing?'No media-spend source':sar(spendSar),sp:mediaMissing?null:s.map(function(d){return d.spend;}),
+      fmt:usd,lab:'Spend'},
+    {k:'Revenue (paid only) '+frz,v:missing?'—':sar(rev),s:missing?'—':
+      'Adjust app '+n0(a.revenue)+' + GA4 web '+n0(g.revenue)+' · no organic',frozen:frozen},
+    {k:'ROAS '+frz,v:missing?'—':spendSar?n2(rev/spendSar)+'×':'—',
+      s:missing?'—':'revenue ÷ spend SAR',frozen:frozen,
+      state:missing||frozen?null:(rev/spendSar>=2.5?'good':rev/spendSar>=1.5?'warn':'crit')},
+    {k:'Installs — Adjust '+frz,v:missing?'—':n0(a.inst),
+      s:missing?'—':mediaMissing?'CPI — · no media-spend source':
+        'CPI '+usd2(a.inst?t.spend/a.inst:null)+' · '+n0(t.inst)+' claimed by platforms',frozen:frozen},
+    {k:'Impressions',v:mediaMissing?'—':n0(t.impr),s:mediaMissing?'No media-delivery source':'CPM '+usd2(t.cpm),
+      sp:mediaMissing?null:s.map(function(d){return d.impr;}),fmt:n0,lab:'Impressions'},
+    {k:'Clicks',v:mediaMissing?'—':n0(t.clicks),s:mediaMissing?'No media-delivery source':'CTR '+pct(t.ctr)+' · CPC '+usd2(t.cpc),
+      sp:mediaMissing?null:s.map(function(d){return d.clicks;}),fmt:n0,lab:'Clicks'},
+    {k:'Bookings — Adjust '+frz,v:missing?'—':n0(a.bookings),
+      s:missing?'—':mediaMissing?'CPA — · no media-spend source':
+        'CPA '+usd2(a.bookings?t.spend/a.bookings:null)+' · verified, not platform-claimed',frozen:frozen},
+    {k:'Daily run-rate',v:mediaMissing?'—':usd(s.length?t.spend/s.length:0),s:mediaMissing?'No media-spend source':'over '+s.length+' days',
+      sp:mediaMissing?null:(function(){var r=0;return s.map(function(d){return r+=d.spend;});})(),fmt:usd,lab:'Cumulative'}
+  ];
+  document.getElementById('kpis').innerHTML=cards.map(function(c,i){
+    return '<div class="kpi'+(c.frozen?' frozen':'')+'">'+
+      '<div class="k">'+c.k+'</div><div class="v">'+c.v+'</div>'+
+      '<div class="s">'+(c.state?'<span class="pill '+c.state+'">'+c.state.toUpperCase()+'</span> ':'')+c.s+'</div>'+
+      (c.sp?'<canvas class="spark" data-spark="'+i+'"></canvas>':'')+'</div>';
+  }).join('');
+  window.__sparks=cards.map(function(c){return c.sp?{v:c.sp,d:days,f:c.fmt,l:c.lab}:null;});
+}
+
+/* ---------- views ---------- */
+function vSummary(){
+  var ins=insights(),pc=pacing(),ln=lines();
+  var byPlat={};ln.forEach(function(l){byPlat[l.plat]=(byPlat[l.plat]||0)+l.spend;});
+  var pl=Object.keys(byPlat).sort(function(a,b){return byPlat[b]-byPlat[a];});
+  var tot=pl.reduce(function(a,p){return a+byPlat[p];},0)||1;
+  var byObj={};ln.forEach(function(l){byObj[l.obj]=(byObj[l.obj]||0)+l.spend;});
+  var objKeys=Object.keys(byObj).sort(function(a,b){return byObj[b]-byObj[a];});
+  return ''+
+  '<div class="grid">'+
+    '<div class="panel"><div class="ph"><h3>Where the money went '+brandTag()+'</h3>'+
+      '<div class="note">'+usd(tot)+'</div></div><div class="pb">'+
+      '<div style="display:flex;height:11px;border-radius:6px;overflow:hidden;margin-bottom:12px">'+
+        pl.map(function(p){return '<i style="width:'+(byPlat[p]/tot*100).toFixed(2)+
+          '%;background:'+(PLAT_COLOR[p]||'#888')+'"></i>';}).join('')+'</div>'+
+      '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0 26px">'+
+      pl.map(function(p){
+        return '<div style="display:flex;justify-content:space-between;font-size:12.5px;padding:4px 0;'+
+          'border-bottom:1px solid var(--line-soft)">'+
+          '<span><span class="pdot" style="background:'+(PLAT_COLOR[p]||'#888')+'"></span>'+p+'</span>'+
+          '<span style="font-variant-numeric:tabular-nums;color:var(--ink-3)">'+usd(byPlat[p])+
+          '  <b style="color:var(--ink)">'+(byPlat[p]/tot*100).toFixed(0)+'%</b></span></div>';}).join('')+
+      '</div>'+
+      '<div style="border-top:1px solid var(--line-soft);margin-top:10px;padding-top:10px;font-size:12px;color:var(--ink-3)">'+
+        objKeys.map(function(o){return o+' '+usd(byObj[o]);}).join(' · ')+'</div>'+
+    '</div></div>'+
+  '</div>'+
+  (pc?'<div class="grid g2">'+
+    '<div class="panel"><div class="ph"><h3>Pace</h3><div class="note">at the current run-rate</div></div>'+
+      '<div class="pb"><div style="display:flex;gap:22px;flex-wrap:wrap">'+
+      [['Spent so far',usd(pc.spent)],['Per day',usd(pc.perDay)],
+       ['Days in range',pc.elapsed+' of '+pc.total],
+       ['Full-period projection',usd(pc.projected)]].map(function(x){
+        return '<div><div style="font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-4);font-weight:600">'+
+          x[0]+'</div><div style="font-family:var(--display);font-size:19px;font-weight:600;margin-top:3px;font-variant-numeric:tabular-nums">'+
+          x[1]+'</div></div>';}).join('')+'</div></div></div>'+
+    '<div class="panel"><div class="ph"><h3>Cumulative spend</h3>'+
+      '<div class="note">dashed = even pace</div></div><div class="pb"><canvas id="cCum"></canvas></div></div>'+
+  '</div>':'')+
+  '<div class="grid"><div class="panel"><div class="ph"><h3>Every line '+brandTag()+'</h3>'+
+    '<div style="display:flex;align-items:center;gap:10px">'+
+      '<span class="note">same rows as the pacing tab · paid media only</span>'+
+      '<span class="flabel">Columns</span><div class="seg">'+
+      [['core','Core'],['full','All pacing columns']].map(function(c){
+        return '<button onclick="setColset(\''+c[0]+'\')" aria-pressed="'+(COLSET===c[0])+'">'+c[1]+'</button>';
+      }).join('')+'</div></div></div>'+
+    '<div class="tw">'+lineTable(ln)+'</div></div></div>';
+}
+
+function vTrend(){
+  var s=series(),plats=platsActive();
+  var mets=[['spend','Spend'],['adjInst','Installs'],['bookings','Bookings'],
+            ['impr','Impressions'],['clicks','Clicks'],['inst','Inst (claimed)']];
+  var effs=[['cpi','CPI'],['cpa','CPA'],['roas','ROAS'],['cpiPlat','CPI (claimed)'],
+            ['cpm','CPM'],['cpc','CPC'],['ctr','CTR']];
+  var w=wowByPlat();
+  return ''+
+  '<div class="grid"><div class="panel"><div class="ph"><h3>Daily delivery</h3>'+
+    '<div class="seg">'+mets.map(function(m){
+      return '<button onclick="setDailyMetric(\''+m[0]+'\')" aria-pressed="'+(DAILY_METRIC===m[0])+'">'+m[1]+'</button>';
+    }).join('')+'</div></div>'+
+    '<div class="pb"><canvas id="cDaily"></canvas></div>'+
+    (DAILY_METRIC==='spend'?'<div class="legend">'+plats.map(function(p){
+      return '<span><span class="pdot" style="background:'+(PLAT_COLOR[p]||'#888')+'"></span>'+p+'</span>';
+    }).join('')+'</div>':'<div class="legend"><span>'+
+      (DAILY_METRIC==='adjInst'?'Adjust-verified installs, by the day Adjust recorded them.':
+       DAILY_METRIC==='bookings'?'Adjust bookings, by the day Adjust recorded them.':
+       DAILY_METRIC==='inst'?'The platforms\' own install claim — kept here only so you can see it '+
+         'against the verified line.':
+       'Reported by the platforms; nothing else measures impressions or clicks.')+'</span></div>')+
+    '</div></div>'+
+  '<div class="grid"><div class="panel"><div class="ph"><h3>Is it getting cheaper?</h3>'+
+    '<div class="seg">'+effs.map(function(m){
+      return '<button onclick="setEffMetric(\''+m[0]+'\')" aria-pressed="'+(EFF_METRIC===m[0])+'">'+m[1]+'</button>';
+    }).join('')+'</div></div>'+
+    '<div class="pb"><canvas id="cEff"></canvas></div>'+
+    '<div class="legend"><span>7-day rolling, so one loud day does not read as a trend. '+
+      'CPI, CPA and ROAS all divide by <b>Adjust and GA4</b> over the same seven days as the spend. '+
+      'CPI (claimed) is the same line drawn off the platforms\' own count — the distance between the '+
+      'two is the credit nobody else confirms.</span></div></div></div>'+
+  '<div class="grid"><div class="panel"><div class="ph"><h3>Each platform, day by day</h3>'+
+    '<div class="note">spend trend · last '+(wow()?wow().n:0)+' days vs the '+(wow()?wow().n:0)+' before</div></div>'+
+    '<div class="pb">'+smallMultiples(s,plats)+'</div></div></div>'+
+  '<div class="grid"><div class="panel"><div class="ph"><h3>Week over week '+brandTag()+'</h3>'+
+    '<div class="note">installs are the platforms\' own count — the only figure available by day</div></div>'+
+    '<div class="tw">'+wowTable(w)+'</div></div></div>'+
+  '<div class="grid"><div class="panel"><div class="ph"><h3>Day by day '+brandTag()+'</h3>'+
+    '<div class="note">Raw data columns are daily · Adjust and GA4 are period totals</div></div>'+
+    '<div class="tw cap">'+dayTable(s)+'</div></div></div>';
+}
+
+function vPlatforms(){
+  var ln=lines(),cv=claimVsVerified();
+  var byPlat={};
+  ln.forEach(function(l){
+    var e=byPlat[l.plat]||(byPlat[l.plat]={plat:l.plat,spend:0,adjInst:0,bookings:0,revenue:0});
+    e.spend+=l.spend;e.adjInst+=l.adjInst;e.bookings+=l.bookings;e.revenue+=l.revenue;
+  });
+  var real=Object.keys(byPlat).map(function(k){
+    var e=byPlat[k];
+    e.cpi=(e.spend>0&&e.adjInst)?e.spend/e.adjInst:null;
+    e.cpa=(e.spend>0&&e.bookings)?e.spend/e.bookings:null;
+    e.roas=e.spend?e.revenue/(e.spend*DATA.meta.fx):null;
+    return e;
+  }).filter(function(e){return e.spend>0;});
+  var byCpi=real.filter(function(e){return e.cpi!=null;}).sort(function(a,b){return a.cpi-b.cpi;});
+  var byCpa=real.filter(function(e){return e.cpa!=null;}).sort(function(a,b){return a.cpa-b.cpa;});
+  return ''+
+  (isFullPeriod()?'':'<div class="callout"><b>Date filter is on.</b> Every number on this screen follows '+
+    'it — spend, Adjust installs and bookings, and GA4 transactions all carry their own day, so the '+
+    'cost-per figures are true for '+F.from+' → '+F.to+'.</div>')+
+  '<div class="grid g2">'+
+    '<div class="panel"><div class="ph"><h3>Real cost per install</h3>'+
+      '<div class="note">spend ÷ Adjust-verified installs</div></div>'+
+      '<div class="pb">'+platRank(byCpi,'cpi',usd2)+'</div></div>'+
+    '<div class="panel"><div class="ph"><h3>Real cost per booking</h3>'+
+      '<div class="note">spend ÷ Adjust bookings — the money metric</div></div>'+
+      '<div class="pb">'+platRank(byCpa,'cpa',usd2)+'</div></div>'+
+  '</div>'+
+  '<div class="grid"><div class="panel"><div class="ph"><h3>What platforms claim vs what Adjust verifies '+brandTag()+'</h3>'+
+    '<div class="note">installs, over the dates on screen</div></div><div class="pb">'+claimPanel(cv)+'</div>'+
+    '<div class="legend"><span><span class="pdot" style="background:var(--ink-4);opacity:.5"></span>platform-reported</span>'+
+    '<span><span class="pdot" style="background:var(--accent)"></span>Adjust-verified</span></div></div></div>'+
+  '<div class="grid"><div class="panel"><div class="ph"><h3>Every line '+brandTag()+'</h3>'+
+    '<div style="display:flex;align-items:center;gap:10px">'+
+      '<span class="note">click a heading to sort</span>'+
+      '<span class="flabel">Columns</span><div class="seg">'+
+      [['core','Core'],['full','All pacing columns']].map(function(c){
+        return '<button onclick="setColset(\''+c[0]+'\')" aria-pressed="'+(COLSET===c[0])+'">'+c[1]+'</button>';
+      }).join('')+'</div></div></div>'+
+    '<div class="tw">'+lineTable(sortList(ln),true)+'</div></div></div>';
+}
+
+function vCampaigns(){
+  var cs=campaigns(),rank=cs.filter(function(c){return c.spend>=200;});
+  var hasGaps=Object.keys(adjustSourceGaps()).length>0;
+  var mCnt=0,mInst=0,tInst=0,oCnt=0;
+  cs.forEach(function(c){
+    tInst+=c.adjInst;
+    if(c.noSpend){oCnt++;} else if(c.adjInst>0||c.bookings>0){mCnt++;mInst+=c.adjInst;}
+  });
+  return ''+
+  '<div class="callout"><b>Campaign matching uses reported names.</b> '+
+    'Adjust names the campaign that earned each install and booking, and GA4 names the campaign behind each '+
+    'web sale — the same name Raw data spends against. So installs, bookings, revenue, CPI, CPA and ROAS are '+
+    '<b>looked up per campaign</b>, not shared out by spend. '+
+    n0(mInst)+' of '+n0(tInst)+' installs on screen sit on a campaign that also has spend'+
+    (oCnt?'; the other '+oCnt+' row'+(oCnt===1?'':'s')+' are names Adjust or GA4 reports that Raw data has no '+
+      'spend for in this window — Apple\'s <i>unknown</i>, Adjust\'s <i>Anonymous IPs</i>, and campaigns that ran '+
+      'outside it. They keep their own row rather than being folded into campaigns that did not earn them':'')+'. '+
+    (hasGaps?'':'The available columns reconcile to the pacing tab. ')+
+    'Each column says where it was measured: <sup class="src adj">A</sup> Adjust, '+
+    '<sup class="src ga4">G</sup> GA4, no mark the platform\'s own export. So '+
+    '<b>Platform install</b> is what the platform claims and <b>Adjust install</b> is what '+
+    'Adjust verified — the gap between them is the point.</div>'+
+  '<div class="grid g2">'+
+    '<div class="panel"><div class="ph"><h3>Biggest spenders</h3><div class="note">where the money actually goes</div></div>'+
+      '<div class="pb">'+campRank(rank,'spend',-1,usd)+'</div></div>'+
+    '<div class="panel"><div class="ph"><h3>Cheapest clicks</h3><div class="note">lowest CPC, ≥ $200 spend</div></div>'+
+      '<div class="pb">'+campRank(rank.filter(function(c){return c.cpc!=null;}),'cpc',1,usd2)+'</div></div>'+
+  '</div>'+
+  '<div class="grid g2">'+
+    '<div class="panel"><div class="ph"><h3>Best click-through</h3><div class="note">5k+ impressions</div></div>'+
+      '<div class="pb">'+campRank(rank.filter(function(c){return c.ctr!=null&&c.impr>=5000;}),'ctr',-1,pct)+'</div></div>'+
+    '<div class="panel"><div class="ph"><h3>Cheapest reach</h3><div class="note">lowest CPM, 5k+ impressions</div></div>'+
+      '<div class="pb">'+campRank(rank.filter(function(c){return c.cpm!=null&&c.impr>=5000;}),'cpm',1,usd2)+'</div></div>'+
+  '</div>'+
+  '<div class="grid"><div class="panel"><div class="ph"><h3>All campaigns '+brandTag()+'</h3>'+
+    '<div style="display:flex;align-items:center;gap:10px">'+
+    '<span class="note">'+cs.length+' with spend in range</span>'+
+    '<span class="flabel">Group by</span><div class="seg">'+
+      [['plat','Platform'],['obj','Objective'],['none','None']].map(function(g){
+        return '<button onclick="setGroup(\''+g[0]+'\')" aria-pressed="'+(GROUP===g[0])+'">'+g[1]+'</button>';
+      }).join('')+'</div></div></div>'+
+    '<div class="tw">'+campTable(cs)+'</div></div></div>';
+}
+
+function vAttribution(){
+  var ar=adjustRows(),gr=DATA.ga4.filter(function(g){return brandMatch(g.brand)&&(!F.plat.length||gaBucketAllowed(g.bucket));});
+  var ln=lines(),spendBy={};
+  ln.forEach(function(l){spendBy[l.plat]=(spendBy[l.plat]||0)+l.spend;});
+  var byCh={};
+  ar.forEach(function(a){
+    var e=byCh[a.channel]||(byCh[a.channel]={ch:a.channel,inst:0,bookings:0,revenue:0});
+    e.inst+=a.inst;e.bookings+=a.bookings;e.revenue+=a.revenue;
+  });
+  var chs=Object.keys(byCh).map(function(k){return byCh[k];})
+    .sort(function(a,b){return b.revenue-a.revenue;});
+  return ''+
+  '<div class="callout"><b>Two meters, never added together.</b> The app side comes from <b>Adjust</b>. '+
+    'The web side comes from <b>GA4</b>, counted only when the medium is a lowercase paid medium — that case '+
+    'test is what keeps hand-tagged organic out. Both carry a day, so both follow the date filter.</div>'+
+  '<div class="grid g2">'+
+    '<div class="panel"><div class="ph"><h3>App — Adjust '+brandTag()+'</h3>'+
+      '<div class="note">'+F.from+' → '+F.to+'</div></div>'+
+      '<div class="tw">'+
+      '<table><thead><tr><th>Channel</th><th>Installs</th><th>Bookings</th><th>Revenue SAR</th><th>Real CPA</th></tr></thead><tbody>'+
+      chs.map(function(c){
+        var sp=spendBy[c.ch];
+        return '<tr><td><span class="pdot" style="background:'+(PLAT_COLOR[c.ch]||'#888')+'"></span>'+c.ch+'</td>'+
+          '<td>'+n0(c.inst)+'</td><td>'+n0(c.bookings)+'</td><td>'+n0(c.revenue)+'</td>'+
+          '<td>'+(sp&&c.bookings?usd2(sp/c.bookings):'—')+'</td></tr>';}).join('')+
+      '</tbody></table></div></div>'+
+    '<div class="panel"><div class="ph"><h3>Web — GA4 paid '+brandTag()+'</h3>'+
+      '<div class="note">'+F.from+' → '+F.to+'</div></div>'+
+      '<div class="tw">'+
+      '<table><thead><tr><th>Source</th><th>Transactions</th><th>Revenue SAR</th><th>Read by pacing?</th></tr></thead><tbody>'+
+      gr.sort(function(a,b){return b.revenue-a.revenue;}).map(function(g){
+        var read=GA_READ.indexOf(g.bucket)>=0;
+        return '<tr><td>'+g.bucket+'</td><td>'+n0(g.tx)+'</td><td>'+n0(g.revenue)+'</td>'+
+          '<td>'+(read?'<span class="pill good">yes</span>':'<span class="pill mute">no</span>')+'</td></tr>';
+      }).join('')+'</tbody></table></div></div>'+
+  '</div>'+
+  '<div class="grid"><div class="panel"><div class="ph"><h3>Revenue by line</h3>'+
+    '<div class="note">which meter each line is read from</div></div><div class="pb">'+revenueBars(ln)+'</div></div></div>';
+}
+
+function vMethod(){
+  var bn=BRANDS[BRAND];
+  var t=sumRaw(rowsRaw()),a=adjustTotals(),g=ga4Totals();
+  var rev=a.revenue+g.revenue;
+  var chRows=Object.keys(ADJ_RULE).map(function(ch){
+    return '<tr><td>'+ch+'</td><td style="text-align:left">'+
+      (ADJ_RULE[ch]===null?'<span class="tag">every objective</span>':
+        ADJ_RULE[ch].map(function(o){return '<span class="tag">'+o+'</span>';}).join(' '))+'</td></tr>';
+  }).join('');
+  var gaAll=DATA.ga4.filter(function(x){return brandMatch(x.brand)&&(!F.plat.length||gaBucketAllowed(x.bucket));})
+    .sort(function(x,y){return y.revenue-x.revenue;});
+  return ''+
+  '<div class="grid">'+
+  '<div class="panel"><div class="ph"><h3>Where each number comes from</h3>'+
+    '<div class="note">'+bn+'</div></div><div class="pb">'+
+    step('1','Spend, impressions, clicks, reach',
+      'Read from the <b>Raw data</b> tab — one row per campaign per day, straight from each platform\'s own export. '+
+      'This is the only tab with a date column, so it is the only thing a date filter can touch.',
+      'Now showing '+usd(t.spend)+' across '+rowsRaw().length+' rows.')+
+    step('2','X spend gets divided by '+DATA.meta.fx,
+      'Every delivering X campaign sits on a <b>SAR</b> funding instrument, but X reports it into a column headed '+
+      '"Amount spent (USD)". Left alone it would overstate X by '+DATA.meta.fx+'×.',
+      'X is converted before anything else is calculated.')+
+    step('3','App installs, bookings and revenue',
+      'Read from <b>Adjust Raw</b>. Adjust is the app measurement partner — it verifies installs independently, '+
+      'so it disagrees with what the platforms claim. The dashboard always uses Adjust, never the platform figure.',
+      n0(a.inst)+' installs · '+n0(a.bookings)+' bookings · '+n0(a.revenue)+' SAR.')+
+    step('4','Website revenue',
+      'Read from the <b>GA4</b> tab, and only for sessions whose medium is a <b>lowercase paid medium</b> '+
+      '(cpc, cpm, cpa, paidsocial…). The team tags organic with capitals, so the case test is the only thing '+
+      'separating paid from organic.',
+      n0(g.revenue)+' SAR from '+n0(g.tx)+' transactions.')+
+    step('5','This is paid media only',
+      'Organic Adjust installs and organic GA4 sessions are excluded everywhere. Nothing on this dashboard '+
+      'includes organic revenue, so it can be compared against media spend honestly.',
+      'Total counted revenue: '+sar(rev)+'.')+
+  '</div></div>'+
+  '</div></div>'+
+  '<div class="grid g2">'+
+  '<div class="panel"><div class="ph"><h3>Which Adjust rows each line counts</h3>'+
+    '<div class="note">anything not listed is deliberately excluded</div></div>'+
+    '<div class="tw"><table><thead><tr><th>Adjust channel</th><th style="text-align:left">Objectives counted</th></tr></thead>'+
+    '<tbody>'+chRows+'<tr><td>Organic</td><td style="text-align:left"><span class="pill mute">never counted</span></td></tr>'+
+    '<tr><td>Other / unknown</td><td style="text-align:left"><span class="pill mute">never counted</span></td></tr>'+
+    '</tbody></table></div>'+
+    '<div class="legend"><span>Snapchat and TikTok awareness buys are excluded because their revenue is web '+
+      'revenue, and it is already counted on the GA4 side. Counting both would double it.</span></div></div>'+
+  '<div class="panel"><div class="ph"><h3>Which GA4 sources each line counts</h3>'+
+    '<div class="note">'+bn+' · '+F.from+' → '+F.to+'</div></div>'+
+    '<div class="tw"><table><thead><tr><th>Source bucket</th><th>Revenue SAR</th><th>Counted?</th></tr></thead><tbody>'+
+    gaAll.map(function(x){
+      var read=GA_READ.indexOf(x.bucket)>=0;
+      return '<tr><td>'+x.bucket+'</td><td>'+n0(x.revenue)+'</td><td>'+
+        (read?'<span class="pill good">yes</span>':'<span class="pill mute">no</span>')+'</td></tr>';
+    }).join('')+'</tbody></table></div>'+
+    '<div class="legend"><span>Meta and X web revenue is not read by any pacing line — those rows take their '+
+      'revenue from Adjust instead, so counting the GA4 side as well would double it.</span></div></div>'+
+  '</div>'+
+  '<div class="grid"><div class="panel"><div class="ph"><h3>Every line, campaign by campaign '+brandTag()+'</h3>'+
+    '<div class="note">open a line to see exactly which campaigns feed it</div></div>'+
+    '<div class="pb">'+lineExplainer()+'</div></div></div>'+
+  '<div class="grid"><div class="panel"><div class="ph"><h3>What a date filter can and cannot do</h3></div>'+
+    '<div class="pb" style="font-size:12.5px;color:var(--ink-2)">'+
+    '<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">'+
+    '<div><div style="font-weight:600;color:var(--good);margin-bottom:6px">Follows your dates</div>'+
+      'Spend · impressions · clicks · reach · video views · platform-reported installs and purchases — '+
+      'all of it lives on <b>Raw data</b>, which has a Day column.</div>'+
+    '<div><div style="font-weight:600;color:var(--good);margin-bottom:6px">Follows your dates too</div>'+
+      'Adjust installs, bookings and revenue · GA4 transactions and revenue. Both feeds carry a Day column, '+
+      'so every conversion figure is sliced to the same window as the spend beside it — a CPI or a ROAS on '+
+      'this dashboard divides two numbers taken from the same days.</div></div></div></div></div>';
+}
+/* Plain-language version of the wildcard each line matches on. */
+var LINE_RULE={
+  'Snapchat|Awareness':'Campaign name contains <code>snapchat_awr</code>, <code>_AWRN_</code>, <code>Takeover</code>, or <code>First Story</code>',
+  'Snapchat|Conversion':'Every other Snapchat campaign (the app buys)',
+  'TikTok|Awareness':'Name contains <code>tiktok_awr</code> — plus the RF TopFeed buys, which carry <code>_RF_AWRN_</code> instead',
+  'TikTok|Search':'Name contains <code>_TT_Search</code>',
+  'TikTok|Conversion':'Everything else on TikTok — the line is a residual, so anything unmatched lands here',
+  'X|Awareness':'Name contains <code>x_awr</code>',
+  'X|Conversion':'Name contains <code>_X_App</code>',
+  'Google|Awareness':'Name contains <code>_YT_</code> — the YouTube buys',
+  'Google|Search':'Name contains <code>SEM</code>',
+  'Google|Conversion':'Everything else on Google — the app campaigns. Also a residual.',
+  'Meta|Conversion':'Every Meta campaign',
+  'Apple|Conversion':'Every Apple Search Ads campaign',
+  'InMobi|Conversion':'InMobi DSP — entered by hand, there is no platform export',
+  'Bidease|Conversion':'No spend rows exist for Bidease; it appears only because Adjust attributes bookings to it',
+  'InMotion|Conversion':'No spend rows exist for InMotion; same as Bidease'
+};
+var GA_LINE_LABEL={'Snapchat|Awareness':'Snapchat','TikTok|Awareness':'TikTok (non-cpc)',
+  'TikTok|Search':'TikTok (cpc)','Google|Search':'Google'};
+
+function lineExplainer(){
+  var ln=lines(), cs=campaigns();
+  if(!ln.length) return '<div class="empty">Nothing matches the current filters</div>';
+  return ln.map(function(l){
+    var key=l.plat+'|'+l.obj;
+    var mine=cs.filter(function(c){return c.plat===l.plat&&c.obj===l.obj;})
+      .sort(function(a,b){return b.spend-a.spend;});
+    var revFrom=l.revSrc==='GA4'
+      ? 'GA4 — paid web sessions from source <b>'+(GA_LINE_LABEL[key]||l.plat)+'</b>'
+      : (l.revenue>0||l.adjInst>0||l.bookings>0
+          ? 'Adjust — channel <b>'+l.plat+'</b>'+(LUMPED.indexOf(l.plat)>=0
+              ? ', every objective' : ', objective <b>'+l.obj+'</b>')
+          : 'Nothing — this line books no revenue');
+    return '<details class="ex"><summary>'+
+        '<span class="pdot" style="background:'+(PLAT_COLOR[l.plat]||'#888')+'"></span>'+
+        '<span class="exn">'+l.plat+' <span class="tag">'+l.obj+'</span></span>'+
+        '<span class="exm">'+mine.length+' campaign'+(mine.length===1?'':'s')+'</span>'+
+        '<span class="exv">'+usd(l.spend)+'</span></summary>'+
+      '<div class="exb">'+
+        '<div class="exrow"><span>Matched because</span><span>'+(LINE_RULE[key]||'—')+'</span></div>'+
+        '<div class="exrow"><span>Revenue from</span><span>'+revFrom+'</span></div>'+
+        '<div class="exrow"><span>Result</span><span>'+usd(l.spend)+' spend · '+
+          n0(l.adjInst)+' installs · '+n0(l.bookings)+' bookings · '+n0(l.revenue)+' SAR'+
+          (l.roas?' · ROAS '+n2(l.roas)+'×':'')+'</span></div>'+
+        (mine.length?'<table class="extab"><thead><tr><th>Campaign</th><th>Days</th><th>Spend</th>'+
+          '<th>Impr.</th><th>Clicks</th></tr></thead><tbody>'+
+          mine.map(function(c){
+            return '<tr><td title="'+esc(c.name)+'">'+esc(c.name)+'</td><td>'+c.nDays+'</td>'+
+              '<td>'+usd(c.spend)+'</td><td>'+n0(c.impr)+'</td><td>'+n0(c.clicks)+'</td></tr>';
+          }).join('')+'</tbody></table>'
+          :'<div class="exnote">No campaigns in Raw data — this line exists only because Adjust '+
+           'attributes bookings to it. Its revenue is real; its cost is missing until the invoice is entered.</div>')+
+      '</div></details>';
+  }).join('');
+}
+function step(n,title,body,fact){
+  return '<div style="display:grid;grid-template-columns:26px 1fr;gap:11px;padding:11px 0;'+
+    'border-bottom:1px solid var(--line-soft)">'+
+    '<div style="width:22px;height:22px;border-radius:50%;background:var(--accent);color:#fff;'+
+      'display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700">'+n+'</div>'+
+    '<div><div style="font-weight:600;font-size:13px;margin-bottom:3px">'+title+'</div>'+
+    '<div style="font-size:12.5px;color:var(--ink-3);line-height:1.55">'+body+'</div>'+
+    '<div style="font-size:12px;color:var(--ink-2);margin-top:5px;font-variant-numeric:tabular-nums">'+
+      '<b>'+fact+'</b></div></div></div>';
+}
+
+/* ---------- fragments ---------- */
+var _pfx={};
+function commonPrefix(){
+  if(BRAND==='BOTH')return '';   // the two brands share no prefix worth stripping
+  if(_pfx[BRAND]!=null)return _pfx[BRAND];
+  var names=DATA.raw.filter(function(r){return brandMatch(r[B]);}).map(function(r){return r[C];});
+  var p='';
+  if(names.length>1){
+    p=names[0];
+    names.forEach(function(n){var i=0;while(i<p.length&&i<n.length&&p[i]===n[i])i++;p=p.slice(0,i);});
+    var cut=Math.max(p.lastIndexOf('_'),p.lastIndexOf('-'),p.lastIndexOf(' '));
+    p=cut>4?p.slice(0,cut+1):'';
+  }
+  return (_pfx[BRAND]=p);
+}
+function shortName(n){
+  var s=String(n),p=commonPrefix();
+  if(p&&s.indexOf(p)===0&&s.length>p.length+4)s=s.slice(p.length);
+  s=s.replace(/_NA(?=_)/g,'').replace(/_{2,}/g,'_');
+  return s.length<=40?s:'…'+s.slice(-39);
+}
+function setDailyMetric(m){DAILY_METRIC=m;render();}
+function setEffMetric(m){EFF_METRIC=m;render();}
+function sortBy(k){SORT=SORT.key===k?{key:k,dir:-SORT.dir}:{key:k,dir:-1};render();}
+function sortList(list){
+  var k=SORT.key,d=SORT.dir;
+  return list.slice().sort(function(a,b){
+    var x=a[k],y=b[k];
+    if(x==null)return 1;if(y==null)return -1;
+    if(typeof x==='string')return d*x.localeCompare(y);
+    return d*(x-y);
+  });
+}
+function th(key,label,on){
+  if(!on)return '<th>'+label+'</th>';
+  var s=SORT.key===key;
+  return '<th class="sortable'+(s?' sorted'+(SORT.dir>0?' asc':''):'')+'" onclick="sortBy(\''+key+'\')">'+label+'</th>';
+}
+/* Column set mirrors the pacing tab, E through X. src marks where each number
+   is measured: raw = the platform export, adj = Adjust, ga4 = GA4. */
+var PACING_COLS=[
+  {k:'plat',   h:'Ad Platform',     src:'',    core:1, txt:1},
+  {k:'obj',    h:'Objective',       src:'',    core:1, txt:1},
+  {k:'spend',  h:'Spend USD',       src:'raw', core:1, f:usd},
+  {k:'spendSar',h:'Spend SAR',      src:'raw', f:n0},
+  {k:'impr',   h:'Impressions',     src:'raw', core:1, f:n0},
+  {k:'views',  h:'Views',           src:'raw', f:n0},
+  {k:'clicks', h:'Clicks',          src:'raw', core:1, f:n0},
+  {k:'lpv',    h:'Link clicks',     src:'raw', f:n0},
+  {k:'bookings',h:'Adjust purchase',src:'adj', core:1, f:n0},
+  {k:'adjInst',h:'Adjust install',  src:'adj', core:1, f:n0},
+  {k:'ga4Tx',  h:'GA4 purchase',    src:'ga4', f:n0},
+  {k:'purch',  h:'Paid media purch',src:'raw', f:n0},
+  {k:'inst',   h:'Paid media inst', src:'raw', f:n0},
+  {k:'roas',   h:'ROAS',            src:'adj', core:1, roas:1},
+  {k:'cpm',    h:'CPM',             src:'raw', core:1, f:usd2},
+  {k:'cpv',    h:'CPV',             src:'raw', f:usd2},
+  {k:'cpc',    h:'CPC',             src:'raw', core:1, f:usd2},
+  {k:'ctr',    h:'CTR',             src:'raw', core:1, f:pct},
+  {k:'vtr',    h:'VTR',             src:'raw', f:pct},
+  {k:'cvrPurch',h:'CVR purch',      src:'raw', f:pct},
+  {k:'cvrInst',h:'CVR install',     src:'raw', f:pct},
+  {k:'cpi',    h:'CPI',             src:'adj', core:1, f:usd2},
+  {k:'cpa',    h:'CPA',             src:'adj', core:1, f:usd2},
+  {k:'revenue',h:'Revenue SAR',     src:'adj', core:1, f:n0}
+];
+var SRC_TAG={raw:'',adj:'<sup class="src adj">A</sup>',ga4:'<sup class="src ga4">G</sup>',
+  /* revenue and ROAS read Adjust on the app lines and GA4 on the four web lines,
+     so the column carries both marks and the row decides which one applies */
+  rev:'<sup class="src adj">A</sup><sup class="src ga4">G</sup>'};
+var SRC_WHY={
+  raw:'Measured by the platform\'s own export — the Raw data tab.',
+  adj:'Measured by Adjust, matched to this campaign by name (Adjust Raw, column C).',
+  ga4:'Measured by GA4, matched to this campaign by Session campaign name.',
+  rev:'Adjust on the app lines, GA4 on the four web lines — never both, or the same sale would count twice.'
+};
+function lineTable(list,sortable){
+  var cols=PACING_COLS.filter(function(c){return COLSET==='full'||c.core;});
+  var gaps=Object.keys(adjustSourceGaps());
+  function hasGap(o){return gaps.some(function(k){return k.slice(k.indexOf('|')+1)===o.plat+'|'+o.obj;});}
+  var t={};
+  ['spend','spendSar','impr','views','clicks','lpv','bookings','adjInst','ga4Tx','purch','inst','revenue']
+    .forEach(function(k){t[k]=0;});
+  list.forEach(function(l){for(var k in t)t[k]+=l[k]||0;});
+  t.cpm=t.impr?t.spend/t.impr*1000:null; t.cpv=t.views?t.spend/t.views:null;
+  t.cpc=t.clicks?t.spend/t.clicks:null;  t.ctr=t.impr?t.clicks/t.impr*100:null;
+  t.vtr=t.impr?t.views/t.impr*100:null;  t.cvrPurch=t.clicks?t.purch/t.clicks*100:null;
+  t.cvrInst=t.clicks?t.inst/t.clicks*100:null;
+  t.cpi=t.adjInst?t.spend/t.adjInst:null; t.cpa=t.bookings?t.spend/t.bookings:null;
+  t.roas=t.spendSar?t.revenue/t.spendSar:null;
+  var frz=false;
+  function cell(o,c,isTot){
+    if(c.txt){
+      if(isTot) return c.k==='plat'?'<td>Total</td>':'<td></td>';
+      return c.k==='plat'
+        ? '<td><span class="pdot" style="background:'+(PLAT_COLOR[o.plat]||'#888')+'"></span>'+o.plat+'</td>'
+        : '<td><span class="tag">'+o.obj+'</span></td>';
+    }
+    var missing=isTot?gaps.length>0:hasGap(o);
+    var needsAdjust=c.k==='bookings'||c.k==='adjInst'||c.k==='cpi'||c.k==='cpa';
+    var needsRevenue=(c.k==='revenue'||c.k==='roas')&&
+      (isTot?gaps.some(function(k){return GA_LINE_KEYS.indexOf(k.slice(k.indexOf('|')+1))<0;}):
+        o.revSrc==='Adjust');
+    if(missing&&(needsAdjust||needsRevenue))return '<td>—</td>';
+    if(c.roas){
+      var r=o[c.k];
+      if(r==null) return '<td>—</td>';
+      var st=isTot?'':(o.obj==='Awareness'?'mute':r>=2.5?'good':r>=1.5?'warn':r>0?'crit':'mute');
+      return '<td>'+(isTot?n2(r)+'×':'<span class="pill '+st+'">'+n2(r)+'×</span>')+'</td>';
+    }
+    return '<td>'+c.f(o[c.k])+'</td>';
+  }
+  return '<table><thead><tr>'+cols.map(function(c){
+      var lbl=c.h+SRC_TAG[c.src]+((frz&&c.src!=='raw'&&c.src)?' *':'');
+      if(!sortable) return '<th>'+lbl+'</th>';
+      var on=SORT.key===c.k;
+      return '<th class="sortable'+(on?' sorted'+(SORT.dir>0?' asc':''):'')+
+        '" onclick="sortBy(\''+c.k+'\')">'+lbl+'</th>';
+    }).join('')+'</tr></thead><tbody>'+
+    list.map(function(l){return '<tr>'+cols.map(function(c){return cell(l,c);}).join('')+'</tr>';}).join('')+
+    '</tbody><tfoot><tr>'+cols.map(function(c){return cell(t,c,true);}).join('')+'</tr></tfoot></table>'+
+    '<div class="srckey"><span><sup class="src adj">A</sup> Adjust</span>'+
+      '<span><sup class="src ga4">G</sup> GA4</span>'+
+      '<span>no mark = the platform\'s own export</span>'+
+      ''+'</div>';
+}
+/* Day-level table. Adjust and GA4 both carry a Day, so every row divides figures
+   measured over the same 24 hours — the CPI, CPA and ROAS on a row are real for
+   that day, not a period average smeared across it. The claimed install count
+   stays beside the verified one, greyed, so the gap is visible per day. */
+function dayTable(s){
+  var t=sumRaw(rowsRaw());
+  var missing=Object.keys(adjustSourceGaps()).length>0;
+  var tot={adjInst:0,bookings:0,ga4Tx:0,revenue:0};
+  s.forEach(function(d){tot.adjInst+=d.adjInst;tot.bookings+=d.bookings;
+    tot.ga4Tx+=d.ga4Tx;tot.revenue+=d.revenue;});
+  return '<table><thead><tr><th>Day</th><th>Spend</th><th>Impr.</th><th>Clicks</th>'+
+    '<th>Inst<sup class="src adj">A</sup></th><th>Inst (claimed)</th>'+
+    '<th>Bookings<sup class="src adj">A</sup></th><th>GA4 tx<sup class="src ga4">G</sup></th>'+
+    '<th>CPI</th><th>CPA</th><th>Revenue SAR</th><th>ROAS</th></tr></thead><tbody>'+
+    s.slice().reverse().map(function(d){
+      var sarSpend=d.spend*DATA.meta.fx;
+      return '<tr><td>'+d.day+'</td><td>'+usd(d.spend)+'</td><td>'+n0(d.impr)+'</td>'+
+        '<td>'+n0(d.clicks)+'</td><td>'+(missing?'—':n0(d.adjInst))+'</td>'+
+        '<td class="mute">'+n0(d.inst)+'</td><td>'+(missing?'—':n0(d.bookings))+'</td><td>'+n0(d.ga4Tx)+'</td>'+
+        '<td>'+(missing?'—':usd2(d.adjInst?d.spend/d.adjInst:null))+'</td>'+
+        '<td>'+(missing?'—':usd2(d.bookings?d.spend/d.bookings:null))+'</td>'+
+        '<td>'+(missing?'—':n0(d.revenue))+'</td>'+
+        '<td>'+(missing?'—':sarSpend?n2(d.revenue/sarSpend)+'×':'—')+'</td></tr>';
+    }).join('')+
+    '</tbody><tfoot><tr><td>Period total</td><td>'+usd(t.spend)+'</td><td>'+n0(t.impr)+'</td>'+
+    '<td>'+n0(t.clicks)+'</td><td>'+(missing?'—':n0(tot.adjInst))+'</td>'+
+    '<td class="mute">'+n0(t.inst)+'</td><td>'+(missing?'—':n0(tot.bookings))+'</td>'+
+    '<td>'+n0(tot.ga4Tx)+'</td>'+
+    '<td>'+(missing?'—':usd2(tot.adjInst?t.spend/tot.adjInst:null))+'</td>'+
+    '<td>'+(missing?'—':usd2(tot.bookings?t.spend/tot.bookings:null))+'</td>'+
+    '<td>'+(missing?'—':n0(tot.revenue))+'</td>'+
+    '<td>'+(missing?'—':t.spend?n2(tot.revenue/(t.spend*DATA.meta.fx))+'×':'—')+'</td></tr></tfoot></table>';
+}
+/* 50-odd campaigns read as noise in one flat list, so they are grouped and each
+   group carries its own subtotal. Sorting applies inside each group. */
+function campTable(cs){
+  var gaps=adjustSourceGaps();
+  /* Same column names and the same A / G marks the pacing table uses, so a
+     reader never has to wonder which meter a figure came from. */
+  var COLS=[{k:'name',    h:'Campaign',        src:''},
+            {k:'plat',    h:'Platform',        src:''},
+            {k:'obj',     h:'Objective',       src:''},
+            {k:'nDays',   h:'Days',            src:''},
+            {k:'spend',   h:'Spend',           src:'raw'},
+            {k:'impr',    h:'Impressions',     src:'raw'},
+            {k:'clicks',  h:'Clicks',          src:'raw'},
+            {k:'ctr',     h:'CTR',             src:'raw'},
+            {k:'cpm',     h:'CPM',             src:'raw'},
+            {k:'cpc',     h:'CPC',             src:'raw'},
+            {k:'inst',    h:'Platform install',src:'raw'},
+            {k:'adjInst', h:'Adjust install',  src:'adj'},
+            {k:'cpi',     h:'CPI',             src:'adj'},
+            {k:'bookings',h:'Adjust purchase', src:'adj'},
+            {k:'cpa',     h:'CPA',             src:'adj'},
+            {k:'revenue', h:'Revenue',         src:'rev'},
+            {k:'roas',    h:'ROAS',            src:'rev'}];
+  function head(){
+    return '<thead><tr>'+COLS.map(function(c){
+      var on=CSORT.key===c.k;
+      return '<th class="sortable'+(on?' sorted'+(CSORT.dir>0?' asc':''):'')+'"'+
+        (SRC_WHY[c.src]?' title="'+SRC_WHY[c.src]+'"':'')+
+        ' onclick="csortBy(\''+c.k+'\')">'+c.h+(SRC_TAG[c.src]||'')+'</th>';
+      }).join('')+'</tr></thead>';
+  }
+  function srt(list){
+    var k=CSORT.key,d=CSORT.dir;
+    return list.slice().sort(function(a,b){
+      var x=a[k],y=b[k];
+      if(x==null)return 1; if(y==null)return -1;
+      if(typeof x==='string')return d*x.localeCompare(y);
+      return d*(x-y);
+    });
+  }
+  function row(c){
+    var st=c.roas==null?'':(c.obj==='Awareness'?'mute':
+      c.roas>=2.5?'good':c.roas>=1.5?'warn':c.roas>0?'crit':'mute');
+    /* A row with conversions but no spend is Adjust or GA4 naming a campaign the
+       platform export does not carry over this window. Say so on the row — it is
+       the difference between "cheap" and "not measured here". */
+    var flag=c.noSpend?' <span class="tag" title="Adjust or GA4 reports this name, '+
+      'but Raw data has no spend for it in this window — so there is no CPI or ROAS to '+
+      'work out. The conversions are real and are counted in the totals.">no spend in range</span>':
+      (c.blindLine?' <span class="tag" title="This campaign spent, but the platform never '+
+      'passes its name to Adjust — the installs and bookings it earned sit on the '+
+      'unattributed row for this line. Apple Search Ads reports every campaign as '+
+      '&quot;unknown&quot;.">not named by Adjust</span>':'');
+    var missing=c.spend>0&&gaps[c.brand+'|'+c.plat+'|'+c.obj];
+    return '<tr'+(c.synthetic?' class="syn"':'')+'><td title="'+esc(c.name)+'">'+esc(shortName(c.name))+
+      (BRAND==='BOTH'&&!c.synthetic?' <span class="tag">'+c.brand+'</span>':'')+flag+'</td>'+
+      '<td><span class="pdot" style="background:'+(PLAT_COLOR[c.plat]||'#888')+'"></span>'+c.plat+'</td>'+
+      '<td><span class="tag">'+c.obj+'</span></td><td>'+(c.nDays||'—')+'</td><td>'+usd(c.spend)+'</td>'+
+      '<td>'+n0(c.impr)+'</td><td>'+n0(c.clicks)+'</td><td>'+pct(c.ctr)+'</td>'+
+      '<td>'+usd2(c.cpm)+'</td><td>'+usd2(c.cpc)+'</td><td>'+n0(c.inst)+'</td>'+
+      '<td>'+(missing?'—':n0(c.adjInst))+'</td><td>'+usd2(c.cpi)+'</td>'+
+      '<td>'+(missing?'—':n0(c.bookings))+'</td><td>'+usd2(c.cpa)+'</td>'+
+      '<td>'+(missing&&c.revSrc==='Adjust'?'—':n0(c.revenue))+'</td>'+
+      '<td>'+(missing&&c.revSrc==='Adjust'?'—':c.roas?'<span class="pill '+st+'">'+n2(c.roas)+'×</span>':'—')+'</td></tr>';
+  }
+  function agg(list){
+    var t={spend:0,impr:0,clicks:0,inst:0,adjInst:0,bookings:0,revenue:0};
+    list.forEach(function(c){for(var k in t)t[k]+=c[k]||0;});
+    return t;
+  }
+  function totalCells(t,list){
+    var roas=t.spend?t.revenue/(t.spend*DATA.meta.fx):null;
+    var missing=list.some(function(c){return c.spend>0&&gaps[c.brand+'|'+c.plat+'|'+c.obj];});
+    var missingRev=list.some(function(c){return c.spend>0&&c.revSrc==='Adjust'&&gaps[c.brand+'|'+c.plat+'|'+c.obj];});
+    return '<td>'+usd(t.spend)+'</td><td>'+n0(t.impr)+'</td><td>'+n0(t.clicks)+'</td>'+
+      '<td>'+pct(t.impr?t.clicks/t.impr*100:null)+'</td>'+
+      '<td>'+usd2(t.impr?t.spend/t.impr*1000:null)+'</td>'+
+      '<td>'+usd2(t.clicks?t.spend/t.clicks:null)+'</td><td>'+n0(t.inst)+'</td>'+
+      '<td>'+(missing?'—':n0(t.adjInst))+'</td><td>'+(missing?'—':usd2(t.adjInst>=0.5&&t.spend?t.spend/t.adjInst:null))+'</td>'+
+      '<td>'+(missing?'—':n0(t.bookings))+'</td><td>'+(missing?'—':usd2(t.bookings>=0.5&&t.spend?t.spend/t.bookings:null))+'</td>'+
+      '<td>'+(missingRev?'—':n0(t.revenue))+'</td>'+
+      '<td>'+(missingRev?'—':roas?n2(roas)+'×':'—')+'</td>';
+  }
+  function subtotal(label,list,color){
+    return '<tr class="grp"><td colspan="4">'+
+      (color?'<span class="pdot" style="background:'+color+'"></span>':'')+label+
+      ' <span class="cnt">'+list.length+'</span></td>'+totalCells(agg(list),list)+'</tr>';
+  }
+  function grandTotal(list){
+    return '<tfoot><tr><td colspan="4">Total</td>'+totalCells(agg(list),list)+'</tr></tfoot>';
+  }
+  var srckey='<div class="srckey"><span><sup class="src adj">A</sup> Adjust, matched to the '+
+    'campaign by name</span>'+
+    '<span><sup class="src ga4">G</sup> GA4, matched by session campaign name</span>'+
+    '<span>no mark = the platform\'s own export</span>'+
+    '<span>Revenue and ROAS read <sup class="src adj">A</sup> on the app lines and '+
+    '<sup class="src ga4">G</sup> on the four web lines</span></div>';
+  if(GROUP==='none')
+    return '<table>'+head()+'<tbody>'+srt(cs).map(row).join('')+'</tbody>'+
+      grandTotal(cs)+'</table>'+srckey;
+  var key=GROUP==='plat'?'plat':'obj';
+  var groups={};
+  cs.forEach(function(c){ (groups[c[key]]=groups[c[key]]||[]).push(c); });
+  var order=Object.keys(groups).sort(function(a,b){
+    var sa=0,sb=0;
+    groups[a].forEach(function(c){sa+=c.spend;}); groups[b].forEach(function(c){sb+=c.spend;});
+    return sb-sa;
+  });
+  return '<table>'+head()+'<tbody>'+order.map(function(g){
+    return subtotal(g,groups[g],key==='plat'?(PLAT_COLOR[g]||'#888'):null)+
+      srt(groups[g]).map(row).join('');
+  }).join('')+'</tbody>'+grandTotal(cs)+'</table>'+srckey;
+}
+function campRank(list,key,dir,fmt){
+  var s=list.slice().sort(function(a,b){return dir*(a[key]-b[key]);}).slice(0,6);
+  if(!s.length)return '<div class="empty">Not enough volume to rank</div>';
+  return '<ol class="rank">'+s.map(function(c,i){
+    return '<li><span class="rk">'+(i+1)+'</span><span class="rn" title="'+esc(c.name)+'">'+
+      esc(shortName(c.name))+'<em><span class="pdot" style="background:'+(PLAT_COLOR[c.plat]||'#888')+'"></span>'+
+      (BRAND==='BOTH'?c.brand+' · ':'')+c.plat+' · '+usd(c.spend)+' · '+n0(c.inst)+' inst</em></span>'+
+      '<span class="rv">'+fmt(c[key])+'</span></li>';}).join('')+'</ol>';
+}
+function platRank(list,key,fmt){
+  if(!list.length)return '<div class="empty">No Adjust data for this selection</div>';
+  return '<ol class="rank">'+list.map(function(e,i){
+    return '<li><span class="rk">'+(i+1)+'</span><span class="rn">'+
+      '<span class="pdot" style="background:'+(PLAT_COLOR[e.plat]||'#888')+'"></span>'+e.plat+
+      '<em>'+usd(e.spend)+' · '+n0(e.adjInst)+' installs · '+n0(e.bookings)+' bookings</em></span>'+
+      '<span class="rv">'+fmt(e[key])+'</span></li>';}).join('')+'</ol>';
+}
+function claimPanel(cv){
+  if(!cv.length)return '<div class="empty">No install data</div>';
+  var mx=Math.max.apply(null,cv.map(function(x){return Math.max(x.claimed,x.verified);}))||1;
+  return '<div class="cv">'+cv.map(function(x){
+    var cls=x.ratio==null?'mute':x.ratio>=1.4?'crit':x.ratio>=1.15?'warn':'good';
+    return '<div class="cvr"><div class="h"><span class="nm">'+
+      '<span class="pdot" style="background:'+(PLAT_COLOR[x.plat]||'#888')+'"></span>'+x.plat+'</span>'+
+      '<span>'+(x.ratio!=null?'<span class="pill '+cls+'">'+x.ratio.toFixed(2)+'× claimed</span>':
+        '<span class="pill mute">no Adjust data</span>')+'</span></div>'+
+      '<div class="cvbar"><i class="claim" style="width:'+(x.claimed/mx*100).toFixed(1)+'%"></i>'+
+      '<i class="ver" style="width:'+(x.verified/mx*100).toFixed(1)+'%"></i></div>'+
+      '<div class="f"><span>platform says '+n0(x.claimed)+'</span>'+
+      '<span>Adjust verifies '+n0(x.verified)+'</span></div></div>';
+  }).join('')+'</div>';
+}
+function smallMultiples(s,plats){
+  var w=wowByPlat(),byP={};w.forEach(function(x){byP[x.plat]=x;});
+  var days=s.map(function(d){return d.day;});
+  return '<div class="sm">'+plats.map(function(p,i){
+    var vals=s.map(function(d){return d.byPlat[p]||0;});
+    var tot=vals.reduce(function(a,b){return a+b;},0);
+    var e=byP[p],d=e?e.dSpend:null;
+    var arrow=d==null?'':(d>3?'▲':d<-3?'▼':'▬');
+    var cls=d==null?'flat':d>3?'up':d<-3?'down':'flat';
+    return '<div class="smc"><div class="t"><span class="nm">'+
+      '<span class="pdot" style="background:'+(PLAT_COLOR[p]||'#888')+'"></span>'+p+'</span>'+
+      '<span class="delta '+cls+'" style="font-size:11.5px">'+arrow+' '+
+        (d==null?'—':(d>=0?'+':'')+d.toFixed(0)+'%')+'</span></div>'+
+      '<div class="v">'+usd(tot)+'</div>'+
+      '<div class="m">'+(e&&e.curCpi?'CPI '+usd2(e.curCpi):'&nbsp;')+'</div>'+
+      '<canvas data-mini="'+i+'" data-plat="'+p+'"></canvas></div>';
+  }).join('')+'</div>';
+}
+function wowTable(w){
+  if(!w.length)return '<div class="empty">Not enough days in range</div>';
+  return '<table><thead><tr><th>Platform</th><th>Spend now</th><th>Spend before</th><th>Δ spend</th>'+
+    '<th>Installs now</th><th>Installs before</th><th>CPI now</th><th>CPI before</th><th>Δ CPI</th></tr></thead><tbody>'+
+    w.map(function(e){
+      function d(v,invert){
+        if(v==null)return '<span class="delta flat">—</span>';
+        var good=invert?v<0:v>0;
+        var cls=Math.abs(v)<3?'flat':good?'up':'down';
+        return '<span class="delta '+cls+'">'+(v>=0?'+':'')+v.toFixed(0)+'%</span>';
+      }
+      return '<tr><td><span class="pdot" style="background:'+(PLAT_COLOR[e.plat]||'#888')+'"></span>'+e.plat+'</td>'+
+        '<td>'+usd(e.curSpend)+'</td><td>'+usd(e.prevSpend)+'</td><td>'+d(e.dSpend)+'</td>'+
+        '<td>'+n0(e.curInst)+'</td><td>'+n0(e.prevInst)+'</td>'+
+        '<td>'+usd2(e.curCpi)+'</td><td>'+usd2(e.prevCpi)+'</td><td>'+d(e.dCpi,true)+'</td></tr>';
+    }).join('')+'</tbody></table>';
+}
+function revenueBars(ln){
+  var rs=ln.filter(function(l){return l.revenue>0;}).sort(function(a,b){return b.revenue-a.revenue;});
+  if(!rs.length)return '<div class="empty">No revenue attributed for this selection</div>';
+  var mx=rs[0].revenue;
+  return rs.map(function(l){
+    var src=l.revSrc||'Adjust';
+    return '<div style="display:grid;grid-template-columns:minmax(150px,1fr) 2fr 96px;align-items:center;gap:10px;padding:5px 0">'+
+      '<div style="font-size:12.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+
+      '<span class="pdot" style="background:'+(PLAT_COLOR[l.plat]||'#888')+'"></span>'+l.plat+
+      ' <span class="tag">'+src+'</span></div>'+
+      '<div style="height:7px;border-radius:4px;background:var(--line-soft);overflow:hidden">'+
+      '<div style="height:100%;border-radius:4px;background:var(--accent);width:'+(l.revenue/mx*100).toFixed(1)+'%"></div></div>'+
+      '<div style="font-size:12px;text-align:right;font-weight:600;font-variant-numeric:tabular-nums">'+n0(l.revenue)+'</div></div>';
+  }).join('');
+}
+
+/* ---------- canvas dispatch ---------- */
+function drawAll(){
+  if(!DATA)return;
+  (window.__sparks||[]).forEach(function(s,i){
+    if(!s)return;
+    var cv=document.querySelector('[data-spark="'+i+'"]');
+    if(cv)sparkline(cv,s.d,s.v,s.f,s.l);
+  });
+  var s=series(),plats=platsActive(),d;
+  if((d=document.getElementById('cDaily'))){
+    var fmts={spend:usd,impr:n0,clicks:n0,inst:n0,purch:n0};
+    var labs={spend:'Spend',impr:'Impressions',clicks:'Clicks',inst:'Installs',purch:'Purchases'};
+    stackedDaily(d,s,plats,DAILY_METRIC,fmts[DAILY_METRIC],labs[DAILY_METRIC]);
+  }
+  if((d=document.getElementById('cEff'))) effLine(d,s,EFF_METRIC);
+  if((d=document.getElementById('cCum'))) cumulative(d,s);
+  document.querySelectorAll('[data-mini]').forEach(function(cv){
+    var p=cv.dataset.plat;
+    miniLine(cv,s.map(function(x){return x.day;}),s.map(function(x){return x.byPlat[p]||0;}),'Spend',usd);
+  });
+}
+var _rt;
+window.addEventListener('resize',function(){clearTimeout(_rt);_rt=setTimeout(drawAll,140);});
+if(window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').addEventListener)
+  window.matchMedia('(prefers-color-scheme:dark)').addEventListener('change',drawAll);
+
+document.documentElement.setAttribute('data-brand','SFQC');
+boot();
+</script>
+</body>
+</html>
+
+
