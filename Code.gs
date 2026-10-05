@@ -55,10 +55,10 @@ var CFG = {
   // GA4: a session is paid when the default channel group is one of these two.
   PAID_GROUPS: ['paid search', 'paid social'],
   // Revenue (column X) on the four web lines — Snapchat awareness, TikTok awareness,
-  // TikTok Search, Google Search. false = Adjust revenue, which is what the installed pacing
-  // formulas use. true = GA4 web revenue, the report's original design. Change it here and
-  // re-run "Qiddiya Setup -> 3 · Install the formulas": the tab and the dashboard switch together.
-  WEB_REVENUE_FROM_GA4: false
+  // TikTok Search, Google Search. true = GA4 web revenue, which is what the live report's
+  // X7, X8, X15 and X16 use. false = Adjust revenue. Change it here and re-run
+  // "Qiddiya Setup -> Fix this workbook": the tab and the dashboard switch together.
+  WEB_REVENUE_FROM_GA4: true
 };
 
 var FLOOR_JUL2 = '2026-07-02';
@@ -213,7 +213,7 @@ function checkSetup() {
   if (raw) {
     var m1 = String(raw.getRange('M1').getValue()).trim();
     out.push('  Raw data column M: ' + (m1 === 'Objective' ? 'Objective (current formula)' :
-      'missing — run Qiddiya Setup -> 3 · Install the formulas'));
+      'missing — run Qiddiya Setup -> Fix this workbook'));
   }
   Logger.log(out.join('\n'));
   try { SpreadsheetApp.getUi().alert(out.join('\n')); } catch (e) {}
@@ -249,7 +249,8 @@ function _isTextNum(v) {
 function _valueNum(v) {
   if (typeof v === 'number') return isFinite(v) ? v : 0;
   if (v === null || v === undefined || v instanceof Date || typeof v === 'boolean') return 0;
-  var s = String(v).replace(/,/g, '').trim();
+  // VALUE() also reads a leading currency sign ("$275.02"), which Raw manual exports carry
+  var s = String(v).replace(/,/g, '').trim().replace(/^(-?)\$/, '$1');
   if (!s) return 0;
   var n = Number(s);
   return isFinite(n) ? n : 0;
@@ -599,7 +600,7 @@ function getPacingDashboardData() {
   if (!hasObjective) {
     issue('warn', 'Raw data has no Objective column (M), so this dashboard is splitting campaigns ' +
       'into lines itself while the pacing tab still uses its old wildcard sums. Run Qiddiya Setup → ' +
-      '3 · Install the formulas once; after that both read the same column.');
+      'Fix this workbook once; after that both read the same column.');
   }
   var unmapped = { spend: 0, names: {} }, offLine = {}, rawBadDates = 0;
   for (var i = 1; i < rv.length; i++) {
@@ -934,15 +935,18 @@ function validateDashboard() {
     var grid = ws.getRange(1, 1, 53, 24).getValues();
     function cell(r, c) { var v = grid[r - 1][c - 1]; return typeof v === 'number' ? v : 0; }
     var t = _lineTotals(p, brand);
-    var sum = { spend: 0, lpv: 0, bookings: 0, adjInst: 0, ga4Tx: 0, revenue: 0 };
+    var sum = { spend: 0, impr: 0, views: 0, clicks: 0, lpv: 0, purch: 0, inst: 0,
+      bookings: 0, adjInst: 0, ga4Tx: 0, revenue: 0 };
 
     row('', '', '', '', '', '');
     row(brand + ' · LINES', 'Dashboard', 'Pacing', '', '', '');
     PACING_LINES.forEach(function (l) {
       var e = t[l.key];
       if (l.source !== 'none') {
-        MEDIA.forEach(function (m) { cmp(brand, l.label, m[2], e[m[0]], cell(l.row, m[1])); });
-        sum.spend += e.spend; sum.lpv += e.lpv;
+        MEDIA.forEach(function (m) {
+          cmp(brand, l.label, m[2], e[m[0]], cell(l.row, m[1]));
+          sum[m[0]] += e[m[0]];
+        });
       }
       cmp(brand, l.label, 'Adjust purchase (K)', e.bookings, cell(l.row, 11));
       cmp(brand, l.label, 'Adjust install (L)', e.adjInst, cell(l.row, 12));
@@ -954,8 +958,8 @@ function validateDashboard() {
 
     row('', '', '', '', '', '');
     row(brand + ' · TOTALS (row 28)', 'Dashboard', 'Pacing', '', '', '');
+    MEDIA.forEach(function (m) { cmp(brand, 'Total', m[2].replace(')', '28)'), sum[m[0]], cell(28, m[1])); });
     cmp(brand, 'Total', 'Spend SAR (F28)', sum.spend * CFG.FX, cell(28, 6));
-    cmp(brand, 'Total', 'Link clicks (J28)', sum.lpv, cell(28, 10));
     cmp(brand, 'Total', 'Adjust purchase (K28)', sum.bookings, cell(28, 11));
     cmp(brand, 'Total', 'Adjust install (L28)', sum.adjInst, cell(28, 12));
     cmp(brand, 'Total', 'GA4 purchase (M28)', sum.ga4Tx, cell(28, 13));
@@ -1001,7 +1005,7 @@ function validateDashboard() {
   Logger.log('%s figures compared, %s match, %s differ, %s data issues', total, total - bad, bad, critical);
   var msg = (bad === 0 ? 'All ' + total + ' figures match the pacing tabs.' :
       bad + ' of ' + total + ' figures differ — see the "Dashboard Validation" tab. If the totals ' +
-      'row or whole lines differ, run Qiddiya Setup → 3 · Install the formulas first.') +
+      'row or whole lines differ, run Qiddiya Setup → Fix this workbook first.') +
     (critical ? '\n\n' + critical + ' data issue(s) affect BOTH the pacing tab and the dashboard — ' +
       'listed at the bottom of the tab.' : '');
   try { SpreadsheetApp.getUi().alert(msg); } catch (e) { /* no UI attached */ }
@@ -1265,6 +1269,13 @@ function _writeLog(ss, title, log) {
  * and a line-by-line log are written first. Safe to run as often as you like.
  */
 function cleanAdjustRaw() {
+  var msg = cleanAdjustRaw_();
+  try { SpreadsheetApp.getUi().alert(msg); } catch (e) { /* no UI attached */ }
+  return msg;
+}
+
+/** cleanAdjustRaw() without the dialog, so "Fix this workbook" can run it as one step. */
+function cleanAdjustRaw_() {
   var lock = LockService.getDocumentLock();
   lock.waitLock(30000);
   try {
@@ -1315,7 +1326,6 @@ function cleanAdjustRaw() {
     _writeLog(ss, 'Clean Adjust Raw · ' + stamp, log);
     SpreadsheetApp.flush();
     Logger.log(msg);
-    try { SpreadsheetApp.getUi().alert(msg); } catch (e) { /* no UI attached */ }
     return msg;
   } finally {
     lock.releaseLock();

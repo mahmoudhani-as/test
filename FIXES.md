@@ -24,8 +24,9 @@ evaluated the real pacing formulas on it with a spreadsheet engine:
 | | figures compared | differ from the pacing tab |
 |---|---|---|
 | Original code | 288 | **118** (KPI cards showed "—" for Revenue, ROAS, Installs and Bookings) |
-| Fixed code | 338 | **0** |
-| Fixed code, after Clean Adjust Raw / a CSV import / the GA4-revenue switch | 338 | **0** |
+| Fixed code | 350 | **0** |
+| Fixed code, after Clean Adjust Raw / a CSV import / the GA4-revenue switch | 350 | **0** |
+| **Your live workbook** (typed copy), after *Fix this workbook* | 350 | **0** — and 416/416 cells equal an independent recomputation (section 8) |
 
 ---
 
@@ -80,12 +81,15 @@ evaluated the real pacing formulas on it with a spreadsheet engine:
   - folds in any old `Adjust Current` rows;
   - makes a values-only backup and writes a line-by-line log. Running it twice changes nothing.
 - **`importAdjustCsv()`.** The CSV import now writes **into Adjust Raw**, so the report updates too. For each app it replaces exactly the days the file covers. Split rows inside one export (e.g. iOS + Android) are added together, not dropped. The labels it writes use the tab's vocabulary (YouTube, Awareness, Search).
-- `validateDashboard()` now also compares the totals row (F28, J28, K28, L28, M28, X28, P28), GA4 C49/D49 and the C41 check, and lists the data issues.
-- `CFG.WEB_REVENUE_FROM_GA4` (default `false`, matching the installed tab). Set it to `true` to read revenue on the four web rows from GA4, then re-run step 3; the tab and the dashboard switch together.
+- `validateDashboard()` now also compares the whole totals row (E–J, N, O, F, K, L, M, X, P of row 28), GA4 C49/D49 and the C41 check, and lists the data issues.
+- `CFG.WEB_REVENUE_FROM_GA4` (default `true`, matching the live tab: GA4 revenue on the four web rows). Set it to `false` for Adjust revenue everywhere, then re-run *Fix this workbook*; the tab and the dashboard switch together.
+- `_valueNum()` reads a leading "$", as Sheets' VALUE() does.
 
 **Untitled.gs** (setup)
 - `Raw data` gets column **M = Objective**, generated from `OBJECTIVE_TOKENS`. Each campaign gets exactly one objective, Awareness first. The portal rule also accepts the `AQQC` misspelling.
 - `buildPacingSpec_()` generates the line formulas. Media rows are plain `SUMIFS(… M = objective …)` with each tab's own B2:C2 window. Adjust rows count every objective (remainders) and row 26 takes every non-organic channel without a row of its own. Row 28, N19, N26/O26 and C39/C42/C44 are fixed. Rows 22 and 24, the GA4 cells and the ratio columns stay as they were.
+- New **Qiddiya Setup → Fix this workbook (one run)** (`fixThisWorkbook()`): hidden backups, the Objective column on a pasted Raw data, Raw manual text numbers, *Clean Adjust Raw*, one date window, and the formulas below. Safe to re-run.
+- Row 28 totals every media column (E–J, N, O) with its ratios (Q–W), not only F and J.
 - `onOpen()` now also adds the Pacing dashboard menu.
 - New *Revert pacing formulas to the previous version*. *Undo everything* restores the previous formulas too, and no longer confuses an Adjust backup with a Raw data backup.
 - The Validation tab and the install checks were updated for the new structure (coverage = spend with no portal; text dates in Adjust).
@@ -103,38 +107,33 @@ evaluated the real pacing formulas on it with a spreadsheet engine:
 1. In the Apps Script editor, replace **Code.gs**, **Dashboard.html** and **Untitled.gs** with the
    files in this folder. Save.
 2. Reload the spreadsheet. Both the **Qiddiya Setup** and the **Pacing dashboard** menus appear.
-3. **Qiddiya Setup → 3 · Install the formulas.** This rebuilds Raw data with column M and writes
-   the corrected pacing formulas. It does not touch the Supermetrics queries.
-4. **Pacing dashboard → Clean Adjust Raw.** Run it once now, and again whenever Adjust data is
-   pasted by hand. It makes a backup tab and an "Adjust Raw cleanup log" listing every change.
-5. **Pacing dashboard → Validate against the pacing tabs.** You should see "All … figures match".
-   Anything listed under DATA QUALITY needs fixing in the sheet; it affects the report too.
-6. For the web link: **Deploy → Manage deployments → edit → New version** (the URL stays the same).
-7. From now on, load Adjust exports with **Pacing dashboard → Import latest Adjust CSVs**. Once its
-   rows are merged by step 4, the old `Adjust Current` tab is renamed "(merged …)" and can be deleted.
+3. **Qiddiya Setup → Fix this workbook (one run).** It applies every repair from the audit in
+   section 8, in place, and makes hidden backups first. Raw data stays the pasted table it is today.
+   (Step "3 · Install the formulas" is only for switching Raw data to the Supermetrics formula.)
+4. **Pacing dashboard → Validate against the pacing tabs.** You should see "All … figures match"
+   and no data issues.
+5. For the web link: **Deploy → Manage deployments → edit → New version** (the URL stays the same).
+6. From now on, load Adjust exports with **Pacing dashboard → Import latest Adjust CSVs**. If you
+   paste Adjust rows by hand, run **Pacing dashboard → Clean Adjust Raw** afterwards.
+7. When you paste new Raw data, paste columns **A:L only**. Column M (Objective) is a formula that
+   fills itself.
 
 ## 5. Choices you may want to change
 
-- **Revenue (column X)** is Adjust on every row, because that is what the installed formulas do.
-  The report's original design used GA4 on the four web rows. To switch, set
-  `CFG.WEB_REVENUE_FROM_GA4 = true` and re-run step 3.
-- **Snapchat "takeover" / "take over"** campaigns now count as Awareness. Before, the tab filed them
-  under Snapchat App unless the name also had another awareness token. Edit `OBJECTIVE_TOKENS` and
-  re-run step 3 to change it.
-- **Totals include the awareness rows and row 26**, in every column.
-- To go back to the old formulas: *Qiddiya Setup → Revert pacing formulas to the previous version*.
+- **Revenue (column X)** on the four web rows (Snapchat and TikTok awareness, TikTok Search, Google
+  Search) comes from GA4, as on the live tab today; every other row uses Adjust. For Adjust everywhere, set
+  `CFG.WEB_REVENUE_FROM_GA4 = false` and re-run *Fix this workbook*.
+- **Snapchat "takeover" / "_AWRN_"** campaigns count as Awareness. Edit `OBJECTIVE_TOKENS` and
+  re-run *Fix this workbook* to change it.
+- **Totals include the awareness rows and row 26**, in every column. Row 28 now also totals
+  spend USD, impressions, views, clicks and platform purchases/installs, with their ratios.
+- **One date window.** AAQC B2:C2 follow SFQC B2:C2, and SFQC C2 is `=TODAY()-1`. Type a date into
+  SFQC C2 to report a fixed period; the dashboard uses the same window.
+- To go back: unhide the "… BACKUP yyyyMMdd-HHmm" tabs that *Fix this workbook* made.
 
-## 6. What will move in the report after step 3
+## 6. What will move in the report
 
-- Snapchat and TikTok **awareness/search rows may go down** (no more double counting) and their
-  **App rows go up by the same amount**. Platform totals do not change.
-- **X App goes up** by any X campaign that matched neither old wildcard.
-- **F28 goes up** (awareness spend is now included), so **P28 ROAS goes down** to its true value.
-  AAQC F28 now includes InMotion.
-- After *Clean Adjust Raw*: Adjust rows with text or swapped dates are counted (usually September),
-  and overlapping imports stop being added twice.
-- Raw data spend with no portal is still not counted anywhere. The dashboard banner names the
-  campaigns; fix their names, or add the token to the portal rule in `RAW_FORMULA`.
+See section 8 for the live workbook's numbers before and after.
 
 ## 7. Re-running the check
 
@@ -150,3 +149,41 @@ the GA4-revenue switch on.
 
 One note outside this fix: `appsscript.json` deploys the web app as *Anyone, even anonymous*, and
 it runs as you. Anyone with the link can see the numbers. Change `access` if that is not intended.
+
+## 8. Live workbook audit (5 Oct 2026)
+
+The live file was audited cell by cell against its sources. Claude's Google connector could read it
+but not edit it, so the repairs are packaged as *Qiddiya Setup → Fix this workbook*. That function
+was run on an exact typed copy of the live workbook. Afterwards the dashboard matched both tabs on
+all 350 figures. An independent recomputation from the raw rows, without the sheet formulas or this
+code, matched all 416 pacing cells it checked.
+
+**What was wrong in the live file**
+
+| # | Where | Problem | Effect |
+|---|---|---|---|
+| L1 | SFQC row 22 (Apple) | K22/L22 read **Aquarabia** Adjust rows; H22/N22 read AAQC Raw data | Six Flags Apple installs/bookings were Aquarabia's (1,815 / 343 on both tabs) |
+| L2 | Media rows, both tabs | Wildcard-only SUMIFS, no date window | SFQC "till 1 Sep" was ignored; 182 Snapchat `_AWRN_` takeover rows ($103,009) matched no row |
+| L3 | Check block | C39 vs C40 | SFQC **MISMATCH $79,860**, AAQC **MISMATCH −$8,212**; G42 CHECK on both |
+| L4 | Row 24 (InMobi) | Read partial Raw data rows; Raw manual impressions stored as text ("15,62,702") | SFQC InMobi 6.8M impressions instead of 156M; AAQC InMobi spend $0 |
+| L5 | Adjust Raw | 1,839 text dates, 926 day/month swaps, 1,039 duplicate rows (overlapping imports 15–29 Sep), 6 Twitter rows under Other | September under/over-counted, rows outside any window |
+| L6 | Windows | SFQC 22 Jun–1 Sep (static), AAQC 21 Jun–yesterday | The two tabs and the dashboard reported different periods |
+| L7 | Row 28 | Only F, J, K, L, M, P, X totalled; AAQC F28/J28 summed rows 14–24 | No impressions total to compare with; AAQC spend total skipped InMotion |
+
+**Not fixable from the sheet:** no source holds InMobi data for **3–31 Aug** (the Raw data backup ends
+2 Aug, Raw manual starts 1 Sep). Paste those days into Raw manual and row 24 picks them up.
+
+**Totals before → after** (window 22 Jun – 4 Oct)
+
+| | SFQC before | SFQC after | AAQC before | AAQC after |
+|---|---:|---:|---:|---:|
+| Spend USD (rows 7–25) | 401,928 | 522,776 | 326,457 | 348,840 |
+| Impressions | 328,667,886 | 504,288,904 | 244,705,267 | 373,040,287 |
+| Clicks | 3,411,665 | 3,823,930 | 2,406,843 | 2,644,091 |
+| Adjust installs (L28) | 31,427 | 37,994 | 38,172 | 41,424 |
+| Adjust bookings (K28) | 3,719 | 4,587 | 4,060 | 4,594 |
+| GA4 purchases (M28) | 579 | 740 | 1,670 | 1,670 |
+| Revenue SAR (X28) | 2,294,223 | 3,395,303 | 4,339,894 | 4,840,304 |
+| ROAS (P28) | 1.98 | 1.72 | 4.25 | 3.67 |
+| Spend not on a line (C41) | 79,860 | 0 | −8,213 | 0 |
+

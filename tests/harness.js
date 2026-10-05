@@ -33,7 +33,7 @@ function colName(i) { var s = ''; i++; while (i > 0) { var m = (i - 1) % 26; s =
 function sheetsValue(v) {
   if (typeof v === 'number') return v;
   if (v === null || v === undefined || v === '') return 0;
-  var s = String(v).replace(/,/g, '').trim();
+  var s = String(v).replace(/,/g, '').trim().replace(/^(-?)\$/, '$1');
   if (!s) return 0;
   var n = Number(s);
   return isFinite(n) ? n : 0;
@@ -105,6 +105,9 @@ function makeSpreadsheet(wb, tz) {
   Sheet.prototype.getName = function () { return this.name; };
   Sheet.prototype.setName = function (n) { this.name = n; return this; };
   Sheet.prototype.hideSheet = function () { this.hidden = true; return this; };
+  Sheet.prototype.copyTo = function () {
+    var s = new Sheet('Copy of ' + this.name, this.v); sheets.push(s); return s;
+  };
   Sheet.prototype.showSheet = function () { this.hidden = false; return this; };
   Sheet.prototype.getLastRow = function () {
     for (var r = this.v.length - 1; r >= 0; r--) if (this.v[r].some(function (x) { return x !== ''; })) return r + 1;
@@ -145,6 +148,8 @@ function makeSpreadsheet(wb, tz) {
     return out;
   };
   Range.prototype.getValue = function () { return this.sh.cell(this.r, this.c); };
+  Range.prototype.getDisplayValue = function () { return this.getDisplayValues()[0][0]; };
+  Range.prototype.getNumberFormat = function () { return this.sh.fmt[this.c] || ''; };
   Range.prototype.getDisplayValues = function () {
     return this.getValues().map(function (row) {
       return row.map(function (x) {
@@ -470,12 +475,16 @@ function main() {
   failures += recheck('after import', cur.ctx, cur.ss, files);
 
   /* ---- the GA4-revenue switch moves the tab and the dashboard together ---- */
-  console.log('\n==================== FIXED CODE with CFG.WEB_REVENUE_FROM_GA4 = true ====================');
-  cur.ctx.CFG.WEB_REVENUE_FROM_GA4 = true;
-  failures += recheck('GA4 web revenue', cur.ctx, cur.ss, files);
-  cur.ctx.CFG.WEB_REVENUE_FROM_GA4 = false;
+  var ga4Default = !!cur.ctx.CFG.WEB_REVENUE_FROM_GA4;
+  console.log('\n==================== FIXED CODE with CFG.WEB_REVENUE_FROM_GA4 = ' + !ga4Default + ' ====================');
+  cur.ctx.CFG.WEB_REVENUE_FROM_GA4 = !ga4Default;
+  failures += recheck('web revenue switched', cur.ctx, cur.ss, files);
+  cur.ctx.CFG.WEB_REVENUE_FROM_GA4 = ga4Default;
 
   console.log('\n' + (failures ? 'FAILED — ' + failures + ' problem(s)' : 'PASSED — the dashboard equals the pacing tabs, line by line and in total'));
   process.exit(failures ? 1 : 0);
 }
-main();
+if (require.main === module) main();
+else module.exports = { makeSpreadsheet: makeSpreadsheet, loadServer: loadServer, evaluatePacing: evaluatePacing,
+  putPacing: putPacing, sheetToWb: sheetToWb, loadClient: loadClient, compareClient: compareClient,
+  kpis: kpis, pv: pv, serial: serial, fromSerial: fromSerial, colIndex: colIndex, colName: colName };

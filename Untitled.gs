@@ -222,6 +222,10 @@ function adjustLineFormula_(adjCol, line, app) {
     Google: ['YouTube', 'Awareness', 'Search'] }[p];
   return s(p, '') + others.map(function (ob) { return '-' + s(p, ob); }).join('');
 }
+// The ratio columns every line row carries (row 7: '=IFERROR(E7/G7*1000,"")' and so on).
+var RATIO_COLS = { Q: '=IFERROR(E#/G#*1000,"")', R: '=IFERROR(E#/H#,"")', S: '=IFERROR(E#/I#,"")',
+  T: '=IFERROR(I#/G#,"")', U: '=IFERROR(H#/G#,"")', V: '=IFERROR(N#/I#,"")', W: '=IFERROR(O#/I#,"")' };
+
 /** C39: the Raw data spend the media rows are meant to cover, worked out independently. */
 function expectedSpend_(brand) {
   function rd(c) { return colRef_('Raw data', c); }
@@ -280,8 +284,9 @@ function buildPacingSpec_() {
       if (CFG.WEB_REVENUE_FROM_GA4 && line.web) t['X' + r] = GA4_NEW[tab]['X' + r];
     });
     t.N26 = ''; t.O26 = '';                 // row 26 has no media; these were InMotion copies
-    t.F28 = '=SUM(F7:F10,F15:F25)';
-    t.J28 = '=SUM(J7:J10,J15:J25)';
+    // media totals: every media row (row 26 has none); the old row 28 had F and J only
+    ['E', 'F', 'G', 'H', 'I', 'J', 'N', 'O'].forEach(function (c) { t[c + 28] = '=SUM(' + c + '7:' + c + '10,' + c + '15:' + c + '25)'; });
+    Object.keys(RATIO_COLS).forEach(function (c) { t[c + 28] = RATIO_COLS[c].replace(/#/g, '28'); });
     t.K28 = '=SUM(K7:K10,K15:K26)';
     t.L28 = '=SUM(L7:L10,L15:L26)';
     t.M28 = '=SUM(M7:M10,M15:M26)';
@@ -308,6 +313,8 @@ var REPORT_TABS = ['GA4','Adjust Raw','SFQC Pacing_Daily','AAQC Pacing_Daily'];
  */
 function onOpen() {
   SpreadsheetApp.getUi().createMenu('Qiddiya Setup')
+    .addItem('Fix this workbook (one run)', 'fixThisWorkbook')
+    .addSeparator()
     .addItem('1 · Backup + Raw manual', 'step1_backup')
     .addItem('2 · Add the 8 Supermetrics queries', 'step1b_addQueries')
     .addItem('3 · Install the formulas', 'step2_install')
@@ -422,6 +429,89 @@ function step2_install() {
   var rows = verifyInstall_(ss);
   notify_('Done — Raw data is producing ' + rows + ' rows. Check the two Pacing_Daily tabs, then ' +
     'run Pacing dashboard → Validate against the pacing tabs.');
+}
+
+// ------------------------------------------------------------------ one-run repair
+/**
+ * Repairs this workbook in place, in one run (Qiddiya Setup → Fix this workbook). It
+ * applies what the audit of the live file found, and leaves Raw data the pasted table it
+ * is today — it does NOT switch Raw data to the Supermetrics formula (that is step 3).
+ *   1. hidden backups of the tabs it changes
+ *   2. Raw data: the Objective column (M) every media row now filters on
+ *   3. Raw manual: numbers stored as text ("15,62,702") become numbers
+ *   4. Adjust Raw: text and day/month-swapped dates, overlapping imports, Twitter rows
+ *   5. one date window: AAQC follows SFQC B2:C2, and "till" is yesterday
+ *   6. the unified pacing formulas, totals and checks
+ * Running it again is harmless.
+ */
+function fixThisWorkbook() {
+  var ss = SpreadsheetApp.getActive();
+  requireSheets_(ss, ['Raw data', 'Raw manual', 'Adjust Raw', PACING_TAB_OF.SFQC, PACING_TAB_OF.AAQC]);
+  var stamp = _stamp();                      // same stamp format as the Adjust Raw backup
+  var report = [];
+  [PACING_TAB_OF.SFQC, PACING_TAB_OF.AAQC].forEach(function (n) {
+    var name = n + ' BACKUP ' + stamp, old = ss.getSheetByName(name);
+    if (old) ss.deleteSheet(old);
+    ss.getSheetByName(n).copyTo(ss).setName(name).hideSheet();       // small tabs: keep the formulas
+  });
+  backupValues_(ss, 'Raw manual', 'Raw manual BACKUP ' + stamp);
+  report.push('Backups (hidden): the two pacing tabs and Raw manual, "… BACKUP ' + stamp + '".');
+  report.push(objectiveColumn_(ss));
+  report.push(rawManualNumbers_(ss));
+  report.push(cleanAdjustRaw_());                                      // backs up and logs itself
+  report.push(alignWindows_(ss));
+  writeFormulas_(ss, buildPacingSpec_());
+  SpreadsheetApp.flush();
+  report.push('Pacing formulas, totals and checks rewritten in both tabs.');
+  report.push('Next: Pacing dashboard → Validate against the pacing tabs.');
+  notify_(report.join('\n\n'));
+}
+
+/** Raw data column M for a pasted Raw data (the Supermetrics formula fills M itself). */
+function objectiveColumn_(ss) {
+  var sh = ss.getSheetByName('Raw data');
+  if (sh.getRange('A2').getFormula()) return 'Raw data: the Supermetrics formula already fills column M.';
+  if (sh.getMaxColumns() < 13) sh.insertColumnsAfter(sh.getMaxColumns(), 13 - sh.getMaxColumns());
+  sh.getRange('M2:M').clearContent();
+  sh.getRange('M1').setValue('Objective').setFontWeight('bold');
+  sh.getRange('M2').setFormula(objectiveColumnFormula_());
+  return 'Raw data: Objective column added (M1:M). Keep it when you paste new data into A:L.';
+}
+function objectiveColumnFormula_() {
+  return '=ARRAYFORMULA(IF(A2:A="","",LET(vplat,A2:A,vcamp,LOWER(C2:C),' + objectiveFormula_() + ')))';
+}
+
+/** SUMIFS skips numbers stored as text; Raw manual's InMobi impressions came that way. */
+function rawManualNumbers_(ss) {
+  var sh = ss.getSheetByName('Raw manual'), last = sh.getLastRow();
+  if (last < 2) return 'Raw manual: no rows.';
+  var rng = sh.getRange(2, 5, last - 1, 8), v = rng.getValues(), n = 0;   // E:L
+  v.forEach(function (row) {
+    row.forEach(function (x, j) {
+      if (typeof x !== 'string' || !x.trim()) return;
+      var s = x.replace(/[,\s]/g, '').replace(/^(-?)\$/, '$1');
+      if (/^-?(?:\d+\.?\d*|\.\d+)$/.test(s)) { row[j] = +s; n++; }
+    });
+  });
+  if (n) rng.setValues(v);
+  return 'Raw manual: ' + n + ' numbers stored as text converted to numbers.';
+}
+
+/**
+ * The dashboard reads one window (SFQC B2:C2); the AAQC tab had its own (21 Jun - yesterday
+ * against 22 Jun - 1 Sep). Both tabs now follow SFQC, whose "till" becomes yesterday — type a
+ * date into SFQC C2 to report a fixed period.
+ */
+function alignWindows_(ss) {
+  var sf = ss.getSheetByName(PACING_TAB_OF.SFQC), aa = ss.getSheetByName(PACING_TAB_OF.AAQC);
+  var link = "='" + PACING_TAB_OF.SFQC + "'!C2";
+  // first run only: a later run keeps whatever period you have typed into SFQC C2
+  if (aa.getRange('C2').getFormula() !== link) sf.getRange('C2').setFormula('=TODAY()-1');
+  aa.getRange('B2').setFormula("='" + PACING_TAB_OF.SFQC + "'!B2");
+  aa.getRange('C2').setFormula(link);
+  aa.getRange('B2:C2').setNumberFormat(sf.getRange('B2').getNumberFormat() || 'yyyy-mm-dd');
+  return 'Date window: both tabs follow SFQC B2:C2 (' + sf.getRange('B2').getDisplayValue() + ' to ' +
+    sf.getRange('C2').getDisplayValue() + ').';
 }
 
 // ------------------------------------------------------------------ helpers
