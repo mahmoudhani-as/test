@@ -301,16 +301,21 @@ function rawData(tabs, manual, newRule) {
   manual.slice(1).forEach(function (r) { out.push(r.slice(0, 12)); });
   var from = D(WINDOW.from), till = D(WINDOW.till);
   out = out.filter(function (r) { return r[3] instanceof Date && r[3] >= from && r[3] <= till; });
-  if (newRule) out.forEach(function (r) { r.push(objective(r[0], String(r[2]))); });
   var head = ['A', 'Campaign', 'Campaign name', 'Day', 'Reach', 'Impressions', 'Amount spent (USD)', 'Link clicks',
     'Clicks (all)', '3-second video plays', 'App installs', 'Purchases'];
-  if (newRule) head.push('Objective');
   var rows = [head].concat(out);
   // N1:O2 hold the window, as rawData_() writes it
   while (rows[0].length < 15) rows[0].push('');
   rows[0][13] = 'From'; rows[0][14] = 'Till';
   rows[1] = rows[1].slice(); while (rows[1].length < 15) rows[1].push('');
   rows[1][13] = D(WINDOW.from); rows[1][14] = D(WINDOW.till);
+  // column P: the objective, as Fix this workbook's P2 formula produces it
+  if (newRule) {
+    rows.forEach(function (r, i) {
+      while (r.length < 16) r.push('');
+      r[15] = i === 0 ? 'Objective' : objective(r[0], String(r[2]));
+    });
+  }
   return rows;
 }
 

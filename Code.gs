@@ -32,6 +32,14 @@ var CFG = {
   // the reasons the dashboard and the tab disagreed. "Clean Adjust Raw" folds its rows into
   // Adjust Raw and retires it; the importer now writes to Adjust Raw directly.
   ADJUST_LEGACY: 'Adjust Current',
+  // The corrected copy of Adjust Raw that the pacing formulas read (dates repaired, duplicate
+  // and mislabelled imports removed). The script rebuilds it — hourly, from the menu, and
+  // whenever the dashboard finds it out of date. Adjust Raw itself is never modified, so it
+  // can stay an IMPORTRANGE from the source workbook.
+  ADJUST_CLEAN: 'Adjust Clean',
+  // Raw data column holding each row's pacing objective. P sits outside an IMPORTRANGE of
+  // A:O, so the column can be added without breaking an imported Raw data tab.
+  OBJECTIVE_COL: 'P',
   GA4: 'GA4',
   PACING: 'SFQC Pacing_Daily',      // holds the window in B2:C2 (Raw data N2:O2 follows it)
   PACING_TABS: { SFQC: 'SFQC Pacing_Daily', AAQC: 'AAQC Pacing_Daily' },
@@ -44,9 +52,10 @@ var CFG = {
   TZ: 'Asia/Riyadh',
   // Adjust: the awareness/YouTube rows (7-10) have no floor, every other row starts here.
   ADJUST_FROM: '2026-07-02',
-  // Pacing row 24 (InMobi): Raw manual from 1 Sep, the Raw data backup for 2 Jul - 31 Aug.
-  INMOBI_MANUAL_FROM: '2026-09-01',
-  INMOBI_BACKUP_TILL: '2026-08-31',
+  // Pacing row 24 (InMobi): the Raw data backup holds 16 Jul - 2 Aug; Raw manual is read from
+  // 3 Aug, so InMobi days still missing (3 - 31 Aug) can be pasted into Raw manual.
+  INMOBI_MANUAL_FROM: '2026-08-03',
+  INMOBI_BACKUP_TILL: '2026-08-02',
   INMOBI_LAST_ROW: 10000,           // row 24 reads $A$2:$A$10000
   // Portal identifiers exactly as the pacing formulas test them.
   ADJUST_APP: { SFQC: 'Six Flags', AAQC: 'Aquarabia' },                           // Adjust Raw!D
@@ -180,9 +189,41 @@ function _ss() {
   }
   return ss;
 }
-function _who() {
+function _who() { return who_(); }
+function who_() {
   try { return Session.getEffectiveUser().getEmail() || 'this account'; }
   catch (e) { return 'this account'; }
+}
+
+/**
+ * The web app runs as the owner for anyone with the link, and google.script.run can call
+ * every server function whose name does not end in "_". Everything that changes the
+ * workbook, writes to Drive or reveals setup details starts with this: it runs only for
+ * the person the script is executing as (from the sheet's menus, the editor or a trigger),
+ * never for a web-app visitor.
+ */
+function requireSheetUser_() {
+  var active = '', effective = '';
+  try { active = Session.getActiveUser().getEmail(); } catch (e) {}
+  try { effective = Session.getEffectiveUser().getEmail(); } catch (e) {}
+  if (!effective || active !== effective) {
+    throw new Error('This can only be run from the spreadsheet (Extensions or the sheet\'s menus), ' +
+      'not from the dashboard link.');
+  }
+}
+
+/**
+ * A tab whose content is the output of one formula in A1 or A2 (IMPORTRANGE, QUERY, a
+ * Supermetrics LET): writing into it would break the formula, so the script only reads it.
+ */
+function _formulaTab_(sh) {
+  if (!sh) return '';
+  var f = sh.getRange('A1').getFormula() || sh.getRange('A2').getFormula();
+  return f ? String(f) : '';
+}
+function _importSource_(f) {
+  var m = /IMPORTRANGE\(\s*"([^"]+)"\s*,\s*"'?([^"'!]+)'?!/i.exec(f || '');
+  return m ? { key: m[1].replace(/^.*\/d\/([^/]+).*$/, '$1'), tab: m[2] } : null;
 }
 
 /**
@@ -190,6 +231,7 @@ function _who() {
  * as, which spreadsheet it reached, and which tabs it can see.
  */
 function checkSetup() {
+  requireSheetUser_();
   var out = [];
   out.push('Running as: ' + _who());
   out.push('CFG.SHEET_ID: ' + (CFG.SHEET_ID || '(blank — using the bound spreadsheet)'));
@@ -417,6 +459,12 @@ function _adjustReversedRows(rows, col, tz) {
   return marked;
 }
 /** Column index (1-based) of a header, or 0. */
+/** Raw data's objective column: CFG.OBJECTIVE_COL (P) when headed "Objective", else M. */
+function _objectiveIndex_(header) {
+  var p = CFG.OBJECTIVE_COL.charCodeAt(0) - 65;
+  function isObj(i) { return String(header[i] == null ? '' : header[i]).trim().toLowerCase() === 'objective'; }
+  return isObj(p) ? p : isObj(12) ? 12 : -1;
+}
 function _col(header, name) {
   for (var i = 0; i < header.length; i++) {
     if (String(header[i]).trim() === name) return i + 1;
@@ -632,9 +680,10 @@ function getPacingDashboardData(opts) {
           M objective ---- */
   var rv = _sheet(CFG.RAW).getDataRange().getValues();
   var rawHdr = rv[0] || [];
-  var hasObjective = String(rawHdr[12] == null ? '' : rawHdr[12]).trim().toLowerCase() === 'objective';
+  var objIdx = _objectiveIndex_(rawHdr);
+  var hasObjective = objIdx >= 0;
   if (!hasObjective) {
-    issue('warn', 'Raw data has no Objective column (M), so this dashboard is splitting campaigns ' +
+    issue('warn', 'Raw data has no Objective column (' + CFG.OBJECTIVE_COL + '), so this dashboard is splitting campaigns ' +
       'into lines itself while the pacing tab still uses its old wildcard sums. Run Qiddiya Setup → ' +
       'Fix this workbook once; after that both read the same column.');
   }
@@ -661,7 +710,7 @@ function getPacingDashboardData(opts) {
       reconRow(brand, 'raw', day, r[5], r[6], plat === 'InMobi' ? 'inmobi_copy' : 'apple_copy');
       continue;
     }
-    var obj = hasObjective ? String(r[12] == null ? '' : r[12]) : _objective(plat, camp);
+    var obj = hasObjective ? String(r[objIdx] == null ? '' : r[objIdx]) : _objective(plat, camp);
     var line = plat ? LINE_BY_KEY[plat + '|' + obj] : null;
     if (!line || line.source) {
       var ok = String(r[0]) + ' / ' + obj + ' / ' + brand;
@@ -764,8 +813,17 @@ function getPacingDashboardData(opts) {
           E revenue, G paid installs, H installs, I bookings, J channel, K objective.
           Every row counts once per occurrence, as SUMIFS counts it; duplicates and
           unreadable dates are reported, and "Clean Adjust Raw" removes them for both. ---- */
-  var ash = _sheet(CFG.ADJUST);
+  // the pacing formulas read "Adjust Clean" once Fix this workbook has built it; asTab reads
+  // what they read, the dashboard itself reads Adjust Raw through the same corrections
+  var adjCleanSh = ss.getSheetByName(CFG.ADJUST_CLEAN);
+  var ash = asTab && adjCleanSh ? adjCleanSh : _sheet(CFG.ADJUST);
   var av = ash.getDataRange().getValues();
+  var cleanState = '';
+  if (!asTab && adjCleanSh) {
+    if (PropertiesService.getDocumentProperties().getProperty('adjustCleanFp') !== _adjustFingerprint_(av)) {
+      try { cleanState = _refreshAdjustClean_(false) ? 'rebuilt' : 'stale'; } catch (eRb) { cleanState = 'stale'; }
+    }
+  }
   _headerProblems(av[0] || [], ADJUST_EXPECT, CFG.ADJUST).forEach(function (p) {
     issue('crit', p + ' — the pacing formulas read Adjust Raw by position.');
   });
@@ -859,12 +917,13 @@ function getPacingDashboardData(opts) {
   var fixHint = ' Run Pacing dashboard → Clean Adjust Raw: it repairs the tab both the pacing ' +
     'formulas and this dashboard read (a backup and a change log are kept).';
   var needsClean = cleanLog && cleanLog.some(function (r) {
-    return /Text date|swap|Duplicate|Number stored as text|Twitter|Missing channel|replaced|folded/.test(r[1]);
+    return /Text date|swap|Duplicate|Cross-app|Number stored as text|Twitter|Missing channel|replaced|folded/.test(r[1]);
   });
   if (needsClean) {
     var kinds = {};
     cleanLog.forEach(function (r) {
       var k = /Text date/.test(r[1]) ? 'text' : /swap/.test(r[1]) ? 'swap' : /Duplicate/.test(r[1]) ? 'dup'
+        : /Cross-app/.test(r[1]) ? 'xapp'
         : /Number stored as text/.test(r[1]) ? 'num' : /Twitter|Missing channel/.test(r[1]) ? 'label'
         : /replaced|folded/.test(r[1]) ? 'legacy' : '';
       if (k) kinds[k] = (kinds[k] || 0) + 1;
@@ -872,6 +931,7 @@ function getPacingDashboardData(opts) {
     var parts = [];
     if (kinds.text) parts.push(count(kinds.text) + ' days stored as text (e.g. 13/09/2026)');
     if (kinds.swap) parts.push(count(kinds.swap) + ' day/month-swapped dates');
+    if (kinds.xapp) parts.push(count(cd.xapp) + ' rows pasted a second time under the wrong app');
     if (kinds.dup) parts.push(count(kinds.dup) + ' rows repeated by overlapping imports');
     if (kinds.num) parts.push(count(kinds.num) + ' numbers stored as text');
     if (kinds.label) parts.push(count(kinds.label) + ' rows with a missing or wrong channel');
@@ -892,11 +952,17 @@ function getPacingDashboardData(opts) {
           ' bookings instead of ' + count(Math.round(c.inst)) + ' / ' + count(Math.round(c.book)));
       }
     });
-    issue('crit', 'Adjust Raw needs cleaning: ' + parts.join(', ') + '. This dashboard corrects them as ' +
-      'it reads the tab, so the Adjust installs, bookings and revenue shown here are right. The pacing ' +
-      'tabs read the tab as it stands' + (cmp.length ? ' and show ' + cmp.join('; ') + ' for ' +
-      from + ' → ' + till : '') + '. Run Pacing dashboard → Clean Adjust Raw once (Qiddiya Setup → ' +
-      'Fix this workbook includes it) and the tabs will match.');
+    if (adjCleanSh) {
+      issue('warn', 'Adjust Raw has ' + parts.join(', ') + '. They are corrected in "' + CFG.ADJUST_CLEAN +
+        '", which both the pacing tabs and this dashboard read' + (cleanState === 'stale' ? ' — but it is ' +
+        'out of date and could not be rebuilt just now; press Refresh in a minute' : '') +
+        '. Fix the exports at the source when you can.');
+    } else {
+      issue('crit', 'Adjust Raw has ' + parts.join(', ') + '. This dashboard corrects them as it reads ' +
+        'the tab, so the Adjust installs, bookings and revenue shown here are right. The pacing tabs read ' +
+        'the tab as it stands' + (cmp.length ? ' and show ' + cmp.join('; ') + ' for ' + from + ' → ' +
+        till : '') + '. Run Qiddiya Setup → Fix this workbook: the tabs then read the corrected copy.');
+    }
   } else if (textDates && !cleanLog) {
     issue('crit', count(textDates) + ' Adjust Raw rows hold their day as text (e.g. 13/09/2026). ' +
       'SUMIFS cannot read a text date, so neither the pacing tab nor this dashboard counts their ' +
@@ -1069,6 +1135,7 @@ function _lineTotals(p, brand) {
  * Data-quality issues (the dashboard banner) are listed underneath.
  */
 function validateDashboard() {
+  requireSheetUser_();
   var ss = _ss();
   // Lines: the dashboard's counting against the formulas, both reading Adjust Raw as it stands.
   // Data quality: what the dashboard banner says (including how far the tabs are off).
@@ -1255,20 +1322,12 @@ function _stamp() { return Utilities.formatDate(new Date(), CFG.TZ, 'yyyyMMdd-HH
  */
 function _adjustReadClean_(sh, tz, log) {
   var range = sh.getDataRange();
-  var values = range.getValues(), display = range.getDisplayValues(), formulas = range.getFormulas();
+  var values = range.getValues(), display = range.getDisplayValues();
   var header = values[0] || [];
   var problems = _headerProblems(header, ADJUST_EXPECT, CFG.ADJUST);
   if (problems.length) {
     throw new Error(problems.join('\n') + '\n\nThe pacing formulas read Adjust Raw by position, so ' +
       'the columns must be in this order: ' + ADJUST_LAYOUT.join(', ') + '.');
-  }
-  for (var fr = 1; fr < formulas.length; fr++) {
-    for (var fc = 0; fc < formulas[fr].length; fc++) {
-      if (formulas[fr][fc]) {
-        throw new Error('Adjust Raw has a formula in row ' + (fr + 1) + ', column ' +
-          String.fromCharCode(65 + fc) + '. The cleaner only rewrites a values-only export.');
-      }
-    }
   }
   var width = Math.max(header.length, ADJUST_LAYOUT.length);
   var reversed = _adjustReversedRows(values, 0, tz);
@@ -1357,20 +1416,24 @@ function _adjustDedupe_(data, log) {
   return Object.keys(drop).length;
 }
 
-/** Replace, per app, every row whose day falls inside the incoming rows' date range. */
+/**
+ * Replace, per app, the existing rows of exactly the days the incoming rows hold — never
+ * the days in between two files, which an export does not cover.
+ */
 function _adjustUpsert_(data, incoming, label, log) {
-  var ranges = {};
+  var days = {}, ranges = {};
   incoming.forEach(function (r) {
     var app = String(r[3]).toLowerCase();
-    var e = ranges[app] || (ranges[app] = { min: r[0], max: r[0] });
+    days[app + '|' + r[0]] = 1;
+    var e = ranges[app] || (ranges[app] = { min: r[0], max: r[0], days: {} });
     if (r[0] < e.min) e.min = r[0];
     if (r[0] > e.max) e.max = r[0];
+    e.days[r[0]] = 1;
   });
   var replaced = 0;
   data.rows = data.rows.filter(function (row) {
     if (!row.day) return true;
-    var e = ranges[String(row.v[3]).toLowerCase()];
-    if (e && row.day >= e.min && row.day <= e.max) { replaced++; return false; }
+    if (days[String(row.v[3]).toLowerCase() + '|' + row.day]) { replaced++; return false; }
     return true;
   });
   incoming.forEach(function (r) {
@@ -1379,8 +1442,8 @@ function _adjustUpsert_(data, incoming, label, log) {
     data.rows.push({ v: v, day: v[0] });
   });
   Object.keys(ranges).forEach(function (app) {
-    log.push(['', label + ': ' + app + ' ' + ranges[app].min + ' → ' + ranges[app].max +
-      ' replaced', '', '']);
+    log.push(['', label + ': ' + app + ' ' + ranges[app].min + ' → ' + ranges[app].max + ' (' +
+      Object.keys(ranges[app].days).length + ' days) replaced', '', '']);
   });
   return { replaced: replaced, added: incoming.length, ranges: ranges };
 }
@@ -1466,8 +1529,142 @@ function _adjustCleanData_(ss, sh, tz, log) {
     });
     if (incoming.length) merged = _adjustUpsert_(data, incoming, CFG.ADJUST_LEGACY, log);
   }
+  var xapp = _adjustDropMislabelled_(data, log);
   var dropped = _adjustDedupe_(data, log);
-  return { data: data, merged: merged, legacy: legacy, dropped: dropped };
+  return { data: data, merged: merged, legacy: legacy, dropped: dropped, xapp: xapp };
+}
+
+/** Which portal a row's network + campaign names, if exactly one. */
+var ADJUST_NAME_BRAND = {
+  SFQC: /(^|[^a-z])sfqc[-_ ]|six ?flags|sixflags/i,
+  AAQC: /(^|[^a-z])(aqc|aqqc)[-_ ]|aquarabia|aquaarabia/i
+};
+function _adjustNameBrand_(v) {
+  var t = String(v[1] == null ? '' : v[1]) + ' ' + String(v[2] == null ? '' : v[2]);
+  var sf = ADJUST_NAME_BRAND.SFQC.test(t), aq = ADJUST_NAME_BRAND.AAQC.test(t);
+  return sf && !aq ? 'SFQC' : aq && !sf ? 'AAQC' : '';
+}
+/**
+ * Export pasted under the wrong app. On the live file a both-apps export for 15-28 Sep was
+ * pasted with every row's app set to "Aquarabia": 411 of its 420 Six Flags campaign rows
+ * are field-for-field copies of rows already filed under Six Flags, and its generic rows
+ * (Apple "unknown", Expired Attributions, Untrusted Devices) copy Six Flags values too.
+ * The app is part of the duplicate key, so the cleaner kept them all for Aquarabia.
+ *
+ * A run of consecutive rows with one app that holds 20+ rows naming the other portal,
+ * extended over its neighbours dated inside the same days, is dropped whole — but only if
+ * every app-day in it also has rows outside it, so no day can lose its data. Elsewhere a
+ * row naming the other portal is dropped only when an identical row (same day, network,
+ * campaign and figures) exists under that portal; otherwise it is left as it is.
+ */
+function _adjustDropMislabelled_(data, log) {
+  var rows = data.rows, n = rows.length;
+  function app(i) { return String(rows[i].v[3] == null ? '' : rows[i].v[3]).trim().toLowerCase(); }
+  var bad = rows.map(function (r) {
+    var ab = _matchBrand(CFG.ADJUST_APP, r.v[3]), nb = _adjustNameBrand_(r.v);
+    return ab && nb && ab !== nb ? nb : '';
+  });
+  var drop = {}, runRows = 0, twinRows = 0;
+  for (var i = 0; i < n;) {
+    var j = i;
+    while (j + 1 < n && app(j + 1) === app(i)) j++;
+    var idx = [];
+    for (var k = i; k <= j; k++) if (bad[k] && rows[k].day) idx.push(k);
+    if (idx.length >= 20) {
+      var lo = rows[idx[0]].day, hi = lo;
+      idx.forEach(function (q) { if (rows[q].day < lo) lo = rows[q].day; if (rows[q].day > hi) hi = rows[q].day; });
+      var a = idx[0], b = idx[idx.length - 1];
+      while (a - 1 >= i && rows[a - 1].day && rows[a - 1].day >= lo && rows[a - 1].day <= hi) a--;
+      while (b + 1 <= j && rows[b + 1].day && rows[b + 1].day >= lo && rows[b + 1].day <= hi) b++;
+      var inside = {}, outside = {};
+      for (var q = a; q <= b; q++) inside[rows[q].day] = 1;
+      for (var o = 0; o < n; o++) if ((o < a || o > b) && app(o) === app(a) && rows[o].day) outside[rows[o].day] = 1;
+      if (Object.keys(inside).every(function (d) { return outside[d]; })) {
+        for (var z = a; z <= b; z++) drop[z] = 1;
+        runRows += b - a + 1;
+        log.push(['', 'Cross-app copy removed: ' + (b - a + 1) + ' consecutive rows filed under "' +
+          rows[a].v[3] + '" for ' + lo + ' → ' + hi + ', ' + idx.length + ' of them naming the other portal', '', '']);
+      }
+    }
+    i = j + 1;
+  }
+  // single rows naming the other portal: drop only an exact copy of a row filed there
+  var sig = {};
+  function key(v, appName) {
+    return JSON.stringify([String(appName).toLowerCase(), v[0], String(v[1]), String(v[2]),
+      _num(v[4]), _num(v[6]), _num(v[7]), _num(v[8])]);
+  }
+  rows.forEach(function (r, x) { if (!drop[x]) sig[key(r.v, r.v[3])] = 1; });
+  rows.forEach(function (r, x) {
+    if (drop[x] || !bad[x]) return;
+    if (sig[key(r.v, CFG.ADJUST_APP[bad[x]])]) {
+      drop[x] = 1; twinRows++;
+      log.push(['', 'Cross-app copy removed (identical row under ' + CFG.ADJUST_APP[bad[x]] + ')',
+        [r.v[0], r.v[3], r.v[1], r.v[2]].join(' · '), '']);
+    }
+  });
+  data.removed = (data.removed || []).concat(rows.filter(function (r, x) { return drop[x]; }));
+  data.rows = rows.filter(function (r, x) { return !drop[x]; });
+  return runRows + twinRows;
+}
+
+/** Changes whenever Adjust Raw's rows or figures change; tells whether Adjust Clean is current. */
+function _adjustFingerprint_(values) {
+  var h = 0, rows = 0;
+  for (var i = 1; i < values.length; i++) {
+    var v = values[i];
+    if (v[0] === '' || v[0] === null) continue;
+    rows++;
+    var t = [v[0] instanceof Date ? v[0].getTime() : String(v[0]), v[1], v[2], v[3], v[4], v[6], v[7], v[8], v[9], v[10]].join('|');
+    for (var c = 0; c < t.length; c++) h = (h * 31 + t.charCodeAt(c)) | 0;
+  }
+  return rows + ':' + h;
+}
+
+/**
+ * Rebuilds "Adjust Clean" from Adjust Raw (and any old "Adjust Current" rows) when Adjust Raw
+ * has changed since the last build, or always when force is set. Returns the change log, or
+ * null when it was already current.
+ */
+function _refreshAdjustClean_(force) {
+  var lock = LockService.getScriptLock();
+  if (!lock.tryLock(force ? 60000 : 5000)) return null;
+  try {
+    var ss = _ss(), tz = ss.getSpreadsheetTimeZone();
+    var src = _sheet(CFG.ADJUST);
+    var fp = _adjustFingerprint_(src.getDataRange().getValues());
+    var props = PropertiesService.getDocumentProperties();
+    var dst = ss.getSheetByName(CFG.ADJUST_CLEAN);
+    if (!force && dst && props.getProperty('adjustCleanFp') === fp) return null;
+    var log = [];
+    var cd = _adjustCleanData_(ss, src, tz, log);
+    if (!dst) {
+      dst = ss.insertSheet(CFG.ADJUST_CLEAN, ss.getSheets().length);
+      dst.setTabColor('#999999');
+    }
+    if (dst.getMaxColumns() < ADJUST_LAYOUT.length) {
+      dst.insertColumnsAfter(dst.getMaxColumns(), ADJUST_LAYOUT.length - dst.getMaxColumns());
+    }
+    dst.getRange(1, 1, 1, ADJUST_LAYOUT.length).setValues([ADJUST_LAYOUT]).setFontWeight('bold');
+    dst.setFrozenRows(1);
+    cd.data.width = ADJUST_LAYOUT.length;
+    var rows = _adjustWrite_(dst, cd.data);
+    var at = Utilities.formatDate(new Date(), tz, 'yyyy-MM-dd HH:mm');
+    dst.getRange('M1').setValue('Built by the script from "' + CFG.ADJUST + '" at ' + at +
+      ' — do not edit; the pacing tabs read this tab.');
+    props.setProperty('adjustCleanFp', fp);
+    props.setProperty('adjustCleanAt', at);
+    SpreadsheetApp.flush();
+    return { log: log, cd: cd, rows: rows, at: at };
+  } finally {
+    lock.releaseLock();
+  }
+}
+/** Hourly trigger and menu: keeps "Adjust Clean" in step with Adjust Raw. */
+function refreshAdjustClean(e) {
+  var forced = !(e && typeof e === 'object' && 'triggerUid' in e);
+  if (forced) requireSheetUser_();
+  return _refreshAdjustClean_(forced);
 }
 
 /**
@@ -1478,6 +1675,7 @@ function _adjustCleanData_(ss, sh, tz, log) {
  * and a line-by-line log are written first. Safe to run as often as you like.
  */
 function cleanAdjustRaw() {
+  requireSheetUser_();
   var msg = cleanAdjustRaw_();
   try { SpreadsheetApp.getUi().alert(msg); } catch (e) { /* no UI attached */ }
   return msg;
@@ -1485,47 +1683,54 @@ function cleanAdjustRaw() {
 
 /** cleanAdjustRaw() without the dialog, so "Fix this workbook" can run it as one step. */
 function cleanAdjustRaw_() {
-  var lock = LockService.getDocumentLock();
-  lock.waitLock(30000);
-  try {
-    var ss = _ss(), tz = ss.getSpreadsheetTimeZone(), stamp = _stamp();
-    var sh = _sheet(CFG.ADJUST), log = [];
-    var before = Math.max(0, sh.getLastRow() - 1);
-    var cd = _adjustCleanData_(ss, sh, tz, log);
-    var data = cd.data, merged = cd.merged, legacy = cd.legacy, dropped = cd.dropped;
-    _backupValues(ss, sh, CFG.ADJUST + ' BACKUP ' + stamp);
-    var after = _adjustWrite_(sh, data);
-    if (merged) legacy.setName(CFG.ADJUST_LEGACY + ' (merged ' + stamp + ')').hideSheet();
-    var fixedDates = log.filter(function (r) { return /date|swap/i.test(r[1]) && r[3] !== ''; }).length;
-    var unreadable = log.filter(function (r) { return /not readable/.test(r[1]); }).length;
-    var msg = 'Adjust Raw cleaned: ' + before + ' rows in, ' + after + ' rows out.\n' +
-      '· ' + fixedDates + ' dates repaired' + (unreadable ? ', ' + unreadable + ' still unreadable (see log)' : '') + '\n' +
-      '· ' + dropped + ' duplicate rows removed\n' +
-      (merged ? '· ' + merged.added + ' rows folded in from "' + CFG.ADJUST_LEGACY + '" (' +
-        merged.replaced + ' older rows for the same days replaced)\n' : '') +
-      'Backup: "' + CFG.ADJUST + ' BACKUP ' + stamp + '". Every change is listed in "Adjust Raw cleanup log".';
-    _writeLog(ss, 'Clean Adjust Raw · ' + stamp, log);
-    SpreadsheetApp.flush();
-    Logger.log(msg);
-    return msg;
-  } finally {
-    lock.releaseLock();
-  }
+  var res = _refreshAdjustClean_(true);
+  if (!res) throw new Error('Another run is rebuilding "' + CFG.ADJUST_CLEAN + '" — try again in a minute.');
+  var log = res.log, cd = res.cd;
+  var fixedDates = log.filter(function (r) { return /Text date|swap/i.test(r[1]); }).length;
+  var unreadable = log.filter(function (r) { return /not readable/.test(r[1]); }).length;
+  var msg = '"' + CFG.ADJUST_CLEAN + '" rebuilt from "' + CFG.ADJUST + '": ' + res.rows + ' rows.\n' +
+    '· ' + fixedDates + ' dates repaired' + (unreadable ? ', ' + unreadable + ' still unreadable (see log)' : '') + '\n' +
+    '· ' + cd.xapp + ' rows pasted under the wrong app removed\n' +
+    '· ' + cd.dropped + ' duplicate rows from overlapping imports removed\n' +
+    (cd.merged ? '· ' + cd.merged.added + ' rows folded in from "' + CFG.ADJUST_LEGACY + '"\n' : '') +
+    '"' + CFG.ADJUST + '" itself is not changed. Every correction is listed in "Adjust Raw cleanup log".';
+  _writeLog(_ss(), 'Adjust Clean · ' + res.at, log);
+  Logger.log(msg);
+  return msg;
 }
 
 /** Called by the import dialog with one parsed table per CSV file. */
 function importAdjustCsv(files) {
+  requireSheetUser_();
   if (!files || !files.length) throw new Error('No CSV data received.');
   var required = ['day', 'network', 'campaign_network', 'app', 'all_revenue', 'paid_installs',
     'installs', 'bookingconfirmed_events'];
-  var sums = {}, order = [], apps = {};
+  var ss0 = _ss(), sh0 = ss0.getSheetByName(CFG.ADJUST);
+  var f0 = _formulaTab_(sh0);
+  if (f0) {
+    var srcInfo = _importSource_(f0);
+    throw new Error('"' + CFG.ADJUST + '" in this file is ' + (srcInfo ? 'an IMPORTRANGE of "' + srcInfo.tab +
+      '" in another workbook' : 'the output of a formula') + ', so the import cannot write into it without ' +
+      'breaking it. Paste the Adjust export into that source tab instead; this file picks it up and ' +
+      '"' + CFG.ADJUST_CLEAN + '" is rebuilt within the hour (or now: Pacing dashboard → Clean Adjust Raw).');
+  }
+  var today = Utilities.formatDate(new Date(), ss0.getSpreadsheetTimeZone(), 'yyyy-MM-dd');
+  var incoming = [], apps = {}, skipped = 0, partial = 0;
   files.forEach(function (table, fileIndex) {
     if (!table || table.length < 2) throw new Error('CSV ' + (fileIndex + 1) + ' is empty.');
-    var header = table[0].map(function (x) { return String(x || '').replace(/^﻿/, '').trim(); });
+    if (table.length - 1 === 5000) {
+      throw new Error('CSV ' + (fileIndex + 1) + ' has exactly 5,000 rows — the size at which an Adjust ' +
+        'export is cut off, so its last day is incomplete. Export a shorter date range.');
+    }
+    var header = table[0].map(function (x) { return String(x || '').replace(/^\uFEFF/, '').trim(); });
     var pos = {}; header.forEach(function (x, i) { pos[x] = i; });
     required.forEach(function (x) {
       if (pos[x] == null) throw new Error('CSV ' + (fileIndex + 1) + ' is missing "' + x + '".');
     });
+    // Within ONE export a repeated key is a further breakdown (OS, country) of the same day,
+    // so it is added up. Across files nothing is added: a later file replaces an earlier
+    // file's days.
+    var sums = {}, order = [];
     table.slice(1).forEach(function (r, ri) {
       var app = String(r[pos.app] || '').trim();
       if (!_matchBrand(CFG.ADJUST_APP, app)) return;
@@ -1534,12 +1739,11 @@ function importAdjustCsv(files) {
         throw new Error('CSV ' + (fileIndex + 1) + ' row ' + (ri + 2) + ': day "' + day +
           '" is not yyyy-mm-dd. Export from Adjust again without opening the file in Excel first.');
       }
+      if (day >= today) { partial++; return; }            // today is still accumulating
       var network = String(r[pos.network] || '').trim();
       var campaign = String(r[pos.campaign_network] || '').trim();
       var cls = _adjustClassify(network, campaign);
       apps[app] = true;
-      // Within one export a repeated key is a further breakdown (OS, country) of the same
-      // day — those rows are added together, never de-duplicated.
       var key = JSON.stringify([day, app.toLowerCase(), network, campaign]);
       var e = sums[key];
       if (!e) {
@@ -1552,11 +1756,18 @@ function importAdjustCsv(files) {
       e[7] += _num(r[pos.installs]);
       e[8] += _num(r[pos.bookingconfirmed_events]);
     });
+    var rows = order.map(function (k) { return sums[k]; });
+    // a later file replaces the app-days an earlier file already supplied
+    var mine = {};
+    rows.forEach(function (r) { mine[String(r[3]).toLowerCase() + '|' + r[0]] = 1; });
+    var before = incoming.length;
+    incoming = incoming.filter(function (r) { return !mine[String(r[3]).toLowerCase() + '|' + r[0]]; });
+    skipped += before - incoming.length;
+    incoming = incoming.concat(rows);
   });
-  var incoming = order.map(function (k) { return sums[k]; });
-  if (!incoming.length) throw new Error('No Six Flags or Aquarabia rows were found.');
+  if (!incoming.length) throw new Error('No Six Flags or Aquarabia rows for days before today were found.');
 
-  var lock = LockService.getDocumentLock();
+  var lock = LockService.getScriptLock();
   lock.waitLock(30000);
   try {
     var ss = _ss(), tz = ss.getSpreadsheetTimeZone(), stamp = _stamp(), log = [];
@@ -1573,14 +1784,18 @@ function importAdjustCsv(files) {
     var total = _adjustWrite_(sh, data);
     _writeLog(ss, 'Adjust import · ' + stamp, log);
     SpreadsheetApp.flush();
-    return 'Imported ' + res.added + ' rows for ' + Object.keys(apps).join(' + ') + ' (' +
-      Object.keys(res.ranges).map(function (a) { return a + ' ' + res.ranges[a].min + ' → ' + res.ranges[a].max; })
-        .join(', ') + '), replacing ' + res.replaced + ' older rows for those days' +
-      (dropped ? ' and ' + dropped + ' duplicates elsewhere' : '') + '.\nAdjust Raw now has ' + total +
-      ' rows. The pacing tabs have recalculated; press Refresh on the dashboard.';
   } finally {
     lock.releaseLock();
   }
+  if (ss.getSheetByName(CFG.ADJUST_CLEAN)) _refreshAdjustClean_(true);
+  return 'Imported ' + res.added + ' rows for ' + Object.keys(apps).join(' + ') + ' (' +
+    Object.keys(res.ranges).map(function (a) {
+      return a + ' ' + res.ranges[a].min + ' → ' + res.ranges[a].max + ', ' + Object.keys(res.ranges[a].days).length + ' days';
+    }).join('; ') + '), replacing ' + res.replaced + ' older rows for exactly those days' +
+    (dropped ? ' and ' + dropped + ' duplicates elsewhere' : '') +
+    (skipped ? '. ' + skipped + ' rows from an earlier file were replaced by a later file for the same days' : '') +
+    (partial ? '. ' + partial + ' rows dated today were left out (the day is not complete)' : '') +
+    '.\nAdjust Raw now has ' + total + ' rows. The pacing tabs have recalculated; press Refresh on the dashboard.';
 }
 /** Older dialogs call this name. */
 function replaceAdjustCurrent(files) { return importAdjustCsv(files); }
@@ -1595,6 +1810,7 @@ function replaceAdjustCurrent(files) { return importAdjustCsv(files); }
  * It is a snapshot, not a live view: re-run it whenever you want fresh numbers.
  */
 function exportStandalone() {
+  requireSheetUser_();
   var payload = getPacingDashboardData();
   var html = HtmlService.createHtmlOutputFromFile('Dashboard').getContent();
   var stamp = Utilities.formatDate(new Date(), CFG.TZ, 'yyyy-MM-dd HH:mm');

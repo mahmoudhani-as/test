@@ -193,11 +193,11 @@ function fromCrit_(floor) {
 function mediaSum_(rawCol, line, brand) {
   function rd(c) { return colRef_('Raw data', c); }
   return 'SUMIFS(' + rd(rawCol) + ',' + rd('A') + ',"' + line.plat + '",' + rd('B') + ',"' + brand +
-    '",' + rd('M') + ',"' + line.obj + '",' + rd('D') + ',' + fromCrit_(_mediaFloor(line, brand)) +
+    '",' + rd(CFG.OBJECTIVE_COL) + ',"' + line.obj + '",' + rd('D') + ',' + fromCrit_(_mediaFloor(line, brand)) +
     ',' + rd('D') + ',"<="&$C$2)';
 }
 function adjustSum_(adjCol, app, channel, objective, floor) {
-  function aj(c) { return colRef_('Adjust Raw', c); }
+  function aj(c) { return colRef_(CFG.ADJUST_CLEAN, c); }
   return 'SUMIFS(' + aj(adjCol) + ',' + aj('D') + ',"' + app + '"' +
     (channel ? ',' + aj('J') + ',"' + channel + '"' : '') +
     (objective ? ',' + aj('K') + ',"' + objective + '"' : '') +
@@ -226,6 +226,26 @@ function adjustLineFormula_(adjCol, line, app) {
 var RATIO_COLS = { Q: '=IFERROR(E#/G#*1000,"")', R: '=IFERROR(E#/H#,"")', S: '=IFERROR(E#/I#,"")',
   T: '=IFERROR(I#/G#,"")', U: '=IFERROR(H#/G#,"")', V: '=IFERROR(N#/I#,"")', W: '=IFERROR(O#/I#,"")' };
 
+/** Row 22 (Apple Ads) from APPLE1: pacing column -> APPLE1 column. */
+var APPLE_COLS = { E: 'D', G: 'E', I: 'F', O: 'G' };
+function appleSum_(appleCol, brand) {
+  function ap(c) { return 'APPLE1!$' + c + ':$' + c; }
+  var line = LINE_BY_KEY['Apple|Conversion'];
+  return 'SUMIFS(' + ap(appleCol) + ',' + ap('B') + ',"' + CFG.APPLE_APP[brand] + '",' + ap('A') + ',' +
+    fromCrit_(_mediaFloor(line, brand)) + ',' + ap('A') + ',"<="&$C$2)';
+}
+/** Row 24 (InMobi): Raw manual from CFG.INMOBI_MANUAL_FROM, the backup up to CFG.INMOBI_BACKUP_TILL. */
+function inmobiSum_(rawCol, brand) {
+  var last = CFG.INMOBI_LAST_ROW;
+  function part(tab, lo, hi) {
+    function r(c) { return "'" + tab + "'!$" + c + '$2:$' + c + '$' + last; }
+    return 'SUMPRODUCT(IFERROR(VALUE(SUBSTITUTE(' + r(rawCol) + ',",","")),0),--(' + r('A') + '="InMobi"),--(' +
+      r('B') + '="' + brand + '"),--(' + r('D') + '>=MAX($B$2,' + dateLit_(lo) + ')),--(' + r('D') + '<=' +
+      (hi ? 'MIN($C$2,' + dateLit_(hi) + ')' : '$C$2') + '))';
+  }
+  return part(CFG.RAW_MANUAL, CFG.INMOBI_MANUAL_FROM, '') + '+' + part(CFG.RAW_BACKUP, FLOOR_JUL2, CFG.INMOBI_BACKUP_TILL);
+}
+
 /** C39: the Raw data spend the media rows are meant to cover, worked out independently. */
 function expectedSpend_(brand) {
   function rd(c) { return colRef_('Raw data', c); }
@@ -238,21 +258,25 @@ function expectedSpend_(brand) {
     if (line.source || !floor) return;
     // pre-launch days the row deliberately leaves out
     f += '-SUMIFS(' + rd('G') + ',' + rd('A') + ',"' + line.plat + '",' + rd('B') + ',"' + brand + '",' +
-      rd('M') + ',"' + line.obj + '",' + win + ',' + rd('D') + ',"<"&MAX($B$2,' + dateLit_(floor) + '))' +
+      rd(CFG.OBJECTIVE_COL) + ',"' + line.obj + '",' + win + ',' + rd('D') + ',"<"&MAX($B$2,' + dateLit_(floor) + '))' +
       (line.plat === 'X' ? '/' + CFG.FX : '');
   });
   return '=' + f + '+E22+E24';
 }
-/** C42: non-organic, non-Other Adjust installs over the same windows the rows use. */
-function expectedInstalls_(app) {
-  function aj(c) { return colRef_('Adjust Raw', c); }
-  var f = 'SUMIFS(' + aj('H') + ',' + aj('D') + ',"' + app + '",' + aj('J') + ',"<>Organic",' + aj('J') +
-    ',"<>Other",' + aj('A') + ',' + fromCrit_(CFG.ADJUST_FROM) + ',' + aj('A') + ',"<="&$C$2)';
+/**
+ * C42 (adjCol H, installs) and C43 (adjCol E, revenue): Adjust figures over the same windows
+ * the rows use, worked out independently of the rows. withOther: include channels with no
+ * row of their own (row 26) — C42 leaves them to C44.
+ */
+function expectedAdjust_(adjCol, app, withOther) {
+  function aj(c) { return colRef_(CFG.ADJUST_CLEAN, c); }
+  var f = 'SUMIFS(' + aj(adjCol) + ',' + aj('D') + ',"' + app + '",' + aj('J') + ',"<>Organic",' +
+    (withOther ? '' : aj('J') + ',"<>Other",') + aj('A') + ',' + fromCrit_(CFG.ADJUST_FROM) + ',' + aj('A') + ',"<="&$C$2)';
   PACING_LINES.forEach(function (line) {
     if (line.obj !== 'Awareness') return;
     (line.plat === 'Google' ? ['YouTube', 'Awareness'] : ['Awareness']).forEach(function (ob) {
       // the awareness rows have no floor, so their pre-floor installs count too
-      f += '+SUMIFS(' + aj('H') + ',' + aj('D') + ',"' + app + '",' + aj('J') + ',"' + line.plat + '",' +
+      f += '+SUMIFS(' + aj(adjCol) + ',' + aj('D') + ',"' + app + '",' + aj('J') + ',"' + line.plat + '",' +
         aj('K') + ',"' + ob + '",' + aj('A') + ',">="&$B$2,' + aj('A') + ',"<"&MAX($B$2,' +
         dateLit_(CFG.ADJUST_FROM) + '),' + aj('A') + ',"<="&$C$2)';
     });
@@ -278,6 +302,14 @@ function buildPacingSpec_() {
         });
         if (line.plat === 'X') t['I' + r] = '=J' + r;                     // X reports no "Clicks (all)"
       }
+      if (line.source === 'APPLE1') {
+        Object.keys(APPLE_COLS).forEach(function (c) { t[c + r] = '=' + appleSum_(APPLE_COLS[c], brand); });
+        t['J' + r] = '=I' + r; t['H' + r] = '=0'; t['N' + r] = '=0';
+      }
+      if (line.source === 'InMobi') {
+        Object.keys(MEDIA_COLS).forEach(function (c) { t[c + r] = '=' + inmobiSum_(MEDIA_COLS[c], brand); });
+      }
+      if (line.source !== 'none') t['F' + r] = '=E' + r + '*' + CFG.FX;
       Object.keys(ADJ_COLS).forEach(function (c) {
         t[c + r] = '=' + adjustLineFormula_(ADJ_COLS[c], line, app);
       });
@@ -293,7 +325,8 @@ function buildPacingSpec_() {
     t.X28 = '=SUM(X7:X10,X15:X26)';
     t.P28 = '=IFERROR(X28/F28,"")';
     t.C39 = expectedSpend_(brand);
-    t.C42 = expectedInstalls_(app);
+    t.C42 = expectedAdjust_('H', app, false);
+    t.C43 = expectedAdjust_('E', app, true);
     t.C44 = '=' + adjustSum_('H', app, 'Other', '', CFG.ADJUST_FROM);
   });
   return spec;
@@ -323,13 +356,14 @@ function onOpen() {
     .addItem('Repair Pacing_Daily formulas', 'repairPacingFormulas')
     .addSeparator()
     .addItem('Revert pacing formulas to the previous version', 'revertPacingFormulas')
-    .addItem('Undo everything (rollback)', 'rollback')
+    .addItem('Undo "Fix this workbook"', 'rollback')
     .addToUi();
   if (typeof dashboardMenu_ === 'function') dashboardMenu_();
 }
 
 // ------------------------------------------------------------------ step 1
 function step1_backup() {
+  requireSheetUser_();
   var ss = SpreadsheetApp.getActive();
   requireSheets_(ss, REPORT_TABS);
   var stamp = Utilities.formatDate(new Date(), ss.getSpreadsheetTimeZone(), 'yyyyMMdd-HHmm');
@@ -349,6 +383,7 @@ function step1_backup() {
  * The account id in column AU is read off the query you made in the sidebar.
  */
 function step1b_addQueries(authUser) {
+  requireSheetUser_();
   var ss = SpreadsheetApp.getActive();
   var sh = ss.getSheetByName('SupermetricsQueries');
   if (!sh) {
@@ -417,6 +452,7 @@ function step1b_addQueries(authUser) {
 
 // ------------------------------------------------------------------ step 2
 function step2_install() {
+  requireSheetUser_();
   var ss = SpreadsheetApp.getActive();
   requireSheets_(ss, REPORT_TABS.concat(SUPERMETRICS_TABS));
   Logger.log('1/6 widening grids');   widenGrids_(ss);
@@ -445,20 +481,30 @@ function step2_install() {
  * Running it again is harmless.
  */
 function fixThisWorkbook() {
+  requireSheetUser_();
   var ss = SpreadsheetApp.getActive();
   requireSheets_(ss, ['Raw data', 'Raw manual', 'Adjust Raw', PACING_TAB_OF.SFQC, PACING_TAB_OF.AAQC]);
-  var stamp = _stamp();                      // same stamp format as the Adjust Raw backup
+  var stamp = _stamp();
   var report = [];
+  // Nothing here writes into a tab that is the output of a formula (V4 imports Raw data,
+  // Raw manual, Adjust Raw and APPLE1 from the source workbook with IMPORTRANGE).
   [PACING_TAB_OF.SFQC, PACING_TAB_OF.AAQC].forEach(function (n) {
     var name = n + ' BACKUP ' + stamp, old = ss.getSheetByName(name);
     if (old) ss.deleteSheet(old);
     ss.getSheetByName(n).copyTo(ss).setName(name).hideSheet();       // small tabs: keep the formulas
   });
-  backupValues_(ss, 'Raw manual', 'Raw manual BACKUP ' + stamp);
-  report.push('Backups (hidden): the two pacing tabs and Raw manual, "… BACKUP ' + stamp + '".');
+  report.push('Backups (hidden): "' + PACING_TAB_OF.SFQC + ' BACKUP ' + stamp + '" and the AAQC one. ' +
+    'Qiddiya Setup → Undo "Fix this workbook" puts them back.');
   report.push(objectiveColumn_(ss));
-  report.push(rawManualNumbers_(ss));
-  report.push(cleanAdjustRaw_());                                      // backs up and logs itself
+  report.push(rawManualNumbers_(ss, stamp));
+  var res = _refreshAdjustClean_(true);
+  if (!res) throw new Error('Another run is rebuilding "' + CFG.ADJUST_CLEAN + '" — run Fix this workbook again in a minute.');
+  _writeLog(ss, 'Adjust Clean · ' + res.at, res.log);
+  report.push('"' + CFG.ADJUST_CLEAN + '" built from Adjust Raw (' + res.rows + ' rows): ' +
+    res.log.filter(function (r) { return /Text date|swap/.test(r[1]); }).length + ' dates repaired, ' +
+    res.cd.xapp + ' rows pasted under the wrong app and ' + res.cd.dropped + ' duplicate import rows left out. ' +
+    'Adjust Raw itself is unchanged; the pacing tabs now read the corrected copy.');
+  report.push(ensureAdjustTrigger_());
   report.push(alignWindows_(ss));
   writeFormulas_(ss, buildPacingSpec_());
   SpreadsheetApp.flush();
@@ -467,24 +513,52 @@ function fixThisWorkbook() {
   notify_(report.join('\n\n'));
 }
 
-/** Raw data column M for a pasted Raw data (the Supermetrics formula fills M itself). */
+/** Keeps "Adjust Clean" in step with Adjust Raw every hour, without anyone opening anything. */
+function ensureAdjustTrigger_() {
+  var has = ScriptApp.getProjectTriggers().some(function (t) {
+    return t.getHandlerFunction() === 'refreshAdjustClean';
+  });
+  if (!has) ScriptApp.newTrigger('refreshAdjustClean').timeBased().everyHours(1).create();
+  return '"' + CFG.ADJUST_CLEAN + '" refreshes itself every hour' + (has ? '' : ' (trigger installed)') +
+    ', and whenever the dashboard finds Adjust Raw has changed.';
+}
+
+/**
+ * Raw data's objective column (CFG.OBJECTIVE_COL, P): one formula in P2, outside an
+ * IMPORTRANGE of A:O and outside the Supermetrics formula's A:M, so it never blocks them.
+ */
 function objectiveColumn_(ss) {
-  var sh = ss.getSheetByName('Raw data');
-  if (sh.getRange('A2').getFormula()) return 'Raw data: the Supermetrics formula already fills column M.';
-  if (sh.getMaxColumns() < 13) sh.insertColumnsAfter(sh.getMaxColumns(), 13 - sh.getMaxColumns());
-  sh.getRange('M2:M').clearContent();
-  sh.getRange('M1').setValue('Objective').setFontWeight('bold');
-  sh.getRange('M2').setFormula(objectiveColumnFormula_());
-  return 'Raw data: Objective column added (M1:M). Keep it when you paste new data into A:L.';
+  var sh = ss.getSheetByName('Raw data'), col = CFG.OBJECTIVE_COL;
+  var colNo = col.charCodeAt(0) - 64;
+  if (sh.getMaxColumns() < colNo) sh.insertColumnsAfter(sh.getMaxColumns(), colNo - sh.getMaxColumns());
+  var head = sh.getRange(col + '1'), f2 = sh.getRange(col + '2').getFormula();
+  if (String(head.getValue()).trim() === 'Objective' && f2 === objectiveColumnFormula_()) {
+    return 'Raw data: Objective column ' + col + ' already in place.';
+  }
+  var blocking = sh.getRange(col + '2:' + col).getValues().filter(function (r) { return r[0] !== ''; }).length;
+  if (head.getFormula() || (sh.getRange(col + '2').getValue() !== '' && !f2)) {
+    throw new Error('Raw data column ' + col + ' already holds data (' + blocking + ' cells) that is not the ' +
+      'objective formula. Move it, or set CFG.OBJECTIVE_COL to an empty column, then run Fix this workbook again.');
+  }
+  sh.getRange(col + '2:' + col).clearContent();
+  head.setValue('Objective').setFontWeight('bold');
+  sh.getRange(col + '2').setFormula(objectiveColumnFormula_());
+  return 'Raw data: Objective column added in ' + col + ' (one formula in ' + col + '2, outside the imported or ' +
+    'pasted columns — leave column ' + col + ' empty below it).';
 }
 function objectiveColumnFormula_() {
-  return '=ARRAYFORMULA(IF(A2:A="","",LET(vplat,A2:A,vcamp,LOWER(C2:C),' + objectiveFormula_() + ')))';
+  return '=ARRAYFORMULA(IF(A2:A="","",LET(vplat,TRIM(A2:A),vcamp,LOWER(C2:C),' + objectiveFormula_() + ')))';
 }
 
 /** SUMIFS skips numbers stored as text; Raw manual's InMobi impressions came that way. */
-function rawManualNumbers_(ss) {
+function rawManualNumbers_(ss, stamp) {
   var sh = ss.getSheetByName('Raw manual'), last = sh.getLastRow();
   if (last < 2) return 'Raw manual: no rows.';
+  if (_formulaTab_(sh)) {
+    return 'Raw manual is the output of a formula (an IMPORTRANGE), so it was left as it is. Row 24 and the ' +
+      'dashboard read its numbers stored as text ("15,62,702") correctly; convert them in the source file ' +
+      'if you want SUM() there to see them.';
+  }
   var rng = sh.getRange(2, 5, last - 1, 8), v = rng.getValues(), n = 0;   // E:L
   v.forEach(function (row) {
     row.forEach(function (x, j) {
@@ -493,8 +567,12 @@ function rawManualNumbers_(ss) {
       if (/^-?(?:\d+\.?\d*|\.\d+)$/.test(s)) { row[j] = +s; n++; }
     });
   });
-  if (n) rng.setValues(v);
-  return 'Raw manual: ' + n + ' numbers stored as text converted to numbers.';
+  if (n) {
+    backupValues_(ss, 'Raw manual', 'Raw manual BACKUP ' + stamp);
+    rng.setValues(v);
+  }
+  return 'Raw manual: ' + n + ' numbers stored as text converted to numbers' +
+    (n ? ' (backup "Raw manual BACKUP ' + stamp + '").' : '.');
 }
 
 /**
@@ -562,14 +640,15 @@ function coverageCheck_(ss) {
   var rd = ss.getSheetByName('Raw data');
   var last = rd.getLastRow();
   if (last < 2) return [];
-  var v = rd.getRange(2, 1, last - 1, 13).getValues();
+  var oi = CFG.OBJECTIVE_COL.charCodeAt(0) - 65;
+  var v = rd.getRange(2, 1, last - 1, oi + 1).getValues();
   var missed = {};
   v.forEach(function (r) {
     if (r[0] === '' || r[0] === null) return;
     var spend = Number(r[6]) || 0;
     if (spend <= 0) return;
     var hasPortal = !!_brandCell(r[1]), plat = _canonPlat(r[0]);
-    var hasRow = !!(plat && LINE_BY_KEY[plat + '|' + r[12]]);
+    var hasRow = !!(plat && LINE_BY_KEY[plat + '|' + r[oi]]);
     if (hasPortal && hasRow) return;
     var key = (hasPortal ? '' : 'no portal: ') + (hasRow ? '' : 'no pacing row: ') +
       r[0] + ' / ' + r[1] + ' / ' + r[2];
@@ -586,15 +665,12 @@ function verifyInstall_(ss) {
   function bare(f) { return String(f).split("'").join(''); }
   var problems = [];
   var rd = ss.getSheetByName('Raw data');
-  var a2 = rd.getRange('A2').getFormula();
-  if (!a2) problems.push('Raw data!A2 is empty — the array formula did not stick.');
-  else if (a2.indexOf('ARRAYFORMULA(LET(') === -1) problems.push('Raw data!A2 holds something unexpected: ' + a2.slice(0, 60));
-  if (!rd.getRange('N2').getFormula()) problems.push('Raw data!N2 is empty.');
-  if (String(rd.getRange('M1').getValue()).trim() !== 'Objective') {
-    problems.push('Raw data!M1 is not "Objective" — the line objective column is missing.');
+  var oc = CFG.OBJECTIVE_COL;
+  if (String(rd.getRange(oc + '1').getValue()).trim() !== 'Objective') {
+    problems.push('Raw data!' + oc + '1 is not "Objective" — run Qiddiya Setup → Fix this workbook.');
   } else if (rd.getLastRow() > 1 &&
-             ['Awareness', 'Search', 'Conversion'].indexOf(String(rd.getRange('M2').getValue())) < 0) {
-    problems.push('Raw data!M2 holds "' + rd.getRange('M2').getValue() + '" instead of an objective.');
+             ['Awareness', 'Search', 'Conversion'].indexOf(String(rd.getRange(oc + '2').getValue())) < 0) {
+    problems.push('Raw data!' + oc + '2 holds "' + rd.getRange(oc + '2').getValue() + '" instead of an objective.');
   }
 
   var rows = rd.getLastRow();
@@ -642,6 +718,7 @@ function verifyInstall_(ss) {
  * Column E is the verdict. Anything red means look at that line.
  */
 function buildValidationTab() {
+  requireSheetUser_();
   var ss = SpreadsheetApp.getActive();
   // Supermetrics may name a tab META rather than Meta — quote whatever it actually is.
   function ref(want) {
@@ -769,6 +846,7 @@ function buildValidationTab() {
 
 /** Rewrites every formula per Pacing_Daily tab — use if a tab got deleted and broke them. */
 function repairPacingFormulas() {
+  requireSheetUser_();
   var ss = SpreadsheetApp.getActive();
   var spec = buildPacingSpec_();
   writeFormulas_(ss, spec);
@@ -782,6 +860,7 @@ function repairPacingFormulas() {
  * The dashboard will no longer match the tab until step 3 is run again.
  */
 function revertPacingFormulas() {
+  requireSheetUser_();
   var ss = SpreadsheetApp.getActive();
   writeFormulas_(ss, PACING_ALL);
   SpreadsheetApp.flush();
@@ -791,6 +870,7 @@ function revertPacingFormulas() {
 
 /** Re-run the checks without changing anything. */
 function verifyOnly() {
+  requireSheetUser_();
   var rows = verifyInstall_(SpreadsheetApp.getActive());
   notify_('All good — Raw data is producing ' + rows + ' rows. See the log for the spend totals.');
 }
@@ -932,6 +1012,10 @@ function rawManual_(ss) {
 
 function rawData_(ss) {
   var sh = ss.getSheetByName('Raw data');
+  if (sh && /IMPORTRANGE/i.test(_formulaTab_(sh))) {
+    throw new Error('Raw data is an IMPORTRANGE from the source workbook. Step 3 would replace the import ' +
+      'with the Supermetrics formula — use Qiddiya Setup → Fix this workbook instead.');
+  }
   if (!sh) { sh = ss.insertSheet('Raw data'); Logger.log('"Raw data" was missing — recreated it.'); }
   sh.getRange(1, 1, 1, RAW_DATA_HEADERS.length).setValues([RAW_DATA_HEADERS]).setFontWeight('bold');
   var lastRow = sh.getLastRow();
@@ -944,6 +1028,7 @@ function rawData_(ss) {
   sh.getRange('A2').setFormula(resolveTabNames_(ss, rawFormula_()));
   sh.getRange('D2:D').setNumberFormat('yyyy-mm-dd');
   sh.setFrozenRows(1);
+  objectiveColumn_(ss);
 }
 
 /** Supermetrics writes GA4 into A:H — wipe the old hand-pasted AAQC block in I onward. */
@@ -970,27 +1055,38 @@ function writeFormulas_(ss, spec) {
   });
 }
 
-/** Full undo: restores both tabs, the previous pacing formulas and the GA4 originals. */
+/**
+ * Undo "Fix this workbook": puts the two pacing tabs back exactly as the newest
+ * "<tab> BACKUP <stamp>" copies hold them, and removes the hourly Adjust Clean trigger.
+ * It never touches Raw data, GA4 or any source tab.
+ */
 function rollback() {
+  requireSheetUser_();
   var ss = SpreadsheetApp.getActive();
-  // Only Raw data / GA4 backups count — "Adjust Raw BACKUP ..." tabs have their own stamps.
-  var stamps = ss.getSheets().map(function (s) { return s.getName(); })
-                 .filter(function (n) { return /^(Raw data|GA4) BACKUP /.test(n); }).sort(function (a, b) {
-                   var x = a.split(' BACKUP ')[1], y = b.split(' BACKUP ')[1];
-                   return x < y ? -1 : x > y ? 1 : 0;
-                 });
-  if (!stamps.length) throw new Error('No backup found.');
-  var stamp = stamps[stamps.length - 1].split(' BACKUP ')[1];
-  ['Raw data', 'GA4'].forEach(function (n) {
-    var bk = ss.getSheetByName(n + ' BACKUP ' + stamp);
-    if (!bk) return;
-    var live = ss.getSheetByName(n);
-    if (live) ss.deleteSheet(live);
-    bk.setName(n).showSheet();
+  try {
+    var ui = SpreadsheetApp.getUi();
+    if (ui.alert('Undo "Fix this workbook"?', 'The two pacing tabs go back to their newest backup.',
+        ui.ButtonSet.YES_NO) !== ui.Button.YES) return;
+  } catch (e) { /* editor run: no dialog */ }
+  var done = [];
+  [PACING_TAB_OF.SFQC, PACING_TAB_OF.AAQC].forEach(function (tab) {
+    var bks = ss.getSheets().map(function (x) { return x.getName(); })
+      .filter(function (n) { return n.indexOf(tab + ' BACKUP ') === 0; }).sort();
+    if (!bks.length) return;
+    var bk = ss.getSheetByName(bks[bks.length - 1]), sh = ss.getSheetByName(tab);
+    var rows = Math.max(bk.getLastRow(), sh.getLastRow()), cols = Math.max(bk.getLastColumn(), sh.getLastColumn());
+    var f = bk.getRange(1, 1, rows, cols).getFormulas(), v = bk.getRange(1, 1, rows, cols).getValues();
+    sh.getRange(1, 1, rows, cols).setValues(v.map(function (r, i) {
+      return r.map(function (x, j) { return f[i][j] || x; });
+    }));
+    done.push(tab + ' ← ' + bks[bks.length - 1]);
   });
-  writeFormulas_(ss, PACING_ALL);       // the restored Raw data has no Objective column
-  writeFormulas_(ss, GA4_ORIGINAL);
+  if (!done.length) throw new Error('No "<pacing tab> BACKUP" copy found — Fix this workbook has not been run here.');
+  ScriptApp.getProjectTriggers().forEach(function (t) {
+    if (t.getHandlerFunction() === 'refreshAdjustClean') ScriptApp.deleteTrigger(t);
+  });
   SpreadsheetApp.flush();
-  notify_('Restored BACKUP ' + stamp + ' and the original GA4 formulas.');
+  notify_('Restored:\n' + done.join('\n') + '\n\nThe hourly Adjust Clean refresh is switched off. Raw data and the ' +
+    'source tabs were not touched.');
 }
 

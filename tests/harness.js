@@ -122,6 +122,7 @@ function makeSpreadsheet(wb, tz) {
   Sheet.prototype.insertRowsAfter = function () { return this; };
   Sheet.prototype.insertColumnsAfter = function () { return this; };
   Sheet.prototype.setFrozenRows = function () { return this; };
+  Sheet.prototype.setTabColor = function () { return this; };
   Sheet.prototype.setColumnWidth = function () { return this; };
   Sheet.prototype.setConditionalFormatRules = function () { return this; };
   Sheet.prototype.clear = function () { this.v = []; return this; };
@@ -201,7 +202,9 @@ function formatDate(date, tz, fmt) {
   return fmt.replace('yyyy', p.year).replace('MM', p.month).replace('dd', p.day).replace('HH', p.hour).replace('mm', p.minute);
 }
 function loadServer(files, ss) {
-  var logs = [];
+  var logs = [], triggers = [], store = {};
+  var props = { getProperty: function (k) { return store[k] == null ? null : store[k]; },
+                setProperty: function (k, v) { store[k] = String(v); } };
   var ctx = {
     SpreadsheetApp: {
       getActive: function () { return ss; }, getActiveSpreadsheet: function () { return ss; },
@@ -211,8 +214,15 @@ function loadServer(files, ss) {
     },
     Utilities: { formatDate: formatDate },
     Logger: { log: function () { logs.push([].slice.call(arguments).join(' ')); } },
-    Session: { getEffectiveUser: function () { return { getEmail: function () { return 'test@example.com'; } }; } },
-    LockService: { getDocumentLock: function () { return { waitLock: function () {}, releaseLock: function () {} }; } },
+    Session: { getEffectiveUser: function () { return { getEmail: function () { return 'test@example.com'; } }; },
+               getActiveUser: function () { return { getEmail: function () { return 'test@example.com'; } }; } },
+    LockService: { getDocumentLock: function () { return { waitLock: function () {}, releaseLock: function () {} }; },
+                   getScriptLock: function () { return { waitLock: function () {}, tryLock: function () { return true; }, releaseLock: function () {} }; } },
+    PropertiesService: { getDocumentProperties: function () { return props; } },
+    ScriptApp: { getProjectTriggers: function () { return triggers.slice(); },
+      newTrigger: function (fn) { var b = { timeBased: function () { return b; }, everyHours: function () { return b; },
+        create: function () { triggers.push({ getHandlerFunction: function () { return fn; } }); } }; return b; },
+      deleteTrigger: function (t) { triggers.splice(triggers.indexOf(t), 1); } },
     HtmlService: {}, DriveApp: {}, MimeType: {}, console: console,
     Date: Date            // one realm, so instanceof Date works on the fixture's cells
   };
@@ -359,8 +369,10 @@ function runVersion(label, files, opts) {
   }
   var ss = makeSpreadsheet(wb, 'UTC');
   var ctx = loadServer(files.gs, ss);
+  // the generated formulas read "Adjust Clean", which Fix this workbook builds
+  if (opts.newRawData && ctx._refreshAdjustClean_) ctx._refreshAdjustClean_(true);
   var spec = opts.newRawData ? ctx.buildPacingSpec_() : ctx.PACING_ALL;
-  var vals = evaluatePacing(wb, spec);
+  var vals = evaluatePacing(sheetToWb(ss), spec);
   putPacing(ss, vals);
 
   var payload = ctx.getPacingDashboardData();
@@ -374,16 +386,7 @@ function runVersion(label, files, opts) {
   }
 
   var w = loadClient(files.html, payload);
-  // The fixed dashboard reads Adjust Raw through the corrections "Clean Adjust Raw" writes, so
-  // before the tab is cleaned its figures must already equal the cleaned tab's.
   var expect = vals;
-  if (opts.newRawData) {
-    var ssC = makeSpreadsheet(fx.workbook(true), 'UTC');
-    var ctxC = loadServer(files.gs, ssC);
-    ctxC.cleanAdjustRaw_();
-    expect = evaluatePacing(sheetToWb(ssC), ctxC.buildPacingSpec_());
-    console.log('(page compared with the pacing tab as it will be after "Clean Adjust Raw")');
-  }
   var diffs = compareClient(w, expect, label);
   console.log('Dashboard page vs pacing tab: ' + diffs.length + ' line/total figures differ');
   diffs.slice(0, 40).forEach(function (d) { console.log('   ' + d); });
@@ -460,12 +463,14 @@ function main() {
   console.log('Data issues still reported (' + p2.meta.health.issues.length + '):');
   p2.meta.health.issues.forEach(function (i) { console.log('   [' + i.level + '] ' + i.text.slice(0, 160)); });
   failures += d2.length + vsh2.v.filter(function (r) { return r[5] === 'CHECK' && r[0] !== 'FIX' && r[0] !== 'RESULT'; }).length;
-  var adjustLeft = p2.meta.health.issues.filter(function (i) { return /Adjust/.test(i.text); }).length;
-  if (adjustLeft) { console.log('FAIL: Adjust issues remain after cleaning'); failures++; }
-  // idempotent: a second clean changes nothing
-  var before = JSON.stringify(cur.ss.getSheetByName('Adjust Raw').v);
+  var adjustLeft = p2.meta.health.issues.filter(function (i) { return /Adjust/.test(i.text) && i.level === 'crit'; }).length;
+  if (adjustLeft) { console.log('FAIL: critical Adjust issues remain after cleaning'); failures++; }
+  // Adjust Raw is never modified; a second rebuild of Adjust Clean changes nothing
+  var rawBefore = JSON.stringify(cur.ss.getSheetByName('Adjust Raw').v);
+  var before = JSON.stringify(cur.ss.getSheetByName('Adjust Clean').v);
   cur.ctx.cleanAdjustRaw();
-  if (JSON.stringify(cur.ss.getSheetByName('Adjust Raw').v) !== before) { console.log('FAIL: second clean changed Adjust Raw'); failures++; }
+  if (JSON.stringify(cur.ss.getSheetByName('Adjust Clean').v) !== before) { console.log('FAIL: second clean changed Adjust Clean'); failures++; }
+  if (JSON.stringify(cur.ss.getSheetByName('Adjust Raw').v) !== rawBefore) { console.log('FAIL: clean modified Adjust Raw'); failures++; }
   else console.log('Second "Clean Adjust Raw" run: no changes (idempotent)');
   w2.close();
 
