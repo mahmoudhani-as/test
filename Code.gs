@@ -1902,10 +1902,36 @@ function _refreshAdjustClean_(force) {
     dst.getRange(1, 1, 1, ADJUST_LAYOUT.length).setValues([ADJUST_LAYOUT]).setFontWeight('bold');
     dst.setFrozenRows(1);
     cd.data.width = ADJUST_LAYOUT.length;
-    var rows = _adjustWrite_(dst, cd.data);
+    // Only rows that count go into the tab: organic (incl. Untrusted Devices and WhatsApp
+    // shares), rows dated before their pacing row starts and rows with no readable day are
+    // left out — the formulas would skip them anyway — so SUM of its installs column is the
+    // installs the pacing tabs and the dashboard count.
+    var left = {}, LEFT_WHY = {
+      organic: 'not paid (Organic, Untrusted Devices, WhatsApp shares)',
+      prefloor: 'before their pacing row starts (' + CFG.ADJUST_FROM + ' on the conversion rows)',
+      nodate: 'no readable day' };
+    var counted = cd.data.rows.filter(function (row) {
+      var v = row.v, line = _adjustLine(v[9], v[10]), why = '';
+      if (!row.day) why = 'nodate';
+      else if (!line) why = 'organic';
+      else {
+        var fl = _adjustFloor(LINE_BY_KEY[line]);
+        if (fl && row.day < fl) why = 'prefloor';
+      }
+      if (!why) return true;
+      var e = left[why] || (left[why] = { rows: 0, inst: 0, book: 0, rev: 0 });
+      e.rows++; e.inst += _cellNum(v[7]); e.book += _cellNum(v[8]); e.rev += _cellNum(v[4]);
+      return false;
+    });
+    Object.keys(left).forEach(function (k) {
+      log.push(['', 'Left out of "' + CFG.ADJUST_CLEAN + '": ' + left[k].rows + ' rows ' + LEFT_WHY[k],
+        '', left[k].inst + ' installs, ' + left[k].book + ' bookings, ' + Math.round(left[k].rev) + ' revenue']);
+    });
+    var rows = _adjustWrite_(dst, { rows: counted, width: cd.data.width });
     var at = Utilities.formatDate(new Date(), tz, 'yyyy-MM-dd HH:mm');
-    dst.getRange('M1').setValue('Built by the script from "' + CFG.ADJUST + '" at ' + at +
-      ' — do not edit; the pacing tabs read this tab.');
+    dst.getRange('M1').setValue('Built by the script from "' + CFG.ADJUST + '" at ' + at + ' — only the rows ' +
+      'the pacing tabs count (copies, duplicates, organic and pre-launch rows left out; see "Adjust Raw ' +
+      'cleanup log"). Do not edit; the pacing tabs read this tab.');
     props.setProperty('adjustCleanFp', fp);
     props.setProperty('adjustCleanAt', at);
     _writeLog(ss, 'Adjust Clean · ' + at, log);   // every rebuild, so the log never lags the tab
