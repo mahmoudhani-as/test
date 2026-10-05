@@ -509,6 +509,8 @@ function init(p,keepFilters){
       var days=p.meta.days||[];
       F.from=days[Math.max(0,days.length-RANGE_PRESET)]||p.meta.start;
       F.to=p.meta.end;
+    }else if(RANGE_PRESET==='tab'&&p.meta.report){
+      F.from=p.meta.report.start;F.to=p.meta.report.end;
     }else if(previous.full){
       F.from=p.meta.start;F.to=p.meta.end;
     }else{
@@ -564,6 +566,9 @@ function onDate(which,val){
   render();
 }
 function isFullPeriod(){return F.from===DATA.meta.start&&F.to===DATA.meta.end;}
+/* the pacing tabs' own window (B2:C2) — differs from "All" only while C2 is behind the data */
+function tabPeriod(){var r=DATA.meta.report;return r&&(r.start!==DATA.meta.start||r.end!==DATA.meta.end)?r:null;}
+function presetTab(){var r=tabPeriod();if(!r)return preset(null);RANGE_PRESET='tab';F.from=r.start;F.to=r.end;render();}
 function isFiltered(){return !isFullPeriod()||F.obj.length>0||F.plat.length>0;}
 
 /* ================================================================
@@ -1223,6 +1228,8 @@ function renderFilters(){
         '<button onclick="preset(7)" aria-pressed="'+(RANGE_PRESET===7)+'">7d</button>'+
         '<button onclick="preset(14)" aria-pressed="'+(RANGE_PRESET===14)+'">14d</button>'+
         '<button onclick="preset(null)" aria-pressed="'+(RANGE_PRESET===null&&isFullPeriod())+'">All</button>'+
+        (tabPeriod()?'<button onclick="presetTab()" aria-pressed="'+(RANGE_PRESET==='tab')+'" '+
+          'title="Exactly the dates the pacing tabs count (SFQC Pacing_Daily B2:C2)">Tab period</button>':'')+
       '</div></div>'+
     (isFiltered()?'<button class="reset" onclick="clearFilters()">Clear filters</button>':'')+
     '<span class="fhint">Objective and Platform stack — pick as many as you like</span>';

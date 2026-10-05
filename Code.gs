@@ -266,6 +266,12 @@ function _dateCell(v, tz) {
 function _later(a, b) { return !a ? b : !b ? a : (a > b ? a : b); }
 function _sooner(a, b) { return !a ? b : !b ? a : (a < b ? a : b); }
 function _hasOwn(o, k) { return Object.prototype.hasOwnProperty.call(o, k); }
+/** Yesterday in the sheet's time zone — what =TODAY()-1 shows. */
+function _yesterday(tz) {
+  var d = new Date(Utilities.formatDate(new Date(), tz, 'yyyy-MM-dd') + 'T00:00:00Z');
+  d.setUTCDate(d.getUTCDate() - 1);
+  return d.toISOString().slice(0, 10);
+}
 function _dateSpine(from, till) {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(from || '') || !/^\d{4}-\d{2}-\d{2}$/.test(till || ''))
     return [];
@@ -580,7 +586,11 @@ function getPacingDashboardData() {
         'tab cannot agree with either. Put the same dates in B2:C2 on both tabs.');
     }
   }
-  function inWindow(day) { return !!day && (!from || day >= from) && (!till || day <= till); }
+  // The tabs count B2:C2. The dashboard loads every day from B2 to the latest day with data
+  // (yesterday, or C2 if that is later), so a C2 left on an old date never cuts "All" short.
+  // It opens on everything; the "Tab period" button shows exactly what the tabs count.
+  var loadTill = _later(till, _yesterday(tz));
+  function inWindow(day) { return !!day && (!from || day >= from) && day <= loadTill; }
 
   var raw = [], dayset = {}, platset = {};
   function addRaw(line, brand, camp, day, m) {
@@ -693,7 +703,7 @@ function getPacingDashboardData() {
       if (String(mr[0] == null ? '' : mr[0]).toLowerCase() !== 'inmobi') continue;
       var mb = _brandCell(mr[1]);
       if (!mb) continue;
-      var md = _dateCell(mr[3], tz), lower = _later(from, lo), upper = _sooner(till, hi);
+      var md = _dateCell(mr[3], tz), lower = _later(from, lo), upper = _sooner(loadTill, hi);
       if (!md || (lower && md < lower) || (upper && md > upper)) continue;
       addRaw(inmobiLine, mb, String(mr[2] == null ? '' : mr[2]), md,
         [_valueNum(mr[4]), _valueNum(mr[5]), _valueNum(mr[6]), _valueNum(mr[7]),
@@ -846,11 +856,23 @@ function getPacingDashboardData() {
   // The picker and 7d/14d presets must use calendar days, not only days that had
   // media spend. Otherwise no-spend dates disappear and Adjust/GA4-only activity
   // shifts into the wrong period.
-  var days = _dateSpine(from, till);
+  var lastData = '';
+  Object.keys(dayset).forEach(function (d) { lastData = _later(lastData, d); });
+  adjust.forEach(function (e) { lastData = _later(lastData, e.day); });
+  ga4.forEach(function (e) { lastData = _later(lastData, e.day); });
+  var end = _later(till, lastData);
+  if (till && end > till) {
+    issue('warn', 'The pacing tabs stop at ' + till + ' (SFQC Pacing_Daily C2) but the data runs to ' +
+      end + '. "All" shows everything; "Tab period" shows exactly what the tabs count. To extend ' +
+      'the tabs, type a later date into SFQC C2 (Qiddiya Setup → Fix this workbook sets it to yesterday).');
+  }
+  var days = _dateSpine(from, end);
   if (!days.length) days = Object.keys(dayset).sort();
   return {
     meta: {
-      start: from || days[0], end: till || days[days.length - 1], days: days,
+      start: from || days[0], end: end || days[days.length - 1], days: days,
+      // what the pacing tabs count (B2:C2); the dashboard's "Tab period" button
+      report: { start: from || days[0], end: till || end || days[days.length - 1] },
       plats: Object.keys(platset).sort(), fx: CFG.FX,
       lines: PACING_LINES.map(function (l) {
         return { row: l.row, key: l.key, plat: l.plat, obj: l.obj, label: l.label,
@@ -873,24 +895,25 @@ function getPacingDashboardData() {
 
 /** Payload -> per-line totals for one portal, in pacing-tab terms. */
 function _lineTotals(p, brand) {
-  var out = {};
+  var out = {}, rep = p.meta.report || {};
+  function inTab(day) { return (!rep.start || day >= rep.start) && (!rep.end || day <= rep.end); }
   PACING_LINES.forEach(function (l) {
     out[l.key] = { spend: 0, impr: 0, views: 0, clicks: 0, lpv: 0, purch: 0, inst: 0,
       bookings: 0, adjInst: 0, adjRev: 0, ga4Tx: 0, ga4Rev: 0, revenue: 0 };
   });
   p.raw.forEach(function (r) {
-    var e = r[1] === brand && out[r[0] + '|' + r[12]];
+    var e = r[1] === brand && inTab(r[3]) && out[r[0] + '|' + r[12]];
     if (!e) return;
     e.spend += r[6]; e.impr += r[5]; e.lpv += r[7]; e.clicks += r[8];
     e.views += r[9]; e.inst += r[10]; e.purch += r[11];
   });
   p.adjust.forEach(function (a) {
-    var e = a.brand === brand && out[a.line];
+    var e = a.brand === brand && inTab(a.day) && out[a.line];
     if (!e) return;
     e.bookings += a.bookings; e.adjInst += a.inst; e.adjRev += a.revenue;
   });
   p.ga4.forEach(function (g) {
-    var e = g.brand === brand && out[g.line];
+    var e = g.brand === brand && inTab(g.day) && out[g.line];
     if (!e) return;
     e.ga4Tx += g.tx; e.ga4Rev += g.revenue;
   });
@@ -922,7 +945,8 @@ function validateDashboard() {
 
   row('DASHBOARD vs PACING TABS', Utilities.formatDate(new Date(), CFG.TZ, 'yyyy-MM-dd HH:mm'),
       '', '', '', '');
-  row('Window', p.meta.start, 'to', p.meta.end, '', '');
+  var rep = p.meta.report;
+  row('Window (pacing tabs B2:C2)', rep.start, 'to', rep.end, '', '');
 
   // [payload field, pacing column (1-based), label]
   var MEDIA = [['spend', 5, 'Spend USD (E)'], ['impr', 7, 'Impressions (G)'],
@@ -966,7 +990,9 @@ function validateDashboard() {
     cmp(brand, 'Total', 'Revenue SAR (X28)', sum.revenue, cell(28, 24));
     cmp(brand, 'Total', 'ROAS (P28)', sum.spend ? sum.revenue / (sum.spend * CFG.FX) : 0, cell(28, 16));
     var gaTx = 0, gaRev = 0;
-    p.ga4.forEach(function (g) { if (g.brand === brand) { gaTx += g.tx; gaRev += g.revenue; } });
+    p.ga4.forEach(function (g) {
+      if (g.brand === brand && g.day >= rep.start && g.day <= rep.end) { gaTx += g.tx; gaRev += g.revenue; }
+    });
     cmp(brand, 'GA4 paid', 'Transactions (C49)', gaTx, cell(49, 3));
     cmp(brand, 'GA4 paid', 'Revenue (D49)', gaRev, cell(49, 4));
     cmp(brand, 'Check block', 'Spend not on a line (C41)', 0, cell(41, 3));

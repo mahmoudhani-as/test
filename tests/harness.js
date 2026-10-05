@@ -281,6 +281,7 @@ function compareClient(w, vals, label) {
   var diffs = [];
   ['SFQC', 'AAQC'].forEach(function (brand) {
     w.setBrand(brand);
+    w.presetTab();                     // the dates the tabs count, if "All" runs further
     var tab = vals[brand + ' Pacing_Daily'];
     var ln = w.lines(), by = {};
     ln.forEach(function (l) { by[l.plat + '|' + l.obj] = l; });

@@ -128,7 +128,11 @@ evaluated the real pacing formulas on it with a spreadsheet engine:
 - **Totals include the awareness rows and row 26**, in every column. Row 28 now also totals
   spend USD, impressions, views, clicks and platform purchases/installs, with their ratios.
 - **One date window.** AAQC B2:C2 follow SFQC B2:C2, and SFQC C2 is `=TODAY()-1`. Type a date into
-  SFQC C2 to report a fixed period; the dashboard uses the same window.
+  SFQC C2 to report a fixed period.
+- **The dashboard's "All" is every day with data** (from SFQC B2 to the latest source day, at most
+  yesterday), whatever C2 says, and the dashboard opens on it. While C2 is earlier than the data, a
+  **Tab period** button appears that shows exactly the dates the pacing tabs count, and a banner says
+  so. *Validate against the pacing tabs* always compares the tab period.
 - To go back: unhide the "… BACKUP yyyyMMdd-HHmm" tabs that *Fix this workbook* made.
 
 ## 6. What will move in the report
