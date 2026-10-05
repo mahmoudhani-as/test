@@ -168,8 +168,11 @@ tbody tr.grp .cnt{font-weight:600;font-size:10.5px;color:var(--ink-3);background
 sup.src{font-size:8.5px;font-weight:700;padding:1px 3px;border-radius:3px;margin-left:2px;vertical-align:2px}
 sup.src.adj{background:#E3F3EB;color:#1F8A5B}
 sup.src.ga4{background:#E7EEFB;color:#3155A4}
-:root[data-theme="dark"] sup.src.adj,html:not([data-theme]) sup.src.adj{background:#16302A;color:#57C994}
-:root[data-theme="dark"] sup.src.ga4,html:not([data-theme]) sup.src.ga4{background:#1B2A47;color:#8FB0EC}
+:root[data-theme="dark"] sup.src.adj{background:#16302A;color:#57C994}
+:root[data-theme="dark"] sup.src.ga4{background:#1B2A47;color:#8FB0EC}
+@media (prefers-color-scheme:dark){
+  html:not([data-theme]) sup.src.adj{background:#16302A;color:#57C994}
+  html:not([data-theme]) sup.src.ga4{background:#1B2A47;color:#8FB0EC}}
 :root[data-theme="light"] sup.src.adj{background:#E3F3EB;color:#1F8A5B}
 :root[data-theme="light"] sup.src.ga4{background:#E7EEFB;color:#3155A4}
 .srckey{display:flex;flex-wrap:wrap;gap:14px;padding:9px 14px;font-size:11px;color:var(--ink-4);
@@ -300,7 +303,7 @@ td.mute{color:var(--ink-4)}
     </div>
     <nav id="nav"></nav>
     <div class="rail-foot">
-      <div>Built from <b>Raw data</b>, <b>APPLE1</b>, <b>Raw manual</b>, <b>Adjust Raw</b>, <b>GA4</b> — the cells the pacing tabs read</div>
+      <div>Built from <b>Raw data</b>, <b>APPLE1</b>, <b>Raw manual</b>, <b>Adjust Raw</b> (as cleaned into <b>Adjust Clean</b>), <b>GA4</b> — the cells the pacing tabs read</div>
       <div id="stamp" style="margin-top:5px"></div>
     </div>
   </aside>
@@ -346,7 +349,7 @@ var VIEWS=[['summary','Summary'],['trend','Trend'],['platforms','Platforms'],
 var PLAT_COLOR={Snapchat:'#F5C518',TikTok:'#25C4C4',Meta:'#4B7BEC',Google:'#E8734A',
   X:'#7A8699',Apple:'#9B7EDE',InMobi:'#C0567E',InMotion:'#5AA469',Bidease:'#8C7B6B',Other:'#A3A9B3'};
 
-/* raw row indices — OBJ is Raw data column M, the pacing row's objective */
+/* raw row indices — OBJ is Raw data column P (CFG.OBJECTIVE_COL), the pacing row's objective */
 var P=0,B=1,C=2,D=3,RCH=4,IMP=5,SPD=6,LPV=7,CLK=8,VW=9,INS=10,PUR=11,OBJ=12;
 
 /* ================================================================
@@ -368,7 +371,7 @@ function shortDay(d){var p=d.split('-');return p[2]+'/'+p[1];}
 /* ================================================================
  * the pacing rows
  * The server sends the row table the pacing formulas are generated from (meta.lines).
- * Raw rows carry their objective (Raw data column M); Adjust and GA4 rows carry the row
+ * Raw rows carry their objective (Raw data column P); Adjust and GA4 rows carry the row
  * they land on. Nothing is classified a second time in the browser, so the dashboard
  * cannot file a number on a different row than the pacing tab does.
  * ================================================================ */
@@ -378,6 +381,14 @@ function lineInfo(k){return LINE_INFO[k]||{row:99,key:k,plat:k.split('|')[0],obj
    rows from GA4 (CFG.WEB_REVENUE_FROM_GA4). Never both — the same sale would count twice. */
 function webRevenue(k){return !!(DATA&&DATA.meta.webRevenueFromGa4&&lineInfo(k).web);}
 function lineMatch(k){var p=k.split('|');return platMatch(p[0])&&objMatch(p[1]);}
+/* Cost per install / booking only means something on the lines that buy installs and
+   bookings: the awareness rows 7-10 buy reach, and row 26 (Other) has results but no spend.
+   So CPI and CPA divide the spend of the other lines by their own Adjust results. Spend,
+   ROAS and every total stay blended, as on row 28. A selection with no spend on such a line
+   (Objective = Awareness) keeps the blended figure. */
+function perfLine(k){var li=lineInfo(k);return li.obj!=='Awareness'&&li.plat!=='Other';}
+function perfMode(){return rowsRaw().some(function(r){return r[SPD]>0&&perfLine(r[P]+'|'+r[OBJ]);});}
+function costLine(k,perf){return !perf||perfLine(k);}
 /* A platform whose channel never appears in Adjust Raw at all (any date): its zero
    installs mean "no feed", not "no installs". */
 function noFeed(brand,plat){
@@ -385,6 +396,54 @@ function noFeed(brand,plat){
   if(brand) return list.indexOf(brand+'|'+plat)>=0;
   return brandList().some(function(b){return list.indexOf(b+'|'+plat)>=0;});
 }
+function addDays(d,n){var t=new Date(d+'T00:00:00Z');t.setUTCDate(t.getUTCDate()+n);return t.toISOString().slice(0,10);}
+function dayCount(a,b){return Math.round((Date.parse(b)-Date.parse(a))/864e5)+1;}
+/* A channel whose Adjust feed collapses while the platform keeps spending (on the live file:
+   Google in September, 8 Adjust installs on $12.9k while Google claims 4,083) reads as a
+   performance collapse, and noFeed only catches a channel that never appeared. Per portal and
+   platform, over the last 14 days both media and Adjust reached against the 28 days before:
+   flagged when Adjust installs per dollar fall below a tenth of the earlier rate, or when the
+   platform claims ten times what Adjust verifies — with $2,000+ spend in each window, so a
+   line that has barely spent cannot trip it. Worked out once per payload, for both portals. */
+var _drops=null;
+function feedDrops(){
+  if(_drops)return _drops;
+  var out=[];
+  ['SFQC','AAQC'].forEach(function(b){
+    var mLast='',aLast='';
+    DATA.raw.forEach(function(r){if(r[B]===b&&r[D]>mLast)mLast=r[D];});
+    DATA.adjust.forEach(function(a){if(a.brand===b&&a.day>aLast)aLast=a.day;});
+    var end=mLast<aLast?mLast:aLast;if(!end)return;
+    var from=addDays(end,-13),base=addDays(end,-41),st={};
+    DATA.raw.forEach(function(r){
+      if(r[B]!==b||r[D]<base||r[D]>end)return;
+      var e=st[r[P]]||(st[r[P]]={spend:0,inst:0,claimed:0,bSpend:0,bInst:0});
+      if(r[D]>=from){e.spend+=r[SPD];e.claimed+=r[INS];}else e.bSpend+=r[SPD];
+    });
+    DATA.adjust.forEach(function(a){
+      var e=st[a.line.split('|')[0]];
+      if(a.brand!==b||!e||a.day<base||a.day>end)return;
+      if(a.day>=from)e.inst+=a.inst;else e.bInst+=a.inst;
+    });
+    Object.keys(st).forEach(function(p){
+      var e=st[p];if(e.spend<2000)return;
+      var drop=e.bSpend>=2000&&e.bInst>=100&&e.inst/e.spend<0.1*e.bInst/e.bSpend;
+      if(drop||(e.claimed>=500&&e.claimed>=10*e.inst))
+        out.push({brand:b,plat:p,from:from,to:end,spend:e.spend,inst:e.inst,claimed:e.claimed,
+          baseRate:drop?e.bInst/e.bSpend*1000:null});
+    });
+  });
+  return (_drops=out);
+}
+/* the flag follows the portal on screen and only the dates it covers */
+function feedDropped(brand,plat){
+  return (DATA?feedDrops():[]).some(function(x){
+    return x.plat===plat&&(brand?x.brand===brand:brandMatch(x.brand))&&F.from<=x.to&&F.to>=x.from;
+  });
+}
+var DROP_TIP='Adjust verifies far fewer installs for this channel in its latest two weeks than the '+
+  'spend and the platform\'s own count suggest — see the data notes. Read its CPI and CPA as a '+
+  'tracking problem, not performance.';
 /* Campaign names are the join between Raw data, Adjust and GA4. They agree
    character for character on the overwhelming majority of the volume, so this
    only folds the three things that are typography rather than identity: case,
@@ -411,19 +470,56 @@ function platOptions(){
 function platMatch(p){ return !F.plat.length||F.plat.indexOf(p)>=0; }
 /* Row 26 (Other) has no objective, so any objective filter leaves it out. */
 function objMatch(o){ return !F.obj.length||F.obj.indexOf(o)>=0; }
-function sourceCoverageStatus(){
+/* The last day each source reached, for the portals on screen. Media is taken over the lines on
+   screen (each platform's export lags on its own). With feed set, Adjust and GA4 are taken over
+   every line: each is one export, so a line that simply had no installs or purchases lately
+   does not pull the day back. */
+function sourceLast(feed){
   var coverage=DATA&&DATA.meta&&DATA.meta.sourceCoverage;
   if(!coverage)return null;
   var brands=brandList();
-  function latest(rows){
+  function latest(rows,byLine){
     var last='';
     (rows||[]).forEach(function(r){
-      if(brands.indexOf(r.brand)<0||!lineMatch(r.platform+'|'+r.objective))return;
+      if(brands.indexOf(r.brand)<0||(byLine&&!lineMatch(r.platform+'|'+r.objective)))return;
       if(r.last>last)last=r.last;
     });
     return last;
   }
-  var mediaLast=latest(coverage.media),adjustLast=latest(coverage.adjust),gaLast=latest(coverage.ga4);
+  return {media:latest(coverage.media,true),adjust:latest(coverage.adjust,!feed),ga4:latest(coverage.ga4,!feed)};
+}
+/* The last day both media and Adjust reached for the selection. 7d / 14d end here and the
+   rolling CPI / CPA / ROAS stop here, so no ratio divides spend by installs, bookings or
+   revenue that have not arrived yet (C2 = yesterday, or a flight end typed into C2, runs
+   past the feeds). */
+function lastAllDay(){
+  var s=sourceLast(true),end=DATA.meta.end;
+  if(s)[s.media,s.adjust].forEach(function(d){if(d&&d<end)end=d;});
+  return end<DATA.meta.start?DATA.meta.start:end;
+}
+function presetRange(days){
+  var end=lastAllDay(),all=DATA.meta.days.filter(function(d){return d<=end;});
+  return {from:all[Math.max(0,all.length-days)]||DATA.meta.start,to:end};
+}
+/* The cards add up every day in the range. When Adjust (or GA4, on the web rows column X
+   reads it on) stops before the last day with spend, CPI, CPA and ROAS divide by results
+   still to come — the sub-lines say so. */
+function lagNotes(){
+  var s=sourceLast(true),out={adj:'',roas:''};
+  if(!s)return out;
+  function spendAfter(d,web){
+    return rowsRaw().some(function(r){return r[D]>d&&r[SPD]>0&&(!web||lineInfo(r[P]+'|'+r[OBJ]).web);});
+  }
+  var adj=s.adjust&&s.adjust<F.to&&spendAfter(s.adjust)?'Adjust to '+shortDay(s.adjust):'';
+  var ga=DATA.meta.webRevenueFromGa4&&s.ga4&&s.ga4<F.to&&spendAfter(s.ga4,true)?'GA4 web to '+shortDay(s.ga4):'';
+  if(adj)out.adj=' · partial: '+adj;
+  if(adj||ga)out.roas=' · partial: '+[adj,ga].filter(Boolean).join(', ');
+  return out;
+}
+function sourceCoverageStatus(){
+  var s=sourceLast(false);
+  if(!s)return null;
+  var mediaLast=s.media,adjustLast=s.adjust,gaLast=s.ga4;
   var parts=[];
   if(mediaLast)parts.push('Media '+shortDay(mediaLast));
   if(adjustLast)parts.push('Adjust '+shortDay(adjustLast));
@@ -433,7 +529,17 @@ function sourceCoverageStatus(){
     return d&&d<F.to;
   })};
 }
-function healthIssues(){return (DATA&&DATA.meta.health&&DATA.meta.health.issues)||[];}
+function healthIssues(){
+  var list=(DATA&&DATA.meta.health&&DATA.meta.health.issues)||[];
+  if(!DATA)return list;
+  return list.concat(feedDrops().filter(function(x){return brandMatch(x.brand);}).map(function(x){
+    return {level:'warn',text:x.brand+' '+x.plat+': Adjust verified '+n0(x.inst)+' install'+(Math.round(x.inst)===1?'':'s')+
+      ' on '+usd(x.spend)+' of spend over '+shortDay(x.from)+' → '+shortDay(x.to)+', while '+x.plat+' itself claims '+
+      n0(x.claimed)+(x.baseRate!=null?'; in the four weeks before, Adjust verified '+x.baseRate.toFixed(1)+' per $1,000':'')+
+      '. The Adjust feed for this channel looks broken (tracking link, postbacks or the integration), so its CPI and '+
+      'CPA here are not a performance figure. Fix it in Adjust; the pacing tab reads the same numbers.'};
+  }));
+}
 
 /* ================================================================
  * boot
@@ -502,13 +608,11 @@ function init(p,keepFilters){
   LINE_INFO={};
   p.meta.lines.forEach(function(l){LINE_INFO[l.key]=l;});
   DATA=p;
-  _pfx={};
+  _pfx={};_drops=null;
   if(previous){
     F.obj=previous.obj;F.plat=previous.plat;RANGE_PRESET=previous.preset;
     if(RANGE_PRESET===7||RANGE_PRESET===14){
-      var days=p.meta.days||[];
-      F.from=days[Math.max(0,days.length-RANGE_PRESET)]||p.meta.start;
-      F.to=p.meta.end;
+      var pr=presetRange(RANGE_PRESET);F.from=pr.from;F.to=pr.to;
     }else if(RANGE_PRESET==='tab'&&p.meta.report){
       F.from=p.meta.report.start;F.to=p.meta.report.end;
     }else if(previous.full){
@@ -551,11 +655,12 @@ function setRange(from,to){F.from=from;F.to=to;RANGE_PRESET=null;render();}
 function clearFilters(){
   F.from=DATA.meta.start;F.to=DATA.meta.end;F.obj=[];F.plat=[];RANGE_PRESET=null;render();
 }
+/* 7d / 14d are the last 7 or 14 days both media and Adjust have reached for the selection —
+   render() re-anchors them when the portal or a filter changes. */
 function preset(days){
   RANGE_PRESET=days;
-  var all=DATA.meta.days;
   if(days==null){F.from=DATA.meta.start;F.to=DATA.meta.end;}
-  else{var i=Math.max(0,all.length-days);F.from=all[i];F.to=DATA.meta.end;}
+  else{var pr=presetRange(days);F.from=pr.from;F.to=pr.to;}
   render();
 }
 function onDate(which,val){
@@ -566,8 +671,9 @@ function onDate(which,val){
   render();
 }
 function isFullPeriod(){return F.from===DATA.meta.start&&F.to===DATA.meta.end;}
-/* the pacing tabs' own window (B2:C2) — differs from "All" only while C2 is behind the data */
-function tabPeriod(){var r=DATA.meta.report;return r&&(r.start!==DATA.meta.start||r.end!==DATA.meta.end)?r:null;}
+/* the pacing tabs' own window (B2:C2) — offered only while it is shorter than "All" (C2 behind
+   the data); a C2 past the last data day adds no rows, so it is not a different period */
+function tabPeriod(){var r=DATA.meta.report;return r&&(r.start>DATA.meta.start||r.end<DATA.meta.end)?r:null;}
 function presetTab(){var r=tabPeriod();if(!r)return preset(null);RANGE_PRESET='tab';F.from=r.start;F.to=r.end;render();}
 function isFiltered(){return !isFullPeriod()||F.obj.length>0||F.plat.length>0;}
 
@@ -632,19 +738,21 @@ function lastMediaDay(){
 
 /* by-day series over the active range */
 function series(){
-  var rs=rowsRaw(), days=daysInRange(), map={};
+  var rs=rowsRaw(), days=daysInRange(), map={}, perf=perfMode();
   days.forEach(function(d){map[d]={day:d,spend:0,impr:0,clicks:0,inst:0,purch:0,views:0,
-    adjInst:0,bookings:0,revenue:0,ga4Tx:0,ga4Rev:0,byPlat:{}};});
+    adjInst:0,bookings:0,revenue:0,ga4Tx:0,ga4Rev:0,byPlat:{},costSpend:0,costClaim:0,costInst:0,costBk:0};});
   rs.forEach(function(r){
     var e=map[r[D]];if(!e)return;
     e.spend+=r[SPD];e.impr+=r[IMP];e.clicks+=r[CLK];e.inst+=r[INS];e.purch+=r[PUR];e.views+=r[VW];
     e.byPlat[r[P]]=(e.byPlat[r[P]]||0)+r[SPD];
+    if(costLine(r[P]+'|'+r[OBJ],perf)){e.costSpend+=r[SPD];e.costClaim+=r[INS];}   // CPI / CPA (perfLine)
   });
   /* Adjust and GA4 land on their own day, so a CPI on a row divides two figures
      measured over the same 24 hours. Revenue follows column X's rule per row. */
   adjustRows().forEach(function(a){
     var e=map[a.day];if(!e)return;
     e.adjInst+=a.inst; e.bookings+=a.bookings;
+    if(costLine(a.line,perf)){e.costInst+=a.inst;e.costBk+=a.bookings;}
     if(!webRevenue(a.line)) e.revenue+=a.revenue;
   });
   ga4Rows().forEach(function(g){
@@ -687,6 +795,7 @@ function lines(){
     e.revenue=web?e.ga4Rev:e.adjRev;                                   // X
     e.revSrc=web?'GA4':'Adjust';
     e.noFeed=e.plat!=='Other'&&noFeed('',e.plat);
+    e.feedDrop=e.plat!=='Other'&&!e.noFeed&&feedDropped('',e.plat);
     /* Columns E..X, matching the pacing tab one for one. */
     e.spendSar=e.spend*DATA.meta.fx;                                   // F
     e.cpm=e.impr?e.spend/e.impr*1000:null;                             // Q
@@ -711,7 +820,8 @@ function campaigns(){
     var e=m[ck]||(m[ck]={name:r[C],brand:r[B],plat:r[P],obj:r[OBJ],spend:0,impr:0,clicks:0,
       inst:0,purch:0,views:0,days:{},adjInst:0,bookings:0,adjRev:0,ga4Tx:0,ga4Rev:0});
     e.spend+=r[SPD];e.impr+=r[IMP];e.clicks+=r[CLK];e.inst+=r[INS];e.purch+=r[PUR];
-    e.views+=r[VW];e.days[r[D]]=1;
+    e.views+=r[VW];
+    if(r[SPD]||r[IMP]||r[CLK]) e.days[r[D]]=1;     // days it delivered, not all-zero export rows
   });
   var list=Object.keys(m).map(function(k){return m[k];});
 
@@ -825,30 +935,29 @@ function wow(){
 }
 function wowByPlat(){
   var w=splitWeeks();if(!w)return[];
-  var out={};
-  function add(list,key){
-    list.forEach(function(d){
-      for(var p in d.byPlat){
-        var e=out[p]||(out[p]={plat:p,curSpend:0,prevSpend:0,curInst:0,prevInst:0});
-        e[key+'Spend']+=d.byPlat[p];
-      }
-    });
-  }
-  add(w.cur,'cur');add(w.prev,'prev');
-  // installs by platform need a second pass over raw
-  var curDays={},prevDays={};
-  w.cur.forEach(function(d){curDays[d.day]=1;});
-  w.prev.forEach(function(d){prevDays[d.day]=1;});
+  var out={},win={},perf=perfMode(),lastAdj=lastAllDay();
+  w.cur.forEach(function(d){win[d.day]='cur';});
+  w.prev.forEach(function(d){win[d.day]='prev';});
+  /* Installs are Adjust's, by the day Adjust recorded them, and CPI divides by them as
+     everywhere else on the page — on the lines that buy installs (see perfLine). Adjust can
+     be a day behind the platforms, so CPI spend stops at the last day it has reached. */
   rowsRaw().forEach(function(r){
-    var e=out[r[P]];if(!e)return;
-    if(curDays[r[D]]) e.curInst+=r[INS];
-    else if(prevDays[r[D]]) e.prevInst+=r[INS];
+    var k=win[r[D]];if(!k)return;
+    var e=out[r[P]]||(out[r[P]]={plat:r[P],curSpend:0,prevSpend:0,curInst:0,prevInst:0,
+      curCpiSpend:0,prevCpiSpend:0,curCpiInst:0,prevCpiInst:0});
+    e[k+'Spend']+=r[SPD];
+    if(r[D]<=lastAdj&&costLine(r[P]+'|'+r[OBJ],perf)) e[k+'CpiSpend']+=r[SPD];
+  });
+  adjustRows().forEach(function(a){
+    var k=win[a.day],e=out[a.line.split('|')[0]];if(!k||!e)return;
+    e[k+'Inst']+=a.inst;
+    if(costLine(a.line,perf)) e[k+'CpiInst']+=a.inst;
   });
   return Object.keys(out).map(function(k){
     var e=out[k];
     e.dSpend=e.prevSpend?(e.curSpend-e.prevSpend)/e.prevSpend*100:null;
-    e.curCpi=e.curInst?e.curSpend/e.curInst:null;
-    e.prevCpi=e.prevInst?e.prevSpend/e.prevInst:null;
+    e.curCpi=(e.curCpiSpend>0&&e.curCpiInst>=0.5)?e.curCpiSpend/e.curCpiInst:null;
+    e.prevCpi=(e.prevCpiSpend>0&&e.prevCpiInst>=0.5)?e.prevCpiSpend/e.prevCpiInst:null;
     e.dCpi=(e.curCpi&&e.prevCpi)?(e.curCpi-e.prevCpi)/e.prevCpi*100:null;
     return e;
   }).sort(function(a,b){return b.curSpend-a.curSpend;});
@@ -868,7 +977,7 @@ function insights(){
   if(w&&w.prev.cpi&&w.cur.cpi){
     var c=(w.cur.cpi-w.prev.cpi)/w.prev.cpi*100;
     out.push({ico:c<0?'▼':'▲',
-      txt:'Cost per install is '+(c<0?'improving':'getting worse')+' (platform count — daily only)',
+      txt:'Cost per install is '+(c<0?'improving':'getting worse')+' (the platforms\' own install count)',
       val:usd2(w.prev.cpi)+' → '+usd2(w.cur.cpi),cls:c<0?'up':'down'});
   }
   var best=wp.filter(function(p){return p.dCpi!=null&&p.dCpi<-2&&p.curSpend>300;})
@@ -895,16 +1004,21 @@ function insights(){
     val:over.ratio.toFixed(2)+'× over',cls:'down'});
   return out;
 }
-/* pacing projection — per-day rate over the days actually delivered so far */
+/* pacing projection — per-day rate from the selection's first day with spend to the last day
+   delivered, so days before a line started (date floors, late starts) or not delivered yet do
+   not dilute it. Over the full period the projection adds that rate for the days still ahead
+   only; the period runs to the later of "All" and the tabs' C2 (a flight end typed into C2). */
 function pacing(){
   var s=series();if(!s.length)return null;
   var spent=s.reduce(function(a,d){return a+d.spend;},0);
-  var last=lastMediaDay();
-  var elapsed=s.filter(function(d){return !last||d.day<=last;}).length||s.length;
+  var last=lastMediaDay(),first='';
+  s.forEach(function(d){if(!first&&d.spend>0)first=d.day;});
+  var elapsed=s.filter(function(d){return (!first||d.day>=first)&&(!last||d.day<=last);}).length||s.length;
   var perDay=spent/elapsed;
-  var all=DATA.meta.days.length;
-  return {spent:spent,perDay:perDay,elapsed:elapsed,inRange:s.length,total:all,
-    projected:perDay*all, share:elapsed/all*100};
+  var rep=DATA.meta.report,end=rep&&rep.end>DATA.meta.end?rep.end:DATA.meta.end;
+  var all=dayCount(DATA.meta.start,end),ahead=last&&last<end?dayCount(last,end)-1:0;
+  return {spent:spent,perDay:perDay,elapsed:elapsed,first:first,inRange:s.length,total:all,
+    projected:isFullPeriod()?spent+perDay*ahead:perDay*all, share:elapsed/all*100};
 }
 
 /* ================================================================
@@ -1025,13 +1139,17 @@ function effLine(cv,dd,metric){
   var g=hidpi(cv,270),c=g.c,w=g.w,h=g.h;
   var PL=56,PR=14,PT=16,PB=34,iw=w-PL-PR,ih=h-PT-PB;
   var win=7,pts=[];
+  /* No point past the data: a ratio that mixes sources stops on the last day both media and
+     Adjust reached, a media-only ratio on the last media day. */
+  var cut=metric==='cpi'||metric==='cpa'||metric==='roas'?lastAllDay():lastMediaDay();
   for(var i=0;i<dd.length;i++){
-    var a=Math.max(0,i-win+1),s=0,imp=0,clk=0,ins=0,vin=0,bk=0,rv=0;
-    for(var j=a;j<=i;j++){s+=dd[j].spend;imp+=dd[j].impr;clk+=dd[j].clicks;ins+=dd[j].inst;
-      vin+=dd[j].adjInst||0;bk+=dd[j].bookings||0;rv+=dd[j].revenue||0;}
-    var v=metric==='cpi'?(vin?s/vin:null):                 /* Adjust-verified */
-          metric==='cpiPlat'?(ins?s/ins:null):             /* what the platform claims */
-          metric==='cpa'?(bk?s/bk:null):
+    if(cut&&dd[i].day>cut){pts.push(null);continue;}
+    var a=Math.max(0,i-win+1),s=0,cs=0,imp=0,clk=0,ins=0,vin=0,bk=0,rv=0;
+    for(var j=a;j<=i;j++){s+=dd[j].spend;cs+=dd[j].costSpend||0;imp+=dd[j].impr;clk+=dd[j].clicks;ins+=dd[j].costClaim||0;
+      vin+=dd[j].costInst||0;bk+=dd[j].costBk||0;rv+=dd[j].revenue||0;}
+    var v=metric==='cpi'?(vin&&cs?cs/vin:null):                /* Adjust-verified, lines that buy installs */
+          metric==='cpiPlat'?(ins&&cs?cs/ins:null):        /* what the platform claims, same lines */
+          metric==='cpa'?(bk&&cs?cs/bk:null):
           metric==='roas'?(s?rv/(s*DATA.meta.fx):null):
           metric==='cpm'?(imp?s/imp*1000:null):
           metric==='cpc'?(clk?s/clk:null):(imp?clk/imp*100:null);
@@ -1150,6 +1268,7 @@ function miniLine(cv,days,vals,label,fmt){
  * ================================================================ */
 function render(){
   if(!DATA)return;
+  if(RANGE_PRESET===7||RANGE_PRESET===14){var pr=presetRange(RANGE_PRESET);F.from=pr.from;F.to=pr.to;}
   document.querySelectorAll('#nav button').forEach(function(b){
     b.setAttribute('aria-current',b.dataset.v===VIEW);
   });
@@ -1170,7 +1289,7 @@ function render(){
     crit?crit+' data issue'+(crit===1?'':'s')+' — see banner':
     (coverage?coverage.text:'line totals ✓');
   cc.title=!ok?'Delivery lines do not add up to the displayed total.':
-    crit?'The sheet has data problems that the pacing tab and this dashboard both inherit.':
+    crit?'The sheet has data problems — the banner says which numbers each one affects.':
     'Lines reconcile. Dates show the latest row actually read from each source.';
   cc.className='chip live'+(ok&&!crit&&!(coverage&&coverage.bad)?'':' bad');
   renderKpis();
@@ -1181,18 +1300,23 @@ function render(){
   drawAll();
 }
 
-/* Data problems live in the sheet, so the pacing tab has them too. Listing them here is
-   the only honest option — patching them silently in the browser is what made the
-   dashboard and the tab disagree before. */
+/* Data problems in the source tabs. Adjust Raw is corrected the same way here and in
+   "Adjust Clean" (which the pacing tabs read), so those notes are about the source; the
+   others say whether they affect the pacing tabs, this dashboard or both. */
+/* The banner opens by itself when there is something to fix, and then stays the way the user
+   leaves it — every click re-renders it — until the number of problems changes. */
+var HEALTH={open:false,crit:-1};
 function renderHealth(){
   var el=document.getElementById('health'),list=healthIssues();
   if(!list.length){el.innerHTML='';return;}
   var crit=list.filter(function(i){return i.level==='crit';});
   var warn=list.filter(function(i){return i.level!=='crit';});
-  el.innerHTML='<details class="callout'+(crit.length?' crit':'')+'"'+(crit.length?' open':'')+'>'+
+  if(crit.length!==HEALTH.crit){HEALTH.crit=crit.length;HEALTH.open=crit.length>0;}
+  el.innerHTML='<details class="callout'+(crit.length?' crit':'')+'"'+(HEALTH.open?' open':'')+
+    ' ontoggle="HEALTH.open=this.open">'+
     '<summary><b>'+(crit.length?crit.length+' data problem'+(crit.length===1?'':'s')+' in the sheet':'Data notes')+
     '</b>'+(warn.length&&crit.length?' · '+warn.length+' note'+(warn.length===1?'':'s'):'')+
-    ' — they affect the pacing tab exactly as they affect these numbers</summary><ul>'+
+    ' — each note says whether it affects the pacing tabs, this dashboard or both</summary><ul>'+
     crit.concat(warn).map(function(i){
       return '<li><span class="pill '+(i.level==='crit'?'crit':'warn')+'">'+(i.level==='crit'?'fix':'note')+
         '</span> '+esc(i.text)+'</li>';
@@ -1243,26 +1367,35 @@ function renderKpis(){
   var days=s.map(function(d){return d.day;});
   var spendSar=t.spend*DATA.meta.fx, rev=a.revenue;
   var gaCounted=DATA.meta.webRevenueFromGa4;
+  // CPI and CPA: the lines that buy installs and bookings (perfLine); the blended figure beside it
+  var perf=perfMode(),cs={spend:0,adjInst:0,bookings:0};
+  ln.forEach(function(l){if(costLine(l.key,perf)){cs.spend+=l.spend;cs.adjInst+=l.adjInst;cs.bookings+=l.bookings;}});
+  var lag=lagNotes();
+  function costPer(n,blendN){
+    var v=usd2(n&&cs.spend?cs.spend/n:null),b=usd2(blendN&&t.spend?t.spend/blendN:null);
+    return v+(perf&&v!==b?' excl. awareness (blended '+b+')':'');
+  }
   var cards=[
     {k:'Spend',v:mediaMissing?'—':usd(t.spend),s:mediaMissing?'No media-spend source':sar(spendSar),
       sp:mediaMissing?null:s.map(function(d){return d.spend;}),fmt:usd,lab:'Spend'},
     {k:'Revenue',v:sar(rev),
       s:gaCounted?'Adjust app '+n0(rev-sumWebGa4(ln))+' + GA4 web '+n0(sumWebGa4(ln))+' · column X':
         'Adjust · column X · GA4 web '+n0(a.ga4Rev)+' SAR not added'},
-    {k:'ROAS',v:spendSar?n2(rev/spendSar)+'×':'—',s:'revenue ÷ spend SAR · P28',
+    {k:'ROAS',v:spendSar?n2(rev/spendSar)+'×':'—',s:'revenue ÷ spend SAR · P28'+lag.roas,
       state:spendSar?(rev/spendSar>=2.5?'good':rev/spendSar>=1.5?'warn':'crit'):null},
     {k:'Installs — Adjust',v:n0(a.adjInst),
       s:mediaMissing?'CPI — · no media-spend source':
-        'CPI '+usd2(a.adjInst?t.spend/a.adjInst:null)+' · '+n0(t.inst)+' claimed by platforms'},
+        'CPI '+costPer(cs.adjInst,a.adjInst)+' · '+n0(t.inst)+' claimed by platforms'+lag.adj},
     {k:'Impressions',v:mediaMissing?'—':n0(t.impr),s:mediaMissing?'No media-delivery source':'CPM '+usd2(t.cpm),
       sp:mediaMissing?null:s.map(function(d){return d.impr;}),fmt:n0,lab:'Impressions'},
     {k:'Clicks',v:mediaMissing?'—':n0(t.clicks),s:mediaMissing?'No media-delivery source':'CTR '+pct(t.ctr)+' · CPC '+usd2(t.cpc),
       sp:mediaMissing?null:s.map(function(d){return d.clicks;}),fmt:n0,lab:'Clicks'},
     {k:'Bookings — Adjust',v:n0(a.bookings),
       s:mediaMissing?'CPA — · no media-spend source':
-        'CPA '+usd2(a.bookings?t.spend/a.bookings:null)+' · GA4 web purchases '+n0(a.ga4Tx)},
+        'CPA '+costPer(cs.bookings,a.bookings)+' · GA4 web purchases '+n0(a.ga4Tx)+lag.adj},
     {k:'Daily run-rate',v:mediaMissing||!pc?'—':usd(pc.perDay),
-      s:mediaMissing||!pc?'No media-spend source':'over '+pc.elapsed+' delivered day'+(pc.elapsed===1?'':'s'),
+      s:mediaMissing||!pc?'No media-spend source':'over '+pc.elapsed+' day'+(pc.elapsed===1?'':'s')+
+        (pc.first&&pc.first>F.from?' since '+shortDay(pc.first):''),
       sp:mediaMissing?null:(function(){var r=0;return s.map(function(d){return r+=d.spend;});})(),fmt:usd,lab:'Cumulative'}
   ];
   document.getElementById('kpis').innerHTML=cards.map(function(c,i){
@@ -1283,15 +1416,16 @@ function vSummary(){
   var pc=pacing(),ln=lines();
   var byPlat={};ln.forEach(function(l){if(l.spend)byPlat[l.plat]=(byPlat[l.plat]||0)+l.spend;});
   var pl=Object.keys(byPlat).sort(function(a,b){return byPlat[b]-byPlat[a];});
-  var tot=pl.reduce(function(a,p){return a+byPlat[p];},0)||1;
+  var tot=pl.reduce(function(a,p){return a+byPlat[p];},0);
   var byObj={};ln.forEach(function(l){if(l.spend)byObj[l.obj]=(byObj[l.obj]||0)+l.spend;});
   var objKeys=Object.keys(byObj).sort(function(a,b){return byObj[b]-byObj[a];});
   return ''+
   '<div class="grid">'+
     '<div class="panel"><div class="ph"><h3>Where the money went '+brandTag()+'</h3>'+
-      '<div class="note">'+usd(tot)+'</div></div><div class="pb">'+
+      '<div class="note">'+(tot?usd(tot):'—')+'</div></div><div class="pb">'+
+      (pl.length?'':'<div class="empty">No spend in this selection</div>')+
       '<div style="display:flex;height:11px;border-radius:6px;overflow:hidden;margin-bottom:12px">'+
-        pl.map(function(p){return '<i style="width:'+(byPlat[p]/tot*100).toFixed(2)+
+        pl.map(function(p){return '<i style="width:'+(tot?byPlat[p]/tot*100:0).toFixed(2)+
           '%;background:'+(PLAT_COLOR[p]||'#888')+'"></i>';}).join('')+'</div>'+
       '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0 26px">'+
       pl.map(function(p){
@@ -1299,7 +1433,7 @@ function vSummary(){
           'border-bottom:1px solid var(--line-soft)">'+
           '<span><span class="pdot" style="background:'+(PLAT_COLOR[p]||'#888')+'"></span>'+p+'</span>'+
           '<span style="font-variant-numeric:tabular-nums;color:var(--ink-3)">'+usd(byPlat[p])+
-          '  <b style="color:var(--ink)">'+(byPlat[p]/tot*100).toFixed(0)+'%</b></span></div>';}).join('')+
+          '  <b style="color:var(--ink)">'+(tot?byPlat[p]/tot*100:0).toFixed(0)+'%</b></span></div>';}).join('')+
       '</div>'+
       '<div style="border-top:1px solid var(--line-soft);margin-top:10px;padding-top:10px;font-size:12px;color:var(--ink-3)">'+
         objKeys.map(function(o){return o+' '+usd(byObj[o]);}).join(' · ')+'</div>'+
@@ -1308,8 +1442,9 @@ function vSummary(){
   (pc?'<div class="grid g2">'+
     '<div class="panel"><div class="ph"><h3>Pace</h3><div class="note">at the current run-rate</div></div>'+
       '<div class="pb"><div style="display:flex;gap:22px;flex-wrap:wrap">'+
-      [['Spent so far',usd(pc.spent)],['Per delivered day',usd(pc.perDay)],
-       ['Days delivered',pc.elapsed+' of '+pc.inRange+(pc.inRange!==pc.total?' (period '+pc.total+')':'')],
+      [['Spent so far',usd(pc.spent)],['Per day running',usd(pc.perDay)],
+       ['Days running',pc.elapsed+' of '+pc.inRange+(pc.first&&pc.first>F.from?' · since '+shortDay(pc.first):'')+
+         (pc.inRange!==pc.total?' (period '+pc.total+')':'')],
        ['Full-period projection',usd(pc.projected)]].map(function(x){
         return '<div><div style="font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-4);font-weight:600">'+
           x[0]+'</div><div style="font-family:var(--display);font-size:19px;font-weight:600;margin-top:3px;font-variant-numeric:tabular-nums">'+
@@ -1355,14 +1490,17 @@ function vTrend(){
     }).join('')+'</div></div>'+
     '<div class="pb"><canvas id="cEff"></canvas></div>'+
     '<div class="legend"><span>7-day rolling, so one loud day does not read as a trend. '+
-      'CPI and CPA divide by <b>Adjust</b>, ROAS by the column-X revenue, over the same seven days as the spend. '+
-      'CPI (claimed) is the same line drawn off the platforms\' own count — the distance between the '+
-      'two is the credit nobody else confirms.</span></div></div></div>'+
+      'CPI and CPA divide the spend of the lines that buy installs and bookings by their <b>Adjust</b> results — '+
+      'the awareness rows 7-10 buy reach, so their spend is left out (the cards show the blended figure too); '+
+      'ROAS divides the column-X revenue by all spend, over the same seven days. The line stops on the last day both '+
+      'media and Adjust have reached. CPI (claimed) is the same line drawn off the platforms\' own count — the '+
+      'distance between the two is the credit nobody else confirms.</span></div></div></div>'+
   '<div class="grid"><div class="panel"><div class="ph"><h3>Each platform, day by day</h3>'+
     '<div class="note">spend trend · last '+(ww?ww.n:0)+' delivered days vs the '+(ww?ww.n:0)+' before</div></div>'+
     '<div class="pb">'+smallMultiples(s,plats)+'</div></div></div>'+
   '<div class="grid"><div class="panel"><div class="ph"><h3>Week over week '+brandTag()+'</h3>'+
-    '<div class="note">installs are the platforms\' own count — the only figure available by day</div></div>'+
+    '<div class="note">installs and CPI are Adjust-verified, by the day Adjust recorded them · CPI leaves out '+
+      'the awareness rows and stops on Adjust\'s last day</div></div>'+
     '<div class="tw">'+wowTable(w)+'</div></div></div>'+
   '<div class="grid"><div class="panel"><div class="ph"><h3>Day by day '+brandTag()+'</h3>'+
     '<div class="note">every column carries its own day · totals match the line table</div></div>'+
@@ -1370,9 +1508,10 @@ function vTrend(){
 }
 
 function vPlatforms(){
-  var ln=lines(),cv=claimVsVerified();
+  var ln=lines(),cv=claimVsVerified(),perf=perfMode();
   var byPlat={};
-  ln.forEach(function(l){
+  // ranked on the lines that buy installs and bookings (perfLine): reach budgets are not a CPI
+  ln.filter(function(l){return costLine(l.key,perf);}).forEach(function(l){
     var e=byPlat[l.plat]||(byPlat[l.plat]={plat:l.plat,spend:0,adjInst:0,bookings:0,revenue:0});
     e.spend+=l.spend;e.adjInst+=l.adjInst;e.bookings+=l.bookings;e.revenue+=l.revenue;
   });
@@ -1391,10 +1530,10 @@ function vPlatforms(){
     'cost-per figures are true for '+F.from+' → '+F.to+'.</div>')+
   '<div class="grid g2">'+
     '<div class="panel"><div class="ph"><h3>Real cost per install</h3>'+
-      '<div class="note">spend ÷ Adjust-verified installs</div></div>'+
+      '<div class="note">spend ÷ Adjust-verified installs'+(perf?' · awareness rows left out':'')+'</div></div>'+
       '<div class="pb">'+platRank(byCpi,'cpi',usd2)+'</div></div>'+
     '<div class="panel"><div class="ph"><h3>Real cost per booking</h3>'+
-      '<div class="note">spend ÷ Adjust bookings — the money metric</div></div>'+
+      '<div class="note">spend ÷ Adjust bookings — the money metric'+(perf?' · awareness rows left out':'')+'</div></div>'+
       '<div class="pb">'+platRank(byCpa,'cpa',usd2)+'</div></div>'+
   '</div>'+
   '<div class="grid"><div class="panel"><div class="ph"><h3>What platforms claim vs what Adjust verifies '+brandTag()+'</h3>'+
@@ -1465,8 +1604,11 @@ function ga4ByBucket(){
 }
 function vAttribution(){
   var ar=adjustRows(),gb=ga4ByBucket();
-  var ln=lines(),spendBy={};
-  ln.forEach(function(l){spendBy[l.plat]=(spendBy[l.plat]||0)+l.spend;});
+  var ln=lines(),spendBy={},bookBy={},perf=perfMode();
+  // Real CPA: the platform's lines that buy bookings (perfLine), their spend over their bookings
+  ln.filter(function(l){return costLine(l.key,perf);}).forEach(function(l){
+    spendBy[l.plat]=(spendBy[l.plat]||0)+l.spend;bookBy[l.plat]=(bookBy[l.plat]||0)+l.bookings;
+  });
   var byCh={};
   ar.forEach(function(a){
     var e=byCh[a.channel]||(byCh[a.channel]={ch:a.channel,plat:a.line.split('|')[0],inst:0,bookings:0,revenue:0});
@@ -1476,8 +1618,9 @@ function vAttribution(){
     .sort(function(a,b){return b.revenue-a.revenue;});
   var gaTot=gb.reduce(function(t,g){t.tx+=g.tx;t.revenue+=g.revenue;return t;},{tx:0,revenue:0});
   return ''+
-  '<div class="callout"><b>Two meters, never added together.</b> The app side comes from <b>Adjust Raw</b> '+
-    '(pacing columns K, L, X). The web side comes from <b>GA4</b>, counted when the session\'s default channel '+
+  '<div class="callout"><b>Two meters, '+(DATA.meta.webRevenueFromGa4?'never both on the same row':'never added together')+
+    '.</b> The app side comes from <b>Adjust Raw</b>, read through the same corrections as <b>Adjust Clean</b> — '+
+    'the tab pacing columns K, L and X read. The web side comes from <b>GA4</b>, counted when the session\'s default channel '+
     'group is Paid Search or Paid Social (pacing column M and rows 47-49). '+
     (DATA.meta.webRevenueFromGa4?'Column X reads GA4 on the four web rows and Adjust everywhere else.':
       'Column X — and so revenue and ROAS here — is Adjust on every row; GA4 web revenue is shown, not added.')+
@@ -1486,13 +1629,14 @@ function vAttribution(){
     '<div class="panel"><div class="ph"><h3>App — Adjust '+brandTag()+'</h3>'+
       '<div class="note">'+F.from+' → '+F.to+'</div></div>'+
       '<div class="tw">'+
-      '<table><thead><tr><th>Adjust channel</th><th>Installs</th><th>Bookings</th><th>Revenue SAR</th><th>Real CPA</th></tr></thead><tbody>'+
+      '<table><thead><tr><th>Adjust channel</th><th>Installs</th><th>Bookings</th><th>Revenue SAR</th><th title="Spend of the platform\'s lines that buy bookings ÷ their Adjust bookings'+
+        (perf?' — awareness rows left out':'')+'">Real CPA</th></tr></thead><tbody>'+
       chs.map(function(c){
-        var sp=spendBy[c.plat];
+        var sp=spendBy[c.plat],bk=bookBy[c.plat];
         return '<tr><td><span class="pdot" style="background:'+(PLAT_COLOR[c.plat]||'#888')+'"></span>'+esc(c.ch)+
           (c.plat==='Other'?' <span class="tag">row 26</span>':'')+'</td>'+
           '<td>'+n0(c.inst)+'</td><td>'+n0(c.bookings)+'</td><td>'+n0(c.revenue)+'</td>'+
-          '<td>'+(sp&&c.bookings&&c.ch===c.plat?usd2(sp/c.bookings):'—')+'</td></tr>';}).join('')+
+          '<td>'+(sp&&bk&&c.ch===c.plat?usd2(sp/bk):'—')+'</td></tr>';}).join('')+
       '</tbody></table></div></div>'+
     '<div class="panel"><div class="ph"><h3>Web — GA4 paid '+brandTag()+'</h3>'+
       '<div class="note">'+F.from+' → '+F.to+'</div></div>'+
@@ -1517,7 +1661,9 @@ var RECON_WHY=[
   ['inmobi_copy','− InMobi rows: copies of Raw manual (row 24 reads Raw manual and the backup)'],
   ['apple_copy','− Apple rows: row 22 reads APPLE1'],
   ['not_inmobi','− Bidease and other rows: copies of Raw data (rows 23 and 25 read Raw data)'],
-  ['inmobi_out','− InMobi outside this tab\'s dates (Raw manual from 1 Sep, backup 2 Jul – 31 Aug)'],
+  ['inmobi_out','− InMobi outside this tab\'s dates (Raw manual from 3 Aug, backup 2 Jul – 2 Aug)'],
+  ['outside','− dated outside the dashboard\'s dates'],
+  ['nodate','− date not readable (SUMIFS skips it too)'],
   ['prefloor','− before the row starts (2 Jul; AAQC Meta 1 Jul)'],
   ['offline','− no pacing row for this platform / objective'],
   ['textSkipped','− stored as text: the pacing tab\'s SUMIFS skips it too'],
@@ -1525,9 +1671,10 @@ var RECON_WHY=[
 function reconPanel(){
   var rec=DATA.recon||[];
   if(!rec.length) return '';
-  var agg={};
+  // over the full period every row of the tab counts, whatever its date, so SUM() is the column's
+  var agg={},full=isFullPeriod();
   rec.forEach(function(e){
-    if(!brandMatch(e.b)||e.d<F.from||e.d>F.to) return;
+    if(!brandMatch(e.b)||(!full&&(!e.d||e.d<F.from||e.d>F.to))) return;
     var k=e.s+'|'+e.k,x=agg[k]||(agg[k]={i:0,p:0,n:0});x.i+=e.i;x.p+=e.p;x.n+=e.n;
   });
   function g(src,k){return agg[src+'|'+k]||{i:0,p:0,n:0};}
@@ -1549,32 +1696,38 @@ function reconPanel(){
       usd(cnt.p)+'</b></td><td></td></tr>';
     tot.i+=cnt.i;tot.p+=cnt.p;
   });
-  // the same figure the KPI cards add up, without the Platform / Objective filters
+  // the same figure the KPI cards add up, without the Platform / Objective filters — the
+  // table covers every platform, so with a filter on it equals the unfiltered cards only
   var all={i:0,p:0};
   DATA.raw.forEach(function(r){if(brandMatch(r[B])&&r[D]>=F.from&&r[D]<=F.to){all.i+=r[IMP];all.p+=r[SPD];}});
-  var ok=Math.abs(all.i-tot.i)<1&&Math.abs(all.p-tot.p)<1;
+  var ok=Math.abs(all.i-tot.i)<1&&Math.abs(all.p-tot.p)<1,filt=F.plat.length>0||F.obj.length>0,ft=sumRaw(rowsRaw());
+  var tail=!ok?'':filt?'every platform and objective — the cards show '+n0(ft.impr)+' · '+usd(ft.spend)+
+    ' because the Platform / Objective filter is on':'= Impressions and Spend cards';
   return '<div class="grid"><div class="panel"><div class="ph"><h3>Check it against the tabs</h3>'+
     '<div class="note">'+brandTag()+' · '+F.from+' → '+F.to+' · all platforms</div></div>'+
     '<div class="tw"><table><thead><tr><th>Source tab</th><th>Impressions</th><th>Spend</th><th></th></tr></thead>'+
-    '<tbody>'+body+'</tbody><tfoot><tr><td>Dashboard total'+(ok?'':' — does NOT match the cards: '+n0(all.i))+'</td><td>'+
-      n0(tot.i)+'</td><td>'+usd(tot.p)+'</td><td>'+(ok?'= Impressions and Spend cards':'')+'</td></tr></tfoot></table></div>'+
+    '<tbody>'+body+'</tbody><tfoot><tr><td>Dashboard total'+(ok?'':' — does NOT match the dashboard\'s unfiltered total: '+
+      n0(all.i)+' · '+usd(all.p))+'</td><td>'+n0(tot.i)+'</td><td>'+usd(tot.p)+'</td><td>'+tail+'</td></tr></tfoot></table></div>'+
     '<div class="legend"><span>Adding up the tabs by hand double counts the rows that sit in two tabs, misses numbers '+
       'stored as text and misses InMobi kept only in the hidden backup tab. This table does each step for you; '+
       'spend in the tab column is as typed (X in SAR).</span></div></div></div>';
 }
 var RECON_ADJ_WHY=[
   ['organic','− Organic (never counted)'],
-  ['dup','− rows repeated by overlapping imports (the later import is kept)'],
+  ['dup','− copies: rows repeated by overlapping imports (the later is kept), and exports pasted a second '+
+    'time under the other app'],
   ['prefloor','− before the row starts (2 Jul; the awareness rows count from the first day)'],
   ['outside','− dated outside the dashboard\'s dates'],
   ['nodate','− date not readable']];
 function reconAdjustPanel(){
   var rec=DATA.reconAdjust||[];
   if(!rec.length) return '';
+  // over the full period every row of the tab counts, whatever its date (or none), so SUM()
+  // is the column's and the "outside" and "nodate" lines explain the difference
   var agg={},full=isFullPeriod();
   rec.forEach(function(e){
     if(!brandMatch(e.b)) return;
-    if(e.d?(e.d<F.from||e.d>F.to):!full) return;
+    if(!full&&(!e.d||e.d<F.from||e.d>F.to)) return;
     var x=agg[e.k]||(agg[e.k]={i:0,o:0,r:0,n:0});x.i+=e.i;x.o+=e.o;x.r+=e.r;x.n+=e.n;
   });
   function g(k){return agg[k]||{i:0,o:0,r:0,n:0};}
@@ -1588,17 +1741,22 @@ function reconAdjustPanel(){
   body+='<tr><td><b>= counted</b></td><td><b>'+n0(cnt.i)+'</b></td><td><b>'+n0(cnt.o)+'</b></td><td><b>'+n0(cnt.r)+
     '</b></td><td></td></tr>';
   if(fixd.n) body+=row('<span class="mute">of which: rows whose date was stored as text or day/month-swapped '+
-    '— counted on their real day; the pacing tabs miss them until Clean Adjust Raw runs</span>',fixd,1);
+    '— counted on their real day, as in Adjust Clean, the tab the pacing formulas read</span>',fixd,1);
   var cards={i:0,o:0};
   DATA.adjust.forEach(function(a){if(brandMatch(a.brand)&&a.day>=F.from&&a.day<=F.to){cards.i+=a.inst;cards.o+=a.bookings;}});
-  var ok=Math.abs(cards.i-cnt.i)<0.5&&Math.abs(cards.o-cnt.o)<0.5;
+  var ok=Math.abs(cards.i-cnt.i)<0.5&&Math.abs(cards.o-cnt.o)<0.5,filt=F.plat.length>0||F.obj.length>0,fa=totals(lines());
+  var tail=!ok?'':filt?'every platform and objective — the cards show '+n0(fa.adjInst)+' / '+n0(fa.bookings)+
+    ' because the Platform / Objective filter is on':'= Installs and Bookings cards';
   return '<div class="grid"><div class="panel"><div class="ph"><h3>Check it against the tabs — Adjust</h3>'+
-    '<div class="note">'+brandTag()+' · '+F.from+' → '+F.to+' · Adjust Raw columns H, I, E</div></div>'+
+    '<div class="note">'+brandTag()+' · '+F.from+' → '+F.to+' · all platforms · Adjust Raw columns H, I, E</div></div>'+
     '<div class="tw"><table><thead><tr><th>Adjust Raw</th><th>Installs</th><th>Bookings</th><th>Revenue SAR</th><th></th></tr></thead>'+
-    '<tbody>'+body+'</tbody><tfoot><tr><td>Dashboard'+(ok?'':' — does NOT match the cards: '+n0(cards.i)+' / '+n0(cards.o))+'</td><td>'+
-      n0(cards.i)+'</td><td>'+n0(cards.o)+'</td><td></td><td>'+(ok?'= Installs and Bookings cards':'')+'</td></tr></tfoot></table></div>'+
-    '<div class="legend"><span>The Revenue card uses this Adjust revenue on the app rows and GA4 revenue on the four '+
-      'web rows (Snapchat and TikTok awareness, TikTok Search, Google Search).</span></div></div></div>';
+    '<tbody>'+body+'</tbody><tfoot><tr><td>Dashboard'+(ok?'':' — does NOT match the dashboard\'s unfiltered total: '+
+      n0(cards.i)+' / '+n0(cards.o))+'</td><td>'+n0(cards.i)+'</td><td>'+n0(cards.o)+'</td><td></td><td>'+tail+
+      '</td></tr></tfoot></table></div>'+
+    '<div class="legend"><span>'+(DATA.meta.webRevenueFromGa4?'The Revenue card uses this Adjust revenue on the app '+
+      'rows and GA4 revenue on the four web rows (Snapchat and TikTok awareness, TikTok Search, Google Search).':
+      'The Revenue card uses this Adjust revenue on every row; GA4 web revenue is shown, not added.')+
+      '</span></div></div></div>';
 }
 function vMethod(){
   var bn=BRANDS[BRAND];
@@ -1610,12 +1768,14 @@ function vMethod(){
     '<div class="note">'+bn+'</div></div><div class="pb">'+
     step('1','Spend, impressions, clicks, views, platform installs and purchases',
       'Read from <b>Raw data</b> — one row per campaign per day, straight from each platform\'s export — '+
-      'with two exceptions the pacing tab also makes: Apple from <b>APPLE1</b> (row 22), and InMobi from '+
-      '<b>Raw manual</b> from 1 Sep plus the Raw data backup for July and August (row 24). Every row is '+
-      'counted once per occurrence, exactly as SUMIFS counts it.',
+      'with two exceptions the pacing tab also makes: Apple from <b>APPLE1</b> (row 22), and InMobi, typed in by '+
+      'hand, from <b>Raw manual</b> from 3 Aug plus the Raw data backup for 2 Jul – 2 Aug (row 24). Bidease and '+
+      'InMotion (rows 23 and 25) read Raw data like every other platform; their copies in Raw manual are not read. '+
+      'Every row is counted once per occurrence, exactly as SUMIFS counts it.',
       'Now showing '+usd(t.spend)+' across '+rowsRaw().length+' rows.')+
     step('2','Which line a campaign lands on',
-      'Raw data column <b>M</b> holds the objective, generated from one token table (OBJECTIVE_TOKENS in Code.gs). '+
+      'Raw data column <b>P</b> holds the objective: one ARRAYFORMULA in P2, generated from one token table '+
+      '(OBJECTIVE_TOKENS in Code.gs). P sits outside the imported columns A:O, so an imported Raw data keeps working. '+
       'Every campaign gets exactly one objective, so a name that matches two wildcards is no longer counted twice, '+
       'and nothing falls between the lines. The pacing formulas read the same column.',
       lines().filter(function(l){return l.media&&l.spend;}).length+' lines with spend on screen.')+
@@ -1624,11 +1784,14 @@ function vMethod(){
       '"Amount spent (USD)". Left alone it would overstate X by '+DATA.meta.fx+'×.',
       'X is converted before anything else is calculated, as in E9 and E20.')+
     step('4','App installs, bookings and revenue',
-      'Read from <b>Adjust Raw</b> — the same tab the pacing formulas read — by the app column (Six Flags / '+
-      'Aquarabia), the channel and the objective. Organic is never counted; channels with no row of their own go '+
-      'to row 26 (Other), so no paid install disappears. Dates stored as text or day/month-swapped and rows '+
-      'repeated by overlapping imports are corrected as the tab is read — the same corrections '+
-      '<b>Clean Adjust Raw</b> writes into the tab, so the pacing tabs match once it has run.',
+      'Read from <b>Adjust Raw</b> by the app column (Six Flags / Aquarabia), the channel and the objective. '+
+      'Organic is never counted; channels with no row of their own go to row 26 (Other), so no paid install '+
+      'disappears. Adjust Raw itself is never changed (it can stay an import). The script writes a corrected copy, '+
+      '<b>Adjust Clean</b>, and that is the tab the pacing formulas read: dates stored as text or day/month-swapped '+
+      'are put on their real day, rows repeated by overlapping imports are kept once, and exports pasted a second '+
+      'time under the other app (cross-app copies) are removed. Adjust Clean is rebuilt every hour, by <b>Clean '+
+      'Adjust Raw</b>, by <b>Fix this workbook</b> and whenever this dashboard finds Adjust Raw changed; the dashboard '+
+      'applies the same corrections as it reads, so the two agree.',
       n0(a.adjInst)+' installs · '+n0(a.bookings)+' bookings · '+n0(a.adjRev)+' SAR.')+
     step('5','Website purchases',
       'Read from the <b>GA4</b> tab: sessions whose default channel group is Paid Search or Paid Social, split '+
@@ -1636,13 +1799,15 @@ function vMethod(){
       n0(a.ga4Tx)+' transactions · '+n0(a.ga4Rev)+' SAR web revenue.')+
     step('6','Totals',
       'Every total on this dashboard is the sum of the lines, the way row 28 sums the pacing rows — spend, '+
-      'installs, bookings, GA4 purchases and revenue all include the awareness rows and row 26.',
+      'installs, bookings, GA4 purchases and revenue all include the awareness rows and row 26. CPI and CPA are the '+
+      'one exception: they divide the spend of the lines that buy installs and bookings by those lines\' Adjust '+
+      'results, so the awareness rows\' reach budgets do not inflate them (the cards show the blended figure too).',
       'Revenue (column X) '+sar(a.revenue)+' · ROAS '+(t.spend?n2(a.revenue/(t.spend*DATA.meta.fx))+'×':'—')+'.')+
   '</div></div>'+
   '</div></div>'+
   '<div class="grid g2">'+
   '<div class="panel"><div class="ph"><h3>Which Adjust rows each line counts</h3>'+
-    '<div class="note">the K / L / X columns</div></div>'+
+    '<div class="note">the K / L / X columns · read from Adjust Clean</div></div>'+
     '<div class="tw"><table><thead><tr><th>Adjust channel</th><th style="text-align:left">Lands on</th></tr></thead><tbody>'+
     [['Meta · Apple · Bidease · InMobi · InMotion','their own row, every objective'],
      ['Google','YouTube / Awareness → row 10 · Search → row 16 · anything else → row 21'],
@@ -1670,7 +1835,7 @@ function vMethod(){
   '<div class="grid"><div class="panel"><div class="ph"><h3>Every line, campaign by campaign '+brandTag()+'</h3>'+
     '<div class="note">open a line to see exactly which campaigns feed it</div></div>'+
     '<div class="pb">'+lineExplainer()+'</div></div></div>'+
-  '<div class="grid"><div class="panel"><div class="ph"><h3>What a date filter can and cannot do</h3></div>'+
+  '<div class="grid"><div class="panel"><div class="ph"><h3>Everything follows your dates</h3></div>'+
     '<div class="pb" style="font-size:12.5px;color:var(--ink-2)">'+
     '<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">'+
     '<div><div style="font-weight:600;color:var(--good);margin-bottom:6px">Follows your dates</div>'+
@@ -1678,8 +1843,20 @@ function vMethod(){
       'all of it lives on <b>Raw data</b>, which has a Day column.</div>'+
     '<div><div style="font-weight:600;color:var(--good);margin-bottom:6px">Follows your dates too</div>'+
       'Adjust installs, bookings and revenue · GA4 transactions and revenue. Both feeds carry a Day column, '+
-      'so every conversion figure is sliced to the same window as the spend beside it. The full window equals '+
-      'the pacing tab\'s B2:C2.</div></div></div></div></div>';
+      'so every conversion figure is sliced to the same window as the spend beside it.</div></div>'+
+    '<div style="margin-top:12px">'+windowNote()+'</div></div></div></div>';
+}
+/* What "All", "Tab period" and 7d / 14d cover, in dates — worked out from the payload, so it
+   stays true whatever C2 holds. */
+function windowNote(){
+  var cov=DATA.meta.sourceCoverage||{},lastData='',r=tabPeriod();
+  ['media','adjust','ga4'].forEach(function(k){(cov[k]||[]).forEach(function(x){if(x.last>lastData)lastData=x.last;});});
+  return '<b>All</b> runs from B2 ('+DATA.meta.start+') to '+(lastData&&DATA.meta.end>lastData?
+      'C2 ('+DATA.meta.end+'), later than the latest data ('+lastData+')':'the latest day with data ('+DATA.meta.end+')')+'. '+
+    (r?'<b>Tab period</b> is exactly the pacing tabs\' B2:C2 ('+r.start+' → '+r.end+'). ':
+      'The pacing tabs count the same days (B2:C2). ')+
+    '<b>7d</b> and <b>14d</b> end on '+lastAllDay()+', the last day both media and Adjust have reached for this '+
+    'selection, so a cost per install never divides spend by installs that have not arrived yet.';
 }
 /* Plain-language version of the rule each line matches on — the words of OBJECTIVE_TOKENS. */
 var LINE_RULE={
@@ -1695,9 +1872,9 @@ var LINE_RULE={
   'Google|Conversion':'Every other Google campaign (the app campaigns) — from 2 Jul',
   'Meta|Conversion':'Every Meta campaign — from 2 Jul (AAQC from 1 Jul)',
   'Apple|Conversion':'Every Apple Search Ads campaign, from APPLE1 — from 2 Jul',
-  'InMobi|Conversion':'InMobi DSP — entered by hand: Raw manual from 1 Sep, the Raw data backup for 2 Jul – 31 Aug',
-  'Bidease|Conversion':'Bidease rows in Raw manual — from 2 Jul',
-  'InMotion|Conversion':'InMotion rows in Raw manual — from 2 Jul',
+  'InMobi|Conversion':'InMobi DSP — entered by hand: Raw manual from 3 Aug, the Raw data backup for 2 Jul – 2 Aug',
+  'Bidease|Conversion':'Bidease rows in Raw data — from 2 Jul (the copies in Raw manual are not read)',
+  'InMotion|Conversion':'InMotion rows in Raw data — from 2 Jul',
   'Other|Other':'No media. Adjust channels with no row of their own, and paid GA4 sources no other row reads'
 };
 
@@ -1837,7 +2014,8 @@ function lineTable(list,sortable){
         : '<td><span class="tag">'+(o.plat==='Other'?'Adjust / GA4 only':o.obj)+'</span></td>';
     }
     if(!isTot&&!o.media&&c.src==='raw') return '<td class="mute">—</td>';
-    var flag=!isTot&&c.adj&&o.noFeed?' <span class="tag frz" title="'+NOFEED_TIP+'">no feed</span>':'';
+    var flag=!isTot&&c.adj&&o.noFeed?' <span class="tag frz" title="'+NOFEED_TIP+'">no feed</span>':
+      !isTot&&c.k==='adjInst'&&o.feedDrop?' <span class="tag frz" title="'+DROP_TIP+'">feed dropped?</span>':'';
     if(c.roas){
       var r=o[c.k];
       if(r==null) return '<td>—</td>';
@@ -1943,8 +2121,10 @@ function campTable(cs){
       'passes its name to Adjust — the installs and bookings it earned sit on the '+
       'unattributed row for this line. Apple Search Ads reports every campaign as '+
       '&quot;unknown&quot;.">not named by Adjust</span>':''));
-    return '<tr'+(c.synthetic?' class="syn"':'')+'><td title="'+esc(c.name)+'">'+esc(shortName(c.name))+
-      (BRAND==='BOTH'&&!c.synthetic?' <span class="tag">'+c.brand+'</span>':'')+flag+'</td>'+
+    /* nameless rows ("unknown — Apple · not tied to a campaign") are short and only their head says
+       what they are, so they are never cut; in Both mode every row says its portal */
+    return '<tr'+(c.synthetic?' class="syn"':'')+'><td title="'+esc(c.name)+'">'+esc(c.synthetic?c.name:shortName(c.name))+
+      (BRAND==='BOTH'?' <span class="tag">'+c.brand+'</span>':'')+flag+'</td>'+
       '<td><span class="pdot" style="background:'+(PLAT_COLOR[c.plat]||'#888')+'"></span>'+c.plat+'</td>'+
       '<td><span class="tag">'+c.obj+'</span></td><td>'+(c.nDays||'—')+'</td><td>'+usd(c.spend)+'</td>'+
       '<td>'+n0(c.impr)+'</td><td>'+n0(c.clicks)+'</td><td>'+pct(c.ctr)+'</td>'+
@@ -2013,6 +2193,7 @@ function platRank(list,key,fmt){
   return '<ol class="rank">'+list.map(function(e,i){
     return '<li><span class="rk">'+(i+1)+'</span><span class="rn">'+
       '<span class="pdot" style="background:'+(PLAT_COLOR[e.plat]||'#888')+'"></span>'+e.plat+
+      (feedDropped('',e.plat)?' <span class="tag frz" title="'+DROP_TIP+'">Adjust feed dropped?</span>':'')+
       '<em>'+usd(e.spend)+' · '+n0(e.adjInst)+' installs · '+n0(e.bookings)+' bookings</em></span>'+
       '<span class="rv">'+fmt(e[key])+'</span></li>';}).join('')+'</ol>';
 }
@@ -2020,10 +2201,13 @@ function claimPanel(cv){
   if(!cv.length)return '<div class="empty">No install data</div>';
   var mx=Math.max.apply(null,cv.map(function(x){return Math.max(x.claimed,x.verified);}))||1;
   return '<div class="cv">'+cv.map(function(x){
-    var cls=x.ratio==null?'mute':x.ratio>=1.4?'crit':x.ratio>=1.15?'warn':'good';
+    // far below 1 is a broken platform count (Bidease 0.04×), not a healthy one
+    var cls=x.ratio==null?'mute':x.ratio>=1.4?'crit':x.ratio>=1.15||x.ratio<0.7?'warn':'good';
     return '<div class="cvr"><div class="h"><span class="nm">'+
-      '<span class="pdot" style="background:'+(PLAT_COLOR[x.plat]||'#888')+'"></span>'+x.plat+'</span>'+
-      '<span>'+(x.ratio!=null?'<span class="pill '+cls+'">'+x.ratio.toFixed(2)+'× claimed</span>':
+      '<span class="pdot" style="background:'+(PLAT_COLOR[x.plat]||'#888')+'"></span>'+x.plat+
+      (feedDropped('',x.plat)?' <span class="tag frz" title="'+DROP_TIP+'">Adjust feed dropped?</span>':'')+'</span>'+
+      '<span>'+(x.ratio!=null?'<span class="pill '+cls+'">'+x.ratio.toFixed(2)+'× claimed'+
+        (x.ratio<0.7?' · platform under-reports':'')+'</span>':
         '<span class="pill mute">'+(noFeed('',x.plat)?'no Adjust feed':'no Adjust installs')+'</span>')+'</span></div>'+
       '<div class="cvbar"><i class="claim" style="width:'+(x.claimed/mx*100).toFixed(1)+'%"></i>'+
       '<i class="ver" style="width:'+(x.verified/mx*100).toFixed(1)+'%"></i></div>'+
@@ -2044,14 +2228,15 @@ function smallMultiples(s,plats){
       '<span class="delta '+cls+'" style="font-size:11.5px">'+arrow+' '+
         (d==null?'—':(d>=0?'+':'')+d.toFixed(0)+'%')+'</span></div>'+
       '<div class="v">'+usd(tot)+'</div>'+
-      '<div class="m">'+(e&&e.curCpi?'CPI (claimed) '+usd2(e.curCpi):'&nbsp;')+'</div>'+
+      '<div class="m">'+(e&&e.curCpi?'CPI '+usd2(e.curCpi)+' (Adjust)':'&nbsp;')+'</div>'+
       '<canvas data-mini="'+i+'" data-plat="'+p+'"></canvas></div>';
   }).join('')+'</div>';
 }
 function wowTable(w){
   if(!w.length)return '<div class="empty">Not enough days in range</div>';
   return '<table><thead><tr><th>Platform</th><th>Spend now</th><th>Spend before</th><th>Δ spend</th>'+
-    '<th>Installs now</th><th>Installs before</th><th>CPI now</th><th>CPI before</th><th>Δ CPI</th></tr></thead><tbody>'+
+    '<th>Installs now<sup class="src adj">A</sup></th><th>Installs before<sup class="src adj">A</sup></th>'+
+    '<th>CPI now<sup class="src adj">A</sup></th><th>CPI before<sup class="src adj">A</sup></th><th>Δ CPI</th></tr></thead><tbody>'+
     w.map(function(e){
       function d(v,invert){
         if(v==null)return '<span class="delta flat">—</span>';

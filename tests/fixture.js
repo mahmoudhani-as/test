@@ -248,8 +248,8 @@ function ga4() {
 /* ---- Raw data, computed the way RAW_FORMULA computes it ---- */
 var OBJ_TOKENS = {
   Snapchat: { Awareness: ['snapchat_awr', '_awrn_', 'takeover', 'take over', 'take-over', 'first story', 'first_story', 'first-story'] },
-  TikTok: { Awareness: ['tiktok_awr', '_awrn_'], Search: ['_tt_search', '_conv_sal_'] },
-  X: { Awareness: ['x_awr'] },
+  TikTok: { Awareness: ['tiktok_awr', '_awrn_'], Search: ['_tt_search', '_conv_sal_', '_search_cu', '_web_bra+gen'] },
+  X: { Awareness: ['x_awr', '_awrn_'] },
   Google: { Awareness: ['_yt_'], Search: ['sem'] }
 };
 function objective(plat, camp) {
@@ -284,6 +284,8 @@ function rawData(tabs, manual, newRule) {
     out.push(['Snapchat', brandOf(r[1], 'Snapchat', newRule), r[1], r[0], 0, v(r[s.Impressions]), v(r[s.Cost]), 0,
       v(r[s.Swipes]), v(r[s['Video views']]), v(r[s['Total app installs']]), v(r[s.Purchases])]);
   });
+  // Google purchases = Conversions on every campaign, as in the pasted live Raw data (RAW_FORMULA now
+  // writes 0 on UAC rows), so the pacing N column's "K > 0 is not a purchase" rule is exercised
   var g = hdr(tabs.Google);
   tabs.Google.slice(1).forEach(function (r) {
     var conv = v(r[g.Conversions]), nm = String(r[1]).toLowerCase();

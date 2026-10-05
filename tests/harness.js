@@ -8,7 +8,9 @@
  *      Apps Script spreadsheet API holding the same cells and the evaluated pacing tabs;
  *   4. loads Dashboard.html in jsdom and compares every line and total it shows with the
  *      pacing tab, for SFQC and AAQC;
- *   5. runs "Clean Adjust Raw" and checks again.
+ *   5. runs "Clean Adjust Raw" and checks again;
+ *   6. runs Qiddiya Setup → Fix this workbook end to end on the workbook as it was before the
+ *      fix (pasted Raw data, then an IMPORTRANGE copy), checks every step, then Undo.
  * The original code (git HEAD~ files passed with --old) goes through the same steps so the
  * before/after difference is measured, not asserted.
  *
@@ -98,15 +100,18 @@ function pv(vals, a1) {
 /* ------------------------------------------------------------------ Apps Script mock */
 function makeSpreadsheet(wb, tz) {
   var sheets = [];
+  // A cell holds a value (v) and, separately, a formula (f, keyed "row,col"). setFormula keeps the
+  // formula text as the value too, since nothing here evaluates it; put() writes a value only,
+  // the way Sheets shows a formula's result.
   function Sheet(name, values) {
-    this.name = name; this.hidden = false; this.fmt = {};
+    this.name = name; this.hidden = false; this.fmt = {}; this.f = {};
     this.v = values.map(function (r) { return r.map(function (x) { return x === undefined || x === null ? '' : x; }); });
   }
   Sheet.prototype.getName = function () { return this.name; };
   Sheet.prototype.setName = function (n) { this.name = n; return this; };
   Sheet.prototype.hideSheet = function () { this.hidden = true; return this; };
   Sheet.prototype.copyTo = function () {
-    var s = new Sheet('Copy of ' + this.name, this.v); sheets.push(s); return s;
+    var s = new Sheet('Copy of ' + this.name, this.v); s.f = JSON.parse(JSON.stringify(this.f)); sheets.push(s); return s;
   };
   Sheet.prototype.showSheet = function () { this.hidden = false; return this; };
   Sheet.prototype.getLastRow = function () {
@@ -121,11 +126,13 @@ function makeSpreadsheet(wb, tz) {
   Sheet.prototype.getMaxColumns = function () { return Math.max(26, this.getLastColumn()); };
   Sheet.prototype.insertRowsAfter = function () { return this; };
   Sheet.prototype.insertColumnsAfter = function () { return this; };
+  Sheet.prototype.deleteRows = function () { return this; };
+  Sheet.prototype.deleteColumns = function () { return this; };
   Sheet.prototype.setFrozenRows = function () { return this; };
   Sheet.prototype.setTabColor = function () { return this; };
   Sheet.prototype.setColumnWidth = function () { return this; };
   Sheet.prototype.setConditionalFormatRules = function () { return this; };
-  Sheet.prototype.clear = function () { this.v = []; return this; };
+  Sheet.prototype.clear = function () { this.v = []; this.f = {}; return this; };
   Sheet.prototype.clearContents = Sheet.prototype.clear;
   Sheet.prototype.getDataRange = function () { return new Range(this, 1, 1, Math.max(1, this.getLastRow()), Math.max(1, this.getLastColumn())); };
   Sheet.prototype.getRange = function (a, b, c, d) {
@@ -158,23 +165,28 @@ function makeSpreadsheet(wb, tz) {
       });
     });
   };
-  Range.prototype.getFormulas = function () { return this.getValues().map(function (row) { return row.map(function () { return ''; }); }); };
-  Range.prototype.getFormula = function () { return ''; };
+  Range.prototype.getFormulas = function () {
+    var out = []; for (var i = 0; i < this.nr; i++) { var row = []; for (var j = 0; j < this.nc; j++) row.push(this.sh.f[(this.r + i) + ',' + (this.c + j)] || ''); out.push(row); }
+    return out;
+  };
+  Range.prototype.getFormula = function () { return this.sh.f[this.r + ',' + this.c] || ''; };
   Range.prototype.setValues = function (vals) {
     var sh = this.sh;
     this.each(function (r, c, i, j) {
       var x = vals[i][j];
+      delete sh.f[r + ',' + c];
       if (typeof x === 'string' && sh.fmt[c] !== '@') {
         if (/^\d{4}-\d{2}-\d{2}$/.test(x)) x = fx.D(x);                      // Sheets parses ISO dates
         else if (/^-?\d+(\.\d+)?$/.test(x)) x = Number(x);
+        else if (x.charAt(0) === '=') sh.f[r + ',' + c] = x;                  // and stores "=…" as a formula
       }
       sh.put(r, c, x);
     });
     return this;
   };
-  Range.prototype.setValue = function (x) { this.sh.put(this.r, this.c, x); return this; };
-  Range.prototype.setFormula = function (f) { this.sh.put(this.r, this.c, f); return this; };
-  Range.prototype.clearContent = function () { var sh = this.sh; this.each(function (r, c) { if (sh.v[r - 1]) sh.put(r, c, ''); }); return this; };
+  Range.prototype.setValue = function (x) { delete this.sh.f[this.r + ',' + this.c]; this.sh.put(this.r, this.c, x); return this; };
+  Range.prototype.setFormula = function (f) { this.sh.f[this.r + ',' + this.c] = f; this.sh.put(this.r, this.c, f); return this; };
+  Range.prototype.clearContent = function () { var sh = this.sh; this.each(function (r, c) { delete sh.f[r + ',' + c]; if (sh.v[r - 1]) sh.put(r, c, ''); }); return this; };
   Range.prototype.setNumberFormat = function (f) { for (var j = 0; j < this.nc; j++) this.sh.fmt[this.c + j] = f; return this; };
   ['setFontWeight', 'setFontSize', 'setBackground', 'setFontColor', 'setHorizontalAlignment'].forEach(function (k) {
     Range.prototype[k] = function () { return this; };
@@ -197,9 +209,10 @@ function makeSpreadsheet(wb, tz) {
 function formatDate(date, tz, fmt) {
   var p = {};
   new Intl.DateTimeFormat('en-CA', { timeZone: tz, year: 'numeric', month: '2-digit', day: '2-digit',
-    hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).formatToParts(date)
+    hour: '2-digit', minute: '2-digit', second: '2-digit', hourCycle: 'h23' }).formatToParts(date)
     .forEach(function (x) { p[x.type] = x.value; });
-  return fmt.replace('yyyy', p.year).replace('MM', p.month).replace('dd', p.day).replace('HH', p.hour).replace('mm', p.minute);
+  return fmt.replace('yyyy', p.year).replace('MM', p.month).replace('dd', p.day).replace('HH', p.hour)
+    .replace('mm', p.minute).replace('ss', p.second);
 }
 function loadServer(files, ss) {
   var logs = [], triggers = [], store = {};
@@ -285,7 +298,8 @@ var LINES = [[7, 'Snapchat|Awareness'], [8, 'TikTok|Awareness'], [9, 'X|Awarenes
   [15, 'TikTok|Search'], [16, 'Google|Search'], [17, 'Snapchat|Conversion'], [18, 'TikTok|Conversion'],
   [19, 'Meta|Conversion'], [20, 'X|Conversion'], [21, 'Google|Conversion'], [22, 'Apple|Conversion'],
   [23, 'Bidease|Conversion'], [24, 'InMobi|Conversion'], [25, 'InMotion|Conversion'], [26, 'Other|Other']];
-function close(a, b) { return Math.abs(a - b) <= Math.max(0.02, Math.abs(b) * 0.0005); }
+// counts and money to the cent, like validateDashboard (float noise is ~1e-9)
+function close(a, b) { return Math.abs(a - b) <= 0.01; }
 
 function compareClient(w, vals, label) {
   var diffs = [];
@@ -354,6 +368,143 @@ function kpis(w, brand) {
     out[k.querySelector('.k').textContent.trim()] = k.querySelector('.v').textContent.trim();
   });
   return out;
+}
+
+/* ------------------------------------------------------------------ Fix this workbook */
+/* The repair the user runs once on the live file, end to end on the synthetic workbook as it
+   was before any fix: no Objective column, numbers stored as text in Raw manual, the original
+   doc formulas on the pacing tabs. Then a re-run, the evaluated tabs against the dashboard,
+   Quick check, Undo — and the same repair on a copy whose sources are IMPORTRANGE mirrors. */
+function formulaGrid(sh) {
+  var out = {};
+  Object.keys(sh.f).sort().forEach(function (k) { out[k] = sh.f[k]; });
+  return out;
+}
+/* Reads the generated objective ARRAYFORMULA the way Sheets would, without Code.gs. */
+function objectiveFromFormula(f) {
+  var tests = [], re = /IF\(\(vplat="([^"]+)"\)\*REGEXMATCH\(vcamp,"([^"]+)"\),"([^"]+)",/g, m;
+  while ((m = re.exec(f))) tests.push([m[1].toLowerCase(), new RegExp(m[2]), m[3]]);
+  return function (plat, camp) {
+    var p = String(plat).trim().toLowerCase(), c = String(camp).toLowerCase();
+    for (var i = 0; i < tests.length; i++) if (tests[i][0] === p && tests[i][1].test(c)) return tests[i][2];
+    return 'Conversion';
+  };
+}
+function fixStage(files) {
+  console.log('\n==================== Qiddiya Setup → Fix this workbook (synthetic, before any fix) ====================');
+  var fails = [];
+  function check(ok, what) { console.log('   ' + (ok ? 'ok  ' : 'FAIL') + ' ' + what); if (!ok) fails.push(what); }
+  var ss = makeSpreadsheet(fx.workbook(false), 'UTC');
+  var ctx = loadServer(files.gs, ss);
+  ctx.writeFormulas_(ss, ctx.PACING_ALL);                    // the tabs as they were: the doc's formulas
+  var before = {};
+  PACING_TABS.forEach(function (t) { before[t] = JSON.stringify(formulaGrid(ss.getSheetByName(t))); });
+  var adjBefore = JSON.stringify(ss.getSheetByName('Adjust Raw').v);
+  ctx.fixThisWorkbook();
+
+  var raw = ss.getSheetByName('Raw data'), col = ctx.CFG.OBJECTIVE_COL.charCodeAt(0) - 64;
+  var f2 = raw.getRange(ctx.CFG.OBJECTIVE_COL + '2').getFormula();
+  check(raw.cell(1, col) === 'Objective' && f2 === ctx.objectiveColumnFormula_(),
+    'Raw data ' + ctx.CFG.OBJECTIVE_COL + '1 = Objective and ' + ctx.CFG.OBJECTIVE_COL + '2 holds the objective ARRAYFORMULA');
+  var objOf = objectiveFromFormula(f2), differ = 0;
+  for (var r = 2; r <= raw.getLastRow(); r++) {
+    if (raw.cell(r, 1) === '') continue;
+    var o = objOf(raw.cell(r, 1), raw.cell(r, 3));
+    if (o !== ctx._objective(String(raw.cell(r, 1)), String(raw.cell(r, 3)))) differ++;
+    raw.put(r, col, o);                                       // what Sheets shows once the formula runs
+  }
+  check(differ === 0, 'the objective formula, read independently, equals Code.gs _objective() on every row (' + differ + ' differ)');
+  var textNums = 0;
+  ss.getSheetByName('Raw manual').v.slice(1).forEach(function (row) {
+    row.slice(4, 12).forEach(function (x) { if (typeof x === 'string' && /^[\d,.\s$-]+$/.test(x) && /\d/.test(x)) textNums++; });
+  });
+  check(textNums === 0, 'Raw manual E:L holds no numbers stored as text (' + textNums + ')');
+  var sf = ss.getSheetByName(PACING_TABS[0]), aa = ss.getSheetByName(PACING_TABS[1]);
+  check(sf.getRange('C2').getFormula() === '=TODAY()-1' && aa.getRange('B2').getFormula() === "='SFQC Pacing_Daily'!B2" &&
+    aa.getRange('C2').getFormula() === "='SFQC Pacing_Daily'!C2", 'SFQC C2 = TODAY()-1 and AAQC B2:C2 follow SFQC');
+  var clean = ss.getSheetByName(ctx.CFG.ADJUST_CLEAN);
+  check(!!clean && clean.cell(1, 1) === 'day' && clean.getLastRow() > 100, '"Adjust Clean" built (' + (clean ? clean.getLastRow() - 1 : 0) + ' rows)');
+  check(JSON.stringify(ss.getSheetByName('Adjust Raw').v) === adjBefore, 'Adjust Raw not modified');
+  check(ctx.ScriptApp.getProjectTriggers().length === 1, 'hourly refreshAdjustClean trigger installed');
+  var spec = ctx.buildPacingSpec_(), wrong = 0;
+  PACING_TABS.forEach(function (t) {
+    var sh = ss.getSheetByName(t);
+    Object.keys(spec[t]).forEach(function (a1) {
+      var want = spec[t][a1], rg = sh.getRange(a1);
+      var got = want === '' ? rg.getValue() + rg.getFormula() : want.charAt(0) === '=' ? rg.getFormula() : rg.getValue();
+      if (got !== want) wrong++;
+    });
+  });
+  check(wrong === 0, 'both pacing tabs hold the generated formulas, totals, checks and labels (' + wrong + ' cells differ)');
+  var bks = ss.sheets.filter(function (x) { return / Pacing_Daily BACKUP /.test(x.name); });
+  check(bks.length === 2 && bks.every(function (x) { return x.hidden; }), 'two hidden pacing backups');
+
+  // the user types a fixed period end; Sheets evaluates AAQC's links. A second run keeps both.
+  var till = fx.D(fx.WINDOW.till), from = sf.cell(2, 2);
+  sf.getRange('C2').setValue(till);
+  aa.put(2, 2, from); aa.put(2, 3, till);
+  ctx.fixThisWorkbook();
+  check(sf.getRange('C2').getFormula() === '' && sf.cell(2, 3) === till, 'a second run keeps the period typed into SFQC C2');
+  check(ss.sheets.filter(function (x) { return / Pacing_Daily BACKUP /.test(x.name); }).length === 2,
+    'a second run adds no pacing backup (Undo still goes back to before the first run)');
+  check(ss.sheets.filter(function (x) { return /^Raw manual BACKUP /.test(x.name); }).length === 1,
+    'a second run makes no second Raw manual backup');
+  check(raw.getRange(ctx.CFG.OBJECTIVE_COL + '2').getFormula() === ctx.objectiveColumnFormula_(), 'a second run leaves the objective formula');
+  aa.put(2, 2, from); aa.put(2, 3, till);
+
+  // the evaluated tabs against the server and the page
+  var wbNow = sheetToWb(ss);                                  // the pacing backups are not inputs
+  Object.keys(wbNow).forEach(function (n) { if (/ Pacing_Daily BACKUP /.test(n)) delete wbNow[n]; });
+  var vals = evaluatePacing(wbNow, ctx.buildPacingSpec_());
+  putPacing(ss, vals);
+  ctx.validateDashboard();
+  var vsh = ss.getSheetByName('Dashboard Validation');
+  var badRows = vsh.v.filter(function (x) { return x[5] === 'CHECK' && x[0] !== 'FIX' && x[0] !== 'RESULT'; });
+  console.log('   validateDashboard: ' + vsh.v[2].slice(1, 5).join(' · '));
+  badRows.slice(0, 5).forEach(function (x) { console.log('      CHECK ' + x.slice(0, 5).join(' | ')); });
+  check(badRows.length === 0, 'validateDashboard: every figure matches the evaluated tabs');
+  var w = loadClient(files.html, ctx.getPacingDashboardData());
+  var d = compareClient(w, vals, 'fixed');
+  d.slice(0, 5).forEach(function (x) { console.log('      ' + x); });
+  check(d.length === 0, 'Dashboard page = pacing tabs, line by line and in total (' + d.length + ' differ)');
+  w.close();
+  var qc = '';
+  try { ctx.verifyOnly(); } catch (e) { qc = e.message; }
+  // the fixture's deliberate no-portal campaigns are a genuine coverage problem; nothing else may fail
+  var qcOther = qc.split('\n').filter(function (l) { return /^(Raw data|SFQC Pacing_Daily|AAQC Pacing_Daily)/.test(l); });
+  check(qcOther.length === 0, 'Quick check finds nothing wrong with Raw data or the pacing tabs' + (qcOther.length ? ': ' + qcOther.join(' / ') : ''));
+
+  // Undo puts the pre-fix formulas back and switches the hourly refresh off
+  ctx.rollback();
+  var restored = PACING_TABS.every(function (t) { return JSON.stringify(formulaGrid(ss.getSheetByName(t))) === before[t]; });
+  check(restored, 'Undo "Fix this workbook" restores both pacing tabs to the formulas they had before the first run');
+  check(ctx.ScriptApp.getProjectTriggers().length === 0, 'Undo removes the hourly trigger');
+
+  /* ---- V4: Raw data, Raw manual, Adjust Raw and APPLE1 are IMPORTRANGE mirrors ---- */
+  console.log('   -- the same repair when the sources are IMPORTRANGE mirrors --');
+  var ss2 = makeSpreadsheet(fx.workbook(false), 'UTC');
+  var MIRROR = { 'Raw data': 15, 'Raw manual': 15, 'Adjust Raw': 11, 'APPLE1': 15 }, writes = [];
+  Object.keys(MIRROR).forEach(function (name) {
+    var sh = ss2.getSheetByName(name), width = MIRROR[name], put = sh.put.bind(sh);
+    sh.f['1,1'] = '=IMPORTRANGE("1srcKey","' + name + '!A:O")';
+    sh.put = function (row, c, x) { if (c <= width) writes.push(name + '!' + colName(c - 1) + row); return put(row, c, x); };
+  });
+  var ctx2 = loadServer(files.gs, ss2);
+  ctx2.writeFormulas_(ss2, ctx2.PACING_ALL);
+  ctx2.fixThisWorkbook();
+  check(writes.length === 0, 'no write into an imported column (' + writes.slice(0, 5).join(' ') + ')');
+  var raw2 = ss2.getSheetByName('Raw data');
+  check(raw2.cell(1, col) === 'Objective' && raw2.getRange(ctx2.CFG.OBJECTIVE_COL + '2').getFormula() === ctx2.objectiveColumnFormula_(),
+    'objective column added beside the import, in ' + ctx2.CFG.OBJECTIVE_COL);
+  check(!!ss2.getSheetByName(ctx2.CFG.ADJUST_CLEAN), '"Adjust Clean" built from the mirrored Adjust Raw');
+  check(!ss2.sheets.some(function (x) { return /^Raw manual BACKUP /.test(x.name); }),
+    'imported Raw manual left as it is (no conversion, no backup)');
+  var refused = '';
+  try { ctx2.importAdjustCsv([[['day', 'network', 'campaign_network', 'app', 'all_revenue', 'paid_installs', 'installs',
+    'bookingconfirmed_events'], ['2026-09-01', 'Facebook Installs', 'x', 'Six Flags', 1, 1, 1, 1]]]); } catch (e) { refused = e.message; }
+  check(/IMPORTRANGE/.test(refused), 'the CSV importer refuses to write into the mirrored Adjust Raw');
+  console.log('   Fix this workbook: ' + (fails.length ? fails.length + ' check(s) failed' : 'every check passed'));
+  return fails.length;
 }
 
 /* ------------------------------------------------------------------ run */
@@ -509,6 +660,8 @@ function main() {
   cur.ctx.CFG.WEB_REVENUE_FROM_GA4 = !ga4Default;
   failures += recheck('web revenue switched', cur.ctx, cur.ss, files);
   cur.ctx.CFG.WEB_REVENUE_FROM_GA4 = ga4Default;
+
+  failures += fixStage(files);
 
   console.log('\n' + (failures ? 'FAILED — ' + failures + ' problem(s)' : 'PASSED — the dashboard equals the pacing tabs, line by line and in total'));
   process.exit(failures ? 1 : 0);

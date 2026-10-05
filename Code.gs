@@ -6,17 +6,18 @@
  * the same date floors. Every rule is written down once, in this file:
  *
  *   PACING_LINES      which pacing row a platform × objective lands on, and its date floor
- *   OBJECTIVE_TOKENS  the campaign-name taxonomy (Raw data column M is generated from it)
+ *   OBJECTIVE_TOKENS  the campaign-name taxonomy (Raw data's objective column P is generated from it)
  *   _adjustLine()     which pacing row an Adjust channel × objective lands on
  *   _ga4Bucket()      which pacing row a paid GA4 session lands on
  *
  * Untitled.gs generates the pacing formulas from the same definitions, so the tab and the
  * dashboard cannot drift apart again.
  *
- * Data problems (Adjust dates Sheets mis-parsed, overlapping Adjust imports, numbers
- * stored as text, campaigns with no portal) are fixed IN THE SHEET by "Clean Adjust Raw"
- * and the setup script — never patched silently inside the dashboard, because the pacing
- * tab would still be wrong. Until they are fixed the dashboard lists them in a banner.
+ * Data problems are listed in the dashboard banner. Adjust Raw is the one source the script
+ * corrects (dates Sheets mis-parsed, overlapping or mislabelled imports, numbers stored as
+ * text, channel labels): "Adjust Clean" holds the corrected copy the pacing formulas read, and
+ * the dashboard reads Adjust Raw through the same corrections in memory, so both agree. Every
+ * other problem (campaigns with no portal, text numbers in Raw data) is fixed in the source.
  *
  * Run validateDashboard() after any source or formula change; it compares the payload
  * with both pacing tabs cell by cell, totals row included.
@@ -63,6 +64,12 @@ var CFG = {
   GA4_PROPERTY: { SFQC: 'six flags', AAQC: 'aquarabia' },                         // GA4!B "Six Flags*"
   // GA4: a session is paid when the default channel group is one of these two.
   PAID_GROUPS: ['paid search', 'paid social'],
+  // Hidden "<tab> BACKUP <stamp>" copies kept per tab; older ones are deleted (each is a full
+  // copy of the tab, and the workbook is capped at 10M cells).
+  BACKUPS_KEPT: 3,
+  // Adjust "Untrusted Devices" (Adjust's fraud filter: anonymous IPs, anomalies) is not a paid
+  // network. true = counted as Organic, so no pacing row or dashboard line counts it.
+  ADJUST_EXCLUDE_UNTRUSTED: true,
   // Revenue (column X) on the four web lines — Snapchat awareness, TikTok awareness,
   // TikTok Search, Google Search. true = GA4 web revenue, which is what the live report's
   // X7, X8, X15 and X16 use. false = Adjust revenue. Change it here and re-run
@@ -104,8 +111,9 @@ PACING_LINES.forEach(function (l) { l.key = l.plat + '|' + l.obj; LINE_BY_KEY[l.
  * One authoritative campaign taxonomy for platform delivery rows. Awareness is tested
  * before Search, and each row lands on exactly one line — so a name such as
  * "SFQC_Snapchat_AWRN_..." (which contains both "snapchat_awr" and "_awrn_") is counted
- * once, not once per matching wildcard as the old SUMIFS sums did. Raw data column M is
- * generated from this table (Untitled.gs), so edit it here and re-run step 3.
+ * once, not once per matching wildcard as the old SUMIFS sums did. Raw data's objective column
+ * (P) is generated from this table (Untitled.gs), so edit it here and re-run Qiddiya Setup →
+ * Fix this workbook (not step 3, which replaces Raw data with the Supermetrics formula).
  */
 var OBJECTIVE_TOKENS = {
   Snapchat: {
@@ -114,9 +122,9 @@ var OBJECTIVE_TOKENS = {
   },
   TikTok: {
     Awareness: ['tiktok_awr', '_awrn_'],
-    Search: ['_tt_search', '_conv_sal_']
+    Search: ['_tt_search', '_conv_sal_', '_search_cu', '_web_bra+gen']
   },
-  X: { Awareness: ['x_awr'] },
+  X: { Awareness: ['x_awr', '_awrn_'] },
   Google: { Awareness: ['_yt_'], Search: ['sem'] }
 };
 
@@ -170,26 +178,35 @@ function showDashboard() {
 /**
  * The spreadsheet, whether we are running from the sheet menu or from a deployed web
  * app. A bound script normally gets it from getActive(); CFG.SHEET_ID is the escape
- * hatch if a deployment ever hands us nothing.
+ * hatch if a deployment ever hands us nothing. The setup script (Untitled.gs) always works
+ * on the bound spreadsheet, so a SHEET_ID naming a different file is refused: otherwise
+ * "Fix this workbook" would repair one file and rebuild Adjust Clean in another. The account
+ * name goes to the log only — these messages can reach a web-app visitor.
  */
 function _ss() {
+  var bound = null;
+  try { bound = SpreadsheetApp.getActive(); } catch (e) { bound = null; }
   if (CFG.SHEET_ID) {
+    if (bound && bound.getId() !== CFG.SHEET_ID) {
+      throw new Error('CFG.SHEET_ID (' + CFG.SHEET_ID + ') is not the spreadsheet this script is bound to. ' +
+        'Clear CFG.SHEET_ID: the setup menu always works on the bound spreadsheet.');
+    }
+    if (bound) return bound;
     try {
       return SpreadsheetApp.openById(CFG.SHEET_ID);
     } catch (e) {
+      Logger.log('CFG.SHEET_ID cannot be opened by ' + who_());
       throw new Error('CFG.SHEET_ID points at a spreadsheet this account cannot open (' +
         CFG.SHEET_ID + '). Either clear CFG.SHEET_ID so the script uses the sheet it is ' +
-        'bound to, or share that spreadsheet with ' + _who() + '.');
+        'bound to, or share that spreadsheet with the account the script runs as (see the log).');
     }
   }
-  var ss = SpreadsheetApp.getActive();
-  if (!ss) {
+  if (!bound) {
     throw new Error('No spreadsheet in scope. Bind this script to the sheet (Extensions → ' +
-      'Apps Script from inside it), or set CFG.SHEET_ID to a sheet ' + _who() + ' can open.');
+      'Apps Script from inside it), or set CFG.SHEET_ID.');
   }
-  return ss;
+  return bound;
 }
-function _who() { return who_(); }
 function who_() {
   try { return Session.getEffectiveUser().getEmail() || 'this account'; }
   catch (e) { return 'this account'; }
@@ -233,7 +250,7 @@ function _importSource_(f) {
 function checkSetup() {
   requireSheetUser_();
   var out = [];
-  out.push('Running as: ' + _who());
+  out.push('Running as: ' + who_());
   out.push('CFG.SHEET_ID: ' + (CFG.SHEET_ID || '(blank — using the bound spreadsheet)'));
   var ss;
   try {
@@ -246,16 +263,16 @@ function checkSetup() {
     try { SpreadsheetApp.getUi().alert(out.join('\n')); } catch (e2) {}
     return out.join('\n');
   }
-  [CFG.RAW, CFG.RAW_MANUAL, CFG.RAW_BACKUP, CFG.APPLE, CFG.ADJUST, CFG.GA4,
+  [CFG.RAW, CFG.RAW_MANUAL, CFG.RAW_BACKUP, CFG.APPLE, CFG.ADJUST, CFG.ADJUST_CLEAN, CFG.GA4,
     CFG.PACING_TABS.SFQC, CFG.PACING_TABS.AAQC].forEach(function (n) {
     var sh = ss.getSheetByName(n);
     out.push((sh ? '  found  ' : '  MISSING ') + n + (sh ? ' · ' + sh.getLastRow() + ' rows' : ''));
   });
   var raw = ss.getSheetByName(CFG.RAW);
   if (raw) {
-    var m1 = String(raw.getRange('M1').getValue()).trim();
-    out.push('  Raw data column M: ' + (m1 === 'Objective' ? 'Objective (current formula)' :
-      'missing — run Qiddiya Setup -> Fix this workbook'));
+    var oc = CFG.OBJECTIVE_COL, m1 = String(raw.getRange(oc + '1').getValue()).trim();
+    out.push('  Raw data column ' + oc + ': ' + (m1 === 'Objective' ? 'Objective' :
+      'no Objective column — run Qiddiya Setup -> Fix this workbook'));
   }
   Logger.log(out.join('\n'));
   try { SpreadsheetApp.getUi().alert(out.join('\n')); } catch (e) {}
@@ -297,13 +314,24 @@ function _valueNum(v) {
   var n = Number(s);
   return isFinite(n) ? n : 0;
 }
+/* Utilities.formatDate is a service call and the same ~200 dates recur on every row of
+   every source tab, so each Date is formatted once per run ('yyyy-MM-dd HH:mm:ss'). */
+var _dayCache = {};
+function _dayTime(v, tz) {
+  var z = tz || CFG.TZ, k = v.getTime() + '|' + z;
+  return _dayCache[k] || (_dayCache[k] = Utilities.formatDate(v, z, 'yyyy-MM-dd HH:mm:ss'));
+}
 function _day(v, tz) {
-  if (v instanceof Date) return Utilities.formatDate(v, tz || CFG.TZ, 'yyyy-MM-dd');
+  if (v instanceof Date) return _dayTime(v, tz).slice(0, 10);
   return String(v || '').slice(0, 10);
 }
 /** A date criterion in SUMIFS only ever matches a real date cell, never text. */
 function _dateCell(v, tz) {
-  return v instanceof Date ? Utilities.formatDate(v, tz || CFG.TZ, 'yyyy-MM-dd') : '';
+  return v instanceof Date ? _dayTime(v, tz).slice(0, 10) : '';
+}
+/** A Date cell that is not midnight: "<="&C2 leaves it out on C2's own day. */
+function _hasTime(v, tz) {
+  return v instanceof Date && _dayTime(v, tz).slice(11) !== '00:00:00';
 }
 function _later(a, b) { return !a ? b : !b ? a : (a > b ? a : b); }
 function _sooner(a, b) { return !a ? b : !b ? a : (a < b ? a : b); }
@@ -381,13 +409,18 @@ function _adjustDay(v, row, reverseDmy, tz) {
  * 9 August rows. The broken September batch is identifiable as a contiguous run of
  * Jan-9, Feb-9 ... Dec-9 followed by the unambiguous text date 13/09. This marks
  * only that import cohort, and can also continue from 30/09 to a swapped 01/10.
+ * Blank cells (empty rows between pastes) do not break a run.
+ * win ({lo, from, hi}, optional — see _adjustSwapWindow_): a short dd/MM paste such as
+ * 01/10 + 02/10, stored as 10 Jan / 10 Feb, has no anchor; a native date outside lo..hi
+ * whose swap lands inside from..hi is that case, and is marked too.
  * Source cells are never rewritten here. */
-function _adjustReversedRows(rows, col, tz) {
+function _adjustReversedRows(rows, col, tz, win) {
   var marked = {};
+  function blank(v) { return v === '' || v === null || v === undefined; }
   function nativeParts(v) {
     if (!(v instanceof Date)) return null;
-    var p = _day(v, tz).split('-').map(Number);
-    return { y: p[0], m: p[1], d: p[2], iso: _day(v, tz) };
+    var iso = _day(v, tz), p = iso.split('-').map(Number);
+    return { y: p[0], m: p[1], d: p[2], iso: iso };
   }
   function swapped(v) {
     var p = nativeParts(v);
@@ -396,8 +429,7 @@ function _adjustReversedRows(rows, col, tz) {
   }
   function nextDay(iso) {
     var p = iso.split('-').map(Number);
-    var d = new Date(Date.UTC(p[0], p[1] - 1, p[2] + 1));
-    return Utilities.formatDate(d, 'UTC', 'yyyy-MM-dd');
+    return _day(new Date(Date.UTC(p[0], p[1] - 1, p[2] + 1)), 'UTC');
   }
 
   // An unambiguous text day (13–31) anchors the native Date block immediately
@@ -408,6 +440,7 @@ function _adjustReversedRows(rows, col, tz) {
     if (!a || +a[1] <= 12) continue;
     var targetMonth = +a[2], targetYear = +a[3];
     for (var k = i - 1; k >= 1; k--) {
+      if (blank(rows[k][col])) continue;
       var p = nativeParts(rows[k][col]);
       if (!p || p.y !== targetYear || p.d !== targetMonth) break;
       marked[k] = true;
@@ -422,6 +455,7 @@ function _adjustReversedRows(rows, col, tz) {
     if (!first || first.d > 12) { r++; continue; }
     var start = r, months = {}, lastMonth = 0, ordered = true;
     while (r < rows.length) {
+      if (blank(rows[r][col])) { r++; continue; }
       var cur = nativeParts(rows[r][col]);
       if (!cur || cur.y !== first.y || cur.d !== first.d) break;
       months[cur.m] = 1;
@@ -430,7 +464,31 @@ function _adjustReversedRows(rows, col, tz) {
       r++;
     }
     if (ordered && Object.keys(months).length >= 3)
-      for (var q = start; q < r; q++) marked[q] = true;
+      for (var q = start; q < r; q++) if (!blank(rows[q][col])) marked[q] = true;
+  }
+
+  if (win && win.auto) {
+    // lo/from: the earliest day the tab states unambiguously (day of month 13-31, as a real
+    // date or as dd/MM text). A day-12-or-lower date before it whose swap lands inside the
+    // tab's own span is a short dd/MM paste the two rules above cannot see.
+    var lo = '';
+    for (var u = 1; u < rows.length; u++) {
+      var uv = rows[u][col], iso = '';
+      var un = nativeParts(uv);
+      if (un && un.d > 12) iso = un.iso;
+      else if (typeof uv === 'string') {
+        var ut = /^(\d{1,2})\/(\d{1,2})\/(\d{4})$/.exec(uv.trim());
+        if (ut && +ut[1] > 12) iso = ut[3] + '-' + ('0' + ut[2]).slice(-2) + '-' + ('0' + ut[1]).slice(-2);
+      }
+      if (iso && (!lo || iso < lo)) lo = iso;
+    }
+    win = lo ? { lo: lo, from: lo, hi: win.hi } : null;
+  }
+  if (win) {
+    for (var w = 1; w < rows.length; w++) {
+      var np = marked[w] ? null : nativeParts(rows[w][col]), sw = np && swapped(rows[w][col]);
+      if (sw && (np.iso < win.lo || np.iso > win.hi) && sw >= win.from && sw <= win.hi) marked[w] = true;
+    }
   }
 
   // Continue an explicit dd/MM sequence across a month boundary. Example:
@@ -457,6 +515,12 @@ function _adjustReversedRows(rows, col, tz) {
     cursor = '';
   }
   return marked;
+}
+/** The window _adjustReversedRows tests short pastes against: SFQC B2 - 31 days .. today. */
+function _adjustSwapWindow_(ss, tz) {
+  // The window comes from Adjust Raw's own dates (see _adjustReversedRows), never from the
+  // report's B2: moving B2 to a new flight must not re-date older, genuine rows.
+  return { auto: true, hi: Utilities.formatDate(new Date(), tz, 'yyyy-MM-dd') };
 }
 /** Column index (1-based) of a header, or 0. */
 /** Raw data's objective column: CFG.OBJECTIVE_COL (P) when headed "Objective", else M. */
@@ -502,7 +566,7 @@ function _campIndex(name) {
   return _campIx[k];
 }
 
-/** Platform + campaign -> objective. Fallback only: Raw data column M is authoritative. */
+/** Platform + campaign -> objective. Fallback only: Raw data's objective column is authoritative. */
 function _objective(plat, campaign) {
   var c = String(campaign || '').toLowerCase();
   var rules = OBJECTIVE_TOKENS[plat] || {};
@@ -526,6 +590,13 @@ function _canonPlat(v) {
 function _brandCell(v) {
   var b = String(v == null ? '' : v).toUpperCase();
   return b === 'SFQC' || b === 'AAQC' ? b : '';
+}
+/** RAW_FORMULA's portal rule (Untitled.gs): the campaign name decides, SFQC tested first. */
+function _campaignPortal_(plat, camp) {
+  var u = String(camp == null ? '' : camp).toUpperCase();
+  if (/SFQC|SIX[ _-]?FLAGS/.test(u) || (plat === 'Snapchat' && /FIRST STORY/.test(u))) return 'SFQC';
+  if (/AAQC|AQQC|AQC[-_]|AQUARABIA/.test(u)) return 'AAQC';
+  return '';
 }
 function _matchBrand(map, v) {
   var s = String(v == null ? '' : v).toLowerCase();
@@ -604,6 +675,8 @@ var ADJUST_LAYOUT = ['day', 'network', 'campaign_network', 'app', 'all_revenue',
 var ADJUST_EXPECT = { 0: 'day', 1: 'network', 2: 'campaign_network', 3: 'app',
   4: 'all_revenue', 6: 'paid_installs', 7: 'installs', 8: 'bookingconfirmed_events',
   9: 'channel', 10: 'objective' };
+var RAW_EXPECT = { 0: 'A', 1: 'Campaign', 2: 'Campaign name', 3: 'Day', 5: 'Impressions',
+  6: 'Amount spent (USD)' };                                   // Raw data, Raw manual, the backup
 var APPLE_EXPECT = { 0: 'Date', 1: 'App Name', 3: 'Spend', 4: 'Impressions', 5: 'Taps',
   6: 'Installs (Total)' };
 var GA4_EXPECT = { 1: 'GA4 property', 2: 'Date', 3: 'Session campaign name',
@@ -622,6 +695,29 @@ function getPacingDashboardData(opts) {
   function issue(level, text) { issues.push({ level: level, text: text }); }
   function money(v) { return '$' + Math.round(v).toLocaleString('en-US'); }
   function count(n) { return Number(n).toLocaleString('en-US'); }
+  /* A source tab's values. A missing tab, or an import that is broken or still loading
+     (IMPORTRANGE shows #REF! / Loading… in A1 and nothing below), is a banner — the other
+     sources still load. */
+  function sourceValues(name, rowsNote, expect) {
+    var sh = null;
+    try { sh = _sheet(name); } catch (e) {
+      issue('crit', 'Tab "' + name + '" is missing (renamed or deleted) — pacing ' + rowsNote + ' read it ' +
+        'and show #REF!, and this dashboard has nothing for them.');
+      return [[]];
+    }
+    var v = sh.getDataRange().getValues(), a1 = String(v[0] && v[0][0] != null ? v[0][0] : '').trim();
+    if (/^#|^loading/i.test(a1)) {
+      issue('crit', '"' + name + '" shows ' + a1 + ' in A1: its import is broken or still loading, so pacing ' +
+        rowsNote + ' and this dashboard read nothing from it. Open the tab and check the IMPORTRANGE.');
+      return [[]];
+    }
+    _headerProblems(v[0] || [], expect, name).forEach(function (p) {
+      issue('crit', p + ' — pacing ' + rowsNote + ' read "' + name + '" by position.');
+    });
+    return v;
+  }
+  var timedOnTill = 0;              // dated C2 with a time of day: "<="&C2 leaves them out
+  function timed(v, day) { if (day === till && _hasTime(v, tz)) timedOnTill++; }
 
   /* ---- window: SFQC Pacing_Daily B2:C2, the same window Raw data N2:O2 follows ---- */
   var pac = ss.getSheetByName(CFG.PACING);
@@ -677,23 +773,26 @@ function getPacingDashboardData(opts) {
 
   /* ---- Raw data (rows 7-21, 23, 25): A platform, B portal, C campaign, D day, E reach,
           F impressions, G spend, H link clicks, I clicks, J views, K installs, L purchases,
-          M objective ---- */
-  var rv = _sheet(CFG.RAW).getDataRange().getValues();
+          P objective (CFG.OBJECTIVE_COL) ---- */
+  var rv = sourceValues(CFG.RAW, 'rows 7-21, 23 and 25', RAW_EXPECT);
   var rawHdr = rv[0] || [];
   var objIdx = _objectiveIndex_(rawHdr);
   var hasObjective = objIdx >= 0;
-  if (!hasObjective) {
+  if (!hasObjective && rv.length > 1) {
     issue('warn', 'Raw data has no Objective column (' + CFG.OBJECTIVE_COL + '), so this dashboard is splitting campaigns ' +
       'into lines itself while the pacing tab still uses its old wildcard sums. Run Qiddiya Setup → ' +
       'Fix this workbook once; after that both read the same column.');
   }
-  var unmapped = { spend: 0, names: {} }, offLine = {}, rawBadDates = 0;
+  var unmapped = { spend: 0, names: {} }, offLine = {}, rawBadDates = 0, rawInWindow = 0, crossPortal = {};
   for (var i = 1; i < rv.length; i++) {
     var r = rv[i];
     if (r[0] === '' || r[0] === null) continue;
     var day = _dateCell(r[3], tz);
-    if (!day) { rawBadDates++; continue; }
-    if (!inWindow(day)) continue;
+    // rows the dashboard cannot place are still tallied, so the check table's SUM() is the column's
+    var rb0 = _brandCell(r[1]);
+    if (!day) { rawBadDates++; if (rb0) reconRow(rb0, 'raw', '', r[5], r[6], 'nodate'); continue; }
+    if (!inWindow(day)) { if (rb0) reconRow(rb0, 'raw', day, r[5], r[6], 'outside'); continue; }
+    rawInWindow++;
     var plat = _canonPlat(r[0]);
     var camp = String(r[2] == null ? '' : r[2]);
     var brand = _brandCell(r[1]);
@@ -710,6 +809,12 @@ function getPacingDashboardData(opts) {
       reconRow(brand, 'raw', day, r[5], r[6], plat === 'InMobi' ? 'inmobi_copy' : 'apple_copy');
       continue;
     }
+    // column B against the portal the campaign name carries (RAW_FORMULA's rule)
+    var namePortal = _campaignPortal_(plat, camp);
+    if (namePortal && namePortal !== brand && (_cellNum(r[5]) || _cellNum(r[6]))) {
+      var cpk = String(r[0]) + ' · ' + camp + ' (B says ' + brand + ', the name says ' + namePortal + ')';
+      crossPortal[cpk] = (crossPortal[cpk] || 0) + spend;
+    }
     var obj = hasObjective ? String(r[objIdx] == null ? '' : r[objIdx]) : _objective(plat, camp);
     var line = plat ? LINE_BY_KEY[plat + '|' + obj] : null;
     if (!line || line.source) {
@@ -720,12 +825,16 @@ function getPacingDashboardData(opts) {
     }
     var floor = _mediaFloor(line, brand);
     if (floor && day < floor) { reconRow(brand, 'raw', day, r[5], r[6], 'prefloor'); continue; }
+    timed(r[3], day);
     reconRow(brand, 'raw', day, r[5], r[6], 'counted', false, plat === 'X' ? CFG.FX : 1);
-    // X reports nothing in "Clicks (all)" — its pacing rows read link clicks (I9=J9, I20=J20)
+    // X reports nothing in "Clicks (all)" — its pacing rows read link clicks (I9=J9, I20=J20).
+    // Google "Conversions" fill both K and L; on app-install (UAC) rows they are the installs,
+    // so they are not purchases (pacing N of the Google rows leaves out rows with K > 0).
     addRaw(line, brand, camp, day,
       [_cellNum(r[4]), _cellNum(r[5]), spend, _cellNum(r[7]),
        plat === 'X' ? _cellNum(r[7]) : _cellNum(r[8]),
-       _cellNum(r[9]), _cellNum(r[10]), _cellNum(r[11])]);
+       _cellNum(r[9]), _cellNum(r[10]),
+       plat === 'Google' && _cellNum(r[10]) > 0 ? 0 : _cellNum(r[11])]);
   }
   if (unmapped.spend > 0.5) {
     var top = Object.keys(unmapped.names).sort(function (a, b) {
@@ -744,15 +853,19 @@ function getPacingDashboardData(opts) {
   if (rawBadDates) {
     issue('warn', count(rawBadDates) + ' Raw data rows have a Day that is not a date; SUMIFS skips them.');
   }
+  var crossKeys = Object.keys(crossPortal).sort(function (a, b) { return crossPortal[b] - crossPortal[a]; });
+  if (crossKeys.length) {
+    issue('warn', 'Raw data column B files ' + crossKeys.length + ' campaign(s) under the other portal from the one ' +
+      'their name carries, so their spend sits on that portal\'s rows: ' + crossKeys.slice(0, 3).map(function (k) {
+        return k + ' ' + money(crossPortal[k]);
+      }).join('; ') + '. Check which portal pays for them and correct column B in the source.');
+  }
 
   /* ---- Apple Ads (row 22) — APPLE1 by position: A date, B app, D spend, E impressions,
           F taps (clicks and link clicks), G installs. No views, no purchases. ---- */
   var appleLine = LINE_BY_KEY['Apple|Conversion'];
-  var apv = _sheet(CFG.APPLE).getDataRange().getValues();
+  var apv = sourceValues(CFG.APPLE, 'row 22', APPLE_EXPECT);
   var apHdr = apv[0] || [];
-  _headerProblems(apHdr, APPLE_EXPECT, CFG.APPLE).forEach(function (p) {
-    issue('crit', p + ' — pacing row 22 reads APPLE1 by position.');
-  });
   var appleCampCol = _col(apHdr, 'Campaign Name') - 1;
   if (appleCampCol < 0) appleCampCol = 2;
   for (var ai = 1; ai < apv.length; ai++) {
@@ -760,19 +873,21 @@ function getPacingDashboardData(opts) {
     var appleBrand = _matchBrand(CFG.APPLE_APP, ar[1]);
     if (!appleBrand) continue;
     var appleDay = _dateCell(ar[0], tz);
-    if (!inWindow(appleDay)) continue;
+    if (!inWindow(appleDay)) { reconRow(appleBrand, 'apple', appleDay || '', ar[4], ar[3], appleDay ? 'outside' : 'nodate'); continue; }
     if (appleDay < _mediaFloor(appleLine, appleBrand)) {
       reconRow(appleBrand, 'apple', appleDay, ar[4], ar[3], 'prefloor');
       continue;
     }
+    timed(ar[0], appleDay);
     reconRow(appleBrand, 'apple', appleDay, ar[4], ar[3], 'counted');
     var taps = _cellNum(ar[5]);
     addRaw(appleLine, appleBrand, String(ar[appleCampCol] == null ? '' : ar[appleCampCol]), appleDay,
       [0, _cellNum(ar[4]), _cellNum(ar[3]), taps, taps, 0, _cellNum(ar[6]), 0]);
   }
 
-  /* ---- InMobi (row 24): Raw manual from 1 Sep, the Raw data backup for 2 Jul - 31 Aug,
-          rows 2-10000, numbers parsed with VALUE(), exactly as the row's SUMPRODUCTs ---- */
+  /* ---- InMobi (row 24): Raw manual from CFG.INMOBI_MANUAL_FROM, the Raw data backup from
+          2 Jul to CFG.INMOBI_BACKUP_TILL, rows 2-10000, numbers parsed with VALUE(), exactly
+          as the row's SUMPRODUCTs ---- */
   var inmobiLine = LINE_BY_KEY['InMobi|Conversion'];
   function readInMobi(sheetName, lo, hi, src) {
     var sh = ss.getSheetByName(sheetName);
@@ -780,12 +895,18 @@ function getPacingDashboardData(opts) {
       issue('crit', 'Tab "' + sheetName + '" is missing — pacing row 24 (InMobi) reads it.');
       return;
     }
-    var v = sh.getDataRange().getValues();
+    var v = sourceValues(sheetName, 'row 24 (InMobi)', RAW_EXPECT);
     var last = Math.min(v.length, CFG.INMOBI_LAST_ROW);
     for (var mi = 1; mi < last; mi++) {
       var mr = v[mi];
       var mb = _brandCell(mr[1]), md = _dateCell(mr[3], tz);
-      if (!mb || !inWindow(md)) continue;
+      if (!mb) continue;
+      if (!inWindow(md)) {
+        if (src === 'manual' || String(mr[0] == null ? '' : mr[0]).toLowerCase() === 'inmobi') {
+          reconRow(mb, src, md || '', mr[5], mr[6], md ? 'outside' : 'nodate');
+        }
+        continue;
+      }
       if (String(mr[0] == null ? '' : mr[0]).toLowerCase() !== 'inmobi') {
         // Raw manual's other rows (Bidease) are copies of Raw data rows, which rows 23/25 read;
         // the backup's other rows are an old copy of Raw data and are not shown at all.
@@ -797,6 +918,7 @@ function getPacingDashboardData(opts) {
         reconRow(mb, src, md, mr[5], mr[6], 'inmobi_out');
         continue;
       }
+      timed(mr[3], md);
       reconRow(mb, src, md, mr[5], mr[6], 'counted', true);
       addRaw(inmobiLine, mb, String(mr[2] == null ? '' : mr[2]), md,
         [_valueNum(mr[4]), _valueNum(mr[5]), _valueNum(mr[6]), _valueNum(mr[7]),
@@ -811,23 +933,30 @@ function getPacingDashboardData(opts) {
 
   /* ---- Adjust Raw (columns K, L, X): by position, like the formulas — A day, D app,
           E revenue, G paid installs, H installs, I bookings, J channel, K objective.
-          Every row counts once per occurrence, as SUMIFS counts it; duplicates and
-          unreadable dates are reported, and "Clean Adjust Raw" removes them for both. ---- */
+          The exception to "fix it in the source": the dashboard reads Adjust Raw through the
+          corrections "Adjust Clean" holds (dates, duplicate and mislabelled imports, channel
+          labels), the copy the pacing formulas read; what it changed is in the banner. ---- */
   // the pacing formulas read "Adjust Clean" once Fix this workbook has built it; asTab reads
   // what they read, the dashboard itself reads Adjust Raw through the same corrections
-  var adjCleanSh = ss.getSheetByName(CFG.ADJUST_CLEAN);
-  var ash = asTab && adjCleanSh ? adjCleanSh : _sheet(CFG.ADJUST);
-  var av = ash.getDataRange().getValues();
+  var adjCleanSh = ss.getSheetByName(CFG.ADJUST_CLEAN), ash = null;
+  try { ash = asTab && adjCleanSh ? adjCleanSh : _sheet(CFG.ADJUST); } catch (eA) {
+    issue('crit', 'Tab "' + CFG.ADJUST + '" is missing (renamed or deleted) — pacing columns K, L and X read it ' +
+      'through "' + CFG.ADJUST_CLEAN + '", and this dashboard has no Adjust installs, bookings or revenue.');
+  }
+  var av = ash ? ash.getDataRange().getValues() : [[]];
   var cleanState = '';
-  if (!asTab && adjCleanSh) {
+  if (!asTab && adjCleanSh && ash) {
     if (PropertiesService.getDocumentProperties().getProperty('adjustCleanFp') !== _adjustFingerprint_(av)) {
       try { cleanState = _refreshAdjustClean_(false) ? 'rebuilt' : 'stale'; } catch (eRb) { cleanState = 'stale'; }
     }
   }
-  _headerProblems(av[0] || [], ADJUST_EXPECT, CFG.ADJUST).forEach(function (p) {
-    issue('crit', p + ' — the pacing formulas read Adjust Raw by position.');
-  });
-  var reversed = _adjustReversedRows(av, 0, tz);
+  if (ash) {
+    _headerProblems(av[0] || [], ADJUST_EXPECT, CFG.ADJUST).forEach(function (p) {
+      issue('crit', p + ' — the pacing formulas read Adjust Raw by position.');
+    });
+  }
+  var swapWin = _adjustSwapWindow_(ss, tz), todayIso = Utilities.formatDate(new Date(), tz, 'yyyy-MM-dd');
+  var reversed = _adjustReversedRows(av, 0, tz, swapWin);
   var swappedRows = Object.keys(reversed).filter(function (j) {
     return _matchBrand(CFG.ADJUST_APP, av[j][3]);
   }).length;
@@ -866,17 +995,18 @@ function getPacingDashboardData(opts) {
   var legacyRows = legacy && legacy.getLastRow() > 1 ? legacy.getLastRow() - 1 : 0;
 
   /* Text dates, day/month swaps, overlapping imports, text numbers, blank or mislabelled
-     channels: the dashboard reads Adjust Raw through the same corrections "Clean Adjust Raw"
-     writes into the tab, so its installs, bookings and revenue are right before the tab is
-     cleaned. The pacing formulas still read the tab as it stands — the banner says by how much. */
-  var tabAgg = aAgg, cleanLog = null, adjRecon = {};
+     channels: the dashboard reads Adjust Raw through the same corrections "Adjust Clean"
+     holds, so its installs, bookings and revenue are right even before Fix this workbook has
+     pointed the pacing formulas at "Adjust Clean". Until then the tabs read Adjust Raw as it
+     stands — the banner says by how much. */
+  var tabAgg = aAgg, cleanLog = null, adjRecon = {}, futureRows = 0;
   // the "Check it against the tabs" table: every Adjust Raw row by what happens to it
   function adjTally(b, d, k, v) {
     var key = b + '|' + d + '|' + k;
     var e = adjRecon[key] || (adjRecon[key] = { b: b, d: d, k: k, i: 0, o: 0, r: 0, n: 0 });
     e.i += _cellNum(v[7]); e.o += _cellNum(v[8]); e.r += _cellNum(v[4]); e.n++;
   }
-  if (!asTab) {
+  if (!asTab && ash) {
     try {
       cleanLog = [];
       var cd = _adjustCleanData_(ss, ash, tz, cleanLog);
@@ -893,6 +1023,7 @@ function getPacingDashboardData(opts) {
         if (!cBrand) return;
         adjTally(cBrand, cdDay, 'sum', v);
         if (!cdDay) { adjTally(cBrand, cdDay, 'nodate', v); return; }
+        if (cdDay > todayIso) futureRows++;
         var cLine = _adjustLine(v[9], v[10]);
         if (!cLine) { adjTally(cBrand, cdDay, 'organic', v); return; }
         channelsSeen[cBrand + '|' + cLine.split('|')[0]] = 1;
@@ -914,29 +1045,30 @@ function getPacingDashboardData(opts) {
     e.revenue = Math.round(e.revenue * 100) / 100;
     return e;
   });
-  var fixHint = ' Run Pacing dashboard → Clean Adjust Raw: it repairs the tab both the pacing ' +
-    'formulas and this dashboard read (a backup and a change log are kept).';
+  var fixHint = ' Run Qiddiya Setup → Fix this workbook (once; later Pacing dashboard → Clean Adjust Raw): the ' +
+    'pacing formulas then read the corrected copy "' + CFG.ADJUST_CLEAN + '". Adjust Raw itself is not changed.';
   var needsClean = cleanLog && cleanLog.some(function (r) {
-    return /Text date|swap|Duplicate|Cross-app|Number stored as text|Twitter|Missing channel|replaced|folded/.test(r[1]);
+    return /Text date|swap|Duplicate|Cross-app|Number stored as text|moved from|Missing channel|replaced|folded/.test(r[1]);
   });
   if (needsClean) {
     var kinds = {};
     cleanLog.forEach(function (r) {
       var k = /Text date/.test(r[1]) ? 'text' : /swap/.test(r[1]) ? 'swap' : /Duplicate/.test(r[1]) ? 'dup'
         : /Cross-app/.test(r[1]) ? 'xapp'
-        : /Number stored as text/.test(r[1]) ? 'num' : /Twitter|Missing channel/.test(r[1]) ? 'label'
+        : /Number stored as text/.test(r[1]) ? 'num' : /moved from|Missing channel/.test(r[1]) ? 'label'
         : /replaced|folded/.test(r[1]) ? 'legacy' : '';
       if (k) kinds[k] = (kinds[k] || 0) + 1;
     });
     var parts = [];
-    if (kinds.text) parts.push(count(kinds.text) + ' days stored as text (e.g. 13/09/2026)');
+    if (kinds.text) parts.push(count(kinds.text) + ' rows with a text date (e.g. 13/09/2026)');
     if (kinds.swap) parts.push(count(kinds.swap) + ' day/month-swapped dates');
     if (kinds.xapp) parts.push(count(cd.xapp) + ' rows pasted a second time under the wrong app');
     if (kinds.dup) parts.push(count(kinds.dup) + ' rows repeated by overlapping imports');
     if (kinds.num) parts.push(count(kinds.num) + ' numbers stored as text');
     if (kinds.label) parts.push(count(kinds.label) + ' rows with a missing or wrong channel');
     if (legacyRows) parts.push(count(legacyRows) + ' rows still in "' + CFG.ADJUST_LEGACY + '"');
-    // what the pacing tabs show for their own dates, against the corrected figures
+    // Adjust Raw as it stands against the corrected figures, both counted with the line rules
+    // Fix this workbook installs over SFQC's dates — not what the old formulas on the tabs show
     var cmp = [];
     ['SFQC', 'AAQC'].forEach(function (b) {
       var t = { inst: 0, book: 0 }, c = { inst: 0, book: 0 };
@@ -959,14 +1091,27 @@ function getPacingDashboardData(opts) {
         '. Fix the exports at the source when you can.');
     } else {
       issue('crit', 'Adjust Raw has ' + parts.join(', ') + '. This dashboard corrects them as it reads ' +
-        'the tab, so the Adjust installs, bookings and revenue shown here are right. The pacing tabs read ' +
-        'the tab as it stands' + (cmp.length ? ' and show ' + cmp.join('; ') + ' for ' + from + ' → ' +
-        till : '') + '. Run Qiddiya Setup → Fix this workbook: the tabs then read the corrected copy.');
+        'the tab, so the Adjust installs, bookings and revenue shown here are right. The pacing tabs still ' +
+        'read the tab as it stands' + (cmp.length ? ' — counted that way, with the new line rules, it gives ' +
+        cmp.join('; ') + ' for ' + from + ' → ' + till : '') + '. Run Qiddiya Setup → Fix this workbook: the ' +
+        'tabs then read the corrected copy.');
     }
   } else if (textDates && !cleanLog) {
     issue('crit', count(textDates) + ' Adjust Raw rows hold their day as text (e.g. 13/09/2026). ' +
       'SUMIFS cannot read a text date, so neither the pacing tab nor this dashboard counts their ' +
       'installs, bookings or revenue.' + fixHint);
+  }
+  var unreadable = cleanLog ? cleanLog.filter(function (r) { return /not readable/.test(r[1]); }) : [];
+  if (unreadable.length) {
+    issue('crit', count(unreadable.length) + ' Adjust Raw rows have a day that is not a date (row ' +
+      unreadable.slice(0, 5).map(function (r) { return r[0]; }).join(', ') + (unreadable.length > 5 ? ' …' : '') +
+      ', e.g. "' + unreadable[0][2] + '"), so neither the pacing tabs nor this dashboard count their installs, ' +
+      'bookings or revenue. Correct the day in the source.');
+  }
+  if (futureRows) {
+    issue('warn', count(futureRows) + ' Adjust Raw rows are dated after today — most likely a dd/MM paste that ' +
+      'Sheets read the other way round. Neither the pacing tabs nor this dashboard count them; correct the day ' +
+      'in the source.');
   }
   if (swappedRows && !needsClean) {
     issue('crit', count(swappedRows) + ' Adjust Raw dates look day/month-swapped by Sheets ' +
@@ -996,12 +1141,12 @@ function getPacingDashboardData(opts) {
   }
 
   /* ---- GA4 (column M): by position — B property, C date, D campaign, E channel group,
-          F source / medium, G transactions, H revenue ---- */
-  var gv = _sheet(CFG.GA4).getDataRange().getValues();
-  _headerProblems(gv[0] || [], GA4_EXPECT, CFG.GA4).forEach(function (p) {
-    issue('crit', p + ' — the pacing formulas read GA4 by position.');
-  });
-  var gMap = {};
+          F source / medium, G transactions, H revenue. A bucket whose row has a date floor
+          (Google Search, Meta) counts from that floor, like the row's media and Adjust cells;
+          paid sales before it (an earlier flight) are on no row and go to ga4PreFloor, which
+          only the GA4 paid total (C49) includes. ---- */
+  var gv = sourceValues(CFG.GA4, 'column M (and X on the web rows)', GA4_EXPECT);
+  var gMap = {}, gPreMap = {};
   for (var k = 1; k < gv.length; k++) {
     var g = gv[k];
     var gBrand = _ga4Brand(g[1]);
@@ -1009,24 +1154,72 @@ function getPacingDashboardData(opts) {
     if (CFG.PAID_GROUPS.indexOf(String(g[4] == null ? '' : g[4]).toLowerCase()) < 0) continue;
     var gd = _dateCell(g[2], tz);
     if (!inWindow(gd)) continue;
+    timed(g[2], gd);
     var bucket = _ga4Bucket(g[5], g[3]);
+    var gFloor = _mediaFloor(LINE_BY_KEY[GA4_LINE[bucket]], gBrand);
+    var gTarget = gFloor && gd < gFloor ? gPreMap : gMap;
     var gci = _campIndex(g[3]);
     var gk = [gBrand, bucket, gd, gci].join('\u0001');
-    var ge = gMap[gk] || (gMap[gk] = { brand: gBrand, bucket: bucket, line: GA4_LINE[bucket],
+    var ge = gTarget[gk] || (gTarget[gk] = { brand: gBrand, bucket: bucket, line: GA4_LINE[bucket],
       day: gd, ci: gci, tx: 0, revenue: 0 });
     ge.tx += _cellNum(g[6]);
     ge.revenue += _cellNum(g[7]);
   }
-  var ga4 = Object.keys(gMap).map(function (key) {
-    var e = gMap[key];
-    e.revenue = Math.round(e.revenue * 100) / 100;
-    return e;
-  });
+  function ga4List(map) {
+    return Object.keys(map).map(function (key) {
+      var e = map[key];
+      e.revenue = Math.round(e.revenue * 100) / 100;
+      return e;
+    });
+  }
+  var ga4 = ga4List(gMap), ga4PreFloor = ga4List(gPreMap);
+
+  if (!rawInWindow && (adjust.length || ga4.length)) {
+    issue('crit', 'Raw data has no rows in the window while Adjust and GA4 do — its import is probably broken ' +
+      'or still loading, so every media row (spend, impressions, clicks) shows 0. Open Raw data and check it.');
+  }
+  if (timedOnTill) {
+    issue('warn', count(timedOnTill) + ' source rows dated ' + till + ' (SFQC C2) carry a time of day. The pacing ' +
+      'tabs count up to ' + till + ' 00:00 and leave them out; this dashboard counts the whole day.');
+  }
 
   /* ---- lines that spend but whose channel never appears in Adjust Raw at all ---- */
   var noAdjustFeed = {};
   raw.forEach(function (row) {
     if (row[6] > 0 && !channelsSeen[row[1] + '|' + row[0]]) noAdjustFeed[row[1] + '|' + row[0]] = 1;
+  });
+
+  /* ---- and the reverse: Adjust installs on days a line has no spend row (a spend paste that is
+          missing). Only days up to the line's last spend day, with 10+ installs, so lagged
+          bookings and a source that is simply a day behind do not count. Nothing is dropped:
+          CPI and ROAS of the line are overstated until those days are pasted. ---- */
+  var mediaDays = {}, mediaLast = {};
+  raw.forEach(function (row) {
+    var mk = row[1] + '|' + row[0] + '|' + row[12];
+    (mediaDays[mk] = mediaDays[mk] || {})[row[3]] = 1;
+    mediaLast[mk] = _later(mediaLast[mk] || '', row[3]);
+  });
+  var gapDays = {};
+  adjust.forEach(function (e) {
+    var gl = LINE_BY_KEY[e.line], gk2 = e.brand + '|' + e.line;
+    if (!gl || gl.source === 'none' || !mediaLast[gk2] || e.day > mediaLast[gk2]) return;
+    if (e.day < _mediaFloor(gl, e.brand) || mediaDays[gk2][e.day]) return;
+    var x = ((gapDays[gk2] = gapDays[gk2] || {})[e.day] = gapDays[gk2][e.day] || { inst: 0, book: 0, rev: 0 });
+    x.inst += e.inst; x.book += e.bookings; x.rev += e.revenue;
+  });
+  var spendGaps = {};
+  Object.keys(gapDays).sort().forEach(function (gk2) {
+    var ds = Object.keys(gapDays[gk2]).filter(function (d) { return gapDays[gk2][d].inst >= 10; }).sort();
+    if (!ds.length) return;
+    var t = { inst: 0, book: 0, rev: 0 };
+    ds.forEach(function (d) { var x = gapDays[gk2][d]; t.inst += x.inst; t.book += x.book; t.rev += x.rev; });
+    var gp = gk2.split('|'), gl = LINE_BY_KEY[gp[1] + '|' + gp[2]];
+    spendGaps[gk2] = { days: ds, inst: t.inst, bookings: t.book, revenue: Math.round(t.rev * 100) / 100 };
+    issue('warn', gl.label + ' ' + gp[0] + ': ' + count(Math.round(t.inst)) + ' Adjust installs, ' +
+      count(Math.round(t.book)) + ' bookings and ' + count(Math.round(t.rev)) + ' SAR on ' + ds.length +
+      ' day(s) between ' + ds[0] + ' and ' + ds[ds.length - 1] + ' that have no spend row. They are counted, ' +
+      'so the CPI, CPA and ROAS of pacing row ' + gl.row + ' are overstated until the spend for those days is ' +
+      'pasted' + (gl.source === 'InMobi' ? ' (InMobi: into Raw manual)' : '') + '.');
   });
 
   // Source freshness is not the same thing as arithmetic reconciliation. Keep
@@ -1059,7 +1252,13 @@ function getPacingDashboardData(opts) {
   if (till && end > till) {
     issue('warn', 'The pacing tabs stop at ' + till + ' (SFQC Pacing_Daily C2) but the data runs to ' +
       end + '. "All" shows everything; "Tab period" shows exactly what the tabs count. To extend ' +
-      'the tabs, type a later date into SFQC C2 (Qiddiya Setup → Fix this workbook sets it to yesterday).');
+      'the tabs, type a later date into SFQC C2 (the first run of Qiddiya Setup → Fix this workbook sets ' +
+      'it to =TODAY()-1).');
+  }
+  if (from && end && end < from) {
+    issue('warn', 'SFQC Pacing_Daily B2 (' + from + ') is after C2 (' + till + ') — the period has not started yet, ' +
+      'so there is nothing to show.');
+    end = from;
   }
   var days = _dateSpine(from, end);
   if (!days.length) days = Object.keys(dayset).sort();
@@ -1074,7 +1273,7 @@ function getPacingDashboardData(opts) {
           web: !!l.web, media: l.source !== 'none' };
       }),
       webRevenueFromGa4: !!CFG.WEB_REVENUE_FROM_GA4,
-      health: { issues: issues, noAdjustFeed: Object.keys(noAdjustFeed).sort() },
+      health: { issues: issues, noAdjustFeed: Object.keys(noAdjustFeed).sort(), spendGaps: spendGaps },
       sourceCoverage: {
         media: _coverageValues(mediaCoverage),
         adjust: _coverageValues(adjustCoverage),
@@ -1082,7 +1281,7 @@ function getPacingDashboardData(opts) {
       },
       generated: 'Refreshed ' + Utilities.formatDate(new Date(), CFG.TZ, 'yyyy-MM-dd HH:mm')
     },
-    raw: raw, adjust: adjust, ga4: ga4, camps: _campList,
+    raw: raw, adjust: adjust, ga4: ga4, ga4PreFloor: ga4PreFloor, camps: _campList,
     reconAdjust: Object.keys(adjRecon).map(function (k) {
       var e = adjRecon[k];
       e.r = Math.round(e.r * 100) / 100;
@@ -1143,10 +1342,12 @@ function validateDashboard() {
   var shown = getPacingDashboardData();
   var out = [], bad = 0, total = 0;
   function row(a, b, c, d, e, f) { out.push([a, b, c, d, e, f]); }
-  function cmp(brand, line, metric, dash, pacing) {
+  // Counts and money must agree to the cent (float noise is ~1e-9); a relative tolerance would
+  // let whole campaign-days through on the big totals. Ratios (ROAS) pass their own tolerance.
+  function cmp(brand, line, metric, dash, pacing, tol) {
     total++;
     var diff = dash - pacing;
-    var ok = Math.abs(diff) <= Math.max(0.02, Math.abs(pacing) * 0.0005);
+    var ok = Math.abs(diff) <= (tol || 0.01);
     if (!ok) bad++;
     row(brand, line, metric, Math.round(dash * 100) / 100,
         Math.round(pacing * 100) / 100, ok ? 'OK' : 'CHECK');
@@ -1197,9 +1398,10 @@ function validateDashboard() {
     cmp(brand, 'Total', 'Adjust install (L28)', sum.adjInst, cell(28, 12));
     cmp(brand, 'Total', 'GA4 purchase (M28)', sum.ga4Tx, cell(28, 13));
     cmp(brand, 'Total', 'Revenue SAR (X28)', sum.revenue, cell(28, 24));
-    cmp(brand, 'Total', 'ROAS (P28)', sum.spend ? sum.revenue / (sum.spend * CFG.FX) : 0, cell(28, 16));
+    cmp(brand, 'Total', 'ROAS (P28)', sum.spend ? sum.revenue / (sum.spend * CFG.FX) : 0, cell(28, 16), 1e-6);
+    // C49/D49 are every paid GA4 sale in B2:C2, including those before a row's start date
     var gaTx = 0, gaRev = 0;
-    p.ga4.forEach(function (g) {
+    p.ga4.concat(p.ga4PreFloor || []).forEach(function (g) {
       if (g.brand === brand && g.day >= rep.start && g.day <= rep.end) { gaTx += g.tx; gaRev += g.revenue; }
     });
     cmp(brand, 'GA4 paid', 'Transactions (C49)', gaTx, cell(49, 3));
@@ -1238,11 +1440,16 @@ function validateDashboard() {
   sh.setFrozenRows(3);
   ss.setActiveSheet(sh);
   Logger.log('%s figures compared, %s match, %s differ, %s data issues', total, total - bad, bad, critical);
-  var msg = (bad === 0 ? 'All ' + total + ' figures match the pacing tabs.' :
+  // Both sides read the same tabs, so a broken or empty source matches perfectly: with a
+  // critical data issue the result is never reported as a plain "all match".
+  var msg = (critical ? 'CHECK — ' + critical + ' critical data issue(s), listed at the bottom of the ' +
+      '"Dashboard Validation" tab. The dashboard and the tabs read the same sources, so they can match and ' +
+      'still both be wrong until these are fixed.\n\n' : '') +
+    (bad === 0 ? 'All ' + total + ' figures match the pacing tabs.' :
       bad + ' of ' + total + ' figures differ — see the "Dashboard Validation" tab. If the totals ' +
       'row or whole lines differ, run Qiddiya Setup → Fix this workbook first.') +
-    (critical ? '\n\n' + critical + ' data issue(s) affect BOTH the pacing tab and the dashboard — ' +
-      'listed at the bottom of the tab.' : '');
+    (issues.length > critical ? '\n\n' + (issues.length - critical) + ' note(s) are listed there too; each says ' +
+      'whether it affects the pacing tabs, this dashboard or both.' : '');
   try { SpreadsheetApp.getUi().alert(msg); } catch (e) { /* no UI attached */ }
   return { total: total, bad: bad, critical: critical };
 }
@@ -1279,12 +1486,18 @@ function showAdjustImporter() {
 /**
  * Adjust network + campaign -> channel and objective, in the vocabulary the pacing
  * formulas read (Google awareness is "YouTube", as row 10 expects). Used for imports and
- * to fill blanks; existing labels in Adjust Raw are never overwritten by it, except the
- * Twitter rows the old export filed under Other.
+ * to fill blanks; existing labels are never overwritten by it, except rows labelled Other
+ * (or blank) that it can place: Twitter Installs -> X, Pangle (TikTok's placement network)
+ * -> TikTok, and installs that are not paid -> Organic — a network or campaign called
+ * organic (WhatsApp "Organic Share"), and Adjust's fraud filter "Untrusted Devices" (see
+ * CFG.ADJUST_EXCLUDE_UNTRUSTED). Organic is on no pacing row.
  */
 function _adjustClassify(network, campaign) {
   var n = String(network == null ? '' : network).trim();
-  if (/\borganic\b/i.test(n)) return { channel: 'Organic', objective: 'Organic' };
+  var c = String(campaign == null ? '' : campaign).trim();
+  if (/\borganic\b/i.test(n) || /\borganic\b/i.test(c) ||
+      (CFG.ADJUST_EXCLUDE_UNTRUSTED && /^Untrusted Devices\b/i.test(n)))
+    return { channel: 'Organic', objective: 'Organic' };
   var ch = /^Snapchat/i.test(n) ? 'Snapchat'
     : /^(Facebook|Instagram|Off-Facebook|Meta|Audience Network|Messenger)\b/i.test(n) ? 'Meta'
     : /^Apple Search Ads/i.test(n) ? 'Apple'
@@ -1293,7 +1506,7 @@ function _adjustClassify(network, campaign) {
     : /^InMobi/i.test(n) ? 'InMobi'
     : /^InMotion/i.test(n) ? 'InMotion'
     : /^(Twitter|X Ads|X)\b/i.test(n) ? 'X'
-    : /^TikTok/i.test(n) ? 'TikTok'
+    : /^(TikTok|Pangle)\b/i.test(n) ? 'TikTok'
     : 'Other';
   if (ch === 'Google') {
     var o = _objective('Google', campaign);
@@ -1314,13 +1527,15 @@ function _numericText(v) {
 }
 function _blank(v) { return v === '' || v === null || v === undefined; }
 function _adjustAllZero(v) { return !_num(v[4]) && !_num(v[6]) && !_num(v[7]) && !_num(v[8]); }
-function _stamp() { return Utilities.formatDate(new Date(), CFG.TZ, 'yyyyMMdd-HHmm'); }
+// to the second: a backup made in the same minute as another must not replace it
+function _stamp() { return Utilities.formatDate(new Date(), CFG.TZ, 'yyyyMMdd-HHmmss'); }
 
 /**
  * Reads Adjust Raw into clean rows: real ISO days (text dd/MM and Sheets' day/month swaps
- * repaired), numbers as numbers, trimmed labels, blanks classified. Nothing is written.
+ * repaired), numbers as numbers, trimmed labels, blank or Other channels classified. Nothing
+ * is written. win: see _adjustReversedRows. data.read / data.blank count the rows read.
  */
-function _adjustReadClean_(sh, tz, log) {
+function _adjustReadClean_(sh, tz, log, win) {
   var range = sh.getDataRange();
   var values = range.getValues(), display = range.getDisplayValues();
   var header = values[0] || [];
@@ -1330,12 +1545,12 @@ function _adjustReadClean_(sh, tz, log) {
       'the columns must be in this order: ' + ADJUST_LAYOUT.join(', ') + '.');
   }
   var width = Math.max(header.length, ADJUST_LAYOUT.length);
-  var reversed = _adjustReversedRows(values, 0, tz);
-  var rows = [];
+  var reversed = _adjustReversedRows(values, 0, tz, win);
+  var rows = [], blankRows = 0;
   for (var j = 1; j < values.length; j++) {
     var v = values[j].slice();
     while (v.length < width) v.push('');
-    if (v.every(_blank)) continue;
+    if (v.every(_blank)) { blankRows++; continue; }
     var shown = display[j][0];
     var iso;
     try {
@@ -1363,11 +1578,12 @@ function _adjustReadClean_(sh, tz, log) {
     [1, 2, 3, 9, 10].forEach(function (c) {
       if (typeof v[c] === 'string' && v[c] !== v[c].trim()) v[c] = v[c].trim();
     });
-    if (/^Twitter Installs$/i.test(String(v[1])) && (_blank(v[9]) || /^other$/i.test(String(v[9])))) {
-      var tw = _adjustClassify(v[1], v[2]);
-      log.push([j + 1, 'Twitter Installs moved from "' + v[9] + '" to channel X', v[9] + ' / ' + v[10],
-        tw.channel + ' / ' + tw.objective]);
-      v[9] = tw.channel; v[10] = tw.objective;
+    var rc = /^other$/i.test(String(v[9])) ? _adjustClassify(v[1], v[2]) : null;
+    if (rc && rc.channel !== 'Other') {
+      // Twitter Installs, Pangle, Untrusted Devices, Organic Share: filed under Other by the export
+      log.push([j + 1, v[1] + ' moved from "' + v[9] + '" to channel ' + rc.channel +
+        (rc.channel === 'Organic' ? ' (not paid)' : ''), v[9] + ' / ' + v[10], rc.channel + ' / ' + rc.objective]);
+      v[9] = rc.channel; v[10] = rc.objective;
     } else if (_blank(v[9]) || _blank(v[10])) {
       var cls = _adjustClassify(v[1], v[2]);
       log.push([j + 1, 'Missing channel/objective filled', v[9] + ' / ' + v[10],
@@ -1377,7 +1593,7 @@ function _adjustReadClean_(sh, tz, log) {
     }
     rows.push({ v: v, day: iso, dateFixed: dateFixed });
   }
-  return { header: header, width: width, rows: rows };
+  return { header: header, width: width, rows: rows, read: rows.length, blank: blankRows };
 }
 
 /**
@@ -1448,6 +1664,11 @@ function _adjustUpsert_(data, incoming, label, log) {
   return { replaced: replaced, added: incoming.length, ranges: ranges };
 }
 
+/**
+ * Values-only hidden copy of a tab, its grid cut to the data (a new tab starts at 1000 x 26
+ * cells, and the workbook holds 10M), keeping only the newest CFG.BACKUPS_KEPT copies of
+ * that tab. Untitled.gs's backupValues_ is the same thing by tab name.
+ */
 function _backupValues(ss, sh, name) {
   var rows = Math.max(1, sh.getLastRow()), cols = Math.max(1, sh.getLastColumn());
   var values = sh.getRange(1, 1, rows, cols).getValues();
@@ -1457,8 +1678,25 @@ function _backupValues(ss, sh, name) {
   if (dst.getMaxColumns() < cols) dst.insertColumnsAfter(dst.getMaxColumns(), cols - dst.getMaxColumns());
   if (dst.getMaxRows() < rows) dst.insertRowsAfter(dst.getMaxRows(), rows - dst.getMaxRows());
   dst.getRange(1, 1, rows, cols).setValues(values);
+  if (dst.getMaxColumns() > cols) dst.deleteColumns(cols + 1, dst.getMaxColumns() - cols);
+  if (dst.getMaxRows() > rows) dst.deleteRows(rows + 1, dst.getMaxRows() - rows);
   dst.hideSheet();
+  _pruneBackups_(ss, name.replace(/ BACKUP \d{8}-\d{4,6}$/, ''), CFG.BACKUPS_KEPT);
   return dst;
+}
+/**
+ * Deletes all but the newest `keep` "<tab> BACKUP <stamp>" copies of one tab. The InMobi
+ * source CFG.RAW_BACKUP is named like a backup but is data (pacing row 24), so it is never
+ * touched.
+ */
+function _pruneBackups_(ss, tab, keep) {
+  var re = new RegExp('^' + tab.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ' BACKUP \\d{8}-\\d{4,6}$');
+  var all = ss.getSheets().filter(function (x) {
+    var n = x.getName();
+    return n !== CFG.RAW_BACKUP && re.test(n);
+  }).sort(function (a, b) { return a.getName() < b.getName() ? 1 : -1; });   // newest first
+  all.slice(keep).forEach(function (x) { ss.deleteSheet(x); });
+  return Math.max(0, all.length - keep);
 }
 
 function _adjustWrite_(sh, data) {
@@ -1500,7 +1738,7 @@ function _writeLog(ss, title, log) {
  * written: "Clean Adjust Raw" writes the result back, the dashboard reads it directly.
  */
 function _adjustCleanData_(ss, sh, tz, log) {
-  var data = _adjustReadClean_(sh, tz, log);
+  var data = _adjustReadClean_(sh, tz, log, _adjustSwapWindow_(ss, tz));
   var merged = null, legacy = ss.getSheetByName(CFG.ADJUST_LEGACY);
   if (legacy && legacy.getLastRow() > 1) {
     var lv = legacy.getDataRange().getValues(), lh = lv[0].map(function (h) { return String(h).trim(); });
@@ -1654,6 +1892,7 @@ function _refreshAdjustClean_(force) {
       ' — do not edit; the pacing tabs read this tab.');
     props.setProperty('adjustCleanFp', fp);
     props.setProperty('adjustCleanAt', at);
+    _writeLog(ss, 'Adjust Clean · ' + at, log);   // every rebuild, so the log never lags the tab
     SpreadsheetApp.flush();
     return { log: log, cd: cd, rows: rows, at: at };
   } finally {
@@ -1668,11 +1907,12 @@ function refreshAdjustClean(e) {
 }
 
 /**
- * Repairs Adjust Raw in place so the pacing formulas and the dashboard both read it
- * correctly: text and day/month-swapped dates become real dates, overlapping imports are
- * de-duplicated, numbers stored as text become numbers, Twitter Installs move from Other to
- * X, and any rows left in the old "Adjust Current" tab are folded in. A values-only backup
- * and a line-by-line log are written first. Safe to run as often as you like.
+ * Rebuilds "Adjust Clean", the corrected copy of Adjust Raw the pacing formulas read: text and
+ * day/month-swapped dates become real dates, overlapping and mislabelled imports are dropped,
+ * numbers stored as text become numbers, rows the export filed under Other get their channel
+ * (Twitter -> X, Pangle -> TikTok, Untrusted Devices / Organic Share -> Organic), and rows
+ * left in the old "Adjust Current" tab are folded in. Adjust Raw itself is never changed; a
+ * line-by-line log is written. Safe to run as often as you like.
  */
 function cleanAdjustRaw() {
   requireSheetUser_();
@@ -1688,13 +1928,15 @@ function cleanAdjustRaw_() {
   var log = res.log, cd = res.cd;
   var fixedDates = log.filter(function (r) { return /Text date|swap/i.test(r[1]); }).length;
   var unreadable = log.filter(function (r) { return /not readable/.test(r[1]); }).length;
-  var msg = '"' + CFG.ADJUST_CLEAN + '" rebuilt from "' + CFG.ADJUST + '": ' + res.rows + ' rows.\n' +
+  var labels = log.filter(function (r) { return /moved from|Missing channel/.test(r[1]); }).length;
+  var msg = '"' + CFG.ADJUST_CLEAN + '" rebuilt from "' + CFG.ADJUST + '": ' + cd.data.read + ' rows read (' +
+    cd.data.blank + ' empty rows skipped), ' + res.rows + ' rows written.\n' +
     '· ' + fixedDates + ' dates repaired' + (unreadable ? ', ' + unreadable + ' still unreadable (see log)' : '') + '\n' +
+    '· ' + labels + ' rows given a channel (Other / blank)\n' +
     '· ' + cd.xapp + ' rows pasted under the wrong app removed\n' +
     '· ' + cd.dropped + ' duplicate rows from overlapping imports removed\n' +
     (cd.merged ? '· ' + cd.merged.added + ' rows folded in from "' + CFG.ADJUST_LEGACY + '"\n' : '') +
     '"' + CFG.ADJUST + '" itself is not changed. Every correction is listed in "Adjust Raw cleanup log".';
-  _writeLog(_ss(), 'Adjust Clean · ' + res.at, log);
   Logger.log(msg);
   return msg;
 }
@@ -1777,7 +2019,7 @@ function importAdjustCsv(files) {
       sh.getRange(1, 1, 1, ADJUST_LAYOUT.length).setValues([ADJUST_LAYOUT]).setFontWeight('bold');
       sh.setFrozenRows(1);
     }
-    var data = _adjustReadClean_(sh, tz, log);
+    var data = _adjustReadClean_(sh, tz, log, _adjustSwapWindow_(ss, tz));
     var res = _adjustUpsert_(data, incoming, 'Import', log);
     var dropped = _adjustDedupe_(data, log);
     if (sh.getLastRow() > 1) _backupValues(ss, sh, CFG.ADJUST + ' BACKUP ' + stamp);
