@@ -1,0 +1,12 @@
+{
+  "name": "qiddiya-pacing-dashboard-tests",
+  "private": true,
+  "description": "Checks that the dashboard counts exactly what the pacing tabs count, on a synthetic workbook.",
+  "scripts": {
+    "test": "node harness.js"
+  },
+  "devDependencies": {
+    "hyperformula": "^2.7.1",
+    "jsdom": "^24.0.0"
+  }
+}

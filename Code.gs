@@ -1,14 +1,25 @@
 /**
  * Qiddiya Media Pacing — dashboard server
  *
- * Feeds "Qiddiya Pacing Dashboard" from the same source tabs the pacing sheets read:
- * Raw data, Raw manual/history, APPLE1, Adjust Raw and GA4. Campaign objective
- * classification lives in OBJECTIVE_TOKENS and is attached to each raw row before
- * it reaches the browser. Run validateDashboard() after any source/formula change;
- * it reconciles the payload against both pacing tabs line by line.
+ * The dashboard is a second view of the two Pacing_Daily tabs, so it counts with the
+ * pacing tabs' own rules: the same source cells, the same filters, the same line split,
+ * the same date floors. Every rule is written down once, in this file:
  *
- * Column positions are resolved from the header row where the layout allows it, so a
- * Supermetrics refresh that adds a metric will not silently shift a number.
+ *   PACING_LINES      which pacing row a platform × objective lands on, and its date floor
+ *   OBJECTIVE_TOKENS  the campaign-name taxonomy (Raw data column M is generated from it)
+ *   _adjustLine()     which pacing row an Adjust channel × objective lands on
+ *   _ga4Bucket()      which pacing row a paid GA4 session lands on
+ *
+ * Untitled.gs generates the pacing formulas from the same definitions, so the tab and the
+ * dashboard cannot drift apart again.
+ *
+ * Data problems (Adjust dates Sheets mis-parsed, overlapping Adjust imports, numbers
+ * stored as text, campaigns with no portal) are fixed IN THE SHEET by "Clean Adjust Raw"
+ * and the setup script — never patched silently inside the dashboard, because the pacing
+ * tab would still be wrong. Until they are fixed the dashboard lists them in a banner.
+ *
+ * Run validateDashboard() after any source or formula change; it compares the payload
+ * with both pacing tabs cell by cell, totals row included.
  */
 
 var CFG = {
@@ -17,11 +28,13 @@ var CFG = {
   RAW_BACKUP: 'Raw data BACKUP 20260807-1642',
   APPLE: 'APPLE1',
   ADJUST: 'Adjust Raw',
-  // Clean, replace-in-place snapshot populated by "Import latest Adjust CSVs".
-  // The dashboard prefers it over the append-only Adjust Raw archive.
-  ADJUST_CURRENT: 'Adjust Current',
+  // Where the old CSV importer wrote. The pacing formulas never read it, which is one of
+  // the reasons the dashboard and the tab disagreed. "Clean Adjust Raw" folds its rows into
+  // Adjust Raw and retires it; the importer now writes to Adjust Raw directly.
+  ADJUST_LEGACY: 'Adjust Current',
   GA4: 'GA4',
-  PACING: 'SFQC Pacing_Daily',      // holds the window in B2:C2
+  PACING: 'SFQC Pacing_Daily',      // holds the window in B2:C2 (Raw data N2:O2 follows it)
+  PACING_TABS: { SFQC: 'SFQC Pacing_Daily', AAQC: 'AAQC Pacing_Daily' },
   // LEAVE THIS BLANK unless you know you need it. A bound script finds its own
   // spreadsheet. If you do fill it in, it must be a sheet the account running the
   // script can open — pointing it at a sheet on another account is what produces
@@ -29,35 +42,61 @@ var CFG = {
   SHEET_ID: '',
   FX: 3.78,                         // SAR per USD — matches column F on the pacing tabs
   TZ: 'Asia/Riyadh',
-  // Date floors, copied line by line off the pacing formulas. They are not uniform:
-  // the awareness rows carry none, TikTok Search and TikTok App carry none either,
-  // Meta starts a day earlier, and the rest start 2 Jul. Without these the dashboard
-  // picks up the pre-launch SKAN tail (installs on days with no spend) that the
-  // report leaves out. Key is "platform|objective"; anything unlisted has no floor.
-  FLOOR: {
-    'Snapchat|Conversion': '2026-07-02',
-    'Google|Search':       '2026-07-02',
-    'Google|Conversion':   '2026-07-02',
-    'Meta|Conversion':     '2026-07-01',
-    'X|Conversion':        '2026-07-02',
-    'Apple|Conversion':    '2026-07-02',
-    'Bidease|Conversion':  '2026-07-02',
-    'InMobi|Conversion':   '2026-07-02',
-    'InMotion|Conversion': '2026-07-02'
-  },
-  // Adjust rows follow the same idea: awareness and YouTube unfloored, the rest from 2 Jul.
+  // Adjust: the awareness/YouTube rows (7-10) have no floor, every other row starts here.
   ADJUST_FROM: '2026-07-02',
-  PROPERTY_OF: { 'Six Flags Qiddiya City': 'SFQC', 'Aquarabia Qiddiya City': 'AAQC' },
-  // GA4: the pacing formulas count a session as paid when the default channel group is
-  // one of these two. Nothing else qualifies, whatever the medium says.
-  PAID_GROUPS: ['Paid Search', 'Paid Social']
+  // Pacing row 24 (InMobi): Raw manual from 1 Sep, the Raw data backup for 2 Jul - 31 Aug.
+  INMOBI_MANUAL_FROM: '2026-09-01',
+  INMOBI_BACKUP_TILL: '2026-08-31',
+  INMOBI_LAST_ROW: 10000,           // row 24 reads $A$2:$A$10000
+  // Portal identifiers exactly as the pacing formulas test them.
+  ADJUST_APP: { SFQC: 'Six Flags', AAQC: 'Aquarabia' },                           // Adjust Raw!D
+  APPLE_APP: { SFQC: 'Six Flags Qiddiya City', AAQC: 'Aquarabia Qiddiya City' },  // APPLE1!B
+  GA4_PROPERTY: { SFQC: 'six flags', AAQC: 'aquarabia' },                         // GA4!B "Six Flags*"
+  // GA4: a session is paid when the default channel group is one of these two.
+  PAID_GROUPS: ['paid search', 'paid social'],
+  // Revenue (column X) on the four web lines — Snapchat awareness, TikTok awareness,
+  // TikTok Search, Google Search. false = Adjust revenue, which is what the installed pacing
+  // formulas use. true = GA4 web revenue, the report's original design. Change it here and
+  // re-run "Qiddiya Setup -> 3 · Install the formulas": the tab and the dashboard switch together.
+  WEB_REVENUE_FROM_GA4: false
 };
 
+var FLOOR_JUL2 = '2026-07-02';
+
 /*
- * One authoritative campaign taxonomy for platform delivery rows.
- * The server writes the chosen objective onto every raw row, so the browser does
- * not have to classify the same campaign a second time. Keep source-name variants
- * here; do not scatter new wildcards through the dashboard.
+ * The pacing rows. One row = one platform × objective. `floor` is the media date floor
+ * the row carries (a string for both portals, or one per portal); `ga4` is the GA4 bucket
+ * whose paid transactions land in column M; `web` marks the four web lines (see
+ * CFG.WEB_REVENUE_FROM_GA4); `source` marks rows that do not read Raw data.
+ */
+var PACING_LINES = [
+  { row: 7,  plat: 'Snapchat', obj: 'Awareness',  label: 'Snapchat — Awareness', ga4: 'Snapchat', web: true },
+  { row: 8,  plat: 'TikTok',   obj: 'Awareness',  label: 'TikTok — Awareness',   ga4: 'TikTok',   web: true },
+  { row: 9,  plat: 'X',        obj: 'Awareness',  label: 'X — Awareness' },
+  { row: 10, plat: 'Google',   obj: 'Awareness',  label: 'YouTube — Awareness' },
+  { row: 15, plat: 'TikTok',   obj: 'Search',     label: 'TikTok Search',  ga4: 'TikTok-cpc', web: true },
+  { row: 16, plat: 'Google',   obj: 'Search',     label: 'Google Search',  ga4: 'Google', web: true, floor: FLOOR_JUL2 },
+  { row: 17, plat: 'Snapchat', obj: 'Conversion', label: 'Snapchat App',   floor: FLOOR_JUL2 },
+  { row: 18, plat: 'TikTok',   obj: 'Conversion', label: 'TikTok App' },
+  { row: 19, plat: 'Meta',     obj: 'Conversion', label: 'Meta App',       ga4: 'Meta',
+    floor: { SFQC: '2026-07-02', AAQC: '2026-07-01' } },
+  { row: 20, plat: 'X',        obj: 'Conversion', label: 'X App',          floor: FLOOR_JUL2 },
+  { row: 21, plat: 'Google',   obj: 'Conversion', label: 'Google App Ads', floor: FLOOR_JUL2 },
+  { row: 22, plat: 'Apple',    obj: 'Conversion', label: 'Apple Ads',      floor: FLOOR_JUL2, source: 'APPLE1' },
+  { row: 23, plat: 'Bidease',  obj: 'Conversion', label: 'Bidease',        floor: FLOOR_JUL2 },
+  { row: 24, plat: 'InMobi',   obj: 'Conversion', label: 'InMobi',         floor: FLOOR_JUL2, source: 'InMobi' },
+  { row: 25, plat: 'InMotion', obj: 'Conversion', label: 'InMotion',       floor: FLOOR_JUL2 },
+  { row: 26, plat: 'Other',    obj: 'Other',      label: 'Other (Adjust / GA4 only)', ga4: 'Other', source: 'none' }
+];
+var LINE_BY_KEY = {};
+PACING_LINES.forEach(function (l) { l.key = l.plat + '|' + l.obj; LINE_BY_KEY[l.key] = l; });
+
+/*
+ * One authoritative campaign taxonomy for platform delivery rows. Awareness is tested
+ * before Search, and each row lands on exactly one line — so a name such as
+ * "SFQC_Snapchat_AWRN_..." (which contains both "snapchat_awr" and "_awrn_") is counted
+ * once, not once per matching wildcard as the old SUMIFS sums did. Raw data column M is
+ * generated from this table (Untitled.gs), so edit it here and re-run step 3.
  */
 var OBJECTIVE_TOKENS = {
   Snapchat: {
@@ -96,14 +135,14 @@ function doGet() {
     .setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
 }
 /**
- * NOTE: install.gs already defines onOpen(). Apps Script keeps only the last
- * definition in a project, so this file must not define one too — install.gs calls
- * dashboardMenu_() instead, and both menus appear.
+ * Apps Script keeps only one onOpen() per project. Untitled.gs owns it and calls this,
+ * so both the "Qiddiya Setup" and the "Pacing dashboard" menus appear.
  */
 function dashboardMenu_() {
   SpreadsheetApp.getUi().createMenu('Pacing dashboard')
     .addItem('Open', 'showDashboard')
     .addItem('Import latest Adjust CSVs', 'showAdjustImporter')
+    .addItem('Clean Adjust Raw (dates, duplicates)', 'cleanAdjustRaw')
     .addItem('Validate against the pacing tabs', 'validateDashboard')
     .addItem('Export a standalone HTML file', 'exportStandalone')
     .addSeparator()
@@ -111,98 +150,6 @@ function dashboardMenu_() {
     .addToUi();
 }
 
-/**
- * Imports one or both current Adjust CSV exports without touching Adjust Raw.
- * Each app contained in the selected files is replaced atomically in Adjust Current,
- * while the other app is preserved. Data refreshes therefore never need a deployment.
- */
-function showAdjustImporter() {
-  var html = HtmlService.createHtmlOutput([
-    '<!doctype html><meta charset="utf-8"><style>',
-    'body{font:14px Arial;padding:20px;color:#172033}h2{margin:0 0 8px}',
-    'p{line-height:1.45;color:#58657a}input{display:block;margin:18px 0}',
-    'button{background:#1677ff;color:white;border:0;border-radius:7px;padding:10px 16px;font-weight:700}',
-    'button:disabled{opacity:.5}#s{margin-top:14px;white-space:pre-wrap}</style>',
-    '<h2>Import latest Adjust exports</h2>',
-    '<p>Select the latest Six Flags and Aquarabia CSV files together. Each app replaces only its previous snapshot; Adjust Raw stays unchanged.</p>',
-    '<input id="f" type="file" accept=".csv,text/csv" multiple>',
-    '<button id="b" onclick="go()">Import and refresh</button><div id="s"></div>',
-    '<script>',
-    'function csv(t){var out=[],r=[],v="",q=false;for(var i=0;i<t.length;i++){var c=t[i],n=t[i+1];if(q&&c===\'"\'&&n===\'"\'){v+=\'"\';i++;}else if(c===\'"\'){q=!q;}else if(!q&&c===","){r.push(v);v="";}else if(!q&&(c==="\\n"||c==="\\r")){if(c==="\\r"&&n==="\\n")i++;r.push(v);if(r.some(function(x){return x!==""}))out.push(r);r=[];v="";}else v+=c;}r.push(v);if(r.some(function(x){return x!==""}))out.push(r);return out;}',
-    'async function go(){var fs=document.getElementById("f").files,b=document.getElementById("b"),s=document.getElementById("s");if(!fs.length){s.textContent="Choose at least one CSV.";return;}b.disabled=true;s.textContent="Reading files…";try{var all=[];for(var i=0;i<fs.length;i++)all.push(csv(await fs[i].text()));google.script.run.withSuccessHandler(function(x){s.textContent=x;b.disabled=false;}).withFailureHandler(function(e){s.textContent="Import failed: "+e.message;b.disabled=false;}).replaceAdjustCurrent(all);}catch(e){s.textContent=e.message;b.disabled=false;}}',
-    '</script>'
-  ].join('')).setWidth(560).setHeight(330);
-  SpreadsheetApp.getUi().showModalDialog(html, 'Adjust current snapshot');
-}
-
-function _adjustImportedClass(network, campaign) {
-  var n = String(network || '').trim();
-  if (/^Organic$/i.test(n)) return { channel: 'Organic', objective: 'Organic' };
-  if (/^Snapchat Installs$/i.test(n)) return { channel: 'Snapchat', objective: 'Conversion' };
-  if (/^(Facebook|Instagram|Off-Facebook) Installs$/i.test(n)) return { channel: 'Meta', objective: 'Conversion' };
-  if (/^Apple Search Ads$/i.test(n)) return { channel: 'Apple', objective: 'Conversion' };
-  if (/^Google Ads Search$/i.test(n)) return { channel: 'Google', objective: 'Search' };
-  if (/^Google Ads /i.test(n)) return { channel: 'Google', objective: 'Conversion' };
-  if (/^Bidease/i.test(n)) return { channel: 'Bidease', objective: 'Conversion' };
-  if (/^InMobi/i.test(n)) return { channel: 'InMobi', objective: 'Conversion' };
-  if (/^InMotion/i.test(n)) return { channel: 'InMotion', objective: 'Conversion' };
-  if (/^Twitter Installs$/i.test(n)) return { channel: 'X', objective: 'Conversion' };
-  if (/^TikTok SAN$/i.test(n)) {
-    return { channel: 'TikTok', objective: /(?:_tt_search|_conv_sal_)/i.test(campaign) ? 'Search' :
-      /(?:tiktok_awr|_awrn_)/i.test(campaign) ? 'Awareness' : 'Conversion' };
-  }
-  return { channel: 'Other', objective: 'Conversion' };
-}
-
-function replaceAdjustCurrent(files) {
-  if (!files || !files.length) throw new Error('No CSV data received.');
-  var required = ['day','network','campaign_network','app','all_revenue','paid_installs',
-    'installs','bookingconfirmed_events'];
-  var outputHeader = ['day','network','campaign_network','app','all_revenue',
-    'general revenue_revenue_est','paid_installs','installs','bookingconfirmed_events',
-    'channel','objective'];
-  var incoming = [], apps = {};
-  files.forEach(function (table, fileIndex) {
-    if (!table || table.length < 2) throw new Error('CSV ' + (fileIndex + 1) + ' is empty.');
-    var header = table[0].map(function (x) { return String(x || '').replace(/^\uFEFF/, '').trim(); });
-    var pos = {}; header.forEach(function (x, i) { pos[x] = i; });
-    required.forEach(function (x) { if (pos[x] == null) throw new Error('CSV ' + (fileIndex + 1) + ' is missing "' + x + '".'); });
-    table.slice(1).forEach(function (r) {
-      var app = String(r[pos.app] || '').trim();
-      if (app !== 'Six Flags' && app !== 'Aquarabia') return;
-      var day = String(r[pos.day] || '').trim();
-      if (!/^\d{4}-\d{2}-\d{2}$/.test(day)) throw new Error('Invalid Adjust date: ' + day);
-      var network = String(r[pos.network] || '').trim();
-      var campaign = String(r[pos.campaign_network] || '').trim();
-      var cls = _adjustImportedClass(network, campaign);
-      apps[app] = true;
-      incoming.push([day, network, campaign, app,
-        r[pos.all_revenue] || 0,
-        pos['general revenue_revenue_est'] == null ? 0 : (r[pos['general revenue_revenue_est']] || 0),
-        r[pos.paid_installs] || 0, r[pos.installs] || 0,
-        r[pos.bookingconfirmed_events] || 0, cls.channel, cls.objective]);
-    });
-  });
-  var importedApps = Object.keys(apps);
-  if (!importedApps.length) throw new Error('No Six Flags or Aquarabia rows were found.');
-  var ss = _ss(), sh = ss.getSheetByName(CFG.ADJUST_CURRENT);
-  var preserved = [];
-  if (sh && sh.getLastRow() > 1) {
-    var old = sh.getDataRange().getValues(), oldHeader = old[0].map(String), appCol = oldHeader.indexOf('app');
-    if (appCol >= 0) preserved = old.slice(1).filter(function (r) {
-      return importedApps.indexOf(String(r[appCol] || '').trim()) < 0;
-    });
-  }
-  if (!sh) sh = ss.insertSheet(CFG.ADJUST_CURRENT);
-  sh.clearContents();
-  var rows = [outputHeader].concat(preserved, incoming);
-  sh.getRange(1, 1, rows.length, outputHeader.length).setValues(rows);
-  sh.setFrozenRows(1);
-  sh.getRange(2, 1, Math.max(1, rows.length - 1), 1).setNumberFormat('yyyy-mm-dd');
-  SpreadsheetApp.flush();
-  return 'Imported ' + incoming.length + ' rows for ' + importedApps.join(' + ') +
-    '. Adjust Current now has ' + (rows.length - 1) + ' rows. The existing dashboard link will read them on Refresh.';
-}
 function showDashboard() {
   var html = HtmlService.createHtmlOutputFromFile('Dashboard')
     .setWidth(1600).setHeight(950);
@@ -257,11 +204,17 @@ function checkSetup() {
     try { SpreadsheetApp.getUi().alert(out.join('\n')); } catch (e2) {}
     return out.join('\n');
   }
-  ['Raw data','Raw manual','Raw data BACKUP 20260807-1642','APPLE1','Adjust Raw','GA4',
-    'SFQC Pacing_Daily','AAQC Pacing_Daily'].forEach(function (n) {
+  [CFG.RAW, CFG.RAW_MANUAL, CFG.RAW_BACKUP, CFG.APPLE, CFG.ADJUST, CFG.GA4,
+    CFG.PACING_TABS.SFQC, CFG.PACING_TABS.AAQC].forEach(function (n) {
     var sh = ss.getSheetByName(n);
     out.push((sh ? '  found  ' : '  MISSING ') + n + (sh ? ' · ' + sh.getLastRow() + ' rows' : ''));
   });
+  var raw = ss.getSheetByName(CFG.RAW);
+  if (raw) {
+    var m1 = String(raw.getRange('M1').getValue()).trim();
+    out.push('  Raw data column M: ' + (m1 === 'Objective' ? 'Objective (current formula)' :
+      'missing — run Qiddiya Setup -> 3 · Install the formulas'));
+  }
   Logger.log(out.join('\n'));
   try { SpreadsheetApp.getUi().alert(out.join('\n')); } catch (e) {}
   return out.join('\n');
@@ -277,15 +230,41 @@ function _sheet(name) {
   }
   throw new Error('Sheet "' + name + '" not found.');
 }
+/** Lenient number parse — only for imports and repairs, never for counting. */
 function _num(v) {
   if (v === null || v === undefined || v === '') return 0;
   var n = typeof v === 'number' ? v : parseFloat(String(v).replace(/[, ]/g, ''));
   return isNaN(n) ? 0 : n;
 }
+/** What SUMIFS adds up: real numbers only. Text that looks like a number counts as 0. */
+function _cellNum(v) {
+  return typeof v === 'number' && isFinite(v) ? v : 0;
+}
+/** A non-empty cell that SUMIFS will silently skip. */
+function _isTextNum(v) {
+  return v !== '' && v !== null && v !== undefined && typeof v !== 'number' &&
+    !(v instanceof Date) && typeof v !== 'boolean';
+}
+/** What IFERROR(VALUE(SUBSTITUTE(x,",","")),0) produces — pacing row 24 (InMobi). */
+function _valueNum(v) {
+  if (typeof v === 'number') return isFinite(v) ? v : 0;
+  if (v === null || v === undefined || v instanceof Date || typeof v === 'boolean') return 0;
+  var s = String(v).replace(/,/g, '').trim();
+  if (!s) return 0;
+  var n = Number(s);
+  return isFinite(n) ? n : 0;
+}
 function _day(v, tz) {
   if (v instanceof Date) return Utilities.formatDate(v, tz || CFG.TZ, 'yyyy-MM-dd');
   return String(v || '').slice(0, 10);
 }
+/** A date criterion in SUMIFS only ever matches a real date cell, never text. */
+function _dateCell(v, tz) {
+  return v instanceof Date ? Utilities.formatDate(v, tz || CFG.TZ, 'yyyy-MM-dd') : '';
+}
+function _later(a, b) { return !a ? b : !b ? a : (a > b ? a : b); }
+function _sooner(a, b) { return !a ? b : !b ? a : (a < b ? a : b); }
+function _hasOwn(o, k) { return Object.prototype.hasOwnProperty.call(o, k); }
 function _dateSpine(from, till) {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(from || '') || !/^\d{4}-\d{2}-\d{2}$/.test(till || ''))
     return [];
@@ -316,15 +295,9 @@ function _touchCoverage(map, key, day, fields) {
 function _coverageValues(map) {
   return Object.keys(map).sort().map(function (key) { return map[key]; });
 }
-function _adjustNumber(v, row, name) {
-  if (v === null || v === undefined || v === '') return 0;
-  if (typeof v === 'number' && isFinite(v)) return v;
-  var s = String(v).replace(/[, ]/g, '');
-  if (/^-?(?:\d+\.?\d*|\.\d+)$/.test(s)) return +s;
-  throw new Error('Adjust Raw row ' + row + ': invalid ' + name + ' (' + String(v) + ').');
-}
 /** Adjust Raw can contain dd/MM/yyyy text beside dates auto-parsed as MM/dd/yyyy.
- * Interpret the export at read time; never rewrite its date cells. */
+ * Used by the cleaner (and to count suspect rows); the dashboard itself counts only
+ * real date cells, exactly like the pacing formulas. */
 function _adjustDay(v, row, reverseDmy, tz) {
   if (v instanceof Date) {
     if (!reverseDmy) return _day(v, tz);
@@ -359,7 +332,7 @@ function _adjustDay(v, row, reverseDmy, tz) {
  * 9 August rows. The broken September batch is identifiable as a contiguous run of
  * Jan-9, Feb-9 ... Dec-9 followed by the unambiguous text date 13/09. This marks
  * only that import cohort, and can also continue from 30/09 to a swapped 01/10.
- * Source cells are never rewritten. */
+ * Source cells are never rewritten here. */
 function _adjustReversedRows(rows, col, tz) {
   var marked = {};
   function nativeParts(v) {
@@ -418,7 +391,9 @@ function _adjustReversedRows(rows, col, tz) {
     var value = rows[j][col];
     if (typeof value === 'string') {
       var m = /^(\d{1,2})\/(\d{1,2})\/(\d{4})$/.exec(value.trim());
-      if (m) cursor = _adjustDay(value, j + 1, false, tz);
+      if (m) {
+        try { cursor = _adjustDay(value, j + 1, false, tz); } catch (e) { cursor = ''; }
+      }
       continue;
     }
     var original = nativeParts(value), rev = swapped(value);
@@ -434,12 +409,6 @@ function _adjustReversedRows(rows, col, tz) {
   }
   return marked;
 }
-function _adjustChannel(network, channel) {
-  // The imported classification labels Twitter Installs as Other in this export.
-  // The campaign belongs on the X pacing line, not the unrelated Other bucket.
-  if (/^Twitter Installs$/i.test(String(network || '').trim())) return 'X';
-  return channel;
-}
 /** Column index (1-based) of a header, or 0. */
 function _col(header, name) {
   for (var i = 0; i < header.length; i++) {
@@ -447,43 +416,25 @@ function _col(header, name) {
   }
   return 0;
 }
-function _brandFromCampaign(campaign, fallback) {
-  var c = String(campaign || '').toLowerCase();
-  // First Story is the two SFQC Snapchat takeovers; the source export omits the
-  // account dimension and leaves only this campaign label.
-  if (c.indexOf('first story') >= 0) return 'SFQC';
-  if (c.indexOf('sfqc') >= 0 || c.indexOf('six flags') >= 0 || c.indexOf('six_flags') >= 0)
-    return 'SFQC';
-  if (c.indexOf('aaqc') >= 0 || c.indexOf('aqc-') >= 0 || c.indexOf('aqc_') >= 0 ||
-      c.indexOf('aqqc') >= 0 || c.indexOf('aquarabia') >= 0) return 'AAQC';
-  return fallback === 'SFQC' || fallback === 'AAQC' ? fallback : '';
-}
-function _strictNumber(v, source, row, name) {
-  if (v === null || v === undefined || v === '') return 0;
-  if (typeof v === 'number' && isFinite(v)) return v;
-  var s = String(v).replace(/[, ]/g, '');
-  if (/^-?(?:\d+\.?\d*|\.\d+)$/.test(s)) return +s;
-  throw new Error(source + ' row ' + row + ': invalid ' + name + ' (' + String(v) + ').');
-}
-function _cols(header, names, source) {
-  var out = {};
-  names.forEach(function (name) {
-    out[name] = _col(header, name) - 1;
-    if (out[name] < 0) throw new Error(source + ' is missing the required column "' + name + '".');
+/** Header names the pacing formulas assume at fixed positions; returns what is off. */
+function _headerProblems(header, expected, tabName) {
+  var out = [];
+  Object.keys(expected).forEach(function (i) {
+    var want = String(expected[i]).toLowerCase();
+    var got = String(header[i] == null ? '' : header[i]).trim().toLowerCase();
+    if (got !== want) {
+      out.push(tabName + ' column ' + String.fromCharCode(65 + Number(i)) + ' should be "' +
+        expected[i] + '" but is "' + (header[i] == null ? '' : header[i]) + '"');
+    }
   });
   return out;
 }
 
 /**
  * Campaign names are the join between Raw data, Adjust and GA4, so they have to
- * travel with every Adjust and GA4 row. Sent verbatim they would be the largest
- * thing in the payload — the same 100-character string repeated thousands of
- * times — so each distinct name is stored once in payload.camps and the rows
- * carry its index. The client rehydrates them in one pass at boot.
- *
- * The index also keeps the grouping key safe: campaign names contain "|"
- * ("...Social_CU|Q3"), which would split a "|"-joined key into the wrong parts.
- * A number never can.
+ * travel with every row. Sent verbatim they would be the largest thing in the
+ * payload, so each distinct name is stored once in payload.camps and the rows carry
+ * its index. The client rehydrates them in one pass at boot.
  */
 var _campList, _campIx;
 function _campReset() { _campList = []; _campIx = {}; }
@@ -496,21 +447,7 @@ function _campIndex(name) {
   return _campIx[k];
 }
 
-/**
- * iOS / Android / Web from the campaign name — the dashboard slices by this.
- * Mirrors osOf() in the template so the two never disagree.
- */
-function _os(campaign) {
-  var c = String(campaign || '').toLowerCase();
-  if (c.indexOf('ios') >= 0 || c.indexOf('iphone') >= 0) return 'iOS';
-  if (c.indexOf('android') >= 0 || c.indexOf('_and_') >= 0) return 'Android';
-  return 'Web';
-}
-
-/**
- * Platform + campaign -> the pacing line the row belongs to. This server result is
- * appended to each raw row and is authoritative in the dashboard.
- */
+/** Platform + campaign -> objective. Fallback only: Raw data column M is authoritative. */
 function _objective(plat, campaign) {
   var c = String(campaign || '').toLowerCase();
   var rules = OBJECTIVE_TOKENS[plat] || {};
@@ -524,391 +461,385 @@ function _objective(plat, campaign) {
   return 'Conversion';
 }
 
+/* Platform and portal names as SUMIFS compares them: case-insensitive, otherwise exact. */
+var KNOWN_PLATFORMS = { snapchat: 'Snapchat', tiktok: 'TikTok', x: 'X', google: 'Google',
+  meta: 'Meta', apple: 'Apple', bidease: 'Bidease', inmobi: 'InMobi', inmotion: 'InMotion' };
+function _canonPlat(v) {
+  var k = String(v == null ? '' : v).toLowerCase();
+  return _hasOwn(KNOWN_PLATFORMS, k) ? KNOWN_PLATFORMS[k] : '';
+}
+function _brandCell(v) {
+  var b = String(v == null ? '' : v).toUpperCase();
+  return b === 'SFQC' || b === 'AAQC' ? b : '';
+}
+function _matchBrand(map, v) {
+  var s = String(v == null ? '' : v).toLowerCase();
+  for (var b in map) if (_hasOwn(map, b) && map[b].toLowerCase() === s) return b;
+  return '';
+}
+function _ga4Brand(property) {
+  var s = String(property == null ? '' : property).toLowerCase();
+  for (var b in CFG.GA4_PROPERTY)
+    if (_hasOwn(CFG.GA4_PROPERTY, b) && s.indexOf(CFG.GA4_PROPERTY[b]) === 0) return b;
+  return '';
+}
+function _mediaFloor(line, brand) {
+  var f = line.floor;
+  if (!f) return '';
+  return typeof f === 'string' ? f : (f[brand] || '');
+}
+function _adjustFloor(line) {
+  return line.obj === 'Awareness' ? '' : CFG.ADJUST_FROM;
+}
+
 /**
- * GA4 source/medium -> the bucket a pacing line reads.
- * Matches the wildcards in columns M and X of the pacing tabs:
- *   snap*  -> the SnapChat awareness line
- *   tiktok* with "search" in the campaign -> the TikTok Search line (TikTok-cpc)
- *   tiktok* otherwise                     -> the TikTok awareness line
- *   google*                               -> the Google Search line
- * Meta and X are collected too; the dashboard shows them in the GA4 table but the
- * pacing lines do not read them.
+ * Adjust channel + objective -> pacing line key. Mirrors the K/L/X formulas:
+ *   Meta, Apple, Bidease, InMobi, InMotion   one row each, every objective
+ *   Google   YouTube/Awareness -> row 10, Search -> row 16, everything else -> row 21
+ *   TikTok   Awareness -> row 8, Search -> row 15, everything else -> row 18
+ *   Snapchat / X   Awareness -> row 7 / 9, everything else -> row 17 / 20
+ *   Organic  never counted
+ *   anything else (Other, blank, a new partner) -> row 26, so nothing paid disappears
+ * Case-insensitive like SUMIFS, but not trimmed — "Meta " is not "Meta" to SUMIFS either.
  */
-function _bucket(sourceMedium, campaign) {
-  var s = String(sourceMedium || '').toLowerCase();
-  var c = String(campaign || '').toLowerCase();
-  if (s.indexOf('snap') === 0 || s.indexOf('snap') >= 0) return 'Snapchat';
-  if (s.indexOf('tiktok') === 0) return c.indexOf('search') >= 0 ? 'TikTok-cpc' : 'TikTok';
+var ADJUST_ONE_LINE = { Meta: 1, Apple: 1, Bidease: 1, InMobi: 1, InMotion: 1 };
+function _adjustLine(channel, objective) {
+  var ch = String(channel == null ? '' : channel);
+  if (ch.toLowerCase() === 'organic') return '';
+  var c = _canonPlat(ch);
+  if (!c) return 'Other|Other';
+  if (ADJUST_ONE_LINE[c]) return c + '|Conversion';
+  var o = String(objective == null ? '' : objective).toLowerCase();
+  if (c === 'Google') {
+    return o === 'youtube' || o === 'awareness' ? 'Google|Awareness' :
+      o === 'search' ? 'Google|Search' : 'Google|Conversion';
+  }
+  if (o === 'awareness') return c + '|Awareness';
+  if (o === 'search' && c === 'TikTok') return 'TikTok|Search';
+  return c + '|Conversion';
+}
+
+/**
+ * GA4 source/medium -> bucket, exactly as column M of the pacing tabs reads it:
+ *   snap*                                 -> row 7
+ *   tiktok* with "search" in the campaign -> row 15, other tiktok* -> row 8
+ *   google*                               -> row 16
+ *   instagram* facebook* "fb *" "ig *" meta* -> row 19
+ *   everything else that is paid          -> row 26 (M26 is the remainder)
+ */
+var GA4_LINE = { Snapchat: 'Snapchat|Awareness', TikTok: 'TikTok|Awareness',
+  'TikTok-cpc': 'TikTok|Search', Google: 'Google|Search', Meta: 'Meta|Conversion',
+  Other: 'Other|Other' };
+function _ga4Bucket(sourceMedium, campaign) {
+  var s = String(sourceMedium == null ? '' : sourceMedium).toLowerCase();
+  if (s.indexOf('snap') === 0) return 'Snapchat';
+  if (s.indexOf('tiktok') === 0) {
+    return String(campaign == null ? '' : campaign).toLowerCase().indexOf('search') >= 0 ?
+      'TikTok-cpc' : 'TikTok';
+  }
   if (s.indexOf('google') === 0) return 'Google';
-  if (s.indexOf('instagram') === 0 || s.indexOf('facebook') === 0 ||
-      s.indexOf('fb ') === 0 || s.indexOf('ig ') === 0 || s.indexOf('meta') === 0) return 'Meta';
-  if (s.indexOf('x ') === 0 || s.indexOf('twitter') >= 0 || s.indexOf('t.co') >= 0) return 'X';
+  if (/^(instagram|facebook|fb |ig |meta)/.test(s)) return 'Meta';
   return 'Other';
 }
+
+/* Fixed column positions the pacing formulas read (0-based index -> header). */
+var ADJUST_LAYOUT = ['day', 'network', 'campaign_network', 'app', 'all_revenue',
+  'general revenue_revenue_est', 'paid_installs', 'installs', 'bookingconfirmed_events',
+  'channel', 'objective'];
+var ADJUST_EXPECT = { 0: 'day', 1: 'network', 2: 'campaign_network', 3: 'app',
+  4: 'all_revenue', 6: 'paid_installs', 7: 'installs', 8: 'bookingconfirmed_events',
+  9: 'channel', 10: 'objective' };
+var APPLE_EXPECT = { 0: 'Date', 1: 'App Name', 3: 'Spend', 4: 'Impressions', 5: 'Taps',
+  6: 'Installs (Total)' };
+var GA4_EXPECT = { 1: 'GA4 property', 2: 'Date', 3: 'Session campaign name',
+  4: 'Session default channel grouping', 5: 'Session source / medium', 6: 'Transactions',
+  7: 'Purchase revenue' };
 
 /* ------------------------------------------------------------------ payload */
 
 function getPacingDashboardData() {
   var ss = _ss();
-  var sourceTz = ss.getSpreadsheetTimeZone ? ss.getSpreadsheetTimeZone() : CFG.TZ;
+  var tz = ss.getSpreadsheetTimeZone ? ss.getSpreadsheetTimeZone() : CFG.TZ;
   _campReset();
-  var pac = ss.getSheetByName(CFG.PACING);
-  var from = pac ? _day(pac.getRange('B2').getValue(), sourceTz) : '';
-  var till = pac ? _day(pac.getRange('C2').getValue(), sourceTz) : '';
+  var issues = [];
+  function issue(level, text) { issues.push({ level: level, text: text }); }
+  function money(v) { return '$' + Math.round(v).toLocaleString('en-US'); }
+  function count(n) { return Number(n).toLocaleString('en-US'); }
 
-  /* ---- Raw data: A platform, B brand, C campaign, D day, E reach, F impressions,
-          G spend, H link clicks, I clicks, J 3-sec views, K app installs, L purchases ---- */
-  var rv = _sheet(CFG.RAW).getDataRange().getValues();
-  var raw = [], dayset = {}, platset = {}, rawSeen = {}, rawCoverage = {};
-  function addStd(plat, brand, camp, day, metrics) {
-    if (!brand || !day) return;
-    var key = plat + '|' + brand + '|' + String(camp || '').trim().toLowerCase() + '|' + day;
-    if (rawSeen[key]) return;
-    rawSeen[key] = 1; rawCoverage[plat + '|' + brand + '|' + day] = 1;
-    // Index 12 is the server-owned objective. Older clients ignore it; the current
-    // client uses it so campaign taxonomy cannot drift between server and browser.
-    raw.push([plat, brand, _campIndex(camp), day].concat(metrics, [_objective(plat, camp)]));
-    dayset[day] = 1; platset[plat] = 1;
+  /* ---- window: SFQC Pacing_Daily B2:C2, the same window Raw data N2:O2 follows ---- */
+  var pac = ss.getSheetByName(CFG.PACING);
+  var from = pac ? _day(pac.getRange('B2').getValue(), tz) : '';
+  var till = pac ? _day(pac.getRange('C2').getValue(), tz) : '';
+  var aPac = ss.getSheetByName(CFG.PACING_TABS.AAQC);
+  if (aPac) {
+    var af = _day(aPac.getRange('B2').getValue(), tz), at = _day(aPac.getRange('C2').getValue(), tz);
+    if (af !== from || at !== till) {
+      issue('crit', 'AAQC Pacing_Daily runs ' + af + ' → ' + at + ' but SFQC Pacing_Daily runs ' +
+        from + ' → ' + till + '. Raw data and this dashboard follow the SFQC dates, so the AAQC ' +
+        'tab cannot agree with either. Put the same dates in B2:C2 on both tabs.');
+    }
   }
+  function inWindow(day) { return !!day && (!from || day >= from) && (!till || day <= till); }
+
+  var raw = [], dayset = {}, platset = {};
+  function addRaw(line, brand, camp, day, m) {
+    // [platform, brand, campaign, day, reach, impressions, spend, link clicks, clicks,
+    //  views, installs, purchases, objective] — one entry per source row, never merged:
+    // SUMIFS adds every row, so the dashboard does too.
+    raw.push([line.plat, brand, _campIndex(camp), day].concat(m, [line.obj]));
+    dayset[day] = 1; platset[line.plat] = 1;
+  }
+
+  /* ---- Raw data (rows 7-21, 23, 25): A platform, B portal, C campaign, D day, E reach,
+          F impressions, G spend, H link clicks, I clicks, J views, K installs, L purchases,
+          M objective ---- */
+  var rv = _sheet(CFG.RAW).getDataRange().getValues();
+  var rawHdr = rv[0] || [];
+  var hasObjective = String(rawHdr[12] == null ? '' : rawHdr[12]).trim().toLowerCase() === 'objective';
+  if (!hasObjective) {
+    issue('warn', 'Raw data has no Objective column (M), so this dashboard is splitting campaigns ' +
+      'into lines itself while the pacing tab still uses its old wildcard sums. Run Qiddiya Setup → ' +
+      '3 · Install the formulas once; after that both read the same column.');
+  }
+  var unmapped = { spend: 0, names: {} }, offLine = {}, rawBadDates = 0;
   for (var i = 1; i < rv.length; i++) {
     var r = rv[i];
-    if (!r[0]) continue;
-    var plat = String(r[0]).trim(), camp = String(r[2]).trim(), day = _day(r[3], sourceTz);
-    // Apple is intentionally sourced from APPLE1 below. InMobi is intentionally
-    // sourced from Raw manual below: Raw data only contains a partial SFQC slice and
-    // no AAQC rows in the current workbook. Ignoring both here prevents double count.
-    if (/^Apple(?: Ads)?$/i.test(plat) || plat === 'InMobi') continue;
-    if (from && day && (day < from || day > till)) continue;
-    // Mirror the date floor each pacing line carries, or the pre-launch SKAN tail
-    // (installs and purchases on days with no spend) inflates the conversion rows.
-    var floor = CFG.FLOOR[plat + '|' + _objective(plat, camp)];
-    if (floor && day && day < floor) continue;
-    // X is funded in SAR but reports into the USD column, exactly as the pacing rows divide it
-    var spend = _num(r[6]) / (plat === 'X' ? CFG.FX : 1);
-    // X reports nothing in "Clicks (all)" — the pacing rows read link clicks instead (I9=J9)
-    var clicks = (plat === 'X') ? _num(r[7]) : _num(r[8]);
-    // the name is interned like Adjust's and GA4's — it is the same 100-character
-    // string on every one of a campaign's daily rows, and repeating it is by far
-    // the largest thing in the payload
-    addStd(plat, _brandFromCampaign(camp, String(r[1]).trim()), camp, day,
-      [_num(r[4]), _num(r[5]), Math.round(spend * 10000) / 10000,
-       _num(r[7]), clicks, _num(r[9]), _num(r[10]), _num(r[11])]);
-  }
-
-  /* Standardised history from the previous Raw data generation. It fills Jul/Aug
-     days but never replaces the current Raw data rows above. */
-  var bv = _sheet(CFG.RAW_BACKUP).getDataRange().getValues();
-  for (var bi = 1; bi < bv.length; bi++) {
-    var br = bv[bi], bp = String(br[0] || '').trim();
-    if (!bp || bp === 'InMobi' || /^Apple(?: Ads)?$/i.test(bp)) continue;
-    var bc = String(br[2] || '').trim(), bd = _day(br[3], sourceTz);
-    if (from && bd && (bd < from || bd > till)) continue;
-    var bf = CFG.FLOOR[bp + '|' + _objective(bp, bc)];
-    if (bf && bd && bd < bf) continue;
-    var bs = _num(br[6]) / (bp === 'X' ? CFG.FX : 1);
-    addStd(bp, _brandFromCampaign(bc, String(br[1] || '').trim()), bc, bd,
-      [_num(br[4]), _num(br[5]), Math.round(bs * 10000) / 10000,
-       _num(br[7]), bp === 'X' ? _num(br[7]) : _num(br[8]),
-       _num(br[9]), _num(br[10]), _num(br[11])]);
-  }
-
-  /* Native platform tabs fill only calendar days missing from both Raw data
-     generations. This closes the Aug gap without double-counting Sep rows whose
-     campaign labels were normalised upstream. */
-  function nativeRows(sheetName, plat, required, mapper, campaignHeader) {
-    var values = _sheet(sheetName).getDataRange().getValues();
-    var cols = _cols(values[0] || [], required, sheetName);
-    for (var ni = 1; ni < values.length; ni++) {
-      var nr = values[ni], nc = String(nr[cols[campaignHeader || 'Campaign name']] || '').trim();
-      var nd = _day(nr[cols.Date], sourceTz);
-      if (!nc || !nd) continue;
-      if (from && (nd < from || nd > till)) continue;
-      var nf = CFG.FLOOR[plat + '|' + _objective(plat, nc)];
-      if (nf && nd < nf) continue;
-      var nb = _brandFromCampaign(nc, '');
-      if (!nb) continue;
-      // Coverage is portal-specific. A SFQC row on a day must not suppress a
-      // missing AAQC row (or vice versa) from the native platform fallback.
-      if (rawCoverage[plat + '|' + nb + '|' + nd]) continue;
-      addStd(plat, nb, nc, nd, mapper(nr, cols, ni + 1));
+    if (r[0] === '' || r[0] === null) continue;
+    var day = _dateCell(r[3], tz);
+    if (!day) { rawBadDates++; continue; }
+    if (!inWindow(day)) continue;
+    var plat = _canonPlat(r[0]);
+    var camp = String(r[2] == null ? '' : r[2]);
+    var brand = _brandCell(r[1]);
+    var spend = _cellNum(r[6]) / (plat === 'X' ? CFG.FX : 1);   // X is billed in SAR
+    if (!brand) {
+      unmapped.spend += spend;
+      var un = String(r[0]) + ' · ' + camp;
+      unmapped.names[un] = (unmapped.names[un] || 0) + spend;
+      continue;
     }
-  }
-  nativeRows('META', 'Meta', ['Date','Campaign name','Reach','Impressions','Cost',
-    'Link clicks','Clicks (all)','Three-second video views','Mobile app installs','Mobile app purchases'],
-    function (r, c, row) { return [
-      _strictNumber(r[c.Reach], 'META', row, 'Reach'),
-      _strictNumber(r[c.Impressions], 'META', row, 'Impressions'),
-      _strictNumber(r[c.Cost], 'META', row, 'Cost'),
-      _strictNumber(r[c['Link clicks']], 'META', row, 'Link clicks'),
-      _strictNumber(r[c['Clicks (all)']], 'META', row, 'Clicks (all)'),
-      _strictNumber(r[c['Three-second video views']], 'META', row, 'Three-second video views'),
-      _strictNumber(r[c['Mobile app installs']], 'META', row, 'Mobile app installs'),
-      _strictNumber(r[c['Mobile app purchases']], 'META', row, 'Mobile app purchases')];
-    });
-  nativeRows('Snapchat', 'Snapchat', ['Date','Campaign name','Impressions','Cost','Swipes',
-    'Total app installs','Purchases','Video views'], function (r, c, row) { return [0,
-      _strictNumber(r[c.Impressions], 'Snapchat', row, 'Impressions'),
-      _strictNumber(r[c.Cost], 'Snapchat', row, 'Cost'), 0,
-      _strictNumber(r[c.Swipes], 'Snapchat', row, 'Swipes'),
-      _strictNumber(r[c['Video views']], 'Snapchat', row, 'Video views'),
-      _strictNumber(r[c['Total app installs']], 'Snapchat', row, 'Total app installs'),
-      _strictNumber(r[c.Purchases], 'Snapchat', row, 'Purchases')];
-    });
-  nativeRows('TikTok', 'TikTok', ['Date','Campaign name','Reach','Impressions','Cost','Clicks',
-    'Clicks (All)','2-second video views','App installs','Purchase events','Purchase events (SKAN)',
-    'Complete payment events'],
-    function (r, c, row) {
-      var purchases = _strictNumber(r[c['Purchase events']], 'TikTok', row, 'Purchase events') +
-        _strictNumber(r[c['Purchase events (SKAN)']], 'TikTok', row, 'Purchase events (SKAN)') +
-        _strictNumber(r[c['Complete payment events']], 'TikTok', row, 'Complete payment events');
-      return [_strictNumber(r[c.Reach], 'TikTok', row, 'Reach'),
-        _strictNumber(r[c.Impressions], 'TikTok', row, 'Impressions'),
-        _strictNumber(r[c.Cost], 'TikTok', row, 'Cost'),
-        _strictNumber(r[c.Clicks], 'TikTok', row, 'Clicks'),
-        _strictNumber(r[c['Clicks (All)']], 'TikTok', row, 'Clicks (All)'),
-        _strictNumber(r[c['2-second video views']], 'TikTok', row, '2-second video views'),
-        _strictNumber(r[c['App installs']], 'TikTok', row, 'App installs'), purchases];
-    });
-  nativeRows('Google', 'Google', ['Date','Campaign name','Impressions','Cost','Clicks','Video views','Conversions'],
-    function (r, c, row) {
-      var conv = _strictNumber(r[c.Conversions], 'Google', row, 'Conversions');
-      var name = String(r[c['Campaign name']] || '').toLowerCase();
-      return [0, _strictNumber(r[c.Impressions], 'Google', row, 'Impressions'),
-        _strictNumber(r[c.Cost], 'Google', row, 'Cost'), 0,
-        _strictNumber(r[c.Clicks], 'Google', row, 'Clicks'),
-        _strictNumber(r[c['Video views']], 'Google', row, 'Video views'),
-        name.indexOf('uac') >= 0 || name.indexOf('app installs') >= 0 ? conv : 0, conv];
-    });
-  // X has duplicate "Installs" and "Purchases" headers; its established export
-  // contract uses fixed columns T and W for the app metrics.
-  nativeRows('X', 'X', ['Date','Campaign','Impressions','Cost','Clicks','Video views 3s'],
-    function (r, c, row) { return [0,
-      _strictNumber(r[c.Impressions], 'X', row, 'Impressions'),
-      Math.round((_strictNumber(r[c.Cost], 'X', row, 'Cost') / CFG.FX) * 10000) / 10000,
-      _strictNumber(r[c.Clicks], 'X', row, 'Clicks'), 0,
-      _strictNumber(r[c['Video views 3s']], 'X', row, 'Video views 3s'),
-      _strictNumber(r[19], 'X', row, 'Installs'),
-      _strictNumber(r[22], 'X', row, 'Purchases')];
-    }, 'Campaign');
-
-  /* ---- InMobi history + Raw manual: same A:L schema as Raw data. Raw data is
-          incomplete (only SFQC 1-10 Sep). The backup holds Jul/Aug history and Raw
-          manual holds the maintained Sep rows for both properties. Merge by
-          brand+campaign+day and let Raw manual win if the same day exists in both,
-          so refreshing or extending either source cannot double count. ---- */
-  var imRows = {};
-  function collectInMobi(values, priority) {
-    for (var mi = 1; mi < values.length; mi++) {
-      var mr = values[mi];
-      if (String(mr[0] || '').trim() !== 'InMobi') continue;
-      var manualBrand = String(mr[1] || '').trim();
-      if (manualBrand !== 'SFQC' && manualBrand !== 'AAQC') continue;
-      var manualCamp = String(mr[2] || '').trim();
-      var manualDay = _day(mr[3], sourceTz);
-      if (from && manualDay && (manualDay < from || manualDay > till)) continue;
-      var manualFloor = CFG.FLOOR['InMobi|Conversion'];
-      if (manualFloor && manualDay && manualDay < manualFloor) continue;
-      var manualKey = manualBrand + '|' + manualCamp.toLowerCase() + '|' + manualDay;
-      if (!imRows[manualKey] || priority > imRows[manualKey].priority)
-        imRows[manualKey] = { priority: priority, row: mr, brand: manualBrand,
-          camp: manualCamp, day: manualDay };
+    // Apple is row 22 (APPLE1) and InMobi is row 24 (Raw manual + backup) on the pacing
+    // tab; their Raw data copies are never read there, so they are not read here either.
+    if (plat === 'Apple' || plat === 'InMobi') continue;
+    var obj = hasObjective ? String(r[12] == null ? '' : r[12]) : _objective(plat, camp);
+    var line = plat ? LINE_BY_KEY[plat + '|' + obj] : null;
+    if (!line || line.source) {
+      var ok = String(r[0]) + ' / ' + obj + ' / ' + brand;
+      offLine[ok] = (offLine[ok] || 0) + spend;
+      continue;
     }
+    var floor = _mediaFloor(line, brand);
+    if (floor && day < floor) continue;
+    // X reports nothing in "Clicks (all)" — its pacing rows read link clicks (I9=J9, I20=J20)
+    addRaw(line, brand, camp, day,
+      [_cellNum(r[4]), _cellNum(r[5]), spend, _cellNum(r[7]),
+       plat === 'X' ? _cellNum(r[7]) : _cellNum(r[8]),
+       _cellNum(r[9]), _cellNum(r[10]), _cellNum(r[11])]);
   }
-  collectInMobi(_sheet(CFG.RAW_BACKUP).getDataRange().getValues(), 1);
-  collectInMobi(_sheet(CFG.RAW_MANUAL).getDataRange().getValues(), 2);
-  Object.keys(imRows).sort().forEach(function (manualKey) {
-    var item = imRows[manualKey], mr = item.row;
-    addStd('InMobi', item.brand, item.camp, item.day,
-      [_num(mr[4]), _num(mr[5]), Math.round(_num(mr[6]) * 10000) / 10000,
-       _num(mr[7]), _num(mr[8]), _num(mr[9]), _num(mr[10]), _num(mr[11])]);
+  if (unmapped.spend > 0.5) {
+    var top = Object.keys(unmapped.names).sort(function (a, b) {
+      return unmapped.names[b] - unmapped.names[a];
+    }).slice(0, 5);
+    issue('crit', money(unmapped.spend) + ' of Raw data spend in the window has no portal in column B ' +
+      '(the campaign name carries neither an SFQC nor an AAQC token), so no pacing row and no dashboard ' +
+      'line counts it. Largest: ' + top.join('; ') + '.');
+  }
+  Object.keys(offLine).forEach(function (k) {
+    if (offLine[k] > 0.5) {
+      issue('crit', money(offLine[k]) + ' of Raw data spend is on "' + k + '", which has no row on the ' +
+        'pacing tab. Add a row for it, or fix the platform name in Raw manual.');
+    }
   });
+  if (rawBadDates) {
+    issue('warn', count(rawBadDates) + ' Raw data rows have a Day that is not a date; SUMIFS skips them.');
+  }
 
-  /* ---- Apple Search Ads (APPLE1): resolve columns by header so a connector refresh
-          cannot shift the metrics. Spend is already USD; Taps serve as both click
-          fields, and this export has no video-view or purchase metric. ---- */
+  /* ---- Apple Ads (row 22) — APPLE1 by position: A date, B app, D spend, E impressions,
+          F taps (clicks and link clicks), G installs. No views, no purchases. ---- */
+  var appleLine = LINE_BY_KEY['Apple|Conversion'];
   var apv = _sheet(CFG.APPLE).getDataRange().getValues();
-  var aph = apv[0] || [], apc = {};
-  ['Date','App Name','Campaign Name','Spend','Impressions','Taps','Installs (Total)']
-    .forEach(function (name) {
-      apc[name] = _col(aph, name) - 1;
-      if (apc[name] < 0) throw new Error(CFG.APPLE + ' is missing the required column "' + name + '".');
-    });
+  var apHdr = apv[0] || [];
+  _headerProblems(apHdr, APPLE_EXPECT, CFG.APPLE).forEach(function (p) {
+    issue('crit', p + ' — pacing row 22 reads APPLE1 by position.');
+  });
+  var appleCampCol = _col(apHdr, 'Campaign Name') - 1;
+  if (appleCampCol < 0) appleCampCol = 2;
   for (var ai = 1; ai < apv.length; ai++) {
     var ar = apv[ai];
-    if (!ar[apc.Date]) continue;
-    var appleBrand = CFG.PROPERTY_OF[String(ar[apc['App Name']] || '').trim()];
+    var appleBrand = _matchBrand(CFG.APPLE_APP, ar[1]);
     if (!appleBrand) continue;
-    var appleDay = _day(ar[apc.Date], sourceTz);
-    if (appleDay < CFG.FLOOR['Apple|Conversion']) continue;
-    if (from && appleDay && (appleDay < from || appleDay > till)) continue;
-    var appleCamp = String(ar[apc['Campaign Name']] || '').trim();
-    var appleTaps = _num(ar[apc.Taps]);
-    addStd('Apple', appleBrand, appleCamp, appleDay,
-      [0, _num(ar[apc.Impressions]), Math.round(_num(ar[apc.Spend]) * 10000) / 10000,
-       appleTaps, appleTaps, 0, _num(ar[apc['Installs (Total)']]), 0]);
+    var appleDay = _dateCell(ar[0], tz);
+    if (!inWindow(appleDay)) continue;
+    if (appleDay < _mediaFloor(appleLine, appleBrand)) continue;
+    var taps = _cellNum(ar[5]);
+    addRaw(appleLine, appleBrand, String(ar[appleCampCol] == null ? '' : ar[appleCampCol]), appleDay,
+      [0, _cellNum(ar[4]), _cellNum(ar[3]), taps, taps, 0, _cellNum(ar[6]), 0]);
   }
 
-  /* ---- Adjust Raw: resolve its export columns by their headers. Channel and
-          objective come from the source, never from a guessed network name. ---- */
-  var adjustCurrent = _ss().getSheetByName(CFG.ADJUST_CURRENT);
-  var adjustSheet = adjustCurrent && adjustCurrent.getLastRow() > 1
-    ? adjustCurrent : _sheet(CFG.ADJUST);
-  var adjustSourceName = adjustSheet.getName ? adjustSheet.getName() :
-    (adjustCurrent && adjustCurrent.getLastRow() > 1 ? CFG.ADJUST_CURRENT : CFG.ADJUST);
-  var adjustRange = adjustSheet.getDataRange();
-  var av = adjustRange.getValues();
-  // Display text is useful only for cells that stayed text. For native Date cells
-  // it merely repeats Google's already-swapped interpretation (01/09 becomes
-  // 9 January), so those must continue through the import-level reversal check.
-  var avDisplay = adjustRange.getDisplayValues ? adjustRange.getDisplayValues() : null;
-  var ah = av[0] || [];
-  var ac = {};
-  ['day','network','campaign_network','app','all_revenue','paid_installs','installs',
-    'bookingconfirmed_events','channel','objective'].forEach(function (name) {
-    ac[name] = _col(ah, name) - 1;
-    if (ac[name] < 0) throw new Error(adjustSourceName + ' is missing the required column "' + name + '".');
+  /* ---- InMobi (row 24): Raw manual from 1 Sep, the Raw data backup for 2 Jul - 31 Aug,
+          rows 2-10000, numbers parsed with VALUE(), exactly as the row's SUMPRODUCTs ---- */
+  var inmobiLine = LINE_BY_KEY['InMobi|Conversion'];
+  function readInMobi(sheetName, lo, hi) {
+    var sh = ss.getSheetByName(sheetName);
+    if (!sh) {
+      issue('crit', 'Tab "' + sheetName + '" is missing — pacing row 24 (InMobi) reads it.');
+      return;
+    }
+    var v = sh.getDataRange().getValues();
+    var last = Math.min(v.length, CFG.INMOBI_LAST_ROW);
+    for (var mi = 1; mi < last; mi++) {
+      var mr = v[mi];
+      if (String(mr[0] == null ? '' : mr[0]).toLowerCase() !== 'inmobi') continue;
+      var mb = _brandCell(mr[1]);
+      if (!mb) continue;
+      var md = _dateCell(mr[3], tz), lower = _later(from, lo), upper = _sooner(till, hi);
+      if (!md || (lower && md < lower) || (upper && md > upper)) continue;
+      addRaw(inmobiLine, mb, String(mr[2] == null ? '' : mr[2]), md,
+        [_valueNum(mr[4]), _valueNum(mr[5]), _valueNum(mr[6]), _valueNum(mr[7]),
+         _valueNum(mr[8]), _valueNum(mr[9]), _valueNum(mr[10]), _valueNum(mr[11])]);
+    }
+    if (v.length > CFG.INMOBI_LAST_ROW) {
+      issue('warn', sheetName + ' has rows below row 10,000; pacing row 24 stops reading there.');
+    }
+  }
+  readInMobi(CFG.RAW_MANUAL, CFG.INMOBI_MANUAL_FROM, '');
+  readInMobi(CFG.RAW_BACKUP, FLOOR_JUL2, CFG.INMOBI_BACKUP_TILL);
+
+  /* ---- Adjust Raw (columns K, L, X): by position, like the formulas — A day, D app,
+          E revenue, G paid installs, H installs, I bookings, J channel, K objective.
+          Every row counts once per occurrence, as SUMIFS counts it; duplicates and
+          unreadable dates are reported, and "Clean Adjust Raw" removes them for both. ---- */
+  var ash = _sheet(CFG.ADJUST);
+  var av = ash.getDataRange().getValues();
+  _headerProblems(av[0] || [], ADJUST_EXPECT, CFG.ADJUST).forEach(function (p) {
+    issue('crit', p + ' — the pacing formulas read Adjust Raw by position.');
   });
-  var adjustDataRows = av.reduce(function (n, r, idx) { return n + (idx > 0 && r[ac.day] ? 1 : 0); }, 0);
-  if (adjustDataRows === 5000)
-    throw new Error(adjustSourceName + ' has exactly 5,000 data rows. This export is incomplete ' +
-      'for the selected period, so the dashboard will not publish partial Adjust metrics. ' +
-      'Import the complete Adjust export for both apps, in smaller date batches if needed.');
-  var reversedAdjustRows = _adjustReversedRows(av, ac.day, sourceTz);
-  // Monthly imports can overlap by a day. Adjust's export grain is one row per
-  // app + network + campaign + day, so the later occurrence replaces the older
-  // one instead of being added twice. This also keeps attribution restatements
-  // from being summed with their previous value.
-  var aLatest = {};
+  var reversed = _adjustReversedRows(av, 0, tz);
+  var swappedRows = Object.keys(reversed).filter(function (j) {
+    return _matchBrand(CFG.ADJUST_APP, av[j][3]);
+  }).length;
+  var aAgg = {}, seenKeys = {}, channelsSeen = {};
+  var adjustDataRows = 0, textDates = 0, dupRows = 0, textNums = 0, blankChannel = 0;
   for (var j = 1; j < av.length; j++) {
     var a = av[j];
-    if (!a[ac.day]) continue;
-    var appBrand = { 'Six Flags': 'SFQC', 'Aquarabia': 'AAQC' }[String(a[ac.app] || '').trim()];
+    if (a[0] === '' || a[0] === null) continue;
+    adjustDataRows++;
+    var appBrand = _matchBrand(CFG.ADJUST_APP, a[3]);
     if (!appBrand) continue;
-    var channel = _adjustChannel(a[ac.network], String(a[ac.channel] || '').trim());
-    var objective = String(a[ac.objective] || '').trim();
-    if (channel === 'Organic') continue;
-    if (!channel || !objective) throw new Error('Adjust Raw row ' + (j + 1) + ': missing channel or objective.');
-    var shownDay = avDisplay && avDisplay[j] ? String(avDisplay[j][ac.day] || '').trim() : '';
-    var nativeDay = a[ac.day];
-    var d = nativeDay instanceof Date
-      ? _adjustDay(nativeDay, j + 1, !!reversedAdjustRows[j], sourceTz)
-      : _adjustDay(shownDay || nativeDay, j + 1, false, sourceTz);
-    // awareness and YouTube lines have no date floor; every other line starts 2 Jul
-    var isAwr = (objective === 'Awareness' || objective === 'YouTube');
-    if (!isAwr && d && d < CFG.ADJUST_FROM) continue;
-    if (from && d && (d < from || d > till)) continue;
-    // day is part of the key so the dashboard can move Adjust with the date picker —
-    // without it the verified installs, bookings and revenue ignore the range.
-    // campaign_network is part of it too: it is the only thing that ties a verified
-    // install back to the campaign that bought it, and column C carries the same
-    // name Raw data does. Without it the campaign table can only guess by spend.
-    var camp = a[ac.campaign_network];
-    // Some combined Adjust exports contain SFQC-named campaigns on rows whose App
-    // cell says Aquarabia (and vice versa). The campaign name is the more specific
-    // identifier; retain App only as the fallback for generic rows such as
-    // "Expired Attributions". Without this, AAQC absorbs another brand's results.
-    var brand = _brandFromCampaign(camp, appBrand);
-    var ci = _campIndex(camp);
-    var sourceKey = JSON.stringify([brand, String(a[ac.network] || '').trim(),
-      String(camp || '').trim(), d]);
-    var candidate = { brand: brand, channel: channel, objective: objective,
-      os: _os(camp), day: d, ci: ci,
-      revenue: _adjustNumber(a[ac.all_revenue], j + 1, 'all_revenue'),
-      paidInst: _adjustNumber(a[ac.paid_installs], j + 1, 'paid_installs'),
-      inst: _adjustNumber(a[ac.installs], j + 1, 'installs'),
-      bookings: _adjustNumber(a[ac.bookingconfirmed_events], j + 1, 'bookingconfirmed_events') };
-    var previous = aLatest[sourceKey];
-    // The append-only legacy tab also contains partial zero-only refreshes for
-    // Expired Attributions after the completed row for the same day. Until the
-    // clean Adjust Current importer is used, do not let that partial row erase a
-    // verified booking/revenue value. Ordinary campaigns still use later-wins.
-    if (/^Expired Attributions$/i.test(String(camp || '').trim()) && previous) {
-      var prevScore = previous.bookings * 1e12 + previous.revenue * 1e3 + previous.inst;
-      var nextScore = candidate.bookings * 1e12 + candidate.revenue * 1e3 + candidate.inst;
-      if (nextScore >= prevScore) aLatest[sourceKey] = candidate;
-    } else {
-      aLatest[sourceKey] = candidate;
-    }
+    var d = _dateCell(a[0], tz);
+    var lineKey = _adjustLine(a[9], a[10]);
+    if (!lineKey) continue;                                  // Organic
+    if (!d) { textDates++; continue; }
+    var dupKey = JSON.stringify([d, String(a[3]).toLowerCase(), String(a[1]), String(a[2])]);
+    if (seenKeys[dupKey]) dupRows++; else seenKeys[dupKey] = 1;
+    channelsSeen[appBrand + '|' + lineKey.split('|')[0]] = 1;
+    if (a[9] === '' || a[9] === null) blankChannel++;
+    if (!inWindow(d)) continue;
+    var aLine = LINE_BY_KEY[lineKey];
+    var aFloor = _adjustFloor(aLine);
+    if (aFloor && d < aFloor) continue;
+    if (_isTextNum(a[4]) || _isTextNum(a[6]) || _isTextNum(a[7]) || _isTextNum(a[8])) textNums++;
+    var aCamp = String(a[2] == null ? '' : a[2]), ci = _campIndex(aCamp);
+    var channelName = String(a[9] == null ? '' : a[9]) || '(blank)';
+    var ak = [appBrand, lineKey, channelName, d, ci].join('\u0001');
+    var e = aAgg[ak] || (aAgg[ak] = { brand: appBrand, line: lineKey, channel: channelName,
+      day: d, ci: ci, revenue: 0, paidInst: 0, inst: 0, bookings: 0 });
+    e.revenue += _cellNum(a[4]);
+    e.paidInst += _cellNum(a[6]);
+    e.inst += _cellNum(a[7]);
+    e.bookings += _cellNum(a[8]);
   }
-  var aMap = {};
-  Object.keys(aLatest).forEach(function (sourceKey) {
-    var row = aLatest[sourceKey];
-    var key = JSON.stringify([row.brand, row.channel, row.objective, row.os, row.day, row.ci]);
-    var e = aMap[key] || (aMap[key] = { brand: row.brand, channel: row.channel,
-      objective: row.objective, os: row.os, day: row.day, ci: row.ci,
-      revenue: 0, paidInst: 0, inst: 0, bookings: 0 });
-    e.revenue += row.revenue;
-    e.paidInst += row.paidInst;
-    e.inst += row.inst;
-    e.bookings += row.bookings;
+  var adjust = Object.keys(aAgg).map(function (k) {
+    var e = aAgg[k];
+    e.revenue = Math.round(e.revenue * 100) / 100;
+    return e;
   });
-  var adjust = Object.keys(aMap).map(function (k) {
-    var e = aMap[k];
-    return { brand: e.brand, channel: e.channel, objective: e.objective,
-      os: e.os, day: e.day, ci: e.ci,
-      revenue: Math.round(e.revenue * 100) / 100,
-      paidInst: e.paidInst, inst: e.inst, bookings: e.bookings };
+  var fixHint = ' Run Pacing dashboard → Clean Adjust Raw: it repairs the tab both the pacing ' +
+    'formulas and this dashboard read (a backup and a change log are kept).';
+  if (textDates) {
+    issue('crit', count(textDates) + ' Adjust Raw rows hold their day as text (e.g. 13/09/2026). ' +
+      'SUMIFS cannot read a text date, so neither the pacing tab nor this dashboard counts their ' +
+      'installs, bookings or revenue.' + fixHint);
+  }
+  if (swappedRows) {
+    issue('crit', count(swappedRows) + ' Adjust Raw dates look day/month-swapped by Sheets ' +
+      '(01/09 stored as 9 January). Those rows are counted on the wrong day — usually outside the ' +
+      'window, i.e. not at all.' + fixHint);
+  }
+  if (dupRows) {
+    issue('crit', count(dupRows) + ' Adjust Raw rows repeat a day + app + network + campaign that is ' +
+      'already in the tab (overlapping imports), so the pacing tab and this dashboard add them twice.' +
+      fixHint);
+  }
+  if (textNums) {
+    issue('warn', count(textNums) + ' Adjust Raw rows in the window have a number stored as text; ' +
+      'SUMIFS counts those cells as 0.' + fixHint);
+  }
+  if (blankChannel) {
+    issue('warn', count(blankChannel) + ' Adjust Raw rows have no channel (column J); they are ' +
+      'counted on the Other row.' + fixHint);
+  }
+  if (adjustDataRows === 5000) {
+    issue('crit', 'Adjust Raw has exactly 5,000 data rows — the size at which an Adjust export ' +
+      'truncates. Re-export the period in smaller date batches and import them.');
+  }
+  var legacy = ss.getSheetByName(CFG.ADJUST_LEGACY);
+  if (legacy && legacy.getLastRow() > 1) {
+    issue('warn', '"' + CFG.ADJUST_LEGACY + '" still holds ' + count(legacy.getLastRow() - 1) +
+      ' imported rows that neither the pacing tab nor this dashboard reads.' + fixHint);
+  }
+
+  /* ---- GA4 (column M): by position — B property, C date, D campaign, E channel group,
+          F source / medium, G transactions, H revenue ---- */
+  var gv = _sheet(CFG.GA4).getDataRange().getValues();
+  _headerProblems(gv[0] || [], GA4_EXPECT, CFG.GA4).forEach(function (p) {
+    issue('crit', p + ' — the pacing formulas read GA4 by position.');
+  });
+  var gMap = {};
+  for (var k = 1; k < gv.length; k++) {
+    var g = gv[k];
+    var gBrand = _ga4Brand(g[1]);
+    if (!gBrand) continue;
+    if (CFG.PAID_GROUPS.indexOf(String(g[4] == null ? '' : g[4]).toLowerCase()) < 0) continue;
+    var gd = _dateCell(g[2], tz);
+    if (!inWindow(gd)) continue;
+    var bucket = _ga4Bucket(g[5], g[3]);
+    var gci = _campIndex(g[3]);
+    var gk = [gBrand, bucket, gd, gci].join('\u0001');
+    var ge = gMap[gk] || (gMap[gk] = { brand: gBrand, bucket: bucket, line: GA4_LINE[bucket],
+      day: gd, ci: gci, tx: 0, revenue: 0 });
+    ge.tx += _cellNum(g[6]);
+    ge.revenue += _cellNum(g[7]);
+  }
+  var ga4 = Object.keys(gMap).map(function (key) {
+    var e = gMap[key];
+    e.revenue = Math.round(e.revenue * 100) / 100;
+    return e;
   });
 
-  /* ---- GA4 (Supermetrics): A account, B property, C date, D campaign,
-          E channel grouping, F source/medium, G transactions, H revenue ---- */
-  var gsh = _sheet(CFG.GA4);
-  var gLast = gsh.getLastRow();
-  var gMap = {};
-  if (gLast > 1) {
-    var gHdr = gsh.getRange(1, 1, 1, gsh.getLastColumn()).getValues()[0];
-    var cProp = _col(gHdr, 'GA4 property'), cDate = _col(gHdr, 'Date');
-    var cCamp = _col(gHdr, 'Session campaign name');
-    var cGrp = _col(gHdr, 'Session default channel grouping');
-    var cSrc = _col(gHdr, 'Session source / medium');
-    var cTx = _col(gHdr, 'Transactions'), cRev = _col(gHdr, 'Purchase revenue');
-    if (!cProp || !cDate || !cGrp || !cSrc || !cTx || !cRev) {
-      throw new Error('The GA4 tab does not look like the Supermetrics output — expected ' +
-        '"GA4 property", "Session default channel grouping", "Session source / medium", ' +
-        '"Transactions", "Purchase revenue".');
-    }
-    var gv = gsh.getRange(2, 1, gLast - 1, gsh.getLastColumn()).getValues();
-    for (var k = 0; k < gv.length; k++) {
-      var g = gv[k];
-      var brand2 = CFG.PROPERTY_OF[String(g[cProp - 1] || '').trim()];
-      if (!brand2) continue;
-      if (CFG.PAID_GROUPS.indexOf(String(g[cGrp - 1] || '').trim()) < 0) continue;
-      var d2 = _day(g[cDate - 1], sourceTz);
-      if (from && d2 && (d2 < from || d2 > till)) continue;
-      // Session campaign name rides along for the same reason Adjust's does: it is
-      // what puts web revenue on the campaign that earned it instead of spreading it.
-      var gci = _campIndex(cCamp ? g[cCamp - 1] : '');
-      var kk = brand2 + '|' + _bucket(g[cSrc - 1], g[cCamp - 1]) + '|' + d2 + '|' + gci;
-      var e2 = gMap[kk] || (gMap[kk] = { tx: 0, revenue: 0 });
-      e2.tx += _num(g[cTx - 1]);
-      e2.revenue += _num(g[cRev - 1]);
-    }
-  }
-  var ga4 = Object.keys(gMap).map(function (k) {
-    var p = k.split('|');
-    return { brand: p[0], bucket: p[1], day: p[2], ci: Number(p[p.length - 1]),
-      tx: gMap[k].tx, revenue: Math.round(gMap[k].revenue * 100) / 100 };
+  /* ---- lines that spend but whose channel never appears in Adjust Raw at all ---- */
+  var noAdjustFeed = {};
+  raw.forEach(function (row) {
+    if (row[6] > 0 && !channelsSeen[row[1] + '|' + row[0]]) noAdjustFeed[row[1] + '|' + row[0]] = 1;
   });
 
   // Source freshness is not the same thing as arithmetic reconciliation. Keep
   // the actual first/last row dates in the payload so the UI can say, for
   // example, that media and Adjust reach 30 Sep while GA4 reaches 29 Sep.
   var mediaCoverage = {}, adjustCoverage = {}, ga4Coverage = {};
-  raw.forEach(function (r) {
-    var objective = r[12] || _objective(r[0], _campList[r[2]]);
-    var key = JSON.stringify([r[1], r[0], objective]);
-    _touchCoverage(mediaCoverage, key, r[3],
-      { brand: r[1], platform: r[0], objective: objective });
+  raw.forEach(function (row) {
+    _touchCoverage(mediaCoverage, row[1] + '|' + row[0] + '|' + row[12], row[3],
+      { brand: row[1], platform: row[0], objective: row[12] });
   });
-  adjust.forEach(function (a) {
-    var key = JSON.stringify([a.brand, a.channel, a.objective]);
-    _touchCoverage(adjustCoverage, key, a.day,
-      { brand: a.brand, platform: a.channel, objective: a.objective });
+  adjust.forEach(function (e) {
+    var p = e.line.split('|');
+    _touchCoverage(adjustCoverage, e.brand + '|' + e.line, e.day,
+      { brand: e.brand, platform: p[0], objective: p[1] });
   });
-  ga4.forEach(function (g) {
-    var key = JSON.stringify([g.brand, g.bucket]);
-    _touchCoverage(ga4Coverage, key, g.day,
-      { brand: g.brand, bucket: g.bucket });
+  ga4.forEach(function (e) {
+    var p = e.line.split('|');
+    _touchCoverage(ga4Coverage, e.brand + '|' + e.line, e.day,
+      { brand: e.brand, platform: p[0], objective: p[1], bucket: e.bucket });
   });
 
   // The picker and 7d/14d presets must use calendar days, not only days that had
@@ -920,6 +851,12 @@ function getPacingDashboardData() {
     meta: {
       start: from || days[0], end: till || days[days.length - 1], days: days,
       plats: Object.keys(platset).sort(), fx: CFG.FX,
+      lines: PACING_LINES.map(function (l) {
+        return { row: l.row, key: l.key, plat: l.plat, obj: l.obj, label: l.label,
+          web: !!l.web, media: l.source !== 'none' };
+      }),
+      webRevenueFromGa4: !!CFG.WEB_REVENUE_FROM_GA4,
+      health: { issues: issues, noAdjustFeed: Object.keys(noAdjustFeed).sort() },
       sourceCoverage: {
         media: _coverageValues(mediaCoverage),
         adjust: _coverageValues(adjustCoverage),
@@ -933,46 +870,45 @@ function getPacingDashboardData() {
 
 /* ------------------------------------------------------------------ validation */
 
+/** Payload -> per-line totals for one portal, in pacing-tab terms. */
+function _lineTotals(p, brand) {
+  var out = {};
+  PACING_LINES.forEach(function (l) {
+    out[l.key] = { spend: 0, impr: 0, views: 0, clicks: 0, lpv: 0, purch: 0, inst: 0,
+      bookings: 0, adjInst: 0, adjRev: 0, ga4Tx: 0, ga4Rev: 0, revenue: 0 };
+  });
+  p.raw.forEach(function (r) {
+    var e = r[1] === brand && out[r[0] + '|' + r[12]];
+    if (!e) return;
+    e.spend += r[6]; e.impr += r[5]; e.lpv += r[7]; e.clicks += r[8];
+    e.views += r[9]; e.inst += r[10]; e.purch += r[11];
+  });
+  p.adjust.forEach(function (a) {
+    var e = a.brand === brand && out[a.line];
+    if (!e) return;
+    e.bookings += a.bookings; e.adjInst += a.inst; e.adjRev += a.revenue;
+  });
+  p.ga4.forEach(function (g) {
+    var e = g.brand === brand && out[g.line];
+    if (!e) return;
+    e.ga4Tx += g.tx; e.ga4Rev += g.revenue;
+  });
+  PACING_LINES.forEach(function (l) {
+    var e = out[l.key];
+    e.revenue = CFG.WEB_REVENUE_FROM_GA4 && l.web ? e.ga4Rev : e.adjRev;
+  });
+  return out;
+}
+
 /**
  * Reconciles the payload against the two pacing tabs, line by line and metric by
- * metric, and writes the result to a "Dashboard Validation" tab.
- *
- * This checks implementation parity with the pacing tabs. Both can read the
- * same incomplete Adjust Raw export, so source coverage is checked separately.
+ * metric — and the totals row — and writes the result to a "Dashboard Validation" tab.
+ * Data-quality issues (the dashboard banner) are listed underneath.
  */
-var VAL = {
-  // pacing row -> [platform, objective] for the raw-data lines
-  LINES: {
-    7:  ['Snapchat', 'Awareness',  'SnapChat — Awareness'],
-    8:  ['TikTok',   'Awareness',  'TikTok — Awareness'],
-    9:  ['X',        'Awareness',  'X — Awareness'],
-    10: ['Google',   'Awareness',  'Youtube — Awareness'],
-    15: ['TikTok',   'Search',     'TikTok Search'],
-    16: ['Google',   'Search',     'Google Search'],
-    17: ['Snapchat', 'Conversion', 'SnapChat App'],
-    18: ['TikTok',   'Conversion', 'TikTok App'],
-    19: ['Meta',     'Conversion', 'Meta App'],
-    20: ['X',        'Conversion', 'X App'],
-    21: ['Google',   'Conversion', 'Google App Ads'],
-    22: ['Apple',    'Conversion', 'Apple Ads'],
-    23: ['Bidease',  'Conversion', 'Bidease'],
-    24: ['InMobi',   'Conversion', 'InMobi'],
-    25: ['InMotion', 'Conversion', 'InMotion']
-  },
-  // raw payload index -> pacing column
-  METRICS: [[6, 5, 'Spend USD'], [5, 7, 'Impressions'], [8, 9, 'Clicks'],
-            [9, 8, 'Views'], [7, 10, 'Link clicks'], [10, 15, 'App installs'],
-            [11, 14, 'Purchases']],
-  // Adjust: the objective the pacing row reads, per channel
-  ADJ_OBJ: { 10: 'YouTube' },
-  // GA4 bucket -> pacing row
-  GA_LINES: { 'Snapchat': 7, 'TikTok': 8, 'TikTok-cpc': 15, 'Google': 16, 'Meta': 19 }
-};
-
 function validateDashboard() {
   var ss = _ss();
   var p = getPacingDashboardData();
-  var out = [], bad = 0, total = 0, sourceMissing = 0;
+  var out = [], bad = 0, total = 0;
   function row(a, b, c, d, e, f) { out.push([a, b, c, d, e, f]); }
   function cmp(brand, line, metric, dash, pacing) {
     total++;
@@ -987,67 +923,63 @@ function validateDashboard() {
       '', '', '', '');
   row('Window', p.meta.start, 'to', p.meta.end, '', '');
 
-  [['SFQC', 'SFQC Pacing_Daily'], ['AAQC', 'AAQC Pacing_Daily']].forEach(function (pair) {
-    var brand = pair[0], ws = ss.getSheetByName(pair[1]);
-    if (!ws) { row(brand, 'tab missing', '', '', '', 'CHECK'); bad++; return; }
-    var grid = ws.getRange(1, 1, 30, 24).getValues();
+  // [payload field, pacing column (1-based), label]
+  var MEDIA = [['spend', 5, 'Spend USD (E)'], ['impr', 7, 'Impressions (G)'],
+    ['views', 8, 'Views (H)'], ['clicks', 9, 'Clicks (I)'], ['lpv', 10, 'Link clicks (J)'],
+    ['purch', 14, 'Platform purchases (N)'], ['inst', 15, 'Platform installs (O)']];
+
+  ['SFQC', 'AAQC'].forEach(function (brand) {
+    var ws = ss.getSheetByName(CFG.PACING_TABS[brand]);
+    if (!ws) { row(brand, 'tab missing', '', '', '', 'CHECK'); bad++; total++; return; }
+    var grid = ws.getRange(1, 1, 53, 24).getValues();
     function cell(r, c) { var v = grid[r - 1][c - 1]; return typeof v === 'number' ? v : 0; }
+    var t = _lineTotals(p, brand);
+    var sum = { spend: 0, lpv: 0, bookings: 0, adjInst: 0, ga4Tx: 0, revenue: 0 };
 
     row('', '', '', '', '', '');
-    row(brand + ' · RAW DATA', 'Dashboard', 'Pacing', '', '', '');
-    var agg = {};
-    p.raw.forEach(function (r) {
-      if (r[1] !== brand) return;
-      var k = r[0] + '|' + (r[12] || _objective(r[0], p.camps[r[2]]));
-      var e = agg[k] || (agg[k] = [0,0,0,0,0,0,0,0,0,0,0,0]);
-      for (var i = 4; i <= 11; i++) e[i] += r[i];
-    });
-    Object.keys(VAL.LINES).forEach(function (ln) {
-      var spec = VAL.LINES[ln], e = agg[spec[0] + '|' + spec[1]] || [0,0,0,0,0,0,0,0,0,0,0,0];
-      VAL.METRICS.forEach(function (m) { cmp(brand, spec[2], m[2], e[m[0]], cell(ln, m[1])); });
-    });
-
-    row('', '', '', '', '', '');
-    row(brand + ' · ADJUST', 'Dashboard', 'Pacing', '', '', '');
-    var aagg = {};
-    p.adjust.forEach(function (a) {
-      if (a.brand !== brand) return;
-      var k = a.channel + '|' + a.objective;
-      var e = aagg[k] || (aagg[k] = { inst: 0, bookings: 0 });
-      e.inst += a.inst; e.bookings += a.bookings;
-    });
-    Object.keys(VAL.LINES).forEach(function (ln) {
-      var spec = VAL.LINES[ln];
-      var obj = VAL.ADJ_OBJ[ln] || spec[1];
-      var sourceKey = spec[0] + '|' + obj;
-      if (!aagg[sourceKey] && agg[spec[0] + '|' + spec[1]] &&
-          agg[spec[0] + '|' + spec[1]][6] > 0) {
-        sourceMissing++;
-        row(brand, spec[2], 'Adjust Raw coverage', 'No source rows', '', 'SOURCE MISSING');
+    row(brand + ' · LINES', 'Dashboard', 'Pacing', '', '', '');
+    PACING_LINES.forEach(function (l) {
+      var e = t[l.key];
+      if (l.source !== 'none') {
+        MEDIA.forEach(function (m) { cmp(brand, l.label, m[2], e[m[0]], cell(l.row, m[1])); });
+        sum.spend += e.spend; sum.lpv += e.lpv;
       }
-      var e = aagg[sourceKey] || { inst: 0, bookings: 0 };
-      cmp(brand, spec[2], 'Adjust Purchase', e.bookings, cell(ln, 11));
-      cmp(brand, spec[2], 'Adjust Install', e.inst, cell(ln, 12));
+      cmp(brand, l.label, 'Adjust purchase (K)', e.bookings, cell(l.row, 11));
+      cmp(brand, l.label, 'Adjust install (L)', e.adjInst, cell(l.row, 12));
+      if (l.ga4) cmp(brand, l.label, 'GA4 purchase (M)', e.ga4Tx, cell(l.row, 13));
+      cmp(brand, l.label, 'Revenue SAR (X)', e.revenue, cell(l.row, 24));
+      sum.bookings += e.bookings; sum.adjInst += e.adjInst; sum.ga4Tx += e.ga4Tx;
+      sum.revenue += e.revenue;
     });
 
     row('', '', '', '', '', '');
-    row(brand + ' · GA4', 'Dashboard', 'Pacing', '', '', '');
-    Object.keys(VAL.GA_LINES).forEach(function (bucket) {
-      var ln = VAL.GA_LINES[bucket];
-      var hit = { tx: 0, revenue: 0 };
-      p.ga4.forEach(function (g) {
-        if (g.brand === brand && g.bucket === bucket) { hit.tx += g.tx; hit.revenue += g.revenue; }
-      });
-      cmp(brand, VAL.LINES[ln][2], 'GA4 transactions', hit.tx, cell(ln, 13));
-      // the Meta row takes its revenue from Adjust, not GA4, so only its transactions compare
-      if (ln !== 19) cmp(brand, VAL.LINES[ln][2], 'GA4 revenue', hit.revenue, cell(ln, 24));
-    });
+    row(brand + ' · TOTALS (row 28)', 'Dashboard', 'Pacing', '', '', '');
+    cmp(brand, 'Total', 'Spend SAR (F28)', sum.spend * CFG.FX, cell(28, 6));
+    cmp(brand, 'Total', 'Link clicks (J28)', sum.lpv, cell(28, 10));
+    cmp(brand, 'Total', 'Adjust purchase (K28)', sum.bookings, cell(28, 11));
+    cmp(brand, 'Total', 'Adjust install (L28)', sum.adjInst, cell(28, 12));
+    cmp(brand, 'Total', 'GA4 purchase (M28)', sum.ga4Tx, cell(28, 13));
+    cmp(brand, 'Total', 'Revenue SAR (X28)', sum.revenue, cell(28, 24));
+    cmp(brand, 'Total', 'ROAS (P28)', sum.spend ? sum.revenue / (sum.spend * CFG.FX) : 0, cell(28, 16));
+    var gaTx = 0, gaRev = 0;
+    p.ga4.forEach(function (g) { if (g.brand === brand) { gaTx += g.tx; gaRev += g.revenue; } });
+    cmp(brand, 'GA4 paid', 'Transactions (C49)', gaTx, cell(49, 3));
+    cmp(brand, 'GA4 paid', 'Revenue (D49)', gaRev, cell(49, 4));
+    cmp(brand, 'Check block', 'Spend not on a line (C41)', 0, cell(41, 3));
   });
 
+  var issues = p.meta.health.issues;
+  row('', '', '', '', '', '');
+  row('DATA QUALITY', issues.length ? issues.length + ' issue(s)' : 'no issues', '', '', '', '');
+  issues.forEach(function (it) {
+    row(it.level === 'crit' ? 'FIX' : 'NOTE', it.text, '', '', '', it.level === 'crit' ? 'CHECK' : '');
+  });
+
+  var critical = issues.filter(function (it) { return it.level === 'crit'; }).length;
   out.splice(2, 0, ['RESULT', total + ' figures compared',
                     (total - bad) + ' match', bad + ' differ',
-                    sourceMissing + ' Adjust lines without source rows',
-                    bad === 0 && sourceMissing === 0 ? 'OK' : 'CHECK']);
+                    critical + ' data issue(s) to fix',
+                    bad === 0 && critical === 0 ? 'OK' : 'CHECK']);
 
   var sh = ss.getSheetByName('Dashboard Validation');
   if (!sh) sh = ss.insertSheet('Dashboard Validation');
@@ -1056,25 +988,411 @@ function validateDashboard() {
   sh.getRange('A1').setFontSize(14).setFontWeight('bold');
   sh.getRange('A3:F3').setFontWeight('bold');
   out.forEach(function (r, i) {
-    if (String(r[0]).indexOf(' · ') > -1) {
+    if (String(r[0]).indexOf(' · ') > -1 || r[0] === 'DATA QUALITY') {
       sh.getRange(i + 1, 1, 1, 6).setFontWeight('bold').setBackground('#000050').setFontColor('#ffffff');
     }
     if (r[5] === 'OK') sh.getRange(i + 1, 6).setBackground('#d9ead3');
     if (r[5] === 'CHECK') sh.getRange(i + 1, 6).setBackground('#f4cccc');
-    if (r[5] === 'SOURCE MISSING') sh.getRange(i + 1, 6).setBackground('#f4cccc');
   });
-  sh.setColumnWidth(1, 200); sh.setColumnWidth(2, 190); sh.setColumnWidth(3, 150);
+  sh.setColumnWidth(1, 200); sh.setColumnWidth(2, 190); sh.setColumnWidth(3, 190);
   sh.setColumnWidth(4, 130); sh.setColumnWidth(5, 245); sh.setColumnWidth(6, 140);
   sh.setFrozenRows(3);
   ss.setActiveSheet(sh);
-  Logger.log('%s figures compared, %s match, %s differ', total, total - bad, bad);
-  var msg = sourceMissing
-    ? sourceMissing + ' Adjust lines have spend but no source rows; ' + bad +
-      ' of ' + total + ' figures differ. See "Dashboard Validation".'
-    : bad === 0 ? 'All ' + total + ' figures match the pacing tabs (source coverage is separate).'
-    : bad + ' of ' + total + ' figures differ — see the "Dashboard Validation" tab.';
+  Logger.log('%s figures compared, %s match, %s differ, %s data issues', total, total - bad, bad, critical);
+  var msg = (bad === 0 ? 'All ' + total + ' figures match the pacing tabs.' :
+      bad + ' of ' + total + ' figures differ — see the "Dashboard Validation" tab. If the totals ' +
+      'row or whole lines differ, run Qiddiya Setup → 3 · Install the formulas first.') +
+    (critical ? '\n\n' + critical + ' data issue(s) affect BOTH the pacing tab and the dashboard — ' +
+      'listed at the bottom of the tab.' : '');
   try { SpreadsheetApp.getUi().alert(msg); } catch (e) { /* no UI attached */ }
+  return { total: total, bad: bad, critical: critical };
 }
+
+/* ------------------------------------------------------------------ Adjust Raw upkeep */
+
+/**
+ * Imports one or both Adjust CSV exports INTO Adjust Raw — the tab the pacing formulas
+ * read — so the report and the dashboard update together. For each app in the files,
+ * the rows already in Adjust Raw for the days the file covers are replaced (a re-export
+ * of the same period restates attribution); every other day is kept.
+ */
+function showAdjustImporter() {
+  var html = HtmlService.createHtmlOutput([
+    '<!doctype html><meta charset="utf-8"><style>',
+    'body{font:14px Arial;padding:20px;color:#172033}h2{margin:0 0 8px}',
+    'p{line-height:1.45;color:#58657a}input{display:block;margin:18px 0}',
+    'button{background:#1677ff;color:white;border:0;border-radius:7px;padding:10px 16px;font-weight:700}',
+    'button:disabled{opacity:.5}#s{margin-top:14px;white-space:pre-wrap}</style>',
+    '<h2>Import Adjust exports into Adjust Raw</h2>',
+    '<p>Select the Six Flags and/or Aquarabia CSV files. For each app, the days the file covers ',
+    'replace what Adjust Raw holds for those days; earlier days are kept. A backup is made first. ',
+    'The pacing tabs and the dashboard both update.</p>',
+    '<input id="f" type="file" accept=".csv,text/csv" multiple>',
+    '<button id="b" onclick="go()">Import and refresh</button><div id="s"></div>',
+    '<script>',
+    'function csv(t){var out=[],r=[],v="",q=false;for(var i=0;i<t.length;i++){var c=t[i],n=t[i+1];if(q&&c===\'"\'&&n===\'"\'){v+=\'"\';i++;}else if(c===\'"\'){q=!q;}else if(!q&&c===","){r.push(v);v="";}else if(!q&&(c==="\\n"||c==="\\r")){if(c==="\\r"&&n==="\\n")i++;r.push(v);if(r.some(function(x){return x!==""}))out.push(r);r=[];v="";}else v+=c;}r.push(v);if(r.some(function(x){return x!==""}))out.push(r);return out;}',
+    'async function go(){var fs=document.getElementById("f").files,b=document.getElementById("b"),s=document.getElementById("s");if(!fs.length){s.textContent="Choose at least one CSV.";return;}b.disabled=true;s.textContent="Reading files…";try{var all=[];for(var i=0;i<fs.length;i++)all.push(csv(await fs[i].text()));google.script.run.withSuccessHandler(function(x){s.textContent=x;b.disabled=false;}).withFailureHandler(function(e){s.textContent="Import failed: "+e.message;b.disabled=false;}).importAdjustCsv(all);}catch(e){s.textContent=e.message;b.disabled=false;}}',
+    '</script>'
+  ].join('')).setWidth(560).setHeight(360);
+  SpreadsheetApp.getUi().showModalDialog(html, 'Adjust import');
+}
+
+/**
+ * Adjust network + campaign -> channel and objective, in the vocabulary the pacing
+ * formulas read (Google awareness is "YouTube", as row 10 expects). Used for imports and
+ * to fill blanks; existing labels in Adjust Raw are never overwritten by it, except the
+ * Twitter rows the old export filed under Other.
+ */
+function _adjustClassify(network, campaign) {
+  var n = String(network == null ? '' : network).trim();
+  if (/\borganic\b/i.test(n)) return { channel: 'Organic', objective: 'Organic' };
+  var ch = /^Snapchat/i.test(n) ? 'Snapchat'
+    : /^(Facebook|Instagram|Off-Facebook|Meta|Audience Network|Messenger)\b/i.test(n) ? 'Meta'
+    : /^Apple Search Ads/i.test(n) ? 'Apple'
+    : /^(Google|YouTube|AdWords)/i.test(n) ? 'Google'
+    : /^Bidease/i.test(n) ? 'Bidease'
+    : /^InMobi/i.test(n) ? 'InMobi'
+    : /^InMotion/i.test(n) ? 'InMotion'
+    : /^(Twitter|X Ads|X)\b/i.test(n) ? 'X'
+    : /^TikTok/i.test(n) ? 'TikTok'
+    : 'Other';
+  if (ch === 'Google') {
+    var o = _objective('Google', campaign);
+    if (/YouTube/i.test(n) || o === 'Awareness') return { channel: ch, objective: 'YouTube' };
+    if (/Search/i.test(n) || o === 'Search') return { channel: ch, objective: 'Search' };
+    return { channel: ch, objective: 'Conversion' };
+  }
+  if (ch === 'Snapchat' || ch === 'TikTok' || ch === 'X') {
+    return { channel: ch, objective: _objective(ch, campaign) };
+  }
+  return { channel: ch, objective: 'Conversion' };
+}
+
+function _numericText(v) {
+  if (typeof v !== 'string') return null;
+  var s = v.replace(/[, ]/g, '');
+  return /^-?(?:\d+\.?\d*|\.\d+)$/.test(s) ? +s : null;
+}
+function _blank(v) { return v === '' || v === null || v === undefined; }
+function _adjustAllZero(v) { return !_num(v[4]) && !_num(v[6]) && !_num(v[7]) && !_num(v[8]); }
+function _stamp() { return Utilities.formatDate(new Date(), CFG.TZ, 'yyyyMMdd-HHmm'); }
+
+/**
+ * Reads Adjust Raw into clean rows: real ISO days (text dd/MM and Sheets' day/month swaps
+ * repaired), numbers as numbers, trimmed labels, blanks classified. Nothing is written.
+ */
+function _adjustReadClean_(sh, tz, log) {
+  var range = sh.getDataRange();
+  var values = range.getValues(), display = range.getDisplayValues(), formulas = range.getFormulas();
+  var header = values[0] || [];
+  var problems = _headerProblems(header, ADJUST_EXPECT, CFG.ADJUST);
+  if (problems.length) {
+    throw new Error(problems.join('\n') + '\n\nThe pacing formulas read Adjust Raw by position, so ' +
+      'the columns must be in this order: ' + ADJUST_LAYOUT.join(', ') + '.');
+  }
+  for (var fr = 1; fr < formulas.length; fr++) {
+    for (var fc = 0; fc < formulas[fr].length; fc++) {
+      if (formulas[fr][fc]) {
+        throw new Error('Adjust Raw has a formula in row ' + (fr + 1) + ', column ' +
+          String.fromCharCode(65 + fc) + '. The cleaner only rewrites a values-only export.');
+      }
+    }
+  }
+  var width = Math.max(header.length, ADJUST_LAYOUT.length);
+  var reversed = _adjustReversedRows(values, 0, tz);
+  var rows = [];
+  for (var j = 1; j < values.length; j++) {
+    var v = values[j].slice();
+    while (v.length < width) v.push('');
+    if (v.every(_blank)) continue;
+    var shown = display[j][0];
+    var iso;
+    try {
+      iso = v[0] instanceof Date ? _adjustDay(v[0], j + 1, !!reversed[j], tz)
+        : _adjustDay(String(shown || v[0]).trim(), j + 1, false, tz);
+    } catch (e) {
+      log.push([j + 1, 'Date not readable — row left as it is', shown, '']);
+      rows.push({ v: v, day: '' });
+      continue;
+    }
+    if (!(v[0] instanceof Date)) log.push([j + 1, 'Text date converted to a real date', shown, iso]);
+    else if (iso !== _day(v[0], tz)) log.push([j + 1, 'Day/month swap reversed', shown, iso]);
+    v[0] = iso;
+    [4, 5, 6, 7, 8].forEach(function (c) {
+      if (_blank(v[c]) || typeof v[c] === 'number') return;
+      var n = _numericText(v[c]);
+      if (n !== null) {
+        log.push([j + 1, 'Number stored as text converted (' + ADJUST_LAYOUT[c] + ')', String(v[c]), n]);
+        v[c] = n;
+      } else {
+        log.push([j + 1, 'Not a number — left as it is (' + ADJUST_LAYOUT[c] + ')', String(v[c]), '']);
+      }
+    });
+    [1, 2, 3, 9, 10].forEach(function (c) {
+      if (typeof v[c] === 'string' && v[c] !== v[c].trim()) v[c] = v[c].trim();
+    });
+    if (/^Twitter Installs$/i.test(String(v[1])) && (_blank(v[9]) || /^other$/i.test(String(v[9])))) {
+      var tw = _adjustClassify(v[1], v[2]);
+      log.push([j + 1, 'Twitter Installs moved from "' + v[9] + '" to channel X', v[9] + ' / ' + v[10],
+        tw.channel + ' / ' + tw.objective]);
+      v[9] = tw.channel; v[10] = tw.objective;
+    } else if (_blank(v[9]) || _blank(v[10])) {
+      var cls = _adjustClassify(v[1], v[2]);
+      log.push([j + 1, 'Missing channel/objective filled', v[9] + ' / ' + v[10],
+        (_blank(v[9]) ? cls.channel : v[9]) + ' / ' + (_blank(v[10]) ? cls.objective : v[10])]);
+      if (_blank(v[9])) v[9] = cls.channel;
+      if (_blank(v[10])) v[10] = cls.objective;
+    }
+    rows.push({ v: v, day: iso });
+  }
+  return { header: header, width: width, rows: rows };
+}
+
+/**
+ * Overlapping imports: one row per day + app + network + campaign. The later row wins
+ * (Adjust restates attribution), except that a later all-zero partial refresh never
+ * erases an earlier non-zero row.
+ */
+function _adjustDedupe_(data, log) {
+  var groups = {};
+  data.rows.forEach(function (row, i) {
+    if (!row.day) return;
+    var v = row.v;
+    var k = JSON.stringify([row.day, String(v[3]).toLowerCase(), String(v[1]), String(v[2])]);
+    (groups[k] = groups[k] || []).push(i);
+  });
+  var drop = {};
+  Object.keys(groups).forEach(function (k) {
+    var ix = groups[k];
+    if (ix.length < 2) return;
+    var keep = ix[ix.length - 1];
+    if (_adjustAllZero(data.rows[keep].v)) {
+      for (var q = ix.length - 2; q >= 0; q--) {
+        if (!_adjustAllZero(data.rows[ix[q]].v)) { keep = ix[q]; break; }
+      }
+    }
+    ix.forEach(function (i) {
+      if (i === keep) return;
+      drop[i] = 1;
+      var v = data.rows[i].v;
+      log.push(['', 'Duplicate removed (kept the later import)', [v[0], v[3], v[1], v[2]].join(' · '),
+        'installs ' + v[7] + ', bookings ' + v[8] + ', revenue ' + v[4]]);
+    });
+  });
+  data.rows = data.rows.filter(function (r, i) { return !drop[i]; });
+  return Object.keys(drop).length;
+}
+
+/** Replace, per app, every row whose day falls inside the incoming rows' date range. */
+function _adjustUpsert_(data, incoming, label, log) {
+  var ranges = {};
+  incoming.forEach(function (r) {
+    var app = String(r[3]).toLowerCase();
+    var e = ranges[app] || (ranges[app] = { min: r[0], max: r[0] });
+    if (r[0] < e.min) e.min = r[0];
+    if (r[0] > e.max) e.max = r[0];
+  });
+  var replaced = 0;
+  data.rows = data.rows.filter(function (row) {
+    if (!row.day) return true;
+    var e = ranges[String(row.v[3]).toLowerCase()];
+    if (e && row.day >= e.min && row.day <= e.max) { replaced++; return false; }
+    return true;
+  });
+  incoming.forEach(function (r) {
+    var v = r.slice();
+    while (v.length < data.width) v.push('');
+    data.rows.push({ v: v, day: v[0] });
+  });
+  Object.keys(ranges).forEach(function (app) {
+    log.push(['', label + ': ' + app + ' ' + ranges[app].min + ' → ' + ranges[app].max +
+      ' replaced', '', '']);
+  });
+  return { replaced: replaced, added: incoming.length, ranges: ranges };
+}
+
+function _backupValues(ss, sh, name) {
+  var rows = Math.max(1, sh.getLastRow()), cols = Math.max(1, sh.getLastColumn());
+  var values = sh.getRange(1, 1, rows, cols).getValues();
+  var old = ss.getSheetByName(name);
+  if (old) ss.deleteSheet(old);
+  var dst = ss.insertSheet(name, ss.getSheets().length);
+  if (dst.getMaxColumns() < cols) dst.insertColumnsAfter(dst.getMaxColumns(), cols - dst.getMaxColumns());
+  if (dst.getMaxRows() < rows) dst.insertRowsAfter(dst.getMaxRows(), rows - dst.getMaxRows());
+  dst.getRange(1, 1, rows, cols).setValues(values);
+  dst.hideSheet();
+  return dst;
+}
+
+function _adjustWrite_(sh, data) {
+  data.rows.sort(function (a, b) {
+    if (!a.day !== !b.day) return a.day ? -1 : 1;              // unreadable rows go last
+    var ka = [a.day, String(a.v[3]), String(a.v[1]), String(a.v[2])].join('\u0001');
+    var kb = [b.day, String(b.v[3]), String(b.v[1]), String(b.v[2])].join('\u0001');
+    return ka < kb ? -1 : ka > kb ? 1 : 0;
+  });
+  var out = data.rows.map(function (r) { return r.v.slice(0, data.width); });
+  var last = sh.getLastRow();
+  if (last > 1) sh.getRange(2, 1, last - 1, Math.max(data.width, sh.getLastColumn())).clearContent();
+  if (!out.length) return 0;
+  if (sh.getMaxRows() < out.length + 1) sh.insertRowsAfter(sh.getMaxRows(), out.length + 1 - sh.getMaxRows());
+  // Labels are stored as plain text so a campaign name can never be re-read as a date or
+  // a formula; the day is written as yyyy-mm-dd, which every locale reads as a real date.
+  [2, 3, 4, 10, 11].forEach(function (c) { sh.getRange(2, c, out.length, 1).setNumberFormat('@'); });
+  sh.getRange(2, 1, out.length, 1).setNumberFormat('yyyy-mm-dd');
+  sh.getRange(2, 1, out.length, data.width).setValues(out);
+  return out.length;
+}
+
+function _writeLog(ss, title, log) {
+  var name = 'Adjust Raw cleanup log';
+  var sh = ss.getSheetByName(name) || ss.insertSheet(name);
+  sh.clear();
+  sh.getRange('C:D').setNumberFormat('@');           // show before/after exactly as text
+  var rows = [[title, '', '', ''], ['Source row', 'Action', 'Before', 'After']].concat(
+    log.slice(0, 50000).map(function (r) { return [r[0], r[1], String(r[2]), String(r[3])]; }));
+  sh.getRange(1, 1, rows.length, 4).setValues(rows);
+  sh.getRange('A1').setFontWeight('bold').setFontSize(13);
+  sh.getRange('A2:D2').setFontWeight('bold');
+  sh.setFrozenRows(2);
+}
+
+/**
+ * Repairs Adjust Raw in place so the pacing formulas and the dashboard both read it
+ * correctly: text and day/month-swapped dates become real dates, overlapping imports are
+ * de-duplicated, numbers stored as text become numbers, Twitter Installs move from Other to
+ * X, and any rows left in the old "Adjust Current" tab are folded in. A values-only backup
+ * and a line-by-line log are written first. Safe to run as often as you like.
+ */
+function cleanAdjustRaw() {
+  var lock = LockService.getDocumentLock();
+  lock.waitLock(30000);
+  try {
+    var ss = _ss(), tz = ss.getSpreadsheetTimeZone(), stamp = _stamp();
+    var sh = _sheet(CFG.ADJUST), log = [];
+    var before = Math.max(0, sh.getLastRow() - 1);
+    var data = _adjustReadClean_(sh, tz, log);
+    var merged = null, legacy = ss.getSheetByName(CFG.ADJUST_LEGACY);
+    if (legacy && legacy.getLastRow() > 1) {
+      var lv = legacy.getDataRange().getValues(), lh = lv[0].map(function (h) { return String(h).trim(); });
+      var pos = {}; lh.forEach(function (h, i) { pos[h] = i; });
+      var sums = {}, incoming = [];
+      lv.slice(1).forEach(function (r) {
+        var day = _dateCell(r[pos.day], tz) || String(r[pos.day] || '').slice(0, 10);
+        if (!/^\d{4}-\d{2}-\d{2}$/.test(day)) return;
+        var network = String(r[pos.network] || '').trim();
+        var campaign = String(r[pos.campaign_network] || '').trim();
+        var app = String(r[pos.app] || '').trim();
+        // One export: a repeated key is a further breakdown of the same day, so add it up.
+        var key = JSON.stringify([day, app.toLowerCase(), network, campaign]);
+        var e = sums[key];
+        if (!e) {
+          // The old importer had no YouTube / awareness rules, so its labels are redone.
+          var cls = _adjustClassify(network, campaign);
+          e = sums[key] = [day, network, campaign, app, 0, 0, 0, 0, 0, cls.channel, cls.objective];
+          incoming.push(e);
+        }
+        e[4] += _num(r[pos.all_revenue]);
+        e[5] += pos['general revenue_revenue_est'] == null ? 0 : _num(r[pos['general revenue_revenue_est']]);
+        e[6] += _num(r[pos.paid_installs]);
+        e[7] += _num(r[pos.installs]);
+        e[8] += _num(r[pos.bookingconfirmed_events]);
+      });
+      if (incoming.length) merged = _adjustUpsert_(data, incoming, CFG.ADJUST_LEGACY, log);
+    }
+    var dropped = _adjustDedupe_(data, log);
+    _backupValues(ss, sh, CFG.ADJUST + ' BACKUP ' + stamp);
+    var after = _adjustWrite_(sh, data);
+    if (merged) legacy.setName(CFG.ADJUST_LEGACY + ' (merged ' + stamp + ')').hideSheet();
+    var fixedDates = log.filter(function (r) { return /date|swap/i.test(r[1]) && r[3] !== ''; }).length;
+    var unreadable = log.filter(function (r) { return /not readable/.test(r[1]); }).length;
+    var msg = 'Adjust Raw cleaned: ' + before + ' rows in, ' + after + ' rows out.\n' +
+      '· ' + fixedDates + ' dates repaired' + (unreadable ? ', ' + unreadable + ' still unreadable (see log)' : '') + '\n' +
+      '· ' + dropped + ' duplicate rows removed\n' +
+      (merged ? '· ' + merged.added + ' rows folded in from "' + CFG.ADJUST_LEGACY + '" (' +
+        merged.replaced + ' older rows for the same days replaced)\n' : '') +
+      'Backup: "' + CFG.ADJUST + ' BACKUP ' + stamp + '". Every change is listed in "Adjust Raw cleanup log".';
+    _writeLog(ss, 'Clean Adjust Raw · ' + stamp, log);
+    SpreadsheetApp.flush();
+    Logger.log(msg);
+    try { SpreadsheetApp.getUi().alert(msg); } catch (e) { /* no UI attached */ }
+    return msg;
+  } finally {
+    lock.releaseLock();
+  }
+}
+
+/** Called by the import dialog with one parsed table per CSV file. */
+function importAdjustCsv(files) {
+  if (!files || !files.length) throw new Error('No CSV data received.');
+  var required = ['day', 'network', 'campaign_network', 'app', 'all_revenue', 'paid_installs',
+    'installs', 'bookingconfirmed_events'];
+  var sums = {}, order = [], apps = {};
+  files.forEach(function (table, fileIndex) {
+    if (!table || table.length < 2) throw new Error('CSV ' + (fileIndex + 1) + ' is empty.');
+    var header = table[0].map(function (x) { return String(x || '').replace(/^﻿/, '').trim(); });
+    var pos = {}; header.forEach(function (x, i) { pos[x] = i; });
+    required.forEach(function (x) {
+      if (pos[x] == null) throw new Error('CSV ' + (fileIndex + 1) + ' is missing "' + x + '".');
+    });
+    table.slice(1).forEach(function (r, ri) {
+      var app = String(r[pos.app] || '').trim();
+      if (!_matchBrand(CFG.ADJUST_APP, app)) return;
+      var day = String(r[pos.day] || '').trim();
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(day)) {
+        throw new Error('CSV ' + (fileIndex + 1) + ' row ' + (ri + 2) + ': day "' + day +
+          '" is not yyyy-mm-dd. Export from Adjust again without opening the file in Excel first.');
+      }
+      var network = String(r[pos.network] || '').trim();
+      var campaign = String(r[pos.campaign_network] || '').trim();
+      var cls = _adjustClassify(network, campaign);
+      apps[app] = true;
+      // Within one export a repeated key is a further breakdown (OS, country) of the same
+      // day — those rows are added together, never de-duplicated.
+      var key = JSON.stringify([day, app.toLowerCase(), network, campaign]);
+      var e = sums[key];
+      if (!e) {
+        e = sums[key] = [day, network, campaign, app, 0, 0, 0, 0, 0, cls.channel, cls.objective];
+        order.push(key);
+      }
+      e[4] += _num(r[pos.all_revenue]);
+      e[5] += pos['general revenue_revenue_est'] == null ? 0 : _num(r[pos['general revenue_revenue_est']]);
+      e[6] += _num(r[pos.paid_installs]);
+      e[7] += _num(r[pos.installs]);
+      e[8] += _num(r[pos.bookingconfirmed_events]);
+    });
+  });
+  var incoming = order.map(function (k) { return sums[k]; });
+  if (!incoming.length) throw new Error('No Six Flags or Aquarabia rows were found.');
+
+  var lock = LockService.getDocumentLock();
+  lock.waitLock(30000);
+  try {
+    var ss = _ss(), tz = ss.getSpreadsheetTimeZone(), stamp = _stamp(), log = [];
+    var sh = ss.getSheetByName(CFG.ADJUST);
+    if (!sh) {
+      sh = ss.insertSheet(CFG.ADJUST);
+      sh.getRange(1, 1, 1, ADJUST_LAYOUT.length).setValues([ADJUST_LAYOUT]).setFontWeight('bold');
+      sh.setFrozenRows(1);
+    }
+    var data = _adjustReadClean_(sh, tz, log);
+    var res = _adjustUpsert_(data, incoming, 'Import', log);
+    var dropped = _adjustDedupe_(data, log);
+    if (sh.getLastRow() > 1) _backupValues(ss, sh, CFG.ADJUST + ' BACKUP ' + stamp);
+    var total = _adjustWrite_(sh, data);
+    _writeLog(ss, 'Adjust import · ' + stamp, log);
+    SpreadsheetApp.flush();
+    return 'Imported ' + res.added + ' rows for ' + Object.keys(apps).join(' + ') + ' (' +
+      Object.keys(res.ranges).map(function (a) { return a + ' ' + res.ranges[a].min + ' → ' + res.ranges[a].max; })
+        .join(', ') + '), replacing ' + res.replaced + ' older rows for those days' +
+      (dropped ? ' and ' + dropped + ' duplicates elsewhere' : '') + '.\nAdjust Raw now has ' + total +
+      ' rows. The pacing tabs have recalculated; press Refresh on the dashboard.';
+  } finally {
+    lock.releaseLock();
+  }
+}
+/** Older dialogs call this name. */
+function replaceAdjustCurrent(files) { return importAdjustCsv(files); }
 
 /* ------------------------------------------------------------------ standalone export */
 
@@ -1116,4 +1434,3 @@ function exportStandalone() {
   } catch (e) { /* no UI attached — the log has the link */ }
   return file.getUrl();
 }
-
