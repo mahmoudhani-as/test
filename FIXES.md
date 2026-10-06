@@ -16,7 +16,7 @@ setup menu and the pacing formulas. `Dashboard.html` is the page, `appsscript.js
 5. **Raw data column B files every campaign whose name does not start with "SFQC" under Aquarabia**,
    including Six Flags' $50,000 "First Story" takeover on 4 Oct. V4 now takes the portal from the
    campaign name, in Raw data column Q (section 3).
-6. **Adjust Clean holds exactly what is counted.** Its installs, bookings and revenue columns add up
+6. **Adjust Clean holds exactly what is counted.** Its installs and bookings columns add up
    to the dashboard's *All* view (Both portals) and row 28 (77,020 installs on the 5 Oct copy, against
    84,639 in Adjust Raw). Today's partial day is left out until the day is over, as the dashboard and
    C2 = TODAY()-1 leave it out. It is rebuilt **every time the dashboard loads or refreshes** if Adjust
@@ -108,9 +108,11 @@ the script works around the mirrors:
 | Step 3 (Supermetrics formula) | Refuses a mirrored Raw data. |
 | A broken or loading import | `#REF!` or `Loading…` in A1, a missing tab, a moved header, or a Raw data with no rows while Adjust and GA4 have some each raise a critical banner. *Validate* then starts with "CHECK — n critical data issue(s)" before the match count. |
 
-**What Adjust Clean holds: only the rows the dashboard counts under *All*.** So a SUM of its installs,
-bookings or revenue column equals the dashboard's *All* view with Both portals, and row 28 of the two
-tabs together when C2 is yesterday. Its days run from SFQC B2 to C2 or yesterday, whichever is later.
+**What Adjust Clean holds: only the rows the dashboard counts under *All*.** So a SUM of its installs
+or bookings column equals the dashboard's *All* view with Both portals, and row 28 of the two tabs
+together when C2 is yesterday. Its revenue column does too, except on the web lines (rows 7, 8, 15 and
+16), where the tabs and the dashboard use GA4 web revenue instead of Adjust's. Compare with a freshly
+loaded page: an open page does not reload by itself, so press **Refresh** after Adjust Raw changes. Its days run from SFQC B2 to C2 or yesterday, whichever is later.
 **Today is left out until it is over**: an Adjust feed that already has part of today would otherwise
 put those installs in Adjust Clean but not on the dashboard or the tabs. When the day rolls over, the
 next dashboard load or hourly run adds it. On the 5 Oct copy:
@@ -128,7 +130,8 @@ next dashboard load or hourly run adds it. On the 5 Oct copy:
 The rows left out are listed, with their totals, at the top of the "Adjust Raw cleanup log" tab: rows
 for an app other than Six Flags / Aquarabia, rows with no readable day, rows that are not paid
 (Organic), rows outside the report's days (today, or before B2), and rows dated before their line's
-first day.
+first day. A revenue, installs or bookings cell that is not a number (for example "$12") counts as 0
+on the dashboard, in Adjust Clean and on the tabs alike, and the banner names its row.
 
 What Adjust Clean corrects:
 

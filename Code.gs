@@ -1304,6 +1304,12 @@ function getPacingDashboardData(opts) {
       ', e.g. "' + unreadable[0][2] + '"), so neither the pacing tabs nor this dashboard count their installs, ' +
       'bookings or revenue. Correct the day in the source.');
   }
+  var notNum = cleanLog ? cleanLog.filter(function (r) { return /^Not a number/.test(r[1]); }) : [];
+  if (notNum.length) {
+    issue('warn', count(notNum.length) + ' Adjust Raw cells in the revenue, installs or bookings columns are not numbers (row ' +
+      notNum.slice(0, 5).map(function (r) { return r[0]; }).join(', ') + (notNum.length > 5 ? ' …' : '') + ', e.g. "' +
+      notNum[0][2] + '"), so they count as 0 here, in Adjust Clean and on the pacing tabs. Correct them in the source.');
+  }
   if (futureRows) {
     issue('warn', count(futureRows) + ' Adjust Raw rows are dated after today — most likely a dd/MM paste that ' +
       'Sheets read the other way round. Neither the pacing tabs nor this dashboard count them; correct the day ' +
@@ -1474,7 +1480,14 @@ function getPacingDashboardData(opts) {
     end = from;
   }
   var days = _dateSpine(from, end);
-  if (!days.length) days = Object.keys(dayset).sort();
+  if (!days.length) {
+    // no date in B2: start at the earliest day any source has, so "All" (and Adjust Clean, which
+    // then has no lower bound either) never drops Adjust or GA4 days before the first media day
+    var first = '';
+    Object.keys(dayset).concat(adjust.map(function (e) { return e.day; }), ga4.map(function (e) { return e.day; }))
+      .forEach(function (d) { if (d && (!first || d < first)) first = d; });
+    days = first && end && first <= end ? _dateSpine(first, end) : Object.keys(dayset).sort();
+  }
   return {
     meta: {
       start: from || days[0], end: end || days[days.length - 1], days: days,
@@ -1805,7 +1818,10 @@ function _adjustReadClean_(sh, tz, log, win) {
         log.push([j + 1, 'Number stored as text converted (' + ADJUST_LAYOUT[c] + ')', String(v[c]), n]);
         v[c] = n;
       } else {
-        log.push([j + 1, 'Not a number — left as it is (' + ADJUST_LAYOUT[c] + ')', String(v[c]), '']);
+        // the dashboard counts it as 0; blank it so Adjust Clean (where Sheets would parse '$12',
+        // '12%' or a date serial into a number) and the pacing tabs count 0 too
+        log.push([j + 1, 'Not a number — counted as 0 (' + ADJUST_LAYOUT[c] + ')', String(v[c]), '']);
+        v[c] = '';
       }
     });
     [1, 2, 3, 9, 10].forEach(function (c) {
@@ -2121,7 +2137,7 @@ function _adjustLeftOut_(row, win) {
  * tests), in order, every column, and the old "Adjust Current" tab it folds in. ADJUST_CLEAN_RULES
  * is bumped whenever the cleaner's rules change, so the next hourly run rebuilds Adjust Clean.
  */
-var ADJUST_CLEAN_RULES = '4';   // 3: only counted rows are written; 4: and only the days "All" counts
+var ADJUST_CLEAN_RULES = '4';   // 3: only counted rows are written; 4: only the days and apps "All" counts, non-numbers blank
 function _adjustFingerprint_(values, ss) {
   var h = 0, rows = 0;
   function mix(t) { for (var c = 0; c < t.length; c++) h = (h * 31 + t.charCodeAt(c)) | 0; }

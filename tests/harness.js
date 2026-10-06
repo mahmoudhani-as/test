@@ -562,8 +562,16 @@ function fixStage(files) {
   adj.v.push([fx.D(today0), 'Facebook Installs', 'SFQC_Meta_App_iOS', 'Six Flags', 700, 700, 30, 341, 7, 'Meta', 'Conversion']);
   adj.v.push([fx.D('2026-09-11'), 'Facebook Installs', 'SFQC_Meta_App_iOS', 'Qiddiya City', 900, 900, 40, 120, 9, 'Meta', 'Conversion']);
   adj.v.push([fx.D('2026-06-20'), 'Snapchat Installs', 'SFQC_snapchat_awr_Reach', 'Six Flags', 300, 300, 5, 55, 3, 'Snapchat', 'Awareness']);
+  // an installs cell Sheets would read as a number but the dashboard cannot ('$12')
+  adj.v.push([fx.D('2026-09-12'), 'Facebook Installs', 'SFQC_Meta_App_iOS', 'Six Flags', 400, 400, 6, '$12', 2, 'Meta', 'Conversion']);
   var pAll = ctx.getPacingDashboardData();                    // Adjust Raw changed: rebuilds Adjust Clean
-  function n0(x) { return typeof x === 'number' ? x : Number(String(x).replace(/,/g, '')) || 0; }
+  // what a SUM in Sheets adds: numbers, and text Sheets parsed on the way in ('$12' -> 12, '5%' -> 0.05)
+  function n0(x) {
+    if (typeof x === 'number') return x;
+    var t = String(x == null ? '' : x).replace(/[$,\s]/g, ''), pct = /%$/.test(t);
+    var v = Number(pct ? t.slice(0, -1) : t);
+    return isNaN(v) ? 0 : pct ? v / 100 : v;
+  }
   var sumC = { inst: 0, bookings: 0, revenue: 0 }, sumD = { inst: 0, bookings: 0, revenue: 0 }, strays = 0;
   // the window worked out here, not by the code under test: B2 to C2 or yesterday, whichever is later
   var sfP = ss.getSheetByName(PACING_TABS[0]), y0 = new Date(today0 + 'T00:00:00Z');
@@ -588,6 +596,19 @@ function fixStage(files) {
   var logT = ss.getSheetByName('Adjust Raw cleanup log').v.map(function (r) { return r.join(' '); }).join('\n');
   check(/Left out of "Adjust Clean": 1 rows dated after/.test(logT) && /rows for an app other than/.test(logT) &&
     /rows dated before the report starts/.test(logT), 'the cleanup log lists the rows left out: today, another app, before B2');
+  check(pAll.meta.health.issues.some(function (i) { return /not numbers/.test(i.text) && /\$12/.test(i.text); }),
+    'a non-number installs cell ("$12") is named in the banner and counts as 0 everywhere');
+  // no date in B2: "All" starts at the earliest day of any source, and Adjust Clean has no lower bound
+  var b2Was = sfP.cell(2, 2), aaP = ss.getSheetByName(PACING_TABS[1]), aaB2 = aaP.cell(2, 2);
+  sfP.put(2, 2, ''); aaP.put(2, 2, '');
+  var pNoB2 = ctx.getPacingDashboardData(), sumNoB2 = 0;
+  cleanSh.v.slice(1).forEach(function (r) { sumNoB2 += n0(r[7]); });
+  var wNoB2 = loadClient(files.html, pNoB2), kNoB2 = kpis(wNoB2, 'BOTH');
+  wNoB2.close();
+  check(n0(kNoB2['Installs — Adjust']) === Math.round(sumNoB2) && pNoB2.meta.start <= '2026-06-20',
+    'with B2 empty, All starts at the first day of any source (' + pNoB2.meta.start + ') and the card equals SUM of Adjust Clean (' +
+    kNoB2['Installs — Adjust'] + ' / ' + sumNoB2 + ')');
+  sfP.put(2, 2, b2Was); aaP.put(2, 2, aaB2);
   // the day rolling over is a change: the next load or hourly run takes the new day in
   var fpNow = ctx.__props.adjustCleanFp, realY = ctx._yesterday;
   ctx._yesterday = function () { return today0; };
@@ -596,7 +617,7 @@ function fixStage(files) {
   var hasToday = cleanSh.v.slice(1).some(function (r) { return r[0] instanceof Date && formatDate(r[0], tz0, 'yyyy-MM-dd') === today0; });
   ctx._yesterday = realY;
   check(hasToday, 'once that day is over, the next dashboard load adds its rows to Adjust Clean');
-  adj.v.splice(adj.v.length - 3, 3);
+  adj.v.splice(adj.v.length - 4, 4);
   ctx.getPacingDashboardData();
   ctx._refreshAdjustClean_ = realRefresh;
 
