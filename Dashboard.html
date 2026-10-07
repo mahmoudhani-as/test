@@ -1681,8 +1681,9 @@ var RECON_SRC=[['raw','Raw data'],['manual','Raw manual'],['backup','Raw data BA
 var RECON_WHY=[
   ['text','+ numbers stored as text — SUM() cannot see them'],
   ['inmobi_copy','− InMobi rows: copies of Raw manual (row 24 reads Raw manual and the backup)'],
+  ['bidease_copy','− Bidease rows: copies of Raw manual (row 23 reads Raw manual)'],
   ['apple_copy','− Apple rows: row 22 reads APPLE1'],
-  ['not_inmobi','− Bidease and other rows: copies found in Raw data (rows 23 and 25 read Raw data)'],
+  ['not_inmobi','− InMotion and other rows: copies found in Raw data (row 25 reads Raw data)'],
   ['manual_missing','− not in Raw data: the source workbook\'s Raw data reads Raw manual only from row 50 down, '+
     'so nothing counts these'],
   ['inmobi_out','− InMobi outside this tab\'s dates (Raw manual from 3 Aug, backup 2 Jul – 2 Aug)'],
@@ -1801,11 +1802,12 @@ function vMethod(){
     '<div class="note">'+bn+'</div></div><div class="pb">'+
     step('1','Spend, impressions, clicks, views, platform installs and purchases',
       'Read from <b>Raw data</b> — one row per campaign per day, straight from each platform\'s export — '+
-      'with two exceptions the pacing tab also makes: Apple from <b>APPLE1</b> (row 22), and InMobi, typed in by '+
-      'hand, from <b>Raw manual</b> from 3 Aug plus the Raw data backup for 2 Jul – 2 Aug (row 24). Bidease and '+
-      'InMotion (rows 23 and 25) read Raw data like every other platform, so their rows in Raw manual count only '+
-      'through Raw data, and the source workbook\'s Raw data takes Raw manual only from row 50 down; the check '+
-      'table above lists any row it left out. Every row is counted once per occurrence, exactly as SUMIFS counts it. '+
+      'with the exceptions the pacing tab also makes: Apple from <b>APPLE1</b> (row 22), and the platforms typed in by '+
+      'hand from <b>Raw manual</b>: Bidease (row 23) from 2 Jul, wherever its rows are in Raw manual, and InMobi '+
+      '(row 24) from 3 Aug plus the Raw data backup for 2 Jul – 2 Aug. Their copies in Raw data are not read. '+
+      'InMotion (row 25) reads Raw data, so its Raw manual rows count only once the source workbook\'s Raw data '+
+      'has copied them (from row 50 down); the check table above lists any row it left out. Every row is counted '+
+      'once per occurrence, exactly as SUMIFS counts it. '+
       '<b>Link clicks</b> (column J) are each export\'s own measure — '+LPV_DEF+'. J28 and the table total add '+
       'these different measures, so they are not comparable across platforms.',
       'Now showing '+usd(t.spend)+' across '+rowsRaw().length+' rows.')+
@@ -1930,8 +1932,7 @@ var LINE_RULE={
   'Meta|Conversion':'Every Meta campaign — from 2 Jul (AAQC from 1 Jul)',
   'Apple|Conversion':'Every Apple Search Ads campaign, from APPLE1 — from 2 Jul',
   'InMobi|Conversion':'InMobi DSP — entered by hand: Raw manual from 3 Aug, the Raw data backup for 2 Jul – 2 Aug',
-  'Bidease|Conversion':'Bidease rows in Raw data — from 2 Jul (Raw manual\'s Bidease rows count only once they '+
-    'reach Raw data, which takes Raw manual from row 50 down)',
+  'Bidease|Conversion':'Bidease rows in Raw manual, wherever they are typed — from 2 Jul (their copies in Raw data are not read)',
   'InMotion|Conversion':'InMotion rows in Raw data — from 2 Jul',
   'Other|Other':'No media. Adjust channels with no row of their own, and paid GA4 sources no other row reads'
 };

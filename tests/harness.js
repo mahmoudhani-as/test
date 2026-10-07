@@ -848,17 +848,39 @@ function unitStage(files) {
     pc.meta.health.issues.some(function (i) { return i.level === 'crit' && /^Adjust Raw has/.test(i.text) && /still read the tab as it stands/.test(i.text); }),
     '"Clean Adjust Raw" before Fix: the banner still says (crit) that the tabs read Adjust Raw as it stands');
 
-  // ---- a Raw manual row that never reached Raw data (above row 50 in the source workbook)
+  // ---- Bidease is read from Raw manual: its rows count even when Raw data never copied them
+  //      (above row 50 in the source workbook), and its Raw data copies are not counted twice
   var rd = ss.getSheetByName('Raw data'), cut = 0;
+  function bidSpend(p) { return p.raw.reduce(function (t, r) { return t + (r[0] === 'Bidease' ? r[6] : 0); }, 0); }
+  function manualBid() {
+    return ss.getSheetByName('Raw manual').v.slice(1).reduce(function (t, r) {
+      var d = r[3] instanceof Date ? fx.iso(r[3]) : '';
+      return t + (r[0] === 'Bidease' && d >= '2026-07-02' && d >= fx.WINDOW.from ? Number(r[6]) || 0 : 0);
+    }, 0);
+  }
+  var pb0 = ctx.getPacingDashboardData();
   rd.v = rd.v.filter(function (r, i) {
     var drop = i > 1 && r[0] === 'Bidease' && r[3] instanceof Date && fx.iso(r[3]) >= '2026-09-04' && fx.iso(r[3]) <= '2026-09-06';
     if (drop) cut++;
     return !drop;
   });
+  var pb1 = ctx.getPacingDashboardData();
+  check(cut === 3 && Math.abs(bidSpend(pb0) - manualBid()) < 0.01 && Math.abs(bidSpend(pb1) - bidSpend(pb0)) < 0.01 &&
+    !pb1.meta.health.issues.some(function (i) { return /are not in Raw data/.test(i.text); }) &&
+    pb1.recon.some(function (e) { return e.k === 'bidease_copy'; }),
+    'Bidease comes from Raw manual (' + Math.round(bidSpend(pb1)) + ' = Raw manual ' + Math.round(manualBid()) +
+    '): rows missing from Raw data still count, and its Raw data copies are not counted twice');
+  // ---- an InMotion row that never reached Raw data (row 25 still reads Raw data)
+  var cutM = 0;
+  rd.v = rd.v.filter(function (r, i) {
+    var drop = i > 1 && r[0] === 'InMotion' && r[3] instanceof Date && fx.iso(r[3]) >= '2026-09-04' && fx.iso(r[3]) <= '2026-09-06';
+    if (drop) cutM++;
+    return !drop;
+  });
   var pm = ctx.getPacingDashboardData();
-  check(cut === 3 && pm.meta.health.issues.some(function (i) { return i.level === 'crit' && /^3 Raw manual row\(s\) are not in Raw data/.test(i.text); }) &&
+  check(cutM === 3 && pm.meta.health.issues.some(function (i) { return i.level === 'crit' && /^3 Raw manual row\(s\) are not in Raw data/.test(i.text); }) &&
     pm.recon.filter(function (e) { return e.k === 'manual_missing'; }).length === 3,
-    'Raw manual Bidease rows missing from Raw data are a critical issue and "manual_missing" in the check table');
+    'Raw manual InMotion rows missing from Raw data are a critical issue and "manual_missing" in the check table');
 
   // ---- the standalone export: no campaign name can break or escape the embedded payload
   var name = 'sale <!--<script> promo </script><script>window.PWN=1</script>   end';

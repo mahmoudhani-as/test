@@ -35,7 +35,7 @@ imported from another workbook (section 3).
 | Original code, synthetic workbook | 288 | **124** (the KPI cards showed "—" for Revenue, ROAS, Installs and Bookings) |
 | Fixed code, synthetic workbook: as built, after *Clean Adjust Raw*, after a CSV import, with the GA4-revenue switch off | 350 each | **0** |
 | *Fix this workbook* on the synthetic workbook (a pasted copy and an IMPORTRANGE copy), then *Undo* | every check passes | 0 writes into imported columns |
-| The web link: an anonymous visitor calls all 62 public functions, before and after *Fix* | every check passes | nothing in the workbook changes |
+| The web link: an anonymous visitor calls all 65 public functions, before and after *Fix* | every check passes | nothing in the workbook changes |
 | **Your live workbook** (typed copy of 5 Oct), after *Fix this workbook* | 350 | **0**. An independent recount from the raw rows matches all 416 pacing cells it checks |
 
 ---
@@ -101,6 +101,7 @@ the script works around the mirrors:
 |---|---|
 | Each media row's objective | Raw data **column P** (`CFG.OBJECTIVE_COL`), outside the imported A:O. P1 = "Objective", plus one ARRAYFORMULA in P2 generated from `OBJECTIVE_TOKENS`. Leave column P empty below P2. |
 | Each media row's portal | Raw data **column Q** (`CFG.PORTAL_COL`), also outside A:O. Q1 = "Portal", plus one ARRAYFORMULA in Q2 generated from `PORTAL_TOKENS`: a name containing SFQC or Six Flags (on Snapchat also First Story) is SFQC; AAQC, AQQC, AQC- / AQC_ or Aquarabia is AAQC; any other name keeps column B, and UNMAPPED when B is neither. **Why:** the source sets column B with "starts with SFQC, else AAQC" (L8). The media rows and C39 filter on Q, and the dashboard applies the same rule. On the live copy this moves only "DNU SFQC-…" (X, $387) from AAQC to SFQC row 20; once the source window passes 4 Oct, the $50,000 "First Story 4/10 ARB" takeover lands on SFQC row 7. |
+| Platforms typed in by hand | **Bidease (row 23) and InMobi (row 24) read Raw manual**, never their copies in Raw data: Bidease from 2 Jul, InMobi from 3 Aug, with the July InMobi days (16 Jul – 2 Aug, which Raw manual does not hold) from "Raw data BACKUP 20260807-1642". Portal from Raw manual's column B; numbers read with VALUE(), since the mirror holds them as text. A Bidease row counts wherever it is in Raw manual; the source's row-50 start (section 6, (b)) no longer matters for it. On the 5 Oct copy this moves AAQC Bidease spend by $0.02 (Raw manual's 2,706.08 against Raw data's 2,706.10). InMotion (row 25) still reads Raw data. |
 | Corrected Adjust data | The pacing formulas (K, L, X and C42–C44) read **Adjust Clean**, a tab the script owns and rebuilds from Adjust Raw. **Adjust Raw is never modified.** |
 | Keeping Adjust Clean current | **Every dashboard load or refresh** builds Adjust Clean if it is missing and rebuilds it whenever Adjust Raw (or the old `Adjust Current` tab) has changed since the last build, or a new day has started, whether or not the pacing tabs read it yet. Nothing has to be run by hand. It is also rebuilt by an **hourly trigger** (`refreshAdjustClean`, which keeps an existing tab current), by *Pacing dashboard → Clean Adjust Raw*, by *Fix this workbook* and by *Validate*. If a rebuild cannot run, the banner says (critical) that K, L and X still show the previous build. |
 | Raw manual numbers stored as text | A mirror is left as it is. Row 24 and the dashboard read the text numbers with VALUE(SUBSTITUTE()). A pasted Raw manual is converted, with a backup. |
@@ -186,7 +187,7 @@ the person running it is the account the script runs as. A visitor using the web
 only be run from the spreadsheet…". Two paths stay open, and neither can change a number: a dashboard
 load, and `refreshAdjustClean` (the hourly trigger's handler). A dashboard load builds or rebuilds
 Adjust Clean from Adjust Raw when Adjust Raw has changed; the hourly handler only refreshes an existing
-Adjust Clean. Both give the same result every time, and `refreshAdjustClean` returns nothing. The test suite has an anonymous visitor call all 62 public
+Adjust Clean. Both give the same result every time, and `refreshAdjustClean` returns nothing. The test suite has an anonymous visitor call all 65 public
 functions before and after *Fix*: nothing in the workbook, its properties or its triggers changes, and
 no Adjust data or account name comes back (a dashboard load may only build or refresh Adjust Clean and
 its log). The dashboard itself still loads from the link, and
@@ -197,6 +198,37 @@ trigger). **Everyone who uses the menus must authorise once more.** The menus wo
 too, but the hourly trigger, and anything run from the editor, need the new one; without it, those say
 "Run this from the spreadsheet's menus… replace appsscript.json" (section 6, step 2). You must also **deploy a new version of the web app** (section 6,
 step 6). Until then the link runs the old, unguarded code.
+
+## 5b. The website (sfaq.wpp-hub.com)
+
+The client-facing dashboard is **https://sfaq.wpp-hub.com**. The site serves the page behind its own
+password and holds the numbers itself; the script pushes them there.
+
+- **Every 30 minutes** a trigger (`buildDashboardSnapshot`) builds the dashboard payload, gzips it and
+  posts it to `/api/snapshot`, signed with HMAC-SHA256 over the body (header `X-Signature`). Building it
+  also keeps Adjust Clean current, so the site counts what the pacing tabs count.
+- **Refresh on the site** calls the /exec link with `?api=build&exp=…&sig=…` (HMAC of
+  `build.<exp>`, valid for at most 10 minutes). The script queues one build a second later
+  (`buildDashboardSnapshotNow`, which removes itself) and installs the 30-minute trigger if it is missing.
+- **The /exec link** shows the dashboard to the script owner only. Everyone else gets one line pointing
+  at the site, and no page, so no `google.script.run`.
+- **Pacing dashboard → Publish to the website now** pushes one snapshot straight away and installs the
+  30-minute trigger.
+- A run counts as a trigger run only when its `triggerUid` belongs to one of the project's triggers, so
+  a made-up event object cannot skip the owner check.
+
+**Setup, once:**
+
+1. Apps Script → **Project Settings → Script properties → Add**: `DASHBOARD_API_SECRET` = the same secret
+   the site holds. Without it every push and every Refresh is refused.
+2. Replace `appsscript.json` (it adds `script.external_request`, which posting to the site needs).
+3. Run **Pacing dashboard → Publish to the website now** and allow the new permission. It should say
+   "Published to https://sfaq.wpp-hub.com".
+4. Update the **same** deployment (Manage deployments → Edit → New version), so the site's Refresh call
+   reaches the new `doGet`. The /exec URL stays the same.
+
+If the site's page is a copy of Dashboard.html, update it from this version too: the payload carries
+the new fields (Adjust check table, column P/Q flags), and the method text describes the current rules.
 
 ## 6. Install
 
@@ -266,13 +298,14 @@ V4 imports Raw data A:O from the source workbook's `Raw data!A2` formula, so the
   records app purchases in Purchase events, AAQC mostly in Complete payment events. This project's
   `RAW_FORMULA` (step 3) already has the change.
 - **(b) Raw manual from row 50.** `Raw data!A2` reads `FILTER('Raw manual'!$A$50:$L,'Raw manual'!$A$50:$A<>"")`,
-  so a Bidease or InMotion row above row 50 never reaches Raw data, rows 23/25 or the dashboard. The
-  start moves down every time rows are inserted above it (it has already moved from row 2 to row 50).
-  Either change both `$A$50` to `$A$2`, or always add Bidease/InMotion rows at row 50 or below (inside
-  or under the existing Bidease rows, from row 60). With `$A$2`, the source's Raw data also gets the
-  InMobi rows above row 50. V4 ignores Raw data's InMobi rows, so no V4 number moves, but check that the
-  source's own report does not then count them twice. V4 now raises a critical banner, listing the rows,
-  for any Raw manual Bidease/InMotion row that did not reach Raw data.
+  so a row above row 50 never reaches Raw data. V4 reads Bidease and InMobi from Raw manual directly, so
+  for them it no longer matters; it still matters for InMotion (row 25 reads Raw data) and for the
+  source's own report. The start moves down every time rows are inserted above it (it has already moved
+  from row 2 to row 50). Either change both `$A$50` to `$A$2`, or always add InMotion rows at row 50 or
+  below. With `$A$2`, the source's Raw data also gets the InMobi rows above row 50; V4 ignores Raw data's
+  InMobi and Bidease rows, so no V4 number moves, but check that the source's own report does not then
+  count them twice. V4 raises a critical banner, listing the rows, for any Raw manual InMotion row that
+  did not reach Raw data.
 - **(c) Portal rule (optional).** Each HSTACK sets column B with
   `IF(LEFT(UPPER(CHOOSECOLS(x,2)),4)="SFQC","SFQC","AAQC")` (Apple: `CHOOSECOLS(ap,iA_acct)`). Replace
   each one with
@@ -283,8 +316,8 @@ V4 imports Raw data A:O from the source workbook's `Raw data!A2` formula, so the
   portal then shows as UNMAPPED (today only zero-spend TikTok "TOPVIEW-…" and X "Campaign — Jul 24 —
   7:23 PM" rows).
 - **(d) Missing spend (section 8).** Paste InMobi 3–31 Aug (both portals) and Bidease SFQC 4–14 Sep into
-  the source's **Raw manual**: InMobi anywhere (V4's row 24 reads the imported Raw manual directly),
-  Bidease at row 50 or below unless (b) is done. Never type into V4's own imported tabs.
+  the source's **Raw manual**, at any row: V4's rows 23 and 24 read the imported Raw manual directly.
+  Never type into V4's own imported tabs.
 
 ## 7. What to expect
 
@@ -346,7 +379,7 @@ shows ROAS 4.34×, CPI $16.33 and CPA $79.90.
   306,820 SAR, on days with no spend row. In V4 the note says to paste the spend into Raw manual in the
   source workbook (section 8).
 - **Bidease SFQC 4–14 Sep:** 333 installs, 26 bookings and 13,948 SAR with no spend row. In V4 the note
-  says: into the source's Raw manual, at row 50 or below.
+  says: into the source's Raw manual, any row.
 - **X campaign filed by its name:** "DNU SFQC-…Six Flags_X_App Installs" has column B = AAQC in the
   source, and column Q files it under SFQC ($387). The tabs and the dashboard agree.
 - **Adjust Raw's own problems:** listed, with a note that they are corrected in Adjust Clean.
@@ -365,10 +398,9 @@ shows ROAS 4.34×, CPI $16.33 and CPA $79.90.
   - **What reads it:** row 24 and the dashboard read Raw manual from 3 Aug (`CFG.INMOBI_MANUAL_FROM`)
     and the backup tab up to 2 Aug (`CFG.INMOBI_BACKUP_TILL`). The banner note goes away once the days
     are in.
-- **Bidease SFQC 4–14 Sep.** Bidease is read from Raw data, which the source workbook builds from its
-  Raw manual, **from row 50 down** only (section 6, (b)). Add the rows to the source's Raw manual at row
-  50 or below (inside or under the existing Bidease rows, from row 60), never at the top. A row that
-  does not reach Raw data raises a critical banner naming it.
+- **Bidease SFQC 4–14 Sep.** Row 23 reads Bidease from Raw manual, at any row. Add the rows to the
+  source's Raw manual (A = `Bidease`, B = `SFQC`, D = the day as a real date, F = impressions, G = spend
+  USD). The banner note goes away once the days are in.
 - **The source workbook's window.** See section 6, step 7.
 - **A campaign under the wrong portal.** V4 files every Raw data row by the portal its name carries
   (column Q), so "DNU SFQC-…" is on SFQC. If a campaign really belongs to the other portal, rename it
@@ -452,7 +484,7 @@ shows ROAS 4.34×, CPI $16.33 and CPA $79.90.
   - spend with no portal or no row;
   - campaigns whose name carries another portal than column B: a note once the tabs read column Q,
     critical while they still filter on column B;
-  - Raw manual Bidease/InMotion rows that never reached Raw data (the source's row-50 start);
+  - Raw manual InMotion rows that never reached Raw data (the source's row-50 start);
   - missing, broken or loading tabs, moved headers, and an empty Raw data;
   - Adjust problems, including unreadable and future days, and an Adjust Clean that is behind Adjust
     Raw or short of rows;
@@ -518,15 +550,15 @@ shows ROAS 4.34×, CPI $16.33 and CPA $79.90.
     | Raw data SUM() | 356,683,630 |
     | + stored as text (InMobi) | 30,063,025 |
     | − InMobi rows: copies of Raw manual | −36,827,172 |
+    | − Bidease rows: copies of Raw manual | −23,701,280 |
     | − Apple rows: row 22 reads APPLE1 | −621,306 |
-    | Raw manual SUM() | 23,701,280 |
+    | Raw manual SUM() (Bidease, counted from here) | 23,701,280 |
     | + stored as text (InMobi) | 115,027,745 |
-    | − Bidease rows: copies found in Raw data | −23,701,280 |
     | + InMobi in the backup tab | 41,150,927 |
     | + APPLE1 SUM() | 621,306 |
     | **= counted** | **506,098,155** |
 
-    A Raw manual Bidease/InMotion row that is not in Raw data is listed as "not in Raw data" instead.
+    A Raw manual InMotion row that is not in Raw data is listed as "not in Raw data".
   - Adjust example: SFQC 38,159 − 483 organic − 147 copies − 3 before the row starts = **37,526**
     installs; AAQC 46,480 − 595 − 6,092 − 299 = **39,494**.
   - With a Platform or Objective filter on, the footer says the table covers every platform.
@@ -535,8 +567,8 @@ shows ROAS 4.34×, CPI $16.33 and CPA $79.90.
   Adjust Clean, the CPI/CPA exception, and what All / Tab period / 7d cover. It says the tabs read Adjust
   Clean only when their formulas do.
 
-**appsscript.json**: adds the `userinfo.email` and `script.scriptapp` scopes. The web-app settings are
-unchanged.
+**appsscript.json**: adds the `userinfo.email`, `script.scriptapp` and `script.external_request` (the
+website push) scopes. The web-app settings are unchanged.
 
 ## 12. Tests
 
@@ -567,13 +599,19 @@ into an import is caught. It then loads Dashboard.html in jsdom.
     column-P note, and the hourly refresh is off for every account (a leftover trigger removes itself).
 - ***Fix this workbook*, on an IMPORTRANGE copy:** 0 writes into imported columns, column P added,
   Adjust Clean built, Raw manual untouched, and the importer refuses.
-- **The dashboard link:** an anonymous visitor calls all 62 public functions, before and after *Fix*.
-  Nothing in the workbook, its properties or triggers changes, and no account name or Adjust data comes
-  back. The gate's two messages are checked.
+- **The dashboard link:** an anonymous visitor calls every public function, before and after *Fix*,
+  including the snapshot builders with a made-up trigger event and doGet with a forged signature.
+  Nothing in the workbook, its properties or triggers changes, nothing is sent to the website, and no
+  account name or Adjust data comes back. The gate's two messages are checked.
 - **Rules on hand-made inputs:** genuine early Adjust rows are not re-dated and a short dd/MM paste is;
-  *Clean Adjust Raw* before *Fix* still gives the critical banner; a Raw manual Bidease row missing from
-  Raw data is critical; the export survives a campaign name holding `<!--<script>`, `</script>` and
-  U+2028.
+  *Clean Adjust Raw* before *Fix* still gives the critical banner; Bidease rows missing from Raw data
+  still count (row 23 reads Raw manual) and are not counted twice, while a Raw manual InMotion row
+  missing from Raw data is critical; the export survives a campaign name holding `<!--<script>`,
+  `</script>` and U+2028.
+- **The website push:** a signed Refresh call queues one build and installs the 30-minute trigger;
+  expired, too-distant and wrong-action signatures are refused; the posted body is signed and gunzips to
+  the dashboard payload; a made-up trigger id is refused; the /exec link shows the page to the owner
+  only.
 - It ends with `PASSED`.
 - `--old DIR` first runs the original files through the same server check (288 compared, 124 differ).
   It currently stops at the page check, which the original page cannot run.

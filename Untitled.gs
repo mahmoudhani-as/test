@@ -46,6 +46,9 @@
  *     floor as the rest of its row; every row carries its own tab's B2:C2 window;
  *   - the check cells C39, C42 and C44 apply the same windows and floors as the rows;
  *   - the GA4 cells of a row with a date floor (M16/X16 Google Search, M19 Meta) start at it;
+ *   - Bidease (row 23) reads Raw manual like InMobi (row 24), not its copy in Raw data, so a
+ *     Bidease row counts wherever it is typed in Raw manual (the source's Raw data copies only
+ *     the rows from row 50 down);
  *   - Google "Conversions" on app-install (UAC) rows are installs, so column N leaves them out.
  * RAW_FORMULA's TikTok purchases (L) are Purchase events + Complete payment events: "Purchase
  * events (SKAN)" counts the same iOS purchases a second time (as "App Installs (SKAN)" does the
@@ -250,16 +253,26 @@ function appleSum_(appleCol, brand) {
   return 'SUMIFS(' + ap(appleCol) + ',' + ap('B') + ',"' + CFG.APPLE_APP[brand] + '",' + ap('A') + ',' +
     fromCrit_(_mediaFloor(line, brand)) + ',' + ap('A') + ',"<="&$C$2)';
 }
+/**
+ * One platform's rows typed in by hand (Raw manual, or the Raw data backup): rows 2-10000, portal
+ * from column B, numbers read with VALUE() because a mirrored Raw manual holds them as text.
+ */
+function manualSum_(tab, plat, rawCol, brand, lo, hi) {
+  var last = CFG.INMOBI_LAST_ROW;
+  function r(c) { return "'" + tab + "'!$" + c + '$2:$' + c + '$' + last; }
+  return 'SUMPRODUCT(IFERROR(VALUE(SUBSTITUTE(' + r(rawCol) + ',",","")),0),--(' + r('A') + '="' + plat + '"),--(' +
+    r('B') + '="' + brand + '"),--(' + r('D') + '>=MAX($B$2,' + dateLit_(lo) + ')),--(' + r('D') + '<=' +
+    (hi ? 'MIN($C$2,' + dateLit_(hi) + ')' : '$C$2') + '))';
+}
 /** Row 24 (InMobi): Raw manual from CFG.INMOBI_MANUAL_FROM, the backup up to CFG.INMOBI_BACKUP_TILL. */
 function inmobiSum_(rawCol, brand) {
-  var last = CFG.INMOBI_LAST_ROW;
-  function part(tab, lo, hi) {
-    function r(c) { return "'" + tab + "'!$" + c + '$2:$' + c + '$' + last; }
-    return 'SUMPRODUCT(IFERROR(VALUE(SUBSTITUTE(' + r(rawCol) + ',",","")),0),--(' + r('A') + '="InMobi"),--(' +
-      r('B') + '="' + brand + '"),--(' + r('D') + '>=MAX($B$2,' + dateLit_(lo) + ')),--(' + r('D') + '<=' +
-      (hi ? 'MIN($C$2,' + dateLit_(hi) + ')' : '$C$2') + '))';
-  }
-  return part(CFG.RAW_MANUAL, CFG.INMOBI_MANUAL_FROM, '') + '+' + part(CFG.RAW_BACKUP, FLOOR_JUL2, CFG.INMOBI_BACKUP_TILL);
+  return manualSum_(CFG.RAW_MANUAL, 'InMobi', rawCol, brand, CFG.INMOBI_MANUAL_FROM, '') + '+' +
+    manualSum_(CFG.RAW_BACKUP, 'InMobi', rawCol, brand, FLOOR_JUL2, CFG.INMOBI_BACKUP_TILL);
+}
+/** Row 23 (Bidease): every Bidease row in Raw manual from the row's floor (2 Jul), whatever row it is on. */
+function bideaseSum_(rawCol, brand) {
+  var line = LINE_BY_KEY['Bidease|Conversion'];
+  return manualSum_(CFG.RAW_MANUAL, 'Bidease', rawCol, brand, _mediaFloor(line, brand), '');
 }
 
 /** C39: the Raw data spend the media rows are meant to cover, worked out independently. */
@@ -267,7 +280,7 @@ function expectedSpend_(brand) {
   function rd(c) { return colRef_('Raw data', c); }
   var win = rd('D') + ',">="&$B$2,' + rd('D') + ',"<="&$C$2';
   var f = 'SUMIFS(' + rd('G') + ',' + rd(CFG.PORTAL_COL) + ',"' + brand + '",' + rd('A') + ',"<>X",' + rd('A') +
-    ',"<>Apple",' + rd('A') + ',"<>InMobi",' + win + ')' +
+    ',"<>Apple",' + rd('A') + ',"<>InMobi",' + rd('A') + ',"<>Bidease",' + win + ')' +
     '+SUMIFS(' + rd('G') + ',' + rd(CFG.PORTAL_COL) + ',"' + brand + '",' + rd('A') + ',"X",' + win + ')/' + CFG.FX;
   PACING_LINES.forEach(function (line) {
     var floor = _mediaFloor(line, brand);
@@ -277,7 +290,7 @@ function expectedSpend_(brand) {
       rd(CFG.OBJECTIVE_COL) + ',"' + line.obj + '",' + win + ',' + rd('D') + ',"<"&MAX($B$2,' + dateLit_(floor) + '))' +
       (line.plat === 'X' ? '/' + CFG.FX : '');
   });
-  return '=' + f + '+E22+E24';
+  return '=' + f + '+E22+E23+E24';
 }
 /**
  * C42 (adjCol H, installs) and C43 (adjCol E, revenue): Adjust figures over the same windows
@@ -331,6 +344,9 @@ function buildPacingSpec_() {
       if (line.source === 'InMobi') {
         Object.keys(MEDIA_COLS).forEach(function (c) { t[c + r] = '=' + inmobiSum_(MEDIA_COLS[c], brand); });
       }
+      if (line.source === 'Raw manual') {
+        Object.keys(MEDIA_COLS).forEach(function (c) { t[c + r] = '=' + bideaseSum_(MEDIA_COLS[c], brand); });
+      }
       if (line.source !== 'none') t['F' + r] = '=E' + r + '*' + CFG.FX;
       Object.keys(ADJ_COLS).forEach(function (c) {
         t[c + r] = '=' + adjustLineFormula_(ADJ_COLS[c], line, app);
@@ -364,7 +380,7 @@ function buildPacingSpec_() {
     t.X28 = '=SUM(X7:X10,X15:X26)';
     t.P28 = '=IFERROR(X28/F28,"")';
     t.C38 = '';                             // the old all-time spend; C39 is the check
-    t.A39 = 'Expected spend USD (Raw data by row dates and floors, X/3.78, + APPLE1 + InMobi)';
+    t.A39 = 'Expected spend USD (Raw data by row dates and floors, X/3.78, + APPLE1 + Bidease and InMobi from Raw manual)';
     t.C39 = expectedSpend_(brand);
     t.E41 = '';                             // E40 already tests C41
     // C42 = every non-organic install, E42 = every row that counts installs (26 included), so

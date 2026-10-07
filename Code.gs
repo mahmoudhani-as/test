@@ -106,7 +106,7 @@ var PACING_LINES = [
   { row: 20, plat: 'X',        obj: 'Conversion', label: 'X App',          floor: FLOOR_JUL2 },
   { row: 21, plat: 'Google',   obj: 'Conversion', label: 'Google App Ads', floor: FLOOR_JUL2 },
   { row: 22, plat: 'Apple',    obj: 'Conversion', label: 'Apple Ads',      floor: FLOOR_JUL2, source: 'APPLE1' },
-  { row: 23, plat: 'Bidease',  obj: 'Conversion', label: 'Bidease',        floor: FLOOR_JUL2 },
+  { row: 23, plat: 'Bidease',  obj: 'Conversion', label: 'Bidease',        floor: FLOOR_JUL2, source: 'Raw manual' },
   { row: 24, plat: 'InMobi',   obj: 'Conversion', label: 'InMobi',         floor: FLOOR_JUL2, source: 'InMobi' },
   { row: 25, plat: 'InMotion', obj: 'Conversion', label: 'InMotion',       floor: FLOOR_JUL2 },
   { row: 26, plat: 'Other',    obj: 'Other',      label: 'Other (Adjust / GA4 only)', ga4: 'Other', source: 'none' }
@@ -1053,10 +1053,10 @@ function getPacingDashboardData(opts) {
       unmapped.names[un] = (unmapped.names[un] || 0) + spend;
       continue;
     }
-    // Apple is row 22 (APPLE1) and InMobi is row 24 (Raw manual + backup) on the pacing
-    // tab; their Raw data copies are never read there, so they are not read here either.
-    if (plat === 'Apple' || plat === 'InMobi') {
-      reconRow(brand, 'raw', day, r[5], r[6], plat === 'InMobi' ? 'inmobi_copy' : 'apple_copy');
+    // Apple is row 22 (APPLE1), Bidease row 23 (Raw manual) and InMobi row 24 (Raw manual +
+    // backup) on the pacing tab; their Raw data copies are never read there, so not here either.
+    if (plat === 'Apple' || plat === 'InMobi' || plat === 'Bidease') {
+      reconRow(brand, 'raw', day, r[5], r[6], plat === 'InMobi' ? 'inmobi_copy' : plat === 'Bidease' ? 'bidease_copy' : 'apple_copy');
       continue;
     }
     // the portal the name gives against the one column B (the source workbook's rule) gives
@@ -1155,54 +1155,58 @@ function getPacingDashboardData(opts) {
       [0, _cellNum(ar[4]), _cellNum(ar[3]), taps, taps, 0, _cellNum(ar[6]), 0]);
   }
 
-  /* ---- InMobi (row 24): Raw manual from CFG.INMOBI_MANUAL_FROM, the Raw data backup from
-          2 Jul to CFG.INMOBI_BACKUP_TILL, rows 2-10000, numbers parsed with VALUE(), exactly
-          as the row's SUMPRODUCTs ---- */
-  var inmobiLine = LINE_BY_KEY['InMobi|Conversion'];
+  /* ---- Rows typed in by hand, read from Raw manual (never from their copies in Raw data):
+          Bidease (row 23) from its 2 Jul floor, and InMobi (row 24) from CFG.INMOBI_MANUAL_FROM
+          plus the Raw data backup from 2 Jul to CFG.INMOBI_BACKUP_TILL (the July days Raw manual
+          does not hold). Rows 2-10000, portal from column B, numbers parsed with VALUE(), exactly
+          as the rows' SUMPRODUCTs ---- */
+  var MANUAL_LINES = {};
+  PACING_LINES.forEach(function (l) { if (l.source === 'Raw manual' || l.source === 'InMobi') MANUAL_LINES[l.plat.toLowerCase()] = l; });
   var manualOther = [];
-  function readInMobi(sheetName, lo, hi, src) {
+  // rules: platform (lower case) -> [from, till] that tab is read for
+  function readManual(sheetName, src, rules, rowsNote) {
     var sh = ss.getSheetByName(sheetName);
     if (!sh) {
-      issue('crit', 'Tab "' + sheetName + '" is missing — pacing row 24 (InMobi) reads it.');
+      issue('crit', 'Tab "' + sheetName + '" is missing — pacing ' + rowsNote + ' read it.');
       return;
     }
-    var v = sourceValues(sheetName, 'row 24 (InMobi)', RAW_EXPECT);
+    var v = sourceValues(sheetName, rowsNote, RAW_EXPECT);
     var last = Math.min(v.length, CFG.INMOBI_LAST_ROW);
     for (var mi = 1; mi < last; mi++) {
       var mr = v[mi];
       var mb = _brandCell(mr[1]), md = _dateCell(mr[3], tz);
       if (!mb) continue;
+      var mp = String(mr[0] == null ? '' : mr[0]).toLowerCase(), rule = rules[mp], ml = MANUAL_LINES[mp];
       if (!inWindow(md)) {
-        if (src === 'manual' || String(mr[0] == null ? '' : mr[0]).toLowerCase() === 'inmobi') {
-          reconRow(mb, src, md || '', mr[5], mr[6], md ? 'outside' : 'nodate');
-        }
+        if (src === 'manual' || rule) reconRow(mb, src, md || '', mr[5], mr[6], md ? 'outside' : 'nodate');
         continue;
       }
-      if (String(mr[0] == null ? '' : mr[0]).toLowerCase() !== 'inmobi') {
-        // Raw manual's other rows (Bidease, InMotion) count through their copies in Raw data, which
-        // rows 23/25 read — whether each one reached Raw data is checked below; the backup's
-        // other rows are an old copy of Raw data and are not shown at all.
+      if (!rule) {
+        // Raw manual's other rows (InMotion) count through their copies in Raw data, which row 25
+        // reads — whether each one reached Raw data is checked below; the backup's other rows are
+        // an old copy of Raw data and are not shown at all.
         if (src === 'manual') manualOther.push({ b: mb, d: md, row: mi + 1, r: mr });
         continue;
       }
-      var lower = _later(from, lo), upper = _sooner(loadTill, hi);
+      var lower = _later(from, rule[0]), upper = _sooner(loadTill, rule[1]);
       if ((lower && md < lower) || (upper && md > upper)) {
-        reconRow(mb, src, md, mr[5], mr[6], 'inmobi_out');
+        reconRow(mb, src, md, mr[5], mr[6], ml.source === 'InMobi' ? 'inmobi_out' : 'prefloor');
         continue;
       }
       timed(mr[3], md);
       reconRow(mb, src, md, mr[5], mr[6], 'counted', true);
-      addRaw(inmobiLine, mb, String(mr[2] == null ? '' : mr[2]), md,
+      addRaw(ml, mb, String(mr[2] == null ? '' : mr[2]), md,
         [_valueNum(mr[4]), _valueNum(mr[5]), _valueNum(mr[6]), _valueNum(mr[7]),
          _valueNum(mr[8]), _valueNum(mr[9]), _valueNum(mr[10]), _valueNum(mr[11])]);
     }
     if (v.length > CFG.INMOBI_LAST_ROW) {
-      issue('warn', sheetName + ' has rows below row 10,000; pacing row 24 stops reading there.');
+      issue('warn', sheetName + ' has rows below row 10,000; pacing ' + rowsNote + ' stop reading there.');
     }
   }
-  readInMobi(CFG.RAW_MANUAL, CFG.INMOBI_MANUAL_FROM, '', 'manual');
-  readInMobi(CFG.RAW_BACKUP, FLOOR_JUL2, CFG.INMOBI_BACKUP_TILL, 'backup');
-  // A Raw manual Bidease / InMotion row counts only if Raw data copied it. The source workbook's
+  readManual(CFG.RAW_MANUAL, 'manual', { bidease: [_mediaFloor(LINE_BY_KEY['Bidease|Conversion'], 'SFQC'), ''],
+    inmobi: [CFG.INMOBI_MANUAL_FROM, ''] }, 'rows 23 (Bidease) and 24 (InMobi)');
+  readManual(CFG.RAW_BACKUP, 'backup', { inmobi: [FLOOR_JUL2, CFG.INMOBI_BACKUP_TILL] }, 'row 24 (InMobi)');
+  // A Raw manual InMotion row counts only if Raw data copied it. The source workbook's
   // Raw data reads Raw manual from row 50 down ('Raw manual'!$A$50:$L), and that start moves down
   // whenever rows are inserted above it, so a row typed higher up never reaches Raw data. Compared
   // per platform + portal + day (Raw data keeps the unrounded spend, hence the tolerance); days
@@ -1226,10 +1230,10 @@ function getPacingDashboardData(opts) {
     missing.sort(function (a, b) { return a.row - b.row; });
     issue('crit', count(missing.length) + ' Raw manual row(s) are not in Raw data (' + missing.slice(0, 5).map(function (m) {
       return 'row ' + m.row + ': ' + m.r[0] + ' ' + m.b + ' ' + m.d;
-    }).join('; ') + (missing.length > 5 ? '; …' : '') + ', ' + money(missingSpend) + '), so pacing rows 23/25, row 28 and ' +
+    }).join('; ') + (missing.length > 5 ? '; …' : '') + ', ' + money(missingSpend) + '), so pacing row 25, row 28 and ' +
       'this dashboard do not count them. The source workbook\'s Raw data reads Raw manual only from row 50 down ' +
       '(\'Raw manual\'!$A$50:$L), and that start moves down whenever rows are inserted above it. In the source ' +
-      'workbook, move these rows to row 50 or below (inside or under the existing Bidease rows) — or change both ' +
+      'workbook, move these rows to row 50 or below — or change both ' +
       '\'Raw manual\'!$A$50 references in its Raw data!A2 to $A$2, after checking that the source\'s own report does ' +
       'not then count the InMobi rows above row 50 twice.');
   }
@@ -1544,17 +1548,17 @@ function getPacingDashboardData(opts) {
     x.inst += e.inst; x.book += e.bookings; x.rev += e.revenue;
   });
   var spendGaps = {};
-  // where the missing spend goes: Raw manual (InMobi; Bidease and InMotion through Raw data) — in the
+  // where the missing spend goes: Raw manual (InMobi and Bidease; InMotion through Raw data) — in the
   // SOURCE workbook when this file's copy is an IMPORTRANGE, since typing into an import breaks it
   var manualF = '', rawF = '';
   try { manualF = _formulaTab_(ss.getSheetByName(CFG.RAW_MANUAL)); } catch (eM) {}
   try { rawF = _formulaTab_(ss.getSheetByName(CFG.RAW)); } catch (eR) {}
   function pasteWhere(gl) {
-    if (gl.source === 'InMobi') {
-      return /IMPORTRANGE/i.test(manualF) ? ' (InMobi: into Raw manual in the SOURCE workbook — this file\'s Raw manual ' +
-        'is an IMPORTRANGE of it, and typing rows here breaks the import)' : ' (InMobi: into Raw manual)';
+    if (gl.source === 'InMobi' || gl.source === 'Raw manual') {
+      return /IMPORTRANGE/i.test(manualF) ? ' (' + gl.plat + ': into Raw manual in the SOURCE workbook, any row — this ' +
+        'file\'s Raw manual is an IMPORTRANGE of it, and typing rows here breaks the import)' : ' (' + gl.plat + ': into Raw manual)';
     }
-    if (gl.plat === 'Bidease' || gl.plat === 'InMotion') {
+    if (gl.plat === 'InMotion') {
       return /IMPORTRANGE/i.test(rawF) ? ' (' + gl.plat + ': into Raw manual in the SOURCE workbook, at row 50 or below, ' +
         'which its Raw data copies — never into this file\'s imported tabs)' : rawF ? ' (' + gl.plat + ': into Raw manual, ' +
         'which Raw data copies)' : ' (' + gl.plat + ': into Raw data)';
