@@ -219,7 +219,14 @@ function formatDate(date, tz, fmt) {
     .replace('mm', p.minute).replace('ss', p.second);
 }
 function loadServer(files, ss) {
-  var logs = [], triggers = [], store = {}, uid = 0;
+  var logs = [], triggers = [], store = {}, uid = 0, scriptStore = {}, fetches = [];
+  var crypto = require('crypto'), zlib = require('zlib');
+  function blob(buf) { return { getBytes: function () { return Array.from(buf).map(function (b) { return b > 127 ? b - 256 : b; }); } }; }
+  var scriptProps = { getProperty: function (k) { return scriptStore[k] == null ? null : scriptStore[k]; },
+                      setProperty: function (k, v) { scriptStore[k] = String(v); },
+                      deleteProperty: function (k) { delete scriptStore[k]; } };
+  function htmlOut() { var o = { kind: 'html' }; ['setTitle', 'addMetaTag', 'setXFrameOptionsMode', 'setWidth', 'setHeight']
+    .forEach(function (m) { o[m] = function () { return o; }; }); o.getContent = function () { return '<html>'; }; return o; }
   var props = { getProperty: function (k) { return store[k] == null ? null : store[k]; },
                 setProperty: function (k, v) { store[k] = String(v); },
                 deleteProperty: function (k) { delete store[k]; } };
@@ -230,26 +237,39 @@ function loadServer(files, ss) {
       getUi: function () { throw new Error('no UI'); },
       newConditionalFormatRule: function () { var b = { whenTextEqualTo: function () { return b; }, setBackground: function () { return b; }, setRanges: function () { return b; }, build: function () { return {}; } }; return b; }
     },
-    Utilities: { formatDate: formatDate },
+    Utilities: { formatDate: formatDate,
+      newBlob: function (data) { return blob(Buffer.from(String(data), 'utf8')); },
+      gzip: function (b) { return blob(zlib.gzipSync(Buffer.from(b.getBytes()))); },
+      base64Encode: function (bytes) { return Buffer.from(bytes).toString('base64'); },
+      computeHmacSha256Signature: function (value, key) {
+        return Array.from(crypto.createHmac('sha256', key).update(value, 'utf8').digest()).map(function (b) { return b > 127 ? b - 256 : b; });
+      } },
+    ContentService: { MimeType: { JSON: 'json' }, createTextOutput: function (t) {
+      var o = { kind: 'text', text: t }; o.setMimeType = function () { return o; }; o.getContent = function () { return t; }; return o; } },
+    UrlFetchApp: { fetch: function (url, opt) { fetches.push({ url: url, opt: opt });
+      return { getResponseCode: function () { return 200; }, getContentText: function () { return '{"ok":true}'; } }; } },
     Logger: { log: function () { logs.push([].slice.call(arguments).join(' ')); } },
     // one account runs everything unless a test swaps these (an anonymous /exec visitor: active '')
     Session: { getEffectiveUser: function () { return { getEmail: function () { return 'test@example.com'; } }; },
                getActiveUser: function () { return { getEmail: function () { return 'test@example.com'; } }; } },
     LockService: { getDocumentLock: function () { return { waitLock: function () {}, releaseLock: function () {} }; },
                    getScriptLock: function () { return { waitLock: function () {}, tryLock: function () { return true; }, releaseLock: function () {} }; } },
-    PropertiesService: { getDocumentProperties: function () { return props; } },
+    PropertiesService: { getDocumentProperties: function () { return props; }, getScriptProperties: function () { return scriptProps; } },
     ScriptApp: { getProjectTriggers: function () { return triggers.slice(); },
       newTrigger: function (fn) { var b = { timeBased: function () { return b; }, everyHours: function () { return b; },
+        everyMinutes: function () { return b; }, after: function () { return b; },
         create: function () { var id = 'trig' + (++uid); triggers.push({ getHandlerFunction: function () { return fn; },
           getUniqueId: function () { return id; } }); } }; return b; },
       deleteTrigger: function (t) { triggers.splice(triggers.indexOf(t), 1); } },
-    HtmlService: {}, DriveApp: {}, MimeType: {}, console: console,
+    HtmlService: { createHtmlOutputFromFile: htmlOut, XFrameOptionsMode: { ALLOWALL: 1 } }, DriveApp: {}, MimeType: {}, console: console,
     Date: Date            // one realm, so instanceof Date works on the fixture's cells
   };
   vm.createContext(ctx);
   files.forEach(function (f) { vm.runInContext(fs.readFileSync(f, 'utf8'), ctx, { filename: f }); });
   ctx.__logs = logs;
   ctx.__props = store;
+  ctx.__scriptProps = scriptStore;
+  ctx.__fetches = fetches;
   return ctx;
 }
 function putPacing(ss, vals, spec) {
@@ -676,6 +696,61 @@ function fixStage(files) {
 /* The web app runs as the owner for anyone with the link, and google.script.run can call every
    function whose name does not end in "_". An anonymous visitor (active account '', effective
    account the owner's) must not change anything, before Fix this workbook or after it. */
+/* The website push: the signed Refresh call queues a build, the queued trigger posts a signed,
+   gzipped payload that equals getPacingDashboardData(), and the /exec link shows the page only
+   to the owner. */
+function siteStage(files) {
+  console.log('\n==================== website push (sfaq.wpp-hub.com) ====================');
+  var fails = [];
+  function check(ok, what) { console.log('   ' + (ok ? 'ok  ' : 'FAIL') + ' ' + what); if (!ok) fails.push(what); }
+  var crypto = require('crypto'), zlib = require('zlib');
+  var ss = makeSpreadsheet(fx.workbook(false), 'UTC'), ctx = loadServer(files.gs, ss);
+  ctx.writeFormulas_(ss, ctx.PACING_ALL);
+  ctx.fixThisWorkbook();
+  var SECRET = 'test-secret';
+  function sign(v) { return crypto.createHmac('sha256', SECRET).update(v).digest('hex'); }
+  function handlers() { return ctx.ScriptApp.getProjectTriggers().map(function (t) { return t.getHandlerFunction(); }).sort(); }
+  var exp = String(Date.now() + 5 * 60 * 1000);
+  var r0 = ctx.doGet({ parameter: { api: 'build', exp: exp, sig: sign('build.' + exp) } });
+  check(/"ok":false/.test(r0.getContent()) && handlers().indexOf('buildDashboardSnapshotNow') < 0,
+    'without DASHBOARD_API_SECRET a Refresh call is refused');
+  ctx.PropertiesService.getScriptProperties().setProperty('DASHBOARD_API_SECRET', SECRET);
+  var r1 = ctx.doGet({ parameter: { api: 'build', exp: exp, sig: sign('build.' + exp) } });
+  check(/"ok":true/.test(r1.getContent()) && handlers().indexOf('buildDashboardSnapshot') >= 0 &&
+    handlers().indexOf('buildDashboardSnapshotNow') >= 0, 'a signed Refresh call installs the 30-minute trigger and queues one build');
+  var n1 = handlers().length;
+  ctx.doGet({ parameter: { api: 'build', exp: exp, sig: sign('build.' + exp) } });
+  check(handlers().length === n1, 'a second Refresh while one build is queued adds no trigger');
+  var late = String(Date.now() + 11 * 60 * 1000), old = String(Date.now() - 1000);
+  check(/"ok":false/.test(ctx.doGet({ parameter: { api: 'build', exp: late, sig: sign('build.' + late) } }).getContent()) &&
+    /"ok":false/.test(ctx.doGet({ parameter: { api: 'build', exp: old, sig: sign('build.' + old) } }).getContent()) &&
+    /"ok":false/.test(ctx.doGet({ parameter: { api: 'build', exp: exp, sig: sign('snapshot.' + exp) } }).getContent()),
+    'expired, more-than-10-minute and wrong-action signatures are refused');
+  var nowT = ctx.ScriptApp.getProjectTriggers().filter(function (t) { return t.getHandlerFunction() === 'buildDashboardSnapshotNow'; })[0];
+  ctx.buildDashboardSnapshotNow({ triggerUid: nowT.getUniqueId(), authMode: 'FULL' });
+  var f = ctx.__fetches[0] || { opt: {} }, body = f.opt.payload || '{}', sent = JSON.parse(body);
+  var payload = sent.gzip ? JSON.parse(zlib.gunzipSync(Buffer.from(sent.gzip, 'base64')).toString('utf8')) : null;
+  var fresh = ctx.getPacingDashboardData();
+  check(ctx.__fetches.length === 1 && f.url === 'https://sfaq.wpp-hub.com/api/snapshot' && f.opt.method === 'post' &&
+    f.opt.headers['X-Signature'] === sign('snapshot.' + body), 'the queued trigger posts one snapshot to /api/snapshot, signed over its body');
+  check(!!payload && JSON.stringify(payload.adjust) === JSON.stringify(fresh.adjust) &&
+    JSON.stringify(payload.raw) === JSON.stringify(fresh.raw) && payload.meta.end === fresh.meta.end,
+    'the gzipped snapshot is the dashboard payload (raw, adjust, window)');
+  check(handlers().indexOf('buildDashboardSnapshotNow') < 0 && handlers().indexOf('buildDashboardSnapshot') >= 0,
+    'the queued build removes itself; the 30-minute trigger stays');
+  var forged = 0;
+  try { ctx.Session.getActiveUser = function () { return { getEmail: function () { return ''; } }; };
+    ctx.buildDashboardSnapshot({ triggerUid: 'not-a-trigger' }); } catch (e) { forged = /dashboard link/.test(e.message) ? 1 : 0; }
+  check(forged === 1 && ctx.__fetches.length === 1, 'a made-up trigger id from a visitor is refused');
+  check(ctx.doGet({}).kind === 'text' && /sfaq\.wpp-hub\.com/.test(ctx.doGet({}).getContent()), 'the /exec link shows a visitor only a pointer to the site');
+  ctx.Session.getActiveUser = function () { return { getEmail: function () { return 'test@example.com'; } }; };
+  check(ctx.doGet({}).kind === 'html', 'the /exec link still shows the owner the dashboard');
+  var msg = ctx.publishDashboardSnapshot();
+  check(ctx.__fetches.length === 2 && /Published to https:\/\/sfaq\.wpp-hub\.com/.test(msg), 'Pacing dashboard → Publish to the website now posts one snapshot');
+  console.log('   Website push: ' + (fails.length ? fails.length + ' check(s) failed' : 'every check passed'));
+  return fails.length;
+}
+
 function visitorStage(files) {
   console.log('\n==================== the dashboard link: an anonymous visitor calls every public function ====================');
   var fails = [];
@@ -707,7 +782,8 @@ function visitorStage(files) {
     var wrote = [], leaked = [];
     pub.forEach(function (name) {
       var derivedOk = name === 'getPacingDashboardData';
-      var before = state(ss, ctx, derivedOk), args = name === 'refreshAdjustClean' ? [{ triggerUid: 1 }] :
+      var before = state(ss, ctx, derivedOk), args = /^(refreshAdjustClean|buildDashboardSnapshot|buildDashboardSnapshotNow)$/.test(name) ? [{ triggerUid: 1 }] :
+        name === 'doGet' ? [{ parameter: { api: 'build', exp: String(Date.now() + 60000), sig: 'forged' } }] :
         name === 'step1b_addQueries' ? ['x'] : /^(importAdjustCsv|replaceAdjustCurrent)$/.test(name) ? [[[['day']]]] : [];
       var out;
       try { out = ctx[name].apply(null, args); } catch (e) { out = undefined; }
@@ -718,6 +794,7 @@ function visitorStage(files) {
     check(!wrote.length, st[0] + ': none of the ' + pub.length + ' public functions changes the workbook, its properties or ' +
       'triggers (a dashboard load only builds/refreshes "Adjust Clean")' + (wrote.length ? ' — ' + wrote.join(', ') : ''));
     check(!leaked.length, st[0] + ': no account name or Adjust data is returned' + (leaked.length ? ' — ' + leaked.join(', ') : ''));
+    check(!ctx.__fetches.length, st[0] + ': nothing is sent to the website (a forged trigger event or site signature is refused)');
   });
   // the gate tells an unreadable account (an appsscript.json without userinfo.email) from a visitor
   var ctxG = loadServer(files.gs, makeSpreadsheet({}, 'UTC')), msgs = [];
@@ -968,6 +1045,7 @@ function main() {
   cur.ctx.CFG.WEB_REVENUE_FROM_GA4 = ga4Default;
 
   failures += fixStage(files);
+  failures += siteStage(files);
   failures += visitorStage(files);
   failures += unitStage(files);
 

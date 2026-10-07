@@ -146,17 +146,150 @@ function OPEN_DASHBOARD() {
 }
 
 /**
- * Serves the dashboard at the deployment URL. For the first release use New
- * deployment. For every later release edit the SAME active deployment and select
- * New version; its client-facing /exec URL stays unchanged.
- * "Execute as: Me" lets a viewer see the numbers without access to the sheet itself,
- * so pick who has access deliberately.
+ * The client-facing address is https://sfaq.wpp-hub.com. That site serves the page behind its own
+ * password and holds the numbers itself: buildDashboardSnapshot() pushes a snapshot there every
+ * SNAPSHOT_EVERY_MINUTES, signed with the DASHBOARD_API_SECRET script property, and the site asks
+ * for an early build with ?api=build&exp=…&sig=… when someone presses Refresh.
+ *
+ * Why push: the payload takes ~40 s to build, and Google's delivery of a large web-app answer
+ * fails about half the time (the browser gets a Google 404), so no page ever waits on this script.
+ *
+ * The deployment is "Execute as: Me" + "Who has access: Anyone" so the site can make that call.
+ * Opened directly, the /exec link shows the dashboard to the script owner only. Everyone else
+ * gets plain text pointing at the site — no HtmlService page, so no google.script.run either.
+ *
+ * For every release update the SAME deployment (clasp update-deployment, or Manage deployments →
+ * Edit → New version); the /exec URL the site calls stays unchanged.
  */
-function doGet() {
+var DASHBOARD_SITE = 'https://sfaq.wpp-hub.com';
+var SNAPSHOT_EVERY_MINUTES = 30;          // everyMinutes() accepts 1, 5, 10, 15 or 30
+
+function doGet(e) {
+  var p = (e && e.parameter) || {};
+  if (p.api === 'build') {
+    var ok = validSiteSignature_('build', p.exp, p.sig);
+    if (ok) scheduleDashboardSnapshot_();
+    return ContentService.createTextOutput(JSON.stringify(ok ? { ok: true }
+      : { ok: false, error: 'This request has expired or was not made by ' + DASHBOARD_SITE + '.' }))
+      .setMimeType(ContentService.MimeType.JSON);
+  }
+  if (!isScriptOwner_()) {
+    return ContentService.createTextOutput('The Qiddiya Media Pacing dashboard is at ' + DASHBOARD_SITE);
+  }
   return HtmlService.createHtmlOutputFromFile('Dashboard')
     .setTitle('Qiddiya Media Pacing')
     .addMetaTag('viewport', 'width=device-width, initial-scale=1')
     .setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
+}
+
+/**
+ * The recurring trigger; run it from the editor to publish right away. Builds the payload,
+ * gzips it (~15x smaller) and posts {version, gzip} to the site, where /api/snapshot checks the
+ * X-Signature and keeps the newest version. A dashboard build also keeps "Adjust Clean" current,
+ * so the site and the pacing tabs count the same Adjust rows.
+ */
+function buildDashboardSnapshot(e) {
+  if (!_fromTrigger_(e)) requireSheetUser_();
+  return _pushSnapshot_().reply;
+}
+
+/** The one-off trigger a Refresh queues. It removes itself first. */
+function buildDashboardSnapshotNow(e) {
+  if (!_fromTrigger_(e)) requireSheetUser_();   // decided before the trigger is deleted
+  ScriptApp.getProjectTriggers().forEach(function (t) {
+    if (t.getHandlerFunction() === 'buildDashboardSnapshotNow') ScriptApp.deleteTrigger(t);
+  });
+  return _pushSnapshot_().reply;
+}
+
+/** Pacing dashboard → Publish to the website now: one build now, and the recurring trigger if missing. */
+function publishDashboardSnapshot() {
+  requireSheetUser_();
+  _ensureSnapshotTrigger_();
+  var res = _pushSnapshot_();
+  var msg = 'Published to ' + DASHBOARD_SITE + ' (' + res.kb + ' KB compressed). It is published again every ' +
+    SNAPSHOT_EVERY_MINUTES + ' minutes, and when someone presses Refresh on the site.';
+  try { SpreadsheetApp.getUi().alert(msg); } catch (eUi) { /* editor or trigger: the log has it */ }
+  Logger.log(msg);
+  return msg;
+}
+
+function _pushSnapshot_() {
+  var json = JSON.stringify(getPacingDashboardData());
+  var gz = Utilities.gzip(Utilities.newBlob(json, 'application/json')).getBytes();
+  var body = JSON.stringify({ version: String(Date.now()), gzip: Utilities.base64Encode(gz) });
+  var res = UrlFetchApp.fetch(DASHBOARD_SITE + '/api/snapshot', {
+    method: 'post', contentType: 'text/plain', payload: body, muteHttpExceptions: true,
+    headers: { 'X-Signature': siteHmac_('snapshot.' + body) }
+  });
+  if (res.getResponseCode() !== 200) {
+    throw new Error(DASHBOARD_SITE + ' refused the snapshot (' + res.getResponseCode() + '): ' +
+      res.getContentText().slice(0, 300));
+  }
+  removeOldSnapshotFile_();
+  return { reply: res.getContentText(), kb: Math.round(gz.length / 1024) };
+}
+
+/**
+ * True only for a run started by one of this project's own triggers. Any page can pass an object
+ * with a triggerUid to a public function, so the id must belong to a trigger that exists.
+ */
+function _fromTrigger_(e) {
+  if (!e || typeof e !== 'object' || e.triggerUid == null || e.triggerUid === '') return false;
+  var uid = String(e.triggerUid);
+  try {
+    return ScriptApp.getProjectTriggers().some(function (t) { return String(t.getUniqueId()) === uid; });
+  } catch (err) { return false; }
+}
+
+function _ensureSnapshotTrigger_() {
+  var has = ScriptApp.getProjectTriggers().some(function (t) {
+    return t.getHandlerFunction() === 'buildDashboardSnapshot';
+  });
+  if (!has) ScriptApp.newTrigger('buildDashboardSnapshot').timeBased().everyMinutes(SNAPSHOT_EVERY_MINUTES).create();
+}
+
+/** Installs the recurring trigger if it is missing and queues one build unless one is queued. */
+function scheduleDashboardSnapshot_() {
+  _ensureSnapshotTrigger_();
+  var queued = ScriptApp.getProjectTriggers().some(function (t) {
+    return t.getHandlerFunction() === 'buildDashboardSnapshotNow';
+  });
+  if (!queued) ScriptApp.newTrigger('buildDashboardSnapshotNow').timeBased().after(1000).create();
+}
+
+/** A previous release kept snapshots in a Drive file; the site holds them now. */
+function removeOldSnapshotFile_() {
+  var props = PropertiesService.getScriptProperties(), id = props.getProperty('DASHBOARD_SNAPSHOT_FILE');
+  if (!id) return;
+  try { DriveApp.getFileById(id).setTrashed(true); } catch (err) { /* already gone */ }
+  props.deleteProperty('DASHBOARD_SNAPSHOT_FILE');
+}
+
+/** Hex HMAC-SHA256 with the DASHBOARD_API_SECRET script property — the site holds the same secret. */
+function siteHmac_(value) {
+  var secret = PropertiesService.getScriptProperties().getProperty('DASHBOARD_API_SECRET');
+  if (!secret) throw new Error('Script property DASHBOARD_API_SECRET is not set (Apps Script → Project Settings → ' +
+    'Script properties). It must hold the same secret as ' + DASHBOARD_SITE + '.');
+  return Utilities.computeHmacSha256Signature(value, secret).map(function (b) {
+    return ('0' + (b & 255).toString(16)).slice(-2);
+  }).join('');
+}
+
+/** Mirrors signedScriptUrl() in wpp-hub/lib/auth.js: hex HMAC of "<action>.<exp>", exp in ms. */
+function validSiteSignature_(action, exp, sig) {
+  var t = Number(exp), now = Date.now();
+  // A link valid for more than 10 minutes was not made by the site.
+  if (!sig || !(t > now) || t > now + 10 * 60 * 1000) return false;
+  try { return siteHmac_(action + '.' + exp) === String(sig); } catch (err) { return false; }
+}
+
+/** True when the person opening the link is the account the script runs as (or an editor on /dev). */
+function isScriptOwner_() {
+  var active = '', effective = '';
+  try { active = Session.getActiveUser().getEmail(); } catch (e) {}
+  try { effective = Session.getEffectiveUser().getEmail(); } catch (e) {}
+  return !!effective && active === effective;
 }
 /**
  * Apps Script keeps only one onOpen() per project. Untitled.gs owns it and calls this,
@@ -169,6 +302,7 @@ function dashboardMenu_() {
     .addItem('Clean Adjust Raw (dates, duplicates)', 'cleanAdjustRaw')
     .addItem('Validate against the pacing tabs', 'validateDashboard')
     .addItem('Export a standalone HTML file', 'exportStandalone')
+    .addItem('Publish to the website now', 'publishDashboardSnapshot')
     .addSeparator()
     .addItem('Check the setup', 'checkSetup')
     .addToUi();
