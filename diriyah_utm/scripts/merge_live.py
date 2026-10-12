@@ -1,10 +1,12 @@
-"""Merge the keyed re-read (reread/out/<platform>_<account>.jsonl) into work/live_now.json {platform|ad_id|slot: {url, status_now, found, note}}.
+"""Usage: python3 scripts/merge_live.py <dir> [<reread out dir>]
+Merge the keyed re-read (reread/out/<platform>_<account>.jsonl) into work/live_now.json {platform|ad_id|slot: {url, status_now, found, note}}.
 Prints coverage against the 11-Oct inventory (every URL slot should be re-read)."""
 import sys, json, glob, os, collections
 W = sys.argv[1]
+SRC = sys.argv[2] if len(sys.argv) > 2 else f'{W}/reread/out'   # e.g. reread2/out for a later re-read
 S = json.load(open(f'{W}/work/scored.json'))
 live, bad = {}, 0
-for f in glob.glob(f'{W}/reread/out/*.jsonl'):
+for f in glob.glob(f'{SRC}/*.jsonl'):
     if os.path.basename(f).startswith('new_'): continue
     for l in open(f):
         if not l.strip(): continue

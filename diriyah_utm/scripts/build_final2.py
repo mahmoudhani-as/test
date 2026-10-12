@@ -1,6 +1,6 @@
 """Final verification workbook (12-Oct): before vs after %, every URL with its ad name, changes applied, what still needs the
 user (not applied / manual), what was left out per URL, month check, questions, 7-Oct sheet audit, rules.
-Usage: python3 scripts/build_final2.py <dir> <out.xlsx>
+Usage: python3 scripts/build_final2.py <dir> <out.xlsx> [reread folder] [plan folder]
 Reads: work/scored.json (11-Oct inventory = before), work/targets.json (final rules), work/live_now.json (keyed re-read = after),
        reread/out/new_*.jsonl (ads created since 11-Oct), apply*/out_*.jsonl (every write), round4/diff.json (pending plan), omit / legacy items."""
 import sys, os, json, re, glob, collections
@@ -16,12 +16,20 @@ from derive import Deriver
 from omit import check_omit
 
 W, OUT = sys.argv[1], sys.argv[2]
+REREAD = sys.argv[3] if len(sys.argv) > 3 else 'reread'   # folder of the latest keyed re-read (its out/new_*.jsonl = ads created since 11-Oct)
+PLAN = sys.argv[4] if len(sys.argv) > 4 else 'round4'      # folder of the latest pending plan (diff.json)
 G = glob.glob(f'{W}/in/e2e*.xlsx')[0]
 N = Deriver(G, {}).N
 S = json.load(open(f'{W}/work/scored.json'))
 T = {(r['platform'], r['ad_id'], r['slot']): r for r in json.load(open(f'{W}/work/targets.json'))}
-LIVE = json.load(open(f'{W}/work/live_now.json')) if os.path.exists(f'{W}/work/live_now.json') else {}
-DIFF = {(d['platform'], d['ad_id'], d['slot']): d for d in json.load(open(f'{W}/round4/diff.json'))}
+LIVE_FILE = os.environ.get('LIVE_FILE') or f'{W}/work/live_now.json'   # e.g. work/live_interim.json = re-read + later apply read-backs
+LIVE = json.load(open(LIVE_FILE)) if os.path.exists(LIVE_FILE) else {}
+DIFF = {(d['platform'], d['ad_id'], d['slot']): d for d in json.load(open(f'{W}/{PLAN}/diff.json'))}
+PMAN = {}   # the plan's manual list: tweet-text links, shared sub-creatives needing different URLs
+for m in json.load(open(f'{W}/{PLAN}/manual.json')):
+    for aid in ([m['ad_id']] if m.get('ad_id') else m.get('ad_ids') or []):
+        for sl_ in ([m['slot']] if m.get('slot') else [c_['slot'] for c_ in m.get('changes') or []]):
+            PMAN[(m['platform'], str(aid), sl_)] = m.get('manual') if isinstance(m.get('manual'), str) else 'shared creative used by ads that need different URLs - split it by hand'
 FS = json.load(open(f'{W}/work/first_serving_all.json'))
 key = lambda s: (s['platform'], str(s.get('ad_id')), s.get('slot'))
 OMIT = {key(o): o for o in json.load(open(f'{W}/work/omit_items.json'))}
@@ -72,10 +80,13 @@ def status_of(s, t, live):
         if any(a['result'] == 'AlreadyFixed' for a in last12): return 'Fixed 11-Oct', 'already correct when re-read before the 12-Oct write', '11-Oct'
         return 'Correct', 'live URL already matches the final rules', ''
     if t and t.get('manual'): return 'Manual - you', t['manual'], ''
+    if k in PMAN: return 'Manual - you', PMAN[k], ''
     if not tgt:
         o = OMIT.get(k) or {}
         return 'Manual - you', (o.get('manual') or 'no single correct URL for this slot'), ''
-    bad = [a for a in last12 if a['result'] in ('Failed', 'Skipped', 'NotAttempted')]
+    a5 = [a for a in rs if a['_file'].startswith(PLAN + '/')]
+    if k in DIFF and not a5: return 'Being applied now', 'reviewed URL is in the write queue that was still running when this workbook was built', ''
+    bad = [a for a in (a5 or last12) if a['result'] in ('Failed', 'Skipped', 'NotAttempted')]
     if bad:
         b = bad[-1]; d = (b.get('detail') or '')
         if b['result'] == 'NotAttempted' or re.search(r'safety check|sign-?in', d, re.I):
@@ -174,7 +185,7 @@ f1, l1 = table(ws, H, rows, 'EveryURL', [9, 22, 40, 38, 44, 22, 8, 16, 8, 26, 70
 for col in ('Verdict before', 'Verdict now', 'Ad verdict before', 'Ad verdict now'):
     colour(ws, C[col], f1 + 1, l1, (('WRONG', RED), ('CORRECT', GREEN)))
 colour(ws, C['Status'], f1 + 1, l1, (('Fixed 12-Oct', GREEN), ('Fixed 11-Oct', GREEN), ('Correct', GREEN), ('Manual - you', AMBER),
-                                      ('Not applied - needs your OK', BLUE), ('Failed', RED), ('Skipped', AMBER), ('Changed by someone else', AMBER)))
+                                      ('Not applied - needs your OK', BLUE), ('Being applied now', BLUE), ('Failed', RED), ('Skipped', AMBER), ('Changed by someone else', AMBER)))
 EU = "'Every URL'"
 rng = lambda h: f"{EU}!${C[h]}${f1+1}:${C[h]}${l1}"
 
@@ -212,7 +223,7 @@ table(wa, ['Day', 'Platform', 'Account ID', 'Ad name(s)', 'Ad ID(s)', 'Edited en
 wn = wb.create_sheet('Not applied - needs your OK')
 na = [[r['s']['platform'], r['s'].get('account_name'), r['s'].get('campaign_name'), r['s'].get('adset_name'), r['s'].get('ad_name') or '(no ad name)',
        str(r['s'].get('ad_id')), r['kind'], r['status_now'], 'Yes' if r['on'] else 'No', r['s'].get('slot'), r['url_now'], (r['t'] or {}).get('target'), r['why']]
-      for r in recs if r['st'] in ('Not applied - needs your OK',)]
+      for r in recs if r['st'] in ('Not applied - needs your OK', 'Being applied now')]
 table(wn, ['Platform', 'Account', 'Campaign', 'Ad set', 'Ad name', 'Ad ID', 'Kind', 'Delivery status', 'Switched on', 'URL slot', 'URL now', 'Correct URL (ready, reviewed)', 'Why not applied'],
       na, 'NotApplied', [9, 22, 40, 36, 44, 22, 8, 16, 8, 26, 70, 70, 50], wrap_cols=(3, 4, 5, 11, 12, 13))
 
@@ -228,10 +239,11 @@ for r in recs:
     s = r['s']; tg = (r['t'] or {}).get('target')
     if not tg or r['kind'] != 'Ad': continue
     lp = re.search(r'/(en|ar)(/|$)', urlsplit(tg).path.lower()); q = dict(parse_qsl(urlsplit(tg).query))
-    cl = (q.get('utm_content', '').split('_') or [''])[-1]
-    if lp and cl in ('en', 'ar') and cl != lp.group(1) and re.search(r'(^|[_\s-])' + cl.upper() + r'([_\s-]|$)', str(s.get('ad_name'))):
-        ma.append([s['platform'], s.get('account_name'), s.get('campaign_name'), s.get('adset_name'), s.get('ad_name'), str(s.get('ad_id')), r['kind'], r['status_now'],
-                   'Yes' if r['on'] else 'No', 'Check landing page', f'the ad is {cl.upper()} but its landing page is /{lp.group(1)}/ - the UTM follows the ad; change the page if it is wrong',
+    cl = (q.get('utm_content', '').split('_') or [''])[-1]; tl = (q.get('utm_term', '').split('_') or [''])[-1]
+    cl = cl if cl in ('en', 'ar') else (tl if tl in ('en', 'ar') else None)   # Google ads have no ad name: fall back to the ad group language
+    if lp and cl and cl != lp.group(1):
+        ma.append([s['platform'], s.get('account_name'), s.get('campaign_name'), s.get('adset_name'), s.get('ad_name') or '(no ad name)', str(s.get('ad_id')), r['kind'], r['status_now'],
+                   'Yes' if r['on'] else 'No', 'Check landing page', f'the ad / ad group is {cl.upper()} but its landing page is /{lp.group(1)}/ - the UTM follows the ad; change the page if it is wrong',
                    s.get('slot'), WHERE.get(s['platform']), r['url_now'], tg])
 table(wm, ['Platform', 'Account', 'Campaign', 'Ad set', 'Ad name', 'Ad ID', 'Kind', 'Delivery status', 'Switched on', 'Status', 'Why it is yours', 'URL slot', 'Where to edit',
            'URL now', 'Correct URL (when one exists)'], ma, 'Manual', [9, 22, 40, 36, 44, 22, 8, 16, 8, 16, 55, 26, 34, 70, 70], wrap_cols=(3, 4, 5, 11, 14, 15))
@@ -263,7 +275,7 @@ table(wmo, ['Platform', 'Ad name', 'Ad ID', 'First day with impressions (account
 # ---------------- New since 11-Oct ----------------
 wnw = wb.create_sheet('New ads since 11-Oct')
 nw = []
-for f in sorted(glob.glob(f'{W}/reread/out/new_*.jsonl')):
+for f in sorted(glob.glob(f'{W}/{REREAD}/out/new_*.jsonl')):
     for line in open(f):
         if not line.strip(): continue
         try: x = json.loads(line)
@@ -285,7 +297,7 @@ if old:
 # ---------------- Questions for you ----------------
 wq = wb.create_sheet('Questions for you')
 QS = [
-    ('Live writes still to do', 'The session safety check stopped further live writes after a few batches (it treated more bulk edits as needing your explicit OK). Every remaining change is planned, reviewed and listed in "Not applied - needs your OK". Allow it (say so, or add a permission rule) and they can be applied with the same re-read / dry-run / read-back routine.', 'Waiting on you'),
+    ('Live writes still to do', 'You confirmed the remaining writes on 12-Oct. They were running when this workbook was built ("Being applied now"). The session safety check again stopped some Google and TikTok writes even after your OK; those are in "Not applied - needs your OK". To let them through, add a permission rule allowing the Whathead Google Ads / TikTok write actions, then they are applied with the same re-read / dry-run / read-back routine.', 'In progress'),
     ('utm_medium', 'Old URLs mixed cpc / cpm / paid-social / paid-search, even inside one campaign and on Google Search. The planned URLs use the generator\'s own medium for each source: google -> paid-search; meta / tiktok / snapchat / x / linkedin -> paid-social. Keep, or keep the old medium where it is a valid Mappings value?', 'Default applied: generator medium'),
     ('Demand Gen (source gadg)', 'The generator has no row for gadg, so no medium can be sourced; the planned URLs leave utm_medium out (12-Oct omit rule). Pick paid-display or paid-video if you want one.', 'Left out'),
     ('Template campaign name "visitor-diriyah-coe"', 'The agency template token (cam-id_mindshare_diriyah-company_<asset>_tactical_visitor-diriyah-coe_...) was pasted on Bujairi, Zallal, Bab Samhan and Shopping 2026 campaigns. Only its Campaign Name field is used (visitor-diriyah-coe), as the schema says; that merges those campaigns under one name in reports. Alternatives: leave the campaign name out, or keep the unit + asset (diriyah-company-bujairi-visitor-diriyah-coe).', 'Default applied: name field only'),
@@ -321,13 +333,13 @@ table(wr, ['Rule', 'What is required', 'Source'], RULES, 'Rules', [24, 110, 34],
 
 # ---------------- Summary ----------------
 sm = wb.create_sheet('Summary', 0)
-sm['A1'] = 'Diriyah / Wadi Safar UTM fix - before vs after'; sm['A1'].font = TITLE
+sm['A1'] = 'Diriyah / Wadi Safar UTM fix - before vs after' + (' (INTERIM - writes still running)' if os.environ.get('INTERIM') else ''); sm['A1'].font = TITLE
 sm['A2'] = ('Every ad and every final-URL slot in every ad account whose name contains "Diriyah" or "Wadi" (Meta, TikTok, Snapchat, X, Google Ads, LinkedIn). '
             'Before = live pull 11-Oct-2026. After = keyed live re-read of the same slots on 12-Oct-2026, compared with the URL the final rules give. Ad name is on every row of "Every URL".')
 sm['A2'].font = NOTE; sm['A2'].alignment = WRAP; sm.merge_cells('A2:N2'); sm.row_dimensions[2].height = 42
 sm['A4'] = 'Ad URL slots and ads'; sm['A4'].font = H2
 hdr = ['Platform', 'URL slots', 'Slots wrong before', '% wrong before', 'Slots wrong now', '% wrong now', 'Fixed 12-Oct', 'Fixed 11-Oct', 'Not applied - needs your OK',
-       'Manual - you', 'Failed / skipped', 'Ads with a URL', 'Ads wrong before', '% ads wrong before', 'Ads wrong now', '% ads wrong now']
+       'Manual - you', 'Failed / skipped', 'Ads with a URL', 'Ads wrong before', '% ads wrong before', 'Ads wrong now', '% ads wrong now', 'Being applied now']
 for i, h in enumerate(hdr, 1):
     c = sm.cell(5, i, h); c.font = HDR; c.fill = HFILL; c.alignment = Alignment(wrap_text=True, vertical='center')
 plats = ['meta', 'tiktok', 'snapchat', 'x', 'google', 'linkedin']
@@ -343,9 +355,9 @@ for p in plats + ['ALL']:
     sm.cell(row, 7, f(f',{ST},"Fixed 12-Oct"')); sm.cell(row, 8, f(f',{ST},"Fixed 11-Oct"')); sm.cell(row, 9, f(f',{ST},"Not applied - needs your OK"'))
     sm.cell(row, 10, f(f',{ST},"Manual - you"')); sm.cell(row, 11, f'=' + f(f',{ST},"Failed"')[1:] + '+' + f(f',{ST},"Skipped"')[1:])
     sm.cell(row, 12, f(f',{FR},1')); sm.cell(row, 13, f(f',{FR},1,{AB},"WRONG"')); sm.cell(row, 14, f'=IF(L{row}=0,0,M{row}/L{row})')
-    sm.cell(row, 15, f(f',{FR},1,{AN},"WRONG"')); sm.cell(row, 16, f'=IF(L{row}=0,0,O{row}/L{row})')
+    sm.cell(row, 15, f(f',{FR},1,{AN},"WRONG"')); sm.cell(row, 16, f'=IF(L{row}=0,0,O{row}/L{row})'); sm.cell(row, 17, f(f',{ST},"Being applied now"'))
     for c in (4, 6, 14, 16): sm.cell(row, c).number_format = '0.0%'
-    for c in range(2, 17): sm.cell(row, c).font = BOLD if p == 'ALL' else BODY
+    for c in range(2, 18): sm.cell(row, c).font = BOLD if p == 'ALL' else BODY
     row += 1
 row += 1
 sm.cell(row, 1, 'Switched-on ads (delivering now)').font = H2; row += 1
@@ -369,14 +381,14 @@ row += 2
 sm.cell(row, 1, 'How to read it').font = H2; row += 1
 notes = [
     '"Wrong now" counts every slot whose live URL is not the URL the final rules give - that includes the ones still waiting for your OK and the manual ones.',
-    '"Not applied - needs your OK": planned and reviewed, but not written because the session safety check stopped further live writes. The ready URL is in that tab.',
+    '"Not applied - needs your OK": planned and reviewed, but the session safety check stopped the live write. "Being applied now": in the write queue that was still running when this workbook was built. The ready URL is in "Not applied - needs your OK".',
     '"Manual - you": shared creatives / cards / sitelinks that would need two different URLs (split them by hand), plus anything a platform refused.',
     'Every write was re-read before and after; "Changes applied" has the before / after read back for each one.',
     'Ads created after the 11-Oct pull are listed in "New ads since 11-Oct" and are not counted in the percentages.',
 ]
 for n in notes:
     sm.cell(row, 1, '- ' + n).font = BODY; sm.merge_cells(start_row=row, start_column=1, end_row=row, end_column=14); sm.cell(row, 1).alignment = WRAP; sm.row_dimensions[row].height = 28; row += 1
-for i, w in enumerate([22, 10, 12, 10, 12, 10, 11, 11, 14, 11, 11, 11, 12, 10, 12, 10], 1): sm.column_dimensions[get_column_letter(i)].width = w
+for i, w in enumerate([22, 10, 12, 10, 12, 10, 11, 11, 14, 11, 11, 11, 12, 10, 12, 10, 12], 1): sm.column_dimensions[get_column_letter(i)].width = w
 sm.freeze_panes = 'A6'
 wb.save(OUT)
 # python-side numbers (for the summary check)
