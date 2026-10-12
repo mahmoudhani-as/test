@@ -1,0 +1,1308 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_get",
+    "method": "GET",
+    "path": "/v1.3/ad/get/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "2026101118002947AE25506C0F91433F0F",
+      "data": {
+        "list": [
+          {
+            "campaign_id": "1866092059326642",
+            "ad_name": "Visit DiriyahEid KVEN1080x1920",
+            "adgroup_id": "1866092059327682",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_id": "1866092059327698",
+            "landing_page_url": "https://www.diriyah.sa/en?utm_source=tiktok&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_tiktok_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-987e7a_test_ad_name_display",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "cpm"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cam-id-2e61ab_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_tiktok_en"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-987e7a_test_ad_name_display"
+              }
+            ],
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE",
+            "operation_status": "ENABLE"
+          },
+          {
+            "campaign_id": "1866085322433154",
+            "ad_name": "Bab Samhan x Qiddiya_StaticKV1_AR",
+            "adgroup_id": "1866085603585250",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_id": "1866086759323778",
+            "landing_page_url": "https://www.diriyah.sa/ar/hotels/bab-samhan?utm_source=tiktok&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan_tactical_visitor-diriyah-coe_2026_may_uf_awareness_reach-awareness_tiktok_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-987e7a_test_ad_name_display",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "cpm"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cam-id-2e61ab_mindshare_diriyah-company_bab-samhan_tactical_visitor-diriyah-coe_2026_may_uf_awareness_reach-awareness_tiktok_en"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-987e7a_test_ad_name_display"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "operation_status": "ENABLE"
+          },
+          {
+            "campaign_id": "1866085322433154",
+            "ad_name": "Bab Samhan x Qiddiya_StaticKV1_EN",
+            "adgroup_id": "1866085572301986",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_id": "1866086629986529",
+            "landing_page_url": "https://www.diriyah.sa/en/hotels/bab-samhan?utm_source=tiktok&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan_tactical_visitor-diriyah-coe_2026_may_uf_awareness_reach-awareness_tiktok_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-987e7a_test_ad_name_display",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "cpm"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cam-id-2e61ab_mindshare_diriyah-company_bab-samhan_tactical_visitor-diriyah-coe_2026_may_uf_awareness_reach-awareness_tiktok_en"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-987e7a_test_ad_name_display"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "operation_status": "ENABLE"
+          },
+          {
+            "campaign_id": "1857288757610529",
+            "ad_name": "BTKV_EN_STATIC_EID",
+            "adgroup_id": "1857288963465217",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_id": "1859906833322210",
+            "landing_page_url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_display",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_en"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-7aee00_test_ad_name_display"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "operation_status": "ENABLE"
+          },
+          {
+            "campaign_id": "1857200654159073",
+            "ad_name": "Copy 1 of BT KV_EN_STATIC_EID",
+            "adgroup_id": "1857201381031202",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_id": "1859905940813970",
+            "landing_page_url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_display",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_en"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-7aee00_test_ad_name_display"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "operation_status": "ENABLE"
+          },
+          {
+            "campaign_id": "1857200654159073",
+            "ad_name": "Copy 1 of BT KV_ AR_ STATIC_ EID",
+            "adgroup_id": "1857202371348833",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_id": "1859905885413586",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "operation_status": "ENABLE"
+          },
+          {
+            "campaign_id": "1857288757610529",
+            "ad_name": "Copy 1 of BT KV_AR_STATIC_EID",
+            "adgroup_id": "1857546910327858",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_id": "1859905652203922",
+            "landing_page_url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_display",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-7aee00_test_ad_name_display"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "operation_status": "ENABLE"
+          },
+          {
+            "campaign_id": "1858189280224401",
+            "ad_name": "EID_EN_COE_Static",
+            "adgroup_id": "1858189280224433",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_id": "1859903519347842",
+            "landing_page_url": "https://www.diriyah.sa/en?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_display",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_en"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-7aee00_test_ad_name_display"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "operation_status": "ENABLE"
+          },
+          {
+            "campaign_id": "1858189280224401",
+            "ad_name": "EID_AR_COE_Static",
+            "adgroup_id": "1858189280424113",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_id": "1859902673516705",
+            "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_display",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-7aee00_test_ad_name_display"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "operation_status": "ENABLE"
+          },
+          {
+            "campaign_id": "1858189280224401",
+            "ad_name": "Copy 1 of AR Video Eid Visit",
+            "adgroup_id": "1858189280424113",
+            "ad_format": "SINGLE_VIDEO",
+            "ad_id": "1859827888563330",
+            "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_video",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-7aee00_test_ad_name_video"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "operation_status": "ENABLE"
+          },
+          {
+            "campaign_id": "1858189280224401",
+            "ad_name": "Copy 1 of EN Video Eid Visit",
+            "adgroup_id": "1858189280224433",
+            "ad_format": "SINGLE_VIDEO",
+            "ad_id": "1859827838959665",
+            "landing_page_url": "https://www.diriyah.sa/en?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_video",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_en"
+              },
+              {
+                "key": "utm_term",
+                "value": "adset-id-7aee00_test_adset_name_en_all_mf_prospecting"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-7aee00_test_ad_name_video"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "operation_status": "ENABLE"
+          },
+          {
+            "campaign_id": "1858189280224401",
+            "ad_name": "EN Video Eid Visit",
+            "adgroup_id": "1858189280224433",
+            "ad_format": "SINGLE_VIDEO",
+            "ad_id": "1859815658870994",
+            "landing_page_url": "https://www.diriyah.sa/en/shopping?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_video",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_en"
+              },
+              {
+                "key": "utm_term",
+                "value": "adset-id-7aee00_test_adset_name_en_all_mf_prospecting"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-7aee00_test_ad_name_video"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "operation_status": "DISABLE"
+          },
+          {
+            "campaign_id": "1858189280224401",
+            "ad_name": "AR Video Eid Visit",
+            "adgroup_id": "1858189280424113",
+            "ad_format": "SINGLE_VIDEO",
+            "ad_id": "1859815439751474",
+            "landing_page_url": "https://www.diriyah.sa/ar/shopping?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_video",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-7aee00_test_ad_name_video"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "operation_status": "DISABLE"
+          },
+          {
+            "campaign_id": "1857288757610529",
+            "ad_name": "Static_AR",
+            "adgroup_id": "1857546910327858",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_id": "1859092678550578",
+            "landing_page_url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_display",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-7aee00_test_ad_name_display"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "operation_status": "DISABLE"
+          },
+          {
+            "campaign_id": "1857200654159073",
+            "ad_name": "Static_AR_march8th",
+            "adgroup_id": "1857202371348833",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_id": "1859092509587505",
+            "landing_page_url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_display",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-7aee00_test_ad_name_display"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "operation_status": "DISABLE"
+          },
+          {
+            "campaign_id": "1857200654159073",
+            "ad_name": "Static_EN_March8th",
+            "adgroup_id": "1857201381031202",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_id": "1859092322258002",
+            "landing_page_url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_display",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_en"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-7aee00_test_ad_name_display"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "operation_status": "DISABLE"
+          },
+          {
+            "campaign_id": "1857288757610529",
+            "ad_name": "Static_EN_March8th",
+            "adgroup_id": "1857288963465217",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_id": "1859092176549938",
+            "landing_page_url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_display",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_en"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-7aee00_test_ad_name_display"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "operation_status": "DISABLE"
+          },
+          {
+            "campaign_id": "1857288757610529",
+            "ad_name": "Static_AR",
+            "adgroup_id": "1857546910328898",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_id": "1859082576614609",
+            "landing_page_url": "https://www.diriyah.sa/ar/bujairi-terrace?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_display",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-7aee00_test_ad_name_display"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "operation_status": "ENABLE"
+          },
+          {
+            "campaign_id": "1857200654159073",
+            "ad_name": "Copy 1 of Static AR",
+            "adgroup_id": "1857201146346498",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_id": "1859082119241057",
+            "landing_page_url": "https://www.diriyah.sa/ar/bujairi-terrace?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_display",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-7aee00_test_ad_name_display"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "operation_status": "ENABLE"
+          },
+          {
+            "campaign_id": "1857288757610529",
+            "ad_name": "Static EN",
+            "adgroup_id": "1857546910327842",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_id": "1858736065256545",
+            "landing_page_url": "https://www.diriyah.sa/en/bujairi-terrace?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_display",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_en"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-7aee00_test_ad_name_display"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "operation_status": "ENABLE"
+          },
+          {
+            "campaign_id": "1857288757610529",
+            "ad_name": "BT Ramadan tiktok - ARB_Q9BtcY0F.jpg_Ad name2026-03-04 15:50:29",
+            "adgroup_id": "1857546910328898",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_id": "1858735806258274",
+            "landing_page_url": "https://www.diriyah.sa/ar/bujairi-terrace?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_display",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-7aee00_test_ad_name_display"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "operation_status": "DISABLE"
+          },
+          {
+            "campaign_id": "1857200654159073",
+            "ad_name": "Static en",
+            "adgroup_id": "1857200654160065",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_id": "1858735348584546",
+            "landing_page_url": "https://www.diriyah.sa/en/bujairi-terrace?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_display",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_en"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-7aee00_test_ad_name_display"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "operation_status": "ENABLE"
+          },
+          {
+            "campaign_id": "1857200654159073",
+            "ad_name": "DNU",
+            "adgroup_id": "1857201146346498",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_id": "1858735134060978",
+            "landing_page_url": "https://www.diriyah.sa/ar/bujairi-terrace?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_display",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-7aee00_test_ad_name_display"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "operation_status": "DISABLE"
+          },
+          {
+            "campaign_id": "1858189280224401",
+            "ad_name": "AL BUJAIRI_RETAIL_Tiktok_ubhYT2L8.mp4_Copy 1 of Copy 1 of Copy 1 of 2026-02-19 13:09:44",
+            "adgroup_id": "1858189280424113",
+            "ad_format": "SINGLE_VIDEO",
+            "ad_id": "1858457258192082",
+            "landing_page_url": "https://www.diriyah.sa/ar/shopping?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_video",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-7aee00_test_ad_name_video"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "operation_status": "DISABLE"
+          },
+          {
+            "campaign_id": "1858189280224401",
+            "ad_name": "Video_AR_RETAIL",
+            "adgroup_id": "1858189280424113",
+            "ad_format": "SINGLE_VIDEO",
+            "ad_id": "1858456946861074",
+            "landing_page_url": "https://www.diriyah.sa/ar/shopping?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_video",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-7aee00_test_ad_name_video"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "operation_status": "DISABLE"
+          },
+          {
+            "campaign_id": "1858189280224401",
+            "ad_name": "AL BUJAIRI_RETAIL_Tiktok_ubhYT2L8.mp4_Copy 1 of Copy 1 of Copy 1 of 2026-02-19 13:09:44",
+            "adgroup_id": "1858189280424113",
+            "ad_format": "SINGLE_VIDEO",
+            "ad_id": "1858456770881746",
+            "landing_page_url": "https://www.diriyah.sa/ar/shopping?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_video",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-7aee00_test_ad_name_video"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "operation_status": "DISABLE"
+          },
+          {
+            "campaign_id": "1858189280224401",
+            "ad_name": "Video_EN_Retail",
+            "adgroup_id": "1858189280224433",
+            "ad_format": "SINGLE_VIDEO",
+            "ad_id": "1858456714374321",
+            "landing_page_url": "https://www.diriyah.sa/en/shopping?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_video",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_en"
+              },
+              {
+                "key": "utm_term",
+                "value": "adset-id-7aee00_test_adset_name_en_all_mf_prospecting"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-7aee00_test_ad_name_video"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "operation_status": "DISABLE"
+          },
+          {
+            "campaign_id": "1858189280224401",
+            "ad_name": "AL BUJAIRI_RETAIL_Tiktok_ubhYT2L8.mp4_Copy 1 of Copy 1 of 2026-02-19 13:09:44",
+            "adgroup_id": "1858189280424113",
+            "ad_format": "SINGLE_VIDEO",
+            "ad_id": "1858223611605026",
+            "landing_page_url": "https://www.diriyah.sa/ar/shopping?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_video",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-7aee00_test_ad_name_video"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "operation_status": "DISABLE"
+          },
+          {
+            "campaign_id": "1858189280224401",
+            "ad_name": "AL BUJAIRI_RETAIL_Tiktok_ubhYT2L8.mp4_Copy 1 of Copy 1 of 2026-02-19 13:07:34",
+            "adgroup_id": "1858189280224433",
+            "ad_format": "SINGLE_VIDEO",
+            "ad_id": "1858223436248146",
+            "landing_page_url": "https://www.diriyah.sa/en/shopping?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_video",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_en"
+              },
+              {
+                "key": "utm_term",
+                "value": "adset-id-7aee00_test_adset_name_en_all_mf_prospecting"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-7aee00_test_ad_name_video"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "operation_status": "DISABLE"
+          },
+          {
+            "campaign_id": "1858206085280017",
+            "ad_name": "Video_EN",
+            "adgroup_id": "1858206085280961",
+            "ad_format": "SINGLE_VIDEO",
+            "ad_id": "1858206085280977",
+            "landing_page_url": "https://www.diriyah.sa/en/zallal?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_zallal_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_video",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cam-id-55ee95_mindshare_diriyah-company_zallal_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_en"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-7aee00_test_ad_name_video"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "operation_status": "ENABLE"
+          },
+          {
+            "campaign_id": "1858206085280017",
+            "ad_name": "Video_AR",
+            "adgroup_id": "1858206085280033",
+            "ad_format": "SINGLE_VIDEO",
+            "ad_id": "1858206085280049",
+            "landing_page_url": "https://www.diriyah.sa/ar/zallal?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_zallal_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_video",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cam-id-55ee95_mindshare_diriyah-company_zallal_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-7aee00_test_ad_name_video"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "operation_status": "ENABLE"
+          },
+          {
+            "campaign_id": "1858205428618482",
+            "ad_name": "Video_AR",
+            "adgroup_id": "1858205428620450",
+            "ad_format": "SINGLE_VIDEO",
+            "ad_id": "1858205428620466",
+            "landing_page_url": "https://www.diriyah.sa/ar/zallal?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_zallal_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_video",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cam-id-55ee95_mindshare_diriyah-company_zallal_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-7aee00_test_ad_name_video"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "operation_status": "ENABLE"
+          },
+          {
+            "campaign_id": "1858205428618482",
+            "ad_name": "Video_EN",
+            "adgroup_id": "1858205428620418",
+            "ad_format": "SINGLE_VIDEO",
+            "ad_id": "1858205428620434",
+            "landing_page_url": "https://www.diriyah.sa/en/zallal?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_zallal_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_video",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cam-id-55ee95_mindshare_diriyah-company_zallal_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_en"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-7aee00_test_ad_name_video"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "operation_status": "ENABLE"
+          },
+          {
+            "campaign_id": "1858186353348897",
+            "ad_name": "video_en",
+            "adgroup_id": "1858187188995138",
+            "ad_format": "SINGLE_VIDEO",
+            "ad_id": "1858187188995154",
+            "landing_page_url": "https://www.diriyah.sa/en/hotels/bab-samhan?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bab-samhan_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_video",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bab-samhan_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_en"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-7aee00_test_ad_name_video"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "operation_status": "ENABLE"
+          },
+          {
+            "campaign_id": "1858186353348897",
+            "ad_name": "Video_EN",
+            "adgroup_id": "1858186762044562",
+            "ad_format": "SINGLE_VIDEO",
+            "ad_id": "1858186996659266",
+            "landing_page_url": "https://www.diriyah.sa/ar/hotels/bab-samhan?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bab-samhan_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_video",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bab-samhan_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-7aee00_test_ad_name_video"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "operation_status": "ENABLE"
+          },
+          {
+            "campaign_id": "1857203252696689",
+            "ad_name": "video_en",
+            "adgroup_id": "1857203252697089",
+            "ad_format": "SINGLE_VIDEO",
+            "ad_id": "1858186126210178",
+            "landing_page_url": "https://www.diriyah.sa/en/hotels/bab-samhan?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bab-samhan_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_video",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bab-samhan_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_en"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-7aee00_test_ad_name_video"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "operation_status": "ENABLE"
+          },
+          {
+            "campaign_id": "1857200654159073",
+            "ad_name": "AL BUJAIRI_TERRACE EXPERIENCE_Tiktok_XhZrztgL.mp4_2026-02-19 13:27:02",
+            "adgroup_id": "1857201381031202",
+            "ad_format": "SINGLE_VIDEO",
+            "ad_id": "1857548919933985",
+            "landing_page_url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_video",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_en"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-7aee00_test_ad_name_video"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "operation_status": "DISABLE"
+          },
+          {
+            "campaign_id": "1857200654159073",
+            "ad_name": "Video_AR",
+            "adgroup_id": "1857202371348833",
+            "ad_format": "SINGLE_VIDEO",
+            "ad_id": "1857548806180898",
+            "landing_page_url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_video",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-7aee00_test_ad_name_video"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "operation_status": "DISABLE"
+          },
+          {
+            "campaign_id": "1857288757610529",
+            "ad_name": "Video_AR",
+            "adgroup_id": "1857546910328898",
+            "ad_format": "SINGLE_VIDEO",
+            "ad_id": "1857547881508929",
+            "landing_page_url": "https://www.diriyah.sa/ar/bujairi-terrace?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_video",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-7aee00_test_ad_name_video"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "operation_status": "ENABLE"
+          },
+          {
+            "campaign_id": "1857288757610529",
+            "ad_name": "Video_AR",
+            "adgroup_id": "1857546910327858",
+            "ad_format": "SINGLE_VIDEO",
+            "ad_id": "1857547881492641",
+            "landing_page_url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_video",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-7aee00_test_ad_name_video"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "operation_status": "DISABLE"
+          },
+          {
+            "campaign_id": "1857288757610529",
+            "ad_name": "Video_EN",
+            "adgroup_id": "1857288963465217",
+            "ad_format": "SINGLE_VIDEO",
+            "ad_id": "1857547675717698",
+            "landing_page_url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_video",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_en"
+              },
+              {
+                "key": "utm_term",
+                "value": "adset-id-7aee00_test_adset_name_en_all_mf_prospecting"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-7aee00_test_ad_name_video"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "operation_status": "DISABLE"
+          },
+          {
+            "campaign_id": "1857288757610529",
+            "ad_name": "VIdeo_EN",
+            "adgroup_id": "1857546910327842",
+            "ad_format": "SINGLE_VIDEO",
+            "ad_id": "1857547675716770",
+            "landing_page_url": "https://www.diriyah.sa/en/bujairi-terrace?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_video",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_en"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-7aee00_test_ad_name_video"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "operation_status": "ENABLE"
+          },
+          {
+            "campaign_id": "1857200654159073",
+            "ad_name": "AL BUJAIRI_TERRACE DINING_Tiktok_sB36SbMA.mp4_2026-02-18 20:57:35",
+            "adgroup_id": "1857200654160065",
+            "ad_format": "SINGLE_VIDEO",
+            "ad_id": "1857486738213057",
+            "landing_page_url": "https://www.diriyah.sa/en/bujairi-terrace?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_video&utm_id=__CAMPAIGN_ID__",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_en"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-7aee00_test_ad_name_video"
+              },
+              {
+                "key": "utm_id",
+                "value": "__CAMPAIGN_ID__"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "operation_status": "ENABLE"
+          },
+          {
+            "campaign_id": "1857200654159073",
+            "ad_name": "AL BUJAIRI_TERRACE DINING_Tiktok_sB36SbMA.mp4_2026-02-18 20:55:26",
+            "adgroup_id": "1857201146346498",
+            "ad_format": "SINGLE_VIDEO",
+            "ad_id": "1857486519216257",
+            "landing_page_url": "https://www.diriyah.sa/ar/bujairi-terrace?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_video&utm_id=__CAMPAIGN_ID__",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-7aee00_test_ad_name_video"
+              },
+              {
+                "key": "utm_id",
+                "value": "__CAMPAIGN_ID__"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "operation_status": "ENABLE"
+          },
+          {
+            "campaign_id": "1857203252696689",
+            "ad_name": "video_AR",
+            "adgroup_id": "1857203671019601",
+            "ad_format": "SINGLE_VIDEO",
+            "ad_id": "1857464493340721",
+            "landing_page_url": "https://www.diriyah.sa/ar/hotels/bab-samhan?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bab-samhan_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_video",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bab-samhan_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-7aee00_test_ad_name_video"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "operation_status": "ENABLE"
+          }
+        ],
+        "page_info": {
+          "page": 2,
+          "page_size": 45,
+          "total_page": 13,
+          "total_number": 556
+        }
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "2026101118002947AE25506C0F91433F0F",
+      "waitedMs": 1903,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false,
+      "mcp_result_projection": {
+        "compact": true
+      }
+    }
+  },
+  "meta": {
+    "requestId": "05bcc50e-770b-4dfa-b73c-79bf5990a4e6",
+    "latencyMs": 3650
+  }
+}

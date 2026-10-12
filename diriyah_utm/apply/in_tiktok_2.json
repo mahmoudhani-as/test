@@ -1,0 +1,282 @@
+[
+ {
+  "account_id": "7338074303931449345",
+  "account_name": "H&S - DGCL - Diriyah Gate",
+  "unit": "1873403449832850",
+  "ad_ids": [
+   "1873403449832850"
+  ],
+  "ad_names": [
+   "company_ritz-signature_2026_aug_rcsr-kv3_adset-id-c4ffbd75_display_en_v2"
+  ],
+  "campaign_id": "1873400500742577",
+  "adset_id": "1873400500744209",
+  "creative_id": null,
+  "status": "AD_STATUS_DELIVERY_OK",
+  "edit_method": "TikTok POST /v1.3/ad/update/ (creatives[].landing_page_url; keep creatives[].utm_params in sync)",
+  "changes": [
+   {
+    "slot": "ad.landing_page_url",
+    "base_url": "https://www.diriyahcompany.sa/en/diriyah-living/ritz-carlton-signature?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_aug26&utm_term=87bde3ee_rcsr_en&utm_content=c4ffbd75_rcsr-kv3_display_en",
+    "url_tags": "utm_source=tiktok&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_aug26&utm_term=87bde3ee_rcsr_en-ar&utm_content=c4ffbd75_rcsr-kv3_display_en",
+    "now": "https://www.diriyahcompany.sa/en/diriyah-living/ritz-carlton-signature?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_aug26&utm_term=87bde3ee_rcsr_en&utm_content=c4ffbd75_rcsr-kv3_display_en",
+    "new": "https://www.diriyahcompany.sa/en/diriyah-living/ritz-carlton-signature?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_aug26_cond&utm_term=87bde3ee_rcsr_en-ar&utm_content=c4ffbd75_rcsr-kv3_display_en"
+   }
+  ],
+  "notes": [
+   "Manual campaign (TRAFFIC), ad_format CAROUSEL_ADS; CONFLICT utm_term: landing_page_url has '87bde3ee_rcsr_en' but utm_params has '87bde3ee_rcsr_en-ar' (url keeps landing_page_url value)"
+  ]
+ },
+ {
+  "account_id": "7338074303931449345",
+  "account_name": "H&S - DGCL - Diriyah Gate",
+  "unit": "1873416558636498",
+  "ad_ids": [
+   "1873416558636498"
+  ],
+  "ad_names": [
+   "company_ritz-signature_2026_aug_rcsr-kv3_adset-id-c4ffbd75_display_ar"
+  ],
+  "campaign_id": "1873400500742577",
+  "adset_id": "1873400500742593",
+  "creative_id": null,
+  "status": "AD_STATUS_DISABLE",
+  "edit_method": "TikTok POST /v1.3/ad/update/ (creatives[].landing_page_url; keep creatives[].utm_params in sync)",
+  "changes": [
+   {
+    "slot": "ad.landing_page_url",
+    "base_url": "https://www.diriyahcompany.sa/ar/diriyah-living/ritz-carlton-signature?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_aug26&utm_term=87bde3ee_rcsr_ar&utm_content=c4ffbd75_rcsr-kv3_display_ar",
+    "url_tags": "utm_source=tiktok&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_aug26&utm_content=c4ffbd75_rcsr-kv3_display_ar",
+    "now": "https://www.diriyahcompany.sa/ar/diriyah-living/ritz-carlton-signature?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_aug26&utm_term=87bde3ee_rcsr_ar&utm_content=c4ffbd75_rcsr-kv3_display_ar",
+    "new": "https://www.diriyahcompany.sa/ar/diriyah-living/ritz-carlton-signature?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_aug26_cond&utm_term=87bde3ee_rcsr_en-ar&utm_content=c4ffbd75_rcsr-kv3_display_ar"
+   }
+  ],
+  "notes": [
+   "Manual campaign (TRAFFIC), ad_format CAROUSEL_ADS; landing_page_url has utm_term not present in utm_params"
+  ]
+ },
+ {
+  "account_id": "7338074303931449345",
+  "account_name": "H&S - DGCL - Diriyah Gate",
+  "unit": "1875235585284129",
+  "ad_ids": [
+   "1875235585284129"
+  ],
+  "ad_names": [
+   "company_ritz-signature_2026_aug_rcsr-kv1_adset-id-07eca5d8_display_ar_v2"
+  ],
+  "campaign_id": "1873400500742577",
+  "adset_id": "1873400500742593",
+  "creative_id": null,
+  "status": "AD_STATUS_DELIVERY_OK",
+  "edit_method": "TikTok POST /v1.3/ad/update/ (creatives[].landing_page_url; keep creatives[].utm_params in sync)",
+  "changes": [
+   {
+    "slot": "ad.landing_page_url",
+    "base_url": "https://www.diriyahcompany.sa/ar/diriyah-living/ritz-carlton-signature?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_aug26&utm_term=87bde3ee_rcsr_ar&utm_content=07eca5d8_rcsr-kv1_display_ar",
+    "url_tags": "utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_aug26&utm_content=07eca5d8_rcsr-kv1_display_ar&utm_source=tiktok",
+    "now": "https://www.diriyahcompany.sa/ar/diriyah-living/ritz-carlton-signature?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_aug26&utm_term=87bde3ee_rcsr_ar&utm_content=07eca5d8_rcsr-kv1_display_ar",
+    "new": "https://www.diriyahcompany.sa/ar/diriyah-living/ritz-carlton-signature?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_aug26_cond&utm_term=87bde3ee_rcsr_en-ar&utm_content=07eca5d8_rcsr-kv1_display_ar"
+   }
+  ],
+  "notes": [
+   "Manual campaign (TRAFFIC), ad_format CAROUSEL_ADS; landing_page_url has utm_term not present in utm_params"
+  ]
+ },
+ {
+  "account_id": "7338074303931449345",
+  "account_name": "H&S - DGCL - Diriyah Gate",
+  "unit": "1875235828140209",
+  "ad_ids": [
+   "1875235828140209"
+  ],
+  "ad_names": [
+   "company_ritz-signature_2026_aug_rcsr-kv3_adset-id-c4ffbd75_display_ar_v2"
+  ],
+  "campaign_id": "1873400500742577",
+  "adset_id": "1873400500742593",
+  "creative_id": null,
+  "status": "AD_STATUS_DELIVERY_OK",
+  "edit_method": "TikTok POST /v1.3/ad/update/ (creatives[].landing_page_url; keep creatives[].utm_params in sync)",
+  "changes": [
+   {
+    "slot": "ad.landing_page_url",
+    "base_url": "https://www.diriyahcompany.sa/ar/diriyah-living/ritz-carlton-signature?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_aug26&utm_term=87bde3ee_rcsr_ar&utm_content=c4ffbd75_rcsr-kv3_display_ar",
+    "url_tags": "utm_campaign=bb1cac08_ritz-carlton-signature_aug26&utm_content=c4ffbd75_rcsr-kv3_display_ar&utm_source=tiktok&utm_medium=paid-social",
+    "now": "https://www.diriyahcompany.sa/ar/diriyah-living/ritz-carlton-signature?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_aug26&utm_term=87bde3ee_rcsr_ar&utm_content=c4ffbd75_rcsr-kv3_display_ar",
+    "new": "https://www.diriyahcompany.sa/ar/diriyah-living/ritz-carlton-signature?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_aug26_cond&utm_term=87bde3ee_rcsr_en-ar&utm_content=c4ffbd75_rcsr-kv3_display_ar"
+   }
+  ],
+  "notes": [
+   "Manual campaign (TRAFFIC), ad_format CAROUSEL_ADS; landing_page_url has utm_term not present in utm_params"
+  ]
+ },
+ {
+  "account_id": "7338074303931449345",
+  "account_name": "H&S - DGCL - Diriyah Gate",
+  "unit": "1875308678808706",
+  "ad_ids": [
+   "1875308678808706"
+  ],
+  "ad_names": [
+   "company_ritz-signature_2026_aug_rcsr-kv2_adset-id-c2b96e29_display_ar_v2"
+  ],
+  "campaign_id": "1873400500742577",
+  "adset_id": "1873400500742593",
+  "creative_id": null,
+  "status": "AD_STATUS_DELIVERY_OK",
+  "edit_method": "TikTok POST /v1.3/ad/update/ (creatives[].landing_page_url; keep creatives[].utm_params in sync)",
+  "changes": [
+   {
+    "slot": "ad.landing_page_url",
+    "base_url": "https://www.diriyahcompany.sa/ar/diriyah-living/ritz-carlton-signature?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_aug26&utm_term=87bde3ee_rcsr_ar&utm_content=c2b96e29_rcsr-kv2_display_ar",
+    "url_tags": "utm_content=c2b96e29_rcsr-kv2_display_ar&utm_source=tiktok&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_aug26",
+    "now": "https://www.diriyahcompany.sa/ar/diriyah-living/ritz-carlton-signature?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_aug26&utm_term=87bde3ee_rcsr_ar&utm_content=c2b96e29_rcsr-kv2_display_ar",
+    "new": "https://www.diriyahcompany.sa/ar/diriyah-living/ritz-carlton-signature?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_aug26_cond&utm_term=87bde3ee_rcsr_en-ar&utm_content=c2b96e29_rcsr-kv2_display_ar"
+   }
+  ],
+  "notes": [
+   "Manual campaign (TRAFFIC), ad_format CAROUSEL_ADS; landing_page_url has utm_term not present in utm_params"
+  ]
+ },
+ {
+  "account_id": "7338074303931449345",
+  "account_name": "H&S - DGCL - Diriyah Gate",
+  "unit": "1875308964893057",
+  "ad_ids": [
+   "1875308964893057"
+  ],
+  "ad_names": [
+   "company_ritz-signature_2026_aug_rcsr-kv2_adset-id-c2b96e29_display_en_v2"
+  ],
+  "campaign_id": "1873400500742577",
+  "adset_id": "1873400500744209",
+  "creative_id": null,
+  "status": "AD_STATUS_DELIVERY_OK",
+  "edit_method": "TikTok POST /v1.3/ad/update/ (creatives[].landing_page_url; keep creatives[].utm_params in sync)",
+  "changes": [
+   {
+    "slot": "ad.landing_page_url",
+    "base_url": "https://www.diriyahcompany.sa/en/diriyah-living/ritz-carlton-signature?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_aug26&utm_term=87bde3ee_rcsr_en&utm_content=c2b96e29_rcsr-kv2_display_en",
+    "url_tags": "utm_source=tiktok&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_aug26&utm_term=87bde3ee_rcsr_en-ar&utm_content=c2b96e29_rcsr-kv2_display_en",
+    "now": "https://www.diriyahcompany.sa/en/diriyah-living/ritz-carlton-signature?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_aug26&utm_term=87bde3ee_rcsr_en&utm_content=c2b96e29_rcsr-kv2_display_en",
+    "new": "https://www.diriyahcompany.sa/en/diriyah-living/ritz-carlton-signature?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_aug26_cond&utm_term=87bde3ee_rcsr_en-ar&utm_content=c2b96e29_rcsr-kv2_display_en"
+   }
+  ],
+  "notes": [
+   "Manual campaign (TRAFFIC), ad_format CAROUSEL_ADS; CONFLICT utm_term: landing_page_url has '87bde3ee_rcsr_en' but utm_params has '87bde3ee_rcsr_en-ar' (url keeps landing_page_url value)"
+  ]
+ },
+ {
+  "account_id": "7338074303931449345",
+  "account_name": "H&S - DGCL - Diriyah Gate",
+  "unit": "1877577467458162",
+  "ad_ids": [
+   "1877577467458162"
+  ],
+  "ad_names": [
+   "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv1_adset-id-8971b1f2_display_ar"
+  ],
+  "campaign_id": "1877577219262146",
+  "adset_id": "1877577300671218",
+  "creative_id": null,
+  "status": "AD_STATUS_DELIVERY_OK",
+  "edit_method": "TikTok POST /v1.3/ad/update/ (creatives[].landing_page_url; keep creatives[].utm_params in sync)",
+  "changes": [
+   {
+    "slot": "ad.landing_page_url",
+    "base_url": "https://www.wadisafar.com/ar/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_ar&utm_content=8971b1f2_thechedi-kv1_display_ar#book-appointment",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/ar/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_ar&utm_content=8971b1f2_thechedi-kv1_display_ar#book-appointment",
+    "new": "https://www.wadisafar.com/ar/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_conv&utm_term=ee4e5f3f_thechedi_ar&utm_content=8971b1f2_thechedi-kv1_display_ar#book-appointment"
+   }
+  ],
+  "notes": [
+   "Manual campaign (WEB_CONVERSIONS), ad_format CAROUSEL_ADS"
+  ]
+ },
+ {
+  "account_id": "7338074303931449345",
+  "account_name": "H&S - DGCL - Diriyah Gate",
+  "unit": "1877577535130289",
+  "ad_ids": [
+   "1877577535130289"
+  ],
+  "ad_names": [
+   "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv1_adset-id-8971b1f2_display_en"
+  ],
+  "campaign_id": "1877577219262146",
+  "adset_id": "1877576425436738",
+  "creative_id": null,
+  "status": "AD_STATUS_DELIVERY_OK",
+  "edit_method": "TikTok POST /v1.3/ad/update/ (creatives[].landing_page_url; keep creatives[].utm_params in sync)",
+  "changes": [
+   {
+    "slot": "ad.landing_page_url",
+    "base_url": "https://www.wadisafar.com/en/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_en&utm_content=8971b1f2_thechedi-kv1_display_en#book-appointment",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/en/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_en&utm_content=8971b1f2_thechedi-kv1_display_en#book-appointment",
+    "new": "https://www.wadisafar.com/en/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_conv&utm_term=ee4e5f3f_thechedi_en&utm_content=8971b1f2_thechedi-kv1_display_en#book-appointment"
+   }
+  ],
+  "notes": [
+   "Manual campaign (WEB_CONVERSIONS), ad_format CAROUSEL_ADS"
+  ]
+ },
+ {
+  "account_id": "7338074303931449345",
+  "account_name": "H&S - DGCL - Diriyah Gate",
+  "unit": "1877577811896673",
+  "ad_ids": [
+   "1877577811896673"
+  ],
+  "ad_names": [
+   "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv2_adset-id-ca5ff2b6_display_ar"
+  ],
+  "campaign_id": "1877577219262146",
+  "adset_id": "1877577300671218",
+  "creative_id": null,
+  "status": "AD_STATUS_DELIVERY_OK",
+  "edit_method": "TikTok POST /v1.3/ad/update/ (creatives[].landing_page_url; keep creatives[].utm_params in sync)",
+  "changes": [
+   {
+    "slot": "ad.landing_page_url",
+    "base_url": "https://www.wadisafar.com/ar/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_ar&utm_content=ca5ff2b6_thechedi-kv2_display_ar#book-appointment",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/ar/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_ar&utm_content=ca5ff2b6_thechedi-kv2_display_ar#book-appointment",
+    "new": "https://www.wadisafar.com/ar/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_conv&utm_term=ee4e5f3f_thechedi_ar&utm_content=ca5ff2b6_thechedi-kv2_display_ar#book-appointment"
+   }
+  ],
+  "notes": [
+   "Manual campaign (WEB_CONVERSIONS), ad_format CAROUSEL_ADS"
+  ]
+ },
+ {
+  "account_id": "7338074303931449345",
+  "account_name": "H&S - DGCL - Diriyah Gate",
+  "unit": "1877577819309330",
+  "ad_ids": [
+   "1877577819309330"
+  ],
+  "ad_names": [
+   "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv3_adset-id-08c48732_display_ar"
+  ],
+  "campaign_id": "1877577219262146",
+  "adset_id": "1877577300671218",
+  "creative_id": null,
+  "status": "AD_STATUS_DELIVERY_OK",
+  "edit_method": "TikTok POST /v1.3/ad/update/ (creatives[].landing_page_url; keep creatives[].utm_params in sync)",
+  "changes": [
+   {
+    "slot": "ad.landing_page_url",
+    "base_url": "https://www.wadisafar.com/ar/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_ar&utm_content=08c48732_thechedi-kv3_display_ar#book-appointment",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/ar/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_ar&utm_content=08c48732_thechedi-kv3_display_ar#book-appointment",
+    "new": "https://www.wadisafar.com/ar/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_conv&utm_term=ee4e5f3f_thechedi_ar&utm_content=08c48732_thechedi-kv3_display_ar#book-appointment"
+   }
+  ],
+  "notes": [
+   "Manual campaign (WEB_CONVERSIONS), ad_format CAROUSEL_ADS"
+  ]
+ }
+]

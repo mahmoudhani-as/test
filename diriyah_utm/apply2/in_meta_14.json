@@ -1,0 +1,647 @@
+[
+ {
+  "account_id": "2194833637927644",
+  "account_name": "Diriyah Co",
+  "unit": "120253032183630058",
+  "ad_ids": [
+   "120253032183630058"
+  ],
+  "ad_names": [
+   "company_ritz-signature_2026_aug_rcsr-kv2_adset-id-c2b96e29_display_ar_v2"
+  ],
+  "campaign_id": "120252571489440058",
+  "adset_id": "120252985909300058",
+  "creative_id": "1114289028217516",
+  "status": "ACTIVE",
+  "edit_method": "new creative + ad update (creatives are immutable)",
+  "notes": [
+   "link ad (link_data)"
+  ],
+  "kind": "clash",
+  "changes": [
+   {
+    "slot": "creative.object_story_spec.link_data.link",
+    "base_url": "https://www.diriyahcompany.sa/ar/diriyah-living/ritz-carlton-signature?utm_source=meta&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_aug26&utm_term=87bde3ee_rcsr_ar&utm_content=c2b96e29_rcsr-kv2_display_ar",
+    "url_tags": null,
+    "now": "https://www.diriyahcompany.sa/ar/diriyah-living/ritz-carlton-signature?utm_source=meta&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_aug26&utm_term=87bde3ee_rcsr_ar&utm_content=c2b96e29_rcsr-kv2_display_ar",
+    "new": "https://www.diriyahcompany.sa/ar/diriyah-living/ritz-carlton-signature?utm_source=meta&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_sep26_cond&utm_term=87bde3ee_rcsr_ar&utm_content=c2b96e29_rcsr-kv2_display_ar"
+   }
+  ]
+ },
+ {
+  "account_id": "2194833637927644",
+  "account_name": "Diriyah Co",
+  "unit": "120253029537560058",
+  "ad_ids": [
+   "120253029537560058"
+  ],
+  "ad_names": [
+   "wadi-safar_general_2026_sep_ws-golf-s2_adset-id-c1fabf20_display_ar"
+  ],
+  "campaign_id": "120252160648550058",
+  "adset_id": "120252705364900058",
+  "creative_id": "5495732177318773",
+  "status": "ACTIVE",
+  "edit_method": "new creative + ad update (creatives are immutable)",
+  "notes": [
+   "carousel (link_data.child_attachments); contains Meta dynamic URL macros ({{...}}) resolved at serve time"
+  ],
+  "kind": "clash",
+  "changes": [
+   {
+    "slot": "creative.object_story_spec.link_data.child_attachments[0].link",
+    "base_url": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=c1fabf20_ws-golf-s2_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=c1fabf20_ws-golf-s2_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "new": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26_awr&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=c1fabf20_ws-golf-s2_display_ar"
+   },
+   {
+    "slot": "creative.object_story_spec.link_data.child_attachments[1].link",
+    "base_url": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=c1fabf20_ws-golf-s2_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=c1fabf20_ws-golf-s2_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "new": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26_awr&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=c1fabf20_ws-golf-s2_display_ar"
+   },
+   {
+    "slot": "creative.object_story_spec.link_data.child_attachments[2].link",
+    "base_url": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=c1fabf20_ws-golf-s2_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=c1fabf20_ws-golf-s2_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "new": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26_awr&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=c1fabf20_ws-golf-s2_display_ar"
+   },
+   {
+    "slot": "creative.object_story_spec.link_data.link",
+    "base_url": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=c1fabf20_ws-golf-s2_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=c1fabf20_ws-golf-s2_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "new": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26_awr&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=c1fabf20_ws-golf-s2_display_ar"
+   }
+  ]
+ },
+ {
+  "account_id": "2194833637927644",
+  "account_name": "Diriyah Co",
+  "unit": "120253029595370058",
+  "ad_ids": [
+   "120253029595370058"
+  ],
+  "ad_names": [
+   "wadi-safar_general_2026_sep_ws-golf-s1_adset-id-7a696b96_display_ar"
+  ],
+  "campaign_id": "120252160648550058",
+  "adset_id": "120252705364900058",
+  "creative_id": "2849052798799623",
+  "status": "ACTIVE",
+  "edit_method": "new creative + ad update (creatives are immutable)",
+  "notes": [
+   "carousel (link_data.child_attachments); contains Meta dynamic URL macros ({{...}}) resolved at serve time"
+  ],
+  "kind": "clash",
+  "changes": [
+   {
+    "slot": "creative.object_story_spec.link_data.child_attachments[0].link",
+    "base_url": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=7a696b96_ws-golf-s1_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=7a696b96_ws-golf-s1_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "new": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26_awr&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=7a696b96_ws-golf-s1_display_ar"
+   },
+   {
+    "slot": "creative.object_story_spec.link_data.child_attachments[1].link",
+    "base_url": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=7a696b96_ws-golf-s1_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=7a696b96_ws-golf-s1_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "new": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26_awr&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=7a696b96_ws-golf-s1_display_ar"
+   },
+   {
+    "slot": "creative.object_story_spec.link_data.child_attachments[2].link",
+    "base_url": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=7a696b96_ws-golf-s1_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=7a696b96_ws-golf-s1_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "new": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26_awr&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=7a696b96_ws-golf-s1_display_ar"
+   },
+   {
+    "slot": "creative.object_story_spec.link_data.link",
+    "base_url": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=7a696b96_ws-golf-s1_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=7a696b96_ws-golf-s1_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "new": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26_awr&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=7a696b96_ws-golf-s1_display_ar"
+   }
+  ]
+ },
+ {
+  "account_id": "2194833637927644",
+  "account_name": "Diriyah Co",
+  "unit": "120253029646530058",
+  "ad_ids": [
+   "120253029646530058"
+  ],
+  "ad_names": [
+   "wadi-safar_general_2026_sep_ws-golf-s1_adset-id-7a696b96_display_ar"
+  ],
+  "campaign_id": "120252160648550058",
+  "adset_id": "120252700003000058",
+  "creative_id": "2849052798799623",
+  "status": "ACTIVE",
+  "edit_method": "new creative + ad update (creatives are immutable)",
+  "notes": [
+   "carousel (link_data.child_attachments); contains Meta dynamic URL macros ({{...}}) resolved at serve time"
+  ],
+  "kind": "clash",
+  "changes": [
+   {
+    "slot": "creative.object_story_spec.link_data.child_attachments[0].link",
+    "base_url": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=7a696b96_ws-golf-s1_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=7a696b96_ws-golf-s1_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "new": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26_awr&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=7a696b96_ws-golf-s1_display_ar"
+   },
+   {
+    "slot": "creative.object_story_spec.link_data.child_attachments[1].link",
+    "base_url": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=7a696b96_ws-golf-s1_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=7a696b96_ws-golf-s1_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "new": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26_awr&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=7a696b96_ws-golf-s1_display_ar"
+   },
+   {
+    "slot": "creative.object_story_spec.link_data.child_attachments[2].link",
+    "base_url": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=7a696b96_ws-golf-s1_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=7a696b96_ws-golf-s1_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "new": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26_awr&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=7a696b96_ws-golf-s1_display_ar"
+   },
+   {
+    "slot": "creative.object_story_spec.link_data.link",
+    "base_url": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=7a696b96_ws-golf-s1_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=7a696b96_ws-golf-s1_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "new": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26_awr&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=7a696b96_ws-golf-s1_display_ar"
+   }
+  ]
+ },
+ {
+  "account_id": "2194833637927644",
+  "account_name": "Diriyah Co",
+  "unit": "120253029646540058",
+  "ad_ids": [
+   "120253029646540058"
+  ],
+  "ad_names": [
+   "wadi-safar_general_2026_sep_ws-golf-s2_adset-id-c1fabf20_display_ar"
+  ],
+  "campaign_id": "120252160648550058",
+  "adset_id": "120252700003000058",
+  "creative_id": "5495732177318773",
+  "status": "ACTIVE",
+  "edit_method": "new creative + ad update (creatives are immutable)",
+  "notes": [
+   "carousel (link_data.child_attachments); contains Meta dynamic URL macros ({{...}}) resolved at serve time"
+  ],
+  "kind": "clash",
+  "changes": [
+   {
+    "slot": "creative.object_story_spec.link_data.child_attachments[0].link",
+    "base_url": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=c1fabf20_ws-golf-s2_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=c1fabf20_ws-golf-s2_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "new": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26_awr&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=c1fabf20_ws-golf-s2_display_ar"
+   },
+   {
+    "slot": "creative.object_story_spec.link_data.child_attachments[1].link",
+    "base_url": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=c1fabf20_ws-golf-s2_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=c1fabf20_ws-golf-s2_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "new": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26_awr&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=c1fabf20_ws-golf-s2_display_ar"
+   },
+   {
+    "slot": "creative.object_story_spec.link_data.child_attachments[2].link",
+    "base_url": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=c1fabf20_ws-golf-s2_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=c1fabf20_ws-golf-s2_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "new": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26_awr&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=c1fabf20_ws-golf-s2_display_ar"
+   },
+   {
+    "slot": "creative.object_story_spec.link_data.link",
+    "base_url": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=c1fabf20_ws-golf-s2_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=c1fabf20_ws-golf-s2_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "new": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26_awr&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=c1fabf20_ws-golf-s2_display_ar"
+   }
+  ]
+ },
+ {
+  "account_id": "2194833637927644",
+  "account_name": "Diriyah Co",
+  "unit": "120253029655610058",
+  "ad_ids": [
+   "120253029655610058"
+  ],
+  "ad_names": [
+   "wadi-safar_general_2026_sep_ws-golf-s1_adset-id-7a696b96_display_en"
+  ],
+  "campaign_id": "120252160648550058",
+  "adset_id": "120252705364870058",
+  "creative_id": "2562100757551873",
+  "status": "ACTIVE",
+  "edit_method": "new creative + ad update (creatives are immutable)",
+  "notes": [
+   "carousel (link_data.child_attachments); contains Meta dynamic URL macros ({{...}}) resolved at serve time"
+  ],
+  "kind": "clash",
+  "changes": [
+   {
+    "slot": "creative.object_story_spec.link_data.child_attachments[0].link",
+    "base_url": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=7a696b96_ws-golf-s1_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=7a696b96_ws-golf-s1_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "new": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26_awr&utm_term=a0510dc9_ws-lifestyle_en&utm_content=7a696b96_ws-golf-s1_display_en"
+   },
+   {
+    "slot": "creative.object_story_spec.link_data.child_attachments[1].link",
+    "base_url": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=7a696b96_ws-golf-s1_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=7a696b96_ws-golf-s1_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "new": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26_awr&utm_term=a0510dc9_ws-lifestyle_en&utm_content=7a696b96_ws-golf-s1_display_en"
+   },
+   {
+    "slot": "creative.object_story_spec.link_data.child_attachments[2].link",
+    "base_url": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=7a696b96_ws-golf-s1_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=7a696b96_ws-golf-s1_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "new": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26_awr&utm_term=a0510dc9_ws-lifestyle_en&utm_content=7a696b96_ws-golf-s1_display_en"
+   },
+   {
+    "slot": "creative.object_story_spec.link_data.link",
+    "base_url": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=7a696b96_ws-golf-s1_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=7a696b96_ws-golf-s1_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "new": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26_awr&utm_term=a0510dc9_ws-lifestyle_en&utm_content=7a696b96_ws-golf-s1_display_en"
+   }
+  ]
+ },
+ {
+  "account_id": "2194833637927644",
+  "account_name": "Diriyah Co",
+  "unit": "120253029697900058",
+  "ad_ids": [
+   "120253029697900058"
+  ],
+  "ad_names": [
+   "wadi-safar_general_2026_sep_ws-golf-s2_adset-id-c1fabf20_display_en"
+  ],
+  "campaign_id": "120252160648550058",
+  "adset_id": "120252705364870058",
+  "creative_id": "3647475952069524",
+  "status": "ACTIVE",
+  "edit_method": "new creative + ad update (creatives are immutable)",
+  "notes": [
+   "carousel (link_data.child_attachments); contains Meta dynamic URL macros ({{...}}) resolved at serve time"
+  ],
+  "kind": "clash",
+  "changes": [
+   {
+    "slot": "creative.object_story_spec.link_data.child_attachments[0].link",
+    "base_url": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "new": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26_awr&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en"
+   },
+   {
+    "slot": "creative.object_story_spec.link_data.child_attachments[1].link",
+    "base_url": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "new": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26_awr&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en"
+   },
+   {
+    "slot": "creative.object_story_spec.link_data.child_attachments[2].link",
+    "base_url": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "new": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26_awr&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en"
+   },
+   {
+    "slot": "creative.object_story_spec.link_data.link",
+    "base_url": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "new": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26_awr&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en"
+   }
+  ]
+ },
+ {
+  "account_id": "2194833637927644",
+  "account_name": "Diriyah Co",
+  "unit": "120253029751310058",
+  "ad_ids": [
+   "120253029751310058"
+  ],
+  "ad_names": [
+   "wadi-safar_general_2026_sep_ws-golf-s2_adset-id-c1fabf20_display_en"
+  ],
+  "campaign_id": "120252160648550058",
+  "adset_id": "120252701242020058",
+  "creative_id": "3647475952069524",
+  "status": "ACTIVE",
+  "edit_method": "new creative + ad update (creatives are immutable)",
+  "notes": [
+   "carousel (link_data.child_attachments); contains Meta dynamic URL macros ({{...}}) resolved at serve time"
+  ],
+  "kind": "clash",
+  "changes": [
+   {
+    "slot": "creative.object_story_spec.link_data.child_attachments[0].link",
+    "base_url": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "new": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26_awr&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en"
+   },
+   {
+    "slot": "creative.object_story_spec.link_data.child_attachments[1].link",
+    "base_url": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "new": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26_awr&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en"
+   },
+   {
+    "slot": "creative.object_story_spec.link_data.child_attachments[2].link",
+    "base_url": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "new": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26_awr&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en"
+   },
+   {
+    "slot": "creative.object_story_spec.link_data.link",
+    "base_url": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "new": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26_awr&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en"
+   }
+  ]
+ },
+ {
+  "account_id": "2194833637927644",
+  "account_name": "Diriyah Co",
+  "unit": "120253029751330058",
+  "ad_ids": [
+   "120253029751330058"
+  ],
+  "ad_names": [
+   "wadi-safar_general_2026_sep_ws-golf-s1_adset-id-7a696b96_display_en"
+  ],
+  "campaign_id": "120252160648550058",
+  "adset_id": "120252701242020058",
+  "creative_id": "1603583291478187",
+  "status": "ACTIVE",
+  "edit_method": "new creative + ad update (creatives are immutable)",
+  "notes": [
+   "carousel (link_data.child_attachments); contains Meta dynamic URL macros ({{...}}) resolved at serve time"
+  ],
+  "kind": "clash",
+  "changes": [
+   {
+    "slot": "creative.object_story_spec.link_data.child_attachments[0].link",
+    "base_url": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "new": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26_awr&utm_term=a0510dc9_ws-lifestyle_en&utm_content=7a696b96_ws-golf-s1_display_en"
+   },
+   {
+    "slot": "creative.object_story_spec.link_data.child_attachments[1].link",
+    "base_url": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "new": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26_awr&utm_term=a0510dc9_ws-lifestyle_en&utm_content=7a696b96_ws-golf-s1_display_en"
+   },
+   {
+    "slot": "creative.object_story_spec.link_data.child_attachments[2].link",
+    "base_url": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "new": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26_awr&utm_term=a0510dc9_ws-lifestyle_en&utm_content=7a696b96_ws-golf-s1_display_en"
+   },
+   {
+    "slot": "creative.object_story_spec.link_data.link",
+    "base_url": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=7a696b96_ws-golf-s1_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=7a696b96_ws-golf-s1_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "new": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26_awr&utm_term=a0510dc9_ws-lifestyle_en&utm_content=7a696b96_ws-golf-s1_display_en"
+   }
+  ]
+ },
+ {
+  "account_id": "2194833637927644",
+  "account_name": "Diriyah Co",
+  "unit": "120253029880450058",
+  "ad_ids": [
+   "120253029880450058"
+  ],
+  "ad_names": [
+   "wadi-safar_general_2026_sep_ws-golf-s2_adset-id-c1fabf20_display_en"
+  ],
+  "campaign_id": "120252160648550058",
+  "adset_id": "120252700397330058",
+  "creative_id": "3647475952069524",
+  "status": "ACTIVE",
+  "edit_method": "new creative + ad update (creatives are immutable)",
+  "notes": [
+   "carousel (link_data.child_attachments); contains Meta dynamic URL macros ({{...}}) resolved at serve time"
+  ],
+  "kind": "clash",
+  "changes": [
+   {
+    "slot": "creative.object_story_spec.link_data.child_attachments[0].link",
+    "base_url": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "new": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26_awr&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en"
+   },
+   {
+    "slot": "creative.object_story_spec.link_data.child_attachments[1].link",
+    "base_url": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "new": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26_awr&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en"
+   },
+   {
+    "slot": "creative.object_story_spec.link_data.child_attachments[2].link",
+    "base_url": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "new": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26_awr&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en"
+   },
+   {
+    "slot": "creative.object_story_spec.link_data.link",
+    "base_url": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "new": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26_awr&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en"
+   }
+  ]
+ },
+ {
+  "account_id": "2194833637927644",
+  "account_name": "Diriyah Co",
+  "unit": "120253029880460058",
+  "ad_ids": [
+   "120253029880460058"
+  ],
+  "ad_names": [
+   "wadi-safar_general_2026_sep_ws-golf-s1_adset-id-7a696b96_display_en"
+  ],
+  "campaign_id": "120252160648550058",
+  "adset_id": "120252700397330058",
+  "creative_id": "2562100757551873",
+  "status": "ACTIVE",
+  "edit_method": "new creative + ad update (creatives are immutable)",
+  "notes": [
+   "carousel (link_data.child_attachments); contains Meta dynamic URL macros ({{...}}) resolved at serve time"
+  ],
+  "kind": "clash",
+  "changes": [
+   {
+    "slot": "creative.object_story_spec.link_data.child_attachments[0].link",
+    "base_url": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=7a696b96_ws-golf-s1_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=7a696b96_ws-golf-s1_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "new": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26_awr&utm_term=a0510dc9_ws-lifestyle_en&utm_content=7a696b96_ws-golf-s1_display_en"
+   },
+   {
+    "slot": "creative.object_story_spec.link_data.child_attachments[1].link",
+    "base_url": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=7a696b96_ws-golf-s1_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=7a696b96_ws-golf-s1_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "new": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26_awr&utm_term=a0510dc9_ws-lifestyle_en&utm_content=7a696b96_ws-golf-s1_display_en"
+   },
+   {
+    "slot": "creative.object_story_spec.link_data.child_attachments[2].link",
+    "base_url": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=7a696b96_ws-golf-s1_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=7a696b96_ws-golf-s1_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "new": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26_awr&utm_term=a0510dc9_ws-lifestyle_en&utm_content=7a696b96_ws-golf-s1_display_en"
+   },
+   {
+    "slot": "creative.object_story_spec.link_data.link",
+    "base_url": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=7a696b96_ws-golf-s1_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=7a696b96_ws-golf-s1_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "new": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26_awr&utm_term=a0510dc9_ws-lifestyle_en&utm_content=7a696b96_ws-golf-s1_display_en"
+   }
+  ]
+ },
+ {
+  "account_id": "2194833637927644",
+  "account_name": "Diriyah Co",
+  "unit": "120253029949180058",
+  "ad_ids": [
+   "120253029949180058"
+  ],
+  "ad_names": [
+   "wadi-safar_general_2026_sep_ws-golf-story_adset-id-e6d012e0_display_ar"
+  ],
+  "campaign_id": "120252160648550058",
+  "adset_id": "120253029949240058",
+  "creative_id": "937732305496689",
+  "status": "ACTIVE",
+  "edit_method": "new creative + ad update (creatives are immutable)",
+  "notes": [
+   "link ad (link_data); contains Meta dynamic URL macros ({{...}}) resolved at serve time"
+  ],
+  "kind": "clash",
+  "changes": [
+   {
+    "slot": "creative.object_story_spec.link_data.link",
+    "base_url": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=e6d012e0_ws-golf-story_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=e6d012e0_ws-golf-story_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "new": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26_awr&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=e6d012e0_ws-golf-story_display_ar"
+   }
+  ]
+ },
+ {
+  "account_id": "2194833637927644",
+  "account_name": "Diriyah Co",
+  "unit": "120253029949270058",
+  "ad_ids": [
+   "120253029949270058"
+  ],
+  "ad_names": [
+   "wadi-safar_general_2026_sep_ws-golf-story_adset-id-e6d012e0_display_en"
+  ],
+  "campaign_id": "120252160648550058",
+  "adset_id": "120253029949090058",
+  "creative_id": "2027893521225752",
+  "status": "ACTIVE",
+  "edit_method": "new creative + ad update (creatives are immutable)",
+  "notes": [
+   "link ad (link_data); contains Meta dynamic URL macros ({{...}}) resolved at serve time"
+  ],
+  "kind": "clash",
+  "changes": [
+   {
+    "slot": "creative.object_story_spec.link_data.link",
+    "base_url": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=e6d012e0_ws-golf-story_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=e6d012e0_ws-golf-story_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "new": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26_awr&utm_term=a0510dc9_ws-lifestyle_en&utm_content=e6d012e0_ws-golf-story_display_en"
+   }
+  ]
+ },
+ {
+  "account_id": "2194833637927644",
+  "account_name": "Diriyah Co",
+  "unit": "120253031174610058",
+  "ad_ids": [
+   "120253031174610058"
+  ],
+  "ad_names": [
+   "wadi-safar_general_2026_sep_ws-golf-story_adset-id-e6d012e0_display_ar"
+  ],
+  "campaign_id": "120252160648550058",
+  "adset_id": "120253029949190058",
+  "creative_id": "937732305496689",
+  "status": "ACTIVE",
+  "edit_method": "new creative + ad update (creatives are immutable)",
+  "notes": [
+   "link ad (link_data); contains Meta dynamic URL macros ({{...}}) resolved at serve time"
+  ],
+  "kind": "clash",
+  "changes": [
+   {
+    "slot": "creative.object_story_spec.link_data.link",
+    "base_url": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=e6d012e0_ws-golf-story_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=e6d012e0_ws-golf-story_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "new": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26_awr&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=e6d012e0_ws-golf-story_display_ar"
+   }
+  ]
+ },
+ {
+  "account_id": "2194833637927644",
+  "account_name": "Diriyah Co",
+  "unit": "120253031188260058",
+  "ad_ids": [
+   "120253031188260058"
+  ],
+  "ad_names": [
+   "wadi-safar_general_2026_sep_ws-golf-story_adset-id-e6d012e0_display_en"
+  ],
+  "campaign_id": "120252160648550058",
+  "adset_id": "120253029949100058",
+  "creative_id": "2027893521225752",
+  "status": "ACTIVE",
+  "edit_method": "new creative + ad update (creatives are immutable)",
+  "notes": [
+   "link ad (link_data); contains Meta dynamic URL macros ({{...}}) resolved at serve time"
+  ],
+  "kind": "clash",
+  "changes": [
+   {
+    "slot": "creative.object_story_spec.link_data.link",
+    "base_url": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=e6d012e0_ws-golf-story_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=e6d012e0_ws-golf-story_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+    "new": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26_awr&utm_term=a0510dc9_ws-lifestyle_en&utm_content=e6d012e0_ws-golf-story_display_en"
+   }
+  ]
+ }
+]

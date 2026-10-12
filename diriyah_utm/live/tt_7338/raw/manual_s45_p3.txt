@@ -1,0 +1,1588 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_get",
+    "method": "GET",
+    "path": "/v1.3/ad/get/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "20261011180044ED145788EC8D3761A7AD",
+      "data": {
+        "list": [
+          {
+            "operation_status": "DISABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1852755260910802",
+            "adgroup_id": "1852757214465073",
+            "ad_id": "1852757214466049",
+            "landing_page_url": "https://www.diriyah.sa/en/hotels/bab-samhan?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-babsamhan-2025-dec-uf-reach-awareness&utm_id=9042&utm_term=wintercampaign-babsamhan-en-all-na&utm_content=15svideo-video-ksa",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-babsamhan-2025-dec-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "9042"
+              },
+              {
+                "key": "utm_term",
+                "value": "wintercampaign-babsamhan-en-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "15svideo-video-ksa"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_name": "Visit Diriyah_Tactical _Bab Samhan Winter Campaign 2025_UF_KSA_Prospecting_EN_Awareness_15s video"
+          },
+          {
+            "operation_status": "DISABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1852755260910802",
+            "adgroup_id": "1852755308706065",
+            "ad_id": "1852755367425025",
+            "landing_page_url": "https://www.diriyah.sa/ar/hotels/bab-samhan​?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-babsamhan-2025-dec-uf-reach-awareness&utm_id=9040&utm_term=wintercampaign-babsamhan-ar-all-na&utm_content=15svideo-video-ksa",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-babsamhan-2025-dec-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "9040"
+              },
+              {
+                "key": "utm_term",
+                "value": "wintercampaign-babsamhan-ar-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "15svideo-video-ksa"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_name": "Visit Diriyah_Tactical _Bab Samhan Winter Campaign 2025_UF_KSA_Prospecting_AR_Awareness_15s video"
+          },
+          {
+            "operation_status": "ENABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1851567754233138",
+            "adgroup_id": "1851567599549954",
+            "ad_id": "1852565376362642",
+            "landing_page_url": "https://www.diriyah.sa/ar/zallal?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-zallal-2025-dec-mf-consideration&utm_id=8942&utm_term=wintercampaign-zallal-ar-all-na&utm_content=zallalherovideo-video-ksa",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-zallal-2025-dec-mf-consideration"
+              },
+              {
+                "key": "utm_id",
+                "value": "8942"
+              },
+              {
+                "key": "utm_term",
+                "value": "wintercampaign-zallal-ar-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "zallalherovideo-video-ksa"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_name": "Visit Diriyah_Tactical _Zallal Winter Campaign 2025_MF_KSA_Prospecting_AR_Traffic_Zallal Hero Video"
+          },
+          {
+            "operation_status": "ENABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1851567754233138",
+            "adgroup_id": "1851567599547410",
+            "ad_id": "1852561006268802",
+            "landing_page_url": "https://www.diriyah.sa/en/zallal?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-zallal-2025-dec-mf-consideration&utm_id=8944&utm_term=wintercampaign-zallal-en-all-na&utm_content=zallalherovideo-video-ksa",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-zallal-2025-dec-mf-consideration"
+              },
+              {
+                "key": "utm_id",
+                "value": "8944"
+              },
+              {
+                "key": "utm_term",
+                "value": "wintercampaign-zallal-en-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "zallalherovideo-video-ksa"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_name": "Visit Diriyah_Tactical _Zallal Winter Campaign 2025_MF_KSA_Prospecting_EN_Traffic_Zallal Hero Video"
+          },
+          {
+            "operation_status": "ENABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1851131628173522",
+            "adgroup_id": "1851131628173538",
+            "ad_id": "1852302115513346",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-cityscape-2025-dec-lf-conversions&utm_id=8664&utm_term=cityscape-ar-all-na&utm_content=launchpool-video-ksa#register-interest-form",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-cityscape-2025-dec-lf-conversions"
+              },
+              {
+                "key": "utm_id",
+                "value": "8664"
+              },
+              {
+                "key": "utm_term",
+                "value": "cityscape-ar-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "launchpool-video-ksa"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_name": "Diriyah Company_Tactical _Cityscape Al Hadawi 2025_LF_KSA_Prospecting_AR_Conversion_Launch Video 15s"
+          },
+          {
+            "operation_status": "ENABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1851131628173522",
+            "adgroup_id": "1851131628173538",
+            "ad_id": "1852302020615265",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-cityscape-2025-dec-lf-conversions&utm_id=8690&utm_term=cityscape-ar-all-na&utm_content=retargetingentrance-video-ksa#register-interest-form",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-cityscape-2025-dec-lf-conversions"
+              },
+              {
+                "key": "utm_id",
+                "value": "8690"
+              },
+              {
+                "key": "utm_term",
+                "value": "cityscape-ar-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "retargetingentrance-video-ksa"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_name": "Diriyah Company_Tactical _Cityscape Al Hadawi 2025_LF_KSA_Prospecting_AR_Conversion_Video 7s"
+          },
+          {
+            "operation_status": "ENABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1851131628173522",
+            "adgroup_id": "1851131628175570",
+            "ad_id": "1852301476034610",
+            "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-cityscape-2025-dec-lf-conversions&utm_id=8666&utm_term=cityscape-en-all-na&utm_content=launchpool-video-ksa#register-interest-form",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-cityscape-2025-dec-lf-conversions"
+              },
+              {
+                "key": "utm_id",
+                "value": "8666"
+              },
+              {
+                "key": "utm_term",
+                "value": "cityscape-en-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "launchpool-video-ksa"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_name": "Diriyah Company_Tactical _Cityscape Al Hadawi 2025_LF_KSA_Prospecting_EN_Conversion_Launch Video 15s"
+          },
+          {
+            "operation_status": "ENABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1851131628173522",
+            "adgroup_id": "1851131628175570",
+            "ad_id": "1852300210256914",
+            "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-cityscape-2025-dec-lf-conversions&utm_id=8692&utm_term=cityscape-en-all-na&utm_content=retargetingentrance-video-ksa#register-interest-form",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-cityscape-2025-dec-lf-conversions"
+              },
+              {
+                "key": "utm_id",
+                "value": "8692"
+              },
+              {
+                "key": "utm_term",
+                "value": "cityscape-en-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "retargetingentrance-video-ksa"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_name": "Diriyah Company_Tactical _Cityscape Al Hadawi 2025_LF_KSA_Prospecting_EN_Conversion_Video 7s"
+          },
+          {
+            "operation_status": "ENABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1851567037109297",
+            "adgroup_id": "1851567037110337",
+            "ad_id": "1852292998779105",
+            "landing_page_url": "https://www.diriyah.sa/en/zallal?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-zallal-2025-dec-uf-reach-awareness&utm_id=8373&utm_term=wintercampaign-zallal-en-all-na&utm_content=zallalherovideo-sponsoredpost-ksa",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-zallal-2025-dec-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "8373"
+              },
+              {
+                "key": "utm_term",
+                "value": "wintercampaign-zallal-en-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "zallalherovideo-sponsoredpost-ksa"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_name": "Visit Diriyah_Tactical _Zallal Winter Campaign 2025_UF_KSA_Prospecting_EN_Awareness_Zallal Hero Video"
+          },
+          {
+            "operation_status": "ENABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1851567037109297",
+            "adgroup_id": "1851567037111297",
+            "ad_id": "1852292704262321",
+            "landing_page_url": "https://www.diriyah.sa/ar/zallal?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-zallal-2025-dec-uf-reach-awareness&utm_id=8371&utm_term=wintercampaign-zallal-ar-all-na&utm_content=zallalherovideo-sponsoredpost-ksa",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-zallal-2025-dec-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "8371"
+              },
+              {
+                "key": "utm_content",
+                "value": "zallalherovideo-sponsoredpost-ksa"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_name": "Visit Diriyah_Tactical _Zallal Winter Campaign 2025_UF_KSA_Prospecting_AR_Awareness_Zallal Hero Video"
+          },
+          {
+            "operation_status": "ENABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1847410702541937",
+            "adgroup_id": "1851128281433090",
+            "ad_id": "1851747161562226",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-cityscape-2025-dec-uf-reach-awareness&utm_id=8554&utm_term=cityscape-ar-all-na&utm_content=launchvideo15s-video-ksa",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-cityscape-2025-dec-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "8554"
+              },
+              {
+                "key": "utm_term",
+                "value": "cityscape-ar-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "launchvideo15s-video-ksa"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_name": "Diriyah Company_Tactical _Cityscape Al Hadawi 2025_UF_KSA_Prospecting_AR_Awareness_Launch Video 15s"
+          },
+          {
+            "operation_status": "ENABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1847410702541937",
+            "adgroup_id": "1851128281433090",
+            "ad_id": "1851747074104433",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-cityscape-2025-dec-uf-reach-awareness&utm_id=8610&utm_term=cityscape-ar-all-na&utm_content=retargetingvideo7s-video-ksa",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-cityscape-2025-dec-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "8610"
+              },
+              {
+                "key": "utm_term",
+                "value": "cityscape-ar-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "retargetingvideo7s-video-ksa"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_name": "Diriyah Company_Tactical _Cityscape Al Hadawi 2025_UF_KSA_Prospecting_AR_Awareness_Video 7s"
+          },
+          {
+            "operation_status": "ENABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1847410702541937",
+            "adgroup_id": "1851128488303953",
+            "ad_id": "1851746971583650",
+            "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-cityscape-2025-dec-uf-reach-awareness&utm_id=8556&utm_term=cityscape-en-all-na&utm_content=launchvideo15s-video-ksa",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-cityscape-2025-dec-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "8556"
+              },
+              {
+                "key": "utm_term",
+                "value": "cityscape-en-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "launchvideo15s-video-ksa"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_name": "Diriyah Company_Tactical _Cityscape Al Hadawi 2025_UF_KSA_Prospecting_EN_Awareness_Launch Video 15s"
+          },
+          {
+            "operation_status": "ENABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1847410702541937",
+            "adgroup_id": "1851128488303953",
+            "ad_id": "1851746587645249",
+            "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-cityscape-2025-dec-uf-reach-awareness&utm_id=8612&utm_term=cityscape-en-all-na&utm_content=retargetingvideo7s-video-ksa",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-cityscape-2025-dec-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "8612"
+              },
+              {
+                "key": "utm_term",
+                "value": "cityscape-en-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "retargetingvideo7s-video-ksa"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_name": "Diriyah Company_Tactical _Cityscape Al Hadawi 2025_UF_KSA_Prospecting_EN_Awareness_Video 7s"
+          },
+          {
+            "operation_status": "DISABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1851567037109297",
+            "adgroup_id": "1851567037110337",
+            "ad_id": "1851571227624546",
+            "landing_page_url": "https://www.diriyah.sa/en/zallal?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-zallal-2025-dec-uf-reach-awareness&utm_id=8372&utm_term=wintercampaign-zallal-en-all-na&utm_content=zallalherovideo-video-ksa",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-zallal-2025-dec-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "8372"
+              },
+              {
+                "key": "utm_term",
+                "value": "wintercampaign-zallal-en-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "zallalherovideo-video-ksa"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_name": "Visit Diriyah_Tactical_Winter Campaign 2025_UF_KSA_Prospecting_EN_Awareness_Zallal Hero Video"
+          },
+          {
+            "operation_status": "DISABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1851567037109297",
+            "adgroup_id": "1851567037111297",
+            "ad_id": "1851570971489602",
+            "landing_page_url": "https://www.diriyah.sa/ar/zallal?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-zallal-2025-dec-uf-reach-awareness&utm_id=8370&utm_term=wintercampaign-zallal-ar-all-na&utm_content=zallalherovideo-video-ksa",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-zallal-2025-dec-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "8370"
+              },
+              {
+                "key": "utm_term",
+                "value": "wintercampaign-zallal-ar-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "zallalherovideo-video-ksa"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_name": "Visit Diriyah_Tactical_Winter Campaign 2025_UF_KSA_Prospecting_AR_Awareness_Zallal Hero Video"
+          },
+          {
+            "operation_status": "DISABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1851567754233138",
+            "adgroup_id": "1851567599549954",
+            "ad_id": "1851567599549986",
+            "landing_page_url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterraceramadan-2025-mar-uf%2Fmf-traffic&utm_id=2279&utm_term=bujairiterraceramadan-ar-all-mf&utm_content=bujariexperience-video-aud-ksa",
+            "utm_params": [
+              {
+                "key": "utm_content",
+                "value": "bujariexperience-video-aud-ksa"
+              },
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterraceramadan-2025-mar-uf%2Fmf-traffic"
+              },
+              {
+                "key": "utm_id",
+                "value": "2279"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_name": "Diriyah_Tactical_BT Ramadan Campaign - Activations_MF_KSA_Prospecting_AR_Consideration_Tiktok_BUJARIExperience"
+          },
+          {
+            "operation_status": "DISABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1851567754233138",
+            "adgroup_id": "1851567599549954",
+            "ad_id": "1851567599549970",
+            "landing_page_url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterraceramadan-2025-mar-uf%2Fmf-traffic&utm_id=2279&utm_term=bujairiterraceramadan-ar-all-mf&utm_content=bujarieid-video-aud-ksa",
+            "utm_params": [
+              {
+                "key": "utm_id",
+                "value": "2279"
+              },
+              {
+                "key": "utm_content",
+                "value": "bujarieid-video-aud-ksa"
+              },
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterraceramadan-2025-mar-uf%2Fmf-traffic"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_name": "Diriyah_Tactical_BT Ramadan Campaign - Activations_MF_KSA_Prospecting_AR_Consideration_Tiktok_BUJARIEID"
+          },
+          {
+            "operation_status": "DISABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1851567754233138",
+            "adgroup_id": "1851567599547410",
+            "ad_id": "1851567599547442",
+            "landing_page_url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterraceramadan-2025-mar-uf%2Fmf-traffic&utm_id=2280&utm_term=bujairiterraceramadan-en-all-mf&utm_content=bujariexperience-video-aud-ksa",
+            "utm_params": [
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterraceramadan-2025-mar-uf%2Fmf-traffic"
+              },
+              {
+                "key": "utm_id",
+                "value": "2280"
+              },
+              {
+                "key": "utm_content",
+                "value": "bujariexperience-video-aud-ksa"
+              },
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_name": "Diriyah_Tactical_BT Ramadan Campaign - Activations_MF_KSA_Prospecting_EN_Consideration_Tiktok_BUJARIExperience"
+          },
+          {
+            "operation_status": "DISABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1851567754233138",
+            "adgroup_id": "1851567599547410",
+            "ad_id": "1851567599547426",
+            "landing_page_url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterraceramadan-2025-mar-uf%2Fmf-traffic&utm_id=2280&utm_term=bujairiterraceramadan-en-all-mf&utm_content=bujarieid-video-aud-ksa",
+            "utm_params": [
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterraceramadan-2025-mar-uf%2Fmf-traffic"
+              },
+              {
+                "key": "utm_id",
+                "value": "2280"
+              },
+              {
+                "key": "utm_content",
+                "value": "bujarieid-video-aud-ksa"
+              },
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_name": "Diriyah_Tactical_BT Ramadan Campaign - Activations_MF_KSA_Prospecting_EN_Consideration_Tiktok_BUJARIEID"
+          },
+          {
+            "operation_status": "ENABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1849124475061377",
+            "adgroup_id": "1849124475063489",
+            "ad_id": "1851312055785137",
+            "landing_page_url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness&utm_id=8084&utm_term=wintercampaign-bujairiterrace-ar-all-na&utm_content=tickets-btherovideo-video-qat",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "8084"
+              },
+              {
+                "key": "utm_term",
+                "value": "wintercampaign-bujairiterrace-ar-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "tickets-btherovideo-video-qat"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_name": "Bujairi_Terrace_Tactical_Bujairi_Terrace_Tickets_Winter_Campaign_UF_QAT_Prospecting_AR_Awareness_BT Hero Video"
+          },
+          {
+            "operation_status": "ENABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1849124475061377",
+            "adgroup_id": "1849124475061409",
+            "ad_id": "1851311617343730",
+            "landing_page_url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness&utm_id=8086&utm_term=wintercampaign-bujairiterrace-en-all-na&utm_content=tickets-btherovideo-video-qat",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "8086"
+              },
+              {
+                "key": "utm_term",
+                "value": "wintercampaign-bujairiterrace-en-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "tickets-btherovideo-video-qat"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_name": "Bujairi_Terrace_Tactical_Bujairi_Terrace_Tickets_Winter_Campaign_UF_QAT_Prospecting_EN_Awareness_BT Hero Video"
+          },
+          {
+            "operation_status": "ENABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1849124333415602",
+            "adgroup_id": "1849124333416642",
+            "ad_id": "1851311177282625",
+            "landing_page_url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness&utm_id=8058&utm_term=wintercampaign-bujairiterrace-ar-all-na&utm_content=tickets-btherovideo-video-kwt",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "8058"
+              },
+              {
+                "key": "utm_term",
+                "value": "wintercampaign-bujairiterrace-ar-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "tickets-btherovideo-video-kwt"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_name": "Bujairi_Terrace_Tactical_Bujairi_Terrace_Tickets_Winter_Campaign_UF_KWT_Prospecting_AR_Awareness_BT Hero Video"
+          },
+          {
+            "operation_status": "ENABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1849124333415602",
+            "adgroup_id": "1849124333416674",
+            "ad_id": "1851310753869889",
+            "landing_page_url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness&utm_id=8060&utm_term=wintercampaign-bujairiterrace-en-all-na&utm_content=tickets-btherovideo-video-kwt",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "8060"
+              },
+              {
+                "key": "utm_term",
+                "value": "wintercampaign-bujairiterrace-en-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "tickets-btherovideo-video-kwt"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_name": "Bujairi_Terrace_Tactical_Bujairi_Terrace_Tickets_Winter_Campaign_UF_KWT_Prospecting_EN_Awareness_BT Hero Video"
+          },
+          {
+            "operation_status": "ENABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1849124136019137",
+            "adgroup_id": "1849124136019153",
+            "ad_id": "1851310383560769",
+            "landing_page_url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness&utm_id=8034&utm_term=wintercampaign-bujairiterrace-en-all-na&utm_content=tickets-btherovideo-video-uae",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "8034"
+              },
+              {
+                "key": "utm_term",
+                "value": "wintercampaign-bujairiterrace-en-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "tickets-btherovideo-video-uae"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_name": "Bujairi_Terrace_Tactical_Bujairi_Terrace_Tickets_Winter_Campaign_UF_UAE_Prospecting_EN_Awareness_BT Hero Video"
+          },
+          {
+            "operation_status": "ENABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1849124136019137",
+            "adgroup_id": "1849124136019185",
+            "ad_id": "1851309983262929",
+            "landing_page_url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness&utm_id=8032&utm_term=wintercampaign-bujairiterrace-ar-all-na&utm_content=tickets-btherovideo-video-uae",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "8032"
+              },
+              {
+                "key": "utm_term",
+                "value": "wintercampaign-bujairiterrace-ar-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "tickets-btherovideo-video-uae"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_name": "Bujairi_Terrace_Tactical_Bujairi_Terrace_Tickets_Winter_Campaign_UF_UAE_Prospecting_AR_Awareness_BT Hero Video"
+          },
+          {
+            "operation_status": "ENABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1846499273458721",
+            "adgroup_id": "1846499273458737",
+            "ad_id": "1851309605993490",
+            "landing_page_url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness&utm_id=7902&utm_term=wintercampaign-bujairiterrace-ar-all-na&utm_content=tickets-btherovideo-video-ksa",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "7902"
+              },
+              {
+                "key": "utm_term",
+                "value": "wintercampaign-bujairiterrace-ar-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "tickets-btherovideo-video-ksa"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_name": "Bujairi_Terrace_Tactical_Bujairi_Terrace_Tickets_Winter_Campaign_UF_KSA_Prospecting_AR_Awareness_BT Hero Video"
+          },
+          {
+            "operation_status": "ENABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1846499273458721",
+            "adgroup_id": "1846499273459793",
+            "ad_id": "1851308950412465",
+            "landing_page_url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness&utm_id=7904&utm_term=wintercampaign-bujairiterrace-en-all-na&utm_content=tickets-btherovideo-video-ksa",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "7904"
+              },
+              {
+                "key": "utm_term",
+                "value": "wintercampaign-bujairiterrace-en-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "tickets-btherovideo-video-ksa"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_name": "Bujairi_Terrace_Tactical_Bujairi_Terrace_Tickets_Winter_Campaign_UF_KSA_Prospecting_EN_Awareness_BT Hero Video"
+          },
+          {
+            "operation_status": "ENABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1849123883777298",
+            "adgroup_id": "1849123883777314",
+            "ad_id": "1851307849442322",
+            "landing_page_url": "https://www.diriyah.sa/ar/bujairi-terrace?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness&utm_id=8188&utm_term=wintercampaign-bujairiterrace-ar-all-na&utm_content=restaurants-btherovideo-video-qat",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "8188"
+              },
+              {
+                "key": "utm_term",
+                "value": "wintercampaign-bujairiterrace-ar-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "restaurants-btherovideo-video-qat"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_name": "Bujairi_Terrace_Tactical_Bujairi_Terrace_Restaurant_Winter_Campaign_UF_QAT_Prospecting_AR_Awareness_BT Hero Video"
+          },
+          {
+            "operation_status": "ENABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1849123883777298",
+            "adgroup_id": "1849123883778306",
+            "ad_id": "1851307783558241",
+            "landing_page_url": "https://www.diriyah.sa/en/bujairi-terrace?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness&utm_id=8190&utm_term=wintercampaign-bujairiterrace-en-all-na&utm_content=restaurants-btherovideo-video-qat",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "8190"
+              },
+              {
+                "key": "utm_term",
+                "value": "wintercampaign-bujairiterrace-en-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "restaurants-btherovideo-video-qat"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_name": "Bujairi_Terrace_Tactical_Bujairi_Terrace_Restaurant_Winter_Campaign_UF_QAT_Prospecting_EN_Awareness_BT Hero Video"
+          },
+          {
+            "operation_status": "ENABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1849123573818513",
+            "adgroup_id": "1849123573818529",
+            "ad_id": "1851307025129778",
+            "landing_page_url": "https://www.diriyah.sa/en/bujairi-terrace?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness&utm_id=8164&utm_term=wintercampaign-bujairiterrace-en-all-na&utm_content=restaurants-btherovideo-video-kwt",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "8164"
+              },
+              {
+                "key": "utm_term",
+                "value": "wintercampaign-bujairiterrace-en-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "restaurants-btherovideo-video-kwt"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_name": "Bujairi_Terrace_Tactical_Bujairi_Terrace_Restaurant_Winter_Campaign_UF_KWT_Prospecting_EN_Awareness_BT Hero Video"
+          },
+          {
+            "operation_status": "ENABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1849123573818513",
+            "adgroup_id": "1849123573819585",
+            "ad_id": "1851306741278882",
+            "landing_page_url": "https://www.diriyah.sa/ar/bujairi-terrace?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness&utm_id=8162&utm_term=wintercampaign-bujairiterrace-ar-all-na&utm_content=restaurants-btherovideo-video-kwt",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "8162"
+              },
+              {
+                "key": "utm_term",
+                "value": "wintercampaign-bujairiterrace-ar-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "restaurants-btherovideo-video-kwt"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_name": "Bujairi_Terrace_Tactical_Bujairi_Terrace_Restaurant_Winter_Campaign_UF_KWT_Prospecting_AR_Awareness_BT Hero Video"
+          },
+          {
+            "operation_status": "ENABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1849122902525025",
+            "adgroup_id": "1849122902525041",
+            "ad_id": "1851306180652082",
+            "landing_page_url": "https://www.diriyah.sa/ar/bujairi-terrace?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness&utm_id=8136&utm_term=wintercampaign-bujairiterrace-ar-all-na&utm_content=restaurants-btherovideo-video-uae",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "8136"
+              },
+              {
+                "key": "utm_term",
+                "value": "wintercampaign-bujairiterrace-ar-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "restaurants-btherovideo-video-uae"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_name": "Bujairi_Terrace_Tactical_Bujairi_Terrace_Restaurant_Winter_Campaign_UF_UAE_Prospecting_AR_Awareness_BT Hero Video"
+          },
+          {
+            "operation_status": "ENABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1849122902525025",
+            "adgroup_id": "1849122902526097",
+            "ad_id": "1851305860929554",
+            "landing_page_url": "https://www.diriyah.sa/en/bujairi-terrace?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness&utm_id=8138&utm_term=wintercampaign-bujairiterrace-en-all-na&utm_content=restaurants-btherovideo-video-uae",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "8138"
+              },
+              {
+                "key": "utm_term",
+                "value": "wintercampaign-bujairiterrace-en-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "restaurants-btherovideo-video-uae"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_name": "Bujairi_Terrace_Tactical_Bujairi_Terrace_Restaurant_Winter_Campaign_UF_UAE_Prospecting_EN_Awareness_BT Hero Video"
+          },
+          {
+            "operation_status": "ENABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1846499179070626",
+            "adgroup_id": "1846499179070642",
+            "ad_id": "1851305031192738",
+            "landing_page_url": "https://www.diriyah.sa/en/bujairi-terrace?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness&utm_id=8112&utm_term=wintercampaign-bujairiterrace-en-all-na&utm_content=restaurants-btherovideo-video-ksa",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "8112"
+              },
+              {
+                "key": "utm_term",
+                "value": "wintercampaign-bujairiterrace-en-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "restaurants-btherovideo-video-ksa"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_name": "Bujairi_Terrace_Tactical_Bujairi_Terrace_Reastaurant_Winter_Campaign_UF_KSA_Prospecting_EN_Awareness_BT Hero Video"
+          },
+          {
+            "operation_status": "ENABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1846499179070626",
+            "adgroup_id": "1846499179071698",
+            "ad_id": "1851304695219714",
+            "landing_page_url": "https://www.diriyah.sa/ar/bujairi-terrace?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness&utm_id=8110&utm_term=wintercampaign-bujairiterrace-ar-all-na&utm_content=restaurants-btherovideo-video-ksa",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "8110"
+              },
+              {
+                "key": "utm_term",
+                "value": "wintercampaign-bujairiterrace-ar-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "restaurants-btherovideo-video-ksa"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_name": "Bujairi_Terrace_Tactical_Bujairi_Terrace_Reastaurant_Winter_Campaign_UF_KSA_Prospecting_AR_Awareness_BT Hero Video"
+          },
+          {
+            "operation_status": "ENABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1846500485072913",
+            "adgroup_id": "1846500485072929",
+            "ad_id": "1851304140630193",
+            "landing_page_url": "https://www.diriyah.sa/ar/shopping?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness&utm_id=8266&utm_term=wintercampaign-bujairiterrace-ar-all-na&utm_content=retail-btherovideo-video-ksa",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "8266"
+              },
+              {
+                "key": "utm_term",
+                "value": "wintercampaign-bujairiterrace-ar-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "retail-btherovideo-video-ksa"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_name": "Diriyah_Tactical_Bujairi_Terrace_Retail_Winter_Campaign_UF_KSA_Prospecting_AR_Awareness_TikTok_BT Hero Video"
+          },
+          {
+            "operation_status": "ENABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1846500485072913",
+            "adgroup_id": "1846500485074001",
+            "ad_id": "1851303659635169",
+            "landing_page_url": "https://www.diriyah.sa/en/shopping?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness&utm_id=8268&utm_term=wintercampaign-bujairiterrace-en-all-na&utm_content=retail-btherovideo-video-ksa",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "8268"
+              },
+              {
+                "key": "utm_term",
+                "value": "wintercampaign-bujairiterrace-en-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "retail-btherovideo-video-ksa"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_name": "Diriyah_Tactical_Bujairi_Terrace_Retail_Winter_Campaign_UF_KSA_Prospecting_EN_Awareness_TikTok_BT Hero Video"
+          },
+          {
+            "operation_status": "ENABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1849225757880529",
+            "adgroup_id": "1849225757881409",
+            "ad_id": "1851221512925201",
+            "landing_page_url": "https://www.diriyah.sa/en?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-visitdiriyah-2025-nov-uf-reach-awareness&utm_id=7873&utm_term=wintercampaign-visitdiriyah-en-all-na&utm_content=herowithsuper-sponsoredpost-qat",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-visitdiriyah-2025-nov-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "7873"
+              },
+              {
+                "key": "utm_content",
+                "value": "herowithsuper-sponsoredpost-qat"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_name": "Visit Diriyah_Tactical_Visit Diriyah Winter Campaign 2025_UF_QAT_Prospecting_EN_Awareness_Hero with Super"
+          },
+          {
+            "operation_status": "ENABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1849225757880529",
+            "adgroup_id": "1849225757881409",
+            "ad_id": "1851220786284866",
+            "landing_page_url": "https://www.diriyah.sa/en?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-visitdiriyah-2025-nov-uf-reach-awareness&utm_id=7876&utm_term=wintercampaign-visitdiriyah-en-all-na&utm_content=15svideo-video-qat",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-visitdiriyah-2025-nov-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "7876"
+              },
+              {
+                "key": "utm_content",
+                "value": "15svideo-video-qat"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_name": "Visit Diriyah_Tactical_Visit Diriyah Winter Campaign 2025_UF_QAT_Prospecting_EN_Awareness_15s Video"
+          },
+          {
+            "operation_status": "ENABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1849225757880529",
+            "adgroup_id": "1849225757880545",
+            "ad_id": "1851220554959041",
+            "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-visitdiriyah-2025-nov-uf-reach-awareness&utm_id=7875&utm_term=wintercampaign-visitdiriyah-ar-all-na&utm_content=herowithsuper-sponsoredpost-qat",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-visitdiriyah-2025-nov-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "7875"
+              },
+              {
+                "key": "utm_content",
+                "value": "herowithsuper-sponsoredpost-qat"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_name": "Visit Diriyah_Tactical_Visit Diriyah Winter Campaign 2025_UF_QAT_Prospecting_AR_Awareness_Hero with Super"
+          },
+          {
+            "operation_status": "ENABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1849225757880529",
+            "adgroup_id": "1849225757880545",
+            "ad_id": "1851220187214946",
+            "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-visitdiriyah-2025-nov-uf-reach-awareness&utm_id=7878&utm_term=wintercampaign-visitdiriyah-ar-all-na&utm_content=15svideo-video-qat",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-visitdiriyah-2025-nov-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "7878"
+              },
+              {
+                "key": "utm_content",
+                "value": "15svideo-video-qat"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_name": "Visit Diriyah_Tactical_Visit Diriyah Winter Campaign 2025_UF_QAT_Prospecting_AR_Awareness_15s Video"
+          },
+          {
+            "operation_status": "ENABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1849225582518386",
+            "adgroup_id": "1849225582519298",
+            "ad_id": "1851219748440274",
+            "landing_page_url": "https://www.diriyah.sa/en?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-visitdiriyah-2025-nov-uf-reach-awareness&utm_id=7865&utm_term=wintercampaign-visitdiriyah-en-all-na&utm_content=herowithsuper-sponsoredpost-kwt",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-visitdiriyah-2025-nov-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "7865"
+              },
+              {
+                "key": "utm_content",
+                "value": "herowithsuper-sponsoredpost-kwt"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_name": "Visit Diriyah_Tactical_Visit Diriyah Winter Campaign 2025_UF_KWT_Prospecting_EN_Awareness_Hero with Super"
+          },
+          {
+            "operation_status": "ENABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1849225582518386",
+            "adgroup_id": "1849225582519298",
+            "ad_id": "1851219352807681",
+            "landing_page_url": "https://www.diriyah.sa/en?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-visitdiriyah-2025-nov-uf-reach-awareness&utm_id=7868&utm_term=wintercampaign-visitdiriyah-en-all-na&utm_content=15svideo-video-kwt",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-visitdiriyah-2025-nov-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "7868"
+              },
+              {
+                "key": "utm_content",
+                "value": "15svideo-video-kwt"
+              }
+            ],
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_name": "Visit Diriyah_Tactical_Visit Diriyah Winter Campaign 2025_UF_KWT_Prospecting_EN_Awareness_15s Video"
+          },
+          {
+            "operation_status": "DISABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1849225582518386",
+            "adgroup_id": "1849225582519298",
+            "ad_id": "1851219004651537",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_name": "Copy 1 of Diriyah_Tactical_Saudi National Day_UF_KSA_Prospecting_EN_Awareness_TikTok_Cutdown 6s"
+          }
+        ],
+        "page_info": {
+          "page": 3,
+          "page_size": 45,
+          "total_page": 13,
+          "total_number": 556
+        }
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "20261011180044ED145788EC8D3761A7AD",
+      "waitedMs": 977,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false,
+      "mcp_result_projection": {
+        "compact": true
+      }
+    }
+  },
+  "meta": {
+    "requestId": "08adc7a0-b7ee-4b83-a509-fb7fecb25625",
+    "latencyMs": 2643
+  }
+}

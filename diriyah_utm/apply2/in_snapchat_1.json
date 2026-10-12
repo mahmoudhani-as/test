@@ -1,0 +1,552 @@
+[
+ {
+  "account_id": "ebe8d66e-0e3e-4b71-9d37-5c53118d6481",
+  "account_name": "Diriyah Company",
+  "unit": "03334d76-32e1-41f1-af4a-3e808fefeef2",
+  "ad_ids": [
+   "e9a5b9ca-60b3-46b3-af32-3f843ab02581"
+  ],
+  "ad_names": [
+   "LifeInDiriyah_Ad1_Video_Boosted_AR_NA_Prospecting_23.06.2026_04.07.2026"
+  ],
+  "campaign_id": "ce56c945-f199-4f03-af56-d3f6b0e6ddd1",
+  "adset_id": "763319dc-50e8-46a4-81c1-2393a851f94d",
+  "creative_id": "03334d76-32e1-41f1-af4a-3e808fefeef2",
+  "status": "INVALID_NOT_EFFECTIVE_ACTIVE|INVALID_EFFECTIVE_INVALID",
+  "edit_method": "PUT /v1/adaccounts/{ad_account_id}/creatives (full creative object; triggers re-review)",
+  "notes": [
+   "ad.type=REMOTE_WEBPAGE; ad.review_status=APPROVED; effective_status = Snapchat ad.delivery_status (no native effective_status); creative.type=WEB_VIEW; creative.review_status=APPROVED; creative.utm_autofix_permission=OPT_IN"
+  ],
+  "kind": "legacy",
+  "changes": [
+   {
+    "slot": "creative.web_view_properties.url",
+    "base_url": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_content=ad1&utm_source=snapchat&utm_medium=paid-social&utm_term=adset-id-9a4d62_life-in-diriyah_ar_all_mf_prospecting&utm_campaign=lifeindiriyah_jun2026",
+    "url_tags": null,
+    "now": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_content=ad1&utm_source=snapchat&utm_medium=paid-social&utm_term=adset-id-9a4d62_life-in-diriyah_ar_all_mf_prospecting&utm_campaign=lifeindiriyah_jun2026",
+    "new": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_jul26_cond&utm_term=life-in-diriyah_ar&utm_content=ad1_video_ar"
+   }
+  ]
+ },
+ {
+  "account_id": "ebe8d66e-0e3e-4b71-9d37-5c53118d6481",
+  "account_name": "Diriyah Company",
+  "unit": "06867fa5-9f50-45e2-b3f2-124de2b1d481",
+  "ad_ids": [
+   "9f1ffac5-f8c3-4fc7-b8fd-66125f5b9093"
+  ],
+  "ad_names": [
+   "LifeInDiriyah_KV2_Dark_EN_NA_Prospecting_23.06.2026_04.07.2026"
+  ],
+  "campaign_id": "ce56c945-f199-4f03-af56-d3f6b0e6ddd1",
+  "adset_id": "78eeb5c7-a311-434c-a2f0-c30b9a5e400b",
+  "creative_id": "06867fa5-9f50-45e2-b3f2-124de2b1d481",
+  "status": "VALID",
+  "edit_method": "PUT /v1/adaccounts/{ad_account_id}/creatives (full creative object; triggers re-review)",
+  "notes": [
+   "ad.type=REMOTE_WEBPAGE; ad.review_status=APPROVED; effective_status = Snapchat ad.delivery_status (no native effective_status); creative.type=WEB_VIEW; creative.review_status=APPROVED; creative.utm_autofix_permission=OPT_IN"
+  ],
+  "kind": "legacy",
+  "changes": [
+   {
+    "slot": "creative.web_view_properties.url",
+    "base_url": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_sep26&utm_term=3e71b680_residential_en&utm_content=2f4ca35f_resi-patio-kv2_display_en",
+    "url_tags": null,
+    "now": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_sep26&utm_term=3e71b680_residential_en&utm_content=2f4ca35f_resi-patio-kv2_display_en",
+    "new": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_sep26_cond&utm_term=3e71b680_residential_en&utm_content=2f4ca35f_resi-patio-kv2_display_en"
+   }
+  ]
+ },
+ {
+  "account_id": "ebe8d66e-0e3e-4b71-9d37-5c53118d6481",
+  "account_name": "Diriyah Company",
+  "unit": "281f7321-b4f2-49fb-a9a2-cd1418aeb138",
+  "ad_ids": [
+   "3319ef8b-345b-4a7f-b170-ae62860e0337"
+  ],
+  "ad_names": [
+   "LifeInDiriyah_Ad1_Video_Boosted_EN_NA_Prospecting_23.06.2026_04.07.2026"
+  ],
+  "campaign_id": "ce56c945-f199-4f03-af56-d3f6b0e6ddd1",
+  "adset_id": "f0a554fb-4e95-45e2-8324-9876d7cf3766",
+  "creative_id": "281f7321-b4f2-49fb-a9a2-cd1418aeb138",
+  "status": "INVALID_EFFECTIVE_INVALID|INVALID_NOT_EFFECTIVE_ACTIVE",
+  "edit_method": "PUT /v1/adaccounts/{ad_account_id}/creatives (full creative object; triggers re-review)",
+  "notes": [
+   "ad.type=REMOTE_WEBPAGE; ad.review_status=APPROVED; effective_status = Snapchat ad.delivery_status (no native effective_status); creative.type=WEB_VIEW; creative.review_status=APPROVED; creative.utm_autofix_permission=OPT_IN"
+  ],
+  "kind": "legacy",
+  "changes": [
+   {
+    "slot": "creative.web_view_properties.url",
+    "base_url": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_content=ad1&utm_source=snapchat&utm_medium=paid-social&utm_term=adset-id-9a4d62_life-in-diriyah_en_all_mf_prospecting&utm_campaign=lifeindiriyah_jun2026",
+    "url_tags": null,
+    "now": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_content=ad1&utm_source=snapchat&utm_medium=paid-social&utm_term=adset-id-9a4d62_life-in-diriyah_en_all_mf_prospecting&utm_campaign=lifeindiriyah_jun2026",
+    "new": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_jul26_cond&utm_term=life-in-diriyah_en&utm_content=ad1_video_en"
+   }
+  ]
+ },
+ {
+  "account_id": "ebe8d66e-0e3e-4b71-9d37-5c53118d6481",
+  "account_name": "Diriyah Company",
+  "unit": "2a31b042-3af7-4601-95e7-1770bde99e5a",
+  "ad_ids": [
+   "f510b11d-81a4-4835-87da-ea5995afb0f2"
+  ],
+  "ad_names": [
+   "LifeInDiriyah_Ad1_Video_Boosted_EN_NA_Prospecting_23.06.2026_04.07.2026"
+  ],
+  "campaign_id": "ce56c945-f199-4f03-af56-d3f6b0e6ddd1",
+  "adset_id": "6789c9a4-fc58-4794-bf66-97f037393839",
+  "creative_id": "2a31b042-3af7-4601-95e7-1770bde99e5a",
+  "status": "INVALID_NOT_EFFECTIVE_ACTIVE|INVALID_EFFECTIVE_INVALID",
+  "edit_method": "PUT /v1/adaccounts/{ad_account_id}/creatives (full creative object; triggers re-review)",
+  "notes": [
+   "ad.type=REMOTE_WEBPAGE; ad.review_status=APPROVED; effective_status = Snapchat ad.delivery_status (no native effective_status); creative.type=WEB_VIEW; creative.review_status=APPROVED; creative.utm_autofix_permission=OPT_IN"
+  ],
+  "kind": "legacy",
+  "changes": [
+   {
+    "slot": "creative.web_view_properties.url",
+    "base_url": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_content=ad1&utm_source=snapchat&utm_medium=paid-social&utm_term=adset-id-9a4d62_life-in-diriyah_en_all_mf_prospecting&utm_campaign=lifeindiriyah_jun2026",
+    "url_tags": null,
+    "now": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_content=ad1&utm_source=snapchat&utm_medium=paid-social&utm_term=adset-id-9a4d62_life-in-diriyah_en_all_mf_prospecting&utm_campaign=lifeindiriyah_jun2026",
+    "new": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_jul26_cond&utm_term=life-in-diriyah_en&utm_content=ad1_video_en"
+   }
+  ]
+ },
+ {
+  "account_id": "ebe8d66e-0e3e-4b71-9d37-5c53118d6481",
+  "account_name": "Diriyah Company",
+  "unit": "3c498dc7-0169-4dba-8eb9-c17d0303ce7a",
+  "ad_ids": [
+   "1e0aaba7-6f19-40c2-aa86-342978792d01"
+  ],
+  "ad_names": [
+   "LifeInDiriyah_KV3_Dark_EN_NA_Prospecting_23.06.2026_04.07.2026"
+  ],
+  "campaign_id": "ce56c945-f199-4f03-af56-d3f6b0e6ddd1",
+  "adset_id": "f8f0d99d-c002-44ee-a6a0-53fc3b10b1c4",
+  "creative_id": "3c498dc7-0169-4dba-8eb9-c17d0303ce7a",
+  "status": "VALID",
+  "edit_method": "PUT /v1/adaccounts/{ad_account_id}/creatives (full creative object; triggers re-review)",
+  "notes": [
+   "ad.type=REMOTE_WEBPAGE; ad.review_status=APPROVED; effective_status = Snapchat ad.delivery_status (no native effective_status); creative.type=WEB_VIEW; creative.review_status=APPROVED; creative.utm_autofix_permission=OPT_IN"
+  ],
+  "kind": "legacy",
+  "changes": [
+   {
+    "slot": "creative.web_view_properties.url",
+    "base_url": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_sep26&utm_term=3e71b680_residential_en&utm_content=1469e841_resi-patio-kv3_display_en",
+    "url_tags": null,
+    "now": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_sep26&utm_term=3e71b680_residential_en&utm_content=1469e841_resi-patio-kv3_display_en",
+    "new": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_sep26_cond&utm_term=3e71b680_residential_en&utm_content=1469e841_resi-patio-kv3_display_en"
+   }
+  ]
+ },
+ {
+  "account_id": "ebe8d66e-0e3e-4b71-9d37-5c53118d6481",
+  "account_name": "Diriyah Company",
+  "unit": "4c1febe5-7c02-4950-8e3e-9810ef06298e",
+  "ad_ids": [
+   "3d390a83-b8ea-4137-93c7-8968efb0cf23"
+  ],
+  "ad_names": [
+   "LifeInDiriyah_CR1_Video_Boosted_EN_NA_Prospecting_23.06.2026_22.07.2026_V2"
+  ],
+  "campaign_id": "ce56c945-f199-4f03-af56-d3f6b0e6ddd1",
+  "adset_id": "f0a554fb-4e95-45e2-8324-9876d7cf3766",
+  "creative_id": "4c1febe5-7c02-4950-8e3e-9810ef06298e",
+  "status": "INVALID_EFFECTIVE_INVALID|INVALID_NOT_EFFECTIVE_ACTIVE",
+  "edit_method": "PUT /v1/adaccounts/{ad_account_id}/creatives on the sub-creative (web_view_properties.url) and/or rebuild composite; triggers re-review",
+  "notes": [
+   "ad.type=STORY; ad.review_status=APPROVED; effective_status = Snapchat ad.delivery_status (no native effective_status); creative.type=COMPOSITE; creative.review_status=APPROVED; composite/story ad: each sub-creative carries its own web_view URL; sub_creative_id=25476c1c-87b0-4537-b237-55c809175de5; sub_creative_name=LifeInDiriyah_CR1_Video_Boosted_EN_NA_Prospecting_23.06.2026_22.07.2026_V2; sub_creative.type=WEB_VIEW; sub_creative.review_status=APPROVED",
+   "ad.type=STORY; ad.review_status=APPROVED; effective_status = Snapchat ad.delivery_status (no native effective_status); creative.type=COMPOSITE; creative.review_status=APPROVED; composite/story ad: each sub-creative carries its own web_view URL; sub_creative_id=2a92055e-85b1-4f06-aed3-92867ac602c8; sub_creative_name=LifeInDiriyah_CR1_Video_Boosted_EN_NA_Prospecting_23.06.2026_22.07.2026_V2; sub_creative.type=WEB_VIEW; sub_creative.review_status=APPROVED",
+   "ad.type=STORY; ad.review_status=APPROVED; effective_status = Snapchat ad.delivery_status (no native effective_status); creative.type=COMPOSITE; creative.review_status=APPROVED; composite/story ad: each sub-creative carries its own web_view URL; sub_creative_id=2c67650c-1a45-4c80-b6b5-fe623a408fa9; sub_creative_name=LifeInDiriyah_CR1_Video_Boosted_EN_NA_Prospecting_23.06.2026_22.07.2026_V2; sub_creative.type=WEB_VIEW; sub_creative.review_status=APPROVED",
+   "ad.type=STORY; ad.review_status=APPROVED; effective_status = Snapchat ad.delivery_status (no native effective_status); creative.type=COMPOSITE; creative.review_status=APPROVED; composite/story ad: each sub-creative carries its own web_view URL; sub_creative_id=7b6a50b9-8bde-462a-91d3-5d9d733b618d; sub_creative_name=LifeInDiriyah_CR1_Video_Boosted_EN_NA_Prospecting_23.06.2026_22.07.2026_V2; sub_creative.type=WEB_VIEW; sub_creative.review_status=APPROVED"
+  ],
+  "kind": "legacy",
+  "changes": [
+   {
+    "slot": "creative.composite_properties.creative_ids[0] (25476c1c-87b0-4537-b237-55c809175de5).web_view_properties.url",
+    "base_url": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_content=cr1&utm_source=snapchat&utm_medium=paid-social&utm_term=adset-id-9a4d62_life-in-diriyah_en_all_mf_prospecting&utm_campaign=lifeindiriyah_jun2026",
+    "url_tags": null,
+    "now": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_content=cr1&utm_source=snapchat&utm_medium=paid-social&utm_term=adset-id-9a4d62_life-in-diriyah_en_all_mf_prospecting&utm_campaign=lifeindiriyah_jun2026",
+    "new": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_jul26_cond&utm_term=life-in-diriyah_en&utm_content=cr1_video_en"
+   },
+   {
+    "slot": "creative.composite_properties.creative_ids[1] (e9e18a6b-ad7d-43a7-b0b5-3af5e45d52b1).web_view_properties.url",
+    "base_url": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_content=cr1&utm_source=snapchat&utm_medium=paid-social&utm_term=adset-id-9a4d62_life-in-diriyah_en_all_mf_prospecting&utm_campaign=lifeindiriyah_jun2026",
+    "url_tags": null,
+    "now": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_content=cr1&utm_source=snapchat&utm_medium=paid-social&utm_term=adset-id-9a4d62_life-in-diriyah_en_all_mf_prospecting&utm_campaign=lifeindiriyah_jun2026",
+    "new": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_jul26_cond&utm_term=life-in-diriyah_en&utm_content=cr1_video_en"
+   },
+   {
+    "slot": "creative.composite_properties.creative_ids[2] (8d4f47e3-1107-425a-b49d-c37615e19cd4).web_view_properties.url",
+    "base_url": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_content=cr1&utm_source=snapchat&utm_medium=paid-social&utm_term=adset-id-9a4d62_life-in-diriyah_en_all_mf_prospecting&utm_campaign=lifeindiriyah_jun2026",
+    "url_tags": null,
+    "now": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_content=cr1&utm_source=snapchat&utm_medium=paid-social&utm_term=adset-id-9a4d62_life-in-diriyah_en_all_mf_prospecting&utm_campaign=lifeindiriyah_jun2026",
+    "new": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_jul26_cond&utm_term=life-in-diriyah_en&utm_content=cr1_video_en"
+   },
+   {
+    "slot": "creative.composite_properties.creative_ids[3] (2a92055e-85b1-4f06-aed3-92867ac602c8).web_view_properties.url",
+    "base_url": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_content=cr1&utm_source=snapchat&utm_medium=paid-social&utm_term=adset-id-9a4d62_life-in-diriyah_en_all_mf_prospecting&utm_campaign=lifeindiriyah_jun2026",
+    "url_tags": null,
+    "now": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_content=cr1&utm_source=snapchat&utm_medium=paid-social&utm_term=adset-id-9a4d62_life-in-diriyah_en_all_mf_prospecting&utm_campaign=lifeindiriyah_jun2026",
+    "new": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_jul26_cond&utm_term=life-in-diriyah_en&utm_content=cr1_video_en"
+   },
+   {
+    "slot": "creative.composite_properties.creative_ids[4] (2c67650c-1a45-4c80-b6b5-fe623a408fa9).web_view_properties.url",
+    "base_url": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_content=cr1&utm_source=snapchat&utm_medium=paid-social&utm_term=adset-id-9a4d62_life-in-diriyah_en_all_mf_prospecting&utm_campaign=lifeindiriyah_jun2026",
+    "url_tags": null,
+    "now": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_content=cr1&utm_source=snapchat&utm_medium=paid-social&utm_term=adset-id-9a4d62_life-in-diriyah_en_all_mf_prospecting&utm_campaign=lifeindiriyah_jun2026",
+    "new": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_jul26_cond&utm_term=life-in-diriyah_en&utm_content=cr1_video_en"
+   },
+   {
+    "slot": "creative.composite_properties.creative_ids[5] (7b6a50b9-8bde-462a-91d3-5d9d733b618d).web_view_properties.url",
+    "base_url": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_content=cr1&utm_source=snapchat&utm_medium=paid-social&utm_term=adset-id-9a4d62_life-in-diriyah_en_all_mf_prospecting&utm_campaign=lifeindiriyah_jun2026",
+    "url_tags": null,
+    "now": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_content=cr1&utm_source=snapchat&utm_medium=paid-social&utm_term=adset-id-9a4d62_life-in-diriyah_en_all_mf_prospecting&utm_campaign=lifeindiriyah_jun2026",
+    "new": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_jul26_cond&utm_term=life-in-diriyah_en&utm_content=cr1_video_en"
+   }
+  ]
+ },
+ {
+  "account_id": "ebe8d66e-0e3e-4b71-9d37-5c53118d6481",
+  "account_name": "Diriyah Company",
+  "unit": "4fc8f958-b3fe-40e5-9f36-b575f2c9d55a",
+  "ad_ids": [
+   "f61d9c39-118a-4a06-a2b1-6696304b7664"
+  ],
+  "ad_names": [
+   "LifeInDiriyah_CR1_Boosted_EN_NA_Prospecting_23.06.2026_22.07.2026_V2"
+  ],
+  "campaign_id": "ce56c945-f199-4f03-af56-d3f6b0e6ddd1",
+  "adset_id": "6789c9a4-fc58-4794-bf66-97f037393839",
+  "creative_id": "4fc8f958-b3fe-40e5-9f36-b575f2c9d55a",
+  "status": "INVALID_NOT_EFFECTIVE_ACTIVE|INVALID_EFFECTIVE_INVALID",
+  "edit_method": "PUT /v1/adaccounts/{ad_account_id}/creatives on the sub-creative (web_view_properties.url) and/or rebuild composite; triggers re-review",
+  "notes": [
+   "ad.type=STORY; ad.review_status=APPROVED; effective_status = Snapchat ad.delivery_status (no native effective_status); creative.type=COMPOSITE; creative.review_status=APPROVED; composite/story ad: each sub-creative carries its own web_view URL; sub_creative_id=10ad0b5c-3bcf-49c3-84fd-cccc64b131ba; sub_creative_name=LifeInDiriyah_CR1_Boosted_EN_NA_Prospecting_23.06.2026_22.07.2026_V2; sub_creative.type=WEB_VIEW; sub_creative.review_status=APPROVED",
+   "ad.type=STORY; ad.review_status=APPROVED; effective_status = Snapchat ad.delivery_status (no native effective_status); creative.type=COMPOSITE; creative.review_status=APPROVED; composite/story ad: each sub-creative carries its own web_view URL; sub_creative_id=40c62fea-cfe6-46fd-aff9-6ae947d067d3; sub_creative_name=LifeInDiriyah_CR1_Boosted_EN_NA_Prospecting_23.06.2026_22.07.2026_V2; sub_creative.type=WEB_VIEW; sub_creative.review_status=APPROVED",
+   "ad.type=STORY; ad.review_status=APPROVED; effective_status = Snapchat ad.delivery_status (no native effective_status); creative.type=COMPOSITE; creative.review_status=APPROVED; composite/story ad: each sub-creative carries its own web_view URL; sub_creative_id=468e079d-7cdb-416d-b4ed-c01ac7658172; sub_creative_name=LifeInDiriyah_CR1_Boosted_EN_NA_Prospecting_23.06.2026_22.07.2026_V2; sub_creative.type=WEB_VIEW; sub_creative.review_status=APPROVED",
+   "ad.type=STORY; ad.review_status=APPROVED; effective_status = Snapchat ad.delivery_status (no native effective_status); creative.type=COMPOSITE; creative.review_status=APPROVED; composite/story ad: each sub-creative carries its own web_view URL; sub_creative_id=b65848de-e72a-4908-87b3-16f900d7bec4; sub_creative_name=LifeInDiriyah_CR1_Boosted_EN_NA_Prospecting_23.06.2026_22.07.2026_V2; sub_creative.type=WEB_VIEW; sub_creative.review_status=APPROVED"
+  ],
+  "kind": "legacy",
+  "changes": [
+   {
+    "slot": "creative.composite_properties.creative_ids[0] (468e079d-7cdb-416d-b4ed-c01ac7658172).web_view_properties.url",
+    "base_url": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_content=cr1&utm_source=snapchat&utm_medium=paid-social&utm_term=adset-id-9a4d62_life-in-diriyah_en_all_mf_prospecting&utm_campaign=lifeindiriyah_jun2026",
+    "url_tags": null,
+    "now": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_content=cr1&utm_source=snapchat&utm_medium=paid-social&utm_term=adset-id-9a4d62_life-in-diriyah_en_all_mf_prospecting&utm_campaign=lifeindiriyah_jun2026",
+    "new": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_jul26_cond&utm_term=life-in-diriyah_en&utm_content=cr1_display_en"
+   },
+   {
+    "slot": "creative.composite_properties.creative_ids[1] (b65848de-e72a-4908-87b3-16f900d7bec4).web_view_properties.url",
+    "base_url": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_content=cr1&utm_source=snapchat&utm_medium=paid-social&utm_term=adset-id-9a4d62_life-in-diriyah_en_all_mf_prospecting&utm_campaign=lifeindiriyah_jun2026",
+    "url_tags": null,
+    "now": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_content=cr1&utm_source=snapchat&utm_medium=paid-social&utm_term=adset-id-9a4d62_life-in-diriyah_en_all_mf_prospecting&utm_campaign=lifeindiriyah_jun2026",
+    "new": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_jul26_cond&utm_term=life-in-diriyah_en&utm_content=cr1_display_en"
+   },
+   {
+    "slot": "creative.composite_properties.creative_ids[2] (ebec20a5-34e7-4b03-9329-a7d0707066b6).web_view_properties.url",
+    "base_url": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_content=cr1&utm_source=snapchat&utm_medium=paid-social&utm_term=adset-id-9a4d62_life-in-diriyah_en_all_mf_prospecting&utm_campaign=lifeindiriyah_jun2026",
+    "url_tags": null,
+    "now": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_content=cr1&utm_source=snapchat&utm_medium=paid-social&utm_term=adset-id-9a4d62_life-in-diriyah_en_all_mf_prospecting&utm_campaign=lifeindiriyah_jun2026",
+    "new": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_jul26_cond&utm_term=life-in-diriyah_en&utm_content=cr1_display_en"
+   },
+   {
+    "slot": "creative.composite_properties.creative_ids[3] (e7d0366a-ffe4-414c-aa2f-033775a64a84).web_view_properties.url",
+    "base_url": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_content=cr1&utm_source=snapchat&utm_medium=paid-social&utm_term=adset-id-9a4d62_life-in-diriyah_en_all_mf_prospecting&utm_campaign=lifeindiriyah_jun2026",
+    "url_tags": null,
+    "now": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_content=cr1&utm_source=snapchat&utm_medium=paid-social&utm_term=adset-id-9a4d62_life-in-diriyah_en_all_mf_prospecting&utm_campaign=lifeindiriyah_jun2026",
+    "new": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_jul26_cond&utm_term=life-in-diriyah_en&utm_content=cr1_display_en"
+   },
+   {
+    "slot": "creative.composite_properties.creative_ids[4] (10ad0b5c-3bcf-49c3-84fd-cccc64b131ba).web_view_properties.url",
+    "base_url": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_content=cr1&utm_source=snapchat&utm_medium=paid-social&utm_term=adset-id-9a4d62_life-in-diriyah_en_all_mf_prospecting&utm_campaign=lifeindiriyah_jun2026",
+    "url_tags": null,
+    "now": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_content=cr1&utm_source=snapchat&utm_medium=paid-social&utm_term=adset-id-9a4d62_life-in-diriyah_en_all_mf_prospecting&utm_campaign=lifeindiriyah_jun2026",
+    "new": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_jul26_cond&utm_term=life-in-diriyah_en&utm_content=cr1_display_en"
+   },
+   {
+    "slot": "creative.composite_properties.creative_ids[5] (40c62fea-cfe6-46fd-aff9-6ae947d067d3).web_view_properties.url",
+    "base_url": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_content=cr1&utm_source=snapchat&utm_medium=paid-social&utm_term=adset-id-9a4d62_life-in-diriyah_en_all_mf_prospecting&utm_campaign=lifeindiriyah_jun2026",
+    "url_tags": null,
+    "now": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_content=cr1&utm_source=snapchat&utm_medium=paid-social&utm_term=adset-id-9a4d62_life-in-diriyah_en_all_mf_prospecting&utm_campaign=lifeindiriyah_jun2026",
+    "new": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_jul26_cond&utm_term=life-in-diriyah_en&utm_content=cr1_display_en"
+   }
+  ]
+ },
+ {
+  "account_id": "ebe8d66e-0e3e-4b71-9d37-5c53118d6481",
+  "account_name": "Diriyah Company",
+  "unit": "543be9b5-bd05-4498-a881-ddff8bc45d1b",
+  "ad_ids": [
+   "0ab83756-c59b-4e1e-8e8b-c4d8e3a46a6b"
+  ],
+  "ad_names": [
+   "company_general_2026_sep_resi-video-1_adset-id-3c3fc87a_video_ar"
+  ],
+  "campaign_id": "ce56c945-f199-4f03-af56-d3f6b0e6ddd1",
+  "adset_id": "58949327-0a13-4b6e-9bb1-176db5061892",
+  "creative_id": "543be9b5-bd05-4498-a881-ddff8bc45d1b",
+  "status": "VALID",
+  "edit_method": "PUT /v1/adaccounts/{ad_account_id}/creatives (full creative object; triggers re-review)",
+  "notes": [
+   "ad.type=REMOTE_WEBPAGE; ad.review_status=APPROVED; effective_status = Snapchat ad.delivery_status (no native effective_status); creative.type=WEB_VIEW; creative.review_status=APPROVED; creative.utm_autofix_permission=OPT_IN"
+  ],
+  "kind": "legacy",
+  "changes": [
+   {
+    "slot": "creative.web_view_properties.url",
+    "base_url": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_content=3c3fc87a_resi-video-1_video_ar&utm_source=snapchat&utm_medium=paid-social&utm_term=3e71b680_residential_ar&utm_campaign=2c0ef446_diriyah-living_sep26",
+    "url_tags": null,
+    "now": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_content=3c3fc87a_resi-video-1_video_ar&utm_source=snapchat&utm_medium=paid-social&utm_term=3e71b680_residential_ar&utm_campaign=2c0ef446_diriyah-living_sep26",
+    "new": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_aug26_cond&utm_term=3e71b680_residential_ar&utm_content=3c3fc87a_resi-video-1_video_ar"
+   }
+  ]
+ },
+ {
+  "account_id": "ebe8d66e-0e3e-4b71-9d37-5c53118d6481",
+  "account_name": "Diriyah Company",
+  "unit": "54f55229-b7db-42a4-9b2b-fc9b942c4e75",
+  "ad_ids": [
+   "7d1ef754-03f7-48a4-9bba-f5eb81a4a8f1"
+  ],
+  "ad_names": [
+   "company_general_2026_sep_resi-video-1_adset-id-3c3fc87a_video_en"
+  ],
+  "campaign_id": "ce56c945-f199-4f03-af56-d3f6b0e6ddd1",
+  "adset_id": "f8f0d99d-c002-44ee-a6a0-53fc3b10b1c4",
+  "creative_id": "54f55229-b7db-42a4-9b2b-fc9b942c4e75",
+  "status": "VALID",
+  "edit_method": "PUT /v1/adaccounts/{ad_account_id}/creatives (full creative object; triggers re-review)",
+  "notes": [
+   "ad.type=REMOTE_WEBPAGE; ad.review_status=APPROVED; effective_status = Snapchat ad.delivery_status (no native effective_status); creative.type=WEB_VIEW; creative.review_status=APPROVED; creative.utm_autofix_permission=OPT_IN"
+  ],
+  "kind": "legacy",
+  "changes": [
+   {
+    "slot": "creative.web_view_properties.url",
+    "base_url": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_content=3c3fc87a_resi-video-1_video_en&utm_source=snapchat&utm_medium=paid-social&utm_term=3e71b680_residential_en&utm_campaign=2c0ef446_diriyah-living_sep26",
+    "url_tags": null,
+    "now": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_content=3c3fc87a_resi-video-1_video_en&utm_source=snapchat&utm_medium=paid-social&utm_term=3e71b680_residential_en&utm_campaign=2c0ef446_diriyah-living_sep26",
+    "new": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_aug26_cond&utm_term=3e71b680_residential_en&utm_content=3c3fc87a_resi-video-1_video_en"
+   }
+  ]
+ },
+ {
+  "account_id": "ebe8d66e-0e3e-4b71-9d37-5c53118d6481",
+  "account_name": "Diriyah Company",
+  "unit": "775ad340-61ef-4073-8ad2-2e4b1eab1f18",
+  "ad_ids": [
+   "9db8cab9-cc0d-4d40-9511-959da64b702e"
+  ],
+  "ad_names": [
+   "LifeInDiriyah_Ad1_Video_Boosted_AR_NA_Prospecting_23.06.2026_04.07.2026"
+  ],
+  "campaign_id": "ce56c945-f199-4f03-af56-d3f6b0e6ddd1",
+  "adset_id": "03a34ce5-12ba-4e19-b56c-338a4b4050d9",
+  "creative_id": "775ad340-61ef-4073-8ad2-2e4b1eab1f18",
+  "status": "INVALID_NOT_EFFECTIVE_ACTIVE|INVALID_EFFECTIVE_INVALID",
+  "edit_method": "PUT /v1/adaccounts/{ad_account_id}/creatives (full creative object; triggers re-review)",
+  "notes": [
+   "ad.type=REMOTE_WEBPAGE; ad.review_status=APPROVED; effective_status = Snapchat ad.delivery_status (no native effective_status); creative.type=WEB_VIEW; creative.review_status=APPROVED; creative.utm_autofix_permission=OPT_IN"
+  ],
+  "kind": "legacy",
+  "changes": [
+   {
+    "slot": "creative.web_view_properties.url",
+    "base_url": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_content=ad1&utm_source=snapchat&utm_medium=paid-social&utm_term=adset-id-9a4d62_life-in-diriyah_ar_all_mf_prospecting&utm_campaign=lifeindiriyah_jun2026",
+    "url_tags": null,
+    "now": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_content=ad1&utm_source=snapchat&utm_medium=paid-social&utm_term=adset-id-9a4d62_life-in-diriyah_ar_all_mf_prospecting&utm_campaign=lifeindiriyah_jun2026",
+    "new": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_jul26_cond&utm_term=life-in-diriyah_ar&utm_content=ad1_video_ar"
+   }
+  ]
+ },
+ {
+  "account_id": "ebe8d66e-0e3e-4b71-9d37-5c53118d6481",
+  "account_name": "Diriyah Company",
+  "unit": "7eaca3a2-7089-488c-9b18-da4cff3fbde4",
+  "ad_ids": [
+   "0e4672be-bcf0-4e1d-a1e2-0fbf8f1170bf"
+  ],
+  "ad_names": [
+   "LifeInDiriyah_KV3_Dark_EN_NA_Prospecting_23.06.2026_04.07.2026"
+  ],
+  "campaign_id": "ce56c945-f199-4f03-af56-d3f6b0e6ddd1",
+  "adset_id": "78eeb5c7-a311-434c-a2f0-c30b9a5e400b",
+  "creative_id": "7eaca3a2-7089-488c-9b18-da4cff3fbde4",
+  "status": "VALID",
+  "edit_method": "PUT /v1/adaccounts/{ad_account_id}/creatives (full creative object; triggers re-review)",
+  "notes": [
+   "ad.type=REMOTE_WEBPAGE; ad.review_status=APPROVED; effective_status = Snapchat ad.delivery_status (no native effective_status); creative.type=WEB_VIEW; creative.review_status=APPROVED; creative.utm_autofix_permission=OPT_IN"
+  ],
+  "kind": "legacy",
+  "changes": [
+   {
+    "slot": "creative.web_view_properties.url",
+    "base_url": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_sep26&utm_term=3e71b680_residential_en&utm_content=1469e841_resi-patio-kv3_display_en",
+    "url_tags": null,
+    "now": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_sep26&utm_term=3e71b680_residential_en&utm_content=1469e841_resi-patio-kv3_display_en",
+    "new": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_sep26_cond&utm_term=3e71b680_residential_en&utm_content=1469e841_resi-patio-kv3_display_en"
+   }
+  ]
+ },
+ {
+  "account_id": "ebe8d66e-0e3e-4b71-9d37-5c53118d6481",
+  "account_name": "Diriyah Company",
+  "unit": "994c7acf-bbf8-4c50-91e1-88dc0d16d0fd",
+  "ad_ids": [
+   "56bea85a-101b-4914-9c16-a7b54242e98a"
+  ],
+  "ad_names": [
+   "LifeInDiriyah_KV1_Dark_EN_NA_Prospecting_23.06.2026_04.07.2026"
+  ],
+  "campaign_id": "ce56c945-f199-4f03-af56-d3f6b0e6ddd1",
+  "adset_id": "f8f0d99d-c002-44ee-a6a0-53fc3b10b1c4",
+  "creative_id": "994c7acf-bbf8-4c50-91e1-88dc0d16d0fd",
+  "status": "VALID",
+  "edit_method": "PUT /v1/adaccounts/{ad_account_id}/creatives (full creative object; triggers re-review)",
+  "notes": [
+   "ad.type=REMOTE_WEBPAGE; ad.review_status=APPROVED; effective_status = Snapchat ad.delivery_status (no native effective_status); creative.type=WEB_VIEW; creative.review_status=APPROVED; creative.utm_autofix_permission=OPT_IN"
+  ],
+  "kind": "legacy",
+  "changes": [
+   {
+    "slot": "creative.web_view_properties.url",
+    "base_url": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_sep26&utm_term=3e71b680_residential_en&utm_content=fa60e06a_resi-patio-kv1_display_en",
+    "url_tags": null,
+    "now": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_sep26&utm_term=3e71b680_residential_en&utm_content=fa60e06a_resi-patio-kv1_display_en",
+    "new": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_sep26_cond&utm_term=3e71b680_residential_en&utm_content=fa60e06a_resi-patio-kv1_display_en"
+   }
+  ]
+ },
+ {
+  "account_id": "ebe8d66e-0e3e-4b71-9d37-5c53118d6481",
+  "account_name": "Diriyah Company",
+  "unit": "99f1f05c-4258-4214-84c8-b9e98ba186b2",
+  "ad_ids": [
+   "2d97a13e-776b-474a-a3c2-2571b4cd1bce"
+  ],
+  "ad_names": [
+   "company_general_2026_sep_resi-video-1_adset-id-3c3fc87a_video_ar"
+  ],
+  "campaign_id": "ce56c945-f199-4f03-af56-d3f6b0e6ddd1",
+  "adset_id": "1be0628e-0c2a-4df0-87f7-6cd1f2b44ef8",
+  "creative_id": "99f1f05c-4258-4214-84c8-b9e98ba186b2",
+  "status": "VALID",
+  "edit_method": "PUT /v1/adaccounts/{ad_account_id}/creatives (full creative object; triggers re-review)",
+  "notes": [
+   "ad.type=REMOTE_WEBPAGE; ad.review_status=APPROVED; effective_status = Snapchat ad.delivery_status (no native effective_status); creative.type=WEB_VIEW; creative.review_status=APPROVED; creative.utm_autofix_permission=OPT_IN"
+  ],
+  "kind": "legacy",
+  "changes": [
+   {
+    "slot": "creative.web_view_properties.url",
+    "base_url": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_content=3c3fc87a_resi-video-1_video_ar&utm_source=snapchat&utm_medium=paid-social&utm_term=3e71b680_residential_ar&utm_campaign=2c0ef446_diriyah-living_sep26",
+    "url_tags": null,
+    "now": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_content=3c3fc87a_resi-video-1_video_ar&utm_source=snapchat&utm_medium=paid-social&utm_term=3e71b680_residential_ar&utm_campaign=2c0ef446_diriyah-living_sep26",
+    "new": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_aug26_cond&utm_term=3e71b680_residential_ar&utm_content=3c3fc87a_resi-video-1_video_ar"
+   }
+  ]
+ },
+ {
+  "account_id": "ebe8d66e-0e3e-4b71-9d37-5c53118d6481",
+  "account_name": "Diriyah Company",
+  "unit": "b4f08b76-6fc9-4374-9398-8b8f30aa86e1",
+  "ad_ids": [
+   "338b4b16-1693-462e-bc52-460e5de7c824",
+   "703ea9a0-65cb-4929-a274-b71b3c9bea57"
+  ],
+  "ad_names": [
+   "LifeInDiriyah_CR1_Boosted_AR_NA_Prospecting_23.06.2026_22.07.2026_V2"
+  ],
+  "campaign_id": "ce56c945-f199-4f03-af56-d3f6b0e6ddd1",
+  "adset_id": "03a34ce5-12ba-4e19-b56c-338a4b4050d9",
+  "creative_id": "b4f08b76-6fc9-4374-9398-8b8f30aa86e1",
+  "status": "INVALID_EFFECTIVE_INVALID|INVALID_NOT_EFFECTIVE_ACTIVE",
+  "edit_method": "PUT /v1/adaccounts/{ad_account_id}/creatives on the sub-creative (web_view_properties.url) and/or rebuild composite; triggers re-review",
+  "notes": [
+   "ad.type=STORY; ad.review_status=APPROVED; effective_status = Snapchat ad.delivery_status (no native effective_status); creative.type=COMPOSITE; creative.review_status=APPROVED; composite/story ad: each sub-creative carries its own web_view URL; sub_creative_id=78780ee1-8ea0-480e-b8ff-a91d512ddbe3; sub_creative_name=LifeInDiriyah_CR1_Video_Boosted_AR_NA_Prospecting_23.06.2026_22.07.2026_V2; sub_creative.type=WEB_VIEW; sub_creative.review_status=APPROVED",
+   "ad.type=STORY; ad.review_status=APPROVED; effective_status = Snapchat ad.delivery_status (no native effective_status); creative.type=COMPOSITE; creative.review_status=APPROVED; composite/story ad: each sub-creative carries its own web_view URL; sub_creative_id=8865720c-8680-4811-b4cc-904c0a5b105b; sub_creative_name=LifeInDiriyah_CR1_Video_Boosted_AR_NA_Prospecting_23.06.2026_22.07.2026_V2; sub_creative.type=WEB_VIEW; sub_creative.review_status=APPROVED",
+   "ad.type=STORY; ad.review_status=APPROVED; effective_status = Snapchat ad.delivery_status (no native effective_status); creative.type=COMPOSITE; creative.review_status=APPROVED; composite/story ad: each sub-creative carries its own web_view URL; sub_creative_id=9d92dbbd-1e43-4cd2-93d3-3eb3315b6c49; sub_creative_name=LifeInDiriyah_CR1_Video_Boosted_AR_NA_Prospecting_23.06.2026_22.07.2026_V2; sub_creative.type=WEB_VIEW; sub_creative.review_status=APPROVED",
+   "ad.type=STORY; ad.review_status=APPROVED; effective_status = Snapchat ad.delivery_status (no native effective_status); creative.type=COMPOSITE; creative.review_status=APPROVED; composite/story ad: each sub-creative carries its own web_view URL; sub_creative_id=b34956f1-cc03-409a-b977-344d3b576c39; sub_creative_name=LifeInDiriyah_CR1_Video_Boosted_AR_NA_Prospecting_23.06.2026_22.07.2026_V2; sub_creative.type=WEB_VIEW; sub_creative.review_status=APPROVED"
+  ],
+  "kind": "legacy",
+  "changes": [
+   {
+    "slot": "creative.composite_properties.creative_ids[0] (f7e6faad-9b83-40c5-8f17-a73dca9499dd).web_view_properties.url",
+    "base_url": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_content=cr1&utm_source=snapchat&utm_medium=paid-social&utm_term=adset-id-9a4d62_life-in-diriyah_ar_all_mf_prospecting&utm_campaign=lifeindiriyah_jun2026",
+    "url_tags": null,
+    "now": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_content=cr1&utm_source=snapchat&utm_medium=paid-social&utm_term=adset-id-9a4d62_life-in-diriyah_ar_all_mf_prospecting&utm_campaign=lifeindiriyah_jun2026",
+    "new": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_jul26_cond&utm_term=life-in-diriyah_ar&utm_content=cr1_display_ar"
+   },
+   {
+    "slot": "creative.composite_properties.creative_ids[1] (cd70bc66-3199-4a7f-9b86-58e8cb9891da).web_view_properties.url",
+    "base_url": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_content=cr1&utm_source=snapchat&utm_medium=paid-social&utm_term=adset-id-9a4d62_life-in-diriyah_ar_all_mf_prospecting&utm_campaign=lifeindiriyah_jun2026",
+    "url_tags": null,
+    "now": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_content=cr1&utm_source=snapchat&utm_medium=paid-social&utm_term=adset-id-9a4d62_life-in-diriyah_ar_all_mf_prospecting&utm_campaign=lifeindiriyah_jun2026",
+    "new": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_jul26_cond&utm_term=life-in-diriyah_ar&utm_content=cr1_display_ar"
+   },
+   {
+    "slot": "creative.composite_properties.creative_ids[2] (78780ee1-8ea0-480e-b8ff-a91d512ddbe3).web_view_properties.url",
+    "base_url": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_content=cr1&utm_source=snapchat&utm_medium=paid-social&utm_term=adset-id-9a4d62_life-in-diriyah_ar_all_mf_prospecting&utm_campaign=lifeindiriyah_jun2026",
+    "url_tags": null,
+    "now": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_content=cr1&utm_source=snapchat&utm_medium=paid-social&utm_term=adset-id-9a4d62_life-in-diriyah_ar_all_mf_prospecting&utm_campaign=lifeindiriyah_jun2026",
+    "new": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_jul26_cond&utm_term=life-in-diriyah_ar&utm_content=cr1_display_ar"
+   },
+   {
+    "slot": "creative.composite_properties.creative_ids[3] (8865720c-8680-4811-b4cc-904c0a5b105b).web_view_properties.url",
+    "base_url": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_content=cr1&utm_source=snapchat&utm_medium=paid-social&utm_term=adset-id-9a4d62_life-in-diriyah_ar_all_mf_prospecting&utm_campaign=lifeindiriyah_jun2026",
+    "url_tags": null,
+    "now": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_content=cr1&utm_source=snapchat&utm_medium=paid-social&utm_term=adset-id-9a4d62_life-in-diriyah_ar_all_mf_prospecting&utm_campaign=lifeindiriyah_jun2026",
+    "new": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_jul26_cond&utm_term=life-in-diriyah_ar&utm_content=cr1_display_ar"
+   },
+   {
+    "slot": "creative.composite_properties.creative_ids[4] (b34956f1-cc03-409a-b977-344d3b576c39).web_view_properties.url",
+    "base_url": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_content=cr1&utm_source=snapchat&utm_medium=paid-social&utm_term=adset-id-9a4d62_life-in-diriyah_ar_all_mf_prospecting&utm_campaign=lifeindiriyah_jun2026",
+    "url_tags": null,
+    "now": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_content=cr1&utm_source=snapchat&utm_medium=paid-social&utm_term=adset-id-9a4d62_life-in-diriyah_ar_all_mf_prospecting&utm_campaign=lifeindiriyah_jun2026",
+    "new": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_jul26_cond&utm_term=life-in-diriyah_ar&utm_content=cr1_display_ar"
+   },
+   {
+    "slot": "creative.composite_properties.creative_ids[5] (9d92dbbd-1e43-4cd2-93d3-3eb3315b6c49).web_view_properties.url",
+    "base_url": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_content=cr1&utm_source=snapchat&utm_medium=paid-social&utm_term=adset-id-9a4d62_life-in-diriyah_ar_all_mf_prospecting&utm_campaign=lifeindiriyah_jun2026",
+    "url_tags": null,
+    "now": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_content=cr1&utm_source=snapchat&utm_medium=paid-social&utm_term=adset-id-9a4d62_life-in-diriyah_ar_all_mf_prospecting&utm_campaign=lifeindiriyah_jun2026",
+    "new": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_jul26_cond&utm_term=life-in-diriyah_ar&utm_content=cr1_display_ar"
+   }
+  ]
+ },
+ {
+  "account_id": "ebe8d66e-0e3e-4b71-9d37-5c53118d6481",
+  "account_name": "Diriyah Company",
+  "unit": "d59e0ba4-4399-46ca-8aa8-89e9c4e71416",
+  "ad_ids": [
+   "a36ad6d7-8aff-4dc1-8b9c-388198894da3"
+  ],
+  "ad_names": [
+   "LifeInDiriyah_KV1_Dark_EN_NA_Prospecting_23.06.2026_04.07.2026"
+  ],
+  "campaign_id": "ce56c945-f199-4f03-af56-d3f6b0e6ddd1",
+  "adset_id": "78eeb5c7-a311-434c-a2f0-c30b9a5e400b",
+  "creative_id": "d59e0ba4-4399-46ca-8aa8-89e9c4e71416",
+  "status": "VALID",
+  "edit_method": "PUT /v1/adaccounts/{ad_account_id}/creatives (full creative object; triggers re-review)",
+  "notes": [
+   "ad.type=REMOTE_WEBPAGE; ad.review_status=APPROVED; effective_status = Snapchat ad.delivery_status (no native effective_status); creative.type=WEB_VIEW; creative.review_status=APPROVED; creative.utm_autofix_permission=OPT_IN"
+  ],
+  "kind": "legacy",
+  "changes": [
+   {
+    "slot": "creative.web_view_properties.url",
+    "base_url": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_sep26&utm_term=3e71b680_residential_en&utm_content=fa60e06a_resi-patio-kv1_display_en",
+    "url_tags": null,
+    "now": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_sep26&utm_term=3e71b680_residential_en&utm_content=fa60e06a_resi-patio-kv1_display_en",
+    "new": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_sep26_cond&utm_term=3e71b680_residential_en&utm_content=fa60e06a_resi-patio-kv1_display_en"
+   }
+  ]
+ }
+]

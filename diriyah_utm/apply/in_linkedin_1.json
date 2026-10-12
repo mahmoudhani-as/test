@@ -1,0 +1,170 @@
+[
+ {
+  "account_id": "513006454",
+  "account_name": "Diriyah Company Paid Campaigns",
+  "unit": "urn:li:sponsoredCreative:1559159293",
+  "ad_ids": [
+   "1559159293"
+  ],
+  "ad_names": [
+   "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-msg1_adset-id-b3b49282_display_ar"
+  ],
+  "campaign_id": "1226722013",
+  "adset_id": "895150883",
+  "creative_id": "urn:li:sponsoredCreative:1559159293",
+  "status": "SERVING; review=APPROVED",
+  "edit_method": "POST /rest/inMailContents/urn:li:adInMailContent:385672533 (X-RestLi-Method PARTIAL_UPDATE, $set subContent.regular.callToActionLandingPageUrl) or create new inMailContent + new creative; edits re-enter review",
+  "changes": [
+   {
+    "slot": "inMailContent(urn:li:adInMailContent:385672533).subContent.regular.callToActionLandingPageUrl",
+    "base_url": "https://www.wadisafar.com/ar/residences/chedi?utm_source=linkedin&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_ar&utm_content=b3b49282_thechedi-msg1_display_ar#book-appointment",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/ar/residences/chedi?utm_source=linkedin&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_ar&utm_content=b3b49282_thechedi-msg1_display_ar#book-appointment",
+    "new": "https://www.wadisafar.com/ar/residences/chedi?utm_source=linkedin&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_conv&utm_term=ee4e5f3f_thechedi_ar&utm_content=b3b49282_thechedi-msg1_display_ar#book-appointment"
+   }
+  ],
+  "notes": [
+   "Sponsored Message (Message Ad) creative; content.reference=urn:li:adInMailContent:385672533; CTA text '\u0627\u0643\u062a\u0634\u0641 \u0627\u0644\u0645\u0632\u064a\u062f'; htmlBody has no <a href> links. campaign type=SPONSORED_INMAILS format=SPONSORED_INMAIL objective=WEBSITE_CONVERSION."
+  ]
+ },
+ {
+  "account_id": "513006454",
+  "account_name": "Diriyah Company Paid Campaigns",
+  "unit": "urn:li:sponsoredCreative:1566218213",
+  "ad_ids": [
+   "1566218213"
+  ],
+  "ad_names": [
+   "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-msg2_adset-id-bf5d6e64_display_ar"
+  ],
+  "campaign_id": "1226722013",
+  "adset_id": "895150883",
+  "creative_id": "urn:li:sponsoredCreative:1566218213",
+  "status": "SERVING; review=APPROVED",
+  "edit_method": "POST /rest/inMailContents/urn:li:adInMailContent:385883403 (X-RestLi-Method PARTIAL_UPDATE, $set subContent.regular.callToActionLandingPageUrl) or create new inMailContent + new creative; edits re-enter review",
+  "changes": [
+   {
+    "slot": "inMailContent(urn:li:adInMailContent:385883403).subContent.regular.callToActionLandingPageUrl",
+    "base_url": "https://www.wadisafar.com/ar/residences/chedi?utm_source=linkedin&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_ar&utm_content=bf5d6e64_thechedi-msg2_display_ar#book-appointment",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/ar/residences/chedi?utm_source=linkedin&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_ar&utm_content=bf5d6e64_thechedi-msg2_display_ar#book-appointment",
+    "new": "https://www.wadisafar.com/ar/residences/chedi?utm_source=linkedin&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_conv&utm_term=ee4e5f3f_thechedi_ar&utm_content=bf5d6e64_thechedi-msg2_display_ar#book-appointment"
+   }
+  ],
+  "notes": [
+   "Sponsored Message (Message Ad) creative; content.reference=urn:li:adInMailContent:385883403; CTA text '\u0627\u0643\u062a\u0634\u0641 \u0627\u0644\u0645\u0632\u064a\u062f'; htmlBody has no <a href> links. campaign type=SPONSORED_INMAILS format=SPONSORED_INMAIL objective=WEBSITE_CONVERSION."
+  ]
+ },
+ {
+  "account_id": "513006454",
+  "account_name": "Diriyah Company Paid Campaigns",
+  "unit": "urn:li:sponsoredCreative:1566258023",
+  "ad_ids": [
+   "1566258023"
+  ],
+  "ad_names": [
+   "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-msg2_adset-id-bf5d6e64_display_en"
+  ],
+  "campaign_id": "1226722013",
+  "adset_id": "895111253",
+  "creative_id": "urn:li:sponsoredCreative:1566258023",
+  "status": "SERVING; review=APPROVED",
+  "edit_method": "POST /rest/inMailContents/urn:li:adInMailContent:385672523 (X-RestLi-Method PARTIAL_UPDATE, $set subContent.regular.callToActionLandingPageUrl) or create new inMailContent + new creative; edits re-enter review",
+  "changes": [
+   {
+    "slot": "inMailContent(urn:li:adInMailContent:385672523).subContent.regular.callToActionLandingPageUrl",
+    "base_url": "https://www.wadisafar.com/en/residences/chedi?utm_source=linkedin&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_en&utm_content=bf5d6e64_thechedi-msg2_display_en#book-appointment",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/en/residences/chedi?utm_source=linkedin&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_en&utm_content=bf5d6e64_thechedi-msg2_display_en#book-appointment",
+    "new": "https://www.wadisafar.com/en/residences/chedi?utm_source=linkedin&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_conv&utm_term=ee4e5f3f_thechedi_en&utm_content=bf5d6e64_thechedi-msg2_display_en#book-appointment"
+   }
+  ],
+  "notes": [
+   "Sponsored Message (Message Ad) creative; content.reference=urn:li:adInMailContent:385672523; CTA text 'Discover More'; htmlBody has no <a href> links. campaign type=SPONSORED_INMAILS format=SPONSORED_INMAIL objective=WEBSITE_CONVERSION."
+  ]
+ },
+ {
+  "account_id": "513006454",
+  "account_name": "Diriyah Company Paid Campaigns",
+  "unit": "urn:li:sponsoredCreative:1566287113",
+  "ad_ids": [
+   "1566287113"
+  ],
+  "ad_names": [
+   "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-msg3_adset-id-0ada1e51_display_ar"
+  ],
+  "campaign_id": "1226722013",
+  "adset_id": "895150883",
+  "creative_id": "urn:li:sponsoredCreative:1566287113",
+  "status": "SERVING; review=APPROVED",
+  "edit_method": "POST /rest/inMailContents/urn:li:adInMailContent:385872653 (X-RestLi-Method PARTIAL_UPDATE, $set subContent.regular.callToActionLandingPageUrl) or create new inMailContent + new creative; edits re-enter review",
+  "changes": [
+   {
+    "slot": "inMailContent(urn:li:adInMailContent:385872653).subContent.regular.callToActionLandingPageUrl",
+    "base_url": "https://www.wadisafar.com/ar/residences/chedi?utm_source=linkedin&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_ar&utm_content=0ada1e51_thechedi-msg3_display_ar#book-appointment",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/ar/residences/chedi?utm_source=linkedin&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_ar&utm_content=0ada1e51_thechedi-msg3_display_ar#book-appointment",
+    "new": "https://www.wadisafar.com/ar/residences/chedi?utm_source=linkedin&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_conv&utm_term=ee4e5f3f_thechedi_ar&utm_content=0ada1e51_thechedi-msg3_display_ar#book-appointment"
+   }
+  ],
+  "notes": [
+   "Sponsored Message (Message Ad) creative; content.reference=urn:li:adInMailContent:385872653; CTA text '\u0627\u0643\u062a\u0634\u0641 \u0627\u0644\u0645\u0632\u064a\u062f'; htmlBody has no <a href> links. campaign type=SPONSORED_INMAILS format=SPONSORED_INMAIL objective=WEBSITE_CONVERSION."
+  ]
+ },
+ {
+  "account_id": "513006454",
+  "account_name": "Diriyah Company Paid Campaigns",
+  "unit": "urn:li:sponsoredCreative:1566311743",
+  "ad_ids": [
+   "1566311743"
+  ],
+  "ad_names": [
+   "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-msg3_adset-id-0ada1e51_display_en"
+  ],
+  "campaign_id": "1226722013",
+  "adset_id": "895111253",
+  "creative_id": "urn:li:sponsoredCreative:1566311743",
+  "status": "SERVING; review=APPROVED",
+  "edit_method": "POST /rest/inMailContents/urn:li:adInMailContent:385853133 (X-RestLi-Method PARTIAL_UPDATE, $set subContent.regular.callToActionLandingPageUrl) or create new inMailContent + new creative; edits re-enter review",
+  "changes": [
+   {
+    "slot": "inMailContent(urn:li:adInMailContent:385853133).subContent.regular.callToActionLandingPageUrl",
+    "base_url": "https://www.wadisafar.com/en/residences/chedi?utm_source=linkedin&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_en&utm_content=0ada1e51_thechedi-msg3_display_en#book-appointment",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/en/residences/chedi?utm_source=linkedin&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_en&utm_content=0ada1e51_thechedi-msg3_display_en#book-appointment",
+    "new": "https://www.wadisafar.com/en/residences/chedi?utm_source=linkedin&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_conv&utm_term=ee4e5f3f_thechedi_en&utm_content=0ada1e51_thechedi-msg3_display_en#book-appointment"
+   }
+  ],
+  "notes": [
+   "Sponsored Message (Message Ad) creative; content.reference=urn:li:adInMailContent:385853133; CTA text 'Discover More'; htmlBody has no <a href> links. campaign type=SPONSORED_INMAILS format=SPONSORED_INMAIL objective=WEBSITE_CONVERSION."
+  ]
+ },
+ {
+  "account_id": "513006454",
+  "account_name": "Diriyah Company Paid Campaigns",
+  "unit": "urn:li:sponsoredCreative:1566320573",
+  "ad_ids": [
+   "1566320573"
+  ],
+  "ad_names": [
+   "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-msg1_adset-id-b3b49282_display_en"
+  ],
+  "campaign_id": "1226722013",
+  "adset_id": "895111253",
+  "creative_id": "urn:li:sponsoredCreative:1566320573",
+  "status": "SERVING; review=APPROVED",
+  "edit_method": "POST /rest/inMailContents/urn:li:adInMailContent:385803073 (X-RestLi-Method PARTIAL_UPDATE, $set subContent.regular.callToActionLandingPageUrl) or create new inMailContent + new creative; edits re-enter review",
+  "changes": [
+   {
+    "slot": "inMailContent(urn:li:adInMailContent:385803073).subContent.regular.callToActionLandingPageUrl",
+    "base_url": "https://www.wadisafar.com/en/residences/chedi?utm_source=linkedin&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_en&utm_content=b3b49282_thechedi-msg1_display_en#book-appointment",
+    "url_tags": null,
+    "now": "https://www.wadisafar.com/en/residences/chedi?utm_source=linkedin&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_en&utm_content=b3b49282_thechedi-msg1_display_en#book-appointment",
+    "new": "https://www.wadisafar.com/en/residences/chedi?utm_source=linkedin&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_conv&utm_term=ee4e5f3f_thechedi_en&utm_content=b3b49282_thechedi-msg1_display_en#book-appointment"
+   }
+  ],
+  "notes": [
+   "Sponsored Message (Message Ad) creative; content.reference=urn:li:adInMailContent:385803073; CTA text 'Discover More'; htmlBody has no <a href> links. campaign type=SPONSORED_INMAILS format=SPONSORED_INMAIL objective=WEBSITE_CONVERSION."
+  ]
+ }
+]

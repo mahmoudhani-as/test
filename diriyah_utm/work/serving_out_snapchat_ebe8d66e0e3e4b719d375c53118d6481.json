@@ -1,0 +1,836 @@
+{
+ "01f0c2bf-051e-4f70-8341-3474c834f29c": {
+  "first_date": "2026-09-30",
+  "first_day_impressions": 59,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-09-28 through 2026-10-12; first day with impressions>0 = 2026-09-30 (59), next day 2026-10-01 (431); no impressions on days from creation to first day. ad created_at 2026-09-28T17:27:25.464Z (local 2026-09-28 20:27). lifetime impressions 3225."
+ },
+ "05732ddb-6cec-4bcb-a829-837f2d6acb5b": {
+  "first_date": "2026-09-06",
+  "first_day_impressions": 94,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-09-05 through 2026-10-07; first day with impressions>0 = 2026-09-06 (94), next day 2026-09-07 (106); no impressions on days from creation to first day. ad created_at 2026-09-05T17:48:53.719Z (local 2026-09-05 20:48). lifetime impressions 3868."
+ },
+ "05e51648-9272-489e-961a-db70d99c010d": {
+  "first_date": "2026-07-08",
+  "first_day_impressions": 1758,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-07-08 through 2026-08-09; first day with impressions>0 = 2026-07-08 (1758), next day 2026-07-09 (1571); no impressions on days from creation to first day. ad created_at 2026-07-08T08:16:07.441Z (local 2026-07-08 11:16). lifetime impressions 1572733."
+ },
+ "06e25152-b4da-4f51-b983-9d61e32d1cc3": {
+  "first_date": "2026-06-07",
+  "first_day_impressions": 3277,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-06-04 through 2026-07-06; first day with impressions>0 = 2026-06-07 (3277), next day 2026-06-08 (6523); no impressions on days from creation to first day. ad created_at 2026-06-04T15:23:42.597Z (local 2026-06-04 18:23). lifetime impressions 22444."
+ },
+ "07e537ce-c6aa-4fc8-858b-e6e308eceea9": {
+  "first_date": null,
+  "first_day_impressions": null,
+  "status": "never_served",
+  "note": "Per-ad TOTAL impressions = 0 for 2026-07-01..2026-10-12 (ad creation day to today, Asia/Riyadh; data finalized to 2026-10-11T08:00Z); also absent (zero) in campaign breakdown=ad lifetime totals 2026-06-01..2026-10-12. ad created_at 2026-07-01T14:02:40.880Z (local 2026-07-01 17:02)."
+ },
+ "0925b5a7-c6db-4107-98f4-67e76807b099": {
+  "first_date": "2026-06-07",
+  "first_day_impressions": 3946,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-06-04 through 2026-07-06; first day with impressions>0 = 2026-06-07 (3946), next day 2026-06-08 (1707); no impressions on days from creation to first day. ad created_at 2026-06-04T15:23:19.980Z (local 2026-06-04 18:23). lifetime impressions 12594."
+ },
+ "0ab83756-c59b-4e1e-8e8b-c4d8e3a46a6b": {
+  "first_date": "2026-08-05",
+  "first_day_impressions": 9739,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-08-05 through 2026-09-06; first day with impressions>0 = 2026-08-05 (9739), next day 2026-08-06 (10659); no impressions on days from creation to first day. ad created_at 2026-08-05T04:18:08.258Z (local 2026-08-05 07:18). lifetime impressions 403932."
+ },
+ "0dcb5911-f7e3-4a43-b60e-b220594d495c": {
+  "first_date": "2026-07-08",
+  "first_day_impressions": 1249,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-07-08 through 2026-08-09; first day with impressions>0 = 2026-07-08 (1249), next day 2026-07-09 (5987); no impressions on days from creation to first day. ad created_at 2026-07-08T08:04:05.324Z (local 2026-07-08 11:04). lifetime impressions 97882."
+ },
+ "0e4672be-bcf0-4e1d-a1e2-0fbf8f1170bf": {
+  "first_date": "2026-09-12",
+  "first_day_impressions": 93,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-09-12 through 2026-10-12; first day with impressions>0 = 2026-09-12 (93), next day 2026-09-13 (281); no impressions on days from creation to first day. ad created_at 2026-09-12T13:19:51.064Z (local 2026-09-12 16:19). lifetime impressions 6411."
+ },
+ "1220378b-a816-4358-ac6a-2a199b90c141": {
+  "first_date": null,
+  "first_day_impressions": null,
+  "status": "never_served",
+  "note": "Per-ad TOTAL impressions = 0 for 2026-09-10..2026-10-12 (ad creation day to today, Asia/Riyadh; data finalized to 2026-10-11T08:00Z); also absent (zero) in campaign breakdown=ad lifetime totals 2026-06-01..2026-10-12. ad created_at 2026-09-10T13:32:15.946Z (local 2026-09-10 16:32)."
+ },
+ "129dc22f-0808-4274-a1a0-7c9522b52f5d": {
+  "first_date": null,
+  "first_day_impressions": null,
+  "status": "never_served",
+  "note": "Per-ad TOTAL impressions = 0 for 2026-07-08..2026-10-12 (ad creation day to today, Asia/Riyadh; data finalized to 2026-10-11T08:00Z); also absent (zero) in campaign breakdown=ad lifetime totals 2026-06-01..2026-10-12. ad created_at 2026-07-08T08:20:45.257Z (local 2026-07-08 11:20)."
+ },
+ "13bb37d2-352d-4fae-b570-cea602a4c2d0": {
+  "first_date": "2026-09-05",
+  "first_day_impressions": 1022,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-09-05 through 2026-10-07; first day with impressions>0 = 2026-09-05 (1022), next day 2026-09-06 (947); no impressions on days from creation to first day. ad created_at 2026-09-05T12:47:39.816Z (local 2026-09-05 15:47). lifetime impressions 78161."
+ },
+ "14498ec3-11df-4fd4-a65b-3cdb127bb301": {
+  "first_date": "2026-09-05",
+  "first_day_impressions": 928,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-09-05 through 2026-10-07; first day with impressions>0 = 2026-09-05 (928), next day 2026-09-06 (476); no impressions on days from creation to first day. ad created_at 2026-09-05T12:38:21.147Z (local 2026-09-05 15:38). lifetime impressions 141632."
+ },
+ "1adfd7d3-9137-416b-8237-fa8afc85d7d3": {
+  "first_date": "2026-06-12",
+  "first_day_impressions": 15,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-06-10 through 2026-07-12; first day with impressions>0 = 2026-06-12 (15), next day 2026-06-13 (1735); no impressions on days from creation to first day. ad created_at 2026-06-10T11:33:59.630Z (local 2026-06-10 14:33). lifetime impressions 1175315."
+ },
+ "1d06bfdc-6a6e-496b-9b76-0790eed365e8": {
+  "first_date": "2026-09-06",
+  "first_day_impressions": 690,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-09-05 through 2026-10-07; first day with impressions>0 = 2026-09-06 (690), next day 2026-09-07 (519); no impressions on days from creation to first day. ad created_at 2026-09-05T11:06:07.015Z (local 2026-09-05 14:06). lifetime impressions 111960."
+ },
+ "1e0aaba7-6f19-40c2-aa86-342978792d01": {
+  "first_date": "2026-09-12",
+  "first_day_impressions": 39,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-09-12 through 2026-10-12; first day with impressions>0 = 2026-09-12 (39), next day 2026-09-13 (139); no impressions on days from creation to first day. ad created_at 2026-09-12T13:14:46.383Z (local 2026-09-12 16:14). lifetime impressions 4834."
+ },
+ "1ee1acb3-40c5-47d9-bf9e-72c1bd5ce27a": {
+  "first_date": "2026-07-21",
+  "first_day_impressions": 29877,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-07-21 through 2026-08-22; first day with impressions>0 = 2026-07-21 (29877), next day 2026-07-22 (64362); no impressions on days from creation to first day. ad created_at 2026-07-21T08:22:29.688Z (local 2026-07-21 11:22). lifetime impressions 3062790."
+ },
+ "242d6f13-1bea-4957-b917-0fdbb73614ec": {
+  "first_date": "2026-06-13",
+  "first_day_impressions": 344,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-06-13 through 2026-07-15; first day with impressions>0 = 2026-06-13 (344), next day 2026-06-14 (22200); no impressions on days from creation to first day. ad created_at 2026-06-13T19:25:16.341Z (local 2026-06-13 22:25). lifetime impressions 843301."
+ },
+ "25bb6254-4157-4ede-b3f4-ba474ad7239c": {
+  "first_date": "2026-09-01",
+  "first_day_impressions": 5427,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-08-30 through 2026-10-01; first day with impressions>0 = 2026-09-01 (5427), next day 2026-09-02 (8921); no impressions on days from creation to first day. ad created_at 2026-08-30T12:57:27.238Z (local 2026-08-30 15:57). lifetime impressions 946772."
+ },
+ "2780bd07-aac8-439e-a0f9-94f89ac2426a": {
+  "first_date": "2026-08-05",
+  "first_day_impressions": 112789,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-08-05 through 2026-09-06; first day with impressions>0 = 2026-08-05 (112789), next day 2026-08-06 (111226); no impressions on days from creation to first day. ad created_at 2026-08-05T04:00:10.520Z (local 2026-08-05 07:00). lifetime impressions 5622975."
+ },
+ "2cac4164-ddfc-4aae-9987-01cb55b5d1d9": {
+  "first_date": null,
+  "first_day_impressions": null,
+  "status": "never_served",
+  "note": "Per-ad TOTAL impressions = 0 for 2026-07-08..2026-10-12 (ad creation day to today, Asia/Riyadh; data finalized to 2026-10-11T08:00Z); also absent (zero) in campaign breakdown=ad lifetime totals 2026-06-01..2026-10-12. ad created_at 2026-07-08T08:20:44.982Z (local 2026-07-08 11:20)."
+ },
+ "2d97a13e-776b-474a-a3c2-2571b4cd1bce": {
+  "first_date": "2026-08-05",
+  "first_day_impressions": 11854,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-08-05 through 2026-09-06; first day with impressions>0 = 2026-08-05 (11854), next day 2026-08-06 (12500); no impressions on days from creation to first day. ad created_at 2026-08-05T04:14:50.773Z (local 2026-08-05 07:14). lifetime impressions 447589."
+ },
+ "2e2791f2-a38c-4e61-8f9f-600acf4806ea": {
+  "first_date": "2026-09-16",
+  "first_day_impressions": 8742,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-09-10 through 2026-10-12; first day with impressions>0 = 2026-09-16 (8742), next day 2026-09-17 (12150); no impressions on days from creation to first day. ad created_at 2026-09-10T13:32:16.114Z (local 2026-09-10 16:32). lifetime impressions 544771."
+ },
+ "30f3d133-78c5-40db-a513-b71f6d3f27e1": {
+  "first_date": "2026-06-18",
+  "first_day_impressions": 1795,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-06-17 through 2026-07-19; first day with impressions>0 = 2026-06-18 (1795), next day 2026-06-19 (8033); no impressions on days from creation to first day. ad created_at 2026-06-17T10:38:06.448Z (local 2026-06-17 13:38). lifetime impressions 440011."
+ },
+ "32b995aa-43b1-468d-9f31-123cde97062e": {
+  "first_date": "2026-09-03",
+  "first_day_impressions": 7054,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-08-30 through 2026-10-01; first day with impressions>0 = 2026-09-03 (7054), next day 2026-09-04 (14017); no impressions on days from creation to first day. ad created_at 2026-08-30T14:07:25.545Z (local 2026-08-30 17:07). lifetime impressions 374164."
+ },
+ "3319ef8b-345b-4a7f-b170-ae62860e0337": {
+  "first_date": "2026-07-15",
+  "first_day_impressions": 49989,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-07-15 through 2026-08-16; first day with impressions>0 = 2026-07-15 (49989), next day 2026-07-16 (44241); no impressions on days from creation to first day. ad created_at 2026-07-15T13:07:59.742Z (local 2026-07-15 16:07). lifetime impressions 722615."
+ },
+ "338b4b16-1693-462e-bc52-460e5de7c824": {
+  "first_date": "2026-07-20",
+  "first_day_impressions": 4724,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-07-20 through 2026-08-21; first day with impressions>0 = 2026-07-20 (4724), next day 2026-07-21 (3491); no impressions on days from creation to first day. ad created_at 2026-07-20T11:52:43.153Z (local 2026-07-20 14:52). lifetime impressions 180112."
+ },
+ "3394cb0b-2473-4289-bde7-ed55d3303f48": {
+  "first_date": "2026-06-15",
+  "first_day_impressions": 35844,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-06-04 through 2026-07-06; first day with impressions>0 = 2026-06-15 (35844), next day 2026-06-16 (45520); no impressions on days from creation to first day. ad created_at 2026-06-04T15:23:34.908Z (local 2026-06-04 18:23). lifetime impressions 813816."
+ },
+ "35bc214c-4700-4d58-b61f-016dc096c6d9": {
+  "first_date": "2026-07-16",
+  "first_day_impressions": 4737,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-07-12 through 2026-08-13; first day with impressions>0 = 2026-07-16 (4737), next day 2026-07-17 (39410); no impressions on days from creation to first day. ad created_at 2026-07-12T11:36:24.641Z (local 2026-07-12 14:36). lifetime impressions 627599."
+ },
+ "36c97c7d-2903-4d80-a89b-e18d155b1283": {
+  "first_date": "2026-09-05",
+  "first_day_impressions": 1324,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-09-05 through 2026-10-07; first day with impressions>0 = 2026-09-05 (1324), next day 2026-09-06 (154); no impressions on days from creation to first day. ad created_at 2026-09-05T12:47:39.942Z (local 2026-09-05 15:47). lifetime impressions 381037."
+ },
+ "39697456-23bb-4fb3-af6b-d9884d9d1485": {
+  "first_date": null,
+  "first_day_impressions": null,
+  "status": "never_served",
+  "note": "Per-ad TOTAL impressions = 0 for 2026-09-10..2026-10-12 (ad creation day to today, Asia/Riyadh; data finalized to 2026-10-11T08:00Z); also absent (zero) in campaign breakdown=ad lifetime totals 2026-06-01..2026-10-12. ad created_at 2026-09-10T14:18:47.188Z (local 2026-09-10 17:18)."
+ },
+ "3d390a83-b8ea-4137-93c7-8968efb0cf23": {
+  "first_date": "2026-07-16",
+  "first_day_impressions": 11119,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-07-16 through 2026-08-17; first day with impressions>0 = 2026-07-16 (11119), next day 2026-07-17 (15129); no impressions on days from creation to first day. ad created_at 2026-07-16T07:55:58.753Z (local 2026-07-16 10:55). lifetime impressions 163054."
+ },
+ "3f91d8c4-5213-42cf-9142-0a21a31ccebe": {
+  "first_date": "2026-07-15",
+  "first_day_impressions": 17267,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-07-15 through 2026-08-16; first day with impressions>0 = 2026-07-15 (17267), next day 2026-07-16 (8834); no impressions on days from creation to first day. ad created_at 2026-07-15T13:07:59.800Z (local 2026-07-15 16:07). lifetime impressions 26101."
+ },
+ "3fca9630-7091-49a9-b5f2-72c0d4b0b168": {
+  "first_date": null,
+  "first_day_impressions": null,
+  "status": "never_served",
+  "note": "Per-ad TOTAL impressions = 0 for 2026-07-08..2026-10-12 (ad creation day to today, Asia/Riyadh; data finalized to 2026-10-11T08:00Z); also absent (zero) in campaign breakdown=ad lifetime totals 2026-06-01..2026-10-12. ad created_at 2026-07-08T08:10:55.256Z (local 2026-07-08 11:10)."
+ },
+ "421f10de-72ac-44d4-aa6a-72370c933161": {
+  "first_date": null,
+  "first_day_impressions": null,
+  "status": "never_served",
+  "note": "Per-ad TOTAL impressions = 0 for 2026-08-16..2026-10-12 (ad creation day to today, Asia/Riyadh; data finalized to 2026-10-11T08:00Z); also absent (zero) in campaign breakdown=ad lifetime totals 2026-06-01..2026-10-12. ad created_at 2026-08-16T10:54:27.032Z (local 2026-08-16 13:54)."
+ },
+ "456bcc3d-718f-43d4-b6fa-92411295fb94": {
+  "first_date": "2026-09-05",
+  "first_day_impressions": 852,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-09-05 through 2026-10-07; first day with impressions>0 = 2026-09-05 (852), next day 2026-09-06 (766); no impressions on days from creation to first day. ad created_at 2026-09-05T12:38:21.290Z (local 2026-09-05 15:38). lifetime impressions 45762."
+ },
+ "46e6755f-cfec-497f-ac6c-148ee4a356cd": {
+  "first_date": "2026-06-07",
+  "first_day_impressions": 20021,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-06-03 through 2026-07-05; first day with impressions>0 = 2026-06-07 (20021), next day 2026-06-08 (30575); no impressions on days from creation to first day. ad created_at 2026-06-03T13:29:38.763Z (local 2026-06-03 16:29). lifetime impressions 215607."
+ },
+ "4a206ca8-4680-4977-92e6-7e0c620be31b": {
+  "first_date": null,
+  "first_day_impressions": null,
+  "status": "never_served",
+  "note": "Per-ad TOTAL impressions = 0 for 2026-07-08..2026-10-12 (ad creation day to today, Asia/Riyadh; data finalized to 2026-10-11T08:00Z); also absent (zero) in campaign breakdown=ad lifetime totals 2026-06-01..2026-10-12. ad created_at 2026-07-08T08:12:45.092Z (local 2026-07-08 11:12)."
+ },
+ "4bcc7650-1b51-4a44-82bc-f93b3ba749c2": {
+  "first_date": "2026-06-07",
+  "first_day_impressions": 11804,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-06-04 through 2026-07-06; first day with impressions>0 = 2026-06-07 (11804), next day 2026-06-08 (9740); no impressions on days from creation to first day. ad created_at 2026-06-04T15:23:50.034Z (local 2026-06-04 18:23). lifetime impressions 115987."
+ },
+ "4bfd23f3-8a03-4f9f-ac76-c8f333606520": {
+  "first_date": "2026-06-12",
+  "first_day_impressions": 18,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-06-10 through 2026-07-12; first day with impressions>0 = 2026-06-12 (18), next day 2026-06-13 (1525); no impressions on days from creation to first day. ad created_at 2026-06-10T11:37:42.145Z (local 2026-06-10 14:37). lifetime impressions 415184."
+ },
+ "4c1244d8-01cb-40f7-a98d-7498319bd184": {
+  "first_date": "2026-06-13",
+  "first_day_impressions": 1769,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-06-13 through 2026-07-15; first day with impressions>0 = 2026-06-13 (1769), next day 2026-06-14 (54327); no impressions on days from creation to first day. ad created_at 2026-06-13T19:36:13.843Z (local 2026-06-13 22:36). lifetime impressions 2998858."
+ },
+ "4cccb157-5fae-4284-9f08-206a24a73999": {
+  "first_date": null,
+  "first_day_impressions": null,
+  "status": "never_served",
+  "note": "Per-ad TOTAL impressions = 0 for 2026-06-03..2026-10-12 (ad creation day to today, Asia/Riyadh; data finalized to 2026-10-11T08:00Z); also absent (zero) in campaign breakdown=ad lifetime totals 2026-06-01..2026-10-12. ad created_at 2026-06-03T13:29:54.541Z (local 2026-06-03 16:29)."
+ },
+ "4cf6a266-c095-4e83-b544-85125f09a907": {
+  "first_date": "2026-09-16",
+  "first_day_impressions": 3428,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-09-10 through 2026-10-12; first day with impressions>0 = 2026-09-16 (3428), next day 2026-09-17 (3984); no impressions on days from creation to first day. ad created_at 2026-09-10T14:18:47.057Z (local 2026-09-10 17:18). lifetime impressions 36667."
+ },
+ "4d22ff87-d96f-4cf1-92f9-6d7513277d64": {
+  "first_date": "2026-09-03",
+  "first_day_impressions": 5254,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-08-30 through 2026-10-01; first day with impressions>0 = 2026-09-03 (5254), next day 2026-09-04 (5316); no impressions on days from creation to first day. ad created_at 2026-08-30T14:03:33.937Z (local 2026-08-30 17:03). lifetime impressions 588709."
+ },
+ "4d8bdc5a-dc52-4340-8440-c24bf93a4914": {
+  "first_date": "2026-07-27",
+  "first_day_impressions": 1528,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-07-27 through 2026-08-28; first day with impressions>0 = 2026-07-27 (1528), next day 2026-07-28 (9578); no impressions on days from creation to first day. ad created_at 2026-07-27T14:34:48.645Z (local 2026-07-27 17:34). lifetime impressions 1908883."
+ },
+ "4ed9c3ff-36b9-41cd-957f-9bb50c894e56": {
+  "first_date": "2026-06-17",
+  "first_day_impressions": 41,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-06-15 through 2026-07-17; first day with impressions>0 = 2026-06-17 (41), next day 2026-06-18 (47796); no impressions on days from creation to first day. ad created_at 2026-06-15T09:49:33.776Z (local 2026-06-15 12:49). lifetime impressions 6168563."
+ },
+ "52cf313a-a7b1-4dcf-9380-505fd2fc1ee6": {
+  "first_date": "2026-09-05",
+  "first_day_impressions": 291,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-09-05 through 2026-10-07; first day with impressions>0 = 2026-09-05 (291), next day 2026-09-06 (964); no impressions on days from creation to first day. ad created_at 2026-09-05T11:01:14.580Z (local 2026-09-05 14:01). lifetime impressions 64748."
+ },
+ "53397262-eafe-49ba-9a9a-a406b84d8f90": {
+  "first_date": "2026-06-07",
+  "first_day_impressions": 12100,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-06-03 through 2026-07-05; first day with impressions>0 = 2026-06-07 (12100), next day 2026-06-08 (29970); no impressions on days from creation to first day. ad created_at 2026-06-03T13:30:19.522Z (local 2026-06-03 16:30). lifetime impressions 176467."
+ },
+ "56bea85a-101b-4914-9c16-a7b54242e98a": {
+  "first_date": "2026-09-12",
+  "first_day_impressions": 179,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-09-12 through 2026-10-12; first day with impressions>0 = 2026-09-12 (179), next day 2026-09-13 (646); no impressions on days from creation to first day. ad created_at 2026-09-12T13:14:46.235Z (local 2026-09-12 16:14). lifetime impressions 10369."
+ },
+ "57616fea-2f01-4f11-9fa3-24abcc227fc0": {
+  "first_date": "2026-07-28",
+  "first_day_impressions": 13219,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-07-27 through 2026-08-28; first day with impressions>0 = 2026-07-28 (13219), next day 2026-07-29 (13519); no impressions on days from creation to first day. ad created_at 2026-07-27T14:40:17.998Z (local 2026-07-27 17:40). lifetime impressions 1821445."
+ },
+ "57c7f6d6-7e9f-4008-b430-864c23a6c7a6": {
+  "first_date": "2026-07-14",
+  "first_day_impressions": 33861,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-07-14 through 2026-08-15; first day with impressions>0 = 2026-07-14 (33861), next day 2026-07-15 (84142); no impressions on days from creation to first day. ad created_at 2026-07-14T14:36:35.830Z (local 2026-07-14 17:36). lifetime impressions 2720559."
+ },
+ "581025ac-5ba8-4f54-ab7f-ed2018c0efb0": {
+  "first_date": "2026-06-07",
+  "first_day_impressions": 62740,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-06-04 through 2026-07-06; first day with impressions>0 = 2026-06-07 (62740), next day 2026-06-08 (32709); no impressions on days from creation to first day. ad created_at 2026-06-04T15:22:43.649Z (local 2026-06-04 18:22). lifetime impressions 287664."
+ },
+ "5d046e91-6a73-458b-9b2b-fbe3ac5daf90": {
+  "first_date": "2026-07-16",
+  "first_day_impressions": 28219,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-07-01 through 2026-08-02; first day with impressions>0 = 2026-07-16 (28219), next day 2026-07-17 (63420); no impressions on days from creation to first day. ad created_at 2026-07-01T14:02:41.082Z (local 2026-07-01 17:02). lifetime impressions 2461293."
+ },
+ "60293a71-ef51-4ffb-ae93-f7586f29fabd": {
+  "first_date": "2026-07-08",
+  "first_day_impressions": 113985,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-07-08 through 2026-08-09; first day with impressions>0 = 2026-07-08 (113985), next day 2026-07-09 (116585); no impressions on days from creation to first day. ad created_at 2026-07-08T08:20:45.124Z (local 2026-07-08 11:20). lifetime impressions 4721445."
+ },
+ "62a5c9c3-9557-4c46-99fb-b4f44417cc97": {
+  "first_date": "2026-09-06",
+  "first_day_impressions": 1433,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-09-05 through 2026-10-07; first day with impressions>0 = 2026-09-06 (1433), next day 2026-09-07 (1342); no impressions on days from creation to first day. ad created_at 2026-09-05T10:59:15.783Z (local 2026-09-05 13:59). lifetime impressions 203123."
+ },
+ "65a5386c-3001-4e27-b554-2cc895f14427": {
+  "first_date": "2026-07-08",
+  "first_day_impressions": 21737,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-07-08 through 2026-08-09; first day with impressions>0 = 2026-07-08 (21737), next day 2026-07-09 (19158); no impressions on days from creation to first day. ad created_at 2026-07-08T08:16:07.606Z (local 2026-07-08 11:16). lifetime impressions 1774760."
+ },
+ "65eab979-4461-4101-8a67-37097d973773": {
+  "first_date": "2026-09-05",
+  "first_day_impressions": 17,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-09-05 through 2026-10-07; first day with impressions>0 = 2026-09-05 (17), next day 2026-09-06 (125); no impressions on days from creation to first day. ad created_at 2026-09-05T18:05:41.093Z (local 2026-09-05 21:05). lifetime impressions 10207."
+ },
+ "68395f29-9be5-4cdf-897c-87f261ac82d8": {
+  "first_date": "2026-09-05",
+  "first_day_impressions": 1,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-09-05 through 2026-10-07; first day with impressions>0 = 2026-09-05 (1), next day 2026-09-06 (66); no impressions on days from creation to first day. ad created_at 2026-09-05T17:47:05.032Z (local 2026-09-05 20:47). lifetime impressions 3491."
+ },
+ "69109512-7b57-4f8f-a241-5ae68013c4a9": {
+  "first_date": "2026-06-25",
+  "first_day_impressions": 207512,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-06-25 through 2026-07-27; first day with impressions>0 = 2026-06-25 (207512), next day 2026-06-26 (216821); no impressions on days from creation to first day. ad created_at 2026-06-25T12:37:11.716Z (local 2026-06-25 15:37). lifetime impressions 7748294."
+ },
+ "6962b7b9-fa92-4a26-8612-757aadf64c18": {
+  "first_date": "2026-09-03",
+  "first_day_impressions": 3270,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-08-30 through 2026-10-01; first day with impressions>0 = 2026-09-03 (3270), next day 2026-09-04 (9881); no impressions on days from creation to first day. ad created_at 2026-08-30T13:02:46.937Z (local 2026-08-30 16:02). lifetime impressions 450399."
+ },
+ "703ea9a0-65cb-4929-a274-b71b3c9bea57": {
+  "first_date": "2026-07-16",
+  "first_day_impressions": 4880,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-07-16 through 2026-08-17; first day with impressions>0 = 2026-07-16 (4880), next day 2026-07-17 (12303); no impressions on days from creation to first day. ad created_at 2026-07-16T07:52:01.698Z (local 2026-07-16 10:52). lifetime impressions 184493."
+ },
+ "73cb6b3a-fb44-451a-9a3b-bceed85b55ae": {
+  "first_date": "2026-07-08",
+  "first_day_impressions": 1139,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-07-08 through 2026-08-09; first day with impressions>0 = 2026-07-08 (1139), next day 2026-07-09 (4260); no impressions on days from creation to first day. ad created_at 2026-07-08T08:06:06.299Z (local 2026-07-08 11:06). lifetime impressions 90924."
+ },
+ "76875470-d024-421b-b736-088d544ad479": {
+  "first_date": "2026-07-16",
+  "first_day_impressions": 43761,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-07-07 through 2026-08-08; first day with impressions>0 = 2026-07-16 (43761), next day 2026-07-17 (96828); no impressions on days from creation to first day. ad created_at 2026-07-07T10:30:01.077Z (local 2026-07-07 13:30). lifetime impressions 3184277."
+ },
+ "78322037-9495-47b8-a22b-ada7f3db8eef": {
+  "first_date": "2026-09-30",
+  "first_day_impressions": 10633,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-09-28 through 2026-10-12; first day with impressions>0 = 2026-09-30 (10633), next day 2026-10-01 (52999); no impressions on days from creation to first day. ad created_at 2026-09-28T17:26:58.354Z (local 2026-09-28 20:26). lifetime impressions 402481."
+ },
+ "78953adb-7b35-4678-9e26-315bd7de8aa3": {
+  "first_date": "2026-06-07",
+  "first_day_impressions": 46434,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-06-03 through 2026-07-05; first day with impressions>0 = 2026-06-07 (46434), next day 2026-06-08 (45660); no impressions on days from creation to first day. ad created_at 2026-06-03T13:30:10.231Z (local 2026-06-03 16:30). lifetime impressions 449001."
+ },
+ "7a0ecc28-c7ef-43fa-aef3-35d3b2b61461": {
+  "first_date": "2026-07-14",
+  "first_day_impressions": 40859,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-07-14 through 2026-08-15; first day with impressions>0 = 2026-07-14 (40859), next day 2026-07-15 (131508); no impressions on days from creation to first day. ad created_at 2026-07-14T14:43:15.463Z (local 2026-07-14 17:43). lifetime impressions 3058211."
+ },
+ "7bced69a-8f7f-417e-a057-72ade92da495": {
+  "first_date": "2026-07-01",
+  "first_day_impressions": 13529,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-07-01 through 2026-08-02; first day with impressions>0 = 2026-07-01 (13529), next day 2026-07-02 (55455); no impressions on days from creation to first day. ad created_at 2026-07-01T15:12:52.685Z (local 2026-07-01 18:12). lifetime impressions 336590."
+ },
+ "7d1ef754-03f7-48a4-9bba-f5eb81a4a8f1": {
+  "first_date": "2026-08-05",
+  "first_day_impressions": 7641,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-08-05 through 2026-09-06; first day with impressions>0 = 2026-08-05 (7641), next day 2026-08-06 (7410); no impressions on days from creation to first day. ad created_at 2026-08-05T04:10:23.688Z (local 2026-08-05 07:10). lifetime impressions 290492."
+ },
+ "7dfe63aa-d623-49ef-bbec-d8582e451a5f": {
+  "first_date": "2026-06-07",
+  "first_day_impressions": 53418,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-06-03 through 2026-07-05; first day with impressions>0 = 2026-06-07 (53418), next day 2026-06-08 (66477); no impressions on days from creation to first day. ad created_at 2026-06-03T11:53:24.741Z (local 2026-06-03 14:53). lifetime impressions 389145."
+ },
+ "7f4e968e-fe8a-4182-8d81-ef8ae4936da3": {
+  "first_date": null,
+  "first_day_impressions": null,
+  "status": "never_served",
+  "note": "Per-ad TOTAL impressions = 0 for 2026-06-03..2026-10-12 (ad creation day to today, Asia/Riyadh; data finalized to 2026-10-11T08:00Z); also absent (zero) in campaign breakdown=ad lifetime totals 2026-06-01..2026-10-12. ad created_at 2026-06-03T13:29:20.366Z (local 2026-06-03 16:29)."
+ },
+ "7fbd1ede-31ff-4a03-b6f3-852f2aef85aa": {
+  "first_date": "2026-09-20",
+  "first_day_impressions": 9461,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-09-17 through 2026-10-12; first day with impressions>0 = 2026-09-20 (9461), next day 2026-09-21 (14165); no impressions on days from creation to first day. ad created_at 2026-09-17T14:49:27.882Z (local 2026-09-17 17:49). lifetime impressions 880433."
+ },
+ "82941c92-297b-4954-9d72-4c240f9d6ed0": {
+  "first_date": "2026-06-07",
+  "first_day_impressions": 12465,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-06-03 through 2026-07-05; first day with impressions>0 = 2026-06-07 (12465), next day 2026-06-08 (31050); no impressions on days from creation to first day. ad created_at 2026-06-03T11:53:19.419Z (local 2026-06-03 14:53). lifetime impressions 240525."
+ },
+ "837cc513-d530-4f22-8ccc-d09011fdcaa3": {
+  "first_date": null,
+  "first_day_impressions": null,
+  "status": "never_served",
+  "note": "Per-ad TOTAL impressions = 0 for 2026-08-16..2026-10-12 (ad creation day to today, Asia/Riyadh; data finalized to 2026-10-11T08:00Z); also absent (zero) in campaign breakdown=ad lifetime totals 2026-06-01..2026-10-12. ad created_at 2026-08-16T10:28:06.357Z (local 2026-08-16 13:28)."
+ },
+ "8a06effe-1df2-4c7b-be71-9278b0c01359": {
+  "first_date": "2026-09-20",
+  "first_day_impressions": 52,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-09-17 through 2026-10-12; first day with impressions>0 = 2026-09-20 (52), next day 2026-09-21 (101); no impressions on days from creation to first day. ad created_at 2026-09-17T14:49:08.542Z (local 2026-09-17 17:49). lifetime impressions 23620."
+ },
+ "8bb2ae5f-c696-44d7-b71a-e8d82d733c61": {
+  "first_date": "2026-06-15",
+  "first_day_impressions": 76393,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-06-04 through 2026-07-06; first day with impressions>0 = 2026-06-15 (76393), next day 2026-06-16 (82081); no impressions on days from creation to first day. ad created_at 2026-06-04T15:22:58.195Z (local 2026-06-04 18:22). lifetime impressions 973194."
+ },
+ "8bfef518-a550-4e70-8a8d-8225583baabb": {
+  "first_date": "2026-06-13",
+  "first_day_impressions": 708,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-06-13 through 2026-07-15; first day with impressions>0 = 2026-06-13 (708), next day 2026-06-14 (76771); no impressions on days from creation to first day. ad created_at 2026-06-13T19:33:48.510Z (local 2026-06-13 22:33). lifetime impressions 2366814."
+ },
+ "8c33703e-bd26-4699-b649-fdde14812227": {
+  "first_date": "2026-06-15",
+  "first_day_impressions": 36707,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-06-04 through 2026-07-06; first day with impressions>0 = 2026-06-15 (36707), next day 2026-06-16 (10107); no impressions on days from creation to first day. ad created_at 2026-06-04T15:23:57.896Z (local 2026-06-04 18:23). lifetime impressions 908133."
+ },
+ "8debb3b3-fb74-4002-a264-3ffdb4e87cea": {
+  "first_date": "2026-09-09",
+  "first_day_impressions": 4402,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-09-08 through 2026-10-10; first day with impressions>0 = 2026-09-09 (4402), next day 2026-09-10 (12037); no impressions on days from creation to first day. ad created_at 2026-09-08T10:46:15.916Z (local 2026-09-08 13:46). lifetime impressions 313891."
+ },
+ "907cd0bb-e590-4739-84b0-cd3a14d6eed8": {
+  "first_date": "2026-09-06",
+  "first_day_impressions": 316,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-09-05 through 2026-10-07; first day with impressions>0 = 2026-09-06 (316), next day 2026-09-07 (456); no impressions on days from creation to first day. ad created_at 2026-09-05T11:12:09.739Z (local 2026-09-05 14:12). lifetime impressions 65916."
+ },
+ "90a18a02-ec06-49e5-8f5a-5c45eafc2d17": {
+  "first_date": "2026-09-20",
+  "first_day_impressions": 29,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-09-17 through 2026-10-12; first day with impressions>0 = 2026-09-20 (29), next day 2026-09-21 (82); no impressions on days from creation to first day. ad created_at 2026-09-17T14:49:18.584Z (local 2026-09-17 17:49). lifetime impressions 31699."
+ },
+ "92fece6b-91fa-4f25-be49-f91f43f9cf18": {
+  "first_date": "2026-09-06",
+  "first_day_impressions": 507,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-09-05 through 2026-10-07; first day with impressions>0 = 2026-09-06 (507), next day 2026-09-07 (359); no impressions on days from creation to first day. ad created_at 2026-09-05T10:57:12.721Z (local 2026-09-05 13:57). lifetime impressions 45040."
+ },
+ "94c52fc3-223a-4f9f-bcb9-979cf584889f": {
+  "first_date": "2026-09-05",
+  "first_day_impressions": 1310,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-09-05 through 2026-10-07; first day with impressions>0 = 2026-09-05 (1310), next day 2026-09-06 (1336); no impressions on days from creation to first day. ad created_at 2026-09-05T12:47:40.081Z (local 2026-09-05 15:47). lifetime impressions 378229."
+ },
+ "96c25d12-d1b3-40c4-a115-541bfe9ed085": {
+  "first_date": "2026-06-17",
+  "first_day_impressions": 403,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-06-15 through 2026-07-17; first day with impressions>0 = 2026-06-17 (403), next day 2026-06-18 (41670); no impressions on days from creation to first day. ad created_at 2026-06-15T09:43:36.257Z (local 2026-06-15 12:43). lifetime impressions 5014952."
+ },
+ "971656bf-3ee8-4ef9-8014-f3d970d3980c": {
+  "first_date": "2026-07-29",
+  "first_day_impressions": 2433,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-07-29 through 2026-08-30; first day with impressions>0 = 2026-07-29 (2433), next day 2026-07-30 (14349); no impressions on days from creation to first day. ad created_at 2026-07-29T07:41:29.356Z (local 2026-07-29 10:41). lifetime impressions 1401854."
+ },
+ "984d888d-563e-4d92-8eea-75e467108597": {
+  "first_date": "2026-09-30",
+  "first_day_impressions": 12323,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-09-28 through 2026-10-12; first day with impressions>0 = 2026-09-30 (12323), next day 2026-10-01 (22547); no impressions on days from creation to first day. ad created_at 2026-09-28T17:26:58.354Z (local 2026-09-28 20:26). lifetime impressions 198087."
+ },
+ "993d7fbf-e634-473a-b7cc-a2116516b654": {
+  "first_date": "2026-09-30",
+  "first_day_impressions": 40,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-09-28 through 2026-10-12; first day with impressions>0 = 2026-09-30 (40), next day 2026-10-01 (316); no impressions on days from creation to first day. ad created_at 2026-09-28T17:27:25.463Z (local 2026-09-28 20:27). lifetime impressions 7592."
+ },
+ "9c8949c7-ff46-4469-a39b-f3ccc446ff7c": {
+  "first_date": "2026-09-06",
+  "first_day_impressions": 1512,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-09-05 through 2026-10-07; first day with impressions>0 = 2026-09-06 (1512), next day 2026-09-07 (1108); no impressions on days from creation to first day. ad created_at 2026-09-05T11:14:18.776Z (local 2026-09-05 14:14). lifetime impressions 183171."
+ },
+ "9db8cab9-cc0d-4d40-9511-959da64b702e": {
+  "first_date": "2026-07-20",
+  "first_day_impressions": 16990,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-07-20 through 2026-08-21; first day with impressions>0 = 2026-07-20 (16990), next day 2026-07-21 (18305); no impressions on days from creation to first day. ad created_at 2026-07-20T11:52:43.015Z (local 2026-07-20 14:52). lifetime impressions 256511."
+ },
+ "9e78d611-bf53-423f-8553-56b65f3c61fa": {
+  "first_date": "2026-06-15",
+  "first_day_impressions": 13740,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-06-04 through 2026-07-06; first day with impressions>0 = 2026-06-15 (13740), next day 2026-06-16 (7985); no impressions on days from creation to first day. ad created_at 2026-06-04T15:23:27.691Z (local 2026-06-04 18:23). lifetime impressions 1141662."
+ },
+ "9f1ffac5-f8c3-4fc7-b8fd-66125f5b9093": {
+  "first_date": "2026-09-12",
+  "first_day_impressions": 243,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-09-12 through 2026-10-12; first day with impressions>0 = 2026-09-12 (243), next day 2026-09-13 (281); no impressions on days from creation to first day. ad created_at 2026-09-12T13:19:50.690Z (local 2026-09-12 16:19). lifetime impressions 19577."
+ },
+ "a36ad6d7-8aff-4dc1-8b9c-388198894da3": {
+  "first_date": "2026-09-12",
+  "first_day_impressions": 154,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-09-12 through 2026-10-12; first day with impressions>0 = 2026-09-12 (154), next day 2026-09-13 (221); no impressions on days from creation to first day. ad created_at 2026-09-12T13:19:50.873Z (local 2026-09-12 16:19). lifetime impressions 22897."
+ },
+ "a4cc0d56-19f3-4a6d-9970-389a63af9369": {
+  "first_date": "2026-06-07",
+  "first_day_impressions": 2261,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-06-04 through 2026-07-06; first day with impressions>0 = 2026-06-07 (2261), next day 2026-06-08 (1567); no impressions on days from creation to first day. ad created_at 2026-06-04T15:23:12.772Z (local 2026-06-04 18:23). lifetime impressions 10737."
+ },
+ "a4f6091c-ae72-4e5b-863b-de9b5205d628": {
+  "first_date": "2026-06-15",
+  "first_day_impressions": 99812,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-06-04 through 2026-07-06; first day with impressions>0 = 2026-06-15 (99812), next day 2026-06-16 (110828); no impressions on days from creation to first day. ad created_at 2026-06-04T15:23:05.562Z (local 2026-06-04 18:23). lifetime impressions 2895676."
+ },
+ "a876c0f6-4194-4bc0-a141-eef017cd9b1d": {
+  "first_date": "2026-06-07",
+  "first_day_impressions": 3254,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-06-03 through 2026-07-05; first day with impressions>0 = 2026-06-07 (3254), next day 2026-06-08 (7751); no impressions on days from creation to first day. ad created_at 2026-06-03T13:29:12.932Z (local 2026-06-03 16:29). lifetime impressions 22200."
+ },
+ "acb94354-c8e6-43a2-b019-03840b74f09c": {
+  "first_date": "2026-09-30",
+  "first_day_impressions": 59,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-09-28 through 2026-10-12; first day with impressions>0 = 2026-09-30 (59), next day 2026-10-01 (230); no impressions on days from creation to first day. ad created_at 2026-09-28T17:27:18.703Z (local 2026-09-28 20:27). lifetime impressions 3070."
+ },
+ "afa96b95-35e5-4b90-ad0d-7166a4da5aba": {
+  "first_date": "2026-09-30",
+  "first_day_impressions": 39,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-09-28 through 2026-10-12; first day with impressions>0 = 2026-09-30 (39), next day 2026-10-01 (452); no impressions on days from creation to first day. ad created_at 2026-09-28T17:27:18.704Z (local 2026-09-28 20:27). lifetime impressions 3769."
+ },
+ "b1513a52-3f9d-4101-8014-7cabf6936fc1": {
+  "first_date": "2026-09-05",
+  "first_day_impressions": 916,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-09-05 through 2026-10-07; first day with impressions>0 = 2026-09-05 (916), next day 2026-09-06 (965); no impressions on days from creation to first day. ad created_at 2026-09-05T12:38:21.450Z (local 2026-09-05 15:38). lifetime impressions 66713."
+ },
+ "b31c5a4d-d820-4634-9b4e-5f67e23e3b62": {
+  "first_date": null,
+  "first_day_impressions": null,
+  "status": "never_served",
+  "note": "Per-ad TOTAL impressions = 0 for 2026-06-03..2026-10-12 (ad creation day to today, Asia/Riyadh; data finalized to 2026-10-11T08:00Z); also absent (zero) in campaign breakdown=ad lifetime totals 2026-06-01..2026-10-12. ad created_at 2026-06-03T13:30:38.998Z (local 2026-06-03 16:30)."
+ },
+ "b43f7607-74d2-4de8-942d-ca9b7ffccf59": {
+  "first_date": null,
+  "first_day_impressions": null,
+  "status": "never_served",
+  "note": "Per-ad TOTAL impressions = 0 for 2026-09-10..2026-10-12 (ad creation day to today, Asia/Riyadh; data finalized to 2026-10-11T08:00Z); also absent (zero) in campaign breakdown=ad lifetime totals 2026-06-01..2026-10-12. ad created_at 2026-09-10T13:15:20.108Z (local 2026-09-10 16:15)."
+ },
+ "b56aaf87-6f55-43ef-ba5a-9649ed6d6995": {
+  "first_date": "2026-09-16",
+  "first_day_impressions": 10224,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-09-10 through 2026-10-12; first day with impressions>0 = 2026-09-16 (10224), next day 2026-09-17 (11346); no impressions on days from creation to first day. ad created_at 2026-09-10T13:15:19.956Z (local 2026-09-10 16:15). lifetime impressions 65096."
+ },
+ "b7d905d8-de32-4c90-a44a-ceed2f4267bd": {
+  "first_date": "2026-06-13",
+  "first_day_impressions": 455,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-06-13 through 2026-07-15; first day with impressions>0 = 2026-06-13 (455), next day 2026-06-14 (56896); no impressions on days from creation to first day. ad created_at 2026-06-13T19:20:08.611Z (local 2026-06-13 22:20). lifetime impressions 2020029."
+ },
+ "ba4a051d-1154-4c50-9502-a6b705eb3f7c": {
+  "first_date": null,
+  "first_day_impressions": null,
+  "status": "never_served",
+  "note": "Per-ad TOTAL impressions = 0 for 2026-07-20..2026-10-12 (ad creation day to today, Asia/Riyadh; data finalized to 2026-10-11T08:00Z); also absent (zero) in campaign breakdown=ad lifetime totals 2026-06-01..2026-10-12. ad created_at 2026-07-20T11:52:43.264Z (local 2026-07-20 14:52)."
+ },
+ "bc0a1dd9-5a65-4272-9170-457a15e0d03a": {
+  "first_date": "2026-09-09",
+  "first_day_impressions": 10773,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-09-08 through 2026-10-10; first day with impressions>0 = 2026-09-09 (10773), next day 2026-09-10 (7174); no impressions on days from creation to first day. ad created_at 2026-09-08T10:46:15.776Z (local 2026-09-08 13:46). lifetime impressions 377608."
+ },
+ "bdcc8842-0c28-4bea-97c2-6d37470cf3e1": {
+  "first_date": "2026-07-21",
+  "first_day_impressions": 3515,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-07-21 through 2026-08-22; first day with impressions>0 = 2026-07-21 (3515), next day 2026-07-22 (14068); no impressions on days from creation to first day. ad created_at 2026-07-21T08:15:23.737Z (local 2026-07-21 11:15). lifetime impressions 235623."
+ },
+ "c013da08-8881-48d4-a7ec-40bace37dbd5": {
+  "first_date": null,
+  "first_day_impressions": null,
+  "status": "never_served",
+  "note": "Per-ad TOTAL impressions = 0 for 2026-06-03..2026-10-12 (ad creation day to today, Asia/Riyadh; data finalized to 2026-10-11T08:00Z); also absent (zero) in campaign breakdown=ad lifetime totals 2026-06-01..2026-10-12. ad created_at 2026-06-03T11:53:02.484Z (local 2026-06-03 14:53)."
+ },
+ "c02a96f8-75a1-4674-88fa-d9e0296947fb": {
+  "first_date": "2026-07-15",
+  "first_day_impressions": 11052,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-07-15 through 2026-08-16; first day with impressions>0 = 2026-07-15 (11052), next day 2026-07-16 (6709); no impressions on days from creation to first day. ad created_at 2026-07-15T13:07:59.604Z (local 2026-07-15 16:07). lifetime impressions 17761."
+ },
+ "c2b40e85-057c-4deb-80f2-0f30bc710433": {
+  "first_date": "2026-09-06",
+  "first_day_impressions": 56,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-09-05 through 2026-10-07; first day with impressions>0 = 2026-09-06 (56), next day 2026-09-07 (85); no impressions on days from creation to first day. ad created_at 2026-09-05T17:53:27.778Z (local 2026-09-05 20:53). lifetime impressions 9729."
+ },
+ "c53610b8-8d02-4c0b-912e-de8324d84220": {
+  "first_date": "2026-09-30",
+  "first_day_impressions": 91,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-09-28 through 2026-10-12; first day with impressions>0 = 2026-09-30 (91), next day 2026-10-01 (548); no impressions on days from creation to first day. ad created_at 2026-09-28T17:27:25.463Z (local 2026-09-28 20:27). lifetime impressions 4555."
+ },
+ "c9811709-f03c-40db-9ff3-5900cbf34d1d": {
+  "first_date": null,
+  "first_day_impressions": null,
+  "status": "never_served",
+  "note": "Per-ad TOTAL impressions = 0 for 2026-07-01..2026-10-12 (ad creation day to today, Asia/Riyadh; data finalized to 2026-10-11T08:00Z); also absent (zero) in campaign breakdown=ad lifetime totals 2026-06-01..2026-10-12. ad created_at 2026-07-01T14:19:06.812Z (local 2026-07-01 17:19)."
+ },
+ "c9bb0ab7-ffed-4d43-bba8-b706005c181b": {
+  "first_date": "2026-09-16",
+  "first_day_impressions": 4969,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-09-10 through 2026-10-12; first day with impressions>0 = 2026-09-16 (4969), next day 2026-09-17 (8349); no impressions on days from creation to first day. ad created_at 2026-09-10T14:18:46.876Z (local 2026-09-10 17:18). lifetime impressions 30324."
+ },
+ "ccf1d318-fd86-4b32-a70c-c096073b7752": {
+  "first_date": "2026-07-08",
+  "first_day_impressions": 40997,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-07-08 through 2026-08-09; first day with impressions>0 = 2026-07-08 (40997), next day 2026-07-09 (28467); no impressions on days from creation to first day. ad created_at 2026-07-08T08:16:07.793Z (local 2026-07-08 11:16). lifetime impressions 1024557."
+ },
+ "d07f22e2-0f91-4b95-9853-881e5b2300e7": {
+  "first_date": null,
+  "first_day_impressions": null,
+  "status": "never_served",
+  "note": "Per-ad TOTAL impressions = 0 for 2026-06-03..2026-10-12 (ad creation day to today, Asia/Riyadh; data finalized to 2026-10-11T08:00Z); also absent (zero) in campaign breakdown=ad lifetime totals 2026-06-01..2026-10-12. ad created_at 2026-06-03T13:30:02.574Z (local 2026-06-03 16:30)."
+ },
+ "d1ac04c4-546a-4bf9-9f20-6c8a56637a32": {
+  "first_date": "2026-09-12",
+  "first_day_impressions": 84,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-09-12 through 2026-10-12; first day with impressions>0 = 2026-09-12 (84), next day 2026-09-13 (259); no impressions on days from creation to first day. ad created_at 2026-09-12T13:14:46.111Z (local 2026-09-12 16:14). lifetime impressions 11362."
+ },
+ "d1da439f-afcf-4568-80b9-4e1770df4f5b": {
+  "first_date": "2026-06-18",
+  "first_day_impressions": 4689,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-06-17 through 2026-07-19; first day with impressions>0 = 2026-06-18 (4689), next day 2026-06-19 (7762); no impressions on days from creation to first day. ad created_at 2026-06-17T10:40:17.654Z (local 2026-06-17 13:40). lifetime impressions 147231."
+ },
+ "d1f25710-9a29-488c-a9e2-16099a99fab6": {
+  "first_date": null,
+  "first_day_impressions": null,
+  "status": "never_served",
+  "note": "Per-ad TOTAL impressions = 0 for 2026-07-01..2026-10-12 (ad creation day to today, Asia/Riyadh; data finalized to 2026-10-11T08:00Z); also absent (zero) in campaign breakdown=ad lifetime totals 2026-06-01..2026-10-12. ad created_at 2026-07-01T14:19:06.658Z (local 2026-07-01 17:19)."
+ },
+ "d28d4c55-8ce6-4946-8bcb-de5d19370f01": {
+  "first_date": "2026-08-05",
+  "first_day_impressions": 11048,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-08-05 through 2026-09-06; first day with impressions>0 = 2026-08-05 (11048), next day 2026-08-06 (11355); no impressions on days from creation to first day. ad created_at 2026-08-05T04:07:10.089Z (local 2026-08-05 07:07). lifetime impressions 422839."
+ },
+ "d39db0b0-dc5f-44ed-b778-a6ed1911329c": {
+  "first_date": null,
+  "first_day_impressions": null,
+  "status": "never_served",
+  "note": "Per-ad TOTAL impressions = 0 for 2026-09-10..2026-10-12 (ad creation day to today, Asia/Riyadh; data finalized to 2026-10-11T08:00Z); also absent (zero) in campaign breakdown=ad lifetime totals 2026-06-01..2026-10-12. ad created_at 2026-09-10T14:18:47.358Z (local 2026-09-10 17:18)."
+ },
+ "d547211d-daaf-474a-ba3b-ca982222ff79": {
+  "first_date": "2026-06-07",
+  "first_day_impressions": 5636,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-06-03 through 2026-07-05; first day with impressions>0 = 2026-06-07 (5636), next day 2026-06-08 (13008); no impressions on days from creation to first day. ad created_at 2026-06-03T13:29:04.123Z (local 2026-06-03 16:29). lifetime impressions 59312."
+ },
+ "d666ecec-31b5-41c4-b3ae-4a5f385e7e9b": {
+  "first_date": "2026-06-07",
+  "first_day_impressions": 20076,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-06-04 through 2026-07-06; first day with impressions>0 = 2026-06-07 (20076), next day 2026-06-08 (20655); no impressions on days from creation to first day. ad created_at 2026-06-04T15:22:51.057Z (local 2026-06-04 18:22). lifetime impressions 158095."
+ },
+ "d957f06c-7eaf-47ea-a23c-7ee2cfbf51d9": {
+  "first_date": "2026-06-25",
+  "first_day_impressions": 215368,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-06-25 through 2026-07-27; first day with impressions>0 = 2026-06-25 (215368), next day 2026-06-26 (225727); no impressions on days from creation to first day. ad created_at 2026-06-25T12:37:12.900Z (local 2026-06-25 15:37). lifetime impressions 8978662."
+ },
+ "db056e55-656c-4ef1-93b0-6449550b910f": {
+  "first_date": null,
+  "first_day_impressions": null,
+  "status": "never_served",
+  "note": "Per-ad TOTAL impressions = 0 for 2026-06-03..2026-10-12 (ad creation day to today, Asia/Riyadh; data finalized to 2026-10-11T08:00Z); also absent (zero) in campaign breakdown=ad lifetime totals 2026-06-01..2026-10-12. ad created_at 2026-06-03T13:30:31.432Z (local 2026-06-03 16:30)."
+ },
+ "de829faa-1261-46d0-aac0-dc2c2b2e3dfd": {
+  "first_date": "2026-09-05",
+  "first_day_impressions": 14,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-09-05 through 2026-10-07; first day with impressions>0 = 2026-09-05 (14), next day 2026-09-06 (82); no impressions on days from creation to first day. ad created_at 2026-09-05T17:50:37.765Z (local 2026-09-05 20:50). lifetime impressions 231379."
+ },
+ "e0615d9c-4a55-439a-952e-418e1b5dab73": {
+  "first_date": "2026-09-03",
+  "first_day_impressions": 721,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-08-30 through 2026-10-01; first day with impressions>0 = 2026-09-03 (721), next day 2026-09-04 (3047); no impressions on days from creation to first day. ad created_at 2026-08-30T10:17:53.247Z (local 2026-08-30 13:17). lifetime impressions 127016."
+ },
+ "e110837b-3b17-4150-bb0e-8b161b592440": {
+  "first_date": "2026-06-15",
+  "first_day_impressions": 43478,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-06-04 through 2026-07-06; first day with impressions>0 = 2026-06-15 (43478), next day 2026-06-16 (79354); no impressions on days from creation to first day. ad created_at 2026-06-04T15:24:28.380Z (local 2026-06-04 18:24). lifetime impressions 969328."
+ },
+ "e156a162-e4b3-4d84-b092-3fbc32bf2693": {
+  "first_date": "2026-09-03",
+  "first_day_impressions": 945,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-08-30 through 2026-10-01; first day with impressions>0 = 2026-09-03 (945), next day 2026-09-04 (2750); no impressions on days from creation to first day. ad created_at 2026-08-30T10:20:58.537Z (local 2026-08-30 13:20). lifetime impressions 288583."
+ },
+ "e21ed10b-cfc3-4452-9211-5661adec4d78": {
+  "first_date": "2026-09-30",
+  "first_day_impressions": 34,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-09-28 through 2026-10-12; first day with impressions>0 = 2026-09-30 (34), next day 2026-10-01 (409); no impressions on days from creation to first day. ad created_at 2026-09-28T17:27:18.704Z (local 2026-09-28 20:27). lifetime impressions 6592."
+ },
+ "e5f10bd7-1501-46b2-8bc6-fbdf8da60e5c": {
+  "first_date": null,
+  "first_day_impressions": null,
+  "status": "never_served",
+  "note": "Per-ad TOTAL impressions = 0 for 2026-07-27..2026-10-12 (ad creation day to today, Asia/Riyadh; data finalized to 2026-10-11T08:00Z); also absent (zero) in campaign breakdown=ad lifetime totals 2026-06-01..2026-10-12. ad created_at 2026-07-27T14:30:54.408Z (local 2026-07-27 17:30)."
+ },
+ "e644fd7b-7aec-4352-9d3f-da15cc275667": {
+  "first_date": "2026-09-15",
+  "first_day_impressions": 10,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-07-21 through 2026-09-23; first day with impressions>0 = 2026-09-15 (10); no impressions on days from creation to first day. ad created_at 2026-07-21T08:17:54.335Z (local 2026-07-21 11:17). lifetime impressions 10. Earlier 32-day window(s) 2026-07-21..2026-08-22 returned zero impressions; first impressions found in window 2026-08-22..2026-09-23."
+ },
+ "e9a5b9ca-60b3-46b3-af32-3f843ab02581": {
+  "first_date": "2026-07-15",
+  "first_day_impressions": 44288,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-07-15 through 2026-08-16; first day with impressions>0 = 2026-07-15 (44288), next day 2026-07-16 (45993); no impressions on days from creation to first day. ad created_at 2026-07-15T13:07:59.646Z (local 2026-07-15 16:07). lifetime impressions 614272."
+ },
+ "ea3568ae-0918-43e1-9853-c424bcc6776a": {
+  "first_date": "2026-07-01",
+  "first_day_impressions": 4406,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-07-01 through 2026-08-02; first day with impressions>0 = 2026-07-01 (4406), next day 2026-07-02 (8239); no impressions on days from creation to first day. ad created_at 2026-07-01T15:12:52.564Z (local 2026-07-01 18:12). lifetime impressions 119231."
+ },
+ "ec57699d-2368-4cb8-bf09-0891ac43bc63": {
+  "first_date": "2026-09-09",
+  "first_day_impressions": 5010,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-09-08 through 2026-10-10; first day with impressions>0 = 2026-09-09 (5010), next day 2026-09-10 (8815); no impressions on days from creation to first day. ad created_at 2026-09-08T10:46:15.660Z (local 2026-09-08 13:46). lifetime impressions 261997."
+ },
+ "f3a74b14-082f-446d-bb8a-ed6fba406d5f": {
+  "first_date": "2026-09-30",
+  "first_day_impressions": 17917,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-09-28 through 2026-10-12; first day with impressions>0 = 2026-09-30 (17917), next day 2026-10-01 (14971); no impressions on days from creation to first day. ad created_at 2026-09-28T17:26:58.354Z (local 2026-09-28 20:26). lifetime impressions 340978."
+ },
+ "f510b11d-81a4-4835-87da-ea5995afb0f2": {
+  "first_date": "2026-07-20",
+  "first_day_impressions": 11966,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-07-20 through 2026-08-21; first day with impressions>0 = 2026-07-20 (11966), next day 2026-07-21 (6633); no impressions on days from creation to first day. ad created_at 2026-07-20T12:08:24.856Z (local 2026-07-20 15:08). lifetime impressions 149126."
+ },
+ "f61d9c39-118a-4a06-a2b1-6696304b7664": {
+  "first_date": "2026-07-20",
+  "first_day_impressions": 7095,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-07-20 through 2026-08-21; first day with impressions>0 = 2026-07-20 (7095), next day 2026-07-21 (11508); no impressions on days from creation to first day. ad created_at 2026-07-20T12:05:40.477Z (local 2026-07-20 15:05). lifetime impressions 232135."
+ },
+ "f97aff65-bdc8-41ea-864a-8081ae64dc5c": {
+  "first_date": null,
+  "first_day_impressions": null,
+  "status": "never_served",
+  "note": "Per-ad TOTAL impressions = 0 for 2026-06-03..2026-10-12 (ad creation day to today, Asia/Riyadh; data finalized to 2026-10-11T08:00Z); also absent (zero) in campaign breakdown=ad lifetime totals 2026-06-01..2026-10-12. ad created_at 2026-06-03T13:29:27.662Z (local 2026-06-03 16:29)."
+ },
+ "fa635afe-f646-4c38-93a5-fd80239f980c": {
+  "first_date": "2026-06-07",
+  "first_day_impressions": 4595,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-06-03 through 2026-07-05; first day with impressions>0 = 2026-06-07 (4595), next day 2026-06-08 (2429); no impressions on days from creation to first day. ad created_at 2026-06-03T13:29:45.949Z (local 2026-06-03 16:29). lifetime impressions 14279."
+ },
+ "fae77d16-b5da-43ca-a085-81591497eee1": {
+  "first_date": "2026-08-05",
+  "first_day_impressions": 120991,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-08-05 through 2026-09-06; first day with impressions>0 = 2026-08-05 (120991), next day 2026-08-06 (118977); no impressions on days from creation to first day. ad created_at 2026-08-05T03:56:17.062Z (local 2026-08-05 06:56). lifetime impressions 9506737."
+ },
+ "fd6a936b-5d4d-47c8-b4d7-a615d1893e83": {
+  "first_date": "2026-09-06",
+  "first_day_impressions": 115,
+  "status": "served",
+  "note": "Daily impressions (GET /v1/ads/{id}/stats, granularity=DAY, fields=impressions, omit_empty=true so zero days are omitted, Asia/Riyadh days), window(s) from ad creation day 2026-09-05 through 2026-10-07; first day with impressions>0 = 2026-09-06 (115), next day 2026-09-07 (65); no impressions on days from creation to first day. ad created_at 2026-09-05T17:39:08.449Z (local 2026-09-05 20:39). lifetime impressions 77668."
+ },
+ "ffd6c9a7-55aa-46a8-a42d-1f16c6147d42": {
+  "first_date": null,
+  "first_day_impressions": null,
+  "status": "never_served",
+  "note": "Per-ad TOTAL impressions = 0 for 2026-06-03..2026-10-12 (ad creation day to today, Asia/Riyadh; data finalized to 2026-10-11T08:00Z); also absent (zero) in campaign breakdown=ad lifetime totals 2026-06-01..2026-10-12. ad created_at 2026-06-03T11:53:08.532Z (local 2026-06-03 14:53)."
+ }
+}

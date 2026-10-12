@@ -1,0 +1,662 @@
+[
+ {
+  "platform": "google",
+  "account_id": "9282725829",
+  "unit": "817703537942",
+  "account_name": "H&S - DGCL - Diriyah Gate",
+  "campaign_name": "LifeInDiriyah_2026BrandJeddahEastern_MF_TRF_KSA_EN_GoogleSearch",
+  "adset_name": "Brand",
+  "ad_ids": [
+   "817703537942"
+  ],
+  "ad_names": [
+   "None"
+  ],
+  "campaign_id": "24044647089",
+  "adset_id": "195745981822",
+  "creative_id": null,
+  "status": "ENABLED",
+  "edit_method": "AdService.MutateAds update ad.final_urls (update_mask=final_urls) on ads/817703537942",
+  "notes": [
+   "ad.type=RESPONSIVE_SEARCH_AD; approval=APPROVED; RSA has no ad name (ad_name null); campaign serving_status=SERVING; URL contains ValueTrack placeholders {...}; rendered at click time"
+  ],
+  "kind": "legacy-v4",
+  "changes": [
+   {
+    "slot": "ad.final_urls[0]",
+    "now": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=google&utm_medium=paid-search&utm_campaign=diriyahcompany-tactical-diriyahliving2-googlesearch-brand-jeddah-easternprovince_jul26_cond&utm_term=life-in-diriyah_en&utm_content=life-in-diriyah-rsa1_search_en",
+    "new": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=google&utm_medium=paid-search&utm_campaign=diriyahliving2-brand-jeddah-easternprovince_jul26_cond&utm_term=life-in-diriyah_en&utm_content=life-in-diriyah_search_en"
+   }
+  ],
+  "flags": [
+   "After reconnect: Changed live earlier today, but with an older version of the rebuild (it kept \"googlesearch\"/\"tactical\"/\"rsa1\" or the \"aud\"/\"ret\" audience tag, or the wrong format). Needs a second edit to the URL in \"Correct URL\"."
+  ]
+ },
+ {
+  "platform": "google",
+  "account_id": "9282725829",
+  "unit": "814104643406",
+  "account_name": "H&S - DGCL - Diriyah Gate",
+  "campaign_name": "LifeInDiriyah_2026BrandRiyadh_MF_TRF_KSA_EN_GoogleSearch",
+  "adset_name": "Brand",
+  "ad_ids": [
+   "814104643406"
+  ],
+  "ad_names": [
+   "None"
+  ],
+  "campaign_id": "23966880225",
+  "adset_id": "200301594160",
+  "creative_id": null,
+  "status": "ENABLED",
+  "edit_method": "AdService.MutateAds update ad.final_urls (update_mask=final_urls) on ads/814104643406",
+  "notes": [
+   "ad.type=RESPONSIVE_SEARCH_AD; approval=APPROVED; RSA has no ad name (ad_name null); campaign serving_status=SERVING; URL contains ValueTrack placeholders {...}; rendered at click time"
+  ],
+  "kind": "legacy-v4",
+  "changes": [
+   {
+    "slot": "ad.final_urls[0]",
+    "now": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=google&utm_medium=paid-search&utm_campaign=diriyahcompany-tactical-diriyahliving2-googlesearch-brand-riyadh_jun26_cond&utm_term=life-in-diriyah_en&utm_content=life-in-diriyah-rsa1_search_en",
+    "new": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=google&utm_medium=paid-search&utm_campaign=diriyahliving2-brand-riyadh_jun26_cond&utm_term=life-in-diriyah_en&utm_content=life-in-diriyah_search_en"
+   }
+  ],
+  "flags": [
+   "After reconnect: Changed live earlier today, but with an older version of the rebuild (it kept \"googlesearch\"/\"tactical\"/\"rsa1\" or the \"aud\"/\"ret\" audience tag, or the wrong format). Needs a second edit to the URL in \"Correct URL\"."
+  ]
+ },
+ {
+  "platform": "google",
+  "account_id": "9282725829",
+  "unit": "814104643409",
+  "account_name": "H&S - DGCL - Diriyah Gate",
+  "campaign_name": "LifeInDiriyah_2026Brand_MF_TRF_KSA_AR_GoogleSearch",
+  "adset_name": "Brand",
+  "ad_ids": [
+   "814104643409"
+  ],
+  "ad_names": [
+   "None"
+  ],
+  "campaign_id": "23966880228",
+  "adset_id": "200301594200",
+  "creative_id": null,
+  "status": "ENABLED",
+  "edit_method": "AdService.MutateAds update ad.final_urls (update_mask=final_urls) on ads/814104643409",
+  "notes": [
+   "ad.type=RESPONSIVE_SEARCH_AD; approval=APPROVED; RSA has no ad name (ad_name null); campaign serving_status=SERVING; URL contains ValueTrack placeholders {...}; rendered at click time"
+  ],
+  "kind": "legacy-v4",
+  "changes": [
+   {
+    "slot": "ad.final_urls[0]",
+    "now": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_source=google&utm_medium=paid-search&utm_campaign=diriyahcompany-tactical-diriyahliving2-googlesearch-brand_jun26_cond&utm_term=life-in-diriyah_ar&utm_content=life-in-diriyah-rsa1_search_ar",
+    "new": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_source=google&utm_medium=paid-search&utm_campaign=diriyahliving2-brand_jun26_cond&utm_term=life-in-diriyah_ar&utm_content=life-in-diriyah_search_ar"
+   }
+  ],
+  "flags": [
+   "After reconnect: Changed live earlier today, but with an older version of the rebuild (it kept \"googlesearch\"/\"tactical\"/\"rsa1\" or the \"aud\"/\"ret\" audience tag, or the wrong format). Needs a second edit to the URL in \"Correct URL\"."
+  ]
+ },
+ {
+  "platform": "google",
+  "account_id": "9282725829",
+  "unit": "814104643412",
+  "account_name": "H&S - DGCL - Diriyah Gate",
+  "campaign_name": "LifeInDiriyah_2026CompetitiveJeddahEastern_MF_TRF_KSA_AR_GoogleSearch",
+  "adset_name": "Competitors",
+  "ad_ids": [
+   "814104643412"
+  ],
+  "ad_names": [
+   "None"
+  ],
+  "campaign_id": "23966880231",
+  "adset_id": "200301594360",
+  "creative_id": null,
+  "status": "ENABLED",
+  "edit_method": "AdService.MutateAds update ad.final_urls (update_mask=final_urls) on ads/814104643412",
+  "notes": [
+   "ad.type=RESPONSIVE_SEARCH_AD; approval=APPROVED; RSA has no ad name (ad_name null); campaign serving_status=SERVING; URL contains ValueTrack placeholders {...}; rendered at click time"
+  ],
+  "kind": "legacy-v4",
+  "changes": [
+   {
+    "slot": "ad.final_urls[0]",
+    "now": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_source=google&utm_medium=paid-search&utm_campaign=diriyahcompany-tactical-diriyahliving2-googlesearch-competitors-jeddah-easternprovince_jun26_cond&utm_term=life-in-diriyah_ar&utm_content=life-in-diriyah-rsa1_search_ar",
+    "new": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_source=google&utm_medium=paid-search&utm_campaign=diriyahliving2-competitors-jeddah-easternprovince_jun26_cond&utm_term=life-in-diriyah_ar&utm_content=life-in-diriyah_search_ar"
+   }
+  ],
+  "flags": [
+   "After reconnect: Changed live earlier today, but with an older version of the rebuild (it kept \"googlesearch\"/\"tactical\"/\"rsa1\" or the \"aud\"/\"ret\" audience tag, or the wrong format). Needs a second edit to the URL in \"Correct URL\"."
+  ]
+ },
+ {
+  "platform": "google",
+  "account_id": "9282725829",
+  "unit": "814104643415",
+  "account_name": "H&S - DGCL - Diriyah Gate",
+  "campaign_name": "LifeInDiriyah_2026CompetitiveJeddahEastern_MF_TRF_KSA_EN_GoogleSearch",
+  "adset_name": "Competitors",
+  "ad_ids": [
+   "814104643415"
+  ],
+  "ad_names": [
+   "None"
+  ],
+  "campaign_id": "23966880234",
+  "adset_id": "200301594400",
+  "creative_id": null,
+  "status": "ENABLED",
+  "edit_method": "AdService.MutateAds update ad.final_urls (update_mask=final_urls) on ads/814104643415",
+  "notes": [
+   "ad.type=RESPONSIVE_SEARCH_AD; approval=APPROVED; RSA has no ad name (ad_name null); campaign serving_status=SERVING; URL contains ValueTrack placeholders {...}; rendered at click time"
+  ],
+  "kind": "legacy-v4",
+  "changes": [
+   {
+    "slot": "ad.final_urls[0]",
+    "now": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=google&utm_medium=paid-search&utm_campaign=diriyahcompany-tactical-diriyahliving2-googlesearch-competitors-jeddah-easternprovince_jun26_cond&utm_term=life-in-diriyah_en&utm_content=life-in-diriyah-rsa1_search_en",
+    "new": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=google&utm_medium=paid-search&utm_campaign=diriyahliving2-competitors-jeddah-easternprovince_jun26_cond&utm_term=life-in-diriyah_en&utm_content=life-in-diriyah_search_en"
+   }
+  ],
+  "flags": [
+   "After reconnect: Changed live earlier today, but with an older version of the rebuild (it kept \"googlesearch\"/\"tactical\"/\"rsa1\" or the \"aud\"/\"ret\" audience tag, or the wrong format). Needs a second edit to the URL in \"Correct URL\"."
+  ]
+ },
+ {
+  "platform": "google",
+  "account_id": "9282725829",
+  "unit": "817703537945",
+  "account_name": "H&S - DGCL - Diriyah Gate",
+  "campaign_name": "LifeInDiriyah_2026CompetitiveRiyadh_MF_TRF_KSA_AR_GoogleSearch",
+  "adset_name": "Competitors",
+  "ad_ids": [
+   "817703537945"
+  ],
+  "ad_names": [
+   "None"
+  ],
+  "campaign_id": "24044647092",
+  "adset_id": "195745981862",
+  "creative_id": null,
+  "status": "ENABLED",
+  "edit_method": "AdService.MutateAds update ad.final_urls (update_mask=final_urls) on ads/817703537945",
+  "notes": [
+   "ad.type=RESPONSIVE_SEARCH_AD; approval=APPROVED; RSA has no ad name (ad_name null); campaign serving_status=SERVING; URL contains ValueTrack placeholders {...}; rendered at click time"
+  ],
+  "kind": "legacy-v4",
+  "changes": [
+   {
+    "slot": "ad.final_urls[0]",
+    "now": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_source=google&utm_medium=paid-search&utm_campaign=diriyahcompany-tactical-diriyahliving2-googlesearch-competitors-riyadh_jul26_cond&utm_term=life-in-diriyah_ar&utm_content=life-in-diriyah-rsa1_search_ar",
+    "new": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_source=google&utm_medium=paid-search&utm_campaign=diriyahliving2-competitors-riyadh_jul26_cond&utm_term=life-in-diriyah_ar&utm_content=life-in-diriyah_search_ar"
+   }
+  ],
+  "flags": [
+   "After reconnect: Changed live earlier today, but with an older version of the rebuild (it kept \"googlesearch\"/\"tactical\"/\"rsa1\" or the \"aud\"/\"ret\" audience tag, or the wrong format). Needs a second edit to the URL in \"Correct URL\"."
+  ]
+ },
+ {
+  "platform": "google",
+  "account_id": "9282725829",
+  "unit": "817703537948",
+  "account_name": "H&S - DGCL - Diriyah Gate",
+  "campaign_name": "LifeInDiriyah_2026CompetitiveRiyadh_MF_TRF_KSA_EN_GoogleSearch",
+  "adset_name": "Competitors",
+  "ad_ids": [
+   "817703537948"
+  ],
+  "ad_names": [
+   "None"
+  ],
+  "campaign_id": "24044647095",
+  "adset_id": "195745981902",
+  "creative_id": null,
+  "status": "ENABLED",
+  "edit_method": "AdService.MutateAds update ad.final_urls (update_mask=final_urls) on ads/817703537948",
+  "notes": [
+   "ad.type=RESPONSIVE_SEARCH_AD; approval=APPROVED; RSA has no ad name (ad_name null); campaign serving_status=SERVING; URL contains ValueTrack placeholders {...}; rendered at click time"
+  ],
+  "kind": "legacy-v4",
+  "changes": [
+   {
+    "slot": "ad.final_urls[0]",
+    "now": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=google&utm_medium=paid-search&utm_campaign=diriyahcompany-tactical-diriyahliving2-googlesearch-competitors-riyadh_jul26_cond&utm_term=life-in-diriyah_en&utm_content=life-in-diriyah-rsa1_search_en",
+    "new": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=google&utm_medium=paid-search&utm_campaign=diriyahliving2-competitors-riyadh_jul26_cond&utm_term=life-in-diriyah_en&utm_content=life-in-diriyah_search_en"
+   }
+  ],
+  "flags": [
+   "After reconnect: Changed live earlier today, but with an older version of the rebuild (it kept \"googlesearch\"/\"tactical\"/\"rsa1\" or the \"aud\"/\"ret\" audience tag, or the wrong format). Needs a second edit to the URL in \"Correct URL\"."
+  ]
+ },
+ {
+  "platform": "google",
+  "account_id": "9282725829",
+  "unit": "817703537969",
+  "account_name": "H&S - DGCL - Diriyah Gate",
+  "campaign_name": "LifeInDiriyah_2026GenericJeddahEastern_MF_TRF_KSA_AR_GoogleSearch",
+  "adset_name": "Destination & Lifestyle",
+  "ad_ids": [
+   "817703537969"
+  ],
+  "ad_names": [
+   "None"
+  ],
+  "campaign_id": "24044647101",
+  "adset_id": "195745982542",
+  "creative_id": null,
+  "status": "ENABLED",
+  "edit_method": "AdService.MutateAds update ad.final_urls (update_mask=final_urls) on ads/817703537969",
+  "notes": [
+   "ad.type=RESPONSIVE_SEARCH_AD; approval=APPROVED; RSA has no ad name (ad_name null); campaign serving_status=SERVING; URL contains ValueTrack placeholders {...}; rendered at click time"
+  ],
+  "kind": "legacy-v4",
+  "changes": [
+   {
+    "slot": "ad.final_urls[0]",
+    "now": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_source=google&utm_medium=paid-search&utm_campaign=diriyahcompany-tactical-diriyahliving2-googlesearch-generic-jeddah-easternprovince_sep26_cond&utm_term=life-in-diriyah_ar&utm_content=life-in-diriyah-rsa1_search_ar",
+    "new": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_source=google&utm_medium=paid-search&utm_campaign=diriyahliving2-generic-jeddah-easternprovince_sep26_cond&utm_term=life-in-diriyah_ar&utm_content=life-in-diriyah_search_ar"
+   }
+  ],
+  "flags": [
+   "After reconnect: Changed live earlier today, but with an older version of the rebuild (it kept \"googlesearch\"/\"tactical\"/\"rsa1\" or the \"aud\"/\"ret\" audience tag, or the wrong format). Needs a second edit to the URL in \"Correct URL\"."
+  ]
+ },
+ {
+  "platform": "google",
+  "account_id": "9282725829",
+  "unit": "817703537984",
+  "account_name": "H&S - DGCL - Diriyah Gate",
+  "campaign_name": "LifeInDiriyah_2026GenericJeddahEastern_MF_TRF_KSA_AR_GoogleSearch",
+  "adset_name": "Hotels & Hospitality",
+  "ad_ids": [
+   "817703537984"
+  ],
+  "ad_names": [
+   "None"
+  ],
+  "campaign_id": "24044647101",
+  "adset_id": "195745982862",
+  "creative_id": null,
+  "status": "ENABLED",
+  "edit_method": "AdService.MutateAds update ad.final_urls (update_mask=final_urls) on ads/817703537984",
+  "notes": [
+   "ad.type=RESPONSIVE_SEARCH_AD; approval=APPROVED; RSA has no ad name (ad_name null); campaign serving_status=SERVING; URL contains ValueTrack placeholders {...}; rendered at click time"
+  ],
+  "kind": "legacy-v4",
+  "changes": [
+   {
+    "slot": "ad.final_urls[0]",
+    "now": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_source=google&utm_medium=paid-search&utm_campaign=diriyahcompany-tactical-diriyahliving2-googlesearch-generic-jeddah-easternprovince_jul26_cond&utm_term=life-in-diriyah_ar&utm_content=life-in-diriyah-rsa1_search_ar",
+    "new": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_source=google&utm_medium=paid-search&utm_campaign=diriyahliving2-generic-jeddah-easternprovince_jul26_cond&utm_term=life-in-diriyah_ar&utm_content=life-in-diriyah_search_ar"
+   }
+  ],
+  "flags": [
+   "After reconnect: Changed live earlier today, but with an older version of the rebuild (it kept \"googlesearch\"/\"tactical\"/\"rsa1\" or the \"aud\"/\"ret\" audience tag, or the wrong format). Needs a second edit to the URL in \"Correct URL\"."
+  ]
+ },
+ {
+  "platform": "google",
+  "account_id": "9282725829",
+  "unit": "817703537975",
+  "account_name": "H&S - DGCL - Diriyah Gate",
+  "campaign_name": "LifeInDiriyah_2026GenericJeddahEastern_MF_TRF_KSA_AR_GoogleSearch",
+  "adset_name": "Investment",
+  "ad_ids": [
+   "817703537975"
+  ],
+  "ad_names": [
+   "None"
+  ],
+  "campaign_id": "24044647101",
+  "adset_id": "195745982622",
+  "creative_id": null,
+  "status": "ENABLED",
+  "edit_method": "AdService.MutateAds update ad.final_urls (update_mask=final_urls) on ads/817703537975",
+  "notes": [
+   "ad.type=RESPONSIVE_SEARCH_AD; approval=APPROVED; RSA has no ad name (ad_name null); campaign serving_status=SERVING; URL contains ValueTrack placeholders {...}; rendered at click time"
+  ],
+  "kind": "legacy-v4",
+  "changes": [
+   {
+    "slot": "ad.final_urls[0]",
+    "now": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_source=google&utm_medium=paid-search&utm_campaign=diriyahcompany-tactical-diriyahliving2-googlesearch-generic-jeddah-easternprovince_jul26_cond&utm_term=life-in-diriyah_ar&utm_content=life-in-diriyah-rsa1_search_ar",
+    "new": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_source=google&utm_medium=paid-search&utm_campaign=diriyahliving2-generic-jeddah-easternprovince_jul26_cond&utm_term=life-in-diriyah_ar&utm_content=life-in-diriyah_search_ar"
+   }
+  ],
+  "flags": [
+   "After reconnect: Changed live earlier today, but with an older version of the rebuild (it kept \"googlesearch\"/\"tactical\"/\"rsa1\" or the \"aud\"/\"ret\" audience tag, or the wrong format). Needs a second edit to the URL in \"Correct URL\"."
+  ]
+ },
+ {
+  "platform": "google",
+  "account_id": "9282725829",
+  "unit": "817703537972",
+  "account_name": "H&S - DGCL - Diriyah Gate",
+  "campaign_name": "LifeInDiriyah_2026GenericJeddahEastern_MF_TRF_KSA_AR_GoogleSearch",
+  "adset_name": "Offices",
+  "ad_ids": [
+   "817703537972"
+  ],
+  "ad_names": [
+   "None"
+  ],
+  "campaign_id": "24044647101",
+  "adset_id": "195745982582",
+  "creative_id": null,
+  "status": "ENABLED",
+  "edit_method": "AdService.MutateAds update ad.final_urls (update_mask=final_urls) on ads/817703537972",
+  "notes": [
+   "ad.type=RESPONSIVE_SEARCH_AD; approval=APPROVED; RSA has no ad name (ad_name null); campaign serving_status=SERVING; URL contains ValueTrack placeholders {...}; rendered at click time"
+  ],
+  "kind": "legacy-v4",
+  "changes": [
+   {
+    "slot": "ad.final_urls[0]",
+    "now": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_source=google&utm_medium=paid-search&utm_campaign=diriyahcompany-tactical-diriyahliving2-googlesearch-generic-jeddah-easternprovince_jul26_cond&utm_term=life-in-diriyah_ar&utm_content=life-in-diriyah-rsa1_search_ar",
+    "new": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_source=google&utm_medium=paid-search&utm_campaign=diriyahliving2-generic-jeddah-easternprovince_jul26_cond&utm_term=life-in-diriyah_ar&utm_content=life-in-diriyah_search_ar"
+   }
+  ],
+  "flags": [
+   "After reconnect: Changed live earlier today, but with an older version of the rebuild (it kept \"googlesearch\"/\"tactical\"/\"rsa1\" or the \"aud\"/\"ret\" audience tag, or the wrong format). Needs a second edit to the URL in \"Correct URL\"."
+  ]
+ },
+ {
+  "platform": "google",
+  "account_id": "9282725829",
+  "unit": "817703537981",
+  "account_name": "H&S - DGCL - Diriyah Gate",
+  "campaign_name": "LifeInDiriyah_2026GenericJeddahEastern_MF_TRF_KSA_AR_GoogleSearch",
+  "adset_name": "Resi",
+  "ad_ids": [
+   "817703537981"
+  ],
+  "ad_names": [
+   "None"
+  ],
+  "campaign_id": "24044647101",
+  "adset_id": "195745982822",
+  "creative_id": null,
+  "status": "ENABLED",
+  "edit_method": "AdService.MutateAds update ad.final_urls (update_mask=final_urls) on ads/817703537981",
+  "notes": [
+   "ad.type=RESPONSIVE_SEARCH_AD; approval=APPROVED; RSA has no ad name (ad_name null); campaign serving_status=SERVING; URL contains ValueTrack placeholders {...}; rendered at click time"
+  ],
+  "kind": "legacy-v4",
+  "changes": [
+   {
+    "slot": "ad.final_urls[0]",
+    "now": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_source=google&utm_medium=paid-search&utm_campaign=diriyahcompany-tactical-diriyahliving2-googlesearch-generic-jeddah-easternprovince_jul26_cond&utm_term=life-in-diriyah_ar&utm_content=life-in-diriyah-rsa1_search_ar",
+    "new": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_source=google&utm_medium=paid-search&utm_campaign=diriyahliving2-generic-jeddah-easternprovince_jul26_cond&utm_term=life-in-diriyah_ar&utm_content=life-in-diriyah_search_ar"
+   }
+  ],
+  "flags": [
+   "After reconnect: Changed live earlier today, but with an older version of the rebuild (it kept \"googlesearch\"/\"tactical\"/\"rsa1\" or the \"aud\"/\"ret\" audience tag, or the wrong format). Needs a second edit to the URL in \"Correct URL\"."
+  ]
+ },
+ {
+  "platform": "google",
+  "account_id": "9282725829",
+  "unit": "814104643418",
+  "account_name": "H&S - DGCL - Diriyah Gate",
+  "campaign_name": "LifeInDiriyah_2026GenericJeddahEastern_MF_TRF_KSA_EN_GoogleSearch",
+  "adset_name": "Destination & Lifestyle",
+  "ad_ids": [
+   "814104643418"
+  ],
+  "ad_names": [
+   "None"
+  ],
+  "campaign_id": "23966880237",
+  "adset_id": "200301594440",
+  "creative_id": null,
+  "status": "ENABLED",
+  "edit_method": "AdService.MutateAds update ad.final_urls (update_mask=final_urls) on ads/814104643418",
+  "notes": [
+   "ad.type=RESPONSIVE_SEARCH_AD; approval=APPROVED; RSA has no ad name (ad_name null); campaign serving_status=SERVING; URL contains ValueTrack placeholders {...}; rendered at click time"
+  ],
+  "kind": "legacy-v4",
+  "changes": [
+   {
+    "slot": "ad.final_urls[0]",
+    "now": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=google&utm_medium=paid-search&utm_campaign=diriyahcompany-tactical-diriyahliving2-googlesearch-generic-jeddah-easternprovince_jul26_cond&utm_term=life-in-diriyah_en&utm_content=life-in-diriyah-rsa1_search_en",
+    "new": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=google&utm_medium=paid-search&utm_campaign=diriyahliving2-generic-jeddah-easternprovince_jul26_cond&utm_term=life-in-diriyah_en&utm_content=life-in-diriyah_search_en"
+   }
+  ],
+  "flags": [
+   "After reconnect: Changed live earlier today, but with an older version of the rebuild (it kept \"googlesearch\"/\"tactical\"/\"rsa1\" or the \"aud\"/\"ret\" audience tag, or the wrong format). Needs a second edit to the URL in \"Correct URL\"."
+  ]
+ },
+ {
+  "platform": "google",
+  "account_id": "9282725829",
+  "unit": "814104643430",
+  "account_name": "H&S - DGCL - Diriyah Gate",
+  "campaign_name": "LifeInDiriyah_2026GenericJeddahEastern_MF_TRF_KSA_EN_GoogleSearch",
+  "adset_name": "Hotels & Hospitality",
+  "ad_ids": [
+   "814104643430"
+  ],
+  "ad_names": [
+   "None"
+  ],
+  "campaign_id": "23966880237",
+  "adset_id": "200301594840",
+  "creative_id": null,
+  "status": "ENABLED",
+  "edit_method": "AdService.MutateAds update ad.final_urls (update_mask=final_urls) on ads/814104643430",
+  "notes": [
+   "ad.type=RESPONSIVE_SEARCH_AD; approval=APPROVED; RSA has no ad name (ad_name null); campaign serving_status=SERVING; URL contains ValueTrack placeholders {...}; rendered at click time"
+  ],
+  "kind": "legacy-v4",
+  "changes": [
+   {
+    "slot": "ad.final_urls[0]",
+    "now": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=google&utm_medium=paid-search&utm_campaign=diriyahcompany-tactical-diriyahliving2-googlesearch-generic-jeddah-easternprovince_jun26_cond&utm_term=life-in-diriyah_en&utm_content=life-in-diriyah-rsa1_search_en",
+    "new": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=google&utm_medium=paid-search&utm_campaign=diriyahliving2-generic-jeddah-easternprovince_jun26_cond&utm_term=life-in-diriyah_en&utm_content=life-in-diriyah_search_en"
+   }
+  ],
+  "flags": [
+   "After reconnect: Changed live earlier today, but with an older version of the rebuild (it kept \"googlesearch\"/\"tactical\"/\"rsa1\" or the \"aud\"/\"ret\" audience tag, or the wrong format). Needs a second edit to the URL in \"Correct URL\"."
+  ]
+ },
+ {
+  "platform": "google",
+  "account_id": "9282725829",
+  "unit": "814104643433",
+  "account_name": "H&S - DGCL - Diriyah Gate",
+  "campaign_name": "LifeInDiriyah_2026GenericJeddahEastern_MF_TRF_KSA_EN_GoogleSearch",
+  "adset_name": "Investment",
+  "ad_ids": [
+   "814104643433"
+  ],
+  "ad_names": [
+   "None"
+  ],
+  "campaign_id": "23966880237",
+  "adset_id": "200301594880",
+  "creative_id": null,
+  "status": "ENABLED",
+  "edit_method": "AdService.MutateAds update ad.final_urls (update_mask=final_urls) on ads/814104643433",
+  "notes": [
+   "ad.type=RESPONSIVE_SEARCH_AD; approval=APPROVED; RSA has no ad name (ad_name null); campaign serving_status=SERVING; URL contains ValueTrack placeholders {...}; rendered at click time"
+  ],
+  "kind": "legacy-v4",
+  "changes": [
+   {
+    "slot": "ad.final_urls[0]",
+    "now": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=google&utm_medium=paid-search&utm_campaign=diriyahcompany-tactical-diriyahliving2-googlesearch-generic-jeddah-easternprovince_jun26_cond&utm_term=life-in-diriyah_en&utm_content=life-in-diriyah-rsa1_search_en",
+    "new": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=google&utm_medium=paid-search&utm_campaign=diriyahliving2-generic-jeddah-easternprovince_jun26_cond&utm_term=life-in-diriyah_en&utm_content=life-in-diriyah_search_en"
+   }
+  ],
+  "flags": [
+   "After reconnect: Changed live earlier today, but with an older version of the rebuild (it kept \"googlesearch\"/\"tactical\"/\"rsa1\" or the \"aud\"/\"ret\" audience tag, or the wrong format). Needs a second edit to the URL in \"Correct URL\"."
+  ]
+ },
+ {
+  "platform": "google",
+  "account_id": "9282725829",
+  "unit": "814104643424",
+  "account_name": "H&S - DGCL - Diriyah Gate",
+  "campaign_name": "LifeInDiriyah_2026GenericJeddahEastern_MF_TRF_KSA_EN_GoogleSearch",
+  "adset_name": "Offices",
+  "ad_ids": [
+   "814104643424"
+  ],
+  "ad_names": [
+   "None"
+  ],
+  "campaign_id": "23966880237",
+  "adset_id": "200301594640",
+  "creative_id": null,
+  "status": "ENABLED",
+  "edit_method": "AdService.MutateAds update ad.final_urls (update_mask=final_urls) on ads/814104643424",
+  "notes": [
+   "ad.type=RESPONSIVE_SEARCH_AD; approval=APPROVED; RSA has no ad name (ad_name null); campaign serving_status=SERVING; URL contains ValueTrack placeholders {...}; rendered at click time"
+  ],
+  "kind": "legacy-v4",
+  "changes": [
+   {
+    "slot": "ad.final_urls[0]",
+    "now": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=google&utm_medium=paid-search&utm_campaign=diriyahcompany-tactical-diriyahliving2-googlesearch-generic-jeddah-easternprovince_jun26_cond&utm_term=life-in-diriyah_en&utm_content=life-in-diriyah-rsa1_search_en",
+    "new": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=google&utm_medium=paid-search&utm_campaign=diriyahliving2-generic-jeddah-easternprovince_jun26_cond&utm_term=life-in-diriyah_en&utm_content=life-in-diriyah_search_en"
+   }
+  ],
+  "flags": [
+   "After reconnect: Changed live earlier today, but with an older version of the rebuild (it kept \"googlesearch\"/\"tactical\"/\"rsa1\" or the \"aud\"/\"ret\" audience tag, or the wrong format). Needs a second edit to the URL in \"Correct URL\"."
+  ]
+ },
+ {
+  "platform": "google",
+  "account_id": "9282725829",
+  "unit": "814104643421",
+  "account_name": "H&S - DGCL - Diriyah Gate",
+  "campaign_name": "LifeInDiriyah_2026GenericJeddahEastern_MF_TRF_KSA_EN_GoogleSearch",
+  "adset_name": "Resi",
+  "ad_ids": [
+   "814104643421"
+  ],
+  "ad_names": [
+   "None"
+  ],
+  "campaign_id": "23966880237",
+  "adset_id": "200301594600",
+  "creative_id": null,
+  "status": "ENABLED",
+  "edit_method": "AdService.MutateAds update ad.final_urls (update_mask=final_urls) on ads/814104643421",
+  "notes": [
+   "ad.type=RESPONSIVE_SEARCH_AD; approval=APPROVED; RSA has no ad name (ad_name null); campaign serving_status=SERVING; URL contains ValueTrack placeholders {...}; rendered at click time"
+  ],
+  "kind": "legacy-v4",
+  "changes": [
+   {
+    "slot": "ad.final_urls[0]",
+    "now": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=google&utm_medium=paid-search&utm_campaign=diriyahcompany-tactical-diriyahliving2-googlesearch-generic-jeddah-easternprovince_jun26_cond&utm_term=life-in-diriyah_en&utm_content=life-in-diriyah-rsa1_search_en",
+    "new": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=google&utm_medium=paid-search&utm_campaign=diriyahliving2-generic-jeddah-easternprovince_jun26_cond&utm_term=life-in-diriyah_en&utm_content=life-in-diriyah_search_en"
+   }
+  ],
+  "flags": [
+   "After reconnect: Changed live earlier today, but with an older version of the rebuild (it kept \"googlesearch\"/\"tactical\"/\"rsa1\" or the \"aud\"/\"ret\" audience tag, or the wrong format). Needs a second edit to the URL in \"Correct URL\"."
+  ]
+ },
+ {
+  "platform": "google",
+  "account_id": "9282725829",
+  "unit": "814104643427",
+  "account_name": "H&S - DGCL - Diriyah Gate",
+  "campaign_name": "LifeInDiriyah_2026GenericJeddahEastern_MF_TRF_KSA_EN_GoogleSearch",
+  "adset_name": "Retail",
+  "ad_ids": [
+   "814104643427"
+  ],
+  "ad_names": [
+   "None"
+  ],
+  "campaign_id": "23966880237",
+  "adset_id": "200301594680",
+  "creative_id": null,
+  "status": "ENABLED",
+  "edit_method": "AdService.MutateAds update ad.final_urls (update_mask=final_urls) on ads/814104643427",
+  "notes": [
+   "ad.type=RESPONSIVE_SEARCH_AD; approval=APPROVED; RSA has no ad name (ad_name null); campaign serving_status=SERVING; URL contains ValueTrack placeholders {...}; rendered at click time"
+  ],
+  "kind": "legacy-v4",
+  "changes": [
+   {
+    "slot": "ad.final_urls[0]",
+    "now": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=google&utm_medium=paid-search&utm_campaign=diriyahcompany-tactical-diriyahliving2-googlesearch-generic-jeddah-easternprovince_jun26_cond&utm_term=life-in-diriyah_en&utm_content=life-in-diriyah-rsa1_search_en",
+    "new": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=google&utm_medium=paid-search&utm_campaign=diriyahliving2-generic-jeddah-easternprovince_jun26_cond&utm_term=life-in-diriyah_en&utm_content=life-in-diriyah_search_en"
+   }
+  ],
+  "flags": [
+   "After reconnect: Changed live earlier today, but with an older version of the rebuild (it kept \"googlesearch\"/\"tactical\"/\"rsa1\" or the \"aud\"/\"ret\" audience tag, or the wrong format). Needs a second edit to the URL in \"Correct URL\"."
+  ]
+ },
+ {
+  "platform": "google",
+  "account_id": "9282725829",
+  "unit": "814104643568",
+  "account_name": "H&S - DGCL - Diriyah Gate",
+  "campaign_name": "LifeInDiriyah_2026GenericRiyadh_MF_TRF_KSA_AR_GoogleSearch",
+  "adset_name": "Hotels & Hospitality",
+  "ad_ids": [
+   "814104643568"
+  ],
+  "ad_names": [
+   "None"
+  ],
+  "campaign_id": "23966880360",
+  "adset_id": "200301595320",
+  "creative_id": null,
+  "status": "ENABLED",
+  "edit_method": "AdService.MutateAds update ad.final_urls (update_mask=final_urls) on ads/814104643568",
+  "notes": [
+   "ad.type=RESPONSIVE_SEARCH_AD; approval=APPROVED; RSA has no ad name (ad_name null); campaign serving_status=SERVING; URL contains ValueTrack placeholders {...}; rendered at click time"
+  ],
+  "kind": "legacy-v4",
+  "changes": [
+   {
+    "slot": "ad.final_urls[0]",
+    "now": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_source=google&utm_medium=paid-search&utm_campaign=diriyahcompany-tactical-diriyahliving2-googlesearch-generic-riyadh_jun26_cond&utm_term=life-in-diriyah_ar&utm_content=life-in-diriyah-rsa1_search_ar",
+    "new": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_source=google&utm_medium=paid-search&utm_campaign=diriyahliving2-generic-riyadh_jun26_cond&utm_term=life-in-diriyah_ar&utm_content=life-in-diriyah_search_ar"
+   }
+  ],
+  "flags": [
+   "After reconnect: Changed live earlier today, but with an older version of the rebuild (it kept \"googlesearch\"/\"tactical\"/\"rsa1\" or the \"aud\"/\"ret\" audience tag, or the wrong format). Needs a second edit to the URL in \"Correct URL\"."
+  ]
+ },
+ {
+  "platform": "google",
+  "account_id": "9282725829",
+  "unit": "814104643571",
+  "account_name": "H&S - DGCL - Diriyah Gate",
+  "campaign_name": "LifeInDiriyah_2026GenericRiyadh_MF_TRF_KSA_AR_GoogleSearch",
+  "adset_name": "Investment",
+  "ad_ids": [
+   "814104643571"
+  ],
+  "ad_names": [
+   "None"
+  ],
+  "campaign_id": "23966880360",
+  "adset_id": "200301595360",
+  "creative_id": null,
+  "status": "ENABLED",
+  "edit_method": "AdService.MutateAds update ad.final_urls (update_mask=final_urls) on ads/814104643571",
+  "notes": [
+   "ad.type=RESPONSIVE_SEARCH_AD; approval=APPROVED; RSA has no ad name (ad_name null); campaign serving_status=SERVING; URL contains ValueTrack placeholders {...}; rendered at click time"
+  ],
+  "kind": "legacy-v4",
+  "changes": [
+   {
+    "slot": "ad.final_urls[0]",
+    "now": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_source=google&utm_medium=paid-search&utm_campaign=diriyahcompany-tactical-diriyahliving2-googlesearch-generic-riyadh_jun26_cond&utm_term=life-in-diriyah_ar&utm_content=life-in-diriyah-rsa1_search_ar",
+    "new": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_source=google&utm_medium=paid-search&utm_campaign=diriyahliving2-generic-riyadh_jun26_cond&utm_term=life-in-diriyah_ar&utm_content=life-in-diriyah_search_ar"
+   }
+  ],
+  "flags": [
+   "After reconnect: Changed live earlier today, but with an older version of the rebuild (it kept \"googlesearch\"/\"tactical\"/\"rsa1\" or the \"aud\"/\"ret\" audience tag, or the wrong format). Needs a second edit to the URL in \"Correct URL\"."
+  ]
+ }
+]
