@@ -18,8 +18,9 @@ G = glob.glob(f'{W}/in/e2e*.xlsx')[0]
 N = Deriver(G, json.load(open(f'{W}/work/serving_meta_clash.json'))).N
 norm = lambda u: (lambda p: (p.scheme, p.netloc.lower(), p.path, p.fragment, tuple(sorted(parse_qsl(p.query, keep_blank_values=True)))))(urlsplit((u or '').strip()))
 T = json.load(open(f'{W}/work/targets.json'))
-NOW = {}   # optional keyed re-read: work/live_now.json {platform|ad_id|slot: url}
-if os.path.exists(f'{W}/work/live_now.json'): NOW = json.load(open(f'{W}/work/live_now.json'))
+NOW = {}   # optional keyed re-read: work/live_now.json {platform|ad_id|slot: url}; LIVE_FILE=work/live_interim.json = re-read + later read-backs
+LIVE_FILE = os.environ.get('LIVE_FILE') or f'{W}/work/live_now.json'
+if os.path.exists(LIVE_FILE): NOW = json.load(open(LIVE_FILE))
 fixed, tried = {}, collections.defaultdict(list)
 for f in sorted(glob.glob(f'{W}/apply*/out_*.jsonl')):
     for l in open(f):

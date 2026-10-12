@@ -18,6 +18,8 @@ from omit import check_omit
 W, OUT = sys.argv[1], sys.argv[2]
 REREAD = sys.argv[3] if len(sys.argv) > 3 else 'reread'   # folder of the latest keyed re-read (its out/new_*.jsonl = ads created since 11-Oct)
 PLAN = sys.argv[4] if len(sys.argv) > 4 else 'round4'      # folder of the latest pending plan (diff.json)
+APPLY = os.environ.get('APPLY') or PLAN                      # folder of the latest apply run (its out_*.jsonl)
+PENDING = os.environ.get('PENDING_LABEL') or 'Being applied now'   # e.g. 'Paused - not yet written'
 G = glob.glob(f'{W}/in/e2e*.xlsx')[0]
 N = Deriver(G, {}).N
 S = json.load(open(f'{W}/work/scored.json'))
@@ -84,8 +86,8 @@ def status_of(s, t, live):
     if not tgt:
         o = OMIT.get(k) or {}
         return 'Manual - you', (o.get('manual') or 'no single correct URL for this slot'), ''
-    a5 = [a for a in rs if a['_file'].startswith(PLAN + '/')]
-    if k in DIFF and not a5: return 'Being applied now', 'reviewed URL is in the write queue that was still running when this workbook was built', ''
+    a5 = [a for a in rs if a['_file'].startswith(APPLY + '/')]
+    if k in DIFF and not a5: return PENDING, ('reviewed URL ready; the writes were paused before this one was reached' if PENDING != 'Being applied now' else 'reviewed URL is in the write queue that was still running when this workbook was built'), ''
     bad = [a for a in (a5 or last12) if a['result'] in ('Failed', 'Skipped', 'NotAttempted')]
     if bad:
         b = bad[-1]; d = (b.get('detail') or '')
@@ -185,7 +187,7 @@ f1, l1 = table(ws, H, rows, 'EveryURL', [9, 22, 40, 38, 44, 22, 8, 16, 8, 26, 70
 for col in ('Verdict before', 'Verdict now', 'Ad verdict before', 'Ad verdict now'):
     colour(ws, C[col], f1 + 1, l1, (('WRONG', RED), ('CORRECT', GREEN)))
 colour(ws, C['Status'], f1 + 1, l1, (('Fixed 12-Oct', GREEN), ('Fixed 11-Oct', GREEN), ('Correct', GREEN), ('Manual - you', AMBER),
-                                      ('Not applied - needs your OK', BLUE), ('Being applied now', BLUE), ('Failed', RED), ('Skipped', AMBER), ('Changed by someone else', AMBER)))
+                                      ('Not applied - needs your OK', BLUE), (PENDING, BLUE), ('Failed', RED), ('Skipped', AMBER), ('Changed by someone else', AMBER)))
 EU = "'Every URL'"
 rng = lambda h: f"{EU}!${C[h]}${f1+1}:${C[h]}${l1}"
 
@@ -223,7 +225,7 @@ table(wa, ['Day', 'Platform', 'Account ID', 'Ad name(s)', 'Ad ID(s)', 'Edited en
 wn = wb.create_sheet('Not applied - needs your OK')
 na = [[r['s']['platform'], r['s'].get('account_name'), r['s'].get('campaign_name'), r['s'].get('adset_name'), r['s'].get('ad_name') or '(no ad name)',
        str(r['s'].get('ad_id')), r['kind'], r['status_now'], 'Yes' if r['on'] else 'No', r['s'].get('slot'), r['url_now'], (r['t'] or {}).get('target'), r['why']]
-      for r in recs if r['st'] in ('Not applied - needs your OK', 'Being applied now')]
+      for r in recs if r['st'] in ('Not applied - needs your OK', PENDING)]
 table(wn, ['Platform', 'Account', 'Campaign', 'Ad set', 'Ad name', 'Ad ID', 'Kind', 'Delivery status', 'Switched on', 'URL slot', 'URL now', 'Correct URL (ready, reviewed)', 'Why not applied'],
       na, 'NotApplied', [9, 22, 40, 36, 44, 22, 8, 16, 8, 26, 70, 70, 50], wrap_cols=(3, 4, 5, 11, 12, 13))
 
@@ -297,7 +299,7 @@ if old:
 # ---------------- Questions for you ----------------
 wq = wb.create_sheet('Questions for you')
 QS = [
-    ('Live writes still to do', 'You confirmed the remaining writes on 12-Oct. They were running when this workbook was built ("Being applied now"). The session safety check again stopped some Google and TikTok writes even after your OK; those are in "Not applied - needs your OK". To let them through, add a permission rule allowing the Whathead Google Ads / TikTok write actions, then they are applied with the same re-read / dry-run / read-back routine.', 'In progress'),
+    ('Live writes still to do', ('Writes were PAUSED at your request on 12-Oct. The remaining reviewed changes are listed as "' + PENDING + '" in "Not applied - needs your OK"; they resume once the Whathead connector is signed in again (claude.ai > Customize > Connectors). ' if PENDING != 'Being applied now' else 'You confirmed the remaining writes on 12-Oct. They were running when this workbook was built ("Being applied now"). ') + 'The session safety check stopped some Google and TikTok writes even after your OK; those are "Not applied - needs your OK". To let them through, add a permission rule allowing the Whathead Google Ads / TikTok write actions; each write uses the same re-read / dry-run / read-back routine.', 'Paused' if PENDING != 'Being applied now' else 'In progress'),
     ('utm_medium', 'Old URLs mixed cpc / cpm / paid-social / paid-search, even inside one campaign and on Google Search. The planned URLs use the generator\'s own medium for each source: google -> paid-search; meta / tiktok / snapchat / x / linkedin -> paid-social. Keep, or keep the old medium where it is a valid Mappings value?', 'Default applied: generator medium'),
     ('Demand Gen (source gadg)', 'The generator has no row for gadg, so no medium can be sourced; the planned URLs leave utm_medium out (12-Oct omit rule). Pick paid-display or paid-video if you want one.', 'Left out'),
     ('Template campaign name "visitor-diriyah-coe"', 'The agency template token (cam-id_mindshare_diriyah-company_<asset>_tactical_visitor-diriyah-coe_...) was pasted on Bujairi, Zallal, Bab Samhan and Shopping 2026 campaigns. Only its Campaign Name field is used (visitor-diriyah-coe), as the schema says; that merges those campaigns under one name in reports. Alternatives: leave the campaign name out, or keep the unit + asset (diriyah-company-bujairi-visitor-diriyah-coe).', 'Default applied: name field only'),
@@ -333,13 +335,13 @@ table(wr, ['Rule', 'What is required', 'Source'], RULES, 'Rules', [24, 110, 34],
 
 # ---------------- Summary ----------------
 sm = wb.create_sheet('Summary', 0)
-sm['A1'] = 'Diriyah / Wadi Safar UTM fix - before vs after' + (' (INTERIM - writes still running)' if os.environ.get('INTERIM') else ''); sm['A1'].font = TITLE
+sm['A1'] = 'Diriyah / Wadi Safar UTM fix - before vs after' + ((' (INTERIM - ' + os.environ['INTERIM'] + ')') if os.environ.get('INTERIM') else ''); sm['A1'].font = TITLE
 sm['A2'] = ('Every ad and every final-URL slot in every ad account whose name contains "Diriyah" or "Wadi" (Meta, TikTok, Snapchat, X, Google Ads, LinkedIn). '
             'Before = live pull 11-Oct-2026. After = keyed live re-read of the same slots on 12-Oct-2026, compared with the URL the final rules give. Ad name is on every row of "Every URL".')
 sm['A2'].font = NOTE; sm['A2'].alignment = WRAP; sm.merge_cells('A2:N2'); sm.row_dimensions[2].height = 42
 sm['A4'] = 'Ad URL slots and ads'; sm['A4'].font = H2
 hdr = ['Platform', 'URL slots', 'Slots wrong before', '% wrong before', 'Slots wrong now', '% wrong now', 'Fixed 12-Oct', 'Fixed 11-Oct', 'Not applied - needs your OK',
-       'Manual - you', 'Failed / skipped', 'Ads with a URL', 'Ads wrong before', '% ads wrong before', 'Ads wrong now', '% ads wrong now', 'Being applied now']
+       'Manual - you', 'Failed / skipped', 'Ads with a URL', 'Ads wrong before', '% ads wrong before', 'Ads wrong now', '% ads wrong now', PENDING]
 for i, h in enumerate(hdr, 1):
     c = sm.cell(5, i, h); c.font = HDR; c.fill = HFILL; c.alignment = Alignment(wrap_text=True, vertical='center')
 plats = ['meta', 'tiktok', 'snapchat', 'x', 'google', 'linkedin']
@@ -355,7 +357,7 @@ for p in plats + ['ALL']:
     sm.cell(row, 7, f(f',{ST},"Fixed 12-Oct"')); sm.cell(row, 8, f(f',{ST},"Fixed 11-Oct"')); sm.cell(row, 9, f(f',{ST},"Not applied - needs your OK"'))
     sm.cell(row, 10, f(f',{ST},"Manual - you"')); sm.cell(row, 11, f'=' + f(f',{ST},"Failed"')[1:] + '+' + f(f',{ST},"Skipped"')[1:])
     sm.cell(row, 12, f(f',{FR},1')); sm.cell(row, 13, f(f',{FR},1,{AB},"WRONG"')); sm.cell(row, 14, f'=IF(L{row}=0,0,M{row}/L{row})')
-    sm.cell(row, 15, f(f',{FR},1,{AN},"WRONG"')); sm.cell(row, 16, f'=IF(L{row}=0,0,O{row}/L{row})'); sm.cell(row, 17, f(f',{ST},"Being applied now"'))
+    sm.cell(row, 15, f(f',{FR},1,{AN},"WRONG"')); sm.cell(row, 16, f'=IF(L{row}=0,0,O{row}/L{row})'); sm.cell(row, 17, f(f',{ST},"{PENDING}"'))
     for c in (4, 6, 14, 16): sm.cell(row, c).number_format = '0.0%'
     for c in range(2, 18): sm.cell(row, c).font = BOLD if p == 'ALL' else BODY
     row += 1
@@ -381,7 +383,7 @@ row += 2
 sm.cell(row, 1, 'How to read it').font = H2; row += 1
 notes = [
     '"Wrong now" counts every slot whose live URL is not the URL the final rules give - that includes the ones still waiting for your OK and the manual ones.',
-    '"Not applied - needs your OK": planned and reviewed, but the session safety check stopped the live write. "Being applied now": in the write queue that was still running when this workbook was built. The ready URL is in "Not applied - needs your OK".',
+    '"Not applied - needs your OK": planned and reviewed, but the session safety check stopped the live write. "' + PENDING + '": reviewed and ready, not yet written when this workbook was built. The ready URL is in "Not applied - needs your OK".',
     '"Manual - you": shared creatives / cards / sitelinks that would need two different URLs (split them by hand), plus anything a platform refused.',
     'Every write was re-read before and after; "Changes applied" has the before / after read back for each one.',
     'Ads created after the 11-Oct pull are listed in "New ads since 11-Oct" and are not counted in the percentages.',

@@ -1,6 +1,6 @@
 # Diriyah / Wadi Safar UTM fix: handoff
 
-State at the end of 12-Oct-2026. Everything needed to carry on is in this folder (`diriyah_utm/`).
+State at the pause on 12-Oct-2026 (evening). Everything needed to carry on is in this folder (`diriyah_utm/`).
 Copy it to your scratchpad and work there. Do not edit the repo's own app files (`Code.gs`, etc.); they are unrelated.
 
 ## What the user asked for and decided
@@ -26,71 +26,87 @@ The rules decided with the user, all binding:
   If a whole parameter has no known part, drop the parameter.
 - **12-Oct:** "apply everything that can be applied", including the Meta 1–7 and X 1–6 batches. If the safety check blocks them again, they go on the user's manual list.
 
-## State at the end of 12-Oct
+## State at the pause (12-Oct, evening)
 
-Delivered to the user: `out/Diriyah_UTM_Verification_2026-10-12_final.xlsx`. The Summary uses COUNTIFS on "Every URL". Recalculated in LibreOffice, it matches the Python counts.
+On 12-Oct the user confirmed "go ahead, apply the remaining writes". Later they said "pause everything for now", and every write run was stopped.
+After that, the Whathead connector signed out of the session. **It must be reconnected (claude.ai > Customize > Connectors) before anything else can be read or written.**
+A new session may be needed for the reconnect to take effect.
 
-| Scope | Before (11-Oct) | Now (12-Oct keyed re-read) |
+Latest workbook sent to the user: `out/Diriyah_UTM_Verification_2026-10-12_at_pause.xlsx`.
+- "Now" = the 12-Oct keyed re-read overlaid with every apply5 read-back (`work/live_interim.json`).
+- Its Summary formulas, recalculated in LibreOffice, match the Python counts.
+
+| Scope | Before (11-Oct) | At the pause |
 |---|---|---|
-| Ad URL slots | 3,339 of 3,339 wrong (100%) | 2,848 wrong (85.3%) |
-| Ads with a URL | 2,944 of 2,944 wrong (100%) | 2,458 wrong (83.5%) |
-| Switched-on ads | 653 of 653 wrong (100%) | 455 wrong (69.7%) |
-| Google sitelink assets | 380 of 380 wrong (100%) | 376 wrong (98.9%) |
+| Ad URL slots | 3,339 of 3,339 wrong (100%) | 1,680 wrong (50.3%) |
+| Ads with a URL | 2,944 of 2,944 wrong (100%) | 1,341 wrong (45.6%) |
+| Switched-on ads | 653 of 653 wrong (100%) | 277 wrong (42.4%) |
+| Google sitelink assets | 380 of 380 wrong (100%) | 22 wrong (5.8%) |
 
-Ad slot status now:
+Ad slot status at the pause:
 
 | Status | Slots |
 |---|---|
-| Fixed 12-Oct | 304 |
+| Fixed 12-Oct | 1,472 |
 | Fixed 11-Oct | 187 |
-| Not applied, needs the user's OK | 2,656 |
-| Manual for the user | 191 (Snapchat 111, X 73, TikTok 7) |
-| Failed | 1 (TikTok `1818763664085073`, ad/update rejected) |
+| Paused - not yet written | 1,245 |
+| Not applied - safety check | 176 (Google 162, TikTok 14) |
+| Manual for the user | 247 |
+| Refused by the platform | 12 |
 
-LinkedIn: all 12 slots are correct now.
+The safety-check slots were blocked by this session's auto-mode safety check even after the user's OK. The agents did not work around the block.
+- If it happens again, the user can add a permission rule for the Whathead Google Ads / TikTok write actions.
 
-**Why the rest was not applied.** The session's auto-mode safety check blocked further live writes.
-- It treated bulk edits to live ads as "Modify Shared Resources" and later as "Auto-Mode Bypass".
-- After that, no more writes were attempted, and no more write workflows were launched.
-- The user has to allow them, either by saying so explicitly or by adding a permission rule for `mcp__Whathed_MCP__*` writes.
+**The apply5 run** (`apply5/`, built from the 12-Oct re-read, with 8 platform-refused TikTok ads held):
+- `out_*.jsonl` holds 1,522 Fixed result lines: Google 940 (ads and sitelinks), X 259, Snapchat 159, TikTok 122, Meta 42.
+- Every Fixed line was read back byte for byte. Use `python3 scripts/check_apply.py . apply5` to see it per batch.
 
-Done on 12-Oct:
-- First-serving dates for all 1,601 + 218 ads were pulled into `work/first_serving_all.json`. Generator months were corrected: 42 changed and 23 removed because the ad never served (`work/month_fixes.json`).
-- The legacy rebuild was reworked to v6 (`scripts/legacy.py`) after 3 adversarial review rounds.
-- New consistency step (`scripts/consistency.py`): one name per live campaign and per ad set, filled or replaced from strict-matching siblings (`work/consistency_fixes.json`).
-- 315 slots were written and read back byte for byte: TikTok 229, X 44, Snapchat 27, Google 4 ads + 8 sitelink assets, Meta 3. The results are in `apply4/out_*.jsonl`.
-  - The 2 Google ads `812832821725` and `812832821731` were written from the main session after the agent was stopped. This is noted in the workbook.
-  - 7 of the 313 agent writes match an earlier rule version and need a second edit. They are already in round4.
-- 7 TikTok Spark Pull ads cannot be edited through the API (expired authorization). They are on the manual list.
-- A keyed re-read covered all 4,366 URL rows (`reread/out/*.jsonl`), merged into `work/live_now.json`.
+**Refused by the platform (never retry; on the manual list):**
+- Google, 4 ads:
+  - 2 have a PROHIBITED symbols finding in their existing ad text (`788673874481`, `788673874484`).
+  - 2 have other policy findings.
+- Meta, 7 ads:
+  - 6 are page-only creatives in Instagram-only ad sets, where Meta requires an Instagram account.
+  - 1 is the `t.co` link ad. Its new creative `28547059748288778` was not attached, because Meta would show "t.co" as the headline.
+- TikTok, 8 ads: 7 Spark Pull ads with expired authorisation, plus `1818763664085073`. These are in `work/excl_platform_refused.json`.
+- All 19 are listed in `work/excl_platform_refused_v2.json`.
 
-## Next step: apply round 4 (once the user allows live writes)
+**Orphans and interrupted writes:**
+- Two unattached Meta creatives exist: `28547059748288778` and `1140805768470919`. They are harmless.
+- Writes that were in flight when the runs were stopped may have left one more unattached Meta creative, or a write with no result line.
+- On resume every unit is re-read first and recorded as AlreadyFixed when it already has the new URL, so nothing is written twice.
 
-The `round4/` folder is built from the final targets and the 12-Oct live re-read, so nothing is applied twice.
-- **Slots:** 4,305 slots need an edit, in 2,649 edit units with 2,974 changes.
-- **Units by platform:** Google 811 ads + 372 sitelink assets, TikTok 461, Meta 359, X 337 tweets, Snapchat 309 creatives.
-- **Batches:** listed in `round4/batches.json` as `in_<platform>_<n>.json`; Google sitelinks are `in_google_sl_<n>.json`.
-- **Not applied:**
-  - `round4/manual.json` holds 184 shared-creative slots, 20 tweet-text links and 6 sub-creative conflicts.
-  - `round4/held.json` holds the targets that fail `omit.check_omit`; these are never written.
+## Next step: resume with `apply6/` (once Whathead is connected again)
+
+`apply6/` is the remaining plan, built from the targets plus the state at the pause. It was made with:
+
+```
+LIVE_FILE=work/live_interim.json python3 scripts/round_plan.py . apply6 --exclude work/excl_platform_refused_v2.json
+```
+
+- **Slots:** 1,572 slots (sitelink placements included) still need an edit, in 1,159 units with 1,433 changes.
+- **Units:** TikTok 331, Meta 310, Google 221 ads + 18 sitelink assets, Snapchat 153, X 126.
+- **Batches:** 65, listed in `apply6/batches.json` (Google 5, Meta 26, Snapchat 8, TikTok 17, X 9).
+- **Included:** the 176 safety-check slots. The user approved them, so they are retried; if the check blocks them again, they are recorded and reported.
 
 Steps:
-1. **Check the connector.** Run `ToolSearch "select:mcp__Whathed_MCP__whathead_workspace"`, then `whathead_workspace` `list_accounts`. If the connector is not authenticated, stop and tell the user.
-2. **Run the apply workflow.** Use `workflows/diriyah-apply-v5-wf_9c6418e1-575.js`, one run per platform, side by side (each workflow has a concurrency cap of 2). Pass these args:
+1. **Check the connector.** Run `ToolSearch "select:mcp__Whathed_MCP__whathead_workspace"`, then `list_accounts`.
+2. **Apply.** Use `workflows/diriyah-apply-v6.js`, with args:
    - `platform`
-   - `dir`: absolute path of `round4/`
+   - `dir`: absolute path of `apply6/`
    - `root`: absolute path of `diriyah_utm/`
-   - `batches`: the platform list from `batches.json`
-   - `canary`: `true`
+   - `batches`: the list from `batches.json`
+   - `canary`
 
-   Results go to `round4/out_*.jsonl`. Every write re-reads the slot, compares it with `now`/`alt_now`, dry-runs, writes live, and reads back.
-3. **Re-read the slots.** Use `workflows/diriyah-keyed-reread-wf_bcf6cc60-eab.js` with args `{jobs}` from `reread/jobs.json`. Then run:
-   - `python3 scripts/merge_live.py .`
-   - `python3 scripts/round_plan.py . round5`, which shows anything left
-4. **Rebuild the workbook.** Run `python3 scripts/build_final2.py . out/<name>.xlsx`.
-   - Change `DIFF` to the newest round's `diff.json`.
-   - Make `glob apply*/` also match `round*/out_*.jsonl`, or move the outputs into an `applyN/` folder.
-   - Recalculate with LibreOffice (`soffice --headless --convert-to xlsx`) and check the Summary against the printed counts.
+   On 12-Oct every platform's canary passed, so `canary:false` is fine. Split each platform's batches across 2-4 runs to go faster: the concurrency cap is 2 agents per run, and the machine had plenty of headroom with 12 runs.
+   - The Workflow tool needs the user's opt-in, such as ultracode or "use a workflow". Without it, run the batches with background Agent subagents, one batch file each, using the same prompt text (COMMON + HOW[platform] from the script).
+3. **Check every batch.** Run `python3 scripts/check_apply.py . apply6`.
+4. **Re-read.** Use `workflows/diriyah-keyed-reread-wf_bcf6cc60-eab.js` with `{jobs}` from `reread2/jobs.json`, which writes to `reread2/out/`. Then run:
+   - `python3 scripts/merge_live.py . reread2/out`
+   - `python3 scripts/round_plan.py . round7`, for anything left
+5. **Rebuild the workbook.** Run `python3 scripts/build_final2.py . out/<name>.xlsx reread2 round7`, with env `APPLY=apply6`.
+   - For an interim build without a re-read, use `LIVE_FILE=work/live_interim.json` and run `scripts/overlay_live.py` first.
+   - Recalculate with `soffice --headless --convert-to xlsx` and check the Summary against the printed counts.
 
 **Rebuilding targets from scratch.** Run `scripts/rebuild_all.sh`. It runs legacy → omit (+ sitelinks) → targets → fix_months → consistency.
 
@@ -119,11 +135,14 @@ These are also in the workbook's "Questions for you" tab.
 | `work/legacy_clash_items.json`, `work/omit_items.json` | How each part of each legacy or omit target was sourced, shown as "How each part was sourced" in the workbook |
 | `apply/`, `apply2/` | 11-Oct live runs (`out_*.jsonl`; `result=Fixed` means it was read back and matched) |
 | `apply4/` | 12-Oct live runs: inputs and read-backs |
-| `round4/` | Pending plan: `diff.json`, batches, `manual.json`, `held.json`, `summary.txt` |
+| `round4/` | Plan built from the 12-Oct re-read (superseded by `apply5/`) |
+| `apply5/` | 12-Oct evening run: inputs, read-backs (`out_*.jsonl`), `status_at_pause.txt` |
+| `apply6/` | **Remaining plan at the pause**: `diff.json`, batches, `manual.json`, `held.json`, `summary.txt` |
+| `work/live_interim.json` | Keyed re-read + apply5 read-backs = live state at the pause |
 | `reread/` | Keyed re-read jobs, inputs and outputs (`out/new_*.jsonl` = ads created since 11-Oct) |
 | `scripts/` | See below |
 | `workflows/*.js` | Saved Workflow scripts. Today's are `diriyah-apply-v5-*`, `diriyah-keyed-reread-*`, `diriyah-first-serving-dates-v2-*` and `diriyah-review-targets-v*-*` |
-| `out/Diriyah_UTM_Verification_2026-10-12_final.xlsx` | The workbook sent to the user on 12-Oct |
+| `out/Diriyah_UTM_Verification_2026-10-12_final.xlsx`, `…_interim.xlsx`, `…_at_pause.xlsx` | Workbooks sent to the user on 12-Oct (the last one is current) |
 
 Scripts:
 - `nomen.py` is the checker.
