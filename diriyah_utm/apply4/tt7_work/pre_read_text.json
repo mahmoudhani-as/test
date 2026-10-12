@@ -1,0 +1,1229 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_get",
+    "method": "GET",
+    "path": "/v1.3/ad/get/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "202610121759371B5E03A02651A33AC0AA",
+      "data": {
+        "list": [
+          {
+            "adgroup_name": "Zallal_Winter2025_UF_AWR_KSA_Prospect_AR",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_id": "1851567037109297",
+            "ad_name": "Visit Diriyah_Tactical _Zallal Winter Campaign 2025_UF_KSA_Prospecting_AR_Awareness_Zallal Hero Video",
+            "page_id": null,
+            "ad_format": "SINGLE_VIDEO",
+            "profile_image_url": "",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-zallal-2025-dec-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "8371"
+              },
+              {
+                "key": "utm_content",
+                "value": "zallalherovideo-sponsoredpost-ksa"
+              }
+            ],
+            "ad_text": "",
+            "campaign_automation_type": "MANUAL",
+            "avatar_icon_web_uri": "",
+            "create_time": "2025-12-23 10:02:30",
+            "identity_id": "7031391213458752514",
+            "campaign_name": "Zallal_Winter2025_UF_AWR_KSA_ENAR_TikTok",
+            "ad_id": "1852292704262321",
+            "call_to_action_id": null,
+            "promotional_music_disabled": true,
+            "tracking_pixel_id": 0,
+            "optimization_event": null,
+            "deeplink": "",
+            "is_aco": false,
+            "operation_status": "ENABLE",
+            "click_tracking_url": null,
+            "tiktok_item_id": "7581845843544739090",
+            "impression_tracking_url": null,
+            "advertiser_id": "7338057963233443842",
+            "app_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "display_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "carousel_image_labels": null,
+            "video_id": null,
+            "deeplink_type": "NORMAL",
+            "ad_texts": null,
+            "adgroup_id": "1851567037111297",
+            "identity_type": "AUTH_CODE",
+            "landing_page_urls": null,
+            "viewability_vast_url": null,
+            "brand_safety_vast_url": null,
+            "viewability_postbid_partner": "UNSET",
+            "card_id": null,
+            "vast_moat_enabled": false,
+            "creative_authorized": true,
+            "call_to_action": "BOOK_NOW",
+            "landing_page_url": "https://www.diriyah.sa/ar/zallal?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-zallal-2025-dec-uf-reach-awareness&utm_id=8371&utm_term=wintercampaign-zallal-ar-all-na&utm_content=zallalherovideo-sponsoredpost-ksa",
+            "brand_safety_postbid_partner": "UNSET",
+            "playable_url": "",
+            "creative_type": null,
+            "music_id": null,
+            "is_new_structure": true,
+            "modify_time": "2026-06-11 19:41:26",
+            "image_ids": []
+          },
+          {
+            "adgroup_name": "ManazelAlHadawi_2025_UF_AWR_KSA_Prospect_AR",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_id": "1847410702541937",
+            "ad_name": "Diriyah Company_Tactical _Cityscape Al Hadawi 2025_UF_KSA_Prospecting_AR_Awareness_Launch Video 15s",
+            "page_id": null,
+            "ad_format": "SINGLE_VIDEO",
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202504235d0ddc1b8ba9571646aca4ab",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-cityscape-2025-dec-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "8554"
+              },
+              {
+                "key": "utm_term",
+                "value": "cityscape-ar-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "launchvideo15s-video-ksa"
+              }
+            ],
+            "ad_text": "بإطلالة على وادي حنيفة التاريخي؛ منازل الحداوي تضع ساكنيها على بُعد دقائق من أبرز معالم الدرعية.",
+            "campaign_automation_type": "MANUAL",
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202504235d0ddc1b8ba9571646aca4ab",
+            "create_time": "2025-12-17 09:29:44",
+            "identity_id": "7552973066290216968",
+            "campaign_name": "ManazelAlHadawi_2025_UF_AWR_KSA_ENAR_TikTok_20HS251671-20HS2641",
+            "ad_id": "1851747161562226",
+            "call_to_action_id": null,
+            "optimization_event": null,
+            "deeplink": "",
+            "is_aco": false,
+            "operation_status": "ENABLE",
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "click_tracking_url": null,
+            "impression_tracking_url": null,
+            "advertiser_id": "7338057963233443842",
+            "app_name": "",
+            "display_name": "DiriyahCo",
+            "carousel_image_labels": null,
+            "video_id": "v10033g50000d517fp7og65g8b0mh6kg",
+            "deeplink_type": "NORMAL",
+            "ad_texts": null,
+            "adgroup_id": "1851128281433090",
+            "identity_type": "CUSTOMIZED_USER",
+            "landing_page_urls": null,
+            "viewability_vast_url": null,
+            "brand_safety_vast_url": null,
+            "viewability_postbid_partner": "UNSET",
+            "card_id": null,
+            "vast_moat_enabled": false,
+            "creative_authorized": true,
+            "call_to_action": "LEARN_MORE",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-cityscape-2025-dec-uf-reach-awareness&utm_id=8554&utm_term=cityscape-ar-all-na&utm_content=launchvideo15s-video-ksa",
+            "brand_safety_postbid_partner": "UNSET",
+            "playable_url": "",
+            "creative_type": null,
+            "music_id": null,
+            "is_new_structure": true,
+            "modify_time": "2025-12-30 10:18:20",
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/ogEbLhQEgKXYPoDRCAfSFhAgDfINfEXkDOhS7G"
+            ]
+          },
+          {
+            "adgroup_name": "ManazelAlHadawi_2025_UF_AWR_KSA_Prospect_AR",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_id": "1847410702541937",
+            "ad_name": "Diriyah Company_Tactical _Cityscape Al Hadawi 2025_UF_KSA_Prospecting_AR_Awareness_Video 7s",
+            "page_id": null,
+            "ad_format": "SINGLE_VIDEO",
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202504235d0ddc1b8ba9571646aca4ab",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-cityscape-2025-dec-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "8610"
+              },
+              {
+                "key": "utm_term",
+                "value": "cityscape-ar-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "retargetingvideo7s-video-ksa"
+              }
+            ],
+            "ad_text": "تجاور منازل الحداوي أبرز معالم الدرعية الأيقونية: أرينا الدرعية و دار الأوبرا الملكية",
+            "campaign_automation_type": "MANUAL",
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202504235d0ddc1b8ba9571646aca4ab",
+            "create_time": "2025-12-17 09:29:44",
+            "identity_id": "7552973066290216968",
+            "campaign_name": "ManazelAlHadawi_2025_UF_AWR_KSA_ENAR_TikTok_20HS251671-20HS2641",
+            "ad_id": "1851747074104433",
+            "call_to_action_id": null,
+            "optimization_event": null,
+            "deeplink": "",
+            "is_aco": false,
+            "operation_status": "ENABLE",
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "click_tracking_url": null,
+            "impression_tracking_url": null,
+            "advertiser_id": "7338057963233443842",
+            "app_name": "",
+            "display_name": "DiriyahCo",
+            "carousel_image_labels": null,
+            "video_id": "v10033g50000d4trcn7og65rgo0q7ll0",
+            "deeplink_type": "NORMAL",
+            "ad_texts": null,
+            "adgroup_id": "1851128281433090",
+            "identity_type": "CUSTOMIZED_USER",
+            "landing_page_urls": null,
+            "viewability_vast_url": null,
+            "brand_safety_vast_url": null,
+            "viewability_postbid_partner": "UNSET",
+            "card_id": null,
+            "vast_moat_enabled": false,
+            "creative_authorized": true,
+            "call_to_action": "LEARN_MORE",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-cityscape-2025-dec-uf-reach-awareness&utm_id=8610&utm_term=cityscape-ar-all-na&utm_content=retargetingvideo7s-video-ksa",
+            "brand_safety_postbid_partner": "UNSET",
+            "playable_url": "",
+            "creative_type": null,
+            "music_id": null,
+            "is_new_structure": true,
+            "modify_time": "2025-12-17 09:59:36",
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/ooDppGZN1Aa3CNfugIFUObQDcfArHM7EBDBZ3Q"
+            ]
+          },
+          {
+            "adgroup_name": "ManazelAlHadawi_2025_UF_AWR_KSA_Prospect_EN",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_id": "1847410702541937",
+            "ad_name": "Diriyah Company_Tactical _Cityscape Al Hadawi 2025_UF_KSA_Prospecting_EN_Awareness_Launch Video 15s",
+            "page_id": null,
+            "ad_format": "SINGLE_VIDEO",
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202504235d0ddc1b8ba9571646aca4ab",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-cityscape-2025-dec-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "8556"
+              },
+              {
+                "key": "utm_term",
+                "value": "cityscape-en-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "launchvideo15s-video-ksa"
+              }
+            ],
+            "ad_text": "Manazel AlHadawi is just minutes away from Diriyah’s iconic landmarks. ",
+            "campaign_automation_type": "MANUAL",
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202504235d0ddc1b8ba9571646aca4ab",
+            "create_time": "2025-12-17 09:26:53",
+            "identity_id": "7552973066290216968",
+            "campaign_name": "ManazelAlHadawi_2025_UF_AWR_KSA_ENAR_TikTok_20HS251671-20HS2641",
+            "ad_id": "1851746971583650",
+            "call_to_action_id": null,
+            "optimization_event": null,
+            "deeplink": "",
+            "is_aco": false,
+            "operation_status": "ENABLE",
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "click_tracking_url": null,
+            "impression_tracking_url": null,
+            "advertiser_id": "7338057963233443842",
+            "app_name": "",
+            "display_name": "DiriyahCo",
+            "carousel_image_labels": null,
+            "video_id": "v10033g50000d517edfog65odn9fdglg",
+            "deeplink_type": "NORMAL",
+            "ad_texts": null,
+            "adgroup_id": "1851128488303953",
+            "identity_type": "CUSTOMIZED_USER",
+            "landing_page_urls": null,
+            "viewability_vast_url": null,
+            "brand_safety_vast_url": null,
+            "viewability_postbid_partner": "UNSET",
+            "card_id": null,
+            "vast_moat_enabled": false,
+            "creative_authorized": true,
+            "call_to_action": "LEARN_MORE",
+            "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-cityscape-2025-dec-uf-reach-awareness&utm_id=8556&utm_term=cityscape-en-all-na&utm_content=launchvideo15s-video-ksa",
+            "brand_safety_postbid_partner": "UNSET",
+            "playable_url": "",
+            "creative_type": null,
+            "music_id": null,
+            "is_new_structure": true,
+            "modify_time": "2025-12-30 10:18:28",
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/oMILdTjbBI50rC4uA2iBonmawAf60iAEiYwdBo"
+            ]
+          },
+          {
+            "adgroup_name": "ManazelAlHadawi_2025_UF_AWR_KSA_Prospect_EN",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_id": "1847410702541937",
+            "ad_name": "Diriyah Company_Tactical _Cityscape Al Hadawi 2025_UF_KSA_Prospecting_EN_Awareness_Video 7s",
+            "page_id": null,
+            "ad_format": "SINGLE_VIDEO",
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202504235d0ddc1b8ba9571646aca4ab",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-cityscape-2025-dec-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "8612"
+              },
+              {
+                "key": "utm_term",
+                "value": "cityscape-en-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "retargetingvideo7s-video-ksa"
+              }
+            ],
+            "ad_text": "Manazel AlHadawi, at the heart of the cultural and entertainment scene in The City of Earth.",
+            "campaign_automation_type": "MANUAL",
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202504235d0ddc1b8ba9571646aca4ab",
+            "create_time": "2025-12-17 09:26:53",
+            "identity_id": "7552973066290216968",
+            "campaign_name": "ManazelAlHadawi_2025_UF_AWR_KSA_ENAR_TikTok_20HS251671-20HS2641",
+            "ad_id": "1851746587645249",
+            "call_to_action_id": null,
+            "optimization_event": null,
+            "deeplink": "",
+            "is_aco": false,
+            "operation_status": "ENABLE",
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "click_tracking_url": null,
+            "impression_tracking_url": null,
+            "advertiser_id": "7338057963233443842",
+            "app_name": "",
+            "display_name": "DiriyahCo",
+            "carousel_image_labels": null,
+            "video_id": "v10033g50000d517cknog65u5nl36a0g",
+            "deeplink_type": "NORMAL",
+            "ad_texts": null,
+            "adgroup_id": "1851128488303953",
+            "identity_type": "CUSTOMIZED_USER",
+            "landing_page_urls": null,
+            "viewability_vast_url": null,
+            "brand_safety_vast_url": null,
+            "viewability_postbid_partner": "UNSET",
+            "card_id": null,
+            "vast_moat_enabled": false,
+            "creative_authorized": true,
+            "call_to_action": "LEARN_MORE",
+            "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-cityscape-2025-dec-uf-reach-awareness&utm_id=8612&utm_term=cityscape-en-all-na&utm_content=retargetingvideo7s-video-ksa",
+            "brand_safety_postbid_partner": "UNSET",
+            "playable_url": "",
+            "creative_type": null,
+            "music_id": null,
+            "is_new_structure": true,
+            "modify_time": "2025-12-17 09:49:02",
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/oEECIBB2NdoQAsDpWFNsfKoeBZ8DSEagQznlBY"
+            ]
+          },
+          {
+            "adgroup_name": "Zallal_Winter2025_UF_AWR_KSA_Prospect_EN",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_id": "1851567037109297",
+            "ad_name": "Visit Diriyah_Tactical_Winter Campaign 2025_UF_KSA_Prospecting_EN_Awareness_Zallal Hero Video",
+            "page_id": null,
+            "ad_format": "SINGLE_VIDEO",
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-zallal-2025-dec-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "8372"
+              },
+              {
+                "key": "utm_term",
+                "value": "wintercampaign-zallal-en-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "zallalherovideo-video-ksa"
+              }
+            ],
+            "ad_text": "Explore Zallal, a vibrant mix of culture, retail, and recreation.",
+            "campaign_automation_type": "MANUAL",
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "create_time": "2025-12-15 10:53:59",
+            "identity_id": "7350277519361425409",
+            "campaign_name": "Zallal_Winter2025_UF_AWR_KSA_ENAR_TikTok",
+            "ad_id": "1851571227624546",
+            "call_to_action_id": null,
+            "tracking_pixel_id": 0,
+            "optimization_event": null,
+            "deeplink": "",
+            "is_aco": false,
+            "operation_status": "DISABLE",
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "click_tracking_url": null,
+            "impression_tracking_url": null,
+            "advertiser_id": "7338057963233443842",
+            "app_name": "",
+            "display_name": "Visit Diriyah",
+            "carousel_image_labels": null,
+            "video_id": "v10033g50000d4vuf9fog65qs71hltj0",
+            "deeplink_type": "NORMAL",
+            "ad_texts": null,
+            "adgroup_id": "1851567037110337",
+            "identity_type": "CUSTOMIZED_USER",
+            "creative_auto_enhancement_strategy_list": [],
+            "landing_page_urls": null,
+            "viewability_vast_url": null,
+            "brand_safety_vast_url": null,
+            "viewability_postbid_partner": "UNSET",
+            "card_id": null,
+            "vast_moat_enabled": false,
+            "creative_authorized": true,
+            "call_to_action": "BOOK_NOW",
+            "landing_page_url": "https://www.diriyah.sa/en/zallal?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-zallal-2025-dec-uf-reach-awareness&utm_id=8372&utm_term=wintercampaign-zallal-en-all-na&utm_content=zallalherovideo-video-ksa",
+            "brand_safety_postbid_partner": "UNSET",
+            "playable_url": "",
+            "creative_type": null,
+            "music_id": null,
+            "is_new_structure": true,
+            "modify_time": "2025-12-26 09:21:01",
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/oA87MKfE2A4f1eRM5AB8HQufIAwkY1DQYl7GFF"
+            ]
+          },
+          {
+            "adgroup_name": "Zallal_Winter2025_UF_AWR_KSA_Prospect_AR",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_id": "1851567037109297",
+            "ad_name": "Visit Diriyah_Tactical_Winter Campaign 2025_UF_KSA_Prospecting_AR_Awareness_Zallal Hero Video",
+            "page_id": null,
+            "ad_format": "SINGLE_VIDEO",
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-zallal-2025-dec-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "8370"
+              },
+              {
+                "key": "utm_term",
+                "value": "wintercampaign-zallal-ar-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "zallalherovideo-video-ksa"
+              }
+            ],
+            "ad_text": "اكتشف الزلال، وجهة تنبض بالحياة تجمع بين الثقافة والتسوق والترفيه.",
+            "campaign_automation_type": "MANUAL",
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "create_time": "2025-12-15 10:51:04",
+            "identity_id": "7350277519361425409",
+            "campaign_name": "Zallal_Winter2025_UF_AWR_KSA_ENAR_TikTok",
+            "ad_id": "1851570971489602",
+            "call_to_action_id": null,
+            "optimization_event": null,
+            "deeplink": "",
+            "is_aco": false,
+            "operation_status": "DISABLE",
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "click_tracking_url": null,
+            "impression_tracking_url": null,
+            "advertiser_id": "7338057963233443842",
+            "app_name": "",
+            "display_name": "Visit Diriyah",
+            "carousel_image_labels": null,
+            "video_id": "v10033g50000d4vuf9fog65qs71hltj0",
+            "deeplink_type": "NORMAL",
+            "ad_texts": null,
+            "adgroup_id": "1851567037111297",
+            "identity_type": "CUSTOMIZED_USER",
+            "landing_page_urls": null,
+            "viewability_vast_url": null,
+            "brand_safety_vast_url": null,
+            "viewability_postbid_partner": "UNSET",
+            "card_id": null,
+            "vast_moat_enabled": false,
+            "creative_authorized": true,
+            "call_to_action": "BOOK_NOW",
+            "landing_page_url": "https://www.diriyah.sa/ar/zallal?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-zallal-2025-dec-uf-reach-awareness&utm_id=8370&utm_term=wintercampaign-zallal-ar-all-na&utm_content=zallalherovideo-video-ksa",
+            "brand_safety_postbid_partner": "UNSET",
+            "playable_url": "",
+            "creative_type": null,
+            "music_id": null,
+            "is_new_structure": true,
+            "modify_time": "2025-12-26 09:21:13",
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/oA87MKfE2A4f1eRM5AB8HQufIAwkY1DQYl7GFF"
+            ]
+          },
+          {
+            "adgroup_name": "BujairiTerrace_Winter2025Tickets_UF_AWR_QAT_Prospect_AR",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_id": "1849124475061377",
+            "ad_name": "Bujairi_Terrace_Tactical_Bujairi_Terrace_Tickets_Winter_Campaign_UF_QAT_Prospecting_AR_Awareness_BT Hero Video",
+            "page_id": null,
+            "ad_format": "SINGLE_VIDEO",
+            "profile_image_url": "",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "8084"
+              },
+              {
+                "key": "utm_term",
+                "value": "wintercampaign-bujairiterrace-ar-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "tickets-btherovideo-video-qat"
+              }
+            ],
+            "ad_text": "إستمتع بتجارب عالمية بطابع نجدي هذا الشتاء في مطل البجيري، حيث يطل كل ركن على معالم الدرعية",
+            "campaign_automation_type": "MANUAL",
+            "avatar_icon_web_uri": "",
+            "create_time": "2025-12-12 14:15:48",
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "campaign_name": "BujairiTerrace_Winter2025Tickets_UF_AWR_QAT_ENAR_TikTok",
+            "ad_id": "1851312055785137",
+            "call_to_action_id": null,
+            "tracking_pixel_id": 0,
+            "optimization_event": null,
+            "deeplink": "",
+            "is_aco": false,
+            "branded_content_disabled": false,
+            "operation_status": "ENABLE",
+            "click_tracking_url": null,
+            "tiktok_item_id": "7582979847694257426",
+            "impression_tracking_url": null,
+            "advertiser_id": "7338057963233443842",
+            "app_name": "bujairiterrace",
+            "display_name": "bujairiterrace",
+            "carousel_image_labels": null,
+            "video_id": "v10033g50000d4trvc7og65mahv02ifg",
+            "deeplink_type": "NORMAL",
+            "ad_texts": null,
+            "adgroup_id": "1849124475063489",
+            "identity_type": "BC_AUTH_TT",
+            "creative_auto_enhancement_strategy_list": [],
+            "landing_page_urls": null,
+            "viewability_vast_url": null,
+            "brand_safety_vast_url": null,
+            "viewability_postbid_partner": "UNSET",
+            "card_id": null,
+            "dark_post_status": "ON",
+            "vast_moat_enabled": false,
+            "identity_authorized_bc_id": "6846326855419559942",
+            "creative_authorized": true,
+            "call_to_action": "BOOK_NOW",
+            "landing_page_url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness&utm_id=8084&utm_term=wintercampaign-bujairiterrace-ar-all-na&utm_content=tickets-btherovideo-video-qat",
+            "brand_safety_postbid_partner": "UNSET",
+            "playable_url": "",
+            "creative_type": null,
+            "music_id": null,
+            "is_new_structure": true,
+            "modify_time": "2026-02-03 21:05:23",
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/oAdAeCQ3fVMHbwAJ9oxFWV3D8ygBZSQGggIhfq"
+            ]
+          },
+          {
+            "adgroup_name": "BujairiTerrace_Winter2025Tickets_UF_AWR_QAT_Prospect_EN",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_id": "1849124475061377",
+            "ad_name": "Bujairi_Terrace_Tactical_Bujairi_Terrace_Tickets_Winter_Campaign_UF_QAT_Prospecting_EN_Awareness_BT Hero Video",
+            "page_id": null,
+            "ad_format": "SINGLE_VIDEO",
+            "profile_image_url": "",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "8086"
+              },
+              {
+                "key": "utm_term",
+                "value": "wintercampaign-bujairiterrace-en-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "tickets-btherovideo-video-qat"
+              }
+            ],
+            "ad_text": "Experience world-class moments and Najdi charm this winter at Bujairi Terrace",
+            "campaign_automation_type": "MANUAL",
+            "avatar_icon_web_uri": "",
+            "create_time": "2025-12-12 14:09:38",
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "campaign_name": "BujairiTerrace_Winter2025Tickets_UF_AWR_QAT_ENAR_TikTok",
+            "ad_id": "1851311617343730",
+            "call_to_action_id": null,
+            "tracking_pixel_id": 0,
+            "optimization_event": null,
+            "deeplink": "",
+            "is_aco": false,
+            "branded_content_disabled": false,
+            "operation_status": "ENABLE",
+            "click_tracking_url": null,
+            "tiktok_item_id": "7582997810778361096",
+            "impression_tracking_url": null,
+            "advertiser_id": "7338057963233443842",
+            "app_name": "bujairiterrace",
+            "display_name": "bujairiterrace",
+            "carousel_image_labels": null,
+            "video_id": "v10033g50000d4trvc7og65mahv02ifg",
+            "deeplink_type": "NORMAL",
+            "ad_texts": null,
+            "adgroup_id": "1849124475061409",
+            "identity_type": "BC_AUTH_TT",
+            "creative_auto_enhancement_strategy_list": [],
+            "landing_page_urls": null,
+            "viewability_vast_url": null,
+            "brand_safety_vast_url": null,
+            "viewability_postbid_partner": "UNSET",
+            "card_id": null,
+            "dark_post_status": "ON",
+            "vast_moat_enabled": false,
+            "identity_authorized_bc_id": "6846326855419559942",
+            "creative_authorized": true,
+            "call_to_action": "BOOK_NOW",
+            "landing_page_url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness&utm_id=8086&utm_term=wintercampaign-bujairiterrace-en-all-na&utm_content=tickets-btherovideo-video-qat",
+            "brand_safety_postbid_partner": "UNSET",
+            "playable_url": "",
+            "creative_type": null,
+            "music_id": null,
+            "is_new_structure": true,
+            "modify_time": "2026-02-03 21:05:23",
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/oAdAeCQ3fVMHbwAJ9oxFWV3D8ygBZSQGggIhfq"
+            ]
+          },
+          {
+            "adgroup_name": "BujairiTerrace_Winter2025Tickets_UF_AWR_KWT_Prospect_AR",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_id": "1849124333415602",
+            "ad_name": "Bujairi_Terrace_Tactical_Bujairi_Terrace_Tickets_Winter_Campaign_UF_KWT_Prospecting_AR_Awareness_BT Hero Video",
+            "page_id": null,
+            "ad_format": "SINGLE_VIDEO",
+            "profile_image_url": "",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "8058"
+              },
+              {
+                "key": "utm_term",
+                "value": "wintercampaign-bujairiterrace-ar-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "tickets-btherovideo-video-kwt"
+              }
+            ],
+            "ad_text": "إستمتع بتجارب عالمية بطابع نجدي هذا الشتاء في مطل البجيري، حيث يطل كل ركن على معالم الدرعية",
+            "campaign_automation_type": "MANUAL",
+            "avatar_icon_web_uri": "",
+            "create_time": "2025-12-12 14:01:08",
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "campaign_name": "BujairiTerrace_Winter2025Tickets_UF_AWR_KWT_ENAR_TikTok",
+            "ad_id": "1851311177282625",
+            "call_to_action_id": null,
+            "tracking_pixel_id": 0,
+            "optimization_event": null,
+            "deeplink": "",
+            "is_aco": false,
+            "branded_content_disabled": false,
+            "operation_status": "ENABLE",
+            "click_tracking_url": null,
+            "tiktok_item_id": "7582996587861855496",
+            "impression_tracking_url": null,
+            "advertiser_id": "7338057963233443842",
+            "app_name": "bujairiterrace",
+            "display_name": "bujairiterrace",
+            "carousel_image_labels": null,
+            "video_id": "v10033g50000d4trvc7og65mahv02ifg",
+            "deeplink_type": "NORMAL",
+            "ad_texts": null,
+            "adgroup_id": "1849124333416642",
+            "identity_type": "BC_AUTH_TT",
+            "creative_auto_enhancement_strategy_list": [],
+            "landing_page_urls": null,
+            "viewability_vast_url": null,
+            "brand_safety_vast_url": null,
+            "viewability_postbid_partner": "UNSET",
+            "card_id": null,
+            "dark_post_status": "ON",
+            "vast_moat_enabled": false,
+            "identity_authorized_bc_id": "6846326855419559942",
+            "creative_authorized": true,
+            "call_to_action": "BOOK_NOW",
+            "landing_page_url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness&utm_id=8058&utm_term=wintercampaign-bujairiterrace-ar-all-na&utm_content=tickets-btherovideo-video-kwt",
+            "brand_safety_postbid_partner": "UNSET",
+            "playable_url": "",
+            "creative_type": null,
+            "music_id": null,
+            "is_new_structure": true,
+            "modify_time": "2026-02-03 21:05:23",
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/oAdAeCQ3fVMHbwAJ9oxFWV3D8ygBZSQGggIhfq"
+            ]
+          },
+          {
+            "adgroup_name": "BujairiTerrace_Winter2025Tickets_UF_AWR_KWT_Prospect_EN",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_id": "1849124333415602",
+            "ad_name": "Bujairi_Terrace_Tactical_Bujairi_Terrace_Tickets_Winter_Campaign_UF_KWT_Prospecting_EN_Awareness_BT Hero Video",
+            "page_id": null,
+            "ad_format": "SINGLE_VIDEO",
+            "profile_image_url": "",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "8060"
+              },
+              {
+                "key": "utm_term",
+                "value": "wintercampaign-bujairiterrace-en-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "tickets-btherovideo-video-kwt"
+              }
+            ],
+            "ad_text": "Experience world-class moments and Najdi charm this winter at Bujairi Terrace",
+            "campaign_automation_type": "MANUAL",
+            "avatar_icon_web_uri": "",
+            "create_time": "2025-12-12 13:55:38",
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "campaign_name": "BujairiTerrace_Winter2025Tickets_UF_AWR_KWT_ENAR_TikTok",
+            "ad_id": "1851310753869889",
+            "call_to_action_id": null,
+            "tracking_pixel_id": 0,
+            "optimization_event": null,
+            "deeplink": "",
+            "is_aco": false,
+            "branded_content_disabled": false,
+            "operation_status": "ENABLE",
+            "click_tracking_url": null,
+            "tiktok_item_id": "7582974665983790356",
+            "impression_tracking_url": null,
+            "advertiser_id": "7338057963233443842",
+            "app_name": "bujairiterrace",
+            "display_name": "bujairiterrace",
+            "carousel_image_labels": null,
+            "video_id": "v10033g50000d4trvc7og65mahv02ifg",
+            "deeplink_type": "NORMAL",
+            "ad_texts": null,
+            "adgroup_id": "1849124333416674",
+            "identity_type": "BC_AUTH_TT",
+            "creative_auto_enhancement_strategy_list": [],
+            "landing_page_urls": null,
+            "viewability_vast_url": null,
+            "brand_safety_vast_url": null,
+            "viewability_postbid_partner": "UNSET",
+            "card_id": null,
+            "dark_post_status": "ON",
+            "vast_moat_enabled": false,
+            "identity_authorized_bc_id": "6846326855419559942",
+            "creative_authorized": true,
+            "call_to_action": "BOOK_NOW",
+            "landing_page_url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness&utm_id=8060&utm_term=wintercampaign-bujairiterrace-en-all-na&utm_content=tickets-btherovideo-video-kwt",
+            "brand_safety_postbid_partner": "UNSET",
+            "playable_url": "",
+            "creative_type": null,
+            "music_id": null,
+            "is_new_structure": true,
+            "modify_time": "2026-02-03 21:05:23",
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/oAdAeCQ3fVMHbwAJ9oxFWV3D8ygBZSQGggIhfq"
+            ]
+          },
+          {
+            "adgroup_name": "BujairiTerrace_Winter2025Tickets_UF_AWR_UAE_Prospect_EN",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_id": "1849124136019137",
+            "ad_name": "Bujairi_Terrace_Tactical_Bujairi_Terrace_Tickets_Winter_Campaign_UF_UAE_Prospecting_EN_Awareness_BT Hero Video",
+            "page_id": null,
+            "ad_format": "SINGLE_VIDEO",
+            "profile_image_url": "",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "8034"
+              },
+              {
+                "key": "utm_term",
+                "value": "wintercampaign-bujairiterrace-en-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "tickets-btherovideo-video-uae"
+              }
+            ],
+            "ad_text": "Experience world-class moments and Najdi charm this winter at Bujairi Terrace",
+            "campaign_automation_type": "MANUAL",
+            "avatar_icon_web_uri": "",
+            "create_time": "2025-12-12 13:48:47",
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "campaign_name": "BujairiTerrace_Winter2025Tickets_UF_AWR_UAE_ENAR_TikTok",
+            "ad_id": "1851310383560769",
+            "call_to_action_id": null,
+            "tracking_pixel_id": 0,
+            "optimization_event": null,
+            "deeplink": "",
+            "is_aco": false,
+            "branded_content_disabled": false,
+            "operation_status": "ENABLE",
+            "click_tracking_url": null,
+            "tiktok_item_id": "7582988640926715143",
+            "impression_tracking_url": null,
+            "advertiser_id": "7338057963233443842",
+            "app_name": "bujairiterrace",
+            "display_name": "bujairiterrace",
+            "carousel_image_labels": null,
+            "video_id": "v10033g50000d4trvc7og65mahv02ifg",
+            "deeplink_type": "NORMAL",
+            "ad_texts": null,
+            "adgroup_id": "1849124136019153",
+            "identity_type": "BC_AUTH_TT",
+            "creative_auto_enhancement_strategy_list": [],
+            "landing_page_urls": null,
+            "viewability_vast_url": null,
+            "brand_safety_vast_url": null,
+            "viewability_postbid_partner": "UNSET",
+            "card_id": null,
+            "dark_post_status": "ON",
+            "vast_moat_enabled": false,
+            "identity_authorized_bc_id": "6846326855419559942",
+            "creative_authorized": true,
+            "call_to_action": "BOOK_NOW",
+            "landing_page_url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness&utm_id=8034&utm_term=wintercampaign-bujairiterrace-en-all-na&utm_content=tickets-btherovideo-video-uae",
+            "brand_safety_postbid_partner": "UNSET",
+            "playable_url": "",
+            "creative_type": null,
+            "music_id": null,
+            "is_new_structure": true,
+            "modify_time": "2026-02-03 21:05:23",
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/oAdAeCQ3fVMHbwAJ9oxFWV3D8ygBZSQGggIhfq"
+            ]
+          },
+          {
+            "adgroup_name": "BujairiTerrace_Winter2025Tickets_UF_AWR_UAE_Prospect_AR",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_id": "1849124136019137",
+            "ad_name": "Bujairi_Terrace_Tactical_Bujairi_Terrace_Tickets_Winter_Campaign_UF_UAE_Prospecting_AR_Awareness_BT Hero Video",
+            "page_id": null,
+            "ad_format": "SINGLE_VIDEO",
+            "profile_image_url": "",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "8032"
+              },
+              {
+                "key": "utm_term",
+                "value": "wintercampaign-bujairiterrace-ar-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "tickets-btherovideo-video-uae"
+              }
+            ],
+            "ad_text": "إستمتع بتجارب عالمية بطابع نجدي هذا الشتاء في مطل البجيري، حيث يطل كل ركن على معالم الدرعية",
+            "campaign_automation_type": "MANUAL",
+            "avatar_icon_web_uri": "",
+            "create_time": "2025-12-12 13:43:15",
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "campaign_name": "BujairiTerrace_Winter2025Tickets_UF_AWR_UAE_ENAR_TikTok",
+            "ad_id": "1851309983262929",
+            "call_to_action_id": null,
+            "tracking_pixel_id": 0,
+            "optimization_event": null,
+            "deeplink": "",
+            "is_aco": false,
+            "branded_content_disabled": false,
+            "operation_status": "ENABLE",
+            "click_tracking_url": null,
+            "tiktok_item_id": "7582971534952647957",
+            "impression_tracking_url": null,
+            "advertiser_id": "7338057963233443842",
+            "app_name": "bujairiterrace",
+            "display_name": "bujairiterrace",
+            "carousel_image_labels": null,
+            "video_id": "v10033g50000d4trvc7og65mahv02ifg",
+            "deeplink_type": "NORMAL",
+            "ad_texts": null,
+            "adgroup_id": "1849124136019185",
+            "identity_type": "BC_AUTH_TT",
+            "creative_auto_enhancement_strategy_list": [],
+            "landing_page_urls": null,
+            "viewability_vast_url": null,
+            "brand_safety_vast_url": null,
+            "viewability_postbid_partner": "UNSET",
+            "card_id": null,
+            "dark_post_status": "ON",
+            "vast_moat_enabled": false,
+            "identity_authorized_bc_id": "6846326855419559942",
+            "creative_authorized": true,
+            "call_to_action": "BOOK_NOW",
+            "landing_page_url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness&utm_id=8032&utm_term=wintercampaign-bujairiterrace-ar-all-na&utm_content=tickets-btherovideo-video-uae",
+            "brand_safety_postbid_partner": "UNSET",
+            "playable_url": "",
+            "creative_type": null,
+            "music_id": null,
+            "is_new_structure": true,
+            "modify_time": "2026-02-03 21:05:23",
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/oAdAeCQ3fVMHbwAJ9oxFWV3D8ygBZSQGggIhfq"
+            ]
+          },
+          {
+            "adgroup_name": "Bujairi Terrace_Tactical_Bujairi Terrace Winter Campaign 2025 Tickets_UF_KSA_Prospecting_AR_Awareness_TikTok",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_id": "1846499273458721",
+            "ad_name": "Bujairi_Terrace_Tactical_Bujairi_Terrace_Tickets_Winter_Campaign_UF_KSA_Prospecting_AR_Awareness_BT Hero Video",
+            "page_id": null,
+            "ad_format": "SINGLE_VIDEO",
+            "profile_image_url": "",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "7902"
+              },
+              {
+                "key": "utm_term",
+                "value": "wintercampaign-bujairiterrace-ar-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "tickets-btherovideo-video-ksa"
+              }
+            ],
+            "ad_text": "إستمتع بتجارب عالمية بطابع نجدي هذا الشتاء في مطل البجيري، حيث يطل كل ركن على معالم الدرعية",
+            "campaign_automation_type": "MANUAL",
+            "avatar_icon_web_uri": "",
+            "create_time": "2025-12-12 13:36:41",
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "campaign_name": "BujairiTerrace_Winter2025Tickets_UF_AWR_KSA_ENAR_TikTok",
+            "ad_id": "1851309605993490",
+            "call_to_action_id": null,
+            "tracking_pixel_id": 0,
+            "optimization_event": null,
+            "deeplink": "",
+            "is_aco": false,
+            "branded_content_disabled": false,
+            "operation_status": "ENABLE",
+            "click_tracking_url": null,
+            "tiktok_item_id": "7582969870086589704",
+            "impression_tracking_url": null,
+            "advertiser_id": "7338057963233443842",
+            "app_name": "bujairiterrace",
+            "display_name": "bujairiterrace",
+            "carousel_image_labels": null,
+            "video_id": "v10033g50000d4trvc7og65mahv02ifg",
+            "deeplink_type": "NORMAL",
+            "ad_texts": null,
+            "adgroup_id": "1846499273458737",
+            "identity_type": "BC_AUTH_TT",
+            "creative_auto_enhancement_strategy_list": [],
+            "landing_page_urls": null,
+            "viewability_vast_url": null,
+            "brand_safety_vast_url": null,
+            "viewability_postbid_partner": "UNSET",
+            "card_id": null,
+            "dark_post_status": "ON",
+            "vast_moat_enabled": false,
+            "identity_authorized_bc_id": "6846326855419559942",
+            "creative_authorized": true,
+            "call_to_action": "BOOK_NOW",
+            "landing_page_url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness&utm_id=7902&utm_term=wintercampaign-bujairiterrace-ar-all-na&utm_content=tickets-btherovideo-video-ksa",
+            "brand_safety_postbid_partner": "UNSET",
+            "playable_url": "",
+            "creative_type": null,
+            "music_id": null,
+            "is_new_structure": true,
+            "modify_time": "2026-02-03 21:05:23",
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/oAdAeCQ3fVMHbwAJ9oxFWV3D8ygBZSQGggIhfq"
+            ]
+          },
+          {
+            "adgroup_name": "BujairiTerrace_Winter2025Restaurants_UF_AWR_QAT_Prospect_AR",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_id": "1849123883777298",
+            "ad_name": "Bujairi_Terrace_Tactical_Bujairi_Terrace_Restaurant_Winter_Campaign_UF_QAT_Prospecting_AR_Awareness_BT Hero Video",
+            "page_id": null,
+            "ad_format": "SINGLE_VIDEO",
+            "profile_image_url": "",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "8188"
+              },
+              {
+                "key": "utm_term",
+                "value": "wintercampaign-bujairiterrace-ar-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "restaurants-btherovideo-video-qat"
+              }
+            ],
+            "ad_text": "استمتع بتجربة طعام عالمية بطابع نجدي هذا الشتاء في مطل البُجيري، حيث تطل كل طاولة على معالم الدرعية",
+            "campaign_automation_type": "MANUAL",
+            "avatar_icon_web_uri": "",
+            "create_time": "2025-12-12 13:14:12",
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "campaign_name": "BujairiTerrace_Winter2025Restaurants_UF_AWR_QAT_ENAR_TikTok_20HS2520949",
+            "ad_id": "1851307849442322",
+            "call_to_action_id": null,
+            "tracking_pixel_id": 0,
+            "optimization_event": null,
+            "deeplink": "",
+            "is_aco": false,
+            "branded_content_disabled": false,
+            "operation_status": "ENABLE",
+            "click_tracking_url": null,
+            "tiktok_item_id": "7582956219866844417",
+            "impression_tracking_url": null,
+            "advertiser_id": "7338057963233443842",
+            "app_name": "bujairiterrace",
+            "display_name": "bujairiterrace",
+            "carousel_image_labels": null,
+            "video_id": "v10033g50000d4trvc7og65mahv02ifg",
+            "deeplink_type": "NORMAL",
+            "ad_texts": null,
+            "adgroup_id": "1849123883777314",
+            "identity_type": "BC_AUTH_TT",
+            "creative_auto_enhancement_strategy_list": [],
+            "landing_page_urls": null,
+            "viewability_vast_url": null,
+            "brand_safety_vast_url": null,
+            "viewability_postbid_partner": "UNSET",
+            "card_id": null,
+            "dark_post_status": "ON",
+            "vast_moat_enabled": false,
+            "identity_authorized_bc_id": "6846326855419559942",
+            "creative_authorized": true,
+            "call_to_action": "BOOK_NOW",
+            "landing_page_url": "https://www.diriyah.sa/ar/bujairi-terrace?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness&utm_id=8188&utm_term=wintercampaign-bujairiterrace-ar-all-na&utm_content=restaurants-btherovideo-video-qat",
+            "brand_safety_postbid_partner": "UNSET",
+            "playable_url": "",
+            "creative_type": null,
+            "music_id": null,
+            "is_new_structure": true,
+            "modify_time": "2026-02-03 21:05:23",
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/oAdAeCQ3fVMHbwAJ9oxFWV3D8ygBZSQGggIhfq"
+            ]
+          }
+        ],
+        "page_info": {
+          "page": 1,
+          "page_size": 50,
+          "total_page": 1,
+          "total_number": 15
+        }
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "202610121759371B5E03A02651A33AC0AA",
+      "waitedMs": 853,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "1ee65ab3-abea-4907-b003-d81cf98736d7",
+    "latencyMs": 2375
+  }
+}

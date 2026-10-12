@@ -1,0 +1,1257 @@
+{
+ "success": true,
+ "data": {
+  "success": true,
+  "action": "tiktok_ad_get",
+  "method": "GET",
+  "path": "/v1.3/ad/get/",
+  "dryRun": false,
+  "data": {
+   "code": 0,
+   "message": "OK",
+   "request_id": "2026101217492692596C2036F897E9877A",
+   "data": {
+    "list": [
+     {
+      "optimization_event": "ON_WEB_REGISTER",
+      "music_id": "7647465303001156353",
+      "display_name": "DiriyahCo",
+      "avatar_icon_web_uri": "",
+      "profile_image_url": "",
+      "click_tracking_url": null,
+      "modify_time": "2026-09-22 00:26:27",
+      "creative_authorized": false,
+      "app_name": "DiriyahCo",
+      "create_time": "2026-06-18 13:57:39",
+      "brand_safety_vast_url": null,
+      "video_id": null,
+      "card_id": null,
+      "impression_tracking_url": null,
+      "is_new_structure": true,
+      "viewability_postbid_partner": "UNSET",
+      "campaign_id": "1868342987843714",
+      "deeplink": "",
+      "identity_id": "0f6eebaa-ba16-5ad3-aa97-4171805e2af1",
+      "operation_status": "ENABLE",
+      "campaign_automation_type": "MANUAL",
+      "image_ids": [
+       "ad-site-i18n-sg/20260607c7c77b2d4c68e935478eade4"
+      ],
+      "adgroup_id": "1868343016906113",
+      "shopping_ads_fallback_type": "DEFAULT",
+      "vast_moat_enabled": false,
+      "fallback_type": "UNSET",
+      "branded_content_disabled": false,
+      "tracking_pixel_id": 7491594641231462000,
+      "viewability_vast_url": null,
+      "is_aco": false,
+      "ad_id": "1868343293974689",
+      "advertiser_id": "7338074303931449345",
+      "call_to_action_id": null,
+      "ad_format": "CAROUSEL_ADS",
+      "adgroup_name": "ManazelAlHadawi_AlwaysOn_LF_LEAD_KSA_Prospect_AR",
+      "utm_params": [
+       {
+        "key": "utm_content",
+        "value": "ad-id-376E54_manazel-alhadawi-kv2_display"
+       },
+       {
+        "key": "utm_source",
+        "value": "tiktok"
+       },
+       {
+        "key": "utm_medium",
+        "value": "paid-social"
+       },
+       {
+        "key": "utm_campaign",
+        "value": "ManazelAlHadawi_Jun2026"
+       }
+      ],
+      "dark_post_status": "ON",
+      "page_id": null,
+      "carousel_image_labels": null,
+      "landing_page_urls": null,
+      "playable_url": "",
+      "campaign_name": "ManazelAlHadawi_AlwaysOn_LF_LEAD_KSA_ENAR_TikTok_20260603-20260930_BO11111",
+      "identity_type": "BC_AUTH_TT",
+      "ad_name": "Manazel_KV2_AR_Leads",
+      "landing_page_url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=adset-id-E7B151_manazel-alhadawi_ar_all_mf_prospecting&utm_content=ad-id-376E54_manazel-alhadawi-kv2_display",
+      "dynamic_destination": "UNSET",
+      "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+      "deeplink_type": "NORMAL",
+      "ad_text": "منازل الحداوي مكانٌ للعائلات لتتخذ من الدرعية موطناً، حيث يلتقي التراث بأسلوب الحياة المعاصر.",
+      "ad_ref_pixel_id": 7491594641231462000,
+      "vertical_video_strategy": "UNSET",
+      "identity_authorized_bc_id": "6807778858780065797",
+      "creative_type": null,
+      "ad_texts": null,
+      "call_to_action": "BOOK_NOW"
+     },
+     {
+      "optimization_event": "ON_WEB_REGISTER",
+      "music_id": "7647465303001156353",
+      "display_name": "DiriyahCo",
+      "avatar_icon_web_uri": "",
+      "profile_image_url": "",
+      "click_tracking_url": null,
+      "modify_time": "2026-09-21 12:48:08",
+      "creative_authorized": false,
+      "app_name": "DiriyahCo",
+      "create_time": "2026-06-18 13:56:50",
+      "brand_safety_vast_url": null,
+      "video_id": null,
+      "card_id": null,
+      "impression_tracking_url": null,
+      "is_new_structure": true,
+      "viewability_postbid_partner": "UNSET",
+      "campaign_id": "1868342987843714",
+      "deeplink": "",
+      "identity_id": "0f6eebaa-ba16-5ad3-aa97-4171805e2af1",
+      "operation_status": "DISABLE",
+      "campaign_automation_type": "MANUAL",
+      "image_ids": [
+       "ad-site-i18n-sg/20260607c7c7f63609f0782b4be9a3b4"
+      ],
+      "adgroup_id": "1868343018484034",
+      "shopping_ads_fallback_type": "DEFAULT",
+      "vast_moat_enabled": false,
+      "fallback_type": "UNSET",
+      "branded_content_disabled": false,
+      "tracking_pixel_id": 7491594641231462000,
+      "viewability_vast_url": null,
+      "is_aco": false,
+      "ad_id": "1868343268844705",
+      "advertiser_id": "7338074303931449345",
+      "call_to_action_id": null,
+      "ad_format": "CAROUSEL_ADS",
+      "adgroup_name": "ManazelAlHadawi_AlwaysOn_LF_LEAD_KSA_Prospect_EN",
+      "utm_params": [
+       {
+        "key": "utm_campaign",
+        "value": "ManazelAlHadawi_Jun2026"
+       },
+       {
+        "key": "utm_content",
+        "value": "ad-id-709D5C_manazel-alhadawi-kv1_display"
+       },
+       {
+        "key": "utm_source",
+        "value": "tiktok"
+       },
+       {
+        "key": "utm_medium",
+        "value": "paid-social"
+       }
+      ],
+      "dark_post_status": "ON",
+      "page_id": null,
+      "carousel_image_labels": null,
+      "landing_page_urls": null,
+      "playable_url": "",
+      "campaign_name": "ManazelAlHadawi_AlwaysOn_LF_LEAD_KSA_ENAR_TikTok_20260603-20260930_BO11111",
+      "identity_type": "BC_AUTH_TT",
+      "ad_name": "Manazel_KV1_EN_Leads",
+      "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=adset-id-12875E_manazel-alhadawi_en_all_mf_prospecting&utm_content=ad-id-709D5C_manazel-alhadawi-kv1_display",
+      "dynamic_destination": "UNSET",
+      "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+      "deeplink_type": "NORMAL",
+      "ad_text": "Manazel AlHadawi, a place for families to call home in Diriyah, where heritage shapes modern living.",
+      "ad_ref_pixel_id": 7491594641231462000,
+      "vertical_video_strategy": "UNSET",
+      "identity_authorized_bc_id": "6807778858780065797",
+      "creative_type": null,
+      "ad_texts": null,
+      "call_to_action": "BOOK_NOW"
+     },
+     {
+      "optimization_event": "ON_WEB_REGISTER",
+      "music_id": "7647465303001156353",
+      "display_name": "DiriyahCo",
+      "avatar_icon_web_uri": "",
+      "profile_image_url": "",
+      "click_tracking_url": null,
+      "modify_time": "2026-09-22 00:26:27",
+      "creative_authorized": false,
+      "app_name": "DiriyahCo",
+      "create_time": "2026-06-18 13:57:25",
+      "brand_safety_vast_url": null,
+      "video_id": null,
+      "card_id": null,
+      "impression_tracking_url": null,
+      "is_new_structure": true,
+      "viewability_postbid_partner": "UNSET",
+      "campaign_id": "1868342987843714",
+      "deeplink": "",
+      "identity_id": "0f6eebaa-ba16-5ad3-aa97-4171805e2af1",
+      "operation_status": "ENABLE",
+      "campaign_automation_type": "MANUAL",
+      "image_ids": [
+       "ad-site-i18n-sg/20260607c7c70136b1c84e2d4d7080f7"
+      ],
+      "adgroup_id": "1868343016906113",
+      "shopping_ads_fallback_type": "DEFAULT",
+      "vast_moat_enabled": false,
+      "fallback_type": "UNSET",
+      "branded_content_disabled": false,
+      "tracking_pixel_id": 7491594641231462000,
+      "viewability_vast_url": null,
+      "is_aco": false,
+      "ad_id": "1868343261270225",
+      "advertiser_id": "7338074303931449345",
+      "call_to_action_id": null,
+      "ad_format": "CAROUSEL_ADS",
+      "adgroup_name": "ManazelAlHadawi_AlwaysOn_LF_LEAD_KSA_Prospect_AR",
+      "utm_params": [
+       {
+        "key": "utm_content",
+        "value": "ad-id-675FCC_manazel-alhadawi-kv1_display"
+       },
+       {
+        "key": "utm_source",
+        "value": "tiktok"
+       },
+       {
+        "key": "utm_medium",
+        "value": "paid-social"
+       },
+       {
+        "key": "utm_campaign",
+        "value": "ManazelAlHadawi_Jun2026"
+       }
+      ],
+      "dark_post_status": "ON",
+      "page_id": null,
+      "carousel_image_labels": null,
+      "landing_page_urls": null,
+      "playable_url": "",
+      "campaign_name": "ManazelAlHadawi_AlwaysOn_LF_LEAD_KSA_ENAR_TikTok_20260603-20260930_BO11111",
+      "identity_type": "BC_AUTH_TT",
+      "ad_name": "Manazel_KV1_AR_Leads",
+      "landing_page_url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=adset-id-E7B151_manazel-alhadawi_ar_all_mf_prospecting&utm_content=ad-id-675FCC_manazel-alhadawi-kv1_display",
+      "dynamic_destination": "UNSET",
+      "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+      "deeplink_type": "NORMAL",
+      "ad_text": "منازل الحداوي مكانٌ للعائلات لتتخذ من الدرعية موطناً، حيث يلتقي التراث بأسلوب الحياة المعاصر.",
+      "ad_ref_pixel_id": 7491594641231462000,
+      "vertical_video_strategy": "UNSET",
+      "identity_authorized_bc_id": "6807778858780065797",
+      "creative_type": null,
+      "ad_texts": null,
+      "call_to_action": "BOOK_NOW"
+     },
+     {
+      "optimization_event": "ON_WEB_REGISTER",
+      "music_id": "7647465303001156353",
+      "display_name": "DiriyahCo",
+      "avatar_icon_web_uri": "",
+      "profile_image_url": "",
+      "click_tracking_url": null,
+      "modify_time": "2026-09-21 12:48:08",
+      "creative_authorized": false,
+      "app_name": "DiriyahCo",
+      "create_time": "2026-06-18 13:56:38",
+      "brand_safety_vast_url": null,
+      "video_id": null,
+      "card_id": null,
+      "impression_tracking_url": null,
+      "is_new_structure": true,
+      "viewability_postbid_partner": "UNSET",
+      "campaign_id": "1868342987843714",
+      "deeplink": "",
+      "identity_id": "0f6eebaa-ba16-5ad3-aa97-4171805e2af1",
+      "operation_status": "ENABLE",
+      "campaign_automation_type": "MANUAL",
+      "image_ids": [
+       "ad-site-i18n-sg/202606105d0d7e6f628a5967446a8630"
+      ],
+      "adgroup_id": "1868343018484034",
+      "shopping_ads_fallback_type": "DEFAULT",
+      "vast_moat_enabled": false,
+      "fallback_type": "UNSET",
+      "branded_content_disabled": false,
+      "tracking_pixel_id": 7491594641231462000,
+      "viewability_vast_url": null,
+      "is_aco": false,
+      "ad_id": "1868343257872433",
+      "advertiser_id": "7338074303931449345",
+      "call_to_action_id": null,
+      "ad_format": "CAROUSEL_ADS",
+      "adgroup_name": "ManazelAlHadawi_AlwaysOn_LF_LEAD_KSA_Prospect_EN",
+      "utm_params": [
+       {
+        "key": "utm_source",
+        "value": "tiktok"
+       },
+       {
+        "key": "utm_medium",
+        "value": "paid-social"
+       },
+       {
+        "key": "utm_campaign",
+        "value": "ManazelAlHadawi_Jun2026"
+       },
+       {
+        "key": "utm_content",
+        "value": "ad-id-B0AA14_manazel-alhadawi-kv2_display"
+       }
+      ],
+      "dark_post_status": "ON",
+      "page_id": null,
+      "carousel_image_labels": null,
+      "landing_page_urls": null,
+      "playable_url": "",
+      "campaign_name": "ManazelAlHadawi_AlwaysOn_LF_LEAD_KSA_ENAR_TikTok_20260603-20260930_BO11111",
+      "identity_type": "BC_AUTH_TT",
+      "ad_name": "Manazel_KV2_EN_Leads_NewLogo",
+      "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=adset-id-12875E_manazel-alhadawi_en_all_mf_prospecting&utm_content=ad-id-B0AA14_manazel-alhadawi-kv2_display",
+      "dynamic_destination": "UNSET",
+      "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+      "deeplink_type": "NORMAL",
+      "ad_text": "Manazel AlHadawi, a place for families to call home in Diriyah, where heritage shapes modern living.",
+      "ad_ref_pixel_id": 7491594641231462000,
+      "vertical_video_strategy": "UNSET",
+      "identity_authorized_bc_id": "6807778858780065797",
+      "creative_type": null,
+      "ad_texts": null,
+      "call_to_action": "BOOK_NOW"
+     },
+     {
+      "optimization_event": "ON_WEB_REGISTER",
+      "music_id": "7647465303001156353",
+      "display_name": "DiriyahCo",
+      "avatar_icon_web_uri": "",
+      "profile_image_url": "",
+      "click_tracking_url": null,
+      "modify_time": "2026-09-21 12:48:08",
+      "creative_authorized": false,
+      "app_name": "DiriyahCo",
+      "create_time": "2026-06-18 13:57:01",
+      "brand_safety_vast_url": null,
+      "video_id": null,
+      "card_id": null,
+      "impression_tracking_url": null,
+      "is_new_structure": true,
+      "viewability_postbid_partner": "UNSET",
+      "campaign_id": "1868342987843714",
+      "deeplink": "",
+      "identity_id": "0f6eebaa-ba16-5ad3-aa97-4171805e2af1",
+      "operation_status": "DISABLE",
+      "campaign_automation_type": "MANUAL",
+      "image_ids": [
+       "ad-site-i18n-sg/20260607c7c70952cd2a31224ba19cd6"
+      ],
+      "adgroup_id": "1868343018484034",
+      "shopping_ads_fallback_type": "DEFAULT",
+      "vast_moat_enabled": false,
+      "fallback_type": "UNSET",
+      "branded_content_disabled": false,
+      "tracking_pixel_id": 7491594641231462000,
+      "viewability_vast_url": null,
+      "is_aco": false,
+      "ad_id": "1868343236433154",
+      "advertiser_id": "7338074303931449345",
+      "call_to_action_id": null,
+      "ad_format": "CAROUSEL_ADS",
+      "adgroup_name": "ManazelAlHadawi_AlwaysOn_LF_LEAD_KSA_Prospect_EN",
+      "utm_params": [
+       {
+        "key": "utm_content",
+        "value": "ad-id-B0AA14_manazel-alhadawi-kv2_display"
+       },
+       {
+        "key": "utm_source",
+        "value": "tiktok"
+       },
+       {
+        "key": "utm_medium",
+        "value": "paid-social"
+       },
+       {
+        "key": "utm_campaign",
+        "value": "ManazelAlHadawi_Jun2026"
+       }
+      ],
+      "dark_post_status": "ON",
+      "page_id": null,
+      "carousel_image_labels": null,
+      "landing_page_urls": null,
+      "playable_url": "",
+      "campaign_name": "ManazelAlHadawi_AlwaysOn_LF_LEAD_KSA_ENAR_TikTok_20260603-20260930_BO11111",
+      "identity_type": "BC_AUTH_TT",
+      "ad_name": "Manazel_KV2_EN_Leads",
+      "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=adset-id-12875E_manazel-alhadawi_en_all_mf_prospecting&utm_content=ad-id-B0AA14_manazel-alhadawi-kv2_display",
+      "dynamic_destination": "UNSET",
+      "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+      "deeplink_type": "NORMAL",
+      "ad_text": "Manazel AlHadawi, a place for families to call home in Diriyah, where heritage shapes modern living.",
+      "ad_ref_pixel_id": 7491594641231462000,
+      "vertical_video_strategy": "UNSET",
+      "identity_authorized_bc_id": "6807778858780065797",
+      "creative_type": null,
+      "ad_texts": null,
+      "call_to_action": "BOOK_NOW"
+     },
+     {
+      "optimization_event": "ON_WEB_REGISTER",
+      "music_id": "7647465303001156353",
+      "display_name": "DiriyahCo",
+      "avatar_icon_web_uri": "",
+      "profile_image_url": "",
+      "click_tracking_url": null,
+      "modify_time": "2026-09-21 12:48:08",
+      "creative_authorized": false,
+      "app_name": "DiriyahCo",
+      "create_time": "2026-06-18 13:56:26",
+      "brand_safety_vast_url": null,
+      "video_id": null,
+      "card_id": null,
+      "impression_tracking_url": null,
+      "is_new_structure": true,
+      "viewability_postbid_partner": "UNSET",
+      "campaign_id": "1868342987843714",
+      "deeplink": "",
+      "identity_id": "0f6eebaa-ba16-5ad3-aa97-4171805e2af1",
+      "operation_status": "ENABLE",
+      "campaign_automation_type": "MANUAL",
+      "image_ids": [
+       "ad-site-i18n-sg/202606105d0db950e9e41d0e423d892f"
+      ],
+      "adgroup_id": "1868343018484034",
+      "shopping_ads_fallback_type": "DEFAULT",
+      "vast_moat_enabled": false,
+      "fallback_type": "UNSET",
+      "branded_content_disabled": false,
+      "tracking_pixel_id": 7491594641231462000,
+      "viewability_vast_url": null,
+      "is_aco": false,
+      "ad_id": "1868343229454465",
+      "advertiser_id": "7338074303931449345",
+      "call_to_action_id": null,
+      "ad_format": "CAROUSEL_ADS",
+      "adgroup_name": "ManazelAlHadawi_AlwaysOn_LF_LEAD_KSA_Prospect_EN",
+      "utm_params": [
+       {
+        "key": "utm_source",
+        "value": "tiktok"
+       },
+       {
+        "key": "utm_medium",
+        "value": "paid-social"
+       },
+       {
+        "key": "utm_campaign",
+        "value": "ManazelAlHadawi_Jun2026"
+       },
+       {
+        "key": "utm_content",
+        "value": "ad-id-709D5C_manazel-alhadawi-kv1_display"
+       }
+      ],
+      "dark_post_status": "ON",
+      "page_id": null,
+      "carousel_image_labels": null,
+      "landing_page_urls": null,
+      "playable_url": "",
+      "campaign_name": "ManazelAlHadawi_AlwaysOn_LF_LEAD_KSA_ENAR_TikTok_20260603-20260930_BO11111",
+      "identity_type": "BC_AUTH_TT",
+      "ad_name": "Manazel_KV1_EN_Leads_NewLogo",
+      "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=adset-id-12875E_manazel-alhadawi_en_all_mf_prospecting&utm_content=ad-id-709D5C_manazel-alhadawi-kv1_display",
+      "dynamic_destination": "UNSET",
+      "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+      "deeplink_type": "NORMAL",
+      "ad_text": "Manazel AlHadawi, a place for families to call home in Diriyah, where heritage shapes modern living.",
+      "ad_ref_pixel_id": 7491594641231462000,
+      "vertical_video_strategy": "UNSET",
+      "identity_authorized_bc_id": "6807778858780065797",
+      "creative_type": null,
+      "ad_texts": null,
+      "call_to_action": "BOOK_NOW"
+     },
+     {
+      "optimization_event": "ON_WEB_REGISTER",
+      "music_id": "7647465303001156353",
+      "display_name": "DiriyahCo",
+      "avatar_icon_web_uri": "",
+      "profile_image_url": "",
+      "click_tracking_url": null,
+      "modify_time": "2026-10-06 17:24:18",
+      "creative_authorized": false,
+      "app_name": "DiriyahCo",
+      "create_time": "2026-06-18 13:57:13",
+      "brand_safety_vast_url": null,
+      "video_id": null,
+      "card_id": null,
+      "impression_tracking_url": null,
+      "is_new_structure": true,
+      "viewability_postbid_partner": "UNSET",
+      "campaign_id": "1868342987843714",
+      "deeplink": "",
+      "identity_id": "0f6eebaa-ba16-5ad3-aa97-4171805e2af1",
+      "operation_status": "DISABLE",
+      "campaign_automation_type": "MANUAL",
+      "image_ids": [
+       "ad-site-i18n-sg/202606155d0d60e843ea1dc4417e8e82",
+       "ad-site-i18n-sg/202606155d0df1d2cc33081446a68bf3",
+       "ad-site-i18n-sg/202606155d0dd2117f70f67b4bb5b357",
+       "ad-site-i18n-sg/202606155d0d96187ea3988f47988528",
+       "ad-site-i18n-sg/202606155d0df44ebcecb02142c2aea9",
+       "ad-site-i18n-sg/202606155d0d038017896ca34cad84b3"
+      ],
+      "adgroup_id": "1868343016906113",
+      "shopping_ads_fallback_type": "DEFAULT",
+      "vast_moat_enabled": false,
+      "fallback_type": "UNSET",
+      "branded_content_disabled": false,
+      "tracking_pixel_id": 7491594641231462000,
+      "viewability_vast_url": null,
+      "is_aco": false,
+      "ad_id": "1868343218605137",
+      "advertiser_id": "7338074303931449345",
+      "call_to_action_id": null,
+      "ad_format": "CAROUSEL_ADS",
+      "adgroup_name": "ManazelAlHadawi_AlwaysOn_LF_LEAD_KSA_Prospect_AR",
+      "utm_params": [
+       {
+        "key": "utm_campaign",
+        "value": "ManazelAlHadawi_Jun2026"
+       },
+       {
+        "key": "utm_content",
+        "value": "manazel-alhadawi-cr1_display"
+       },
+       {
+        "key": "utm_source",
+        "value": "tiktok"
+       },
+       {
+        "key": "utm_medium",
+        "value": "paid-social"
+       }
+      ],
+      "dark_post_status": "ON",
+      "page_id": null,
+      "carousel_image_labels": null,
+      "landing_page_urls": null,
+      "playable_url": "",
+      "campaign_name": "ManazelAlHadawi_AlwaysOn_LF_LEAD_KSA_ENAR_TikTok_20260603-20260930_BO11111",
+      "identity_type": "BC_AUTH_TT",
+      "ad_name": "Manazel_CR1_AR_Leads",
+      "landing_page_url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=manazel-alhadawi_ar_all_mf_prospecting&utm_content=manazel-alhadawi-cr1_display",
+      "dynamic_destination": "UNSET",
+      "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+      "deeplink_type": "NORMAL",
+      "ad_text": "امتلك منزلاً في الدرعية، حيث يلتقي التراث بالمجتمع والحياة اليومية.",
+      "ad_ref_pixel_id": 7491594641231462000,
+      "vertical_video_strategy": "UNSET",
+      "identity_authorized_bc_id": "6807778858780065797",
+      "creative_type": null,
+      "ad_texts": null,
+      "call_to_action": "BOOK_NOW"
+     },
+     {
+      "optimization_event": "ON_WEB_REGISTER",
+      "music_id": "7647465303001156353",
+      "display_name": "DiriyahCo",
+      "avatar_icon_web_uri": "",
+      "profile_image_url": "",
+      "click_tracking_url": null,
+      "modify_time": "2026-09-21 12:48:08",
+      "creative_authorized": false,
+      "app_name": "DiriyahCo",
+      "create_time": "2026-06-18 13:56:12",
+      "brand_safety_vast_url": null,
+      "video_id": null,
+      "card_id": null,
+      "impression_tracking_url": null,
+      "is_new_structure": true,
+      "viewability_postbid_partner": "UNSET",
+      "campaign_id": "1868342987843714",
+      "deeplink": "",
+      "identity_id": "0f6eebaa-ba16-5ad3-aa97-4171805e2af1",
+      "operation_status": "DISABLE",
+      "campaign_automation_type": "MANUAL",
+      "image_ids": [
+       "ad-site-i18n-sg/202606155d0d4218bdfc9c2f47f6b197",
+       "ad-site-i18n-sg/202606155d0d1e64a7b6bf01484790b3",
+       "ad-site-i18n-sg/202606155d0d979bbfa78d2a4b5e861c",
+       "ad-site-i18n-sg/202606155d0d8d2ba09764194d7ba39e",
+       "ad-site-i18n-sg/202606155d0da078b66c6d0b4063a6e2",
+       "ad-site-i18n-sg/202606155d0d8c0856c7d19341979db3"
+      ],
+      "adgroup_id": "1868343018484034",
+      "shopping_ads_fallback_type": "DEFAULT",
+      "vast_moat_enabled": false,
+      "fallback_type": "UNSET",
+      "branded_content_disabled": false,
+      "tracking_pixel_id": 7491594641231462000,
+      "viewability_vast_url": null,
+      "is_aco": false,
+      "ad_id": "1868343218400322",
+      "advertiser_id": "7338074303931449345",
+      "call_to_action_id": null,
+      "ad_format": "CAROUSEL_ADS",
+      "adgroup_name": "ManazelAlHadawi_AlwaysOn_LF_LEAD_KSA_Prospect_EN",
+      "utm_params": [
+       {
+        "key": "utm_medium",
+        "value": "paid-social"
+       },
+       {
+        "key": "utm_campaign",
+        "value": "ManazelAlHadawi_Jun2026"
+       },
+       {
+        "key": "utm_content",
+        "value": "manazel-alhadawi-cr1_display"
+       },
+       {
+        "key": "utm_source",
+        "value": "tiktok"
+       }
+      ],
+      "dark_post_status": "ON",
+      "page_id": null,
+      "carousel_image_labels": null,
+      "landing_page_urls": null,
+      "playable_url": "",
+      "campaign_name": "ManazelAlHadawi_AlwaysOn_LF_LEAD_KSA_ENAR_TikTok_20260603-20260930_BO11111",
+      "identity_type": "BC_AUTH_TT",
+      "ad_name": "Manazel_CR1_EN_Leads",
+      "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=manazel-alhadawi_en_all_mf_prospecting&utm_content=manazel-alhadawi-cr1_display",
+      "dynamic_destination": "UNSET",
+      "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+      "deeplink_type": "NORMAL",
+      "ad_text": "Own a home in Diriyah, where heritage, community and everyday life come together.",
+      "ad_ref_pixel_id": 7491594641231462000,
+      "vertical_video_strategy": "UNSET",
+      "identity_authorized_bc_id": "6807778858780065797",
+      "creative_type": null,
+      "ad_texts": null,
+      "call_to_action": "BOOK_NOW"
+     },
+     {
+      "optimization_event": null,
+      "music_id": "7647465303001156353",
+      "display_name": "DiriyahCo",
+      "avatar_icon_web_uri": "",
+      "profile_image_url": "",
+      "click_tracking_url": null,
+      "modify_time": "2026-10-06 22:38:24",
+      "creative_authorized": false,
+      "app_name": "DiriyahCo",
+      "create_time": "2026-06-17 09:57:45",
+      "brand_safety_vast_url": null,
+      "video_id": null,
+      "card_id": null,
+      "impression_tracking_url": null,
+      "is_new_structure": true,
+      "viewability_postbid_partner": "UNSET",
+      "campaign_id": "1866980762445266",
+      "deeplink": "",
+      "identity_id": "0f6eebaa-ba16-5ad3-aa97-4171805e2af1",
+      "operation_status": "DISABLE",
+      "brand_safety_postbid_partner": "UNSET",
+      "campaign_automation_type": "MANUAL",
+      "image_ids": [
+       "ad-site-i18n-sg/202606155d0d60e843ea1dc4417e8e82",
+       "ad-site-i18n-sg/202606155d0df1d2cc33081446a68bf3",
+       "ad-site-i18n-sg/202606155d0dd2117f70f67b4bb5b357",
+       "ad-site-i18n-sg/202606155d0d96187ea3988f47988528",
+       "ad-site-i18n-sg/202606155d0df44ebcecb02142c2aea9",
+       "ad-site-i18n-sg/202606155d0d038017896ca34cad84b3"
+      ],
+      "adgroup_id": "1866980899041010",
+      "creative_auto_enhancement_strategy_list": [
+       "IMAGE_QUALITY",
+       "IMAGE_RESIZE"
+      ],
+      "vast_moat_enabled": false,
+      "branded_content_disabled": false,
+      "tracking_pixel_id": 0,
+      "viewability_vast_url": null,
+      "is_aco": false,
+      "ad_id": "1868237126674513",
+      "advertiser_id": "7338074303931449345",
+      "call_to_action_id": null,
+      "ad_format": "CAROUSEL_ADS",
+      "adgroup_name": "ManazelAlHadawi_AlwaysOn_UF_AWR_KSA_Prospect_AR",
+      "utm_params": [
+       {
+        "key": "utm_source",
+        "value": "tiktok"
+       },
+       {
+        "key": "utm_medium",
+        "value": "paid-social"
+       },
+       {
+        "key": "utm_campaign",
+        "value": "ManazelAlHadawi_Jun2026"
+       },
+       {
+        "key": "utm_term",
+        "value": "adset-id-05F972_manazel-alhadawi_ar_all_mf_prospecting"
+       },
+       {
+        "key": "utm_content",
+        "value": "ad-id-DC0069_manazel-alhadawi-CR1"
+       }
+      ],
+      "dark_post_status": "ON",
+      "page_id": null,
+      "carousel_image_labels": null,
+      "landing_page_urls": null,
+      "playable_url": "",
+      "aigc_disclosure_type": "NOT_DECLARED",
+      "campaign_name": "ManazelAlHadawi_AlwaysOn_UF_AWR_KSA_ENAR_TikTok_20260603-20260930_BO11111",
+      "identity_type": "BC_AUTH_TT",
+      "ad_name": "Manazel_CR1_AR_Awareness",
+      "landing_page_url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=adset-id-05F972_manazel-alhadawi_ar_all_mf_prospecting&utm_content=ad-id-DC0069_manazel-alhadawi-CR1",
+      "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+      "deeplink_type": "NORMAL",
+      "ad_text": "امتلك منزلاً في الدرعية، حيث يلتقي التراث بالمجتمع والحياة اليومية.",
+      "identity_authorized_bc_id": "6807778858780065797",
+      "creative_type": null,
+      "ad_texts": null,
+      "call_to_action": "BOOK_NOW"
+     },
+     {
+      "optimization_event": null,
+      "music_id": "7647465303001156353",
+      "display_name": "DiriyahCo",
+      "avatar_icon_web_uri": "",
+      "profile_image_url": "",
+      "click_tracking_url": null,
+      "modify_time": "2026-10-07 01:29:57",
+      "creative_authorized": false,
+      "app_name": "DiriyahCo",
+      "create_time": "2026-06-17 09:48:29",
+      "brand_safety_vast_url": null,
+      "video_id": null,
+      "card_id": null,
+      "impression_tracking_url": null,
+      "is_new_structure": true,
+      "viewability_postbid_partner": "UNSET",
+      "campaign_id": "1866980762445266",
+      "deeplink": "",
+      "identity_id": "0f6eebaa-ba16-5ad3-aa97-4171805e2af1",
+      "operation_status": "DISABLE",
+      "brand_safety_postbid_partner": "UNSET",
+      "campaign_automation_type": "MANUAL",
+      "image_ids": [
+       "ad-site-i18n-sg/202606155d0d4218bdfc9c2f47f6b197",
+       "ad-site-i18n-sg/202606155d0d1e64a7b6bf01484790b3",
+       "ad-site-i18n-sg/202606155d0d979bbfa78d2a4b5e861c",
+       "ad-site-i18n-sg/202606155d0d8d2ba09764194d7ba39e",
+       "ad-site-i18n-sg/202606155d0da078b66c6d0b4063a6e2",
+       "ad-site-i18n-sg/202606155d0d8c0856c7d19341979db3"
+      ],
+      "adgroup_id": "1866980896932194",
+      "vast_moat_enabled": false,
+      "branded_content_disabled": false,
+      "tracking_pixel_id": 0,
+      "viewability_vast_url": null,
+      "is_aco": false,
+      "ad_id": "1868236519630866",
+      "advertiser_id": "7338074303931449345",
+      "call_to_action_id": null,
+      "ad_format": "CAROUSEL_ADS",
+      "adgroup_name": "ManazelAlHadawi_AlwaysOn_UF_AWR_KSA_Prospect_EN",
+      "utm_params": [
+       {
+        "key": "utm_source",
+        "value": "tiktok"
+       },
+       {
+        "key": "utm_medium",
+        "value": "paid-social"
+       },
+       {
+        "key": "utm_campaign",
+        "value": "ManazelAlHadawi_Jun2026"
+       },
+       {
+        "key": "utm_term",
+        "value": "adset-id-A61B61_manazel-alhadawi_en_all_mf_prospecting"
+       },
+       {
+        "key": "utm_content",
+        "value": "ad-id-2AE88C_manazel-alhadawi-CR1"
+       }
+      ],
+      "dark_post_status": "ON",
+      "page_id": null,
+      "carousel_image_labels": null,
+      "landing_page_urls": null,
+      "playable_url": "",
+      "aigc_disclosure_type": "NOT_DECLARED",
+      "campaign_name": "ManazelAlHadawi_AlwaysOn_UF_AWR_KSA_ENAR_TikTok_20260603-20260930_BO11111",
+      "identity_type": "BC_AUTH_TT",
+      "ad_name": "Manazel_CR1_EN_Awareness",
+      "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=adset-id-A61B61_manazel-alhadawi_en_all_mf_prospecting&utm_content=ad-id-2AE88C_manazel-alhadawi-CR1",
+      "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+      "deeplink_type": "NORMAL",
+      "ad_text": "Own a home in Diriyah, where heritage, community and everyday life come together.",
+      "identity_authorized_bc_id": "6807778858780065797",
+      "creative_type": null,
+      "ad_texts": null,
+      "call_to_action": "BOOK_NOW"
+     },
+     {
+      "optimization_event": null,
+      "music_id": "7647465303001156353",
+      "display_name": "DiriyahCo",
+      "avatar_icon_web_uri": "",
+      "profile_image_url": "",
+      "click_tracking_url": null,
+      "modify_time": "2026-10-07 01:29:58",
+      "creative_authorized": false,
+      "app_name": "DiriyahCo",
+      "create_time": "2026-06-17 09:48:29",
+      "brand_safety_vast_url": null,
+      "video_id": null,
+      "card_id": null,
+      "impression_tracking_url": null,
+      "is_new_structure": true,
+      "viewability_postbid_partner": "UNSET",
+      "campaign_id": "1866980762445266",
+      "deeplink": "",
+      "identity_id": "0f6eebaa-ba16-5ad3-aa97-4171805e2af1",
+      "operation_status": "DISABLE",
+      "brand_safety_postbid_partner": "UNSET",
+      "campaign_automation_type": "MANUAL",
+      "image_ids": [
+       "ad-site-i18n-sg/202606155d0d4218bdfc9c2f47f6b197",
+       "ad-site-i18n-sg/202606155d0d1e64a7b6bf01484790b3",
+       "ad-site-i18n-sg/202606155d0d979bbfa78d2a4b5e861c",
+       "ad-site-i18n-sg/202606155d0d8d2ba09764194d7ba39e",
+       "ad-site-i18n-sg/202606155d0da078b66c6d0b4063a6e2",
+       "ad-site-i18n-sg/202606155d0d8c0856c7d19341979db3"
+      ],
+      "adgroup_id": "1866980896932194",
+      "creative_auto_enhancement_strategy_list": [
+       "IMAGE_QUALITY",
+       "IMAGE_RESIZE"
+      ],
+      "vast_moat_enabled": false,
+      "branded_content_disabled": false,
+      "tracking_pixel_id": 0,
+      "viewability_vast_url": null,
+      "is_aco": false,
+      "ad_id": "1868235904804001",
+      "advertiser_id": "7338074303931449345",
+      "call_to_action_id": null,
+      "ad_format": "CAROUSEL_ADS",
+      "adgroup_name": "ManazelAlHadawi_AlwaysOn_UF_AWR_KSA_Prospect_EN",
+      "utm_params": [
+       {
+        "key": "utm_source",
+        "value": "tiktok"
+       },
+       {
+        "key": "utm_medium",
+        "value": "paid-social"
+       },
+       {
+        "key": "utm_campaign",
+        "value": "ManazelAlHadawi_Jun2026"
+       },
+       {
+        "key": "utm_term",
+        "value": "adset-id-A61B61_manazel-alhadawi_en_all_mf_prospecting"
+       },
+       {
+        "key": "utm_content",
+        "value": "ad-id-2AE88C_manazel-alhadawi-CR1"
+       }
+      ],
+      "dark_post_status": "ON",
+      "page_id": null,
+      "carousel_image_labels": null,
+      "landing_page_urls": null,
+      "playable_url": "",
+      "aigc_disclosure_type": "NOT_DECLARED",
+      "campaign_name": "ManazelAlHadawi_AlwaysOn_UF_AWR_KSA_ENAR_TikTok_20260603-20260930_BO11111",
+      "identity_type": "BC_AUTH_TT",
+      "ad_name": "Manazel_CR1_EN_Awareness",
+      "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=adset-id-A61B61_manazel-alhadawi_en_all_mf_prospecting&utm_content=ad-id-2AE88C_manazel-alhadawi-CR1",
+      "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+      "deeplink_type": "NORMAL",
+      "ad_text": "Own a home in Diriyah, where heritage, community and everyday life come together.",
+      "identity_authorized_bc_id": "6807778858780065797",
+      "creative_type": null,
+      "ad_texts": null,
+      "call_to_action": "BOOK_NOW"
+     },
+     {
+      "optimization_event": "LANDING_PAGE_VIEW",
+      "product_info": {
+       "product_image_list": null,
+       "selling_points": null,
+       "product_titles": null
+      },
+      "music_id": "7647465303001156353",
+      "display_name": "DiriyahCo",
+      "avatar_icon_web_uri": "",
+      "profile_image_url": "",
+      "click_tracking_url": null,
+      "modify_time": "2026-10-07 10:44:53",
+      "creative_authorized": false,
+      "app_name": "DiriyahCo",
+      "create_time": "2026-06-16 10:00:15",
+      "brand_safety_vast_url": null,
+      "video_id": null,
+      "card_id": null,
+      "impression_tracking_url": null,
+      "is_new_structure": true,
+      "viewability_postbid_partner": "UNSET",
+      "campaign_id": "1866980731743666",
+      "deeplink": "",
+      "identity_id": "0f6eebaa-ba16-5ad3-aa97-4171805e2af1",
+      "operation_status": "DISABLE",
+      "brand_safety_postbid_partner": "UNSET",
+      "campaign_automation_type": "MANUAL",
+      "image_ids": [
+       "ad-site-i18n-sg/202606155d0d60e843ea1dc4417e8e82",
+       "ad-site-i18n-sg/202606155d0df1d2cc33081446a68bf3",
+       "ad-site-i18n-sg/202606155d0dd2117f70f67b4bb5b357",
+       "ad-site-i18n-sg/202606155d0d96187ea3988f47988528",
+       "ad-site-i18n-sg/202606155d0df44ebcecb02142c2aea9",
+       "ad-site-i18n-sg/202606155d0d038017896ca34cad84b3"
+      ],
+      "adgroup_id": "1866980925443409",
+      "creative_auto_enhancement_strategy_list": [
+       "IMAGE_QUALITY",
+       "IMAGE_RESIZE"
+      ],
+      "vast_moat_enabled": false,
+      "fallback_type": "UNSET",
+      "branded_content_disabled": false,
+      "tracking_pixel_id": 0,
+      "viewability_vast_url": null,
+      "is_aco": false,
+      "ad_id": "1868147145111842",
+      "advertiser_id": "7338074303931449345",
+      "call_to_action_id": "7693875080819969031",
+      "ad_format": "CAROUSEL_ADS",
+      "adgroup_name": "ManazelAlHadawi_AlwaysOn_MF_TRF_KSA_Prospect_AR",
+      "utm_params": [
+       {
+        "key": "utm_source",
+        "value": "tiktok"
+       },
+       {
+        "key": "utm_medium",
+        "value": "paid-social"
+       },
+       {
+        "key": "utm_campaign",
+        "value": "ManazelAlHadawi_Jun2026"
+       },
+       {
+        "key": "utm_term",
+        "value": "adset-id-05F972_manazel-alhadawi_ar_all_mf_prospecting"
+       },
+       {
+        "key": "utm_content",
+        "value": "ad-id-DC0069_manazel-alhadawi-CR1"
+       }
+      ],
+      "dark_post_status": "ON",
+      "page_id": null,
+      "carousel_image_labels": null,
+      "landing_page_urls": null,
+      "playable_url": "",
+      "aigc_disclosure_type": "NOT_DECLARED",
+      "campaign_name": "ManazelAlHadawi_AlwaysOn_MF_TRF_KSA_ENAR_TikTok_20260603-20260930_BO11111",
+      "identity_type": "BC_AUTH_TT",
+      "ad_name": "Manazel_CR1_AR_Traffic_New",
+      "landing_page_url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=adset-id-05F972_manazel-alhadawi_ar_all_mf_prospecting&utm_content=ad-id-DC0069_manazel-alhadawi-CR1",
+      "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+      "deeplink_type": "NORMAL",
+      "ad_text": "امتلك منزلاً في الدرعية، حيث يلتقي التراث بالمجتمع والحياة اليومية.",
+      "identity_authorized_bc_id": "6807778858780065797",
+      "creative_type": null,
+      "ad_texts": null
+     },
+     {
+      "optimization_event": "LANDING_PAGE_VIEW",
+      "product_info": {
+       "product_image_list": null,
+       "selling_points": null,
+       "product_titles": null
+      },
+      "music_id": "7647465303001156353",
+      "display_name": "DiriyahCo",
+      "avatar_icon_web_uri": "",
+      "profile_image_url": "",
+      "click_tracking_url": null,
+      "modify_time": "2026-10-07 01:29:58",
+      "creative_authorized": false,
+      "app_name": "DiriyahCo",
+      "create_time": "2026-06-15 12:39:56",
+      "brand_safety_vast_url": null,
+      "video_id": null,
+      "card_id": null,
+      "impression_tracking_url": null,
+      "is_new_structure": true,
+      "viewability_postbid_partner": "UNSET",
+      "campaign_id": "1866980731743666",
+      "deeplink": "",
+      "identity_id": "0f6eebaa-ba16-5ad3-aa97-4171805e2af1",
+      "operation_status": "DISABLE",
+      "brand_safety_postbid_partner": "UNSET",
+      "campaign_automation_type": "MANUAL",
+      "image_ids": [
+       "ad-site-i18n-sg/202606155d0d4218bdfc9c2f47f6b197",
+       "ad-site-i18n-sg/202606155d0d1e64a7b6bf01484790b3",
+       "ad-site-i18n-sg/202606155d0d979bbfa78d2a4b5e861c",
+       "ad-site-i18n-sg/202606155d0d8d2ba09764194d7ba39e",
+       "ad-site-i18n-sg/202606155d0da078b66c6d0b4063a6e2",
+       "ad-site-i18n-sg/202606155d0d8c0856c7d19341979db3"
+      ],
+      "adgroup_id": "1866980923591713",
+      "creative_auto_enhancement_strategy_list": [
+       "IMAGE_QUALITY",
+       "IMAGE_RESIZE"
+      ],
+      "vast_moat_enabled": false,
+      "fallback_type": "UNSET",
+      "branded_content_disabled": false,
+      "tracking_pixel_id": 0,
+      "viewability_vast_url": null,
+      "is_aco": false,
+      "ad_id": "1868066442041521",
+      "advertiser_id": "7338074303931449345",
+      "call_to_action_id": "7651929861459659794",
+      "ad_format": "CAROUSEL_ADS",
+      "adgroup_name": "ManazelAlHadawi_AlwaysOn_MF_TRF_KSA_Prospect_EN",
+      "utm_params": [
+       {
+        "key": "utm_source",
+        "value": "tiktok"
+       },
+       {
+        "key": "utm_medium",
+        "value": "paid-social"
+       },
+       {
+        "key": "utm_campaign",
+        "value": "ManazelAlHadawi_Jun2026"
+       },
+       {
+        "key": "utm_term",
+        "value": "adset-id-A61B61_manazel-alhadawi_en_all_mf_prospecting"
+       },
+       {
+        "key": "utm_content",
+        "value": "ad-id-2AE88C_manazel-alhadawi-CR1"
+       }
+      ],
+      "dark_post_status": "ON",
+      "page_id": null,
+      "carousel_image_labels": null,
+      "landing_page_urls": null,
+      "playable_url": "",
+      "aigc_disclosure_type": "NOT_DECLARED",
+      "campaign_name": "ManazelAlHadawi_AlwaysOn_MF_TRF_KSA_ENAR_TikTok_20260603-20260930_BO11111",
+      "identity_type": "BC_AUTH_TT",
+      "ad_name": "Manazel_CR1_EN_Traffic",
+      "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=adset-id-A61B61_manazel-alhadawi_en_all_mf_prospecting&utm_content=ad-id-2AE88C_manazel-alhadawi-CR1",
+      "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+      "deeplink_type": "NORMAL",
+      "ad_text": "Own a home in Diriyah, where heritage, community and everyday life come together.",
+      "identity_authorized_bc_id": "6807778858780065797",
+      "creative_type": null,
+      "ad_texts": null
+     },
+     {
+      "optimization_event": "LANDING_PAGE_VIEW",
+      "product_info": {
+       "product_image_list": null,
+       "selling_points": null,
+       "product_titles": null
+      },
+      "music_id": "7647465303001156353",
+      "display_name": "DiriyahCo",
+      "avatar_icon_web_uri": "",
+      "profile_image_url": "",
+      "click_tracking_url": null,
+      "modify_time": "2026-10-06 22:38:11",
+      "creative_authorized": false,
+      "app_name": "DiriyahCo",
+      "create_time": "2026-06-15 12:42:38",
+      "brand_safety_vast_url": null,
+      "video_id": null,
+      "card_id": null,
+      "impression_tracking_url": null,
+      "is_new_structure": true,
+      "viewability_postbid_partner": "UNSET",
+      "campaign_id": "1866980731743666",
+      "deeplink": "",
+      "identity_id": "0f6eebaa-ba16-5ad3-aa97-4171805e2af1",
+      "operation_status": "DISABLE",
+      "brand_safety_postbid_partner": "UNSET",
+      "campaign_automation_type": "MANUAL",
+      "image_ids": [
+       "ad-site-i18n-sg/202606155d0d60e843ea1dc4417e8e82",
+       "ad-site-i18n-sg/202606155d0df1d2cc33081446a68bf3",
+       "ad-site-i18n-sg/202606155d0dd2117f70f67b4bb5b357",
+       "ad-site-i18n-sg/202606155d0d96187ea3988f47988528",
+       "ad-site-i18n-sg/202606155d0df44ebcecb02142c2aea9",
+       "ad-site-i18n-sg/202606155d0d038017896ca34cad84b3"
+      ],
+      "adgroup_id": "1866980925443409",
+      "creative_auto_enhancement_strategy_list": [
+       "IMAGE_QUALITY",
+       "IMAGE_RESIZE"
+      ],
+      "vast_moat_enabled": false,
+      "fallback_type": "UNSET",
+      "branded_content_disabled": false,
+      "tracking_pixel_id": 0,
+      "viewability_vast_url": null,
+      "is_aco": false,
+      "ad_id": "1868066369485090",
+      "advertiser_id": "7338074303931449345",
+      "call_to_action_id": "7651601575495945224",
+      "ad_format": "CAROUSEL_ADS",
+      "adgroup_name": "ManazelAlHadawi_AlwaysOn_MF_TRF_KSA_Prospect_AR",
+      "utm_params": [
+       {
+        "key": "utm_source",
+        "value": "tiktok"
+       },
+       {
+        "key": "utm_medium",
+        "value": "paid-social"
+       },
+       {
+        "key": "utm_campaign",
+        "value": "ManazelAlHadawi_Jun2026"
+       },
+       {
+        "key": "utm_term",
+        "value": "adset-id-05F972_manazel-alhadawi_ar_all_mf_prospecting"
+       },
+       {
+        "key": "utm_content",
+        "value": "ad-id-DC0069_manazel-alhadawi-CR1"
+       }
+      ],
+      "dark_post_status": "ON",
+      "page_id": null,
+      "carousel_image_labels": null,
+      "landing_page_urls": null,
+      "playable_url": "",
+      "aigc_disclosure_type": "NOT_DECLARED",
+      "campaign_name": "ManazelAlHadawi_AlwaysOn_MF_TRF_KSA_ENAR_TikTok_20260603-20260930_BO11111",
+      "identity_type": "BC_AUTH_TT",
+      "ad_name": "Manazel_CR1_AR_Traffic",
+      "landing_page_url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=adset-id-05F972_manazel-alhadawi_ar_all_mf_prospecting&utm_content=ad-id-DC0069_manazel-alhadawi-CR1",
+      "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+      "deeplink_type": "NORMAL",
+      "ad_text": "منازل الحداوي مكانٌ للعائلات لتتخذ من الدرعية موطناً، حيث يلتقي التراث بأسلوب الحياة المعاصر.",
+      "identity_authorized_bc_id": "6807778858780065797",
+      "creative_type": null,
+      "ad_texts": null
+     },
+     {
+      "optimization_event": null,
+      "music_id": "7647465303001156353",
+      "display_name": "DiriyahCo",
+      "avatar_icon_web_uri": "",
+      "profile_image_url": "",
+      "click_tracking_url": null,
+      "modify_time": "2026-10-07 01:29:57",
+      "creative_authorized": false,
+      "app_name": "DiriyahCo",
+      "create_time": "2026-06-14 04:03:21",
+      "brand_safety_vast_url": null,
+      "video_id": null,
+      "card_id": null,
+      "impression_tracking_url": null,
+      "is_new_structure": true,
+      "viewability_postbid_partner": "UNSET",
+      "campaign_id": "1866980762445266",
+      "deeplink": "",
+      "identity_id": "0f6eebaa-ba16-5ad3-aa97-4171805e2af1",
+      "operation_status": "ENABLE",
+      "brand_safety_postbid_partner": "UNSET",
+      "campaign_automation_type": "MANUAL",
+      "image_ids": [
+       "ad-site-i18n-sg/202606145d0d65974f3ce5d64d63b505"
+      ],
+      "adgroup_id": "1866980896932194",
+      "creative_auto_enhancement_strategy_list": [
+       "IMAGE_QUALITY",
+       "IMAGE_RESIZE"
+      ],
+      "vast_moat_enabled": false,
+      "branded_content_disabled": false,
+      "viewability_vast_url": null,
+      "is_aco": false,
+      "ad_id": "1867943379570705",
+      "advertiser_id": "7338074303931449345",
+      "call_to_action_id": null,
+      "ad_format": "CAROUSEL_ADS",
+      "adgroup_name": "ManazelAlHadawi_AlwaysOn_UF_AWR_KSA_Prospect_EN",
+      "utm_params": [
+       {
+        "key": "utm_source",
+        "value": "tiktok"
+       },
+       {
+        "key": "utm_medium",
+        "value": "paid-social"
+       },
+       {
+        "key": "utm_campaign",
+        "value": "ManazelAlHadawi_Jun2026"
+       },
+       {
+        "key": "utm_content",
+        "value": "ad-id-2CEFE3_manazel-alhadawi-kv2_display"
+       }
+      ],
+      "dark_post_status": "ON",
+      "page_id": null,
+      "carousel_image_labels": null,
+      "landing_page_urls": null,
+      "playable_url": "",
+      "aigc_disclosure_type": "NOT_DECLARED",
+      "campaign_name": "ManazelAlHadawi_AlwaysOn_UF_AWR_KSA_ENAR_TikTok_20260603-20260930_BO11111",
+      "identity_type": "BC_AUTH_TT",
+      "ad_name": "Manazel_KV2_EN_Awareness_NewLogo",
+      "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=adset-id-0DE601_manazel-alhadawi_en_all_mf_prospecting&utm_content=ad-id-2CEFE3_manazel-alhadawi-kv2_display",
+      "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+      "deeplink_type": "NORMAL",
+      "ad_text": "Manazel AlHadawi, a place for families to call home in Diriyah, where heritage shapes modern living.",
+      "identity_authorized_bc_id": "6807778858780065797",
+      "creative_type": null,
+      "ad_texts": null,
+      "call_to_action": "BOOK_NOW"
+     }
+    ],
+    "page_info": {
+     "page": 1,
+     "page_size": 50,
+     "total_page": 1,
+     "total_number": 15
+    }
+   }
+  },
+  "meta": {
+   "tiktokRequestId": "2026101217492692596C2036F897E9877A",
+   "waitedMs": 1591,
+   "throttled": false,
+   "warnings": [],
+   "preflightBlocking": false
+  }
+ },
+ "meta": {
+  "requestId": "70cb489e-9051-4d42-8d3f-5723b0a158cf",
+  "latencyMs": 3170
+ }
+}

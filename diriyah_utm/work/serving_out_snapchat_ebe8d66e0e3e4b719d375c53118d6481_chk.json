@@ -1,0 +1,356 @@
+{
+ "037408fb-2122-42e3-a2dd-9e66ae09fee4": {
+  "first_date": "2026-09-08",
+  "first_day_impressions": 25868,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-09-08T07:04:13.462Z (local 2026-09-08 10:04); ad squad 61049c69. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-08 (25868), next 2026-09-09 (7686). Lifetime impressions 33554 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-09-08..2026-09-09: first>0 = 2026-09-08 (25868), first day = creation day - MATCH."
+ },
+ "05739f0d-0819-431a-b00f-fee82fe818ab": {
+  "first_date": "2026-09-06",
+  "first_day_impressions": 9971,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-09-02T15:36:38.653Z (local 2026-09-02 18:36); ad squad b6964013. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-06 (9971), next 2026-09-07 (9003). Lifetime impressions 173582 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-09-02..2026-09-08: first>0 = 2026-09-06 (9971), 4 zero days before it from creation day - MATCH."
+ },
+ "070b31e0-8bb3-472e-aa63-ea5dae40dfd7": {
+  "first_date": "2026-09-06",
+  "first_day_impressions": 8498,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-08-26T14:03:13.745Z (local 2026-08-26 17:03); ad squad b6964013. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-06 (8498), next 2026-09-07 (11638). Lifetime impressions 126371 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-08-26..2026-09-08: first>0 = 2026-09-06 (8498), 11 zero days before it from creation day - MATCH. NOTE: first-served month 2026-09 differs from creation month 2026-08."
+ },
+ "087d03d7-944c-4c33-8677-d936e27de4ae": {
+  "first_date": null,
+  "first_day_impressions": null,
+  "status": "never_served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-08-13T10:55:50.174Z (local 2026-08-13 13:55); ad squad b6964013. Lifetime impressions = 0 verified: ad 087d03d7 per-ad TOTAL 2026-08-13..2026-10-13=0 (ad absent/zero in squad breakdown=ad TOTAL, i.e. zero for whole life from creation day to 2026-10-13 00:00 local; data finalized to 2026-10-12T06:00Z); also no day with impressions>0 in squad breakdown=ad DAY omit_empty series."
+ },
+ "110cfb50-f654-4052-8ffe-c2c887592609": {
+  "first_date": "2026-08-29",
+  "first_day_impressions": 11583,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-08-29T14:57:08.550Z (local 2026-08-29 17:57); ad squad 6598977a. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-08-29 (11583), next 2026-08-30 (22). Lifetime impressions 11605 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-08-29..2026-08-30: first>0 = 2026-08-29 (11583), first day = creation day - MATCH."
+ },
+ "1119cb2b-5cf2-431b-95c6-7e29b025b753": {
+  "first_date": "2026-09-28",
+  "first_day_impressions": 7261,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-09-28T07:44:48.273Z (local 2026-09-28 10:44); ad squad 5c77ecad. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-28 (7261), next 2026-09-29 (2578). Lifetime impressions 122059 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-09-28..2026-09-29: first>0 = 2026-09-28 (7261), first day = creation day - MATCH."
+ },
+ "155b547b-fcff-4eef-bab6-9114eece6630": {
+  "first_date": "2026-09-06",
+  "first_day_impressions": 11881,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-09-02T15:34:52.634Z (local 2026-09-02 18:34); ad squad b6964013. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-06 (11881), next 2026-09-07 (16773). Lifetime impressions 416984 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-09-02..2026-09-08: first>0 = 2026-09-06 (11881), 4 zero days before it from creation day - MATCH."
+ },
+ "16a9097a-26e3-4924-9bfb-0db3e9164dc1": {
+  "first_date": "2026-09-06",
+  "first_day_impressions": 6166,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-09-02T15:33:00.341Z (local 2026-09-02 18:33); ad squad b6964013. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-06 (6166), next 2026-09-07 (2777). Lifetime impressions 134399 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-09-02..2026-09-08: first>0 = 2026-09-06 (6166), 4 zero days before it from creation day - MATCH."
+ },
+ "1a9c512b-6742-4363-9da5-f5e54e72be60": {
+  "first_date": "2026-09-29",
+  "first_day_impressions": 1334,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-09-29T09:50:54.806Z (local 2026-09-29 12:50); ad squad b08fdb34. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-29 (1334), next 2026-09-30 (1455). Lifetime impressions 52132 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-09-29..2026-09-30: first>0 = 2026-09-29 (1334), first day = creation day - MATCH."
+ },
+ "1b055e39-982a-4faf-9e30-17767cdecd1a": {
+  "first_date": "2026-09-06",
+  "first_day_impressions": 4938,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-08-26T14:08:14.413Z (local 2026-08-26 17:08); ad squad 8d471b9c. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-06 (4938), next 2026-09-07 (1650). Lifetime impressions 321942 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-08-26..2026-09-08: first>0 = 2026-09-06 (4938), 11 zero days before it from creation day - MATCH. NOTE: first-served month 2026-09 differs from creation month 2026-08."
+ },
+ "213a61e0-58c8-4e67-8e4c-a01d04b1a6c0": {
+  "first_date": "2026-09-29",
+  "first_day_impressions": 1437,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-09-29T09:50:54.805Z (local 2026-09-29 12:50); ad squad b08fdb34. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-29 (1437), next 2026-09-30 (1023). Lifetime impressions 17645 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-09-29..2026-09-30: first>0 = 2026-09-29 (1437), first day = creation day - MATCH."
+ },
+ "26c027a9-e739-4c87-b8b2-9712e70b92c1": {
+  "first_date": "2026-09-06",
+  "first_day_impressions": 5909,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-08-26T14:14:08.225Z (local 2026-08-26 17:14); ad squad 8d471b9c. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-06 (5909), next 2026-09-07 (5187). Lifetime impressions 1088691 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-08-26..2026-09-08: first>0 = 2026-09-06 (5909), 11 zero days before it from creation day - MATCH. NOTE: first-served month 2026-09 differs from creation month 2026-08."
+ },
+ "26cb154d-d9b1-45c8-a8e9-3e16e93caf0b": {
+  "first_date": "2026-08-29",
+  "first_day_impressions": 2763,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-08-13T10:55:50.507Z (local 2026-08-13 13:55); ad squad 8d471b9c. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-08-29 (2763). Lifetime impressions 2763 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-08-13..2026-08-31: first>0 = 2026-08-29 (2763), 16 zero days before it from creation day - MATCH."
+ },
+ "2d349cc8-51ab-41f4-87fd-0c559345f5ef": {
+  "first_date": "2026-08-29",
+  "first_day_impressions": 15985,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-08-29T14:57:08.668Z (local 2026-08-29 17:57); ad squad 61049c69. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-08-29 (15985), next 2026-08-30 (12). Lifetime impressions 15997 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-08-29..2026-08-30: first>0 = 2026-08-29 (15985), first day = creation day - MATCH."
+ },
+ "388e6dfe-4b7f-424a-8ad3-05a145386caa": {
+  "first_date": "2026-09-29",
+  "first_day_impressions": 1179,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-09-29T09:51:05.915Z (local 2026-09-29 12:51); ad squad 7bb76c14. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-29 (1179), next 2026-09-30 (624). Lifetime impressions 11718 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-09-29..2026-09-30: first>0 = 2026-09-29 (1179), first day = creation day - MATCH."
+ },
+ "47c12226-5680-4427-92d2-c60d90dfba6f": {
+  "first_date": "2026-09-06",
+  "first_day_impressions": 7544,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-09-02T15:24:27.267Z (local 2026-09-02 18:24); ad squad 8d471b9c. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-06 (7544), next 2026-09-07 (4426). Lifetime impressions 93465 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-09-02..2026-09-08: first>0 = 2026-09-06 (7544), 4 zero days before it from creation day - MATCH."
+ },
+ "482342a1-885f-4eaf-96e3-7bc4ea38f8ae": {
+  "first_date": "2026-08-29",
+  "first_day_impressions": 10204,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-08-13T10:55:50.312Z (local 2026-08-13 13:55); ad squad b6964013. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-08-29 (10204). Lifetime impressions 10204 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-08-13..2026-08-31: first>0 = 2026-08-29 (10204), 16 zero days before it from creation day - MATCH."
+ },
+ "4ab36fa9-7a51-493e-a279-e3b7a2043125": {
+  "first_date": "2026-09-28",
+  "first_day_impressions": 3389,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-09-28T07:44:53.822Z (local 2026-09-28 10:44); ad squad 3bc70bfc. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-28 (3389), next 2026-09-29 (3023). Lifetime impressions 40616 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-09-28..2026-09-29: first>0 = 2026-09-28 (3389), first day = creation day - MATCH."
+ },
+ "520c5ea1-9f33-4e65-820e-321df01bcd11": {
+  "first_date": "2026-09-09",
+  "first_day_impressions": 36075,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-09-09T09:41:38.842Z (local 2026-09-09 12:41); ad squad ff24e485. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-09 (36075), next 2026-09-10 (31317). Lifetime impressions 1962489 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-09-09..2026-09-10: first>0 = 2026-09-09 (36075), first day = creation day - MATCH."
+ },
+ "521b72d8-4e63-48bc-90d9-a1ddeaf6b96c": {
+  "first_date": "2026-09-28",
+  "first_day_impressions": 4464,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-09-28T09:52:37.935Z (local 2026-09-28 12:52); ad squad fd4c9ca8. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-28 (4464), next 2026-09-29 (3204). Lifetime impressions 113871 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-09-28..2026-09-29: first>0 = 2026-09-28 (4464), first day = creation day - MATCH."
+ },
+ "526ca470-00d0-4b10-a8b7-0da82155e63e": {
+  "first_date": "2026-09-06",
+  "first_day_impressions": 6495,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-08-26T13:57:41.448Z (local 2026-08-26 16:57); ad squad b6964013. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-06 (6495), next 2026-09-07 (4007). Lifetime impressions 130954 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-08-26..2026-09-08: first>0 = 2026-09-06 (6495), 11 zero days before it from creation day - MATCH. NOTE: first-served month 2026-09 differs from creation month 2026-08."
+ },
+ "5750e817-427d-4a9e-8bdd-0a3a47f1a1df": {
+  "first_date": "2026-09-09",
+  "first_day_impressions": 67328,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-09-09T09:43:02.153Z (local 2026-09-09 12:43); ad squad ff24e485. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-09 (67328), next 2026-09-10 (82435). Lifetime impressions 2030109 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-09-09..2026-09-10: first>0 = 2026-09-09 (67328), first day = creation day - MATCH."
+ },
+ "57ead8ac-fc9b-4561-8f69-a796c8fb4288": {
+  "first_date": "2026-09-09",
+  "first_day_impressions": 55967,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-09-09T08:58:55.680Z (local 2026-09-09 11:58); ad squad 2501ea51. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-09 (55967), next 2026-09-10 (68211). Lifetime impressions 871316 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-09-09..2026-09-10: first>0 = 2026-09-09 (55967), first day = creation day - MATCH."
+ },
+ "585f9453-fe1c-4869-bcc0-008736b1f9df": {
+  "first_date": "2026-09-28",
+  "first_day_impressions": 5859,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-09-28T07:44:48.273Z (local 2026-09-28 10:44); ad squad 5c77ecad. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-28 (5859), next 2026-09-29 (8713). Lifetime impressions 518320 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-09-28..2026-09-29: first>0 = 2026-09-28 (5859), first day = creation day - MATCH."
+ },
+ "5aabafa6-e941-4da3-a723-b1248fa07a74": {
+  "first_date": "2026-09-29",
+  "first_day_impressions": 10276,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-09-29T09:51:00.469Z (local 2026-09-29 12:51); ad squad 6877ca6e. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-29 (10276), next 2026-09-30 (6750). Lifetime impressions 149387 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-09-29..2026-09-30: first>0 = 2026-09-29 (10276), first day = creation day - MATCH."
+ },
+ "5c1a92fc-a102-4520-aa56-4ad053d22ec9": {
+  "first_date": "2026-09-28",
+  "first_day_impressions": 35095,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-09-28T07:44:48.272Z (local 2026-09-28 10:44); ad squad 5c77ecad. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-28 (35095), next 2026-09-29 (25477). Lifetime impressions 653283 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-09-28..2026-09-29: first>0 = 2026-09-28 (35095), first day = creation day - MATCH."
+ },
+ "5e1f4d19-b8d1-4636-8aeb-def9c4a693f2": {
+  "first_date": "2026-08-29",
+  "first_day_impressions": 8868,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-08-29T14:57:08.678Z (local 2026-08-29 17:57); ad squad 6598977a. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-08-29 (8868), next 2026-08-30 (7). Lifetime impressions 8875 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-08-29..2026-08-30: first>0 = 2026-08-29 (8868), first day = creation day - MATCH."
+ },
+ "5ee637f0-fa25-41db-bc73-3292b2e8f728": {
+  "first_date": "2026-09-28",
+  "first_day_impressions": 3147,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-09-28T09:52:37.935Z (local 2026-09-28 12:52); ad squad fd4c9ca8. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-28 (3147), next 2026-09-29 (1811). Lifetime impressions 104285 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-09-28..2026-09-29: first>0 = 2026-09-28 (3147), first day = creation day - MATCH."
+ },
+ "64cf679d-0aad-4abc-8907-ec0b61811ca4": {
+  "first_date": "2026-09-29",
+  "first_day_impressions": 1336,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-09-29T09:51:05.915Z (local 2026-09-29 12:51); ad squad 7bb76c14. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-29 (1336), next 2026-09-30 (2821). Lifetime impressions 100299 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-09-29..2026-09-30: first>0 = 2026-09-29 (1336), first day = creation day - MATCH."
+ },
+ "65132874-a46e-4adf-9160-ad76a6e0eaf4": {
+  "first_date": "2026-08-29",
+  "first_day_impressions": 4101,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-08-13T10:55:50.627Z (local 2026-08-13 13:55); ad squad 8d471b9c. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-08-29 (4101), next 2026-08-30 (1). Lifetime impressions 4102 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-08-13..2026-08-31: first>0 = 2026-08-29 (4101), 16 zero days before it from creation day - MATCH."
+ },
+ "6a8557f7-3af1-427f-a3a9-b3406e362c66": {
+  "first_date": null,
+  "first_day_impressions": null,
+  "status": "never_served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-08-29T14:57:08.798Z (local 2026-08-29 17:57); ad squad 6598977a. Lifetime impressions = 0 verified: per-ad TOTAL (GET /v1/ads/{id}/stats) 2026-08-29..2026-10-13=0 (ad absent/zero in squad breakdown=ad TOTAL, i.e. zero for whole life from creation day to 2026-10-13 00:00 local; data finalized to 2026-10-12T06:00Z); also no day with impressions>0 in squad breakdown=ad DAY omit_empty series."
+ },
+ "6c8798f0-1782-43b3-abbb-f5604d990d07": {
+  "first_date": null,
+  "first_day_impressions": null,
+  "status": "never_served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-08-29T14:57:08.798Z (local 2026-08-29 17:57); ad squad 61049c69. Lifetime impressions = 0 verified: per-ad TOTAL (GET /v1/ads/{id}/stats) 2026-08-29..2026-10-13=0 (ad absent/zero in squad breakdown=ad TOTAL, i.e. zero for whole life from creation day to 2026-10-13 00:00 local; data finalized to 2026-10-12T06:00Z); also no day with impressions>0 in squad breakdown=ad DAY omit_empty series."
+ },
+ "6f547f84-9ef0-4678-a4cb-a2e451bbbda3": {
+  "first_date": "2026-08-29",
+  "first_day_impressions": 5672,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-08-29T14:57:08.530Z (local 2026-08-29 17:57); ad squad 61049c69. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-08-29 (5672), next 2026-08-30 (15). Lifetime impressions 5687 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-08-29..2026-08-30: first>0 = 2026-08-29 (5672), first day = creation day - MATCH."
+ },
+ "70349285-a164-43e2-8407-5be5ecc51a2c": {
+  "first_date": "2026-09-28",
+  "first_day_impressions": 6419,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-09-28T07:44:53.822Z (local 2026-09-28 10:44); ad squad 3bc70bfc. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-28 (6419), next 2026-09-29 (3150). Lifetime impressions 36938 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-09-28..2026-09-29: first>0 = 2026-09-28 (6419), first day = creation day - MATCH."
+ },
+ "70fd2675-fbf4-4f17-8f0e-d0d534223879": {
+  "first_date": "2026-08-29",
+  "first_day_impressions": 9487,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-08-13T10:55:50.433Z (local 2026-08-13 13:55); ad squad b6964013. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-08-29 (9487), next 2026-08-30 (2). Lifetime impressions 9489 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-08-13..2026-08-31: first>0 = 2026-08-29 (9487), 16 zero days before it from creation day - MATCH."
+ },
+ "72d3442c-8e0e-40e8-8fea-e3f4a7c17b7e": {
+  "first_date": null,
+  "first_day_impressions": null,
+  "status": "never_served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-08-13T10:55:50.370Z (local 2026-08-13 13:55); ad squad 8d471b9c. Lifetime impressions = 0 verified: per-ad TOTAL (GET /v1/ads/{id}/stats) 2026-08-13..2026-10-13=0 (ad absent/zero in squad breakdown=ad TOTAL, i.e. zero for whole life from creation day to 2026-10-13 00:00 local; data finalized to 2026-10-12T06:00Z); also no day with impressions>0 in squad breakdown=ad DAY omit_empty series."
+ },
+ "75f60985-3e5c-40a9-8329-df8c0fef84d6": {
+  "first_date": "2026-09-08",
+  "first_day_impressions": 82669,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-09-08T07:01:30.650Z (local 2026-09-08 10:01); ad squad 6598977a. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-08 (82669), next 2026-09-09 (32438). Lifetime impressions 115107 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-09-08..2026-09-09: first>0 = 2026-09-08 (82669), first day = creation day - MATCH."
+ },
+ "762b1f3c-8076-4c90-9efc-375089873237": {
+  "first_date": "2026-09-29",
+  "first_day_impressions": 6997,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-09-29T09:50:48.762Z (local 2026-09-29 12:50); ad squad 5a7f6ad9. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-29 (6997), next 2026-09-30 (4973). Lifetime impressions 99717 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-09-29..2026-09-30: first>0 = 2026-09-29 (6997), first day = creation day - MATCH."
+ },
+ "7804f3bf-2ec0-4019-b059-3d375d074538": {
+  "first_date": "2026-09-06",
+  "first_day_impressions": 7437,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-08-26T14:11:32.189Z (local 2026-08-26 17:11); ad squad 8d471b9c. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-06 (7437), next 2026-09-07 (1976). Lifetime impressions 210943 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-08-26..2026-09-08: first>0 = 2026-09-06 (7437), 11 zero days before it from creation day - MATCH. NOTE: first-served month 2026-09 differs from creation month 2026-08."
+ },
+ "7c7bdf58-6301-4638-86e3-83e8f6d0c5f2": {
+  "first_date": "2026-09-08",
+  "first_day_impressions": 38291,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-09-08T06:49:50.141Z (local 2026-09-08 09:49); ad squad 61049c69. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-08 (38291), next 2026-09-09 (13247). Lifetime impressions 51538 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-09-08..2026-09-09: first>0 = 2026-09-08 (38291), first day = creation day - MATCH."
+ },
+ "843f81ac-5c11-4b27-a0b9-36d031da9778": {
+  "first_date": "2026-09-29",
+  "first_day_impressions": 1736,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-09-29T09:50:54.805Z (local 2026-09-29 12:50); ad squad b08fdb34. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-29 (1736), next 2026-09-30 (1986). Lifetime impressions 36028 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-09-29..2026-09-30: first>0 = 2026-09-29 (1736), first day = creation day - MATCH."
+ },
+ "90501c88-6077-46b3-8101-141d75c97252": {
+  "first_date": "2026-09-29",
+  "first_day_impressions": 2108,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-09-29T09:51:05.915Z (local 2026-09-29 12:51); ad squad 7bb76c14. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-29 (2108), next 2026-09-30 (879). Lifetime impressions 20943 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-09-29..2026-09-30: first>0 = 2026-09-29 (2108), first day = creation day - MATCH."
+ },
+ "9098a159-d9a3-4f7e-97ed-d89146d8b0fd": {
+  "first_date": "2026-09-29",
+  "first_day_impressions": 3263,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-09-29T09:51:00.470Z (local 2026-09-29 12:51); ad squad 6877ca6e. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-29 (3263), next 2026-09-30 (4648). Lifetime impressions 176720 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-09-29..2026-09-30: first>0 = 2026-09-29 (3263), first day = creation day - MATCH."
+ },
+ "91a31800-af04-4fd2-8f08-dbc2526d9944": {
+  "first_date": "2026-09-29",
+  "first_day_impressions": 1068,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-09-29T09:50:48.763Z (local 2026-09-29 12:50); ad squad 5a7f6ad9. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-29 (1068), next 2026-09-30 (374). Lifetime impressions 43608 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-09-29..2026-09-30: first>0 = 2026-09-29 (1068), first day = creation day - MATCH."
+ },
+ "91c53825-361b-435b-9906-a5629d37a2e6": {
+  "first_date": "2026-09-08",
+  "first_day_impressions": 25318,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-09-08T07:06:24.011Z (local 2026-09-08 10:06); ad squad 61049c69. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-08 (25318), next 2026-09-09 (8031). Lifetime impressions 33349 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-09-08..2026-09-09: first>0 = 2026-09-08 (25318), first day = creation day - MATCH."
+ },
+ "961052ee-3211-4bce-b7b6-c6f6e7564720": {
+  "first_date": "2026-09-09",
+  "first_day_impressions": 47576,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-09-09T08:57:04.836Z (local 2026-09-09 11:57); ad squad 2501ea51. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-09 (47576), next 2026-09-10 (51515). Lifetime impressions 1384596 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-09-09..2026-09-10: first>0 = 2026-09-09 (47576), first day = creation day - MATCH."
+ },
+ "9b90b946-f409-487e-9898-09be87dee4bb": {
+  "first_date": "2026-09-08",
+  "first_day_impressions": 21474,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-09-08T07:14:57.437Z (local 2026-09-08 10:14); ad squad 61049c69. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-08 (21474), next 2026-09-09 (10133). Lifetime impressions 31607 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-09-08..2026-09-09: first>0 = 2026-09-08 (21474), first day = creation day - MATCH."
+ },
+ "a0c0c29c-a3a5-4417-b702-ea06c593fcb9": {
+  "first_date": "2026-09-29",
+  "first_day_impressions": 2085,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-09-29T09:50:48.763Z (local 2026-09-29 12:50); ad squad 5a7f6ad9. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-29 (2085), next 2026-09-30 (4521). Lifetime impressions 131120 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-09-29..2026-09-30: first>0 = 2026-09-29 (2085), first day = creation day - MATCH."
+ },
+ "a8db1877-3cd9-4022-974f-e4fafd52fac6": {
+  "first_date": "2026-09-28",
+  "first_day_impressions": 6601,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-09-28T09:52:37.934Z (local 2026-09-28 12:52); ad squad fd4c9ca8. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-28 (6601), next 2026-09-29 (4549). Lifetime impressions 41241 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-09-28..2026-09-29: first>0 = 2026-09-28 (6601), first day = creation day - MATCH."
+ },
+ "b29898ce-89af-4e6f-821c-a52be0f6c1a9": {
+  "first_date": "2026-08-29",
+  "first_day_impressions": 7727,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-08-29T14:56:58.712Z (local 2026-08-29 17:56); ad squad 8d471b9c. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-08-29 (7727), next 2026-08-30 (2). Lifetime impressions 7729 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-08-29..2026-08-30: first>0 = 2026-08-29 (7727), first day = creation day - MATCH."
+ },
+ "b854a5e4-29f2-4cbf-a0b5-5e16c87e514d": {
+  "first_date": "2026-09-06",
+  "first_day_impressions": 5037,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-08-26T14:04:48.324Z (local 2026-08-26 17:04); ad squad b6964013. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-06 (5037), next 2026-09-07 (5116). Lifetime impressions 52297 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-08-26..2026-09-08: first>0 = 2026-09-06 (5037), 11 zero days before it from creation day - MATCH. NOTE: first-served month 2026-09 differs from creation month 2026-08."
+ },
+ "bea81384-a60b-4c9c-a46c-683bf7fe3a48": {
+  "first_date": "2026-09-29",
+  "first_day_impressions": 833,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-09-29T09:51:00.470Z (local 2026-09-29 12:51); ad squad 6877ca6e. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-29 (833), next 2026-09-30 (1228). Lifetime impressions 69174 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-09-29..2026-09-30: first>0 = 2026-09-29 (833), first day = creation day - MATCH."
+ },
+ "ca389fae-cdb7-4bd7-9915-53c85d18fa7c": {
+  "first_date": "2026-09-28",
+  "first_day_impressions": 16708,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-09-28T09:52:32.318Z (local 2026-09-28 12:52); ad squad c7a25af5. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-28 (16708), next 2026-09-29 (17547). Lifetime impressions 298622 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-09-28..2026-09-29: first>0 = 2026-09-28 (16708), first day = creation day - MATCH."
+ },
+ "d60377e0-a682-44bf-84fd-a11c01787c5f": {
+  "first_date": "2026-09-28",
+  "first_day_impressions": 10921,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-09-28T09:52:32.318Z (local 2026-09-28 12:52); ad squad c7a25af5. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-28 (10921), next 2026-09-29 (1356). Lifetime impressions 87244 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-09-28..2026-09-29: first>0 = 2026-09-28 (10921), first day = creation day - MATCH."
+ },
+ "d8ba1ebe-c7ab-427c-b9c2-64e64e5c3207": {
+  "first_date": "2026-09-08",
+  "first_day_impressions": 62451,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-09-08T06:58:47.973Z (local 2026-09-08 09:58); ad squad 6598977a. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-08 (62451), next 2026-09-09 (18885). Lifetime impressions 81337 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-09-08..2026-09-09: first>0 = 2026-09-08 (62451), first day = creation day - MATCH."
+ },
+ "db09a8b2-1c84-47a0-a2fc-f1fa004b857a": {
+  "first_date": "2026-09-28",
+  "first_day_impressions": 7455,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-09-28T09:52:32.318Z (local 2026-09-28 12:52); ad squad c7a25af5. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-28 (7455), next 2026-09-29 (3345). Lifetime impressions 264513 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-09-28..2026-09-29: first>0 = 2026-09-28 (7455), first day = creation day - MATCH."
+ },
+ "ed248cb7-69da-420d-a706-d550a284e4b3": {
+  "first_date": "2026-09-06",
+  "first_day_impressions": 27180,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-09-02T15:29:59.082Z (local 2026-09-02 18:29); ad squad 8d471b9c. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-06 (27180), next 2026-09-07 (33777). Lifetime impressions 316565 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-09-02..2026-09-08: first>0 = 2026-09-06 (27180), 4 zero days before it from creation day - MATCH."
+ },
+ "ef1cbafe-16c1-419a-8061-418e1d94985f": {
+  "first_date": "2026-09-06",
+  "first_day_impressions": 6704,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-09-02T15:27:32.244Z (local 2026-09-02 18:27); ad squad 8d471b9c. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-06 (6704), next 2026-09-07 (3352). Lifetime impressions 482596 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-09-02..2026-09-08: first>0 = 2026-09-06 (6704), 4 zero days before it from creation day - MATCH."
+ },
+ "f0140a30-136a-4bb9-b579-b9ba684ffd32": {
+  "first_date": "2026-09-28",
+  "first_day_impressions": 3154,
+  "status": "served",
+  "note": "Ad account timezone Asia/Riyadh (UTC+3); ad created_at 2026-09-28T07:44:53.822Z (local 2026-09-28 10:44); ad squad 3bc70bfc. Daily impressions via GET /v1/adsquads/{id}/stats breakdown=ad granularity=DAY omit_empty=true (zero days omitted), windows starting at the ad creation day: first day with impressions>0 = 2026-09-28 (3154), next 2026-09-29 (3991). Lifetime impressions 302665 (squad breakdown=ad TOTAL creation day..2026-10-13). Cross-check GET /v1/ads/{id}/stats granularity=DAY (explicit zero rows) 2026-09-28..2026-09-29: first>0 = 2026-09-28 (3154), first day = creation day - MATCH."
+ }
+}

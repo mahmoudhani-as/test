@@ -8,6 +8,7 @@ from urllib.parse import urlsplit, parse_qsl
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from derive import Deriver, MONTHS, KV_LETTER
 from omit import Omit, check_omit
+from legacy import objective_of
 W = sys.argv[1] if len(sys.argv) > 1 else '.'
 G = glob.glob(f'{W}/in/e2e*.xlsx')[0]
 S = json.load(open(f'{W}/work/scored.json'))
@@ -22,6 +23,7 @@ for f in glob.glob(f'{W}/work/serving_out_*.json'):
 clash = json.load(open(f'{W}/work/serving_meta_clash.json'))
 D = Deriver(G, clash)
 O = Omit(D, S, G)
+O.fs = {f'{a}|{b}': v for (a, b), v in FS.items()}; O.never = {f'{a}|{b}' for a, b in NEVER}
 N = D.N
 key = lambda s: (s['platform'], str(s.get('ad_id')), s.get('slot'), s.get('url'))
 flag_keys = {key(f) for f in FLAG}
@@ -45,57 +47,106 @@ for s in S:
     rs = ' | '.join(s['derive_reasons'])
     if 'kva/kvb/kvd' in rs or 'no search creative code' in rs or 'search creative/format on a social platform' in rs:
         e, om, b = O.unknown_ad_token(s)
+        if e and 'month (first-serving date not pulled)' in om:
+            need.append({k: s.get(k) for k in ('platform', 'account_id', 'account_name', 'campaign_id', 'campaign_name', 'adset_id', 'adset_name', 'ad_id', 'ad_name', 'effective_status')}); continue
         if e: items.append({**s, 'kind': 'omit', 'expected_url': e, 'omitted': om, 'basis': b})
         else: unbuilt.append({**s, 'why': om})
-# 3) Google sitelink assets: one URL per asset, valid for every campaign / ad group it is linked to
-camp_parts = collections.defaultdict(set); set_parts = collections.defaultdict(set)
-for i in ITEMS + items:
-    if i['platform'] != 'google' or not i.get('expected_url'): continue
-    q = dict(parse_qsl(urlsplit(i['expected_url']).query))
-    c = q.get('utm_campaign', '').split('_')
+# 3) Google sitelink assets: one URL per asset, valid for every campaign / ad group it is linked to.
+# v5 (12-Oct review): a part is kept when every placement gives the same value - objective from the placement's built ad targets,
+# else from its campaign name (same rule as ads); ad set part from built ad targets of the ad group (ad-group links) or of the whole
+# campaign (campaign links), else the ad group / campaign name language; ad language from the sitelink text script and the
+# campaign / ad group language tokens, else the landing page. Disagreement -> left out.
+import unicodedata
+from legacy import Legacy
+LG = O.L
+camp_parts = collections.defaultdict(set); set_terms = collections.defaultdict(set); camp_terms = collections.defaultdict(set)
+def add_parts(acct, cid, sid, url):
+    q = dict(parse_qsl(urlsplit(url).query))
+    c = [x for x in q.get('utm_campaign', '').split('_') if x]
     uid = c[0] if c and re.fullmatch(r'[0-9a-f]{8}', c[0]) else None
     rest = c[1:] if uid else c
     obj = rest[-1] if rest and rest[-1] in N.objectives else None
     rest = rest[:-1] if obj else rest
     rest = rest[:-1] if rest and re.fullmatch(r'(' + '|'.join(MONTHS) + r')\d\d', rest[-1]) else rest
-    camp_parts[(i['account_id'], i.get('campaign_id'))].add((uid, '_'.join(rest) or None, obj))
-    set_parts[(i['account_id'], i.get('adset_id'))].add(q.get('utm_term'))
+    camp_parts[(acct, cid)].add((uid, '_'.join(rest) or None, obj))
+    if q.get('utm_term'):
+        set_terms[(acct, sid)].add(q['utm_term']); camp_terms[(acct, cid)].add(q['utm_term'])
+for i in ITEMS + items:
+    if i['platform'] == 'google' and i.get('expected_url') and 'sitelink' not in str(i.get('slot')).lower():
+        add_parts(i['account_id'], i.get('campaign_id'), i.get('adset_id'), i['expected_url'])
 for s in S:   # first-plan generator URLs count as well
-    if s['platform'] == 'google' and s.get('expected_url') and s['derive_status'] == 'FIX':
-        q = dict(parse_qsl(urlsplit(s['expected_url']).query)); c = q.get('utm_campaign', '').split('_')
-        camp_parts[(s['account_id'], s.get('campaign_id'))].add((c[0], c[1], c[-1])); set_parts[(s['account_id'], s.get('adset_id'))].add(q.get('utm_term'))
+    if s['platform'] == 'google' and s.get('expected_url') and s['derive_status'] in ('FIX', 'OK') and 'sitelink' not in str(s.get('slot')).lower():
+        add_parts(s['account_id'], s.get('campaign_id'), s.get('adset_id'), s['expected_url'])
+def script_lang(t):
+    t = str(t or '')
+    if any('ARABIC' in unicodedata.name(ch, '') for ch in t): return 'ar'
+    if re.search(r'[A-Za-z]{2,}', t): return 'en'
+    return None
 assets = collections.defaultdict(list)
 for s in S:
     if 'sitelink' in str(s.get('slot')).lower() and s.get('url'): assets[(s['account_id'], str(s.get('ad_id')))].append(s)
+chan = collections.defaultdict(set)   # campaign channel from its ads (inventory notes) or its name
+for s in S:
+    if s['platform'] == 'google' and 'sitelink' not in str(s.get('slot')).lower():
+        m = re.search(r'channel=([A-Z_]+)', str(s.get('notes')))
+        if m: chan[(s['account_id'], s.get('campaign_id'))].add(m.group(1))
+def chan_of(l):
+    c = chan.get((l['account_id'], l.get('campaign_id')))
+    if c: return c
+    n = str(l.get('campaign_name') or '').lower().replace(' ', '')
+    return {'DEMAND_GEN'} if 'demandgen' in n else {'SEARCH'}
+one = lambda xs: next(iter(xs)) if len(xs) == 1 else None
 for (acct, aid), links in assets.items():
-    cps = set()
-    for l in links: cps |= camp_parts.get((acct, l.get('campaign_id')), {(None, None, None)})
-    uid = {c[0] for c in cps}; nm = {c[1] for c in cps}; ob = {c[2] for c in cps}
-    one = lambda xs: next(iter(xs)) if len(xs) == 1 else None
-    cuid, cname, obj = one(uid), one(nm), one(ob)
-    if not cname: cuid = None
-    terms = set()
+    uids, names, objs, terms, clangs = set(), set(), set(), set(), set()
     for l in links:
-        terms |= (set_parts.get((acct, l.get('adset_id')), {None}) if l.get('adset_id') else {None})
+        parts = camp_parts.get((acct, l.get('campaign_id')))
+        if parts:
+            uids |= {x[0] for x in parts}; names |= {x[1] for x in parts}
+            o = {x[2] for x in parts}
+            objs |= (o if None not in o else o - {None} | {objective_of(l.get('campaign_name'))[0]})
+        else:
+            uids.add(None); names.add(None); objs.add(objective_of(l.get('campaign_name'))[0])
+        sid = l.get('adset_id')
+        built = set_terms.get((acct, sid)) if sid else camp_terms.get((acct, l.get('campaign_id')))
+        ln = (LG.lang_from(l.get('adset_name')) if sid else None) or LG.lang_from(l.get('campaign_name'))
+        terms |= built if built else {ln if ln in ('en', 'ar') else None}
+        x = (LG.lang_from(l.get('adset_name')) if sid else None)      # v6: the ad group's language is more specific than the campaign's
+        x = x if x in ('en', 'ar') else LG.lang_from(l.get('campaign_name'))
+        if x in ('en', 'ar'): clangs.add(x)
+    cuid, cname, obj = one(uids), one(names), one(objs)
+    if not cname: cuid = None
     term = one(terms)
+    if not term:   # ad set names differ: keep the language when every placement agrees on it
+        tl = {t.split('_')[-1] if t else None for t in terms}
+        term = one(tl) if one(tl) in ('en', 'ar') else None
     url = links[0]['url']
     lp = re.search(r'/(en|ar)(/|$)', urlsplit(url.strip()).path.lower())
-    lang = lp.group(1) if lp else None
+    tl_ = script_lang(links[0].get('ad_name'))
+    if tl_ and lp and tl_ == lp.group(1): lang, lb = tl_, f'ad language {tl_}: the sitelink text and the landing page /{tl_}/ agree'
+    elif len(clangs) == 1 and lp and lp.group(1) in clangs: lang, lb = lp.group(1), f'ad language {lp.group(1)}: every placement and the landing page say {lp.group(1).upper()} (the sitelink text is a brand name)'
+    elif tl_ and (not clangs or clangs == {tl_}): lang, lb = tl_, f'ad language {tl_} from the sitelink text "{links[0].get("ad_name")}"' + (' and the placement names' if clangs else '')
+    elif not tl_ and len(clangs) == 1: lang, lb = one(clangs), 'ad language from the placement campaign / ad group names'
+    elif not tl_ and not clangs and lp: lang, lb = lp.group(1), f'ad language from landing page /{lp.group(1)}/'
+    else: lang, lb = None, None
     omitted = ['ad token (no generator code for sitelinks)', 'month (sitelinks have no serving date of their own)']
-    if not cname: omitted.append('campaign name (asset shared by campaigns with different names)' if len(nm) > 1 else 'campaign name')
-    if not obj: omitted.append('objective')
-    if not term: omitted.append('ad set part (campaign-level link or ad groups differ)')
-    if not lang: omitted.append('language')
+    if not cname: omitted.append('campaign name (asset shared by campaigns with different names)' if len(names - {None}) > 1 else 'campaign name')
+    if not obj: omitted.append('objective (placements disagree or give none)')
+    if not term: omitted.append('ad set part (ad groups differ)')
+    elif '_' not in term: omitted.append('ad set name (only the ad set language is known)')
+    if not lang: omitted.append('language (sitelink text / placement names / landing page disagree or give none)')
     e = O.compose(url, 'google', 'paid-search', [cuid, cname, None, obj], [term] if term else [], [None, None, 'search', lang])
+    chans = set().union(*[chan_of(l) for l in links])
+    manual = ('shared sitelink: linked to Search and ' + '/'.join(sorted(chans - {'SEARCH'})).replace('_', ' ').title() + ' campaigns, which need a different '
+              'source / medium / format - split the asset by hand') if len(chans) > 1 else None
     for l in links:
-        items.append({**l, 'kind': 'omit-sitelink', 'expected_url': e, 'omitted': omitted,
-                      'basis': [f'sitelink asset {aid} linked in {len(links)} placement(s); every part that differs between them is left out']})
+        items.append({**l, 'kind': 'omit-sitelink', 'expected_url': e, 'omitted': omitted, 'manual': manual,
+                      'basis': [f'sitelink asset {aid} linked in {len(links)} placement(s); a part is kept only when every placement gives the same value'] + ([lb] if lb else [])})
 
 # validate
 bad = collections.Counter()
 for i in items:
     errs = check_omit(N, i['expected_url'])
-    i['check'] = errs
+    i['check'] = errs + ([i['manual']] if i.get('manual') else [])
     for x in errs: bad[x.split(':')[0]] += 1
 print('omit items', len(items), collections.Counter(i['kind'] for i in items), 'need serving pull (ads)', len({(n['platform'], n['ad_id']) for n in need}),
       'unbuilt', len(unbuilt))

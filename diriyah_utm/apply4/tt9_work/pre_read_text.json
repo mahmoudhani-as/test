@@ -1,0 +1,1117 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_get",
+    "method": "GET",
+    "path": "/v1.3/ad/get/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "202610121810288FA85AA1F83ED85BA565",
+      "data": {
+        "list": [
+          {
+            "identity_type": "CUSTOMIZED_USER",
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "deeplink": "",
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/osCIgi6BNsPEpAqf6byOoq1ys6JBDBifQFOBUm"
+            ],
+            "impression_tracking_url": null,
+            "click_tracking_url": null,
+            "is_aco": false,
+            "page_id": null,
+            "is_new_structure": true,
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "card_id": null,
+            "display_name": "Visit Diriyah",
+            "optimization_event": null,
+            "landing_page_urls": null,
+            "adgroup_id": "1849311245668370",
+            "adgroup_name": "VisitDiriyah_Winter2025_UF_AWR_KSA_Prospect_EN",
+            "viewability_vast_url": null,
+            "brand_safety_postbid_partner": "UNSET",
+            "video_id": "v10033g50000d4tamfvog65q2r1udqp0",
+            "modify_time": "2025-12-30 09:14:41",
+            "tracking_pixel_id": 0,
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "deeplink_type": "NORMAL",
+            "campaign_name": "VisitDiriyah_Winter2025_UF_AWR_KSA_ENAR_TikTok_20HS252111",
+            "creative_auto_enhancement_strategy_list": [],
+            "create_time": "2025-12-11 11:55:43",
+            "creative_authorized": true,
+            "ad_text": "Diriyah awaits, a sanctuary of stories untold ​",
+            "call_to_action": "LEARN_MORE",
+            "campaign_id": "1846494872137889",
+            "music_id": null,
+            "operation_status": "ENABLE",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "hs-wintercampaign-visitdiriyah-2025-nov-uf-reach-awareness",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "7846",
+                "key": "utm_id"
+              },
+              {
+                "value": "15svideo-video-ksa",
+                "key": "utm_content"
+              }
+            ],
+            "ad_format": "SINGLE_VIDEO",
+            "creative_type": null,
+            "call_to_action_id": null,
+            "ad_name": "Visit Diriyah_Tactical_Visit Diriyah Winter Campaign 2025_UF_KSA_Prospecting_EN_Awareness_15s Video",
+            "viewability_postbid_partner": "UNSET",
+            "campaign_automation_type": "MANUAL",
+            "app_name": "",
+            "identity_id": "7350277519361425409",
+            "landing_page_url": "https://www.diriyah.sa/en?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-visitdiriyah-2025-nov-uf-reach-awareness&utm_id=7846&utm_term=wintercampaign-visitdiriyah-en-all-na&utm_content=15svideo-video-ksa",
+            "carousel_image_labels": null,
+            "playable_url": "",
+            "advertiser_id": "7338057963233443842",
+            "vast_moat_enabled": false,
+            "brand_safety_vast_url": null,
+            "ad_id": "1851212539591826",
+            "ad_texts": null
+          },
+          {
+            "identity_type": "CUSTOMIZED_USER",
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "deeplink": "",
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/osCIgi6BNsPEpAqf6byOoq1ys6JBDBifQFOBUm"
+            ],
+            "impression_tracking_url": null,
+            "click_tracking_url": null,
+            "is_aco": false,
+            "page_id": null,
+            "is_new_structure": true,
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "card_id": null,
+            "display_name": "Visit Diriyah",
+            "optimization_event": null,
+            "landing_page_urls": null,
+            "adgroup_id": "1849311192338481",
+            "adgroup_name": "VisitDiriyah_Winter2025_UF_AWR_KSA_Prospect_AR",
+            "viewability_vast_url": null,
+            "brand_safety_postbid_partner": "UNSET",
+            "video_id": "v10033g50000d4tamfvog65q2r1udqp0",
+            "modify_time": "2025-12-30 09:14:41",
+            "tracking_pixel_id": 0,
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "deeplink_type": "NORMAL",
+            "campaign_name": "VisitDiriyah_Winter2025_UF_AWR_KSA_ENAR_TikTok_20HS252111",
+            "creative_auto_enhancement_strategy_list": [],
+            "create_time": "2025-12-11 11:39:31",
+            "creative_authorized": true,
+            "ad_text": "الدرعية تناديك... حيّة بروحها وناسها",
+            "call_to_action": "LEARN_MORE",
+            "campaign_id": "1846494872137889",
+            "music_id": null,
+            "operation_status": "ENABLE",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "hs-wintercampaign-visitdiriyah-2025-nov-uf-reach-awareness",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "7848",
+                "key": "utm_id"
+              },
+              {
+                "value": "15svideo-video-ksa",
+                "key": "utm_content"
+              }
+            ],
+            "ad_format": "SINGLE_VIDEO",
+            "creative_type": null,
+            "call_to_action_id": null,
+            "ad_name": "Visit Diriyah_Tactical_Visit Diriyah Winter Campaign 2025_UF_KSA_Prospecting_AR_Awareness_15s Video",
+            "viewability_postbid_partner": "UNSET",
+            "campaign_automation_type": "MANUAL",
+            "app_name": "",
+            "identity_id": "7350277519361425409",
+            "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-visitdiriyah-2025-nov-uf-reach-awareness&utm_id=7848&utm_term=wintercampaign-visitdiriyah-ar-all-na&utm_content=15svideo-video-ksa",
+            "carousel_image_labels": null,
+            "playable_url": "",
+            "advertiser_id": "7338057963233443842",
+            "vast_moat_enabled": false,
+            "brand_safety_vast_url": null,
+            "ad_id": "1851211079533601",
+            "ad_texts": null
+          },
+          {
+            "identity_type": "AUTH_CODE",
+            "profile_image_url": "",
+            "deeplink": "",
+            "image_ids": [],
+            "impression_tracking_url": null,
+            "click_tracking_url": null,
+            "is_aco": false,
+            "page_id": null,
+            "is_new_structure": true,
+            "card_id": null,
+            "display_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "promotional_music_disabled": true,
+            "optimization_event": "SHOPPING",
+            "landing_page_urls": null,
+            "adgroup_id": "1814339391140914",
+            "adgroup_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_LF_KSA_Retargeting_EN/AR_Conversion_TIKTOK",
+            "viewability_vast_url": null,
+            "ad_ref_pixel_id": 7347671240183693000,
+            "brand_safety_postbid_partner": "UNSET",
+            "video_id": null,
+            "modify_time": "2026-10-12 10:09:25",
+            "tracking_pixel_id": 7347671240183693000,
+            "avatar_icon_web_uri": "",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "deeplink_type": "NORMAL",
+            "campaign_name": "BujairiTerrace_Winter2024Tickets_LF_CONV_KSA_ENAR_TikTok",
+            "vertical_video_strategy": "UNSET",
+            "create_time": "2024-10-30 11:48:04",
+            "creative_authorized": true,
+            "ad_text": "",
+            "fallback_type": "UNSET",
+            "shopping_ads_fallback_type": "DEFAULT",
+            "campaign_id": "1813235175002114",
+            "music_id": null,
+            "operation_status": "DISABLE",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "bujairiterracewinter-2024-oct-lf-conversions",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "phase1-sponsoredpost-ret-ksa",
+                "key": "utm_content"
+              }
+            ],
+            "ad_format": "SINGLE_VIDEO",
+            "creative_type": null,
+            "call_to_action_id": "7431534053851008007",
+            "ad_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_LW_KSA_Retargeting_EN/AR_Conversion_TIKTOK_Hero Video 30s",
+            "viewability_postbid_partner": "UNSET",
+            "campaign_automation_type": "MANUAL",
+            "app_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "identity_id": "7031391213458752514",
+            "landing_page_url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bujairiterracewinter-2024-oct-lf-conversions&utm_term=bujairiterracewinter-ar-all-mf&utm_content=phase1-sponsoredpost-ret-ksa",
+            "tiktok_item_id": "7426444501155204359",
+            "carousel_image_labels": null,
+            "playable_url": "",
+            "advertiser_id": "7338057963233443842",
+            "vast_moat_enabled": false,
+            "brand_safety_vast_url": null,
+            "ad_id": "1814339394401298",
+            "ad_texts": null,
+            "dynamic_destination": "UNSET"
+          },
+          {
+            "identity_type": "CUSTOMIZED_USER",
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "deeplink": "",
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/oIAAWFbhXFosDhuoNfjBomDfgQEHBkhIJnaKEp"
+            ],
+            "impression_tracking_url": null,
+            "click_tracking_url": null,
+            "is_aco": false,
+            "page_id": null,
+            "is_new_structure": true,
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "card_id": null,
+            "display_name": "Visit Diriyah",
+            "optimization_event": "SHOPPING",
+            "landing_page_urls": null,
+            "adgroup_id": "1814338666550322",
+            "adgroup_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_LF_KSA_Retargeting_EN_Conversion_TIKTOK",
+            "viewability_vast_url": null,
+            "ad_ref_pixel_id": 7347671240183693000,
+            "brand_safety_postbid_partner": "UNSET",
+            "video_id": "v10033g50000csb8bofog65vk8p9m9kg",
+            "modify_time": "2026-10-12 10:08:04",
+            "tracking_pixel_id": 7347671240183693000,
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "deeplink_type": "NORMAL",
+            "campaign_name": "BujairiTerrace_Winter2024Tickets_LF_CONV_KSA_ENAR_TikTok",
+            "vertical_video_strategy": "UNSET",
+            "create_time": "2024-10-30 11:36:33",
+            "creative_authorized": true,
+            "ad_text": "Under a sky full of stars, let the charm of Bujairi Terrace captivate you Secure your ticket now!",
+            "fallback_type": "UNSET",
+            "shopping_ads_fallback_type": "DEFAULT",
+            "campaign_id": "1813235175002114",
+            "music_id": null,
+            "operation_status": "DISABLE",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "bujairiterracewinter-2024-oct-lf-conversions",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "heroad-video-ret-ksa",
+                "key": "utm_content"
+              }
+            ],
+            "ad_format": "SINGLE_VIDEO",
+            "creative_type": null,
+            "call_to_action_id": "7432251247161314311",
+            "ad_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_LW_KSA_Retargeting_EN_Conversion_TIKTOK_Hero Video 30s",
+            "viewability_postbid_partner": "UNSET",
+            "campaign_automation_type": "MANUAL",
+            "app_name": "",
+            "identity_id": "7350277519361425409",
+            "landing_page_url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bujairiterracewinter-2024-oct-lf-conversions&utm_term=bujairiterracewinter-en-all-mf&utm_content=heroad-video-ret-ksa",
+            "carousel_image_labels": null,
+            "playable_url": "",
+            "advertiser_id": "7338057963233443842",
+            "vast_moat_enabled": false,
+            "brand_safety_vast_url": null,
+            "ad_id": "1814338668422257",
+            "ad_texts": null,
+            "dynamic_destination": "UNSET"
+          },
+          {
+            "identity_type": "CUSTOMIZED_USER",
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "deeplink": "",
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/oMLfkRDiEFAPIEBGbBEQsRD5BtkpfNIannCkgM"
+            ],
+            "impression_tracking_url": null,
+            "click_tracking_url": null,
+            "is_aco": false,
+            "page_id": null,
+            "is_new_structure": true,
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "card_id": null,
+            "display_name": "Visit Diriyah",
+            "optimization_event": null,
+            "landing_page_urls": null,
+            "adgroup_id": "1814258353754146",
+            "adgroup_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_UP_KSA_Prospecting_AR_Awareness_TIKTOK",
+            "viewability_vast_url": null,
+            "brand_safety_postbid_partner": "UNSET",
+            "video_id": "v10033g50000csd47onog65misshucdg",
+            "modify_time": "2025-07-28 11:23:04",
+            "tracking_pixel_id": 7347671240183693000,
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "deeplink_type": "NORMAL",
+            "campaign_name": "BujairiTerrace_Winter2024Restaurants_UF_AWR_KSA_ENAR_TikTok",
+            "create_time": "2024-10-29 14:20:00",
+            "creative_authorized": false,
+            "ad_text": "مطل البجيري.. مطل يحتفي بطلتك",
+            "call_to_action": "LEARN_MORE",
+            "campaign_id": "1814258347883569",
+            "music_id": null,
+            "operation_status": "ENABLE",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "bujairiterracewinter-2024-oct-uf/mf-reach-awareness",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "retailvideo-video-aud-ksa",
+                "key": "utm_content"
+              }
+            ],
+            "ad_format": "SINGLE_VIDEO",
+            "creative_type": null,
+            "call_to_action_id": null,
+            "ad_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_UF_KSA_Prospecting_AR_Awareness_TIKTOK_Retail Video 21s",
+            "viewability_postbid_partner": "UNSET",
+            "campaign_automation_type": "MANUAL",
+            "app_name": "",
+            "identity_id": "7350277519361425409",
+            "landing_page_url": "https://www.diriyah.sa/ar/dine?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bujairiterracewinter-2024-oct-uf/mf-reach-awareness&utm_term=bujairiterracewinter-ar-all-mf&utm_content=retailvideo-video-aud-ksa",
+            "carousel_image_labels": null,
+            "playable_url": "",
+            "advertiser_id": "7338057963233443842",
+            "vast_moat_enabled": false,
+            "brand_safety_vast_url": null,
+            "ad_id": "1814258353756210",
+            "ad_texts": null
+          },
+          {
+            "identity_type": "CUSTOMIZED_USER",
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "deeplink": "",
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/oMLfkRDiEFAPIEBGbBEQsRD5BtkpfNIannCkgM"
+            ],
+            "impression_tracking_url": null,
+            "click_tracking_url": null,
+            "is_aco": false,
+            "page_id": null,
+            "is_new_structure": true,
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "card_id": null,
+            "display_name": "Visit Diriyah",
+            "optimization_event": null,
+            "landing_page_urls": null,
+            "adgroup_id": "1814258347884545",
+            "adgroup_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_UF_KSA_Prospecting_EN_Awareness_TIKTOK",
+            "viewability_vast_url": null,
+            "brand_safety_postbid_partner": "UNSET",
+            "video_id": "v10033g50000csd47onog65misshucdg",
+            "modify_time": "2025-07-28 11:23:06",
+            "tracking_pixel_id": 7347671240183693000,
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "deeplink_type": "NORMAL",
+            "campaign_name": "BujairiTerrace_Winter2024Restaurants_UF_AWR_KSA_ENAR_TikTok",
+            "create_time": "2024-10-29 14:19:58",
+            "creative_authorized": false,
+            "ad_text": "In Bujairi Terrace; A View Celebrating You.",
+            "call_to_action": "LEARN_MORE",
+            "campaign_id": "1814258347883569",
+            "music_id": null,
+            "operation_status": "ENABLE",
+            "utm_params": [
+              {
+                "value": "bujairiterracewinter-2024-oct-uf/mf-reach-awareness",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "retailvideo-video-aud-ksa",
+                "key": "utm_content"
+              },
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              }
+            ],
+            "ad_format": "SINGLE_VIDEO",
+            "creative_type": null,
+            "call_to_action_id": null,
+            "ad_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_UF_KSA_Prospecting_EN_Awareness_TIKTOK_Retail Video 21s",
+            "viewability_postbid_partner": "UNSET",
+            "campaign_automation_type": "MANUAL",
+            "app_name": "",
+            "identity_id": "7350277519361425409",
+            "landing_page_url": "https://www.diriyah.sa/en/dine?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bujairiterracewinter-2024-oct-uf/mf-reach-awareness&utm_term=bujairiterracewinter-en-all-mf&utm_content=retailvideo-video-aud-ksa",
+            "carousel_image_labels": null,
+            "playable_url": "",
+            "advertiser_id": "7338057963233443842",
+            "vast_moat_enabled": false,
+            "brand_safety_vast_url": null,
+            "ad_id": "1814258351977521",
+            "ad_texts": null
+          },
+          {
+            "identity_type": "CUSTOMIZED_USER",
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "deeplink": "",
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/oMLfkRDiEFAPIEBGbBEQsRD5BtkpfNIannCkgM"
+            ],
+            "impression_tracking_url": null,
+            "click_tracking_url": null,
+            "is_aco": false,
+            "page_id": null,
+            "is_new_structure": true,
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "card_id": null,
+            "display_name": "Visit Diriyah",
+            "optimization_event": "ON_WEB_REGISTER",
+            "landing_page_urls": null,
+            "adgroup_id": "1814257738350625",
+            "adgroup_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_LF_KSA_Prospecting_EN_Conversion_TIKTOK",
+            "viewability_vast_url": null,
+            "ad_ref_pixel_id": 7347671240183693000,
+            "brand_safety_postbid_partner": "UNSET",
+            "video_id": "v10033g50000csd47onog65misshucdg",
+            "modify_time": "2026-10-12 10:08:31",
+            "tracking_pixel_id": 7347671240183693000,
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "deeplink_type": "NORMAL",
+            "campaign_name": "BujairiTerrace_Winter2024Restaurants_LF_CONV_KSA_ENAR_TikTok",
+            "vertical_video_strategy": "UNSET",
+            "create_time": "2024-10-29 14:10:10",
+            "creative_authorized": true,
+            "ad_text": "In Bujairi Terrace; A View Celebrating You.",
+            "fallback_type": "UNSET",
+            "shopping_ads_fallback_type": "DEFAULT",
+            "campaign_id": "1814257734712321",
+            "music_id": null,
+            "operation_status": "ENABLE",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "bujairiterracewinter-2024-oct-lf-conversions",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "retailvideo-video-aud-ksa",
+                "key": "utm_content"
+              }
+            ],
+            "ad_format": "SINGLE_VIDEO",
+            "creative_type": null,
+            "call_to_action_id": "7431199576603757584",
+            "ad_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_LF_KSA_Prospecting_EN_Conversion_TIKTOK_Retail Video 21s",
+            "viewability_postbid_partner": "UNSET",
+            "campaign_automation_type": "MANUAL",
+            "app_name": "",
+            "identity_id": "7350277519361425409",
+            "landing_page_url": "https://www.diriyah.sa/en/dine?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bujairiterracewinter-2024-oct-lf-conversions&utm_term=bujairiterracewinter-en-all-mf&utm_content=retailvideo-video-aud-ksa",
+            "carousel_image_labels": null,
+            "playable_url": "",
+            "advertiser_id": "7338057963233443842",
+            "vast_moat_enabled": false,
+            "brand_safety_vast_url": null,
+            "ad_id": "1814257738467330",
+            "ad_texts": null,
+            "dynamic_destination": "UNSET"
+          },
+          {
+            "identity_type": "CUSTOMIZED_USER",
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "deeplink": "",
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/oAImWozAHIDYjmHgBAEHokikV5BAWwf0i7Bs5F"
+            ],
+            "impression_tracking_url": null,
+            "click_tracking_url": null,
+            "is_aco": false,
+            "page_id": null,
+            "is_new_structure": true,
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "card_id": null,
+            "display_name": "Visit Diriyah",
+            "optimization_event": "ON_WEB_REGISTER",
+            "landing_page_urls": null,
+            "adgroup_id": "1814257734712353",
+            "adgroup_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_LF_KSA_Prospecting_AR_Conversion_TIKTOK",
+            "viewability_vast_url": null,
+            "ad_ref_pixel_id": 7347671240183693000,
+            "brand_safety_postbid_partner": "UNSET",
+            "video_id": "v10033g50000csgemjfog65kceaof83g",
+            "modify_time": "2026-10-12 10:08:27",
+            "tracking_pixel_id": 7347671240183693000,
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "deeplink_type": "NORMAL",
+            "campaign_name": "BujairiTerrace_Winter2024Restaurants_LF_CONV_KSA_ENAR_TikTok",
+            "vertical_video_strategy": "UNSET",
+            "create_time": "2024-10-29 14:10:08",
+            "creative_authorized": true,
+            "ad_text": "مطل البجيري.. مطل يحتفي بطلتك",
+            "fallback_type": "UNSET",
+            "shopping_ads_fallback_type": "DEFAULT",
+            "campaign_id": "1814257734712321",
+            "music_id": null,
+            "operation_status": "ENABLE",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "bujairiterracewinter-2024-oct-lf-conversions",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "retailvideo-video-aud-ksa",
+                "key": "utm_content"
+              }
+            ],
+            "ad_format": "SINGLE_VIDEO",
+            "creative_type": null,
+            "call_to_action_id": "7431199520547032080",
+            "ad_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_LF_KSA_Prospecting_AR_Conversion_TIKTOK_Retail Video 21s",
+            "viewability_postbid_partner": "UNSET",
+            "campaign_automation_type": "MANUAL",
+            "app_name": "",
+            "identity_id": "7350277519361425409",
+            "landing_page_url": "https://www.diriyah.sa/ar/dine?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bujairiterracewinter-2024-oct-lf-conversions&utm_term=bujairiterracewinter-ar-all-mf&utm_content=retailvideo-video-aud-ksa",
+            "carousel_image_labels": null,
+            "playable_url": "",
+            "advertiser_id": "7338057963233443842",
+            "vast_moat_enabled": false,
+            "brand_safety_vast_url": null,
+            "ad_id": "1814257734722577",
+            "ad_texts": null,
+            "dynamic_destination": "UNSET"
+          },
+          {
+            "identity_type": "CUSTOMIZED_USER",
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "deeplink": "",
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/oY8NkEEYJMte7iQ9DCu7NrgIDfAnFBCtkBmnRQ"
+            ],
+            "impression_tracking_url": null,
+            "click_tracking_url": null,
+            "is_aco": false,
+            "page_id": null,
+            "is_new_structure": true,
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "card_id": null,
+            "display_name": "Visit Diriyah",
+            "optimization_event": null,
+            "landing_page_urls": null,
+            "adgroup_id": "1813630708433938",
+            "adgroup_name": "Diriyah_Tactical_City of Earth_UF_KSA_Prospecting_EN/AR_Awareness_TikTok",
+            "viewability_vast_url": null,
+            "brand_safety_postbid_partner": "UNSET",
+            "video_id": "v10033g50000cs8hnevog65ib88j4mv0",
+            "modify_time": "2025-07-28 11:22:16",
+            "tracking_pixel_id": 7347671240183693000,
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "deeplink_type": "NORMAL",
+            "campaign_name": "CityOfEarth_Phase12024_UF_AWR_KSA_ENAR_TikTok",
+            "create_time": "2024-10-22 16:03:50",
+            "creative_authorized": true,
+            "ad_text": "للعالم مستقبل واحد..وللدرعية مستقبل تاريخي",
+            "call_to_action": "LEARN_MORE",
+            "campaign_id": "1813630708433922",
+            "music_id": null,
+            "operation_status": "DISABLE",
+            "utm_params": [
+              {
+                "value": "herovideo",
+                "key": "utm_content"
+              },
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cityofearth-2024-oct-uf-reach-awareness",
+                "key": "utm_campaign"
+              }
+            ],
+            "ad_format": "SINGLE_VIDEO",
+            "creative_type": null,
+            "call_to_action_id": null,
+            "ad_name": "Diriyah_Tactical_City of Earth_UF_KSA_Pospecting_AR_Awareness_TikTok_Female 30s",
+            "viewability_postbid_partner": "UNSET",
+            "campaign_automation_type": "MANUAL",
+            "app_name": "",
+            "identity_id": "7350277519361425409",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cityofearth-2024-oct-uf-reach-awareness&utm_term=cityofearth-ar-all-mf&utm_content=herovideo",
+            "carousel_image_labels": null,
+            "playable_url": "",
+            "advertiser_id": "7338057963233443842",
+            "vast_moat_enabled": false,
+            "brand_safety_vast_url": null,
+            "ad_id": "1813630708447250",
+            "ad_texts": null
+          },
+          {
+            "identity_type": "CUSTOMIZED_USER",
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "deeplink": "",
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/ogfKEUBnBgTIrMNFGElpfBvARO8DEF9pRQEGWD"
+            ],
+            "impression_tracking_url": null,
+            "click_tracking_url": null,
+            "is_aco": false,
+            "page_id": null,
+            "is_new_structure": true,
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "card_id": null,
+            "display_name": "Visit Diriyah",
+            "optimization_event": null,
+            "landing_page_urls": null,
+            "adgroup_id": "1813630708433938",
+            "adgroup_name": "Diriyah_Tactical_City of Earth_UF_KSA_Prospecting_EN/AR_Awareness_TikTok",
+            "viewability_vast_url": null,
+            "brand_safety_postbid_partner": "UNSET",
+            "video_id": "v10033g50000cs8hkjnog65uviio9f2g",
+            "modify_time": "2025-07-28 11:22:16",
+            "tracking_pixel_id": 7347671240183693000,
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "deeplink_type": "NORMAL",
+            "campaign_name": "CityOfEarth_Phase12024_UF_AWR_KSA_ENAR_TikTok",
+            "create_time": "2024-10-22 16:03:50",
+            "creative_authorized": true,
+            "ad_text": "للعالم مستقبل واحد..وللدرعية مستقبل تاريخي",
+            "call_to_action": "LEARN_MORE",
+            "campaign_id": "1813630708433922",
+            "music_id": null,
+            "operation_status": "ENABLE",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cityofearth-2024-oct-uf-reach-awareness",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "herovideo",
+                "key": "utm_content"
+              }
+            ],
+            "ad_format": "SINGLE_VIDEO",
+            "creative_type": null,
+            "call_to_action_id": null,
+            "ad_name": "Diriyah_Tactical_City of Earth_UF_KSA_Pospecting_AR_Awareness_TikTok_Male 30s",
+            "viewability_postbid_partner": "UNSET",
+            "campaign_automation_type": "MANUAL",
+            "app_name": "",
+            "identity_id": "7350277519361425409",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cityofearth-2024-oct-uf-reach-awareness&utm_term=cityofearth-ar-all-mf&utm_content=herovideo",
+            "carousel_image_labels": null,
+            "playable_url": "",
+            "advertiser_id": "7338057963233443842",
+            "vast_moat_enabled": false,
+            "brand_safety_vast_url": null,
+            "ad_id": "1813630708440082",
+            "ad_texts": null
+          },
+          {
+            "identity_type": "CUSTOMIZED_USER",
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "deeplink": "",
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/oIAAWFbhXFosDhuoNfjBomDfgQEHBkhIJnaKEp"
+            ],
+            "impression_tracking_url": null,
+            "click_tracking_url": null,
+            "is_aco": false,
+            "page_id": null,
+            "is_new_structure": true,
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "card_id": null,
+            "display_name": "Visit Diriyah",
+            "optimization_event": "SHOPPING",
+            "landing_page_urls": null,
+            "adgroup_id": "1813548516710402",
+            "adgroup_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_LW_KSA_Prospecting_EN_Conversion_TIKTOK",
+            "viewability_vast_url": null,
+            "ad_ref_pixel_id": 7347671240183693000,
+            "brand_safety_postbid_partner": "UNSET",
+            "video_id": "v10033g50000csb8bofog65vk8p9m9kg",
+            "modify_time": "2026-10-12 10:09:58",
+            "tracking_pixel_id": 7347671240183693000,
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "deeplink_type": "NORMAL",
+            "campaign_name": "BujairiTerrace_Winter2024Tickets_LF_CONV_KSA_ENAR_TikTok",
+            "vertical_video_strategy": "UNSET",
+            "create_time": "2024-10-21 18:17:27",
+            "creative_authorized": true,
+            "ad_text": "Under a sky full of stars, let the charm of Bujairi Terrace captivate you Secure your ticket now!",
+            "fallback_type": "UNSET",
+            "shopping_ads_fallback_type": "DEFAULT",
+            "campaign_id": "1813235175002114",
+            "music_id": null,
+            "operation_status": "DISABLE",
+            "utm_params": [
+              {
+                "value": "bujairiterracewinter-2024-oct-lf-conversions",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "heroad-video-aud-ksa",
+                "key": "utm_content"
+              },
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              }
+            ],
+            "ad_format": "SINGLE_VIDEO",
+            "creative_type": null,
+            "call_to_action_id": "7431531585339460616",
+            "ad_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_LF_KSA_Prospecting_EN_Conversion_TIKTOK_Hero Video 30s",
+            "viewability_postbid_partner": "UNSET",
+            "campaign_automation_type": "MANUAL",
+            "app_name": "",
+            "identity_id": "7350277519361425409",
+            "landing_page_url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bujairiterracewinter-2024-oct-lf-conversions&utm_term=bujairiterracewinter-en-all-mf&utm_content=heroad-video-aud-ksa",
+            "carousel_image_labels": null,
+            "playable_url": "",
+            "advertiser_id": "7338057963233443842",
+            "vast_moat_enabled": false,
+            "brand_safety_vast_url": null,
+            "ad_id": "1813548516725794",
+            "ad_texts": null,
+            "dynamic_destination": "UNSET"
+          },
+          {
+            "identity_type": "CUSTOMIZED_USER",
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "deeplink": "",
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/oIAAWFbhXFosDhuoNfjBomDfgQEHBkhIJnaKEp"
+            ],
+            "impression_tracking_url": null,
+            "click_tracking_url": null,
+            "is_aco": false,
+            "page_id": null,
+            "is_new_structure": true,
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "card_id": null,
+            "display_name": "Visit Diriyah",
+            "optimization_event": null,
+            "landing_page_urls": null,
+            "adgroup_id": "1813548318688305",
+            "adgroup_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_UF_KSA_Prospecting_EN_Awareness_TIKTOK",
+            "viewability_vast_url": null,
+            "brand_safety_postbid_partner": "UNSET",
+            "video_id": "v10033g50000csb8bofog65vk8p9m9kg",
+            "modify_time": "2026-10-12 09:56:13",
+            "tracking_pixel_id": 7347671240183693000,
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "deeplink_type": "NORMAL",
+            "campaign_name": "BujairiTerrace_Winter2024Tickets_UF_AWR_KSA_ENAR_TikTok",
+            "create_time": "2024-10-21 18:14:17",
+            "creative_authorized": true,
+            "ad_text": "Under a sky full of stars, let the charm of Bujairi Terrace captivate you Secure your ticket now!",
+            "call_to_action": "LEARN_MORE",
+            "campaign_id": "1813234387592193",
+            "music_id": null,
+            "operation_status": "DISABLE",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "bujairiterracewinter-2024-oct-uf/mf-reach-awareness",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "heroad-video-aud-ksa",
+                "key": "utm_content"
+              }
+            ],
+            "ad_format": "SINGLE_VIDEO",
+            "creative_type": null,
+            "call_to_action_id": null,
+            "ad_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_UF_KSA_Prospecting_EN_Awareness_TIKTOK_Hero Video 30s",
+            "viewability_postbid_partner": "UNSET",
+            "campaign_automation_type": "MANUAL",
+            "app_name": "",
+            "identity_id": "7350277519361425409",
+            "landing_page_url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bujairiterracewinter-2024-oct-uf/mf-reach-awareness&utm_term=bujairiterracewinter-en-all-mf&utm_content=heroad-video-aud-ksa",
+            "carousel_image_labels": null,
+            "playable_url": "",
+            "advertiser_id": "7338057963233443842",
+            "vast_moat_enabled": false,
+            "brand_safety_vast_url": null,
+            "ad_id": "1813548319092754",
+            "ad_texts": null
+          },
+          {
+            "identity_type": "AUTH_CODE",
+            "profile_image_url": "",
+            "deeplink": "",
+            "image_ids": [],
+            "impression_tracking_url": null,
+            "click_tracking_url": null,
+            "is_aco": false,
+            "page_id": null,
+            "is_new_structure": true,
+            "card_id": null,
+            "display_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "promotional_music_disabled": true,
+            "optimization_event": "SHOPPING",
+            "landing_page_urls": null,
+            "adgroup_id": "1813235175002146",
+            "adgroup_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_LW_KSA_Prospecting_EN/AR_Conversion_TIKTOK",
+            "viewability_vast_url": null,
+            "ad_ref_pixel_id": 7347671240183693000,
+            "brand_safety_postbid_partner": "UNSET",
+            "video_id": null,
+            "modify_time": "2026-10-12 10:09:14",
+            "tracking_pixel_id": 7347671240183693000,
+            "avatar_icon_web_uri": "",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "deeplink_type": "NORMAL",
+            "campaign_name": "BujairiTerrace_Winter2024Tickets_LF_CONV_KSA_ENAR_TikTok",
+            "vertical_video_strategy": "UNSET",
+            "create_time": "2024-10-18 07:17:01",
+            "creative_authorized": true,
+            "ad_text": "",
+            "fallback_type": "UNSET",
+            "shopping_ads_fallback_type": "DEFAULT",
+            "campaign_id": "1813235175002114",
+            "music_id": null,
+            "operation_status": "DISABLE",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "bujairiterracewinter-2024-oct-lf-conversions",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "phase1-sponsoredpost-aud-ksa",
+                "key": "utm_content"
+              }
+            ],
+            "ad_format": "SINGLE_VIDEO",
+            "creative_type": null,
+            "call_to_action_id": "7427101964003019794",
+            "ad_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_LF_KSA_Prospecting_EN/AR_Conversion_TIKTOK_Hero Video 30s",
+            "viewability_postbid_partner": "UNSET",
+            "campaign_automation_type": "MANUAL",
+            "app_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "identity_id": "7031391213458752514",
+            "landing_page_url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bujairiterracewinter-2024-oct-lf-conversions&utm_term=bujairiterracewinter-ar-all-mf&utm_content=phase1-sponsoredpost-aud-ksa",
+            "tiktok_item_id": "7426444501155204359",
+            "carousel_image_labels": null,
+            "playable_url": "",
+            "advertiser_id": "7338057963233443842",
+            "vast_moat_enabled": false,
+            "brand_safety_vast_url": null,
+            "ad_id": "1813235176424482",
+            "ad_texts": null,
+            "dynamic_destination": "UNSET"
+          },
+          {
+            "identity_type": "AUTH_CODE",
+            "profile_image_url": "",
+            "deeplink": "",
+            "image_ids": [],
+            "impression_tracking_url": null,
+            "click_tracking_url": null,
+            "is_aco": false,
+            "page_id": null,
+            "is_new_structure": true,
+            "card_id": null,
+            "display_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "promotional_music_disabled": true,
+            "optimization_event": null,
+            "landing_page_urls": null,
+            "adgroup_id": "1813234387610642",
+            "adgroup_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_UF_KSA_Prospecting_EN/AR_Awareness_TIKTOK",
+            "viewability_vast_url": null,
+            "brand_safety_postbid_partner": "UNSET",
+            "video_id": null,
+            "modify_time": "2026-10-12 09:56:18",
+            "tracking_pixel_id": 7347671240183693000,
+            "avatar_icon_web_uri": "",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "deeplink_type": "NORMAL",
+            "campaign_name": "BujairiTerrace_Winter2024Tickets_UF_AWR_KSA_ENAR_TikTok",
+            "create_time": "2024-10-18 07:04:27",
+            "creative_authorized": true,
+            "ad_text": "",
+            "call_to_action": "LEARN_MORE",
+            "campaign_id": "1813234387592193",
+            "music_id": null,
+            "operation_status": "DISABLE",
+            "utm_params": [
+              {
+                "value": "bujairiterracewinter-2024-oct-uf/mf-reach-awareness",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "phase1-sponsoredpost-aud-ksa",
+                "key": "utm_content"
+              },
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              }
+            ],
+            "ad_format": "SINGLE_VIDEO",
+            "creative_type": null,
+            "call_to_action_id": null,
+            "ad_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_UF_KSA_Prospecting_EN/AR_Awareness_TIKTOK_Hero Video 30s",
+            "viewability_postbid_partner": "UNSET",
+            "campaign_automation_type": "MANUAL",
+            "app_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "identity_id": "7031391213458752514",
+            "landing_page_url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bujairiterracewinter-2024-oct-uf/mf-reach-awareness&utm_term=bujairiterracewinter-ar-all-mf&utm_content=phase1-sponsoredpost-aud-ksa",
+            "tiktok_item_id": "7426444501155204359",
+            "carousel_image_labels": null,
+            "playable_url": "",
+            "advertiser_id": "7338057963233443842",
+            "vast_moat_enabled": false,
+            "brand_safety_vast_url": null,
+            "ad_id": "1813234387612674",
+            "ad_texts": null
+          },
+          {
+            "identity_type": "CUSTOMIZED_USER",
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "deeplink": "",
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/ogfKEUBnBgTIrMNFGElpfBvARO8DEF9pRQEGWD"
+            ],
+            "impression_tracking_url": null,
+            "click_tracking_url": null,
+            "is_aco": false,
+            "page_id": null,
+            "is_new_structure": true,
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "card_id": null,
+            "display_name": "Visit Diriyah",
+            "optimization_event": null,
+            "landing_page_urls": null,
+            "adgroup_id": "1813171053384769",
+            "adgroup_name": "Diriyah_Tactical_City of Earth_UF_KSA_Prospecting_EN/AR_Awareness_TikTok",
+            "viewability_vast_url": null,
+            "brand_safety_postbid_partner": "UNSET",
+            "video_id": "v10033g50000cs8hkjnog65uviio9f2g",
+            "modify_time": "2026-10-12 09:57:25",
+            "tracking_pixel_id": 7347671240183693000,
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "deeplink_type": "NORMAL",
+            "campaign_name": "CityOfEarth_Phase12024_UF_AWR_KSA_ENAR_TikTok",
+            "create_time": "2024-10-17 14:17:50",
+            "creative_authorized": true,
+            "ad_text": "للعالم مستقبل واحد..وللدرعية مستقبل تاريخي",
+            "call_to_action": "LEARN_MORE",
+            "campaign_id": "1813171053383729",
+            "music_id": null,
+            "operation_status": "ENABLE",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cityofearth-2024-oct-uf-reach-awareness",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "herovideo",
+                "key": "utm_content"
+              }
+            ],
+            "ad_format": "SINGLE_VIDEO",
+            "creative_type": null,
+            "call_to_action_id": null,
+            "ad_name": "Diriyah_Tactical_City of Earth_UF_KSA_Pospecting_AR_Awareness_TikTok_Male 30s",
+            "viewability_postbid_partner": "UNSET",
+            "campaign_automation_type": "MANUAL",
+            "app_name": "",
+            "identity_id": "7350277519361425409",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cityofearth-2024-oct-uf-reach-awareness&utm_term=cityofearth-ar-all-mf&utm_content=herovideo",
+            "carousel_image_labels": null,
+            "playable_url": "",
+            "advertiser_id": "7338057963233443842",
+            "vast_moat_enabled": false,
+            "brand_safety_vast_url": null,
+            "ad_id": "1813171053402129",
+            "ad_texts": null
+          }
+        ],
+        "page_info": {
+          "page": 1,
+          "page_size": 100,
+          "total_page": 1,
+          "total_number": 15
+        }
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "202610121810288FA85AA1F83ED85BA565",
+      "waitedMs": 735,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "415c8578-3159-45ca-ac88-a9bf290fed51",
+    "latencyMs": 2298
+  }
+}

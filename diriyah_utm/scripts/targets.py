@@ -27,7 +27,7 @@ rows = []
 for s in S:
     if not s.get('url'): continue
     k = key(s); t = tgt.get(k)
-    r = {'platform': s['platform'], 'account_id': s.get('account_id'), 'account_name': s.get('account_name'), 'campaign_name': s.get('campaign_name'),
+    r = {'platform': s['platform'], 'account_id': s.get('account_id'), 'account_name': s.get('account_name'), 'campaign_id': s.get('campaign_id'), 'adset_id': s.get('adset_id'), 'campaign_name': s.get('campaign_name'),
          'adset_name': s.get('adset_name'), 'ad_id': str(s.get('ad_id')), 'ad_name': s.get('ad_name'), 'creative_id': s.get('creative_id'), 'slot': s.get('slot'),
          'status_11oct': s.get('effective_status') or s.get('ad_status'), 'url_11oct': s['url'], 'target': t[0] if t else None, 'source': t[1] if t else None}
     if (s['platform'], str(s.get('ad_id'))) in skip_ads: r['manual'] = 'shared creative/card: ' + skip_ads[(s['platform'], str(s.get('ad_id')))]

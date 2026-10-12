@@ -1,0 +1,1248 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_get",
+    "method": "GET",
+    "path": "/v1.3/ad/get/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "20261012180526FFCCDB9BAEC58EFC858E",
+      "data": {
+        "list": [
+          {
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "display_name": "bujairiterrace",
+            "brand_safety_vast_url": null,
+            "modify_time": "2026-02-03 21:05:24",
+            "app_name": "bujairiterrace",
+            "is_new_structure": true,
+            "page_id": null,
+            "ad_id": "1840139996127330",
+            "viewability_postbid_partner": "UNSET",
+            "dynamic_destination": "UNSET",
+            "is_aco": false,
+            "fallback_type": "UNSET",
+            "campaign_automation_type": "MANUAL",
+            "creative_auto_enhancement_strategy_list": [],
+            "tracking_pixel_id": 7347671240183693000,
+            "card_id": null,
+            "deeplink_type": "NORMAL",
+            "create_time": "2025-08-11 06:39:17",
+            "playable_url": "",
+            "adgroup_id": "1840139996126354",
+            "vertical_video_strategy": "UNSET",
+            "vast_moat_enabled": false,
+            "ad_format": "SINGLE_VIDEO",
+            "landing_page_url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterracesummer2025tickets-2025-jul-lf-conversions&utm_id=6633&utm_term=bujairiterracesummer2025tickets-en-all-na&utm_content=nakhati-video-ret",
+            "adgroup_name": "Bujairi Terrace_Tactical_Bujairi Terrace Summer 2025 Tickets_LF_KSA_Retargeting_EN_Conversion_TikTok",
+            "ad_name": "Bujairi Terrace_Tactical_Bujairi Terrace Summer 2025 Tickets_UF_KSA_Prospecting_EN_conversion_TikTok_Nakhati",
+            "avatar_icon_web_uri": "",
+            "advertiser_id": "7338057963233443842",
+            "operation_status": "ENABLE",
+            "call_to_action": "BOOK_NOW",
+            "creative_authorized": false,
+            "click_tracking_url": null,
+            "campaign_name": "BujairiTerrace_Summer2025Tickets_LF_CONV_KSA_ENAR_TikTok",
+            "ad_ref_pixel_id": 7347671240183693000,
+            "creative_type": null,
+            "branded_content_disabled": false,
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "dark_post_status": "ON",
+            "identity_authorized_bc_id": "6846326855419559942",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterracesummer2025tickets-2025-jul-lf-conversions"
+              },
+              {
+                "key": "utm_id",
+                "value": "6633"
+              },
+              {
+                "key": "utm_content",
+                "value": "nakhati-video-ret"
+              }
+            ],
+            "call_to_action_id": null,
+            "viewability_vast_url": null,
+            "ad_texts": null,
+            "video_id": "v10033g50000d215p7fog65la32e1v40",
+            "optimization_event": "SHOPPING",
+            "identity_type": "BC_AUTH_TT",
+            "campaign_id": "1837620326147250",
+            "carousel_image_labels": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/12810477f531786667db6cbd2f8c9214"
+            ],
+            "deeplink": "",
+            "ad_text": "A stroll through history deserves a sweet finish—grab a scoop from Nakhati at Bujairi Terrace today!",
+            "tiktok_item_id": "7537218064723512597",
+            "music_id": null,
+            "shopping_ads_fallback_type": "DEFAULT",
+            "landing_page_urls": null,
+            "impression_tracking_url": null,
+            "profile_image_url": ""
+          },
+          {
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "display_name": "bujairiterrace",
+            "brand_safety_vast_url": null,
+            "modify_time": "2026-02-03 21:05:24",
+            "app_name": "bujairiterrace",
+            "is_new_structure": true,
+            "page_id": null,
+            "ad_id": "1840139996127314",
+            "viewability_postbid_partner": "UNSET",
+            "dynamic_destination": "UNSET",
+            "is_aco": false,
+            "fallback_type": "UNSET",
+            "campaign_automation_type": "MANUAL",
+            "creative_auto_enhancement_strategy_list": [],
+            "tracking_pixel_id": 7347671240183693000,
+            "card_id": null,
+            "deeplink_type": "NORMAL",
+            "create_time": "2025-08-11 06:39:17",
+            "playable_url": "",
+            "adgroup_id": "1840139996126354",
+            "vertical_video_strategy": "UNSET",
+            "vast_moat_enabled": false,
+            "ad_format": "SINGLE_VIDEO",
+            "landing_page_url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterracesummer2025tickets-2025-jul-lf-conversions&utm_id=6453&utm_term=bujairiterracesummer2025tickets-en-all-na&utm_content=weekendplans-video-ret",
+            "adgroup_name": "Bujairi Terrace_Tactical_Bujairi Terrace Summer 2025 Tickets_LF_KSA_Retargeting_EN_Conversion_TikTok",
+            "ad_name": "Bujairi Terrace_Tactical_Bujairi Terrace Summer 2025 Tickets_UF_KSA_Prospecting_EN_conversion_TikTok_Weekend Plans",
+            "avatar_icon_web_uri": "",
+            "advertiser_id": "7338057963233443842",
+            "operation_status": "ENABLE",
+            "call_to_action": "BOOK_NOW",
+            "creative_authorized": false,
+            "click_tracking_url": null,
+            "campaign_name": "BujairiTerrace_Summer2025Tickets_LF_CONV_KSA_ENAR_TikTok",
+            "ad_ref_pixel_id": 7347671240183693000,
+            "creative_type": null,
+            "branded_content_disabled": false,
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "dark_post_status": "ON",
+            "identity_authorized_bc_id": "6846326855419559942",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterracesummer2025tickets-2025-jul-lf-conversions"
+              },
+              {
+                "key": "utm_id",
+                "value": "6453"
+              },
+              {
+                "key": "utm_content",
+                "value": "weekendplans-video-ret"
+              }
+            ],
+            "call_to_action_id": null,
+            "viewability_vast_url": null,
+            "ad_texts": null,
+            "video_id": "v10033g50000d215oonog65qo7kinl00",
+            "optimization_event": "SHOPPING",
+            "identity_type": "BC_AUTH_TT",
+            "campaign_id": "1837620326147250",
+            "carousel_image_labels": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/97f4fec37ad61302419d4ab2e7a96842"
+            ],
+            "deeplink": "",
+            "ad_text": "Weekend plans up in the air? Head to Bujairi Terrace and dive into its flavors and experiences ",
+            "tiktok_item_id": "7537218736743370000",
+            "music_id": null,
+            "shopping_ads_fallback_type": "DEFAULT",
+            "landing_page_urls": null,
+            "impression_tracking_url": null,
+            "profile_image_url": ""
+          },
+          {
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "display_name": "bujairiterrace",
+            "brand_safety_vast_url": null,
+            "modify_time": "2026-02-03 21:05:24",
+            "app_name": "bujairiterrace",
+            "is_new_structure": true,
+            "page_id": null,
+            "ad_id": "1840139996127298",
+            "viewability_postbid_partner": "UNSET",
+            "dynamic_destination": "UNSET",
+            "is_aco": false,
+            "fallback_type": "UNSET",
+            "campaign_automation_type": "MANUAL",
+            "creative_auto_enhancement_strategy_list": [],
+            "tracking_pixel_id": 7347671240183693000,
+            "card_id": null,
+            "deeplink_type": "NORMAL",
+            "create_time": "2025-08-11 06:39:17",
+            "playable_url": "",
+            "adgroup_id": "1840139996126354",
+            "vertical_video_strategy": "UNSET",
+            "vast_moat_enabled": false,
+            "ad_format": "SINGLE_VIDEO",
+            "landing_page_url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterracesummer2025tickets-2025-jul-lf-conversions&utm_id=6273&utm_term=bujairiterracesummer2025tickets-en-all-na&utm_content=summerdrinks-video-ret",
+            "adgroup_name": "Bujairi Terrace_Tactical_Bujairi Terrace Summer 2025 Tickets_LF_KSA_Retargeting_EN_Conversion_TikTok",
+            "ad_name": "Bujairi Terrace_Tactical_Bujairi Terrace Summer 2025 Tickets_UF_KSA_Prospecting_EN_Conversion_TikTok_Summer Drinks",
+            "avatar_icon_web_uri": "",
+            "advertiser_id": "7338057963233443842",
+            "operation_status": "ENABLE",
+            "call_to_action": "BOOK_NOW",
+            "creative_authorized": false,
+            "click_tracking_url": null,
+            "campaign_name": "BujairiTerrace_Summer2025Tickets_LF_CONV_KSA_ENAR_TikTok",
+            "ad_ref_pixel_id": 7347671240183693000,
+            "creative_type": null,
+            "branded_content_disabled": false,
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "dark_post_status": "ON",
+            "identity_authorized_bc_id": "6846326855419559942",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterracesummer2025tickets-2025-jul-lf-conversions"
+              },
+              {
+                "key": "utm_id",
+                "value": "6273"
+              },
+              {
+                "key": "utm_content",
+                "value": "summerdrinks-video-ret"
+              }
+            ],
+            "call_to_action_id": null,
+            "viewability_vast_url": null,
+            "ad_texts": null,
+            "video_id": "v10033g50000d215n87og65g47els9fg",
+            "optimization_event": "SHOPPING",
+            "identity_type": "BC_AUTH_TT",
+            "campaign_id": "1837620326147250",
+            "carousel_image_labels": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/75704845b58c69c0aa4abcb9f1715336"
+            ],
+            "deeplink": "",
+            "ad_text": "Feel the summer mood at BujairiTerrace. Sip on Takya’s seasonal drinks made to refresh ",
+            "tiktok_item_id": "7537218735153745169",
+            "music_id": null,
+            "shopping_ads_fallback_type": "DEFAULT",
+            "landing_page_urls": null,
+            "impression_tracking_url": null,
+            "profile_image_url": ""
+          },
+          {
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "display_name": "bujairiterrace",
+            "brand_safety_vast_url": null,
+            "modify_time": "2026-02-03 21:05:24",
+            "app_name": "bujairiterrace",
+            "is_new_structure": true,
+            "page_id": null,
+            "ad_id": "1840139996126386",
+            "viewability_postbid_partner": "UNSET",
+            "dynamic_destination": "UNSET",
+            "is_aco": false,
+            "fallback_type": "UNSET",
+            "campaign_automation_type": "MANUAL",
+            "creative_auto_enhancement_strategy_list": [],
+            "tracking_pixel_id": 7347671240183693000,
+            "card_id": null,
+            "deeplink_type": "NORMAL",
+            "create_time": "2025-08-11 06:39:17",
+            "playable_url": "",
+            "adgroup_id": "1840139996126354",
+            "vertical_video_strategy": "UNSET",
+            "vast_moat_enabled": false,
+            "ad_format": "SINGLE_VIDEO",
+            "landing_page_url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterracesummer2025tickets-2025-jul-lf-conversions&utm_id=6813&utm_term=bujairiterracesummer2025tickets-en-all-na&utm_content=experience-video-ret",
+            "adgroup_name": "Bujairi Terrace_Tactical_Bujairi Terrace Summer 2025 Tickets_LF_KSA_Retargeting_EN_Conversion_TikTok",
+            "ad_name": "Bujairi Terrace_Tactical_Bujairi Terrace Summer 2025 Tickets_UF_KSA_Prospecting_EN_conversion_TikTok_Experience",
+            "avatar_icon_web_uri": "",
+            "advertiser_id": "7338057963233443842",
+            "operation_status": "ENABLE",
+            "call_to_action": "BOOK_NOW",
+            "creative_authorized": false,
+            "click_tracking_url": null,
+            "campaign_name": "BujairiTerrace_Summer2025Tickets_LF_CONV_KSA_ENAR_TikTok",
+            "ad_ref_pixel_id": 7347671240183693000,
+            "creative_type": null,
+            "branded_content_disabled": false,
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "dark_post_status": "ON",
+            "identity_authorized_bc_id": "6846326855419559942",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterracesummer2025tickets-2025-jul-lf-conversions"
+              },
+              {
+                "key": "utm_id",
+                "value": "6813"
+              },
+              {
+                "key": "utm_content",
+                "value": "experience-video-ret"
+              }
+            ],
+            "call_to_action_id": null,
+            "viewability_vast_url": null,
+            "ad_texts": null,
+            "video_id": "v10033g50000d215pjnog65rqafjl5c0",
+            "optimization_event": "SHOPPING",
+            "identity_type": "BC_AUTH_TT",
+            "campaign_id": "1837620326147250",
+            "carousel_image_labels": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/3473ac10525554edd1ea6577a14f839c"
+            ],
+            "deeplink": "",
+            "ad_text": "A stroll through history deserves a sweet finish—grab a scoop from Nakhati at Bujairi Terrace today!",
+            "tiktok_item_id": "7537218752505482514",
+            "music_id": null,
+            "shopping_ads_fallback_type": "DEFAULT",
+            "landing_page_urls": null,
+            "impression_tracking_url": null,
+            "profile_image_url": ""
+          },
+          {
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "display_name": "bujairiterrace",
+            "brand_safety_vast_url": null,
+            "modify_time": "2026-02-03 21:05:24",
+            "app_name": "bujairiterrace",
+            "is_new_structure": true,
+            "page_id": null,
+            "ad_id": "1840139996126370",
+            "viewability_postbid_partner": "UNSET",
+            "dynamic_destination": "UNSET",
+            "is_aco": false,
+            "fallback_type": "UNSET",
+            "campaign_automation_type": "MANUAL",
+            "creative_auto_enhancement_strategy_list": [],
+            "tracking_pixel_id": 7347671240183693000,
+            "card_id": null,
+            "deeplink_type": "NORMAL",
+            "create_time": "2025-08-11 06:39:17",
+            "playable_url": "",
+            "adgroup_id": "1840139996126354",
+            "vertical_video_strategy": "UNSET",
+            "vast_moat_enabled": false,
+            "ad_format": "SINGLE_VIDEO",
+            "landing_page_url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterracesummer2025tickets-2025-jul-lf-conversions&utm_id=6813&utm_term=bujairiterracesummer2025tickets-en-all-na&utm_content=experience-video-ret",
+            "adgroup_name": "Bujairi Terrace_Tactical_Bujairi Terrace Summer 2025 Tickets_LF_KSA_Retargeting_EN_Conversion_TikTok",
+            "ad_name": "Bujairi Terrace_Tactical_Bujairi Terrace Summer 2025 Tickets_UF_KSA_Prospecting_EN_conversion_TikTok_Experience",
+            "avatar_icon_web_uri": "",
+            "advertiser_id": "7338057963233443842",
+            "operation_status": "DISABLE",
+            "call_to_action": "BOOK_NOW",
+            "creative_authorized": false,
+            "click_tracking_url": null,
+            "campaign_name": "BujairiTerrace_Summer2025Tickets_LF_CONV_KSA_ENAR_TikTok",
+            "ad_ref_pixel_id": 7347671240183693000,
+            "creative_type": null,
+            "branded_content_disabled": false,
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "dark_post_status": "ON",
+            "identity_authorized_bc_id": "6846326855419559942",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterracesummer2025tickets-2025-jul-lf-conversions"
+              },
+              {
+                "key": "utm_id",
+                "value": "6813"
+              },
+              {
+                "key": "utm_content",
+                "value": "experience-video-ret"
+              }
+            ],
+            "call_to_action_id": null,
+            "viewability_vast_url": null,
+            "ad_texts": null,
+            "video_id": "v10033g50000d215pjnog65rqafjl5c0",
+            "product_info": {
+              "product_titles": null,
+              "selling_points": null,
+              "product_image_list": null
+            },
+            "optimization_event": "SHOPPING",
+            "identity_type": "BC_AUTH_TT",
+            "campaign_id": "1837620326147250",
+            "carousel_image_labels": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/3473ac10525554edd1ea6577a14f839c"
+            ],
+            "deeplink": "",
+            "ad_text": "In the mood for a day full of culture and charm? Your BujairiTerrace journey is all set—join us!",
+            "tiktok_item_id": "7537218735153728785",
+            "music_id": null,
+            "shopping_ads_fallback_type": "DEFAULT",
+            "landing_page_urls": null,
+            "impression_tracking_url": null,
+            "brand_safety_postbid_partner": "UNSET",
+            "profile_image_url": ""
+          },
+          {
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "display_name": "bujairiterrace",
+            "brand_safety_vast_url": null,
+            "modify_time": "2026-02-03 21:05:24",
+            "app_name": "bujairiterrace",
+            "is_new_structure": true,
+            "page_id": null,
+            "ad_id": "1840139781636241",
+            "viewability_postbid_partner": "UNSET",
+            "dynamic_destination": "UNSET",
+            "is_aco": false,
+            "fallback_type": "UNSET",
+            "campaign_automation_type": "MANUAL",
+            "creative_auto_enhancement_strategy_list": [],
+            "tracking_pixel_id": 7347671240183693000,
+            "card_id": null,
+            "deeplink_type": "NORMAL",
+            "create_time": "2025-08-11 06:36:30",
+            "playable_url": "",
+            "adgroup_id": "1840139781635217",
+            "vertical_video_strategy": "UNSET",
+            "vast_moat_enabled": false,
+            "ad_format": "SINGLE_VIDEO",
+            "landing_page_url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterracesummer2025tickets-2025-jul-lf-conversions&utm_id=6272&utm_term=bujairiterracesummer2025tickets-ar-all-na&utm_content=summerdrinks-video-ret",
+            "adgroup_name": "Bujairi Terrace_Tactical_Bujairi Terrace Summer 2025 Tickets_LF_KSA_Retargeting_AR_Conversion_TikTok",
+            "ad_name": "Bujairi Terrace_Tactical_Bujairi Terrace Summer 2025 Restaurants_UF_KSA_Prospecting_AR_Conversion_TikTok_Summer Drinks",
+            "avatar_icon_web_uri": "",
+            "advertiser_id": "7338057963233443842",
+            "operation_status": "ENABLE",
+            "call_to_action": "BOOK_NOW",
+            "creative_authorized": false,
+            "click_tracking_url": null,
+            "campaign_name": "BujairiTerrace_Summer2025Tickets_LF_CONV_KSA_ENAR_TikTok",
+            "ad_ref_pixel_id": 7347671240183693000,
+            "creative_type": null,
+            "branded_content_disabled": false,
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "dark_post_status": "ON",
+            "identity_authorized_bc_id": "6846326855419559942",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterracesummer2025tickets-2025-jul-lf-conversions"
+              },
+              {
+                "key": "utm_id",
+                "value": "6272"
+              },
+              {
+                "key": "utm_content",
+                "value": "summerdrinks-video-ret"
+              }
+            ],
+            "call_to_action_id": null,
+            "viewability_vast_url": null,
+            "ad_texts": null,
+            "video_id": "v10033g50000d215n87og65g47els9fg",
+            "optimization_event": "SHOPPING",
+            "identity_type": "BC_AUTH_TT",
+            "campaign_id": "1837620326147250",
+            "carousel_image_labels": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/75704845b58c69c0aa4abcb9f1715336"
+            ],
+            "deeplink": "",
+            "ad_text": "عيش أجواء الصيف بـمطل البجيري و استمتع بمشروبات تكية الصيفية ",
+            "tiktok_item_id": "7537218112119246088",
+            "music_id": null,
+            "shopping_ads_fallback_type": "DEFAULT",
+            "landing_page_urls": null,
+            "impression_tracking_url": null,
+            "profile_image_url": ""
+          },
+          {
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "display_name": "bujairiterrace",
+            "brand_safety_vast_url": null,
+            "modify_time": "2026-02-03 21:05:24",
+            "app_name": "bujairiterrace",
+            "is_new_structure": true,
+            "page_id": null,
+            "ad_id": "1840139781636225",
+            "viewability_postbid_partner": "UNSET",
+            "dynamic_destination": "UNSET",
+            "is_aco": false,
+            "fallback_type": "UNSET",
+            "campaign_automation_type": "MANUAL",
+            "creative_auto_enhancement_strategy_list": [],
+            "tracking_pixel_id": 7347671240183693000,
+            "card_id": null,
+            "deeplink_type": "NORMAL",
+            "create_time": "2025-08-11 06:36:30",
+            "playable_url": "",
+            "adgroup_id": "1840139781635217",
+            "vertical_video_strategy": "UNSET",
+            "vast_moat_enabled": false,
+            "ad_format": "SINGLE_VIDEO",
+            "landing_page_url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterracesummer2025tickets-2025-jul-lf-conversions&utm_id=6632&utm_term=bujairiterracesummer2025tickets-ar-all-na&utm_content=nakhati-video-ret",
+            "adgroup_name": "Bujairi Terrace_Tactical_Bujairi Terrace Summer 2025 Tickets_LF_KSA_Retargeting_AR_Conversion_TikTok",
+            "ad_name": "Bujairi Terrace_Tactical_Bujairi Terrace Summer 2025 Restaurants_UF_KSA_Prospecting_AR_Conversion_TikTok_Nakhati",
+            "avatar_icon_web_uri": "",
+            "advertiser_id": "7338057963233443842",
+            "operation_status": "ENABLE",
+            "call_to_action": "BOOK_NOW",
+            "creative_authorized": false,
+            "click_tracking_url": null,
+            "campaign_name": "BujairiTerrace_Summer2025Tickets_LF_CONV_KSA_ENAR_TikTok",
+            "ad_ref_pixel_id": 7347671240183693000,
+            "creative_type": null,
+            "branded_content_disabled": false,
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "dark_post_status": "ON",
+            "identity_authorized_bc_id": "6846326855419559942",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterracesummer2025tickets-2025-jul-lf-conversions"
+              },
+              {
+                "key": "utm_id",
+                "value": "6632"
+              },
+              {
+                "key": "utm_content",
+                "value": "nakhati-video-ret"
+              }
+            ],
+            "call_to_action_id": null,
+            "viewability_vast_url": null,
+            "ad_texts": null,
+            "video_id": "v10033g50000d215p7fog65la32e1v40",
+            "optimization_event": "SHOPPING",
+            "identity_type": "BC_AUTH_TT",
+            "campaign_id": "1837620326147250",
+            "carousel_image_labels": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/12810477f531786667db6cbd2f8c9214"
+            ],
+            "deeplink": "",
+            "ad_text": "جولتك التاريخية بـمطل البجيري يكملها آيس كريم نكهتي اللذيذ سير علينا",
+            "tiktok_item_id": "7537217591694069013",
+            "music_id": null,
+            "shopping_ads_fallback_type": "DEFAULT",
+            "landing_page_urls": null,
+            "impression_tracking_url": null,
+            "profile_image_url": ""
+          },
+          {
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "display_name": "bujairiterrace",
+            "brand_safety_vast_url": null,
+            "modify_time": "2026-02-03 21:05:24",
+            "app_name": "bujairiterrace",
+            "is_new_structure": true,
+            "page_id": null,
+            "ad_id": "1840139781635249",
+            "viewability_postbid_partner": "UNSET",
+            "dynamic_destination": "UNSET",
+            "is_aco": false,
+            "fallback_type": "UNSET",
+            "campaign_automation_type": "MANUAL",
+            "creative_auto_enhancement_strategy_list": [],
+            "tracking_pixel_id": 7347671240183693000,
+            "card_id": null,
+            "deeplink_type": "NORMAL",
+            "create_time": "2025-08-11 06:36:30",
+            "playable_url": "",
+            "adgroup_id": "1840139781635217",
+            "vertical_video_strategy": "UNSET",
+            "vast_moat_enabled": false,
+            "ad_format": "SINGLE_VIDEO",
+            "landing_page_url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterracesummer2025tickets-2025-jul-lf-conversions&utm_id=6812&utm_term=bujairiterracesummer2025tickets-ar-all-na&utm_content=experience-video-ret",
+            "adgroup_name": "Bujairi Terrace_Tactical_Bujairi Terrace Summer 2025 Tickets_LF_KSA_Retargeting_AR_Conversion_TikTok",
+            "ad_name": "Bujairi Terrace_Tactical_Bujairi Terrace Summer 2025 Restaurants_UF_KSA_Prospecting_AR_Conversion_TikTok_Experience",
+            "avatar_icon_web_uri": "",
+            "advertiser_id": "7338057963233443842",
+            "operation_status": "ENABLE",
+            "call_to_action": "BOOK_NOW",
+            "creative_authorized": false,
+            "click_tracking_url": null,
+            "campaign_name": "BujairiTerrace_Summer2025Tickets_LF_CONV_KSA_ENAR_TikTok",
+            "ad_ref_pixel_id": 7347671240183693000,
+            "creative_type": null,
+            "branded_content_disabled": false,
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "dark_post_status": "ON",
+            "identity_authorized_bc_id": "6846326855419559942",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterracesummer2025tickets-2025-jul-lf-conversions"
+              },
+              {
+                "key": "utm_id",
+                "value": "6812"
+              },
+              {
+                "key": "utm_content",
+                "value": "experience-video-ret"
+              }
+            ],
+            "call_to_action_id": null,
+            "viewability_vast_url": null,
+            "ad_texts": null,
+            "video_id": "v10033g50000d215pjnog65rqafjl5c0",
+            "optimization_event": "SHOPPING",
+            "identity_type": "BC_AUTH_TT",
+            "campaign_id": "1837620326147250",
+            "carousel_image_labels": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/3473ac10525554edd1ea6577a14f839c"
+            ],
+            "deeplink": "",
+            "ad_text": "ودك برحلة كلها تاريخ وأصالة ؟جدولك بـمطل البجيري جهزناه لك. سير علينا ",
+            "tiktok_item_id": "7537218096151547152",
+            "music_id": null,
+            "shopping_ads_fallback_type": "DEFAULT",
+            "landing_page_urls": null,
+            "impression_tracking_url": null,
+            "profile_image_url": ""
+          },
+          {
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "display_name": "bujairiterrace",
+            "brand_safety_vast_url": null,
+            "modify_time": "2026-02-03 21:05:24",
+            "app_name": "bujairiterrace",
+            "is_new_structure": true,
+            "page_id": null,
+            "ad_id": "1840139781635233",
+            "viewability_postbid_partner": "UNSET",
+            "dynamic_destination": "UNSET",
+            "is_aco": false,
+            "fallback_type": "UNSET",
+            "campaign_automation_type": "MANUAL",
+            "creative_auto_enhancement_strategy_list": [],
+            "tracking_pixel_id": 7347671240183693000,
+            "card_id": null,
+            "deeplink_type": "NORMAL",
+            "create_time": "2025-08-11 06:36:30",
+            "playable_url": "",
+            "adgroup_id": "1840139781635217",
+            "vertical_video_strategy": "UNSET",
+            "vast_moat_enabled": false,
+            "ad_format": "SINGLE_VIDEO",
+            "landing_page_url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterracesummer2025tickets-2025-jul-lf-conversions&utm_id=6452&utm_term=bujairiterracesummer2025tickets-ar-all-na&utm_content=weekendplans-video-ret",
+            "adgroup_name": "Bujairi Terrace_Tactical_Bujairi Terrace Summer 2025 Tickets_LF_KSA_Retargeting_AR_Conversion_TikTok",
+            "ad_name": "Bujairi Terrace_Tactical_Bujairi Terrace Summer 2025 Restaurants_UF_KSA_Prospecting_AR_Conversion_TikTok_Weekend Plans",
+            "avatar_icon_web_uri": "",
+            "advertiser_id": "7338057963233443842",
+            "operation_status": "ENABLE",
+            "call_to_action": "BOOK_NOW",
+            "creative_authorized": false,
+            "click_tracking_url": null,
+            "campaign_name": "BujairiTerrace_Summer2025Tickets_LF_CONV_KSA_ENAR_TikTok",
+            "ad_ref_pixel_id": 7347671240183693000,
+            "creative_type": null,
+            "branded_content_disabled": false,
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "dark_post_status": "ON",
+            "identity_authorized_bc_id": "6846326855419559942",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterracesummer2025tickets-2025-jul-lf-conversions"
+              },
+              {
+                "key": "utm_id",
+                "value": "6452"
+              },
+              {
+                "key": "utm_content",
+                "value": "weekendplans-video-ret"
+              }
+            ],
+            "call_to_action_id": null,
+            "viewability_vast_url": null,
+            "ad_texts": null,
+            "video_id": "v10033g50000d215oonog65qo7kinl00",
+            "optimization_event": "SHOPPING",
+            "identity_type": "BC_AUTH_TT",
+            "campaign_id": "1837620326147250",
+            "carousel_image_labels": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/97f4fec37ad61302419d4ab2e7a96842"
+            ],
+            "deeplink": "",
+            "ad_text": "محتار وين تروح نهاية الأسبوع؟ سير على مطل البجيري ولا تفوت مطاعمه وفعالياته",
+            "tiktok_item_id": "7537218111897046279",
+            "music_id": null,
+            "shopping_ads_fallback_type": "DEFAULT",
+            "landing_page_urls": null,
+            "impression_tracking_url": null,
+            "profile_image_url": ""
+          },
+          {
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "display_name": "bujairiterrace",
+            "brand_safety_vast_url": null,
+            "modify_time": "2026-02-03 21:05:24",
+            "app_name": "bujairiterrace",
+            "is_new_structure": true,
+            "page_id": null,
+            "ad_id": "1839630732729377",
+            "viewability_postbid_partner": "UNSET",
+            "is_aco": false,
+            "campaign_automation_type": "MANUAL",
+            "creative_auto_enhancement_strategy_list": [],
+            "tracking_pixel_id": 0,
+            "card_id": null,
+            "deeplink_type": "NORMAL",
+            "create_time": "2025-08-05 15:44:05",
+            "playable_url": "",
+            "adgroup_id": "1837711880968241",
+            "vast_moat_enabled": false,
+            "ad_format": "SINGLE_VIDEO",
+            "landing_page_url": "https://www.diriyah.sa/ar/dine?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterracesummer2025restaurants-2025-jul-uf/mf-reach-awareness&utm_id=5942&utm_term=bujairiterracesummer2025restaurants-ar-all-na&utm_content=sarabeth-video-aud",
+            "adgroup_name": "Bujairi Terrace_Tactical_Bujairi Terrace Summer 2025 Restaurants_UF_KSA_Prospecting_AR_Awareness_TikTok",
+            "ad_name": "Bujairi Terrace_Tactical_Bujairi Terrace Summer 2025 Restaurants_UF_KSA_Prospecting_AR_Awareness_Sarabeth's",
+            "avatar_icon_web_uri": "",
+            "advertiser_id": "7338057963233443842",
+            "operation_status": "ENABLE",
+            "call_to_action": "LEARN_MORE",
+            "creative_authorized": true,
+            "click_tracking_url": null,
+            "campaign_name": "BujairiTerrace_Summer2025Restaurants_UF_AWR_KSA_ENAR_TikTok",
+            "creative_type": null,
+            "branded_content_disabled": false,
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "dark_post_status": "ON",
+            "identity_authorized_bc_id": "6846326855419559942",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterracesummer2025restaurants-2025-jul-uf/mf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "5942"
+              },
+              {
+                "key": "utm_content",
+                "value": "sarabeth-video-aud"
+              }
+            ],
+            "call_to_action_id": null,
+            "viewability_vast_url": null,
+            "ad_texts": null,
+            "video_id": "v10033g50000d211i2vog65okdjblb2g",
+            "optimization_event": null,
+            "identity_type": "BC_AUTH_TT",
+            "campaign_id": "1837711880968193",
+            "carousel_image_labels": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/ogIcEo1DfBhAvgNsx1QA0FEBkMDGWgCMRfKLjQ"
+            ],
+            "deeplink": "",
+            "ad_text": "من نيويورك إلى مطل البجيري، يقدم سارابيث روح البرنش الأمريكي الكلاسيكي بأجواء لا تُنسى",
+            "tiktok_item_id": "7535132310199422226",
+            "music_id": null,
+            "landing_page_urls": null,
+            "impression_tracking_url": null,
+            "brand_safety_postbid_partner": "UNSET",
+            "profile_image_url": ""
+          },
+          {
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "display_name": "bujairiterrace",
+            "brand_safety_vast_url": null,
+            "modify_time": "2026-02-03 21:05:24",
+            "app_name": "bujairiterrace",
+            "is_new_structure": true,
+            "page_id": null,
+            "ad_id": "1839630683763714",
+            "viewability_postbid_partner": "UNSET",
+            "is_aco": false,
+            "campaign_automation_type": "MANUAL",
+            "creative_auto_enhancement_strategy_list": [],
+            "tracking_pixel_id": 7347671240183693000,
+            "card_id": null,
+            "create_time": "2025-08-05 15:43:17",
+            "playable_url": "",
+            "adgroup_id": "1837710641618993",
+            "vast_moat_enabled": false,
+            "ad_format": "SINGLE_VIDEO",
+            "landing_page_url": "https://www.diriyah.sa/ar/dine?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterracesummer2025restaurants-2025-jul-lf-conversions&utm_id=6032&utm_term=bujairiterracesummer2025restaurants-ar-all-na&utm_content=sarabeth-video-aud",
+            "adgroup_name": "Bujairi Terrace_Tactical_Bujairi Terrace Summer 2025  Restaurants_LF_KSA_Prospecting_AR_Conversion_TikTok",
+            "ad_name": "Bujairi Terrace_Tactical_Bujairi Terrace Summer 2025  Restaurants_LF_KSA_Prospecting_AR_Conversion_Sarabeth's",
+            "avatar_icon_web_uri": "",
+            "advertiser_id": "7338057963233443842",
+            "operation_status": "ENABLE",
+            "creative_authorized": true,
+            "click_tracking_url": null,
+            "campaign_name": "BujairiTerrace_Summer2025Restaurants_LF_CONV_KSA_ENAR_TikTok",
+            "ad_ref_pixel_id": 7347671240183693000,
+            "creative_type": null,
+            "branded_content_disabled": false,
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "dark_post_status": "ON",
+            "identity_authorized_bc_id": "6846326855419559942",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterracesummer2025restaurants-2025-jul-lf-conversions"
+              },
+              {
+                "key": "utm_content",
+                "value": "sarabeth-video-aud"
+              }
+            ],
+            "call_to_action_id": "7535334950011276289",
+            "viewability_vast_url": null,
+            "ad_texts": null,
+            "video_id": "v10033g50000d211i2vog65okdjblb2g",
+            "product_info": {
+              "product_titles": null,
+              "selling_points": null,
+              "product_image_list": null
+            },
+            "optimization_event": "ON_WEB_REGISTER",
+            "identity_type": "BC_AUTH_TT",
+            "campaign_id": "1837709477889090",
+            "carousel_image_labels": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/ogIcEo1DfBhAvgNsx1QA0FEBkMDGWgCMRfKLjQ"
+            ],
+            "deeplink": null,
+            "ad_text": "من نيويورك إلى مطل البجيري، يقدم سارابيث روح البرنش الأمريكي الكلاسيكي بأجواء لا تُنسى",
+            "tiktok_item_id": "7535132336711601425",
+            "music_id": null,
+            "landing_page_urls": null,
+            "impression_tracking_url": null,
+            "brand_safety_postbid_partner": "UNSET",
+            "profile_image_url": ""
+          },
+          {
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "display_name": "bujairiterrace",
+            "brand_safety_vast_url": null,
+            "modify_time": "2026-02-03 21:05:24",
+            "app_name": "bujairiterrace",
+            "is_new_structure": true,
+            "page_id": null,
+            "ad_id": "1839630553393394",
+            "viewability_postbid_partner": "UNSET",
+            "is_aco": false,
+            "campaign_automation_type": "MANUAL",
+            "creative_auto_enhancement_strategy_list": [],
+            "tracking_pixel_id": 0,
+            "card_id": null,
+            "deeplink_type": "NORMAL",
+            "create_time": "2025-08-05 15:41:01",
+            "playable_url": "",
+            "adgroup_id": "1837711880968241",
+            "vast_moat_enabled": false,
+            "ad_format": "SINGLE_VIDEO",
+            "landing_page_url": "https://www.diriyah.sa/ar/dine?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterracesummer2025restaurants-2025-jul-uf%2Fmf-reach-awareness&utm_id=5762&utm_term=bujairiterracesummer2025restaurants-ar-all-na&utm_content=longchim-video-aud",
+            "adgroup_name": "Bujairi Terrace_Tactical_Bujairi Terrace Summer 2025 Restaurants_UF_KSA_Prospecting_AR_Awareness_TikTok",
+            "ad_name": "Bujairi Terrace_Tactical_Bujairi Terrace Summer 2025 Restaurants_UF_KSA_Prospecting_AR_Awareness_longchim",
+            "avatar_icon_web_uri": "",
+            "advertiser_id": "7338057963233443842",
+            "operation_status": "DISABLE",
+            "call_to_action": "LEARN_MORE",
+            "creative_authorized": true,
+            "click_tracking_url": null,
+            "campaign_name": "BujairiTerrace_Summer2025Restaurants_UF_AWR_KSA_ENAR_TikTok",
+            "creative_type": null,
+            "branded_content_disabled": false,
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "dark_post_status": "ON",
+            "identity_authorized_bc_id": "6846326855419559942",
+            "utm_params": [
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterracesummer2025restaurants-2025-jul-uf%2Fmf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "5762"
+              },
+              {
+                "key": "utm_content",
+                "value": "longchim-video-aud"
+              },
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              }
+            ],
+            "call_to_action_id": null,
+            "viewability_vast_url": null,
+            "ad_texts": null,
+            "video_id": "v10033g50000d211govog65naec3sdlg",
+            "optimization_event": null,
+            "identity_type": "BC_AUTH_TT",
+            "campaign_id": "1837711880968193",
+            "carousel_image_labels": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/o0C8bZHDNQpAHQFfueICzBDo8PWFEBjhBgBhGg"
+            ],
+            "deeplink": "",
+            "ad_text": "ينقل مطل البجيري نكهات تايلندية إلى قلب الدرعية مع لونغ تشِم، مطعم ينقل روح تايلاند بطبق",
+            "tiktok_item_id": "7535132273885138177",
+            "music_id": null,
+            "landing_page_urls": null,
+            "impression_tracking_url": null,
+            "brand_safety_postbid_partner": "UNSET",
+            "profile_image_url": ""
+          },
+          {
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "display_name": "bujairiterrace",
+            "brand_safety_vast_url": null,
+            "modify_time": "2026-02-03 21:05:25",
+            "app_name": "bujairiterrace",
+            "is_new_structure": true,
+            "page_id": null,
+            "ad_id": "1839630361766065",
+            "viewability_postbid_partner": "UNSET",
+            "is_aco": false,
+            "campaign_automation_type": "MANUAL",
+            "creative_auto_enhancement_strategy_list": [],
+            "tracking_pixel_id": 7347671240183693000,
+            "card_id": null,
+            "create_time": "2025-08-05 15:38:46",
+            "playable_url": "",
+            "adgroup_id": "1837710641618993",
+            "vast_moat_enabled": false,
+            "ad_format": "SINGLE_VIDEO",
+            "landing_page_url": "https://www.diriyah.sa/ar/dine?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterracesummer2025restaurants-2025-jul-lf-conversions&utm_id=5852&utm_term=bujairiterracesummer2025restaurants-ar-all-na&utm_content=longchim-video-aud",
+            "adgroup_name": "Bujairi Terrace_Tactical_Bujairi Terrace Summer 2025  Restaurants_LF_KSA_Prospecting_AR_Conversion_TikTok",
+            "ad_name": "Bujairi Terrace_Tactical_Bujairi Terrace Summer 2025  Restaurants_LF_KSA_Prospecting_AR_Conversion_longchim",
+            "avatar_icon_web_uri": "",
+            "advertiser_id": "7338057963233443842",
+            "operation_status": "DISABLE",
+            "creative_authorized": true,
+            "click_tracking_url": null,
+            "campaign_name": "BujairiTerrace_Summer2025Restaurants_LF_CONV_KSA_ENAR_TikTok",
+            "ad_ref_pixel_id": 7347671240183693000,
+            "creative_type": null,
+            "branded_content_disabled": false,
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "dark_post_status": "ON",
+            "identity_authorized_bc_id": "6846326855419559942",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterracesummer2025restaurants-2025-jul-lf-conversions"
+              },
+              {
+                "key": "utm_content",
+                "value": "longchim-video-aud"
+              }
+            ],
+            "call_to_action_id": "7535334421147241489",
+            "viewability_vast_url": null,
+            "ad_texts": null,
+            "video_id": "v10033g50000d211govog65naec3sdlg",
+            "product_info": {
+              "product_titles": null,
+              "selling_points": null,
+              "product_image_list": null
+            },
+            "optimization_event": "ON_WEB_REGISTER",
+            "identity_type": "BC_AUTH_TT",
+            "campaign_id": "1837709477889090",
+            "carousel_image_labels": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/o0C8bZHDNQpAHQFfueICzBDo8PWFEBjhBgBhGg"
+            ],
+            "deeplink": null,
+            "ad_text": "ينقل مطل البجيري نكهات تايلندية إلى قلب الدرعية مع لونغ تشِم، مطعم ينقل روح تايلاند بطبق",
+            "tiktok_item_id": "7535131236247915777",
+            "music_id": null,
+            "landing_page_urls": null,
+            "impression_tracking_url": null,
+            "brand_safety_postbid_partner": "UNSET",
+            "profile_image_url": ""
+          },
+          {
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "display_name": "bujairiterrace",
+            "brand_safety_vast_url": null,
+            "modify_time": "2026-02-03 21:05:24",
+            "app_name": "bujairiterrace",
+            "is_new_structure": true,
+            "page_id": null,
+            "ad_id": "1839630311769201",
+            "viewability_postbid_partner": "UNSET",
+            "is_aco": false,
+            "campaign_automation_type": "MANUAL",
+            "creative_auto_enhancement_strategy_list": [],
+            "tracking_pixel_id": 7347671240183693000,
+            "card_id": null,
+            "create_time": "2025-08-05 15:38:46",
+            "playable_url": "",
+            "adgroup_id": "1837710641618993",
+            "vast_moat_enabled": false,
+            "ad_format": "SINGLE_VIDEO",
+            "landing_page_url": "https://www.diriyah.sa/ar/dine?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterracesummer2025restaurants-2025-jul-lf-conversions&utm_id=5852&utm_term=bujairiterracesummer2025restaurants-ar-all-na&utm_content=longchim-video-aud",
+            "adgroup_name": "Bujairi Terrace_Tactical_Bujairi Terrace Summer 2025  Restaurants_LF_KSA_Prospecting_AR_Conversion_TikTok",
+            "ad_name": "Bujairi Terrace_Tactical_Bujairi Terrace Summer 2025  Restaurants_LF_KSA_Prospecting_AR_Conversion_longchim",
+            "avatar_icon_web_uri": "",
+            "advertiser_id": "7338057963233443842",
+            "operation_status": "DISABLE",
+            "creative_authorized": true,
+            "click_tracking_url": null,
+            "campaign_name": "BujairiTerrace_Summer2025Restaurants_LF_CONV_KSA_ENAR_TikTok",
+            "ad_ref_pixel_id": 7347671240183693000,
+            "creative_type": null,
+            "branded_content_disabled": false,
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "dark_post_status": "ON",
+            "identity_authorized_bc_id": "6846326855419559942",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterracesummer2025restaurants-2025-jul-lf-conversions"
+              },
+              {
+                "key": "utm_content",
+                "value": "longchim-video-aud"
+              }
+            ],
+            "call_to_action_id": "7535334484493847568",
+            "viewability_vast_url": null,
+            "ad_texts": null,
+            "video_id": "v10033g50000d211govog65naec3sdlg",
+            "product_info": {
+              "product_titles": null,
+              "selling_points": null,
+              "product_image_list": null
+            },
+            "optimization_event": "ON_WEB_REGISTER",
+            "identity_type": "BC_AUTH_TT",
+            "campaign_id": "1837709477889090",
+            "carousel_image_labels": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/o0C8bZHDNQpAHQFfueICzBDo8PWFEBjhBgBhGg"
+            ],
+            "deeplink": null,
+            "ad_text": "ينقل مطل البجيري نكهات تايلندية إلى قلب الدرعية مع لونغ تشِم، مطعم ينقل روح تايلاند بطبق.",
+            "tiktok_item_id": "7535131241218051345",
+            "music_id": null,
+            "landing_page_urls": null,
+            "impression_tracking_url": null,
+            "brand_safety_postbid_partner": "UNSET",
+            "profile_image_url": ""
+          },
+          {
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "display_name": "bujairiterrace",
+            "brand_safety_vast_url": null,
+            "modify_time": "2026-02-03 21:05:25",
+            "app_name": "bujairiterrace",
+            "is_new_structure": true,
+            "page_id": null,
+            "ad_id": "1839625422396498",
+            "viewability_postbid_partner": "UNSET",
+            "is_aco": false,
+            "campaign_automation_type": "MANUAL",
+            "creative_auto_enhancement_strategy_list": [],
+            "tracking_pixel_id": 7347671240183693000,
+            "card_id": null,
+            "create_time": "2025-08-05 15:38:46",
+            "playable_url": "",
+            "adgroup_id": "1837710641618993",
+            "vast_moat_enabled": false,
+            "ad_format": "SINGLE_VIDEO",
+            "landing_page_url": "https://www.diriyah.sa/ar/dine?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterracesummer2025restaurants-2025-jul-lf-conversions&utm_id=5852&utm_term=bujairiterracesummer2025restaurants-ar-all-na&utm_content=longchim-video-aud",
+            "adgroup_name": "Bujairi Terrace_Tactical_Bujairi Terrace Summer 2025  Restaurants_LF_KSA_Prospecting_AR_Conversion_TikTok",
+            "ad_name": "Bujairi Terrace_Tactical_Bujairi Terrace Summer 2025  Restaurants_LF_KSA_Prospecting_AR_Conversion_longchim",
+            "avatar_icon_web_uri": "",
+            "advertiser_id": "7338057963233443842",
+            "operation_status": "DISABLE",
+            "creative_authorized": true,
+            "click_tracking_url": null,
+            "campaign_name": "BujairiTerrace_Summer2025Restaurants_LF_CONV_KSA_ENAR_TikTok",
+            "ad_ref_pixel_id": 7347671240183693000,
+            "creative_type": null,
+            "branded_content_disabled": false,
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "dark_post_status": "ON",
+            "identity_authorized_bc_id": "6846326855419559942",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterracesummer2025restaurants-2025-jul-lf-conversions"
+              },
+              {
+                "key": "utm_content",
+                "value": "longchim-video-aud"
+              }
+            ],
+            "call_to_action_id": "7535334702417185793",
+            "viewability_vast_url": null,
+            "ad_texts": null,
+            "video_id": "v10033g50000d211govog65naec3sdlg",
+            "product_info": {
+              "product_titles": null,
+              "selling_points": null,
+              "product_image_list": null
+            },
+            "optimization_event": "ON_WEB_REGISTER",
+            "identity_type": "BC_AUTH_TT",
+            "campaign_id": "1837709477889090",
+            "carousel_image_labels": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/o0C8bZHDNQpAHQFfueICzBDo8PWFEBjhBgBhGg"
+            ],
+            "deeplink": null,
+            "ad_text": "ينقل مطل البجيري نكهات تايلندية إلى قلب الدرعية مع لونغ تشِم، مطعم ينقل روح تايلاند بطبق.",
+            "tiktok_item_id": "7535131266560150791",
+            "music_id": null,
+            "landing_page_urls": null,
+            "impression_tracking_url": null,
+            "brand_safety_postbid_partner": "UNSET",
+            "profile_image_url": ""
+          }
+        ],
+        "page_info": {
+          "page": 1,
+          "page_size": 50,
+          "total_page": 1,
+          "total_number": 15
+        }
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "20261012180526FFCCDB9BAEC58EFC858E",
+      "waitedMs": 1204,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "04a7cf78-fe9f-4614-a2c2-aeadbbe59f30",
+    "latencyMs": 2816
+  }
+}
