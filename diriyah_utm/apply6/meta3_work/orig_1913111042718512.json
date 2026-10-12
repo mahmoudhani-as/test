@@ -1,0 +1,154 @@
+{
+  "actor_id": "102966688906483",
+  "authorization_category": "NONE",
+  "enable_direct_install": false,
+  "enable_launch_instant_app": false,
+  "id": "1913111042718512",
+  "threads_user_id": "17841415776034388",
+  "instagram_user_id": "17841449897651638",
+  "name": "{{product.name}} 2026-07-09-784ff72f0bdcc463636f34625292508f",
+  "object_type": "SHARE",
+  "object_story_spec": {
+    "page_id": "102966688906483",
+    "instagram_user_id": "17841449897651638"
+  },
+  "asset_feed_spec": {
+    "optimization_type": "PLACEMENT",
+    "call_to_action_types": ["LEARN_MORE"],
+    "ad_formats": ["AUTOMATIC_FORMAT"],
+    "reasons_to_shop": false,
+    "shops_bundle": false,
+    "bodies": [
+      {
+        "text": "سير على الدرعية وشجّع الأخضر معنا في أجواء تجمعنا وتزيد حماسنا",
+        "adlabels": [
+          {"name": "placement_asset_feb5fa22e2baa87eb_1781776515502", "id": "120247327735990789"},
+          {"name": "placement_asset_f174ef2d37d8e05ec_1781776549243", "id": "120247327736000789"}
+        ]
+      }
+    ],
+    "titles": [
+      {
+        "text": "كلنا مع الأخضر",
+        "adlabels": [
+          {"name": "placement_asset_f28f03f52f9537c23_1781776515505", "id": "120247327735860789"},
+          {"name": "placement_asset_f7ef90f95f5b06d67_1781776549243", "id": "120247327735890789"}
+        ]
+      }
+    ],
+    "descriptions": [
+      {"text": ""}
+    ],
+    "link_urls": [
+      {
+        "website_url": "https://www.diriyah.sa/ar?utm_source=instagram&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_instagram_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=KV1",
+        "display_url": "",
+        "adlabels": [
+          {"name": "placement_asset_ff7d0c28d91e25407_1781776549243", "id": "120247327735920789"},
+          {"name": "placement_asset_f31b2eb56316341f2_1781776515507", "id": "120247327735950789"}
+        ]
+      }
+    ],
+    "images": [
+      {
+        "hash": "50d820fbf42630b20d97ff00c7150d04",
+        "adlabels": [
+          {"name": "placement_asset_f211a34a65d095249_1781776515489", "id": "120247327735840789"}
+        ]
+      },
+      {
+        "hash": "a762147017c41d09b9f95b0723c9b1bd",
+        "adlabels": [
+          {"name": "placement_asset_f5ead2977b8d2ffa9_1781776549242", "id": "120247327735850789"}
+        ]
+      }
+    ],
+    "asset_customization_rules": [
+      {
+        "priority": 1,
+        "body_label": {"name": "placement_asset_f174ef2d37d8e05ec_1781776549243", "id": "120247327736000789"},
+        "title_label": {"name": "placement_asset_f7ef90f95f5b06d67_1781776549243", "id": "120247327735890789"},
+        "link_url_label": {"name": "placement_asset_ff7d0c28d91e25407_1781776549243", "id": "120247327735920789"},
+        "image_label": {"name": "placement_asset_f5ead2977b8d2ffa9_1781776549242", "id": "120247327735850789"},
+        "customization_spec": {
+          "age_min": 13,
+          "age_max": 65,
+          "publisher_platforms": ["instagram"],
+          "instagram_positions": ["story"]
+        }
+      },
+      {
+        "priority": 2,
+        "body_label": {"name": "placement_asset_feb5fa22e2baa87eb_1781776515502", "id": "120247327735990789"},
+        "title_label": {"name": "placement_asset_f28f03f52f9537c23_1781776515505", "id": "120247327735860789"},
+        "link_url_label": {"name": "placement_asset_f31b2eb56316341f2_1781776515507", "id": "120247327735950789"},
+        "image_label": {"name": "placement_asset_f211a34a65d095249_1781776515489", "id": "120247327735840789"},
+        "customization_spec": {
+          "age_min": 13,
+          "age_max": 65
+        }
+      }
+    ],
+    "additional_data": {
+      "multi_share_end_card": false,
+      "is_click_to_message": false
+    }
+  },
+  "degrees_of_freedom_spec": {
+    "creative_features_spec": {
+      "advantage_plus_creative": {"enroll_status": "OPT_OUT"},
+      "cv_transformation": {"enroll_status": "OPT_OUT"},
+      "enhance_cta": {"enroll_status": "OPT_OUT"},
+      "generate_cta": {"enroll_status": "OPT_OUT"},
+      "image_animation": {"enroll_status": "OPT_OUT"},
+      "image_brightness_and_contrast": {"enroll_status": "OPT_OUT"},
+      "image_templates": {"enroll_status": "OPT_OUT"},
+      "image_touchups": {"enroll_status": "OPT_OUT"},
+      "inline_comment": {"enroll_status": "OPT_OUT"},
+      "pac_relaxation": {"enroll_status": "OPT_OUT"},
+      "product_browsing": {"enroll_status": "OPT_OUT"},
+      "reveal_details_over_time": {"enroll_status": "OPT_OUT"},
+      "show_destination_blurbs": {"enroll_status": "OPT_OUT"},
+      "show_summary": {"enroll_status": "OPT_OUT"},
+      "site_extensions": {"enroll_status": "OPT_OUT"},
+      "standard_enhancements": {"enroll_status": "OPT_OUT"},
+      "text_optimizations": {"enroll_status": "OPT_OUT"}
+    }
+  },
+  "contextual_multi_ads": {
+    "enroll_status": "OPT_IN"
+  },
+  "creative_sourcing_spec": {
+    "site_links_spec": [
+      {"site_link_url": "https://diriyah.sa/ar/zallal", "site_link_title": "الدرعية تناديك", "site_link_image_hash": "37dfc944d6d60ae33dae5055914d1c69"},
+      {"site_link_url": "https://diriyah.sa/ar/bujairi-terrace", "site_link_title": "‏الدرعية تناديك", "site_link_image_hash": "31fedc1045d501c95a64e13f1812c22a"},
+      {"site_link_url": "https://diriyah.sa/en/dine", "site_link_title": "Dine", "site_link_image_hash": "a12afe2a984712fc909197cecf651825"},
+      {"site_link_url": "https://diriyah.sa/en/things-to-do", "site_link_title": "Things To Do", "site_link_image_hash": "b4c4f2fe27c4bef9a59c91be869c592b"},
+      {"site_link_url": "https://diriyah.sa/en/about", "site_link_title": "About", "site_link_image_hash": "35b9e94380f895a3608cc3facd10c2c8"},
+      {"site_link_url": "https://diriyah.sa/en/news", "site_link_title": "News", "site_link_image_hash": "c84559292e19c5b3f7e7ea9f60390ae4"},
+      {"site_link_url": "https://diriyah.sa/en/dine/angelina", "site_link_title": "Angelina", "site_link_image_hash": "71e73733992fb9e2a64c1c6a10771faf"},
+      {"site_link_url": "https://diriyah.sa/en/dine/joeandthejuice", "site_link_title": "Joe & The Juice", "site_link_image_hash": "e9fda6d44788a0a4c0c92371bcf678cf"},
+      {"site_link_url": "https://diriyah.sa", "site_link_title": "Diriyah Tourism", "site_link_image_hash": "211aa1e75d9698703ac7f98fddb5ccb6"},
+      {"site_link_url": "https://diriyah.sa", "site_link_title": "عرض المزيد", "site_link_image_hash": "371020513121d6f575ab628d17434ec9"}
+    ]
+  },
+  "media_sourcing_spec": {
+    "related_media": {
+      "images": [
+        {"hash": "50d820fbf42630b20d97ff00c7150d04", "opt_in_status": "opt_out", "creation_source": "ADVERTISER_UPLOAD", "retriever_sources": ["ads_llama", "same_account_media_search"]},
+        {"hash": "70a438218d00364820cd52ed43ed94c5", "opt_in_status": "opt_out", "creation_source": "WEBSITE_MEDIA", "retriever_sources": ["same_account_media_search", "website_media"]},
+        {"hash": "71c9192d22e33bf766f595f2938ba6ef", "opt_in_status": "opt_out", "creation_source": "ADVERTISER_UPLOAD", "retriever_sources": ["creative_graph", "ads_llama", "same_account_media_search"]},
+        {"hash": "daf9fedcf322014d3050287e3dbb1b02", "opt_in_status": "opt_out", "creation_source": "ADVERTISER_UPLOAD", "retriever_sources": ["ads_llama", "same_account_media_search"]},
+        {"hash": "e65bc86f3cfd40cdcbf0e83077d35a20", "opt_in_status": "opt_out", "creation_source": "WEBSITE_MEDIA", "retriever_sources": ["same_account_media_search", "website_media"]},
+        {"hash": "fa44ffbcbf7d9664fdcf9367fb953ed7", "opt_in_status": "opt_out", "creation_source": "WEBSITE_MEDIA", "retriever_sources": ["same_account_media_search", "website_media"]},
+        {"hash": "fcfa3c3786269c0ac2333276049a335d", "opt_in_status": "opt_out", "creation_source": "ADVERTISER_UPLOAD", "retriever_sources": ["ads_llama", "same_account_media_search"]},
+        {"hash": "fd757a1b75fe8b2d68102f3cd1a0971b", "opt_in_status": "opt_out", "creation_source": "ADVERTISER_UPLOAD", "retriever_sources": ["ads_llama", "same_account_media_search"]}
+      ]
+    }
+  },
+  "use_page_actor_override": false,
+  "account_id": "1198625455580757",
+  "effective_object_story_id": "102966688906483_1076995474840682",
+  "effective_instagram_media_id": "18089679443571959",
+  "status": "ACTIVE"
+}

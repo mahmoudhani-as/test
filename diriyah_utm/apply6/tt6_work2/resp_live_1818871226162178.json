@@ -1,0 +1,107 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_update",
+    "method": "POST",
+    "path": "/v1.3/ad/update/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "202610122218117A6C88C341701F8DB9D3",
+      "data": {
+        "ad_ids": [
+          "1818871226162178"
+        ],
+        "need_audit": false,
+        "creatives": [
+          {
+            "playable_url": "",
+            "is_aco": false,
+            "click_tracking_url": null,
+            "campaign_automation_type": "MANUAL",
+            "tracking_pixel_id": 7347671240183693000,
+            "landing_page_urls": null,
+            "call_to_action_id": null,
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "adgroup_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_UP_UAE_Prospecting_AR_Awareness_TIKTOK",
+            "campaign_id": "1818871223038994",
+            "viewability_vast_url": null,
+            "viewability_postbid_partner": "UNSET",
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "identity_type": "CUSTOMIZED_USER",
+            "campaign_name": "BujairiTerrace_Winter2024Restaurants_UF_AWR_UAE_ENAR_TikTok",
+            "ad_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_UF_UAE_Prospecting_AR_Awareness_TIKTOK_Food Video 12s - AR",
+            "is_new_structure": true,
+            "page_id": null,
+            "operation_status": "ENABLE",
+            "card_id": null,
+            "brand_safety_vast_url": null,
+            "creative_type": null,
+            "ad_texts": null,
+            "deeplink_type": "NORMAL",
+            "advertiser_id": "7338057963233443842",
+            "ad_text": "اكتشف عالمًا من النكهات في مطل البجيري. احجز طاولتك الآن!",
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/o42mnBQ8uFDygnAmIeDDBSyEsQFPNYMEDFT5fv"
+            ],
+            "adgroup_id": "1818871223039010",
+            "video_id": "v10033g50000cth6n9nog65ueeafi6b0",
+            "app_name": "",
+            "ad_format": "SINGLE_VIDEO",
+            "brand_safety_postbid_partner": "UNSET",
+            "impression_tracking_url": null,
+            "landing_page_url": "https://www.diriyah.sa/ar/dine?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bujairiterracewinter_dec24_awr&utm_term=bujairiterracewinter_ar&utm_content=foodvideo12s_video_ar",
+            "music_id": null,
+            "ad_id": "1818871226162178",
+            "display_name": "Visit Diriyah",
+            "call_to_action": "LEARN_MORE",
+            "carousel_image_labels": null,
+            "creative_authorized": false,
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "bujairiterracewinter_dec24_awr"
+              },
+              {
+                "key": "utm_term",
+                "value": "bujairiterracewinter_ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "foodvideo12s_video_ar"
+              }
+            ],
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "optimization_event": null,
+            "modify_time": "2026-10-12 14:18:12",
+            "identity_id": "7350277519361425409",
+            "deeplink": "",
+            "create_time": "2024-12-19 12:19:34",
+            "vast_moat_enabled": false
+          }
+        ]
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "202610122218117A6C88C341701F8DB9D3",
+      "waitedMs": 1423,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "054e754f-0685-4e93-83e8-788b13b3e691",
+    "latencyMs": 3071
+  }
+}

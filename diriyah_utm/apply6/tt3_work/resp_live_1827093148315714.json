@@ -1,0 +1,107 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_update",
+    "method": "POST",
+    "path": "/v1.3/ad/update/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "202610122215251F003A312C3CA9D61DB6",
+      "data": {
+        "ad_ids": [
+          "1827093148315714"
+        ],
+        "need_audit": false,
+        "creatives": [
+          {
+            "ad_id": "1827093148315714",
+            "advertiser_id": "7338057963233443842",
+            "landing_page_urls": null,
+            "landing_page_url": "https://www.diriyahcompany.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-cityofearth_mar25_awr&utm_term=cityofearth_en-ar&utm_content=cityofearth_video_en-ar",
+            "create_time": "2025-03-20 06:23:31",
+            "adgroup_name": "Diriyah_Tactical_City of Earth_UF_KSA_Prospecting_EN/AR_Awareness_Tiktok",
+            "creative_type": null,
+            "ad_text": "للعالم مستقبل واحد..وللدرعية مستقبل تاريخي",
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/o45bmd9VzEoLB7A2tA7i6LniIKBB3WA79wf1B1"
+            ],
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "click_tracking_url": null,
+            "operation_status": "ENABLE",
+            "card_id": null,
+            "ad_texts": null,
+            "ad_name": "Diriyah_Tactical_City of Earth_UF_KSA_Prospecting_EN/AR_Awareness_Tiktok_Hero Video",
+            "identity_type": "CUSTOMIZED_USER",
+            "playable_url": "",
+            "music_id": null,
+            "campaign_name": "CityOfEarth_Phase22025_UF_AWR_KSA_ENAR_TikTok",
+            "creative_authorized": true,
+            "viewability_vast_url": null,
+            "video_id": "v10033g50000cvdr7uvog65mrt9bnpug",
+            "app_name": "",
+            "page_id": null,
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-cityofearth_mar25_awr"
+              },
+              {
+                "key": "utm_term",
+                "value": "cityofearth_en-ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "cityofearth_video_en-ar"
+              }
+            ],
+            "identity_id": "7350277519361425409",
+            "deeplink_type": "NORMAL",
+            "tracking_pixel_id": 7347671240183693000,
+            "call_to_action_id": null,
+            "viewability_postbid_partner": "UNSET",
+            "carousel_image_labels": null,
+            "campaign_automation_type": "MANUAL",
+            "adgroup_id": "1827093147751505",
+            "modify_time": "2026-10-12 14:15:29",
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "vast_moat_enabled": false,
+            "optimization_event": null,
+            "impression_tracking_url": null,
+            "is_new_structure": true,
+            "brand_safety_vast_url": null,
+            "is_aco": false,
+            "display_name": "Visit Diriyah",
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "call_to_action": "LEARN_MORE",
+            "deeplink": "",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1827093147606066",
+            "brand_safety_postbid_partner": "UNSET"
+          }
+        ]
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "202610122215251F003A312C3CA9D61DB6",
+      "waitedMs": 3862,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "bcaaa607-d34c-4ed2-ae6c-440a89b470df",
+    "latencyMs": 5738
+  }
+}

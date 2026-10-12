@@ -1,0 +1,94 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_get",
+    "method": "GET",
+    "path": "/v1.3/ad/get/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "20261012221643A6AEEB7F20D60849629A",
+      "data": {
+        "list": [
+          {
+            "creative_authorized": false,
+            "creative_type": null,
+            "campaign_automation_type": "MANUAL",
+            "viewability_vast_url": null,
+            "profile_image_url": "",
+            "app_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_conv&utm_term=en&utm_content=b01f5ba3_manazel-alhadawi-kv1_display_en",
+            "playable_url": "",
+            "page_id": null,
+            "is_aco": false,
+            "carousel_image_labels": null,
+            "optimization_event": "ON_WEB_ORDER",
+            "card_id": null,
+            "brand_safety_vast_url": null,
+            "click_tracking_url": null,
+            "deeplink_type": "NORMAL",
+            "image_ids": [
+              "ad-site-i18n-sg/202606025d0d750d96a6fd1a4e4c8fcd"
+            ],
+            "adgroup_id": "1866917798099138",
+            "dynamic_destination": "UNSET",
+            "display_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "ad_ref_pixel_id": 7347671240183693000,
+            "adgroup_name": "ManazelAlHadawi_AlwaysOn_LF_LEAD_KSA_Prospect_EN",
+            "operation_status": "DISABLE",
+            "ad_text": "From the heart of history, a new story begins.\nExperience a lifestyle with heritage and luxury.",
+            "video_id": null,
+            "deeplink": "",
+            "avatar_icon_web_uri": "",
+            "impression_tracking_url": null,
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "call_to_action_id": null,
+            "create_time": "2026-06-02 20:29:02",
+            "ad_id": "1866918348737778",
+            "viewability_postbid_partner": "UNSET",
+            "ad_format": "CAROUSEL_ADS",
+            "landing_page_urls": null,
+            "vertical_video_strategy": "UNSET",
+            "tracking_pixel_id": 7347671240183693000,
+            "campaign_id": "1866917488966753",
+            "ad_texts": null,
+            "campaign_name": "ManazelAlHadawi_AlwaysOn_LF_LEAD_KSA_ENAR_TikTok_20260603-20260930_BO11111",
+            "call_to_action": "LEARN_MORE",
+            "identity_id": "e4770252-b97f-5a97-873d-46a13d7ef867",
+            "advertiser_id": "7338057963233443842",
+            "vast_moat_enabled": false,
+            "dark_post_status": "ON",
+            "branded_content_disabled": false,
+            "is_new_structure": true,
+            "shopping_ads_fallback_type": "DEFAULT",
+            "ad_name": "ManazelAlHadawi_KV1_Static_EN_NA_Prospecting_03.06.2026_30.09.2026",
+            "music_id": "7643491990893579024",
+            "fallback_type": "UNSET",
+            "identity_authorized_bc_id": "6807778858780065797",
+            "identity_type": "BC_AUTH_TT",
+            "modify_time": "2026-10-12 14:16:36"
+          }
+        ],
+        "page_info": {
+          "page": 1,
+          "page_size": 10,
+          "total_page": 1,
+          "total_number": 1
+        }
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "20261012221643A6AEEB7F20D60849629A",
+      "waitedMs": 642,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "15cf0791-eca5-41d0-bfd7-e50d0abcc1db",
+    "latencyMs": 2189
+  }
+}

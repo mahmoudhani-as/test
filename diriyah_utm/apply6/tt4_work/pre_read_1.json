@@ -1,0 +1,796 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_get",
+    "method": "GET",
+    "path": "/v1.3/ad/get/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "20261012220847384EF8AE22A07D90D0EB",
+      "data": {
+        "list": [
+          {
+            "video_id": "v10033g50000cv9d96fog65l3o75j92g",
+            "card_id": null,
+            "branded_content_disabled": false,
+            "operation_status": "DISABLE",
+            "viewability_vast_url": null,
+            "campaign_automation_type": "MANUAL",
+            "ad_text": "Stroll through Bujairi Terrace and immerse yourself in heritage with unforgettable experiences",
+            "is_new_structure": true,
+            "brand_safety_vast_url": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/oMenIZQAhDAPzHp8HUWgLqtNofkLfGA8MCabLo"
+            ],
+            "ad_texts": null,
+            "optimization_event": null,
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "creative_authorized": true,
+            "viewability_postbid_partner": "UNSET",
+            "display_name": "bujairiterrace",
+            "is_aco": false,
+            "ad_name": "Diriyah_Tactical_BT Ramadan Campaign - Activations_UP_KSA_Prospecting_EN_Awareness_Tiktok_BUJARIExperience",
+            "advertiser_id": "7338057963233443842",
+            "adgroup_id": "1826465832098881",
+            "utm_params": [
+              {
+                "key": "utm_content",
+                "value": "bujariexperience-video-aud-ksa"
+              },
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterraceramadan-2025-mar-uf%2Fmf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "2268"
+              }
+            ],
+            "campaign_id": "1826465828490305",
+            "deeplink_type": "NORMAL",
+            "carousel_image_labels": null,
+            "impression_tracking_url": null,
+            "call_to_action_id": null,
+            "creative_type": null,
+            "dark_post_status": "ON",
+            "campaign_name": "BujairiTerrace_Ramadan2025Activations_UF_AWR_KSA_ENAR_TikTok",
+            "ad_format": "SINGLE_VIDEO",
+            "tracking_pixel_id": 7347671240183693000,
+            "tiktok_item_id": "7481280051388894481",
+            "modify_time": "2026-02-03 21:05:26",
+            "identity_type": "BC_AUTH_TT",
+            "brand_safety_postbid_partner": "UNSET",
+            "click_tracking_url": null,
+            "music_id": null,
+            "deeplink": "",
+            "vast_moat_enabled": false,
+            "page_id": null,
+            "landing_page_urls": null,
+            "identity_authorized_bc_id": "6846326855419559942",
+            "landing_page_url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterraceramadan-2025-mar-uf%2Fmf-reach-awareness&utm_id=2268&utm_term=bujairiterraceramadan-en-all-mf&utm_content=bujariexperience-video-aud-ksa",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "app_name": "bujairiterrace",
+            "call_to_action": "LEARN_MORE",
+            "create_time": "2025-03-13 09:17:20",
+            "adgroup_name": "Diriyah_Tactical_BT Ramadan Campaign - Activations_UP_KSA_Prospecting_EN_Awareness_Tiktok",
+            "playable_url": "",
+            "avatar_icon_web_uri": "",
+            "profile_image_url": "",
+            "ad_id": "1826469905204385"
+          },
+          {
+            "video_id": "v10033g50000cv9d96fog65l3o75j92g",
+            "card_id": null,
+            "branded_content_disabled": false,
+            "operation_status": "DISABLE",
+            "viewability_vast_url": null,
+            "campaign_automation_type": "MANUAL",
+            "ad_text": "بين التاريخ ونخيله تجارب وفعاليات تجمعنا في مطل البجيري",
+            "is_new_structure": true,
+            "brand_safety_vast_url": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/oMenIZQAhDAPzHp8HUWgLqtNofkLfGA8MCabLo"
+            ],
+            "ad_texts": null,
+            "optimization_event": null,
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "creative_authorized": true,
+            "viewability_postbid_partner": "UNSET",
+            "display_name": "bujairiterrace",
+            "is_aco": false,
+            "ad_name": "Diriyah_Tactical_BT Ramadan Campaign - Activations_UP_GCC_Prospecting_AR_Awareness_Tiktok_BUJARIExperience",
+            "advertiser_id": "7338057963233443842",
+            "adgroup_id": "1826467583856721",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterraceramadan-2025-mar-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "2303"
+              },
+              {
+                "key": "utm_content",
+                "value": "bujariexperience-video-aud-gcc"
+              }
+            ],
+            "campaign_id": "1826467580062786",
+            "deeplink_type": "NORMAL",
+            "carousel_image_labels": null,
+            "impression_tracking_url": null,
+            "call_to_action_id": null,
+            "creative_type": null,
+            "dark_post_status": "ON",
+            "campaign_name": "BujairiTerrace_Ramadan2025Activations_UF_AWR_GCC_ENAR_TikTok",
+            "ad_format": "SINGLE_VIDEO",
+            "tracking_pixel_id": 7347671240183693000,
+            "tiktok_item_id": "7481279751265586448",
+            "modify_time": "2026-02-03 21:05:26",
+            "identity_type": "BC_AUTH_TT",
+            "brand_safety_postbid_partner": "UNSET",
+            "click_tracking_url": null,
+            "music_id": null,
+            "deeplink": "",
+            "vast_moat_enabled": false,
+            "page_id": null,
+            "landing_page_urls": null,
+            "identity_authorized_bc_id": "6846326855419559942",
+            "landing_page_url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterraceramadan-2025-mar-uf-reach-awareness&utm_id=2303&utm_term=bujairiterraceramadan-ar-all-mf&utm_content=bujariexperience-video-aud-gcc",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "app_name": "bujairiterrace",
+            "call_to_action": "LEARN_MORE",
+            "create_time": "2025-03-13 08:40:28",
+            "adgroup_name": "Diriyah_Tactical_BT Ramadan Campaign - Activations_UP_GCC_Prospecting_AR_Awareness_Tiktok",
+            "playable_url": "",
+            "avatar_icon_web_uri": "",
+            "profile_image_url": "",
+            "ad_id": "1826467586093089"
+          },
+          {
+            "video_id": "v10033g50000cv9d96fog65l3o75j92g",
+            "card_id": null,
+            "branded_content_disabled": false,
+            "operation_status": "DISABLE",
+            "viewability_vast_url": null,
+            "campaign_automation_type": "MANUAL",
+            "ad_text": "بين التاريخ ونخيله تجارب وفعاليات تجمعنا في مطل البجيري",
+            "is_new_structure": true,
+            "brand_safety_vast_url": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/oMenIZQAhDAPzHp8HUWgLqtNofkLfGA8MCabLo"
+            ],
+            "ad_texts": null,
+            "optimization_event": "SHOPPING",
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "creative_authorized": true,
+            "viewability_postbid_partner": "UNSET",
+            "display_name": "bujairiterrace",
+            "shopping_ads_fallback_type": "DEFAULT",
+            "is_aco": false,
+            "ad_name": "Diriyah_Tactical_BT Ramadan Campaign - Activations_LF_KSA_Prospecting_AR_Conversion_Tiktok_BUJARIExperience",
+            "advertiser_id": "7338057963233443842",
+            "adgroup_id": "1826467079141473",
+            "vertical_video_strategy": "UNSET",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterraceramadan-2025-mar-lf-conversions"
+              },
+              {
+                "key": "utm_id",
+                "value": "2291"
+              },
+              {
+                "key": "utm_content",
+                "value": "bujariexperience-video-aud-ksa"
+              }
+            ],
+            "campaign_id": "1826467079139361",
+            "deeplink_type": "NORMAL",
+            "carousel_image_labels": null,
+            "impression_tracking_url": null,
+            "call_to_action_id": "7481276452369894416",
+            "fallback_type": "UNSET",
+            "creative_type": null,
+            "dark_post_status": "ON",
+            "campaign_name": "BujairiTerrace_Ramadan2025Activations_LF_CONV_KSA_ENAR_TikTok",
+            "ad_format": "SINGLE_VIDEO",
+            "tracking_pixel_id": 7347671240183693000,
+            "tiktok_item_id": "7481278635740106001",
+            "modify_time": "2026-02-03 21:05:26",
+            "identity_type": "BC_AUTH_TT",
+            "brand_safety_postbid_partner": "UNSET",
+            "click_tracking_url": null,
+            "music_id": null,
+            "deeplink": "",
+            "vast_moat_enabled": false,
+            "page_id": null,
+            "landing_page_urls": null,
+            "identity_authorized_bc_id": "6846326855419559942",
+            "landing_page_url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterraceramadan-2025-mar-lf-conversions&utm_id=2291&utm_term=bujairiterraceramadan-ar-all-mf&utm_content=bujariexperience-video-aud-ksa",
+            "dynamic_destination": "UNSET",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "app_name": "bujairiterrace",
+            "create_time": "2025-03-13 08:32:26",
+            "adgroup_name": "Diriyah_Tactical_BT Ramadan Campaign - Activations_LF_KSA_Prospecting_AR_Conversion_Tiktok",
+            "ad_ref_pixel_id": 7347671240183693000,
+            "playable_url": "",
+            "avatar_icon_web_uri": "",
+            "profile_image_url": "",
+            "ad_id": "1826467080465505"
+          },
+          {
+            "video_id": "v10033g50000cv9d96fog65l3o75j92g",
+            "card_id": null,
+            "branded_content_disabled": false,
+            "operation_status": "DISABLE",
+            "viewability_vast_url": null,
+            "campaign_automation_type": "MANUAL",
+            "ad_text": "بين التاريخ ونخيله تجارب وفعاليات تجمعنا في مطل البجيري",
+            "is_new_structure": true,
+            "brand_safety_vast_url": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/oMenIZQAhDAPzHp8HUWgLqtNofkLfGA8MCabLo"
+            ],
+            "ad_texts": null,
+            "optimization_event": "LANDING_PAGE_VIEW",
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "creative_authorized": true,
+            "viewability_postbid_partner": "UNSET",
+            "display_name": "bujairiterrace",
+            "is_aco": false,
+            "ad_name": "Diriyah_Tactical_BT Ramadan Campaign - Activations_MF_KSA_Prospecting_AR_Consideration_Tiktok_BUJARIExperience",
+            "advertiser_id": "7338057963233443842",
+            "adgroup_id": "1826466334980129",
+            "utm_params": [
+              {
+                "key": "utm_content",
+                "value": "bujariexperience-video-aud-ksa"
+              },
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterraceramadan-2025-mar-uf%2Fmf-traffic"
+              },
+              {
+                "key": "utm_id",
+                "value": "2279"
+              }
+            ],
+            "campaign_id": "1826466334828721",
+            "deeplink_type": "NORMAL",
+            "carousel_image_labels": null,
+            "impression_tracking_url": null,
+            "call_to_action_id": "7481277169377823761",
+            "fallback_type": "UNSET",
+            "creative_type": null,
+            "dark_post_status": "ON",
+            "campaign_name": "BujairiTerrace_Ramadan2025Activations_MF_TRF_KSA_ENAR_TikTok",
+            "ad_format": "SINGLE_VIDEO",
+            "tracking_pixel_id": 7347671240183693000,
+            "tiktok_item_id": "7481277898717023508",
+            "modify_time": "2026-02-03 21:05:26",
+            "identity_type": "BC_AUTH_TT",
+            "brand_safety_postbid_partner": "UNSET",
+            "click_tracking_url": null,
+            "music_id": null,
+            "deeplink": "",
+            "vast_moat_enabled": false,
+            "page_id": null,
+            "landing_page_urls": null,
+            "identity_authorized_bc_id": "6846326855419559942",
+            "landing_page_url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterraceramadan-2025-mar-uf%2Fmf-traffic&utm_id=2279&utm_term=bujairiterraceramadan-ar-all-mf&utm_content=bujariexperience-video-aud-ksa",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "app_name": "bujairiterrace",
+            "create_time": "2025-03-13 08:20:37",
+            "adgroup_name": "Diriyah_Tactical_BT Ramadan Campaign - Activations_MF_KSA_Prospecting_AR_Consideration_Tiktok",
+            "playable_url": "",
+            "avatar_icon_web_uri": "",
+            "profile_image_url": "",
+            "ad_id": "1826466337208322"
+          },
+          {
+            "video_id": "v10033g50000cv9d96fog65l3o75j92g",
+            "card_id": null,
+            "branded_content_disabled": false,
+            "operation_status": "DISABLE",
+            "viewability_vast_url": null,
+            "campaign_automation_type": "MANUAL",
+            "ad_text": "بين التاريخ ونخيله تجارب وفعاليات تجمعنا في مطل البجيري",
+            "is_new_structure": true,
+            "brand_safety_vast_url": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/oMenIZQAhDAPzHp8HUWgLqtNofkLfGA8MCabLo"
+            ],
+            "ad_texts": null,
+            "optimization_event": null,
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "creative_authorized": true,
+            "viewability_postbid_partner": "UNSET",
+            "display_name": "bujairiterrace",
+            "is_aco": false,
+            "ad_name": "Diriyah_Tactical_BT Ramadan Campaign - Activations_UP_KSA_Prospecting_AR_Awareness_Tiktok_BUJARIExperience",
+            "advertiser_id": "7338057963233443842",
+            "adgroup_id": "1826465828490321",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterraceramadan-2025-mar-uf%2Fmf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "2267"
+              },
+              {
+                "key": "utm_content",
+                "value": "bujariexperience-video-aud-ksa"
+              }
+            ],
+            "campaign_id": "1826465828490305",
+            "deeplink_type": "NORMAL",
+            "carousel_image_labels": null,
+            "impression_tracking_url": null,
+            "call_to_action_id": null,
+            "creative_type": null,
+            "dark_post_status": "ON",
+            "campaign_name": "BujairiTerrace_Ramadan2025Activations_UF_AWR_KSA_ENAR_TikTok",
+            "ad_format": "SINGLE_VIDEO",
+            "tracking_pixel_id": 7347671240183693000,
+            "tiktok_item_id": "7481279511280028945",
+            "modify_time": "2026-02-03 21:05:26",
+            "identity_type": "BC_AUTH_TT",
+            "brand_safety_postbid_partner": "UNSET",
+            "click_tracking_url": null,
+            "music_id": null,
+            "deeplink": "",
+            "vast_moat_enabled": false,
+            "page_id": null,
+            "landing_page_urls": null,
+            "identity_authorized_bc_id": "6846326855419559942",
+            "landing_page_url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterraceramadan-2025-mar-uf%2Fmf-reach-awareness&utm_id=2267&utm_term=bujairiterraceramadan-ar-all-mf&utm_content=bujariexperience-video-aud-ksa",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "app_name": "bujairiterrace",
+            "call_to_action": "LEARN_MORE",
+            "create_time": "2025-03-13 08:12:33",
+            "adgroup_name": "Diriyah_Tactical_BT Ramadan Campaign - Activations_UP_KSA_Prospecting_AR_Awareness_Tiktok",
+            "playable_url": "",
+            "avatar_icon_web_uri": "",
+            "profile_image_url": "",
+            "ad_id": "1826465828632609"
+          },
+          {
+            "video_id": "v10033g50000cv9d6rnog65rklerikbg",
+            "card_id": null,
+            "branded_content_disabled": false,
+            "operation_status": "ENABLE",
+            "viewability_vast_url": null,
+            "campaign_automation_type": "MANUAL",
+            "ad_text": "تجارب تسوق محلية وعالمية",
+            "is_new_structure": true,
+            "brand_safety_vast_url": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/ociQgE3CNNtInA0fSyu0ft4YroZDDBFuQSIBDy"
+            ],
+            "ad_texts": null,
+            "optimization_event": null,
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "creative_authorized": true,
+            "viewability_postbid_partner": "UNSET",
+            "display_name": "bujairiterrace",
+            "is_aco": false,
+            "ad_name": "Diriyah_Tactical_BT Ramadan Campaign - Retail_UF_KSA_Prospecting_AR_Awareness_TIKTOK_BUJAIRI RETAIL",
+            "advertiser_id": "7338057963233443842",
+            "adgroup_id": "1826296540794978",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterraceramadan-2025-oct-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "2527"
+              },
+              {
+                "key": "utm_content",
+                "value": "bujariretail-video-aud-ksa"
+              }
+            ],
+            "campaign_id": "1826296540794962",
+            "deeplink_type": "NORMAL",
+            "carousel_image_labels": null,
+            "impression_tracking_url": null,
+            "call_to_action_id": null,
+            "creative_type": null,
+            "dark_post_status": "ON",
+            "campaign_name": "BujairiTerrace_Ramadan2025Retail_UF_AWR_KSA_ENAR_TikTok",
+            "ad_format": "SINGLE_VIDEO",
+            "tracking_pixel_id": 7347671240183693000,
+            "tiktok_item_id": "7481277223844973831",
+            "modify_time": "2026-02-03 21:05:26",
+            "identity_type": "BC_AUTH_TT",
+            "brand_safety_postbid_partner": "UNSET",
+            "click_tracking_url": null,
+            "music_id": null,
+            "deeplink": "",
+            "vast_moat_enabled": false,
+            "page_id": null,
+            "landing_page_urls": null,
+            "identity_authorized_bc_id": "6846326855419559942",
+            "landing_page_url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterraceramadan-2025-oct-uf-reach-awareness&utm_id=2527&utm_term=bujairiterraceramadan-ar-all-mf&utm_content=bujariretail-video-aud-ksa",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "app_name": "bujairiterrace",
+            "call_to_action": "LEARN_MORE",
+            "create_time": "2025-03-12 10:41:56",
+            "adgroup_name": "Diriyah_Tactical_BT Ramadan Campaign - Retail_UF_KSA_Prospecting_AR_Awareness_TIKTOK",
+            "playable_url": "",
+            "avatar_icon_web_uri": "",
+            "profile_image_url": "",
+            "ad_id": "1826384630858801"
+          },
+          {
+            "video_id": "v10033g50000cv9d7o7og65ug608s3g0",
+            "card_id": null,
+            "branded_content_disabled": false,
+            "operation_status": "ENABLE",
+            "viewability_vast_url": null,
+            "campaign_automation_type": "MANUAL",
+            "ad_text": "Explore Bujairi Boutiques",
+            "is_new_structure": true,
+            "brand_safety_vast_url": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/ociQgE3CNNtInA0fSyu0ft4YroZDDBFuQSIBDy"
+            ],
+            "ad_texts": null,
+            "optimization_event": null,
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "creative_authorized": true,
+            "viewability_postbid_partner": "UNSET",
+            "display_name": "bujairiterrace",
+            "is_aco": false,
+            "ad_name": "Diriyah_Tactical_BT Ramadan Campaign - Retail_UF_KSA_Prospecting_EN_Awareness_TIKTOK_BUJAIRI RETAIL",
+            "advertiser_id": "7338057963233443842",
+            "adgroup_id": "1826296540804114",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterraceramadan_mar25_awr"
+              },
+              {
+                "key": "utm_term",
+                "value": "bujairiterraceramadan_en"
+              },
+              {
+                "key": "utm_content",
+                "value": "bujariretail-aud_video_en"
+              }
+            ],
+            "campaign_id": "1826296540794962",
+            "deeplink_type": "NORMAL",
+            "carousel_image_labels": null,
+            "impression_tracking_url": null,
+            "call_to_action_id": null,
+            "creative_type": null,
+            "dark_post_status": "ON",
+            "campaign_name": "BujairiTerrace_Ramadan2025Retail_UF_AWR_KSA_ENAR_TikTok",
+            "ad_format": "SINGLE_VIDEO",
+            "tracking_pixel_id": 7347671240183693000,
+            "tiktok_item_id": "7695385229300600070",
+            "modify_time": "2026-10-11 12:25:04",
+            "identity_type": "BC_AUTH_TT",
+            "brand_safety_postbid_partner": "UNSET",
+            "click_tracking_url": null,
+            "music_id": null,
+            "deeplink": "",
+            "vast_moat_enabled": false,
+            "page_id": null,
+            "landing_page_urls": null,
+            "identity_authorized_bc_id": "6846326855419559942",
+            "landing_page_url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterraceramadan_mar25_awr&utm_term=bujairiterraceramadan_en&utm_content=bujariretail-aud_video_en",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "app_name": "bujairiterrace",
+            "call_to_action": "LEARN_MORE",
+            "create_time": "2025-03-12 10:38:20",
+            "adgroup_name": "Diriyah_Tactical_BT Ramadan Campaign - Retail_UF_KSA_Prospecting_EN_Awareness_TIKTOK",
+            "playable_url": "",
+            "avatar_icon_web_uri": "",
+            "profile_image_url": "",
+            "ad_id": "1826384400556033"
+          },
+          {
+            "video_id": null,
+            "card_id": null,
+            "operation_status": "ENABLE",
+            "viewability_vast_url": null,
+            "campaign_automation_type": "MANUAL",
+            "ad_text": "خيره يجمع أهله ونـوره يضوي داره! 🌙 وبمطاعم #مطل_البجيري تحلى جلستنا 🤎 سيّر على #رمضان_الدرعية 🎟️ Its warmth unites us, and its charm surrounds us! 🌙 Dine and unwind at #BujairiTerrace restaurants 🤎 Visit us this #RamadanInDiriyah 🎟️",
+            "is_new_structure": true,
+            "brand_safety_vast_url": null,
+            "image_ids": [],
+            "ad_texts": null,
+            "optimization_event": null,
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "creative_authorized": true,
+            "viewability_postbid_partner": "UNSET",
+            "display_name": "bujairiterrace",
+            "is_aco": false,
+            "ad_name": "Diriyah_Tactical_BT Ramadan Campaign - Restaurants_UF_GCC_Prospecting_AR_Awareness_TIKTOK_Organic Post 2",
+            "advertiser_id": "7338057963233443842",
+            "adgroup_id": "1825848991390866",
+            "utm_params": [
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterraceramadan-2025-mar-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "2303"
+              },
+              {
+                "key": "utm_content",
+                "value": "bujariculinary-video-aud-gcc"
+              },
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              }
+            ],
+            "campaign_id": "1825848985412706",
+            "deeplink_type": "NORMAL",
+            "carousel_image_labels": null,
+            "impression_tracking_url": null,
+            "call_to_action_id": null,
+            "creative_type": null,
+            "campaign_name": "BujairiTerrace_Ramadan2025Restaurants_UF_AWR_GCC_ENAR_TikTok",
+            "ad_format": "SINGLE_VIDEO",
+            "tracking_pixel_id": 7347671240183693000,
+            "tiktok_item_id": "7479558432849136904",
+            "modify_time": "2026-02-03 21:05:26",
+            "identity_type": "BC_AUTH_TT",
+            "brand_safety_postbid_partner": "UNSET",
+            "click_tracking_url": null,
+            "music_id": null,
+            "deeplink": "",
+            "vast_moat_enabled": false,
+            "page_id": null,
+            "landing_page_urls": null,
+            "identity_authorized_bc_id": "6846326855419559942",
+            "promotional_music_disabled": true,
+            "landing_page_url": "https://www.diriyah.sa/ar/dine?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterraceramadan-2025-mar-uf-reach-awareness&utm_id=2303&utm_term=bujairiterraceramadan-ar-all-mf&utm_content=bujariculinary-video-aud-gcc",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "app_name": "bujairiterrace",
+            "call_to_action": "LEARN_MORE",
+            "create_time": "2025-03-10 10:20:09",
+            "adgroup_name": "Diriyah_Tactical_BT Ramadan Campaign - Restaurants_UF_GCC_Prospecting_AR_Awareness_TIKTOK",
+            "playable_url": "",
+            "avatar_icon_web_uri": "",
+            "profile_image_url": "",
+            "ad_id": "1826202065697954"
+          },
+          {
+            "video_id": null,
+            "card_id": null,
+            "operation_status": "ENABLE",
+            "viewability_vast_url": null,
+            "campaign_automation_type": "MANUAL",
+            "ad_text": "خيره يجمع أهله ونـوره يضوي داره! 🌙 وبمطاعم #مطل_البجيري تحلى جلستنا 🤎 سيّر على #رمضان_الدرعية 🎟️ Its warmth unites us, and its charm surrounds us! 🌙 Dine and unwind at #BujairiTerrace restaurants 🤎 Visit us this #RamadanInDiriyah 🎟️",
+            "is_new_structure": true,
+            "brand_safety_vast_url": null,
+            "image_ids": [],
+            "ad_texts": null,
+            "optimization_event": null,
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "creative_authorized": true,
+            "viewability_postbid_partner": "UNSET",
+            "display_name": "bujairiterrace",
+            "is_aco": false,
+            "ad_name": "Diriyah_Tactical_BT Ramadan Campaign - Restaurants_UF_GCC_Prospecting_EN_Awareness_TIKTOK_Organic Post 2",
+            "advertiser_id": "7338057963233443842",
+            "adgroup_id": "1825848985412722",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterraceramadan-2025-mar-uf-reach-awareness"
+              },
+              {
+                "key": "utm_content",
+                "value": "bujariculinary-video-aud-gcc"
+              }
+            ],
+            "campaign_id": "1825848985412706",
+            "deeplink_type": "NORMAL",
+            "carousel_image_labels": null,
+            "impression_tracking_url": null,
+            "call_to_action_id": null,
+            "creative_type": null,
+            "campaign_name": "BujairiTerrace_Ramadan2025Restaurants_UF_AWR_GCC_ENAR_TikTok",
+            "ad_format": "SINGLE_VIDEO",
+            "tracking_pixel_id": 7347671240183693000,
+            "tiktok_item_id": "7479558432849136904",
+            "modify_time": "2026-02-03 21:05:26",
+            "identity_type": "BC_AUTH_TT",
+            "brand_safety_postbid_partner": "UNSET",
+            "click_tracking_url": null,
+            "music_id": null,
+            "deeplink": "",
+            "vast_moat_enabled": false,
+            "page_id": null,
+            "landing_page_urls": null,
+            "identity_authorized_bc_id": "6846326855419559942",
+            "promotional_music_disabled": true,
+            "landing_page_url": "https://www.diriyah.sa/en/dine?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterraceramadan-2025-mar-uf-reach-awareness&utm_id=2304&utm_term=bujairiterraceramadan-en-all-mf&utm_content=bujariculinary-video-aud-gcc",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "app_name": "bujairiterrace",
+            "call_to_action": "LEARN_MORE",
+            "create_time": "2025-03-10 10:19:01",
+            "adgroup_name": "Diriyah_Tactical_BT Ramadan Campaign - Restaurants_UF_GCC_Prospecting_EN_Awareness_TIKTOK",
+            "playable_url": "",
+            "avatar_icon_web_uri": "",
+            "profile_image_url": "",
+            "ad_id": "1826201994049553"
+          },
+          {
+            "video_id": null,
+            "card_id": null,
+            "operation_status": "ENABLE",
+            "viewability_vast_url": null,
+            "campaign_automation_type": "MANUAL",
+            "ad_text": "خيره يجمع أهله ونـوره يضوي داره! 🌙 وبمطاعم #مطل_البجيري تحلى جلستنا 🤎 سيّر على #رمضان_الدرعية 🎟️ Its warmth unites us, and its charm surrounds us! 🌙 Dine and unwind at #BujairiTerrace restaurants 🤎 Visit us this #RamadanInDiriyah 🎟️",
+            "is_new_structure": true,
+            "brand_safety_vast_url": null,
+            "image_ids": [],
+            "ad_texts": null,
+            "optimization_event": null,
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "creative_authorized": true,
+            "viewability_postbid_partner": "UNSET",
+            "display_name": "bujairiterrace",
+            "is_aco": false,
+            "ad_name": "Diriyah_Tactical_BT Ramadan Campaign - Restaurants_UF_KSA_Prospecting_AR_Awareness_TIKTOK_Organic Post 2",
+            "advertiser_id": "7338057963233443842",
+            "adgroup_id": "1825843873819649",
+            "utm_params": [
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterraceramadan-2025-mar-uf%2Fmf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "2267"
+              },
+              {
+                "key": "utm_content",
+                "value": "bujariculinary-video-aud-ksa"
+              },
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              }
+            ],
+            "campaign_id": "1825843873818673",
+            "deeplink_type": "NORMAL",
+            "carousel_image_labels": null,
+            "impression_tracking_url": null,
+            "call_to_action_id": null,
+            "creative_type": null,
+            "campaign_name": "BujairiTerrace_Ramadan2025Restaurants_UF_AWR_KSA_ENAR_TikTok",
+            "ad_format": "SINGLE_VIDEO",
+            "tiktok_item_id": "7479558432849136904",
+            "modify_time": "2026-02-03 21:05:26",
+            "identity_type": "BC_AUTH_TT",
+            "brand_safety_postbid_partner": "UNSET",
+            "click_tracking_url": null,
+            "music_id": null,
+            "deeplink": "",
+            "vast_moat_enabled": false,
+            "page_id": null,
+            "landing_page_urls": null,
+            "identity_authorized_bc_id": "6846326855419559942",
+            "promotional_music_disabled": true,
+            "landing_page_url": "https://www.diriyah.sa/ar/dine?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterraceramadan-2025-mar-uf%2Fmf-reach-awareness&utm_id=2267&utm_term=bujairiterraceramadan-ar-all-mf&utm_content=bujariculinary-video-aud-ksa",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "app_name": "bujairiterrace",
+            "call_to_action": "LEARN_MORE",
+            "create_time": "2025-03-10 10:15:39",
+            "adgroup_name": "Diriyah_Tactical_BT Ramadan Campaign - Restaurants_UF_KSA_Prospecting_AR_Awareness_TIKTOK",
+            "playable_url": "",
+            "avatar_icon_web_uri": "",
+            "profile_image_url": "",
+            "ad_id": "1826201781321810"
+          }
+        ],
+        "page_info": {
+          "page": 1,
+          "page_size": 100,
+          "total_page": 1,
+          "total_number": 10
+        }
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "20261012220847384EF8AE22A07D90D0EB",
+      "waitedMs": 3442,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "c35d0f57-3a4c-40df-9e7b-0666d72add31",
+    "latencyMs": 5196
+  }
+}

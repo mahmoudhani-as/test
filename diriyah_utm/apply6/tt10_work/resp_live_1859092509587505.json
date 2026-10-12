@@ -1,0 +1,109 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_update",
+    "method": "POST",
+    "path": "/v1.3/ad/update/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "20261012221902FE8E95F22F7D9C569CCF",
+      "data": {
+        "ad_ids": [
+          "1859092509587505"
+        ],
+        "need_audit": false,
+        "creatives": [
+          {
+            "ad_id": "1859092509587505",
+            "campaign_id": "1857200654159073",
+            "brand_safety_vast_url": null,
+            "operation_status": "DISABLE",
+            "dark_post_status": "ON",
+            "is_aco": false,
+            "playable_url": "",
+            "creative_authorized": false,
+            "click_tracking_url": null,
+            "landing_page_url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_mar26_awr&utm_term=ar&utm_content=display_ar",
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "image_ids": [
+              "ad-site-i18n-sg/202603085d0dd12755a398f04827a0ad"
+            ],
+            "is_new_structure": true,
+            "impression_tracking_url": null,
+            "landing_page_urls": null,
+            "call_to_action_id": null,
+            "identity_type": "BC_AUTH_TT",
+            "ad_name": "Static_AR_march8th",
+            "identity_authorized_bc_id": "6807778858780065797",
+            "page_id": null,
+            "vast_moat_enabled": false,
+            "brand_safety_postbid_partner": "UNSET",
+            "avatar_icon_web_uri": "",
+            "campaign_name": "BujairiTerrace_Ramadan2026_UF_AWR_KSA_ENAR_TikTok",
+            "video_id": null,
+            "ad_text": "ِعش ليالي رمضان،​في مطلّ البجيري… واكتشفها.",
+            "deeplink_type": "NORMAL",
+            "card_id": null,
+            "create_time": "2026-03-08 11:22:41",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "visitor-diriyah-coe_mar26_awr",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "ar",
+                "key": "utm_term"
+              },
+              {
+                "value": "display_ar",
+                "key": "utm_content"
+              }
+            ],
+            "adgroup_name": "BujairiTerrace_Ramadan2026_UF_AWR_KSA_ProspectTickets_AR",
+            "deeplink": "",
+            "adgroup_id": "1857202371348833",
+            "viewability_vast_url": null,
+            "optimization_event": null,
+            "ad_format": "CAROUSEL_ADS",
+            "app_name": "bujairiterrace",
+            "branded_content_disabled": false,
+            "display_name": "bujairiterrace",
+            "ad_texts": null,
+            "profile_image_url": "",
+            "tracking_pixel_id": 0,
+            "music_id": "7614800156370373396",
+            "viewability_postbid_partner": "UNSET",
+            "creative_type": null,
+            "modify_time": "2026-10-12 14:19:04",
+            "campaign_automation_type": "MANUAL",
+            "advertiser_id": "7338057963233443842",
+            "call_to_action": "BOOK_NOW",
+            "carousel_image_labels": null
+          }
+        ]
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "20261012221902FE8E95F22F7D9C569CCF",
+      "waitedMs": 2718,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "fc231abe-c512-4b9a-8ef9-1f03a48979d7",
+    "latencyMs": 4434
+  }
+}

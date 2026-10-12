@@ -1,0 +1,739 @@
+{
+ "success": true,
+ "data": {
+  "success": true,
+  "action": "meta_ad_account_id_ads_get",
+  "method": "GET",
+  "host": "graph.facebook.com",
+  "path": "/v25.0/act_1033388761412991/ads",
+  "dryRun": false,
+  "data": {
+   "data": [
+    {
+     "id": "120234267578870598",
+     "name": "Saudi National Day_Promoted post",
+     "effective_status": "ACTIVE",
+     "status": "ACTIVE",
+     "configured_status": "ACTIVE",
+     "created_time": "2025-09-21T11:59:30+0300",
+     "updated_time": "2025-09-24T12:29:50+0300",
+     "campaign": {
+      "id": "120234267370420598",
+      "name": "SaudiNationalDay_AlwaysOn_UF_VID_KSA_ENAR_Meta_BO13437"
+     },
+     "adset": {
+      "id": "120234267578880598",
+      "name": "DGDA_CPV_Saudi National Day_21Sep_29Sep – Copy"
+     },
+     "creative": {
+      "id": "775670475595209",
+      "name": "هنا بدأت الحكاية؛ من الدرعية إلى توحيد المملكة.\n\nقصة وحدة وراية عز ومسيرة فخر خالدة.\n\n#اليوم_الوطني 2025-09-21-818368e1aa3322e929721ce54828ce44",
+      "call_to_action": {
+       "type": "LEARN_MORE",
+       "value": {
+        "link": "https://x.com/DGDA_SA/status/1969484280939082177"
+       }
+      },
+      "call_to_action_type": "LEARN_MORE",
+      "effective_object_story_id": "106279284789854_1187548236540994",
+      "object_type": "VIDEO",
+      "instagram_permalink_url": "https://www.instagram.com/p/DO259JBANXm/",
+      "effective_instagram_media_id": "17924030076113058",
+      "source_instagram_media_id": "17918457498178524"
+     }
+    },
+    {
+     "id": "120234267509550598",
+     "name": "Saudi National Day_Promoted post",
+     "effective_status": "ACTIVE",
+     "status": "ACTIVE",
+     "configured_status": "ACTIVE",
+     "created_time": "2025-09-21T11:57:46+0300",
+     "updated_time": "2025-09-24T12:25:53+0300",
+     "campaign": {
+      "id": "120234266777110598",
+      "name": "SaudiNationalDay_AlwaysOn_UF_AWR_KSA_ENAR_Meta_BO13437"
+     },
+     "adset": {
+      "id": "120234267509540598",
+      "name": "DGDA_CPM_Saudi National Day_21Sep_29Sep – Copy"
+     },
+     "creative": {
+      "id": "2196963591078439",
+      "name": "هنا بدأت الحكاية؛ من الدرعية إلى توحيد المملكة.\n\nقصة وحدة وراية عز ومسيرة فخر خالدة.\n\n#اليوم_الوطني 2025-09-21-4903d206557890460c74cd975b29f35e",
+      "call_to_action": {
+       "type": "LEARN_MORE",
+       "value": {
+        "link": "https://x.com/DGDA_SA/status/1969484280939082177"
+       }
+      },
+      "call_to_action_type": "LEARN_MORE",
+      "effective_object_story_id": "106279284789854_1155311749818101",
+      "object_type": "VIDEO",
+      "instagram_permalink_url": "https://www.instagram.com/p/DO259JBANXm/",
+      "effective_instagram_media_id": "17924030076113058",
+      "source_instagram_media_id": "17918457498178524"
+     }
+    },
+    {
+     "id": "120234267370440598",
+     "name": "Saudi National Day_Promoted post",
+     "effective_status": "ADSET_PAUSED",
+     "status": "ACTIVE",
+     "configured_status": "ACTIVE",
+     "created_time": "2025-09-21T11:50:21+0300",
+     "updated_time": "2025-09-21T11:59:06+0300",
+     "campaign": {
+      "id": "120234267370420598",
+      "name": "SaudiNationalDay_AlwaysOn_UF_VID_KSA_ENAR_Meta_BO13437"
+     },
+     "adset": {
+      "id": "120234267370430598",
+      "name": "DGDA_CPV_Saudi National Day_21Sep_29Sep"
+     },
+     "creative": {
+      "id": "1133793111492993",
+      "name": "هنا بدأت الحكاية؛ من الدرعية إلى توحيد المملكة.\n\nقصة وحدة وراية عز ومسيرة فخر خالدة.\n\n#اليوم_الوطني 2025-09-21-18dc73e079aeab0a1bc79ad94e6b8c97",
+      "call_to_action": {
+       "type": "WATCH_MORE",
+       "value": {
+        "link": "https://x.com/DGDA_SA/status/1969484280939082177"
+       }
+      },
+      "call_to_action_type": "WATCH_MORE",
+      "effective_object_story_id": "106279284789854_1169016858375928",
+      "object_type": "VIDEO",
+      "instagram_permalink_url": "https://www.instagram.com/p/DO259JBANXm/",
+      "effective_instagram_media_id": "17924030076113058",
+      "source_instagram_media_id": "17918457498178524"
+     }
+    },
+    {
+     "id": "120234266777130598",
+     "name": "Saudi National Day_Promoted post",
+     "effective_status": "ADSET_PAUSED",
+     "status": "ACTIVE",
+     "configured_status": "ACTIVE",
+     "created_time": "2025-09-21T11:39:07+0300",
+     "updated_time": "2025-09-21T11:52:39+0300",
+     "campaign": {
+      "id": "120234266777110598",
+      "name": "SaudiNationalDay_AlwaysOn_UF_AWR_KSA_ENAR_Meta_BO13437"
+     },
+     "adset": {
+      "id": "120234266777120598",
+      "name": "DGDA_CPM_Saudi National Day_21Sep_29Sep"
+     },
+     "creative": {
+      "id": "795256523086935",
+      "name": "هنا بدأت الحكاية؛ من الدرعية إلى توحيد المملكة.\n\nقصة وحدة وراية عز ومسيرة فخر خالدة.\n\n#اليوم_الوطني 2025-09-21-67a7f74aa85194c152c57a5bbba0bc7a",
+      "call_to_action": {
+       "type": "WATCH_MORE",
+       "value": {
+        "link": "https://x.com/DGDA_SA/status/1969484280939082177"
+       }
+      },
+      "call_to_action_type": "WATCH_MORE",
+      "effective_object_story_id": "106279284789854_3181750862001318",
+      "object_type": "VIDEO",
+      "instagram_permalink_url": "https://www.instagram.com/p/DO259JBANXm/",
+      "effective_instagram_media_id": "17924030076113058",
+      "source_instagram_media_id": "17918457498178524"
+     }
+    },
+    {
+     "id": "120218127042230598",
+     "name": "Founding Day",
+     "effective_status": "ACTIVE",
+     "status": "ACTIVE",
+     "configured_status": "ACTIVE",
+     "created_time": "2025-02-21T19:32:09+0300",
+     "updated_time": "2025-02-21T19:43:43+0300",
+     "campaign": {
+      "id": "120218127042240598",
+      "name": "DiriyahCompany_FoundingDay_UF_VID_KSA_ENAR_Meta_BO12054"
+     },
+     "adset": {
+      "id": "120218127042220598",
+      "name": "DGDA _ Views_BO#12054_Founding day -Additional"
+     },
+     "creative": {
+      "id": "1809729396479391",
+      "name": ".\nفي أجواء من الفخر والاعتزاز، استقبلت #الدرعية زوارها لتغمرهم في مسيرة الإمام محمد بن سعود.\n\nرؤيته 2025-02-21-b1bdfac8dd9adb1ca64a8f7e43382706",
+      "call_to_action": {
+       "type": "NO_BUTTON"
+      },
+      "effective_object_story_id": "106279284789854_1074569837677877",
+      "object_type": "VIDEO",
+      "instagram_permalink_url": "https://www.instagram.com/p/DGV3jv6gWbQ/",
+      "effective_instagram_media_id": "17892641952185046",
+      "source_instagram_media_id": "18045609035204066"
+     }
+    },
+    {
+     "id": "120217965294600598",
+     "name": "Founding Day",
+     "effective_status": "ACTIVE",
+     "status": "ACTIVE",
+     "configured_status": "ACTIVE",
+     "created_time": "2025-02-19T18:45:17+0300",
+     "updated_time": "2025-02-19T18:52:52+0300",
+     "campaign": {
+      "id": "120217965294620598",
+      "name": "DiriyahCompany_FoundingDay_UF_VID_KSA_ENAR_Meta_BO12054"
+     },
+     "adset": {
+      "id": "120217965294610598",
+      "name": "DGDA _ Views_BO#12054_Founding day"
+     },
+     "creative": {
+      "id": "1043237974247061",
+      "name": "هو من خطا أول خطوة، ورفع أول راية هو اللي سبق الجميع بأول عطاء؛ فكان التأسيس.\n\nالإمام محمد بن سعود؛ 2025-02-19-c559144bbc34bbbf7d584e1d2465c427",
+      "call_to_action": {
+       "type": "NO_BUTTON"
+      },
+      "effective_object_story_id": "106279284789854_612042218363446",
+      "object_type": "VIDEO",
+      "instagram_permalink_url": "https://www.instagram.com/p/DGQoH-sg17F/",
+      "effective_instagram_media_id": "17942842241953475",
+      "source_instagram_media_id": "18067811077883054"
+     }
+    },
+    {
+     "id": "120217965125790598",
+     "name": "Founding Day",
+     "effective_status": "ACTIVE",
+     "status": "ACTIVE",
+     "configured_status": "ACTIVE",
+     "created_time": "2025-02-19T18:41:02+0300",
+     "updated_time": "2025-02-19T18:49:50+0300",
+     "campaign": {
+      "id": "120217965125740598",
+      "name": "DiriyahCompany_FoundingDay_UF_AWR_KSA_ENAR_Meta_BO12054"
+     },
+     "adset": {
+      "id": "120217965125780598",
+      "name": "DGDA _ Impressions_BO#12054_Founding day"
+     },
+     "creative": {
+      "id": "2196157830778139",
+      "name": "هو من خطا أول خطوة، ورفع أول راية هو اللي سبق الجميع بأول عطاء؛ فكان التأسيس.\n\nالإمام محمد بن سعود؛ 2025-02-19-34757188b0531082a47f06d406e68f82",
+      "call_to_action": {
+       "type": "NO_BUTTON"
+      },
+      "effective_object_story_id": "106279284789854_654469243784124",
+      "object_type": "VIDEO",
+      "instagram_permalink_url": "https://www.instagram.com/p/DGQoH-sg17F/",
+      "effective_instagram_media_id": "17942842241953475",
+      "source_instagram_media_id": "18067811077883054"
+     }
+    },
+    {
+     "id": "120216007715400598",
+     "name": "Diriyah Gate - VViews - Sep2024 - SND - BO#10716 - $31680",
+     "effective_status": "ACTIVE",
+     "status": "ACTIVE",
+     "configured_status": "ACTIVE",
+     "created_time": "2024-12-19T23:03:42+0300",
+     "updated_time": "2024-12-19T23:11:00+0300",
+     "campaign": {
+      "id": "120216007715380598",
+      "name": "DiriyahCompany_ImamTurki_UF_VID_KSA_ENAR_Meta_202412_BO11571"
+     },
+     "adset": {
+      "id": "120216007715390598",
+      "name": "Diriyah Gate - VViews - Dec2024 - Imam Turki - BO#11571 - $20,000"
+     },
+     "creative": {
+      "id": "120216007798830598",
+      "name": ".\nفي رحلة الإمام تركي بن عبدالله لاستعادة أرضه، لم يكن له سوى سيفه \"الأجرب\"؛ الرفيق و المؤازر والمد 2024-12-19-1b71b14ce37fad971484af58529ea0c3",
+      "call_to_action": {
+       "type": "NO_BUTTON"
+      },
+      "effective_object_story_id": "106279284789854_1671905870406430",
+      "object_type": "VIDEO",
+      "instagram_permalink_url": "https://www.instagram.com/p/DDxc5dzsQaa/",
+      "effective_instagram_media_id": "18129808432389027",
+      "source_instagram_media_id": "17874763341233961"
+     }
+    },
+    {
+     "id": "120215662607850598",
+     "name": "AR",
+     "effective_status": "CAMPAIGN_PAUSED",
+     "status": "ACTIVE",
+     "configured_status": "ACTIVE",
+     "created_time": "2024-12-08T09:20:03+0300",
+     "updated_time": "2024-12-08T09:26:36+0300",
+     "campaign": {
+      "id": "120215662607840598",
+      "name": "DiriyahCompany_Winter_UF_VID_KSA_ENAR_Meta_BO11471"
+     },
+     "adset": {
+      "id": "120215662607820598",
+      "name": "DGDA VV  Winter Campaign BO#11471 AR"
+     },
+     "creative": {
+      "id": "120215662581150598",
+      "name": ".\nمن الدرعية والمنطقة الوسطى، أنارت المعرفة العقول بـ #علم_يمتد لأكثر من 600 عام.\nهنا تبدأ حكاية أر 2024-12-07-0fbf72cd886f2c243d1fcf674e400193",
+      "call_to_action": {
+       "type": "NO_BUTTON"
+      },
+      "effective_object_story_id": "106279284789854_546684118193969",
+      "object_type": "VIDEO",
+      "instagram_permalink_url": "https://www.instagram.com/p/DDTpXWUAWAR/",
+      "effective_instagram_media_id": "18030806888181557",
+      "source_instagram_media_id": "18029902169186841"
+     }
+    },
+    {
+     "id": "120215662573870598",
+     "name": "AR",
+     "effective_status": "CAMPAIGN_PAUSED",
+     "status": "ACTIVE",
+     "configured_status": "ACTIVE",
+     "created_time": "2024-12-08T09:15:27+0300",
+     "updated_time": "2024-12-08T09:24:35+0300",
+     "campaign": {
+      "id": "120215618677730598",
+      "name": "DiriyahCompany_Winter_UF_AWR_KSA_ENAR_Meta_BO11471"
+     },
+     "adset": {
+      "id": "120215618677780598",
+      "name": "DGDA Impressions  Winter Campaign BO#11471 AR"
+     },
+     "creative": {
+      "id": "120215662581150598",
+      "name": ".\nمن الدرعية والمنطقة الوسطى، أنارت المعرفة العقول بـ #علم_يمتد لأكثر من 600 عام.\nهنا تبدأ حكاية أر 2024-12-07-0fbf72cd886f2c243d1fcf674e400193",
+      "call_to_action": {
+       "type": "NO_BUTTON"
+      },
+      "effective_object_story_id": "106279284789854_546684118193969",
+      "object_type": "VIDEO",
+      "instagram_permalink_url": "https://www.instagram.com/p/DDTpXWUAWAR/",
+      "effective_instagram_media_id": "18030806888181557",
+      "source_instagram_media_id": "18029902169186841"
+     }
+    },
+    {
+     "id": "120215662607810598",
+     "name": "EN",
+     "effective_status": "CAMPAIGN_PAUSED",
+     "status": "ACTIVE",
+     "configured_status": "ACTIVE",
+     "created_time": "2024-12-08T09:20:14+0300",
+     "updated_time": "2024-12-08T09:21:47+0300",
+     "campaign": {
+      "id": "120215662607840598",
+      "name": "DiriyahCompany_Winter_UF_VID_KSA_ENAR_Meta_BO11471"
+     },
+     "adset": {
+      "id": "120215662607830598",
+      "name": "DGDA VV  Winter Campaign BO#11471 EN"
+     },
+     "creative": {
+      "id": "120215662566850598",
+      "name": ".\nNearly 600 years ago, knowledge sparked from Central Arabia, its influence reaching far beyond it 2024-12-07-1c2662a2d0ab85f4095d6bba1d956be7",
+      "call_to_action": {
+       "type": "NO_BUTTON"
+      },
+      "effective_object_story_id": "106279284789854_1510044516368810",
+      "object_type": "VIDEO",
+      "instagram_permalink_url": "https://www.instagram.com/p/DDTpJtgA8k2/",
+      "effective_instagram_media_id": "18007596209670703",
+      "source_instagram_media_id": "18016674257379253"
+     }
+    },
+    {
+     "id": "120215662556670598",
+     "name": "EN",
+     "effective_status": "CAMPAIGN_PAUSED",
+     "status": "ACTIVE",
+     "configured_status": "ACTIVE",
+     "created_time": "2024-12-08T09:13:35+0300",
+     "updated_time": "2024-12-08T09:21:27+0300",
+     "campaign": {
+      "id": "120215618677730598",
+      "name": "DiriyahCompany_Winter_UF_AWR_KSA_ENAR_Meta_BO11471"
+     },
+     "adset": {
+      "id": "120215618883950598",
+      "name": "DGDA Impressions  Winter Campaign BO#11471 EN"
+     },
+     "creative": {
+      "id": "120215662566850598",
+      "name": ".\nNearly 600 years ago, knowledge sparked from Central Arabia, its influence reaching far beyond it 2024-12-07-1c2662a2d0ab85f4095d6bba1d956be7",
+      "call_to_action": {
+       "type": "NO_BUTTON"
+      },
+      "effective_object_story_id": "106279284789854_1510044516368810",
+      "object_type": "VIDEO",
+      "instagram_permalink_url": "https://www.instagram.com/p/DDTpJtgA8k2/",
+      "effective_instagram_media_id": "18007596209670703",
+      "source_instagram_media_id": "18016674257379253"
+     }
+    },
+    {
+     "id": "120213491274520598",
+     "name": "Diriyah Gate - VViews - Sep2024 - SND - BO#10716 - $31680",
+     "effective_status": "ACTIVE",
+     "status": "ACTIVE",
+     "configured_status": "ACTIVE",
+     "created_time": "2024-09-19T20:55:34+0300",
+     "updated_time": "2024-09-27T03:14:18+0300",
+     "campaign": {
+      "id": "120213491273340598",
+      "name": "SaudiNationalDay_AlwaysOn_UF_VID_KSA_ENAR_Meta_202409_BO10716"
+     },
+     "adset": {
+      "id": "120213491273970598",
+      "name": "Diriyah Gate - VViews - Sep2024 - SND - BO#10716 - $31680"
+     },
+     "creative": {
+      "id": "120213674848600598",
+      "name": "وطن مْعَزّي؛\nوفي ذرى عياله العزوة.. \n\n#عزّ_وعزوة \n#اليوم_الوطني_السعودي_94 \n.\nThis is the story of  2024-09-26-63caa39de3dd30132939c3e3cf166c91",
+      "call_to_action": {
+       "type": "NO_BUTTON"
+      },
+      "effective_object_story_id": "106279284789854_1951256851981266",
+      "object_type": "VIDEO",
+      "instagram_permalink_url": "https://www.instagram.com/p/DAG57FwgZXY/",
+      "effective_instagram_media_id": "17943996470764011",
+      "source_instagram_media_id": "18088034218491346"
+     }
+    },
+    {
+     "id": "120213531886640598",
+     "name": "SND 2",
+     "effective_status": "ACTIVE",
+     "status": "ACTIVE",
+     "configured_status": "ACTIVE",
+     "created_time": "2024-09-21T15:37:41+0300",
+     "updated_time": "2024-09-26T19:47:10+0300",
+     "campaign": {
+      "id": "120213531886650598",
+      "name": "SaudiNationalDay_AlwaysOn_UF_AWR_KSA_ENAR_Meta_202409_BO10716"
+     },
+     "adset": {
+      "id": "120213531886630598",
+      "name": "Diriyah Gate - Reach - Sep2024 - SND - BO#10716 - $14515"
+     },
+     "creative": {
+      "id": "120213674812210598",
+      "name": "وطن مْعَزّي؛\nوفي ذرى عياله العزوة.. \n\n#عزّ_وعزوة \n#اليوم_الوطني_السعودي_94 \n.\nThis is the story of  2024-09-26-ccc3f9835f0be1ed4611dd45eaaf8161",
+      "effective_object_story_id": "106279284789854_2668927663286342",
+      "object_type": "VIDEO",
+      "instagram_permalink_url": "https://www.instagram.com/p/DAG57FwgZXY/",
+      "effective_instagram_media_id": "17943996470764011",
+      "source_instagram_media_id": "18088034218491346"
+     }
+    },
+    {
+     "id": "120213512710220598",
+     "name": "SND 2",
+     "effective_status": "ACTIVE",
+     "status": "ACTIVE",
+     "configured_status": "ACTIVE",
+     "created_time": "2024-09-20T17:15:57+0300",
+     "updated_time": "2024-09-20T17:28:47+0300",
+     "campaign": {
+      "id": "120213512709930598",
+      "name": "SaudiNationalDay_AlwaysOn_UF_AWR_KSA_ENAR_Meta_202409_BO10716"
+     },
+     "adset": {
+      "id": "120213512709950598",
+      "name": "Diriyah Gate - Reach - Sep2024 - SND - BO#10716 - $4000"
+     },
+     "creative": {
+      "id": "120213512802110598",
+      "name": "وطن مْعَزّي؛\nوفي ذرى عياله العزوة.. \n\n#عزّ_وعزوة \n#اليوم_الوطني_السعودي_94 \n.\nThis is the story of  2024-09-20-393828b83ecd97f51d2974dc9c867ee4",
+      "call_to_action": {
+       "type": "NO_BUTTON"
+      },
+      "effective_object_story_id": "106279284789854_1717336022397274",
+      "object_type": "VIDEO",
+      "instagram_permalink_url": "https://www.instagram.com/p/DAG57FwgZXY/",
+      "effective_instagram_media_id": "17943996470764011",
+      "source_instagram_media_id": "18088034218491346"
+     }
+    },
+    {
+     "id": "120211750911110598",
+     "name": "Diriyah Gate - Traffic - Jul2024 - Reel - BO#10369-Diriyah Horizon Campaign",
+     "effective_status": "PAUSED",
+     "status": "PAUSED",
+     "configured_status": "PAUSED",
+     "created_time": "2024-07-21T11:35:58+0300",
+     "updated_time": "2024-07-22T13:41:02+0300",
+     "campaign": {
+      "id": "120211750911100598",
+      "name": "DiriyahCompany_ReelHorizon_MF_TRF_KSA_ENAR_Meta_202407_BO10369"
+     },
+     "adset": {
+      "id": "120211750911090598",
+      "name": "Diriyah Gate - Traffic - Jul2024 - Reel - BO#10369-Diriyah Horizon Campaign"
+     },
+     "creative": {
+      "id": "120211751185760598",
+      "name": ".\nلتجربة ثرية واكتساب مهارات جديدة توسع من آفاقهم، وتنمية مواهبهم \nسجّل أبناءك في برنامج آفاق الدرع 2024-07-21-f0f9e7e5b86bb6fd79e2bebae28c68c6",
+      "call_to_action": {
+       "type": "LEARN_MORE",
+       "value": {
+        "link": "https://www.dgda.gov.sa/Pages/Diriyah-Horizons.aspx?lang=ar-sa"
+       }
+      },
+      "call_to_action_type": "LEARN_MORE",
+      "effective_object_story_id": "106279284789854_851359263049945",
+      "object_type": "VIDEO",
+      "instagram_permalink_url": "https://www.instagram.com/p/C9raJx5g7uf/",
+      "effective_instagram_media_id": "17898364008015541",
+      "source_instagram_media_id": "18051268528696819"
+     }
+    },
+    {
+     "id": "120205962281950598",
+     "name": "Founding Day Post 2",
+     "effective_status": "ACTIVE",
+     "status": "ACTIVE",
+     "configured_status": "ACTIVE",
+     "created_time": "2024-02-22T10:58:58+0300",
+     "updated_time": "2024-02-22T11:16:55+0300",
+     "campaign": {
+      "id": "120205853979970598",
+      "name": "DiriyahCompany_FoundingDay_UF_AWR_KSA_ENAR_Meta_202402_BO8539"
+     },
+     "adset": {
+      "id": "120205962281960598",
+      "name": "Founding Day - IG Feed - Post 2 Views"
+     },
+     "creative": {
+      "id": "120205962322540598",
+      "name": ".\nللبداية و السنين الأوليّة \nقصةٍ أسرارها بين السطور…\n#رحلة_وطن #يوم_التأسيس\n.\nA timeless connectio 2024-02-21-90c486ade074a37640235846866a4889",
+      "call_to_action": {
+       "type": "NO_BUTTON"
+      },
+      "effective_object_story_id": "106279284789854_414701137600831",
+      "object_type": "VIDEO",
+      "instagram_permalink_url": "https://www.instagram.com/p/C3pGrOYAY6y/",
+      "effective_instagram_media_id": "18025678081821002",
+      "source_instagram_media_id": "18010160948511263"
+     }
+    },
+    {
+     "id": "120205962301000598",
+     "name": "Founding Day Post 2",
+     "effective_status": "ACTIVE",
+     "status": "ACTIVE",
+     "configured_status": "ACTIVE",
+     "created_time": "2024-02-22T10:59:03+0300",
+     "updated_time": "2024-02-22T11:06:04+0300",
+     "campaign": {
+      "id": "120205853979970598",
+      "name": "DiriyahCompany_FoundingDay_UF_AWR_KSA_ENAR_Meta_202402_BO8539"
+     },
+     "adset": {
+      "id": "120205962301010598",
+      "name": "Founding Day - IG Feed - Post 2 Reach"
+     },
+     "creative": {
+      "id": "120205962325400598",
+      "name": ".\nللبداية و السنين الأوليّة \nقصةٍ أسرارها بين السطور…\n#رحلة_وطن #يوم_التأسيس\n.\nA timeless connectio 2024-02-21-50238e89fedebb39292fa1d72ea01c99",
+      "call_to_action": {
+       "type": "NO_BUTTON"
+      },
+      "effective_object_story_id": "106279284789854_953961523060273",
+      "object_type": "VIDEO",
+      "instagram_permalink_url": "https://www.instagram.com/p/C3pGrOYAY6y/",
+      "effective_instagram_media_id": "18025678081821002",
+      "source_instagram_media_id": "18010160948511263"
+     }
+    },
+    {
+     "id": "120205853980000598",
+     "name": "Founding Day",
+     "effective_status": "ACTIVE",
+     "status": "ACTIVE",
+     "configured_status": "ACTIVE",
+     "created_time": "2024-02-20T09:34:56+0300",
+     "updated_time": "2024-02-20T09:41:38+0300",
+     "campaign": {
+      "id": "120205853979970598",
+      "name": "DiriyahCompany_FoundingDay_UF_AWR_KSA_ENAR_Meta_202402_BO8539"
+     },
+     "adset": {
+      "id": "120205853979960598",
+      "name": "Founding Day - IG Feed - Post 1"
+     },
+     "creative": {
+      "id": "120205854172080598",
+      "name": "Diriyah Gate Development Authority 2024-02-19-036f72cd282685075842b0d17d7c1add",
+      "call_to_action": {
+       "type": "LEARN_MORE",
+       "value": {
+        "link": "https://www.instagram.com/dgda_sa/"
+       }
+      },
+      "call_to_action_type": "LEARN_MORE",
+      "effective_object_story_id": "106279284789854_692683396371349",
+      "object_type": "SHARE",
+      "instagram_permalink_url": "https://www.instagram.com/p/C3jzdjxAK8u/",
+      "effective_instagram_media_id": "18008753456091178",
+      "source_instagram_media_id": "17854592043114857"
+     }
+    },
+    {
+     "id": "120203161740580598",
+     "name": "Diriyah Gate - Traffic - Dec2023 - Reel",
+     "effective_status": "ACTIVE",
+     "status": "ACTIVE",
+     "configured_status": "ACTIVE",
+     "created_time": "2023-12-19T18:40:19+0300",
+     "updated_time": "2023-12-20T10:04:10+0300",
+     "campaign": {
+      "id": "120203161738780598",
+      "name": "DiriyahCompany_Reel_MF_TRF_KSA_ENAR_Meta_202312_BO8539"
+     },
+     "adset": {
+      "id": "120203161739950598",
+      "name": "Diriyah Gate - Traffic - Dec2023 - Reel"
+     },
+     "creative": {
+      "id": "120203212129110598",
+      "name": "راوي الدرعية 2023-12-19-c076fddf711055d3226613f5e118927e",
+      "object_story_spec": {
+       "page_id": "106279284789854",
+       "instagram_user_id": "17841408433895590",
+       "link_data": {
+        "link": "https://t.co/pK6yDltn7t",
+        "image_hash": "c2468dd28368074729194a29b6aeca35",
+        "call_to_action": {
+         "type": "SIGN_UP"
+        }
+       }
+      },
+      "call_to_action": {
+       "type": "SIGN_UP"
+      },
+      "call_to_action_type": "SIGN_UP",
+      "effective_object_story_id": "106279284789854_657116659928023",
+      "object_type": "SHARE",
+      "instagram_permalink_url": "https://www.instagram.com/p/C1EMhJUgYZD/",
+      "effective_instagram_media_id": "17995221797203268"
+     }
+    },
+    {
+     "id": "23858734427170597",
+     "name": "Feed 1",
+     "effective_status": "ACTIVE",
+     "status": "ACTIVE",
+     "configured_status": "ACTIVE",
+     "created_time": "2023-09-21T10:46:27+0300",
+     "updated_time": "2023-09-21T13:57:33+0300",
+     "campaign": {
+      "id": "23858733048530597",
+      "name": "SaudiNationalDay_AlwaysOn_UF_AWR_KSA_ENAR_Meta_202309_BO8539"
+     },
+     "adset": {
+      "id": "23858734427160597",
+      "name": "Saudi National Day - IG Feed"
+     },
+     "creative": {
+      "id": "23858734484760597",
+      "name": "Diriyah Gate Development Authority 2023-09-21-fdde48d01e46283f15f802206e7e2457",
+      "call_to_action": {
+       "type": "LEARN_MORE",
+       "value": {
+        "link": "https://dgda.gov.sa/home.aspx"
+       }
+      },
+      "call_to_action_type": "LEARN_MORE",
+      "effective_object_story_id": "106279284789854_609648038008219",
+      "object_type": "SHARE",
+      "instagram_permalink_url": "https://www.instagram.com/p/Cxci0UUAKuE/",
+      "effective_instagram_media_id": "18092273554364521",
+      "source_instagram_media_id": "17929346708765240"
+     }
+    },
+    {
+     "id": "23858734218090597",
+     "name": "Reel 2",
+     "effective_status": "ACTIVE",
+     "status": "ACTIVE",
+     "configured_status": "ACTIVE",
+     "created_time": "2023-09-21T10:43:33+0300",
+     "updated_time": "2023-09-21T13:56:13+0300",
+     "campaign": {
+      "id": "23858733048530597",
+      "name": "SaudiNationalDay_AlwaysOn_UF_AWR_KSA_ENAR_Meta_202309_BO8539"
+     },
+     "adset": {
+      "id": "23858733052310597",
+      "name": "Saudi National Day - IG Reels"
+     },
+     "creative": {
+      "id": "23858734259160597",
+      "name": "شعبك سيوفك | #من_قديم_الأزمنة 2023-09-21-36c128d650039229f36027adf1c42045",
+      "call_to_action": {
+       "type": "MESSAGE_PAGE",
+       "value": {
+        "app_destination": "MESSENGER",
+        "link": "https://fb.com/messenger_doc/"
+       }
+      },
+      "call_to_action_type": "MESSAGE_PAGE",
+      "effective_object_story_id": "106279284789854_1495899421158674",
+      "object_type": "VIDEO",
+      "instagram_permalink_url": "https://www.instagram.com/p/CxcifqJAsEu/",
+      "effective_instagram_media_id": "18384593053028423",
+      "source_instagram_media_id": "18027494491620952"
+     }
+    },
+    {
+     "id": "23858734342550597",
+     "name": "Reel 1",
+     "effective_status": "ACTIVE",
+     "status": "ACTIVE",
+     "configured_status": "ACTIVE",
+     "created_time": "2023-09-21T10:45:22+0300",
+     "updated_time": "2023-09-21T10:57:55+0300",
+     "campaign": {
+      "id": "23858733048530597",
+      "name": "SaudiNationalDay_AlwaysOn_UF_AWR_KSA_ENAR_Meta_202309_BO8539"
+     },
+     "adset": {
+      "id": "23858733052310597",
+      "name": "Saudi National Day - IG Reels"
+     },
+     "creative": {
+      "id": "23858734421500597",
+      "name": "-\nكنّا معك في كل خطوات الطريق.. \n#من_قديم_الأزمنة 2023-09-21-46238d15c53f327b8231ac3e7c1aa376",
+      "call_to_action": {
+       "type": "NO_BUTTON"
+      },
+      "effective_object_story_id": "106279284789854_232496549446482",
+      "object_type": "VIDEO",
+      "instagram_permalink_url": "https://www.instagram.com/p/CxcitBWASjf/",
+      "effective_instagram_media_id": "18286706677124365",
+      "source_instagram_media_id": "17975488514579654"
+     }
+    }
+   ],
+   "meta": {
+    "aggregate_pages": true,
+    "pages_fetched": 1
+   }
+  },
+  "meta": {
+   "requestId": null,
+   "waitedMs": 707,
+   "throttled": false,
+   "warnings": [],
+   "compatibility": null,
+   "compatibilitySkipped": true
+  }
+ },
+ "meta": {
+  "requestId": "48cf7130-9bd0-40ad-b740-c336679de7f0",
+  "latencyMs": 3256
+ }
+}

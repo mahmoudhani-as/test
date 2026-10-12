@@ -1,0 +1,748 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_get",
+    "method": "GET",
+    "path": "/v1.3/ad/get/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "20261012222447E5C8A8BFBE4B0D5EAAD3",
+      "data": {
+        "list": [
+          {
+            "create_time": "2024-10-31 15:57:36",
+            "tracking_pixel_id": 7347671240183693000,
+            "landing_page_urls": null,
+            "display_name": "Visit Diriyah",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cityofearth-2024-oct-uf-reach-awareness&utm_term=cityofearth-ar-all-mf&utm_content=video",
+            "adgroup_name": "Diriyah_Tactical_City of Earth_UF_KSA_Prospecting_EN/AR_Awareness_TikTok",
+            "is_new_structure": true,
+            "page_id": null,
+            "identity_type": "CUSTOMIZED_USER",
+            "creative_authorized": true,
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_automation_type": "MANUAL",
+            "adgroup_id": "1814445680351265",
+            "modify_time": "2026-10-12 11:50:33",
+            "video_id": "v10033g50000csh49kfog65ls70k7i40",
+            "campaign_name": "CityOfEarth_Phase12024_UF_AWR_KSA_ENAR_TikTok",
+            "brand_safety_postbid_partner": "UNSET",
+            "identity_id": "7350277519361425409",
+            "campaign_id": "1814445680351249",
+            "app_name": "",
+            "creative_type": null,
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "viewability_vast_url": null,
+            "deeplink_type": "NORMAL",
+            "carousel_image_labels": null,
+            "impression_tracking_url": null,
+            "music_id": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/oUimF3Ii1YGc8NBDAwfIi4AoAJEyR6CoASkzRB"
+            ],
+            "utm_params": [
+              {
+                "value": "video",
+                "key": "utm_content"
+              },
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cityofearth-2024-oct-uf-reach-awareness",
+                "key": "utm_campaign"
+              }
+            ],
+            "deeplink": "",
+            "viewability_postbid_partner": "UNSET",
+            "is_aco": false,
+            "operation_status": "ENABLE",
+            "optimization_event": null,
+            "ad_format": "SINGLE_VIDEO",
+            "card_id": null,
+            "ad_texts": null,
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "call_to_action": "LEARN_MORE",
+            "playable_url": "",
+            "advertiser_id": "7338057963233443842",
+            "ad_name": "Diriyah_Tactical_City of Earth_UF_KSA_Pospecting_AR_Awareness_TikTok_F_Father 15s",
+            "ad_id": "1814445684335633",
+            "ad_text": "للعالم مستقبل واحد..وللدرعية مستقبل تاريخي",
+            "vast_moat_enabled": false,
+            "call_to_action_id": null,
+            "click_tracking_url": null,
+            "brand_safety_vast_url": null
+          },
+          {
+            "create_time": "2024-10-31 15:57:36",
+            "tracking_pixel_id": 7347671240183693000,
+            "landing_page_urls": null,
+            "display_name": "Visit Diriyah",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cityofearth-2024-oct-uf-reach-awareness&utm_term=cityofearth-ar-all-mf&utm_content=video",
+            "adgroup_name": "Diriyah_Tactical_City of Earth_UF_KSA_Prospecting_EN/AR_Awareness_TikTok",
+            "is_new_structure": true,
+            "page_id": null,
+            "identity_type": "CUSTOMIZED_USER",
+            "creative_authorized": true,
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_automation_type": "MANUAL",
+            "adgroup_id": "1814445680351265",
+            "modify_time": "2026-10-12 11:50:33",
+            "video_id": "v10033g50000csh49kfog65lk7db7ep0",
+            "campaign_name": "CityOfEarth_Phase12024_UF_AWR_KSA_ENAR_TikTok",
+            "brand_safety_postbid_partner": "UNSET",
+            "identity_id": "7350277519361425409",
+            "campaign_id": "1814445680351249",
+            "app_name": "",
+            "creative_type": null,
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "viewability_vast_url": null,
+            "deeplink_type": "NORMAL",
+            "carousel_image_labels": null,
+            "impression_tracking_url": null,
+            "music_id": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/owfzVzm8BFBkqiOiIRiJoEiRAyydIwA1SuAooA"
+            ],
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cityofearth-2024-oct-uf-reach-awareness",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "video",
+                "key": "utm_content"
+              }
+            ],
+            "deeplink": "",
+            "viewability_postbid_partner": "UNSET",
+            "is_aco": false,
+            "operation_status": "ENABLE",
+            "optimization_event": null,
+            "ad_format": "SINGLE_VIDEO",
+            "card_id": null,
+            "ad_texts": null,
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "call_to_action": "LEARN_MORE",
+            "playable_url": "",
+            "advertiser_id": "7338057963233443842",
+            "ad_name": "Diriyah_Tactical_City of Earth_UF_KSA_Pospecting_AR_Awareness_TikTok_F_Talents 15s",
+            "ad_id": "1814445684329553",
+            "ad_text": "للعالم مستقبل واحد..وللدرعية مستقبل تاريخي",
+            "vast_moat_enabled": false,
+            "call_to_action_id": null,
+            "click_tracking_url": null,
+            "brand_safety_vast_url": null
+          },
+          {
+            "create_time": "2024-10-31 15:57:36",
+            "tracking_pixel_id": 7347671240183693000,
+            "landing_page_urls": null,
+            "display_name": "Visit Diriyah",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cityofearth-2024-oct-uf-reach-awareness&utm_term=cityofearth-ar-all-mf&utm_content=video",
+            "adgroup_name": "Diriyah_Tactical_City of Earth_UF_KSA_Prospecting_EN/AR_Awareness_TikTok",
+            "is_new_structure": true,
+            "page_id": null,
+            "identity_type": "CUSTOMIZED_USER",
+            "creative_authorized": true,
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_automation_type": "MANUAL",
+            "adgroup_id": "1814445680351265",
+            "modify_time": "2026-10-12 11:50:33",
+            "video_id": "v10033g50000csh49kfog65udluunca0",
+            "campaign_name": "CityOfEarth_Phase12024_UF_AWR_KSA_ENAR_TikTok",
+            "brand_safety_postbid_partner": "UNSET",
+            "identity_id": "7350277519361425409",
+            "campaign_id": "1814445680351249",
+            "app_name": "",
+            "creative_type": null,
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "viewability_vast_url": null,
+            "deeplink_type": "NORMAL",
+            "carousel_image_labels": null,
+            "impression_tracking_url": null,
+            "music_id": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/oEfn5rNADKDI3iTEERFTRE2RBU6XIgBeksAQbA"
+            ],
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cityofearth-2024-oct-uf-reach-awareness",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "video",
+                "key": "utm_content"
+              }
+            ],
+            "deeplink": "",
+            "viewability_postbid_partner": "UNSET",
+            "is_aco": false,
+            "operation_status": "ENABLE",
+            "optimization_event": null,
+            "ad_format": "SINGLE_VIDEO",
+            "card_id": null,
+            "ad_texts": null,
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "call_to_action": "LEARN_MORE",
+            "playable_url": "",
+            "advertiser_id": "7338057963233443842",
+            "ad_name": "Diriyah_Tactical_City of Earth_UF_KSA_Pospecting_AR_Awareness_TikTok_F_Social 15s",
+            "ad_id": "1814445684323345",
+            "ad_text": "للعالم مستقبل واحد..وللدرعية مستقبل تاريخي",
+            "vast_moat_enabled": false,
+            "call_to_action_id": null,
+            "click_tracking_url": null,
+            "brand_safety_vast_url": null
+          },
+          {
+            "create_time": "2024-10-31 15:57:36",
+            "tracking_pixel_id": 7347671240183693000,
+            "landing_page_urls": null,
+            "display_name": "Visit Diriyah",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cityofearth-2024-oct-uf-reach-awareness&utm_term=cityofearth-ar-all-mf&utm_content=video",
+            "adgroup_name": "Diriyah_Tactical_City of Earth_UF_KSA_Prospecting_EN/AR_Awareness_TikTok",
+            "is_new_structure": true,
+            "page_id": null,
+            "identity_type": "CUSTOMIZED_USER",
+            "creative_authorized": true,
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_automation_type": "MANUAL",
+            "adgroup_id": "1814445680351265",
+            "modify_time": "2026-10-12 11:50:33",
+            "video_id": "v10033g50000csh49kfog65hk4u7alq0",
+            "campaign_name": "CityOfEarth_Phase12024_UF_AWR_KSA_ENAR_TikTok",
+            "brand_safety_postbid_partner": "UNSET",
+            "identity_id": "7350277519361425409",
+            "campaign_id": "1814445680351249",
+            "app_name": "",
+            "creative_type": null,
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "viewability_vast_url": null,
+            "deeplink_type": "NORMAL",
+            "carousel_image_labels": null,
+            "impression_tracking_url": null,
+            "music_id": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/okO5I0omUBESo0B1A9wiVkR9EfRxzoiATAJxiA"
+            ],
+            "utm_params": [
+              {
+                "value": "video",
+                "key": "utm_content"
+              },
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cityofearth-2024-oct-uf-reach-awareness",
+                "key": "utm_campaign"
+              }
+            ],
+            "deeplink": "",
+            "viewability_postbid_partner": "UNSET",
+            "is_aco": false,
+            "operation_status": "ENABLE",
+            "optimization_event": null,
+            "ad_format": "SINGLE_VIDEO",
+            "card_id": null,
+            "ad_texts": null,
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "call_to_action": "LEARN_MORE",
+            "playable_url": "",
+            "advertiser_id": "7338057963233443842",
+            "ad_name": "Diriyah_Tactical_City of Earth_UF_KSA_Pospecting_AR_Awareness_TikTok_F_Football 15s",
+            "ad_id": "1814445684317201",
+            "ad_text": "للعالم مستقبل واحد..وللدرعية مستقبل تاريخي",
+            "vast_moat_enabled": false,
+            "call_to_action_id": null,
+            "click_tracking_url": null,
+            "brand_safety_vast_url": null
+          },
+          {
+            "create_time": "2024-10-31 15:57:36",
+            "tracking_pixel_id": 7347671240183693000,
+            "landing_page_urls": null,
+            "display_name": "Visit Diriyah",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cityofearth-2024-oct-uf-reach-awareness&utm_term=cityofearth-ar-all-mf&utm_content=video",
+            "adgroup_name": "Diriyah_Tactical_City of Earth_UF_KSA_Prospecting_EN/AR_Awareness_TikTok",
+            "is_new_structure": true,
+            "page_id": null,
+            "identity_type": "CUSTOMIZED_USER",
+            "creative_authorized": true,
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_automation_type": "MANUAL",
+            "adgroup_id": "1814445680351265",
+            "modify_time": "2026-10-12 11:50:33",
+            "video_id": "v10033g50000csh49kfog65pekibf3k0",
+            "campaign_name": "CityOfEarth_Phase12024_UF_AWR_KSA_ENAR_TikTok",
+            "brand_safety_postbid_partner": "UNSET",
+            "identity_id": "7350277519361425409",
+            "campaign_id": "1814445680351249",
+            "app_name": "",
+            "creative_type": null,
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "viewability_vast_url": null,
+            "deeplink_type": "NORMAL",
+            "carousel_image_labels": null,
+            "impression_tracking_url": null,
+            "music_id": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/ocz3ooidoAjESAim5A3ISQ8A1kBSw6fY7JRBio"
+            ],
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cityofearth-2024-oct-uf-reach-awareness",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "video",
+                "key": "utm_content"
+              }
+            ],
+            "deeplink": "",
+            "viewability_postbid_partner": "UNSET",
+            "is_aco": false,
+            "operation_status": "ENABLE",
+            "optimization_event": null,
+            "ad_format": "SINGLE_VIDEO",
+            "card_id": null,
+            "ad_texts": null,
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "call_to_action": "LEARN_MORE",
+            "playable_url": "",
+            "advertiser_id": "7338057963233443842",
+            "ad_name": "Diriyah_Tactical_City of Earth_UF_KSA_Pospecting_AR_Awareness_TikTok_F_Greenery 15s",
+            "ad_id": "1814445684312081",
+            "ad_text": "للعالم مستقبل واحد..وللدرعية مستقبل تاريخي",
+            "vast_moat_enabled": false,
+            "call_to_action_id": null,
+            "click_tracking_url": null,
+            "brand_safety_vast_url": null
+          },
+          {
+            "create_time": "2024-10-31 15:57:36",
+            "tracking_pixel_id": 7347671240183693000,
+            "landing_page_urls": null,
+            "display_name": "Visit Diriyah",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cityofearth-2024-oct-uf-reach-awareness&utm_term=cityofearth-ar-all-mf&utm_content=video",
+            "adgroup_name": "Diriyah_Tactical_City of Earth_UF_KSA_Prospecting_EN/AR_Awareness_TikTok",
+            "is_new_structure": true,
+            "page_id": null,
+            "identity_type": "CUSTOMIZED_USER",
+            "creative_authorized": true,
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_automation_type": "MANUAL",
+            "adgroup_id": "1814445680351265",
+            "modify_time": "2026-10-12 11:50:34",
+            "video_id": "v10033g50000csh49kfog65sh2rav8u0",
+            "campaign_name": "CityOfEarth_Phase12024_UF_AWR_KSA_ENAR_TikTok",
+            "brand_safety_postbid_partner": "UNSET",
+            "identity_id": "7350277519361425409",
+            "campaign_id": "1814445680351249",
+            "app_name": "",
+            "creative_type": null,
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "viewability_vast_url": null,
+            "deeplink_type": "NORMAL",
+            "carousel_image_labels": null,
+            "impression_tracking_url": null,
+            "music_id": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/ospIqifhIIyGgBRCREeGeD4bmjALCzIAqVuOQt"
+            ],
+            "utm_params": [
+              {
+                "value": "video",
+                "key": "utm_content"
+              },
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cityofearth-2024-oct-uf-reach-awareness",
+                "key": "utm_campaign"
+              }
+            ],
+            "deeplink": "",
+            "viewability_postbid_partner": "UNSET",
+            "is_aco": false,
+            "operation_status": "ENABLE",
+            "optimization_event": null,
+            "ad_format": "SINGLE_VIDEO",
+            "card_id": null,
+            "ad_texts": null,
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "call_to_action": "LEARN_MORE",
+            "playable_url": "",
+            "advertiser_id": "7338057963233443842",
+            "ad_name": "Diriyah_Tactical_City of Earth_UF_KSA_Pospecting_AR_Awareness_TikTok_F_Outdoor 15s",
+            "ad_id": "1814445684306001",
+            "ad_text": "للعالم مستقبل واحد..وللدرعية مستقبل تاريخي",
+            "vast_moat_enabled": false,
+            "call_to_action_id": null,
+            "click_tracking_url": null,
+            "brand_safety_vast_url": null
+          },
+          {
+            "create_time": "2024-10-31 15:57:36",
+            "tracking_pixel_id": 7347671240183693000,
+            "landing_page_urls": null,
+            "display_name": "Visit Diriyah",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cityofearth-2024-oct-uf-reach-awareness&utm_term=cityofearth-ar-all-mf&utm_content=video",
+            "adgroup_name": "Diriyah_Tactical_City of Earth_UF_KSA_Prospecting_EN/AR_Awareness_TikTok",
+            "is_new_structure": true,
+            "page_id": null,
+            "identity_type": "CUSTOMIZED_USER",
+            "creative_authorized": true,
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_automation_type": "MANUAL",
+            "adgroup_id": "1814445680351265",
+            "modify_time": "2026-10-12 11:50:33",
+            "video_id": "v10033g50000csh49kfog65h6muua320",
+            "campaign_name": "CityOfEarth_Phase12024_UF_AWR_KSA_ENAR_TikTok",
+            "brand_safety_postbid_partner": "UNSET",
+            "identity_id": "7350277519361425409",
+            "campaign_id": "1814445680351249",
+            "app_name": "",
+            "creative_type": null,
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "viewability_vast_url": null,
+            "deeplink_type": "NORMAL",
+            "carousel_image_labels": null,
+            "impression_tracking_url": null,
+            "music_id": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/oERGEa1IgTiNAIvQnfQA38FhDKBiQkfRBGBIDQ"
+            ],
+            "utm_params": [
+              {
+                "value": "video",
+                "key": "utm_content"
+              },
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cityofearth-2024-oct-uf-reach-awareness",
+                "key": "utm_campaign"
+              }
+            ],
+            "deeplink": "",
+            "viewability_postbid_partner": "UNSET",
+            "is_aco": false,
+            "operation_status": "ENABLE",
+            "optimization_event": null,
+            "ad_format": "SINGLE_VIDEO",
+            "card_id": null,
+            "ad_texts": null,
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "call_to_action": "LEARN_MORE",
+            "playable_url": "",
+            "advertiser_id": "7338057963233443842",
+            "ad_name": "Diriyah_Tactical_City of Earth_UF_KSA_Pospecting_AR_Awareness_TikTok_F_Activities 15s",
+            "ad_id": "1814445683885073",
+            "ad_text": "للعالم مستقبل واحد..وللدرعية مستقبل تاريخي",
+            "vast_moat_enabled": false,
+            "call_to_action_id": null,
+            "click_tracking_url": null,
+            "brand_safety_vast_url": null
+          },
+          {
+            "create_time": "2024-10-31 15:57:36",
+            "tracking_pixel_id": 7347671240183693000,
+            "landing_page_urls": null,
+            "display_name": "Visit Diriyah",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cityofearth_oct24_awr&utm_term=cityofearth_en-ar&utm_content=video_ar",
+            "adgroup_name": "Diriyah_Tactical_City of Earth_UF_KSA_Prospecting_EN/AR_Awareness_TikTok",
+            "is_new_structure": true,
+            "page_id": null,
+            "identity_type": "CUSTOMIZED_USER",
+            "creative_authorized": true,
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_automation_type": "MANUAL",
+            "adgroup_id": "1814445680351265",
+            "modify_time": "2026-10-12 11:50:33",
+            "video_id": "v10033g50000csh49k7og65h6muua2qg",
+            "campaign_name": "CityOfEarth_Phase12024_UF_AWR_KSA_ENAR_TikTok",
+            "brand_safety_postbid_partner": "UNSET",
+            "identity_id": "7350277519361425409",
+            "campaign_id": "1814445680351249",
+            "app_name": "",
+            "creative_type": null,
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "viewability_vast_url": null,
+            "deeplink_type": "NORMAL",
+            "carousel_image_labels": null,
+            "impression_tracking_url": null,
+            "music_id": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/og3QiAKjkQB4vEQncIFfBBgpFRwTTqIaNeDiDQ"
+            ],
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cityofearth_oct24_awr",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "cityofearth_en-ar",
+                "key": "utm_term"
+              },
+              {
+                "value": "video_ar",
+                "key": "utm_content"
+              }
+            ],
+            "deeplink": "",
+            "viewability_postbid_partner": "UNSET",
+            "is_aco": false,
+            "operation_status": "ENABLE",
+            "optimization_event": null,
+            "ad_format": "SINGLE_VIDEO",
+            "card_id": null,
+            "ad_texts": null,
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "call_to_action": "LEARN_MORE",
+            "playable_url": "",
+            "advertiser_id": "7338057963233443842",
+            "ad_name": "Diriyah_Tactical_City of Earth_UF_KSA_Pospecting_AR_Awareness_TikTok_F_Home 15s",
+            "ad_id": "1814445683873809",
+            "ad_text": "للعالم مستقبل واحد..وللدرعية مستقبل تاريخي",
+            "vast_moat_enabled": false,
+            "call_to_action_id": null,
+            "click_tracking_url": null,
+            "brand_safety_vast_url": null
+          },
+          {
+            "create_time": "2024-10-31 15:57:36",
+            "tracking_pixel_id": 7347671240183693000,
+            "landing_page_urls": null,
+            "display_name": "Visit Diriyah",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cityofearth_oct24_awr&utm_term=cityofearth_en-ar&utm_content=video_ar",
+            "adgroup_name": "Diriyah_Tactical_City of Earth_UF_KSA_Prospecting_EN/AR_Awareness_TikTok",
+            "is_new_structure": true,
+            "page_id": null,
+            "identity_type": "CUSTOMIZED_USER",
+            "creative_authorized": true,
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_automation_type": "MANUAL",
+            "adgroup_id": "1814445680351265",
+            "modify_time": "2026-10-12 11:50:34",
+            "video_id": "v10033g50000csh48ufog65kda5r6oe0",
+            "campaign_name": "CityOfEarth_Phase12024_UF_AWR_KSA_ENAR_TikTok",
+            "brand_safety_postbid_partner": "UNSET",
+            "identity_id": "7350277519361425409",
+            "campaign_id": "1814445680351249",
+            "app_name": "",
+            "creative_type": null,
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "viewability_vast_url": null,
+            "deeplink_type": "NORMAL",
+            "carousel_image_labels": null,
+            "impression_tracking_url": null,
+            "music_id": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/o0L8I0BcEiYunhJASRzBiBLAkIwoozzfwAaikm"
+            ],
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cityofearth_oct24_awr",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "cityofearth_en-ar",
+                "key": "utm_term"
+              },
+              {
+                "value": "video_ar",
+                "key": "utm_content"
+              }
+            ],
+            "deeplink": "",
+            "viewability_postbid_partner": "UNSET",
+            "is_aco": false,
+            "operation_status": "ENABLE",
+            "optimization_event": null,
+            "ad_format": "SINGLE_VIDEO",
+            "card_id": null,
+            "ad_texts": null,
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "call_to_action": "LEARN_MORE",
+            "playable_url": "",
+            "advertiser_id": "7338057963233443842",
+            "ad_name": "Diriyah_Tactical_City of Earth_UF_KSA_Pospecting_AR_Awareness_TikTok_M_Hospitality 15s",
+            "ad_id": "1814445683867665",
+            "ad_text": "للعالم مستقبل واحد..وللدرعية مستقبل تاريخي",
+            "vast_moat_enabled": false,
+            "call_to_action_id": null,
+            "click_tracking_url": null,
+            "brand_safety_vast_url": null
+          },
+          {
+            "create_time": "2024-10-31 15:57:36",
+            "tracking_pixel_id": 7347671240183693000,
+            "landing_page_urls": null,
+            "display_name": "Visit Diriyah",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cityofearth_oct24_awr&utm_term=cityofearth_en-ar&utm_content=video_ar",
+            "adgroup_name": "Diriyah_Tactical_City of Earth_UF_KSA_Prospecting_EN/AR_Awareness_TikTok",
+            "is_new_structure": true,
+            "page_id": null,
+            "identity_type": "CUSTOMIZED_USER",
+            "creative_authorized": true,
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_automation_type": "MANUAL",
+            "adgroup_id": "1814445680351265",
+            "modify_time": "2026-10-12 11:50:33",
+            "video_id": "v10033g50000csh48ufog65j0ijf2g9g",
+            "campaign_name": "CityOfEarth_Phase12024_UF_AWR_KSA_ENAR_TikTok",
+            "brand_safety_postbid_partner": "UNSET",
+            "identity_id": "7350277519361425409",
+            "campaign_id": "1814445680351249",
+            "app_name": "",
+            "creative_type": null,
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "viewability_vast_url": null,
+            "deeplink_type": "NORMAL",
+            "carousel_image_labels": null,
+            "impression_tracking_url": null,
+            "music_id": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/ooqBx8ikQEBX8zAAITiwfKiBziInmMbAoyLSRA"
+            ],
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cityofearth_oct24_awr",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "cityofearth_en-ar",
+                "key": "utm_term"
+              },
+              {
+                "value": "video_ar",
+                "key": "utm_content"
+              }
+            ],
+            "deeplink": "",
+            "viewability_postbid_partner": "UNSET",
+            "is_aco": false,
+            "operation_status": "ENABLE",
+            "optimization_event": null,
+            "ad_format": "SINGLE_VIDEO",
+            "card_id": null,
+            "ad_texts": null,
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "call_to_action": "LEARN_MORE",
+            "playable_url": "",
+            "advertiser_id": "7338057963233443842",
+            "ad_name": "Diriyah_Tactical_City of Earth_UF_KSA_Pospecting_AR_Awareness_TikTok_M_Talents 15s",
+            "ad_id": "1814445683861521",
+            "ad_text": "للعالم مستقبل واحد..وللدرعية مستقبل تاريخي",
+            "vast_moat_enabled": false,
+            "call_to_action_id": null,
+            "click_tracking_url": null,
+            "brand_safety_vast_url": null
+          }
+        ],
+        "page_info": {
+          "page": 1,
+          "page_size": 100,
+          "total_page": 1,
+          "total_number": 10
+        }
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "20261012222447E5C8A8BFBE4B0D5EAAD3",
+      "waitedMs": 644,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "b825acec-ac42-4e75-b830-8d03ed5fd3cb",
+    "latencyMs": 2224
+  }
+}

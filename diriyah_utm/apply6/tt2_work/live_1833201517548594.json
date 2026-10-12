@@ -1,0 +1,111 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_update",
+    "method": "POST",
+    "path": "/v1.3/ad/update/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "2026101222221949531125A0348CBAE856",
+      "data": {
+        "ad_ids": [
+          "1833201517548594"
+        ],
+        "need_audit": false,
+        "creatives": [
+          {
+            "adgroup_name": "Diriyah_Tactical_Diriyah Living Campaign_UF_KSA_Prospecting_AR_Awareness_TIKTOK",
+            "deeplink": "",
+            "tracking_pixel_id": 7347671240183693000,
+            "carousel_image_labels": null,
+            "landing_page_urls": null,
+            "optimization_event": null,
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202504235d0ddc1b8ba9571646aca4ab",
+            "page_id": null,
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "hs-diriyahliving_may25_awr",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "diriyahliving_ar",
+                "key": "utm_term"
+              },
+              {
+                "value": "retail_video_ar",
+                "key": "utm_content"
+              }
+            ],
+            "card_id": null,
+            "app_name": "",
+            "click_tracking_url": null,
+            "playable_url": "",
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202504235d0ddc1b8ba9571646aca4ab",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar/diriyah-living?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-diriyahliving_may25_awr&utm_term=diriyahliving_ar&utm_content=retail_video_ar",
+            "ad_format": "SINGLE_VIDEO",
+            "call_to_action_id": null,
+            "impression_tracking_url": null,
+            "modify_time": "2026-10-12 14:22:20",
+            "brand_safety_vast_url": null,
+            "advertiser_id": "7338057963233443842",
+            "deeplink_type": "NORMAL",
+            "campaign_name": "LifeInDiriyah_Retail2025_UF_AWR_KSA_ENAR_TikTok",
+            "create_time": "2025-05-26 16:39:22",
+            "is_aco": false,
+            "campaign_id": "1833199780659249",
+            "viewability_vast_url": null,
+            "ad_id": "1833201517548594",
+            "vast_moat_enabled": false,
+            "ad_texts": null,
+            "creative_type": null,
+            "creative_auto_enhancement_strategy_list": [
+              "VIDEO_QUALITY",
+              "MUSIC_REFRESH"
+            ],
+            "identity_type": "CUSTOMIZED_USER",
+            "ad_text": "الحياة في الدرعية إرث، تطوّر، استدامة.. بفرص تجارية ثمينة، وابتكاراتٌ واعدة؛ تنبض من هالأرض",
+            "identity_id": "7496497927239974920",
+            "viewability_postbid_partner": "UNSET",
+            "music_id": null,
+            "is_new_structure": true,
+            "brand_safety_postbid_partner": "UNSET",
+            "video_id": "v10033g50000d0q9d2fog65imsgfebig",
+            "adgroup_id": "1833201517548578",
+            "ad_name": "Diriyah_Tactical_Diriyah Living Campaign_UF_KSA_Prospecting_AR_Awareness_TIKTOK_Retail Video AR - 15s",
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/oMuQgPNIbHlLBfoKkFJJDcEwpDlXfOAXNBBaxQ"
+            ],
+            "call_to_action": "LEARN_MORE",
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "creative_authorized": true,
+            "operation_status": "ENABLE",
+            "display_name": "Diriyah Company",
+            "campaign_automation_type": "MANUAL"
+          }
+        ]
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "2026101222221949531125A0348CBAE856",
+      "waitedMs": 1534,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "f3eb9644-2b93-460d-95d6-e30ab51ade88",
+    "latencyMs": 3157
+  }
+}

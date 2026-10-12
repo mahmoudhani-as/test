@@ -1,0 +1,76 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_update",
+    "dryRun": true,
+    "data": {
+      "request": {
+        "method": "POST",
+        "url": "https://business-api.tiktok.com/open_api/v1.3/ad/update/",
+        "path": "/v1.3/ad/update/",
+        "headers": {
+          "Access-Token": "[redacted]",
+          "Accept": "application/json",
+          "Content-Type": "application/json"
+        },
+        "query": {},
+        "bodyFormat": "json",
+        "body": {
+          "advertiser_id": "7338057963233443842",
+          "adgroup_id": "1823032676904962",
+          "creatives": [
+            {
+              "ad_format": "SINGLE_VIDEO",
+              "ad_id": "1823032676904994",
+              "ad_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_UP_KSA_Prospecting_EN_Awareness_TIKTOK_Hero Video",
+              "ad_text": "A world of heritage & style is waiting - come and visit today! #BujairiExperience #RetailReimagined",
+              "aigc_disclosure_type": "NOT_DECLARED",
+              "avatar_icon_web_uri": "ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+              "call_to_action": "LEARN_MORE",
+              "creative_authorized": false,
+              "display_name": "Visit Diriyah",
+              "identity_id": "7350277519361425409",
+              "identity_type": "CUSTOMIZED_USER",
+              "image_ids": [
+                "tos-alisg-p-0051c001-sg/oAkA2BEjvoDTN9gc7gOvF6SBfeQEynIDPiEwTL"
+              ],
+              "landing_page_url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bujairiterracewinter_feb25_awr&utm_term=bujairiterracewinter_en&utm_content=video_en",
+              "tracking_pixel_id": "7347671240183693330",
+              "utm_params": [
+                {
+                  "key": "utm_source",
+                  "value": "tiktok"
+                },
+                {
+                  "key": "utm_medium",
+                  "value": "paid-social"
+                },
+                {
+                  "key": "utm_campaign",
+                  "value": "bujairiterracewinter_feb25_awr"
+                },
+                {
+                  "key": "utm_term",
+                  "value": "bujairiterracewinter_en"
+                },
+                {
+                  "key": "utm_content",
+                  "value": "video_en"
+                }
+              ],
+              "vast_moat_enabled": false,
+              "video_id": "v10033g50000cu93ts7og65ug4sausr0"
+            }
+          ]
+        }
+      },
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "71d4b688-0a80-4515-ba0b-791260b8fede",
+    "latencyMs": 2308
+  }
+}

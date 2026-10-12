@@ -1,0 +1,1365 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "snapchat_adaccounts_ad_account_id_creatives_get",
+    "method": "GET",
+    "host": "adsapi.snapchat.com",
+    "path": "/v1/adaccounts/8a1750fe-a8a8-4c73-b591-3a5a34937436/creatives",
+    "dryRun": false,
+    "data": {
+      "request_status": "SUCCESS",
+      "request_id": "b08c93ad-92c4-47f7-a52e-a3390d844c52",
+      "creatives": [
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "017a975b-cbb7-469b-a6e7-a144fc5a8e92",
+            "name": "SC_Market_Riyadh_AR_Dark_Story_04.02.25_Static_Man",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:17:42.313Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/the-souk?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_feb25_cond&utm_term=ar&utm_content=display_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "027e600c-dd86-4a0b-bec3-7c508fcd32a7",
+            "name": "SC_Layali_AR_Promoted_Spotlight_10.03.25_Video_Ramadan_8",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:05:11.514Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/layali-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_mar25_cond&utm_term=ar&utm_content=layali_video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "029b2247-23d0-46d4-9f9e-b478ad9df664",
+            "name": "SC_Layali_AR_Promoted_Spotlight_06.03.25_Video_14sec_Ramadan_4",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:25:36.446Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/layali-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_mar25_cond&utm_term=ar&utm_content=layali_video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "03b6eb6a-f126-49fc-a1ed-5fd9580b227b",
+            "name": "SC_StoryTelling_Riyadh_AR_promote_Video_Story",
+            "type": "COMPOSITE",
+            "updated_at": "2026-10-12T11:17:38.635Z",
+            "review_status": "APPROVED",
+            "composite_properties": {
+              "creative_ids": [
+                "ac77a96e-ef41-44a9-90d8-f18a0838d623"
+              ]
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "056dc5d9-2267-4706-93ea-8a08d35a2bd1",
+            "name": "DiriyahSeason_SC_KSA_AR_28.12.24_06.01.25_Video_Story_17Stories",
+            "type": "PREVIEW",
+            "updated_at": "2024-12-28T13:05:37.241Z",
+            "review_status": "APPROVED"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "062b1a8d-d59f-43ca-ad45-bf6e4c1e9385",
+            "name": "6S",
+            "type": "COMPOSITE",
+            "updated_at": "2026-10-12T11:16:02.172Z",
+            "review_status": "APPROVED",
+            "composite_properties": {
+              "creative_ids": [
+                "ad67cc95-3f53-4e6c-946e-79598c3a5ba8"
+              ]
+            },
+            "preview_creative_id": "4e4c24c5-9c08-4a49-a0ba-c080437f0f77"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "0a4b18d3-5a86-4c3d-a332-b2ea92a7db05",
+            "name": "DiriyahSeason_SC_KSA_AR_28.12.24_06.01.25_Video_Story_17Stories",
+            "type": "COMPOSITE",
+            "updated_at": "2026-10-12T11:08:05.270Z",
+            "review_status": "APPROVED",
+            "composite_properties": {
+              "creative_ids": [
+                "6e3bc9a4-1239-4c72-931e-baa37d3b3ea6"
+              ]
+            },
+            "preview_creative_id": "056dc5d9-2267-4706-93ea-8a08d35a2bd1"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "1070795a-b9c2-4ce7-9d12-734557c1d43c",
+            "name": "SC_StoryTelling_Riyadh_AR_Darkpost_Video_3",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:17:39.777Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/diriyah-storytelling-festival?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_feb25_cond&utm_term=ar&utm_content=storytelling_video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "130ba1ef-9fb9-484e-9145-dbab13e19128",
+            "name": "SC_Layali_AR_Promote_09.03.25_Static_Ramadan_6",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:27:27.617Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/layali-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_mar25_cond&utm_term=ar&utm_content=layali_display_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "157b94f8-0af6-4c65-b1d5-1fb36ec6888f",
+            "name": "SC_StoryTelling_Riyadh_AR_Promote_Video_1",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:27:23.659Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/diriyah-storytelling-festival?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_feb25_cond&utm_term=ar&utm_content=storytelling_video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "182393b0-f517-4f27-94ad-678017e04368",
+            "name": "DiriyahSeason_SC_KSA_AR_28.12.24_06.01.25_Video_Story_17Stories",
+            "type": "PREVIEW",
+            "updated_at": "2024-12-28T11:54:10.751Z",
+            "review_status": "PENDING_REVIEW"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "1f152ffb-3c9a-4eef-a639-c8be2ebe2323",
+            "name": "DiriyahSeason_SC_KSA_AR_20.12.24_06.01.25_Video_Story_30sec_UmmFaisal",
+            "type": "PREVIEW",
+            "updated_at": "2024-12-19T21:56:46.731Z",
+            "review_status": "APPROVED"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "1fac6679-6adb-4120-92aa-5b8e7e9793b7",
+            "name": "SC_StoryTelling_Riyadh_AR_Promote_Video_Story",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:28:37.392Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/diriyah-storytelling-festival?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_feb25_cond&utm_term=ar&utm_content=storytelling_video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "21f69994-dad9-4015-8b1b-03ce14921a8f",
+            "name": "DiriyahSeason_SC_Riyadh_AR_20.12.24_06.01.25_Video_Story_30sec_UmmFaisal",
+            "type": "PREVIEW",
+            "updated_at": "2024-12-19T21:55:48.867Z",
+            "review_status": "APPROVED"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "22697604-000f-43b2-8c4a-1378bc9c6fab",
+            "name": "SC_Market_Riyadh_AR_Promoted_Story_31.01.25_Video",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:12:21.947Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://webook.com/ar/zones/the-market-by-dragone-ds-24?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_jan25_cond&utm_term=ar&utm_content=display_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "24e0041d-499e-4a7f-9b86-887fd3f8a408",
+            "name": "DiriyahSeason_SC_KSA_AR_21.12.24_24.12.24_PlatformBurst_Commercial_30sec_Slogan",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:01:29.002Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase1-platformburst_dec24_awr&utm_term=ar&utm_content=video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "269ad941-e26f-4df8-8d1f-0ba9b050eba8",
+            "name": "SC_850_Riyadh_AR_Promoted_Spotlight_03.02.25_Video",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:02:21.588Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/850-experiences?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_feb25_cond&utm_term=ar&utm_content=video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "28a25898-cfc7-486e-af21-48fee8f99c62",
+            "name": "DiriyahSeason_SC_KSA_AR_20.12.24_06.01.25_Video_Story_30sec_UmmFaisal",
+            "type": "COMPOSITE",
+            "updated_at": "2026-10-12T11:12:59.257Z",
+            "review_status": "APPROVED",
+            "composite_properties": {
+              "creative_ids": [
+                "41f8dd53-918a-4abe-8bbf-333b1d547380"
+              ]
+            },
+            "preview_creative_id": "1f152ffb-3c9a-4eef-a639-c8be2ebe2323"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "29307da2-5041-4904-b921-1a280a68a141",
+            "name": "DiriyahSeason_SC_KSA_AR_28.12.24_06.01.25_Video_Story_17Stories",
+            "type": "WEB_VIEW",
+            "updated_at": "2024-12-28T11:54:10.599Z",
+            "review_status": "PENDING_REVIEW",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason?utm_source=SC&utm_medium=Paid_Social&utm_campaign=Phase1&utm_content=PromotedStories17&utm_term=AR"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "35e5a702-5b4a-4aa9-bd15-0b446ce91165",
+            "name": "SC_Market_Riyadh_AR_Promoted_Story_1.21min_09.02.25_Video",
+            "type": "WEB_VIEW",
+            "updated_at": "2025-02-09T10:33:13.954Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/the-souk?utm_source=SC&utm_medium=Paid_Social&utm_campaign=Phase2&utm_content=Souq_Traffic&utm_term=AR&utm_id=S34"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "3802e584-08f9-4f42-a5a3-c1420c592787",
+            "name": "DiriyahSeason_SC_KSA_AR_28.12.24_06.01.25_Video_Snap_17Snaps",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:05:31.720Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase1_dec24_awr&utm_term=ar&utm_content=video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "3b67050f-48a0-47c8-b237-0ff7930734e0",
+            "name": "SC_850_Riyadh_AR_Promoted_Spotlight_04.02.25_Video",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:12:19.533Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/850-experiences?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_feb25_cond&utm_term=ar&utm_content=video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "419e716f-3671-45d2-b04c-948ea7d436b1",
+            "name": "SC_Layali_AR_Promoted_04.03.25_Static_Ramadan_2_DNU",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:27:01.387Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/layali-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_cond&utm_term=ar&utm_content=layali_display_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "41f8dd53-918a-4abe-8bbf-333b1d547380",
+            "name": "DiriyahSeason_SC_KSA_AR_20.12.24_06.01.25_Video_Story_30sec_UmmFaisal",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:12:59.266Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase1_dec24_awr&utm_term=ar&utm_content=ummfaisal_video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "43b38ee1-8fdc-4cf7-99c9-0865b75dd4e2",
+            "name": "SC_Layali_AR_Promoted_Spotlight_06.03.25_Video_17sec_Ramadan_5",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:06:34.248Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/layali-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_mar25_cond&utm_term=ar&utm_content=layali_video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "493cd717-18fc-4c90-aed1-108c08bca1e6",
+            "name": "Test Commercial Ad",
+            "type": "SNAP_AD",
+            "updated_at": "2024-12-20T10:36:42.064Z",
+            "review_status": "APPROVED"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "4ced446b-1d78-413e-89cb-9c7a164b0461",
+            "name": "DiriyahSeason_SC_KSA_AR_Cutdown_12.01.25_22.02.25_Story",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:16:11.759Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/minzal?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_jan25_cond&utm_term=ar&utm_content=video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "4de17301-e0df-4db9-b024-f13fc8c8a0b3",
+            "name": "SC_Market_Riyadh_AR_Promoted_Story_01.02.25_Video",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:15:03.523Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/the-souk?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_feb25_cond&utm_term=ar&utm_content=video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "4e4c24c5-9c08-4a49-a0ba-c080437f0f77",
+            "name": "6S",
+            "type": "PREVIEW",
+            "updated_at": "2024-12-20T16:21:25.455Z",
+            "review_status": "APPROVED"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "4f06b9b1-e74c-426c-a049-590369fa8181",
+            "name": "SC_Layali_AR_Promoted_02.03.25_Static_Ramadan",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:01:42.576Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/layali-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_mar25_cond&utm_term=ar&utm_content=layali_display_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "4f09b0bc-d6c6-428a-8ce6-bbe45b87c24f",
+            "name": "SC_StoryTelling_Riyadh_AR_Promote_Video_Story",
+            "type": "COMPOSITE",
+            "updated_at": "2026-10-12T11:28:37.383Z",
+            "review_status": "APPROVED",
+            "composite_properties": {
+              "creative_ids": [
+                "1fac6679-6adb-4120-92aa-5b8e7e9793b7"
+              ]
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "4f638b15-f6ec-47dc-8fae-89edca2bdb0d",
+            "name": "SC_Market_AR_DARKPOST_16.02.25_Video_Cafe",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:25:19.729Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://webook.com/ar/zones/the-market-by-dragone-ds-24?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_feb25_cond&utm_term=ar&utm_content=video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "58a0f325-f1ea-4250-b223-bf7a64843187",
+            "name": "DiriyahSeason_SC_Riyadh_AR_19.12.24_06.01.25_Video_Story_2min_Hero",
+            "type": "PREVIEW",
+            "updated_at": "2024-12-19T19:08:52.894Z",
+            "review_status": "APPROVED"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "5af90a8e-5bf3-44a4-8239-f9cb7d6ca0ee",
+            "name": "DiriyahSeason_SC_KSA_AR_11.01.25_22.02.25_Story",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:15:50.697Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/minzal?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_jan25_cond&utm_term=ar&utm_content=ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "604258bb-db77-44f4-aaf7-3f1b3a239aae",
+            "name": "DiriyahSeason_SC_Riyadh_AR_Static_14.01.25_22.02.25",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:25:24.186Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/minzal?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_jan25_cond&utm_term=ar&utm_content=display_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "6594bcfd-4528-4f1b-b615-2308f9ea38c8",
+            "name": "DiriyahSeason_SC_KSA_AR_21.12.24_24.12.24_PlatformBurst_StoryAds_6sec_Slogan",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:09:29.396Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase1-platformburst_dec24_awr&utm_term=ar&utm_content=video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "6b591aa3-381a-4b91-af58-318995e30975",
+            "name": "DiriyahSeason_SC_KSA_AR_19.12.24_06.01.25_Video_Snap_2min_Hero",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:03:55.093Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase1_dec24_awr&utm_term=ar&utm_content=hero-tvc_video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "6d3af989-8528-46e4-a16b-972b7cb2d31f",
+            "name": "DiriyahSeason_SC_KSA_AR_21.12.24_24.12.24_PlatformBurst_StoryAds_6sec_Slogan",
+            "type": "COMPOSITE",
+            "updated_at": "2026-10-12T11:09:29.386Z",
+            "review_status": "APPROVED",
+            "composite_properties": {
+              "creative_ids": [
+                "6594bcfd-4528-4f1b-b615-2308f9ea38c8"
+              ]
+            },
+            "preview_creative_id": "cb7cf99b-9c62-41be-af00-bf7d5638fe79"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "6e3bc9a4-1239-4c72-931e-baa37d3b3ea6",
+            "name": "DiriyahSeason_SC_KSA_AR_28.12.24_06.01.25_Video_Story_17Stories",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:08:05.282Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase1_dec24_awr&utm_term=ar&utm_content=video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "6f18f2f8-b485-4e65-8a06-31c62522e259",
+            "name": "SC_StoryTelling_Riyadh_AR_Promoted_Image",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:18:33.425Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/diriyah-storytelling-festival?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_feb25_cond&utm_term=ar&utm_content=storytelling_display_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "72da1720-4fd1-447a-a2e0-e5d0d7543c20",
+            "name": "DiriyahSeason_SC_Riyadh_AR_20.12.24_06.01.25_Video_Story_30sec_UmmFaisal",
+            "type": "COMPOSITE",
+            "updated_at": "2026-10-12T11:14:33.549Z",
+            "review_status": "APPROVED",
+            "composite_properties": {
+              "creative_ids": [
+                "b2dda70f-2053-4e88-a1c2-f56640014812"
+              ]
+            },
+            "preview_creative_id": "21f69994-dad9-4015-8b1b-03ce14921a8f"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "7377c80d-6cdb-4db2-aa50-e603ad4570bf",
+            "name": "SC_Market_AR_DarkPost_16.02.25_Video_Foreigners",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:26:11.201Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://webook.com/ar/zones/the-market-by-dragone-ds-24?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_feb25_cond&utm_term=ar&utm_content=video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "74783953-8da2-4db9-bcf6-598b39e90875",
+            "name": "Storytelling_Riyadh_AR_Promote_Video_Spotlight_03.02.25_08.02.25",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:03:32.151Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/diriyah-storytelling-festival?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_feb25_cond&utm_term=ar&utm_content=storytelling_video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "7b085b06-cb11-48d6-b093-1dc1927ce641",
+            "name": "PlaceHolder",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:14:21.925Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/diriyah-storytelling-festival?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_cond&utm_term=ar&utm_content=ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "7d79b66a-4053-4289-a45a-3453c9e142a6",
+            "name": "Sold Out",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:19:11.661Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/the-souk?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_feb25_cond&utm_term=ar&utm_content=ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "7ff5f102-60bb-444d-a250-8994887f1bc3",
+            "name": "DiriyahSeason_SC_KSA_AR_21.12.24_24.12.24_PlatformBurst_SnapAds_30sec_Slogan",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:29:02.261Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase1-platformburst_dec24_awr&utm_term=ar&utm_content=video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "8090cf0d-f930-4f8a-88de-4a09695e30ed",
+            "name": "DiriyahSeason_SC_KSA_AR_19.12.24_06.01.25_Video_Story_2min_Hero",
+            "type": "COMPOSITE",
+            "updated_at": "2026-10-12T11:09:45.315Z",
+            "review_status": "APPROVED",
+            "composite_properties": {
+              "creative_ids": [
+                "fa898436-07c0-4159-856b-09b1dbcda0c0"
+              ]
+            },
+            "preview_creative_id": "c926196b-0476-4764-91f4-2c5c514ee6a7"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "82ea81a9-3418-4aee-8425-5f1f4373dea2",
+            "name": "SC_Market_Riyadh_AR_Promoted_Story_5sec_05.02.25_Video",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:25:27.017Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/the-souk?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_feb25_cond&utm_term=ar&utm_content=video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "83fd36ad-2f31-42f7-bb0e-1a3a5fe02e17",
+            "name": "SC_Layali_AR_Dark_06.03.25_Static_Ramadan_4",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:30:58.760Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/layali-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_mar25_cond&utm_term=ar&utm_content=display_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "83fe6262-b5a2-4ac3-bc26-bff623edfbff",
+            "name": "Riyadh_Minzal_Snap Ad",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:14:19.058Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/minzal?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_jan25_cond&utm_term=ar&utm_content=ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "840d8fe6-67e7-4496-804d-6aa77431c067",
+            "name": "DiriyahSeason_SC_Riyadh_AR_19.12.24_06.01.25_Video_Story_2min_Hero",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:09:35.522Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase1_dec24_awr&utm_term=ar&utm_content=hero-tvc_video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "8a99a872-1f1f-44c2-bc11-3b37f38d719f",
+            "name": "SC_Market_Riyadh_AR_Dark_Story_02.02.25_Static",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:24:00.377Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/the-souk?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_feb25_cond&utm_term=ar&utm_content=display_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "8cba7c99-b3d3-4b3c-a201-936fa2415169",
+            "name": "DiriyahSeason_SC_KSA_AR_28.12.24_06.01.25_Video_Story_17Stories",
+            "type": "COMPOSITE",
+            "updated_at": "2024-12-28T11:54:12.672Z",
+            "review_status": "PENDING_REVIEW",
+            "composite_properties": {
+              "creative_ids": [
+                "29307da2-5041-4904-b921-1a280a68a141"
+              ]
+            },
+            "preview_creative_id": "182393b0-f517-4f27-94ad-678017e04368"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "9060f545-88f9-43db-b5b4-a8efe9b6ff56",
+            "name": "SC_Market_AR_Promoted_16.02.25_Video_Supermarket",
+            "type": "WEB_VIEW",
+            "updated_at": "2025-02-16T11:41:07.757Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://webook.com/ar/zones/the-market-by-dragone-ds-24?utm_source=SC&utm_medium=Paid_Social&utm_campaign=Phase2&utm_content=Souq_Traffic&utm_term=AR&utm_id=S40https://webook.com/ar/zones/the-market-by-dragone-ds-24?utm_source=SC&utm_medium=Paid_Social&utm_campaign=Phase2&utm_content=Souq_Traffic&utm_term=AR&utm_id=S40"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "996addcf-eb10-4877-98be-1af7568fa3fd",
+            "name": "SC_Layali_AR_Promoted_04.03.25_Static_Ramadan_2",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:26:58.261Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/layali-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_mar25_cond&utm_term=ar&utm_content=layali_display_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "9987bb28-79bc-42c0-bcdf-17fec38f962a",
+            "name": "DiriyahSeason_SC_Riyadh_AR_Static_16.01.25_22.02.25_Males",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:23:57.368Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/minzal?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_jan25_cond&utm_term=ar&utm_content=display_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "9a235547-b654-4d1b-bb03-823b1273a446",
+            "name": "850 Ad",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:11:22.991Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/850-experiences?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_jan25_cond&utm_term=ar&utm_content=ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "9a9f74d4-adc4-4ad8-9184-6bbf7d387670",
+            "name": "SC_Market_Riyadh_AR_Promoted_Story_1.21min_09.02.25_Video",
+            "type": "COMPOSITE",
+            "updated_at": "2025-02-09T10:33:13.944Z",
+            "review_status": "APPROVED",
+            "composite_properties": {
+              "creative_ids": [
+                "35e5a702-5b4a-4aa9-bd15-0b446ce91165"
+              ]
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "9f9eb9ce-b0dc-4b38-a748-752ad7930df0",
+            "name": "30S",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:16:59.178Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase1-platformburst_awr&utm_term=ar&utm_content=video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "a066fb8f-8192-4834-8024-0ee29142d05d",
+            "name": "DiriyahSeason_SC_Riyadh_AR_Static_16.01.25_22.02.25_Females",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:27:03.182Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/minzal?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_jan25_cond&utm_term=ar&utm_content=display_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "a17ae36f-b7f4-4dd3-84cf-d8aa62bc7292",
+            "name": "Storytelling_Riyadh_AR_Promote_Video_Spotlight_04.02.25_08.02.25",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:16:46.530Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/diriyah-storytelling-festival?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_feb25_cond&utm_term=ar&utm_content=storytelling_video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "a19a540a-6631-46ab-b7ef-0f4dcfdb3dd1",
+            "name": "DiriyahSeason_SC_Riyadh_AR_28.12.24_06.01.25_Video_Story_17Stories",
+            "type": "COMPOSITE",
+            "updated_at": "2026-10-12T11:16:11.907Z",
+            "review_status": "APPROVED",
+            "composite_properties": {
+              "creative_ids": [
+                "b0923089-bb2b-4b14-b482-dbf70df54331"
+              ]
+            },
+            "preview_creative_id": "ae552687-c574-40e9-8421-ec72163521a5"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "a236505b-07d7-4058-a88d-4e0bc2026622",
+            "name": "DiriyahSeason_SC_Riyadh_AR_28.12.24_06.01.25_Video_Snap_17Snaps",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:07:11.496Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase1_dec24_awr&utm_term=ar&utm_content=video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "a6ef5ca5-a138-436b-bc8c-f87850cda12d",
+            "name": "SC_Market_Riyadh_AR_Promoted_Story_10sec_05.02.25_Video_2",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:15:20.960Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/the-souk?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_feb25_cond&utm_term=ar&utm_content=video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "a6f63a5a-af85-4ed3-84d2-cc1c57f65065",
+            "name": "SC_Market_Riyadh_AR_Promoted_Story_10sec_05.02.25_Video",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:24:25.040Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/the-souk?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_feb25_cond&utm_term=ar&utm_content=video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "a703d3aa-d844-4498-b99a-cc0762cd0c05",
+            "name": "15S",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:15:52.099Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase1-platformburst_awr&utm_term=ar&utm_content=video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "a70e9460-d525-4594-aa9c-1ea4fc0b173d",
+            "name": "SC_Market_Riyadh_AR_Promoted_Spotlight_01.02.25_Video",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:03:11.449Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/the-souk?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_feb25_cond&utm_term=ar&utm_content=video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "a76b3d53-68ae-4a61-82a5-25df34b25b0c",
+            "name": "SC_Market_AR_Promoted_16.02.25_Video_Supermarket",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:15:47.126Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://webook.com/ar/zones/the-market-by-dragone-ds-24?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_feb25_cond&utm_term=ar&utm_content=video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "ac77a96e-ef41-44a9-90d8-f18a0838d623",
+            "name": "SC_StoryTelling_Riyadh_AR_promote_Video_Story",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:17:38.644Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/diriyah-storytelling-festival?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_cond&utm_term=ar&utm_content=storytelling_video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "ad67cc95-3f53-4e6c-946e-79598c3a5ba8",
+            "name": "6S",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:16:02.181Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase1-platformburst_awr&utm_term=ar&utm_content=video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "ae552687-c574-40e9-8421-ec72163521a5",
+            "name": "DiriyahSeason_SC_Riyadh_AR_28.12.24_06.01.25_Video_Story_17Stories",
+            "type": "PREVIEW",
+            "updated_at": "2024-12-28T13:04:57.435Z",
+            "review_status": "APPROVED"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "aeab7a03-37f0-4cd8-8080-ef734d0a71ce",
+            "name": "DiriyahSeason_SC_Riyadh_AR_19.12.24_06.01.25_Video_Story_2min_Hero",
+            "type": "COMPOSITE",
+            "updated_at": "2026-10-12T11:09:35.513Z",
+            "review_status": "APPROVED",
+            "composite_properties": {
+              "creative_ids": [
+                "840d8fe6-67e7-4496-804d-6aa77431c067"
+              ]
+            },
+            "preview_creative_id": "58a0f325-f1ea-4250-b223-bf7a64843187"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "af87f63e-1461-44fe-8b3f-1d1a4451a7df",
+            "name": "SC_Minzal_Riyadh_darkpost",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:25:41.708Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/minzal?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_jan25_cond&utm_term=ar&utm_content=minzal_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "b0923089-bb2b-4b14-b482-dbf70df54331",
+            "name": "DiriyahSeason_SC_Riyadh_AR_28.12.24_06.01.25_Video_Story_17Stories",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:16:11.915Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase1_dec24_awr&utm_term=ar&utm_content=video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "b11ad46a-3423-457d-af4b-284f1910682c",
+            "name": "SC_Layali_AR_PromotedPost_18.02.25_Static",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:13:41.922Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/layali-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_feb25_cond&utm_term=ar&utm_content=layali_display_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "b2dda70f-2053-4e88-a1c2-f56640014812",
+            "name": "DiriyahSeason_SC_Riyadh_AR_20.12.24_06.01.25_Video_Story_30sec_UmmFaisal",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:14:33.560Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase1_dec24_awr&utm_term=ar&utm_content=ummfaisal_video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "babe83f6-4b5c-4455-9f35-57939917509d",
+            "name": "DiriyahSeason_SC_Riyadh_AR_11.01.25_22.02.25_Story",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:26:51.709Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/minzal?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_jan25_cond&utm_term=ar&utm_content=ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "bba92e82-8f5e-4c89-963e-8ab15aeff649",
+            "name": "30S",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:04:06.514Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase1-platformburst_awr&utm_term=ar&utm_content=video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "bced82bc-4c76-46e1-844d-b2c3fe4c212f",
+            "name": "DiriyahSeason_SC_Riyadh_AR_Cutdown_12.01.25_22.02.25",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:29:25.997Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/minzal?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_jan25_cond&utm_term=ar&utm_content=video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "bd4c3984-22ec-468d-bc63-964273faa43a",
+            "name": "SC_Layali_AR_Promoted_Story_13.03.25_Video_Ramadan_9",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:14:25.012Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/layali-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_mar25_cond&utm_term=ar&utm_content=layali_video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "be9d8095-fa4a-4af9-a044-e1328ee571ba",
+            "name": "SC_Layali_AR_DarkPost_18.02.25_Video_16sec",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:15:15.596Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/layali-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_feb25_cond&utm_term=ar&utm_content=layali_video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "becc46a3-533f-4cb1-8ab9-dd08394a1f6e",
+            "name": "SC_Market_Riyadh_AR_Dark_20sec_01.02.25_Video",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:12:39.780Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/the-souk?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_feb25_cond&utm_term=ar&utm_content=video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "bef08368-dc60-4da5-83bc-ea413861e96b",
+            "name": "DiriyahSeason_SC_Riyadh_AR_20.12.24_06.01.25_Video_Snap_30sec_UmmFaisal",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:16:23.347Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase1_dec24_awr&utm_term=ar&utm_content=ummfaisal_video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "c2853200-e047-4dff-89f5-15aeec572b7d",
+            "name": "SC_850_Riyadh_AR_Promoted_Spotlight_22.01.25_Video",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:17:05.909Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/850-experiences?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_jan25_cond&utm_term=ar&utm_content=video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "c2fcf1a1-a781-4386-b120-f36bb27aa4b0",
+            "name": "DiriyahSeason_SC_KSA_AR_Static_14.01.25_22.02.25",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:23:55.527Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/minzal?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_jan25_cond&utm_term=ar&utm_content=display_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "c51fa690-518d-4ea1-b059-456597dfb8d0",
+            "name": "SC_Layali_AR_Promoted_Spotlight_10.03.25_Video_Ramadan_7",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:15:25.226Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/layali-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_mar25_cond&utm_term=ar&utm_content=layali_video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "c860bb59-fcdc-47de-b6dc-557280a2a417",
+            "name": "DiriyahSeason_SC_KSA_AR_20.12.24_06.01.25_Video_Snap_30sec_UmmFaisal",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:09:10.770Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase1_dec24_awr&utm_term=ar&utm_content=ummfaisal_video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "c926196b-0476-4764-91f4-2c5c514ee6a7",
+            "name": "DiriyahSeason_SC_KSA_AR_19.12.24_06.01.25_Video_Story_2min_Hero",
+            "type": "PREVIEW",
+            "updated_at": "2024-12-19T19:15:47.489Z",
+            "review_status": "APPROVED"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "cb7cf99b-9c62-41be-af00-bf7d5638fe79",
+            "name": "DiriyahSeason_SC_KSA_AR_21.12.24_24.12.24_PlatformBurst_StoryAds_6sec_Slogan",
+            "type": "PREVIEW",
+            "updated_at": "2024-12-20T16:43:13.750Z",
+            "review_status": "APPROVED"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "cb8a696c-ff90-447b-af37-53b0c099d405",
+            "name": "KSA_Snap",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:16:39.234Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/minzal?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_jan25_cond&utm_term=ar&utm_content=ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "d0ccc143-abe0-4808-b54e-523470124cd5",
+            "name": "Storytelling_Static_Day4-5_06.02.25",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:06:40.769Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/diriyah-storytelling-festival?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_feb25_cond&utm_term=ar&utm_content=storytelling_display_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "d418b024-89ed-4787-a02c-62d2224fd781",
+            "name": "SC_Market_AR_DARKPOST_16.02.25_Video_Foreigners",
+            "type": "WEB_VIEW",
+            "updated_at": "2025-02-16T11:41:27.944Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://webook.com/ar/zones/the-market-by-dragone-ds-24?utm_source=SC&utm_medium=Paid_Social&utm_campaign=Phase2&utm_content=Souq_Traffic&utm_term=AR&utm_id=S40https://webook.com/ar/zones/the-market-by-dragone-ds-24?utm_source=SC&utm_medium=Paid_Social&utm_campaign=Phase2&utm_content=Souq_Traffic&utm_term=AR&utm_id=S40"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "d6dd40d0-5a7e-4ea6-8e5c-fa25601df51e",
+            "name": "SC_Market_Riyadh_AR_Promoted_09.02.25_Video",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:12:25.119Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://webook.com/ar/zones/the-market-by-dragone-ds-24?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_feb25_cond&utm_term=ar&utm_content=video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "d7217c7e-cc40-49e7-a89d-0364857077c1",
+            "name": "DiriyahSeason_SC_Riyadh_AR_19.12.24_06.01.25_Video_Snap_2min_Hero",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:09:16.738Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase1_dec24_awr&utm_term=ar&utm_content=hero-tvc_video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "d9e917ec-6936-4c9d-9d7b-9771d74cbe90",
+            "name": "SC_StoryTelling_Riyadh_AR_promote_Video_2",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:10:39.057Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/diriyah-storytelling-festival?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_feb25_cond&utm_term=ar&utm_content=storytelling_video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "df457965-f505-49f1-89ad-7eba08b4eb89",
+            "name": "SC_Market_Riyadh_AR_Promoted_06.02.25_Story_Static",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:03:53.086Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://webook.com/ar/zones/the-market-by-dragone-ds-24?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_feb25_cond&utm_term=ar&utm_content=display_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "e1fa74f3-3726-4e02-9054-4541a166a0b5",
+            "name": "SC_Layali_AR_Dark_04.03.25_Static_Ramadan_3",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:14:02.924Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/layali-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_mar25_cond&utm_term=ar&utm_content=layali_display_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "e49d2695-9dcf-4baf-b462-a91fcaacc8a1",
+            "name": "SC_Minzal_KSA_Darkpost",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:18:50.963Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/minzal?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_jan25_cond&utm_term=ar&utm_content=minzal_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "e8d92c47-90d8-419a-95e5-0e7ad287ab8b",
+            "name": "DiriyahSeason_SC_KSA_AR_21.12.24_24.12.24_PlatformBurst_SnapAds_15sec_Slogan",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:04:15.307Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase1-platformburst_dec24_awr&utm_term=ar&utm_content=video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "f1ffc45d-a7c0-4cf6-8065-c1c1a2ea9a28",
+            "name": "SC_Layali_AR_DarkPost_17.02.25_Video_Promo",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:21:49.459Z",
+            "review_status": "DISAPPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason/layali-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase2_feb25_cond&utm_term=ar&utm_content=layali_video_ar"
+            }
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "fa898436-07c0-4159-856b-09b1dbcda0c0",
+            "name": "DiriyahSeason_SC_KSA_AR_19.12.24_06.01.25_Video_Story_2min_Hero",
+            "type": "WEB_VIEW",
+            "updated_at": "2026-10-12T11:09:45.327Z",
+            "review_status": "APPROVED",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/diriyahseason?utm_source=snapchat&utm_medium=paid-social&utm_campaign=phase1_dec24_awr&utm_term=ar&utm_content=hero-tvc_video_ar"
+            }
+          }
+        }
+      ]
+    },
+    "meta": {
+      "requestId": "b08c93ad-92c4-47f7-a52e-a3390d844c52",
+      "waitedMs": 456,
+      "throttled": false,
+      "warnings": [],
+      "partialFailure": null,
+      "asyncReport": null,
+      "compatibility": null,
+      "compatibilitySkipped": true,
+      "mcp_result_projection": {
+        "fields": [
+          "sub_request_status",
+          "creative.id",
+          "creative.name",
+          "creative.type",
+          "creative.updated_at",
+          "creative.review_status",
+          "creative.web_view_properties.url",
+          "creative.composite_properties",
+          "creative.preview_creative_id",
+          "creative.deep_link_properties",
+          "creative.collection_properties",
+          "creative.app_install_properties",
+          "creative.lead_generation_properties"
+        ],
+        "compact": true
+      }
+    }
+  },
+  "meta": {
+    "requestId": "24abf60e-f89b-427d-8986-2a72e07a6664",
+    "latencyMs": 2223
+  }
+}

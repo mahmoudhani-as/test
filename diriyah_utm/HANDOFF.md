@@ -1,6 +1,6 @@
 # Diriyah / Wadi Safar UTM fix: handoff
 
-State at the pause on 12-Oct-2026 (evening). Everything needed to carry on is in this folder (`diriyah_utm/`).
+State at the stop on 12-Oct-2026 (about 14:25 UTC, Whathead asked to sign in again). Everything needed to carry on is in this folder (`diriyah_utm/`).
 Copy it to your scratchpad and work there. Do not edit the repo's own app files (`Code.gs`, etc.); they are unrelated.
 
 ## What the user asked for and decided
@@ -25,101 +25,94 @@ The rules decided with the user, all binding:
 - **12-Oct omit rule:** "for unknown figures like ad tokens write the utm without them". If a part cannot be sourced, leave it out; never invent it.
   If a whole parameter has no known part, drop the parameter.
 - **12-Oct:** "apply everything that can be applied", including the Meta 1–7 and X 1–6 batches. If the safety check blocks them again, they go on the user's manual list.
+- **12-Oct (apply6 approval):** every remaining apply6 write is approved (1,433 changes in 1,159 units), URL (+ tied UTM field) only. Safety-blocked writes are recorded,
+  not worked around; at the end the user is told which permission rule lets them through. Stop everything if Whathead asks to sign in again.
 
-## State at the pause (12-Oct, evening)
+## State at the stop (12-Oct-2026, about 14:25 UTC)
 
-On 12-Oct the user confirmed "go ahead, apply the remaining writes". Later they said "pause everything for now", and every write run was stopped.
-After that, the Whathead connector signed out of the session. **It must be reconnected (claude.ai > Customize > Connectors) before anything else can be read or written.**
-A new session may be needed for the reconnect to take effect.
+On 12-Oct the user approved every remaining write in `apply6/` (1,433 changes in 1,159 units), including the 176 safety-blocked ones, with these rules: change only the
+destination URL (plus a tied UTM field such as TikTok utm_params) and nothing else, at most 2 attempts per write, never delete, never touch anything outside the batch files,
+never retry the 19 platform-refused slots, do not work around the safety check, and **stop all runs if Whathead asks to sign in again**.
 
-Latest workbook sent to the user: `out/Diriyah_UTM_Verification_2026-10-12_at_pause.xlsx`.
-- "Now" = the 12-Oct keyed re-read overlaid with every apply5 read-back (`work/live_interim.json`).
-- Its Summary formulas, recalculated in LibreOffice, match the Python counts.
+The `apply6` runs were started (13 workflow runs, ids in `apply6/runs.json`). At about 14:24 UTC Whathead asked to sign in again (X batch 9, Snapchat batch 2, X batch 8),
+so **every run was stopped**, as the user asked. Whathead answered again a minute later (fresh login 14:24:40 UTC), but nothing was resumed: the user decides.
 
-| Scope | Before (11-Oct) | At the pause |
-|---|---|---|
-| Ad URL slots | 3,339 of 3,339 wrong (100%) | 1,680 wrong (50.3%) |
-| Ads with a URL | 2,944 of 2,944 wrong (100%) | 1,341 wrong (45.6%) |
-| Switched-on ads | 653 of 653 wrong (100%) | 277 wrong (42.4%) |
-| Google sitelink assets | 380 of 380 wrong (100%) | 22 wrong (5.8%) |
+**Results of the apply6 run at the stop** (last result line per change; `python3 scripts/check_apply.py . apply6`, every Fixed line equals the plan byte for byte):
 
-Ad slot status at the pause:
-
-| Status | Slots |
+| Outcome | Changes |
 |---|---|
-| Fixed 12-Oct | 1,472 |
-| Fixed 11-Oct | 187 |
-| Paused - not yet written | 1,245 |
-| Not applied - safety check | 176 (Google 162, TikTok 14) |
-| Manual for the user | 247 |
-| Refused by the platform | 12 |
+| Written and read back byte for byte | 314 (Google 5, Meta 36, Snapchat 100, TikTok 59, X 114) |
+| Already correct when re-read (no write) | 64 |
+| Blocked by the session safety check (not worked around) | 403 (Google 204, Meta 131, Snapchat 56, X 12) |
+| Held for the user: TikTok Spark Push (see below) | 72 so far (99 Spark Push units in the plan) |
+| Refused by the platform | 9 (8 archived Meta ads, 1 TikTok Spark Pull with expired authorisation) |
+| Not written because of the sign-in prompt | 14 |
+| No result yet (batch not reached, or in flight at the stop) | 557 (Meta 283, TikTok 194, Snapchat 65, X 15); per batch in `apply6/batches_at_stop.json` |
 
-The safety-check slots were blocked by this session's auto-mode safety check even after the user's OK. The agents did not work around the block.
-- If it happens again, the user can add a permission rule for the Whathead Google Ads / TikTok write actions.
+- X batch 5 wrote and verified 5 cards whose result lines could not be recorded (the safety check denied the local append; it was not worked around):
+  units 1981346935652176185, 1981346935845032417, 1981346934557463016, 1981367758236635343, 1981367507114946900. A re-read will show them as correct.
+- Writes in flight when the runs were stopped may have no result line (or, on Meta, an unattached new creative). Every unit is re-read first on resume, so nothing is written twice.
 
-**The apply5 run** (`apply5/`, built from the 12-Oct re-read, with 8 platform-refused TikTok ads held):
-- `out_*.jsonl` holds 1,522 Fixed result lines: Google 940 (ads and sitelinks), X 259, Snapchat 159, TikTok 122, Meta 42.
-- Every Fixed line was read back byte for byte. Use `python3 scripts/check_apply.py . apply5` to see it per batch.
+**Re-read (`reread2/`) at the stop:** 12 of the 21 jobs are done (every account apply6 does not write to: Google 9282725829 and 9863260160, LinkedIn x3,
+Meta 1033388761412991, TikTok 7280828159585468418, Snapchat 623ccdb3 / 7eee5995 / 8a1750fe / 189a5ada / 377f9c96). The Google 8324286739 re-read was stopped.
+Still to re-read: Google 8324286739, Meta 1198625455580757 and 2194833637927644, Snapchat b736921f and ebe8d66e, TikTok 7338057963233443842 and 7338074303931449345,
+X 18ce55o46uh and 18ce55o46ul (`reread2/job_groups.json`, group "later").
 
-**Refused by the platform (never retry; on the manual list):**
-- Google, 4 ads:
-  - 2 have a PROHIBITED symbols finding in their existing ad text (`788673874481`, `788673874484`).
-  - 2 have other policy findings.
-- Meta, 7 ads:
-  - 6 are page-only creatives in Instagram-only ad sets, where Meta requires an Instagram account.
-  - 1 is the `t.co` link ad. Its new creative `28547059748288778` was not attached, because Meta would show "t.co" as the headline.
-- TikTok, 8 ads: 7 Spark Pull ads with expired authorisation, plus `1818763664085073`. These are in `work/excl_platform_refused.json`.
-- All 19 are listed in `work/excl_platform_refused_v2.json`.
+**Interim workbook:** `out/Diriyah_UTM_Verification_2026-10-12_at_signin_stop.xlsx` (recalculated in LibreOffice; all 191 Summary cells equal the Python counts).
+"Now" = `work/live_interim2.json` = the at-pause state + the 12 re-read accounts + every apply6 read-back (`scripts/interim_live.py`).
 
-**Orphans and interrupted writes:**
-- Two unattached Meta creatives exist: `28547059748288778` and `1140805768470919`. They are harmless.
-- Writes that were in flight when the runs were stopped may have left one more unattached Meta creative, or a write with no result line.
-- On resume every unit is re-read first and recorded as AlreadyFixed when it already has the new URL, so nothing is written twice.
+| Scope | Before (11-Oct) | At the stop |
+|---|---|---|
+| Ad URL slots | 3,339 wrong (100%) | 1,303 wrong (39.0%) |
+| Ads with a URL | 2,944 wrong (100%) | 1,041 wrong (35.4%) |
+| Switched-on ads | 653 wrong (100%) | 246 wrong (37.7%) |
+| Google sitelink assets | 380 wrong (100%) | 21 wrong (5.5%) |
 
-## Next step: resume with `apply6/` (once Whathead is connected again)
+### TikTok Spark Push side effect (found 12-Oct, must not be repeated)
 
-`apply6/` is the remaining plan, built from the targets plus the state at the pause. It was made with:
+A Spark Push ad (identity_type BC_AUTH_TT **with** a tiktok_item_id) written with the old recipe (full ad/update with video_id and **without** tiktok_item_id)
+looked unchanged on the immediate read-back, but **30-60 minutes later TikTok re-published the video as a new post and re-pointed the ad to it**.
+The ad loses the original post's likes and comments, and the API refuses to point it back (40002). Read-only check on 12-Oct (`work/spark_check/`):
+**53 of the 76 Spark ads written on 11/12-Oct now run on a new post** (list with old and new post ids in the workbook sheet "TikTok posts re-published").
+Not affected: Upgraded Smart+ ads (9 of 9 kept their post), Spark Pull ads sent with the same tiktok_item_id (2 of 2), carousels without a post (71 of 71 still have none),
+and CUSTOMIZED_USER ads (no post). Ad 1825846574224498 was written this way on 12-Oct at 13:57 UTC before the finding; at 14:22 UTC it still had its original post - re-check it.
+**Every Spark Push ad is now held** (`NotAttempted`, "held for the user") until the user decides; the apply script no longer contains the old recipe.
 
-```
-LIVE_FILE=work/live_interim.json python3 scripts/round_plan.py . apply6 --exclude work/excl_platform_refused_v2.json
-```
+### Session safety check
 
-- **Slots:** 1,572 slots (sitelink placements included) still need an edit, in 1,159 units with 1,433 changes.
-- **Units:** TikTok 331, Meta 310, Google 221 ads + 18 sitelink assets, Snapchat 153, X 126.
-- **Batches:** 65, listed in `apply6/batches.json` (Google 5, Meta 26, Snapchat 8, TikTok 17, X 9).
-- **Included:** the 176 safety-check slots. The user approved them, so they are retried; if the check blocks them again, they are recorded and reported.
+The auto-mode classifier denied mostly the agents' local Bash steps that build a write payload or append a result line ("Modify Shared Resources", "Auto-Mode Bypass",
+"Real-World Transactions", once "Production Deploy"), and a few write calls. Per the docs (code.claude.com, permission-modes / workflows): a matching `permissions.allow`
+rule resolves before the classifier, and workflow subagents use the same rules; approval text inside a workflow agent's prompt does not count as the user's approval.
+In a cloud session the rules must be committed to the repository's `.claude/settings.json` (single-repo session). The rule that lets the Whathead writes through:
+`"permissions": {"allow": ["mcp__Whathed_MCP__google_ads_native_action", "mcp__Whathed_MCP__meta_native_action", "mcp__Whathed_MCP__snapchat_native_action", "mcp__Whathed_MCP__tiktok_native_action", "mcp__Whathed_MCP__x_ads_native_action"]}`
+(or `"mcp__Whathed_MCP__*"`). A broad `Bash(python3 *)` rule may be dropped in auto mode (wildcard interpreters), so a re-run should tell the agents to pass payloads
+straight to the Whathead tool and record results with the Write/Edit tool rather than Bash. Only the user may add these rules.
 
-Steps:
-1. **Check the connector.** Run `ToolSearch "select:mcp__Whathed_MCP__whathead_workspace"`, then `list_accounts`.
-2. **Apply.** Use `workflows/diriyah-apply-v6.js`, with args:
-   - `platform`
-   - `dir`: absolute path of `apply6/`
-   - `root`: absolute path of `diriyah_utm/`
-   - `batches`: the list from `batches.json`
-   - `canary`
+## Next step: resume (only when the user says so)
 
-   On 12-Oct every platform's canary passed, so `canary:false` is fine. Split each platform's batches across 2-4 runs to go faster: the concurrency cap is 2 agents per run, and the machine had plenty of headroom with 12 runs.
-   - The Workflow tool needs the user's opt-in, such as ultracode or "use a workflow". Without it, run the batches with background Agent subagents, one batch file each, using the same prompt text (COMMON + HOW[platform] from the script).
-3. **Check every batch.** Run `python3 scripts/check_apply.py . apply6`.
-4. **Re-read.** Use `workflows/diriyah-keyed-reread-wf_bcf6cc60-eab.js` with `{jobs}` from `reread2/jobs.json`, which writes to `reread2/out/`. Then run:
-   - `python3 scripts/merge_live.py . reread2/out`
-   - `python3 scripts/round_plan.py . round7`, for anything left
-5. **Rebuild the workbook.** Run `python3 scripts/build_final2.py . out/<name>.xlsx reread2 round7`, with env `APPLY=apply6`.
-   - For an interim build without a re-read, use `LIVE_FILE=work/live_interim.json` and run `scripts/overlay_live.py` first.
-   - Recalculate with `soffice --headless --convert-to xlsx` and check the Summary against the printed counts.
-
-**Rebuilding targets from scratch.** Run `scripts/rebuild_all.sh`. It runs legacy → omit (+ sitelinks) → targets → fix_months → consistency.
+1. Check the connector (`whathead_workspace list_accounts`). If Whathead asks to sign in, stop and tell the user.
+2. If the user added the permission rule and/or decided on the Spark Push ads, update `workflows/diriyah-apply-v6.js` (HOW.tiktok holds Spark Push ads; change it only on the user's word).
+3. Re-run the apply6 batches that still have changes without a result (`apply6/batches_at_stop.json`), and the blocked ones if the rule is in place.
+   Every unit is re-read first, so finished ones come back AlreadyFixed. Same args as before: {platform, dir, root, batches, canary:false}.
+4. Re-read the 9 remaining accounts with `workflows/diriyah-keyed-reread-wf_bcf6cc60-eab.js` (jobs: `reread2/job_groups.json` "later"; paths already rewritten for
+   this scratchpad - rewrite `in_file`/`out_file`/`new_file` again if the scratchpad path changes).
+5. `python3 scripts/merge_live.py . reread2/out`, then `python3 scripts/round_plan.py . round7 --exclude work/excl_platform_refused_v2.json`.
+6. Workbook: `FINAL=1 APPLY=apply6 PENDING_LABEL='Not written' python3 scripts/build_final2.py . out/Diriyah_UTM_Verification_<date>_final.xlsx reread2 round7`, then
+   `python3 scripts/check_summary.py out/<file>.xlsx work/summary_expected.json --replace` (LibreOffice recalculation + check of every Summary cell).
+   For an interim build: `scripts/interim_live.py` first, then `LIVE_FILE=work/live_interim2.json INTERIM='<why>'` with the same command.
 
 ## Open questions for the user
 
 These are also in the workbook's "Questions for you" tab.
+- **TikTok Spark Push ads (new, 12-Oct):** an API URL edit makes TikTok re-publish the post and detach the ad from the original post. Write them anyway, or leave them to the user (Ads Manager)? 99 units in the plan are held.
+- **Resume:** the apply6 run was stopped when Whathead asked to sign in again; resume only on the user's word (and after any permission rule they add).
 - **utm_medium:** the generator medium is used per source (google → paid-search, social → paid-social). Keep it, or keep old valid Mappings values?
 - **Demand Gen (`gadg`):** the generator has no row for it, so the medium is left out. Should it be paid-display or paid-video?
 - **`visitor-diriyah-coe`:** this template campaign name was pasted on the Bujairi, Zallal, Bab Samhan and Shopping 2026 campaigns. Only its name field is used, which merges them in reports.
 - **`hs-` prefix:** it is kept on legacy H&S tokens.
 - **Source:** the source follows the channel in the campaign name (instagram → meta, twitter → x).
 - **Ritz rule:** it is applied to Ritz-Carlton Signature (2026) search only, not to RitzCarlton_Residences 2024.
-- **Landing pages:** where the page language contradicts the ad language, the UTM follows the ad. These pages are listed in "Manual - do yourself".
+- **Landing pages:** where the page language contradicts the ad language, the UTM follows the ad. These pages are listed in "Manual - do yourself" ("Still needs you" in final-mode workbooks).
 
 ## Files
 
@@ -137,12 +130,15 @@ These are also in the workbook's "Questions for you" tab.
 | `apply4/` | 12-Oct live runs: inputs and read-backs |
 | `round4/` | Plan built from the 12-Oct re-read (superseded by `apply5/`) |
 | `apply5/` | 12-Oct evening run: inputs, read-backs (`out_*.jsonl`), `status_at_pause.txt` |
-| `apply6/` | **Remaining plan at the pause**: `diff.json`, batches, `manual.json`, `held.json`, `summary.txt` |
+| `apply6/` | Plan at the pause (`diff.json`, batches, `manual.json`, `held.json`, `summary.txt`) **and the 12-Oct apply6 run**: `out_*.jsonl` read-backs, `runs.json` (workflow/task ids, stopped runs), `batches_at_stop.json`, `check_at_stop.txt`, agents' `*_work/` folders |
 | `work/live_interim.json` | Keyed re-read + apply5 read-backs = live state at the pause |
+| `work/live_interim2.json` | `live_interim.json` + the 12 accounts re-read on 12-Oct (`reread2/out`) + every apply6 read-back = live state at the stop |
+| `work/spark_check/` | TikTok Spark Push check: `written_spark.json` (every Spark ad written, original post id), `current_items.json` (post ids read 12-Oct ~14:05 UTC), `spark_item_check.json` (53 re-published) |
+| `reread2/` | Keyed re-read for the final numbers: `jobs.json` (paths for this scratchpad), `job_groups.json` (A/B/C done, "later" = the 9 accounts apply6 writes to), `runs.json`, `out/` |
 | `reread/` | Keyed re-read jobs, inputs and outputs (`out/new_*.jsonl` = ads created since 11-Oct) |
 | `scripts/` | See below |
 | `workflows/*.js` | Saved Workflow scripts. Today's are `diriyah-apply-v5-*`, `diriyah-keyed-reread-*`, `diriyah-first-serving-dates-v2-*` and `diriyah-review-targets-v*-*` |
-| `out/Diriyah_UTM_Verification_2026-10-12_final.xlsx`, `…_interim.xlsx`, `…_at_pause.xlsx` | Workbooks sent to the user on 12-Oct (the last one is current) |
+| `out/Diriyah_UTM_Verification_2026-10-12_final.xlsx`, `…_interim.xlsx`, `…_at_pause.xlsx`, `…_at_signin_stop.xlsx` | Workbooks sent to the user on 12-Oct (the last one is current; recalculated in LibreOffice) |
 
 Scripts:
 - `nomen.py` is the checker.
@@ -154,19 +150,23 @@ Scripts:
 - `consistency.py` harmonises names.
 - `merge_live.py` merges the re-read.
 - `round_plan.py` builds the pending plan and batches.
-- `build_final2.py` builds the workbook.
+- `build_final2.py` builds the workbook (`FINAL=1`: per-platform switched-on ads, "Still needs you", "TikTok posts re-published", statuses Refused / Blocked by safety check / Held; `INTERIM='<why>'` labels an interim build; `REFUSED_FILE` = refused-slot lists). The at-pause version is `build_final2_at_pause.py`.
+- `check_summary.py` recalculates a workbook with LibreOffice and checks every Summary cell against `work/summary_expected*.json` (`--replace` keeps the recalculated copy).
+- `interim_live.py` builds an interim live file from a partial re-read plus an apply run's read-backs.
 
 ## Write recipes (proven on 11 and 12-Oct; also in the apply workflow script)
 
-Every write follows the same sequence: re-read the live entity → if the URL is not "now" or "alt_now", skip → `dry_run:true` → check that only the URL changes → `dry_run:false` → read back and compare byte for byte. Never retry a write more than twice, never delete anything, and stop all lanes when the Whathead sign-in expires.
+Every write follows the same sequence: re-read the live entity → if the URL is not "now" or "alt_now", skip → `dry_run:true` → check that only the URL changes → `dry_run:false` → read back and compare byte for byte. At most 2 live attempts per write, never delete anything, and stop all lanes when the Whathead sign-in expires. Check side effects after 60+ minutes on a sample, not only immediately (the TikTok re-publish showed up 30-60 min later).
 
 - **Meta.** Creatives are immutable. Create a new creative that is identical except for the URL, then `POST /<ad_id>` with `creative={"creative_id":…}`. Do not send status. The ad goes back to review (`IN_PROCESS`).
 - **Snapchat.** Full-object `PUT /v1/adaccounts/{id}/creatives` with only `web_view_properties.url` changed. For composite creatives, edit each sub-creative. Sub-creatives shared by ads that need different URLs are manual.
 - **TikTok.**
   - Manual ads: full `/v1.3/ad/update/` with `utm_params` matching the new URL (no `utm_id`). Send pixel and item ids as exact strings, because the gateway loses precision.
   - Smart+ ads: `smart_plus/ad/update`.
-  - Spark Ads: send the identity fields unchanged and leave out `tiktok_item_id`.
-  - Spark Pull ads with expired authorization cannot be edited, so they are manual.
+  - **Spark Push ads (BC_AUTH_TT with a tiktok_item_id): DO NOT write them with the old recipe** (video_id, no tiktok_item_id). It passes the immediate read-back,
+    but TikTok re-publishes the post 30-60 min later and detaches the ad from the original post (53 of 76 ads on 11/12-Oct). They are held for the user's decision.
+  - Spark Pull ads (AUTH_CODE): send the same tiktok_item_id and identity unchanged (2 of 2 kept their post). With expired authorization they cannot be edited, so they are manual.
+  - BC_AUTH_TT carousels without a tiktok_item_id: full update as read (71 of 71 still have no post afterwards).
 - **Google.** For ads, `AdService` MutateAds `final_urls` with `update_mask` `final_urls`. For sitelinks, `AssetService` MutateAssets on the asset. One asset carries one URL for all its placements.
 - **X.** `UPDATE_CARD` with the full components and the new `destination.url`. `IMAGE_WEBSITE` cards must include `experiment_signals`. Links in a published tweet's text cannot be edited, so they are manual.
 - **LinkedIn.** `inMailContents` `PARTIAL_UPDATE`. The gateway reports 204 as `BACKEND_ERROR`, so verify by GET.

@@ -1,0 +1,17 @@
+{
+ "in": "/tmp/claude-0/-home-user-test/5e42174a-3db2-542f-afff-62945df1761d/scratchpad/diriyah_utm/apply6/in_meta_1.json",
+ "out": "/tmp/claude-0/-home-user-test/5e42174a-3db2-542f-afff-62945df1761d/scratchpad/diriyah_utm/apply6/out_meta_1.jsonl",
+ "ad_id": "120249469905340789",
+ "slots": [
+  "creative.object_story_spec.link_data.link",
+  "creative.object_story_spec.link_data.child_attachments[0].link",
+  "creative.object_story_spec.link_data.child_attachments[1].link",
+  "creative.object_story_spec.link_data.child_attachments[2].link",
+  "creative.object_story_spec.link_data.child_attachments[3].link"
+ ],
+ "before": "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=instagram&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan2_tactical_visitor-diriyahJune2026_reach-awareness_instagram_en&utm_term=adset-id-ee00c8_test_adset_name_ar_all_mf_prospecting&utm_content=CR3",
+ "after_live": "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=meta&utm_medium=paid-social&utm_campaign=visitor-diriyah_cond&utm_term=ar&utm_content=cr3_display_ar",
+ "result": "Fixed",
+ "new_entity_ids": "creative:1647425533606409",
+ "detail": "Live slot equalled 'now' for the parent link and all 4 carousel cards (no url_tags). Old creative 1095469212909085 -> new creative 1647425533606409: copy of object_story_spec (page 102966688906483 + IG 17841449897651638) with link_data message (Arabic), multi_share_end_card/multi_share_optimized false, attachment_style link, CTA BOOK_TRAVEL and the 4 cards (same image hashes, Arabic names/descriptions, CTAs); threads_user_id, authorization_category NONE, contextual_multi_ads OPT_OUT, format_transformation_spec (single_media/sa_collection/collage/video_slideshow none), portrait_customizations optimal_num_cards, degrees_of_freedom_spec (9 features OPT_OUT as original). Only the 5 links changed, plus one documented deviation: the parent link_data.image_hash 682a44dd8ff41ce1e715f21544c45aa9 was not sent, because Meta rejects a parent image next to child_attachments on create (code 100/2446581 'count mismatch between the number of child attachments in the object_story_spec and the interactive_components_spec', isolated with validate_only on the sibling CR4 ad); the parent image is only a Facebook fallback for cards without an image and is never used on Instagram, and all 4 cards have their own image. Dry-run preview checked. Verified byte for byte: the new creative's raw body (id,name,object_story_spec,body,title) equals the original raw body with only the 5 URLs, the parent image_hash, the id and Meta's name date-hash suffix changed (Content-Length 3099 = expected); other fields as original, Meta filled unset features OPT_OUT and destination_screenshot OPT_OUT. Ad POST {creative_id} success=true; status not sent. After: ad creative 1647425533606409, configured_status=ACTIVE (unchanged), effective_status=IN_PROCESS (re-review; was ADSET_PAUSED)."
+}

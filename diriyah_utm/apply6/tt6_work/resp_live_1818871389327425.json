@@ -1,0 +1,107 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_update",
+    "method": "POST",
+    "path": "/v1.3/ad/update/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "2026101222001480D3F660E2D10A2BE371",
+      "data": {
+        "ad_ids": [
+          "1818871389327425"
+        ],
+        "need_audit": false,
+        "creatives": [
+          {
+            "deeplink": "",
+            "identity_type": "CUSTOMIZED_USER",
+            "video_id": "v10033g50000cth6q0vog65qg7c1bss0",
+            "playable_url": "",
+            "ad_text": "فعاليات الشتاء بانتظاركم في مطل البجيري. احجزوا لحظاتكم المميزة الآن!",
+            "card_id": null,
+            "music_id": null,
+            "landing_page_urls": null,
+            "display_name": "Visit Diriyah",
+            "ad_format": "SINGLE_VIDEO",
+            "identity_id": "7350277519361425409",
+            "campaign_id": "1818871385623698",
+            "creative_authorized": true,
+            "adgroup_id": "1818871388623889",
+            "brand_safety_vast_url": null,
+            "campaign_name": "BujairiTerrace_Winter2024Tickets_UF_AWR_BAH_ENAR_TikTok",
+            "call_to_action": "LEARN_MORE",
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "viewability_vast_url": null,
+            "optimization_event": null,
+            "viewability_postbid_partner": "UNSET",
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/ocC8dB4fmzixVoA5AgBiVaiTwadswA6EgnbDIB"
+            ],
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "tracking_pixel_id": 7347671240183693000,
+            "operation_status": "ENABLE",
+            "is_new_structure": true,
+            "ad_texts": null,
+            "campaign_automation_type": "MANUAL",
+            "creative_type": null,
+            "impression_tracking_url": null,
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "bujairiterracewinter_dec24_awr",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "bujairiterracewinter_ar",
+                "key": "utm_term"
+              },
+              {
+                "value": "activitiesvideo12s_video_ar",
+                "key": "utm_content"
+              }
+            ],
+            "carousel_image_labels": null,
+            "call_to_action_id": null,
+            "app_name": "",
+            "click_tracking_url": null,
+            "advertiser_id": "7338057963233443842",
+            "page_id": null,
+            "landing_page_url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bujairiterracewinter_dec24_awr&utm_term=bujairiterracewinter_ar&utm_content=activitiesvideo12s_video_ar",
+            "ad_id": "1818871389327425",
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "is_aco": false,
+            "deeplink_type": "NORMAL",
+            "ad_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_UF_Bahrain_Prospecting_AR_Awareness_TIKTOK_Activities Video 12s - AR",
+            "create_time": "2024-12-19 12:22:11",
+            "brand_safety_postbid_partner": "UNSET",
+            "vast_moat_enabled": false,
+            "adgroup_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_UF_Bahrain_Prospecting_AR_Awareness_TIKTOK",
+            "modify_time": "2026-10-12 14:00:15"
+          }
+        ]
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "2026101222001480D3F660E2D10A2BE371",
+      "waitedMs": 1540,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "82ced2da-79b2-48b9-bbaa-4951068972cc",
+    "latencyMs": 4243
+  }
+}

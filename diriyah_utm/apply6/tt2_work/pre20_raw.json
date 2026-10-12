@@ -1,0 +1,816 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_get",
+    "method": "GET",
+    "path": "/v1.3/ad/get/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "2026101222091226467A47D10E33AD2D6E",
+      "data": {
+        "list": [
+          {
+            "ad_id": "1838548423250993",
+            "identity_type": "BC_AUTH_TT",
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "tiktok_item_id": "7530699345709075719",
+            "landing_page_url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterracesummer2025tickets_jul25_conv&utm_term=bujairiterracesummer2025tickets_en&utm_content=weekendplans_video_en",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterracesummer2025tickets_jul25_conv"
+              },
+              {
+                "key": "utm_term",
+                "value": "bujairiterracesummer2025tickets_en"
+              },
+              {
+                "key": "utm_content",
+                "value": "weekendplans_video_en"
+              }
+            ],
+            "modify_time": "2026-10-12 13:55:14",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "adgroup_id": "1837620326148290",
+            "video_id": "v14033g50000d216dh7og65li04jcjg0",
+            "call_to_action_id": null,
+            "tracking_pixel_id": 7347671240183693000,
+            "creative_type": null,
+            "is_aco": false
+          },
+          {
+            "ad_id": "1838548423243793",
+            "identity_type": "BC_AUTH_TT",
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "tiktok_item_id": "7530699317523385617",
+            "landing_page_url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterracesummer2025tickets-2025-jul-lf-conversions&utm_id=6573&utm_term=bujairiterracesummer2025tickets-en-all-na&utm_content=nakhati-video-aud",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterracesummer2025tickets-2025-jul-lf-conversions"
+              },
+              {
+                "key": "utm_id",
+                "value": "6573"
+              },
+              {
+                "key": "utm_content",
+                "value": "nakhati-video-aud"
+              }
+            ],
+            "modify_time": "2026-02-03 21:05:25",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "adgroup_id": "1837620326148290",
+            "video_id": "v10033g50000d215p7fog65la32e1v40",
+            "call_to_action_id": null,
+            "tracking_pixel_id": 7347671240183693000,
+            "creative_type": null,
+            "is_aco": false
+          },
+          {
+            "ad_id": "1838546634018850",
+            "identity_type": "BC_AUTH_TT",
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "tiktok_item_id": "7530688124658208021",
+            "landing_page_url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterracesummer2025tickets-2025-jul-uf/mf-reach-awareness&utm_id=6122&utm_term=bujairiterracesummer2025tickets-ar-all-na&utm_content=summerdrinks-video-aud",
+            "utm_params": [
+              {
+                "key": "utm_content",
+                "value": "summerdrinks-video-aud"
+              },
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterracesummer2025tickets-2025-jul-uf/mf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "6122"
+              }
+            ],
+            "modify_time": "2026-02-03 21:05:25",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "adgroup_id": "1837711671352385",
+            "video_id": "v10033g50000d215n87og65g47els9fg",
+            "call_to_action_id": null,
+            "tracking_pixel_id": 0,
+            "creative_type": null,
+            "is_aco": false
+          },
+          {
+            "ad_id": "1838546492852290",
+            "identity_type": "BC_AUTH_TT",
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "tiktok_item_id": "7530692404261768465",
+            "landing_page_url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterracesummer2025tickets-2025-jul-uf/mf-reach-awareness&utm_id=6482&utm_term=bujairiterracesummer2025tickets-ar-all-na&utm_content=nakhati-video-aud",
+            "utm_params": [
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterracesummer2025tickets-2025-jul-uf/mf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "6482"
+              },
+              {
+                "key": "utm_content",
+                "value": "nakhati-video-aud"
+              },
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              }
+            ],
+            "modify_time": "2026-02-03 21:05:25",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "adgroup_id": "1837711671352385",
+            "video_id": "v10033g50000d215p7fog65la32e1v40",
+            "call_to_action_id": null,
+            "creative_type": null,
+            "is_aco": false
+          },
+          {
+            "ad_id": "1838546404616241",
+            "identity_type": "BC_AUTH_TT",
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "tiktok_item_id": "7530692463040744712",
+            "landing_page_url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterracesummer2025tickets-2025-jul-uf/mf-reach-awareness&utm_id=6662&utm_term=bujairiterracesummer2025tickets-ar-all-na&utm_content=experience-video-aud",
+            "utm_params": [
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterracesummer2025tickets-2025-jul-uf/mf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "6662"
+              },
+              {
+                "key": "utm_content",
+                "value": "experience-video-aud"
+              },
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              }
+            ],
+            "modify_time": "2026-02-03 21:05:25",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "adgroup_id": "1837711671352385",
+            "video_id": "v10033g50000d215pjnog65rqafjl5c0",
+            "call_to_action_id": null,
+            "tracking_pixel_id": 0,
+            "creative_type": null,
+            "is_aco": false
+          },
+          {
+            "ad_id": "1838545993185282",
+            "identity_type": "BC_AUTH_TT",
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "tiktok_item_id": "7530690311517900033",
+            "landing_page_url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterracesummer2025tickets-2025-jul-uf/mf-reach-awareness&utm_id=6483&utm_term=bujairiterracesummer2025tickets-en-all-na&utm_content=nakhati-video-aud",
+            "utm_params": [
+              {
+                "key": "utm_content",
+                "value": "nakhati-video-aud"
+              },
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterracesummer2025tickets-2025-jul-uf/mf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "6483"
+              }
+            ],
+            "modify_time": "2026-02-03 21:05:25",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "adgroup_id": "1837711671351313",
+            "video_id": "v10033g50000d215p7fog65la32e1v40",
+            "call_to_action_id": null,
+            "tracking_pixel_id": 0,
+            "creative_type": null,
+            "is_aco": false
+          },
+          {
+            "ad_id": "1838545906910289",
+            "identity_type": "BC_AUTH_TT",
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "tiktok_item_id": "7530687347843812628",
+            "landing_page_url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterracesummer2025tickets-2025-jul-uf%2Fmf-reach-awareness&utm_id=6302&utm_term=bujairiterracesummer2025tickets-ar-all-na&utm_content=weekendplans-video-aud",
+            "utm_params": [
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterracesummer2025tickets-2025-jul-uf%2Fmf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "6302"
+              },
+              {
+                "key": "utm_content",
+                "value": "weekendplans-video-aud"
+              },
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              }
+            ],
+            "modify_time": "2026-02-03 21:05:25",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "adgroup_id": "1837711671352385",
+            "video_id": "v10033g50000d215oonog65qo7kinl00",
+            "call_to_action_id": null,
+            "tracking_pixel_id": 0,
+            "creative_type": null,
+            "is_aco": false
+          },
+          {
+            "ad_id": "1838545899107634",
+            "identity_type": "BC_AUTH_TT",
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "tiktok_item_id": "7530690323635326209",
+            "landing_page_url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterracesummer2025tickets-2025-jul-uf%2Fmf-reach-awareness&utm_id=6303&utm_term=bujairiterracesummer2025tickets-en-all-na&utm_content=weekendplans-video-aud",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterracesummer2025tickets-2025-jul-uf%2Fmf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "6303"
+              },
+              {
+                "key": "utm_content",
+                "value": "weekendplans-video-aud"
+              }
+            ],
+            "modify_time": "2026-02-03 21:05:25",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "adgroup_id": "1837711671351313",
+            "video_id": "v10033g50000d215oonog65qo7kinl00",
+            "call_to_action_id": null,
+            "tracking_pixel_id": 0,
+            "creative_type": null,
+            "is_aco": false
+          },
+          {
+            "ad_id": "1838545835749570",
+            "identity_type": "BC_AUTH_TT",
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "tiktok_item_id": "7530690322054057233",
+            "landing_page_url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterracesummer2025tickets-2025-jul-uf%2Fmf-reach-awareness&utm_id=6123&utm_term=bujairiterracesummer2025tickets-en-all-na&utm_content=summerdrinks-video-aud",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterracesummer2025tickets-2025-jul-uf%2Fmf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "6123"
+              },
+              {
+                "key": "utm_content",
+                "value": "summerdrinks-video-aud"
+              }
+            ],
+            "modify_time": "2026-02-03 21:05:25",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "adgroup_id": "1837711671351313",
+            "video_id": "v10033g50000d215n87og65g47els9fg",
+            "call_to_action_id": null,
+            "tracking_pixel_id": 0,
+            "creative_type": null,
+            "is_aco": false
+          },
+          {
+            "ad_id": "1838545456782338",
+            "identity_type": "BC_AUTH_TT",
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "tiktok_item_id": "7530690341549214984",
+            "landing_page_url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterracesummer2025tickets-2025-jul-uf%2Fmf-reach-awareness&utm_id=6663&utm_term=bujairiterracesummer2025tickets-en-all-na&utm_content=experience-video-aud",
+            "utm_params": [
+              {
+                "key": "utm_content",
+                "value": "experience-video-aud"
+              },
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterracesummer2025tickets-2025-jul-uf%2Fmf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "6663"
+              }
+            ],
+            "modify_time": "2026-02-03 21:05:25",
+            "operation_status": "DISABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "adgroup_id": "1837711671351313",
+            "video_id": "v10033g50000d215pjnog65rqafjl5c0",
+            "call_to_action_id": null,
+            "tracking_pixel_id": 0,
+            "creative_type": null,
+            "is_aco": false
+          },
+          {
+            "ad_id": "1838528283166722",
+            "identity_type": "BC_AUTH_TT",
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "tiktok_item_id": "7530614478430391572",
+            "landing_page_url": "https://www.diriyah.sa/ar/dine?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterracesummer2025restaurants-2025-jul-lf-conversions&utm_id=6032&utm_term=bujairiterracesummer2025restaurants-ar-all-na&utm_content=sarabeth-video-aud",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterracesummer2025restaurants-2025-jul-lf-conversions"
+              },
+              {
+                "key": "utm_content",
+                "value": "sarabeth-video-aud"
+              }
+            ],
+            "modify_time": "2026-10-12 12:23:15",
+            "operation_status": "DISABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "adgroup_id": "1837710641618993",
+            "video_id": "v10033g50000d211i2vog65okdjblb2g",
+            "call_to_action_id": "7530612702595517447",
+            "tracking_pixel_id": 7347671240183693000,
+            "creative_type": null,
+            "is_aco": false
+          },
+          {
+            "ad_id": "1838528092155905",
+            "identity_type": "BC_AUTH_TT",
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "tiktok_item_id": "7530614719850253589",
+            "landing_page_url": "https://www.diriyah.sa/ar/dine?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterracesummer2025restaurants-2025-jul-lf-conversions&utm_id=5852&utm_term=bujairiterracesummer2025restaurants-ar-all-na&utm_content=longchim-video-aud",
+            "utm_params": [
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterracesummer2025restaurants-2025-jul-lf-conversions"
+              },
+              {
+                "key": "utm_content",
+                "value": "longchim-video-aud"
+              },
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              }
+            ],
+            "modify_time": "2026-10-12 12:23:15",
+            "operation_status": "DISABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "adgroup_id": "1837710641618993",
+            "video_id": "v10033g50000d211govog65naec3sdlg",
+            "call_to_action_id": "7530611587544091655",
+            "tracking_pixel_id": 7347671240183693000,
+            "creative_type": null,
+            "is_aco": false
+          },
+          {
+            "ad_id": "1838527506001954",
+            "identity_type": "BC_AUTH_TT",
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "tiktok_item_id": "7530614633506360583",
+            "landing_page_url": "https://www.diriyah.sa/ar/dine?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterracesummer2025restaurants-2025-jul-uf/mf-reach-awareness&utm_id=5942&utm_term=bujairiterracesummer2025restaurants-ar-all-na&utm_content=sarabeth-video-aud",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterracesummer2025restaurants-2025-jul-uf/mf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "5942"
+              },
+              {
+                "key": "utm_content",
+                "value": "sarabeth-video-aud"
+              }
+            ],
+            "modify_time": "2026-10-12 14:09:06",
+            "operation_status": "DISABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "adgroup_id": "1837711880968241",
+            "video_id": "v10033g50000d211i2vog65okdjblb2g",
+            "call_to_action_id": null,
+            "creative_type": null,
+            "is_aco": false
+          },
+          {
+            "ad_id": "1838527327335474",
+            "identity_type": "BC_AUTH_TT",
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "tiktok_item_id": "7530614637553814792",
+            "landing_page_url": "https://www.diriyah.sa/ar/dine?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterracesummer2025restaurants-2025-jul-uf%2Fmf-reach-awareness&utm_id=5762&utm_term=bujairiterracesummer2025restaurants-ar-all-na&utm_content=longchim-video-aud",
+            "utm_params": [
+              {
+                "key": "utm_content",
+                "value": "longchim-video-aud"
+              },
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterracesummer2025restaurants-2025-jul-uf%2Fmf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "5762"
+              }
+            ],
+            "modify_time": "2026-10-12 14:09:06",
+            "operation_status": "DISABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "adgroup_id": "1837711880968241",
+            "video_id": "v10033g50000d211govog65naec3sdlg",
+            "call_to_action_id": null,
+            "creative_type": null,
+            "is_aco": false
+          },
+          {
+            "ad_id": "1838442776946722",
+            "identity_type": "BC_AUTH_TT",
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "tiktok_item_id": "7530614630666734865",
+            "landing_page_url": "https://www.diriyah.sa/ar/dine?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterracesummer2025restaurants-2025-jul-uf%2Fmf-reach-awareness&utm_id=5365&utm_term=bujairiterracesummer2025restaurants-ar-all-na&utm_content=altopiano-video-aud",
+            "utm_params": [
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterracesummer2025restaurants-2025-jul-uf%2Fmf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "5365"
+              },
+              {
+                "key": "utm_content",
+                "value": "altopiano-video-aud"
+              },
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              }
+            ],
+            "modify_time": "2026-10-12 14:09:06",
+            "operation_status": "DISABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "adgroup_id": "1837711880968241",
+            "video_id": "v10033g50000d1s9kh7og65mac3urupg",
+            "call_to_action_id": null,
+            "tracking_pixel_id": 0,
+            "creative_type": null,
+            "is_aco": false
+          },
+          {
+            "ad_id": "1837890793309185",
+            "identity_type": "BC_AUTH_TT",
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "tiktok_item_id": "7528005010395794708",
+            "landing_page_url": "https://www.diriyah.sa/ar/dine?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterracesummer2025restaurants-2025-jul-lf-conversions&utm_id=5455&utm_term=bujairiterracesummer2025restaurants-ar-all-na&utm_content=altopiano-video-aud",
+            "utm_params": [
+              {
+                "key": "utm_content",
+                "value": "altopiano-video-aud"
+              },
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterracesummer2025restaurants-2025-jul-lf-conversions"
+              }
+            ],
+            "modify_time": "2026-10-12 12:23:15",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "adgroup_id": "1837710641618993",
+            "video_id": "v10033g50000d1s9kh7og65mac3urupg",
+            "call_to_action_id": "7528040600755604498",
+            "tracking_pixel_id": 7347671240183693000,
+            "creative_type": null,
+            "is_aco": false
+          },
+          {
+            "ad_id": "1837890274295346",
+            "identity_type": "BC_AUTH_TT",
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "tiktok_item_id": "7530654063373946130",
+            "landing_page_url": "https://www.diriyah.sa/ar/dine?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterracesummer2025restaurants-2025-jul-uf%2Fmf-reach-awareness&utm_id=5365&utm_term=bujairiterracesummer2025restaurants-ar-all-na&utm_content=altopiano-video-aud",
+            "utm_params": [
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterracesummer2025restaurants-2025-jul-uf%2Fmf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "5365"
+              },
+              {
+                "key": "utm_content",
+                "value": "altopiano-video-aud"
+              },
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              }
+            ],
+            "modify_time": "2026-10-12 14:09:06",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "adgroup_id": "1837711880968241",
+            "video_id": "v10033g50000d213qcvog65hb55v5m60",
+            "call_to_action_id": null,
+            "tracking_pixel_id": 0,
+            "creative_type": null,
+            "is_aco": false
+          },
+          {
+            "ad_id": "1837620326148338",
+            "identity_type": "AUTH_CODE",
+            "identity_id": "7031391213458752514",
+            "tiktok_item_id": "7426444501155204359",
+            "landing_page_url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterraceramadan-2025-mar-lf-conversions&utm_id=2291&utm_term=bujairiterraceramadan-ar-all-mf&utm_content=bujariexperience-video-ret-ksa",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterraceramadan-2025-mar-lf-conversions"
+              },
+              {
+                "key": "utm_id",
+                "value": "2291"
+              },
+              {
+                "key": "utm_content",
+                "value": "bujariexperience-video-ret-ksa"
+              }
+            ],
+            "modify_time": "2025-10-16 18:42:08",
+            "operation_status": "DISABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "adgroup_id": "1837620326148322",
+            "video_id": null,
+            "call_to_action_id": "7526894980166601735",
+            "tracking_pixel_id": 7347671240183693000,
+            "creative_type": null,
+            "is_aco": false
+          },
+          {
+            "ad_id": "1837620326148306",
+            "identity_type": "AUTH_CODE",
+            "identity_id": "7031391213458752514",
+            "tiktok_item_id": "7447982795982507271",
+            "landing_page_url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterraceramadan-2025-mar-lf-conversions&utm_id=2293&utm_term=bujairiterraceramadan-ar-all-mf&utm_content=bujarieid-video-ret-ksa",
+            "utm_params": [
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterraceramadan-2025-mar-lf-conversions"
+              },
+              {
+                "key": "utm_id",
+                "value": "2293"
+              },
+              {
+                "key": "utm_content",
+                "value": "bujarieid-video-ret-ksa"
+              },
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              }
+            ],
+            "modify_time": "2025-08-07 11:43:44",
+            "operation_status": "DISABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "adgroup_id": "1837620326148290",
+            "video_id": null,
+            "call_to_action_id": "7526894980166585351",
+            "tracking_pixel_id": 7347671240183693000,
+            "creative_type": null,
+            "is_aco": false
+          },
+          {
+            "ad_id": "1833201517548594",
+            "identity_type": "CUSTOMIZED_USER",
+            "identity_id": "7496497927239974920",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar/diriyah-living?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-diriyahliving-2025-apr-uf-reach-awareness&utm_id=4322&utm_term=diriyahliving-ar-all-na&utm_content=retail-video-aud-ksa",
+            "utm_params": [
+              {
+                "key": "utm_content",
+                "value": "retail-video-aud-ksa"
+              },
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-diriyahliving-2025-apr-uf-reach-awareness"
+              }
+            ],
+            "modify_time": "2025-07-28 11:22:09",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "adgroup_id": "1833201517548578",
+            "video_id": "v10033g50000d0q9d2fog65imsgfebig",
+            "call_to_action_id": null,
+            "tracking_pixel_id": 7347671240183693000,
+            "creative_type": null,
+            "is_aco": false
+          }
+        ],
+        "page_info": {
+          "page": 1,
+          "page_size": 50,
+          "total_page": 1,
+          "total_number": 20
+        }
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "2026101222091226467A47D10E33AD2D6E",
+      "waitedMs": 849,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false,
+      "mcp_result_projection": {
+        "fields": [
+          "ad_id",
+          "identity_type",
+          "identity_id",
+          "tiktok_item_id",
+          "landing_page_url",
+          "utm_params",
+          "modify_time",
+          "operation_status",
+          "secondary_status",
+          "ad_format",
+          "adgroup_id",
+          "video_id",
+          "call_to_action_id",
+          "tracking_pixel_id",
+          "creative_type",
+          "is_aco"
+        ]
+      }
+    }
+  },
+  "meta": {
+    "requestId": "f7391e4e-95d5-4cec-9d10-2f35ca496fbc",
+    "latencyMs": 2374
+  }
+}

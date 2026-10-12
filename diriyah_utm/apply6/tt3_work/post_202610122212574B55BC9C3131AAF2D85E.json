@@ -1,0 +1,110 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_get",
+    "method": "GET",
+    "path": "/v1.3/ad/get/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "202610122212574B55BC9C3131AAF2D85E",
+      "data": {
+        "list": [
+          {
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202504235d0ddc1b8ba9571646aca4ab",
+            "deeplink": "",
+            "campaign_name": "LifeInDiriyah_Proposition2025_UF_AWR_KSA_ENAR_TikTok",
+            "vast_moat_enabled": false,
+            "impression_tracking_url": null,
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202504235d0ddc1b8ba9571646aca4ab",
+            "modify_time": "2026-10-12 14:12:37",
+            "click_tracking_url": null,
+            "ad_text": "Diriyah Living, today and for generations to come.",
+            "create_time": "2025-05-06 08:57:16",
+            "music_id": null,
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "ad_id": "1831360879343698",
+            "playable_url": "",
+            "call_to_action_id": null,
+            "adgroup_id": "1831360878681089",
+            "deeplink_type": "NORMAL",
+            "ad_texts": null,
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "carousel_image_labels": null,
+            "campaign_id": "1830108589750401",
+            "identity_id": "7496497927239974920",
+            "call_to_action": "LEARN_MORE",
+            "identity_type": "CUSTOMIZED_USER",
+            "display_name": "Diriyah Company",
+            "page_id": null,
+            "optimization_event": null,
+            "advertiser_id": "7338057963233443842",
+            "viewability_vast_url": null,
+            "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-diriyahliving_may25_awr&utm_term=diriyahliving_en&utm_content=school_video_en",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-diriyahliving_may25_awr"
+              },
+              {
+                "key": "utm_term",
+                "value": "diriyahliving_en"
+              },
+              {
+                "key": "utm_content",
+                "value": "school_video_en"
+              }
+            ],
+            "campaign_automation_type": "MANUAL",
+            "creative_type": null,
+            "landing_page_urls": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/oU5BNQ4aoEQGDEBlDBAF0AxEI9DCw1Afxgfyj9"
+            ],
+            "operation_status": "ENABLE",
+            "creative_authorized": true,
+            "adgroup_name": "Diriyah_Tactical_Diriyah Living Campaign_UF_KSA_Prospecting_EN_Awareness_TIKTOK",
+            "is_new_structure": true,
+            "tracking_pixel_id": 7347671240183693000,
+            "video_id": "v10033g50000d00gosfog65is7nrvps0",
+            "brand_safety_postbid_partner": "UNSET",
+            "card_id": null,
+            "viewability_postbid_partner": "UNSET",
+            "brand_safety_vast_url": null,
+            "app_name": "",
+            "ad_name": "Diriyah_Tactical_Diriyah Living Campaign_UF_KSA_Prospecting_EN_Awareness_TIKTOK_SCHOOL",
+            "is_aco": false
+          }
+        ],
+        "page_info": {
+          "page": 1,
+          "page_size": 10,
+          "total_page": 1,
+          "total_number": 1
+        }
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "202610122212574B55BC9C3131AAF2D85E",
+      "waitedMs": 1252,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "ef2df643-511f-469d-9947-592565649c6d",
+    "latencyMs": 3358
+  }
+}

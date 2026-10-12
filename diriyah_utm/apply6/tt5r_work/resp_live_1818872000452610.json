@@ -1,0 +1,107 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_update",
+    "method": "POST",
+    "path": "/v1.3/ad/update/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "20261012222418BD25DBB140C6035C5252",
+      "data": {
+        "ad_ids": [
+          "1818872000452610"
+        ],
+        "need_audit": false,
+        "creatives": [
+          {
+            "music_id": null,
+            "brand_safety_postbid_partner": "UNSET",
+            "campaign_automation_type": "MANUAL",
+            "page_id": null,
+            "playable_url": "",
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/oMLfkRDiEFAPIEBGbBEQsRD5BtkpfNIannCkgM"
+            ],
+            "operation_status": "ENABLE",
+            "ad_id": "1818872000452610",
+            "ad_text": "مطل البجيري.. مطل يحتفي بطلتك",
+            "ad_texts": null,
+            "call_to_action": "LEARN_MORE",
+            "video_id": "v10033g50000csd47onog65misshucdg",
+            "tracking_pixel_id": 7347671240183693000,
+            "identity_type": "CUSTOMIZED_USER",
+            "viewability_postbid_partner": "UNSET",
+            "advertiser_id": "7338057963233443842",
+            "viewability_vast_url": null,
+            "creative_type": null,
+            "vast_moat_enabled": false,
+            "is_aco": false,
+            "landing_page_urls": null,
+            "click_tracking_url": null,
+            "ad_format": "SINGLE_VIDEO",
+            "adgroup_id": "1818871989702690",
+            "is_new_structure": true,
+            "call_to_action_id": null,
+            "adgroup_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_UP_Bahrain_Prospecting_AR_Awareness_TIKTOK",
+            "modify_time": "2026-10-12 14:24:19",
+            "optimization_event": null,
+            "deeplink_type": "NORMAL",
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "landing_page_url": "https://www.diriyah.sa/ar/dine?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bujairiterracewinter_dec24_awr&utm_term=bujairiterracewinter_ar&utm_content=retailvideo_video_ar",
+            "deeplink": "",
+            "ad_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_UF_Bahrain_Prospecting_AR_Awareness_TIKTOK_Retail Video 21s",
+            "campaign_name": "BujairiTerrace_Winter2024Restaurants_UF_AWR_BAH_ENAR_TikTok",
+            "impression_tracking_url": null,
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "campaign_id": "1818871989702674",
+            "creative_authorized": false,
+            "brand_safety_vast_url": null,
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "display_name": "Visit Diriyah",
+            "card_id": null,
+            "app_name": "",
+            "identity_id": "7350277519361425409",
+            "create_time": "2024-12-19 12:32:32",
+            "carousel_image_labels": null,
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "bujairiterracewinter_dec24_awr",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "bujairiterracewinter_ar",
+                "key": "utm_term"
+              },
+              {
+                "value": "retailvideo_video_ar",
+                "key": "utm_content"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "20261012222418BD25DBB140C6035C5252",
+      "waitedMs": 1654,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "f02939b7-b5d8-40eb-bcf0-da2e8e18613f",
+    "latencyMs": 3218
+  }
+}

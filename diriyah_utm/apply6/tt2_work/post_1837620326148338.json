@@ -1,0 +1,118 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_get",
+    "method": "GET",
+    "path": "/v1.3/ad/get/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "202610122219324D942991BC30CB570AE6",
+      "data": {
+        "list": [
+          {
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "landing_page_urls": null,
+            "click_tracking_url": null,
+            "create_time": "2025-07-14 11:17:04",
+            "product_info": {
+              "selling_points": null,
+              "product_image_list": null,
+              "product_titles": null
+            },
+            "page_id": null,
+            "deeplink": "",
+            "adgroup_name": "Bujairi Terrace_Tactical_Bujairi Terrace Summer 2025 Tickets_LF_KSA_Prospecting_AR_Conversion_TikTok",
+            "campaign_automation_type": "MANUAL",
+            "campaign_name": "BujairiTerrace_Summer2025Tickets_LF_CONV_KSA_ENAR_TikTok",
+            "call_to_action_id": "7526894980166601735",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterraceramadan-2025-mar-lf-conversions"
+              },
+              {
+                "key": "utm_id",
+                "value": "2291"
+              },
+              {
+                "key": "utm_content",
+                "value": "bujariexperience-video-ret-ksa"
+              }
+            ],
+            "is_aco": false,
+            "brand_safety_vast_url": null,
+            "avatar_icon_web_uri": "",
+            "optimization_event": "SHOPPING",
+            "promotional_music_disabled": true,
+            "ad_ref_pixel_id": 7347671240183693000,
+            "advertiser_id": "7338057963233443842",
+            "is_new_structure": true,
+            "tracking_pixel_id": 7347671240183693000,
+            "creative_authorized": true,
+            "campaign_id": "1837620326147250",
+            "viewability_postbid_partner": "UNSET",
+            "fallback_type": "UNSET",
+            "modify_time": "2025-10-16 18:42:08",
+            "impression_tracking_url": null,
+            "ad_texts": null,
+            "shopping_ads_fallback_type": "DEFAULT",
+            "ad_text": "",
+            "ad_name": "Ad name2025-07-14 14:05:17",
+            "video_id": null,
+            "creative_type": null,
+            "card_id": null,
+            "brand_safety_postbid_partner": "UNSET",
+            "playable_url": "",
+            "ad_format": "SINGLE_VIDEO",
+            "profile_image_url": "",
+            "deeplink_type": "NORMAL",
+            "dynamic_destination": "UNSET",
+            "app_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "identity_type": "AUTH_CODE",
+            "landing_page_url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterraceramadan-2025-mar-lf-conversions&utm_id=2291&utm_term=bujairiterraceramadan-ar-all-mf&utm_content=bujariexperience-video-ret-ksa",
+            "ad_id": "1837620326148338",
+            "vertical_video_strategy": "UNSET",
+            "identity_id": "7031391213458752514",
+            "viewability_vast_url": null,
+            "image_ids": [],
+            "music_id": null,
+            "vast_moat_enabled": false,
+            "adgroup_id": "1837620326148322",
+            "tiktok_item_id": "7426444501155204359",
+            "display_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "operation_status": "DISABLE",
+            "carousel_image_labels": null
+          }
+        ],
+        "page_info": {
+          "page": 1,
+          "page_size": 10,
+          "total_page": 1,
+          "total_number": 1
+        }
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "202610122219324D942991BC30CB570AE6",
+      "waitedMs": 793,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "62c4c739-6b34-4cc1-ad42-28e87e742c29",
+    "latencyMs": 2274
+  }
+}

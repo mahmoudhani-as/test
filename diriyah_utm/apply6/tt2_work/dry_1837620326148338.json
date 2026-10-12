@@ -1,0 +1,70 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_update",
+    "dryRun": true,
+    "data": {
+      "request": {
+        "method": "POST",
+        "url": "https://business-api.tiktok.com/open_api/v1.3/ad/update/",
+        "path": "/v1.3/ad/update/",
+        "headers": {
+          "Access-Token": "[redacted]",
+          "Accept": "application/json",
+          "Content-Type": "application/json"
+        },
+        "query": {},
+        "bodyFormat": "json",
+        "body": {
+          "advertiser_id": "7338057963233443842",
+          "adgroup_id": "1837620326148322",
+          "creatives": [
+            {
+              "ad_format": "SINGLE_VIDEO",
+              "ad_id": "1837620326148338",
+              "ad_name": "Ad name2025-07-14 14:05:17",
+              "call_to_action_id": "7526894980166601735",
+              "creative_authorized": true,
+              "identity_id": "7031391213458752514",
+              "identity_type": "AUTH_CODE",
+              "landing_page_url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterracesummer2025tickets_conv&utm_term=bujairiterracesummer2025tickets_ar&utm_content=video_ar",
+              "promotional_music_disabled": true,
+              "tiktok_item_id": "7426444501155204359",
+              "tracking_pixel_id": "7347671240183693330",
+              "utm_params": [
+                {
+                  "key": "utm_source",
+                  "value": "tiktok"
+                },
+                {
+                  "key": "utm_medium",
+                  "value": "paid-social"
+                },
+                {
+                  "key": "utm_campaign",
+                  "value": "hs-bujairiterracesummer2025tickets_conv"
+                },
+                {
+                  "key": "utm_term",
+                  "value": "bujairiterracesummer2025tickets_ar"
+                },
+                {
+                  "key": "utm_content",
+                  "value": "video_ar"
+                }
+              ],
+              "vast_moat_enabled": false
+            }
+          ]
+        }
+      },
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "ebcd905a-b5ce-41fd-9c81-acac6dfa9425",
+    "latencyMs": 1368
+  }
+}

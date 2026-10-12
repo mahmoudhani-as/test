@@ -1,0 +1,107 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_update",
+    "method": "POST",
+    "path": "/v1.3/ad/update/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "20261012220019E4AA29D5945CD38F92AD",
+      "data": {
+        "ad_ids": [
+          "1818871385867425"
+        ],
+        "need_audit": false,
+        "creatives": [
+          {
+            "playable_url": "",
+            "operation_status": "ENABLE",
+            "creative_authorized": true,
+            "brand_safety_vast_url": null,
+            "viewability_postbid_partner": "UNSET",
+            "viewability_vast_url": null,
+            "landing_page_urls": null,
+            "adgroup_id": "1818871385630882",
+            "optimization_event": null,
+            "ad_id": "1818871385867425",
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "deeplink": "",
+            "is_new_structure": true,
+            "call_to_action_id": null,
+            "is_aco": false,
+            "ad_format": "SINGLE_VIDEO",
+            "brand_safety_postbid_partner": "UNSET",
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "app_name": "",
+            "card_id": null,
+            "create_time": "2024-12-19 12:22:08",
+            "identity_id": "7350277519361425409",
+            "identity_type": "CUSTOMIZED_USER",
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "campaign_automation_type": "MANUAL",
+            "display_name": "Visit Diriyah",
+            "video_id": "v10033g50000cth6q0nog65h574b5aeg",
+            "impression_tracking_url": null,
+            "tracking_pixel_id": 7347671240183693000,
+            "click_tracking_url": null,
+            "modify_time": "2026-10-12 14:00:20",
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/oEgF2mCUDQr06Ei0AlFEQ6NCUBfJnHBIEfg5DY"
+            ],
+            "campaign_id": "1818871385623698",
+            "deeplink_type": "NORMAL",
+            "call_to_action": "LEARN_MORE",
+            "adgroup_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_UF_Bahrain_Prospecting_EN_Awareness_TIKTOK",
+            "creative_type": null,
+            "music_id": null,
+            "ad_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_UF_Bahrain_Prospecting_EN_Awareness_TIKTOK_Activities Video 12s - EN",
+            "ad_texts": null,
+            "landing_page_url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bujairiterracewinter_dec24_awr&utm_term=bujairiterracewinter_en&utm_content=activitiesvideo12s_video_en",
+            "carousel_image_labels": null,
+            "campaign_name": "BujairiTerrace_Winter2024Tickets_UF_AWR_BAH_ENAR_TikTok",
+            "page_id": null,
+            "vast_moat_enabled": false,
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "bujairiterracewinter_dec24_awr",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "bujairiterracewinter_en",
+                "key": "utm_term"
+              },
+              {
+                "value": "activitiesvideo12s_video_en",
+                "key": "utm_content"
+              }
+            ],
+            "ad_text": "Winter activities await at Bujairi TerraceBook your special moments now!",
+            "advertiser_id": "7338057963233443842"
+          }
+        ]
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "20261012220019E4AA29D5945CD38F92AD",
+      "waitedMs": 1836,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "cc81974b-6084-4910-b3a2-c12ef9064870",
+    "latencyMs": 4189
+  }
+}

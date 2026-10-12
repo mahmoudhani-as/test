@@ -1,0 +1,110 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_update",
+    "method": "POST",
+    "path": "/v1.3/ad/update/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "202610122220186EE5A98C1D63E8A71B8C",
+      "data": {
+        "ad_ids": [
+          "1858735348584546"
+        ],
+        "need_audit": false,
+        "creatives": [
+          {
+            "viewability_vast_url": null,
+            "is_new_structure": true,
+            "is_aco": false,
+            "branded_content_disabled": false,
+            "deeplink_type": "NORMAL",
+            "optimization_event": null,
+            "adgroup_id": "1857200654160065",
+            "campaign_id": "1857200654159073",
+            "display_name": "bujairiterrace",
+            "ad_texts": null,
+            "ad_name": "Static en",
+            "adgroup_name": "BujairiTerrace_Ramadan2026_UF_AWR_KSA_ProspectRestaurants_EN",
+            "brand_safety_vast_url": null,
+            "tracking_pixel_id": 0,
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "visitor-diriyah-coe_mar26_awr"
+              },
+              {
+                "key": "utm_term",
+                "value": "en"
+              },
+              {
+                "key": "utm_content",
+                "value": "display_en"
+              }
+            ],
+            "profile_image_url": "",
+            "landing_page_url": "https://www.diriyah.sa/en/bujairi-terrace?utm_source=tiktok&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_mar26_awr&utm_term=en&utm_content=display_en",
+            "landing_page_urls": null,
+            "create_time": "2026-03-04 12:47:33",
+            "image_ids": [
+              "ad-site-i18n-sg/202603085d0d5a2baa47129c4211bd09"
+            ],
+            "ad_id": "1858735348584546",
+            "identity_type": "BC_AUTH_TT",
+            "card_id": null,
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "brand_safety_postbid_partner": "UNSET",
+            "creative_auto_enhancement_strategy_list": [],
+            "playable_url": "",
+            "video_id": null,
+            "impression_tracking_url": null,
+            "vast_moat_enabled": false,
+            "carousel_image_labels": null,
+            "music_id": "7614800156370373396",
+            "call_to_action": "BOOK_NOW",
+            "advertiser_id": "7338057963233443842",
+            "campaign_automation_type": "MANUAL",
+            "campaign_name": "BujairiTerrace_Ramadan2026_UF_AWR_KSA_ENAR_TikTok",
+            "ad_format": "CAROUSEL_ADS",
+            "modify_time": "2026-10-12 14:20:20",
+            "avatar_icon_web_uri": "",
+            "dark_post_status": "ON",
+            "ad_text": "Share iftar moments in Bujairi Terrace. Discover more.",
+            "operation_status": "ENABLE",
+            "creative_authorized": false,
+            "identity_authorized_bc_id": "6807778858780065797",
+            "creative_type": null,
+            "viewability_postbid_partner": "UNSET",
+            "click_tracking_url": null,
+            "app_name": "bujairiterrace",
+            "page_id": null,
+            "call_to_action_id": null,
+            "deeplink": ""
+          }
+        ]
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "202610122220186EE5A98C1D63E8A71B8C",
+      "waitedMs": 2186,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "1066345f-977a-4cdb-ab81-cd3427075a22",
+    "latencyMs": 4082
+  }
+}

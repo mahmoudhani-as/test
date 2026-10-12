@@ -1,0 +1,114 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_get",
+    "method": "GET",
+    "path": "/v1.3/ad/get/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "20261012222234B2886E9B182432E5621D",
+      "data": {
+        "list": [
+          {
+            "ad_id": "1833201517548594",
+            "ad_text": "الحياة في الدرعية إرث، تطوّر، استدامة.. بفرص تجارية ثمينة، وابتكاراتٌ واعدة؛ تنبض من هالأرض",
+            "app_name": "",
+            "music_id": null,
+            "landing_page_urls": null,
+            "call_to_action_id": null,
+            "campaign_name": "LifeInDiriyah_Retail2025_UF_AWR_KSA_ENAR_TikTok",
+            "brand_safety_postbid_partner": "UNSET",
+            "viewability_vast_url": null,
+            "video_id": "v10033g50000d0q9d2fog65imsgfebig",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "hs-diriyahliving_may25_awr",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "diriyahliving_ar",
+                "key": "utm_term"
+              },
+              {
+                "value": "retail_video_ar",
+                "key": "utm_content"
+              }
+            ],
+            "adgroup_name": "Diriyah_Tactical_Diriyah Living Campaign_UF_KSA_Prospecting_AR_Awareness_TIKTOK",
+            "call_to_action": "LEARN_MORE",
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202504235d0ddc1b8ba9571646aca4ab",
+            "deeplink": "",
+            "modify_time": "2026-10-12 14:22:20",
+            "campaign_automation_type": "MANUAL",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar/diriyah-living?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-diriyahliving_may25_awr&utm_term=diriyahliving_ar&utm_content=retail_video_ar",
+            "tracking_pixel_id": 7347671240183693000,
+            "ad_name": "Diriyah_Tactical_Diriyah Living Campaign_UF_KSA_Prospecting_AR_Awareness_TIKTOK_Retail Video AR - 15s",
+            "deeplink_type": "NORMAL",
+            "vast_moat_enabled": false,
+            "creative_type": null,
+            "brand_safety_vast_url": null,
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "adgroup_id": "1833201517548578",
+            "operation_status": "ENABLE",
+            "is_new_structure": true,
+            "card_id": null,
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "ad_texts": null,
+            "impression_tracking_url": null,
+            "playable_url": "",
+            "page_id": null,
+            "identity_type": "CUSTOMIZED_USER",
+            "optimization_event": null,
+            "advertiser_id": "7338057963233443842",
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202504235d0ddc1b8ba9571646aca4ab",
+            "create_time": "2025-05-26 16:39:22",
+            "viewability_postbid_partner": "UNSET",
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/oMuQgPNIbHlLBfoKkFJJDcEwpDlXfOAXNBBaxQ"
+            ],
+            "display_name": "Diriyah Company",
+            "is_aco": false,
+            "creative_authorized": true,
+            "creative_auto_enhancement_strategy_list": [
+              "VIDEO_QUALITY",
+              "MUSIC_REFRESH"
+            ],
+            "identity_id": "7496497927239974920",
+            "click_tracking_url": null,
+            "campaign_id": "1833199780659249",
+            "ad_format": "SINGLE_VIDEO",
+            "carousel_image_labels": null
+          }
+        ],
+        "page_info": {
+          "page": 1,
+          "page_size": 10,
+          "total_page": 1,
+          "total_number": 1
+        }
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "20261012222234B2886E9B182432E5621D",
+      "waitedMs": 528,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "00b44d35-f68d-48ef-9701-1a03b5b5af94",
+    "latencyMs": 2098
+  }
+}

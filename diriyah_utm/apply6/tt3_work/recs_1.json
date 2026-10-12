@@ -1,0 +1,16 @@
+[
+ {
+  "ad_id": "1831360879349938",
+  "result": "AlreadyFixed",
+  "before": "https://www.diriyahcompany.sa/en/diriyah-living?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-diriyahliving_may25_awr&utm_term=diriyahliving_en&utm_content=home_video_en",
+  "after_live": "https://www.diriyahcompany.sa/en/diriyah-living?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-diriyahliving_may25_awr&utm_term=diriyahliving_en&utm_content=home_video_en",
+  "detail": "pre-read ad/get req 20261012220903EF5A8179A290B3F3BB88: landing_page_url == new byte for byte; utm_params = 5 UTMs of new (source, medium, campaign, term, content), no utm_id; CUSTOMIZED_USER manual SINGLE_VIDEO, CTA LEARN_MORE; ENABLE / AD_STATUS_CAMPAIGN_DISABLE; modify_time 2026-10-12 13:58:43. No write in this run. Provenance: written by the stopped earlier run of this batch (wf_cf04fe69-b13) with full ad/update req 20261012215842BB40980D08E4FD6F3932 code 0 need_audit=false (payload = creative fields as read at its pre-read req 20261012215802202AF3A760301D40F74C with only landing_page_url = new and utm_params = UTMs of new, pixel 7347671240183693330 as exact string); that run was stopped before recording it. ad_text trailing space trimmed by gateway ('Diriyah Living, today and for generations to come. ' -> '...come.'; accepted by user)."
+ },
+ {
+  "ad_id": "1831360879343698",
+  "result": "Fixed",
+  "before": "https://www.diriyahcompany.sa/en/diriyah-living?utm_source=tiktok&utm_medium=paid-video&utm_campaign=hs-diriyahliving-2025-apr-uf-reach-awareness&utm_id=3056&utm_term=diriyahliving-en-all-na&utm_content=school-video",
+  "after_live": "https://www.diriyahcompany.sa/en/diriyah-living?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-diriyahliving_may25_awr&utm_term=diriyahliving_en&utm_content=school_video_en",
+  "detail": "pre-read ad/get req 20261012220903EF5A8179A290B3F3BB88: URL == now (CUSTOMIZED_USER manual SINGLE_VIDEO, identity 7496497927239974920, video_id v10033g50000d00gosfog65is7nrvps0, 1 image, CTA LEARN_MORE, adgroup 1831360878681089, utm_params before 5 keys incl. utm_id 3056, no utm_term). Pixel ad/get shows rounded 7347671240183693000 = Visit Diriyah - Base Pixel 7347671240183693330 (pixel/list req 202610122211045CADADFD1529D9BD7B37), sent as exact string. dry_run: sent payload == built payload; preview body = creative fields as read (ad_name, identity, ad_format, video_id, image_ids, ad_text, CTA, display_name, avatar, aigc NOT_DECLARED, creative_authorized true, vast_moat false) with only landing_page_url = new and utm_params = 5 UTMs of new (no utm_id). Live full ad/update code 0 OK req 2026101222123688574072FDE305A0054F need_audit=false (1 live attempt). Re-read ad/get req 202610122212574B55BC9C3131AAF2D85E: landing_page_url == new byte for byte; utm_params = 5 keys matching new, no utm_id; all other fields identical to pre-read except ad_text; operation_status ENABLE, secondary_status AD_STATUS_CAMPAIGN_DISABLE unchanged; modify_time 2025-07-28 11:23:23 -> 2026-10-12 14:12:37. ad_text trailing space trimmed by gateway ('Diriyah Living, today and for generations to come. ' -> '...come.'; accepted by user)."
+ }
+]

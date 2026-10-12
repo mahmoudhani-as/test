@@ -1,0 +1,116 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_update",
+    "method": "POST",
+    "path": "/v1.3/ad/update/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "20261012222012F6AE4E692D9BA29297D1",
+      "data": {
+        "ad_ids": [
+          "1858735806258274"
+        ],
+        "need_audit": false,
+        "creatives": [
+          {
+            "music_id": "7614800156370373396",
+            "deeplink_type": "NORMAL",
+            "fallback_type": "UNSET",
+            "deeplink": "",
+            "click_tracking_url": null,
+            "carousel_image_labels": null,
+            "ad_text": "شارك لحظات الإفطار في مطل البجيري،​واكتشف التجربة",
+            "identity_id": "0f6eebaa-ba16-5ad3-aa97-4171805e2af1",
+            "display_name": "DiriyahCo",
+            "playable_url": "",
+            "viewability_postbid_partner": "UNSET",
+            "brand_safety_postbid_partner": "UNSET",
+            "dark_post_status": "ON",
+            "vast_moat_enabled": false,
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "visitor-diriyah-coe_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "display_ar"
+              }
+            ],
+            "app_name": "DiriyahCo",
+            "landing_page_urls": null,
+            "optimization_event": "LANDING_PAGE_VIEW",
+            "creative_authorized": false,
+            "card_id": null,
+            "ad_name": "BT Ramadan tiktok - ARB_Q9BtcY0F.jpg_Ad name2026-03-04 15:50:29",
+            "call_to_action_id": "7614801231113899015",
+            "avatar_icon_web_uri": "",
+            "image_ids": [
+              "ad-site-i18n-sg/202603085d0d45ae5062b0604c6581af"
+            ],
+            "advertiser_id": "7338057963233443842",
+            "modify_time": "2026-10-12 14:20:14",
+            "branded_content_disabled": false,
+            "impression_tracking_url": null,
+            "campaign_automation_type": "MANUAL",
+            "brand_safety_vast_url": null,
+            "creative_type": null,
+            "is_aco": false,
+            "is_new_structure": true,
+            "campaign_name": "BujairiTerrace_Ramadan2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_format": "CAROUSEL_ADS",
+            "tracking_pixel_id": 7347671240183693000,
+            "ad_id": "1858735806258274",
+            "create_time": "2026-03-04 12:52:06",
+            "creative_auto_enhancement_strategy_list": [],
+            "ad_texts": null,
+            "landing_page_url": "https://www.diriyah.sa/ar/bujairi-terrace?utm_source=tiktok&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=display_ar",
+            "viewability_vast_url": null,
+            "identity_authorized_bc_id": "6807778858780065797",
+            "video_id": null,
+            "ad_ref_pixel_id": 7347671240183693000,
+            "page_id": null,
+            "adgroup_name": "BujairiTerrace_Ramadan2026_MF_TRF_KSA_Restaurants_AR",
+            "campaign_id": "1857288757610529",
+            "profile_image_url": "",
+            "product_info": {
+              "product_titles": null,
+              "selling_points": null,
+              "product_image_list": null
+            },
+            "identity_type": "BC_AUTH_TT",
+            "adgroup_id": "1857546910328898",
+            "operation_status": "DISABLE"
+          }
+        ]
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "20261012222012F6AE4E692D9BA29297D1",
+      "waitedMs": 2346,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "b0cca019-0e0e-4082-ab6e-c35c4209404a",
+    "latencyMs": 3986
+  }
+}

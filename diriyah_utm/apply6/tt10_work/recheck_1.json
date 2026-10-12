@@ -1,0 +1,292 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_get",
+    "method": "GET",
+    "path": "/v1.3/ad/get/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "2026101222184506C6EE72351408865C6B",
+      "data": {
+        "list": [
+          {
+            "ad_id": "1859092509587505",
+            "landing_page_url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_display",
+            "modify_time": "2026-03-18 09:41:34",
+            "operation_status": "DISABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_ar",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "ad-id-7aee00_test_ad_name_display",
+                "key": "utm_content"
+              }
+            ],
+            "ad_text": "ِعش ليالي رمضان،​في مطلّ البجيري… واكتشفها.",
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7"
+          },
+          {
+            "ad_id": "1859092322258002",
+            "landing_page_url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_display",
+            "modify_time": "2026-10-12 13:09:13",
+            "operation_status": "DISABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_en",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "ad-id-7aee00_test_ad_name_display",
+                "key": "utm_content"
+              }
+            ],
+            "ad_text": "Experience Ramadan nights in Bujairi Terrace. Discover more.",
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7"
+          },
+          {
+            "ad_id": "1859092176549938",
+            "landing_page_url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_display",
+            "modify_time": "2026-10-12 13:09:12",
+            "operation_status": "DISABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_en",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "ad-id-7aee00_test_ad_name_display",
+                "key": "utm_content"
+              }
+            ],
+            "ad_text": "Experience Ramadan nights in Bujairi Terrace. Discover more",
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7"
+          },
+          {
+            "ad_id": "1859082576614609",
+            "landing_page_url": "https://www.diriyah.sa/ar/bujairi-terrace?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_display",
+            "modify_time": "2026-03-18 11:57:01",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "ad-id-7aee00_test_ad_name_display",
+                "key": "utm_content"
+              }
+            ],
+            "ad_text": "شارك لحظات الإفطار في مطل البجيري،​ واكتشف التجربة",
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7"
+          },
+          {
+            "ad_id": "1859082119241057",
+            "landing_page_url": "https://www.diriyah.sa/ar/bujairi-terrace?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_display",
+            "modify_time": "2026-03-08 09:12:25",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_ar",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "ad-id-7aee00_test_ad_name_display",
+                "key": "utm_content"
+              }
+            ],
+            "ad_text": "شارك لحظات الإفطار في مطل البجيري،​ واكتشف التجربة",
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7"
+          },
+          {
+            "ad_id": "1858736065256545",
+            "landing_page_url": "https://www.diriyah.sa/en/bujairi-terrace?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_display",
+            "modify_time": "2026-03-08 08:57:20",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_en",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "ad-id-7aee00_test_ad_name_display",
+                "key": "utm_content"
+              }
+            ],
+            "ad_text": "Share iftar moments in Bujairi Terrace. Discover more.",
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7"
+          },
+          {
+            "ad_id": "1858735806258274",
+            "landing_page_url": "https://www.diriyah.sa/ar/bujairi-terrace?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_display",
+            "modify_time": "2026-03-08 09:00:09",
+            "operation_status": "DISABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "ad-id-7aee00_test_ad_name_display",
+                "key": "utm_content"
+              }
+            ],
+            "ad_text": "شارك لحظات الإفطار في مطل البجيري،​واكتشف التجربة",
+            "identity_id": "0f6eebaa-ba16-5ad3-aa97-4171805e2af1"
+          },
+          {
+            "ad_id": "1858735348584546",
+            "landing_page_url": "https://www.diriyah.sa/en/bujairi-terrace?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_display",
+            "modify_time": "2026-03-08 08:56:33",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_en",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "ad-id-7aee00_test_ad_name_display",
+                "key": "utm_content"
+              }
+            ],
+            "ad_text": "Share iftar moments in Bujairi Terrace. Discover more.",
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7"
+          },
+          {
+            "ad_id": "1858735134060978",
+            "landing_page_url": "https://www.diriyah.sa/ar/bujairi-terrace?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_display",
+            "modify_time": "2026-03-08 09:12:26",
+            "operation_status": "DISABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_ar",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "ad-id-7aee00_test_ad_name_display",
+                "key": "utm_content"
+              }
+            ],
+            "ad_text": "شارك لحظات الإفطار في مطل البجيري،​واكتشف التجربة",
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7"
+          }
+        ],
+        "page_info": {
+          "page": 1,
+          "page_size": 100,
+          "total_page": 1,
+          "total_number": 9
+        }
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "2026101222184506C6EE72351408865C6B",
+      "waitedMs": 863,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false,
+      "mcp_result_projection": {
+        "fields": [
+          "ad_id",
+          "landing_page_url",
+          "modify_time",
+          "operation_status",
+          "secondary_status",
+          "utm_params",
+          "ad_text",
+          "identity_id",
+          "tiktok_item_id"
+        ]
+      }
+    }
+  },
+  "meta": {
+    "requestId": "1ec59d9c-6b35-4b7d-bb80-725c4af6b527",
+    "latencyMs": 2471
+  }
+}

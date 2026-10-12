@@ -1,0 +1,206 @@
+{
+ "launched": "2026-10-12 (session 5e42174a)",
+ "script": "workflows/diriyah-apply-v6.js",
+ "runs": [
+  {
+   "task": "w74lzkty0",
+   "run": "wf_1455d71a-0e3",
+   "platform": "google",
+   "batches": [
+    "in_google_1.json",
+    "in_google_2.json"
+   ]
+  },
+  {
+   "task": "wdvwwriia",
+   "run": "wf_35f459a6-efe",
+   "platform": "google",
+   "batches": [
+    "in_google_4.json",
+    "in_google_3.json",
+    "in_google_sl_1.json"
+   ]
+  },
+  {
+   "task": "wb9hpbw0z",
+   "run": "wf_0f848f0d-76e",
+   "platform": "meta",
+   "batches": [
+    "in_meta_1.json",
+    "in_meta_2.json",
+    "in_meta_9.json",
+    "in_meta_10.json",
+    "in_meta_17.json",
+    "in_meta_18.json",
+    "in_meta_25.json",
+    "in_meta_26.json"
+   ]
+  },
+  {
+   "task": "w1x1ke4ct",
+   "run": "wf_c1962e3c-432",
+   "platform": "meta",
+   "batches": [
+    "in_meta_3.json",
+    "in_meta_4.json",
+    "in_meta_11.json",
+    "in_meta_12.json",
+    "in_meta_19.json",
+    "in_meta_20.json"
+   ]
+  },
+  {
+   "task": "wtm5z8xke",
+   "run": "wf_4e885295-93a",
+   "platform": "meta",
+   "batches": [
+    "in_meta_5.json",
+    "in_meta_6.json",
+    "in_meta_13.json",
+    "in_meta_14.json",
+    "in_meta_21.json",
+    "in_meta_22.json"
+   ]
+  },
+  {
+   "task": "wobjljaji",
+   "run": "wf_1fef16cf-fba",
+   "platform": "meta",
+   "batches": [
+    "in_meta_7.json",
+    "in_meta_8.json",
+    "in_meta_15.json",
+    "in_meta_16.json",
+    "in_meta_23.json",
+    "in_meta_24.json"
+   ]
+  },
+  {
+   "task": "whhiqin2e",
+   "run": "wf_15548fb1-16a",
+   "platform": "snapchat",
+   "batches": [
+    "in_snapchat_1.json",
+    "in_snapchat_2.json",
+    "in_snapchat_5.json",
+    "in_snapchat_6.json"
+   ]
+  },
+  {
+   "task": "wuvrdjzo9",
+   "run": "wf_22c449ac-41f",
+   "platform": "snapchat",
+   "batches": [
+    "in_snapchat_3.json",
+    "in_snapchat_4.json",
+    "in_snapchat_7.json",
+    "in_snapchat_8.json"
+   ]
+  },
+  {
+   "task": "wwaftyske",
+   "run": "wf_f06266ca-9a9",
+   "platform": "tiktok",
+   "batches": [
+    "in_tiktok_1.json",
+    "in_tiktok_2.json",
+    "in_tiktok_7.json",
+    "in_tiktok_8.json",
+    "in_tiktok_13.json",
+    "in_tiktok_14.json"
+   ],
+   "stopped": "stopped 12-Oct ~14:00 UTC: Spark Push re-publish found; relaunched with the Spark Push hold"
+  },
+  {
+   "task": "w5f5mg13a",
+   "run": "wf_cf04fe69-b13",
+   "platform": "tiktok",
+   "batches": [
+    "in_tiktok_3.json",
+    "in_tiktok_4.json",
+    "in_tiktok_9.json",
+    "in_tiktok_10.json",
+    "in_tiktok_15.json",
+    "in_tiktok_16.json"
+   ],
+   "stopped": "stopped 12-Oct ~14:00 UTC: Spark Push re-publish found; relaunched with the Spark Push hold"
+  },
+  {
+   "task": "wwainhy3r",
+   "run": "wf_7ed1ca78-7a6",
+   "platform": "tiktok",
+   "batches": [
+    "in_tiktok_5.json",
+    "in_tiktok_6.json",
+    "in_tiktok_11.json",
+    "in_tiktok_12.json",
+    "in_tiktok_17.json"
+   ],
+   "stopped": "stopped 12-Oct ~14:00 UTC: Spark Push re-publish found; relaunched with the Spark Push hold"
+  },
+  {
+   "task": "wim7wl1ml",
+   "run": "wf_438dd2ce-50a",
+   "platform": "x",
+   "batches": [
+    "in_x_1.json",
+    "in_x_2.json",
+    "in_x_5.json",
+    "in_x_6.json",
+    "in_x_9.json"
+   ]
+  },
+  {
+   "task": "w5du6xdcu",
+   "run": "wf_ab8422cb-21a",
+   "platform": "x",
+   "batches": [
+    "in_x_3.json",
+    "in_x_4.json",
+    "in_x_7.json",
+    "in_x_8.json"
+   ]
+  },
+  {
+   "task": "wwfq6y9bk",
+   "run": "wf_24c2ba83-4c4",
+   "platform": "tiktok",
+   "batches": [
+    "in_tiktok_1.json",
+    "in_tiktok_2.json",
+    "in_tiktok_7.json",
+    "in_tiktok_8.json",
+    "in_tiktok_13.json",
+    "in_tiktok_14.json"
+   ],
+   "note": "relaunch with the Spark Push hold (Spark Push ads recorded NotAttempted, held for the user)"
+  },
+  {
+   "task": "wlo6e2344",
+   "run": "wf_cb294060-2b1",
+   "platform": "tiktok",
+   "batches": [
+    "in_tiktok_3.json",
+    "in_tiktok_4.json",
+    "in_tiktok_9.json",
+    "in_tiktok_10.json",
+    "in_tiktok_15.json",
+    "in_tiktok_16.json"
+   ],
+   "note": "relaunch with the Spark Push hold (Spark Push ads recorded NotAttempted, held for the user)"
+  },
+  {
+   "task": "wpx3cjwpj",
+   "run": "wf_72787710-74a",
+   "platform": "tiktok",
+   "batches": [
+    "in_tiktok_5.json",
+    "in_tiktok_6.json",
+    "in_tiktok_11.json",
+    "in_tiktok_12.json",
+    "in_tiktok_17.json"
+   ],
+   "note": "relaunch with the Spark Push hold (Spark Push ads recorded NotAttempted, held for the user)"
+  }
+ ]
+}

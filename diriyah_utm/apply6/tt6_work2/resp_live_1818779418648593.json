@@ -1,0 +1,106 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_update",
+    "method": "POST",
+    "path": "/v1.3/ad/update/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "202610122220209C6A67D0DDDF48FCFED7",
+      "data": {
+        "ad_ids": [
+          "1818779418648593"
+        ],
+        "need_audit": false,
+        "creatives": [
+          {
+            "creative_authorized": true,
+            "image_ids": [],
+            "brand_safety_vast_url": null,
+            "campaign_automation_type": "MANUAL",
+            "landing_page_urls": null,
+            "deeplink": "",
+            "call_to_action": "LEARN_MORE",
+            "app_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "impression_tracking_url": null,
+            "ad_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_UP_KSA_Prospecting_EN_Awareness_TIKTOK_D&G - EN",
+            "identity_id": "7031391213458752514",
+            "viewability_postbid_partner": "UNSET",
+            "advertiser_id": "7338057963233443842",
+            "ad_id": "1818779418648593",
+            "avatar_icon_web_uri": "",
+            "vast_moat_enabled": false,
+            "ad_format": "SINGLE_VIDEO",
+            "optimization_event": null,
+            "video_id": null,
+            "adgroup_id": "1818779415227410",
+            "promotional_music_disabled": true,
+            "profile_image_url": "",
+            "operation_status": "ENABLE",
+            "deeplink_type": "NORMAL",
+            "viewability_vast_url": null,
+            "ad_texts": null,
+            "identity_type": "AUTH_CODE",
+            "ad_text": "بين زوايا #الدرعية.. روح إيطالية!  افتتاح دولتشي اند غابانا في #الدرعية 🇮🇹🤎 ‏In the heart of #Diriyah, where heritage meets Italian elegance! ‏Proud to celebrate the grand opening of Dolce & Gabbana in #Diriyah 🇮🇹 🤎",
+            "adgroup_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_UP_KSA_Prospecting_EN_Awareness_TIKTOK_D&G -EN",
+            "card_id": null,
+            "music_id": null,
+            "campaign_id": "1818779415227394",
+            "carousel_image_labels": null,
+            "tracking_pixel_id": 7347671240183693000,
+            "modify_time": "2026-10-12 14:20:22",
+            "creative_type": null,
+            "page_id": null,
+            "display_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "create_time": "2024-12-18 12:00:22",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "bujairiterracewinter_dec24_awr",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "bujairiterracewinter_en",
+                "key": "utm_term"
+              },
+              {
+                "value": "video_en",
+                "key": "utm_content"
+              }
+            ],
+            "is_new_structure": true,
+            "is_aco": false,
+            "tiktok_item_id": "7447982795982507271",
+            "call_to_action_id": null,
+            "playable_url": "",
+            "click_tracking_url": null,
+            "brand_safety_postbid_partner": "UNSET",
+            "campaign_name": "BujairiTerrace_Winter2024Retail_UF_AWR_KSA_ENAR_TikTok",
+            "landing_page_url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bujairiterracewinter_dec24_awr&utm_term=bujairiterracewinter_en&utm_content=video_en"
+          }
+        ]
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "202610122220209C6A67D0DDDF48FCFED7",
+      "waitedMs": 1887,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "db1f7ff8-7188-4e94-9461-c5b03be32503",
+    "latencyMs": 3707
+  }
+}

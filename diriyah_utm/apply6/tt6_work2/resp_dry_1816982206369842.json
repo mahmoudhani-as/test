@@ -1,0 +1,80 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_update",
+    "dryRun": true,
+    "data": {
+      "request": {
+        "method": "POST",
+        "url": "https://business-api.tiktok.com/open_api/v1.3/ad/update/",
+        "path": "/v1.3/ad/update/",
+        "headers": {
+          "Access-Token": "[redacted]",
+          "Accept": "application/json",
+          "Content-Type": "application/json"
+        },
+        "query": {},
+        "bodyFormat": "json",
+        "body": {
+          "advertiser_id": "7338057963233443842",
+          "adgroup_id": "1814257738350625",
+          "creatives": [
+            {
+              "ad_format": "SINGLE_VIDEO",
+              "ad_id": "1816982206369842",
+              "ad_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_LF_KSA_Prospecting_EN_Conversion_TIKTOK_Villa Mama's 5s - EN",
+              "ad_text": "Feel the cool breeze as Villa Mama's treats you to its most mouthwatering dishes",
+              "aigc_disclosure_type": "NOT_DECLARED",
+              "avatar_icon_web_uri": "ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+              "call_to_action_id": "7442358977599474706",
+              "creative_authorized": true,
+              "display_name": "Visit Diriyah",
+              "dynamic_destination": "UNSET",
+              "fallback_type": "UNSET",
+              "identity_id": "7350277519361425409",
+              "identity_type": "CUSTOMIZED_USER",
+              "image_ids": [
+                "tos-alisg-p-0051c001-sg/oMDfIFagAhkNpDtZQiDB6NIuyXEDSneQgCBRIc"
+              ],
+              "landing_page_url": "https://www.diriyah.sa/en/dine?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bujairiterracewinter_nov24_conv&utm_term=bujairiterracewinter_en&utm_content=villamamas5s_video_en",
+              "shopping_ads_fallback_type": "DEFAULT",
+              "tracking_pixel_id": "7347671240183693330",
+              "utm_params": [
+                {
+                  "key": "utm_source",
+                  "value": "tiktok"
+                },
+                {
+                  "key": "utm_medium",
+                  "value": "paid-social"
+                },
+                {
+                  "key": "utm_campaign",
+                  "value": "bujairiterracewinter_nov24_conv"
+                },
+                {
+                  "key": "utm_term",
+                  "value": "bujairiterracewinter_en"
+                },
+                {
+                  "key": "utm_content",
+                  "value": "villamamas5s_video_en"
+                }
+              ],
+              "vast_moat_enabled": false,
+              "vertical_video_strategy": "UNSET",
+              "video_id": "v10033g50000ct48denog65mjbit4cog"
+            }
+          ]
+        }
+      },
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "289c28b0-6176-49d9-bd65-ae4f6be131e6",
+    "latencyMs": 1240
+  }
+}

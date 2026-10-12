@@ -1,0 +1,121 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_update",
+    "method": "POST",
+    "path": "/v1.3/ad/update/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "2026101222194107971208A54002A8617D",
+      "data": {
+        "ad_ids": [
+          "1858736065256545"
+        ],
+        "need_audit": false,
+        "creatives": [
+          {
+            "brand_safety_postbid_partner": "UNSET",
+            "deeplink": "",
+            "ad_name": "Static EN",
+            "call_to_action_id": "7614801301351713810",
+            "playable_url": "",
+            "campaign_name": "BujairiTerrace_Ramadan2026_MF_TRF_KSA_ENAR_TikTok",
+            "avatar_icon_web_uri": "",
+            "creative_authorized": false,
+            "ad_text": "Share iftar moments in Bujairi Terrace. Discover more.",
+            "campaign_id": "1857288757610529",
+            "music_id": "7614800156370373396",
+            "adgroup_id": "1857546910327842",
+            "viewability_postbid_partner": "UNSET",
+            "card_id": null,
+            "ad_format": "CAROUSEL_ADS",
+            "creative_auto_enhancement_strategy_list": [
+              "VIDEO_QUALITY",
+              "MUSIC_REFRESH",
+              "IMAGE_QUALITY",
+              "IMAGE_RESIZE"
+            ],
+            "fallback_type": "UNSET",
+            "display_name": "bujairiterrace",
+            "video_id": null,
+            "branded_content_disabled": false,
+            "creative_type": null,
+            "is_new_structure": true,
+            "vast_moat_enabled": false,
+            "landing_page_urls": null,
+            "identity_authorized_bc_id": "6807778858780065797",
+            "app_name": "bujairiterrace",
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "page_id": null,
+            "ad_texts": null,
+            "tracking_pixel_id": 7347671240183693000,
+            "identity_type": "BC_AUTH_TT",
+            "product_info": {
+              "product_titles": null,
+              "selling_points": null,
+              "product_image_list": null
+            },
+            "dark_post_status": "ON",
+            "is_aco": false,
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "visitor-diriyah-coe_mar26_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "en"
+              },
+              {
+                "key": "utm_content",
+                "value": "display_en"
+              }
+            ],
+            "optimization_event": "LANDING_PAGE_VIEW",
+            "viewability_vast_url": null,
+            "carousel_image_labels": null,
+            "ad_id": "1858736065256545",
+            "click_tracking_url": null,
+            "operation_status": "ENABLE",
+            "profile_image_url": "",
+            "landing_page_url": "https://www.diriyah.sa/en/bujairi-terrace?utm_source=tiktok&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_mar26_cond&utm_term=en&utm_content=display_en",
+            "ad_ref_pixel_id": 7347671240183693000,
+            "deeplink_type": "NORMAL",
+            "advertiser_id": "7338057963233443842",
+            "image_ids": [
+              "ad-site-i18n-sg/202603085d0d5a2baa47129c4211bd09"
+            ],
+            "modify_time": "2026-10-12 14:19:42",
+            "create_time": "2026-03-04 12:57:50",
+            "impression_tracking_url": null,
+            "campaign_automation_type": "MANUAL",
+            "brand_safety_vast_url": null,
+            "adgroup_name": "BujairiTerrace_Ramadan2026_MF_TRF_KSA_Restaurants_EN"
+          }
+        ]
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "2026101222194107971208A54002A8617D",
+      "waitedMs": 2270,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "56b24df4-3947-45f3-a515-8f1c50aa67dc",
+    "latencyMs": 3777
+  }
+}

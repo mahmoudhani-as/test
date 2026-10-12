@@ -1,0 +1,1469 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "snapchat_adaccounts_ad_account_id_creatives_get",
+    "method": "GET",
+    "host": "adsapi.snapchat.com",
+    "path": "/v1/adaccounts/623ccdb3-d546-42e8-9082-89ff8b59cfd1/creatives",
+    "dryRun": false,
+    "data": {
+      "request_status": "SUCCESS",
+      "request_id": "d287f8e8-91f2-41da-a07e-84d96b6be0a4",
+      "creatives": [
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "0d9b5f0b-6602-4ca0-b776-dcf7caa3b870",
+            "updated_at": "2024-12-06T17:31:34.436Z",
+            "created_at": "2024-12-06T17:29:14.166Z",
+            "name": "Winter Campaign EN",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "COMPOSITE",
+            "packaging_status": "SUCCESS",
+            "review_status": "APPROVED",
+            "review_status_details": "",
+            "shareable": true,
+            "playback_type": "LOOPING",
+            "headline": "Diriyah Global Seminar l Timeless",
+            "render_type": "STATIC",
+            "top_snap_crop_position": "MIDDLE",
+            "composite_properties": {
+              "creative_ids": [
+                "6e347f92-7509-44d9-8468-196fdb870bb3"
+              ]
+            },
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "-955547128",
+            "creator_partnership_type": "NONE"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "10b45aaa-db17-4a24-b98b-82c3caf9835e",
+            "updated_at": "2026-10-12T10:50:33.946Z",
+            "created_at": "2024-12-06T17:42:55.206Z",
+            "name": "EN 2",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "WEB_VIEW",
+            "packaging_status": "SUCCESS",
+            "review_status": "APPROVED",
+            "review_status_details": "",
+            "shareable": true,
+            "forced_view_eligibility": "SIX_SECONDS",
+            "headline": "Diriyah Global Seminar l Timeless",
+            "call_to_action": "MORE",
+            "cta_color_display_mode": "AUTO_COLOR_DETECTION",
+            "render_type": "STATIC",
+            "top_snap_media_id": "fc6a8c56-da05-408b-a0a3-ad34925b5144",
+            "top_snap_crop_position": "MIDDLE",
+            "web_view_properties": {
+              "url": "https://dgs.dgda.gov.sa/Pages/DGS.aspx?lang=en-us&utm_source=snapchat&utm_medium=paid-social&utm_campaign=dec24&utm_term=en&utm_content=en",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "-1313156856",
+            "creator_partnership_type": "NONE"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "1e927149-a094-4c84-b3cf-67bd31847acc",
+            "updated_at": "2026-10-12T11:02:54.459Z",
+            "created_at": "2025-02-20T14:33:15.692Z",
+            "name": "Founding day V2",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "COMPOSITE",
+            "packaging_status": "SUCCESS",
+            "review_status": "APPROVED",
+            "shareable": true,
+            "playback_type": "LOOPING",
+            "headline": "يوم التأسيس | راعي الأوّله",
+            "render_type": "STATIC",
+            "top_snap_crop_position": "MIDDLE",
+            "composite_properties": {
+              "creative_ids": [
+                "912b54ae-d838-426e-a938-c8dcd86bc5ce"
+              ]
+            },
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "94137176",
+            "creator_partnership_type": "NONE"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "20435b1b-a4cd-4eee-a7ee-4308e46c1604",
+            "updated_at": "2026-10-12T10:56:57.223Z",
+            "created_at": "2024-12-06T17:36:10.756Z",
+            "name": "EN",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "WEB_VIEW",
+            "packaging_status": "SUCCESS",
+            "review_status": "APPROVED",
+            "review_status_details": "",
+            "shareable": true,
+            "forced_view_eligibility": "SIX_SECONDS",
+            "headline": "Diriyah Global Seminar l Timeless",
+            "call_to_action": "MORE",
+            "cta_color_display_mode": "AUTO_COLOR_DETECTION",
+            "render_type": "STATIC",
+            "top_snap_media_id": "3aa39b93-5586-4fe0-9bfa-ab8808f1234d",
+            "top_snap_crop_position": "MIDDLE",
+            "web_view_properties": {
+              "url": "https://dgs.dgda.gov.sa/Pages/DGS.aspx?lang=en-us&utm_source=snapchat&utm_medium=paid-social&utm_term=en&utm_content=en",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "870314719",
+            "creator_partnership_type": "NONE"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "2a1952ab-f7ae-40fd-ad46-a9d6ca8bef05",
+            "updated_at": "2026-10-12T10:56:07.545Z",
+            "created_at": "2024-12-23T14:42:27.161Z",
+            "name": "video2",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "WEB_VIEW",
+            "packaging_status": "SUCCESS",
+            "review_status": "APPROVED",
+            "review_status_details": "",
+            "shareable": true,
+            "forced_view_eligibility": "SIX_SECONDS",
+            "headline": "الإمام تركي بن عبدالله",
+            "call_to_action": "MORE",
+            "cta_color_display_mode": "AUTO_COLOR_DETECTION",
+            "render_type": "STATIC",
+            "top_snap_media_id": "4b1394ce-6115-470d-88f8-e867f49977c5",
+            "top_snap_crop_position": "MIDDLE",
+            "web_view_properties": {
+              "url": "https://www.dgda.gov.sa/ar/imam-turki-exhibition?utm_source=snapchat&utm_medium=paid-social&utm_campaign=dec24_cond&utm_term=ar&utm_content=video_ar",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "624705954",
+            "creator_partnership_type": "NONE"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "2bed4a06-6636-4742-8ce3-f061bb799ab3",
+            "updated_at": "2023-09-21T17:24:38.038Z",
+            "created_at": "2023-09-21T16:48:09.096Z",
+            "name": "Diriyah Gate - Cutdown8",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "SNAP_AD",
+            "packaging_status": "SUCCESS",
+            "review_status": "APPROVED",
+            "review_status_details": "",
+            "shareable": true,
+            "forced_view_eligibility": "FULL_DURATION",
+            "headline": "من قديم الأزمنة",
+            "brand_name": "هيئة تطوير بوابة الدرعية",
+            "render_type": "STATIC",
+            "top_snap_media_id": "90310e9d-cdea-40b8-8220-3bf4fdce5255",
+            "top_snap_crop_position": "MIDDLE",
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "1430884071"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "2e2c13f6-954d-4d21-8aad-820a844f8f72",
+            "updated_at": "2026-10-12T10:57:23.093Z",
+            "created_at": "2023-10-03T11:04:45.373Z",
+            "name": "Diriyah Ad1",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "WEB_VIEW",
+            "packaging_status": "SUCCESS",
+            "review_status": "APPROVED",
+            "review_status_details": "",
+            "shareable": true,
+            "forced_view_eligibility": "NONE",
+            "headline": "مبادرة بيان",
+            "brand_name": "هيئة تطوير بوابة الدرعية",
+            "call_to_action": "MORE",
+            "render_type": "STATIC",
+            "top_snap_media_id": "fdf2f6cb-684e-4b7b-8a1d-0f040a1f1396",
+            "top_snap_crop_position": "MIDDLE",
+            "web_view_properties": {
+              "url": "https://dgda.tte-lighthouse-sa.com/anonym/oFWgvMTVdPPeExRCrVkigA?lang=ar&utm_source=snapchat&utm_medium=paid-social&utm_campaign=cond",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true,
+              "web_browser_type": "SNAP"
+            },
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "1830371523"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "2e37a7f8-8908-46d0-a6e6-08d713c6d3a7",
+            "updated_at": "2026-10-12T10:59:03.784Z",
+            "created_at": "2024-02-22T17:25:53.247Z",
+            "name": "Option 1",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "WEB_VIEW",
+            "packaging_status": "SUCCESS",
+            "review_status": "APPROVED",
+            "review_status_details": "",
+            "shareable": true,
+            "forced_view_eligibility": "FULL_DURATION",
+            "headline": "يوم_التأسيس #رحلة_وطن#",
+            "call_to_action": "MORE",
+            "render_type": "STATIC",
+            "top_snap_media_id": "d836948a-c7ae-4b5c-872b-7e8b4b1e696b",
+            "top_snap_crop_position": "MIDDLE",
+            "web_view_properties": {
+              "url": "https://www.dgda.gov.sa/Founding-day.aspx?utm_source=snapchat&utm_medium=paid-social&utm_campaign=feb24_cond",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true,
+              "web_browser_type": "SNAP"
+            },
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "1617236750"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "35f56bb0-e1e6-4f1e-9112-fcf4ae6f4305",
+            "updated_at": "2026-10-12T10:51:43.500Z",
+            "created_at": "2023-09-21T16:53:25.364Z",
+            "name": "Diriyah Ad 2",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "WEB_VIEW",
+            "packaging_status": "SUCCESS",
+            "review_status": "APPROVED",
+            "review_status_details": "",
+            "shareable": true,
+            "forced_view_eligibility": "NONE",
+            "headline": "من قديم الأزمنة",
+            "brand_name": "هيئة تطوير بوابة الدرعية",
+            "call_to_action": "MORE",
+            "render_type": "STATIC",
+            "top_snap_media_id": "52d471ed-8d99-426d-a787-197b1ff0a5ca",
+            "top_snap_crop_position": "MIDDLE",
+            "web_view_properties": {
+              "url": "https://maps.app.goo.gl/TPYN1wpQtfAsxJhWA?g_st=ic&utm_source=snapchat&utm_medium=paid-social&utm_campaign=sep23_cond",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true,
+              "web_browser_type": "SNAP"
+            },
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "1339928252"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "37652336-6da1-4a9a-a370-b345a7311196",
+            "updated_at": "2024-09-30T09:17:53.812Z",
+            "created_at": "2024-09-30T09:17:53.812Z",
+            "name": "SND 2",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "SNAP_AD",
+            "packaging_status": "SUCCESS",
+            "review_status": "PENDING_REVIEW",
+            "shareable": true,
+            "forced_view_eligibility": "SIX_SECONDS",
+            "headline": "وطن مْعَزّي؛ ‏وفي ذرى عياله العزوة",
+            "brand_name": "هيئة تطوير بوابة الدرعية",
+            "render_type": "STATIC",
+            "top_snap_media_id": "d600c8e5-efe4-46cd-8651-0b86ca9b41b7",
+            "top_snap_crop_position": "MIDDLE",
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "2012697303"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "40cd25e9-c239-4235-a8c2-6db112365596",
+            "updated_at": "2024-09-22T08:27:04.834Z",
+            "created_at": "2024-09-21T13:35:44.038Z",
+            "name": "SND video 1",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "COMPOSITE",
+            "packaging_status": "SUCCESS",
+            "review_status": "APPROVED",
+            "review_status_details": "",
+            "shareable": true,
+            "playback_type": "LOOPING",
+            "headline": "وطن مْعَزّي؛ ‏وفي ذرى عياله العزوة",
+            "brand_name": "هيئة تطوير بوابة الدرعية",
+            "render_type": "STATIC",
+            "top_snap_crop_position": "MIDDLE",
+            "composite_properties": {
+              "creative_ids": [
+                "425098e1-8f0c-4c43-ba2b-476b7a7ad131"
+              ]
+            },
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "647946175"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "425098e1-8f0c-4c43-ba2b-476b7a7ad131",
+            "updated_at": "2024-09-22T08:27:04.842Z",
+            "created_at": "2024-09-21T13:35:42.142Z",
+            "name": "SND video 1",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "SNAP_AD",
+            "packaging_status": "SUCCESS",
+            "review_status": "APPROVED",
+            "review_status_details": "",
+            "shareable": true,
+            "forced_view_eligibility": "SIX_SECONDS",
+            "headline": "وطن مْعَزّي؛ ‏وفي ذرى عياله العزوة",
+            "brand_name": "هيئة تطوير بوابة الدرعية",
+            "render_type": "STATIC",
+            "top_snap_media_id": "2e830ede-3687-48a9-93d3-051efac388f8",
+            "top_snap_crop_position": "MIDDLE",
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "-1995140408"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "426e6b35-98c5-4c20-bbf0-0853f14dda5a",
+            "updated_at": "2023-09-21T17:22:55.920Z",
+            "created_at": "2023-09-21T16:48:09.202Z",
+            "name": "Diriyah Gate - Cutdown1",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "SNAP_AD",
+            "packaging_status": "SUCCESS",
+            "review_status": "APPROVED",
+            "review_status_details": "",
+            "shareable": true,
+            "forced_view_eligibility": "SIX_SECONDS",
+            "headline": "من قديم الأزمنة",
+            "brand_name": "هيئة تطوير بوابة الدرعية",
+            "render_type": "STATIC",
+            "top_snap_media_id": "725be3c1-d74d-44be-8db0-7ed55f98c984",
+            "top_snap_crop_position": "MIDDLE",
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "-1991581856"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "5487fe40-f93c-4f00-922d-6e2a8e1ae6bd",
+            "updated_at": "2026-10-12T10:59:50.767Z",
+            "created_at": "2024-02-22T17:25:53.489Z",
+            "name": "Option 3",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "WEB_VIEW",
+            "packaging_status": "SUCCESS",
+            "review_status": "APPROVED",
+            "review_status_details": "The attachment for your Web View ad leads to a page that is not found, has an error, or isn't displaying the intended content publicly. We require that the destination website is accessible prior to your ad submission. Please update your Web View, resubmit for review, and our team will take another look.",
+            "shareable": true,
+            "forced_view_eligibility": "SIX_SECONDS",
+            "headline": "يوم_التأسيس #رحلة_وطن#",
+            "call_to_action": "MORE",
+            "render_type": "STATIC",
+            "top_snap_media_id": "8016cc1c-c92e-4087-b934-21f53e37095b",
+            "top_snap_crop_position": "MIDDLE",
+            "web_view_properties": {
+              "url": "https://www.dgda.gov.sa/Founding-day.aspx?utm_source=snapchat&utm_medium=paid-social&utm_campaign=feb24_cond",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true,
+              "web_browser_type": "SNAP"
+            },
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "-728889379"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "5ad416c4-8d89-42fd-ad97-9cb73831b21e",
+            "updated_at": "2024-09-22T08:27:41.888Z",
+            "created_at": "2024-09-21T13:35:44.127Z",
+            "name": "SND video 2",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "COMPOSITE",
+            "packaging_status": "SUCCESS",
+            "review_status": "APPROVED",
+            "review_status_details": "",
+            "shareable": true,
+            "playback_type": "LOOPING",
+            "headline": "وطن مْعَزّي؛ ‏وفي ذرى عياله العزوة",
+            "brand_name": "هيئة تطوير بوابة الدرعية",
+            "render_type": "STATIC",
+            "top_snap_crop_position": "MIDDLE",
+            "composite_properties": {
+              "creative_ids": [
+                "d29f8b86-749c-4aa2-b4bd-31b6dfbec77a"
+              ]
+            },
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "555268334"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "667f08b5-e6c6-4ad3-9e35-53a313539e27",
+            "updated_at": "2024-09-20T12:31:09.912Z",
+            "created_at": "2024-09-20T11:35:14.496Z",
+            "name": "SND Video 24",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "SNAP_AD",
+            "packaging_status": "SUCCESS",
+            "review_status": "APPROVED",
+            "review_status_details": "",
+            "shareable": true,
+            "forced_view_eligibility": "SIX_SECONDS",
+            "headline": "وطن مْعَزّي؛ ‏وفي ذرى عياله العزوة",
+            "brand_name": "هيئة تطوير بوابة الدرعية",
+            "cta_color_display_mode": "AUTO_COLOR_DETECTION",
+            "render_type": "STATIC",
+            "top_snap_media_id": "1eb62b27-06c5-4b42-aaa1-d74b36812d6e",
+            "top_snap_crop_position": "MIDDLE",
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "-1534592041"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "6751c922-c15a-4dd8-bba2-580579842381",
+            "updated_at": "2025-09-21T08:41:18.078Z",
+            "created_at": "2025-09-21T08:06:55.322Z",
+            "name": "Saudi National day",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "WEB_VIEW",
+            "packaging_status": "SUCCESS",
+            "review_status": "APPROVED",
+            "review_status_details": "",
+            "shareable": true,
+            "forced_view_eligibility": "SIX_SECONDS",
+            "headline": "صفوفنا وحدة",
+            "call_to_action": "MORE",
+            "cta_color_display_mode": "AUTO_COLOR_DETECTION",
+            "render_type": "STATIC",
+            "top_snap_media_id": "6cbeeeac-4451-4d42-bb0d-ecc710ea7462",
+            "top_snap_crop_position": "MIDDLE",
+            "web_view_properties": {
+              "url": "https://www.dgda.gov.sa/ar",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "1658808140",
+            "creator_partnership_type": "NONE",
+            "primary_profile": "CREATOR",
+            "utm_autofix_permission": "OPT_OUT"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "6e347f92-7509-44d9-8468-196fdb870bb3",
+            "updated_at": "2024-12-06T17:31:34.446Z",
+            "created_at": "2024-12-06T17:29:12.365Z",
+            "name": "Winter Campaign EN",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "SNAP_AD",
+            "packaging_status": "SUCCESS",
+            "review_status": "APPROVED",
+            "review_status_details": "",
+            "shareable": true,
+            "forced_view_eligibility": "SIX_SECONDS",
+            "headline": "Diriyah Global Seminar l Timeless",
+            "cta_color_display_mode": "AUTO_COLOR_DETECTION",
+            "render_type": "STATIC",
+            "top_snap_media_id": "6eb3d393-a324-4ec0-8b97-32c89d9fecb5",
+            "top_snap_crop_position": "MIDDLE",
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "-1962083434",
+            "creator_partnership_type": "NONE"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "768ace94-49ef-4d4c-9ecf-73461b733f3b",
+            "updated_at": "2026-10-12T10:51:20.125Z",
+            "created_at": "2023-09-21T16:53:25.254Z",
+            "name": "Diriyah Ad 3",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "WEB_VIEW",
+            "packaging_status": "SUCCESS",
+            "review_status": "APPROVED",
+            "review_status_details": "",
+            "shareable": true,
+            "forced_view_eligibility": "NONE",
+            "headline": "من قديم الأزمنة",
+            "brand_name": "هيئة تطوير بوابة الدرعية",
+            "call_to_action": "MORE",
+            "render_type": "STATIC",
+            "top_snap_media_id": "4b4719bb-98ce-4f57-95db-58fb4633abc2",
+            "top_snap_crop_position": "MIDDLE",
+            "web_view_properties": {
+              "url": "https://maps.app.goo.gl/TPYN1wpQtfAsxJhWA?g_st=ic&utm_source=snapchat&utm_medium=paid-social&utm_campaign=sep23_cond",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true,
+              "web_browser_type": "SNAP"
+            },
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "-1437513891"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "7aff1447-2bb4-4b90-a447-891970c8f56d",
+            "updated_at": "2026-10-12T10:56:11.462Z",
+            "created_at": "2024-12-23T08:33:02.745Z",
+            "name": "post1",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "WEB_VIEW",
+            "packaging_status": "SUCCESS",
+            "review_status": "APPROVED",
+            "review_status_details": "Your ad contains a link to a social platform. We prohibit linking to Facebook, Instagram, (X) also known as Twitter, or Snapchat URLs. If you are trying to advertise your own Lens or Discover Channel, change your attachment type to \"AR Lens\" or \"Deep Link\". Please edit, resubmit for review, and our team will take another look.",
+            "shareable": true,
+            "forced_view_eligibility": "SIX_SECONDS",
+            "headline": "الأمام تركي بن عبدالل",
+            "call_to_action": "VIEW",
+            "cta_color_display_mode": "AUTO_COLOR_DETECTION",
+            "render_type": "STATIC",
+            "top_snap_media_id": "6538a06c-afde-4d5f-ac27-f9a6810230ee",
+            "top_snap_crop_position": "MIDDLE",
+            "web_view_properties": {
+              "url": "https://x.com/DGDA_SA/status/1869814558870872550?utm_source=snapchat&utm_medium=paid-social&utm_campaign=cond",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "-1070208186",
+            "creator_partnership_type": "NONE"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "7f0ebc3e-95d8-4c61-83d9-fdac50b942d3",
+            "updated_at": "2024-09-20T11:26:39.679Z",
+            "created_at": "2024-09-20T11:26:39.679Z",
+            "name": "SND Video",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "SNAP_AD",
+            "packaging_status": "SUCCESS",
+            "review_status": "PENDING_REVIEW",
+            "shareable": true,
+            "forced_view_eligibility": "SIX_SECONDS",
+            "headline": "وطن مْعَزّي؛ ‏وفي ذرى عياله العزوة",
+            "brand_name": "هيئة تطوير بوابة الدرعية",
+            "render_type": "STATIC",
+            "top_snap_media_id": "8016cc1c-c92e-4087-b934-21f53e37095b",
+            "top_snap_crop_position": "MIDDLE",
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "-998545780"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "852cbfc5-1a14-4d2e-9d6d-84d42d7f5052",
+            "updated_at": "2023-09-21T17:22:35.823Z",
+            "created_at": "2023-09-21T16:48:08.848Z",
+            "name": "Diriyah Gate - Cutdown5",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "SNAP_AD",
+            "packaging_status": "SUCCESS",
+            "review_status": "APPROVED",
+            "review_status_details": "",
+            "shareable": true,
+            "forced_view_eligibility": "SIX_SECONDS",
+            "headline": "من قديم الأزمنة",
+            "brand_name": "هيئة تطوير بوابة الدرعية",
+            "render_type": "STATIC",
+            "top_snap_media_id": "c1a87c02-46b4-490c-a85f-989deadc9927",
+            "top_snap_crop_position": "MIDDLE",
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "2115968191"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "8a34a668-359e-4ee3-830d-91ef49cbe690",
+            "updated_at": "2024-09-30T09:17:54.046Z",
+            "created_at": "2024-09-30T09:17:54.046Z",
+            "name": "SND 2",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "PREVIEW",
+            "packaging_status": "SUCCESS",
+            "review_status": "PENDING_REVIEW",
+            "shareable": true,
+            "headline": "وطن مْعَزّي؛ ‏وفي ذرى عياله العزوة",
+            "brand_name": "هيئة تطوير بوابة الدرعية",
+            "render_type": "STATIC",
+            "top_snap_crop_position": "MIDDLE",
+            "preview_properties": {
+              "preview_media_id": "761159e7-02f1-4326-bdeb-48beea186d10",
+              "logo_media_id": "06fd2861-8daf-449d-a398-5abc0225eae5",
+              "preview_headline": "وطن مْعَزّي؛ ‏وفي ذرى عياله العزوة"
+            },
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "-131242675"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "8d10d83f-af84-4ba0-82ba-aa2998cf9f16",
+            "updated_at": "2023-09-21T17:37:35.721Z",
+            "created_at": "2023-09-21T16:48:08.966Z",
+            "name": "Diriyah Gate - Cutdown2",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "SNAP_AD",
+            "packaging_status": "SUCCESS",
+            "review_status": "APPROVED",
+            "review_status_details": "",
+            "shareable": true,
+            "forced_view_eligibility": "SIX_SECONDS",
+            "headline": "من قديم الأزمنة",
+            "brand_name": "هيئة تطوير بوابة الدرعية",
+            "render_type": "STATIC",
+            "top_snap_media_id": "f4f3efae-3a1c-49b5-92db-f14123d5b025",
+            "top_snap_crop_position": "MIDDLE",
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "1047075525"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "8d771c09-741a-48ed-acce-3e7d13d2f2f8",
+            "updated_at": "2026-10-12T10:56:59.274Z",
+            "created_at": "2024-12-06T17:36:10.843Z",
+            "name": "AR",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "WEB_VIEW",
+            "packaging_status": "SUCCESS",
+            "review_status": "APPROVED",
+            "review_status_details": "",
+            "shareable": true,
+            "forced_view_eligibility": "SIX_SECONDS",
+            "headline": "ندوة الدرعية العالمية المعرفة الخا",
+            "call_to_action": "MORE",
+            "cta_color_display_mode": "AUTO_COLOR_DETECTION",
+            "render_type": "STATIC",
+            "top_snap_media_id": "3aa39b93-5586-4fe0-9bfa-ab8808f1234d",
+            "top_snap_crop_position": "MIDDLE",
+            "web_view_properties": {
+              "url": "https://dgs.dgda.gov.sa/Pages/DGS.aspx?lang=ar-sa&utm_source=snapchat&utm_medium=paid-social&utm_campaign=dec24&utm_term=ar&utm_content=ar",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "243302012",
+            "creator_partnership_type": "NONE"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "912b54ae-d838-426e-a938-c8dcd86bc5ce",
+            "updated_at": "2026-10-12T11:02:54.469Z",
+            "created_at": "2025-02-20T14:33:13.732Z",
+            "name": "Founding day V2",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "WEB_VIEW",
+            "packaging_status": "SUCCESS",
+            "review_status": "APPROVED",
+            "review_status_details": "",
+            "shareable": true,
+            "forced_view_eligibility": "NONE",
+            "headline": "يوم التأسيس | راعي الأوّله",
+            "call_to_action": "VIEW",
+            "cta_color_display_mode": "AUTO_COLOR_DETECTION",
+            "render_type": "STATIC",
+            "top_snap_media_id": "0bd92fe4-ae21-4957-838a-81d09ef77856",
+            "top_snap_crop_position": "MIDDLE",
+            "web_view_properties": {
+              "url": "https://www.dgda.gov.sa/ar?utm_source=snapchat&utm_medium=paid-social&utm_campaign=feb25&utm_term=ar&utm_content=ar",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "-1982043252",
+            "creator_partnership_type": "NONE"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "98205015-f426-441a-b6ed-fe96247ad0a6",
+            "updated_at": "2023-09-21T17:22:39.557Z",
+            "created_at": "2023-09-21T16:48:08.740Z",
+            "name": "Diriyah Gate - Cutdown7",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "SNAP_AD",
+            "packaging_status": "SUCCESS",
+            "review_status": "APPROVED",
+            "review_status_details": "",
+            "shareable": true,
+            "forced_view_eligibility": "SIX_SECONDS",
+            "headline": "من قديم الأزمنة",
+            "brand_name": "هيئة تطوير بوابة الدرعية",
+            "render_type": "STATIC",
+            "top_snap_media_id": "51e826a4-4628-4f17-a095-0de2861f418e",
+            "top_snap_crop_position": "MIDDLE",
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "2122160704"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "9a24e34c-4710-492c-b859-0475572eacc1",
+            "updated_at": "2026-10-12T11:04:03.558Z",
+            "created_at": "2025-02-20T14:33:13.634Z",
+            "name": "Founding day",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "WEB_VIEW",
+            "packaging_status": "SUCCESS",
+            "review_status": "APPROVED",
+            "review_status_details": "",
+            "shareable": true,
+            "forced_view_eligibility": "NONE",
+            "headline": "يوم التأسيس | راعي الأوّله",
+            "call_to_action": "VIEW",
+            "cta_color_display_mode": "AUTO_COLOR_DETECTION",
+            "render_type": "STATIC",
+            "top_snap_media_id": "47cb17e6-9f97-44fb-ae33-0f99ececd833",
+            "top_snap_crop_position": "MIDDLE",
+            "web_view_properties": {
+              "url": "https://www.dgda.gov.sa/ar?utm_source=snapchat&utm_medium=paid-social&utm_campaign=feb25&utm_term=ar&utm_content=ar",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "-1032758162",
+            "creator_partnership_type": "NONE"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "a793ad78-1cf1-4553-8850-541f1529c709",
+            "updated_at": "2024-02-22T17:34:01.420Z",
+            "created_at": "2024-02-22T16:17:11.787Z",
+            "name": "Option 2",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "SNAP_AD",
+            "packaging_status": "SUCCESS",
+            "review_status": "APPROVED",
+            "review_status_details": "",
+            "shareable": true,
+            "forced_view_eligibility": "FULL_DURATION",
+            "headline": "يوم_التأسيس #رحلة_وطن#",
+            "render_type": "STATIC",
+            "top_snap_media_id": "c5380f23-a9b2-4e99-9f34-0a0c53345fb9",
+            "top_snap_crop_position": "MIDDLE",
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "-1340512471"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "a7af1557-c274-4bde-a8ed-623ceb4c231b",
+            "updated_at": "2026-10-12T10:58:22.964Z",
+            "created_at": "2023-09-21T16:53:25.130Z",
+            "name": "Diriyah Ad 1",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "WEB_VIEW",
+            "packaging_status": "SUCCESS",
+            "review_status": "APPROVED",
+            "review_status_details": "",
+            "shareable": true,
+            "forced_view_eligibility": "NONE",
+            "headline": "من قديم الأزمنة",
+            "brand_name": "هيئة تطوير بوابة الدرعية",
+            "call_to_action": "MORE",
+            "render_type": "STATIC",
+            "top_snap_media_id": "6e4d746a-82c8-462d-a2db-5950f7c392d0",
+            "top_snap_crop_position": "MIDDLE",
+            "web_view_properties": {
+              "url": "https://maps.app.goo.gl/TPYN1wpQtfAsxJhWA?g_st=ic&utm_source=snapchat&utm_medium=paid-social&utm_campaign=sep23_cond",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true,
+              "web_browser_type": "SNAP"
+            },
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "602426712"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "a85787c5-6dca-4bfa-b159-f3a767ce48cc",
+            "updated_at": "2024-12-06T17:31:32.899Z",
+            "created_at": "2024-12-06T17:29:12.462Z",
+            "name": "Winter Campaign AR",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "SNAP_AD",
+            "packaging_status": "SUCCESS",
+            "review_status": "APPROVED",
+            "review_status_details": "",
+            "shareable": true,
+            "forced_view_eligibility": "SIX_SECONDS",
+            "headline": "ندوة الدرعية العالمية المعرفة الخا",
+            "cta_color_display_mode": "AUTO_COLOR_DETECTION",
+            "render_type": "STATIC",
+            "top_snap_media_id": "13b902fd-8d84-461e-bffc-49e3c19872c0",
+            "top_snap_crop_position": "MIDDLE",
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "-358468651",
+            "creator_partnership_type": "NONE"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "ab997eb7-edd5-431d-b8a3-f86a74d224dd",
+            "updated_at": "2026-10-12T10:54:32.417Z",
+            "created_at": "2024-12-23T08:33:02.655Z",
+            "name": "post2",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "WEB_VIEW",
+            "packaging_status": "SUCCESS",
+            "review_status": "DISAPPROVED",
+            "review_status_details": "Your ad contains a link to a social platform. We prohibit linking to Facebook, Instagram, (X) also known as Twitter, or Snapchat URLs. If you are trying to advertise your own Lens or Discover Channel, change your attachment type to \"AR Lens\" or \"Deep Link\". Please edit, resubmit for review, and our team will take another look.",
+            "shareable": true,
+            "forced_view_eligibility": "FULL_DURATION",
+            "headline": "الأمام تركي بن عبدالل",
+            "call_to_action": "VIEW",
+            "cta_color_display_mode": "AUTO_COLOR_DETECTION",
+            "render_type": "STATIC",
+            "top_snap_media_id": "82ba83bb-7cbc-4414-9034-adeec1313770",
+            "top_snap_crop_position": "MIDDLE",
+            "web_view_properties": {
+              "url": "https://x.com/DGDA_SA/status/1869814558870872550?utm_source=snapchat&utm_medium=paid-social&utm_campaign=cond",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "1975014862",
+            "creator_partnership_type": "NONE"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "b192c242-47b4-4131-ab1b-7e4b82dd8d7d",
+            "updated_at": "2026-10-12T11:09:34.465Z",
+            "created_at": "2025-02-20T14:41:07.743Z",
+            "name": "Founding day 2",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "WEB_VIEW",
+            "packaging_status": "SUCCESS",
+            "review_status": "DISAPPROVED",
+            "review_status_details": "The attachment for your Web View ad leads to a page that is not found, has an error, or isn't displaying the intended content publicly. We require that the destination website is accessible prior to your ad submission. Please update your Web View, resubmit for review, and our team will take another look.",
+            "shareable": true,
+            "forced_view_eligibility": "SIX_SECONDS",
+            "headline": "يوم التأسيس | راعي الأوّله",
+            "call_to_action": "VIEW",
+            "cta_color_display_mode": "AUTO_COLOR_DETECTION",
+            "render_type": "STATIC",
+            "top_snap_media_id": "4028ac76-c7e9-4e5b-a262-b3b04bb3ff81",
+            "top_snap_crop_position": "MIDDLE",
+            "web_view_properties": {
+              "url": "https://www.dgda.gov.sa/ar?utm_source=snapchat&utm_medium=paid-social&utm_campaign=feb25&utm_term=ar&utm_content=ar",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "1262688758",
+            "creator_partnership_type": "NONE"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "bd916018-0bb9-4690-a23b-624787da0e1f",
+            "updated_at": "2023-09-21T17:24:43.349Z",
+            "created_at": "2023-09-21T16:48:09.498Z",
+            "name": "Diriyah Gate - Cutdown3",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "SNAP_AD",
+            "packaging_status": "SUCCESS",
+            "review_status": "APPROVED",
+            "review_status_details": "",
+            "shareable": true,
+            "forced_view_eligibility": "SIX_SECONDS",
+            "headline": "من قديم الأزمنة",
+            "brand_name": "هيئة تطوير بوابة الدرعية",
+            "render_type": "STATIC",
+            "top_snap_media_id": "88c963d1-6a71-44e3-9746-641e21a1c619",
+            "top_snap_crop_position": "MIDDLE",
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "-1067468295"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "c3111eb3-ca14-49da-9b6b-0dd459b10e6f",
+            "updated_at": "2023-09-21T17:27:16.608Z",
+            "created_at": "2023-09-21T16:48:09.384Z",
+            "name": "Diriyah Gate - Cutdown4",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "SNAP_AD",
+            "packaging_status": "SUCCESS",
+            "review_status": "APPROVED",
+            "review_status_details": "",
+            "shareable": true,
+            "forced_view_eligibility": "SIX_SECONDS",
+            "headline": "من قديم الأزمنة",
+            "brand_name": "هيئة تطوير بوابة الدرعية",
+            "render_type": "STATIC",
+            "top_snap_media_id": "f8693f89-9184-4749-b72b-fd7502027fae",
+            "top_snap_crop_position": "MIDDLE",
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "1181875496"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "c452904f-2fc7-472e-8cde-c2a83431932d",
+            "updated_at": "2024-02-22T17:27:32.363Z",
+            "created_at": "2024-02-22T16:17:12.018Z",
+            "name": "Option 3",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "SNAP_AD",
+            "packaging_status": "SUCCESS",
+            "review_status": "APPROVED",
+            "review_status_details": "",
+            "shareable": true,
+            "forced_view_eligibility": "SIX_SECONDS",
+            "headline": "يوم_التأسيس #رحلة_وطن#",
+            "render_type": "STATIC",
+            "top_snap_media_id": "8016cc1c-c92e-4087-b934-21f53e37095b",
+            "top_snap_crop_position": "MIDDLE",
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "8827953"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "c70f6585-9bf7-457d-a352-e6a6523538a9",
+            "updated_at": "2024-12-06T17:31:32.886Z",
+            "created_at": "2024-12-06T17:29:14.261Z",
+            "name": "Winter Campaign AR",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "COMPOSITE",
+            "packaging_status": "SUCCESS",
+            "review_status": "APPROVED",
+            "review_status_details": "",
+            "shareable": true,
+            "playback_type": "LOOPING",
+            "headline": "ندوة الدرعية العالمية المعرفة الخا",
+            "render_type": "STATIC",
+            "top_snap_crop_position": "MIDDLE",
+            "composite_properties": {
+              "creative_ids": [
+                "a85787c5-6dca-4bfa-b159-f3a767ce48cc"
+              ]
+            },
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "1642382968",
+            "creator_partnership_type": "NONE"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "cc7c654f-78eb-40cb-a2d7-131200869163",
+            "updated_at": "2026-10-12T11:09:57.080Z",
+            "created_at": "2025-02-20T14:41:07.823Z",
+            "name": "Founding day",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "WEB_VIEW",
+            "packaging_status": "SUCCESS",
+            "review_status": "DISAPPROVED",
+            "review_status_details": "The attachment for your Web View ad leads to a page that is not found, has an error, or isn't displaying the intended content publicly. We require that the destination website is accessible prior to your ad submission. Please update your Web View, resubmit for review, and our team will take another look.",
+            "shareable": true,
+            "forced_view_eligibility": "FULL_DURATION",
+            "headline": "يوم التأسيس | راعي الأوّله",
+            "call_to_action": "VIEW",
+            "cta_color_display_mode": "AUTO_COLOR_DETECTION",
+            "render_type": "STATIC",
+            "top_snap_media_id": "e478421d-30eb-4457-acba-b2ff9df6c04e",
+            "top_snap_crop_position": "MIDDLE",
+            "web_view_properties": {
+              "url": "https://www.dgda.gov.sa/ar?utm_source=snapchat&utm_medium=paid-social&utm_campaign=feb25&utm_term=ar&utm_content=ar",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "163972207",
+            "creator_partnership_type": "NONE"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "d06b54e2-e26f-4e94-9df2-3b722a6305fb",
+            "updated_at": "2024-09-30T09:17:55.702Z",
+            "created_at": "2024-09-30T09:17:55.702Z",
+            "name": "SND 2",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "COMPOSITE",
+            "packaging_status": "SUCCESS",
+            "review_status": "PENDING_REVIEW",
+            "shareable": true,
+            "playback_type": "LOOPING",
+            "headline": "وطن مْعَزّي؛ ‏وفي ذرى عياله العزوة",
+            "brand_name": "هيئة تطوير بوابة الدرعية",
+            "render_type": "STATIC",
+            "top_snap_crop_position": "MIDDLE",
+            "composite_properties": {
+              "creative_ids": [
+                "37652336-6da1-4a9a-a370-b345a7311196"
+              ]
+            },
+            "ad_product": "SNAP_AD",
+            "preview_creative_id": "8a34a668-359e-4ee3-830d-91ef49cbe690",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "-1205780474"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "d08f0f75-4e6e-4ebd-8dc8-5b19bd2a20de",
+            "updated_at": "2026-10-12T10:54:34.874Z",
+            "created_at": "2024-12-23T14:42:27.262Z",
+            "name": "video1",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "WEB_VIEW",
+            "packaging_status": "SUCCESS",
+            "review_status": "APPROVED",
+            "review_status_details": "",
+            "shareable": true,
+            "forced_view_eligibility": "FULL_DURATION",
+            "headline": "الإمام تركي بن عبدالله",
+            "call_to_action": "MORE",
+            "cta_color_display_mode": "AUTO_COLOR_DETECTION",
+            "render_type": "STATIC",
+            "top_snap_media_id": "ff4ebfeb-a81c-48ff-8fd7-2d769d15a4dc",
+            "top_snap_crop_position": "MIDDLE",
+            "web_view_properties": {
+              "url": "https://www.dgda.gov.sa/ar/imam-turki-exhibition?utm_source=snapchat&utm_medium=paid-social&utm_campaign=dec24_cond&utm_term=ar&utm_content=video_ar",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "756433640",
+            "creator_partnership_type": "NONE"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "d29f8b86-749c-4aa2-b4bd-31b6dfbec77a",
+            "updated_at": "2024-09-22T08:27:41.899Z",
+            "created_at": "2024-09-21T13:35:42.233Z",
+            "name": "SND video 2",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "SNAP_AD",
+            "packaging_status": "SUCCESS",
+            "review_status": "APPROVED",
+            "review_status_details": "",
+            "shareable": true,
+            "forced_view_eligibility": "SIX_SECONDS",
+            "headline": "وطن مْعَزّي؛ ‏وفي ذرى عياله العزوة",
+            "brand_name": "هيئة تطوير بوابة الدرعية",
+            "render_type": "STATIC",
+            "top_snap_media_id": "797b808c-40f6-4a37-89be-eed15c1e45e9",
+            "top_snap_crop_position": "MIDDLE",
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "-736019637"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "dab3798a-3e6a-41e9-bb64-9a504a683df2",
+            "updated_at": "2026-10-12T11:04:03.545Z",
+            "created_at": "2025-02-20T14:33:15.596Z",
+            "name": "Founding day",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "COMPOSITE",
+            "packaging_status": "SUCCESS",
+            "review_status": "APPROVED",
+            "shareable": true,
+            "playback_type": "LOOPING",
+            "headline": "يوم التأسيس | راعي الأوّله",
+            "render_type": "STATIC",
+            "top_snap_crop_position": "MIDDLE",
+            "composite_properties": {
+              "creative_ids": [
+                "9a24e34c-4710-492c-b859-0475572eacc1"
+              ]
+            },
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "1449901880",
+            "creator_partnership_type": "NONE"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "dae7b9ae-281b-4c7a-9daf-61212477d2e1",
+            "updated_at": "2023-09-21T17:37:43.155Z",
+            "created_at": "2023-09-21T16:48:09.610Z",
+            "name": "Diriyah Gate - Cutdown6",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "SNAP_AD",
+            "packaging_status": "SUCCESS",
+            "review_status": "APPROVED",
+            "review_status_details": "",
+            "shareable": true,
+            "forced_view_eligibility": "SIX_SECONDS",
+            "headline": "من قديم الأزمنة",
+            "brand_name": "هيئة تطوير بوابة الدرعية",
+            "render_type": "STATIC",
+            "top_snap_media_id": "659f9e44-69ad-412a-9481-a6b831b8f3b8",
+            "top_snap_crop_position": "MIDDLE",
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "1878489090"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "e08e5304-c1ec-4365-8873-a8751fa93cec",
+            "updated_at": "2026-10-12T10:56:17.445Z",
+            "created_at": "2024-12-23T08:37:19.707Z",
+            "name": "new1",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "WEB_VIEW",
+            "packaging_status": "SUCCESS",
+            "review_status": "DISAPPROVED",
+            "review_status_details": "Your ad contains a link to a social platform. We prohibit linking to Facebook, Instagram, (X) also known as Twitter, or Snapchat URLs. If you are trying to advertise your own Lens or Discover Channel, change your attachment type to \"AR Lens\" or \"Deep Link\". Please edit, resubmit for review, and our team will take another look.",
+            "shareable": true,
+            "forced_view_eligibility": "FULL_DURATION",
+            "headline": "الأمام تركي بن عبدالله",
+            "call_to_action": "VIEW",
+            "cta_color_display_mode": "AUTO_COLOR_DETECTION",
+            "render_type": "STATIC",
+            "top_snap_media_id": "2da314b9-5dbc-42c1-a41e-02cfca6fac70",
+            "top_snap_crop_position": "MIDDLE",
+            "web_view_properties": {
+              "url": "https://x.com/DGDA_SA/status/1869814558870872550?utm_source=snapchat&utm_medium=paid-social&utm_campaign=cond",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "-2079594283",
+            "creator_partnership_type": "NONE"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "e7b89e7e-0214-45fb-9b5d-526d3aea67e3",
+            "updated_at": "2026-10-12T10:58:14.663Z",
+            "created_at": "2024-02-22T17:25:53.379Z",
+            "name": "Option 2",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "WEB_VIEW",
+            "packaging_status": "SUCCESS",
+            "review_status": "APPROVED",
+            "review_status_details": "",
+            "shareable": true,
+            "forced_view_eligibility": "FULL_DURATION",
+            "headline": "يوم_التأسيس #رحلة_وطن#",
+            "call_to_action": "MORE",
+            "render_type": "STATIC",
+            "top_snap_media_id": "c5380f23-a9b2-4e99-9f34-0a0c53345fb9",
+            "top_snap_crop_position": "MIDDLE",
+            "web_view_properties": {
+              "url": "https://www.dgda.gov.sa/Founding-day.aspx?utm_source=snapchat&utm_medium=paid-social&utm_campaign=feb24_cond",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true,
+              "web_browser_type": "SNAP"
+            },
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "-526095558"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "f5f3e9a2-68fb-4fab-a5d4-ee9700ac07e5",
+            "updated_at": "2024-02-22T17:31:59.423Z",
+            "created_at": "2024-02-22T16:17:11.898Z",
+            "name": "Option 1",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "SNAP_AD",
+            "packaging_status": "SUCCESS",
+            "review_status": "APPROVED",
+            "review_status_details": "",
+            "shareable": true,
+            "forced_view_eligibility": "FULL_DURATION",
+            "headline": "يوم_التأسيس #رحلة_وطن#",
+            "render_type": "STATIC",
+            "top_snap_media_id": "d836948a-c7ae-4b5c-872b-7e8b4b1e696b",
+            "top_snap_crop_position": "MIDDLE",
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "-1767272186"
+          }
+        },
+        {
+          "sub_request_status": "SUCCESS",
+          "creative": {
+            "id": "f6e7292d-83e4-4395-a90e-884af71a568d",
+            "updated_at": "2026-10-12T10:56:08.540Z",
+            "created_at": "2024-12-23T08:37:19.799Z",
+            "name": "new2",
+            "ad_account_id": "623ccdb3-d546-42e8-9082-89ff8b59cfd1",
+            "type": "WEB_VIEW",
+            "packaging_status": "SUCCESS",
+            "review_status": "APPROVED",
+            "review_status_details": "",
+            "shareable": true,
+            "forced_view_eligibility": "SIX_SECONDS",
+            "headline": "الأمام تركي بن عبدالله",
+            "call_to_action": "VIEW",
+            "cta_color_display_mode": "AUTO_COLOR_DETECTION",
+            "render_type": "STATIC",
+            "top_snap_media_id": "c23eca47-2a48-4c44-8a97-3c1dd158a83d",
+            "top_snap_crop_position": "MIDDLE",
+            "web_view_properties": {
+              "url": "https://x.com/DGDA_SA/status/1869814558870872550?utm_source=snapchat&utm_medium=paid-social&utm_campaign=cond",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "ad_product": "SNAP_AD",
+            "profile_properties": {
+              "profile_id": "690f6f4e-517d-4dc5-b101-9efc631eb77d"
+            },
+            "semantic_id": "1820899646",
+            "creator_partnership_type": "NONE"
+          }
+        }
+      ]
+    },
+    "meta": {
+      "requestId": "d287f8e8-91f2-41da-a07e-84d96b6be0a4",
+      "waitedMs": 288,
+      "throttled": false,
+      "warnings": [
+        "aggregate_pages requested, but this response did not expose a top-level array and paging.next_link."
+      ],
+      "partialFailure": null,
+      "asyncReport": null,
+      "compatibility": null,
+      "compatibilitySkipped": true
+    }
+  },
+  "meta": {
+    "requestId": "d286e6d3-f60b-4228-b49d-8baf2551552b",
+    "latencyMs": 2327
+  }
+}

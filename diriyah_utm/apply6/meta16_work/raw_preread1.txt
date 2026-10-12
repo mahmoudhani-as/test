@@ -1,0 +1,1286 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "meta_ad_account_id_ads_get",
+    "method": "GET",
+    "host": "graph.facebook.com",
+    "path": "/v25.0/act_2194833637927644/ads",
+    "dryRun": false,
+    "data": {
+      "data": [
+        {
+          "id": "120253029697900058",
+          "name": "wadi-safar_general_2026_sep_ws-golf-s2_adset-id-c1fabf20_display_en",
+          "account_id": "2194833637927644",
+          "status": "ACTIVE",
+          "configured_status": "ACTIVE",
+          "effective_status": "ACTIVE",
+          "adset_id": "120252705364870058",
+          "campaign_id": "120252160648550058",
+          "updated_time": "2026-09-16T19:24:49+0300",
+          "creative": {
+            "id": "3647475952069524",
+            "name": "Wadi Safar 2026-09-09-4ac848f95cd231ce54fd593245d5cecc",
+            "account_id": "2194833637927644",
+            "actor_id": "1245023868693595",
+            "status": "ACTIVE",
+            "object_type": "SHARE",
+            "object_story_spec": {
+              "page_id": "1245023868693595",
+              "instagram_user_id": "17841441699550567",
+              "link_data": {
+                "link": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+                "message": "A course that rewards mastery and inspires every journey. #WadiSafar​",
+                "image_hash": "a75ec8e8e50f84617195ab9ca057093c",
+                "call_to_action": {
+                  "type": "LEARN_MORE"
+                },
+                "image_crops": {
+                  "100x100": [
+                    [
+                      0,
+                      443
+                    ],
+                    [
+                      1080,
+                      1523
+                    ]
+                  ]
+                },
+                "child_attachments": [
+                  {
+                    "link": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+                    "image_hash": "86b11b3d931dca19733c01f24e5fa356",
+                    "name": "A life beyond measure",
+                    "call_to_action": {
+                      "type": "LEARN_MORE"
+                    }
+                  },
+                  {
+                    "link": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+                    "image_hash": "07c2278e79e17cf92a50cf5789d9b52c",
+                    "name": "A life beyond measure",
+                    "call_to_action": {
+                      "type": "LEARN_MORE"
+                    }
+                  },
+                  {
+                    "link": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+                    "image_hash": "072f97c49daa61bad0c5a353e94d4a9d",
+                    "name": "A life beyond measure",
+                    "call_to_action": {
+                      "type": "LEARN_MORE"
+                    }
+                  }
+                ],
+                "multi_share_end_card": false,
+                "multi_share_optimized": false
+              }
+            },
+            "degrees_of_freedom_spec": {
+              "creative_features_spec": {
+                "advantage_plus_creative": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "carousel_to_video": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "description_automation": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "enhance_cta": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "image_text_translation": {
+                  "enroll_status": "OPT_IN"
+                },
+                "image_touchups": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "inline_comment": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "media_order": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "product_browsing": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "profile_card": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "text_translation": {
+                  "enroll_status": "OPT_IN"
+                }
+              }
+            },
+            "call_to_action": {
+              "type": "LEARN_MORE"
+            },
+            "call_to_action_type": "LEARN_MORE",
+            "instagram_user_id": "17841441699550567",
+            "instagram_permalink_url": "https://www.instagram.com/p/DdF8ycYjP33/",
+            "effective_instagram_media_id": "18585910780066670",
+            "effective_object_story_id": "1245023868693595_122112001005291621",
+            "threads_user_id": "17841450509740015",
+            "authorization_category": "NONE",
+            "effective_authorization_category": "NONE",
+            "format_transformation_spec": [
+              {
+                "data_source": [
+                  "none"
+                ],
+                "format": "single_media"
+              },
+              {
+                "data_source": [
+                  "none"
+                ],
+                "format": "sa_collection"
+              },
+              {
+                "data_source": [
+                  "none"
+                ],
+                "format": "collage"
+              },
+              {
+                "data_source": [
+                  "none"
+                ],
+                "format": "video_slideshow"
+              }
+            ],
+            "title": "Wadi Safar",
+            "body": "A course that rewards mastery and inspires every journey. #WadiSafar",
+            "portrait_customizations": {
+              "carousel_delivery_mode": "optimal_num_cards"
+            },
+            "use_page_actor_override": false,
+            "enable_direct_install": false,
+            "enable_launch_instant_app": false,
+            "thumbnail_url": "https://external-iad3-1.xx.fbcdn.net/emg1/v/t13/17949930479093521656?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQLPhRosV5cIIeyPaom6I2o5v6OX7I64xEl2IHqDeGglUd4wEfwHnKsk94FjNRozLq6vwoOYhyh7Qdi6oYuUMfZlz42yU0WBLrIYjPZbIwbgJyO_SB6xC61IR3Anz6_l7qFKuCYxbqSlsqeghEzX3Gd-&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-iad3-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=McbAvP6dAsz2Zgc7wowWFQ&edm=AOgd6ZUEAAAA&_nc_zt=3&_nc_tpa=Q5bMBQKSEZjQkTQbGnzuXILVFkJnGcFfV4rKIPdKv-Lvf5A3tqyUtQRVAgiWa9cTCyDTryAACct3-kCn&oh=06_Q3_EAUX5lk3jD-x2kzF0nkTypH_xsa0PVYvUljjk521lCUXF&oe=6ACEBCF6"
+          }
+        },
+        {
+          "id": "120253029646540058",
+          "name": "wadi-safar_general_2026_sep_ws-golf-s2_adset-id-c1fabf20_display_ar",
+          "account_id": "2194833637927644",
+          "status": "ACTIVE",
+          "configured_status": "ACTIVE",
+          "effective_status": "ACTIVE",
+          "adset_id": "120252700003000058",
+          "campaign_id": "120252160648550058",
+          "updated_time": "2026-09-16T19:24:17+0300",
+          "creative": {
+            "id": "5495732177318773",
+            "name": "Wadi Safar 2026-09-09-aa6a531c17443317e855ddd64601100f",
+            "account_id": "2194833637927644",
+            "actor_id": "1245023868693595",
+            "status": "ACTIVE",
+            "object_type": "SHARE",
+            "object_story_spec": {
+              "page_id": "1245023868693595",
+              "instagram_user_id": "17841441699550567",
+              "link_data": {
+                "link": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=c1fabf20_ws-golf-s2_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+                "message": "ملعبٌ يكافئ براعة اللعب، ويمنح كل جولة تجربةً تستحق أن تُروى",
+                "call_to_action": {
+                  "type": "LEARN_MORE"
+                },
+                "child_attachments": [
+                  {
+                    "link": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=c1fabf20_ws-golf-s2_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+                    "image_hash": "87359a393aa763fc7fcc67dd5efb7599",
+                    "name": "حياة لا تقاس, بل تروى",
+                    "call_to_action": {
+                      "type": "LEARN_MORE"
+                    }
+                  },
+                  {
+                    "link": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=c1fabf20_ws-golf-s2_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+                    "image_hash": "ecb313afbb2f40837e83009d71827336",
+                    "name": "حياة لا تقاس, بل تروى",
+                    "call_to_action": {
+                      "type": "LEARN_MORE"
+                    }
+                  },
+                  {
+                    "link": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_ar&utm_content=c1fabf20_ws-golf-s2_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+                    "image_hash": "38586e4e2b211140f644df2dfeff04a2",
+                    "name": "حياة لا تقاس, بل تروى",
+                    "call_to_action": {
+                      "type": "LEARN_MORE"
+                    }
+                  }
+                ],
+                "multi_share_end_card": false,
+                "multi_share_optimized": false
+              }
+            },
+            "call_to_action": {
+              "type": "LEARN_MORE"
+            },
+            "call_to_action_type": "LEARN_MORE",
+            "instagram_user_id": "17841441699550567",
+            "instagram_permalink_url": "https://www.instagram.com/p/DdF626yjIv5/",
+            "effective_instagram_media_id": "18019743968710720",
+            "effective_object_story_id": "1245023868693595_122111995179291621",
+            "threads_user_id": "17841450509740015",
+            "authorization_category": "NONE",
+            "effective_authorization_category": "NONE",
+            "format_transformation_spec": [
+              {
+                "data_source": [
+                  "none"
+                ],
+                "format": "single_media"
+              },
+              {
+                "data_source": [
+                  "none"
+                ],
+                "format": "sa_collection"
+              },
+              {
+                "data_source": [
+                  "none"
+                ],
+                "format": "collage"
+              },
+              {
+                "data_source": [
+                  "none"
+                ],
+                "format": "video_slideshow"
+              }
+            ],
+            "title": "Wadi Safar",
+            "body": "ملعبٌ يكافئ براعة اللعب، ويمنح كل جولة تجربةً تستحق أن تُروى",
+            "portrait_customizations": {
+              "carousel_delivery_mode": "optimal_num_cards"
+            },
+            "use_page_actor_override": false,
+            "enable_direct_install": false,
+            "enable_launch_instant_app": false,
+            "thumbnail_url": "https://external-iad3-1.xx.fbcdn.net/emg1/v/t13/3990608335390058171?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQK10BdQp51iUs2fjYTrYFVj-bUTk7296R8Q2XKxYyk2aLtzTZ4YiPi6hABdua_KO9ACSnYaXy0U_vQcoQFFe0aXcic4JL8T8SkdGXnlolhFXInaxwtwGTaXOt6rnqeqsBQmIgdhSqDqBRSTToBo_Vhk&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-iad3-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=McbAvP6dAsz2Zgc7wowWFQ&edm=AOgd6ZUEAAAA&_nc_zt=3&_nc_tpa=Q5bMBQKii3X5c6saAeMdTzyBSvNklNzXNtjhESh6iUiRA-wKI626TK0RQ7MJ1Cjg17_X5XXo11H4cPel&oh=06_Q3_EARvgVu6kvncLl66m5Lst-ppeaGUjX8ETaSBKnw-R2xVY&oe=6ACEB401"
+          }
+        },
+        {
+          "id": "120253029880450058",
+          "name": "wadi-safar_general_2026_sep_ws-golf-s2_adset-id-c1fabf20_display_en",
+          "account_id": "2194833637927644",
+          "status": "ACTIVE",
+          "configured_status": "ACTIVE",
+          "effective_status": "ACTIVE",
+          "adset_id": "120252700397330058",
+          "campaign_id": "120252160648550058",
+          "updated_time": "2026-09-16T19:23:23+0300",
+          "creative": {
+            "id": "3647475952069524",
+            "name": "Wadi Safar 2026-09-09-4ac848f95cd231ce54fd593245d5cecc",
+            "account_id": "2194833637927644",
+            "actor_id": "1245023868693595",
+            "status": "ACTIVE",
+            "object_type": "SHARE",
+            "object_story_spec": {
+              "page_id": "1245023868693595",
+              "instagram_user_id": "17841441699550567",
+              "link_data": {
+                "link": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+                "message": "A course that rewards mastery and inspires every journey. #WadiSafar​",
+                "image_hash": "a75ec8e8e50f84617195ab9ca057093c",
+                "call_to_action": {
+                  "type": "LEARN_MORE"
+                },
+                "image_crops": {
+                  "100x100": [
+                    [
+                      0,
+                      443
+                    ],
+                    [
+                      1080,
+                      1523
+                    ]
+                  ]
+                },
+                "child_attachments": [
+                  {
+                    "link": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+                    "image_hash": "86b11b3d931dca19733c01f24e5fa356",
+                    "name": "A life beyond measure",
+                    "call_to_action": {
+                      "type": "LEARN_MORE"
+                    }
+                  },
+                  {
+                    "link": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+                    "image_hash": "07c2278e79e17cf92a50cf5789d9b52c",
+                    "name": "A life beyond measure",
+                    "call_to_action": {
+                      "type": "LEARN_MORE"
+                    }
+                  },
+                  {
+                    "link": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=c1fabf20_ws-golf-s2_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+                    "image_hash": "072f97c49daa61bad0c5a353e94d4a9d",
+                    "name": "A life beyond measure",
+                    "call_to_action": {
+                      "type": "LEARN_MORE"
+                    }
+                  }
+                ],
+                "multi_share_end_card": false,
+                "multi_share_optimized": false
+              }
+            },
+            "degrees_of_freedom_spec": {
+              "creative_features_spec": {
+                "advantage_plus_creative": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "carousel_to_video": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "description_automation": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "enhance_cta": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "image_text_translation": {
+                  "enroll_status": "OPT_IN"
+                },
+                "image_touchups": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "inline_comment": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "media_order": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "product_browsing": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "profile_card": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "text_translation": {
+                  "enroll_status": "OPT_IN"
+                }
+              }
+            },
+            "call_to_action": {
+              "type": "LEARN_MORE"
+            },
+            "call_to_action_type": "LEARN_MORE",
+            "instagram_user_id": "17841441699550567",
+            "instagram_permalink_url": "https://www.instagram.com/p/DdF8ycYjP33/",
+            "effective_instagram_media_id": "18585910780066670",
+            "effective_object_story_id": "1245023868693595_122112001005291621",
+            "threads_user_id": "17841450509740015",
+            "authorization_category": "NONE",
+            "effective_authorization_category": "NONE",
+            "format_transformation_spec": [
+              {
+                "data_source": [
+                  "none"
+                ],
+                "format": "single_media"
+              },
+              {
+                "data_source": [
+                  "none"
+                ],
+                "format": "sa_collection"
+              },
+              {
+                "data_source": [
+                  "none"
+                ],
+                "format": "collage"
+              },
+              {
+                "data_source": [
+                  "none"
+                ],
+                "format": "video_slideshow"
+              }
+            ],
+            "title": "Wadi Safar",
+            "body": "A course that rewards mastery and inspires every journey. #WadiSafar",
+            "portrait_customizations": {
+              "carousel_delivery_mode": "optimal_num_cards"
+            },
+            "use_page_actor_override": false,
+            "enable_direct_install": false,
+            "enable_launch_instant_app": false,
+            "thumbnail_url": "https://external-iad3-1.xx.fbcdn.net/emg1/v/t13/17949930479093521656?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQLPhRosV5cIIeyPaom6I2o5v6OX7I64xEl2IHqDeGglUd4wEfwHnKsk94FjNRozLq6vwoOYhyh7Qdi6oYuUMfZlz42yU0WBLrIYjPZbIwbgJyO_SB6xC61IR3Anz6_l7qFKuCYxbqSlsqeghEzX3Gd-&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-iad3-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=McbAvP6dAsz2Zgc7wowWFQ&edm=AOgd6ZUEAAAA&_nc_zt=3&_nc_tpa=Q5bMBQKSEZjQkTQbGnzuXILVFkJnGcFfV4rKIPdKv-Lvf5A3tqyUtQRVAgiWa9cTCyDTryAACct3-kCn&oh=06_Q3_EAUX5lk3jD-x2kzF0nkTypH_xsa0PVYvUljjk521lCUXF&oe=6ACEBCF6"
+          }
+        },
+        {
+          "id": "120252700709690058",
+          "name": "WadiSafar_KV2_Static_Holistic_AR_NA_Prospecting_19.08.2026_30.09.2026",
+          "account_id": "2194833637927644",
+          "status": "PAUSED",
+          "configured_status": "PAUSED",
+          "effective_status": "PAUSED",
+          "adset_id": "120252700003000058",
+          "campaign_id": "120252160648550058",
+          "updated_time": "2026-09-16T19:23:08+0300",
+          "creative": {
+            "id": "1048505171298684",
+            "name": "وادي صفار 2026-08-19-7dae3deb4c5a92ab13454e18ec38b793",
+            "account_id": "2194833637927644",
+            "actor_id": "1245023868693595",
+            "status": "ACTIVE",
+            "object_type": "SHARE",
+            "object_story_spec": {
+              "page_id": "1245023868693595",
+              "instagram_user_id": "17841441699550567",
+              "link_data": {
+                "link": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=wadisafar_localcampaign2026&utm_term={{adset.name}}&utm_content={{ad.name}}",
+                "message": "حيث تلتقي الأصالة والطبيعة والتجارب الاستثنائية، يقدم وادي صفار وجهة تعكس هوية راسخة.",
+                "name": "وادي صفار",
+                "image_hash": "e3ac99b9d25917c9ed180a59569fe182",
+                "call_to_action": {
+                  "type": "LEARN_MORE"
+                }
+              }
+            },
+            "degrees_of_freedom_spec": {
+              "creative_features_spec": {
+                "pac_recomposition": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "pac_relaxation": {
+                  "enroll_status": "OPT_OUT"
+                }
+              }
+            },
+            "call_to_action": {
+              "type": "LEARN_MORE"
+            },
+            "call_to_action_type": "LEARN_MORE",
+            "instagram_user_id": "17841441699550567",
+            "instagram_permalink_url": "https://www.instagram.com/p/DcOH3GksPO-/",
+            "effective_instagram_media_id": "18130711663629294",
+            "effective_object_story_id": "1245023868693595_122108009301291621",
+            "threads_user_id": "17841450509740015",
+            "authorization_category": "NONE",
+            "effective_authorization_category": "NONE",
+            "creative_sourcing_spec": {
+              "destination_screenshot_spec": {
+                "enroll_status": "OPT_OUT"
+              }
+            },
+            "media_sourcing_spec": {
+              "titles": [
+                {
+                  "text": "وادي صفار"
+                }
+              ]
+            },
+            "image_hash": "e3ac99b9d25917c9ed180a59569fe182",
+            "image_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t45.1600-4/778173241_122142746367132344_3973709698173009778_n.png?stp=dst-jpg_tt6&_nc_cat=103&ccb=1-7&_nc_sid=ff4730&_nc_ohc=UNHrmyh1pacQ7kNvwFnJcYo&_nc_oc=Adpzz_KmXteORlVtyikvew09mjZJzNFNJBZ_ziDWmCWR8PxMAUmL_q-2PgqKQBPtELY&_nc_zt=1&_nc_ht=scontent-iad3-2.xx&edm=AOgd6ZUEAAAA&_nc_gid=McbAvP6dAsz2Zgc7wowWFQ&_nc_tpa=Q5bMBQIXP37-2_PFNGtqgkENQKSK_2kjIuzTcHo9YpHpEQLSoI933VwSo9zIx2P7Wv2xTPmL7e66DOXL&oh=00_AQNxjCQeHoyQkyG11P-lUBL8RjIr5vo2gJnz44s7is6K5A&oe=6AD2D4CD",
+            "title": "وادي صفار",
+            "body": "حيث تلتقي الأصالة والطبيعة والتجارب الاستثنائية، يقدم وادي صفار وجهة تعكس هوية راسخة.",
+            "use_page_actor_override": false,
+            "enable_direct_install": false,
+            "enable_launch_instant_app": false,
+            "thumbnail_url": "https://external-iad3-1.xx.fbcdn.net/emg1/v/t13/4835756006827529061?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQL_sQkKheK5E9Xkdv6ylHVxi6rsczVvSzJq_Of2L0TxyEzEC2HLB1HzqayRQjtzqkXh4WU-l7QvNQHscmVFec7jwDbPwRhE3S5nm8mPKis12437KN9bWJdoTnxbBFuRqoZShS45WdL0tsiGftn7oYrl&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-iad3-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=McbAvP6dAsz2Zgc7wowWFQ&edm=AOgd6ZUEAAAA&_nc_zt=3&_nc_tpa=Q5bMBQIvlY-fWZwbrn8CjeM1y_74PT5F2QjOt-CfKe0-uIcG_Tt4LaL3SQt2lVxn0JApoRNjWA6M4xuB&oh=06_Q3_EAYp6uZL28HvGmGk0J-7tuUOM1fIig3iBfHSJqdrgtmug&oe=6ACEB158"
+          }
+        },
+        {
+          "id": "120252700256130058",
+          "name": "wadi-safar_general_2026_aug_wsls-kva_adset-id-ef48098a_display_cr2_ar",
+          "account_id": "2194833637927644",
+          "status": "ACTIVE",
+          "configured_status": "ACTIVE",
+          "effective_status": "ACTIVE",
+          "adset_id": "120252700003000058",
+          "campaign_id": "120252160648550058",
+          "updated_time": "2026-09-16T19:23:06+0300",
+          "creative": {
+            "id": "1744387363465526",
+            "name": "Wadi Safar 2026-08-22-3a7f6c1decfcdd1542c7ecba4ccdd486",
+            "account_id": "2194833637927644",
+            "actor_id": "1245023868693595",
+            "status": "ACTIVE",
+            "object_type": "SHARE",
+            "object_story_spec": {
+              "page_id": "1245023868693595",
+              "instagram_user_id": "17841441699550567",
+              "link_data": {
+                "message": "وجهة تشكل من إرث عريق، وتحتضنها الطبيعة، وتزخر بتجارب استثنائية.",
+                "image_hash": "4c7574a492bb353560ea08806467b596",
+                "call_to_action": {
+                  "type": "LEARN_MORE"
+                },
+                "image_crops": {
+                  "100x100": [
+                    [
+                      0,
+                      26
+                    ],
+                    [
+                      1080,
+                      1106
+                    ]
+                  ]
+                },
+                "child_attachments": [
+                  {
+                    "link": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=cpc&utm_campaign=3114fc90_wadisafar-local_aug26&utm_term=a0510dc9_ws-lifestyle_en-ar&utm_content=ef48098a_wsls-kva_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+                    "image_hash": "53579f3f0ee76379b48cddf9385b3bf8",
+                    "call_to_action": {
+                      "type": "LEARN_MORE"
+                    }
+                  },
+                  {
+                    "link": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=cpc&utm_campaign=3114fc90_wadisafar-local_aug26&utm_term=a0510dc9_ws-lifestyle_en-ar&utm_content=ef48098a_wsls-kva_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+                    "image_hash": "a8ed9ccd8f5a4b774a11441d30a071d1",
+                    "call_to_action": {
+                      "type": "LEARN_MORE"
+                    }
+                  },
+                  {
+                    "link": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=cpc&utm_campaign=3114fc90_wadisafar-local_aug26&utm_term=a0510dc9_ws-lifestyle_en-ar&utm_content=ef48098a_wsls-kva_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+                    "image_hash": "1b871a9687e39b902bd2371df16175d6",
+                    "call_to_action": {
+                      "type": "LEARN_MORE"
+                    }
+                  }
+                ],
+                "multi_share_end_card": false,
+                "multi_share_optimized": false
+              }
+            },
+            "degrees_of_freedom_spec": {
+              "creative_features_spec": {
+                "advantage_plus_creative": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "carousel_to_video": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "description_automation": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "enhance_cta": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "image_touchups": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "inline_comment": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "media_order": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "product_browsing": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "profile_card": {
+                  "enroll_status": "OPT_OUT"
+                }
+              }
+            },
+            "call_to_action": {
+              "type": "LEARN_MORE"
+            },
+            "call_to_action_type": "LEARN_MORE",
+            "instagram_user_id": "17841441699550567",
+            "instagram_permalink_url": "https://www.instagram.com/p/DcWhhuLDDvE/",
+            "effective_instagram_media_id": "17903302206329815",
+            "effective_object_story_id": "1245023868693595_122108709171291621",
+            "threads_user_id": "17841450509740015",
+            "authorization_category": "NONE",
+            "effective_authorization_category": "NONE",
+            "format_transformation_spec": [
+              {
+                "data_source": [
+                  "none"
+                ],
+                "format": "single_media"
+              },
+              {
+                "data_source": [
+                  "none"
+                ],
+                "format": "sa_collection"
+              },
+              {
+                "data_source": [
+                  "none"
+                ],
+                "format": "collage"
+              },
+              {
+                "data_source": [
+                  "none"
+                ],
+                "format": "video_slideshow"
+              }
+            ],
+            "title": "Wadi Safar",
+            "body": "وجهة تشكل من إرث عريق، وتحتضنها الطبيعة، وتزخر بتجارب استثنائية.",
+            "portrait_customizations": {
+              "carousel_delivery_mode": "optimal_num_cards"
+            },
+            "use_page_actor_override": false,
+            "enable_direct_install": false,
+            "enable_launch_instant_app": false,
+            "thumbnail_url": "https://external-iad3-1.xx.fbcdn.net/emg1/v/t13/5035012459756425719?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQIxQKn36EuUkDOKueL73CVE7-gEk5nJgFTAxNnglMiuVp5Iayct5qUuy_Rhopgy5n0fj00VIxjPvtRZ6rASYa3OFgx0X-kvc7OZLEv9J6U_KIZByBvCaoczlgWsJNc9csOps-bF4aHk0pz5yH5ZncJD&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-iad3-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=McbAvP6dAsz2Zgc7wowWFQ&edm=AOgd6ZUEAAAA&_nc_zt=3&_nc_tpa=Q5bMBQIv3EDuZFLl_OrpvtyA2nVT0YyK8jI30WkvvzXVvwtKYCJLrAbE254GkNC6J3A5UWO9EAf9uyNd&oh=06_Q3_EAdFaHZ7QjXEBgHYsx1owJcQ7DOUnCic8LowupESR5rMr&oe=6ACED136"
+          }
+        },
+        {
+          "id": "120253029880460058",
+          "name": "wadi-safar_general_2026_sep_ws-golf-s1_adset-id-7a696b96_display_en",
+          "account_id": "2194833637927644",
+          "status": "ACTIVE",
+          "configured_status": "ACTIVE",
+          "effective_status": "ACTIVE",
+          "adset_id": "120252700397330058",
+          "campaign_id": "120252160648550058",
+          "updated_time": "2026-09-16T19:23:00+0300",
+          "creative": {
+            "id": "2562100757551873",
+            "name": "Wadi Safar 2026-09-09-1beba3942c39410d280b709ddc9cc5e6",
+            "account_id": "2194833637927644",
+            "actor_id": "1245023868693595",
+            "status": "ACTIVE",
+            "object_type": "SHARE",
+            "object_story_spec": {
+              "page_id": "1245023868693595",
+              "instagram_user_id": "17841441699550567",
+              "link_data": {
+                "link": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=7a696b96_ws-golf-s1_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+                "message": "Shaped by the land. Designed for excellence. #WadiSafar​",
+                "image_hash": "a75ec8e8e50f84617195ab9ca057093c",
+                "call_to_action": {
+                  "type": "LEARN_MORE"
+                },
+                "image_crops": {
+                  "100x100": [
+                    [
+                      0,
+                      443
+                    ],
+                    [
+                      1080,
+                      1523
+                    ]
+                  ]
+                },
+                "child_attachments": [
+                  {
+                    "link": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=7a696b96_ws-golf-s1_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+                    "image_hash": "9265aefd55a818fc6a4dd9f1b360e82e",
+                    "name": "A life beyond measure",
+                    "call_to_action": {
+                      "type": "LEARN_MORE"
+                    }
+                  },
+                  {
+                    "link": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=7a696b96_ws-golf-s1_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+                    "image_hash": "071afbdde5a4c623e56b7a135d02a6a9",
+                    "name": "A life beyond measure",
+                    "call_to_action": {
+                      "type": "LEARN_MORE"
+                    }
+                  },
+                  {
+                    "link": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=paid-social&utm_campaign=3114fc90_wadisafar-local_sep26&utm_term=a0510dc9_ws-lifestyle_en&utm_content=7a696b96_ws-golf-s1_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+                    "image_hash": "ee50fa9afb7cf5277bff52524c5ff642",
+                    "name": "A life beyond measure",
+                    "call_to_action": {
+                      "type": "LEARN_MORE"
+                    }
+                  }
+                ],
+                "multi_share_end_card": false,
+                "multi_share_optimized": false
+              }
+            },
+            "degrees_of_freedom_spec": {
+              "creative_features_spec": {
+                "advantage_plus_creative": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "carousel_to_video": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "description_automation": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "enhance_cta": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "image_text_translation": {
+                  "enroll_status": "OPT_IN"
+                },
+                "image_touchups": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "inline_comment": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "media_order": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "product_browsing": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "profile_card": {
+                  "enroll_status": "OPT_OUT"
+                }
+              }
+            },
+            "call_to_action": {
+              "type": "LEARN_MORE"
+            },
+            "call_to_action_type": "LEARN_MORE",
+            "instagram_user_id": "17841441699550567",
+            "instagram_permalink_url": "https://www.instagram.com/p/DdF9lxCjEOY/",
+            "effective_instagram_media_id": "18096387182636348",
+            "effective_object_story_id": "1245023868693595_122112002337291621",
+            "threads_user_id": "17841450509740015",
+            "authorization_category": "NONE",
+            "effective_authorization_category": "NONE",
+            "format_transformation_spec": [
+              {
+                "data_source": [
+                  "none"
+                ],
+                "format": "single_media"
+              },
+              {
+                "data_source": [
+                  "none"
+                ],
+                "format": "sa_collection"
+              },
+              {
+                "data_source": [
+                  "none"
+                ],
+                "format": "collage"
+              },
+              {
+                "data_source": [
+                  "none"
+                ],
+                "format": "video_slideshow"
+              }
+            ],
+            "title": "Wadi Safar",
+            "body": "Shaped by the land. Designed for excellence. #WadiSafar",
+            "portrait_customizations": {
+              "carousel_delivery_mode": "optimal_num_cards"
+            },
+            "use_page_actor_override": false,
+            "enable_direct_install": false,
+            "enable_launch_instant_app": false,
+            "thumbnail_url": "https://external-iad3-1.xx.fbcdn.net/emg1/v/t13/8854794536148542540?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQIvOLglmvszzzp-PoDOiLqAuO5hTb8_rlreGHq3m0qg0k9sjJuk41QPesF0USsOTTOmhIQJFJQAmpVgmqhc9OqfpsiPkhjqhnVXt4XGPJ9Ks42pqXc3NM8-B-qiA33lsqG3xvX415FCW-C1a4cjRyJr&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-iad3-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=McbAvP6dAsz2Zgc7wowWFQ&edm=AOgd6ZUEAAAA&_nc_zt=3&_nc_tpa=Q5bMBQIlU3iYkfIdmCJ1z6sqrbl8cskCXmMw4YLTEYXEFOFWaCJgPLsVF23QyHnn7XUT1HIHs8Sf2HxO&oh=06_Q3_EAbiJJq6uoSjoCuJptWDJx66grS7-INQnjyTBL8dUKEKG&oe=6ACEAFF6"
+          }
+        },
+        {
+          "id": "120252700003010058",
+          "name": "wadi-safar_general_2026_aug_wsls-kva_adset-id-ef48098a_display_kv1_ar",
+          "account_id": "2194833637927644",
+          "status": "ACTIVE",
+          "configured_status": "ACTIVE",
+          "effective_status": "ACTIVE",
+          "adset_id": "120252700003000058",
+          "campaign_id": "120252160648550058",
+          "updated_time": "2026-09-16T19:22:57+0300",
+          "creative": {
+            "id": "2258850454899538",
+            "name": "وادي صفار 2026-08-22-83f679f9dc93933e5cec9756d576351c",
+            "account_id": "2194833637927644",
+            "actor_id": "1245023868693595",
+            "status": "ACTIVE",
+            "object_type": "SHARE",
+            "object_story_spec": {
+              "page_id": "1245023868693595",
+              "instagram_user_id": "17841441699550567",
+              "link_data": {
+                "link": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=cpc&utm_campaign=3114fc90_wadisafar-local_aug26&utm_term=a0510dc9_ws-lifestyle_en-ar&utm_content=ef48098a_wsls-kva_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+                "message": "حيث تلتقي الأصالة والطبيعة والتجارب الاستثنائية، يقدم وادي صفار وجهة تعكس هوية راسخة.",
+                "name": "وادي صفار",
+                "image_hash": "4c7574a492bb353560ea08806467b596",
+                "call_to_action": {
+                  "type": "LEARN_MORE"
+                },
+                "image_crops": {
+                  "100x100": [
+                    [
+                      0,
+                      26
+                    ],
+                    [
+                      1080,
+                      1106
+                    ]
+                  ]
+                }
+              }
+            },
+            "degrees_of_freedom_spec": {
+              "creative_features_spec": {
+                "pac_recomposition": {
+                  "enroll_status": "OPT_IN",
+                  "customizations": {
+                    "recomposition_type": {
+                      "square": "smart_crop"
+                    }
+                  }
+                },
+                "pac_relaxation": {
+                  "enroll_status": "OPT_OUT"
+                }
+              }
+            },
+            "call_to_action": {
+              "type": "LEARN_MORE"
+            },
+            "call_to_action_type": "LEARN_MORE",
+            "instagram_user_id": "17841441699550567",
+            "instagram_permalink_url": "https://www.instagram.com/p/DcWhhyzsOG4/",
+            "effective_instagram_media_id": "18131377831725879",
+            "effective_object_story_id": "1245023868693595_122108709225291621",
+            "threads_user_id": "17841450509740015",
+            "authorization_category": "NONE",
+            "effective_authorization_category": "NONE",
+            "creative_sourcing_spec": {
+              "destination_screenshot_spec": {
+                "enroll_status": "OPT_OUT"
+              }
+            },
+            "media_sourcing_spec": {
+              "titles": [
+                {
+                  "text": "وادي صفار"
+                }
+              ]
+            },
+            "image_hash": "4c7574a492bb353560ea08806467b596",
+            "image_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t45.1600-4/776130961_122142741663132344_1601617769024810776_n.png?stp=dst-jpg_tt6&_nc_cat=104&ccb=1-7&_nc_sid=ff4730&_nc_ohc=eN-6fLMtrcIQ7kNvwGw5noN&_nc_oc=AdoGLbiL0wgxPY5LzfbRcmfScGG6rays87hPD2vK9sp1uaD0UbYawC61y1xLegbAYY0&_nc_zt=1&_nc_ht=scontent-iad3-1.xx&edm=AOgd6ZUEAAAA&_nc_gid=McbAvP6dAsz2Zgc7wowWFQ&_nc_tpa=Q5bMBQLcjecj36YK7cHuEKVBShX-uYNG3B7oogK7pQfi76GYi-7ugwFzeAbzVyOxlsSIRLWdC6B_PLSI&oh=00_AQOkuOs2vVSCUk8095XElmwD_gvUNv9fI3dSkvtJYrd3hw&oe=6AD2AD20",
+            "title": "وادي صفار",
+            "body": "حيث تلتقي الأصالة والطبيعة والتجارب الاستثنائية، يقدم وادي صفار وجهة تعكس هوية راسخة.",
+            "use_page_actor_override": false,
+            "image_crops": {
+              "100x100": [
+                [
+                  0,
+                  26
+                ],
+                [
+                  1080,
+                  1106
+                ]
+              ]
+            },
+            "enable_direct_install": false,
+            "enable_launch_instant_app": false,
+            "thumbnail_url": "https://external-iad3-1.xx.fbcdn.net/emg1/v/t13/16181674094970383834?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQLkLMiHWOLqPri7maMIyZQB8_GZymMFDYQv5WaEPT6RRA5tcrCtd-PMDOp_E3utGVZnQEqGHDpAMMsqorOS-5TZTYzAvO0W8IoFBM4c2zMzIF7DYyhP59dleCTW3yB8p7yfXEsYHbJHJM4olA7Rm1Qs&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-iad3-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=McbAvP6dAsz2Zgc7wowWFQ&edm=AOgd6ZUEAAAA&_nc_zt=3&_nc_tpa=Q5bMBQI49S8TPHxdZW_XbfRNBxw62oKlLZG_JcvdL-J79_VkjIg9YlZYgEB6VDBhlKmBk302WimNu8D-&oh=06_Q3_EARpNNDpYiuoSqmwAD1FwKH1QVVZK5kSHOZ5n_kkB5Gv4&oe=6ACEDA46"
+          }
+        },
+        {
+          "id": "120252700768700058",
+          "name": "wadi-safar_general_2026_aug_wsls-kva_adset-id-ef48098a_display_cr1_en",
+          "account_id": "2194833637927644",
+          "status": "ACTIVE",
+          "configured_status": "ACTIVE",
+          "effective_status": "ACTIVE",
+          "adset_id": "120252700397330058",
+          "campaign_id": "120252160648550058",
+          "updated_time": "2026-09-16T19:22:55+0300",
+          "creative": {
+            "id": "1387241320036308",
+            "name": "Wadi Safar 2026-08-22-595f47c1f0af1b1088f712570206d5b1",
+            "account_id": "2194833637927644",
+            "actor_id": "1245023868693595",
+            "status": "ACTIVE",
+            "object_type": "SHARE",
+            "object_story_spec": {
+              "page_id": "1245023868693595",
+              "instagram_user_id": "17841441699550567",
+              "link_data": {
+                "message": "A place where nature, heritage, and refined experiences exist in perfect harmony.",
+                "image_hash": "a75ec8e8e50f84617195ab9ca057093c",
+                "call_to_action": {
+                  "type": "LEARN_MORE"
+                },
+                "image_crops": {
+                  "100x100": [
+                    [
+                      0,
+                      443
+                    ],
+                    [
+                      1080,
+                      1523
+                    ]
+                  ]
+                },
+                "child_attachments": [
+                  {
+                    "link": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=cpc&utm_campaign=3114fc90_wadisafar-local_aug26&utm_term=a0510dc9_ws-lifestyle_en-ar&utm_content=ef48098a_wsls-kva_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+                    "image_hash": "8f815443f9a47b8e9ca0dae755c0ed6c",
+                    "call_to_action": {
+                      "type": "LEARN_MORE"
+                    }
+                  },
+                  {
+                    "link": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=cpc&utm_campaign=3114fc90_wadisafar-local_aug26&utm_term=a0510dc9_ws-lifestyle_en-ar&utm_content=ef48098a_wsls-kva_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+                    "image_hash": "18ca89011e7f87e5bdb66397fd078009",
+                    "call_to_action": {
+                      "type": "LEARN_MORE"
+                    }
+                  },
+                  {
+                    "link": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=cpc&utm_campaign=3114fc90_wadisafar-local_aug26&utm_term=a0510dc9_ws-lifestyle_en-ar&utm_content=ef48098a_wsls-kva_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+                    "image_hash": "6b99082ec35e903623a26ce8700275d9",
+                    "call_to_action": {
+                      "type": "LEARN_MORE"
+                    }
+                  }
+                ],
+                "multi_share_end_card": false,
+                "multi_share_optimized": false
+              }
+            },
+            "degrees_of_freedom_spec": {
+              "creative_features_spec": {
+                "advantage_plus_creative": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "carousel_to_video": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "description_automation": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "enhance_cta": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "image_touchups": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "inline_comment": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "media_order": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "product_browsing": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "profile_card": {
+                  "enroll_status": "OPT_OUT"
+                }
+              }
+            },
+            "call_to_action": {
+              "type": "LEARN_MORE"
+            },
+            "call_to_action_type": "LEARN_MORE",
+            "instagram_user_id": "17841441699550567",
+            "instagram_permalink_url": "https://www.instagram.com/p/DcWg6SjjGN_/",
+            "effective_instagram_media_id": "18109899896043754",
+            "effective_object_story_id": "1245023868693595_122108705427291621",
+            "threads_user_id": "17841450509740015",
+            "authorization_category": "NONE",
+            "effective_authorization_category": "NONE",
+            "format_transformation_spec": [
+              {
+                "data_source": [
+                  "none"
+                ],
+                "format": "single_media"
+              },
+              {
+                "data_source": [
+                  "none"
+                ],
+                "format": "sa_collection"
+              },
+              {
+                "data_source": [
+                  "none"
+                ],
+                "format": "collage"
+              },
+              {
+                "data_source": [
+                  "none"
+                ],
+                "format": "video_slideshow"
+              }
+            ],
+            "title": "Wadi Safar",
+            "body": "A place where nature, heritage, and refined experiences exist in perfect harmony.",
+            "portrait_customizations": {
+              "carousel_delivery_mode": "optimal_num_cards"
+            },
+            "use_page_actor_override": false,
+            "enable_direct_install": false,
+            "enable_launch_instant_app": false,
+            "thumbnail_url": "https://external-iad3-1.xx.fbcdn.net/emg1/v/t13/16858327683452360102?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQKjUfKdf-pPsLyLhvoxQrty6YOep0UrAQex7ZArvsQb4gYGa1-k4Zp7gAWdySODGQzayRyZ66RyeFf0u1lQu3bcKiXJy4CY-pHv-iuKl1Sh4k4_EZabf31dmUUIOuMXSt-B4b7J-nxWBcnYaukUO3hM&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-iad3-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=McbAvP6dAsz2Zgc7wowWFQ&edm=AOgd6ZUEAAAA&_nc_zt=3&_nc_tpa=Q5bMBQL0Dm8OL-HX111Ih1wjX6qQuqOcOgkDK3V3eob2dk4oEX3Ed9wJnDu7GLeOWl3Dx_XOz4fwRL8u&oh=06_Q3_EAbamPtd_3BTjGXfqSEPauhKRaRW0wNE-_ZhIBzqGZidz&oe=6ACEB121"
+          }
+        },
+        {
+          "id": "120252705364860058",
+          "name": "wadi-safar_general_2026_aug_wsls-kva_adset-id-ef48098a_video_video1_ar",
+          "account_id": "2194833637927644",
+          "status": "PAUSED",
+          "configured_status": "PAUSED",
+          "effective_status": "PAUSED",
+          "adset_id": "120252705364880058",
+          "campaign_id": "120252160648550058",
+          "updated_time": "2026-09-16T19:22:34+0300",
+          "creative": {
+            "id": "1589034289607128",
+            "name": "وادي صفار 2026-08-22-64224f0a993c06e89173b92cf755b211",
+            "account_id": "2194833637927644",
+            "actor_id": "1245023868693595",
+            "status": "ACTIVE",
+            "object_type": "VIDEO",
+            "object_story_spec": {
+              "page_id": "1245023868693595",
+              "instagram_user_id": "17841441699550567",
+              "video_data": {
+                "video_id": "1532497471459850",
+                "title": "وادي صفار",
+                "message": "بين عراقة التاريخ وسكون الطبيعة، تتشكل حياة لا تُقاس، بل تُروى.",
+                "call_to_action": {
+                  "type": "LEARN_MORE",
+                  "value": {
+                    "link": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=cpc&utm_campaign=3114fc90_wadisafar-local_aug26&utm_term=a0510dc9_ws-lifestyle_en-ar&utm_content=ef48098a_wsls-kva_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+                    "link_format": "VIDEO_LPP"
+                  }
+                },
+                "image_url": "https://www.facebook.com/ads/image/?d=AQLu3gf1QQvSSxrdTgwfTVJcJLAwdNV2q-vH9SgpUsVCk5jOLqP42VP9lDhUaIm5NxVnNS_Q2fBMcvbrYlTEya3OqSS8bWeU9qy6Xss5vv74PuIv-heWmsmbYtuEqQCJA3PKrPru5OcrGVDbcRKNbwv7",
+                "image_hash": "5057a0b9e73050384ab1bc1fcd989b45"
+              }
+            },
+            "degrees_of_freedom_spec": {
+              "creative_features_spec": {
+                "pac_relaxation": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "product_browsing": {
+                  "enroll_status": "OPT_OUT"
+                }
+              }
+            },
+            "contextual_multi_ads": {
+              "enroll_status": "OPT_IN"
+            },
+            "call_to_action": {
+              "type": "LEARN_MORE",
+              "value": {
+                "link": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=cpc&utm_campaign=3114fc90_wadisafar-local_aug26&utm_term=a0510dc9_ws-lifestyle_en-ar&utm_content=ef48098a_wsls-kva_display_ar&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+                "link_format": "VIDEO_LPP"
+              }
+            },
+            "call_to_action_type": "LEARN_MORE",
+            "instagram_user_id": "17841441699550567",
+            "instagram_permalink_url": "https://www.instagram.com/p/DcWhiB7s8jc/",
+            "effective_instagram_media_id": "17955521034227599",
+            "effective_object_story_id": "1245023868693595_122108709261291621",
+            "threads_user_id": "17841450509740015",
+            "authorization_category": "NONE",
+            "effective_authorization_category": "NONE",
+            "media_sourcing_spec": {
+              "titles": [
+                {
+                  "text": "وادي صفار"
+                }
+              ]
+            },
+            "video_id": "1708653930213666",
+            "title": "وادي صفار",
+            "body": "بين عراقة التاريخ وسكون الطبيعة، تتشكل حياة لا تُقاس، بل تُروى.",
+            "use_page_actor_override": false,
+            "enable_direct_install": false,
+            "enable_launch_instant_app": false,
+            "thumbnail_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t15.5256-10/779290818_935603169560019_1112028955735857788_n.jpg?_nc_cat=101&ccb=1-7&_nc_ohc=cBmmDIRPct0Q7kNvwFClpmm&_nc_oc=Adq4a5Tynu2p-0Ek-crDqkoayLX5kInAY76cT6gi0jBHb8zykSnLOwwMkNeux1ist8Q&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&edm=AOgd6ZUEAAAA&_nc_gid=McbAvP6dAsz2Zgc7wowWFQ&_nc_tpa=Q5bMBQKWz4yVa8f7rG-V7BRwQwj1prug0PXMlxzUBuEOwsYAMMFKfuCMtnJxZ4k30ZiV1nrk3vojXcw2&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQNowF-TEVO-Gpkw8jI22WpDeZOX-BVDaGnkkYTJwUYoag&oe=6AD2BFEF"
+          }
+        },
+        {
+          "id": "120252700830790058",
+          "name": "wadi-safar_general_2026_aug_wsls-kva_adset-id-ef48098a_display_cr2_en",
+          "account_id": "2194833637927644",
+          "status": "ACTIVE",
+          "configured_status": "ACTIVE",
+          "effective_status": "ACTIVE",
+          "adset_id": "120252700397330058",
+          "campaign_id": "120252160648550058",
+          "updated_time": "2026-09-16T19:22:31+0300",
+          "creative": {
+            "id": "2112354242990473",
+            "name": "Wadi Safar 2026-08-22-5d7156aa904e42abeff7542a3855e1d4",
+            "account_id": "2194833637927644",
+            "actor_id": "1245023868693595",
+            "status": "ACTIVE",
+            "object_type": "SHARE",
+            "object_story_spec": {
+              "page_id": "1245023868693595",
+              "instagram_user_id": "17841441699550567",
+              "link_data": {
+                "message": "A destination shaped by heritage, defined by nature, and brought to life through exceptional experiences.",
+                "image_hash": "a75ec8e8e50f84617195ab9ca057093c",
+                "call_to_action": {
+                  "type": "LEARN_MORE"
+                },
+                "image_crops": {
+                  "100x100": [
+                    [
+                      0,
+                      443
+                    ],
+                    [
+                      1080,
+                      1523
+                    ]
+                  ]
+                },
+                "child_attachments": [
+                  {
+                    "link": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=cpc&utm_campaign=3114fc90_wadisafar-local_aug26&utm_term=a0510dc9_ws-lifestyle_en-ar&utm_content=ef48098a_wsls-kva_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+                    "image_hash": "99afdd531d5ccc67ddab87097b1b734a",
+                    "call_to_action": {
+                      "type": "LEARN_MORE"
+                    }
+                  },
+                  {
+                    "link": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=cpc&utm_campaign=3114fc90_wadisafar-local_aug26&utm_term=a0510dc9_ws-lifestyle_en-ar&utm_content=ef48098a_wsls-kva_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+                    "image_hash": "7b2153e7738a85f26fecaa6f3d03f7f6",
+                    "call_to_action": {
+                      "type": "LEARN_MORE"
+                    }
+                  },
+                  {
+                    "link": "https://www.wadisafar.com/en?utm_source=meta&utm_medium=cpc&utm_campaign=3114fc90_wadisafar-local_aug26&utm_term=a0510dc9_ws-lifestyle_en-ar&utm_content=ef48098a_wsls-kva_display_en&utm_id={{campaign.id}}-{{adset.id}}-{{ad.id}}",
+                    "image_hash": "4f120c146fa8951e8ea9a67b472e4ab6",
+                    "call_to_action": {
+                      "type": "LEARN_MORE"
+                    }
+                  }
+                ],
+                "multi_share_end_card": false,
+                "multi_share_optimized": false
+              }
+            },
+            "degrees_of_freedom_spec": {
+              "creative_features_spec": {
+                "advantage_plus_creative": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "carousel_to_video": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "description_automation": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "enhance_cta": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "image_text_translation": {
+                  "enroll_status": "OPT_IN"
+                },
+                "image_touchups": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "inline_comment": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "media_order": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "product_browsing": {
+                  "enroll_status": "OPT_OUT"
+                },
+                "profile_card": {
+                  "enroll_status": "OPT_OUT"
+                }
+              }
+            },
+            "call_to_action": {
+              "type": "LEARN_MORE"
+            },
+            "call_to_action_type": "LEARN_MORE",
+            "instagram_user_id": "17841441699550567",
+            "instagram_permalink_url": "https://www.instagram.com/p/DcWg6jnDEe-/",
+            "effective_instagram_media_id": "18095821304646287",
+            "effective_object_story_id": "1245023868693595_122108705619291621",
+            "threads_user_id": "17841450509740015",
+            "authorization_category": "NONE",
+            "effective_authorization_category": "NONE",
+            "format_transformation_spec": [
+              {
+                "data_source": [
+                  "none"
+                ],
+                "format": "single_media"
+              },
+              {
+                "data_source": [
+                  "none"
+                ],
+                "format": "sa_collection"
+              },
+              {
+                "data_source": [
+                  "none"
+                ],
+                "format": "collage"
+              },
+              {
+                "data_source": [
+                  "none"
+                ],
+                "format": "video_slideshow"
+              }
+            ],
+            "title": "Wadi Safar",
+            "body": "A destination shaped by heritage, defined by nature, and brought to life through exceptional experiences.",
+            "portrait_customizations": {
+              "carousel_delivery_mode": "optimal_num_cards"
+            },
+            "use_page_actor_override": false,
+            "enable_direct_install": false,
+            "enable_launch_instant_app": false,
+            "thumbnail_url": "https://external-iad3-1.xx.fbcdn.net/emg1/v/t13/1759149357354467697?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQLe3wMhwjFN4ubay-ltpfwvWVvaTwMML_JhkaR0T33m4xMGPVRISwedM0Mg4m-dx6IT2k2EhhOhPwWvLnMAqvj7c28qkgIlQZ1MSiIWZYsRzMym3PYmRxtPdjEgs4B7omgnC2heDC0NVt928HDnblVF&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-iad3-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=McbAvP6dAsz2Zgc7wowWFQ&edm=AOgd6ZUEAAAA&_nc_zt=3&_nc_tpa=Q5bMBQLV442IBYQISR5VE6xyqCVqdhNnsmZmr4kzYhjhw36zQkZDfWkzDvJvsprRcja2dTVKnJSLNzqD&oh=06_Q3_EAVwyBtFL3PVhXiN0OYKnMnCYRXtpopjpb6L8vi6eRhGg&oe=6ACEBFC0"
+          }
+        },
+        "[2 more items truncated]"
+      ]
+    },
+    "meta": {
+      "requestId": null,
+      "waitedMs": 1062,
+      "throttled": false,
+      "warnings": [],
+      "compatibility": null,
+      "compatibilitySkipped": true
+    }
+  },
+  "meta": {
+    "requestId": "26db86bf-ad5a-4904-883e-13c7f3a04bd8",
+    "latencyMs": 3350,
+    "mcp_output_budget": {
+      "truncated": true,
+      "max_bytes": 65536,
+      "serialized_bytes_before_budget": 72006,
+      "guidance": "Repeat the call with result_fields and max_items to request a smaller result."
+    }
+  }
+}

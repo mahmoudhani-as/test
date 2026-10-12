@@ -1,0 +1,107 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_update",
+    "method": "POST",
+    "path": "/v1.3/ad/update/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "202610122217258088A8C27964D9949280",
+      "data": {
+        "ad_ids": [
+          "1818871228728354"
+        ],
+        "need_audit": false,
+        "creatives": [
+          {
+            "deeplink_type": "NORMAL",
+            "modify_time": "2026-10-12 14:17:26",
+            "vast_moat_enabled": false,
+            "ad_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_UF_UAE_Prospecting_EN_Awareness_TIKTOK_Juice Video 12s - EN",
+            "video_id": "v10033g50000cth6lfvog65vn8648rng",
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/oU6RxwMfIXArQeFieEQAg1MHGea282EEdDqrAu"
+            ],
+            "music_id": null,
+            "operation_status": "ENABLE",
+            "adgroup_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_UF_UAE_Prospecting_EN_Awareness_TIKTOK",
+            "page_id": null,
+            "impression_tracking_url": null,
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "app_name": "",
+            "is_new_structure": true,
+            "carousel_image_labels": null,
+            "brand_safety_vast_url": null,
+            "brand_safety_postbid_partner": "UNSET",
+            "display_name": "Visit Diriyah",
+            "playable_url": "",
+            "call_to_action_id": null,
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "call_to_action": "LEARN_MORE",
+            "identity_id": "7350277519361425409",
+            "ad_text": "Treat yourself to our finest beverages at Bujairi Terrace. Book now!",
+            "landing_page_url": "https://www.diriyah.sa/en/dine?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bujairiterracewinter_dec24_awr&utm_term=bujairiterracewinter_en&utm_content=juicevideo12s_video_en",
+            "tracking_pixel_id": 7347671240183693000,
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "is_aco": false,
+            "landing_page_urls": null,
+            "campaign_automation_type": "MANUAL",
+            "ad_id": "1818871228728354",
+            "campaign_name": "BujairiTerrace_Winter2024Restaurants_UF_AWR_UAE_ENAR_TikTok",
+            "click_tracking_url": null,
+            "optimization_event": null,
+            "ad_format": "SINGLE_VIDEO",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "bujairiterracewinter_dec24_awr"
+              },
+              {
+                "key": "utm_term",
+                "value": "bujairiterracewinter_en"
+              },
+              {
+                "key": "utm_content",
+                "value": "juicevideo12s_video_en"
+              }
+            ],
+            "creative_type": null,
+            "identity_type": "CUSTOMIZED_USER",
+            "ad_texts": null,
+            "adgroup_id": "1818871226772482",
+            "deeplink": "",
+            "card_id": null,
+            "viewability_postbid_partner": "UNSET",
+            "viewability_vast_url": null,
+            "creative_authorized": false,
+            "create_time": "2024-12-19 12:19:37",
+            "advertiser_id": "7338057963233443842",
+            "campaign_id": "1818871223038994"
+          }
+        ]
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "202610122217258088A8C27964D9949280",
+      "waitedMs": 1400,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "5ada1161-ce40-493c-90eb-6363c32f3931",
+    "latencyMs": 2915
+  }
+}

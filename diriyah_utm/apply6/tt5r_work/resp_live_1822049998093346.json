@@ -1,0 +1,107 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_update",
+    "method": "POST",
+    "path": "/v1.3/ad/update/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "2026101222203849940FDED2D2536C69D4",
+      "data": {
+        "ad_ids": [
+          "1822049998093346"
+        ],
+        "need_audit": false,
+        "creatives": [
+          {
+            "ad_text": "In Bujairi Terrace; A View Celebrating You.",
+            "adgroup_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_UF_KSA_Prospecting_EN_Awareness_TIKTOK",
+            "call_to_action": "LEARN_MORE",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "bujairiterracewinter_feb25_awr",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "bujairiterracewinter_en",
+                "key": "utm_term"
+              },
+              {
+                "value": "winterrefresh12s_video_en",
+                "key": "utm_content"
+              }
+            ],
+            "is_new_structure": true,
+            "brand_safety_vast_url": null,
+            "brand_safety_postbid_partner": "UNSET",
+            "playable_url": "",
+            "adgroup_id": "1814258347884545",
+            "carousel_image_labels": null,
+            "vast_moat_enabled": false,
+            "viewability_postbid_partner": "UNSET",
+            "campaign_automation_type": "MANUAL",
+            "operation_status": "ENABLE",
+            "tracking_pixel_id": 7347671240183693000,
+            "click_tracking_url": null,
+            "video_id": "v10033g50000cu950vvog65sp9p8v4rg",
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "campaign_id": "1814258347883569",
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/oQBkBf8fDiPQIIUkyEngiBnSELNlAIP36B65K6"
+            ],
+            "display_name": "Visit Diriyah",
+            "campaign_name": "BujairiTerrace_Winter2024Restaurants_UF_AWR_KSA_ENAR_TikTok",
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "identity_type": "CUSTOMIZED_USER",
+            "deeplink_type": "NORMAL",
+            "creative_authorized": false,
+            "advertiser_id": "7338057963233443842",
+            "card_id": null,
+            "creative_type": null,
+            "viewability_vast_url": null,
+            "call_to_action_id": null,
+            "ad_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_UF_KSA_Prospecting_EN_Awareness_TIKTOK_Winter Refresh 12s - EN",
+            "music_id": null,
+            "modify_time": "2026-10-12 14:20:39",
+            "landing_page_urls": null,
+            "ad_format": "SINGLE_VIDEO",
+            "ad_texts": null,
+            "app_name": "",
+            "identity_id": "7350277519361425409",
+            "create_time": "2025-01-23 14:24:56",
+            "impression_tracking_url": null,
+            "is_aco": false,
+            "landing_page_url": "https://www.diriyah.sa/en/dine?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bujairiterracewinter_feb25_awr&utm_term=bujairiterracewinter_en&utm_content=winterrefresh12s_video_en",
+            "page_id": null,
+            "deeplink": "",
+            "ad_id": "1822049998093346",
+            "optimization_event": null
+          }
+        ]
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "2026101222203849940FDED2D2536C69D4",
+      "waitedMs": 1759,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "f1ab2f3d-f4c8-44c2-9a24-0a3147d52737",
+    "latencyMs": 3454
+  }
+}

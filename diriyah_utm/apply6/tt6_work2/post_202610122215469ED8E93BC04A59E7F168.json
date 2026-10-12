@@ -1,0 +1,110 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_get",
+    "method": "GET",
+    "path": "/v1.3/ad/get/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "202610122215469ED8E93BC04A59E7F168",
+      "data": {
+        "list": [
+          {
+            "campaign_name": "BujairiTerrace_Winter2024Restaurants_UF_AWR_UAE_ENAR_TikTok",
+            "deeplink": "",
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/oMLfkRDiEFAPIEBGbBEQsRD5BtkpfNIannCkgM"
+            ],
+            "landing_page_url": "https://www.diriyah.sa/en/dine?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bujairiterracewinter_dec24_awr&utm_term=bujairiterracewinter_en&utm_content=retailvideo_video_en",
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "modify_time": "2026-10-12 14:15:16",
+            "landing_page_urls": null,
+            "carousel_image_labels": null,
+            "optimization_event": null,
+            "app_name": "",
+            "ad_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_UF_UAE_Prospecting_EN_Awareness_TIKTOK_Retail Video 21s",
+            "create_time": "2024-12-19 12:19:37",
+            "page_id": null,
+            "campaign_id": "1818871223038994",
+            "identity_type": "CUSTOMIZED_USER",
+            "call_to_action_id": null,
+            "adgroup_id": "1818871226772482",
+            "identity_id": "7350277519361425409",
+            "brand_safety_vast_url": null,
+            "impression_tracking_url": null,
+            "call_to_action": "LEARN_MORE",
+            "is_aco": false,
+            "click_tracking_url": null,
+            "is_new_structure": true,
+            "ad_text": "In Bujairi Terrace; A View Celebrating You.",
+            "deeplink_type": "NORMAL",
+            "operation_status": "ENABLE",
+            "campaign_automation_type": "MANUAL",
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "creative_type": null,
+            "vast_moat_enabled": false,
+            "creative_authorized": false,
+            "playable_url": "",
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "viewability_vast_url": null,
+            "ad_id": "1818871228740642",
+            "display_name": "Visit Diriyah",
+            "adgroup_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_UF_UAE_Prospecting_EN_Awareness_TIKTOK",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "bujairiterracewinter_dec24_awr",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "bujairiterracewinter_en",
+                "key": "utm_term"
+              },
+              {
+                "value": "retailvideo_video_en",
+                "key": "utm_content"
+              }
+            ],
+            "tracking_pixel_id": 7347671240183693000,
+            "ad_texts": null,
+            "brand_safety_postbid_partner": "UNSET",
+            "ad_format": "SINGLE_VIDEO",
+            "video_id": "v10033g50000csd47onog65misshucdg",
+            "viewability_postbid_partner": "UNSET",
+            "advertiser_id": "7338057963233443842",
+            "card_id": null,
+            "music_id": null
+          }
+        ],
+        "page_info": {
+          "page": 1,
+          "page_size": 10,
+          "total_page": 1,
+          "total_number": 1
+        }
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "202610122215469ED8E93BC04A59E7F168",
+      "waitedMs": 583,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "2d499de4-42ec-4522-820d-634a9f388de7",
+    "latencyMs": 2819
+  }
+}

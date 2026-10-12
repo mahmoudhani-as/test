@@ -1,0 +1,87 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "data": {
+      "request": {
+        "params": {
+          "account_id": "18ce55o46uh",
+          "count": 200,
+          "cursor": "1r58ivmpkao",
+          "with_deleted": true
+        }
+      },
+      "data": [
+        {
+          "id": "b53zqd",
+          "tweet_id": "2089052283313020991",
+          "deleted": false
+        },
+        {
+          "id": "b53zqe",
+          "tweet_id": "2089052283518775399",
+          "deleted": false
+        },
+        {
+          "id": "b53zr2",
+          "tweet_id": "2089053195763118415",
+          "deleted": false
+        },
+        {
+          "id": "b55c80",
+          "tweet_id": "2090156970225303922",
+          "deleted": false
+        },
+        {
+          "id": "b5ktp7",
+          "tweet_id": "2101665988487831906",
+          "deleted": true
+        },
+        {
+          "id": "b5ktp9",
+          "tweet_id": "2101665988487831906",
+          "deleted": true
+        },
+        {
+          "id": "b5ku3c",
+          "tweet_id": "2101676543692898599",
+          "deleted": true
+        },
+        {
+          "id": "b5ku45",
+          "tweet_id": "2101676664505704930",
+          "deleted": true
+        },
+        {
+          "id": "b5kuky",
+          "tweet_id": "2101685115818779091",
+          "deleted": false
+        },
+        {
+          "id": "b5kukz",
+          "tweet_id": "2101685115818779091",
+          "deleted": false
+        },
+        {
+          "id": "b5lnqr",
+          "tweet_id": "2101685115818779091",
+          "deleted": false
+        }
+      ]
+    },
+    "meta": {
+      "mcp_result_projection": {
+        "fields": [
+          "id",
+          "tweet_id",
+          "deleted"
+        ],
+        "compact": true
+      }
+    }
+  },
+  "meta": {
+    "requestId": "ca23d474-522e-478a-90e4-c6b2560fd646",
+    "latencyMs": 1732
+  }
+}

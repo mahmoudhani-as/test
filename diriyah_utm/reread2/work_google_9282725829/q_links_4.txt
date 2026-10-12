@@ -1,0 +1,1 @@
+SELECT ad_group_asset.status FROM ad_group_asset WHERE ad_group_asset.field_type = 'SITELINK' AND ad_group_asset.status != 'REMOVED'

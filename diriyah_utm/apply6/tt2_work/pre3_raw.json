@@ -1,0 +1,274 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_get",
+    "method": "GET",
+    "path": "/v1.3/ad/get/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "20261012221356ECB9FB7D5149FC5F3BA8",
+      "data": {
+        "list": [
+          {
+            "page_id": null,
+            "ad_format": "SINGLE_VIDEO",
+            "deeplink_type": "NORMAL",
+            "avatar_icon_web_uri": "",
+            "click_tracking_url": null,
+            "image_ids": [],
+            "tiktok_item_id": "7426444501155204359",
+            "ad_id": "1837620326148338",
+            "optimization_event": "SHOPPING",
+            "advertiser_id": "7338057963233443842",
+            "profile_image_url": "",
+            "campaign_automation_type": "MANUAL",
+            "impression_tracking_url": null,
+            "landing_page_urls": null,
+            "ad_text": "",
+            "is_aco": false,
+            "video_id": null,
+            "brand_safety_postbid_partner": "UNSET",
+            "ad_name": "Ad name2025-07-14 14:05:17",
+            "carousel_image_labels": null,
+            "playable_url": "",
+            "ad_ref_pixel_id": 7347671240183693000,
+            "display_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "operation_status": "DISABLE",
+            "creative_type": null,
+            "deeplink": "",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "is_new_structure": true,
+            "promotional_music_disabled": true,
+            "creative_authorized": true,
+            "identity_type": "AUTH_CODE",
+            "vertical_video_strategy": "UNSET",
+            "viewability_postbid_partner": "UNSET",
+            "dynamic_destination": "UNSET",
+            "viewability_vast_url": null,
+            "ad_texts": null,
+            "call_to_action_id": "7526894980166601735",
+            "create_time": "2025-07-14 11:17:04",
+            "campaign_id": "1837620326147250",
+            "adgroup_id": "1837620326148322",
+            "campaign_name": "BujairiTerrace_Summer2025Tickets_LF_CONV_KSA_ENAR_TikTok",
+            "shopping_ads_fallback_type": "DEFAULT",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "hs-bujairiterraceramadan-2025-mar-lf-conversions",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "2291",
+                "key": "utm_id"
+              },
+              {
+                "value": "bujariexperience-video-ret-ksa",
+                "key": "utm_content"
+              }
+            ],
+            "product_info": {
+              "selling_points": null,
+              "product_titles": null,
+              "product_image_list": null
+            },
+            "landing_page_url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterraceramadan-2025-mar-lf-conversions&utm_id=2291&utm_term=bujairiterraceramadan-ar-all-mf&utm_content=bujariexperience-video-ret-ksa",
+            "card_id": null,
+            "modify_time": "2025-10-16 18:42:08",
+            "music_id": null,
+            "app_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "identity_id": "7031391213458752514",
+            "tracking_pixel_id": 7347671240183693000,
+            "fallback_type": "UNSET",
+            "vast_moat_enabled": false,
+            "brand_safety_vast_url": null,
+            "adgroup_name": "Bujairi Terrace_Tactical_Bujairi Terrace Summer 2025 Tickets_LF_KSA_Prospecting_AR_Conversion_TikTok"
+          },
+          {
+            "page_id": null,
+            "ad_format": "SINGLE_VIDEO",
+            "deeplink_type": "NORMAL",
+            "avatar_icon_web_uri": "",
+            "click_tracking_url": null,
+            "image_ids": [],
+            "tiktok_item_id": "7447982795982507271",
+            "ad_id": "1837620326148306",
+            "optimization_event": "SHOPPING",
+            "advertiser_id": "7338057963233443842",
+            "profile_image_url": "",
+            "campaign_automation_type": "MANUAL",
+            "impression_tracking_url": null,
+            "landing_page_urls": null,
+            "ad_text": "بين زوايا #الدرعية.. روح إيطالية!  افتتاح دولتشي اند غابانا في #الدرعية 🇮🇹🤎 ‏In the heart of #Diriyah, where heritage meets Italian elegance! ‏Proud to celebrate the grand opening of Dolce & Gabbana in #Diriyah 🇮🇹 🤎",
+            "is_aco": false,
+            "video_id": null,
+            "brand_safety_postbid_partner": "UNSET",
+            "ad_name": "Ad name2025-07-14 14:04:42",
+            "carousel_image_labels": null,
+            "playable_url": "",
+            "ad_ref_pixel_id": 7347671240183693000,
+            "display_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "operation_status": "DISABLE",
+            "creative_type": null,
+            "deeplink": "",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "is_new_structure": true,
+            "promotional_music_disabled": true,
+            "creative_authorized": true,
+            "identity_type": "AUTH_CODE",
+            "vertical_video_strategy": "UNSET",
+            "viewability_postbid_partner": "UNSET",
+            "dynamic_destination": "UNSET",
+            "viewability_vast_url": null,
+            "ad_texts": null,
+            "call_to_action_id": "7526894980166585351",
+            "create_time": "2025-07-14 11:17:00",
+            "campaign_id": "1837620326147250",
+            "adgroup_id": "1837620326148290",
+            "campaign_name": "BujairiTerrace_Summer2025Tickets_LF_CONV_KSA_ENAR_TikTok",
+            "shopping_ads_fallback_type": "DEFAULT",
+            "utm_params": [
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "hs-bujairiterraceramadan-2025-mar-lf-conversions",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "2293",
+                "key": "utm_id"
+              },
+              {
+                "value": "bujarieid-video-ret-ksa",
+                "key": "utm_content"
+              },
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              }
+            ],
+            "product_info": {
+              "selling_points": null,
+              "product_titles": null,
+              "product_image_list": null
+            },
+            "landing_page_url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterraceramadan-2025-mar-lf-conversions&utm_id=2293&utm_term=bujairiterraceramadan-ar-all-mf&utm_content=bujarieid-video-ret-ksa",
+            "card_id": null,
+            "modify_time": "2026-10-12 14:13:19",
+            "music_id": null,
+            "app_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "identity_id": "7031391213458752514",
+            "tracking_pixel_id": 7347671240183693000,
+            "fallback_type": "UNSET",
+            "vast_moat_enabled": false,
+            "brand_safety_vast_url": null,
+            "adgroup_name": "Bujairi Terrace_Tactical_Bujairi Terrace Summer 2025 Tickets_LF_KSA_Prospecting_EN_Conversion_TikTok"
+          },
+          {
+            "page_id": null,
+            "ad_format": "SINGLE_VIDEO",
+            "deeplink_type": "NORMAL",
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202504235d0ddc1b8ba9571646aca4ab",
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "click_tracking_url": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/oMuQgPNIbHlLBfoKkFJJDcEwpDlXfOAXNBBaxQ"
+            ],
+            "ad_id": "1833201517548594",
+            "optimization_event": null,
+            "advertiser_id": "7338057963233443842",
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202504235d0ddc1b8ba9571646aca4ab",
+            "campaign_automation_type": "MANUAL",
+            "impression_tracking_url": null,
+            "landing_page_urls": null,
+            "ad_text": "الحياة في الدرعية إرث، تطوّر، استدامة.. بفرص تجارية ثمينة، وابتكاراتٌ واعدة؛ تنبض من هالأرض",
+            "is_aco": false,
+            "video_id": "v10033g50000d0q9d2fog65imsgfebig",
+            "brand_safety_postbid_partner": "UNSET",
+            "ad_name": "Diriyah_Tactical_Diriyah Living Campaign_UF_KSA_Prospecting_AR_Awareness_TIKTOK_Retail Video AR - 15s",
+            "carousel_image_labels": null,
+            "playable_url": "",
+            "display_name": "Diriyah Company",
+            "operation_status": "ENABLE",
+            "creative_type": null,
+            "deeplink": "",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "call_to_action": "LEARN_MORE",
+            "is_new_structure": true,
+            "creative_authorized": true,
+            "identity_type": "CUSTOMIZED_USER",
+            "viewability_postbid_partner": "UNSET",
+            "viewability_vast_url": null,
+            "ad_texts": null,
+            "call_to_action_id": null,
+            "create_time": "2025-05-26 16:39:22",
+            "campaign_id": "1833199780659249",
+            "adgroup_id": "1833201517548578",
+            "creative_auto_enhancement_strategy_list": [
+              "VIDEO_QUALITY",
+              "MUSIC_REFRESH"
+            ],
+            "campaign_name": "LifeInDiriyah_Retail2025_UF_AWR_KSA_ENAR_TikTok",
+            "utm_params": [
+              {
+                "value": "retail-video-aud-ksa",
+                "key": "utm_content"
+              },
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "hs-diriyahliving-2025-apr-uf-reach-awareness",
+                "key": "utm_campaign"
+              }
+            ],
+            "landing_page_url": "https://www.diriyahcompany.sa/ar/diriyah-living?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-diriyahliving-2025-apr-uf-reach-awareness&utm_id=4322&utm_term=diriyahliving-ar-all-na&utm_content=retail-video-aud-ksa",
+            "card_id": null,
+            "modify_time": "2025-07-28 11:22:09",
+            "music_id": null,
+            "app_name": "",
+            "identity_id": "7496497927239974920",
+            "tracking_pixel_id": 7347671240183693000,
+            "vast_moat_enabled": false,
+            "brand_safety_vast_url": null,
+            "adgroup_name": "Diriyah_Tactical_Diriyah Living Campaign_UF_KSA_Prospecting_AR_Awareness_TIKTOK"
+          }
+        ],
+        "page_info": {
+          "page": 1,
+          "page_size": 10,
+          "total_page": 1,
+          "total_number": 3
+        }
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "20261012221356ECB9FB7D5149FC5F3BA8",
+      "waitedMs": 590,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "f449b116-86cb-48ed-81ad-d89e4a7493b2",
+    "latencyMs": 5768
+  }
+}

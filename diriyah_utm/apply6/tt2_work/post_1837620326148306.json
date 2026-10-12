@@ -1,0 +1,118 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_get",
+    "method": "GET",
+    "path": "/v1.3/ad/get/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "20261012222111C6164ECA0C14A5392BBE",
+      "data": {
+        "list": [
+          {
+            "identity_type": "AUTH_CODE",
+            "dynamic_destination": "UNSET",
+            "landing_page_url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterracesummer2025tickets_conv&utm_term=bujairiterracesummer2025tickets_en&utm_content=video_ar",
+            "identity_id": "7031391213458752514",
+            "promotional_music_disabled": true,
+            "vertical_video_strategy": "UNSET",
+            "display_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "creative_type": null,
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_id": "1837620326147250",
+            "campaign_automation_type": "MANUAL",
+            "music_id": null,
+            "brand_safety_vast_url": null,
+            "impression_tracking_url": null,
+            "viewability_vast_url": null,
+            "fallback_type": "UNSET",
+            "adgroup_id": "1837620326148290",
+            "ad_name": "Ad name2025-07-14 14:04:42",
+            "landing_page_urls": null,
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "create_time": "2025-07-14 11:17:00",
+            "shopping_ads_fallback_type": "DEFAULT",
+            "deeplink": "",
+            "carousel_image_labels": null,
+            "brand_safety_postbid_partner": "UNSET",
+            "is_aco": false,
+            "video_id": null,
+            "ad_text": "بين زوايا #الدرعية.. روح إيطالية!  افتتاح دولتشي اند غابانا في #الدرعية 🇮🇹🤎 ‏In the heart of #Diriyah, where heritage meets Italian elegance! ‏Proud to celebrate the grand opening of Dolce & Gabbana in #Diriyah 🇮🇹 🤎",
+            "profile_image_url": "",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "hs-bujairiterracesummer2025tickets_conv",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "bujairiterracesummer2025tickets_en",
+                "key": "utm_term"
+              },
+              {
+                "value": "video_ar",
+                "key": "utm_content"
+              }
+            ],
+            "product_info": {
+              "product_image_list": null,
+              "product_titles": null,
+              "selling_points": null
+            },
+            "modify_time": "2026-10-12 14:21:02",
+            "viewability_postbid_partner": "UNSET",
+            "creative_authorized": true,
+            "is_new_structure": true,
+            "card_id": null,
+            "optimization_event": "SHOPPING",
+            "ad_id": "1837620326148306",
+            "call_to_action_id": "7526894980166585351",
+            "tiktok_item_id": "7447982795982507271",
+            "vast_moat_enabled": false,
+            "advertiser_id": "7338057963233443842",
+            "app_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "page_id": null,
+            "operation_status": "DISABLE",
+            "adgroup_name": "Bujairi Terrace_Tactical_Bujairi Terrace Summer 2025 Tickets_LF_KSA_Prospecting_EN_Conversion_TikTok",
+            "click_tracking_url": null,
+            "image_ids": [],
+            "ad_ref_pixel_id": 7347671240183693000,
+            "playable_url": "",
+            "deeplink_type": "NORMAL",
+            "tracking_pixel_id": 7347671240183693000,
+            "campaign_name": "BujairiTerrace_Summer2025Tickets_LF_CONV_KSA_ENAR_TikTok",
+            "ad_texts": null,
+            "avatar_icon_web_uri": ""
+          }
+        ],
+        "page_info": {
+          "page": 1,
+          "page_size": 10,
+          "total_page": 1,
+          "total_number": 1
+        }
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "20261012222111C6164ECA0C14A5392BBE",
+      "waitedMs": 657,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "79a22052-cf31-4be8-aab5-62bf6019dd24",
+    "latencyMs": 2342
+  }
+}

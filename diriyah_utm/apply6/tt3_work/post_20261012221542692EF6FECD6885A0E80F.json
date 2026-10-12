@@ -1,0 +1,406 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_get",
+    "method": "GET",
+    "path": "/v1.3/ad/get/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "20261012221542692EF6FECD6885A0E80F",
+      "data": {
+        "list": [
+          {
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202504235d0ddc1b8ba9571646aca4ab",
+            "ad_format": "SINGLE_VIDEO",
+            "deeplink_type": "NORMAL",
+            "is_new_structure": true,
+            "video_id": "v10033g50000d02ue0fog65g4ps5er60",
+            "click_tracking_url": null,
+            "create_time": "2025-04-22 13:37:13",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_texts": null,
+            "identity_type": "CUSTOMIZED_USER",
+            "playable_url": "",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-diriyahliving_apr25_awr"
+              },
+              {
+                "key": "utm_term",
+                "value": "diriyahliving_ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "school_video_ar"
+              }
+            ],
+            "creative_authorized": true,
+            "advertiser_id": "7338057963233443842",
+            "ad_id": "1830109284537362",
+            "card_id": null,
+            "deeplink": "",
+            "brand_safety_postbid_partner": "UNSET",
+            "call_to_action": "LEARN_MORE",
+            "modify_time": "2026-10-12 14:15:03",
+            "tracking_pixel_id": 7347671240183693000,
+            "call_to_action_id": null,
+            "ad_name": "Diriyah_Tactical_Diriyah Living Campaign_UF_KSA_Prospecting_AR_Awareness_TIKTOK_SCHOOL",
+            "campaign_name": "LifeInDiriyah_Proposition2025_UF_AWR_KSA_ENAR_TikTok",
+            "page_id": null,
+            "display_name": "Diriyah Company",
+            "viewability_vast_url": null,
+            "vast_moat_enabled": false,
+            "adgroup_name": "Diriyah_Tactical_Diriyah Living Campaign_UF_KSA_Prospecting_AR_Awareness_TIKTOK",
+            "adgroup_id": "1830109284536370",
+            "campaign_automation_type": "MANUAL",
+            "carousel_image_labels": null,
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202504235d0ddc1b8ba9571646aca4ab",
+            "landing_page_urls": null,
+            "campaign_id": "1830108589750401",
+            "creative_type": null,
+            "brand_safety_vast_url": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/o8ABXAiAbEBMAwCAOMEwfniJ0FIrmphAoGKv6A"
+            ],
+            "identity_id": "7496497927239974920",
+            "operation_status": "ENABLE",
+            "is_aco": false,
+            "optimization_event": null,
+            "music_id": null,
+            "landing_page_url": "https://www.diriyahcompany.sa/ar/diriyah-living?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-diriyahliving_apr25_awr&utm_term=diriyahliving_ar&utm_content=school_video_ar",
+            "viewability_postbid_partner": "UNSET",
+            "app_name": "",
+            "impression_tracking_url": null,
+            "ad_text": ".الحياة في الدرعية، لك ولأجيال قدام"
+          },
+          {
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202504235d0ddc1b8ba9571646aca4ab",
+            "ad_format": "SINGLE_VIDEO",
+            "deeplink_type": "NORMAL",
+            "is_new_structure": true,
+            "video_id": "v10033g50000d02ue0nog65t7iubq4b0",
+            "click_tracking_url": null,
+            "create_time": "2025-04-22 13:37:13",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_texts": null,
+            "identity_type": "CUSTOMIZED_USER",
+            "playable_url": "",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-diriyahliving_apr25_awr"
+              },
+              {
+                "key": "utm_term",
+                "value": "diriyahliving_ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "home_video_ar"
+              }
+            ],
+            "creative_authorized": true,
+            "advertiser_id": "7338057963233443842",
+            "ad_id": "1830109284537346",
+            "card_id": null,
+            "deeplink": "",
+            "brand_safety_postbid_partner": "UNSET",
+            "call_to_action": "LEARN_MORE",
+            "modify_time": "2026-10-12 14:15:08",
+            "tracking_pixel_id": 7347671240183693000,
+            "call_to_action_id": null,
+            "ad_name": "Diriyah_Tactical_Diriyah Living Campaign_UF_KSA_Prospecting_AR_Awareness_TIKTOK_Home",
+            "campaign_name": "LifeInDiriyah_Proposition2025_UF_AWR_KSA_ENAR_TikTok",
+            "page_id": null,
+            "display_name": "Diriyah Company",
+            "viewability_vast_url": null,
+            "vast_moat_enabled": false,
+            "adgroup_name": "Diriyah_Tactical_Diriyah Living Campaign_UF_KSA_Prospecting_AR_Awareness_TIKTOK",
+            "adgroup_id": "1830109284536370",
+            "campaign_automation_type": "MANUAL",
+            "carousel_image_labels": null,
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202504235d0ddc1b8ba9571646aca4ab",
+            "landing_page_urls": null,
+            "campaign_id": "1830108589750401",
+            "creative_type": null,
+            "brand_safety_vast_url": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/o0vlQinIAAAFiNAPWEzKkaY6L9BAEvNU9ByXB"
+            ],
+            "identity_id": "7496497927239974920",
+            "operation_status": "ENABLE",
+            "is_aco": false,
+            "optimization_event": null,
+            "music_id": null,
+            "landing_page_url": "https://www.diriyahcompany.sa/ar/diriyah-living?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-diriyahliving_apr25_awr&utm_term=diriyahliving_ar&utm_content=home_video_ar",
+            "viewability_postbid_partner": "UNSET",
+            "app_name": "",
+            "impression_tracking_url": null,
+            "ad_text": ".الحياة في الدرعية، لك ولأجيال قدام"
+          },
+          {
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202504235d0ddc1b8ba9571646aca4ab",
+            "ad_format": "SINGLE_VIDEO",
+            "deeplink_type": "NORMAL",
+            "is_new_structure": true,
+            "video_id": "v10033g50000d00gosfog65is7nrvps0",
+            "click_tracking_url": null,
+            "create_time": "2025-04-22 13:37:15",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_texts": null,
+            "identity_type": "CUSTOMIZED_USER",
+            "playable_url": "",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-diriyahliving_apr25_awr"
+              },
+              {
+                "key": "utm_term",
+                "value": "diriyahliving_en"
+              },
+              {
+                "key": "utm_content",
+                "value": "school_video_en"
+              }
+            ],
+            "creative_authorized": true,
+            "advertiser_id": "7338057963233443842",
+            "ad_id": "1830109229960242",
+            "card_id": null,
+            "deeplink": "",
+            "brand_safety_postbid_partner": "UNSET",
+            "call_to_action": "LEARN_MORE",
+            "modify_time": "2026-10-12 14:15:14",
+            "tracking_pixel_id": 7347671240183693000,
+            "call_to_action_id": null,
+            "ad_name": "Diriyah_Tactical_Diriyah Living Campaign_UF_KSA_Prospecting_EN_Awareness_TIKTOK_SCHOOL",
+            "campaign_name": "LifeInDiriyah_Proposition2025_UF_AWR_KSA_ENAR_TikTok",
+            "page_id": null,
+            "display_name": "Diriyah Company",
+            "viewability_vast_url": null,
+            "vast_moat_enabled": false,
+            "adgroup_name": "Diriyah_Tactical_Diriyah Living Campaign_UF_KSA_Prospecting_EN_Awareness_TIKTOK",
+            "adgroup_id": "1830108622305313",
+            "campaign_automation_type": "MANUAL",
+            "carousel_image_labels": null,
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202504235d0ddc1b8ba9571646aca4ab",
+            "landing_page_urls": null,
+            "campaign_id": "1830108589750401",
+            "creative_type": null,
+            "brand_safety_vast_url": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/oU5BNQ4aoEQGDEBlDBAF0AxEI9DCw1Afxgfyj9"
+            ],
+            "identity_id": "7496497927239974920",
+            "operation_status": "ENABLE",
+            "is_aco": false,
+            "optimization_event": null,
+            "music_id": null,
+            "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-diriyahliving_apr25_awr&utm_term=diriyahliving_en&utm_content=school_video_en",
+            "viewability_postbid_partner": "UNSET",
+            "app_name": "",
+            "impression_tracking_url": null,
+            "ad_text": "Diriyah Living, today and for generations to come."
+          },
+          {
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202504235d0ddc1b8ba9571646aca4ab",
+            "ad_format": "SINGLE_VIDEO",
+            "deeplink_type": "NORMAL",
+            "is_new_structure": true,
+            "video_id": "v10033g50000d00gosfog65rp5igki5g",
+            "click_tracking_url": null,
+            "create_time": "2025-04-22 13:37:15",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_texts": null,
+            "identity_type": "CUSTOMIZED_USER",
+            "playable_url": "",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-diriyahliving_apr25_awr"
+              },
+              {
+                "key": "utm_term",
+                "value": "diriyahliving_en"
+              },
+              {
+                "key": "utm_content",
+                "value": "home_video_en"
+              }
+            ],
+            "creative_authorized": true,
+            "advertiser_id": "7338057963233443842",
+            "ad_id": "1830108696489010",
+            "card_id": null,
+            "deeplink": "",
+            "brand_safety_postbid_partner": "UNSET",
+            "call_to_action": "LEARN_MORE",
+            "modify_time": "2026-10-12 14:15:21",
+            "tracking_pixel_id": 7347671240183693000,
+            "call_to_action_id": null,
+            "ad_name": "Diriyah_Tactical_Diriyah Living Campaign_UF_KSA_Prospecting_EN_Awareness_TIKTOK_Home",
+            "campaign_name": "LifeInDiriyah_Proposition2025_UF_AWR_KSA_ENAR_TikTok",
+            "page_id": null,
+            "display_name": "Diriyah Company",
+            "viewability_vast_url": null,
+            "vast_moat_enabled": false,
+            "adgroup_name": "Diriyah_Tactical_Diriyah Living Campaign_UF_KSA_Prospecting_EN_Awareness_TIKTOK",
+            "adgroup_id": "1830108622305313",
+            "campaign_automation_type": "MANUAL",
+            "carousel_image_labels": null,
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202504235d0ddc1b8ba9571646aca4ab",
+            "landing_page_urls": null,
+            "campaign_id": "1830108589750401",
+            "creative_type": null,
+            "brand_safety_vast_url": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/oUF9fABALDkAkimU0yS4YBoBwENBAWpIlN7IiK"
+            ],
+            "identity_id": "7496497927239974920",
+            "operation_status": "ENABLE",
+            "is_aco": false,
+            "optimization_event": null,
+            "music_id": null,
+            "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-diriyahliving_apr25_awr&utm_term=diriyahliving_en&utm_content=home_video_en",
+            "viewability_postbid_partner": "UNSET",
+            "app_name": "",
+            "impression_tracking_url": null,
+            "ad_text": "Diriyah Living, today and for generations to come."
+          },
+          {
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "ad_format": "SINGLE_VIDEO",
+            "deeplink_type": "NORMAL",
+            "is_new_structure": true,
+            "video_id": "v10033g50000cvdr7uvog65mrt9bnpug",
+            "click_tracking_url": null,
+            "create_time": "2025-03-20 06:23:31",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_texts": null,
+            "identity_type": "CUSTOMIZED_USER",
+            "playable_url": "",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-cityofearth_mar25_awr"
+              },
+              {
+                "key": "utm_term",
+                "value": "cityofearth_en-ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "cityofearth_video_en-ar"
+              }
+            ],
+            "creative_authorized": true,
+            "advertiser_id": "7338057963233443842",
+            "ad_id": "1827093148315714",
+            "card_id": null,
+            "deeplink": "",
+            "brand_safety_postbid_partner": "UNSET",
+            "call_to_action": "LEARN_MORE",
+            "modify_time": "2026-10-12 14:15:29",
+            "tracking_pixel_id": 7347671240183693000,
+            "call_to_action_id": null,
+            "ad_name": "Diriyah_Tactical_City of Earth_UF_KSA_Prospecting_EN/AR_Awareness_Tiktok_Hero Video",
+            "campaign_name": "CityOfEarth_Phase22025_UF_AWR_KSA_ENAR_TikTok",
+            "page_id": null,
+            "display_name": "Visit Diriyah",
+            "viewability_vast_url": null,
+            "vast_moat_enabled": false,
+            "adgroup_name": "Diriyah_Tactical_City of Earth_UF_KSA_Prospecting_EN/AR_Awareness_Tiktok",
+            "adgroup_id": "1827093147751505",
+            "campaign_automation_type": "MANUAL",
+            "carousel_image_labels": null,
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "landing_page_urls": null,
+            "campaign_id": "1827093147606066",
+            "creative_type": null,
+            "brand_safety_vast_url": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/o45bmd9VzEoLB7A2tA7i6LniIKBB3WA79wf1B1"
+            ],
+            "identity_id": "7350277519361425409",
+            "operation_status": "ENABLE",
+            "is_aco": false,
+            "optimization_event": null,
+            "music_id": null,
+            "landing_page_url": "https://www.diriyahcompany.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-cityofearth_mar25_awr&utm_term=cityofearth_en-ar&utm_content=cityofearth_video_en-ar",
+            "viewability_postbid_partner": "UNSET",
+            "app_name": "",
+            "impression_tracking_url": null,
+            "ad_text": "للعالم مستقبل واحد..وللدرعية مستقبل تاريخي"
+          }
+        ],
+        "page_info": {
+          "page": 1,
+          "page_size": 10,
+          "total_page": 1,
+          "total_number": 5
+        }
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "20261012221542692EF6FECD6885A0E80F",
+      "waitedMs": 1647,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "fdbffd55-3872-4fd1-b293-393b80ec87c0",
+    "latencyMs": 4259
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_get",
+    "method": "GET",
+    "path": "/v1.3/ad/get/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "20261012221237E145090DEDBCD862D61D",
+      "data": {
+        "list": [
+          {
+            "landing_page_url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_awr&utm_term=ar&utm_content=display_ar",
+            "ad_id": "1866918349665473",
+            "identity_type": "BC_AUTH_TT",
+            "adgroup_id": "1866917615176897",
+            "ad_name": "ManazelAlHadawi_KV2_Static_AR_NA_Prospecting_03.06.2026_30.09.2026",
+            "modify_time": "2026-10-12 14:09:17",
+            "operation_status": "DISABLE"
+          },
+          {
+            "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_conv&utm_term=en&utm_content=display_en",
+            "ad_id": "1866918348746034",
+            "identity_type": "BC_AUTH_TT",
+            "adgroup_id": "1866917798099138",
+            "ad_name": "ManazelAlHadawi_KV2_Static_EN_NA_Prospecting_03.06.2026_30.09.2026",
+            "modify_time": "2026-10-12 14:12:10",
+            "operation_status": "DISABLE"
+          },
+          {
+            "landing_page_url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_cond&utm_term=ar&utm_content=b01f5ba3_manazel-alhadawi-kv1_display_ar",
+            "ad_id": "1866918010688625",
+            "identity_type": "BC_AUTH_TT",
+            "adgroup_id": "1866917629346866",
+            "ad_name": "ManazelAlHadawi_KV1_Static_AR_NA_Prospecting_03.06.2026_30.09.2026",
+            "modify_time": "2026-10-12 14:08:15",
+            "operation_status": "DISABLE"
+          },
+          {
+            "landing_page_url": "https://www.diriyah.sa/ar/hotels/bab-samhan?utm_source=tiktok&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_may26_cond&utm_term=ar&utm_content=display_ar",
+            "ad_id": "1866093482948610",
+            "identity_type": "BC_AUTH_TT",
+            "adgroup_id": "1866093482947698",
+            "ad_name": "Bab Samhan x Qiddiya_StaticKV1_AR",
+            "modify_time": "2026-10-12 14:10:49",
+            "operation_status": "ENABLE"
+          },
+          {
+            "landing_page_url": "https://www.diriyah.sa/ar/dine?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterracesummer2025restaurants_aug25_awr&utm_term=bujairiterracesummer2025restaurants_ar&utm_content=sarabeth_video_ar",
+            "tiktok_item_id": "7535132310199422226",
+            "ad_id": "1839630732729377",
+            "identity_type": "BC_AUTH_TT",
+            "adgroup_id": "1837711880968241",
+            "ad_name": "Bujairi Terrace_Tactical_Bujairi Terrace Summer 2025 Restaurants_UF_KSA_Prospecting_AR_Awareness_Sarabeth's",
+            "modify_time": "2026-10-12 14:09:06",
+            "operation_status": "ENABLE"
+          },
+          {
+            "landing_page_url": "https://www.diriyah.sa/ar/dine?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterracesummer2025restaurants_aug25_awr&utm_term=bujairiterracesummer2025restaurants_ar&utm_content=longchim_video_ar",
+            "tiktok_item_id": "7535132273885138177",
+            "ad_id": "1839630553393394",
+            "identity_type": "BC_AUTH_TT",
+            "adgroup_id": "1837711880968241",
+            "ad_name": "Bujairi Terrace_Tactical_Bujairi Terrace Summer 2025 Restaurants_UF_KSA_Prospecting_AR_Awareness_longchim",
+            "modify_time": "2026-10-12 14:09:06",
+            "operation_status": "DISABLE"
+          },
+          {
+            "landing_page_url": "https://www.diriyah.sa/ar/dine?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterracesummer2025restaurants_aug25_awr&utm_term=bujairiterracesummer2025restaurants_ar&utm_content=assouline_video_ar",
+            "tiktok_item_id": "7535035397458447617",
+            "ad_id": "1839606994934850",
+            "identity_type": "BC_AUTH_TT",
+            "adgroup_id": "1837711880968241",
+            "ad_name": "Bujairi Terrace_Tactical_Bujairi Terrace Summer 2025 Restaurants_UF_KSA_Prospecting_AR_Awareness_Assouline",
+            "modify_time": "2026-10-12 14:09:06",
+            "operation_status": "ENABLE"
+          },
+          {
+            "landing_page_url": "https://www.diriyah.sa/ar/dine?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterracesummer2025restaurants-2025-jul-uf%2Fmf-reach-awareness&utm_id=5762&utm_term=bujairiterracesummer2025restaurants-ar-all-na&utm_content=longchim-video-aud",
+            "tiktok_item_id": "7530969165360811285",
+            "ad_id": "1838614376695858",
+            "identity_type": "BC_AUTH_TT",
+            "adgroup_id": "1837711880968241",
+            "ad_name": "Bujairi Terrace_Tactical_Bujairi Terrace Summer 2025 Restaurants_UF_KSA_Prospecting_AR_Awareness_longchim",
+            "modify_time": "2026-10-12 14:09:06",
+            "operation_status": "DISABLE"
+          },
+          {
+            "landing_page_url": "https://www.diriyah.sa/ar/dine?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterracesummer2025restaurants-2025-jul-uf%2Fmf-reach-awareness&utm_id=5762&utm_term=bujairiterracesummer2025restaurants-ar-all-na&utm_content=longchim-video-aud",
+            "tiktok_item_id": "7530913281934953749",
+            "ad_id": "1838597179469921",
+            "identity_type": "BC_AUTH_TT",
+            "adgroup_id": "1837711880968241",
+            "ad_name": "Bujairi Terrace_Tactical_Bujairi Terrace Summer 2025 Restaurants_UF_KSA_Prospecting_AR_Awareness_longchim",
+            "modify_time": "2026-10-12 14:09:06",
+            "operation_status": "DISABLE"
+          },
+          {
+            "landing_page_url": "https://www.diriyah.sa/ar/dine?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterracesummer2025restaurants-2025-jul-uf%2Fmf-reach-awareness&utm_id=5582&utm_term=bujairiterracesummer2025restaurants-ar-all-na&utm_content=assouline-video-aud",
+            "tiktok_item_id": "7530896378772425985",
+            "ad_id": "1838596406247617",
+            "identity_type": "BC_AUTH_TT",
+            "adgroup_id": "1837711880968241",
+            "ad_name": "Bujairi Terrace_Tactical_Bujairi Terrace Summer 2025 Restaurants_UF_KSA_Prospecting_AR_Awareness_Assouline",
+            "modify_time": "2026-10-12 14:09:06",
+            "operation_status": "DISABLE"
+          },
+          {
+            "landing_page_url": "https://www.diriyah.sa/ar/dine?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterracesummer2025restaurants-2025-jul-uf/mf-reach-awareness&utm_id=5942&utm_term=bujairiterracesummer2025restaurants-ar-all-na&utm_content=sarabeth-video-aud",
+            "tiktok_item_id": "7530614633506360583",
+            "ad_id": "1838527506001954",
+            "identity_type": "BC_AUTH_TT",
+            "adgroup_id": "1837711880968241",
+            "ad_name": "Bujairi Terrace_Tactical_Bujairi Terrace Summer 2025 Restaurants_UF_KSA_Prospecting_AR_Awareness_Sarabeth's",
+            "modify_time": "2026-10-12 14:09:06",
+            "operation_status": "DISABLE"
+          },
+          {
+            "landing_page_url": "https://www.diriyah.sa/ar/dine?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterracesummer2025restaurants-2025-jul-uf%2Fmf-reach-awareness&utm_id=5762&utm_term=bujairiterracesummer2025restaurants-ar-all-na&utm_content=longchim-video-aud",
+            "tiktok_item_id": "7530614637553814792",
+            "ad_id": "1838527327335474",
+            "identity_type": "BC_AUTH_TT",
+            "adgroup_id": "1837711880968241",
+            "ad_name": "Bujairi Terrace_Tactical_Bujairi Terrace Summer 2025 Restaurants_UF_KSA_Prospecting_AR_Awareness_longchim",
+            "modify_time": "2026-10-12 14:09:06",
+            "operation_status": "DISABLE"
+          },
+          {
+            "landing_page_url": "https://www.diriyah.sa/ar/dine?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterracesummer2025restaurants-2025-jul-uf%2Fmf-reach-awareness&utm_id=5365&utm_term=bujairiterracesummer2025restaurants-ar-all-na&utm_content=altopiano-video-aud",
+            "tiktok_item_id": "7530614630666734865",
+            "ad_id": "1838442776946722",
+            "identity_type": "BC_AUTH_TT",
+            "adgroup_id": "1837711880968241",
+            "ad_name": "Bujairi Terrace_Tactical_Bujairi Terrace Summer 2025 Restaurants_UF_KSA_Prospecting_AR_Awareness_Altopiano",
+            "modify_time": "2026-10-12 14:09:06",
+            "operation_status": "DISABLE"
+          },
+          {
+            "landing_page_url": "https://www.diriyah.sa/ar/dine?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterracesummer2025restaurants-2025-jul-uf%2Fmf-reach-awareness&utm_id=5365&utm_term=bujairiterracesummer2025restaurants-ar-all-na&utm_content=altopiano-video-aud",
+            "tiktok_item_id": "7530654063373946130",
+            "ad_id": "1837890274295346",
+            "identity_type": "BC_AUTH_TT",
+            "adgroup_id": "1837711880968241",
+            "ad_name": "Bujairi Terrace_Tactical_Bujairi Terrace Summer 2025 Restaurants_UF_KSA_Prospecting_AR_Awareness_Altopiano",
+            "modify_time": "2026-10-12 14:09:06",
+            "operation_status": "ENABLE"
+          }
+        ],
+        "page_info": {
+          "page": 1,
+          "page_size": 200,
+          "total_page": 1,
+          "total_number": 14
+        }
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "20261012221237E145090DEDBCD862D61D",
+      "waitedMs": 756,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "f28ce08f-9a95-49e7-8344-35c47d249c79",
+    "latencyMs": 2311
+  }
+}

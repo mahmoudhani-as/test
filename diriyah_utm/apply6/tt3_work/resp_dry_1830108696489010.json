@@ -1,0 +1,76 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_update",
+    "dryRun": true,
+    "data": {
+      "request": {
+        "method": "POST",
+        "url": "https://business-api.tiktok.com/open_api/v1.3/ad/update/",
+        "path": "/v1.3/ad/update/",
+        "headers": {
+          "Access-Token": "[redacted]",
+          "Accept": "application/json",
+          "Content-Type": "application/json"
+        },
+        "query": {},
+        "bodyFormat": "json",
+        "body": {
+          "advertiser_id": "7338057963233443842",
+          "adgroup_id": "1830108622305313",
+          "creatives": [
+            {
+              "ad_format": "SINGLE_VIDEO",
+              "ad_id": "1830108696489010",
+              "ad_name": "Diriyah_Tactical_Diriyah Living Campaign_UF_KSA_Prospecting_EN_Awareness_TIKTOK_Home",
+              "ad_text": "Diriyah Living, today and for generations to come.",
+              "aigc_disclosure_type": "NOT_DECLARED",
+              "avatar_icon_web_uri": "ad-site-i18n-sg/202504235d0ddc1b8ba9571646aca4ab",
+              "call_to_action": "LEARN_MORE",
+              "creative_authorized": true,
+              "display_name": "Diriyah Company",
+              "identity_id": "7496497927239974920",
+              "identity_type": "CUSTOMIZED_USER",
+              "image_ids": [
+                "tos-alisg-p-0051c001-sg/oUF9fABALDkAkimU0yS4YBoBwENBAWpIlN7IiK"
+              ],
+              "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-diriyahliving_apr25_awr&utm_term=diriyahliving_en&utm_content=home_video_en",
+              "tracking_pixel_id": "7347671240183693330",
+              "utm_params": [
+                {
+                  "key": "utm_source",
+                  "value": "tiktok"
+                },
+                {
+                  "key": "utm_medium",
+                  "value": "paid-social"
+                },
+                {
+                  "key": "utm_campaign",
+                  "value": "hs-diriyahliving_apr25_awr"
+                },
+                {
+                  "key": "utm_term",
+                  "value": "diriyahliving_en"
+                },
+                {
+                  "key": "utm_content",
+                  "value": "home_video_en"
+                }
+              ],
+              "vast_moat_enabled": false,
+              "video_id": "v10033g50000d00gosfog65rp5igki5g"
+            }
+          ]
+        }
+      },
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "46fb1822-b9e1-491f-95fd-e816ae5840d1",
+    "latencyMs": 1808
+  }
+}

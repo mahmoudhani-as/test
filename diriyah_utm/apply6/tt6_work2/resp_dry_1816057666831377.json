@@ -1,0 +1,76 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_update",
+    "dryRun": true,
+    "data": {
+      "request": {
+        "method": "POST",
+        "url": "https://business-api.tiktok.com/open_api/v1.3/ad/update/",
+        "path": "/v1.3/ad/update/",
+        "headers": {
+          "Access-Token": "[redacted]",
+          "Accept": "application/json",
+          "Content-Type": "application/json"
+        },
+        "query": {},
+        "bodyFormat": "json",
+        "body": {
+          "advertiser_id": "7338057963233443842",
+          "adgroup_id": "1816057643064337",
+          "creatives": [
+            {
+              "ad_format": "SINGLE_VIDEO",
+              "ad_id": "1816057666831377",
+              "ad_name": "Diriyah_Tactical_City of Earth_UF_KSA_Pospecting_AR_Awareness_TikTok_M_Greenery 15s",
+              "ad_text": "للعالم مستقبل واحد..وللدرعية مستقبل تاريخي",
+              "aigc_disclosure_type": "NOT_DECLARED",
+              "avatar_icon_web_uri": "ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+              "call_to_action": "LEARN_MORE",
+              "creative_authorized": true,
+              "display_name": "Visit Diriyah",
+              "identity_id": "7350277519361425409",
+              "identity_type": "CUSTOMIZED_USER",
+              "image_ids": [
+                "tos-alisg-p-0051c001-sg/oYWENnrrIxOEDiVnBAQu81Rf5negLFIDB9QBAk"
+              ],
+              "landing_page_url": "https://www.diriyahcompany.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cityofearth_nov24_awr&utm_term=cityofearth_en-ar&utm_content=video_ar",
+              "tracking_pixel_id": "7347671240183693330",
+              "utm_params": [
+                {
+                  "key": "utm_source",
+                  "value": "tiktok"
+                },
+                {
+                  "key": "utm_medium",
+                  "value": "paid-social"
+                },
+                {
+                  "key": "utm_campaign",
+                  "value": "cityofearth_nov24_awr"
+                },
+                {
+                  "key": "utm_term",
+                  "value": "cityofearth_en-ar"
+                },
+                {
+                  "key": "utm_content",
+                  "value": "video_ar"
+                }
+              ],
+              "vast_moat_enabled": false,
+              "video_id": "v10033g50000csh48ufog65qqpqftu00"
+            }
+          ]
+        }
+      },
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "bf9629cb-8528-47c6-960c-610ec5f0f8e2",
+    "latencyMs": 1431
+  }
+}

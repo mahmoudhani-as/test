@@ -1,0 +1,76 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_update",
+    "dryRun": true,
+    "data": {
+      "request": {
+        "method": "POST",
+        "url": "https://business-api.tiktok.com/open_api/v1.3/ad/update/",
+        "path": "/v1.3/ad/update/",
+        "headers": {
+          "Access-Token": "[redacted]",
+          "Accept": "application/json",
+          "Content-Type": "application/json"
+        },
+        "query": {},
+        "bodyFormat": "json",
+        "body": {
+          "advertiser_id": "7338057963233443842",
+          "adgroup_id": "1814258347884545",
+          "creatives": [
+            {
+              "ad_format": "SINGLE_VIDEO",
+              "ad_id": "1822049998093346",
+              "ad_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_UF_KSA_Prospecting_EN_Awareness_TIKTOK_Winter Refresh 12s - EN",
+              "ad_text": "In Bujairi Terrace; A View Celebrating You.",
+              "aigc_disclosure_type": "NOT_DECLARED",
+              "avatar_icon_web_uri": "ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+              "call_to_action": "LEARN_MORE",
+              "creative_authorized": false,
+              "display_name": "Visit Diriyah",
+              "identity_id": "7350277519361425409",
+              "identity_type": "CUSTOMIZED_USER",
+              "image_ids": [
+                "tos-alisg-p-0051c001-sg/oQBkBf8fDiPQIIUkyEngiBnSELNlAIP36B65K6"
+              ],
+              "landing_page_url": "https://www.diriyah.sa/en/dine?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bujairiterracewinter_feb25_awr&utm_term=bujairiterracewinter_en&utm_content=winterrefresh12s_video_en",
+              "tracking_pixel_id": "7347671240183693330",
+              "utm_params": [
+                {
+                  "key": "utm_source",
+                  "value": "tiktok"
+                },
+                {
+                  "key": "utm_medium",
+                  "value": "paid-social"
+                },
+                {
+                  "key": "utm_campaign",
+                  "value": "bujairiterracewinter_feb25_awr"
+                },
+                {
+                  "key": "utm_term",
+                  "value": "bujairiterracewinter_en"
+                },
+                {
+                  "key": "utm_content",
+                  "value": "winterrefresh12s_video_en"
+                }
+              ],
+              "vast_moat_enabled": false,
+              "video_id": "v10033g50000cu950vvog65sp9p8v4rg"
+            }
+          ]
+        }
+      },
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "c86b9a1a-ed40-4a7e-bb6f-aa0b0601c589",
+    "latencyMs": 1419
+  }
+}

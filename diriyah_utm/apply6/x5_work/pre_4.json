@@ -1,0 +1,61 @@
+{
+ "card_before": {
+  "name": "[Copy] Diriyah_Tactical_Diriyah Living Campaign_UF_KSA_Prospecting_EN_Awareness_",
+  "components": [
+   {
+    "media_key": "13_1926988789190135808",
+    "media_metadata": {
+     "13_1926988789190135808": {
+      "type": "VIDEO",
+      "url": "https://video.twimg.com/amplify_video/1926988789190135808/vid/avc1/1280x720/CnoMBjSispFpKMTS.mp4?tag=14",
+      "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1926988789190135808/img/lTdvjgo2eJoetBIV.jpg",
+      "width": 1920,
+      "height": 1080,
+      "video_duration": 15000,
+      "video_aspect_ratio": "16:9"
+     }
+    },
+    "type": "MEDIA"
+   },
+   {
+    "title": "Diriyah Living",
+    "destination": {
+     "url": "https://www.diriyahcompany.sa/en/diriyah-living?utm_source=twitter&utm_medium=paid-social&utm_campaign=hs-diriyahliving-2025-apr-uf-reach-awareness&utm_id=4331&utm_term=diriyahliving-en-all-na&utm_content=retail-video-aud-ksa",
+     "type": "WEBSITE"
+    },
+    "type": "DETAILS"
+   }
+  ],
+  "id": "1939280075595345921",
+  "created_at": "2025-06-29T11:09:34Z",
+  "card_uri": "card://1939280075595345921",
+  "updated_at": "2025-06-29T11:09:34Z",
+  "deleted": false,
+  "card_type": "VIDEO_WEBSITE"
+ },
+ "payload": {
+  "name": "[Copy] Diriyah_Tactical_Diriyah Living Campaign_UF_KSA_Prospecting_EN_Awareness_",
+  "components": [
+   {
+    "media_key": "13_1926988789190135808",
+    "type": "MEDIA"
+   },
+   {
+    "title": "Diriyah Living",
+    "destination": {
+     "url": "https://www.diriyahcompany.sa/en/diriyah-living?utm_source=x&utm_medium=paid-social&utm_campaign=hs-diriyahliving_jun25_awr&utm_term=diriyahliving_en&utm_content=retail_video_en",
+     "type": "WEBSITE"
+    },
+    "type": "DETAILS"
+   }
+  ]
+ },
+ "get_reqid": "04ff9179-338d-41ea-a63d-eef74aaf3043",
+ "status": [
+  [
+   "card.components[1].destination.url",
+   "WRITE",
+   "https://www.diriyahcompany.sa/en/diriyah-living?utm_source=twitter&utm_medium=paid-social&utm_campaign=hs-diriyahliving-2025-apr-uf-reach-awareness&utm_id=4331&utm_term=diriyahliving-en-all-na&utm_content=retail-video-aud-ksa"
+  ]
+ ]
+}

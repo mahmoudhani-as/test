@@ -1,0 +1,1 @@
+SELECT campaign_asset.status FROM campaign_asset WHERE campaign_asset.field_type = 'SITELINK' AND campaign_asset.status != 'REMOVED' AND campaign.id > 23908652363

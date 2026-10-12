@@ -1,0 +1,116 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_update",
+    "method": "POST",
+    "path": "/v1.3/ad/update/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "20261012221627A8A558C76988595A908B",
+      "data": {
+        "ad_ids": [
+          "1859092678550578"
+        ],
+        "need_audit": false,
+        "creatives": [
+          {
+            "ad_name": "Static_AR",
+            "campaign_id": "1857288757610529",
+            "brand_safety_vast_url": null,
+            "landing_page_url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_mar26_cond&utm_term=ar&utm_content=display_ar",
+            "viewability_vast_url": null,
+            "adgroup_name": "BujairiTerrace_Ramadan2026_MF_TRF_KSA_Tickets_AR",
+            "operation_status": "DISABLE",
+            "advertiser_id": "7338057963233443842",
+            "creative_authorized": false,
+            "identity_authorized_bc_id": "6807778858780065797",
+            "vast_moat_enabled": false,
+            "deeplink_type": "NORMAL",
+            "image_ids": [
+              "ad-site-i18n-sg/202603085d0dd12755a398f04827a0ad"
+            ],
+            "viewability_postbid_partner": "UNSET",
+            "landing_page_urls": null,
+            "fallback_type": "UNSET",
+            "ad_id": "1859092678550578",
+            "call_to_action_id": "7618563513195187217",
+            "profile_image_url": "",
+            "create_time": "2026-03-08 11:25:08",
+            "modify_time": "2026-10-12 14:16:29",
+            "deeplink": "",
+            "campaign_name": "BujairiTerrace_Ramadan2026_MF_TRF_KSA_ENAR_TikTok",
+            "playable_url": "",
+            "dark_post_status": "ON",
+            "avatar_icon_web_uri": "",
+            "ad_ref_pixel_id": 7347671240183693000,
+            "click_tracking_url": null,
+            "adgroup_id": "1857546910327858",
+            "brand_safety_postbid_partner": "UNSET",
+            "creative_auto_enhancement_strategy_list": [],
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "music_id": "7614800156370373396",
+            "creative_type": null,
+            "carousel_image_labels": null,
+            "branded_content_disabled": false,
+            "display_name": "bujairiterrace",
+            "page_id": null,
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "visitor-diriyah-coe_mar26_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "display_ar"
+              }
+            ],
+            "optimization_event": "LANDING_PAGE_VIEW",
+            "card_id": null,
+            "impression_tracking_url": null,
+            "app_name": "bujairiterrace",
+            "identity_type": "BC_AUTH_TT",
+            "tracking_pixel_id": 7347671240183693000,
+            "video_id": null,
+            "campaign_automation_type": "MANUAL",
+            "ad_texts": null,
+            "ad_text": "ِعش ليالي رمضان،​في مطلّ البجيري… واكتشفها.",
+            "ad_format": "CAROUSEL_ADS",
+            "is_new_structure": true,
+            "product_info": {
+              "product_image_list": null,
+              "product_titles": null,
+              "selling_points": null
+            },
+            "is_aco": false
+          }
+        ]
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "20261012221627A8A558C76988595A908B",
+      "waitedMs": 2308,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "6c140e6f-64cf-4a19-af23-5da820599997",
+    "latencyMs": 4228
+  }
+}

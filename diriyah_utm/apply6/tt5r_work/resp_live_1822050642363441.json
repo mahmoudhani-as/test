@@ -1,0 +1,111 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_update",
+    "method": "POST",
+    "path": "/v1.3/ad/update/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "2026101222180067112D8B7628AB8D630E",
+      "data": {
+        "ad_ids": [
+          "1822050642363441"
+        ],
+        "need_audit": false,
+        "creatives": [
+          {
+            "vertical_video_strategy": "UNSET",
+            "shopping_ads_fallback_type": "DEFAULT",
+            "operation_status": "ENABLE",
+            "impression_tracking_url": null,
+            "optimization_event": "ON_WEB_REGISTER",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "bujairiterracewinter_feb25_conv",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "bujairiterracewinter_ar",
+                "key": "utm_term"
+              },
+              {
+                "value": "winterrefresh12s_video_ar",
+                "key": "utm_content"
+              }
+            ],
+            "landing_page_urls": null,
+            "click_tracking_url": null,
+            "viewability_vast_url": null,
+            "carousel_image_labels": null,
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "identity_id": "7350277519361425409",
+            "creative_authorized": true,
+            "identity_type": "CUSTOMIZED_USER",
+            "ad_text": "مطل البجيري.. مطل يحتفي بطلتك اكتشف عالمًا من النكهات في مطل_البجيري احجز طاولتك الآن!",
+            "ad_id": "1822050642363441",
+            "create_time": "2025-01-23 14:35:15",
+            "campaign_name": "BujairiTerrace_Winter2024Restaurants_LF_CONV_KSA_ENAR_TikTok",
+            "fallback_type": "UNSET",
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/o4zj0Cg5AEIGD5TnAbEaIPESf8D67BBQcDfNkF"
+            ],
+            "advertiser_id": "7338057963233443842",
+            "is_aco": false,
+            "modify_time": "2026-10-12 14:18:01",
+            "creative_type": null,
+            "viewability_postbid_partner": "UNSET",
+            "adgroup_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_LF_KSA_Prospecting_AR_Conversion_TIKTOK",
+            "page_id": null,
+            "display_name": "Visit Diriyah",
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "tracking_pixel_id": 7347671240183693000,
+            "brand_safety_vast_url": null,
+            "app_name": "",
+            "deeplink_type": "NORMAL",
+            "ad_format": "SINGLE_VIDEO",
+            "brand_safety_postbid_partner": "UNSET",
+            "landing_page_url": "https://www.diriyah.sa/ar/dine?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bujairiterracewinter_feb25_conv&utm_term=bujairiterracewinter_ar&utm_content=winterrefresh12s_video_ar",
+            "campaign_automation_type": "MANUAL",
+            "card_id": null,
+            "dynamic_destination": "UNSET",
+            "deeplink": "",
+            "campaign_id": "1814257734712321",
+            "call_to_action_id": "7465980379950795777",
+            "music_id": null,
+            "ad_texts": null,
+            "adgroup_id": "1814257734712353",
+            "playable_url": "",
+            "ad_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_LF_KSA_Prospecting_AR_Conversion_TIKTOK_Winter Refresh 12s - AR",
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "vast_moat_enabled": false,
+            "video_id": "v10033g50000cu93ucvog65v1ko04sdg",
+            "ad_ref_pixel_id": 7347671240183693000,
+            "is_new_structure": true
+          }
+        ]
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "2026101222180067112D8B7628AB8D630E",
+      "waitedMs": 1963,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "ad9e17fd-56d0-4fe6-929e-ef665d805e15",
+    "latencyMs": 3520
+  }
+}

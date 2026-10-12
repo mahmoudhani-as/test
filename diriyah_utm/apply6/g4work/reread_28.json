@@ -1,0 +1,636 @@
+{
+ "success": true,
+ "data": {
+  "success": true,
+  "dry_run": false,
+  "api_version": "v23",
+  "action": "google_ads_v23_google_ads_search",
+  "method": "POST",
+  "endpoint": "customers/8324286739/googleAds:search",
+  "data": {
+   "success": true,
+   "data": {
+    "results": [
+     {
+      "campaign": {
+       "resourceName": "customers/8324286739/campaigns/23995361446",
+       "status": "PAUSED"
+      },
+      "adGroup": {
+       "resourceName": "customers/8324286739/adGroups/204787994584"
+      },
+      "adGroupAd": {
+       "resourceName": "customers/8324286739/adGroupAds/204787994584~815035512947",
+       "status": "ENABLED",
+       "ad": {
+        "type": "RESPONSIVE_SEARCH_AD",
+        "resourceName": "customers/8324286739/ads/815035512947",
+        "id": "815035512947",
+        "finalUrls": [
+         "https://www.diriyah.sa/en/dine/aok-kitchen?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Restaurants&utm_term=adgroup-id-XXXXXX_zallal-restaurants_en_aok&utm_content=ad-id-RSA1_zallal-restaurants_aok_search"
+        ],
+        "finalUrlSuffix": "utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Restaurants&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}"
+       }
+      }
+     },
+     {
+      "campaign": {
+       "resourceName": "customers/8324286739/campaigns/23995361446",
+       "status": "PAUSED"
+      },
+      "adGroup": {
+       "resourceName": "customers/8324286739/adGroups/204787994784"
+      },
+      "adGroupAd": {
+       "resourceName": "customers/8324286739/adGroupAds/204787994784~815035512950",
+       "status": "ENABLED",
+       "ad": {
+        "type": "RESPONSIVE_SEARCH_AD",
+        "resourceName": "customers/8324286739/ads/815035512950",
+        "id": "815035512950",
+        "finalUrls": [
+         "https://www.diriyah.sa/en/dine/archi?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Restaurants&utm_term=adgroup-id-XXXXXX_zallal-restaurants_en_archi&utm_content=ad-id-RSA1_zallal-restaurants_archi_search"
+        ],
+        "finalUrlSuffix": "utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Restaurants&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}"
+       }
+      }
+     },
+     {
+      "campaign": {
+       "resourceName": "customers/8324286739/campaigns/23995361446",
+       "status": "PAUSED"
+      },
+      "adGroup": {
+       "resourceName": "customers/8324286739/adGroups/204787994864"
+      },
+      "adGroupAd": {
+       "resourceName": "customers/8324286739/adGroupAds/204787994864~815035512953",
+       "status": "ENABLED",
+       "ad": {
+        "type": "RESPONSIVE_SEARCH_AD",
+        "resourceName": "customers/8324286739/ads/815035512953",
+        "id": "815035512953",
+        "finalUrls": [
+         "https://www.diriyah.sa/en/dine/aseeb?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Restaurants&utm_term=adgroup-id-XXXXXX_zallal-restaurants_en_aseeb&utm_content=ad-id-RSA1_zallal-restaurants_aseeb_search"
+        ],
+        "finalUrlSuffix": "utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Restaurants&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}"
+       }
+      }
+     },
+     {
+      "campaign": {
+       "resourceName": "customers/8324286739/campaigns/23995361446",
+       "status": "PAUSED"
+      },
+      "adGroup": {
+       "resourceName": "customers/8324286739/adGroups/204787995544"
+      },
+      "adGroupAd": {
+       "resourceName": "customers/8324286739/adGroupAds/204787995544~815035512956",
+       "status": "ENABLED",
+       "ad": {
+        "type": "RESPONSIVE_SEARCH_AD",
+        "resourceName": "customers/8324286739/ads/815035512956",
+        "id": "815035512956",
+        "finalUrls": [
+         "https://www.diriyah.sa/en/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Restaurants&utm_term=adgroup-id-XXXXXX_zallal-restaurants_en_generic&utm_content=ad-id-RSA1_zallal-restaurants_generic_search"
+        ],
+        "finalUrlSuffix": "utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Restaurants&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}"
+       }
+      }
+     },
+     {
+      "campaign": {
+       "resourceName": "customers/8324286739/campaigns/23995361446",
+       "status": "PAUSED"
+      },
+      "adGroup": {
+       "resourceName": "customers/8324286739/adGroups/204787995824"
+      },
+      "adGroupAd": {
+       "resourceName": "customers/8324286739/adGroupAds/204787995824~815035512959",
+       "status": "ENABLED",
+       "ad": {
+        "type": "RESPONSIVE_SEARCH_AD",
+        "resourceName": "customers/8324286739/ads/815035512959",
+        "id": "815035512959",
+        "finalUrls": [
+         "https://www.diriyah.sa/en/dine/oulu?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Restaurants&utm_term=adgroup-id-XXXXXX_zallal-restaurants_en_oulu&utm_content=ad-id-RSA1_zallal-restaurants_oulu_search"
+        ],
+        "finalUrlSuffix": "utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Restaurants&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}"
+       }
+      }
+     },
+     {
+      "campaign": {
+       "resourceName": "customers/8324286739/campaigns/23995361446",
+       "status": "PAUSED"
+      },
+      "adGroup": {
+       "resourceName": "customers/8324286739/adGroups/204787996024"
+      },
+      "adGroupAd": {
+       "resourceName": "customers/8324286739/adGroupAds/204787996024~815035513082",
+       "status": "ENABLED",
+       "ad": {
+        "type": "RESPONSIVE_SEARCH_AD",
+        "resourceName": "customers/8324286739/ads/815035513082",
+        "id": "815035513082",
+        "finalUrls": [
+         "https://www.diriyah.sa/en/dine/peets-coffee?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Restaurants&utm_term=adgroup-id-XXXXXX_zallal-restaurants_en_peets-coffee&utm_content=ad-id-RSA1_zallal-restaurants_peets-coffee_search"
+        ],
+        "finalUrlSuffix": "utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Restaurants&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}"
+       }
+      }
+     },
+     {
+      "campaign": {
+       "resourceName": "customers/8324286739/campaigns/23995361446",
+       "status": "PAUSED"
+      },
+      "adGroup": {
+       "resourceName": "customers/8324286739/adGroups/204787996224"
+      },
+      "adGroupAd": {
+       "resourceName": "customers/8324286739/adGroupAds/204787996224~815035513085",
+       "status": "ENABLED",
+       "ad": {
+        "type": "RESPONSIVE_SEARCH_AD",
+        "resourceName": "customers/8324286739/ads/815035513085",
+        "id": "815035513085",
+        "finalUrls": [
+         "https://www.diriyah.sa/en/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Restaurants&utm_term=adgroup-id-XXXXXX_zallal-restaurants_en_restaurants&utm_content=ad-id-RSA1_zallal-restaurants_restaurants_search"
+        ],
+        "finalUrlSuffix": "utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Restaurants&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}"
+       }
+      }
+     },
+     {
+      "campaign": {
+       "resourceName": "customers/8324286739/campaigns/23995361446",
+       "status": "PAUSED"
+      },
+      "adGroup": {
+       "resourceName": "customers/8324286739/adGroups/204787996504"
+      },
+      "adGroupAd": {
+       "resourceName": "customers/8324286739/adGroupAds/204787996504~815035513088",
+       "status": "ENABLED",
+       "ad": {
+        "type": "RESPONSIVE_SEARCH_AD",
+        "resourceName": "customers/8324286739/ads/815035513088",
+        "id": "815035513088",
+        "finalUrls": [
+         "https://www.diriyah.sa/en/dine/villa-fayrouz?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Restaurants&utm_term=adgroup-id-XXXXXX_zallal-restaurants_en_villa-fayrouz&utm_content=ad-id-RSA1_zallal-restaurants_villa-fayrouz_search"
+        ],
+        "finalUrlSuffix": "utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Restaurants&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}"
+       }
+      }
+     },
+     {
+      "campaign": {
+       "resourceName": "customers/8324286739/campaigns/23995361449",
+       "status": "PAUSED"
+      },
+      "adGroup": {
+       "resourceName": "customers/8324286739/adGroups/204787994624"
+      },
+      "adGroupAd": {
+       "resourceName": "customers/8324286739/adGroupAds/204787994624~815035513091",
+       "status": "ENABLED",
+       "ad": {
+        "type": "RESPONSIVE_SEARCH_AD",
+        "resourceName": "customers/8324286739/ads/815035513091",
+        "id": "815035513091",
+        "finalUrls": [
+         "https://www.diriyah.sa/ar/dine/aok-kitchen?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Restaurants&utm_term=adgroup-id-XXXXXX_zallal-restaurants_ar_aok&utm_content=ad-id-RSA1_zallal-restaurants_aok_search"
+        ],
+        "finalUrlSuffix": "utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Restaurants&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}"
+       }
+      }
+     },
+     {
+      "campaign": {
+       "resourceName": "customers/8324286739/campaigns/23995361449",
+       "status": "PAUSED"
+      },
+      "adGroup": {
+       "resourceName": "customers/8324286739/adGroups/204787994824"
+      },
+      "adGroupAd": {
+       "resourceName": "customers/8324286739/adGroupAds/204787994824~815035513094",
+       "status": "ENABLED",
+       "ad": {
+        "type": "RESPONSIVE_SEARCH_AD",
+        "resourceName": "customers/8324286739/ads/815035513094",
+        "id": "815035513094",
+        "finalUrls": [
+         "https://www.diriyah.sa/ar/dine/archi?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Restaurants&utm_term=adgroup-id-XXXXXX_zallal-restaurants_ar_archi&utm_content=ad-id-RSA1_zallal-restaurants_archi_search"
+        ],
+        "finalUrlSuffix": "utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Restaurants&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}"
+       }
+      }
+     },
+     {
+      "campaign": {
+       "resourceName": "customers/8324286739/campaigns/23995361449",
+       "status": "PAUSED"
+      },
+      "adGroup": {
+       "resourceName": "customers/8324286739/adGroups/204787995024"
+      },
+      "adGroupAd": {
+       "resourceName": "customers/8324286739/adGroupAds/204787995024~815035513097",
+       "status": "ENABLED",
+       "ad": {
+        "type": "RESPONSIVE_SEARCH_AD",
+        "resourceName": "customers/8324286739/ads/815035513097",
+        "id": "815035513097",
+        "finalUrls": [
+         "https://www.diriyah.sa/ar/dine/aseeb?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Restaurants&utm_term=adgroup-id-XXXXXX_zallal-restaurants_ar_aseeb&utm_content=ad-id-RSA1_zallal-restaurants_aseeb_search"
+        ],
+        "finalUrlSuffix": "utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Restaurants&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}"
+       }
+      }
+     },
+     {
+      "campaign": {
+       "resourceName": "customers/8324286739/campaigns/23995361449",
+       "status": "PAUSED"
+      },
+      "adGroup": {
+       "resourceName": "customers/8324286739/adGroups/204787995584"
+      },
+      "adGroupAd": {
+       "resourceName": "customers/8324286739/adGroupAds/204787995584~815035513100",
+       "status": "ENABLED",
+       "ad": {
+        "type": "RESPONSIVE_SEARCH_AD",
+        "resourceName": "customers/8324286739/ads/815035513100",
+        "id": "815035513100",
+        "finalUrls": [
+         "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Restaurants&utm_term=adgroup-id-XXXXXX_zallal-restaurants_ar_generic&utm_content=ad-id-RSA1_zallal-restaurants_generic_search"
+        ],
+        "finalUrlSuffix": "utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Restaurants&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}"
+       }
+      }
+     },
+     {
+      "campaign": {
+       "resourceName": "customers/8324286739/campaigns/23995361449",
+       "status": "PAUSED"
+      },
+      "adGroup": {
+       "resourceName": "customers/8324286739/adGroups/204787995984"
+      },
+      "adGroupAd": {
+       "resourceName": "customers/8324286739/adGroupAds/204787995984~815035513103",
+       "status": "ENABLED",
+       "ad": {
+        "type": "RESPONSIVE_SEARCH_AD",
+        "resourceName": "customers/8324286739/ads/815035513103",
+        "id": "815035513103",
+        "finalUrls": [
+         "https://www.diriyah.sa/ar/dine/oulu?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Restaurants&utm_term=adgroup-id-XXXXXX_zallal-restaurants_ar_oulu&utm_content=ad-id-RSA1_zallal-restaurants_oulu_search"
+        ],
+        "finalUrlSuffix": "utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Restaurants&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}"
+       }
+      }
+     },
+     {
+      "campaign": {
+       "resourceName": "customers/8324286739/campaigns/23995361449",
+       "status": "PAUSED"
+      },
+      "adGroup": {
+       "resourceName": "customers/8324286739/adGroups/204787996064"
+      },
+      "adGroupAd": {
+       "resourceName": "customers/8324286739/adGroupAds/204787996064~815035513106",
+       "status": "ENABLED",
+       "ad": {
+        "type": "RESPONSIVE_SEARCH_AD",
+        "resourceName": "customers/8324286739/ads/815035513106",
+        "id": "815035513106",
+        "finalUrls": [
+         "https://www.diriyah.sa/ar/dine/peets-coffee?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Restaurants&utm_term=adgroup-id-XXXXXX_zallal-restaurants_ar_peets-coffee&utm_content=ad-id-RSA1_zallal-restaurants_peets-coffee_search"
+        ],
+        "finalUrlSuffix": "utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Restaurants&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}"
+       }
+      }
+     },
+     {
+      "campaign": {
+       "resourceName": "customers/8324286739/campaigns/23995361449",
+       "status": "PAUSED"
+      },
+      "adGroup": {
+       "resourceName": "customers/8324286739/adGroups/204787996264"
+      },
+      "adGroupAd": {
+       "resourceName": "customers/8324286739/adGroupAds/204787996264~815035513109",
+       "status": "ENABLED",
+       "ad": {
+        "type": "RESPONSIVE_SEARCH_AD",
+        "resourceName": "customers/8324286739/ads/815035513109",
+        "id": "815035513109",
+        "finalUrls": [
+         "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Restaurants&utm_term=adgroup-id-XXXXXX_zallal-restaurants_ar_restaurants&utm_content=ad-id-RSA1_zallal-restaurants_restaurants_search"
+        ],
+        "finalUrlSuffix": "utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Restaurants&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}"
+       }
+      }
+     },
+     {
+      "campaign": {
+       "resourceName": "customers/8324286739/campaigns/23995361449",
+       "status": "PAUSED"
+      },
+      "adGroup": {
+       "resourceName": "customers/8324286739/adGroups/204787996544"
+      },
+      "adGroupAd": {
+       "resourceName": "customers/8324286739/adGroupAds/204787996544~815035513112",
+       "status": "ENABLED",
+       "ad": {
+        "type": "RESPONSIVE_SEARCH_AD",
+        "resourceName": "customers/8324286739/ads/815035513112",
+        "id": "815035513112",
+        "finalUrls": [
+         "https://www.diriyah.sa/ar/dine/villa-fayrouz?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Restaurants&utm_term=adgroup-id-XXXXXX_zallal-restaurants_ar_villa-fayrouz&utm_content=ad-id-RSA1_zallal-restaurants_villa-fayrouz_search"
+        ],
+        "finalUrlSuffix": "utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Restaurants&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}"
+       }
+      }
+     },
+     {
+      "campaign": {
+       "resourceName": "customers/8324286739/campaigns/23995361452",
+       "status": "PAUSED"
+      },
+      "adGroup": {
+       "resourceName": "customers/8324286739/adGroups/204787995344"
+      },
+      "adGroupAd": {
+       "resourceName": "customers/8324286739/adGroupAds/204787995344~815035513115",
+       "status": "ENABLED",
+       "ad": {
+        "type": "RESPONSIVE_SEARCH_AD",
+        "resourceName": "customers/8324286739/ads/815035513115",
+        "id": "815035513115",
+        "finalUrls": [
+         "https://www.diriyah.sa/en/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Others&utm_term=adgroup-id-XXXXXX_zallal-others_en_culture-and-experience&utm_content=ad-id-RSA1_zallal-others_culture-and-experience_search"
+        ],
+        "finalUrlSuffix": "utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Others&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}"
+       }
+      }
+     },
+     {
+      "campaign": {
+       "resourceName": "customers/8324286739/campaigns/23995361452",
+       "status": "PAUSED"
+      },
+      "adGroup": {
+       "resourceName": "customers/8324286739/adGroups/204787995744"
+      },
+      "adGroupAd": {
+       "resourceName": "customers/8324286739/adGroupAds/204787995744~815035513118",
+       "status": "ENABLED",
+       "ad": {
+        "type": "RESPONSIVE_SEARCH_AD",
+        "resourceName": "customers/8324286739/ads/815035513118",
+        "id": "815035513118",
+        "finalUrls": [
+         "https://www.diriyah.sa/en/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Others&utm_term=adgroup-id-XXXXXX_zallal-others_en_generic-competitive&utm_content=ad-id-RSA1_zallal-others_generic-competitive_search"
+        ],
+        "finalUrlSuffix": "utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Others&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}"
+       }
+      }
+     },
+     {
+      "campaign": {
+       "resourceName": "customers/8324286739/campaigns/23995361455",
+       "status": "PAUSED"
+      },
+      "adGroup": {
+       "resourceName": "customers/8324286739/adGroups/204787995504"
+      },
+      "adGroupAd": {
+       "resourceName": "customers/8324286739/adGroupAds/204787995504~815035513121",
+       "status": "ENABLED",
+       "ad": {
+        "type": "RESPONSIVE_SEARCH_AD",
+        "resourceName": "customers/8324286739/ads/815035513121",
+        "id": "815035513121",
+        "finalUrls": [
+         "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Others&utm_term=adgroup-id-XXXXXX_zallal-others_ar_culture-and-experience&utm_content=ad-id-RSA1_zallal-others_culture-and-experience_search"
+        ]
+       }
+      }
+     },
+     {
+      "campaign": {
+       "resourceName": "customers/8324286739/campaigns/23995361455",
+       "status": "PAUSED"
+      },
+      "adGroup": {
+       "resourceName": "customers/8324286739/adGroups/204787995784"
+      },
+      "adGroupAd": {
+       "resourceName": "customers/8324286739/adGroupAds/204787995784~815035513124",
+       "status": "ENABLED",
+       "ad": {
+        "type": "RESPONSIVE_SEARCH_AD",
+        "resourceName": "customers/8324286739/ads/815035513124",
+        "id": "815035513124",
+        "finalUrls": [
+         "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Others&utm_term=adgroup-id-XXXXXX_zallal-others_ar_generic-competitive&utm_content=ad-id-RSA1_zallal-others_generic-competitive_search"
+        ]
+       }
+      }
+     },
+     {
+      "campaign": {
+       "resourceName": "customers/8324286739/campaigns/23995361458",
+       "status": "PAUSED"
+      },
+      "adGroup": {
+       "resourceName": "customers/8324286739/adGroups/204787995264"
+      },
+      "adGroupAd": {
+       "resourceName": "customers/8324286739/adGroupAds/204787995264~815035513127",
+       "status": "ENABLED",
+       "ad": {
+        "type": "RESPONSIVE_SEARCH_AD",
+        "resourceName": "customers/8324286739/ads/815035513127",
+        "id": "815035513127",
+        "finalUrls": [
+         "https://www.diriyah.sa/en/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Brand&utm_term=adgroup-id-XXXXXX_zallal-brand_en_brand-zallal&utm_content=ad-id-RSA1_zallal-brand_brand-zallal_search"
+        ],
+        "finalUrlSuffix": "utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Brand&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}"
+       }
+      }
+     },
+     {
+      "campaign": {
+       "resourceName": "customers/8324286739/campaigns/23995361461",
+       "status": "PAUSED"
+      },
+      "adGroup": {
+       "resourceName": "customers/8324286739/adGroups/204787995304"
+      },
+      "adGroupAd": {
+       "resourceName": "customers/8324286739/adGroupAds/204787995304~815035513130",
+       "status": "ENABLED",
+       "ad": {
+        "type": "RESPONSIVE_SEARCH_AD",
+        "resourceName": "customers/8324286739/ads/815035513130",
+        "id": "815035513130",
+        "finalUrls": [
+         "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Brand&utm_term=adgroup-id-XXXXXX_zallal-brand_ar_brand-zallal&utm_content=ad-id-RSA1_zallal-brand_brand-zallal_search"
+        ],
+        "finalUrlSuffix": "http://utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Brand&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}"
+       }
+      }
+     },
+     {
+      "campaign": {
+       "resourceName": "customers/8324286739/campaigns/23995361452",
+       "status": "PAUSED"
+      },
+      "adGroup": {
+       "resourceName": "customers/8324286739/adGroups/204787995064"
+      },
+      "adGroupAd": {
+       "resourceName": "customers/8324286739/adGroupAds/204787995064~815039270831",
+       "status": "ENABLED",
+       "ad": {
+        "type": "RESPONSIVE_SEARCH_AD",
+        "resourceName": "customers/8324286739/ads/815039270831",
+        "id": "815039270831",
+        "finalUrls": [
+         "https://www.diriyah.sa/en/shopping/base-and-boon?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Others&utm_term=adgroup-id-XXXXXX_zallal-others_en_base-and-boon&utm_content=ad-id-RSA1_zallal-others_base-and-boon_search"
+        ],
+        "finalUrlSuffix": "utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Others&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}"
+       }
+      }
+     },
+     {
+      "campaign": {
+       "resourceName": "customers/8324286739/campaigns/23995361452",
+       "status": "PAUSED"
+      },
+      "adGroup": {
+       "resourceName": "customers/8324286739/adGroups/204787996304"
+      },
+      "adGroupAd": {
+       "resourceName": "customers/8324286739/adGroupAds/204787996304~815039270834",
+       "status": "ENABLED",
+       "ad": {
+        "type": "RESPONSIVE_SEARCH_AD",
+        "resourceName": "customers/8324286739/ads/815039270834",
+        "id": "815039270834",
+        "finalUrls": [
+         "https://www.diriyah.sa/en/shopping/saudi-artisanal-company?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Others&utm_term=adgroup-id-XXXXXX_zallal-others_en_saudi-artisinal-company&utm_content=ad-id-RSA1_zallal-others_saudi-artisinal-company_search"
+        ],
+        "finalUrlSuffix": "utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Others&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}"
+       }
+      }
+     },
+     {
+      "campaign": {
+       "resourceName": "customers/8324286739/campaigns/23995361455",
+       "status": "PAUSED"
+      },
+      "adGroup": {
+       "resourceName": "customers/8324286739/adGroups/204787995104"
+      },
+      "adGroupAd": {
+       "resourceName": "customers/8324286739/adGroupAds/204787995104~815039270837",
+       "status": "ENABLED",
+       "ad": {
+        "type": "RESPONSIVE_SEARCH_AD",
+        "resourceName": "customers/8324286739/ads/815039270837",
+        "id": "815039270837",
+        "finalUrls": [
+         "https://www.diriyah.sa/ar/shopping/base-and-boon?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Others&utm_term=adgroup-id-XXXXXX_zallal-others_ar_base-and-boon&utm_content=ad-id-RSA1_zallal-others_base-and-boon_search"
+        ],
+        "finalUrlSuffix": "utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Others&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}"
+       }
+      }
+     },
+     {
+      "campaign": {
+       "resourceName": "customers/8324286739/campaigns/23995361455",
+       "status": "PAUSED"
+      },
+      "adGroup": {
+       "resourceName": "customers/8324286739/adGroups/204787996464"
+      },
+      "adGroupAd": {
+       "resourceName": "customers/8324286739/adGroupAds/204787996464~815039270840",
+       "status": "ENABLED",
+       "ad": {
+        "type": "RESPONSIVE_SEARCH_AD",
+        "resourceName": "customers/8324286739/ads/815039270840",
+        "id": "815039270840",
+        "finalUrls": [
+         "https://www.diriyah.sa/ar/shopping/saudi-artisanal-company?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Others&utm_term=adgroup-id-XXXXXX_zallal-others_ar_saudi-artisinal-company&utm_content=ad-id-RSA1_zallal-others_saudi-artisinal-company_search"
+        ]
+       }
+      }
+     },
+     {
+      "campaign": {
+       "resourceName": "customers/8324286739/campaigns/24011842269",
+       "status": "PAUSED"
+      },
+      "adGroup": {
+       "resourceName": "customers/8324286739/adGroups/193483999610"
+      },
+      "adGroupAd": {
+       "resourceName": "customers/8324286739/adGroupAds/193483999610~816137399034",
+       "status": "ENABLED",
+       "ad": {
+        "type": "RESPONSIVE_SEARCH_AD",
+        "resourceName": "customers/8324286739/ads/816137399034",
+        "id": "816137399034",
+        "finalUrls": [
+         "https://www.marriott.com/offers/theme-park-experience-off-227242/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Bab_Samhan_x_Qiddiya_2026_KSA_Traffic_Google_Search_EN_Generic&utm_term=adgroup-id-XXXXXX_bab-samhan-x-qiddiya_en_generic&utm_content=ad-id-RSA1_bab-samhan-x-qiddiya-rsa1_search"
+        ]
+       }
+      }
+     },
+     {
+      "campaign": {
+       "resourceName": "customers/8324286739/campaigns/24016789193",
+       "status": "PAUSED"
+      },
+      "adGroup": {
+       "resourceName": "customers/8324286739/adGroups/198136224693"
+      },
+      "adGroupAd": {
+       "resourceName": "customers/8324286739/adGroupAds/198136224693~816137399160",
+       "status": "ENABLED",
+       "ad": {
+        "type": "RESPONSIVE_SEARCH_AD",
+        "resourceName": "customers/8324286739/ads/816137399160",
+        "id": "816137399160",
+        "finalUrls": [
+         "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Bab_Samhan_x_Qiddiya_2026_KSA_Traffic_Google_Search_AR_Generic&utm_term=adgroup-id-XXXXXX_bab-samhan-x-qiddiya_ar_generic&utm_content=ad-id-RSA1_bab-samhan-x-qiddiya-rsa1_search"
+        ]
+       }
+      }
+     }
+    ],
+    "fieldMask": "adGroupAd.ad.id,adGroupAd.ad.type,adGroupAd.ad.finalUrls,adGroupAd.ad.finalUrlSuffix,adGroupAd.ad.trackingUrlTemplate,adGroupAd.ad.urlCustomParameters,adGroupAd.status,adGroup.finalUrlSuffix,campaign.finalUrlSuffix,campaign.status",
+    "queryResourceConsumption": "314"
+   }
+  },
+  "warnings": []
+ },
+ "meta": {
+  "requestId": "f6409ad8-946c-46b8-b17d-0f7e63523a42",
+  "latencyMs": 3300
+ }
+}

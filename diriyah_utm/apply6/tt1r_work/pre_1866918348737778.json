@@ -1,0 +1,94 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_get",
+    "method": "GET",
+    "path": "/v1.3/ad/get/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "202610122215378756852A4436F17E0FF5",
+      "data": {
+        "list": [
+          {
+            "page_id": null,
+            "music_id": "7643491990893579024",
+            "dark_post_status": "ON",
+            "identity_id": "e4770252-b97f-5a97-873d-46a13d7ef867",
+            "shopping_ads_fallback_type": "DEFAULT",
+            "creative_authorized": false,
+            "app_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "call_to_action_id": null,
+            "ad_text": "From the heart of history, a new story begins.\nExperience a lifestyle with heritage and luxury.",
+            "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi",
+            "carousel_image_labels": null,
+            "creative_type": null,
+            "campaign_name": "ManazelAlHadawi_AlwaysOn_LF_LEAD_KSA_ENAR_TikTok_20260603-20260930_BO11111",
+            "branded_content_disabled": false,
+            "profile_image_url": "",
+            "optimization_event": "ON_WEB_ORDER",
+            "ad_format": "CAROUSEL_ADS",
+            "card_id": null,
+            "video_id": null,
+            "landing_page_urls": null,
+            "click_tracking_url": null,
+            "playable_url": "",
+            "ad_id": "1866918348737778",
+            "identity_authorized_bc_id": "6807778858780065797",
+            "deeplink_type": "NORMAL",
+            "ad_name": "ManazelAlHadawi_KV1_Static_EN_NA_Prospecting_03.06.2026_30.09.2026",
+            "image_ids": [
+              "ad-site-i18n-sg/202606025d0d750d96a6fd1a4e4c8fcd"
+            ],
+            "vast_moat_enabled": false,
+            "brand_safety_vast_url": null,
+            "call_to_action": "LEARN_MORE",
+            "identity_type": "BC_AUTH_TT",
+            "is_aco": false,
+            "impression_tracking_url": null,
+            "modify_time": "2026-10-12 14:12:10",
+            "dynamic_destination": "UNSET",
+            "ad_texts": null,
+            "fallback_type": "UNSET",
+            "ad_ref_pixel_id": 7347671240183693000,
+            "tracking_pixel_id": 7347671240183693000,
+            "create_time": "2026-06-02 20:29:02",
+            "operation_status": "DISABLE",
+            "is_new_structure": true,
+            "vertical_video_strategy": "UNSET",
+            "campaign_automation_type": "MANUAL",
+            "adgroup_id": "1866917798099138",
+            "adgroup_name": "ManazelAlHadawi_AlwaysOn_LF_LEAD_KSA_Prospect_EN",
+            "viewability_vast_url": null,
+            "viewability_postbid_partner": "UNSET",
+            "avatar_icon_web_uri": "",
+            "advertiser_id": "7338057963233443842",
+            "display_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "deeplink": "",
+            "campaign_id": "1866917488966753"
+          }
+        ],
+        "page_info": {
+          "page": 1,
+          "page_size": 10,
+          "total_page": 1,
+          "total_number": 1
+        }
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "202610122215378756852A4436F17E0FF5",
+      "waitedMs": 654,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "264e0634-4b45-456f-88bb-5b53e31baaf2",
+    "latencyMs": 2361
+  }
+}

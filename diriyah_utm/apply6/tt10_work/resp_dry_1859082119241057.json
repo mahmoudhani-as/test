@@ -1,0 +1,74 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_update",
+    "dryRun": true,
+    "data": {
+      "request": {
+        "method": "POST",
+        "url": "https://business-api.tiktok.com/open_api/v1.3/ad/update/",
+        "path": "/v1.3/ad/update/",
+        "headers": {
+          "Access-Token": "[redacted]",
+          "Accept": "application/json",
+          "Content-Type": "application/json"
+        },
+        "query": {},
+        "bodyFormat": "json",
+        "body": {
+          "advertiser_id": "7338057963233443842",
+          "adgroup_id": "1857201146346498",
+          "creatives": [
+            {
+              "ad_format": "CAROUSEL_ADS",
+              "ad_id": "1859082119241057",
+              "ad_name": "Copy 1 of Static AR",
+              "ad_text": "شارك لحظات الإفطار في مطل البجيري،​ واكتشف التجربة",
+              "call_to_action": "BOOK_NOW",
+              "creative_authorized": false,
+              "dark_post_status": "ON",
+              "identity_authorized_bc_id": "6807778858780065797",
+              "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+              "identity_type": "BC_AUTH_TT",
+              "image_ids": [
+                "ad-site-i18n-sg/202603085d0d45ae5062b0604c6581af"
+              ],
+              "landing_page_url": "https://www.diriyah.sa/ar/bujairi-terrace?utm_source=tiktok&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_mar26_awr&utm_term=ar&utm_content=display_ar",
+              "music_id": "7614800156370373396",
+              "utm_params": [
+                {
+                  "key": "utm_source",
+                  "value": "tiktok"
+                },
+                {
+                  "key": "utm_medium",
+                  "value": "paid-social"
+                },
+                {
+                  "key": "utm_campaign",
+                  "value": "visitor-diriyah-coe_mar26_awr"
+                },
+                {
+                  "key": "utm_term",
+                  "value": "ar"
+                },
+                {
+                  "key": "utm_content",
+                  "value": "display_ar"
+                }
+              ],
+              "vast_moat_enabled": false
+            }
+          ]
+        }
+      },
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "09285e69-bd4b-4400-84da-0b2995511904",
+    "latencyMs": 1247
+  }
+}

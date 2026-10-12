@@ -1,0 +1,56 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_identity_video_info_get",
+    "method": "GET",
+    "path": "/v1.3/identity/video/info/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "20261012221550516991533EE36D0FA431",
+      "data": {
+        "video_detail": {
+          "auth_info": {
+            "ad_auth_status": "AUTHORIZED",
+            "auth_end_time": "2026-12-16T16:44:09Z",
+            "auth_start_time": "2024-12-16T16:44:09Z",
+            "invite_start_time": "2024-12-18T07:47:08Z"
+          },
+          "carousel_info": {
+            "image_info": [],
+            "music_info": {}
+          },
+          "item_id": "7447982795982507271",
+          "item_type": "VIDEO",
+          "status": "ITEM_STATUS_HESITATE_RECOMMEND",
+          "text": "بين زوايا #الدرعية.. روح إيطالية!  افتتاح دولتشي اند غابانا في #الدرعية 🇮🇹🤎 ‏In the heart of #Diriyah, where heritage meets Italian elegance! ‏Proud to celebrate the grand opening of Dolce & Gabbana in #Diriyah 🇮🇹 🤎",
+          "video_info": {
+            "bit_rate": 3789930,
+            "duration": 30.593,
+            "format": "mp4",
+            "height": 1920,
+            "poster_url": "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/oMfPv8OVIneKEgE0jEKF3E7DBZANXIRcz6UABB~tplv-noop.image?dr=18692&refresh_token=3bcd20d8&x-expires=1791900980&x-signature=jOn6%2FzZS4r2sLMuNzV%2FWQ%2F%2F6xII%3D&t=9276707c&ps=14f1eb3e&shp=9e36835a&shcp=bcd0ceb0&idc=my&VideoID=v14044g50000cte8pjvog65tdvggls6g",
+            "signature": "422b2cfcfdb20374aa339467c9c6fcf6",
+            "size": 14493167,
+            "url": "https://v19-tt4b.tiktokcdn.com/a26d6a0dc576930f73088b3ff36ecfba/6ace3d34/video/tos/alisg/tos-alisg-pve-0037c001/oYfR0ejyrAlGGfWRAQ1IAfFQMGcLg6q4dwMv3l/?a=1233&bti=OjM4QDYyM2A%3D&&bt=1530&ft=.bvrXInz7Th5zBOGXq8Zmo&mime_type=video_mp4&rc=NTQ6Mzc7NGY0ZGczZWY2O0BpanZqeXc5cm07dzMzODczNEAtNV8tMjIyNl8xLjU0XmJeYSMzaWRhMmRzbWJgLS1kMTFzcw%3D%3D&vvpl=1&l=20261012221550516991533EE36D0FA431&btag=e00088000&sp_exp=hash_v0",
+            "width": 1080
+          }
+        },
+        "video_details": []
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "20261012221550516991533EE36D0FA431",
+      "waitedMs": 382,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "42d9efcc-ec65-4fd9-ae44-fb7d4fcfc371",
+    "latencyMs": 2217
+  }
+}

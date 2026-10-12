@@ -1,0 +1,832 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_get",
+    "method": "GET",
+    "path": "/v1.3/ad/get/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "202610122212580D8B006104915CF1B516",
+      "data": {
+        "list": [
+          {
+            "deeplink_type": "NORMAL",
+            "ad_texts": null,
+            "viewability_postbid_partner": "UNSET",
+            "create_time": "2026-03-04 12:47:33",
+            "viewability_vast_url": null,
+            "identity_authorized_bc_id": "6807778858780065797",
+            "brand_safety_vast_url": null,
+            "adgroup_name": "BujairiTerrace_Ramadan2026_UF_AWR_KSA_ProspectRestaurants_EN",
+            "ad_text": "Share iftar moments in Bujairi Terrace. Discover more.",
+            "impression_tracking_url": null,
+            "image_ids": [
+              "ad-site-i18n-sg/202603085d0d5a2baa47129c4211bd09"
+            ],
+            "vast_moat_enabled": false,
+            "creative_authorized": false,
+            "music_id": "7614800156370373396",
+            "tracking_pixel_id": 0,
+            "optimization_event": null,
+            "operation_status": "ENABLE",
+            "carousel_image_labels": null,
+            "landing_page_urls": null,
+            "advertiser_id": "7338057963233443842",
+            "card_id": null,
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_en",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "ad-id-7aee00_test_ad_name_display",
+                "key": "utm_content"
+              }
+            ],
+            "profile_image_url": "",
+            "dark_post_status": "ON",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "modify_time": "2026-03-08 08:56:33",
+            "click_tracking_url": null,
+            "creative_type": null,
+            "campaign_id": "1857200654159073",
+            "campaign_name": "BujairiTerrace_Ramadan2026_UF_AWR_KSA_ENAR_TikTok",
+            "avatar_icon_web_uri": "",
+            "call_to_action_id": null,
+            "ad_format": "CAROUSEL_ADS",
+            "campaign_automation_type": "MANUAL",
+            "call_to_action": "BOOK_NOW",
+            "is_aco": false,
+            "adgroup_id": "1857200654160065",
+            "playable_url": "",
+            "brand_safety_postbid_partner": "UNSET",
+            "page_id": null,
+            "display_name": "bujairiterrace",
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "ad_name": "Static en",
+            "ad_id": "1858735348584546",
+            "creative_auto_enhancement_strategy_list": [],
+            "app_name": "bujairiterrace",
+            "video_id": null,
+            "identity_type": "BC_AUTH_TT",
+            "deeplink": "",
+            "landing_page_url": "https://www.diriyah.sa/en/bujairi-terrace?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_display",
+            "is_new_structure": true,
+            "branded_content_disabled": false
+          },
+          {
+            "deeplink_type": "NORMAL",
+            "ad_texts": null,
+            "viewability_postbid_partner": "UNSET",
+            "create_time": "2026-03-04 12:42:05",
+            "viewability_vast_url": null,
+            "identity_authorized_bc_id": "6807778858780065797",
+            "brand_safety_vast_url": null,
+            "adgroup_name": "BujairiTerrace_Ramadan2026_UF_AWR_KSA_ProspectRestaurants_AR",
+            "ad_text": "شارك لحظات الإفطار في مطل البجيري،​واكتشف التجربة",
+            "impression_tracking_url": null,
+            "image_ids": [
+              "ad-site-i18n-sg/202603085d0d45ae5062b0604c6581af"
+            ],
+            "vast_moat_enabled": false,
+            "creative_authorized": false,
+            "music_id": "7614800156370373396",
+            "tracking_pixel_id": 0,
+            "optimization_event": null,
+            "operation_status": "DISABLE",
+            "carousel_image_labels": null,
+            "landing_page_urls": null,
+            "advertiser_id": "7338057963233443842",
+            "card_id": null,
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_ar",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "ad-id-7aee00_test_ad_name_display",
+                "key": "utm_content"
+              }
+            ],
+            "profile_image_url": "",
+            "dark_post_status": "ON",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "modify_time": "2026-03-08 09:12:26",
+            "click_tracking_url": null,
+            "creative_type": null,
+            "campaign_id": "1857200654159073",
+            "campaign_name": "BujairiTerrace_Ramadan2026_UF_AWR_KSA_ENAR_TikTok",
+            "avatar_icon_web_uri": "",
+            "call_to_action_id": null,
+            "ad_format": "CAROUSEL_ADS",
+            "campaign_automation_type": "MANUAL",
+            "call_to_action": "BOOK_NOW",
+            "is_aco": false,
+            "adgroup_id": "1857201146346498",
+            "playable_url": "",
+            "brand_safety_postbid_partner": "UNSET",
+            "page_id": null,
+            "display_name": "bujairiterrace",
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "ad_name": "DNU",
+            "ad_id": "1858735134060978",
+            "creative_auto_enhancement_strategy_list": [
+              "VIDEO_QUALITY",
+              "MUSIC_REFRESH",
+              "IMAGE_QUALITY",
+              "IMAGE_RESIZE"
+            ],
+            "app_name": "bujairiterrace",
+            "video_id": null,
+            "identity_type": "BC_AUTH_TT",
+            "deeplink": "",
+            "landing_page_url": "https://www.diriyah.sa/ar/bujairi-terrace?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_display",
+            "is_new_structure": true,
+            "branded_content_disabled": false
+          },
+          {
+            "deeplink_type": "NORMAL",
+            "ad_texts": null,
+            "viewability_postbid_partner": "UNSET",
+            "create_time": "2026-03-02 10:18:11",
+            "viewability_vast_url": null,
+            "identity_authorized_bc_id": "6807778858780065797",
+            "brand_safety_vast_url": null,
+            "adgroup_name": "BujairiTerrace_ShoppingRamadan2026_MF_TRF_KSA_Prospect_AR",
+            "ad_text": "أختيارات رمضانية.. بانتظارك في الدرعية.​اكتشفها",
+            "impression_tracking_url": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/ogPhpYRaYAOb3aEBEHz4EgQQUTAalaAiAI0Ai"
+            ],
+            "vast_moat_enabled": false,
+            "creative_authorized": true,
+            "music_id": null,
+            "tracking_pixel_id": 7347671240183693000,
+            "optimization_event": "LANDING_PAGE_VIEW",
+            "operation_status": "DISABLE",
+            "carousel_image_labels": null,
+            "landing_page_urls": null,
+            "product_info": {
+              "selling_points": null,
+              "product_image_list": null,
+              "product_titles": null
+            },
+            "advertiser_id": "7338057963233443842",
+            "card_id": null,
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "ad-id-7aee00_test_ad_name_video",
+                "key": "utm_content"
+              }
+            ],
+            "profile_image_url": "",
+            "dark_post_status": "ON",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "modify_time": "2026-03-18 10:05:29",
+            "click_tracking_url": null,
+            "creative_type": null,
+            "campaign_id": "1858189280224401",
+            "campaign_name": "BujairiTerrace_ShoppingRamadan2026_MF_TRF_KSA_ENAR_TikTok",
+            "avatar_icon_web_uri": "",
+            "fallback_type": "UNSET",
+            "call_to_action_id": "7612600529893575681",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_automation_type": "MANUAL",
+            "ad_ref_pixel_id": 7347671240183693000,
+            "is_aco": false,
+            "tiktok_item_id": "7612605765240589580",
+            "adgroup_id": "1858189280424113",
+            "playable_url": "",
+            "brand_safety_postbid_partner": "UNSET",
+            "page_id": null,
+            "display_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "identity_id": "e4770252-b97f-5a97-873d-46a13d7ef867",
+            "ad_name": "AL BUJAIRI_RETAIL_Tiktok_ubhYT2L8.mp4_Copy 1 of Copy 1 of Copy 1 of 2026-02-19 13:09:44",
+            "ad_id": "1858457258192082",
+            "app_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "video_id": "v10033g50000d6g3gg7og65nd626ij80",
+            "identity_type": "BC_AUTH_TT",
+            "deeplink": "",
+            "landing_page_url": "https://www.diriyah.sa/ar/shopping?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_video",
+            "is_new_structure": true,
+            "branded_content_disabled": false
+          },
+          {
+            "deeplink_type": "NORMAL",
+            "ad_texts": null,
+            "viewability_postbid_partner": "UNSET",
+            "create_time": "2026-03-01 11:00:04",
+            "viewability_vast_url": null,
+            "identity_authorized_bc_id": "6807778858780065797",
+            "brand_safety_vast_url": null,
+            "adgroup_name": "BujairiTerrace_ShoppingRamadan2026_MF_TRF_KSA_Prospect_AR",
+            "ad_text": "أختيارات رمضانية.. بانتظارك في الدرعية.​اكتشفها",
+            "impression_tracking_url": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/ogPhpYRaYAOb3aEBEHz4EgQQUTAalaAiAI0Ai"
+            ],
+            "vast_moat_enabled": false,
+            "creative_authorized": true,
+            "music_id": null,
+            "tracking_pixel_id": 7347671240183693000,
+            "optimization_event": "LANDING_PAGE_VIEW",
+            "operation_status": "DISABLE",
+            "carousel_image_labels": null,
+            "landing_page_urls": null,
+            "product_info": {
+              "selling_points": null,
+              "product_image_list": null,
+              "product_titles": null
+            },
+            "advertiser_id": "7338057963233443842",
+            "card_id": null,
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "ad-id-7aee00_test_ad_name_video",
+                "key": "utm_content"
+              }
+            ],
+            "profile_image_url": "",
+            "dark_post_status": "ON",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "modify_time": "2026-03-18 11:52:16",
+            "click_tracking_url": null,
+            "creative_type": null,
+            "campaign_id": "1858189280224401",
+            "campaign_name": "BujairiTerrace_ShoppingRamadan2026_MF_TRF_KSA_ENAR_TikTok",
+            "avatar_icon_web_uri": "",
+            "fallback_type": "UNSET",
+            "call_to_action_id": "7618562135995550737",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_automation_type": "MANUAL",
+            "ad_ref_pixel_id": 7347671240183693000,
+            "is_aco": false,
+            "tiktok_item_id": "7612244968882703672",
+            "adgroup_id": "1858189280424113",
+            "playable_url": "",
+            "brand_safety_postbid_partner": "UNSET",
+            "page_id": null,
+            "display_name": "bujairiterrace",
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "ad_name": "Video_AR_RETAIL",
+            "ad_id": "1858456946861074",
+            "creative_auto_enhancement_strategy_list": [],
+            "app_name": "bujairiterrace",
+            "video_id": "v10033g50000d6g3gg7og65nd626ij80",
+            "identity_type": "BC_AUTH_TT",
+            "deeplink": "",
+            "landing_page_url": "https://www.diriyah.sa/ar/shopping?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_video",
+            "is_new_structure": true,
+            "branded_content_disabled": false
+          },
+          {
+            "deeplink_type": "NORMAL",
+            "ad_texts": null,
+            "viewability_postbid_partner": "UNSET",
+            "create_time": "2026-03-01 10:57:09",
+            "viewability_vast_url": null,
+            "identity_authorized_bc_id": "6807778858780065797",
+            "brand_safety_vast_url": null,
+            "adgroup_name": "BujairiTerrace_ShoppingRamadan2026_MF_TRF_KSA_Prospect_AR",
+            "ad_text": "أختيارات رمضانية.. بانتظارك في الدرعية.​اكتشفها",
+            "impression_tracking_url": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/ogPhpYRaYAOb3aEBEHz4EgQQUTAalaAiAI0Ai"
+            ],
+            "vast_moat_enabled": false,
+            "creative_authorized": true,
+            "music_id": null,
+            "tracking_pixel_id": 7347671240183693000,
+            "optimization_event": "LANDING_PAGE_VIEW",
+            "operation_status": "DISABLE",
+            "carousel_image_labels": null,
+            "landing_page_urls": null,
+            "product_info": {
+              "selling_points": null,
+              "product_image_list": null,
+              "product_titles": null
+            },
+            "advertiser_id": "7338057963233443842",
+            "card_id": null,
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "ad-id-7aee00_test_ad_name_video",
+                "key": "utm_content"
+              }
+            ],
+            "profile_image_url": "",
+            "dark_post_status": "ON",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "modify_time": "2026-03-18 10:05:29",
+            "click_tracking_url": null,
+            "creative_type": null,
+            "campaign_id": "1858189280224401",
+            "campaign_name": "BujairiTerrace_ShoppingRamadan2026_MF_TRF_KSA_ENAR_TikTok",
+            "avatar_icon_web_uri": "",
+            "fallback_type": "UNSET",
+            "call_to_action_id": "7612239337765276688",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_automation_type": "MANUAL",
+            "ad_ref_pixel_id": 7347671240183693000,
+            "is_aco": false,
+            "tiktok_item_id": "7612244968882654520",
+            "adgroup_id": "1858189280424113",
+            "playable_url": "",
+            "brand_safety_postbid_partner": "UNSET",
+            "page_id": null,
+            "display_name": "bujairiterrace",
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "ad_name": "AL BUJAIRI_RETAIL_Tiktok_ubhYT2L8.mp4_Copy 1 of Copy 1 of Copy 1 of 2026-02-19 13:09:44",
+            "ad_id": "1858456770881746",
+            "app_name": "bujairiterrace",
+            "video_id": "v10033g50000d6g3gg7og65nd626ij80",
+            "identity_type": "BC_AUTH_TT",
+            "deeplink": "",
+            "landing_page_url": "https://www.diriyah.sa/ar/shopping?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_video",
+            "is_new_structure": true,
+            "branded_content_disabled": false
+          },
+          {
+            "deeplink_type": "NORMAL",
+            "ad_texts": null,
+            "viewability_postbid_partner": "UNSET",
+            "create_time": "2026-03-01 10:55:32",
+            "viewability_vast_url": null,
+            "identity_authorized_bc_id": "6807778858780065797",
+            "brand_safety_vast_url": null,
+            "adgroup_name": "BujairiTerrace_ShoppingRamadan2026_MF_TRF_KSA_Prospect_EN",
+            "ad_text": "Discover meaningful Ramadan finds in Diriyah. Explore today. ",
+            "impression_tracking_url": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/ogPhpYRaYAOb3aEBEHz4EgQQUTAalaAiAI0Ai"
+            ],
+            "vast_moat_enabled": false,
+            "creative_authorized": true,
+            "music_id": null,
+            "tracking_pixel_id": 7347671240183693000,
+            "optimization_event": "LANDING_PAGE_VIEW",
+            "operation_status": "DISABLE",
+            "carousel_image_labels": null,
+            "landing_page_urls": null,
+            "product_info": {
+              "selling_points": null,
+              "product_image_list": null,
+              "product_titles": null
+            },
+            "advertiser_id": "7338057963233443842",
+            "card_id": null,
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_en",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "adset-id-7aee00_test_adset_name_en_all_mf_prospecting",
+                "key": "utm_term"
+              },
+              {
+                "value": "ad-id-7aee00_test_ad_name_video",
+                "key": "utm_content"
+              }
+            ],
+            "profile_image_url": "",
+            "dark_post_status": "ON",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "modify_time": "2026-03-18 11:52:51",
+            "click_tracking_url": null,
+            "creative_type": null,
+            "campaign_id": "1858189280224401",
+            "campaign_name": "BujairiTerrace_ShoppingRamadan2026_MF_TRF_KSA_ENAR_TikTok",
+            "avatar_icon_web_uri": "",
+            "fallback_type": "UNSET",
+            "call_to_action_id": "7618562271198956560",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_automation_type": "MANUAL",
+            "ad_ref_pixel_id": 7347671240183693000,
+            "is_aco": false,
+            "tiktok_item_id": "7612269111015476536",
+            "adgroup_id": "1858189280224433",
+            "playable_url": "",
+            "brand_safety_postbid_partner": "UNSET",
+            "page_id": null,
+            "display_name": "bujairiterrace",
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "ad_name": "Video_EN_Retail",
+            "ad_id": "1858456714374321",
+            "creative_auto_enhancement_strategy_list": [],
+            "app_name": "bujairiterrace",
+            "video_id": "v10033g50000d6g3gg7og65nd626ij80",
+            "identity_type": "BC_AUTH_TT",
+            "deeplink": "",
+            "landing_page_url": "https://www.diriyah.sa/en/shopping?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_video",
+            "is_new_structure": true,
+            "branded_content_disabled": false
+          },
+          {
+            "deeplink_type": "NORMAL",
+            "ad_texts": null,
+            "viewability_postbid_partner": "UNSET",
+            "create_time": "2026-02-26 21:11:57",
+            "viewability_vast_url": null,
+            "identity_authorized_bc_id": "6807778858780065797",
+            "brand_safety_vast_url": null,
+            "adgroup_name": "BujairiTerrace_ShoppingRamadan2026_MF_TRF_KSA_Prospect_AR",
+            "ad_text": "أختيارات رمضانية.. بانتظارك في الدرعية.​اكتشفها",
+            "impression_tracking_url": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/ogPhpYRaYAOb3aEBEHz4EgQQUTAalaAiAI0Ai"
+            ],
+            "vast_moat_enabled": false,
+            "creative_authorized": true,
+            "music_id": null,
+            "tracking_pixel_id": 7347671240183693000,
+            "optimization_event": "LANDING_PAGE_VIEW",
+            "operation_status": "DISABLE",
+            "carousel_image_labels": null,
+            "landing_page_urls": null,
+            "product_info": {
+              "selling_points": null,
+              "product_image_list": null,
+              "product_titles": null
+            },
+            "advertiser_id": "7338057963233443842",
+            "card_id": null,
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "ad-id-7aee00_test_ad_name_video",
+                "key": "utm_content"
+              }
+            ],
+            "profile_image_url": "",
+            "dark_post_status": "ON",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "modify_time": "2026-03-18 10:05:29",
+            "click_tracking_url": null,
+            "creative_type": null,
+            "campaign_id": "1858189280224401",
+            "campaign_name": "BujairiTerrace_ShoppingRamadan2026_MF_TRF_KSA_ENAR_TikTok",
+            "avatar_icon_web_uri": "",
+            "fallback_type": "UNSET",
+            "call_to_action_id": "7611284586747792400",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_automation_type": "MANUAL",
+            "ad_ref_pixel_id": 7347671240183693000,
+            "is_aco": false,
+            "tiktok_item_id": "7611289413083008267",
+            "adgroup_id": "1858189280424113",
+            "playable_url": "",
+            "brand_safety_postbid_partner": "UNSET",
+            "page_id": null,
+            "display_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "identity_id": "e4770252-b97f-5a97-873d-46a13d7ef867",
+            "ad_name": "AL BUJAIRI_RETAIL_Tiktok_ubhYT2L8.mp4_Copy 1 of Copy 1 of 2026-02-19 13:09:44",
+            "ad_id": "1858223611605026",
+            "app_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "video_id": "v10033g50000d6g3gg7og65nd626ij80",
+            "identity_type": "BC_AUTH_TT",
+            "deeplink": "",
+            "landing_page_url": "https://www.diriyah.sa/ar/shopping?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_video",
+            "is_new_structure": true,
+            "branded_content_disabled": false
+          },
+          {
+            "deeplink_type": "NORMAL",
+            "ad_texts": null,
+            "viewability_postbid_partner": "UNSET",
+            "create_time": "2026-02-26 21:09:51",
+            "viewability_vast_url": null,
+            "identity_authorized_bc_id": "6807778858780065797",
+            "brand_safety_vast_url": null,
+            "adgroup_name": "BujairiTerrace_ShoppingRamadan2026_MF_TRF_KSA_Prospect_EN",
+            "ad_text": "Discover meaningful Ramadan finds in Diriyah. Explore today. ",
+            "impression_tracking_url": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/ogPhpYRaYAOb3aEBEHz4EgQQUTAalaAiAI0Ai"
+            ],
+            "vast_moat_enabled": false,
+            "creative_authorized": true,
+            "music_id": null,
+            "tracking_pixel_id": 7347671240183693000,
+            "optimization_event": "LANDING_PAGE_VIEW",
+            "operation_status": "DISABLE",
+            "carousel_image_labels": null,
+            "landing_page_urls": null,
+            "product_info": {
+              "selling_points": null,
+              "product_image_list": null,
+              "product_titles": null
+            },
+            "advertiser_id": "7338057963233443842",
+            "card_id": null,
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_en",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "adset-id-7aee00_test_adset_name_en_all_mf_prospecting",
+                "key": "utm_term"
+              },
+              {
+                "value": "ad-id-7aee00_test_ad_name_video",
+                "key": "utm_content"
+              }
+            ],
+            "profile_image_url": "",
+            "dark_post_status": "ON",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "modify_time": "2026-03-18 09:44:46",
+            "click_tracking_url": null,
+            "creative_type": null,
+            "campaign_id": "1858189280224401",
+            "campaign_name": "BujairiTerrace_ShoppingRamadan2026_MF_TRF_KSA_ENAR_TikTok",
+            "avatar_icon_web_uri": "",
+            "fallback_type": "UNSET",
+            "call_to_action_id": "7611284401162423297",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_automation_type": "MANUAL",
+            "ad_ref_pixel_id": 7347671240183693000,
+            "is_aco": false,
+            "tiktok_item_id": "7611289131561356556",
+            "adgroup_id": "1858189280224433",
+            "playable_url": "",
+            "brand_safety_postbid_partner": "UNSET",
+            "page_id": null,
+            "display_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "identity_id": "e4770252-b97f-5a97-873d-46a13d7ef867",
+            "ad_name": "AL BUJAIRI_RETAIL_Tiktok_ubhYT2L8.mp4_Copy 1 of Copy 1 of 2026-02-19 13:07:34",
+            "ad_id": "1858223436248146",
+            "creative_auto_enhancement_strategy_list": [],
+            "app_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "video_id": "v10033g50000d6g3gg7og65nd626ij80",
+            "identity_type": "BC_AUTH_TT",
+            "deeplink": "",
+            "landing_page_url": "https://www.diriyah.sa/en/shopping?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_video",
+            "is_new_structure": true,
+            "branded_content_disabled": false
+          },
+          {
+            "deeplink_type": "NORMAL",
+            "ad_texts": null,
+            "viewability_postbid_partner": "UNSET",
+            "create_time": "2026-02-26 16:34:46",
+            "viewability_vast_url": null,
+            "identity_authorized_bc_id": "6807778858780065797",
+            "brand_safety_vast_url": null,
+            "adgroup_name": "Zallal_Ramadan2026_MF_TRF_KSA_Prospect_EN",
+            "ad_text": "Craft, culture, dining, and Ramadan nights come together - Zallal awaits.​",
+            "impression_tracking_url": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/okTF2DBlIkNQNSmI9fhFAQHIpWl6yD9eoBEgAB"
+            ],
+            "vast_moat_enabled": false,
+            "creative_authorized": true,
+            "music_id": null,
+            "tracking_pixel_id": 7347671240183693000,
+            "optimization_event": "LANDING_PAGE_VIEW",
+            "operation_status": "ENABLE",
+            "carousel_image_labels": null,
+            "landing_page_urls": null,
+            "product_info": {
+              "selling_points": null,
+              "product_image_list": null,
+              "product_titles": null
+            },
+            "advertiser_id": "7338057963233443842",
+            "card_id": null,
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cam-id-55ee95_mindshare_diriyah-company_zallal_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_en",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "ad-id-7aee00_test_ad_name_video",
+                "key": "utm_content"
+              }
+            ],
+            "profile_image_url": "",
+            "dark_post_status": "ON",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "modify_time": "2026-03-18 11:50:13",
+            "click_tracking_url": null,
+            "creative_type": null,
+            "campaign_id": "1858206085280017",
+            "campaign_name": "Zallal_Ramadan2026_MF_TRF_KSA_ENAR_TikTok",
+            "avatar_icon_web_uri": "",
+            "fallback_type": "UNSET",
+            "call_to_action_id": "7618561593915345937",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_automation_type": "MANUAL",
+            "ad_ref_pixel_id": 7347671240183693000,
+            "is_aco": false,
+            "tiktok_item_id": "7611234882852867384",
+            "adgroup_id": "1858206085280961",
+            "playable_url": "",
+            "brand_safety_postbid_partner": "UNSET",
+            "page_id": null,
+            "display_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "identity_id": "e4770252-b97f-5a97-873d-46a13d7ef867",
+            "ad_name": "Video_EN",
+            "ad_id": "1858206085280977",
+            "creative_auto_enhancement_strategy_list": [],
+            "app_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "video_id": "v10033g50000d6g7927og65ghe8h59tg",
+            "identity_type": "BC_AUTH_TT",
+            "deeplink": "",
+            "landing_page_url": "https://www.diriyah.sa/en/zallal?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_zallal_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_tiktok_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_video",
+            "is_new_structure": true,
+            "branded_content_disabled": false
+          },
+          {
+            "deeplink_type": "NORMAL",
+            "ad_texts": null,
+            "viewability_postbid_partner": "UNSET",
+            "create_time": "2026-02-26 16:34:42",
+            "viewability_vast_url": null,
+            "identity_authorized_bc_id": "6807778858780065797",
+            "brand_safety_vast_url": null,
+            "adgroup_name": "Zallal_Ramadan2026_MF_TRF_KSA_ProspectWinter_AR",
+            "ad_text": "الحِرف، والثقافة، وتجارب الإفطار، وأمسيات رمضان تجتمع - الزلال يناديك.​",
+            "impression_tracking_url": null,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/okTF2DBlIkNQNSmI9fhFAQHIpWl6yD9eoBEgAB"
+            ],
+            "vast_moat_enabled": false,
+            "creative_authorized": true,
+            "music_id": null,
+            "tracking_pixel_id": 7347671240183693000,
+            "optimization_event": "LANDING_PAGE_VIEW",
+            "operation_status": "ENABLE",
+            "carousel_image_labels": null,
+            "landing_page_urls": null,
+            "product_info": {
+              "selling_points": null,
+              "product_image_list": null,
+              "product_titles": null
+            },
+            "advertiser_id": "7338057963233443842",
+            "card_id": null,
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cam-id-55ee95_mindshare_diriyah-company_zallal_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "ad-id-7aee00_test_ad_name_video",
+                "key": "utm_content"
+              }
+            ],
+            "profile_image_url": "",
+            "dark_post_status": "ON",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "modify_time": "2026-03-18 11:50:53",
+            "click_tracking_url": null,
+            "creative_type": null,
+            "campaign_id": "1858206085280017",
+            "campaign_name": "Zallal_Ramadan2026_MF_TRF_KSA_ENAR_TikTok",
+            "avatar_icon_web_uri": "",
+            "fallback_type": "UNSET",
+            "call_to_action_id": "7618561747334581249",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_automation_type": "MANUAL",
+            "ad_ref_pixel_id": 7347671240183693000,
+            "is_aco": false,
+            "tiktok_item_id": "7611234917497851147",
+            "adgroup_id": "1858206085280033",
+            "playable_url": "",
+            "brand_safety_postbid_partner": "UNSET",
+            "page_id": null,
+            "display_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "identity_id": "e4770252-b97f-5a97-873d-46a13d7ef867",
+            "ad_name": "Video_AR",
+            "ad_id": "1858206085280049",
+            "creative_auto_enhancement_strategy_list": [],
+            "app_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "video_id": "v10033g50000d6g7927og65ghe8h59tg",
+            "identity_type": "BC_AUTH_TT",
+            "deeplink": "",
+            "landing_page_url": "https://www.diriyah.sa/ar/zallal?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_zallal_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_video",
+            "is_new_structure": true,
+            "branded_content_disabled": false
+          }
+        ],
+        "page_info": {
+          "page": 1,
+          "page_size": 100,
+          "total_page": 1,
+          "total_number": 10
+        }
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "202610122212580D8B006104915CF1B516",
+      "waitedMs": 818,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "490bafdc-792b-4b41-aa04-7a6ea0673d48",
+    "latencyMs": 2349
+  }
+}

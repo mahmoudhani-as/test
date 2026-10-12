@@ -1,0 +1,61 @@
+{
+ "card_before": {
+  "name": "[Copy] Diriyah_Tactical_Diriyah Living Campaign_UF_KSA_Prospecting_EN_Awareness_",
+  "components": [
+   {
+    "media_key": "13_1922922199784026112",
+    "media_metadata": {
+     "13_1922922199784026112": {
+      "type": "VIDEO",
+      "url": "https://video.twimg.com/amplify_video/1922922199784026112/vid/avc1/1280x720/A4x4DRQ_szVO7-wB.mp4?tag=14",
+      "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1922922199784026112/img/oMBq54AXwXMeoV0N.jpg",
+      "width": 1920,
+      "height": 1080,
+      "video_duration": 15000,
+      "video_aspect_ratio": "16:9"
+     }
+    },
+    "type": "MEDIA"
+   },
+   {
+    "title": "Diriyah Living",
+    "destination": {
+     "url": "https://www.diriyahcompany.sa/en/diriyah-living?utm_source=twitter&utm_medium=paid-social&utm_campaign=hs-diriyahliving-2025-apr-uf-reach-awareness&utm_id=4296&utm_term=diriyahliving-en-all-na&utm_content=offices-video-ksa",
+     "type": "WEBSITE"
+    },
+    "type": "DETAILS"
+   }
+  ],
+  "id": "1939279190970585088",
+  "created_at": "2025-06-29T11:06:03Z",
+  "card_uri": "card://1939279190970585088",
+  "updated_at": "2025-06-29T11:06:03Z",
+  "deleted": false,
+  "card_type": "VIDEO_WEBSITE"
+ },
+ "payload": {
+  "name": "[Copy] Diriyah_Tactical_Diriyah Living Campaign_UF_KSA_Prospecting_EN_Awareness_",
+  "components": [
+   {
+    "media_key": "13_1922922199784026112",
+    "type": "MEDIA"
+   },
+   {
+    "title": "Diriyah Living",
+    "destination": {
+     "url": "https://www.diriyahcompany.sa/en/diriyah-living?utm_source=x&utm_medium=paid-social&utm_campaign=hs-diriyahliving_jun25_awr&utm_term=diriyahliving_en&utm_content=video_en",
+     "type": "WEBSITE"
+    },
+    "type": "DETAILS"
+   }
+  ]
+ },
+ "get_reqid": "d3d855ac-a140-4698-a19b-a2f20d5cfd14",
+ "status": [
+  [
+   "card.components[1].destination.url",
+   "WRITE",
+   "https://www.diriyahcompany.sa/en/diriyah-living?utm_source=twitter&utm_medium=paid-social&utm_campaign=hs-diriyahliving-2025-apr-uf-reach-awareness&utm_id=4296&utm_term=diriyahliving-en-all-na&utm_content=offices-video-ksa"
+  ]
+ ]
+}

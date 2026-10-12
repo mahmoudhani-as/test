@@ -1,0 +1,32 @@
+{
+ "script": "workflows/diriyah-keyed-reread-wf_bcf6cc60-eab.js",
+ "runs": [
+  {
+   "task": "wkn31iohq",
+   "run": "wf_ccdaa795-1b0",
+   "group": "A",
+   "note": "untouched by apply6: google 9282725829, meta 1033388761412991, tiktok 7280828159585468418, snapchat 623ccdb3"
+  },
+  {
+   "task": "woojmtkad",
+   "run": "wf_8b4e4585-c2e",
+   "group": "B",
+   "note": "untouched by apply6: linkedin x3, snapchat 7eee5995",
+   "status": "completed"
+  },
+  {
+   "task": "wzz3qzmr6",
+   "run": "wf_36aedd9e-816",
+   "group": "C",
+   "note": "untouched by apply6: snapchat 8a1750fe, google 9863260160, snapchat 189a5ada, snapchat 377f9c96",
+   "status": "completed"
+  },
+  {
+   "task": "wwqcswsxp",
+   "run": "wf_568b8cda-644",
+   "group": "later/google",
+   "note": "google 8324286739 after all 239 Google apply6 changes had results"
+  }
+ ],
+ "pending_group": "later (the 9 accounts apply6 writes to) - run after that platform's apply runs finish"
+}

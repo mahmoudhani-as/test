@@ -1,0 +1,115 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_update",
+    "method": "POST",
+    "path": "/v1.3/ad/update/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "20261012221913A2BF4896DE0C8CEF9884",
+      "data": {
+        "ad_ids": [
+          "1859092176549938"
+        ],
+        "need_audit": false,
+        "creatives": [
+          {
+            "page_id": null,
+            "viewability_postbid_partner": "UNSET",
+            "profile_image_url": "",
+            "video_id": null,
+            "click_tracking_url": null,
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "create_time": "2026-03-08 11:16:50",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "visitor-diriyah-coe_mar26_cond",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "en",
+                "key": "utm_term"
+              },
+              {
+                "value": "display_en",
+                "key": "utm_content"
+              }
+            ],
+            "ad_ref_pixel_id": 7347671240183693000,
+            "identity_authorized_bc_id": "6807778858780065797",
+            "landing_page_url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_mar26_cond&utm_term=en&utm_content=display_en",
+            "campaign_automation_type": "MANUAL",
+            "ad_texts": null,
+            "tracking_pixel_id": 7347671240183693000,
+            "ad_text": "Experience Ramadan nights in Bujairi Terrace. Discover more",
+            "playable_url": "",
+            "product_info": {
+              "product_titles": null,
+              "product_image_list": null,
+              "selling_points": null
+            },
+            "ad_id": "1859092176549938",
+            "campaign_name": "BujairiTerrace_Ramadan2026_MF_TRF_KSA_ENAR_TikTok",
+            "creative_authorized": false,
+            "creative_type": null,
+            "modify_time": "2026-10-12 14:19:15",
+            "ad_name": "Static_EN_March8th",
+            "is_aco": false,
+            "brand_safety_postbid_partner": "UNSET",
+            "call_to_action_id": "7614841861349313544",
+            "fallback_type": "UNSET",
+            "dark_post_status": "ON",
+            "advertiser_id": "7338057963233443842",
+            "avatar_icon_web_uri": "",
+            "branded_content_disabled": false,
+            "campaign_id": "1857288757610529",
+            "vast_moat_enabled": false,
+            "optimization_event": "LANDING_PAGE_VIEW",
+            "deeplink": "",
+            "brand_safety_vast_url": null,
+            "music_id": "7614800156370373396",
+            "landing_page_urls": null,
+            "is_new_structure": true,
+            "image_ids": [
+              "ad-site-i18n-sg/202603085d0dc0cad5dcf95e45988f20"
+            ],
+            "card_id": null,
+            "carousel_image_labels": null,
+            "adgroup_name": "BujairiTerrace_Ramadan2026_MF_TRF_KSA_Tickets_EN",
+            "adgroup_id": "1857288963465217",
+            "deeplink_type": "NORMAL",
+            "viewability_vast_url": null,
+            "impression_tracking_url": null,
+            "display_name": "bujairiterrace",
+            "operation_status": "DISABLE",
+            "identity_type": "BC_AUTH_TT",
+            "app_name": "bujairiterrace",
+            "ad_format": "CAROUSEL_ADS"
+          }
+        ]
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "20261012221913A2BF4896DE0C8CEF9884",
+      "waitedMs": 2223,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "2052db47-ca95-4c9f-932e-6917996d2284",
+    "latencyMs": 4039
+  }
+}

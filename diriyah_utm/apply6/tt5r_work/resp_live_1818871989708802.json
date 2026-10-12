@@ -1,0 +1,107 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_update",
+    "method": "POST",
+    "path": "/v1.3/ad/update/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "202610122225026F5DBC2B5257131F9B8E",
+      "data": {
+        "ad_ids": [
+          "1818871989708802"
+        ],
+        "need_audit": false,
+        "creatives": [
+          {
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "bujairiterracewinter_dec24_awr",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "bujairiterracewinter_ar",
+                "key": "utm_term"
+              },
+              {
+                "value": "foodvideo12s_video_ar",
+                "key": "utm_content"
+              }
+            ],
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/o42mnBQ8uFDygnAmIeDDBSyEsQFPNYMEDFT5fv"
+            ],
+            "ad_texts": null,
+            "is_aco": false,
+            "advertiser_id": "7338057963233443842",
+            "viewability_vast_url": null,
+            "card_id": null,
+            "adgroup_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_UP_Bahrain_Prospecting_AR_Awareness_TIKTOK",
+            "page_id": null,
+            "viewability_postbid_partner": "UNSET",
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "display_name": "Visit Diriyah",
+            "call_to_action": "LEARN_MORE",
+            "impression_tracking_url": null,
+            "optimization_event": null,
+            "carousel_image_labels": null,
+            "creative_authorized": false,
+            "vast_moat_enabled": false,
+            "landing_page_urls": null,
+            "campaign_name": "BujairiTerrace_Winter2024Restaurants_UF_AWR_BAH_ENAR_TikTok",
+            "deeplink": "",
+            "video_id": "v10033g50000cth6n9nog65ueeafi6b0",
+            "campaign_id": "1818871989702674",
+            "click_tracking_url": null,
+            "deeplink_type": "NORMAL",
+            "playable_url": "",
+            "modify_time": "2026-10-12 14:25:03",
+            "identity_id": "7350277519361425409",
+            "create_time": "2024-12-19 12:32:32",
+            "campaign_automation_type": "MANUAL",
+            "ad_format": "SINGLE_VIDEO",
+            "adgroup_id": "1818871989702690",
+            "ad_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_UF_Bahrain_Prospecting_AR_Awareness_TIKTOK_Food Video 12s - AR",
+            "brand_safety_postbid_partner": "UNSET",
+            "creative_type": null,
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "app_name": "",
+            "ad_id": "1818871989708802",
+            "is_new_structure": true,
+            "landing_page_url": "https://www.diriyah.sa/ar/dine?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bujairiterracewinter_dec24_awr&utm_term=bujairiterracewinter_ar&utm_content=foodvideo12s_video_ar",
+            "call_to_action_id": null,
+            "brand_safety_vast_url": null,
+            "operation_status": "ENABLE",
+            "music_id": null,
+            "identity_type": "CUSTOMIZED_USER",
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "ad_text": "اكتشف عالمًا من النكهات في مطل البجيري. احجز طاولتك الآن!",
+            "tracking_pixel_id": 7347671240183693000
+          }
+        ]
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "202610122225026F5DBC2B5257131F9B8E",
+      "waitedMs": 1502,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "139e1bae-fc23-4a71-b2fc-a85ed9f45cdb",
+    "latencyMs": 3309
+  }
+}

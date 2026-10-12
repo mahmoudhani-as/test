@@ -1,0 +1,46 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "dry_run": true,
+    "action": "x_accounts_account_id_cards_card_id_put",
+    "compatibility_action": "UPDATE_CARD",
+    "method": "PUT",
+    "endpoint": "/12/accounts/{account_id}/cards/{card_id}",
+    "request": {
+      "accountId": "18ce55o46uh",
+      "account_id": "18ce55o46uh",
+      "cardId": "2089052281282928640",
+      "card_id": "2089052281282928640",
+      "payload": {
+        "components": [
+          {
+            "media_keys": [
+              "3_2089052020741185536",
+              "3_2089052165864034304",
+              "3_2089052194616029184",
+              "3_2089052229391073280"
+            ],
+            "type": "SWIPEABLE_MEDIA"
+          },
+          {
+            "destination": {
+              "type": "WEBSITE",
+              "url": "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=x&utm_medium=paid-social&utm_campaign=visitor-diriyah_aug26_cond&utm_term=ar&utm_content=cr3_display_ar"
+            },
+            "title": "اسكن في الدرعية والعب في القدية",
+            "type": "DETAILS"
+          }
+        ],
+        "name": "Bab Samhan x Qiddiya_CR3_AR_CPC"
+      }
+    },
+    "warnings": [
+      "Dry run only. Pass dry_run:false to execute after reviewing the native request."
+    ]
+  },
+  "meta": {
+    "requestId": "0eb22a14-ca5a-443a-8780-e4b0ae70a95a",
+    "latencyMs": 277
+  }
+}

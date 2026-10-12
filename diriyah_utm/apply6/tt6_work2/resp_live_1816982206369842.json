@@ -1,0 +1,111 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_update",
+    "method": "POST",
+    "path": "/v1.3/ad/update/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "2026101222211227E8BDD2318F84A704B5",
+      "data": {
+        "ad_ids": [
+          "1816982206369842"
+        ],
+        "need_audit": false,
+        "creatives": [
+          {
+            "click_tracking_url": null,
+            "campaign_name": "BujairiTerrace_Winter2024Restaurants_LF_CONV_KSA_ENAR_TikTok",
+            "display_name": "Visit Diriyah",
+            "deeplink": "",
+            "card_id": null,
+            "viewability_vast_url": null,
+            "impression_tracking_url": null,
+            "deeplink_type": "NORMAL",
+            "landing_page_urls": null,
+            "shopping_ads_fallback_type": "DEFAULT",
+            "music_id": null,
+            "is_aco": false,
+            "vertical_video_strategy": "UNSET",
+            "page_id": null,
+            "create_time": "2024-11-28 15:54:31",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "bujairiterracewinter_nov24_conv"
+              },
+              {
+                "key": "utm_term",
+                "value": "bujairiterracewinter_en"
+              },
+              {
+                "key": "utm_content",
+                "value": "villamamas5s_video_en"
+              }
+            ],
+            "identity_id": "7350277519361425409",
+            "campaign_automation_type": "MANUAL",
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/oMDfIFagAhkNpDtZQiDB6NIuyXEDSneQgCBRIc"
+            ],
+            "dynamic_destination": "UNSET",
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "landing_page_url": "https://www.diriyah.sa/en/dine?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bujairiterracewinter_nov24_conv&utm_term=bujairiterracewinter_en&utm_content=villamamas5s_video_en",
+            "operation_status": "DISABLE",
+            "video_id": "v10033g50000ct48denog65mjbit4cog",
+            "advertiser_id": "7338057963233443842",
+            "modify_time": "2026-10-12 14:21:13",
+            "ad_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_LF_KSA_Prospecting_EN_Conversion_TIKTOK_Villa Mama's 5s - EN",
+            "campaign_id": "1814257734712321",
+            "adgroup_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_LF_KSA_Prospecting_EN_Conversion_TIKTOK",
+            "call_to_action_id": "7442358977599474706",
+            "viewability_postbid_partner": "UNSET",
+            "ad_id": "1816982206369842",
+            "ad_texts": null,
+            "ad_text": "Feel the cool breeze as Villa Mama's treats you to its most mouthwatering dishes",
+            "is_new_structure": true,
+            "carousel_image_labels": null,
+            "ad_ref_pixel_id": 7347671240183693000,
+            "tracking_pixel_id": 7347671240183693000,
+            "app_name": "",
+            "optimization_event": "ON_WEB_REGISTER",
+            "identity_type": "CUSTOMIZED_USER",
+            "vast_moat_enabled": false,
+            "fallback_type": "UNSET",
+            "creative_type": null,
+            "brand_safety_vast_url": null,
+            "creative_authorized": true,
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "adgroup_id": "1814257738350625",
+            "playable_url": "",
+            "ad_format": "SINGLE_VIDEO",
+            "brand_safety_postbid_partner": "UNSET"
+          }
+        ]
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "2026101222211227E8BDD2318F84A704B5",
+      "waitedMs": 1896,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "b096214f-6f79-4c8a-ab66-30f6c066fe95",
+    "latencyMs": 3402
+  }
+}

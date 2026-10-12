@@ -1,0 +1,107 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_update",
+    "method": "POST",
+    "path": "/v1.3/ad/update/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "20261012221510F5382101C8B6F60E8C9D",
+      "data": {
+        "ad_ids": [
+          "1823032676904994"
+        ],
+        "need_audit": false,
+        "creatives": [
+          {
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "impression_tracking_url": null,
+            "click_tracking_url": null,
+            "campaign_id": "1818779415227394",
+            "ad_texts": null,
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "bujairiterracewinter_feb25_awr",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "bujairiterracewinter_en",
+                "key": "utm_term"
+              },
+              {
+                "value": "video_en",
+                "key": "utm_content"
+              }
+            ],
+            "viewability_vast_url": null,
+            "call_to_action_id": null,
+            "is_aco": false,
+            "page_id": null,
+            "card_id": null,
+            "tracking_pixel_id": 7347671240183693000,
+            "brand_safety_vast_url": null,
+            "identity_type": "CUSTOMIZED_USER",
+            "ad_text": "A world of heritage & style is waiting - come and visit today! #BujairiExperience #RetailReimagined",
+            "playable_url": "",
+            "is_new_structure": true,
+            "vast_moat_enabled": false,
+            "music_id": null,
+            "deeplink": "",
+            "display_name": "Visit Diriyah",
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "ad_format": "SINGLE_VIDEO",
+            "brand_safety_postbid_partner": "UNSET",
+            "identity_id": "7350277519361425409",
+            "optimization_event": null,
+            "landing_page_urls": null,
+            "creative_type": null,
+            "viewability_postbid_partner": "UNSET",
+            "carousel_image_labels": null,
+            "video_id": "v10033g50000cu93ts7og65ug4sausr0",
+            "campaign_name": "BujairiTerrace_Winter2024Retail_UF_AWR_KSA_ENAR_TikTok",
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/oAkA2BEjvoDTN9gc7gOvF6SBfeQEynIDPiEwTL"
+            ],
+            "ad_id": "1823032676904994",
+            "landing_page_url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bujairiterracewinter_feb25_awr&utm_term=bujairiterracewinter_en&utm_content=video_en",
+            "app_name": "",
+            "call_to_action": "LEARN_MORE",
+            "creative_authorized": false,
+            "modify_time": "2026-10-12 14:15:12",
+            "deeplink_type": "NORMAL",
+            "adgroup_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_UP_KSA_Prospecting_EN_Awareness_TIKTOK_Hero Video",
+            "campaign_automation_type": "MANUAL",
+            "advertiser_id": "7338057963233443842",
+            "create_time": "2025-02-03 10:44:03",
+            "adgroup_id": "1823032676904962",
+            "operation_status": "ENABLE",
+            "ad_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_UP_KSA_Prospecting_EN_Awareness_TIKTOK_Hero Video"
+          }
+        ]
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "20261012221510F5382101C8B6F60E8C9D",
+      "waitedMs": 3147,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "23f22562-0f2e-4239-80c5-099e02042b79",
+    "latencyMs": 4761
+  }
+}

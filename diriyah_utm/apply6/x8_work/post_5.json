@@ -1,0 +1,45 @@
+{
+ "post_tool": "toolu_0114XbsTJZpVbbWE7jSakrz6",
+ "post_rid": "fd64855a-bef8-424f-84b7-4df1d7952069",
+ "card_after": {
+  "name": "[Copy] Diriyah Company_Tactical _Cityscape Al Hadawi 2025_UF_KSA_Prospecting_EN_",
+  "components": [
+   {
+    "media_key": "13_2001258886435622917",
+    "media_metadata": {
+     "13_2001258886435622917": {
+      "type": "VIDEO",
+      "url": "https://video.twimg.com/amplify_video/2001258886435622917/vid/avc1/540x540/0U-U9NLzCKqPhGxS.mp4?tag=14",
+      "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/2001258886435622917/img/ioa4IBpn30aFR4R3.jpg",
+      "width": 1200,
+      "height": 1200,
+      "video_duration": 14881,
+      "video_aspect_ratio": "1:1"
+     }
+    },
+    "type": "MEDIA"
+   },
+   {
+    "title": "Manazel AlHadawi",
+    "destination": {
+     "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=hs-cityscape_dec25_awr&utm_term=cityscape_en&utm_content=launchvideo15s_video_en",
+     "type": "WEBSITE"
+    },
+    "type": "DETAILS"
+   }
+  ],
+  "id": "2001270515047288834",
+  "created_at": "2025-12-17T12:37:27Z",
+  "card_uri": "card://2001270515047288834",
+  "updated_at": "2025-12-17T12:37:27Z",
+  "deleted": false,
+  "card_type": "VIDEO_WEBSITE"
+ },
+ "slots": {
+  "card.components[1].destination.url": {
+   "after_live": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=hs-cityscape_dec25_awr&utm_term=cityscape_en&utm_content=launchvideo15s_video_en",
+   "eq_new_bytes": true
+  }
+ },
+ "rest_unchanged": true
+}
