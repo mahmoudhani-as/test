@@ -1,0 +1,3432 @@
+[
+ {
+  "tool_use_id": "toolu_01XqkAVXqGojQhsdpY9hTZam",
+  "input": {
+   "action": "LIST_CARDS",
+   "account_id": "18ce55o46ul",
+   "path_params": {
+    "account_id": "18ce55o46ul"
+   },
+   "params": {
+    "card_ids": "1770502701308125185,1770580248108703744,1770504434478428160,1770580497380376576,1772224324931346432,1772224324683853824,1772224324683866112,1772224324914618368,1772981983993335808,1773001720366342144,1791400451935461376,1791400789224587264,1793232205537288192,1793240162564030464,1793240916519460864,1798968638436970496,1798968638378262528,1798969190801682432,1798969190872989696,1851883089758212096,1851882837974355968,1851882599792185344,1851882357134921728,1851882078897336320,1851881753612283904,1851881336534876160,1851881102031343616,1851880893897482240,1851880422680203265,1851880169767575552,1851879919107624960,1851879442286809088,1851879156402786304",
+    "with_deleted": true,
+    "include_legacy_cards": true,
+    "count": 200
+   },
+   "result_fields": [
+    "id",
+    "name",
+    "card_type",
+    "deleted",
+    "updated_at",
+    "components",
+    "slides"
+   ],
+   "max_items": 2000
+  },
+  "result": {
+   "success": true,
+   "data": {
+    "success": true,
+    "data": {
+     "request": {
+      "params": {
+       "count": 200,
+       "include_legacy_cards": true,
+       "account_id": "18ce55o46ul",
+       "card_ids": [
+        "1770502701308125185",
+        "1770580248108703744",
+        "1770504434478428160",
+        "1770580497380376576",
+        "1772224324931346432",
+        "1772224324683853824",
+        "1772224324683866112",
+        "1772224324914618368",
+        "1772981983993335808",
+        "1773001720366342144",
+        "1791400451935461376",
+        "1791400789224587264",
+        "1793232205537288192",
+        "1793240162564030464",
+        "1793240916519460864",
+        "1798968638436970496",
+        "1798968638378262528",
+        "1798969190801682432",
+        "1798969190872989696",
+        "1851883089758212096",
+        "1851882837974355968",
+        "1851882599792185344",
+        "1851882357134921728",
+        "1851882078897336320",
+        "1851881753612283904",
+        "1851881336534876160",
+        "1851881102031343616",
+        "1851880893897482240",
+        "1851880422680203265",
+        "1851880169767575552",
+        "1851879919107624960",
+        "1851879442286809088",
+        "1851879156402786304"
+       ],
+       "with_deleted": true
+      }
+     },
+     "next_cursor": null,
+     "data": [
+      {
+       "id": "1772224324683853824",
+       "name": "[Copy] Untitled",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-03-25T11:29:40Z",
+       "components": [
+        {
+         "media_key": "13_1770499590623518720",
+         "media_metadata": {
+          "13_1770499590623518720": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1770499590623518720/vid/avc1/640x360/H1CyxP7qdsg2S-Xk.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1770499590623518720/img/ZCmGkDgF6dAdb8Fn.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 68280,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Register your interest!",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/diriyah-living/ritz-carlton?utm_source=x&utm_medium=paid-social&utm_campaign=ritz_conv&utm_term=ritz_en&utm_content=video",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1772224324683866112",
+       "name": "[Copy] Untitled",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-03-25T11:29:40Z",
+       "components": [
+        {
+         "media_key": "13_1770579740765675520",
+         "media_metadata": {
+          "13_1770579740765675520": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1770579740765675520/vid/avc1/640x360/wa81jdpj-177CdxV.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1770579740765675520/img/m1pd8Oj_Rn2Hrl11.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 18440,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "احجز تجربتك الآن!",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/diriyah-living/ritz-carlton?utm_source=x&utm_medium=paid-social&utm_campaign=ritz_mar24_conv&utm_term=ritz_ar&utm_content=video",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1772224324931346432",
+       "name": "[Copy] Untitled",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-03-25T11:29:40Z",
+       "components": [
+        {
+         "media_key": "13_1770499590636056576",
+         "media_metadata": {
+          "13_1770499590636056576": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1770499590636056576/vid/avc1/640x360/RsKaszywky1gU43i.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1770499590636056576/img/XLazKcl8HmQYJeyI.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 18840,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "احجز تجربتك الآن!",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/diriyah-living/ritz-carlton?utm_source=x&utm_medium=paid-social&utm_campaign=ritz_mar24_conv&utm_term=ritz_ar&utm_content=video",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1772224324914618368",
+       "name": "[Copy] Untitled",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-03-25T11:29:40Z",
+       "components": [
+        {
+         "media_key": "13_1770576129113407488",
+         "media_metadata": {
+          "13_1770576129113407488": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1770576129113407488/vid/avc1/1280x720/EQJTLleMnwWydWNi.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1770576129113407488/img/z_h6FzNT_l0Sx_k-.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 68280,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Register your interest!",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/diriyah-living/ritz-carlton?utm_source=x&utm_medium=paid-social&utm_campaign=ritz_conv&utm_term=ritz_en&utm_content=video",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1772981983993335808",
+       "name": "Corinthia",
+       "card_type": "IMAGE_MULTI_DEST_CAROUSEL_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-03-27T13:40:20Z",
+       "slides": [
+        [
+         {
+          "media_key": "3_1772980510538489858",
+          "media_metadata": {
+           "3_1772980510538489858": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GJrkYXRWYAIWXw4.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "لكل ساعة سحرها",
+          "destination": {
+           "url": "https://diriyahcompany.sa/ar/diriyah-living/corinthia?utm_source=x&utm_medium=paid-social&utm_campaign=corinthiaresidences_mar24_conv&utm_term=ar&utm_content=display_ar",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1772980551009353728",
+          "media_metadata": {
+           "3_1772980551009353728": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GJrkauCWwAAeMFQ.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "هنا، الوقت يمرّ بشكل مختلف",
+          "destination": {
+           "url": "https://diriyahcompany.sa/ar/diriyah-living/corinthia?utm_source=x&utm_medium=paid-social&utm_campaign=corinthiaresidences_mar24_conv&utm_term=ar&utm_content=display_ar",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1772980579262214144",
+          "media_metadata": {
+           "3_1772980579262214144": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GJrkcXSXMAAyKbN.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "دارنا مرحّبة ودافئة في مدينة الأرض",
+          "destination": {
+           "url": "https://diriyahcompany.sa/ar/diriyah-living/corinthia?utm_source=x&utm_medium=paid-social&utm_campaign=corinthiaresidences_mar24_conv&utm_term=ar&utm_content=display_ar",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1772980601244602369",
+          "media_metadata": {
+           "3_1772980601244602369": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GJrkdpLX0AE8UDP.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "تفاعل أخاذ بين الارتفاع والعمق",
+          "destination": {
+           "url": "https://diriyahcompany.sa/ar/diriyah-living/corinthia?utm_source=x&utm_medium=paid-social&utm_campaign=corinthiaresidences_mar24_conv&utm_term=ar&utm_content=display_ar",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ]
+       ]
+      },
+      {
+       "id": "1773001720366342144",
+       "name": "Corinthia English",
+       "card_type": "IMAGE_MULTI_DEST_CAROUSEL_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-03-27T14:58:45Z",
+       "slides": [
+        [
+         {
+          "media_key": "3_1773000211289243649",
+          "media_metadata": {
+           "3_1773000211289243649": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GJr2TGSWgAE0Xxk.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Where Every Hour is Magic",
+          "destination": {
+           "url": "https://diriyahcompany.sa/diriyah-living/corinthia?utm_source=x&utm_medium=paid-social&utm_campaign=corinthiaresidences_mar24_conv&utm_content=display_en",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1773000242541043712",
+          "media_metadata": {
+           "3_1773000242541043712": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GJr2U6tXIAAGi2N.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Time is Measured Differently Here",
+          "destination": {
+           "url": "https://diriyahcompany.sa/diriyah-living/corinthia?utm_source=x&utm_medium=paid-social&utm_campaign=corinthiaresidences_mar24_conv&utm_content=display_en",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1773000270902878208",
+          "media_metadata": {
+           "3_1773000270902878208": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GJr2WkXWYAABgV1.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "At Home in The City of Earth",
+          "destination": {
+           "url": "https://diriyahcompany.sa/diriyah-living/corinthia?utm_source=x&utm_medium=paid-social&utm_campaign=corinthiaresidences_mar24_conv&utm_content=display_en",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1773000300166520832",
+          "media_metadata": {
+           "3_1773000300166520832": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GJr2YRYWIAAD__9.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "An Interplay of Height & Depth",
+          "destination": {
+           "url": "https://diriyahcompany.sa/diriyah-living/corinthia?utm_source=x&utm_medium=paid-social&utm_campaign=corinthiaresidences_mar24_conv&utm_content=display_en",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ]
+       ]
+      },
+      {
+       "id": "1791400451935461376",
+       "name": "English - Video",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-05-17T09:28:45Z",
+       "components": [
+        {
+         "media_key": "13_1791324817154551808",
+         "media_metadata": {
+          "13_1791324817154551808": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1791324817154551808/vid/avc1/540x540/wtKcmm3fAV_dIm-8.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1791324817154551808/img/0bCJ4a6QnOUXCNH5.jpg",
+           "width": 1920,
+           "height": 1920,
+           "video_duration": 48720,
+           "video_aspect_ratio": "1:1"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Discover More",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/baccarat?utm_source=x&utm_medium=paid-social&utm_campaign=baccaratresidences_may24_conv&utm_term=en&utm_content=video_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1791400789224587264",
+       "name": "Arabic - Video 1",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-05-17T09:30:05Z",
+       "components": [
+        {
+         "media_key": "13_1791338930463244288",
+         "media_metadata": {
+          "13_1791338930463244288": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1791338930463244288/vid/avc1/540x540/3sI8EHhSdSyHF-8k.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1791338930463244288/img/lOX5PaB4nV1pDulw.jpg",
+           "width": 1920,
+           "height": 1920,
+           "video_duration": 51080,
+           "video_aspect_ratio": "1:1"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "تعرف أكثر",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living/baccarat?utm_source=x&utm_medium=paid-social&utm_campaign=baccaratresidences_may24_conv&utm_term=ar&utm_content=video1_video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1793232205537288192",
+       "name": "[Copy] Arabic - Video 15 Sec",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-05-22T10:47:29Z",
+       "components": [
+        {
+         "media_key": "13_1792444308269707264",
+         "media_metadata": {
+          "13_1792444308269707264": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1792444308269707264/vid/avc1/540x540/LwPvyCqbdbPpnXC2.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1792444308269707264/img/5RXw98xgm0Ytd1oB.jpg",
+           "width": 1080,
+           "height": 1080,
+           "video_duration": 15920,
+           "video_aspect_ratio": "1:1"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "تعرف أكثر",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living/baccarat?utm_source=x&utm_medium=paid-social&utm_campaign=baccaratresidences_may24_conv&utm_term=ar&utm_content=video15sec_video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1793240162564030464",
+       "name": "English - Video - 15 sec",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-05-22T11:19:06Z",
+       "components": [
+        {
+         "media_key": "13_1792443776675270656",
+         "media_metadata": {
+          "13_1792443776675270656": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1792443776675270656/vid/avc1/320x320/MIANsJb1UPX1aPWc.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1792443776675270656/img/wUxuW6c-LZ4s9zcS.jpg",
+           "width": 1080,
+           "height": 1080,
+           "video_duration": 15920,
+           "video_aspect_ratio": "1:1"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Discover More",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/baccarat?utm_source=x&utm_medium=paid-social&utm_campaign=baccaratresidences_may24_conv&utm_term=en&utm_content=video15sec_video_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1793240916519460864",
+       "name": "Arabic Static 2",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-05-22T11:22:06Z",
+       "components": [
+        {
+         "media_key": "3_1793240854951272448",
+         "media_metadata": {
+          "3_1793240854951272448": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/GOLfDnwWoAATurA.jpg",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Discover More",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living/baccarat?utm_source=x&utm_medium=paid-social&utm_campaign=baccaratresidences_may24_conv&utm_term=ar&utm_content=display_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1798968638378262528",
+       "name": "[Copy] Corinthia English Asset 3",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-06-07T06:42:01Z",
+       "components": [
+        {
+         "media_key": "3_1796100253520629760",
+         "media_metadata": {
+          "3_1796100253520629760": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/GO0HqhgWEAAamWS.jpg",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Discover More",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/corinthia?utm_source=x&utm_medium=paid-social&utm_campaign=corinthiaresidences_jun24_conv&utm_term=corinthiaresidences_en&utm_content=display_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1798968638436970496",
+       "name": "[Copy] Corinthia English Asset 2",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-06-07T06:42:01Z",
+       "components": [
+        {
+         "media_key": "3_1796099978990923776",
+         "media_metadata": {
+          "3_1796099978990923776": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/GO0HaizXMAA9igL.jpg",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Discover More",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/corinthia?utm_source=x&utm_medium=paid-social&utm_campaign=corinthiaresidences_jun24_conv&utm_term=corinthiaresidences_en&utm_content=display_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1798969190801682432",
+       "name": "[Copy] Corinthia Arabic Asset 1",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-06-07T06:44:12Z",
+       "components": [
+        {
+         "media_key": "3_1796101230764154880",
+         "media_metadata": {
+          "3_1796101230764154880": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/GO0IjaBW4AAea22.jpg",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "اكتشف أكثر",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living/corinthia?utm_source=x&utm_medium=paid-social&utm_campaign=corinthiaresidences_jun24_conv&utm_term=corinthiaresidences_ar&utm_content=display_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1798969190872989696",
+       "name": "[Copy] Corinthia Arabic Asset 3",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-06-07T06:44:13Z",
+       "components": [
+        {
+         "media_key": "3_1796102018970353666",
+         "media_metadata": {
+          "3_1796102018970353666": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/GO0JRSUXAAIlACr.jpg",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "اكتشف أكثر",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living/corinthia?utm_source=x&utm_medium=paid-social&utm_campaign=corinthiaresidences_jun24_conv&utm_term=corinthiaresidences_ar&utm_content=display_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1851879156402786304",
+       "name": "Diriyah_Tactical_COE_UF_KSA_AUD_EN_Awareness_X_F_Greenery 15s",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-10-31T06:49:31Z",
+       "components": [
+        {
+         "media_key": "13_1851635820052037632",
+         "media_metadata": {
+          "13_1851635820052037632": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1851635820052037632/vid/avc1/1280x720/74v_YnYHGqJS4z4C.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1851635820052037632/img/tz1ypDyLneJIbF24.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "الدرعية مستقبل تاريخي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar?utm_source=x&utm_medium=paid-social&utm_campaign=cityofearth_oct24_awr&utm_term=cityofearth_ar&utm_content=video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1851879442286809088",
+       "name": "Diriyah_Tactical_COE_UF_KSA_AUD_EN_Awareness_X_F_Talents 15s",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-10-31T06:50:39Z",
+       "components": [
+        {
+         "media_key": "13_1851635798187053057",
+         "media_metadata": {
+          "13_1851635798187053057": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1851635798187053057/vid/avc1/1280x720/FwpF427fNqn-0fTx.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1851635798187053057/img/d06_cvMgix-pCHTg.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "الدرعية مستقبل تاريخي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar?utm_source=x&utm_medium=paid-social&utm_campaign=cityofearth_oct24_awr&utm_term=cityofearth_ar&utm_content=video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1851879919107624960",
+       "name": "Diriyah_Tactical_COE_UF_KSA_AUD_EN_Awareness_X_F_Activities 15s",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-10-31T06:52:33Z",
+       "components": [
+        {
+         "media_key": "13_1851635561196314624",
+         "media_metadata": {
+          "13_1851635561196314624": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1851635561196314624/vid/avc1/1280x720/cQVZ8lTiwgTrSpVh.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1851635561196314624/img/SFDWvBp4M34pyl2J.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "الدرعية مستقبل تاريخي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar?utm_source=x&utm_medium=paid-social&utm_campaign=cityofearth_oct24_awr&utm_term=cityofearth_ar&utm_content=video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1851880169767575552",
+       "name": "Diriyah_Tactical_COE_UF_KSA_AUD_EN_Awareness_X_F_Social 15s",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-10-31T06:53:33Z",
+       "components": [
+        {
+         "media_key": "13_1851635521023344640",
+         "media_metadata": {
+          "13_1851635521023344640": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1851635521023344640/vid/avc1/1280x720/VJUCOB2xqc8qb5hS.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1851635521023344640/img/jtstCZE1xCbKJavD.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "الدرعية مستقبل تاريخي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar?utm_source=x&utm_medium=paid-social&utm_campaign=cityofearth_oct24_awr&utm_term=cityofearth_ar&utm_content=video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1851880422680203265",
+       "name": "Diriyah_Tactical_COE_UF_KSA_AUD_EN_Awareness_X_F_Football 15s",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-10-31T06:54:33Z",
+       "components": [
+        {
+         "media_key": "13_1851635434193096704",
+         "media_metadata": {
+          "13_1851635434193096704": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1851635434193096704/vid/avc1/480x270/6P5mQDiDrO7GfdVS.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1851635434193096704/img/WSui21G55ItbFI9C.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "الدرعية مستقبل تاريخي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar?utm_source=x&utm_medium=paid-social&utm_campaign=cityofearth_oct24_awr&utm_term=cityofearth_ar&utm_content=video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1851880893897482240",
+       "name": "Diriyah_Tactical_COE_UF_KSA_AUD_EN_Awareness_X_M_Talents 15s",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-10-31T06:56:26Z",
+       "components": [
+        {
+         "media_key": "13_1851635386512240640",
+         "media_metadata": {
+          "13_1851635386512240640": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1851635386512240640/vid/avc1/1280x720/qJNJsRdu4WI4Wotp.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1851635386512240640/img/NevhHA0JDrEosZy8.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "الدرعية مستقبل تاريخي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar?utm_source=x&utm_medium=paid-social&utm_campaign=cityofearth_oct24_awr&utm_term=cityofearth_ar&utm_content=video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1851881102031343616",
+       "name": "[Copy] Diriyah_Tactical_COE_UF_KSA_AUD_EN_Awareness_X_M_Social 15s",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-10-31T06:57:15Z",
+       "components": [
+        {
+         "media_key": "13_1851635177144934400",
+         "media_metadata": {
+          "13_1851635177144934400": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1851635177144934400/vid/avc1/480x270/mDkv22NIbYR-8qEb.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1851635177144934400/img/esa7eej4GjcV7c80.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "الدرعية مستقبل تاريخي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar?utm_source=x&utm_medium=paid-social&utm_campaign=cityofearth_oct24_awr&utm_term=cityofearth_ar&utm_content=video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1851881336534876160",
+       "name": "Diriyah_Tactical_COE_UF_KSA_AUD_EN_Awareness_X_M_Outdoor 15s",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-10-31T06:58:11Z",
+       "components": [
+        {
+         "media_key": "13_1851635152037761024",
+         "media_metadata": {
+          "13_1851635152037761024": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1851635152037761024/vid/avc1/480x270/BL7OxPqzsuXhUcXf.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1851635152037761024/img/3fRETsRVqmd77geK.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "الدرعية مستقبل تاريخي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar?utm_source=x&utm_medium=paid-social&utm_campaign=cityofearth_oct24_awr&utm_term=cityofearth_ar&utm_content=video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1851881753612283904",
+       "name": "Diriyah_Tactical_COE_UF_KSA_AUD_EN_Awareness_X_M_Hospitality 15s",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-10-31T06:59:51Z",
+       "components": [
+        {
+         "media_key": "13_1851635126943514624",
+         "media_metadata": {
+          "13_1851635126943514624": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1851635126943514624/vid/avc1/640x360/FpNT35HH7Vb99vYk.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1851635126943514624/img/4nte_ygOT2XLG6ra.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "الدرعية مستقبل تاريخي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar?utm_source=x&utm_medium=paid-social&utm_campaign=cityofearth_oct24_awr&utm_term=cityofearth_ar&utm_content=video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1851882078897336320",
+       "name": "Diriyah_Tactical_COE_UF_KSA_AUD_EN_Awareness_X_M_Home 15s",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-10-31T07:01:08Z",
+       "components": [
+        {
+         "media_key": "13_1851635083872268289",
+         "media_metadata": {
+          "13_1851635083872268289": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1851635083872268289/vid/avc1/640x360/wlDetpgY_n3Aw0I9.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1851635083872268289/img/5Z9FkIltuKg8SoIe.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "الدرعية مستقبل تاريخي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar?utm_source=x&utm_medium=paid-social&utm_campaign=cityofearth_oct24_awr&utm_term=cityofearth_ar&utm_content=video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1851882357134921728",
+       "name": "Diriyah_Tactical_COE_UF_KSA_AUD_EN_Awareness_X_M_Activities 15s",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-10-31T07:02:14Z",
+       "components": [
+        {
+         "media_key": "13_1851634831387656192",
+         "media_metadata": {
+          "13_1851634831387656192": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1851634831387656192/vid/avc1/1280x720/VHRRSSCQvAsFbOnC.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1851634831387656192/img/ukUeObgBVGqJ_17r.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "الدرعية مستقبل تاريخي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar?utm_source=x&utm_medium=paid-social&utm_campaign=cityofearth_oct24_awr&utm_term=cityofearth_ar&utm_content=video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1851882599792185344",
+       "name": "Diriyah_Tactical_COE_UF_KSA_AUD_EN_Awareness_X_M_Father 15s",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-10-31T07:03:12Z",
+       "components": [
+        {
+         "media_key": "13_1851634831324762112",
+         "media_metadata": {
+          "13_1851634831324762112": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1851634831324762112/vid/avc1/480x270/IMvZcCuejZPG8CGm.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1851634831324762112/img/kmZcYhYSQ_UI4FEZ.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "الدرعية مستقبل تاريخي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar?utm_source=x&utm_medium=paid-social&utm_campaign=cityofearth_oct24_awr&utm_term=cityofearth_ar&utm_content=video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1851882837974355968",
+       "name": "Diriyah_Tactical_COE_UF_KSA_AUD_EN_Awareness_X_M_Greenery 15s",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-10-31T07:04:09Z",
+       "components": [
+        {
+         "media_key": "13_1851634831211352064",
+         "media_metadata": {
+          "13_1851634831211352064": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1851634831211352064/vid/avc1/1280x720/mfTi-HsrcG54fD6G.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1851634831211352064/img/s0lD4JZHanU5I6Ro.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "الدرعية مستقبل تاريخي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar?utm_source=x&utm_medium=paid-social&utm_campaign=cityofearth_oct24_awr&utm_term=cityofearth_ar&utm_content=video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1851883089758212096",
+       "name": "Diriyah_Tactical_COE_UF_KSA_AUD_EN_Awareness_X_M_Football 15s",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-10-31T07:05:09Z",
+       "components": [
+        {
+         "media_key": "13_1851634831144181762",
+         "media_metadata": {
+          "13_1851634831144181762": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1851634831144181762/vid/avc1/640x360/d_KB3v1hXtNe6nVo.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1851634831144181762/img/C7enYDPUZu5nQTtV.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "الدرعية مستقبل تاريخي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar?utm_source=x&utm_medium=paid-social&utm_campaign=cityofearth_oct24_awr&utm_term=cityofearth_ar&utm_content=video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      }
+     ]
+    },
+    "meta": {
+     "mcp_result_projection": {
+      "fields": [
+       "id",
+       "name",
+       "card_type",
+       "deleted",
+       "updated_at",
+       "components",
+       "slides"
+      ],
+      "max_items": 2000
+     }
+    }
+   },
+   "meta": {
+    "requestId": "a6eabda4-1baf-4b9d-bc8b-6867219d96ea",
+    "latencyMs": 2164
+   }
+  }
+ },
+ {
+  "tool_use_id": "toolu_01GLg3YUujF2ZEbf1nuoo2jG",
+  "input": {
+   "action": "LIST_CARDS",
+   "account_id": "18ce55o46ul",
+   "path_params": {
+    "account_id": "18ce55o46ul"
+   },
+   "params": {
+    "card_ids": "1851878618936545283,1851878128865447936,1851877871037419520,1851877272632070145,1858462547231293440,1858462548783185920,1858462544219791361,1858462544324685826,1858462545402601472,1858462547369697280,1858462549106176000,1858462543049621504,1858462547113816065,1858462548758044672,1858462544895021056,1858462544135913472,1858462543020261377,1858462546874748928,1858462546790928384,1858462547260645376,1858462544995782656,1858462542986616832,1903071258977374213,1909548881420976128,1909548881441849344,1909548881462861824,1909548881446109184,1910662767989710848,1910662767884783616",
+    "with_deleted": true,
+    "include_legacy_cards": true,
+    "count": 200
+   },
+   "result_fields": [
+    "id",
+    "name",
+    "card_type",
+    "deleted",
+    "updated_at",
+    "components",
+    "slides"
+   ],
+   "max_items": 2000
+  },
+  "result": {
+   "success": true,
+   "data": {
+    "success": true,
+    "data": {
+     "request": {
+      "params": {
+       "count": 200,
+       "include_legacy_cards": true,
+       "account_id": "18ce55o46ul",
+       "card_ids": [
+        "1851878618936545283",
+        "1851878128865447936",
+        "1851877871037419520",
+        "1851877272632070145",
+        "1858462547231293440",
+        "1858462548783185920",
+        "1858462544219791361",
+        "1858462544324685826",
+        "1858462545402601472",
+        "1858462547369697280",
+        "1858462549106176000",
+        "1858462543049621504",
+        "1858462547113816065",
+        "1858462548758044672",
+        "1858462544895021056",
+        "1858462544135913472",
+        "1858462543020261377",
+        "1858462546874748928",
+        "1858462546790928384",
+        "1858462547260645376",
+        "1858462544995782656",
+        "1858462542986616832",
+        "1903071258977374213",
+        "1909548881420976128",
+        "1909548881441849344",
+        "1909548881462861824",
+        "1909548881446109184",
+        "1910662767989710848",
+        "1910662767884783616"
+       ],
+       "with_deleted": true
+      }
+     },
+     "next_cursor": null,
+     "data": [
+      {
+       "id": "1851877272632070145",
+       "name": "Diriyah_Tactical_COE_UF_KSA_AUD_EN_Awareness_X_Father 15s",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-10-31T06:42:02Z",
+       "components": [
+        {
+         "media_key": "13_1851636131638419456",
+         "media_metadata": {
+          "13_1851636131638419456": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1851636131638419456/vid/avc1/480x270/_KRvZbvhJRYQjrEh.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1851636131638419456/img/bdNLw7sSImkT9tn9.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "الدرعية مستقبل تاريخي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar?utm_source=x&utm_medium=paid-social&utm_campaign=cityofearth_oct24_awr&utm_term=cityofearth_ar&utm_content=video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1851877871037419520",
+       "name": "[Copy] Diriyah_Tactical_COE_UF_KSA_AUD_EN_Awareness_X_F_Hospitality 15s",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-10-31T06:44:25Z",
+       "components": [
+        {
+         "media_key": "13_1851636060939550720",
+         "media_metadata": {
+          "13_1851636060939550720": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1851636060939550720/vid/avc1/1280x720/ljLpf-H686ZDp-au.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1851636060939550720/img/GiYs8BHvmSczEBwQ.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "الدرعية مستقبل تاريخي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar?utm_source=x&utm_medium=paid-social&utm_campaign=cityofearth_oct24_awr&utm_term=cityofearth_ar&utm_content=video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1851878128865447936",
+       "name": "Diriyah_Tactical_COE_UF_KSA_AUD_EN_Awareness_X_F_Home 15s",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-10-31T06:45:26Z",
+       "components": [
+        {
+         "media_key": "13_1851635925534773248",
+         "media_metadata": {
+          "13_1851635925534773248": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1851635925534773248/vid/avc1/480x270/7jA0K_KT3uFnobx2.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1851635925534773248/img/yeSl8mfUmvkGPJuj.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "الدرعية مستقبل تاريخي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar?utm_source=x&utm_medium=paid-social&utm_campaign=cityofearth_oct24_awr&utm_term=cityofearth_ar&utm_content=video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1851878618936545283",
+       "name": "Diriyah_Tactical_COE_UF_KSA_AUD_EN_Awareness_X_F_Outdoor 15s",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-10-31T06:47:23Z",
+       "components": [
+        {
+         "media_key": "13_1851635915837358080",
+         "media_metadata": {
+          "13_1851635915837358080": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1851635915837358080/vid/avc1/480x270/NtvXoenIMZsMuBHD.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1851635915837358080/img/SsEAy9VKevan7Abo.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "الدرعية مستقبل تاريخي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar?utm_source=x&utm_medium=paid-social&utm_campaign=cityofearth_oct24_awr&utm_term=cityofearth_ar&utm_content=video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1858462542986616832",
+       "name": "[Copy] Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_M_Father 15s",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-11-18T10:49:33Z",
+       "components": [
+        {
+         "media_key": "13_1851634831324762112",
+         "media_metadata": {
+          "13_1851634831324762112": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1851634831324762112/vid/avc1/480x270/IMvZcCuejZPG8CGm.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1851634831324762112/img/kmZcYhYSQ_UI4FEZ.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "الدرعية مستقبل تاريخي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar?utm_source=x&utm_medium=paid-social&utm_campaign=cityofearth_nov24_awr&utm_term=cityofearth_ar&utm_content=video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1858462543049621504",
+       "name": "[Copy] Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_M_Home 15s",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-11-18T10:49:33Z",
+       "components": [
+        {
+         "media_key": "13_1851635083872268289",
+         "media_metadata": {
+          "13_1851635083872268289": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1851635083872268289/vid/avc1/640x360/wlDetpgY_n3Aw0I9.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1851635083872268289/img/5Z9FkIltuKg8SoIe.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "الدرعية مستقبل تاريخي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar?utm_source=x&utm_medium=paid-social&utm_campaign=cityofearth_nov24_awr&utm_term=cityofearth_ar&utm_content=video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1858462543020261377",
+       "name": "[Copy] Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_M_Hospitality 15s",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-11-18T10:49:33Z",
+       "components": [
+        {
+         "media_key": "13_1851635126943514624",
+         "media_metadata": {
+          "13_1851635126943514624": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1851635126943514624/vid/avc1/640x360/FpNT35HH7Vb99vYk.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1851635126943514624/img/4nte_ygOT2XLG6ra.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "الدرعية مستقبل تاريخي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar?utm_source=x&utm_medium=paid-social&utm_campaign=cityofearth_nov24_awr&utm_term=cityofearth_ar&utm_content=video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1858462544135913472",
+       "name": "[Copy] Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_M_Activities 15s",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-11-18T10:49:33Z",
+       "components": [
+        {
+         "media_key": "13_1851634831387656192",
+         "media_metadata": {
+          "13_1851634831387656192": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1851634831387656192/vid/avc1/1280x720/VHRRSSCQvAsFbOnC.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1851634831387656192/img/ukUeObgBVGqJ_17r.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "الدرعية مستقبل تاريخي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar?utm_source=x&utm_medium=paid-social&utm_campaign=cityofearth_nov24_awr&utm_term=cityofearth_ar&utm_content=video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1858462544219791361",
+       "name": "[Copy] Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_M_Greenery 15s",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-11-18T10:49:33Z",
+       "components": [
+        {
+         "media_key": "13_1851634831211352064",
+         "media_metadata": {
+          "13_1851634831211352064": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1851634831211352064/vid/avc1/1280x720/mfTi-HsrcG54fD6G.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1851634831211352064/img/s0lD4JZHanU5I6Ro.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "الدرعية مستقبل تاريخي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar?utm_source=x&utm_medium=paid-social&utm_campaign=cityofearth_nov24_awr&utm_term=cityofearth_ar&utm_content=video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1858462544324685826",
+       "name": "[Copy] Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_M_Football 15s",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-11-18T10:49:33Z",
+       "components": [
+        {
+         "media_key": "13_1851634831144181762",
+         "media_metadata": {
+          "13_1851634831144181762": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1851634831144181762/vid/avc1/640x360/d_KB3v1hXtNe6nVo.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1851634831144181762/img/C7enYDPUZu5nQTtV.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "الدرعية مستقبل تاريخي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar?utm_source=x&utm_medium=paid-social&utm_campaign=cityofearth_nov24_awr&utm_term=cityofearth_ar&utm_content=video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1858462544895021056",
+       "name": "[Copy] Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_M_Talents 15s",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-11-18T10:49:33Z",
+       "components": [
+        {
+         "media_key": "13_1851635386512240640",
+         "media_metadata": {
+          "13_1851635386512240640": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1851635386512240640/vid/avc1/1280x720/qJNJsRdu4WI4Wotp.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1851635386512240640/img/NevhHA0JDrEosZy8.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "الدرعية مستقبل تاريخي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar?utm_source=x&utm_medium=paid-social&utm_campaign=cityofearth_nov24_awr&utm_term=cityofearth_ar&utm_content=video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1858462544995782656",
+       "name": "[Copy] Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_M_Outdoor 15s",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-11-18T10:49:34Z",
+       "components": [
+        {
+         "media_key": "13_1851635152037761024",
+         "media_metadata": {
+          "13_1851635152037761024": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1851635152037761024/vid/avc1/480x270/BL7OxPqzsuXhUcXf.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1851635152037761024/img/3fRETsRVqmd77geK.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "الدرعية مستقبل تاريخي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar?utm_source=x&utm_medium=paid-social&utm_campaign=cityofearth_nov24_awr&utm_term=cityofearth_ar&utm_content=video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1858462545402601472",
+       "name": "[Copy] Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_M_Social 15s",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-11-18T10:49:34Z",
+       "components": [
+        {
+         "media_key": "13_1851635177144934400",
+         "media_metadata": {
+          "13_1851635177144934400": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1851635177144934400/vid/avc1/480x270/mDkv22NIbYR-8qEb.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1851635177144934400/img/esa7eej4GjcV7c80.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "الدرعية مستقبل تاريخي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar?utm_source=x&utm_medium=paid-social&utm_campaign=cityofearth_nov24_awr&utm_term=cityofearth_ar&utm_content=video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1858462546790928384",
+       "name": "[Copy] Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_F_Talents 15s",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-11-18T10:49:34Z",
+       "components": [
+        {
+         "media_key": "13_1851635798187053057",
+         "media_metadata": {
+          "13_1851635798187053057": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1851635798187053057/vid/avc1/1280x720/FwpF427fNqn-0fTx.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1851635798187053057/img/d06_cvMgix-pCHTg.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "الدرعية مستقبل تاريخي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar?utm_source=x&utm_medium=paid-social&utm_campaign=cityofearth_nov24_awr&utm_term=cityofearth_ar&utm_content=video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1858462546874748928",
+       "name": "[Copy] Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_F_Greenery 15s",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-11-18T10:49:34Z",
+       "components": [
+        {
+         "media_key": "13_1851635820052037632",
+         "media_metadata": {
+          "13_1851635820052037632": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1851635820052037632/vid/avc1/1280x720/74v_YnYHGqJS4z4C.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1851635820052037632/img/tz1ypDyLneJIbF24.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "الدرعية مستقبل تاريخي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar?utm_source=x&utm_medium=paid-social&utm_campaign=cityofearth_nov24_awr&utm_term=cityofearth_ar&utm_content=video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1858462547113816065",
+       "name": "[Copy] Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_F_Football 15s",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-11-18T10:49:34Z",
+       "components": [
+        {
+         "media_key": "13_1851635434193096704",
+         "media_metadata": {
+          "13_1851635434193096704": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1851635434193096704/vid/avc1/480x270/6P5mQDiDrO7GfdVS.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1851635434193096704/img/WSui21G55ItbFI9C.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "الدرعية مستقبل تاريخي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar?utm_source=x&utm_medium=paid-social&utm_campaign=cityofearth_nov24_awr&utm_term=cityofearth_ar&utm_content=video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1858462547231293440",
+       "name": "[Copy] Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_F_Activities 15s",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-11-18T10:49:34Z",
+       "components": [
+        {
+         "media_key": "13_1851635561196314624",
+         "media_metadata": {
+          "13_1851635561196314624": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1851635561196314624/vid/avc1/1280x720/cQVZ8lTiwgTrSpVh.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1851635561196314624/img/SFDWvBp4M34pyl2J.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "الدرعية مستقبل تاريخي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar?utm_source=x&utm_medium=paid-social&utm_campaign=cityofearth_nov24_awr&utm_term=cityofearth_ar&utm_content=video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1858462547260645376",
+       "name": "[Copy] Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_F_Social 15s",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-11-18T10:49:34Z",
+       "components": [
+        {
+         "media_key": "13_1851635521023344640",
+         "media_metadata": {
+          "13_1851635521023344640": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1851635521023344640/vid/avc1/1280x720/VJUCOB2xqc8qb5hS.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1851635521023344640/img/jtstCZE1xCbKJavD.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "الدرعية مستقبل تاريخي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar?utm_source=x&utm_medium=paid-social&utm_campaign=cityofearth_nov24_awr&utm_term=cityofearth_ar&utm_content=video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1858462547369697280",
+       "name": "[Copy] Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_F_Outdoor 15s",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-11-18T10:49:34Z",
+       "components": [
+        {
+         "media_key": "13_1851635915837358080",
+         "media_metadata": {
+          "13_1851635915837358080": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1851635915837358080/vid/avc1/480x270/NtvXoenIMZsMuBHD.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1851635915837358080/img/SsEAy9VKevan7Abo.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "الدرعية مستقبل تاريخي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar?utm_source=x&utm_medium=paid-social&utm_campaign=cityofearth_nov24_awr&utm_term=cityofearth_ar&utm_content=video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1858462548758044672",
+       "name": "[Copy] Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_F_Home 15s",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-11-18T10:49:34Z",
+       "components": [
+        {
+         "media_key": "13_1851635925534773248",
+         "media_metadata": {
+          "13_1851635925534773248": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1851635925534773248/vid/avc1/480x270/7jA0K_KT3uFnobx2.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1851635925534773248/img/yeSl8mfUmvkGPJuj.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "الدرعية مستقبل تاريخي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar?utm_source=x&utm_medium=paid-social&utm_campaign=cityofearth_nov24_awr&utm_term=cityofearth_ar&utm_content=video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1858462548783185920",
+       "name": "[Copy] Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_Father 15s",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-11-18T10:49:34Z",
+       "components": [
+        {
+         "media_key": "13_1851636131638419456",
+         "media_metadata": {
+          "13_1851636131638419456": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1851636131638419456/vid/avc1/480x270/_KRvZbvhJRYQjrEh.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1851636131638419456/img/bdNLw7sSImkT9tn9.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "الدرعية مستقبل تاريخي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar?utm_source=x&utm_medium=paid-social&utm_campaign=cityofearth_nov24_awr&utm_term=cityofearth_ar&utm_content=video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1858462549106176000",
+       "name": "[Copy] Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_F_Hospitality 15s",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2024-11-18T10:49:34Z",
+       "components": [
+        {
+         "media_key": "13_1851636060939550720",
+         "media_metadata": {
+          "13_1851636060939550720": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1851636060939550720/vid/avc1/1280x720/ljLpf-H686ZDp-au.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1851636060939550720/img/GiYs8BHvmSczEBwQ.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "الدرعية مستقبل تاريخي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar?utm_source=x&utm_medium=paid-social&utm_campaign=cityofearth_nov24_awr&utm_term=cityofearth_ar&utm_content=video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1903071258977374213",
+       "name": "Diriyah_Tactical_City of Earth_UF_KSA_AUD_AR_Awareness_X",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-03-21T13:08:40Z",
+       "components": [
+        {
+         "media_key": "13_1903070755136606211",
+         "media_metadata": {
+          "13_1903070755136606211": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1903070755136606211/vid/avc1/720x720/z1HacmAsW-SZ_gH_.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1903070755136606211/img/lBHnRXPsTUk-UXcA.jpg",
+           "width": 1080,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "1:1"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "الدرعية مستقبل تاريخي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar?utm_source=x&utm_medium=paid-social&utm_campaign=hs-cityofearth_mar25_awr&utm_term=cityofearth_ar&utm_content=cityofearth_video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1909548881420976128",
+       "name": "Diriyah_Tactical_Business Of Fashion_UF_KSA_Prospecting_EN_Awareness_X_COE",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-04-08T14:35:56Z",
+       "components": [
+        {
+         "media_key": "3_1909547558713622528",
+         "media_metadata": {
+          "3_1909547558713622528": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/GoATYy7XAAAcXSx.jpg",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Discover more",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/retail/diriyah-square?utm_source=x&utm_medium=paid-social&utm_campaign=hs-businessoffashion_apr25_awr&utm_term=businessoffashion_en&utm_content=coeadoptation_display_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1909548881446109184",
+       "name": "Diriyah_Tactical_Business Of Fashion_UF_KSA_Prospecting_AR_Awareness_X_DSQ",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-04-08T10:08:25Z",
+       "components": [
+        {
+         "media_key": "3_1909547892353765376",
+         "media_metadata": {
+          "3_1909547892353765376": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/GoATsN1XkAAFGjd.jpg",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "اكتشف المزيد",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/retail/diriyah-square?utm_source=x&utm_medium=paid-social&utm_campaign=hs-businessoffashion_awr&utm_term=ar&utm_content=display_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1909548881441849344",
+       "name": "Diriyah_Tactical_Business Of Fashion_UF_KSA_Prospecting_EN_Awareness_X_DSQ",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-04-08T10:08:25Z",
+       "components": [
+        {
+         "media_key": "3_1909547892353765376",
+         "media_metadata": {
+          "3_1909547892353765376": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/GoATsN1XkAAFGjd.jpg",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Discover more",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/retail/diriyah-square?utm_source=x&utm_medium=paid-social&utm_campaign=hs-businessoffashion_apr25_awr&utm_term=businessoffashion_en&utm_content=dsqadoptation_display_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1909548881462861824",
+       "name": "Diriyah_Tactical_Business Of Fashion_UF_KSA_Prospecting_AR_Awareness_X_COE",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-04-08T10:08:25Z",
+       "components": [
+        {
+         "media_key": "3_1909547558713622528",
+         "media_metadata": {
+          "3_1909547558713622528": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/GoATYy7XAAAcXSx.jpg",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "اكتشف المزيد",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/retail/diriyah-square?utm_source=x&utm_medium=paid-social&utm_campaign=hs-businessoffashion_awr&utm_term=ar&utm_content=display_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1910662767884783616",
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KSA_Prospecting_EN_Conve",
+       "card_type": "IMAGE_MULTI_DEST_CAROUSEL_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-04-11T11:54:36Z",
+       "slides": [
+        [
+         {
+          "media_key": "3_1910662339788955648",
+          "media_metadata": {
+           "3_1910662339788955648": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQJRmDWYAAYGCi.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "أرماني ريزيدنسز الدرعية",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv1_display_ar#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910662400958689280",
+          "media_metadata": {
+           "3_1910662400958689280": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQJVJ7WcAASHFb.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "أرماني ريزيدنسز الدرعية",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv1_display_ar#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910662436195045376",
+          "media_metadata": {
+           "3_1910662436195045376": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQJXNMWkAAjmzV.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "أرماني ريزيدنسز الدرعية",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv1_display_ar#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910662459653836801",
+          "media_metadata": {
+           "3_1910662459653836801": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQJYklXUAEvE5c.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "أرماني ريزيدنسز الدرعية",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv1_display_ar#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ]
+       ]
+      },
+      {
+       "id": "1910662767989710848",
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KSA_Prospecting_EN_Conve",
+       "card_type": "IMAGE_MULTI_DEST_CAROUSEL_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-04-11T11:54:37Z",
+       "slides": [
+        [
+         {
+          "media_key": "3_1910661436117790720",
+          "media_metadata": {
+           "3_1910661436117790720": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQIc_nWsAAUPDL.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Armani Residences Diriyah",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv1_display_en#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910661484058697728",
+          "media_metadata": {
+           "3_1910661484058697728": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQIfyNW4AAu_6T.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Armani Residences Diriyah",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv1_display_en#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910661515436236800",
+          "media_metadata": {
+           "3_1910661515436236800": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQIhnGWIAAQD9v.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Armani Residences Diriyah",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv1_display_en#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910661544695730176",
+          "media_metadata": {
+           "3_1910661544695730176": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQIjUGWkAAnBQl.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Armani Residences Diriyah",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv1_display_en#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ]
+       ]
+      }
+     ]
+    },
+    "meta": {
+     "mcp_result_projection": {
+      "fields": [
+       "id",
+       "name",
+       "card_type",
+       "deleted",
+       "updated_at",
+       "components",
+       "slides"
+      ],
+      "max_items": 2000
+     }
+    }
+   },
+   "meta": {
+    "requestId": "45336d8f-1e3a-479f-b518-878f72a2c505",
+    "latencyMs": 1921
+   }
+  }
+ },
+ {
+  "tool_use_id": "toolu_01S4eenvzTiP5dkq36NHB78P",
+  "input": {
+   "action": "LIST_CARDS",
+   "account_id": "18ce55o46ul",
+   "path_params": {
+    "account_id": "18ce55o46ul"
+   },
+   "params": {
+    "card_ids": "1910664087639293952,1910664088000028672,1910665083581026304,1910665083585273856,1910665985268326400,1910665985998147584,1912020205917626368,1912020364982427648,1912020960686850048,1912020867191562241,1912021346407546880,1912021438065737728,1912021757059371008,1912021670442786816,1912385927969746944,1912385927860654080,1912385707722629120,1912385707512909824",
+    "with_deleted": true,
+    "include_legacy_cards": true,
+    "count": 200
+   },
+   "result_fields": [
+    "id",
+    "name",
+    "card_type",
+    "deleted",
+    "updated_at",
+    "components",
+    "slides"
+   ],
+   "max_items": 2000
+  },
+  "result": {
+   "success": true,
+   "data": {
+    "success": true,
+    "data": {
+     "request": {
+      "params": {
+       "count": 200,
+       "include_legacy_cards": true,
+       "account_id": "18ce55o46ul",
+       "card_ids": [
+        "1910664087639293952",
+        "1910664088000028672",
+        "1910665083581026304",
+        "1910665083585273856",
+        "1910665985268326400",
+        "1910665985998147584",
+        "1912020205917626368",
+        "1912020364982427648",
+        "1912020960686850048",
+        "1912020867191562241",
+        "1912021346407546880",
+        "1912021438065737728",
+        "1912021757059371008",
+        "1912021670442786816",
+        "1912385927969746944",
+        "1912385927860654080",
+        "1912385707722629120",
+        "1912385707512909824"
+       ],
+       "with_deleted": true
+      }
+     },
+     "next_cursor": null,
+     "data": [
+      {
+       "id": "1910664088000028672",
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_UAE_Prospecting_EN_Conve",
+       "card_type": "IMAGE_MULTI_DEST_CAROUSEL_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-04-11T11:59:51Z",
+       "slides": [
+        [
+         {
+          "media_key": "3_1910662339788955648",
+          "media_metadata": {
+           "3_1910662339788955648": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQJRmDWYAAYGCi.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "أرماني ريزيدنسز الدرعية",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv1_display_ar#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910662400958689280",
+          "media_metadata": {
+           "3_1910662400958689280": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQJVJ7WcAASHFb.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "أرماني ريزيدنسز الدرعية",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv1_display_ar#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910662436195045376",
+          "media_metadata": {
+           "3_1910662436195045376": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQJXNMWkAAjmzV.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "أرماني ريزيدنسز الدرعية",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv1_display_ar#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910662459653836801",
+          "media_metadata": {
+           "3_1910662459653836801": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQJYklXUAEvE5c.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "أرماني ريزيدنسز الدرعية",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv1_display_ar#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ]
+       ]
+      },
+      {
+       "id": "1910664087639293952",
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_UAE_Prospecting_EN_Conve",
+       "card_type": "IMAGE_MULTI_DEST_CAROUSEL_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-04-11T11:59:51Z",
+       "slides": [
+        [
+         {
+          "media_key": "3_1910661436117790720",
+          "media_metadata": {
+           "3_1910661436117790720": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQIc_nWsAAUPDL.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Armani Residences Diriyah",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv1_display_en#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910661484058697728",
+          "media_metadata": {
+           "3_1910661484058697728": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQIfyNW4AAu_6T.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Armani Residences Diriyah",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv1_display_en#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910661515436236800",
+          "media_metadata": {
+           "3_1910661515436236800": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQIhnGWIAAQD9v.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Armani Residences Diriyah",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv1_display_en#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910661544695730176",
+          "media_metadata": {
+           "3_1910661544695730176": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQIjUGWkAAnBQl.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Armani Residences Diriyah",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv1_display_en#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ]
+       ]
+      },
+      {
+       "id": "1910665083581026304",
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_QAT_Prospecting_EN_Conve",
+       "card_type": "IMAGE_MULTI_DEST_CAROUSEL_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-04-11T12:03:49Z",
+       "slides": [
+        [
+         {
+          "media_key": "3_1910661436117790720",
+          "media_metadata": {
+           "3_1910661436117790720": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQIc_nWsAAUPDL.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Armani Residences Diriyah",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv1_display_en#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910661484058697728",
+          "media_metadata": {
+           "3_1910661484058697728": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQIfyNW4AAu_6T.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Armani Residences Diriyah",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv1_display_en#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910661515436236800",
+          "media_metadata": {
+           "3_1910661515436236800": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQIhnGWIAAQD9v.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Armani Residences Diriyah",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv1_display_en#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910661544695730176",
+          "media_metadata": {
+           "3_1910661544695730176": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQIjUGWkAAnBQl.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Armani Residences Diriyah",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv1_display_en#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ]
+       ]
+      },
+      {
+       "id": "1910665083585273856",
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_QAT_Prospecting_EN_Conve",
+       "card_type": "IMAGE_MULTI_DEST_CAROUSEL_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-04-11T12:03:49Z",
+       "slides": [
+        [
+         {
+          "media_key": "3_1910662339788955648",
+          "media_metadata": {
+           "3_1910662339788955648": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQJRmDWYAAYGCi.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "أرماني ريزيدنسز الدرعية",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv1_display_ar#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910662400958689280",
+          "media_metadata": {
+           "3_1910662400958689280": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQJVJ7WcAASHFb.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "أرماني ريزيدنسز الدرعية",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv1_display_ar#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910662436195045376",
+          "media_metadata": {
+           "3_1910662436195045376": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQJXNMWkAAjmzV.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "أرماني ريزيدنسز الدرعية",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv1_display_ar#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910662459653836801",
+          "media_metadata": {
+           "3_1910662459653836801": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQJYklXUAEvE5c.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "أرماني ريزيدنسز الدرعية",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv1_display_ar#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ]
+       ]
+      },
+      {
+       "id": "1910665985268326400",
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KWT_Prospecting_EN_Conve",
+       "card_type": "IMAGE_MULTI_DEST_CAROUSEL_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-04-11T12:07:24Z",
+       "slides": [
+        [
+         {
+          "media_key": "3_1910661436117790720",
+          "media_metadata": {
+           "3_1910661436117790720": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQIc_nWsAAUPDL.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Armani Residences Diriyah",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv1_display_en#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910661484058697728",
+          "media_metadata": {
+           "3_1910661484058697728": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQIfyNW4AAu_6T.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Armani Residences Diriyah",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv1_display_en#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910661515436236800",
+          "media_metadata": {
+           "3_1910661515436236800": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQIhnGWIAAQD9v.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Armani Residences Diriyah",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv1_display_en#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910661544695730176",
+          "media_metadata": {
+           "3_1910661544695730176": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQIjUGWkAAnBQl.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Armani Residences Diriyah",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv1_display_en#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ]
+       ]
+      },
+      {
+       "id": "1910665985998147584",
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KWT_Prospecting_EN_Conve",
+       "card_type": "IMAGE_MULTI_DEST_CAROUSEL_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-04-11T12:07:24Z",
+       "slides": [
+        [
+         {
+          "media_key": "3_1910662339788955648",
+          "media_metadata": {
+           "3_1910662339788955648": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQJRmDWYAAYGCi.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "أرماني ريزيدنسز الدرعية",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv1_display_ar#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910662400958689280",
+          "media_metadata": {
+           "3_1910662400958689280": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQJVJ7WcAASHFb.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "أرماني ريزيدنسز الدرعية",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv1_display_ar#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910662436195045376",
+          "media_metadata": {
+           "3_1910662436195045376": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQJXNMWkAAjmzV.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "أرماني ريزيدنسز الدرعية",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv1_display_ar#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910662459653836801",
+          "media_metadata": {
+           "3_1910662459653836801": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQJYklXUAEvE5c.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "أرماني ريزيدنسز الدرعية",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv1_display_ar#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ]
+       ]
+      },
+      {
+       "id": "1912020205917626368",
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KSA_Prospecting_EN_Conve",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-04-15T05:48:35Z",
+       "components": [
+        {
+         "media_key": "3_1910660692086022144",
+         "media_metadata": {
+          "3_1910660692086022144": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/GoQHxr4W4AAIctb.jpg",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Armani Residences Diriyah",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv1_display_en#appointment-form",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1912020364982427648",
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KSA_Prospecting_AR_Conve",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-04-15T05:49:13Z",
+       "components": [
+        {
+         "media_key": "3_1910662096682971136",
+         "media_metadata": {
+          "3_1910662096682971136": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/GoQJDcaXcAAsezN.jpg",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "أرماني ريزيدنسز الدرعية",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv1_display_ar#appointment-form",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1912020867191562241",
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_UAE_Prospecting_EN_Conve",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-04-15T05:51:13Z",
+       "components": [
+        {
+         "media_key": "3_1910660692086022144",
+         "media_metadata": {
+          "3_1910660692086022144": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/GoQHxr4W4AAIctb.jpg",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Armani Residences Diriyah",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv1_display_en#appointment-form",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1912020960686850048",
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_UAE_Prospecting_AR_Conve",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-04-15T05:51:35Z",
+       "components": [
+        {
+         "media_key": "3_1910662096682971136",
+         "media_metadata": {
+          "3_1910662096682971136": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/GoQJDcaXcAAsezN.jpg",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "أرماني ريزيدنسز الدرعية",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv1_display_ar#appointment-form",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1912021346407546880",
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_QAT_Prospecting_EN_Conve",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-04-15T05:53:07Z",
+       "components": [
+        {
+         "media_key": "3_1910660692086022144",
+         "media_metadata": {
+          "3_1910660692086022144": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/GoQHxr4W4AAIctb.jpg",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Armani Residences Diriyah",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv1_display_en#appointment-form",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1912021438065737728",
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_QAT_Prospecting_AR_Conve",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-04-15T05:53:29Z",
+       "components": [
+        {
+         "media_key": "3_1910662096682971136",
+         "media_metadata": {
+          "3_1910662096682971136": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/GoQJDcaXcAAsezN.jpg",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "أرماني ريزيدنسز الدرعية",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv1_display_ar#appointment-form",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1912021670442786816",
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KWT_Prospecting_EN_Conve",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-04-15T05:54:24Z",
+       "components": [
+        {
+         "media_key": "3_1910660692086022144",
+         "media_metadata": {
+          "3_1910660692086022144": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/GoQHxr4W4AAIctb.jpg",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Armani Residences Diriyah",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv1_display_en#appointment-form",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1912021757059371008",
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KWT_Prospecting_AR_Conve",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-04-15T05:54:45Z",
+       "components": [
+        {
+         "media_key": "3_1910662096682971136",
+         "media_metadata": {
+          "3_1910662096682971136": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/GoQJDcaXcAAsezN.jpg",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "أرماني ريزيدنسز الدرعية",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv1_display_ar#appointment-form",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1912385707512909824",
+       "name": "[Copy] Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KSA_Prospecting_E",
+       "card_type": "IMAGE_MULTI_DEST_CAROUSEL_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-04-16T06:00:57Z",
+       "slides": [
+        [
+         {
+          "media_key": "3_1910661436117790720",
+          "media_metadata": {
+           "3_1910661436117790720": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQIc_nWsAAUPDL.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Armani Residences Diriyah",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv1-option2_display_en#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910661484058697728",
+          "media_metadata": {
+           "3_1910661484058697728": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQIfyNW4AAu_6T.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Armani Residences Diriyah",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv1-option2_display_en#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910661515436236800",
+          "media_metadata": {
+           "3_1910661515436236800": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQIhnGWIAAQD9v.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Armani Residences Diriyah",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv1-option2_display_en#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910661544695730176",
+          "media_metadata": {
+           "3_1910661544695730176": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQIjUGWkAAnBQl.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Armani Residences Diriyah",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv1-option2_display_en#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ]
+       ]
+      },
+      {
+       "id": "1912385707722629120",
+       "name": "[Copy] Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KSA_Prospecting_E",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-04-16T06:00:57Z",
+       "components": [
+        {
+         "media_key": "3_1910660692086022144",
+         "media_metadata": {
+          "3_1910660692086022144": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/GoQHxr4W4AAIctb.jpg",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Armani Residences Diriyah",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv1-option2_display_en#appointment-form",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1912385927860654080",
+       "name": "[Copy] Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KSA_Prospecting_A",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-04-16T06:01:50Z",
+       "components": [
+        {
+         "media_key": "3_1910662096682971136",
+         "media_metadata": {
+          "3_1910662096682971136": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/GoQJDcaXcAAsezN.jpg",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "أرماني ريزيدنسز الدرعية",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv1-option2_display_ar#appointment-form",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1912385927969746944",
+       "name": "[Copy] Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KSA_Prospecting_E",
+       "card_type": "IMAGE_MULTI_DEST_CAROUSEL_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-04-16T06:01:50Z",
+       "slides": [
+        [
+         {
+          "media_key": "3_1910662339788955648",
+          "media_metadata": {
+           "3_1910662339788955648": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQJRmDWYAAYGCi.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "أرماني ريزيدنسز الدرعية",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv1-option2_display_ar#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910662400958689280",
+          "media_metadata": {
+           "3_1910662400958689280": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQJVJ7WcAASHFb.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "أرماني ريزيدنسز الدرعية",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv1-option2_display_ar#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910662436195045376",
+          "media_metadata": {
+           "3_1910662436195045376": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQJXNMWkAAjmzV.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "أرماني ريزيدنسز الدرعية",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv1-option2_display_ar#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910662459653836801",
+          "media_metadata": {
+           "3_1910662459653836801": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQJYklXUAEvE5c.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "أرماني ريزيدنسز الدرعية",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv1-option2_display_ar#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ]
+       ]
+      }
+     ]
+    },
+    "meta": {
+     "mcp_result_projection": {
+      "fields": [
+       "id",
+       "name",
+       "card_type",
+       "deleted",
+       "updated_at",
+       "components",
+       "slides"
+      ],
+      "max_items": 2000
+     }
+    }
+   },
+   "meta": {
+    "requestId": "aff09b62-2044-40ec-b154-6120135c43cb",
+    "latencyMs": 1733
+   }
+  }
+ }
+]

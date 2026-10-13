@@ -1,0 +1,184 @@
+{
+ "in_snapchat_1.json": {
+  "run": "wf_9ad6fd8a-5ef",
+  "systemic_error": "",
+  "counts": {
+   "fixed": 3,
+   "already_fixed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "not_attempted": 0
+  },
+  "n_results": 3,
+  "changes_without_result": 0,
+  "notes": "apply9 Snapchat batch 1 (in_snapchat_1.json), 3 changes in 3 units, account b736921f-da3e-4889-8620-d3b0969c69b0 (Visit Diriyah). All 3 are Fixed and verified byte for byte. In this run the session safety check denied nothing, and there was no sign-in or auth problem.\n\nMethod per unit:\n1. Pre-read GET /v1/creatives/{id} (snapchat_creatives_creative_id_get). The live URL was the plan 'now' in all 3.\n2. Built the full creative object as read, with only web_view_properties.url set to 'new'.\n3. Dry run of snapchat_adaccounts_ad_account_id_creatives_update (PUT /v1/adaccounts/{id}/creatives). python3 confirmed the sent payload and the preview body equal the built payload exactly, and that only the URL differs from the live read.\n4. The same call with dry_run=false.\n5. GET read-back, then a full-object diff.\n\nCreative 88dcce9d has a headline ending in an invisible U+200B (zero-width space). It was sent as an explicit ​ escape and is preserved on read-back.\n\nSide effect: every PUT started Snap re-review. All 3 creatives went from review_status APPROVED to PENDING_REVIEW. Snap also dropped review_status_details and regenerated semantic_id and updated_at. Their ads were paused per the 11-Oct status (2 campaign-paused, 1 ad-set-paused), and no ad, ad set or campaign was touched. Re-check review_status later.\n\nNone of these slots are in excl_platform_refused_v2.json (it has no Snapchat entries). No new entities were created and nothing was deleted. No results file was written.\n\nWork files are in /tmp/claude-0/-home-user-test/5e42174a-3db2-542f-afff-62945df1761d/scratchpad/diriyah_utm/apply9/work_snapchat_1/:\n- sh.py (helper)\n- raw/u{0,1,2}_{before,dry,live,after}.json (byte-exact tool results taken from this agent's transcript)\n- payload/u{0,1,2}.json"
+ },
+ "in_x_1.json": {
+  "run": "wf_0e772e8d-86c",
+  "systemic_error": "",
+  "counts": {
+   "fixed": 0,
+   "already_fixed": 1,
+   "failed": 0,
+   "skipped": 3,
+   "not_attempted": 0
+  },
+  "n_results": 4,
+  "changes_without_result": 0,
+  "notes": "This attempt made no writes: no dry runs and no live calls. There were no safety-check denials and no sign-in problems. Files from an earlier attempt of this same batch were already in work_x_1 (x9.py, pre_0/post_0, share_check.json, results9.py). I did fresh live reads for all 4 changes.\nUnit 0 (card 2087162068705103873, account 18ce55o46uh): the live slot already equals new byte for byte, so it is AlreadyFixed. The earlier attempt wrote it (UPDATE_CARD live req fcfb2d17-4c2e-410f-9cc5-dfc62aa4200e).\nUnits 1-3 (account 18ce55o46ul): the plan's unit ids are tweet ids, not card ids, which is why GET_CARD returns 404. Each tweet carries its own card: 2095131822749524008 has card://2095131819687464963, 2095139956872167629 has card://2095139954829447168, and 2095139958206177684 has card://2095139954837917698. All three are IMAGE_CAROUSEL_WEBSITE cards whose components[1] URL still equals now byte for byte.\nHowever, LIST_PROMOTED_TWEETS (req c34a9a0c-8830-457e-8207-3f74025902ee) shows that today, 2026-10-13 at about 10:48 UTC, each tweet was also promoted in new line items: b6006s (xwb2v) for unit 1, b6006m (xwb2t) for unit 2 and b6006t (xwb2v) for unit 3. None of these is in the unit's ad_ids, so all three are Skipped as \"card shared by other promoted tweets\".\nTo apply them, the plan would need to cover the new promoted tweets too, because a card edit changes the URL for both ads. The same two new line items hold 11 other new promoted tweets created today (b6006i-o, b6006p-v), which may need their own URL check.\nEvidence and helper scripts are in /tmp/claude-0/-home-user-test/5e42174a-3db2-542f-afff-62945df1761d/scratchpad/diriyah_utm/apply9/work_x_1/ (r2_pre_0.json, r2_pre_123.json, r2_share.json, r2_results.py)."
+ },
+ "in_tiktok_1.json": {
+  "run": "wf_9af16efa-e58",
+  "systemic_error": "",
+  "counts": {
+   "fixed": 0,
+   "already_fixed": 2,
+   "failed": 6,
+   "skipped": 0,
+   "not_attempted": 0
+  },
+  "n_results": 8,
+  "changes_without_result": 0,
+  "notes": "apply9 in_tiktok_1, run 2 (agent aaabef7ac47e33c01, wf_9af16efa-e58, 13-Oct 11:46-11:53 UTC). An earlier run had already started this batch (apply9 run 1, agent a14343dd39c0d2588, wf_0b1bfc20-cbb, 11:33-11:44 UTC). The user interrupted it before it reported. I re-read every ad live and used that run's transcript only as history.\n\nResults: 0 Fixed in this run, 2 AlreadyFixed, 6 Failed, 0 Skipped, 0 NotAttempted.\n- AlreadyFixed: 1851131628175586 and 1877576474616274. Run 1 wrote both at 11:43 and 11:44 UTC (TikTok code 0), and both still equal \"new\" byte for byte.\n- Failed: the six \"Hero with Super\" Spark Pull ads. They all use AUTH_CODE identity 7031391213458752514 (\"Visit DIRIYAH\") and the same post, tiktok_item_id 7574495687715474696. TikTok refuses every ad/update that carries this post with 40002 \"Unable to get Spark Ad post information. Try again.\": 5 refusals in run 1 (11:37-11:41 UTC) and 1 more in this run (11:51:51 UTC, ad 1851220554959041). identity/video/info for the post returns 40000 \"Unable to fetch a valid item\" (req 20261013194956EF5A8179A290B350EFC1), but identity/info shows the identity itself as AVAILABLE (req 2026101319500895033A7E77337E379945). So the post's Spark authorisation, or the post itself, no longer resolves. This is the same symptom as the platform-refused Spark Pull ads of 12-Oct.\n\nTo avoid repeating calls that are certain to fail, I sent only 1 live write in this run: to 1851220554959041, the only one of these changes that had never been sent (dry run clean, then refused). I did not re-send the other 5. TikTok had already refused each of them in this batch, and the cause still holds. The first unit, 1851221512925201, also already had 2 live attempts (the 12-Oct ~22:0x UTC outage timeout in apply7, then the 40002 refusal in run 1). That is the 2-attempt cap, so I read and recorded it with no dry run or live write.\n\nAll 6 ads are unchanged: URL == now, utm_params still include utm_id, same tiktok_item_id, modify_time still from 12-Oct (final read req 20261013195203C6164ECA0C14A5B6238E). To fix them, either edit the URL in TikTok Ads Manager or have the creator re-authorise post 7574495687715474696, then re-run. Consider adding these 6 ads to the platform-refused list.\n\nOther notes:\n- There were no Spark Push ads in this batch.\n- No session safety-check denials and no Whathead sign-in problems in this run.\n- On 1851131628175586, modify_time moved from 11:43:17 to 11:46:53 UTC after run 1's write. No visible field changed, and no agent call touched the ad after 11:44.\n\nWork files are in /tmp/claude-0/-home-user-test/5e42174a-3db2-542f-afff-62945df1761d/scratchpad/diriyah_utm/apply9/work_tiktok_1/run2/ (h2.py read-only helper, payload_1851220554959041.json). Run 1's helper files in work_tiktok_1/ were left untouched."
+ },
+ "in_google_sl_1.json": {
+  "run": "wf_bc821e36-21b",
+  "systemic_error": "",
+  "counts": {
+   "fixed": 17,
+   "already_fixed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "not_attempted": 0
+  },
+  "n_results": 17,
+  "changes_without_result": 0,
+  "notes": "apply9 in_google_sl_1.json (account 8324286739, 17 sitelink assets, 17 changes): 17 Fixed. None of the 17 asset ids is on excl_platform_refused_v2.json. Pre-read GAQL b2439c22-8979-460f-81fe-f80ea5eb9a67: every asset was SITELINK REVIEWED/APPROVED, final_urls[0] equal to the plan's \"now\", and no asset final_url_suffix, tracking template, custom parameters or mobile URLs. Parent levels are clean too: no final_url_suffix or tracking template on any linked ad group or campaign (reads 6db25695-0066-4561-81c2-139c9e98704b and 95f3c84c-c421-4295-93df-9ec5999a6e19) or on the account (ade89684-01fe-4fbe-90e6-b3d5d8c8991f). Unit 1 (365237652291) was done first and on its own: dry_run 252d8958-fc40-438b-bb24-5bc60e614b76, live AssetService MutateAssets ec9edecc-3736-4bbd-b523-d0343453abcf, read-back d74760d5-2220-45bd-8242-40c26d1e7cae byte-equal. The other 16: fresh re-read dbac7a3e-04bb-4344-b791-b3413a25674e (all still == now), dry_run preview b631e52b-5453-47eb-8c6d-23ea89afcc58, then a Google validate_only pass bbe450d6-87c2-45d1-9fee-29586a9b4604 (no errors), then one live batch cf7238a5-f143-46bb-b4cf-f790314a0ef1 with 16 results. Every operation was update_mask \"final_urls\" only. One live write attempt per change, no retries, nothing denied by the session safety check, no sign-in prompt. Final read-back of all 17 (a78a83cc-5f39-4c61-b6b8-4034eaf2cbae): final_urls == [new] byte for byte. Link text and both descriptions are unchanged, and nothing else was touched. Side effect: all 17 assets went from REVIEWED/APPROVED to REVIEW_IN_PROGRESS (Google re-reviews an asset after a URL edit). Their campaigns were PAUSED on 11-Oct. Work files (no results file written): /tmp/claude-0/-home-user-test/5e42174a-3db2-542f-afff-62945df1761d/scratchpad/diriyah_utm/apply9/work_google_sl_1/ (preread.json, reread16.json, readback_unit1.json, readback_all.json, adgroup_links.json, idem_ledger.json, payload_*.json, classify.py, payload.py, verify.py, build_results.py)."
+ },
+ "in_google_3.json": {
+  "run": "wf_bc821e36-21b",
+  "systemic_error": "",
+  "counts": {
+   "fixed": 57,
+   "already_fixed": 0,
+   "failed": 1,
+   "skipped": 0,
+   "not_attempted": 0
+  },
+  "n_results": 58,
+  "changes_without_result": 0,
+  "notes": "in_google_3.json: 58 units / 58 changes. All are Google Ads ads (slot ad.final_urls[0]) in account 8324286739 (H&S - DGCL - Visit Diriyah): 10 Demand Gen (multi-asset/video) and 48 RSA. All 58 campaigns are PAUSED. None is on excl_platform_refused_v2.json. 8 of the units (807081977671-807081977692) are Wadi Safar brand search ads inside the Visit Diriyah account; they were processed as listed. Fresh GAQL pre-reads showed all 58 live URLs equal to 'now' byte for byte, so none was AlreadyFixed or changed since plan. No final_url_suffix or tracking template exists at ad group, campaign or account level. 35 ads kept their old UTM/ValueTrack params in an ad-level final_url_suffix. For those, the same MutateAds op also set final_url_suffix \"\" (update_mask final_urls,final_url_suffix) so the landing URL equals new. Order of work: unit 1 (800023610878) went dry-run, live and verified alone. Next came a batch of 22 final_urls-only ops, then one suffix-clearing op (810176320945) verified alone, then a batch of 34 suffix ops with partial_failure. Every dry-run preview was checked against the input 'new' values with python3 before going live. No session safety-check denial and no sign-in prompt occurred. Result: 57 Fixed (GAQL read-back == new byte for byte, no suffix anywhere). 1 Failed: 810176354815, a PAUSED ad that was already DISAPPROVED. Google refused it with policy PROHIBITED DESTINATION_NOT_WORKING (target https://www.diriyah.sa/ar/dine/sarabeth...). It was not retried and stays at 'now'. Suggest adding it to the platform-refused list and checking that page. Ad and campaign statuses are identical before and after. The written ads now show approval_status UNKNOWN because Google re-reviews after a URL change. Nothing was deleted and no other field was touched. Work files: /tmp/claude-0/-home-user-test/5e42174a-3db2-542f-afff-62945df1761d/scratchpad/diriyah_utm/apply9/work_google_3/ (results_final.json holds these exact results; also payload_*.json, reads/, idem_ledger.json)."
+ },
+ "in_google_1.json": {
+  "run": "wf_295a17c2-06d",
+  "systemic_error": "",
+  "counts": {
+   "fixed": 39,
+   "already_fixed": 21,
+   "failed": 0,
+   "skipped": 0,
+   "not_attempted": 0
+  },
+  "n_results": 60,
+  "changes_without_result": 0,
+  "notes": "in_google_1.json: 60 changes in 60 Google RSA ads, account 8324286739. Results: 39 Fixed, 21 AlreadyFixed, 0 Failed, 0 Skipped, 0 NotAttempted. Nothing in this run was denied by the safety check and Whathead never asked to sign in again.\n\nBefore any write, the account-level final_url_suffix and tracking_url_template were checked and both are empty (GAQL 82b75f3b-cc69-4b6d-8202-aea61e543275). The pre-read of all 60 ads (GAQL 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c) found no suffix or tracking template on any ad, ad group or campaign.\n\nWrites:\n- First unit 797539717100 written alone and verified (MutateAds 1eeb021b-81a1-4677-946b-b0f0453e76a0).\n- Then 2 batches of 19, each with partial_failure: b1 (cb5420db-759e-41be-beae-e4dbcd36d516) and b2 (1dd20c1f-8b0a-4e3a-b9c5-4fc7281a85cc).\n- Every operation changed only final_urls (update_mask final_urls). No partial failures. One live attempt per change.\n\nFinal read-back of all 60 (GAQL a17e6ad2-aee7-4f26-81c3-e3722c9b63bd): each ad's final_urls equals [new] byte for byte, with no suffix at any level. Statuses did not change: 40 ads ENABLED and 20 PAUSED, all in PAUSED campaigns.\n\nContext:\n- An earlier apply9 run of this same batch (wf_6331729e-fc0, agent a85a05de) was stopped at 11:44:58 UTC before it returned any results. It had already written 21 of these ads: 797539717097 (MutateAds 1e5c31f8-b1b6-49c1-9359-3fd7611af01c), 800840046627 (dc84b626-fcd3-439f-81d0-32b44acbe91e), and units 3-21 (b8438be7-959c-4f4b-9402-70da05ccfcaf). They read equal to new here, so they are recorded as AlreadyFixed.\n- In that stopped run, the auto mode classifier denied a local python3 payload step for 797539717100 at 11:41 UTC, so that ad was not written then. In this run every call for it was allowed by the permission system; it is now written and verified.\n- No ad in this batch is in excl_platform_refused_v2.json.\n- Input ad_names were [null] (RSAs have no names), reported as [].\n- Work files: /tmp/claude-0/-home-user-test/5e42174a-3db2-542f-afff-62945df1761d/scratchpad/diriyah_utm/apply9/work_google_1/r9/ (pre_raw.json, pre_class.json, payload_*.json, post_raw.json, post_class.json, results_compact.json)."
+ },
+ "in_google_2.json": {
+  "run": "wf_295a17c2-06d",
+  "systemic_error": "",
+  "counts": {
+   "fixed": 57,
+   "already_fixed": 3,
+   "failed": 0,
+   "skipped": 0,
+   "not_attempted": 0
+  },
+  "n_results": 60,
+  "changes_without_result": 0,
+  "notes": "apply9 in_google_2 (60 units, 60 changes, all Google ads in account 8324286739, slot ad.final_urls[0]; none in excl_platform_refused_v2.json). Context: an earlier apply9 attempt for this same batch (run wf_6331729e-fc0, agent ae268729aac6daadf, stopped 11:44:58 UTC) had already live-written 800840046888, 797795488551 and 797795488554, and the session safety check had denied two of its local Bash python3 steps (a batch-split step [Production Deploy] and a verify/prepare script [Modify Shared Resources]); none of its MCP calls were denied. In this run every unit was re-read fresh first: 3 already equal new (AlreadyFixed, no write); 57 were exactly at \"now\" with no final_url_suffix or tracking template on ad, ad group, campaign or account, so no parent-suffix cases. Writes in this run: first unit 800840046891 alone (dry run 43c41ad1, live 9f9b1934, read-back 869f49a9); then RSA batch A of 23 (pre-read 605c4513, dry run 05b981fb, live a52033b6, read-back 52110d3c); RSA batch B of 23 (pre-read a57c8d53, dry run 249f119f, live 226c4b52, read-back f1ce9fe0); Demand Gen batch of 10 (pre-read 67589212, dry run 13018ca2, API validate_only 83a286c0 passed, live 49d5a317, read-back 03f704ad). Each live call used AdService MutateAds update with update_mask final_urls only (batches with partial_failure=true; no partial failure returned). One live attempt per change; no retries were needed. Every dry-run body and every live request's sent params were checked by script against the input byte for byte, and every read-back is byte-equal to \"new\". Side effect: Google reset policy approval to UNKNOWN (re-review after the URL edit) on every edited ad. Ad statuses (ENABLED/PAUSED) and campaign status (PAUSED) are unchanged. No status, budget, bid, text, asset or other field was touched. No session-safety-check denial, sign-in prompt or API error occurred in this run. Local steps were read-only parsers (no payload, ledger or results files): /tmp/claude-0/-home-user-test/5e42174a-3db2-542f-afff-62945df1761d/scratchpad/diriyah_utm/apply9/work_google_2/v2/chk.py, report.py, tlog.py, tshow.py. The earlier attempt's files in work_google_2/ were left untouched."
+ },
+ "in_meta_6.json": {
+  "run": "wf_0e8c7aae-4af",
+  "systemic_error": "",
+  "counts": {
+   "fixed": 4,
+   "already_fixed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "not_attempted": 0
+  },
+  "n_results": 4,
+  "changes_without_result": 0,
+  "notes": "apply9 in_meta_6.json: 3 units, 4 changes, all on Meta act_2194833637927644 (Diriyah Co). All 4 are Fixed. None of the ads is on the platform-refused list, none is archived, and no 11-Oct payload exists for any of them. Every slot was re-read right before its write and held exactly \"now\". Each new creative is an exact copy of the live one with only the URL slot(s) changed. For each one, the dry-run preview body was checked against the payload file, and the creative was read back before it was attached. Each ad got exactly one live creative create and one live attach (no status sent). The read-backs equal \"new\" byte for byte, with no url_tags. Configured statuses are unchanged (PAUSED, PAUSED, ACTIVE); all 3 ads are now IN_PROCESS (Meta review, expected). New creatives: 27611920031817279 (ad 120252926233800058), 4435799496637060 (ad 120252926501110058, used for both link_urls slots) and 1072754602416428 (ad 120251844312230058, the same Instagram post, so it keeps its likes and comments). Meta-side differences only: it added a date-hash suffix to each creative name, filled unspecified degrees_of_freedom features as OPT_OUT (none set to OPT_IN), and set the default creative_sourcing_spec to OPT_OUT. One dry-run creative create timed out at the gateway (req 9cd253a8-59e6-47d0-b4f6-2e48bd92546a). Being a dry run, it sent nothing; the retried dry run succeeded. No call was denied by the session safety check and there was no sign-in problem. Work files are in /tmp/claude-0/-home-user-test/5e42174a-3db2-542f-afff-62945df1761d/scratchpad/diriyah_utm/apply9/work_meta_6/ (lib6.py, orig_/payload_/new_/pre_ad_/after_ad_ files, steps.json, final_results.json)."
+ },
+ "in_meta_5.json": {
+  "run": "wf_0e8c7aae-4af",
+  "systemic_error": "",
+  "counts": {
+   "fixed": 11,
+   "already_fixed": 0,
+   "failed": 1,
+   "skipped": 0,
+   "not_attempted": 0
+  },
+  "n_results": 12,
+  "changes_without_result": 0,
+  "notes": "apply9 in_meta_5: 12 units / 12 changes, all on ad account 2194833637927644 (Diriyah Co). At pre-read every live slot equalled the plan's 'now' byte for byte. None of these ads is in excl_platform_refused_v2 (or v3 / the Wadi Safar exclusions). None of the 11-Oct payload files in payloads/ were for these ads.\n\nResults: 11 Fixed, each read back byte for byte equal to 'new'. Status was never sent; configured statuses are unchanged and every touched ad went back to review (IN_PROCESS).\n\nNew creatives:\n- 2060753611287139: one creative shared by the 7 resi-patio-kv2 AR ads with the identical sep26_cond target (120253320140900058, 120253320140470058, 120253320135410058, 120253320140540058, 120253320134630058, 120253320147610058, 120253320146660058), as instructed for ads sharing one creative with the same change.\n- 1662154778591314: ad 120253320140880058 (oct26_cond).\n- 3650208231800962: ad 120253320122030058 (sep26_awr).\n- 1633313738199944: ad 120249174244350058.\n- 1633681891747166: ad 120251844393910058 (boosted IG carousel; same IG media 18127487731730530).\n\nEvery new creative was read back. Apart from the URL, the only differences are Meta's name-dedupe suffix and Meta's added all-OPT_OUT feature defaults; no OPT_IN appeared. On 2 creatives the deprecated degrees_of_freedom_spec key standard_enhancements (OPT_OUT) was not sent, because Meta rejects it on create.\n\n1 Failed: ad 120252966441120058 (ManazelAlHadawi KV3). Live create attempt 1 failed at the Whathead gateway with BACKEND_ERROR 'Network error contacting backend' (req 0ad432b0-63c8-4b62-9418-a3a0c171dd1c, 348 ms). Attempt 2 was refused by the Whathead MCP server with HTTP 402 subscription_required 'Billing must be configured for this workspace before using Whathead MCP.' The retry limit was then reached. No creative id was returned. The ad is unchanged: still on creative 1867098600919987 with the old URL. It is safe to re-run.\n\nThe 402 was transient: later writes in this run succeeded. Other lanes may hit the same billing message.\n\nThere were no safety-check denials and no sign-in prompts. Work files (payloads, parsed reads, helper lib5.py): /tmp/claude-0/-home-user-test/5e42174a-3db2-542f-afff-62945df1761d/scratchpad/diriyah_utm/apply9/work_meta_5/"
+ },
+ "in_meta_4.json": {
+  "run": "wf_f76d0421-984",
+  "systemic_error": "",
+  "counts": {
+   "fixed": 4,
+   "already_fixed": 2,
+   "failed": 0,
+   "skipped": 0,
+   "not_attempted": 0
+  },
+  "n_results": 6,
+  "changes_without_result": 0,
+  "notes": "apply9 in_meta_4 (13-Oct-2026, act_2194833637927644 Diriyah Co): 6 changes on 6 ads, every change has one result. 4 Fixed (120249174447430058, 120249117561500058, 120252966398780058, 120252572195190058) and 2 AlreadyFixed (120252961471770058, 120252862568190058). 0 Failed, 0 Skipped. The safety check denied none of this run's calls. No Whathead sign-in prompt appeared. No ad was archived. No slot was in excl_platform_refused_v2.json, and no 11-Oct payload existed for these ads.\n\nContext: an earlier run of this same batch (wf_4c644ce9-3b9, agent a464c63c2c8f672fd) was interrupted by the user at 11:44:58 UTC and never reported. From its transcript:\n- It created and attached creatives 1414653307314843 (ad 120252961471770058) and 1123822793677302 (ad 120252862568190058). Those two ads are reported here as AlreadyFixed, with that run's request ids.\n- It created creative 967332096432226 for ad 120249174447430058 but never attached it, because its next local step was denied. The creative was built from the exact-copy payload, and on read-back its URL equals \"new\". It is identical to the live creative apart from fields Meta sets itself, so this run attached it instead of creating a duplicate.\n- It sent only dry runs, or nothing, for the other ads.\n\nEvery ad in the batch now carries the target URL. Each sits on a creative that is an exact copy of its old creative with only asset_feed_spec.link_urls[0].website_url changed:\n- created and attached in this run: 2216693072247554, 1048855381510968, 4460827127513220\n- attached in this run (created by the interrupted run): 967332096432226\n- created and attached by the interrupted run: 1414653307314843, 1123822793677302\n\nNo created creative is left unattached. Nothing was deleted. Status was never sent; configured_status is unchanged on all ads (3 PAUSED, 3 ACTIVE). The 4 ads written in this run are IN_PROCESS (in review); the 2 AlreadyFixed ads are already ACTIVE again.\n\nThe three KV3 ads shared old creative 1776445050057442 but needed different URLs, so each has its own creative.\n\nAd 120252572195190058 was on creative 1733202344430440 (created 11-Oct), not the plan's 1786961842398673. Its slot still equalled \"now\", so it was written. Its site links were sent with title, URL and image hash only, without the derived site_link_image_url, as in apply8.\n\nDifferences from the old creatives are only fields Meta sets itself:\n- a date suffix on the name\n- a new dark post id\n- re-signed image proxy URLs\n- a degrees_of_freedom_spec listing up to 83 creative features, all OPT_OUT, so no feature was switched on\n\nWork files (reads, payloads, scripts) are in /tmp/claude-0/-home-user-test/5e42174a-3db2-542f-afff-62945df1761d/scratchpad/diriyah_utm/apply9/work_meta_4/run2/. Inline results were compared by script by reading this agent's own transcript (read-only). The temporary results copies used to print exact URLs were deleted."
+ },
+ "in_meta_3.json": {
+  "run": "wf_f76d0421-984",
+  "systemic_error": "",
+  "counts": {
+   "fixed": 22,
+   "already_fixed": 2,
+   "failed": 0,
+   "skipped": 0,
+   "not_attempted": 0
+  },
+  "n_results": 24,
+  "changes_without_result": 0,
+  "notes": "apply9 in_meta_3 (relaunch wf_f76d0421-984): 12 units / 24 changes, all on ad account 2194833637927644 (Diriyah Co). Result: 22 Fixed, 2 AlreadyFixed, 0 Failed, 0 Skipped. Every read-back equals \"new\" byte for byte. Each new creative's create input was checked against the payload rebuilt from the live creative: its dry-run body equals that payload, and its read-back shows no change except the URL plus fields Meta sets itself (degrees_of_freedom all OPT_OUT, a date suffix on the name, cut to 100 characters where long). No status was sent: configured statuses are unchanged and the edited ads are now IN_PROCESS (Meta review). The safety check denied nothing in this run, Whathead never asked to sign in, and Meta refused nothing.\n\nContext: the earlier in_meta_3 agent (run wf_4c644ce9-3b9) had already done some live work before this relaunch, and its last call was rejected at 11:44:56 UTC. It (a) fully fixed ad 120252925092860058 with creative 1094704503143112, reported here as AlreadyFixed; (b) created creative 1463789968940834 for ad 120250837203070058 but never attached it, because a local step was denied; (c) created creative 1784997465881174 for ad 120252926501150058 but never attached it. This run re-read both of those creatives, confirmed each is identical to the live creative except the target URL, and attached them instead of creating duplicates.\n\nNew creatives made in this run: 1501028818519265, 1109735604785564, 1108773658514036 (shared by 2 ads), 2342801556520183, 1744787543489978 (shared by 3 ads), 1924555665195780. Ads that shared one creative still share one new creative. Nothing was left unattached and nothing was deleted.\n\nWork files (payloads, pre-reads, new-creative reads, helper lib9b.py) are in /tmp/claude-0/-home-user-test/5e42174a-3db2-542f-afff-62945df1761d/scratchpad/diriyah_utm/apply9/work_meta_3/r2/. The earlier agent's files in work_meta_3/ were left untouched. A compiled-results scratch file was written by mistake and deleted at once."
+ },
+ "in_meta_2.json": {
+  "run": "wf_a7eb34b7-091",
+  "systemic_error": "",
+  "counts": {
+   "fixed": 10,
+   "already_fixed": 2,
+   "failed": 5,
+   "skipped": 0,
+   "not_attempted": 0
+  },
+  "n_results": 17,
+  "changes_without_result": 0,
+  "notes": "apply9 in_meta_2 (relaunch wf_a7eb34b7-091), 13-Oct-2026 11:45-12:12 UTC. 12 units / 17 changes. Results: 10 Fixed, 2 AlreadyFixed, 5 Failed (Meta refusal), 0 Skipped, 0 NotAttempted. The session safety check denied nothing in this run; every Bash and Whathead call was accepted by the config allow rules. Whathead never asked to sign in again. Context: an earlier launch of this same lane (wf_3fd345d7-527, agent a0fab800da01a92da) was interrupted by the user at 11:44:58 UTC after it had already written ads 120246281970460789 (new creative 1100268182794129) and 120246281860070789 (new creative 3473389212853409). Both were attached and match the target, so this run reports them as AlreadyFixed. That launch also tried 120249469776610789 once (refused by Meta). In this run, 9 new creatives were created and every one was attached to its ad: 1148590627696320, 2090332321852395, 2925692664455139, 988107454311285, 4452834971697526, 1492837462681104, 28690895523893126, 2172069633408128, 979409411173088. No unattached creatives were left, nothing was deleted, and status was never sent. The old creatives were not modified. Ads 120253320146510058 and 120253320121970058 shared creative 1119363580774125 but needed different targets, so each got its own new creative and they no longer share one post. Unit 120249469776610789 (Bab Samhan CR1 carousel) was refused by Meta with code 100 / subcode 2446581 (interactive_components_spec count mismatch) on both allowed attempts, the 11:42Z attempt by the earlier launch and the 11:55Z attempt by this run, using the identical exact-copy payload. It needs the user: Ads Manager, or a copy without the parent image. One procedural deviation: for ad 120247743165910789, the attach dry run, the live attach and the read-back were sent in one batch, not one after another. The preview showed creative_id only, and the read-back and the final re-read confirm the result. Final verification was a sequential re-read of all 12 ads at 12:11 UTC (requests 13d4ce1a-83a3-4f2a-b74e-38f7e69f04f6 and c77e9786-279b-4ec8-a532-b58ed2729a8b). Work files (helper m2lib.py plus orig_/payload_/new_ JSON) are in /tmp/claude-0/-home-user-test/5e42174a-3db2-542f-afff-62945df1761d/scratchpad/diriyah_utm/apply9/work_meta_2/."
+ },
+ "in_meta_1.json": {
+  "run": "wf_a7eb34b7-091",
+  "systemic_error": "",
+  "counts": {
+   "fixed": 10,
+   "already_fixed": 0,
+   "failed": 10,
+   "skipped": 0,
+   "not_attempted": 0
+  },
+  "n_results": 20,
+  "changes_without_result": 0,
+  "notes": "apply9 in_meta_1 (run 2, agent a4c2095f56449739f), account 1198625455580757. 12 units / 20 changes. The safety check denied nothing (every Whathead call and every python3 step went through) and Whathead never asked to sign in. 10 changes Fixed on 10 ads, each read back byte for byte. One reused creative: 1043904348702789 was created 13-Oct by the first, interrupted apply9 in_meta_1 run for ad 120247265667760789 and never attached. I re-read it, found it identical to the live creative except the URL, and attached it instead of creating a duplicate. 9 new creatives were created in this run and every one is attached: 1120351997195753, 1449251100472134, 1624796895896114, 1099871596241770, 1158626940159249, 1069058349291597, 1529473322321031, 38987372710910545, 1660865342105508. This run leaves no unattached creatives and deleted nothing. No status was sent: configured_status is unchanged on every ad and effective_status is IN_PROCESS (back in Meta review). Diffs of each new creative against its original showed only the URL plus Meta-side additions: a date-hash suffix on the name, explicit OPT_OUT entries for creative features (nothing newly opted in; pac_recomposition kept OPT_IN where it was), and re-signed image URLs. For ad 120248795877820789 Meta copied the 2 asset-feed videos to new video ids with the same titles and lengths, as it did in apply6/apply8. Its thumbnails were sent as full-resolution URIs of the same image files, because the creative read only exposed 160px renditions. 10 changes Failed: the 2 Bab Samhan carousels 120249469841600789 (CR2_AR) and 120249470780880789 (CR7_EN). Meta refused the exact copy with code 100 / 2446581 (interactive_components_spec count mismatch caused by the parent link_data.image_hash), the same refusal as apply8's 2 carousels. Nothing was created and the ads were not touched. I made one attempt each and did not retry or alter the creative. Their 10 slots should be added to the platform-refused list (as v3 did for the apply8 pair); they need Ads Manager or a copy without the parent image. Work files are in /tmp/claude-0/-home-user-test/5e42174a-3db2-542f-afff-62945df1761d/scratchpad/diriyah_utm/apply9/work_meta_1/ (m1lib.py, orig_*.json, payload_*.json, new_*.json; lib9.py and preread_ads.json come from the interrupted first run). I briefly wrote a results preview file (final_results_preview.json) there and deleted it at once; no results file remains."
+ }
+}

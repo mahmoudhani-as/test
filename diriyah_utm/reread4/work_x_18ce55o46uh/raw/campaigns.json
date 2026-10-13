@@ -1,0 +1,808 @@
+[
+ {
+  "tool_use_id": "toolu_01HhKGSsQBPw3ko3nXS2JErH",
+  "input": {
+   "action": "x_accounts_account_id_campaigns_get",
+   "path_params": {
+    "account_id": "18ce55o46uh"
+   },
+   "params": {
+    "count": 200,
+    "with_deleted": true,
+    "with_draft": true,
+    "campaign_ids": "lbbqw,lgswl,lgsx8,lgsy7,lgsym,lhu6q,lhu8d,m145m,m677w,m9g5f,m9g8m,m9j5f,m9j7a,meub8,mhp91,mhwo1,mhwp3,mhwpv,mhwql,mhwsc,mhwtg,mhwu5,mhwv4,mhww6,mhwx3,mtpp7,mtpqk,mu5dr,muctf,mucvq,o4w3m,o4xal,o76wh,o7kh2,o7o31,o8gs4,o8w0j,odyn4,odyow,odypj,odypr,odyt3,oeeqn,oeer0,oenop,opujc,opukr,oryzd,oudm1,ozhy5,ozi6p,pb8p8"
+   },
+   "result_fields": [
+    "id",
+    "name",
+    "entity_status",
+    "servable",
+    "reasons_not_servable",
+    "effective_status",
+    "deleted",
+    "updated_at"
+   ],
+   "max_items": 2000,
+   "compact": true
+  },
+  "result": {
+   "success": true,
+   "data": {
+    "success": true,
+    "data": {
+     "request": {
+      "params": {
+       "count": 200,
+       "with_draft": true,
+       "campaign_ids": [
+        "lbbqw",
+        "lgswl",
+        "lgsx8",
+        "lgsy7",
+        "lgsym",
+        "lhu6q",
+        "lhu8d",
+        "m145m",
+        "m677w",
+        "m9g5f",
+        "m9g8m",
+        "m9j5f",
+        "m9j7a",
+        "meub8",
+        "mhp91",
+        "mhwo1",
+        "mhwp3",
+        "mhwpv",
+        "mhwql",
+        "mhwsc",
+        "mhwtg",
+        "mhwu5",
+        "mhwv4",
+        "mhww6",
+        "mhwx3",
+        "mtpp7",
+        "mtpqk",
+        "mu5dr",
+        "muctf",
+        "mucvq",
+        "o4w3m",
+        "o4xal",
+        "o76wh",
+        "o7kh2",
+        "o7o31",
+        "o8gs4",
+        "o8w0j",
+        "odyn4",
+        "odyow",
+        "odypj",
+        "odypr",
+        "odyt3",
+        "oeeqn",
+        "oeer0",
+        "oenop",
+        "opujc",
+        "opukr",
+        "oryzd",
+        "oudm1",
+        "ozhy5",
+        "ozi6p",
+        "pb8p8"
+       ],
+       "account_id": "18ce55o46uh",
+       "with_deleted": true
+      }
+     },
+     "data": [
+      {
+       "id": "lbbqw",
+       "name": "VisitDiriyah_FoundingDay2024_UF_VID_KSA_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:06:31Z"
+      },
+      {
+       "id": "lgswl",
+       "name": "VisitDiriyah_Ramadan2024_UF_AWR_KSA_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:06:35Z"
+      },
+      {
+       "id": "lgsx8",
+       "name": "VisitDiriyah_Ramadan2024V2_UF_AWR_KSA_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:08:17Z"
+      },
+      {
+       "id": "lgsy7",
+       "name": "VisitDiriyah_Ramadan2024_UF_VID_KSA_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:08:21Z"
+      },
+      {
+       "id": "lgsym",
+       "name": "BujairiTerrace_Ramadan2024_UF_VID_KSA_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:06:53Z"
+      },
+      {
+       "id": "lhu6q",
+       "name": "BujairiTerrace_Ramadan2024_LF_CONV_KSA_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:08:24Z"
+      },
+      {
+       "id": "lhu8d",
+       "name": "BujairiTerrace_Ramadan2024_UF_VID_GCC_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:08:38Z"
+      },
+      {
+       "id": "m145m",
+       "name": "VisitDiriyah_AsharqPartnership2024_UF_VID_KSA_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:08:41Z"
+      },
+      {
+       "id": "m677w",
+       "name": "VisitDiriyah_Fortnite2024_UF_AWR_KSA_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:08:45Z"
+      },
+      {
+       "id": "m9g5f",
+       "name": "BujairiTerrace_Winter2024Tickets_UF_AWR_KSA_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:09:02Z"
+      },
+      {
+       "id": "m9g8m",
+       "name": "BujairiTerrace_Winter2024Tickets_LF_CONV_KSA_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:09:05Z"
+      },
+      {
+       "id": "m9j5f",
+       "name": "BujairiTerrace_Winter2024Restaurants_UF_AWR_KSA_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:09:09Z"
+      },
+      {
+       "id": "m9j7a",
+       "name": "BujairiTerrace_Winter2024Restaurants_LF_CONV_KSA_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:09:19Z"
+      },
+      {
+       "id": "meub8",
+       "name": "BujairiTerrace_Winter2024TicketsV2_UF_AWR_KSA_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:09:23Z"
+      },
+      {
+       "id": "mhp91",
+       "name": "BujairiTerrace_Winter2024Retail_UF_AWR_KSA_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:09:26Z"
+      },
+      {
+       "id": "mhwo1",
+       "name": "BujairiTerrace_Winter2024Tickets_UF_AWR_QAT_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:09:36Z"
+      },
+      {
+       "id": "mhwp3",
+       "name": "BujairiTerrace_Winter2024Tickets_UF_AWR_KWT_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:09:39Z"
+      },
+      {
+       "id": "mhwpv",
+       "name": "BujairiTerrace_Winter2024Tickets_UF_AWR_UAE_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:09:43Z"
+      },
+      {
+       "id": "mhwql",
+       "name": "BujairiTerrace_Winter2024Tickets_UF_AWR_OMN_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:09:52Z"
+      },
+      {
+       "id": "mhwsc",
+       "name": "BujairiTerrace_Winter2024Restaurants_UF_AWR_QAT_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:09:59Z"
+      },
+      {
+       "id": "mhwtg",
+       "name": "BujairiTerrace_Winter2024Tickets_UF_AWR_BAH_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:09:56Z"
+      },
+      {
+       "id": "mhwu5",
+       "name": "BujairiTerrace_Winter2024Restaurants_UF_AWR_KWT_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:10:13Z"
+      },
+      {
+       "id": "mhwv4",
+       "name": "BujairiTerrace_Winter2024Restaurants_UF_AWR_UAE_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:10:16Z"
+      },
+      {
+       "id": "mhww6",
+       "name": "BujairiTerrace_Winter2024Restaurants_UF_AWR_OMN_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:10:20Z"
+      },
+      {
+       "id": "mhwx3",
+       "name": "BujairiTerrace_Winter2024Restaurants_UF_AWR_BAH_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:10:33Z"
+      },
+      {
+       "id": "mtpp7",
+       "name": "BujairiTerrace_Ramadan2025Restaurants_UF_AWR_KSA_ENAR_X",
+       "entity_status": "PAUSED",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "PAUSED_BY_ADVERTISER",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "PAUSED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:10:36Z"
+      },
+      {
+       "id": "mtpqk",
+       "name": "BujairiTerrace_Ramadan2025Restaurants_MF_TRF_KSA_ENAR_X",
+       "entity_status": "PAUSED",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "PAUSED_BY_ADVERTISER",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "PAUSED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:12:27Z"
+      },
+      {
+       "id": "mu5dr",
+       "name": "BujairiTerrace_Ramadan2025Retail_UF_AWR_KSA_ENAR_X",
+       "entity_status": "PAUSED",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "PAUSED_BY_ADVERTISER",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "PAUSED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:12:11Z"
+      },
+      {
+       "id": "muctf",
+       "name": "BujairiTerrace_Ramadan2025Activations_UF_AWR_KSA_ENAR_X",
+       "entity_status": "PAUSED",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "PAUSED_BY_ADVERTISER",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "PAUSED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:12:15Z"
+      },
+      {
+       "id": "mucvq",
+       "name": "BujairiTerrace_Ramadan2025Activations_MF_TRF_KSA_ENAR_X",
+       "entity_status": "PAUSED",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "PAUSED_BY_ADVERTISER",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "PAUSED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:12:30Z"
+      },
+      {
+       "id": "o4w3m",
+       "name": "Test VD Nov",
+       "entity_status": "DRAFT",
+       "servable": false,
+       "reasons_not_servable": [
+        "DRAFT"
+       ],
+       "effective_status": "DRAFT",
+       "deleted": false,
+       "updated_at": "2025-11-20T09:01:33Z"
+      },
+      {
+       "id": "o4xal",
+       "name": "VisitDiriyah_Winter2025_UF_AWR_KSA_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:12:34Z"
+      },
+      {
+       "id": "o76wh",
+       "name": "BujairiTerrace_Winter2025Tickets_UF_AWR_KSA_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:12:43Z"
+      },
+      {
+       "id": "o7kh2",
+       "name": "Zallal_Winter2025_UF_AWR_KSA_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:12:50Z"
+      },
+      {
+       "id": "o7o31",
+       "name": "Zallal_Winter2025_MF_TRF_KSA_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:13:03Z"
+      },
+      {
+       "id": "o8gs4",
+       "name": "BujairiTerrace_Winter2025Tickets_LF_CONV_KSA_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:12:47Z"
+      },
+      {
+       "id": "o8w0j",
+       "name": "BabSamhan_Winter2025_UF_AWR_KSA_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:13:06Z"
+      },
+      {
+       "id": "odyn4",
+       "name": "BujairiTerrace_Ramadan2026_UF_AWR_KSA_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:13:10Z"
+      },
+      {
+       "id": "odyow",
+       "name": "BujairiTerrace_Ramadan2026_MF_TRF_KSA_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:13:20Z"
+      },
+      {
+       "id": "odypj",
+       "name": "BabSamhan_Ramadan2026_MF_TRF_KSA_ENAR_X",
+       "entity_status": "PAUSED",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "PAUSED_BY_ADVERTISER",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "PAUSED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:13:26Z"
+      },
+      {
+       "id": "odypr",
+       "name": "BabSamhan_Ramadan2026_UF_AWR_KSA_ENAR_X",
+       "entity_status": "PAUSED",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "PAUSED_BY_ADVERTISER",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "PAUSED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:13:38Z"
+      },
+      {
+       "id": "odyt3",
+       "name": "BujairiTerrace_Ramadan2026_LF_CONV_KSA_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:13:23Z"
+      },
+      {
+       "id": "oeeqn",
+       "name": "Zallal_Ramadan2026_UF_AWR_KSA_ENAR_X",
+       "entity_status": "PAUSED",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "PAUSED_BY_ADVERTISER",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "PAUSED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:13:42Z"
+      },
+      {
+       "id": "oeer0",
+       "name": "Zallal_Ramadan2026_MF_TRF_KSA_ENAR_X",
+       "entity_status": "PAUSED",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "PAUSED_BY_ADVERTISER",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "PAUSED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:13:45Z"
+      },
+      {
+       "id": "oenop",
+       "name": "VisitDiriyah_ShoppingRamadan2026_MF_TRF_KSA_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:13:55Z"
+      },
+      {
+       "id": "opujc",
+       "name": "BabSamhan_EidSummer2026V2_UF_AWR_KSA_ENAR_X",
+       "entity_status": "PAUSED",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "PAUSED_BY_ADVERTISER",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "PAUSED",
+       "deleted": false,
+       "updated_at": "2026-08-12T07:10:16Z"
+      },
+      {
+       "id": "opukr",
+       "name": "BabSamhan_EidSummer2026V2_MF_TRF_KSA_ENAR_X",
+       "entity_status": "PAUSED",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "PAUSED_BY_ADVERTISER",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "PAUSED",
+       "deleted": false,
+       "updated_at": "2026-08-12T07:10:12Z"
+      },
+      {
+       "id": "oryzd",
+       "name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "updated_at": "2026-09-21T14:00:39Z"
+      },
+      {
+       "id": "oudm1",
+       "name": "BabSamhanXQiddiya_2026_UF_AWR_KSA_ENAR_X",
+       "entity_status": "PAUSED",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "PAUSED_BY_ADVERTISER",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "PAUSED",
+       "deleted": false,
+       "updated_at": "2026-08-12T07:10:05Z"
+      },
+      {
+       "id": "ozhy5",
+       "name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:16:08Z"
+      },
+      {
+       "id": "ozi6p",
+       "name": "VisitDiriyah_SummerCampaign2026_UF_AWR_KSA_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "updated_at": "2026-07-30T12:14:36Z"
+      },
+      {
+       "id": "pb8p8",
+       "name": "VisitDiriyah_SummerCampaign2026_UF_AWR_KSA_ENAR_X (Copy)",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "updated_at": "2026-09-21T15:41:32Z"
+      }
+     ]
+    },
+    "meta": {
+     "mcp_result_projection": {
+      "fields": [
+       "id",
+       "name",
+       "entity_status",
+       "servable",
+       "reasons_not_servable",
+       "effective_status",
+       "deleted",
+       "updated_at"
+      ],
+      "max_items": 2000,
+      "compact": true
+     }
+    }
+   },
+   "meta": {
+    "requestId": "0f5ade8c-f4ee-4383-b7ff-99106229579f",
+    "latencyMs": 1466
+   }
+  }
+ }
+]

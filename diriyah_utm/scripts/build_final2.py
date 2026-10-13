@@ -46,14 +46,20 @@ def lane_status(k):
     if re.search(r'^AUTH:|sign in again', se):
         return PENDING, ('not written: Whathead asked to sign in again (batch ' + b_ + '). ' + se)[:400]
     return None
-DAY_OF = lambda f: '11-Oct' if re.search(r'(^|/)apply2?/', f) else '13-Oct' if re.search(r'(^|/)apply8/', f) else '12-Oct'
+DAY_OF = lambda f: '11-Oct' if re.search(r'(^|/)apply2?/', f) else '13-Oct' if re.search(r'(^|/)apply[89]/', f) else '12-Oct'
 A8 = set()   # slots of the 13-Oct run (apply8 = approved writes the 12-Oct run never reached)
-for f_ in glob.glob(f'{W}/apply8/in_*.json'):
-    if 'apply8' not in APPLY_LIST: break
-    for u_ in json.load(open(f_)):
-        for ch_ in u_['changes']:
-            for a_ in u_['ad_ids']: A8.add((u_['platform'], str(a_), ch_['slot']))
-UNREC8 = 'written on 13-Oct by the run of the approved writes not reached on 12-Oct; the agent returned no verified result for it - confirmed by the final re-read'
+A9NOW = {}  # apply9 plan 'now' per (platform, unit, slot): the before of writes made by the stopped first apply9 runs
+for ap_ in [a for a in ('apply8', 'apply9') if a in APPLY_LIST]:
+    for f_ in glob.glob(f'{W}/{ap_}/in_*.json'):
+        for u_ in json.load(open(f_)):
+            for ch_ in u_['changes']:
+                for a_ in u_['ad_ids']: A8.add((u_['platform'], str(a_), ch_['slot']))
+                if ap_ == 'apply9': A9NOW[(u_['platform'], str(u_['unit']), ch_['slot'])] = ch_['now']
+WADI = {}   # Wadi Safar Meta slots: not tried, Meta refuses that Page / Instagram for this connection
+WADI_FILE = os.environ.get('WADI_FILE') or 'work/wadi_safar_meta_needs_page.json'
+if os.path.exists(f'{W}/{WADI_FILE}'):
+    for e in json.load(open(f'{W}/{WADI_FILE}')): WADI[(e['platform'], str(e['ad_id']), e['slot'])] = e['why']
+UNREC8 = 'written on 13-Oct; the agent returned no verified result for it - confirmed by the final re-read'
 UNREC = 'written on 12-Oct by the final run; its result line could not be recorded (the session safety check denied the local logging step) - confirmed by the final re-read'
 PENDING = os.environ.get('PENDING_LABEL') or 'Being applied now'   # e.g. 'Paused - not yet written'
 G = glob.glob(f'{W}/in/e2e*.xlsx')[0]
@@ -82,9 +88,10 @@ REFUSED = {}   # slots a platform refuses through its API (never retried): REFUS
 for rf_ in (os.environ.get('REFUSED_FILE') or 'work/excl_platform_refused_v2.json').split(','):
     if os.path.exists(f'{W}/{rf_}'):
         for e in json.load(open(f'{W}/{rf_}')): REFUSED[(e['platform'], str(e['ad_id']), e['slot'])] = e.get('why') or ''
-REFUSE_RX = re.compile(r'Spark Pull|editable only in Ads Manager|archived|POLICY_FINDING|PROHIBITED|disapproved|requires? an Instagram|Instagram account|https?://t\.co/|t\.co link|Page/profile permission|Page permission|required_permission|interactive components|interactive_components_spec|2446581|Media Not Wide Enough|2875006', re.I)
+REFUSE_RX = re.compile(r'Spark Pull|editable only in Ads Manager|(?<!not )archived|POLICY_FINDING|PROHIBITED|disapproved|requires? an Instagram|Instagram account|https?://t\.co/|t\.co link|Page/profile permission|Page permission|required_permission|interactive components|interactive_components_spec|2446581|Media Not Wide Enough|2875006', re.I)
 RUN_LABEL = lambda f: {'apply': '11-Oct', 'apply2': '11-Oct', 'apply3': '11-Oct', 'apply4': '12-Oct', 'apply5': '12-Oct (before the pause)',
-                       'apply6': '12-Oct (final run)', 'apply7': '12-Oct (final run, resumed 22:00 UTC)', 'apply8': '13-Oct (approved writes not reached on 12-Oct)'}.get(f.split('/')[0], '12-Oct (final run)')
+                       'apply6': '12-Oct (final run)', 'apply7': '12-Oct (final run, resumed 22:00 UTC)', 'apply8': '13-Oct (approved writes not reached on 12-Oct)',
+                       'apply9': '13-Oct (after your permission rules: writes the safety check had blocked)'}.get(f.split('/')[0], '12-Oct (final run)')
 NONAME = lambda p: '(Google ads have no name)' if p == 'google' else '(no ad name)'
 
 # ---------- every write ----------
@@ -122,9 +129,11 @@ def status_of(s, t, live):
     if live.get('found') is False: return 'Gone', live.get('note') or 'ad / slot no longer exists', ''
     url = live.get('url')
     if tgt and same(url, tgt):
-        if FINAL and k in A8:
+        if FINAL and (k in A8 or any(a['_day'] == '13-Oct' for a in rs)):    # 13-Oct runs (sitelink placements are keyed per placement, not in A8)
             l8 = [a for a in rs if a['_day'] == '13-Oct']
             if any(a['result'] == 'Fixed' for a in l8): return 'Fixed 13-Oct', next(a.get('detail') or '' for a in l8 if a['result'] == 'Fixed')[:300], '13-Oct'
+            if any(a['result'] == 'AlreadyFixed' and '/apply9/' in '/' + a['_file'] for a in l8):
+                return 'Fixed 13-Oct', ('written on 13-Oct by the first apply9 run (stopped and restarted after the switch to Accept edits); the restarted run found it correct. ' + next(a.get('detail') or '' for a in l8 if a['result'] == 'AlreadyFixed'))[:300], '13-Oct'
             if l8 and l8[-1]['result'] == 'AlreadyFixed': return 'Correct', 'already correct when re-read on 13-Oct before the write (no write needed)', ''
             return 'Fixed 13-Oct', (UNREC8 + ('. Agent result: ' + (l8[-1].get('detail') or '') if l8 else ''))[:400], '13-Oct'
         if (s['platform'], str(s.get('ad_id'))) in MAIN_SESSION: return 'Fixed 12-Oct', 'written from the main session (agent stopped by the safety check)', '12-Oct'
@@ -140,6 +149,7 @@ def status_of(s, t, live):
     if not tgt:
         o = OMIT.get(k) or {}
         return 'Manual - you', (o.get('manual') or 'no single correct URL for this slot'), ''
+    if FINAL and k in WADI: return RF, WADI[k][:400], ''
     if k in REFUSED: return RF, ('the platform refused this edit through its API (never retried): ' + REFUSED[k])[:400], ''
     a5 = [a for a in rs if in_apply(a['_file'])]
     if FINAL and s['platform'] == 'tiktok' and str(s.get('ad_id')) in SPARK_PUSH:
@@ -282,8 +292,9 @@ for f in sorted(glob.glob(f'{W}/apply*/out_*.jsonl')):
         for aid in a.get('ad_ids') or []:
             tt = T.get((a['platform'], str(aid), a.get('slot')))
             if tt: tg = tt.get('target'); break
-        ca.append([day, RUN_LABEL(os.path.relpath(f, W)), a['platform'], a.get('account_id'), '; '.join(str(x) for x in (a.get('ad_names') or []) if x) or NONAME(a['platform']),
-                   ', '.join(str(x) for x in a.get('ad_ids') or []), str(a.get('unit')), a.get('slot'), a.get('before'), a.get('after_live'),
+        a9 = a['result'] == 'AlreadyFixed' and '/apply9/' in f
+        ca.append([day, RUN_LABEL(os.path.relpath(f, W)) + (' - first run, stopped and restarted' if a9 else ''), a['platform'], a.get('account_id'), '; '.join(str(x) for x in (a.get('ad_names') or []) if x) or NONAME(a['platform']),
+                   ', '.join(str(x) for x in a.get('ad_ids') or []), str(a.get('unit')), a.get('slot'), (A9NOW.get((a['platform'], str(a.get('unit')), a.get('slot'))) or a.get('before')) if a9 else a.get('before'), a.get('after_live'),
                    'Yes' if ok else 'No', ('Yes' if same(a.get('after_live'), tg) else 'No - superseded, see Every URL') if tg else '',
                    a['result'], a.get('new_entity_ids') or '', (a.get('detail') or '')[:400]])
 for (p, aid) in sorted(MAIN_SESSION):
@@ -456,12 +467,14 @@ if FINAL:   # results of the final run (last result line per change, as check_ap
             for line in open(f):
                 try: a = json.loads(line)
                 except Exception: continue
-                last[(a.get('platform'), str(a.get('unit')), a.get('slot'))] = a
+                a['_ap'] = ap; last[(a.get('platform'), str(a.get('unit')), a.get('slot'))] = a
     fr = collections.Counter()
     U8K = {key(r['s']) for r in recs if (r['why'] or '').startswith(UNREC8)}
     for a in last.values():
         d = a.get('detail') or ''; r_ = a['result']
-        if r_ in ('Fixed', 'AlreadyFixed'): fr[r_] += 1
+        if r_ == 'AlreadyFixed' and a.get('_ap') == 'apply9': fr['Fixed'] += 1     # written by the stopped first apply9 run, confirmed by the restarted one
+        elif r_ in ('Fixed', 'AlreadyFixed'): fr[r_] += 1
+        elif any((a.get('platform'), str(x), a.get('slot')) in WADI for x in a.get('ad_ids') or []): fr['wadi'] += 1
         elif any((a.get('platform'), str(x), a.get('slot')) in U8K for x in a.get('ad_ids') or []): fr['written_unverified'] += 1
         elif re.search(r'existing (Facebook )?Page post|stored on the post itself', d): fr['manual'] += 1
         elif r_ == 'NotAttempted' and re.search(r'Spark Push', d): fr['held'] += 1
@@ -471,10 +484,11 @@ if FINAL:   # results of the final run (last result line per change, as check_ap
         else: fr[r_] += 1
     no_line = max(0, n_ch - len(last))
     unrec = sum(1 for r in recs if r['why'] == UNREC)
-    txt = (f'Final run on 12-Oct' + (' (and on 13-Oct for the approved writes it had not reached)' if A8 else '') + f', after you approved every remaining write ({n_ch} changes): {fr["Fixed"]} written and read back byte for byte, '
+    txt = (f'Final run on 12-Oct' + (' (and on 13-Oct: the approved writes it had not reached and, after you added the permission rules, the ones the safety check had blocked)' if 'apply9' in APPLY_LIST else ' (and on 13-Oct for the approved writes it had not reached)' if A8 else '') + f', after you approved every remaining write ({n_ch} changes): {fr["Fixed"]} written and read back byte for byte, '
            f'{fr["AlreadyFixed"]} already correct when re-read (no write needed), {fr["held"]} TikTok Spark Push changes held for your decision, '
            f'{fr["refused"]} refused by the platform, {fr["blocked"]} blocked by this session\'s safety check, {fr["Failed"]} failed, '
            + (f'{fr["manual"]} left to you (the link lives on an existing Page post), ' if fr['manual'] else '')
+           + (f'{fr["wadi"]} Wadi Safar Meta changes waiting for Page / Instagram access, ' if fr['wadi'] else '')
            + (f'{fr["written_unverified"]} written on 13-Oct whose verification step the safety check denied (the final re-read confirms them), ' if fr['written_unverified'] else '') +
            f'{fr["Skipped"]} skipped because the live URL had changed since the plan, {fr["NotAttempted"] + fr["signin"]} not attempted (TikTok API outage, sign-in prompt or a stopped batch), '
            f'{no_line} with no result line because their batch stopped first. A further {unrec} URL slots were written and verified by agents that could not log them '

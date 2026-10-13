@@ -1,0 +1,79 @@
+[
+ {
+  "platform": "x",
+  "account_id": "18ce55o46uh",
+  "unit_type": "tweet",
+  "unit": "2087162068705103873",
+  "ad_ids": [
+   "b51xqe"
+  ],
+  "ad_names": [
+   "Visit Diriyah_Intro_KV_30s_AR_16x9"
+  ],
+  "slot": "card.components[1].destination.url",
+  "after_expected": "https://www.diriyah.sa/ar?utm_source=x&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_aug26_awr&utm_term=ar&utm_content=video_ar",
+  "new_entity_ids": "",
+  "before": "https://www.diriyah.sa/ar?utm_source=x&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_aug26_awr&utm_term=ar&utm_content=video_ar",
+  "after_live": "https://www.diriyah.sa/ar?utm_source=x&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_aug26_awr&utm_term=ar&utm_content=video_ar",
+  "result": "AlreadyFixed",
+  "detail": "Re-read GET_CARD /12/accounts/18ce55o46uh/cards/2087162068705103873 req 72f47e39-1040-426b-8da3-58ef510aa682 (VIDEO_WEBSITE, not deleted): card.components[1].destination.url == new byte for byte, so no dry run and no live write in this attempt. The value was written earlier in this apply9 run by the previous attempt of this batch (apply9/work_x_1/post_0.json: UPDATE_CARD live req fcfb2d17-4c2e-410f-9cc5-dfc62aa4200e, 1 attempt; its read-back GET_CARD req 51d49c36-58c0-4542-9032-afe2661d8936 also showed url == new)."
+ },
+ {
+  "platform": "x",
+  "account_id": "18ce55o46ul",
+  "unit_type": "tweet",
+  "unit": "2095131822749524008",
+  "ad_ids": [
+   "b5bcdy"
+  ],
+  "ad_names": [
+   "ManazelAlHadawi_EN_CR2_V2"
+  ],
+  "slot": "card.components[1].destination.url",
+  "after_expected": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_awr&utm_term=3e71b680_residential_en&utm_content=manazel-alhadawi-cr2-v2_display_en",
+  "new_entity_ids": "",
+  "before": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=adset-id-E1A001_manazel-alhadawi_en_all_mf_prospecting&utm_content=ad-id-AD1001_manazel-alhadawi-CR2",
+  "after_live": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=adset-id-E1A001_manazel-alhadawi_en_all_mf_prospecting&utm_content=ad-id-AD1001_manazel-alhadawi-CR2",
+  "result": "Skipped",
+  "detail": "card shared by other promoted tweets: tweet 2095131822749524008 (this unit) is also promoted by b6006s (line item xwb2v, created 2026-10-13T10:48:54Z, ACTIVE, ACCEPTED), which is not in ad_ids ['b5bcdy'] (LIST_PROMOTED_TWEETS req c34a9a0c-8830-457e-8207-3f74025902ee, created_at-desc, 367 total; the listing covers every promoted tweet created since 2026-08-30T10:49:06Z, before the card existed). No dry run and no live write. How the slot was read: the unit id is the tweet id, not a card id. GET_CARD 2095131822749524008 in this attempt: 404 NOT_FOUND 'Card 2095131822749524008 was not found for Account 4503599737345965' (req da1bc68e-29f8-4f03-b584-7c834abbf1ff); GET_PROMOTED_TWEET b5bcdy req 73458115-518d-4fc0-8a78-9dd51525306f gives tweet_id 2095131822749524008. The tweet carries card://2095131819687464963 (LIST_TWEETS req eff7b439-14d3-4667-80b3-5aeae5706b85; no link in the tweet text). GET_CARD 2095131819687464963 req ec14fb83-e9b9-4344-9d4c-3830d42656fb (IMAGE_CAROUSEL_WEBSITE, not deleted) shows card.components[1].destination.url == now byte for byte."
+ },
+ {
+  "platform": "x",
+  "account_id": "18ce55o46ul",
+  "unit_type": "tweet",
+  "unit": "2095139956872167629",
+  "ad_ids": [
+   "b5bcus"
+  ],
+  "ad_names": [
+   "ManazelAlHadawi_AR_CR3_V2"
+  ],
+  "slot": "card.components[1].destination.url",
+  "after_expected": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_awr&utm_term=3e71b680_residential_ar&utm_content=manazel-alhadawi-cr3-v2_display_ar",
+  "new_entity_ids": "",
+  "before": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=adset-id-A1A002_manazel-alhadawi_ar_all_mf_prospecting&utm_content=ad-id-AD1003_manazel-alhadawi-CR3",
+  "after_live": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=adset-id-A1A002_manazel-alhadawi_ar_all_mf_prospecting&utm_content=ad-id-AD1003_manazel-alhadawi-CR3",
+  "result": "Skipped",
+  "detail": "card shared by other promoted tweets: tweet 2095139956872167629 (this unit) is also promoted by b6006m (line item xwb2t, created 2026-10-13T10:48:51Z, ACTIVE, ACCEPTED), which is not in ad_ids ['b5bcus'] (LIST_PROMOTED_TWEETS req c34a9a0c-8830-457e-8207-3f74025902ee, created_at-desc, 367 total; the listing covers every promoted tweet created since 2026-08-30T10:49:06Z, before the card existed). No dry run and no live write. How the slot was read: the unit id is the tweet id, not a card id. LIST_PROMOTED_TWEETS req c34a9a0c-8830-457e-8207-3f74025902ee gives b5bcus tweet_id 2095139956872167629; the earlier attempt of this batch got 404 NOT_FOUND on GET_CARD 2095139956872167629 (req f8e0d165-d4eb-4721-98c5-3661de36e81b, per apply9/work_x_1/results9.py); this attempt did not repeat that call. The tweet carries card://2095139954829447168 (LIST_TWEETS req eff7b439-14d3-4667-80b3-5aeae5706b85; no link in the tweet text). GET_CARD 2095139954829447168 req 410581a1-1b40-4ff0-ad04-03f0380363df (IMAGE_CAROUSEL_WEBSITE, not deleted) shows card.components[1].destination.url == now byte for byte."
+ },
+ {
+  "platform": "x",
+  "account_id": "18ce55o46ul",
+  "unit_type": "tweet",
+  "unit": "2095139958206177684",
+  "ad_ids": [
+   "b5bcut"
+  ],
+  "ad_names": [
+   "ManazelAlHadawi_EN_CR3_V2"
+  ],
+  "slot": "card.components[1].destination.url",
+  "after_expected": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_awr&utm_term=3e71b680_residential_en&utm_content=manazel-alhadawi-cr3-v2_display_en",
+  "new_entity_ids": "",
+  "before": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=adset-id-E1A001_manazel-alhadawi_en_all_mf_prospecting&utm_content=ad-id-AD1001_manazel-alhadawi-CR3",
+  "after_live": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=adset-id-E1A001_manazel-alhadawi_en_all_mf_prospecting&utm_content=ad-id-AD1001_manazel-alhadawi-CR3",
+  "result": "Skipped",
+  "detail": "card shared by other promoted tweets: tweet 2095139958206177684 (this unit) is also promoted by b6006t (line item xwb2v, created 2026-10-13T10:48:54Z, ACTIVE, ACCEPTED), which is not in ad_ids ['b5bcut'] (LIST_PROMOTED_TWEETS req c34a9a0c-8830-457e-8207-3f74025902ee, created_at-desc, 367 total; the listing covers every promoted tweet created since 2026-08-30T10:49:06Z, before the card existed). No dry run and no live write. How the slot was read: the unit id is the tweet id, not a card id. LIST_PROMOTED_TWEETS req c34a9a0c-8830-457e-8207-3f74025902ee gives b5bcut tweet_id 2095139958206177684; the earlier attempt of this batch got 404 NOT_FOUND on GET_CARD 2095139958206177684 (req 086df080-f651-47ba-84c5-8409fa2ffbda, per apply9/work_x_1/results9.py); this attempt did not repeat that call. The tweet carries card://2095139954837917698 (LIST_TWEETS req eff7b439-14d3-4667-80b3-5aeae5706b85; no link in the tweet text). GET_CARD 2095139954837917698 req 1c1be482-5105-4d1c-b674-b733925205ba (IMAGE_CAROUSEL_WEBSITE, not deleted) shows card.components[1].destination.url == now byte for byte."
+ }
+]
+COUNT 4 expected 4

@@ -1,0 +1,1837 @@
+[
+ {
+  "tool_use_id": "toolu_013Bwu9pR1BKHK6QsTWG9J5U",
+  "input": {
+   "action": "x_accounts_account_id_tweets_get",
+   "path_params": {
+    "account_id": "18ce55o46uh"
+   },
+   "params": {
+    "tweet_type": "PUBLISHED",
+    "timeline_type": "ALL",
+    "trim_user": true,
+    "count": 200,
+    "tweet_ids": "1760361848858104222,1766938870468214983,1766938872531869885,1772243416082010485,1772243416211914881,1772244853872619780,1772244853943836882,1772912443561308410,1772912443670368757,1772912946743771434,1772913198275965270,1774773456082538779,1774773959206346793,1774774462493438224,1774774714113708081,1826872445891948916,1839354381835370531,1839354560529543565,1839354776414499233,1839354947194015853,1839355112525066254,1839355280859242662,1839383133956751837,1839554836242849881,1841429922486641023,1841429922528563645,1841429922679861699,1841429922822398181,1851288481877934518,1851288724954648668,1851289113351377403,1851289327307051193,1861040742161891505,1861791930495144368,1861792266073084137,1867652012139327641,1869290938801295444,1869291143533363316,1869293202705903829,1869293370163511794,1869294343208460687,1869294536255787049,1869296025027878970,1869296197883568552,1869336863560859671,1869337129098051760,1869338445463834942,1869341314803958186,1869671513919733946,1869671514032755148,1869730499259666810,1869730499297759614,1869732362365317214,1869732362369589388,1869733590927384863,1869733590952489124,1869734762320937371,1869734762505764926,1869737941079306338,1869737941125214298,1869737941448241321,1869737941456625823,1869737941825646873,1869737942127899047,1869739709724770305,1869739709909606645,1869740711844655165,1869740712113176601,1869740712214090097,1869740712658362550,1869740712683835729,1869740712704520376,1869742149333348525,1869742149568192920,1869742149647876105,1869742149652365527,1869742149665018345,1869742149723726312,1869743590324244619,1869743590374515148,1869743590387126634,1869743590945005751,1869743590982762945,1869743591121440921,1869745029809410410,1869745029872271524,1869745029885169816,1869745029910253761,1869745030098821472,1869745030476312896,1899019142436446293,1899020904081846338,1899021407339553092,1899021659157217659,1899778602327330956,1899778602696323198,1900150890667061631"
+   },
+   "result_fields": [
+    "id_str",
+    "card_uri",
+    "entities.urls",
+    "name"
+   ],
+   "max_items": 2000
+  },
+  "result": {
+   "success": true,
+   "data": {
+    "success": true,
+    "data": {
+     "request": {
+      "params": {
+       "count": 200,
+       "timeline_type": "ALL",
+       "tweet_ids": [
+        "1760361848858104222",
+        "1766938870468214983",
+        "1766938872531869885",
+        "1772243416082010485",
+        "1772243416211914881",
+        "1772244853872619780",
+        "1772244853943836882",
+        "1772912443561308410",
+        "1772912443670368757",
+        "1772912946743771434",
+        "1772913198275965270",
+        "1774773456082538779",
+        "1774773959206346793",
+        "1774774462493438224",
+        "1774774714113708081",
+        "1826872445891948916",
+        "1839354381835370531",
+        "1839354560529543565",
+        "1839354776414499233",
+        "1839354947194015853",
+        "1839355112525066254",
+        "1839355280859242662",
+        "1839383133956751837",
+        "1839554836242849881",
+        "1841429922486641023",
+        "1841429922528563645",
+        "1841429922679861699",
+        "1841429922822398181",
+        "1851288481877934518",
+        "1851288724954648668",
+        "1851289113351377403",
+        "1851289327307051193",
+        "1861040742161891505",
+        "1861791930495144368",
+        "1861792266073084137",
+        "1867652012139327641",
+        "1869290938801295444",
+        "1869291143533363316",
+        "1869293202705903829",
+        "1869293370163511794",
+        "1869294343208460687",
+        "1869294536255787049",
+        "1869296025027878970",
+        "1869296197883568552",
+        "1869336863560859671",
+        "1869337129098051760",
+        "1869338445463834942",
+        "1869341314803958186",
+        "1869671513919733946",
+        "1869671514032755148",
+        "1869730499259666810",
+        "1869730499297759614",
+        "1869732362365317214",
+        "1869732362369589388",
+        "1869733590927384863",
+        "1869733590952489124",
+        "1869734762320937371",
+        "1869734762505764926",
+        "1869737941079306338",
+        "1869737941125214298",
+        "1869737941448241321",
+        "1869737941456625823",
+        "1869737941825646873",
+        "1869737942127899047",
+        "1869739709724770305",
+        "1869739709909606645",
+        "1869740711844655165",
+        "1869740712113176601",
+        "1869740712214090097",
+        "1869740712658362550",
+        "1869740712683835729",
+        "1869740712704520376",
+        "1869742149333348525",
+        "1869742149568192920",
+        "1869742149647876105",
+        "1869742149652365527",
+        "1869742149665018345",
+        "1869742149723726312",
+        "1869743590324244619",
+        "1869743590374515148",
+        "1869743590387126634",
+        "1869743590945005751",
+        "1869743590982762945",
+        "1869743591121440921",
+        "1869745029809410410",
+        "1869745029872271524",
+        "1869745029885169816",
+        "1869745029910253761",
+        "1869745030098821472",
+        "1869745030476312896",
+        "1899019142436446293",
+        "1899020904081846338",
+        "1899021407339553092",
+        "1899021659157217659",
+        "1899778602327330956",
+        "1899778602696323198",
+        "1900150890667061631"
+       ],
+       "account_id": "18ce55o46uh",
+       "trim_user": true,
+       "tweet_type": "PUBLISHED"
+      }
+     },
+     "next_cursor": null,
+     "data": [
+      {
+       "id_str": "1760361848858104222",
+       "entities": {
+        "urls": []
+       },
+       "name": null
+      },
+      {
+       "id_str": "1766938870468214983",
+       "entities": {
+        "urls": []
+       },
+       "name": null
+      },
+      {
+       "id_str": "1766938872531869885",
+       "entities": {
+        "urls": []
+       },
+       "name": null
+      },
+      {
+       "id_str": "1772243416082010485",
+       "card_uri": "card://1772243412583890945",
+       "entities": {
+        "urls": []
+       },
+       "name": "Main Video - Arabic"
+      },
+      {
+       "id_str": "1772243416211914881",
+       "card_uri": "card://1772243412558770176",
+       "entities": {
+        "urls": []
+       },
+       "name": "Long Chim"
+      },
+      {
+       "id_str": "1772244853872619780",
+       "card_uri": "card://1772244850030575616",
+       "entities": {
+        "urls": []
+       },
+       "name": "Main Video"
+      },
+      {
+       "id_str": "1772244853943836882",
+       "card_uri": "card://1772244850039021569",
+       "entities": {
+        "urls": []
+       },
+       "name": "Long Chim"
+      },
+      {
+       "id_str": "1772912443561308410",
+       "card_uri": "card://1772911357609877504",
+       "entities": {
+        "urls": []
+       },
+       "name": "Villa Mamas"
+      },
+      {
+       "id_str": "1772912443670368757",
+       "card_uri": "card://1772911357630824448",
+       "entities": {
+        "urls": []
+       },
+       "name": "Maiz"
+      },
+      {
+       "id_str": "1772912946743771434",
+       "card_uri": "card://1772911917041926145",
+       "entities": {
+        "urls": []
+       },
+       "name": "Villa Mamas"
+      },
+      {
+       "id_str": "1772913198275965270",
+       "card_uri": "card://1772912105127108608",
+       "entities": {
+        "urls": []
+       },
+       "name": "Maiz"
+      },
+      {
+       "id_str": "1774773456082538779",
+       "card_uri": "card://1774772373310345216",
+       "entities": {
+        "urls": []
+       },
+       "name": "African Lounge"
+      },
+      {
+       "id_str": "1774773959206346793",
+       "card_uri": "card://1774772728593039361",
+       "entities": {
+        "urls": []
+       },
+       "name": "African Lounge"
+      },
+      {
+       "id_str": "1774774462493438224",
+       "card_uri": "card://1774773300868042752",
+       "entities": {
+        "urls": []
+       },
+       "name": "Somewhere"
+      },
+      {
+       "id_str": "1774774714113708081",
+       "card_uri": "card://1774773527670845440",
+       "entities": {
+        "urls": []
+       },
+       "name": "Somwhere"
+      },
+      {
+       "id_str": "1839383133956751837",
+       "entities": {
+        "urls": [
+         {
+          "url": "https://t.co/HQ0V8W83ec",
+          "expanded_url": "https://x.com/i/web/status/1839383133956751837",
+          "display_url": "x.com/i/web/status/1\u2026",
+          "indices": [
+           251,
+           274
+          ]
+         }
+        ]
+       },
+       "name": null
+      },
+      {
+       "id_str": "1839554836242849881",
+       "entities": {
+        "urls": []
+       },
+       "name": "Video_Fortnite_Generic_RICH_NA_NA_NA"
+      },
+      {
+       "id_str": "1841429922486641023",
+       "entities": {
+        "urls": []
+       },
+       "name": "Video_Fortnite_Generic_RICH_REEL_AR_Cutdown "
+      },
+      {
+       "id_str": "1841429922528563645",
+       "entities": {
+        "urls": []
+       },
+       "name": "Video_Fortnite_Generic_RICH_Sqaure_AR_Cutdown "
+      },
+      {
+       "id_str": "1841429922679861699",
+       "entities": {
+        "urls": [
+         {
+          "url": "https://t.co/HQ0V8W83ec",
+          "expanded_url": "https://x.com/i/web/status/1839383133956751837",
+          "display_url": "x.com/i/web/status/1\u2026",
+          "indices": [
+           139,
+           162
+          ]
+         }
+        ]
+       },
+       "name": "Video_Fortnite_Generic_RICH_NA_EN_Cutdown "
+      },
+      {
+       "id_str": "1841429922822398181",
+       "entities": {
+        "urls": [
+         {
+          "url": "https://t.co/HQ0V8W83ec",
+          "expanded_url": "https://x.com/i/web/status/1839383133956751837",
+          "display_url": "x.com/i/web/status/1\u2026",
+          "indices": [
+           139,
+           162
+          ]
+         }
+        ]
+       },
+       "name": "Video_Fortnite_Generic_RICH_REEL_EN_Cutdown "
+      },
+      {
+       "id_str": "1851288481877934518",
+       "card_uri": "card://1851288479348768770",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_LF_KSA_AUD_AR_Conversion_X_Retail Video 21s"
+      },
+      {
+       "id_str": "1851288724954648668",
+       "card_uri": "card://1851288722597437440",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_LF_KSA_AUD_EN_Conversion_X_Retail Video 21s"
+      },
+      {
+       "id_str": "1851289113351377403",
+       "card_uri": "card://1851289110658568192",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_KSA_AUD_EN_Awareness_X_Retail Video 21s"
+      },
+      {
+       "id_str": "1851289327307051193",
+       "card_uri": "card://1851289324647825408",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_KSA_AUD_AR_Awareness_X_Retail Video 21s"
+      },
+      {
+       "id_str": "1861040742161891505",
+       "entities": {
+        "urls": [
+         {
+          "url": "https://t.co/q400HYXQUv",
+          "expanded_url": "http://bit.ly/twbujairi",
+          "display_url": "bit.ly/twbujairi",
+          "indices": [
+           214,
+           237
+          ]
+         }
+        ]
+       },
+       "name": null
+      },
+      {
+       "id_str": "1861791930495144368",
+       "card_uri": "card://1861791926187597824",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_KSA_AUD_AR_Awareness_X_Free Tickets Announcement 1 - AR"
+      },
+      {
+       "id_str": "1861792266073084137",
+       "card_uri": "card://1861792263531294720",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_KSA_AUD_EN_Awareness_X_Free Tickets Announcement 1 - EN"
+      },
+      {
+       "id_str": "1867652012139327641",
+       "entities": {
+        "urls": []
+       },
+       "name": null
+      },
+      {
+       "id_str": "1869290938801295444",
+       "card_uri": "card://1869290936540315648",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_LF_KSA_AUD_EN_Conversion_X_Juice Video 12s - EN"
+      },
+      {
+       "id_str": "1869291143533363316",
+       "card_uri": "card://1869291141738508288",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_KSA_AUD_EN_Awareness_X_Juice Video 12s - EN"
+      },
+      {
+       "id_str": "1869293202705903829",
+       "card_uri": "card://1869293199975493632",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_LF_KSA_AUD_EN_Conversion_X_Food Video 12s - EN"
+      },
+      {
+       "id_str": "1869293370163511794",
+       "card_uri": "card://1869293368162869248",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_KSA_AUD_EN_Awareness_X_Food Video 12s - EN"
+      },
+      {
+       "id_str": "1869294343208460687",
+       "card_uri": "card://1869294341308502016",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_LF_KSA_AUD_AR_Conversion_X_Juice Video 12s - AR"
+      },
+      {
+       "id_str": "1869294536255787049",
+       "card_uri": "card://1869294534103896064",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_KSA_AUD_AR_Awareness_X_Juice Video 12s - AR"
+      },
+      {
+       "id_str": "1869296025027878970",
+       "card_uri": "card://1869296023044059136",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_LF_KSA_AUD_AR_Conversion_X_Food Video 12s - AR"
+      },
+      {
+       "id_str": "1869296197883568552",
+       "card_uri": "card://1869296195648008193",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_KSA_AUD_AR_Awareness_X_Food Video 12s - AR"
+      },
+      {
+       "id_str": "1869336863560859671",
+       "card_uri": "card://1869336860851408896",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_KSA_AUD_AR_Awareness_X_Activities Video 12s - AR"
+      },
+      {
+       "id_str": "1869337129098051760",
+       "card_uri": "card://1869337126422433792",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_LF_KSA_AUD_AR_Conversion_X_Activities Video 12s - AR"
+      },
+      {
+       "id_str": "1869338445463834942",
+       "card_uri": "card://1869338434298388480",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_LF_KSA_AUD_EN_Conversion_X_Activities Video 12s - EN"
+      },
+      {
+       "id_str": "1869341314803958186",
+       "card_uri": "card://1869341295568654336",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_KSA_AUD_EN_Awareness_X_Activities Video 12s - EN"
+      },
+      {
+       "id_str": "1869671513919733946",
+       "card_uri": "card://1869670438596440064",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_LF_KSA_AUD_EN_Conversion_X_Activities Video 12s - EN"
+      },
+      {
+       "id_str": "1869671514032755148",
+       "card_uri": "card://1869670257545084928",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_LF_KSA_AUD_AR_Conversion_X_Activities Video 12s - AR"
+      },
+      {
+       "id_str": "1869730499259666810",
+       "card_uri": "card://1869730497242320896",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_Qatar_AUD_EN_Awareness_X_Activities Video 12s - EN"
+      },
+      {
+       "id_str": "1869730499297759614",
+       "card_uri": "card://1869730497204494337",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_Qatar_AUD_AR_Awareness_X_Activities Video 12s - AR"
+      },
+      {
+       "id_str": "1869732362365317214",
+       "card_uri": "card://1869732360251482112",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_Kuwait_AUD_EN_Awareness_X_Activities Video 12s - EN"
+      },
+      {
+       "id_str": "1869732362369589388",
+       "card_uri": "card://1869732360310210560",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_Kuwait_AUD_AR_Awareness_X_Activities Video 12s - AR"
+      },
+      {
+       "id_str": "1869733590927384863",
+       "card_uri": "card://1869733589148909568",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_UAE_AUD_EN_Awareness_X_Activities Video 12s - EN"
+      },
+      {
+       "id_str": "1869733590952489124",
+       "card_uri": "card://1869733589161578496",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_UAE_AUD_AR_Awareness_X_Activities Video 12s - AR"
+      },
+      {
+       "id_str": "1869734762320937371",
+       "card_uri": "card://1869734759984775168",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_Oman_AUD_AR_Awareness_X_Activities Video 12s - AR"
+      },
+      {
+       "id_str": "1869734762505764926",
+       "card_uri": "card://1869734760014024704",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_Oman_AUD_EN_Awareness_X_Activities Video 12s - EN"
+      },
+      {
+       "id_str": "1869737941079306338",
+       "card_uri": "card://1869737939334500352",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_Qatar_AUD_EN_Awareness_X_Juice Video 12s - EN"
+      },
+      {
+       "id_str": "1869737941125214298",
+       "card_uri": "card://1869737939187433472",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_Qatar_AUD_AR_Awareness_X_Retail Video 21s"
+      },
+      {
+       "id_str": "1869737941448241321",
+       "card_uri": "card://1869737939212574720",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_Qatar_AUD_EN_Awareness_X_Food Video 12s - EN"
+      },
+      {
+       "id_str": "1869737941456625823",
+       "card_uri": "card://1869737939195846656",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_Qatar_AUD_EN_Awareness_X_Retail Video 21s"
+      },
+      {
+       "id_str": "1869737941825646873",
+       "card_uri": "card://1869737939447734274",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_Qatar_AUD_AR_Awareness_X_Food Video 12s - AR"
+      },
+      {
+       "id_str": "1869737942127899047",
+       "card_uri": "card://1869737939216822272",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_Qatar_AUD_AR_Awareness_X_Juice Video 12s - AR"
+      },
+      {
+       "id_str": "1869739709724770305",
+       "card_uri": "card://1869739707187306496",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_Bahrain_AUD_AR_Awareness_X_Activities Video 12s - AR"
+      },
+      {
+       "id_str": "1869739709909606645",
+       "card_uri": "card://1869739707283779584",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_Bahrain_AUD_EN_Awareness_X_Activities Video 12s - EN"
+      },
+      {
+       "id_str": "1869740711844655165",
+       "card_uri": "card://1869740709864976384",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_Kuwait_AUD_EN_Awareness_X_Juice Video 12s - EN"
+      },
+      {
+       "id_str": "1869740712113176601",
+       "card_uri": "card://1869740709869187072",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_Kuwait_AUD_EN_Awareness_X_Retail Video 21s"
+      },
+      {
+       "id_str": "1869740712214090097",
+       "card_uri": "card://1869740709839773696",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_Kuwait_AUD_AR_Awareness_X_Retail Video 21s"
+      },
+      {
+       "id_str": "1869740712658362550",
+       "card_uri": "card://1869740709864955904",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_Kuwait_AUD_AR_Awareness_X_Juice Video 12s - AR"
+      },
+      {
+       "id_str": "1869740712683835729",
+       "card_uri": "card://1869740709890158592",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_Kuwait_AUD_EN_Awareness_X_Food Video 12s - EN"
+      },
+      {
+       "id_str": "1869740712704520376",
+       "card_uri": "card://1869740710200590336",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_Kuwait_AUD_AR_Awareness_X_Food Video 12s - AR"
+      },
+      {
+       "id_str": "1869742149333348525",
+       "card_uri": "card://1869742147412365312",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_UAE_AUD_AR_Awareness_X_Food Video 12s - AR"
+      },
+      {
+       "id_str": "1869742149568192920",
+       "card_uri": "card://1869742147634868224",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_UAE_AUD_AR_Awareness_X_Retail Video 21s"
+      },
+      {
+       "id_str": "1869742149647876105",
+       "card_uri": "card://1869742147626557440",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_UAE_AUD_AR_Awareness_X_Juice Video 12s - AR"
+      },
+      {
+       "id_str": "1869742149652365527",
+       "card_uri": "card://1869742147416522752",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_UAE_AUD_EN_Awareness_X_Juice Video 12s - EN"
+      },
+      {
+       "id_str": "1869742149665018345",
+       "card_uri": "card://1869742147433385984",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_UAE_AUD_EN_Awareness_X_Food Video 12s - EN"
+      },
+      {
+       "id_str": "1869742149723726312",
+       "card_uri": "card://1869742147412299776",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_UAE_AUD_EN_Awareness_X_Retail Video 21s"
+      },
+      {
+       "id_str": "1869743590324244619",
+       "card_uri": "card://1869743586469654528",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_Oman_AUD_AR_Awareness_X_Juice Video 12s - AR"
+      },
+      {
+       "id_str": "1869743590374515148",
+       "card_uri": "card://1869743586452922368",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_Oman_AUD_EN_Awareness_X_Food Video 12s - EN"
+      },
+      {
+       "id_str": "1869743590387126634",
+       "card_uri": "card://1869743586461286400",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_Oman_AUD_EN_Awareness_X_Retail Video 21s"
+      },
+      {
+       "id_str": "1869743590945005751",
+       "card_uri": "card://1869743586692255744",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_Oman_AUD_AR_Awareness_X_Retail Video 21s"
+      },
+      {
+       "id_str": "1869743590982762945",
+       "card_uri": "card://1869743586574503936",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_Oman_AUD_EN_Awareness_X_Juice Video 12s - EN"
+      },
+      {
+       "id_str": "1869743591121440921",
+       "card_uri": "card://1869743587509833728",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_Oman_AUD_AR_Awareness_X_Food Video 12s - AR"
+      },
+      {
+       "id_str": "1869745029809410410",
+       "card_uri": "card://1869745027880235008",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_Bahrain_AUD_AR_Awareness_X_Retail Video 21s"
+      },
+      {
+       "id_str": "1869745029872271524",
+       "card_uri": "card://1869745027934806016",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_Bahrain_AUD_EN_Awareness_X_Food Video 12s - EN"
+      },
+      {
+       "id_str": "1869745029885169816",
+       "card_uri": "card://1869745027708018688",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_Bahrain_AUD_EN_Awareness_X_Retail Video 21s"
+      },
+      {
+       "id_str": "1869745029910253761",
+       "card_uri": "card://1869745027737419776",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_Bahrain_AUD_AR_Awareness_X_Juice Video 12s - AR"
+      },
+      {
+       "id_str": "1869745030098821472",
+       "card_uri": "card://1869745027775172608",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_Bahrain_AUD_AR_Awareness_X_Food Video 12s - AR"
+      },
+      {
+       "id_str": "1869745030476312896",
+       "card_uri": "card://1869745027737399296",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BTW_UF_Bahrain_AUD_EN_Awareness_X_Juice Video 12s - EN"
+      },
+      {
+       "id_str": "1899019142436446293",
+       "card_uri": "card://1899017991020544000",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BT Ramadan Campaign - Restaurants_UF_KSA_Prospecting_EN_Awareness_X_Hero Video DIRIYAHCULINARY_V2"
+      },
+      {
+       "id_str": "1899020904081846338",
+       "card_uri": "card://1899019877396176896",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BT Ramadan Campaign - Restaurants_UF_KSA_Prospecting_AR_Awareness_X_Hero Video DIRIYAHCULINARY_V2"
+      },
+      {
+       "id_str": "1899021407339553092",
+       "card_uri": "card://1899020224709701632",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BT Ramadan Campaign - Restaurants_MF_KSA_Prospecting_EN_Consideration_X_Hero Video DIRIYAHCULINARY_V2"
+      },
+      {
+       "id_str": "1899021659157217659",
+       "card_uri": "card://1899020458865139712",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BT Ramadan Campaign - Restaurants_MF_KSA_Prospecting_AR_Consideration_X_Hero Video DIRIYAHCULINARY_V2"
+      },
+      {
+       "id_str": "1899778602327330956",
+       "card_uri": "card://1899778600007839744",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BT Ramadan Campaign - Retail_UF_KSA_Prospecting_EN_Awareness_X_Diriyah Retail"
+      },
+      {
+       "id_str": "1899778602696323198",
+       "card_uri": "card://1899778600007843840",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BT Ramadan Campaign - Retail_UF_KSA_Prospecting_AR_Awareness_X_Diriyah Retail"
+      },
+      {
+       "id_str": "1900150890667061631",
+       "card_uri": "card://1900150888632901636",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BT Ramadan Campaign - Activations_UF_KSA_AUD_AR_Awareness_X_DIRIYAHExperience"
+      }
+     ]
+    },
+    "meta": {
+     "mcp_result_projection": {
+      "fields": [
+       "id_str",
+       "card_uri",
+       "entities.urls",
+       "name"
+      ],
+      "max_items": 2000
+     }
+    }
+   },
+   "meta": {
+    "requestId": "a9188c0a-e71a-4edd-8231-93a33293f9b2",
+    "latencyMs": 1711
+   }
+  }
+ },
+ {
+  "tool_use_id": "toolu_01RjeQKRtQ5rHZvQE2kP3HLh",
+  "input": {
+   "action": "x_accounts_account_id_tweets_get",
+   "path_params": {
+    "account_id": "18ce55o46uh"
+   },
+   "params": {
+    "tweet_type": "PUBLISHED",
+    "timeline_type": "ALL",
+    "trim_user": true,
+    "count": 200,
+    "tweet_ids": "1900150891279425675,1905591450131218496,1905592456063881420,1990451743071907985,1991202093055570425,1993325300625948998,1993326306508079157,1993366192200073486,1993366307363078384,1999051111857320121,1999051248860115158,1999347984283369970,1999348236578853327,2000556021677183302,2000556021732016567,2000556021744652434,2000857123895603616,2003428119651508269,2003428119991005653,2003433655990186157,2003433656027627583,2003485619499266534,2003485619692142933,2003752255250739677,2003752255292416082,2005261675193393554,2005261675210183104,2005893615273267409,2006009639146848685,2006009859779747875,2006010795801669950,2006013428935319930,2006013592588763349,2006014686052188370,2006253830145728679,2006978765583229254,2026260301264634312,2026260355673206932,2026612157153161453,2026612162983243997,2026964034327806344,2026964457298203134,2026965199052574817,2026966797480858043,2029129728679133475,2029130017184383041,2029132511033622839,2029132579505316348,2029132650196377700,2029140581193322866,2029537008390119907,2033497901708525842,2033515255586853349,2033515376516968481,2033523097416937479,2033523099920908768,2033523101602918655,2033523104652173528,2033523106589851796,2033523109274271819,2033527819225960768,2033527821595705686,2033550774332989923,2061430242628280471,2061430487013282215,2066167486790185398,2066868883592757468,2066897650444841380,2071255977345667376,2071255977379103073,2071255977760796890,2071255977853383019,2075216660961665231,2075217176441848239,2077305351918305297,2077749058014228732,2077749058039435692,2077749058224210018,2077749058886684674,2078556349743403333,2078556349743747215,2078557699483095505,2078557699491479703,2079622450380415031,2079943955576176789,2079943955748389027,2081265520624513132,2082448071317750062,2082448072416936415,2087162070907146254,2087162070911369492,2089052283313020991,2089052283455861189,2089052283518775399,2089053195763118415,2090156970225303922,2101685115818779091"
+   },
+   "result_fields": [
+    "id_str",
+    "card_uri",
+    "entities.urls",
+    "name"
+   ],
+   "max_items": 2000
+  },
+  "result": {
+   "success": true,
+   "data": {
+    "success": true,
+    "data": {
+     "request": {
+      "params": {
+       "count": 200,
+       "timeline_type": "ALL",
+       "tweet_ids": [
+        "1900150891279425675",
+        "1905591450131218496",
+        "1905592456063881420",
+        "1990451743071907985",
+        "1991202093055570425",
+        "1993325300625948998",
+        "1993326306508079157",
+        "1993366192200073486",
+        "1993366307363078384",
+        "1999051111857320121",
+        "1999051248860115158",
+        "1999347984283369970",
+        "1999348236578853327",
+        "2000556021677183302",
+        "2000556021732016567",
+        "2000556021744652434",
+        "2000857123895603616",
+        "2003428119651508269",
+        "2003428119991005653",
+        "2003433655990186157",
+        "2003433656027627583",
+        "2003485619499266534",
+        "2003485619692142933",
+        "2003752255250739677",
+        "2003752255292416082",
+        "2005261675193393554",
+        "2005261675210183104",
+        "2005893615273267409",
+        "2006009639146848685",
+        "2006009859779747875",
+        "2006010795801669950",
+        "2006013428935319930",
+        "2006013592588763349",
+        "2006014686052188370",
+        "2006253830145728679",
+        "2006978765583229254",
+        "2026260301264634312",
+        "2026260355673206932",
+        "2026612157153161453",
+        "2026612162983243997",
+        "2026964034327806344",
+        "2026964457298203134",
+        "2026965199052574817",
+        "2026966797480858043",
+        "2029129728679133475",
+        "2029130017184383041",
+        "2029132511033622839",
+        "2029132579505316348",
+        "2029132650196377700",
+        "2029140581193322866",
+        "2029537008390119907",
+        "2033497901708525842",
+        "2033515255586853349",
+        "2033515376516968481",
+        "2033523097416937479",
+        "2033523099920908768",
+        "2033523101602918655",
+        "2033523104652173528",
+        "2033523106589851796",
+        "2033523109274271819",
+        "2033527819225960768",
+        "2033527821595705686",
+        "2033550774332989923",
+        "2061430242628280471",
+        "2061430487013282215",
+        "2066167486790185398",
+        "2066868883592757468",
+        "2066897650444841380",
+        "2071255977345667376",
+        "2071255977379103073",
+        "2071255977760796890",
+        "2071255977853383019",
+        "2075216660961665231",
+        "2075217176441848239",
+        "2077305351918305297",
+        "2077749058014228732",
+        "2077749058039435692",
+        "2077749058224210018",
+        "2077749058886684674",
+        "2078556349743403333",
+        "2078556349743747215",
+        "2078557699483095505",
+        "2078557699491479703",
+        "2079622450380415031",
+        "2079943955576176789",
+        "2079943955748389027",
+        "2081265520624513132",
+        "2082448071317750062",
+        "2082448072416936415",
+        "2087162070907146254",
+        "2087162070911369492",
+        "2089052283313020991",
+        "2089052283455861189",
+        "2089052283518775399",
+        "2089053195763118415",
+        "2090156970225303922",
+        "2101685115818779091"
+       ],
+       "account_id": "18ce55o46uh",
+       "trim_user": true,
+       "tweet_type": "PUBLISHED"
+      }
+     },
+     "next_cursor": null,
+     "data": [
+      {
+       "id_str": "1900150891279425675",
+       "card_uri": "card://1900150888658042881",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BT Ramadan Campaign - Activations_UF_KSA_AUD_EN_Awareness_X_DIRIYAHExperience"
+      },
+      {
+       "id_str": "1905591450131218496",
+       "card_uri": "card://1905590419309649920",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BT Ramadan Campaign - Activations_MF_KSA_AUD_AR_Consideration_X_DIRIYAHEID"
+      },
+      {
+       "id_str": "1905592456063881420",
+       "card_uri": "card://1905591257000288256",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_BT Ramadan Campaign - Activations_MF_KSA_AUD_EN_Consideration_X_DIRIYAHEID"
+      },
+      {
+       "id_str": "1990451743071907985",
+       "entities": {
+        "urls": []
+       },
+       "name": null
+      },
+      {
+       "id_str": "1991202093055570425",
+       "entities": {
+        "urls": []
+       },
+       "name": null
+      },
+      {
+       "id_str": "1993325300625948998",
+       "card_uri": "card://1993324142196932608",
+       "entities": {
+        "urls": []
+       },
+       "name": "Visit Diriyah_Tactical_Visit Diriyah Winter Campaign 2025_UF_KSA_Prospecting_AR_Awareness_KV3"
+      },
+      {
+       "id_str": "1993326306508079157",
+       "card_uri": "card://1993325129137635329",
+       "entities": {
+        "urls": []
+       },
+       "name": "Visit Diriyah_Tactical_Visit Diriyah Winter Campaign 2025_UF_KSA_Prospecting_EN_Awareness_KV3"
+      },
+      {
+       "id_str": "1993366192200073486",
+       "entities": {
+        "urls": []
+       },
+       "name": null
+      },
+      {
+       "id_str": "1993366307363078384",
+       "entities": {
+        "urls": []
+       },
+       "name": null
+      },
+      {
+       "id_str": "1999051111857320121",
+       "card_uri": "card://1999051108896190465",
+       "entities": {
+        "urls": []
+       },
+       "name": "Visit Diriyah_Tactical_Visit Diriyah Winter Campaign 2025_UF_KSA_Prospecting_EN_Awareness_15s Video"
+      },
+      {
+       "id_str": "1999051248860115158",
+       "card_uri": "card://1999051245999542272",
+       "entities": {
+        "urls": []
+       },
+       "name": "Visit Diriyah_Tactical_Visit Diriyah Winter Campaign 2025_UF_KSA_Prospecting_AR_Awareness_15s Video"
+      },
+      {
+       "id_str": "1999347984283369970",
+       "card_uri": "card://1999346830455533568",
+       "entities": {
+        "urls": []
+       },
+       "name": "Bujairi Terrace_Tactical _Bujairi Terrace Winter Campaign 2025 Tickets_UF_KSA_Prospecting_EN_Awareness_BT Hero Video"
+      },
+      {
+       "id_str": "1999348236578853327",
+       "card_uri": "card://1999347007065063424",
+       "entities": {
+        "urls": []
+       },
+       "name": "Bujairi Terrace_Tactical _Bujairi Terrace Winter Campaign 2025 Tickets_UF_KSA_Prospecting_AR_Awareness_BT Hero Video"
+      },
+      {
+       "id_str": "2000556021677183302",
+       "card_uri": "card://2000556019093782528",
+       "entities": {
+        "urls": []
+       },
+       "name": "Visit Diriyah_Tactical _Zallal Winter Campaign 2025_UF_KSA_Prospecting_AR_Awareness_KV2"
+      },
+      {
+       "id_str": "2000556021732016567",
+       "card_uri": "card://2000556019102232576",
+       "entities": {
+        "urls": []
+       },
+       "name": "Visit Diriyah_Tactical _Zallal Winter Campaign 2025_UF_KSA_Prospecting_AR_Awareness_Zallal Hero Video"
+      },
+      {
+       "id_str": "2000556021744652434",
+       "card_uri": "card://2000556018997366785",
+       "entities": {
+        "urls": []
+       },
+       "name": "Visit Diriyah_Tactical _Zallal Winter Campaign 2025_UF_KSA_Prospecting_EN_Awareness_Zallal Hero Video"
+      },
+      {
+       "id_str": "2000857123895603616",
+       "card_uri": "card://2000857116840714240",
+       "entities": {
+        "urls": []
+       },
+       "name": "Visit Diriyah_Tactical _Zallal Winter Campaign 2025_MF_KSA_Prospecting_AR_Traffic_KV2"
+      },
+      {
+       "id_str": "2003428119651508269",
+       "card_uri": "card://2003427101802917888",
+       "entities": {
+        "urls": []
+       },
+       "name": "Visit Diriyah_Tactical _Zallal Winter Campaign 2025_MF_KSA_Prospecting_EN_Traffic_KV1"
+      },
+      {
+       "id_str": "2003428119991005653",
+       "card_uri": "card://2003427101849026560",
+       "entities": {
+        "urls": []
+       },
+       "name": "Visit Diriyah_Tactical _Zallal Winter Campaign 2025_MF_KSA_Prospecting_EN_Traffic_KV2"
+      },
+      {
+       "id_str": "2003433655990186157",
+       "card_uri": "card://2003432544658948099",
+       "entities": {
+        "urls": []
+       },
+       "name": "Bujairi Terrace_Tactical _Bujairi Terrace Winter Campaign 2025 Tickets_UF_KSA_Prospecting_EN_Awareness_KV1"
+      },
+      {
+       "id_str": "2003433656027627583",
+       "card_uri": "card://2003432544608595968",
+       "entities": {
+        "urls": []
+       },
+       "name": "Bujairi Terrace_Tactical _Bujairi Terrace Winter Campaign 2025 Tickets_UF_KSA_Prospecting_EN_Awareness_KV3"
+      },
+      {
+       "id_str": "2003485619499266534",
+       "card_uri": "card://2003485617242652672",
+       "entities": {
+        "urls": []
+       },
+       "name": "Bujairi Terrace_Tactical _Bujairi Terrace Winter Campaign 2025 Tickets_LF_KSA_Prospecting_EN_Conversion_KV1"
+      },
+      {
+       "id_str": "2003485619692142933",
+       "card_uri": "card://2003485617209114625",
+       "entities": {
+        "urls": []
+       },
+       "name": "Bujairi Terrace_Tactical _Bujairi Terrace Winter Campaign 2025 Tickets_LF_KSA_Prospecting_EN_Conversion_KV3"
+      },
+      {
+       "id_str": "2003752255250739677",
+       "card_uri": "card://2003751216027942912",
+       "entities": {
+        "urls": []
+       },
+       "name": "Visit Diriyah_Tactical _Zallal Winter Campaign 2025_UF_KSA_Prospecting_EN_Awareness_KV2"
+      },
+      {
+       "id_str": "2003752255292416082",
+       "card_uri": "card://2003751216019656704",
+       "entities": {
+        "urls": []
+       },
+       "name": "Visit Diriyah_Tactical _Zallal Winter Campaign 2025_UF_KSA_Prospecting_EN_Awareness_KV1"
+      },
+      {
+       "id_str": "2005261675193393554",
+       "card_uri": "card://2005261672278282240",
+       "entities": {
+        "urls": []
+       },
+       "name": "Visit Diriyah_Tactical _Bab Samhan Winter Campaign 2025_UF_KSA_Prospecting_AR_Awareness_Bab Samhan KV1"
+      },
+      {
+       "id_str": "2005261675210183104",
+       "card_uri": "card://2005261672223854592",
+       "entities": {
+        "urls": []
+       },
+       "name": "Visit Diriyah_Tactical _Bab Samhan Winter Campaign 2025_UF_KSA_Prospecting_EN_Awareness_Bab Samhan KV1"
+      },
+      {
+       "id_str": "2005893615273267409",
+       "card_uri": "card://2005892486129147906",
+       "entities": {
+        "urls": []
+       },
+       "name": "Visit Diriyah_Tactical _Bab Samhan Winter Campaign 2025_UF_KSA_Prospecting_AR_Awareness_Bab Samhan KV1"
+      },
+      {
+       "id_str": "2006009639146848685",
+       "card_uri": "card://2006009635824893952",
+       "entities": {
+        "urls": []
+       },
+       "name": "Bujairi Terrace_Tactical _Bujairi Terrace Winter Campaign 2025 Tickets_UF_KSA_Prospecting_AR_Awareness_KV1"
+      },
+      {
+       "id_str": "2006009859779747875",
+       "card_uri": "card://2006009856608854016",
+       "entities": {
+        "urls": []
+       },
+       "name": "Bujairi Terrace_Tactical _Bujairi Terrace Winter Campaign 2025 Tickets_UF_KSA_Prospecting_AR_Awareness_KV3"
+      },
+      {
+       "id_str": "2006010795801669950",
+       "card_uri": "card://2006010792823644161",
+       "entities": {
+        "urls": []
+       },
+       "name": "Visit Diriyah_Tactical _Zallal Winter Campaign 2025_UF_KSA_Prospecting_AR_Awareness_KV1"
+      },
+      {
+       "id_str": "2006013428935319930",
+       "card_uri": "card://2006013425533739008",
+       "entities": {
+        "urls": []
+       },
+       "name": "Bujairi Terrace_Tactical _Bujairi Terrace Winter Campaign 2025 Tickets_UF_KSA_Prospecting_AR_Conversion_KV1"
+      },
+      {
+       "id_str": "2006013592588763349",
+       "card_uri": "card://2006013589338136576",
+       "entities": {
+        "urls": []
+       },
+       "name": "Bujairi Terrace_Tactical _Bujairi Terrace Winter Campaign 2025 Tickets_UF_KSA_Prospecting_AR_Conversion_KV3"
+      },
+      {
+       "id_str": "2006014686052188370",
+       "card_uri": "card://2006014682528886784",
+       "entities": {
+        "urls": []
+       },
+       "name": "Visit Diriyah_Tactical _Zallal Winter Campaign 2025_MF_KSA_Prospecting_AR_Traffic_KV1"
+      },
+      {
+       "id_str": "2006253830145728679",
+       "card_uri": "card://2006253827218092032",
+       "entities": {
+        "urls": []
+       },
+       "name": "Visit Diriyah_Tactical _Zallal Winter Campaign 2025_UF_KSA_Prospecting_AR_Awareness_KV2"
+      },
+      {
+       "id_str": "2006978765583229254",
+       "card_uri": "card://2006977632878080000",
+       "entities": {
+        "urls": []
+       },
+       "name": "Visit Diriyah_Tactical _Zallal Winter Campaign 2025_MF_KSA_Prospecting_AR_Traffic_KV2"
+      },
+      {
+       "id_str": "2026260301264634312",
+       "card_uri": "card://2026260299083620352",
+       "entities": {
+        "urls": []
+       },
+       "name": "1 - Zalal - EN - AWR"
+      },
+      {
+       "id_str": "2026260355673206932",
+       "card_uri": "card://2026260353575964672",
+       "entities": {
+        "urls": []
+       },
+       "name": "1 - Zalal - EN - Consideration"
+      },
+      {
+       "id_str": "2026612157153161453",
+       "card_uri": "card://2026612155060224000",
+       "entities": {
+        "urls": []
+       },
+       "name": "1 - Zalal - AR - Consideration"
+      },
+      {
+       "id_str": "2026612162983243997",
+       "card_uri": "card://2026612160844148737",
+       "entities": {
+        "urls": []
+       },
+       "name": "1 - Zalal - AR - AWR"
+      },
+      {
+       "id_str": "2026964034327806344",
+       "card_uri": "card://2026964032285245440",
+       "entities": {
+        "urls": []
+       },
+       "name": "1- Bab Smahan Suhour Film\u200b _ AR _ Consdieration"
+      },
+      {
+       "id_str": "2026964457298203134",
+       "card_uri": "card://2026964455297572864",
+       "entities": {
+        "urls": []
+       },
+       "name": "1- Bab Smahan Suhour Film_EN_consdieration"
+      },
+      {
+       "id_str": "2026965199052574817",
+       "card_uri": "card://2026965197030821888",
+       "entities": {
+        "urls": []
+       },
+       "name": "1- Bab Samhan AWR_EN_video"
+      },
+      {
+       "id_str": "2026966797480858043",
+       "card_uri": "card://2026966795316613120",
+       "entities": {
+        "urls": []
+       },
+       "name": "1 -Bab\u200b\u200b video_AR_AWR"
+      },
+      {
+       "id_str": "2029129728679133475",
+       "card_uri": "card://2029129726531678208",
+       "entities": {
+        "urls": []
+       },
+       "name": "3- BT Dining KV\u200b _ EN _ AWR"
+      },
+      {
+       "id_str": "2029130017184383041",
+       "card_uri": "card://2029130014667444224",
+       "entities": {
+        "urls": []
+       },
+       "name": "3 -BT Dining KV\u200b\u200b_AR_AWR"
+      },
+      {
+       "id_str": "2029132511033622839",
+       "card_uri": "card://2029132508957425666",
+       "entities": {
+        "urls": []
+       },
+       "name": "3-BT Dining KV\u200b\u200b_AR_Consideration"
+      },
+      {
+       "id_str": "2029132579505316348",
+       "card_uri": "card://2029132577408212993",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] 2- BT Dining KV\u200b _ EN _ Consderation"
+      },
+      {
+       "id_str": "2029132650196377700",
+       "card_uri": "card://2029132647927300097",
+       "entities": {
+        "urls": []
+       },
+       "name": "3- BT Dining KV\u200b _ EN _ Conversion"
+      },
+      {
+       "id_str": "2029140581193322866",
+       "card_uri": "card://2029140578538319872",
+       "entities": {
+        "urls": []
+       },
+       "name": "3 -BT Dining KV\u200b\u200b_AR_Sales"
+      },
+      {
+       "id_str": "2029537008390119907",
+       "card_uri": "card://2029537005621886978",
+       "entities": {
+        "urls": []
+       },
+       "name": "BT Dining KV\u200b\u200b_AR"
+      },
+      {
+       "id_str": "2033497901708525842",
+       "card_uri": "card://2033497899577786368",
+       "entities": {
+        "urls": []
+       },
+       "name": "EN Video Eid Visit"
+      },
+      {
+       "id_str": "2033515255586853349",
+       "card_uri": "card://2033515253057634304",
+       "entities": {
+        "urls": []
+       },
+       "name": "COE - EN - VISIT - EID"
+      },
+      {
+       "id_str": "2033515376516968481",
+       "card_uri": "card://2033515374436659200",
+       "entities": {
+        "urls": []
+       },
+       "name": "COE - AR - VISIT - EID"
+      },
+      {
+       "id_str": "2033523097416937479",
+       "card_uri": "card://2033523094699040768",
+       "entities": {
+        "urls": []
+       },
+       "name": "Tickets - EN - EID KV"
+      },
+      {
+       "id_str": "2033523099920908768",
+       "card_uri": "card://2033523097345626112",
+       "entities": {
+        "urls": []
+       },
+       "name": "Tickets - EN - EID KV"
+      },
+      {
+       "id_str": "2033523101602918655",
+       "card_uri": "card://2033523099237285888",
+       "entities": {
+        "urls": []
+       },
+       "name": "Tickets - EN - EID KV"
+      },
+      {
+       "id_str": "2033523104652173528",
+       "card_uri": "card://2033523102353702912",
+       "entities": {
+        "urls": []
+       },
+       "name": "Tickets - AR - EID KV"
+      },
+      {
+       "id_str": "2033523106589851796",
+       "card_uri": "card://2033523104413085696",
+       "entities": {
+        "urls": []
+       },
+       "name": "Tickets - AR - EID KV"
+      },
+      {
+       "id_str": "2033523109274271819",
+       "card_uri": "card://2033523106384429056",
+       "entities": {
+        "urls": []
+       },
+       "name": "Tickets - AR - EID KV"
+      },
+      {
+       "id_str": "2033527819225960768",
+       "card_uri": "card://2033527816956923905",
+       "entities": {
+        "urls": []
+       },
+       "name": "Tickets - EN - EID KV"
+      },
+      {
+       "id_str": "2033527821595705686",
+       "card_uri": "card://2033527819355975680",
+       "entities": {
+        "urls": []
+       },
+       "name": "Tickets - EN - EID KV"
+      },
+      {
+       "id_str": "2033550774332989923",
+       "card_uri": "card://2033550772000960512",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] AR Video Eid Visit"
+      },
+      {
+       "id_str": "2061430242628280471",
+       "card_uri": "card://2061430239109304320",
+       "entities": {
+        "urls": []
+       },
+       "name": "Bab Samhan x Qiddiya_Static KV1_ AR_ CPM"
+      },
+      {
+       "id_str": "2061430487013282215",
+       "card_uri": "card://2061430484329242624",
+       "entities": {
+        "urls": []
+       },
+       "name": "Bab Samhan x Qiddiya_Static KV1_ EN_ CPM"
+      },
+      {
+       "id_str": "2066167486790185398",
+       "card_uri": "card://2066167484047065088",
+       "entities": {
+        "urls": []
+       },
+       "name": "Visit Diriyah_WC KV_EN_1x1_V3"
+      },
+      {
+       "id_str": "2066868883592757468",
+       "card_uri": "card://2066868881008857088",
+       "entities": {
+        "urls": []
+       },
+       "name": "Visit Diriyah_Intro_VideoKV_10s_AR_16x9_V3"
+      },
+      {
+       "id_str": "2066897650444841380",
+       "card_uri": "card://2066897647768641536",
+       "entities": {
+        "urls": []
+       },
+       "name": "Visit Diriyah_Intro_KV_AR_45s"
+      },
+      {
+       "id_str": "2071255977345667376",
+       "card_uri": "card://2071255974728364032",
+       "entities": {
+        "urls": []
+       },
+       "name": "Bab Samhan x Qiddiya2_Static KV1_AR_CPM_V2"
+      },
+      {
+       "id_str": "2071255977379103073",
+       "card_uri": "card://2071255974728413184",
+       "entities": {
+        "urls": []
+       },
+       "name": "Bab Samhan x Qiddiya2_Static KV2_AR_CPM_V2"
+      },
+      {
+       "id_str": "2071255977760796890",
+       "card_uri": "card://2071255974728347648",
+       "entities": {
+        "urls": []
+       },
+       "name": "Bab Samhan x Qiddiya2_Static KV4_AR_CPM_V2"
+      },
+      {
+       "id_str": "2071255977853383019",
+       "card_uri": "card://2071255974715748352",
+       "entities": {
+        "urls": []
+       },
+       "name": "Bab Samhan x Qiddiya2_Static KV3_AR_CPM_V2"
+      },
+      {
+       "id_str": "2075216660961665231",
+       "card_uri": "card://2075216658830880768",
+       "entities": {
+        "urls": []
+       },
+       "name": "Visit Diriyah_WC KV3_EN_1x1_V2"
+      },
+      {
+       "id_str": "2075217176441848239",
+       "card_uri": "card://2075217174184988672",
+       "entities": {
+        "urls": []
+       },
+       "name": "Visit Diriyah_WC KV3_AR_1x1_V2"
+      },
+      {
+       "id_str": "2077305351918305297",
+       "card_uri": "card://2077305349737009153",
+       "entities": {
+        "urls": []
+       },
+       "name": "Visit Diriyah_WC_Video30s_AR_1x1"
+      },
+      {
+       "id_str": "2077749058014228732",
+       "card_uri": "card://2077749055891877889",
+       "entities": {
+        "urls": []
+       },
+       "name": "Bab Samhan x Qiddiya2_Static KV1_ EN_CPM_V2"
+      },
+      {
+       "id_str": "2077749058039435692",
+       "card_uri": "card://2077749055887667201",
+       "entities": {
+        "urls": []
+       },
+       "name": "Bab Samhan x Qiddiya2_Static KV4_EN_CPM_V2"
+      },
+      {
+       "id_str": "2077749058224210018",
+       "card_uri": "card://2077749055929630720",
+       "entities": {
+        "urls": []
+       },
+       "name": "Bab Samhan x Qiddiya2_Static KV3_ EN_CPM_V2"
+      },
+      {
+       "id_str": "2077749058886684674",
+       "card_uri": "card://2077749055908675584",
+       "entities": {
+        "urls": []
+       },
+       "name": "Bab Samhan x Qiddiya2_Static KV2_ EN_CPM_V2"
+      },
+      {
+       "id_str": "2078556349743403333",
+       "card_uri": "card://2078556347281309696",
+       "entities": {
+        "urls": []
+       },
+       "name": "Visit Diriyah_Intro_KV_AR_45s"
+      },
+      {
+       "id_str": "2078556349743747215",
+       "card_uri": "card://2078556347264651264",
+       "entities": {
+        "urls": []
+       },
+       "name": "Visit Diriyah_Intro_KV_10s_AR_16x9"
+      },
+      {
+       "id_str": "2078557699483095505",
+       "card_uri": "card://2078557697025216512",
+       "entities": {
+        "urls": []
+       },
+       "name": "Visit Diriyah_WC_Video30s_AR_1x1"
+      },
+      {
+       "id_str": "2078557699491479703",
+       "card_uri": "card://2078557696974835712",
+       "entities": {
+        "urls": []
+       },
+       "name": "Visit Diriyah_WC KV3_AR_1x1"
+      },
+      {
+       "id_str": "2079622450380415031",
+       "card_uri": "card://2079622447502925826",
+       "entities": {
+        "urls": []
+       },
+       "name": "Bab Samhan x Qiddiya2_Video1_45s_AR_CPM"
+      },
+      {
+       "id_str": "2079943955576176789",
+       "card_uri": "card://2079943953420328961",
+       "entities": {
+        "urls": []
+       },
+       "name": "Visit Diriyah_KV3_Summer_EN_1x1"
+      },
+      {
+       "id_str": "2079943955748389027",
+       "card_uri": "card://2079943953416122368",
+       "entities": {
+        "urls": []
+       },
+       "name": "Visit Diriyah_KV3_Summer_AR_1x1"
+      },
+      {
+       "id_str": "2081265520624513132",
+       "card_uri": "card://2081265518154067969",
+       "entities": {
+        "urls": []
+       },
+       "name": "Bab Samhan x Qiddiya_2026_KSA_Traffic_AR"
+      },
+      {
+       "id_str": "2082448071317750062",
+       "card_uri": "card://2082448069283454976",
+       "entities": {
+        "urls": []
+       },
+       "name": "Visit Diriyah_KV3_Summer_AR_1x1"
+      },
+      {
+       "id_str": "2082448072416936415",
+       "card_uri": "card://2082448069300203520",
+       "entities": {
+        "urls": []
+       },
+       "name": "Visit Diriyah_KV3_Summer_EN_1x1"
+      },
+      {
+       "id_str": "2087162070907146254",
+       "card_uri": "card://2087162068717678593",
+       "entities": {
+        "urls": []
+       },
+       "name": "Visit Diriyah_Intro_KV_45s_AR_16x9"
+      },
+      {
+       "id_str": "2087162070911369492",
+       "card_uri": "card://2087162068705103873",
+       "entities": {
+        "urls": []
+       },
+       "name": "Visit Diriyah_Intro_KV_30s_AR_16x9"
+      },
+      {
+       "id_str": "2089052283313020991",
+       "card_uri": "card://2089052281110925313",
+       "entities": {
+        "urls": []
+       },
+       "name": "Bab Samhan x Qiddiya_CR2_AR_CPC"
+      },
+      {
+       "id_str": "2089052283455861189",
+       "card_uri": "card://2089052281127718912",
+       "entities": {
+        "urls": []
+       },
+       "name": "Bab Samhan x Qiddiya_CR1_AR_CPC"
+      },
+      {
+       "id_str": "2089052283518775399",
+       "card_uri": "card://2089052281282928640",
+       "entities": {
+        "urls": []
+       },
+       "name": "Bab Samhan x Qiddiya_CR3_AR_CPC"
+      },
+      {
+       "id_str": "2089053195763118415",
+       "card_uri": "card://2089053184417222656",
+       "entities": {
+        "urls": []
+       },
+       "name": "Bab Samhan x Qiddiya_CR4_EN_CPC"
+      },
+      {
+       "id_str": "2090156970225303922",
+       "card_uri": "card://2090156967939407872",
+       "entities": {
+        "urls": []
+       },
+       "name": "Visit Diriyah_Intro_VideoKV_45s_AR_16x9"
+      },
+      {
+       "id_str": "2101685115818779091",
+       "card_uri": "card://2101685074437828608",
+       "entities": {
+        "urls": []
+       },
+       "name": "company_general_2026_sep_sc-snd-kv1_adset-id-0df8a722_display_ar"
+      }
+     ]
+    },
+    "meta": {
+     "mcp_result_projection": {
+      "fields": [
+       "id_str",
+       "card_uri",
+       "entities.urls",
+       "name"
+      ],
+      "max_items": 2000
+     }
+    }
+   },
+   "meta": {
+    "requestId": "09bfc3e1-e39c-4a71-9da9-4a80302e78f5",
+    "latencyMs": 1527
+   }
+  }
+ }
+]

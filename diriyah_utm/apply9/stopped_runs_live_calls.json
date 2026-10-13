@@ -1,0 +1,283 @@
+[
+ {
+  "run": "wf_6331729e-fc0",
+  "batch": "Apply:in_google_1.json",
+  "time": "11:36:46",
+  "action": "google_ads_v23_ad_mutate_ads",
+  "params": "{\"operations\": [{\"update\": {\"resource_name\": \"customers/8324286739/ads/797539717097\", \"final_urls\": [\"https://www.diriyah.sa/ar/dine?utm_source=google&utm_mediu",
+  "result_ids": [],
+  "ok": true
+ },
+ {
+  "run": "wf_6331729e-fc0",
+  "batch": "Apply:in_google_1.json",
+  "time": "11:42:46",
+  "action": "google_ads_v23_ad_mutate_ads",
+  "params": "{\"operations\": [{\"update\": {\"resource_name\": \"customers/8324286739/ads/800840046627\", \"final_urls\": [\"https://www.diriyah.sa/ar/dine?utm_source=google&utm_mediu",
+  "result_ids": [],
+  "ok": true
+ },
+ {
+  "run": "wf_6331729e-fc0",
+  "batch": "Apply:in_google_1.json",
+  "time": "11:44:47",
+  "action": "google_ads_v23_ad_mutate_ads",
+  "params": "{\"operations\": [{\"update\": {\"resource_name\": \"customers/8324286739/ads/797539717106\", \"final_urls\": [\"https://www.diriyah.sa/ar/dine?utm_source=google&utm_mediu",
+  "result_ids": [],
+  "ok": true
+ },
+ {
+  "run": "wf_6331729e-fc0",
+  "batch": "Apply:in_google_2.json",
+  "time": "11:38:13",
+  "action": "google_ads_v23_ad_mutate_ads",
+  "params": "{\"operations\": [{\"update\": {\"resource_name\": \"customers/8324286739/ads/800840046888\", \"final_urls\": [\"https://www.diriyah.sa/ar/dine?utm_source=google&utm_mediu",
+  "result_ids": [],
+  "ok": true
+ },
+ {
+  "run": "wf_6331729e-fc0",
+  "batch": "Apply:in_google_2.json",
+  "time": "11:42:25",
+  "action": "google_ads_v23_ad_mutate_ads",
+  "params": "{\"operations\": [{\"update\": {\"resource_name\": \"customers/8324286739/ads/797795488551\", \"final_urls\": [\"https://www.diriyah.sa/ar/dine?utm_source=google&utm_mediu",
+  "result_ids": [],
+  "ok": true
+ },
+ {
+  "run": "wf_6331729e-fc0",
+  "batch": "Apply:in_google_2.json",
+  "time": "11:44:33",
+  "action": "google_ads_v23_ad_mutate_ads",
+  "params": "{\"operations\": [{\"update\": {\"resource_name\": \"customers/8324286739/ads/797795488554\", \"final_urls\": [\"https://www.diriyah.sa/ar/dine?utm_source=google&utm_mediu",
+  "result_ids": [],
+  "ok": true
+ },
+ {
+  "run": "wf_3fd345d7-527",
+  "batch": "Apply:in_meta_2.json",
+  "time": "11:39:58",
+  "action": "meta_ad_account_id_adcreatives_create",
+  "params": "{\"action\": \"meta_ad_account_id_adcreatives_create\", \"path_params\": {\"ad_account_id\": \"1198625455580757\"}, \"dry_run\": false, \"payload\": {\"name\": \"ManazelAlHadawi",
+  "result_ids": [
+   "1100268182794129"
+  ],
+  "ok": true
+ },
+ {
+  "run": "wf_3fd345d7-527",
+  "batch": "Apply:in_meta_2.json",
+  "time": "11:40:16",
+  "action": "meta_ad_id_update",
+  "params": "{\"action\": \"meta_ad_id_update\", \"path_params\": {\"ad_id\": \"120246281970460789\"}, \"payload\": {\"creative\": {\"creative_id\": \"1100268182794129\"}}, \"dry_run\": false}",
+  "result_ids": [],
+  "ok": true
+ },
+ {
+  "run": "wf_3fd345d7-527",
+  "batch": "Apply:in_meta_2.json",
+  "time": "11:42:41",
+  "action": "meta_ad_account_id_adcreatives_create",
+  "params": "{\"action\": \"meta_ad_account_id_adcreatives_create\", \"path_params\": {\"ad_account_id\": \"1198625455580757\"}, \"dry_run\": false, \"payload\": {\"name\": \"Visit Diriyah 2",
+  "result_ids": [],
+  "ok": false
+ },
+ {
+  "run": "wf_3fd345d7-527",
+  "batch": "Apply:in_meta_2.json",
+  "time": "11:44:12",
+  "action": "meta_ad_account_id_adcreatives_create",
+  "params": "{\"action\": \"meta_ad_account_id_adcreatives_create\", \"path_params\": {\"ad_account_id\": \"1198625455580757\"}, \"dry_run\": false, \"payload\": {\"name\": \"ManazelAlHadawi",
+  "result_ids": [
+   "3473389212853409"
+  ],
+  "ok": true
+ },
+ {
+  "run": "wf_3fd345d7-527",
+  "batch": "Apply:in_meta_2.json",
+  "time": "11:44:28",
+  "action": "meta_ad_id_update",
+  "params": "{\"action\": \"meta_ad_id_update\", \"path_params\": {\"ad_id\": \"120246281860070789\"}, \"payload\": {\"creative\": {\"creative_id\": \"3473389212853409\"}}, \"dry_run\": false}",
+  "result_ids": [],
+  "ok": true
+ },
+ {
+  "run": "wf_3fd345d7-527",
+  "batch": "Apply:in_meta_1.json",
+  "time": "11:39:14",
+  "action": "meta_ad_account_id_adcreatives_create",
+  "params": "{\"action\": \"meta_ad_account_id_adcreatives_create\", \"path_params\": {\"ad_account_id\": \"1198625455580757\"}, \"dry_run\": false, \"payload\": {\"name\": \"{{product.name}",
+  "result_ids": [
+   "1043904348702789"
+  ],
+  "ok": true
+ },
+ {
+  "run": "wf_4c644ce9-3b9",
+  "batch": "Apply:in_meta_4.json",
+  "time": "11:36:59",
+  "action": "meta_ad_account_id_adcreatives_create",
+  "params": "{\"action\": \"meta_ad_account_id_adcreatives_create\", \"path_params\": {\"ad_account_id\": \"2194833637927644\"}, \"dry_run\": false, \"payload\": {\"name\": \"{{product.name}",
+  "result_ids": [
+   "967332096432226"
+  ],
+  "ok": true
+ },
+ {
+  "run": "wf_4c644ce9-3b9",
+  "batch": "Apply:in_meta_4.json",
+  "time": "11:41:42",
+  "action": "meta_ad_account_id_adcreatives_create",
+  "params": "{\"action\": \"meta_ad_account_id_adcreatives_create\", \"path_params\": {\"ad_account_id\": \"2194833637927644\"}, \"dry_run\": false, \"payload\": {\"name\": \"\\u0645\\u0646\\u0",
+  "result_ids": [
+   "1414653307314843"
+  ],
+  "ok": true
+ },
+ {
+  "run": "wf_4c644ce9-3b9",
+  "batch": "Apply:in_meta_4.json",
+  "time": "11:42:04",
+  "action": "meta_ad_id_update",
+  "params": "{\"action\": \"meta_ad_id_update\", \"path_params\": {\"ad_id\": \"120252961471770058\"}, \"dry_run\": false, \"payload\": {\"creative\": {\"creative_id\": \"1414653307314843\"}}}",
+  "result_ids": [],
+  "ok": true
+ },
+ {
+  "run": "wf_4c644ce9-3b9",
+  "batch": "Apply:in_meta_4.json",
+  "time": "11:43:53",
+  "action": "meta_ad_account_id_adcreatives_create",
+  "params": "{\"action\": \"meta_ad_account_id_adcreatives_create\", \"path_params\": {\"ad_account_id\": \"2194833637927644\"}, \"dry_run\": false, \"payload\": {\"name\": \"\\u0645\\u0646\\u0",
+  "result_ids": [
+   "1123822793677302"
+  ],
+  "ok": true
+ },
+ {
+  "run": "wf_4c644ce9-3b9",
+  "batch": "Apply:in_meta_4.json",
+  "time": "11:44:10",
+  "action": "meta_ad_id_update",
+  "params": "{\"action\": \"meta_ad_id_update\", \"path_params\": {\"ad_id\": \"120252862568190058\"}, \"dry_run\": false, \"payload\": {\"creative\": {\"creative_id\": \"1123822793677302\"}}}",
+  "result_ids": [],
+  "ok": true
+ },
+ {
+  "run": "wf_4c644ce9-3b9",
+  "batch": "Apply:in_meta_3.json",
+  "time": "11:37:13",
+  "action": "meta_ad_account_id_adcreatives_create",
+  "params": "{\"action\": \"meta_ad_account_id_adcreatives_create\", \"path_params\": {\"ad_account_id\": \"2194833637927644\"}, \"payload\": {\"name\": \"\\u062a\\u062a\\u0634\\u0643\\u0644 \\u",
+  "result_ids": [
+   "1463789968940834"
+  ],
+  "ok": true
+ },
+ {
+  "run": "wf_4c644ce9-3b9",
+  "batch": "Apply:in_meta_3.json",
+  "time": "11:42:07",
+  "action": "meta_ad_account_id_adcreatives_create",
+  "params": "{\"action\": \"meta_ad_account_id_adcreatives_create\", \"path_params\": {\"ad_account_id\": \"2194833637927644\"}, \"dry_run\": false, \"payload\": {\"name\": \"\\u0645\\u0646\\u0",
+  "result_ids": [
+   "1094704503143112"
+  ],
+  "ok": true
+ },
+ {
+  "run": "wf_4c644ce9-3b9",
+  "batch": "Apply:in_meta_3.json",
+  "time": "11:43:03",
+  "action": "meta_ad_id_update",
+  "params": "{\"action\": \"meta_ad_id_update\", \"path_params\": {\"ad_id\": \"120252925092860058\"}, \"payload\": {\"creative\": {\"creative_id\": \"1094704503143112\"}}, \"dry_run\": false}",
+  "result_ids": [],
+  "ok": true
+ },
+ {
+  "run": "wf_4c644ce9-3b9",
+  "batch": "Apply:in_meta_3.json",
+  "time": "11:44:40",
+  "action": "meta_ad_account_id_adcreatives_create",
+  "params": "{\"action\": \"meta_ad_account_id_adcreatives_create\", \"path_params\": {\"ad_account_id\": \"2194833637927644\"}, \"dry_run\": false, \"payload\": {\"name\": \"\\u0645\\u0646\\u0",
+  "result_ids": [
+   "1784997465881174"
+  ],
+  "ok": true
+ },
+ {
+  "run": "wf_0b1bfc20-cbb",
+  "batch": "Apply:in_tiktok_1.json",
+  "time": "11:37:29",
+  "action": "tiktok_ad_update",
+  "params": "{\"action\": \"tiktok_ad_update\", \"dry_run\": false, \"payload\": {\"advertiser_id\": \"7338057963233443842\", \"adgroup_id\": \"1849225757881409\", \"creatives\": [{\"ad_id\": \"",
+  "result_ids": [],
+  "ok": false
+ },
+ {
+  "run": "wf_0b1bfc20-cbb",
+  "batch": "Apply:in_tiktok_1.json",
+  "time": "11:39:52",
+  "action": "tiktok_ad_update",
+  "params": "{\"action\": \"tiktok_ad_update\", \"dry_run\": false, \"payload\": {\"advertiser_id\": \"7338057963233443842\", \"adgroup_id\": \"1849225582519298\", \"creatives\": [{\"ad_id\": \"",
+  "result_ids": [],
+  "ok": false
+ },
+ {
+  "run": "wf_0b1bfc20-cbb",
+  "batch": "Apply:in_tiktok_1.json",
+  "time": "11:41:31",
+  "action": "tiktok_ad_update",
+  "params": "{\"action\": \"tiktok_ad_update\", \"dry_run\": false, \"payload\": {\"advertiser_id\": \"7338057963233443842\", \"adgroup_id\": \"1849225582519330\", \"creatives\": [{\"ad_id\": \"",
+  "result_ids": [],
+  "ok": false
+ },
+ {
+  "run": "wf_0b1bfc20-cbb",
+  "batch": "Apply:in_tiktok_1.json",
+  "time": "11:41:35",
+  "action": "tiktok_ad_update",
+  "params": "{\"action\": \"tiktok_ad_update\", \"dry_run\": false, \"payload\": {\"advertiser_id\": \"7338057963233443842\", \"adgroup_id\": \"1849225045517474\", \"creatives\": [{\"ad_id\": \"",
+  "result_ids": [],
+  "ok": false
+ },
+ {
+  "run": "wf_0b1bfc20-cbb",
+  "batch": "Apply:in_tiktok_1.json",
+  "time": "11:41:39",
+  "action": "tiktok_ad_update",
+  "params": "{\"action\": \"tiktok_ad_update\", \"dry_run\": false, \"payload\": {\"advertiser_id\": \"7338057963233443842\", \"adgroup_id\": \"1849225045518530\", \"creatives\": [{\"ad_id\": \"",
+  "result_ids": [],
+  "ok": false
+ },
+ {
+  "run": "wf_0b1bfc20-cbb",
+  "batch": "Apply:in_tiktok_1.json",
+  "time": "11:43:13",
+  "action": "tiktok_ad_update",
+  "params": "{\"action\": \"tiktok_ad_update\", \"dry_run\": false, \"payload\": {\"advertiser_id\": \"7338057963233443842\", \"adgroup_id\": \"1851131628175570\", \"creatives\": [{\"ad_id\": \"",
+  "result_ids": [],
+  "ok": true
+ },
+ {
+  "run": "wf_0b1bfc20-cbb",
+  "batch": "Apply:in_tiktok_1.json",
+  "time": "11:44:11",
+  "action": "tiktok_ad_update",
+  "params": "{\"action\": \"tiktok_ad_update\", \"dry_run\": false, \"payload\": {\"advertiser_id\": \"7338074303931449345\", \"adgroup_id\": \"1866980922970497\", \"creatives\": [{\"ad_id\": \"",
+  "result_ids": [],
+  "ok": true
+ },
+ {
+  "run": "wf_e037ea0c-022",
+  "batch": "Apply:in_x_1.json",
+  "time": "11:40:00",
+  "action": "UPDATE_CARD",
+  "params": "{\"action\": \"UPDATE_CARD\", \"path_params\": {\"account_id\": \"18ce55o46uh\", \"card_id\": \"2087162068705103873\"}, \"payload\": {\"name\": \"Visit Diriyah_Intro_KV_30s_AR_16x",
+  "result_ids": [
+   "2087162068705103873"
+  ],
+  "ok": true
+ }
+]

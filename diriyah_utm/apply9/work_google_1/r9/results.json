@@ -1,0 +1,1022 @@
+[
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "797539717097",
+"ad_ids": [
+"797539717097"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_conv&utm_term=ar&utm_content=search_ar",
+"after_expected": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_conv&utm_term=ar&utm_content=search_ar",
+"after_live": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_conv&utm_term=ar&utm_content=search_ar",
+"result": "AlreadyFixed",
+"new_entity_ids": "",
+"detail": "live already equal to new at pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c, no write in this run; it was written earlier today by the stopped apply9 run (MutateAds req 1e5c31f8-b1b6-49c1-9359-3fd7611af01c (11:36 UTC)). read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status PAUSED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "797539717100",
+"ad_ids": [
+"797539717100"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=cpc&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_lf_conversion_sales_google_en&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_search",
+"after_expected": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_conv&utm_term=ar&utm_content=search_ar",
+"after_live": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_conv&utm_term=ar&utm_content=search_ar",
+"result": "Fixed",
+"new_entity_ids": "",
+"detail": "before == now (pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c). MutateAds update final_urls only (mask final_urls): dry_run req 2c71889d-56f9-43e4-8041-4c276fa68a1f, live req 1eeb021b-81a1-4677-946b-b0f0453e76a0 (idempotency 1481da96-3ae5-4a4b-bdfa-276b0ad504c3), single-unit read-back GAQL req 54f71318-075e-441a-bdb3-8cf1ff4ccf92 matched; read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status PAUSED / campaign PAUSED. Note: in the stopped apply9 run (11:41 UTC) a local python3 payload step for this unit was denied by the auto mode classifier and the unit was not written then; in this run every call for it was allowed by the permission system."
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "800840046627",
+"ad_ids": [
+"800840046627"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_conv&utm_term=ar&utm_content=search_ar",
+"after_expected": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_conv&utm_term=ar&utm_content=search_ar",
+"after_live": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_conv&utm_term=ar&utm_content=search_ar",
+"result": "AlreadyFixed",
+"new_entity_ids": "",
+"detail": "live already equal to new at pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c, no write in this run; it was written earlier today by the stopped apply9 run (MutateAds req dc84b626-fcd3-439f-81d0-32b44acbe91e (11:42 UTC)). read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status ENABLED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "797539717106",
+"ad_ids": [
+"797539717106"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_conv&utm_term=ar&utm_content=search_ar",
+"after_expected": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_conv&utm_term=ar&utm_content=search_ar",
+"after_live": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_conv&utm_term=ar&utm_content=search_ar",
+"result": "AlreadyFixed",
+"new_entity_ids": "",
+"detail": "live already equal to new at pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c, no write in this run; it was written earlier today by the stopped apply9 run (MutateAds batch req b8438be7-959c-4f4b-9402-70da05ccfcaf (11:44 UTC)). read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status PAUSED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "800840046633",
+"ad_ids": [
+"800840046633"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_conv&utm_term=ar&utm_content=search_ar",
+"after_expected": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_conv&utm_term=ar&utm_content=search_ar",
+"after_live": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_conv&utm_term=ar&utm_content=search_ar",
+"result": "AlreadyFixed",
+"new_entity_ids": "",
+"detail": "live already equal to new at pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c, no write in this run; it was written earlier today by the stopped apply9 run (MutateAds batch req b8438be7-959c-4f4b-9402-70da05ccfcaf (11:44 UTC)). read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status ENABLED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "797539717109",
+"ad_ids": [
+"797539717109"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_conv&utm_term=ar&utm_content=search_ar",
+"after_expected": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_conv&utm_term=ar&utm_content=search_ar",
+"after_live": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_conv&utm_term=ar&utm_content=search_ar",
+"result": "AlreadyFixed",
+"new_entity_ids": "",
+"detail": "live already equal to new at pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c, no write in this run; it was written earlier today by the stopped apply9 run (MutateAds batch req b8438be7-959c-4f4b-9402-70da05ccfcaf (11:44 UTC)). read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status PAUSED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "800840046636",
+"ad_ids": [
+"800840046636"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_conv&utm_term=ar&utm_content=search_ar",
+"after_expected": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_conv&utm_term=ar&utm_content=search_ar",
+"after_live": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_conv&utm_term=ar&utm_content=search_ar",
+"result": "AlreadyFixed",
+"new_entity_ids": "",
+"detail": "live already equal to new at pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c, no write in this run; it was written earlier today by the stopped apply9 run (MutateAds batch req b8438be7-959c-4f4b-9402-70da05ccfcaf (11:44 UTC)). read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status ENABLED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "797539717112",
+"ad_ids": [
+"797539717112"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_conv&utm_term=ar&utm_content=search_ar",
+"after_expected": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_conv&utm_term=ar&utm_content=search_ar",
+"after_live": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_conv&utm_term=ar&utm_content=search_ar",
+"result": "AlreadyFixed",
+"new_entity_ids": "",
+"detail": "live already equal to new at pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c, no write in this run; it was written earlier today by the stopped apply9 run (MutateAds batch req b8438be7-959c-4f4b-9402-70da05ccfcaf (11:44 UTC)). read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status PAUSED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "800840046639",
+"ad_ids": [
+"800840046639"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_conv&utm_term=ar&utm_content=search_ar",
+"after_expected": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_conv&utm_term=ar&utm_content=search_ar",
+"after_live": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_conv&utm_term=ar&utm_content=search_ar",
+"result": "AlreadyFixed",
+"new_entity_ids": "",
+"detail": "live already equal to new at pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c, no write in this run; it was written earlier today by the stopped apply9 run (MutateAds batch req b8438be7-959c-4f4b-9402-70da05ccfcaf (11:44 UTC)). read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status ENABLED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "797539717115",
+"ad_ids": [
+"797539717115"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_conv&utm_term=ar&utm_content=search_ar",
+"after_expected": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_conv&utm_term=ar&utm_content=search_ar",
+"after_live": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_conv&utm_term=ar&utm_content=search_ar",
+"result": "AlreadyFixed",
+"new_entity_ids": "",
+"detail": "live already equal to new at pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c, no write in this run; it was written earlier today by the stopped apply9 run (MutateAds batch req b8438be7-959c-4f4b-9402-70da05ccfcaf (11:44 UTC)). read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status PAUSED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "800840046642",
+"ad_ids": [
+"800840046642"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_conv&utm_term=ar&utm_content=search_ar",
+"after_expected": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_conv&utm_term=ar&utm_content=search_ar",
+"after_live": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_conv&utm_term=ar&utm_content=search_ar",
+"result": "AlreadyFixed",
+"new_entity_ids": "",
+"detail": "live already equal to new at pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c, no write in this run; it was written earlier today by the stopped apply9 run (MutateAds batch req b8438be7-959c-4f4b-9402-70da05ccfcaf (11:44 UTC)). read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status ENABLED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "797539717196",
+"ad_ids": [
+"797539717196"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_feb26_conv&utm_term=en&utm_content=search_en",
+"after_expected": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_feb26_conv&utm_term=en&utm_content=search_en",
+"after_live": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_feb26_conv&utm_term=en&utm_content=search_en",
+"result": "AlreadyFixed",
+"new_entity_ids": "",
+"detail": "live already equal to new at pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c, no write in this run; it was written earlier today by the stopped apply9 run (MutateAds batch req b8438be7-959c-4f4b-9402-70da05ccfcaf (11:44 UTC)). read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status PAUSED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "800840046840",
+"ad_ids": [
+"800840046840"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_mar26_conv&utm_term=en&utm_content=search_en",
+"after_expected": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_mar26_conv&utm_term=en&utm_content=search_en",
+"after_live": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_mar26_conv&utm_term=en&utm_content=search_en",
+"result": "AlreadyFixed",
+"new_entity_ids": "",
+"detail": "live already equal to new at pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c, no write in this run; it was written earlier today by the stopped apply9 run (MutateAds batch req b8438be7-959c-4f4b-9402-70da05ccfcaf (11:44 UTC)). read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status ENABLED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "797562451379",
+"ad_ids": [
+"797562451379"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+"after_expected": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+"after_live": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+"result": "AlreadyFixed",
+"new_entity_ids": "",
+"detail": "live already equal to new at pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c, no write in this run; it was written earlier today by the stopped apply9 run (MutateAds batch req b8438be7-959c-4f4b-9402-70da05ccfcaf (11:44 UTC)). read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status ENABLED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "797562451382",
+"ad_ids": [
+"797562451382"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+"after_expected": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+"after_live": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+"result": "AlreadyFixed",
+"new_entity_ids": "",
+"detail": "live already equal to new at pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c, no write in this run; it was written earlier today by the stopped apply9 run (MutateAds batch req b8438be7-959c-4f4b-9402-70da05ccfcaf (11:44 UTC)). read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status ENABLED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "797562451385",
+"ad_ids": [
+"797562451385"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+"after_expected": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+"after_live": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+"result": "AlreadyFixed",
+"new_entity_ids": "",
+"detail": "live already equal to new at pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c, no write in this run; it was written earlier today by the stopped apply9 run (MutateAds batch req b8438be7-959c-4f4b-9402-70da05ccfcaf (11:44 UTC)). read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status ENABLED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "797562451388",
+"ad_ids": [
+"797562451388"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+"after_expected": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+"after_live": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+"result": "AlreadyFixed",
+"new_entity_ids": "",
+"detail": "live already equal to new at pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c, no write in this run; it was written earlier today by the stopped apply9 run (MutateAds batch req b8438be7-959c-4f4b-9402-70da05ccfcaf (11:44 UTC)). read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status ENABLED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "797562451391",
+"ad_ids": [
+"797562451391"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_feb26_cond&utm_term=ar&utm_content=search_ar",
+"after_expected": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_feb26_cond&utm_term=ar&utm_content=search_ar",
+"after_live": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_feb26_cond&utm_term=ar&utm_content=search_ar",
+"result": "AlreadyFixed",
+"new_entity_ids": "",
+"detail": "live already equal to new at pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c, no write in this run; it was written earlier today by the stopped apply9 run (MutateAds batch req b8438be7-959c-4f4b-9402-70da05ccfcaf (11:44 UTC)). read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status ENABLED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "797562451394",
+"ad_ids": [
+"797562451394"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+"after_expected": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+"after_live": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+"result": "AlreadyFixed",
+"new_entity_ids": "",
+"detail": "live already equal to new at pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c, no write in this run; it was written earlier today by the stopped apply9 run (MutateAds batch req b8438be7-959c-4f4b-9402-70da05ccfcaf (11:44 UTC)). read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status ENABLED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "797562451397",
+"ad_ids": [
+"797562451397"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+"after_expected": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+"after_live": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+"result": "AlreadyFixed",
+"new_entity_ids": "",
+"detail": "live already equal to new at pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c, no write in this run; it was written earlier today by the stopped apply9 run (MutateAds batch req b8438be7-959c-4f4b-9402-70da05ccfcaf (11:44 UTC)). read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status ENABLED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "797562451400",
+"ad_ids": [
+"797562451400"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+"after_expected": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+"after_live": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+"result": "AlreadyFixed",
+"new_entity_ids": "",
+"detail": "live already equal to new at pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c, no write in this run; it was written earlier today by the stopped apply9 run (MutateAds batch req b8438be7-959c-4f4b-9402-70da05ccfcaf (11:44 UTC)). read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status ENABLED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "798315345992",
+"ad_ids": [
+"798315345992"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_feb26_cond&utm_term=ar&utm_content=search_ar",
+"after_expected": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_feb26_cond&utm_term=ar&utm_content=search_ar",
+"after_live": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_feb26_cond&utm_term=ar&utm_content=search_ar",
+"result": "AlreadyFixed",
+"new_entity_ids": "",
+"detail": "live already equal to new at pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c, no write in this run; it was written earlier today by the stopped apply9 run (MutateAds batch req b8438be7-959c-4f4b-9402-70da05ccfcaf (11:44 UTC)). read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status ENABLED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "797562451403",
+"ad_ids": [
+"797562451403"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/en/zallal?utm_source=google&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_zallal_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_google_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_search",
+"after_expected": "https://www.diriyah.sa/en/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_feb26_cond&utm_term=en&utm_content=search_en",
+"after_live": "https://www.diriyah.sa/en/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_feb26_cond&utm_term=en&utm_content=search_en",
+"result": "Fixed",
+"new_entity_ids": "",
+"detail": "before == now (pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c). MutateAds batch of 19 (partial_failure true, update final_urls only, mask final_urls): dry_run req 229969b5-ea5f-41c5-8b02-e256a574ff6b, live req cb5420db-759e-41be-beae-e4dbcd36d516 (idempotency b4baaae9-a98d-4a35-b476-104f314853e7), op returned its resource name, no partial failure; read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status ENABLED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "797562451406",
+"ad_ids": [
+"797562451406"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/en/zallal?utm_source=google&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_zallal_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_google_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_search",
+"after_expected": "https://www.diriyah.sa/en/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_feb26_cond&utm_term=en&utm_content=search_en",
+"after_live": "https://www.diriyah.sa/en/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_feb26_cond&utm_term=en&utm_content=search_en",
+"result": "Fixed",
+"new_entity_ids": "",
+"detail": "before == now (pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c). MutateAds batch of 19 (partial_failure true, update final_urls only, mask final_urls): dry_run req 229969b5-ea5f-41c5-8b02-e256a574ff6b, live req cb5420db-759e-41be-beae-e4dbcd36d516 (idempotency b4baaae9-a98d-4a35-b476-104f314853e7), op returned its resource name, no partial failure; read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status ENABLED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "797562451409",
+"ad_ids": [
+"797562451409"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/en/zallal?utm_source=google&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_zallal_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_google_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_search",
+"after_expected": "https://www.diriyah.sa/en/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_feb26_cond&utm_term=en&utm_content=search_en",
+"after_live": "https://www.diriyah.sa/en/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_feb26_cond&utm_term=en&utm_content=search_en",
+"result": "Fixed",
+"new_entity_ids": "",
+"detail": "before == now (pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c). MutateAds batch of 19 (partial_failure true, update final_urls only, mask final_urls): dry_run req 229969b5-ea5f-41c5-8b02-e256a574ff6b, live req cb5420db-759e-41be-beae-e4dbcd36d516 (idempotency b4baaae9-a98d-4a35-b476-104f314853e7), op returned its resource name, no partial failure; read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status ENABLED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "797562451412",
+"ad_ids": [
+"797562451412"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/en/zallal?utm_source=google&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_zallal_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_google_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_search",
+"after_expected": "https://www.diriyah.sa/en/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_feb26_cond&utm_term=en&utm_content=search_en",
+"after_live": "https://www.diriyah.sa/en/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_feb26_cond&utm_term=en&utm_content=search_en",
+"result": "Fixed",
+"new_entity_ids": "",
+"detail": "before == now (pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c). MutateAds batch of 19 (partial_failure true, update final_urls only, mask final_urls): dry_run req 229969b5-ea5f-41c5-8b02-e256a574ff6b, live req cb5420db-759e-41be-beae-e4dbcd36d516 (idempotency b4baaae9-a98d-4a35-b476-104f314853e7), op returned its resource name, no partial failure; read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status ENABLED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "797562451415",
+"ad_ids": [
+"797562451415"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/en/zallal?utm_source=google&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_zallal_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_google_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_search",
+"after_expected": "https://www.diriyah.sa/en/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_feb26_cond&utm_term=en&utm_content=search_en",
+"after_live": "https://www.diriyah.sa/en/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_feb26_cond&utm_term=en&utm_content=search_en",
+"result": "Fixed",
+"new_entity_ids": "",
+"detail": "before == now (pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c). MutateAds batch of 19 (partial_failure true, update final_urls only, mask final_urls): dry_run req 229969b5-ea5f-41c5-8b02-e256a574ff6b, live req cb5420db-759e-41be-beae-e4dbcd36d516 (idempotency b4baaae9-a98d-4a35-b476-104f314853e7), op returned its resource name, no partial failure; read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status ENABLED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "798315345995",
+"ad_ids": [
+"798315345995"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/en/zallal?utm_source=google&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_zallal_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_google_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_search",
+"after_expected": "https://www.diriyah.sa/en/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_feb26_cond&utm_term=en&utm_content=search_en",
+"after_live": "https://www.diriyah.sa/en/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_feb26_cond&utm_term=en&utm_content=search_en",
+"result": "Fixed",
+"new_entity_ids": "",
+"detail": "before == now (pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c). MutateAds batch of 19 (partial_failure true, update final_urls only, mask final_urls): dry_run req 229969b5-ea5f-41c5-8b02-e256a574ff6b, live req cb5420db-759e-41be-beae-e4dbcd36d516 (idempotency b4baaae9-a98d-4a35-b476-104f314853e7), op returned its resource name, no partial failure; read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status ENABLED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "797562451421",
+"ad_ids": [
+"797562451421"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/en/zallal?utm_source=google&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_zallal_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_google_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_search",
+"after_expected": "https://www.diriyah.sa/en/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_feb26_cond&utm_term=en&utm_content=search_en",
+"after_live": "https://www.diriyah.sa/en/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_feb26_cond&utm_term=en&utm_content=search_en",
+"result": "Fixed",
+"new_entity_ids": "",
+"detail": "before == now (pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c). MutateAds batch of 19 (partial_failure true, update final_urls only, mask final_urls): dry_run req 229969b5-ea5f-41c5-8b02-e256a574ff6b, live req cb5420db-759e-41be-beae-e4dbcd36d516 (idempotency b4baaae9-a98d-4a35-b476-104f314853e7), op returned its resource name, no partial failure; read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status ENABLED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "797562451424",
+"ad_ids": [
+"797562451424"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/en/zallal?utm_source=google&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_zallal_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_google_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_search",
+"after_expected": "https://www.diriyah.sa/en/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_feb26_cond&utm_term=en&utm_content=search_en",
+"after_live": "https://www.diriyah.sa/en/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_feb26_cond&utm_term=en&utm_content=search_en",
+"result": "Fixed",
+"new_entity_ids": "",
+"detail": "before == now (pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c). MutateAds batch of 19 (partial_failure true, update final_urls only, mask final_urls): dry_run req 229969b5-ea5f-41c5-8b02-e256a574ff6b, live req cb5420db-759e-41be-beae-e4dbcd36d516 (idempotency b4baaae9-a98d-4a35-b476-104f314853e7), op returned its resource name, no partial failure; read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status ENABLED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "797562451427",
+"ad_ids": [
+"797562451427"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/en/zallal?utm_source=google&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_zallal_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_google_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_search",
+"after_expected": "https://www.diriyah.sa/en/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_feb26_cond&utm_term=en&utm_content=search_en",
+"after_live": "https://www.diriyah.sa/en/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_feb26_cond&utm_term=en&utm_content=search_en",
+"result": "Fixed",
+"new_entity_ids": "",
+"detail": "before == now (pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c). MutateAds batch of 19 (partial_failure true, update final_urls only, mask final_urls): dry_run req 229969b5-ea5f-41c5-8b02-e256a574ff6b, live req cb5420db-759e-41be-beae-e4dbcd36d516 (idempotency b4baaae9-a98d-4a35-b476-104f314853e7), op returned its resource name, no partial failure; read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status ENABLED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "797562451352",
+"ad_ids": [
+"797562451352"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_zallal_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_google_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_search",
+"after_expected": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+"after_live": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+"result": "Fixed",
+"new_entity_ids": "",
+"detail": "before == now (pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c). MutateAds batch of 19 (partial_failure true, update final_urls only, mask final_urls): dry_run req 229969b5-ea5f-41c5-8b02-e256a574ff6b, live req cb5420db-759e-41be-beae-e4dbcd36d516 (idempotency b4baaae9-a98d-4a35-b476-104f314853e7), op returned its resource name, no partial failure; read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status ENABLED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "797562451355",
+"ad_ids": [
+"797562451355"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_zallal_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_google_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_search",
+"after_expected": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+"after_live": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+"result": "Fixed",
+"new_entity_ids": "",
+"detail": "before == now (pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c). MutateAds batch of 19 (partial_failure true, update final_urls only, mask final_urls): dry_run req 229969b5-ea5f-41c5-8b02-e256a574ff6b, live req cb5420db-759e-41be-beae-e4dbcd36d516 (idempotency b4baaae9-a98d-4a35-b476-104f314853e7), op returned its resource name, no partial failure; read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status ENABLED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "800840047080",
+"ad_ids": [
+"800840047080"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=cpc&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_google_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_search",
+"after_expected": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_mar26_cond&utm_term=ar&utm_content=search_ar",
+"after_live": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_mar26_cond&utm_term=ar&utm_content=search_ar",
+"result": "Fixed",
+"new_entity_ids": "",
+"detail": "before == now (pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c). MutateAds batch of 19 (partial_failure true, update final_urls only, mask final_urls): dry_run req 229969b5-ea5f-41c5-8b02-e256a574ff6b, live req cb5420db-759e-41be-beae-e4dbcd36d516 (idempotency b4baaae9-a98d-4a35-b476-104f314853e7), op returned its resource name, no partial failure; read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status ENABLED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "797795488743",
+"ad_ids": [
+"797795488743"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/en/dine?utm_source=google&utm_medium=cpc&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_google_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_search",
+"after_expected": "https://www.diriyah.sa/en/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_feb26_cond&utm_term=en&utm_content=search_en",
+"after_live": "https://www.diriyah.sa/en/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_feb26_cond&utm_term=en&utm_content=search_en",
+"result": "Fixed",
+"new_entity_ids": "",
+"detail": "before == now (pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c). MutateAds batch of 19 (partial_failure true, update final_urls only, mask final_urls): dry_run req 229969b5-ea5f-41c5-8b02-e256a574ff6b, live req cb5420db-759e-41be-beae-e4dbcd36d516 (idempotency b4baaae9-a98d-4a35-b476-104f314853e7), op returned its resource name, no partial failure; read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status PAUSED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "800840047083",
+"ad_ids": [
+"800840047083"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/en/dine?utm_source=google&utm_medium=cpc&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_google_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_search",
+"after_expected": "https://www.diriyah.sa/en/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_mar26_cond&utm_term=en&utm_content=search_en",
+"after_live": "https://www.diriyah.sa/en/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_mar26_cond&utm_term=en&utm_content=search_en",
+"result": "Fixed",
+"new_entity_ids": "",
+"detail": "before == now (pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c). MutateAds batch of 19 (partial_failure true, update final_urls only, mask final_urls): dry_run req 229969b5-ea5f-41c5-8b02-e256a574ff6b, live req cb5420db-759e-41be-beae-e4dbcd36d516 (idempotency b4baaae9-a98d-4a35-b476-104f314853e7), op returned its resource name, no partial failure; read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status ENABLED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "797795488746",
+"ad_ids": [
+"797795488746"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=google&utm_medium=cpc&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_google_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_search",
+"after_expected": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_feb26_cond&utm_term=ar&utm_content=search_ar",
+"after_live": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_feb26_cond&utm_term=ar&utm_content=search_ar",
+"result": "Fixed",
+"new_entity_ids": "",
+"detail": "before == now (pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c). MutateAds batch of 19 (partial_failure true, update final_urls only, mask final_urls): dry_run req 229969b5-ea5f-41c5-8b02-e256a574ff6b, live req cb5420db-759e-41be-beae-e4dbcd36d516 (idempotency b4baaae9-a98d-4a35-b476-104f314853e7), op returned its resource name, no partial failure; read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status PAUSED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "800840047086",
+"ad_ids": [
+"800840047086"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=google&utm_medium=cpc&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_google_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_search",
+"after_expected": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_mar26_cond&utm_term=ar&utm_content=search_ar",
+"after_live": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_mar26_cond&utm_term=ar&utm_content=search_ar",
+"result": "Fixed",
+"new_entity_ids": "",
+"detail": "before == now (pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c). MutateAds batch of 19 (partial_failure true, update final_urls only, mask final_urls): dry_run req 229969b5-ea5f-41c5-8b02-e256a574ff6b, live req cb5420db-759e-41be-beae-e4dbcd36d516 (idempotency b4baaae9-a98d-4a35-b476-104f314853e7), op returned its resource name, no partial failure; read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status ENABLED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "797795488749",
+"ad_ids": [
+"797795488749"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=google&utm_medium=cpc&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_google_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_search",
+"after_expected": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_feb26_cond&utm_term=en&utm_content=search_en",
+"after_live": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_feb26_cond&utm_term=en&utm_content=search_en",
+"result": "Fixed",
+"new_entity_ids": "",
+"detail": "before == now (pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c). MutateAds batch of 19 (partial_failure true, update final_urls only, mask final_urls): dry_run req 229969b5-ea5f-41c5-8b02-e256a574ff6b, live req cb5420db-759e-41be-beae-e4dbcd36d516 (idempotency b4baaae9-a98d-4a35-b476-104f314853e7), op returned its resource name, no partial failure; read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status PAUSED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "800840047089",
+"ad_ids": [
+"800840047089"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=google&utm_medium=cpc&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_google_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_search",
+"after_expected": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_mar26_cond&utm_term=en&utm_content=search_en",
+"after_live": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_mar26_cond&utm_term=en&utm_content=search_en",
+"result": "Fixed",
+"new_entity_ids": "",
+"detail": "before == now (pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c). MutateAds batch of 19 (partial_failure true, update final_urls only, mask final_urls): dry_run req 229969b5-ea5f-41c5-8b02-e256a574ff6b, live req cb5420db-759e-41be-beae-e4dbcd36d516 (idempotency b4baaae9-a98d-4a35-b476-104f314853e7), op returned its resource name, no partial failure; read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status ENABLED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "797795488503",
+"ad_ids": [
+"797795488503"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=cpc&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_google_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_search",
+"after_expected": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_feb26_cond&utm_term=ar&utm_content=search_ar",
+"after_live": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_feb26_cond&utm_term=ar&utm_content=search_ar",
+"result": "Fixed",
+"new_entity_ids": "",
+"detail": "before == now (pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c). MutateAds batch of 19 (partial_failure true, update final_urls only, mask final_urls): dry_run req 229969b5-ea5f-41c5-8b02-e256a574ff6b, live req cb5420db-759e-41be-beae-e4dbcd36d516 (idempotency b4baaae9-a98d-4a35-b476-104f314853e7), op returned its resource name, no partial failure; read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status PAUSED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "800840046846",
+"ad_ids": [
+"800840046846"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=cpc&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_google_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_search",
+"after_expected": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_mar26_cond&utm_term=ar&utm_content=search_ar",
+"after_live": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_mar26_cond&utm_term=ar&utm_content=search_ar",
+"result": "Fixed",
+"new_entity_ids": "",
+"detail": "before == now (pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c). MutateAds batch of 19 (partial_failure true, update final_urls only, mask final_urls): dry_run req 4e356b45-fc21-4b08-923e-bcf8283ce885, live req 1dd20c1f-8b0a-4e3a-b9c5-4fc7281a85cc (idempotency dbbd8545-b5d3-41cb-bbdf-9c536efd876a), op returned its resource name, no partial failure; read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status ENABLED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "797795488506",
+"ad_ids": [
+"797795488506"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=cpc&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_google_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_search",
+"after_expected": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_feb26_cond&utm_term=ar&utm_content=search_ar",
+"after_live": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_feb26_cond&utm_term=ar&utm_content=search_ar",
+"result": "Fixed",
+"new_entity_ids": "",
+"detail": "before == now (pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c). MutateAds batch of 19 (partial_failure true, update final_urls only, mask final_urls): dry_run req 4e356b45-fc21-4b08-923e-bcf8283ce885, live req 1dd20c1f-8b0a-4e3a-b9c5-4fc7281a85cc (idempotency dbbd8545-b5d3-41cb-bbdf-9c536efd876a), op returned its resource name, no partial failure; read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status PAUSED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "800840046849",
+"ad_ids": [
+"800840046849"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=cpc&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_google_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_search",
+"after_expected": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_mar26_cond&utm_term=ar&utm_content=search_ar",
+"after_live": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_mar26_cond&utm_term=ar&utm_content=search_ar",
+"result": "Fixed",
+"new_entity_ids": "",
+"detail": "before == now (pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c). MutateAds batch of 19 (partial_failure true, update final_urls only, mask final_urls): dry_run req 4e356b45-fc21-4b08-923e-bcf8283ce885, live req 1dd20c1f-8b0a-4e3a-b9c5-4fc7281a85cc (idempotency dbbd8545-b5d3-41cb-bbdf-9c536efd876a), op returned its resource name, no partial failure; read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status ENABLED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "797795488509",
+"ad_ids": [
+"797795488509"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=cpc&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_google_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_search",
+"after_expected": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_feb26_cond&utm_term=ar&utm_content=search_ar",
+"after_live": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_feb26_cond&utm_term=ar&utm_content=search_ar",
+"result": "Fixed",
+"new_entity_ids": "",
+"detail": "before == now (pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c). MutateAds batch of 19 (partial_failure true, update final_urls only, mask final_urls): dry_run req 4e356b45-fc21-4b08-923e-bcf8283ce885, live req 1dd20c1f-8b0a-4e3a-b9c5-4fc7281a85cc (idempotency dbbd8545-b5d3-41cb-bbdf-9c536efd876a), op returned its resource name, no partial failure; read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status PAUSED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "800840046852",
+"ad_ids": [
+"800840046852"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=cpc&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_google_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_search",
+"after_expected": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_mar26_cond&utm_term=ar&utm_content=search_ar",
+"after_live": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_mar26_cond&utm_term=ar&utm_content=search_ar",
+"result": "Fixed",
+"new_entity_ids": "",
+"detail": "before == now (pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c). MutateAds batch of 19 (partial_failure true, update final_urls only, mask final_urls): dry_run req 4e356b45-fc21-4b08-923e-bcf8283ce885, live req 1dd20c1f-8b0a-4e3a-b9c5-4fc7281a85cc (idempotency dbbd8545-b5d3-41cb-bbdf-9c536efd876a), op returned its resource name, no partial failure; read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status ENABLED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "797795488512",
+"ad_ids": [
+"797795488512"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=cpc&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_google_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_search",
+"after_expected": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_feb26_cond&utm_term=ar&utm_content=search_ar",
+"after_live": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_feb26_cond&utm_term=ar&utm_content=search_ar",
+"result": "Fixed",
+"new_entity_ids": "",
+"detail": "before == now (pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c). MutateAds batch of 19 (partial_failure true, update final_urls only, mask final_urls): dry_run req 4e356b45-fc21-4b08-923e-bcf8283ce885, live req 1dd20c1f-8b0a-4e3a-b9c5-4fc7281a85cc (idempotency dbbd8545-b5d3-41cb-bbdf-9c536efd876a), op returned its resource name, no partial failure; read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status PAUSED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "800840046855",
+"ad_ids": [
+"800840046855"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=cpc&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_google_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_search",
+"after_expected": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_mar26_cond&utm_term=ar&utm_content=search_ar",
+"after_live": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_mar26_cond&utm_term=ar&utm_content=search_ar",
+"result": "Fixed",
+"new_entity_ids": "",
+"detail": "before == now (pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c). MutateAds batch of 19 (partial_failure true, update final_urls only, mask final_urls): dry_run req 4e356b45-fc21-4b08-923e-bcf8283ce885, live req 1dd20c1f-8b0a-4e3a-b9c5-4fc7281a85cc (idempotency dbbd8545-b5d3-41cb-bbdf-9c536efd876a), op returned its resource name, no partial failure; read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status ENABLED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "797795488515",
+"ad_ids": [
+"797795488515"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=cpc&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_google_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_search",
+"after_expected": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_feb26_cond&utm_term=ar&utm_content=search_ar",
+"after_live": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_feb26_cond&utm_term=ar&utm_content=search_ar",
+"result": "Fixed",
+"new_entity_ids": "",
+"detail": "before == now (pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c). MutateAds batch of 19 (partial_failure true, update final_urls only, mask final_urls): dry_run req 4e356b45-fc21-4b08-923e-bcf8283ce885, live req 1dd20c1f-8b0a-4e3a-b9c5-4fc7281a85cc (idempotency dbbd8545-b5d3-41cb-bbdf-9c536efd876a), op returned its resource name, no partial failure; read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status PAUSED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "800840046858",
+"ad_ids": [
+"800840046858"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=cpc&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_google_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_search",
+"after_expected": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_mar26_cond&utm_term=ar&utm_content=search_ar",
+"after_live": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_mar26_cond&utm_term=ar&utm_content=search_ar",
+"result": "Fixed",
+"new_entity_ids": "",
+"detail": "before == now (pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c). MutateAds batch of 19 (partial_failure true, update final_urls only, mask final_urls): dry_run req 4e356b45-fc21-4b08-923e-bcf8283ce885, live req 1dd20c1f-8b0a-4e3a-b9c5-4fc7281a85cc (idempotency dbbd8545-b5d3-41cb-bbdf-9c536efd876a), op returned its resource name, no partial failure; read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status ENABLED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "800840046873",
+"ad_ids": [
+"800840046873"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=cpc&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_google_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_search",
+"after_expected": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+"after_live": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+"result": "Fixed",
+"new_entity_ids": "",
+"detail": "before == now (pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c). MutateAds batch of 19 (partial_failure true, update final_urls only, mask final_urls): dry_run req 4e356b45-fc21-4b08-923e-bcf8283ce885, live req 1dd20c1f-8b0a-4e3a-b9c5-4fc7281a85cc (idempotency dbbd8545-b5d3-41cb-bbdf-9c536efd876a), op returned its resource name, no partial failure; read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status ENABLED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "797795488536",
+"ad_ids": [
+"797795488536"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=cpc&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_google_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_search",
+"after_expected": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+"after_live": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+"result": "Fixed",
+"new_entity_ids": "",
+"detail": "before == now (pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c). MutateAds batch of 19 (partial_failure true, update final_urls only, mask final_urls): dry_run req 4e356b45-fc21-4b08-923e-bcf8283ce885, live req 1dd20c1f-8b0a-4e3a-b9c5-4fc7281a85cc (idempotency dbbd8545-b5d3-41cb-bbdf-9c536efd876a), op returned its resource name, no partial failure; read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status PAUSED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "800840046876",
+"ad_ids": [
+"800840046876"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=cpc&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_google_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_search",
+"after_expected": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+"after_live": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+"result": "Fixed",
+"new_entity_ids": "",
+"detail": "before == now (pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c). MutateAds batch of 19 (partial_failure true, update final_urls only, mask final_urls): dry_run req 4e356b45-fc21-4b08-923e-bcf8283ce885, live req 1dd20c1f-8b0a-4e3a-b9c5-4fc7281a85cc (idempotency dbbd8545-b5d3-41cb-bbdf-9c536efd876a), op returned its resource name, no partial failure; read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status ENABLED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "797795488539",
+"ad_ids": [
+"797795488539"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=cpc&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_google_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_search",
+"after_expected": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+"after_live": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+"result": "Fixed",
+"new_entity_ids": "",
+"detail": "before == now (pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c). MutateAds batch of 19 (partial_failure true, update final_urls only, mask final_urls): dry_run req 4e356b45-fc21-4b08-923e-bcf8283ce885, live req 1dd20c1f-8b0a-4e3a-b9c5-4fc7281a85cc (idempotency dbbd8545-b5d3-41cb-bbdf-9c536efd876a), op returned its resource name, no partial failure; read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status PAUSED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "800840046879",
+"ad_ids": [
+"800840046879"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=cpc&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_google_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_search",
+"after_expected": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+"after_live": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+"result": "Fixed",
+"new_entity_ids": "",
+"detail": "before == now (pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c). MutateAds batch of 19 (partial_failure true, update final_urls only, mask final_urls): dry_run req 4e356b45-fc21-4b08-923e-bcf8283ce885, live req 1dd20c1f-8b0a-4e3a-b9c5-4fc7281a85cc (idempotency dbbd8545-b5d3-41cb-bbdf-9c536efd876a), op returned its resource name, no partial failure; read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status ENABLED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "797795488542",
+"ad_ids": [
+"797795488542"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=cpc&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_google_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_search",
+"after_expected": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+"after_live": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+"result": "Fixed",
+"new_entity_ids": "",
+"detail": "before == now (pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c). MutateAds batch of 19 (partial_failure true, update final_urls only, mask final_urls): dry_run req 4e356b45-fc21-4b08-923e-bcf8283ce885, live req 1dd20c1f-8b0a-4e3a-b9c5-4fc7281a85cc (idempotency dbbd8545-b5d3-41cb-bbdf-9c536efd876a), op returned its resource name, no partial failure; read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status PAUSED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "800840046882",
+"ad_ids": [
+"800840046882"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=cpc&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_google_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_search",
+"after_expected": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+"after_live": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+"result": "Fixed",
+"new_entity_ids": "",
+"detail": "before == now (pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c). MutateAds batch of 19 (partial_failure true, update final_urls only, mask final_urls): dry_run req 4e356b45-fc21-4b08-923e-bcf8283ce885, live req 1dd20c1f-8b0a-4e3a-b9c5-4fc7281a85cc (idempotency dbbd8545-b5d3-41cb-bbdf-9c536efd876a), op returned its resource name, no partial failure; read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status ENABLED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "797795488545",
+"ad_ids": [
+"797795488545"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=cpc&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_google_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_search",
+"after_expected": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+"after_live": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+"result": "Fixed",
+"new_entity_ids": "",
+"detail": "before == now (pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c). MutateAds batch of 19 (partial_failure true, update final_urls only, mask final_urls): dry_run req 4e356b45-fc21-4b08-923e-bcf8283ce885, live req 1dd20c1f-8b0a-4e3a-b9c5-4fc7281a85cc (idempotency dbbd8545-b5d3-41cb-bbdf-9c536efd876a), op returned its resource name, no partial failure; read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status PAUSED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "800840046885",
+"ad_ids": [
+"800840046885"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=cpc&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_google_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_search",
+"after_expected": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+"after_live": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+"result": "Fixed",
+"new_entity_ids": "",
+"detail": "before == now (pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c). MutateAds batch of 19 (partial_failure true, update final_urls only, mask final_urls): dry_run req 4e356b45-fc21-4b08-923e-bcf8283ce885, live req 1dd20c1f-8b0a-4e3a-b9c5-4fc7281a85cc (idempotency dbbd8545-b5d3-41cb-bbdf-9c536efd876a), op returned its resource name, no partial failure; read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status ENABLED / campaign PAUSED"
+},
+{
+"platform": "google",
+"account_id": "8324286739",
+"unit_type": "ad",
+"unit": "797795488548",
+"ad_ids": [
+"797795488548"
+],
+"ad_names": [],
+"slot": "ad.final_urls[0]",
+"before": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=cpc&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_google_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_search",
+"after_expected": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+"after_live": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+"result": "Fixed",
+"new_entity_ids": "",
+"detail": "before == now (pre-read GAQL req 3369aab1-ddcc-4105-8ddb-96bdcc6ba64c). MutateAds batch of 19 (partial_failure true, update final_urls only, mask final_urls): dry_run req 4e356b45-fc21-4b08-923e-bcf8283ce885, live req 1dd20c1f-8b0a-4e3a-b9c5-4fc7281a85cc (idempotency dbbd8545-b5d3-41cb-bbdf-9c536efd876a), op returned its resource name, no partial failure; read-back GAQL req a17e6ad2-aee7-4f26-81c3-e3722c9b63bd: final_urls == [new] byte for byte, no final_url_suffix on ad/ad group/campaign/account, statuses unchanged; status PAUSED / campaign PAUSED"
+}
+]

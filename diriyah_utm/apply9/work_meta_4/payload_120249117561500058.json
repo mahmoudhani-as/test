@@ -1,0 +1,191 @@
+{
+ "name": "{{product.name}} 2026-06-17-83e0d5f5ba36da27cf202a729f85c9bb",
+ "object_story_spec": {
+  "page_id": "111467331865347",
+  "instagram_user_id": "17841456393254006"
+ },
+ "asset_feed_spec": {
+  "optimization_type": "PLACEMENT",
+  "call_to_action_types": [
+   "BOOK_TRAVEL"
+  ],
+  "ad_formats": [
+   "AUTOMATIC_FORMAT"
+  ],
+  "reasons_to_shop": false,
+  "shops_bundle": false,
+  "bodies": [
+   {
+    "text": "اكتشف منازل الحداوي، حيث يلتقي التراث بالراحة وروح المجتمع، في بيئة صُممت لتفاصيل الحياة اليومية.",
+    "adlabels": [
+     {
+      "name": "lbl_body",
+      "id": "120249183589660058"
+     },
+     {
+      "name": "placement_asset_fc8e31a47e3dabcd6_1781091238695",
+      "id": "120249674108270058"
+     }
+    ]
+   }
+  ],
+  "titles": [
+   {
+    "text": "منازل الحداوي في الدرعية",
+    "adlabels": [
+     {
+      "name": "lbl_title",
+      "id": "120249183589610058"
+     },
+     {
+      "name": "placement_asset_f735e6a9cf14ac5e7_1781091238695",
+      "id": "120249674108260058"
+     }
+    ]
+   }
+  ],
+  "descriptions": [
+   {
+    "text": "احجز الآن"
+   }
+  ],
+  "link_urls": [
+   {
+    "website_url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=meta&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_awr&utm_term=manazel-alhadawi_ar&utm_content=b01f5ba3_manazel-alhadawi-kv1_display_ar",
+    "display_url": "www.diriyahcompany.sa",
+    "adlabels": [
+     {
+      "name": "lbl_url",
+      "id": "120249183589630058"
+     },
+     {
+      "name": "placement_asset_faa3558011a9a78b6_1781091238695",
+      "id": "120249674108280058"
+     }
+    ]
+   }
+  ],
+  "images": [
+   {
+    "hash": "6ebd52c61e3808285b7b6f5f8a1790e7",
+    "adlabels": [
+     {
+      "name": "lbl_feed",
+      "id": "120249183589650058"
+     }
+    ]
+   },
+   {
+    "hash": "5f2a709ef7b9964c280ea84ab6e4b9fb",
+    "adlabels": [
+     {
+      "name": "lbl_story",
+      "id": "120249183589620058"
+     },
+     {
+      "name": "placement_asset_f963ce8ceb3cb6c77_1781091238694",
+      "id": "120249674108250058"
+     }
+    ]
+   }
+  ],
+  "asset_customization_rules": [
+   {
+    "priority": 1,
+    "body_label": {
+     "name": "lbl_body",
+     "id": "120249183589660058"
+    },
+    "title_label": {
+     "name": "lbl_title",
+     "id": "120249183589610058"
+    },
+    "link_url_label": {
+     "name": "lbl_url",
+     "id": "120249183589630058"
+    },
+    "image_label": {
+     "name": "lbl_feed",
+     "id": "120249183589650058"
+    },
+    "customization_spec": {
+     "age_min": 13,
+     "age_max": 65,
+     "publisher_platforms": [
+      "facebook",
+      "instagram"
+     ],
+     "instagram_positions": [
+      "explore"
+     ],
+     "facebook_positions": [
+      "biz_disco_feed"
+     ]
+    }
+   },
+   {
+    "priority": 2,
+    "body_label": {
+     "name": "placement_asset_fc8e31a47e3dabcd6_1781091238695",
+     "id": "120249674108270058"
+    },
+    "title_label": {
+     "name": "placement_asset_f735e6a9cf14ac5e7_1781091238695",
+     "id": "120249674108260058"
+    },
+    "link_url_label": {
+     "name": "placement_asset_faa3558011a9a78b6_1781091238695",
+     "id": "120249674108280058"
+    },
+    "image_label": {
+     "name": "placement_asset_f963ce8ceb3cb6c77_1781091238694",
+     "id": "120249674108250058"
+    },
+    "customization_spec": {
+     "age_min": 13,
+     "age_max": 65,
+     "publisher_platforms": [
+      "instagram"
+     ],
+     "instagram_positions": [
+      "stream"
+     ]
+    }
+   },
+   {
+    "priority": 3,
+    "body_label": {
+     "name": "lbl_body",
+     "id": "120249183589660058"
+    },
+    "title_label": {
+     "name": "lbl_title",
+     "id": "120249183589610058"
+    },
+    "link_url_label": {
+     "name": "lbl_url",
+     "id": "120249183589630058"
+    },
+    "image_label": {
+     "name": "lbl_story",
+     "id": "120249183589620058"
+    },
+    "customization_spec": {
+     "age_min": 13,
+     "age_max": 65
+    }
+   }
+  ],
+  "additional_data": {
+   "multi_share_end_card": false,
+   "is_click_to_message": false
+  }
+ },
+ "creative_sourcing_spec": {
+  "destination_screenshot_spec": {
+   "enroll_status": "OPT_OUT"
+  }
+ },
+ "threads_user_id": "17841460099388007",
+ "authorization_category": "NONE"
+}

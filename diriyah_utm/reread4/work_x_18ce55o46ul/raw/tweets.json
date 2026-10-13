@@ -1,0 +1,3323 @@
+[
+ {
+  "tool_use_id": "toolu_014mLuD9vhWBwq2ijY38LBUe",
+  "input": {
+   "action": "LIST_TWEETS",
+   "account_id": "18ce55o46ul",
+   "path_params": {
+    "account_id": "18ce55o46ul"
+   },
+   "params": {
+    "tweet_type": "PUBLISHED",
+    "timeline_type": "ALL",
+    "trim_user": true,
+    "count": 200,
+    "tweet_ids": "1760643148299018516,1770502704646832387,1770580251371774227,1770504437762547997,1770580500681244870,1772247060135506069,1772247064849654225,1772247067488092600,1772247073938932223,1772981989869547973,1773001725844041933,1770895426884907422,1770895429850247373,1771255041711616201,1771255043695530228,1785261544986538410,1784571933767389256,1785261539181608995,1784557243377098915,1788928358132105460,1789332437090087265,1788928363530215573,1789332442815340931,1791401522850333047,1791402025873293460,1793233342806262064,1793280659030511986,1793280666584350903,1798969892202598817,1798969892198097042,1798970395401269371,1798970395611283559,1837100752356913371,1846648852772016146,1846648751626375476,1846972271706907125,1847296516697813299,1847656765220917420,1846972274294808667,1847656768161063006,1849136378358993388,1849136476384120978,1851883096653561895,1851882851400323405,1851882606125539694,1851882371416477828,1851882112208515221,1851881777712750693,1851881354092523860,1851881113838387417,1851880899190706376,1851880435954897108,1851880180249207006,1851879926548365388,1851879454777200999,1851879165135360505,1851878633880567969,1851878138487410745,1851877874174759031,1851877275593048490,1855931066298597734,1855972408521351192,1856277714333774092,1856274428813795755,1855972404176044318,1855931062171414686,1855967858938822787,1856297403415945709,1855936419488792997,1855967854379569655,1855936413923000809,1856297401423663522,1856075280429003140,1856389667471474889,1856075275768856614,1856389665084907707,1858463662316609649,1858463662710854107,1858463662463480291,1858463662509551807,1858463662320865365,1858463662421492173,1858463662337618001,1858463662240907478,1858463788045132062,1858463788368064928,1858463788384891383,1858463788137365940,1858463788284219857,1858463788099584266,1858463788409946208,1858463788435161414,1858463788174831629,1858463913781952894,1858463913870062072,1858463913974829330,1858463913945555039,1858463913911955515,1858463913748169067,1858463913869795468"
+   },
+   "result_fields": [
+    "id_str",
+    "card_uri",
+    "entities.urls",
+    "name",
+    "nullcast"
+   ],
+   "max_items": 2000,
+   "compact": true
+  },
+  "result": {
+   "success": true,
+   "data": {
+    "success": true,
+    "data": {
+     "request": {
+      "params": {
+       "count": 200,
+       "timeline_type": "ALL",
+       "tweet_ids": [
+        "1760643148299018516",
+        "1770502704646832387",
+        "1770580251371774227",
+        "1770504437762547997",
+        "1770580500681244870",
+        "1772247060135506069",
+        "1772247064849654225",
+        "1772247067488092600",
+        "1772247073938932223",
+        "1772981989869547973",
+        "1773001725844041933",
+        "1770895426884907422",
+        "1770895429850247373",
+        "1771255041711616201",
+        "1771255043695530228",
+        "1785261544986538410",
+        "1784571933767389256",
+        "1785261539181608995",
+        "1784557243377098915",
+        "1788928358132105460",
+        "1789332437090087265",
+        "1788928363530215573",
+        "1789332442815340931",
+        "1791401522850333047",
+        "1791402025873293460",
+        "1793233342806262064",
+        "1793280659030511986",
+        "1793280666584350903",
+        "1798969892202598817",
+        "1798969892198097042",
+        "1798970395401269371",
+        "1798970395611283559",
+        "1837100752356913371",
+        "1846648852772016146",
+        "1846648751626375476",
+        "1846972271706907125",
+        "1847296516697813299",
+        "1847656765220917420",
+        "1846972274294808667",
+        "1847656768161063006",
+        "1849136378358993388",
+        "1849136476384120978",
+        "1851883096653561895",
+        "1851882851400323405",
+        "1851882606125539694",
+        "1851882371416477828",
+        "1851882112208515221",
+        "1851881777712750693",
+        "1851881354092523860",
+        "1851881113838387417",
+        "1851880899190706376",
+        "1851880435954897108",
+        "1851880180249207006",
+        "1851879926548365388",
+        "1851879454777200999",
+        "1851879165135360505",
+        "1851878633880567969",
+        "1851878138487410745",
+        "1851877874174759031",
+        "1851877275593048490",
+        "1855931066298597734",
+        "1855972408521351192",
+        "1856277714333774092",
+        "1856274428813795755",
+        "1855972404176044318",
+        "1855931062171414686",
+        "1855967858938822787",
+        "1856297403415945709",
+        "1855936419488792997",
+        "1855967854379569655",
+        "1855936413923000809",
+        "1856297401423663522",
+        "1856075280429003140",
+        "1856389667471474889",
+        "1856075275768856614",
+        "1856389665084907707",
+        "1858463662316609649",
+        "1858463662710854107",
+        "1858463662463480291",
+        "1858463662509551807",
+        "1858463662320865365",
+        "1858463662421492173",
+        "1858463662337618001",
+        "1858463662240907478",
+        "1858463788045132062",
+        "1858463788368064928",
+        "1858463788384891383",
+        "1858463788137365940",
+        "1858463788284219857",
+        "1858463788099584266",
+        "1858463788409946208",
+        "1858463788435161414",
+        "1858463788174831629",
+        "1858463913781952894",
+        "1858463913870062072",
+        "1858463913974829330",
+        "1858463913945555039",
+        "1858463913911955515",
+        "1858463913748169067",
+        "1858463913869795468"
+       ],
+       "account_id": "18ce55o46ul",
+       "trim_user": true,
+       "tweet_type": "PUBLISHED"
+      }
+     },
+     "data": [
+      {
+       "id_str": "1760643148299018516",
+       "entities": {
+        "urls": []
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1770502704646832387",
+       "card_uri": "card://1770502701308125185",
+       "entities": {
+        "urls": []
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1770580251371774227",
+       "card_uri": "card://1770580248108703744",
+       "entities": {
+        "urls": []
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1770504437762547997",
+       "card_uri": "card://1770504434478428160",
+       "entities": {
+        "urls": []
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1770580500681244870",
+       "card_uri": "card://1770580497380376576",
+       "entities": {
+        "urls": []
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1772247060135506069",
+       "card_uri": "card://1772224324931346432",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Untitled",
+       "nullcast": true
+      },
+      {
+       "id_str": "1772247064849654225",
+       "card_uri": "card://1772224324683853824",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Untitled",
+       "nullcast": true
+      },
+      {
+       "id_str": "1772247067488092600",
+       "card_uri": "card://1772224324683866112",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Untitled",
+       "nullcast": true
+      },
+      {
+       "id_str": "1772247073938932223",
+       "card_uri": "card://1772224324914618368",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Untitled",
+       "nullcast": true
+      },
+      {
+       "id_str": "1772981989869547973",
+       "card_uri": "card://1772981983993335808",
+       "entities": {
+        "urls": []
+       },
+       "name": "Corinthia Arabic",
+       "nullcast": true
+      },
+      {
+       "id_str": "1773001725844041933",
+       "card_uri": "card://1773001720366342144",
+       "entities": {
+        "urls": []
+       },
+       "name": "Corinthia English",
+       "nullcast": true
+      },
+      {
+       "id_str": "1770895426884907422",
+       "entities": {
+        "urls": [
+         {
+          "url": "https://t.co/D2ep28ztxJ",
+          "expanded_url": "https://bit.ly/3VmGTDI",
+          "display_url": "bit.ly/3VmGTDI",
+          "indices": [
+           123,
+           146
+          ]
+         }
+        ]
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1770895429850247373",
+       "entities": {
+        "urls": [
+         {
+          "url": "https://t.co/D2ep28ztxJ",
+          "expanded_url": "https://bit.ly/3VmGTDI",
+          "display_url": "bit.ly/3VmGTDI",
+          "indices": [
+           223,
+           246
+          ]
+         }
+        ]
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1771255041711616201",
+       "entities": {
+        "urls": []
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1771255043695530228",
+       "entities": {
+        "urls": []
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1785261544986538410",
+       "entities": {
+        "urls": [
+         {
+          "url": "https://t.co/H3ctKHQIjg",
+          "expanded_url": "https://bit.ly/3wextjr",
+          "display_url": "bit.ly/3wextjr",
+          "indices": [
+           218,
+           241
+          ]
+         }
+        ]
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1784571933767389256",
+       "entities": {
+        "urls": [
+         {
+          "url": "https://t.co/ZVbcuMa9pA",
+          "expanded_url": "https://bit.ly/4bcrOcl",
+          "display_url": "bit.ly/4bcrOcl",
+          "indices": [
+           223,
+           246
+          ]
+         }
+        ]
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1785261539181608995",
+       "entities": {
+        "urls": [
+         {
+          "url": "https://t.co/H3ctKHQIjg",
+          "expanded_url": "https://bit.ly/3wextjr",
+          "display_url": "bit.ly/3wextjr",
+          "indices": [
+           243,
+           266
+          ]
+         }
+        ]
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1784557243377098915",
+       "entities": {
+        "urls": [
+         {
+          "url": "https://t.co/ZVbcuMa9pA",
+          "expanded_url": "https://bit.ly/4bcrOcl",
+          "display_url": "bit.ly/4bcrOcl",
+          "indices": [
+           253,
+           276
+          ]
+         }
+        ]
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1788928358132105460",
+       "entities": {
+        "urls": [
+         {
+          "url": "https://t.co/H3ctKHQIjg",
+          "expanded_url": "https://bit.ly/3wextjr",
+          "display_url": "bit.ly/3wextjr",
+          "indices": [
+           235,
+           258
+          ]
+         }
+        ]
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1789332437090087265",
+       "entities": {
+        "urls": [
+         {
+          "url": "https://t.co/H3ctKHQIjg",
+          "expanded_url": "https://bit.ly/3wextjr",
+          "display_url": "bit.ly/3wextjr",
+          "indices": [
+           162,
+           185
+          ]
+         }
+        ]
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1788928363530215573",
+       "entities": {
+        "urls": [
+         {
+          "url": "https://t.co/H3ctKHQIjg",
+          "expanded_url": "https://bit.ly/3wextjr",
+          "display_url": "bit.ly/3wextjr",
+          "indices": [
+           232,
+           255
+          ]
+         }
+        ]
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1789332442815340931",
+       "entities": {
+        "urls": [
+         {
+          "url": "https://t.co/XvoZIhKlAu",
+          "expanded_url": "https://x.com/i/web/status/1789332442815340931",
+          "display_url": "x.com/i/web/status/1…",
+          "indices": [
+           268,
+           291
+          ]
+         }
+        ]
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1791401522850333047",
+       "card_uri": "card://1791400451935461376",
+       "entities": {
+        "urls": []
+       },
+       "name": "English - Video",
+       "nullcast": true
+      },
+      {
+       "id_str": "1791402025873293460",
+       "card_uri": "card://1791400789224587264",
+       "entities": {
+        "urls": []
+       },
+       "name": "Arabic - Video 1",
+       "nullcast": true
+      },
+      {
+       "id_str": "1793233342806262064",
+       "card_uri": "card://1793232205537288192",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Arabic - Video 15 Sec",
+       "nullcast": true
+      },
+      {
+       "id_str": "1793280659030511986",
+       "card_uri": "card://1793240162564030464",
+       "entities": {
+        "urls": []
+       },
+       "name": "English - Video - 15 sec",
+       "nullcast": true
+      },
+      {
+       "id_str": "1793280666584350903",
+       "card_uri": "card://1793240916519460864",
+       "entities": {
+        "urls": []
+       },
+       "name": "Arabic Static 2",
+       "nullcast": true
+      },
+      {
+       "id_str": "1798969892202598817",
+       "card_uri": "card://1798968638436970496",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Corinthia English Asset 2",
+       "nullcast": true
+      },
+      {
+       "id_str": "1798969892198097042",
+       "card_uri": "card://1798968638378262528",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Corinthia English Asset 3",
+       "nullcast": true
+      },
+      {
+       "id_str": "1798970395401269371",
+       "card_uri": "card://1798969190801682432",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Corinthia Arabic Asset 1",
+       "nullcast": true
+      },
+      {
+       "id_str": "1798970395611283559",
+       "card_uri": "card://1798969190872989696",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Corinthia Arabic Asset 3",
+       "nullcast": true
+      },
+      {
+       "id_str": "1837100752356913371",
+       "entities": {
+        "urls": []
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1846648852772016146",
+       "entities": {
+        "urls": []
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1846648751626375476",
+       "entities": {
+        "urls": []
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1846972271706907125",
+       "entities": {
+        "urls": []
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1847296516697813299",
+       "entities": {
+        "urls": []
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1847656765220917420",
+       "entities": {
+        "urls": []
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1846972274294808667",
+       "entities": {
+        "urls": []
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1847656768161063006",
+       "entities": {
+        "urls": []
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1849136378358993388",
+       "entities": {
+        "urls": []
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1849136476384120978",
+       "entities": {
+        "urls": []
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1851883096653561895",
+       "card_uri": "card://1851883089758212096",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_M_Football 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1851882851400323405",
+       "card_uri": "card://1851882837974355968",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_M_Greenery 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1851882606125539694",
+       "card_uri": "card://1851882599792185344",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_M_Father 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1851882371416477828",
+       "card_uri": "card://1851882357134921728",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_M_Activities 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1851882112208515221",
+       "card_uri": "card://1851882078897336320",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_M_Home 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1851881777712750693",
+       "card_uri": "card://1851881753612283904",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_M_Hospitality 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1851881354092523860",
+       "card_uri": "card://1851881336534876160",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_M_Outdoor 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1851881113838387417",
+       "card_uri": "card://1851881102031343616",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_M_Social 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1851880899190706376",
+       "card_uri": "card://1851880893897482240",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_M_Talents 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1851880435954897108",
+       "card_uri": "card://1851880422680203265",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_F_Football 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1851880180249207006",
+       "card_uri": "card://1851880169767575552",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_F_Social 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1851879926548365388",
+       "card_uri": "card://1851879919107624960",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_F_Activities 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1851879454777200999",
+       "card_uri": "card://1851879442286809088",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_F_Talents 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1851879165135360505",
+       "card_uri": "card://1851879156402786304",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_F_Greenery 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1851878633880567969",
+       "card_uri": "card://1851878618936545283",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_F_Outdoor 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1851878138487410745",
+       "card_uri": "card://1851878128865447936",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_F_Home 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1851877874174759031",
+       "card_uri": "card://1851877871037419520",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_F_Hospitality 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1851877275593048490",
+       "card_uri": "card://1851877272632070145",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_Father 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1855931066298597734",
+       "entities": {
+        "urls": [
+         {
+          "url": "https://t.co/7cED71oNA6",
+          "expanded_url": "https://x.com/i/web/status/1855931066298597734",
+          "display_url": "x.com/i/web/status/1…",
+          "indices": [
+           278,
+           301
+          ]
+         }
+        ]
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1855972408521351192",
+       "entities": {
+        "urls": [
+         {
+          "url": "https://t.co/0gyVx52iRD",
+          "expanded_url": "https://bit.ly/4hIi0eb",
+          "display_url": "bit.ly/4hIi0eb",
+          "indices": [
+           212,
+           235
+          ]
+         }
+        ]
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1856277714333774092",
+       "card_uri": "tombstone://card",
+       "entities": {
+        "urls": [
+         {
+          "url": "https://t.co/DX6KUuTRPK",
+          "expanded_url": "http://bit.ly/4hIi0eb",
+          "display_url": "bit.ly/4hIi0eb",
+          "indices": [
+           179,
+           202
+          ]
+         }
+        ]
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1856274428813795755",
+       "card_uri": "tombstone://card",
+       "entities": {
+        "urls": [
+         {
+          "url": "https://t.co/0gyVx52iRD",
+          "expanded_url": "https://bit.ly/4hIi0eb",
+          "display_url": "bit.ly/4hIi0eb",
+          "indices": [
+           143,
+           166
+          ]
+         }
+        ]
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1855972404176044318",
+       "entities": {
+        "urls": [
+         {
+          "url": "https://t.co/0xRExzZlag",
+          "expanded_url": "https://bit.ly/3ZbeK49",
+          "display_url": "bit.ly/3ZbeK49",
+          "indices": [
+           177,
+           200
+          ]
+         }
+        ]
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1855931062171414686",
+       "entities": {
+        "urls": [
+         {
+          "url": "https://t.co/bzcG5OEb9p",
+          "expanded_url": "https://x.com/i/web/status/1855931062171414686",
+          "display_url": "x.com/i/web/status/1…",
+          "indices": [
+           277,
+           300
+          ]
+         }
+        ]
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1855967858938822787",
+       "entities": {
+        "urls": [
+         {
+          "url": "https://t.co/F32rszNN3N",
+          "expanded_url": "https://bit.ly/48RqNXu",
+          "display_url": "bit.ly/48RqNXu",
+          "indices": [
+           225,
+           248
+          ]
+         }
+        ]
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1856297403415945709",
+       "entities": {
+        "urls": [
+         {
+          "url": "https://t.co/F32rszNN3N",
+          "expanded_url": "https://bit.ly/48RqNXu",
+          "display_url": "bit.ly/48RqNXu",
+          "indices": [
+           255,
+           278
+          ]
+         }
+        ]
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1855936419488792997",
+       "entities": {
+        "urls": [
+         {
+          "url": "https://t.co/7XWBKWDu9s",
+          "expanded_url": "https://x.com/i/web/status/1855936419488792997",
+          "display_url": "x.com/i/web/status/1…",
+          "indices": [
+           281,
+           304
+          ]
+         }
+        ]
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1855967854379569655",
+       "entities": {
+        "urls": [
+         {
+          "url": "https://t.co/6RvnJVj1TE",
+          "expanded_url": "https://bit.ly/4hJMVHi",
+          "display_url": "bit.ly/4hJMVHi",
+          "indices": [
+           163,
+           186
+          ]
+         }
+        ]
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1855936413923000809",
+       "entities": {
+        "urls": [
+         {
+          "url": "https://t.co/HNrQOBqsuK",
+          "expanded_url": "https://x.com/i/web/status/1855936413923000809",
+          "display_url": "x.com/i/web/status/1…",
+          "indices": [
+           281,
+           304
+          ]
+         }
+        ]
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1856297401423663522",
+       "entities": {
+        "urls": [
+         {
+          "url": "https://t.co/6RvnJVj1TE",
+          "expanded_url": "https://bit.ly/4hJMVHi",
+          "display_url": "bit.ly/4hJMVHi",
+          "indices": [
+           179,
+           202
+          ]
+         }
+        ]
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1856075280429003140",
+       "entities": {
+        "urls": [
+         {
+          "url": "https://t.co/B5QUCZ3EFg",
+          "expanded_url": "https://x.com/i/web/status/1856075280429003140",
+          "display_url": "x.com/i/web/status/1…",
+          "indices": [
+           274,
+           297
+          ]
+         }
+        ]
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1856389667471474889",
+       "entities": {
+        "urls": []
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1856075275768856614",
+       "entities": {
+        "urls": []
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1856389665084907707",
+       "entities": {
+        "urls": []
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1858463662316609649",
+       "card_uri": "card://1858462547231293440",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_F_Activities 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1858463662710854107",
+       "card_uri": "card://1858462548783185920",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_Father 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1858463662463480291",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Untitled ad",
+       "nullcast": true
+      },
+      {
+       "id_str": "1858463662509551807",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Untitled ad",
+       "nullcast": true
+      },
+      {
+       "id_str": "1858463662320865365",
+       "card_uri": "card://1858462544219791361",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_M_Greenery 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1858463662421492173",
+       "card_uri": "card://1858462544324685826",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_M_Football 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1858463662337618001",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Untitled ad",
+       "nullcast": true
+      },
+      {
+       "id_str": "1858463662240907478",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Untitled ad",
+       "nullcast": true
+      },
+      {
+       "id_str": "1858463788045132062",
+       "card_uri": "card://1858462545402601472",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_M_Social 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1858463788368064928",
+       "card_uri": "card://1858462547369697280",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_F_Outdoor 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1858463788384891383",
+       "card_uri": "card://1858462549106176000",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_F_Hospitality 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1858463788137365940",
+       "card_uri": "card://1858462543049621504",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_M_Home 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1858463788284219857",
+       "card_uri": "card://1858462547113816065",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_F_Football 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1858463788099584266",
+       "card_uri": "card://1858462548758044672",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_F_Home 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1858463788409946208",
+       "card_uri": "card://1858462544895021056",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_M_Talents 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1858463788435161414",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Untitled ad",
+       "nullcast": true
+      },
+      {
+       "id_str": "1858463788174831629",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Untitled ad",
+       "nullcast": true
+      },
+      {
+       "id_str": "1858463913781952894",
+       "card_uri": "card://1858462544135913472",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_M_Activities 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1858463913870062072",
+       "card_uri": "card://1858462543020261377",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_M_Hospitality 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1858463913974829330",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Untitled ad",
+       "nullcast": true
+      },
+      {
+       "id_str": "1858463913945555039",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Untitled ad",
+       "nullcast": true
+      },
+      {
+       "id_str": "1858463913911955515",
+       "card_uri": "card://1858462546874748928",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_F_Greenery 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1858463913748169067",
+       "card_uri": "card://1858462546790928384",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_F_Talents 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1858463913869795468",
+       "card_uri": "card://1858462547260645376",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_F_Social 15s",
+       "nullcast": true
+      }
+     ]
+    },
+    "meta": {
+     "mcp_result_projection": {
+      "fields": [
+       "id_str",
+       "card_uri",
+       "entities.urls",
+       "name",
+       "nullcast"
+      ],
+      "max_items": 2000,
+      "compact": true
+     }
+    }
+   },
+   "meta": {
+    "requestId": "a1695ee0-b9c7-4ff2-97ef-fad025e3ced9",
+    "latencyMs": 1765
+   }
+  }
+ },
+ {
+  "tool_use_id": "toolu_017qpNThR2D9asex9W8VajeL",
+  "input": {
+   "action": "LIST_TWEETS",
+   "account_id": "18ce55o46ul",
+   "path_params": {
+    "account_id": "18ce55o46ul"
+   },
+   "params": {
+    "tweet_type": "PUBLISHED",
+    "timeline_type": "ALL",
+    "trim_user": true,
+    "count": 200,
+    "tweet_ids": "1858464039489421616,1858464039468421622,1858464039501717906,1903071261158412517,1909548883929084152,1909548883954303135,1909548884638019877,1909548883933327800,1910662771294851376,1910662770485272747,1910664090801815580,1910664090546061542,1910665086038946291,1910665086319972621,1910665987835277420,1910665988619542715,1912021316875538780,1912021568823460126,1912022071812534562,1912022071967715664,1912022575200297276,1912022575515079079,1912022827043365249,1912022827135606788,1912386473233641950,1912386473451454622,1912386725092958411,1912386725113999478,1912387982847537347,1912387982927016125,1912388737893335180,1912388738002346085,1912389492931195117,1912389493010620553,1912389744635392022,1912389744673145190,1912390499459289256,1912390499542954016,1912390751176040895,1912390751251472656,1915470445555667129,1915470442640674833,1919750999985828134,1919751000417509534,1919751503663006119,1919751503872495886,1919753013536923750,1919753516983148842,1919754027576725664,1919757039976272075,1919757039997485355,1919757795127111792,1930222499523973293,1930223506228130098,1930253371618816047,1930253119041990663,1936001580395823516,1939278421827424366,1939278422309589162,1939279176391111069,1939279176487374939,1939280183682556151,1939280434753409048,1939281189518635110,1939281189803589637,1969406316482293854,1969659153418473583,1969659153418502209,1969660234982703472,1969660235070783494,1981346935652176185,1981346935845032417,1981346934557463016,1981367758236635343,1981367507114946900,1981654900372336959,1981655151929876554,1983174664265576562,1983497793605132504,1987904329232302564,1987904329379103021,1987904329798635574,1987905839357911399,1987905839789944928,1987905839634522420,1987909613996716288,1987909614222893553,1987910117682016343,1987914647618433247,1988617528768422262,1988616019238175113,1988616270921535557,1988619038885663122,1988620045531144666,1988620296933593099,1988620548818227413,1988621051899887673,1988621555480531402,1988622058620850294,1988621555639718337"
+   },
+   "result_fields": [
+    "id_str",
+    "card_uri",
+    "entities.urls",
+    "name",
+    "nullcast"
+   ],
+   "max_items": 2000,
+   "compact": true
+  },
+  "result": {
+   "success": true,
+   "data": {
+    "success": true,
+    "data": {
+     "request": {
+      "params": {
+       "count": 200,
+       "timeline_type": "ALL",
+       "tweet_ids": [
+        "1858464039489421616",
+        "1858464039468421622",
+        "1858464039501717906",
+        "1903071261158412517",
+        "1909548883929084152",
+        "1909548883954303135",
+        "1909548884638019877",
+        "1909548883933327800",
+        "1910662771294851376",
+        "1910662770485272747",
+        "1910664090801815580",
+        "1910664090546061542",
+        "1910665086038946291",
+        "1910665086319972621",
+        "1910665987835277420",
+        "1910665988619542715",
+        "1912021316875538780",
+        "1912021568823460126",
+        "1912022071812534562",
+        "1912022071967715664",
+        "1912022575200297276",
+        "1912022575515079079",
+        "1912022827043365249",
+        "1912022827135606788",
+        "1912386473233641950",
+        "1912386473451454622",
+        "1912386725092958411",
+        "1912386725113999478",
+        "1912387982847537347",
+        "1912387982927016125",
+        "1912388737893335180",
+        "1912388738002346085",
+        "1912389492931195117",
+        "1912389493010620553",
+        "1912389744635392022",
+        "1912389744673145190",
+        "1912390499459289256",
+        "1912390499542954016",
+        "1912390751176040895",
+        "1912390751251472656",
+        "1915470445555667129",
+        "1915470442640674833",
+        "1919750999985828134",
+        "1919751000417509534",
+        "1919751503663006119",
+        "1919751503872495886",
+        "1919753013536923750",
+        "1919753516983148842",
+        "1919754027576725664",
+        "1919757039976272075",
+        "1919757039997485355",
+        "1919757795127111792",
+        "1930222499523973293",
+        "1930223506228130098",
+        "1930253371618816047",
+        "1930253119041990663",
+        "1936001580395823516",
+        "1939278421827424366",
+        "1939278422309589162",
+        "1939279176391111069",
+        "1939279176487374939",
+        "1939280183682556151",
+        "1939280434753409048",
+        "1939281189518635110",
+        "1939281189803589637",
+        "1969406316482293854",
+        "1969659153418473583",
+        "1969659153418502209",
+        "1969660234982703472",
+        "1969660235070783494",
+        "1981346935652176185",
+        "1981346935845032417",
+        "1981346934557463016",
+        "1981367758236635343",
+        "1981367507114946900",
+        "1981654900372336959",
+        "1981655151929876554",
+        "1983174664265576562",
+        "1983497793605132504",
+        "1987904329232302564",
+        "1987904329379103021",
+        "1987904329798635574",
+        "1987905839357911399",
+        "1987905839789944928",
+        "1987905839634522420",
+        "1987909613996716288",
+        "1987909614222893553",
+        "1987910117682016343",
+        "1987914647618433247",
+        "1988617528768422262",
+        "1988616019238175113",
+        "1988616270921535557",
+        "1988619038885663122",
+        "1988620045531144666",
+        "1988620296933593099",
+        "1988620548818227413",
+        "1988621051899887673",
+        "1988621555480531402",
+        "1988622058620850294",
+        "1988621555639718337"
+       ],
+       "account_id": "18ce55o46ul",
+       "trim_user": true,
+       "tweet_type": "PUBLISHED"
+      }
+     },
+     "data": [
+      {
+       "id_str": "1858464039489421616",
+       "card_uri": "card://1858462544995782656",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_M_Outdoor 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1858464039468421622",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Untitled ad",
+       "nullcast": true
+      },
+      {
+       "id_str": "1858464039501717906",
+       "card_uri": "card://1858462542986616832",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Diriyah_Tactical_COE_UF_KSA_AUD_AR_Awareness_X_M_Father 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1903071261158412517",
+       "card_uri": "card://1903071258977374213",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_City of Earth_UF_KSA_AUD_AR_Awareness_X",
+       "nullcast": true
+      },
+      {
+       "id_str": "1909548883929084152",
+       "card_uri": "card://1909548881420976128",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_Business Of Fashion_UF_UAE_Prospecting_EN_Awareness_X_COE",
+       "nullcast": true
+      },
+      {
+       "id_str": "1909548883954303135",
+       "card_uri": "card://1909548881441849344",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_Business Of Fashion_UF_UAE_Prospecting_EN_Awareness_X_DSQ",
+       "nullcast": true
+      },
+      {
+       "id_str": "1909548884638019877",
+       "card_uri": "card://1909548881462861824",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_Business Of Fashion_UF_KSA_Prospecting_AR_Awareness_X_COE",
+       "nullcast": true
+      },
+      {
+       "id_str": "1909548883933327800",
+       "card_uri": "card://1909548881446109184",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_Business Of Fashion_UF_KSA_Prospecting_AR_Awareness_X_DSQ",
+       "nullcast": true
+      },
+      {
+       "id_str": "1910662771294851376",
+       "card_uri": "card://1910662767989710848",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KSA_Prospecting_EN_Conversion_X_Carousel",
+       "nullcast": true
+      },
+      {
+       "id_str": "1910662770485272747",
+       "card_uri": "card://1910662767884783616",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KSA_Prospecting_AR_Conversion_X_Carousel",
+       "nullcast": true
+      },
+      {
+       "id_str": "1910664090801815580",
+       "card_uri": "card://1910664087639293952",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_UAE_Prospecting_EN_Conversion_X_Carousel",
+       "nullcast": true
+      },
+      {
+       "id_str": "1910664090546061542",
+       "card_uri": "card://1910664088000028672",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_UAE_Prospecting_AR_Conversion_X_Carousel",
+       "nullcast": true
+      },
+      {
+       "id_str": "1910665086038946291",
+       "card_uri": "card://1910665083581026304",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_QAT_Prospecting_EN_Conversion_X_Carousel",
+       "nullcast": true
+      },
+      {
+       "id_str": "1910665086319972621",
+       "card_uri": "card://1910665083585273856",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_QAT_Prospecting_AR_Conversion_X_Carousel",
+       "nullcast": true
+      },
+      {
+       "id_str": "1910665987835277420",
+       "card_uri": "card://1910665985268326400",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KWT_Prospecting_EN_Conversion_X_Carousel",
+       "nullcast": true
+      },
+      {
+       "id_str": "1910665988619542715",
+       "card_uri": "card://1910665985998147584",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KWT_Prospecting_AR_Conversion_X_Carousel",
+       "nullcast": true
+      },
+      {
+       "id_str": "1912021316875538780",
+       "card_uri": "card://1912020205917626368",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KSA_Prospecting_EN_Conversion_X_Image V1",
+       "nullcast": true
+      },
+      {
+       "id_str": "1912021568823460126",
+       "card_uri": "card://1912020364982427648",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KSA_Prospecting_AR_Conversion_X_Image V1",
+       "nullcast": true
+      },
+      {
+       "id_str": "1912022071812534562",
+       "card_uri": "card://1912020960686850048",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_UAE_Prospecting_AR_Conversion_X_Image V1",
+       "nullcast": true
+      },
+      {
+       "id_str": "1912022071967715664",
+       "card_uri": "card://1912020867191562241",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_UAE_Prospecting_EN_Conversion_X_Image V1",
+       "nullcast": true
+      },
+      {
+       "id_str": "1912022575200297276",
+       "card_uri": "card://1912021346407546880",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_QAT_Prospecting_EN_Conversion_X_Image V1",
+       "nullcast": true
+      },
+      {
+       "id_str": "1912022575515079079",
+       "card_uri": "card://1912021438065737728",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_QAT_Prospecting_AR_Conversion_X_Image V1",
+       "nullcast": true
+      },
+      {
+       "id_str": "1912022827043365249",
+       "card_uri": "card://1912021757059371008",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KWT_Prospecting_AR_Conversion_X_Image V1",
+       "nullcast": true
+      },
+      {
+       "id_str": "1912022827135606788",
+       "card_uri": "card://1912021670442786816",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KWT_Prospecting_EN_Conversion_X_Image V1",
+       "nullcast": true
+      },
+      {
+       "id_str": "1912386473233641950",
+       "card_uri": "card://1912385927969746944",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KSA_Prospecting_AR_Conversion_X_Carousel Option 2",
+       "nullcast": true
+      },
+      {
+       "id_str": "1912386473451454622",
+       "card_uri": "card://1912385927860654080",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KSA_Prospecting_AR_Conversion_X_Image V1 Option 2",
+       "nullcast": true
+      },
+      {
+       "id_str": "1912386725092958411",
+       "card_uri": "card://1912385707722629120",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KSA_Prospecting_EN_Conversion_X_Image V1 Option 2",
+       "nullcast": true
+      },
+      {
+       "id_str": "1912386725113999478",
+       "card_uri": "card://1912385707512909824",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KSA_Prospecting_EN_Conversion_X_Carousel Option 2",
+       "nullcast": true
+      },
+      {
+       "id_str": "1912387982847537347",
+       "card_uri": "card://1912386810686173184",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Diriyah_Tactical_Branded Residence Campaign - Armani_LF_UAE_Prospecting_AR_Conversion_X_Image V1 Option 2",
+       "nullcast": true
+      },
+      {
+       "id_str": "1912387982927016125",
+       "card_uri": "card://1912386810694586368",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Diriyah_Tactical_Branded Residence Campaign - Armani_LF_UAE_Prospecting_AR_Conversion_X_Carousel Option 2",
+       "nullcast": true
+      },
+      {
+       "id_str": "1912388737893335180",
+       "card_uri": "card://1912387715095482368",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Diriyah_Tactical_Branded Residence Campaign - Armani_LF_UAE_Prospecting_EN_Conversion_X_Image V1 Option 2",
+       "nullcast": true
+      },
+      {
+       "id_str": "1912388738002346085",
+       "card_uri": "card://1912387715087114240",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Diriyah_Tactical_Branded Residence Campaign - Armani_LF_UAE_Prospecting_EN_Conversion_X_Carousel Option 2",
+       "nullcast": true
+      },
+      {
+       "id_str": "1912389492931195117",
+       "card_uri": "card://1912388439762223105",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Diriyah_Tactical_Branded Residence Campaign - Armani_LF_QAT_Prospecting_EN_Conversion_X_Image V1 Option 2",
+       "nullcast": true
+      },
+      {
+       "id_str": "1912389493010620553",
+       "card_uri": "card://1912388439887994880",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Diriyah_Tactical_Branded Residence Campaign - Armani_LF_QAT_Prospecting_EN_Conversion_X_Carousel Option 2",
+       "nullcast": true
+      },
+      {
+       "id_str": "1912389744635392022",
+       "card_uri": "card://1912388723896934400",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Diriyah_Tactical_Branded Residence Campaign - Armani_LF_QAT_Prospecting_AR_Conversion_X_Carousel Option 2",
+       "nullcast": true
+      },
+      {
+       "id_str": "1912389744673145190",
+       "card_uri": "card://1912388723867598848",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Diriyah_Tactical_Branded Residence Campaign - Armani_LF_QAT_Prospecting_AR_Conversion_X_Image V1 Option 2",
+       "nullcast": true
+      },
+      {
+       "id_str": "1912390499459289256",
+       "card_uri": "card://1912389913716117504",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KWT_Prospecting_EN_Conversion_X_Carousel Option 2",
+       "nullcast": true
+      },
+      {
+       "id_str": "1912390499542954016",
+       "card_uri": "card://1912389913770631169",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KWT_Prospecting_EN_Conversion_X_Image V1 Option 2",
+       "nullcast": true
+      },
+      {
+       "id_str": "1912390751176040895",
+       "card_uri": "card://1912389717758251008",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KWT_Prospecting_AR_Conversion_X_Image V1 Option 2",
+       "nullcast": true
+      },
+      {
+       "id_str": "1912390751251472656",
+       "card_uri": "card://1912389717779189760",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KWT_Prospecting_AR_Conversion_X_Carousel Option 2",
+       "nullcast": true
+      },
+      {
+       "id_str": "1915470445555667129",
+       "entities": {
+        "urls": []
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1915470442640674833",
+       "entities": {
+        "urls": []
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1919750999985828134",
+       "card_uri": "card://1919749772044333056",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_UAE_Prospecting_EN_Conversion_X_Image_Set 2_Option 1",
+       "nullcast": true
+      },
+      {
+       "id_str": "1919751000417509534",
+       "card_uri": "card://1919749773810159616",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_UAE_Prospecting_EN_Conversion_X_Carousel_Set 2_Option 1",
+       "nullcast": true
+      },
+      {
+       "id_str": "1919751503663006119",
+       "card_uri": "card://1919750344499699713",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_UAE_Prospecting_AR_Conversion_X_Carousel_Set 2_Option 1",
+       "nullcast": true
+      },
+      {
+       "id_str": "1919751503872495886",
+       "card_uri": "card://1919750344977842176",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_UAE_Prospecting_AR_Conversion_X_Image_Set 2_Option 1",
+       "nullcast": true
+      },
+      {
+       "id_str": "1919753013536923750",
+       "card_uri": "card://1919751799654785024",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_QAT_Prospecting_EN_Conversion_X_Image_Set 2_Option 1",
+       "nullcast": true
+      },
+      {
+       "id_str": "1919753516983148842",
+       "card_uri": "card://1919752321589813248",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_QAT_Prospecting_EN_Conversion_X_Carousel_Set 2_Option 1_V1",
+       "nullcast": true
+      },
+      {
+       "id_str": "1919754027576725664",
+       "card_uri": "card://1919752979822899200",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_QAT_Prospecting_AR_Conversion_X_Image_Set 2_Option 1",
+       "nullcast": true
+      },
+      {
+       "id_str": "1919757039976272075",
+       "card_uri": "card://1919755999860097024",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KWT_Prospecting_EN_Conversion_X_Carousel_Set 2_option 1",
+       "nullcast": true
+      },
+      {
+       "id_str": "1919757039997485355",
+       "card_uri": "card://1919755999075811329",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KWT_Prospecting_EN_Conversion_X_Image_Set 2_option 1",
+       "nullcast": true
+      },
+      {
+       "id_str": "1919757795127111792",
+       "card_uri": "card://1919756617333010432",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KWT_Prospecting_AR_Conversion_X_Carousel_set 2_Option 1",
+       "nullcast": true
+      },
+      {
+       "id_str": "1930222499523973293",
+       "card_uri": "card://1930221439011151872",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KSA_Prospecting_EN_Conversion_X__Video_Botanical_Option 1",
+       "nullcast": true
+      },
+      {
+       "id_str": "1930223506228130098",
+       "card_uri": "card://1930222357114662912",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KSA_Prospecting_AR_Conversion_X_Video_Botanical_Option 1",
+       "nullcast": true
+      },
+      {
+       "id_str": "1930253371618816047",
+       "card_uri": "card://1930253368733081601",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KSA_Prospecting_EN_Conversion_X__Video_Royal_Option 1_V1",
+       "nullcast": true
+      },
+      {
+       "id_str": "1930253119041990663",
+       "card_uri": "card://1930253116143718401",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KSA_Prospecting_AR_Conversion_X_Video_Royal _Option 1_V1",
+       "nullcast": true
+      },
+      {
+       "id_str": "1936001580395823516",
+       "card_uri": "card://1936000373359276032",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KSA_Prospecting_EN_Conversion_X_Pool-Side1",
+       "nullcast": true
+      },
+      {
+       "id_str": "1939278421827424366",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_Diriyah Living Campaign_UF_KSA_Prospecting_AR_New",
+       "nullcast": true
+      },
+      {
+       "id_str": "1939278422309589162",
+       "entities": {
+        "urls": []
+       },
+       "name": "Living Proposition EN New",
+       "nullcast": true
+      },
+      {
+       "id_str": "1939279176391111069",
+       "card_uri": "card://1939277991173120001",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Diriyah_Tactical_Diriyah Living Campaign_UF_KSA_Prospecting_AR_Awareness_X_Home_V1-New",
+       "nullcast": true
+      },
+      {
+       "id_str": "1939279176487374939",
+       "card_uri": "card://1939278077017886720",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Diriyah_Tactical_Diriyah Living Campaign_UF_KSA_Prospecting_EN_Awareness_X_Home_",
+       "nullcast": true
+      },
+      {
+       "id_str": "1939280183682556151",
+       "card_uri": "card://1939279123635187712",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Diriyah_Tactical_Diriyah Living Campaign_UF_KSA_Prospecting_AR_Awareness_X_Commercial_Video 15s-New",
+       "nullcast": true
+      },
+      {
+       "id_str": "1939280434753409048",
+       "card_uri": "card://1939279190970585088",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Diriyah_Tactical_Diriyah Living Campaign_UF_KSA_Prospecting_EN_Awareness_X_Commercial_Video 15s-New",
+       "nullcast": true
+      },
+      {
+       "id_str": "1939281189518635110",
+       "card_uri": "card://1939280075595345921",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Diriyah_Tactical_Diriyah Living Campaign_UF_KSA_Prospecting_EN_Awareness_X_Retail-New",
+       "nullcast": true
+      },
+      {
+       "id_str": "1939281189803589637",
+       "card_uri": "card://1939280015088361472",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Diriyah_Tactical_Diriyah Living Campaign_UF_KSA_Prospecting_AR_Awareness_X_Retail",
+       "nullcast": true
+      },
+      {
+       "id_str": "1969406316482293854",
+       "entities": {
+        "urls": []
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "1969659153418473583",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_Saudi National Day_UF_KSA_Prospecting_EN/AR_Awareness_X_Feed_Cutdown 6s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1969659153418502209",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_Saudi National Day_UF_KSA_Prospecting_EN/AR_Awareness_X_Feed_Cutdown 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1969660234982703472",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_Saudi National Day_UF_KSA_Prospecting_EN/AR_Video Views_X_Feed_Cutdown 6s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1969660235070783494",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah_Tactical_Saudi National Day_UF_KSA_Prospecting_EN/AR_Video Views_X_Feed_Cutdown 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1981346935652176185",
+       "card_uri": "card://1981346931684388864",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical_Faena 2025_UF_KSA_Prospecting_EN_Awareness_X_Carousel",
+       "nullcast": true
+      },
+      {
+       "id_str": "1981346935845032417",
+       "card_uri": "card://1981346931575283712",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical_Faena 2025_UF_KSA_Prospecting_AR_Awareness_X_Live Pool Red",
+       "nullcast": true
+      },
+      {
+       "id_str": "1981346934557463016",
+       "card_uri": "card://1981346931558531072",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical_Faena 2025_UF_KSA_Prospecting_AR_Awareness_X_Carousel",
+       "nullcast": true
+      },
+      {
+       "id_str": "1981367758236635343",
+       "card_uri": "card://1981366605344018432",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical_Faena 2025_UF_KSA_Prospecting_AR_Awareness_X_Live Pool Red",
+       "nullcast": true
+      },
+      {
+       "id_str": "1981367507114946900",
+       "card_uri": "card://1981366488448847872",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical_Faena 2025_UF_KSA_Prospecting_EN_Awareness_X_Live Pool Red",
+       "nullcast": true
+      },
+      {
+       "id_str": "1981654900372336959",
+       "card_uri": "card://1981653826768896000",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical_Faena 2025_UF_KSA_Prospecting_AR_Awareness_X_Live Pool Red",
+       "nullcast": true
+      },
+      {
+       "id_str": "1981655151929876554",
+       "card_uri": "card://1981654064334323712",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical_Faena 2025_UF_KSA_Prospecting_EN_Awareness_X_Live Pool Red",
+       "nullcast": true
+      },
+      {
+       "id_str": "1983174664265576562",
+       "card_uri": "card://1983173498001596416",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical _Faena 2025_UF_KSA_Prospecting_EN_Video Views_Video 12s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1983497793605132504",
+       "card_uri": "card://1983496628012257280",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical _Faena 2025_UF_KSA_Prospecting_EN_Video Views_Video 12s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1987904329232302564",
+       "card_uri": "card://1987903173680656384",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical_Faena 2025_UF_KSA_Prospecting_AR_Awareness_Live Bonfire Red",
+       "nullcast": true
+      },
+      {
+       "id_str": "1987904329379103021",
+       "card_uri": "card://1987903178810269696",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical_Faena 2025_UF_KSA_Prospecting_AR_Awareness_Live Pool Red",
+       "nullcast": true
+      },
+      {
+       "id_str": "1987904329798635574",
+       "card_uri": "card://1987903172560797696",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical _Faena 2025_UF_KSA_Prospecting_AR_Awareness_Faena Video 12s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1987905839357911399",
+       "card_uri": "card://1987904742929182721",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical_Faena 2025_UF_KSA_Prospecting_EN_Awareness_Live Pool Red",
+       "nullcast": true
+      },
+      {
+       "id_str": "1987905839789944928",
+       "card_uri": "card://1987904743000387584",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical _Faena 2025_UF_KSA_Prospecting_EN_Awareness_Faena Video 12s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1987905839634522420",
+       "card_uri": "card://1987904743835144192",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical_Faena 2025_UF_KSA_Prospecting_EN_Awareness_Live Bonfire Red",
+       "nullcast": true
+      },
+      {
+       "id_str": "1987909613996716288",
+       "card_uri": "card://1987908413834334208",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical _Faena 2025_UF_KSA_Prospecting_EN_Video Views_Faena Video 12s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1987909614222893553",
+       "card_uri": "card://1987908503613362176",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical _Faena 2025_UF_KSA_Prospecting_AR_Video Views_Faena Video 12s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1987910117682016343",
+       "card_uri": "card://1987908909416538112",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical_Faena 2025_MF_KSA_Prospecting_EN_Traffic_Live Red Carousel",
+       "nullcast": true
+      },
+      {
+       "id_str": "1987914647618433247",
+       "card_uri": "card://1987913496387063808",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical _Faena 2025_MF_KSA_Prospecting_AR_Traffic_Live Red Carousel",
+       "nullcast": true
+      },
+      {
+       "id_str": "1988617528768422262",
+       "card_uri": "card://1988616427952373760",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical _Faena 2025_UF_KSA_Prospecting_EN_Video Views_Faena Cutdowns 1 - 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1988616019238175113",
+       "card_uri": "card://1988614793859825664",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical _Faena 2025_UF_KSA_Prospecting_AR_Awareness_Faena Cutdowns 1 - 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1988616270921535557",
+       "card_uri": "card://1988615084005044224",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical _Faena 2025_UF_KSA_Prospecting_EN_Awareness_Faena Cutdowns 1 - 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1988619038885663122",
+       "card_uri": "card://1988617862228164608",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical _Faena 2025_UF_KSA_Prospecting_AR_Video Views_Faena Cutdowns 1 - 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1988620045531144666",
+       "card_uri": "card://1988618863576231936",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical _Faena 2025_UF_KSA_Prospecting_EN_Awareness_Faena Cutdowns 2 - 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1988620296933593099",
+       "card_uri": "card://1988619605846446081",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical _Faena 2025_UF_KSA_Prospecting_AR_Video Views_Video Cutdowns 2 - 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1988620548818227413",
+       "card_uri": "card://1988619457267408897",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical _Faena 2025_UF_KSA_Prospecting_EN_Awareness_Faena Cutdowns 3 - 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1988621051899887673",
+       "card_uri": "card://1988620020814053376",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical _Faena 2025_UF_KSA_Prospecting_AR_Awareness_Faena Cutdowns 3 - 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1988621555480531402",
+       "card_uri": "card://1988620482959339520",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical _Faena 2025_UF_KSA_Prospecting_EN_Video Views_Faena Cutdowns 3 - 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1988622058620850294",
+       "card_uri": "card://1988620958174007296",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical _Faena 2025_UF_KSA_Prospecting_AR_Video Views_Faena Cutdowns 3 - 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1988621555639718337",
+       "card_uri": "card://1988620482900611072",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical _Faena 2025_UF_KSA_Prospecting_EN_Video Views_Faena Cutdowns 2 - 15s",
+       "nullcast": true
+      }
+     ]
+    },
+    "meta": {
+     "mcp_result_projection": {
+      "fields": [
+       "id_str",
+       "card_uri",
+       "entities.urls",
+       "name",
+       "nullcast"
+      ],
+      "max_items": 2000,
+      "compact": true
+     }
+    }
+   },
+   "meta": {
+    "requestId": "9f25ae15-3185-407f-9554-c33349692f9c",
+    "latencyMs": 1687
+   }
+  }
+ },
+ {
+  "tool_use_id": "toolu_01Rx2YW3488oHQECCeE6uyHX",
+  "input": {
+   "action": "LIST_TWEETS",
+   "account_id": "18ce55o46ul",
+   "path_params": {
+    "account_id": "18ce55o46ul"
+   },
+   "params": {
+    "tweet_type": "PUBLISHED",
+    "timeline_type": "ALL",
+    "trim_user": true,
+    "count": 200,
+    "tweet_ids": "1988910207867453927,1988916498832978385,1988917757350396074,1999450829594739015,1999450829674484131,1999450829556973795,1999450829615669523,1999450829850558481,1999450829632471401,2000941736437129534,2000942994506309997,2001201449695416701,2001205475367629259,2001270905402438124,2001271660511469935,2001285124256862426,2001285501501018119,2059148172602323315,2059148287006081376,2059148535593890275,2059149089153892481,2059148948980244919,2059159272584581419,2064345789284094340,2064345916858097789,2064345931445899400,2064345948525097033,2064345964887044282,2064345981324329312,2064345995312603328,2064346009829077208,2066477303782167019,2066589322371875229,2069044330153517443,2069044373690499279,2070052223216685411,2070052908796637259,2074339073326518324,2074339073523847569,2074339073540690418,2074339073989251280,2076949319241101662,2076966683558764765,2079185847853973541,2079186498105356771,2079187288597164474,2079187288740057122,2079187503420940727,2079187503433543958,2079856663146664361,2079856663281230125,2079860790744539170,2079860790803259474,2083948699772747922,2083957214050492767,2084847800043380741,2084847800060145722,2084847800068583753,2084847800064389546,2094014536764490047,2094014536760365288,2094053609608790105,2095131822749524008,2095139956872167629,2095139958206177684,2096314687671451846,2096314687260438688,2096314687327535352,2096314687361052931,2096314687231021553,2096314687705186592,2096480308174659887,2096480308166287543,2096480308098986029,2096480308246045026,2097277728190071176,2097277729200853119,2097277729041252453,2097683257395499500,2097683257508688112,2097683257559327082,2097683257542455526,2097687845683294605,2097687845712671175,2097687847113531429,2097687845573906739,2097687845704171760,2097704797994651954,2099144667677831267,2099144825903735286,2099144983160787249,2099145135208767911,2099643576984469765,2104233911471702307,2104234029369467247,2104234062080880858,2104234011082072065,2104234045416542683,2104234078870683673,2105245244329726331,2105245291708666206,2105245340328722723"
+   },
+   "result_fields": [
+    "id_str",
+    "card_uri",
+    "entities.urls",
+    "name",
+    "nullcast"
+   ],
+   "max_items": 2000,
+   "compact": true
+  },
+  "result": {
+   "success": true,
+   "data": {
+    "success": true,
+    "data": {
+     "request": {
+      "params": {
+       "count": 200,
+       "timeline_type": "ALL",
+       "tweet_ids": [
+        "1988910207867453927",
+        "1988916498832978385",
+        "1988917757350396074",
+        "1999450829594739015",
+        "1999450829674484131",
+        "1999450829556973795",
+        "1999450829615669523",
+        "1999450829850558481",
+        "1999450829632471401",
+        "2000941736437129534",
+        "2000942994506309997",
+        "2001201449695416701",
+        "2001205475367629259",
+        "2001270905402438124",
+        "2001271660511469935",
+        "2001285124256862426",
+        "2001285501501018119",
+        "2059148172602323315",
+        "2059148287006081376",
+        "2059148535593890275",
+        "2059149089153892481",
+        "2059148948980244919",
+        "2059159272584581419",
+        "2064345789284094340",
+        "2064345916858097789",
+        "2064345931445899400",
+        "2064345948525097033",
+        "2064345964887044282",
+        "2064345981324329312",
+        "2064345995312603328",
+        "2064346009829077208",
+        "2066477303782167019",
+        "2066589322371875229",
+        "2069044330153517443",
+        "2069044373690499279",
+        "2070052223216685411",
+        "2070052908796637259",
+        "2074339073326518324",
+        "2074339073523847569",
+        "2074339073540690418",
+        "2074339073989251280",
+        "2076949319241101662",
+        "2076966683558764765",
+        "2079185847853973541",
+        "2079186498105356771",
+        "2079187288597164474",
+        "2079187288740057122",
+        "2079187503420940727",
+        "2079187503433543958",
+        "2079856663146664361",
+        "2079856663281230125",
+        "2079860790744539170",
+        "2079860790803259474",
+        "2083948699772747922",
+        "2083957214050492767",
+        "2084847800043380741",
+        "2084847800060145722",
+        "2084847800068583753",
+        "2084847800064389546",
+        "2094014536764490047",
+        "2094014536760365288",
+        "2094053609608790105",
+        "2095131822749524008",
+        "2095139956872167629",
+        "2095139958206177684",
+        "2096314687671451846",
+        "2096314687260438688",
+        "2096314687327535352",
+        "2096314687361052931",
+        "2096314687231021553",
+        "2096314687705186592",
+        "2096480308174659887",
+        "2096480308166287543",
+        "2096480308098986029",
+        "2096480308246045026",
+        "2097277728190071176",
+        "2097277729200853119",
+        "2097277729041252453",
+        "2097683257395499500",
+        "2097683257508688112",
+        "2097683257559327082",
+        "2097683257542455526",
+        "2097687845683294605",
+        "2097687845712671175",
+        "2097687847113531429",
+        "2097687845573906739",
+        "2097687845704171760",
+        "2097704797994651954",
+        "2099144667677831267",
+        "2099144825903735286",
+        "2099144983160787249",
+        "2099145135208767911",
+        "2099643576984469765",
+        "2104233911471702307",
+        "2104234029369467247",
+        "2104234062080880858",
+        "2104234011082072065",
+        "2104234045416542683",
+        "2104234078870683673",
+        "2105245244329726331",
+        "2105245291708666206",
+        "2105245340328722723"
+       ],
+       "account_id": "18ce55o46ul",
+       "trim_user": true,
+       "tweet_type": "PUBLISHED"
+      }
+     },
+     "data": [
+      {
+       "id_str": "1988910207867453927",
+       "card_uri": "card://1988909079880953856",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical_Faena 2025_UF_KSA_Prospecting_AR_Awareness_X_Faena Cutdowns 2 - 15s - New",
+       "nullcast": true
+      },
+      {
+       "id_str": "1988916498832978385",
+       "card_uri": "card://1988915363996946432",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical_Faena 2025_UF_KSA_Prospecting_AR_Awareness_Faena Cutdowns 2 - 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1988917757350396074",
+       "card_uri": "card://1988916740835930112",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical _Faena 2025_UF_KSA_Prospecting_AR_Video Views_Faena Cutdowns 2 - 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "1999450829594739015",
+       "card_uri": "card://1999450826465783808",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical_Cityscape Al Hadawi 2025_LF_KSA_Prospecting_EN_Conversion_Building",
+       "nullcast": true
+      },
+      {
+       "id_str": "1999450829674484131",
+       "card_uri": "card://1999450826486743042",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical _Cityscape Al Hadawi 2025_LF_KSA_Prospecting_EN_Conversion_Pool",
+       "nullcast": true
+      },
+      {
+       "id_str": "1999450829556973795",
+       "card_uri": "card://1999450826457382913",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical _Cityscape Al Hadawi 2025_LF_KSA_Prospecting_EN_Conversion_Entrance",
+       "nullcast": true
+      },
+      {
+       "id_str": "1999450829615669523",
+       "card_uri": "card://1999450826524491778",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical _Cityscape Al Hadawi 2025_LF_KSA_Prospecting_AR_Conversion_Building",
+       "nullcast": true
+      },
+      {
+       "id_str": "1999450829850558481",
+       "card_uri": "card://1999450826897764352",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical _Cityscape Al Hadawi 2025_LF_KSA_Prospecting_AR_Conversion_Pool",
+       "nullcast": true
+      },
+      {
+       "id_str": "1999450829632471401",
+       "card_uri": "card://1999450826570715136",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical _Cityscape Al Hadawi 2025_LF_KSA_Prospecting_AR_Conversion_Entrance",
+       "nullcast": true
+      },
+      {
+       "id_str": "2000941736437129534",
+       "card_uri": "card://2000940602851258368",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical_Faena 2025_MF_KSA_Prospecting_AR_Traffic_Interior Beige Carousel",
+       "nullcast": true
+      },
+      {
+       "id_str": "2000942994506309997",
+       "card_uri": "card://2000941741168377856",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical_Faena 2025_MF_KSA_Prospecting_EN_Traffic_Interior Beige Carousel",
+       "nullcast": true
+      },
+      {
+       "id_str": "2001201449695416701",
+       "card_uri": "card://2001200372657053696",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical_Faena 2025_MF_KSA_Prospecting_AR_Traffic_Interior Red Carousel",
+       "nullcast": true
+      },
+      {
+       "id_str": "2001205475367629259",
+       "card_uri": "card://2001204352397271040",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical _Faena 2025_MF_KSA_Prospecting_EN_Traffic_Interior Red Carousel",
+       "nullcast": true
+      },
+      {
+       "id_str": "2001270905402438124",
+       "card_uri": "card://2001269865081081856",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical _Cityscape Al Hadawi 2025_UF_KSA_Prospecting_AR_Awareness_Video 7s",
+       "nullcast": true
+      },
+      {
+       "id_str": "2001271660511469935",
+       "card_uri": "card://2001270515047288834",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical _Cityscape Al Hadawi 2025_UF_KSA_Prospecting_EN_Awareness_Launch Video 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "2001285124256862426",
+       "card_uri": "card://2001283792036589569",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical _Cityscape Al Hadawi 2025_UF_KSA_Prospecting_AR_Awareness_Launch Video 15s",
+       "nullcast": true
+      },
+      {
+       "id_str": "2001285501501018119",
+       "card_uri": "card://2001284320175300608",
+       "entities": {
+        "urls": []
+       },
+       "name": "Diriyah Company_Tactical _Cityscape Al Hadawi 2025_UF_KSA_Prospecting_EN_Awareness_Video 7s",
+       "nullcast": true
+      },
+      {
+       "id_str": "2059148172602323315",
+       "card_uri": "card://2059148170479943680",
+       "entities": {
+        "urls": []
+       },
+       "name": "Bab Samhan x Qiddiya_Static KV1_ AR_ CPM",
+       "nullcast": true
+      },
+      {
+       "id_str": "2059148287006081376",
+       "card_uri": "card://2059148284447653888",
+       "entities": {
+        "urls": []
+       },
+       "name": "Bab Samhan x Qiddiya_Static KV1_ EN_ CPM",
+       "nullcast": true
+      },
+      {
+       "id_str": "2059148535593890275",
+       "card_uri": "card://2059148533094137856",
+       "entities": {
+        "urls": []
+       },
+       "name": "Bab Samhan x Qiddiya_Static KV1_ AR_ CPC",
+       "nullcast": true
+      },
+      {
+       "id_str": "2059149089153892481",
+       "card_uri": "card://2059149086578581504",
+       "entities": {
+        "urls": []
+       },
+       "name": "Eid KV_ Static KV1_ CPC_ EN",
+       "nullcast": true
+      },
+      {
+       "id_str": "2059148948980244919",
+       "card_uri": "card://2059148946573049856",
+       "entities": {
+        "urls": []
+       },
+       "name": "Eid KV_ Static KV1_ CPC_ AR",
+       "nullcast": true
+      },
+      {
+       "id_str": "2059159272584581419",
+       "card_uri": "card://2059159269992259584",
+       "entities": {
+        "urls": []
+       },
+       "name": "Bab Samhan x Qiddiya_Static KV1_ EN_ CPM",
+       "nullcast": true
+      },
+      {
+       "id_str": "2064345789284094340",
+       "card_uri": "card://2064345438220963840",
+       "entities": {
+        "urls": []
+       },
+       "nullcast": true
+      },
+      {
+       "id_str": "2064345916858097789",
+       "card_uri": "card://2064345544223563776",
+       "entities": {
+        "urls": []
+       },
+       "nullcast": true
+      },
+      {
+       "id_str": "2064345931445899400",
+       "card_uri": "card://2064345558932996097",
+       "entities": {
+        "urls": []
+       },
+       "nullcast": true
+      },
+      {
+       "id_str": "2064345948525097033",
+       "card_uri": "card://2064345700410818560",
+       "entities": {
+        "urls": []
+       },
+       "nullcast": true
+      },
+      {
+       "id_str": "2064345964887044282",
+       "card_uri": "card://2064345591254061056",
+       "entities": {
+        "urls": []
+       },
+       "nullcast": true
+      },
+      {
+       "id_str": "2064345981324329312",
+       "card_uri": "card://2064345608651988992",
+       "entities": {
+        "urls": []
+       },
+       "nullcast": true
+      },
+      {
+       "id_str": "2064345995312603328",
+       "card_uri": "card://2064345622979772416",
+       "entities": {
+        "urls": []
+       },
+       "nullcast": true
+      },
+      {
+       "id_str": "2064346009829077208",
+       "card_uri": "card://2064345640449212416",
+       "entities": {
+        "urls": []
+       },
+       "nullcast": true
+      },
+      {
+       "id_str": "2066477303782167019",
+       "card_uri": "card://2066477300753870848",
+       "entities": {
+        "urls": []
+       },
+       "name": "ManazelAlHadawi_AW_EN_KV2_1x1",
+       "nullcast": true
+      },
+      {
+       "id_str": "2066589322371875229",
+       "card_uri": "card://2066589319465148416",
+       "entities": {
+        "urls": []
+       },
+       "name": "ManazelAlHadawi_AW_AR_KV2_1x1",
+       "nullcast": true
+      },
+      {
+       "id_str": "2069044330153517443",
+       "entities": {
+        "urls": []
+       },
+       "name": "Teaser - AR",
+       "nullcast": false
+      },
+      {
+       "id_str": "2069044373690499279",
+       "entities": {
+        "urls": []
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "2070052223216685411",
+       "card_uri": "card://2070052220775661568",
+       "entities": {
+        "urls": []
+       },
+       "name": "ManazelAlHadawi_AW_EN_KV2_16x9",
+       "nullcast": true
+      },
+      {
+       "id_str": "2070052908796637259",
+       "card_uri": "card://2070052905458012160",
+       "entities": {
+        "urls": []
+       },
+       "name": "ManazelAlHadawi_AW_AR_KV2_16x9",
+       "nullcast": true
+      },
+      {
+       "id_str": "2074339073326518324",
+       "card_uri": "card://2074339069765578752",
+       "entities": {
+        "urls": []
+       },
+       "name": "ManazelAlHadawi_TRF_AR_KV2_1x1",
+       "nullcast": true
+      },
+      {
+       "id_str": "2074339073523847569",
+       "card_uri": "card://2074339069790715904",
+       "entities": {
+        "urls": []
+       },
+       "name": "ManazelAlHadawi_TRF_AR_KV2_16x9",
+       "nullcast": true
+      },
+      {
+       "id_str": "2074339073540690418",
+       "card_uri": "card://2074339069773963264",
+       "entities": {
+        "urls": []
+       },
+       "name": "ManazelAlHadawi_TRF_EN_KV2_1x1",
+       "nullcast": true
+      },
+      {
+       "id_str": "2074339073989251280",
+       "card_uri": "card://2074339069761331200",
+       "entities": {
+        "urls": []
+       },
+       "name": "ManazelAlHadawi_TRF_EN_KV2_16x9",
+       "nullcast": true
+      },
+      {
+       "id_str": "2076949319241101662",
+       "card_uri": "card://2076949078957494272",
+       "entities": {
+        "urls": []
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "2076966683558764765",
+       "card_uri": "card://2076966277172576256",
+       "entities": {
+        "urls": []
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "2079185847853973541",
+       "card_uri": "card://2079185845697835008",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Untitled",
+       "nullcast": true
+      },
+      {
+       "id_str": "2079186498105356771",
+       "card_uri": "card://2079186495856840704",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Untitled",
+       "nullcast": true
+      },
+      {
+       "id_str": "2079187288597164474",
+       "entities": {
+        "urls": []
+       },
+       "nullcast": true
+      },
+      {
+       "id_str": "2079187288740057122",
+       "card_uri": "card://2079187286579638272",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Untitled",
+       "nullcast": true
+      },
+      {
+       "id_str": "2079187503420940727",
+       "entities": {
+        "urls": []
+       },
+       "name": "Teaser - AR",
+       "nullcast": true
+      },
+      {
+       "id_str": "2079187503433543958",
+       "card_uri": "card://2079187501411926016",
+       "entities": {
+        "urls": []
+       },
+       "name": "[Copy] Untitled",
+       "nullcast": true
+      },
+      {
+       "id_str": "2079856663146664361",
+       "card_uri": "card://2079856660311371777",
+       "entities": {
+        "urls": []
+       },
+       "name": "ManazelAlHadawi_CONV_AR_KV2_16x9",
+       "nullcast": true
+      },
+      {
+       "id_str": "2079856663281230125",
+       "card_uri": "card://2079856660340760576",
+       "entities": {
+        "urls": []
+       },
+       "name": "ManazelAlHadawi_CONV_AR_KV2_1x1",
+       "nullcast": true
+      },
+      {
+       "id_str": "2079860790744539170",
+       "card_uri": "card://2079860788211130368",
+       "entities": {
+        "urls": []
+       },
+       "name": "ManazelAlHadawi_CONV_EN_KV2_16x9",
+       "nullcast": true
+      },
+      {
+       "id_str": "2079860790803259474",
+       "card_uri": "card://2079860788173438977",
+       "entities": {
+        "urls": []
+       },
+       "name": "ManazelAlHadawi_CONV_EN_KV2_1x1",
+       "nullcast": true
+      },
+      {
+       "id_str": "2083948699772747922",
+       "entities": {
+        "urls": []
+       },
+       "nullcast": false
+      },
+      {
+       "id_str": "2083957214050492767",
+       "entities": {
+        "urls": []
+       },
+       "name": "LifeInDiriyah_Video1_16x9_Boosted_EN_NA_Prospecting_16.08.2026_22.07.2026",
+       "nullcast": false
+      },
+      {
+       "id_str": "2084847800043380741",
+       "card_uri": "card://2084847797317070848",
+       "entities": {
+        "urls": []
+       },
+       "name": "company_general_2026_sep_resi-video-1_adset-id-3c3fc87a_video_en",
+       "nullcast": true
+      },
+      {
+       "id_str": "2084847800060145722",
+       "card_uri": "card://2084847797304496128",
+       "entities": {
+        "urls": []
+       },
+       "name": "company_general_2026_sep_resi-video-1_adset-id-3c3fc87a_video_en",
+       "nullcast": true
+      },
+      {
+       "id_str": "2084847800068583753",
+       "card_uri": "card://2084847797304492032",
+       "entities": {
+        "urls": []
+       },
+       "name": "company_general_2026_sep_resi-video-1_adset-id-3c3fc87a_video_ar",
+       "nullcast": true
+      },
+      {
+       "id_str": "2084847800064389546",
+       "card_uri": "card://2084847797308620800",
+       "entities": {
+        "urls": []
+       },
+       "name": "company_general_2026_sep_resi-video-1_adset-id-3c3fc87a_video_ar",
+       "nullcast": true
+      },
+      {
+       "id_str": "2094014536764490047",
+       "card_uri": "card://2094014533492686848",
+       "entities": {
+        "urls": []
+       },
+       "name": "ManazelAlHadawi_AW_AR_KV3_1x1",
+       "nullcast": true
+      },
+      {
+       "id_str": "2094014536760365288",
+       "card_uri": "card://2094014533022912512",
+       "entities": {
+        "urls": []
+       },
+       "name": "ManazelAlHadawi_AW_EN_KV3_1x1",
+       "nullcast": true
+      },
+      {
+       "id_str": "2094053609608790105",
+       "card_uri": "card://2094053607263846401",
+       "entities": {
+        "urls": []
+       },
+       "name": "ManazelAlHadawi_AR_CR2",
+       "nullcast": true
+      },
+      {
+       "id_str": "2095131822749524008",
+       "card_uri": "card://2095131819687464963",
+       "entities": {
+        "urls": []
+       },
+       "name": "ManazelAlHadawi_EN_CR2_V2",
+       "nullcast": true
+      },
+      {
+       "id_str": "2095139956872167629",
+       "card_uri": "card://2095139954829447168",
+       "entities": {
+        "urls": []
+       },
+       "name": "ManazelAlHadawi_AR_CR3_V2",
+       "nullcast": true
+      },
+      {
+       "id_str": "2095139958206177684",
+       "card_uri": "card://2095139954837917698",
+       "entities": {
+        "urls": []
+       },
+       "name": "ManazelAlHadawi_EN_CR3_V2",
+       "nullcast": true
+      },
+      {
+       "id_str": "2096314687671451846",
+       "card_uri": "card://2096314684513062916",
+       "entities": {
+        "urls": []
+       },
+       "name": "ManazelAlHadawi_TRF_AR_KV3_1x1",
+       "nullcast": true
+      },
+      {
+       "id_str": "2096314687260438688",
+       "card_uri": "card://2096314684697686024",
+       "entities": {
+        "urls": []
+       },
+       "name": "ManazelAlHadawi_TRF_AR_CR2",
+       "nullcast": true
+      },
+      {
+       "id_str": "2096314687327535352",
+       "card_uri": "card://2096314684525686786",
+       "entities": {
+        "urls": []
+       },
+       "name": "ManazelAlHadawi_TRF_AR_CR3",
+       "nullcast": true
+      },
+      {
+       "id_str": "2096314687361052931",
+       "card_uri": "card://2096314684496330757",
+       "entities": {
+        "urls": []
+       },
+       "name": "ManazelAlHadawi_TRF_EN_KV3_1x1",
+       "nullcast": true
+      },
+      {
+       "id_str": "2096314687231021553",
+       "card_uri": "card://2096314684542504961",
+       "entities": {
+        "urls": []
+       },
+       "name": "ManazelAlHadawi_TRF_EN_CR2",
+       "nullcast": true
+      },
+      {
+       "id_str": "2096314687705186592",
+       "card_uri": "card://2096314684550909955",
+       "entities": {
+        "urls": []
+       },
+       "name": "ManazelAlHadawi_TRF_EN_CR3",
+       "nullcast": true
+      },
+      {
+       "id_str": "2096480308174659887",
+       "card_uri": "card://2096480305540444163",
+       "entities": {
+        "urls": []
+       },
+       "name": "ManazelAlHadawi_CONV_EN_KV2_16x9",
+       "nullcast": true
+      },
+      {
+       "id_str": "2096480308166287543",
+       "card_uri": "card://2096480305544658949",
+       "entities": {
+        "urls": []
+       },
+       "name": "ManazelAlHadawi_CONV_EN_KV2_1x1",
+       "nullcast": true
+      },
+      {
+       "id_str": "2096480308098986029",
+       "card_uri": "card://2096480305565642757",
+       "entities": {
+        "urls": []
+       },
+       "name": "ManazelAlHadawi_CONV_AR_KV2_16x9",
+       "nullcast": true
+      },
+      {
+       "id_str": "2096480308246045026",
+       "card_uri": "card://2096480305544560640",
+       "entities": {
+        "urls": []
+       },
+       "name": "ManazelAlHadawi_CONV_AR_KV2_1x1",
+       "nullcast": true
+      },
+      {
+       "id_str": "2097277728190071176",
+       "card_uri": "card://2097277725916475392",
+       "entities": {
+        "urls": []
+       },
+       "name": "KV1 EN",
+       "nullcast": true
+      },
+      {
+       "id_str": "2097277729200853119",
+       "card_uri": "card://2097277725975126016",
+       "entities": {
+        "urls": []
+       },
+       "name": "KV2 EN",
+       "nullcast": true
+      },
+      {
+       "id_str": "2097277729041252453",
+       "card_uri": "card://2097277725941587969",
+       "entities": {
+        "urls": []
+       },
+       "name": "KV3 EN",
+       "nullcast": true
+      },
+      {
+       "id_str": "2097683257395499500",
+       "entities": {
+        "urls": []
+       },
+       "name": "LifeInDiriyah_Video1_16x9_Boosted_EN_NA_Prospecting_16.08.2026_22.07.2026",
+       "nullcast": true
+      },
+      {
+       "id_str": "2097683257508688112",
+       "card_uri": "card://2097683254971097088",
+       "entities": {
+        "urls": []
+       },
+       "name": "LifeInDiriyah_KV3_1x1_Dark_EN_NA_Prospecting_16.08.2026_22.07.2026",
+       "nullcast": true
+      },
+      {
+       "id_str": "2097683257559327082",
+       "card_uri": "card://2097683254966968320",
+       "entities": {
+        "urls": []
+       },
+       "name": "LifeInDiriyah_KV2_1x1_Dark_EN_NA_Prospecting_16.08.2026_22.07.2026",
+       "nullcast": true
+      },
+      {
+       "id_str": "2097683257542455526",
+       "card_uri": "card://2097683254950100992",
+       "entities": {
+        "urls": []
+       },
+       "name": "LifeInDiriyah_KV1_1x1_Dark_EN_NA_Prospecting_16.08.2026_22.07.2026",
+       "nullcast": true
+      },
+      {
+       "id_str": "2097687845683294605",
+       "card_uri": "card://2097687842746990592",
+       "entities": {
+        "urls": []
+       },
+       "name": "company_general_2026_sep_rcsr-kv1_adset-id-07eca5d8_display_en",
+       "nullcast": true
+      },
+      {
+       "id_str": "2097687845712671175",
+       "card_uri": "card://2097687842759610368",
+       "entities": {
+        "urls": []
+       },
+       "name": "company_general_2026_sep_rcsr-kv2_adset-id-c2b96e29_display_en",
+       "nullcast": true
+      },
+      {
+       "id_str": "2097687847113531429",
+       "card_uri": "card://2097687842747023360",
+       "entities": {
+        "urls": []
+       },
+       "name": "company_general_2026_sep_rcsr-kv3_adset-id-c4ffbd75_display_en",
+       "nullcast": true
+      },
+      {
+       "id_str": "2097687845573906739",
+       "card_uri": "card://2097687842747023362",
+       "entities": {
+        "urls": []
+       },
+       "name": "company_general_2026_sep_rcsr-kv1_adset-id-07eca5d8_display_ar",
+       "nullcast": true
+      },
+      {
+       "id_str": "2097687845704171760",
+       "card_uri": "card://2097687842747011072",
+       "entities": {
+        "urls": []
+       },
+       "name": "company_general_2026_sep_rcsr-kv2_adset-id-c2b96e29_display_ar",
+       "nullcast": true
+      },
+      {
+       "id_str": "2097704797994651954",
+       "card_uri": "card://2097704795331031040",
+       "entities": {
+        "urls": []
+       },
+       "name": "company_general_2026_sep_rcsr-kv3_adset-id-c4ffbd75_display_ar_V2",
+       "nullcast": true
+      },
+      {
+       "id_str": "2099144667677831267",
+       "card_uri": "card://2099144633926209548",
+       "entities": {
+        "urls": []
+       },
+       "name": "ManazelAlHadawi_EN_Video2Sub_24s_1x1",
+       "nullcast": true
+      },
+      {
+       "id_str": "2099144825903735286",
+       "card_uri": "card://2099144790344679424",
+       "entities": {
+        "urls": []
+       },
+       "name": "ManazelAlHadawi_EN_Video3Sub_18s_1x1",
+       "nullcast": true
+      },
+      {
+       "id_str": "2099144983160787249",
+       "card_uri": "card://2099144944615321600",
+       "entities": {
+        "urls": []
+       },
+       "name": "ManazelAlHadawi_AR_Video2Sub_24s_1x1",
+       "nullcast": true
+      },
+      {
+       "id_str": "2099145135208767911",
+       "card_uri": "card://2099145096587366402",
+       "entities": {
+        "urls": []
+       },
+       "name": "ManazelAlHadawi_AR_Video3Sub_18s_1x1",
+       "nullcast": true
+      },
+      {
+       "id_str": "2099643576984469765",
+       "card_uri": "card://2099643542687637504",
+       "entities": {
+        "urls": []
+       },
+       "name": "company_general_2026_sep_dl-eduvideo1-15s_adset-id-5a8cb267_video_en",
+       "nullcast": true
+      },
+      {
+       "id_str": "2104233911471702307",
+       "card_uri": "card://2104233687957319680",
+       "entities": {
+        "urls": []
+       },
+       "name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv1_adset-id-8971b1f2_display_ar",
+       "nullcast": true
+      },
+      {
+       "id_str": "2104234029369467247",
+       "card_uri": "card://2104233811479494656",
+       "entities": {
+        "urls": []
+       },
+       "name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv2_adset-id-ca5ff2b6_display_ar",
+       "nullcast": true
+      },
+      {
+       "id_str": "2104234062080880858",
+       "card_uri": "card://2104233843679256576",
+       "entities": {
+        "urls": []
+       },
+       "name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv3_adset-id-08c48732_display_ar",
+       "nullcast": true
+      },
+      {
+       "id_str": "2104234011082072065",
+       "card_uri": "card://2104233795637624832",
+       "entities": {
+        "urls": []
+       },
+       "name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv1_adset-id-8971b1f2_display_en",
+       "nullcast": true
+      },
+      {
+       "id_str": "2104234045416542683",
+       "card_uri": "card://2104233827728232448",
+       "entities": {
+        "urls": []
+       },
+       "name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv2_adset-id-ca5ff2b6_display_en",
+       "nullcast": true
+      },
+      {
+       "id_str": "2104234078870683673",
+       "card_uri": "card://2104233860263505920",
+       "entities": {
+        "urls": []
+       },
+       "name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv3_adset-id-08c48732_display_en",
+       "nullcast": true
+      },
+      {
+       "id_str": "2105245244329726331",
+       "card_uri": "card://2105245104546156544",
+       "entities": {
+        "urls": []
+       },
+       "name": "company_general_2026_sep_resi-patio-kv1_adset-id-fa60e06a_display_ar",
+       "nullcast": true
+      },
+      {
+       "id_str": "2105245291708666206",
+       "card_uri": "card://2105245147529117696",
+       "entities": {
+        "urls": []
+       },
+       "name": "company_general_2026_sep_resi-patio-kv2_adset-id-2f4ca35f_display_ar",
+       "nullcast": true
+      },
+      {
+       "id_str": "2105245340328722723",
+       "card_uri": "card://2105245196598599680",
+       "entities": {
+        "urls": []
+       },
+       "name": "company_general_2026_sep_resi-patio-kv3_adset-id-1469e841_display_ar",
+       "nullcast": true
+      }
+     ]
+    },
+    "meta": {
+     "mcp_result_projection": {
+      "fields": [
+       "id_str",
+       "card_uri",
+       "entities.urls",
+       "name",
+       "nullcast"
+      ],
+      "max_items": 2000,
+      "compact": true
+     }
+    }
+   },
+   "meta": {
+    "requestId": "e055d2a2-11bb-434b-b90e-83526c45ebff",
+    "latencyMs": 1812
+   }
+  }
+ }
+]

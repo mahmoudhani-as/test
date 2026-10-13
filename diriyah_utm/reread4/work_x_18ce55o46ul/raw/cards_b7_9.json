@@ -1,0 +1,3320 @@
+[
+ {
+  "tool_use_id": "toolu_01JJv3oB2ZKn63Mphsjx7o4i",
+  "input": {
+   "action": "LIST_CARDS",
+   "account_id": "18ce55o46ul",
+   "path_params": {
+    "account_id": "18ce55o46ul"
+   },
+   "params": {
+    "card_ids": "2000941741168377856,2001200372657053696,2001204352397271040,2001269865081081856,2001270515047288834,2001283792036589569,2001284320175300608,2059148170479943680,2059148284447653888,2059148533094137856,2059149086578581504,2059148946573049856,2059159269992259584,2064345438220963840,2064345544223563776,2064345558932996097,2064345700410818560,2064345591254061056,2064345608651988992,2064345622979772416,2064345640449212416,2066477300753870848,2066589319465148416,2070052220775661568,2070052905458012160,2074339069765578752,2074339069790715904,2074339069773963264,2074339069761331200,2076949078957494272,2076966277172576256,2079185845697835008",
+    "with_deleted": true,
+    "include_legacy_cards": true,
+    "count": 200
+   },
+   "result_fields": [
+    "id",
+    "name",
+    "card_type",
+    "deleted",
+    "updated_at",
+    "components",
+    "slides"
+   ],
+   "max_items": 2000
+  },
+  "result": {
+   "success": true,
+   "data": {
+    "success": true,
+    "data": {
+     "request": {
+      "params": {
+       "count": 200,
+       "include_legacy_cards": true,
+       "account_id": "18ce55o46ul",
+       "card_ids": [
+        "2000941741168377856",
+        "2001200372657053696",
+        "2001204352397271040",
+        "2001269865081081856",
+        "2001270515047288834",
+        "2001283792036589569",
+        "2001284320175300608",
+        "2059148170479943680",
+        "2059148284447653888",
+        "2059148533094137856",
+        "2059149086578581504",
+        "2059148946573049856",
+        "2059159269992259584",
+        "2064345438220963840",
+        "2064345544223563776",
+        "2064345558932996097",
+        "2064345700410818560",
+        "2064345591254061056",
+        "2064345608651988992",
+        "2064345622979772416",
+        "2064345640449212416",
+        "2066477300753870848",
+        "2066589319465148416",
+        "2070052220775661568",
+        "2070052905458012160",
+        "2074339069765578752",
+        "2074339069790715904",
+        "2074339069773963264",
+        "2074339069761331200",
+        "2076949078957494272",
+        "2076966277172576256",
+        "2079185845697835008"
+       ],
+       "with_deleted": true
+      }
+     },
+     "next_cursor": null,
+     "data": [
+      {
+       "id": "2000941741168377856",
+       "name": "Interior Beige Carousel - EN",
+       "card_type": "IMAGE_MULTI_DEST_CAROUSEL_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-12-16T14:51:01Z",
+       "slides": [
+        [
+         {
+          "media_key": "3_2000941345179942917",
+          "media_metadata": {
+           "3_2000941345179942917": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/G8TFjU_XwAUVHtd.png",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Faena Residences Wadi Safar",
+          "destination": {
+           "url": "https://www.wadisafar.com/en/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_dec25_cond&utm_term=brandedresidence-faena_en&utm_content=interiorbeigecarousel_display_en#register-interest",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_2000941373768253443",
+          "media_metadata": {
+           "3_2000941373768253443": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/G8TFk_fWwAMMpIv.png",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Faena Residences Wadi Safar",
+          "destination": {
+           "url": "https://www.wadisafar.com/en/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_dec25_cond&utm_term=brandedresidence-faena_en&utm_content=interiorbeigecarousel_display_en#register-interest",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_2000941397931622400",
+          "media_metadata": {
+           "3_2000941397931622400": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/G8TFmZgWgAAM9af.png",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Faena Residences Wadi Safar",
+          "destination": {
+           "url": "https://www.wadisafar.com/en/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_dec25_cond&utm_term=brandedresidence-faena_en&utm_content=interiorbeigecarousel_display_en#register-interest",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_2000941523483987970",
+          "media_metadata": {
+           "3_2000941523483987970": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/G8TFttOXkAIxBuS.png",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Faena Residences Wadi Safar",
+          "destination": {
+           "url": "https://www.wadisafar.com/en/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_dec25_cond&utm_term=brandedresidence-faena_en&utm_content=interiorbeigecarousel_display_en#register-interest",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ]
+       ]
+      },
+      {
+       "id": "2001200372657053696",
+       "name": "interior red carousel - AR",
+       "card_type": "IMAGE_MULTI_DEST_CAROUSEL_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-12-17T07:58:44Z",
+       "slides": [
+        [
+         {
+          "media_key": "3_2001200069077270530",
+          "media_metadata": {
+           "3_2001200069077270530": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/G8Ww3CnWgAIVAug.png",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "فايينا ريزيدنسز وادي صفار",
+          "destination": {
+           "url": "https://www.wadisafar.com/ar/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_dec25_cond&utm_term=brandedresidence-faena_ar&utm_content=interiorredcarousel_display_ar#register-interest",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_2001200095203565568",
+          "media_metadata": {
+           "3_2001200095203565568": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/G8Ww4j8WIAAZKPF.png",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "فايينا ريزيدنسز وادي صفار",
+          "destination": {
+           "url": "https://www.wadisafar.com/ar/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_dec25_cond&utm_term=brandedresidence-faena_ar&utm_content=interiorredcarousel_display_ar#register-interest",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_2001200125931130887",
+          "media_metadata": {
+           "3_2001200125931130887": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/G8Ww6WaXkAcydZa.png",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "فايينا ريزيدنسز وادي صفار",
+          "destination": {
+           "url": "https://www.wadisafar.com/ar/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_dec25_cond&utm_term=brandedresidence-faena_ar&utm_content=interiorredcarousel_display_ar#register-interest",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_2001200150883033092",
+          "media_metadata": {
+           "3_2001200150883033092": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/G8Ww7zXXYAQ5MnB.png",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "فايينا ريزيدنسز وادي صفار",
+          "destination": {
+           "url": "https://www.wadisafar.com/ar/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_dec25_cond&utm_term=brandedresidence-faena_ar&utm_content=interiorredcarousel_display_ar#register-interest",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ]
+       ]
+      },
+      {
+       "id": "2001204352397271040",
+       "name": "Interior red carousel - EN",
+       "card_type": "IMAGE_MULTI_DEST_CAROUSEL_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-12-17T08:14:32Z",
+       "slides": [
+        [
+         {
+          "media_key": "3_2001200548041678848",
+          "media_metadata": {
+           "3_2001200548041678848": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/G8WxS65XYAAMXzB.png",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Faena Residences Wadi Safar ",
+          "destination": {
+           "url": "https://www.wadisafar.com/en/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_dec25_cond&utm_term=brandedresidence-faena_en&utm_content=interiorredcarousel_display_en#register-interest",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_2001200638206554116",
+          "media_metadata": {
+           "3_2001200638206554116": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/G8WxYKyWMAQ3lLu.png",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Faena Residences Wadi Safar ",
+          "destination": {
+           "url": "https://www.wadisafar.com/en/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_dec25_cond&utm_term=brandedresidence-faena_en&utm_content=interiorredcarousel_display_en#register-interest",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_2001200663502508032",
+          "media_metadata": {
+           "3_2001200663502508032": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/G8WxZpBX0AAiiwg.png",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Faena Residences Wadi Safar ",
+          "destination": {
+           "url": "https://www.wadisafar.com/en/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_dec25_cond&utm_term=brandedresidence-faena_en&utm_content=interiorredcarousel_display_en#register-interest",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_2001200691335839749",
+          "media_metadata": {
+           "3_2001200691335839749": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/G8WxbQtWwAUT1jz.png",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Faena Residences Wadi Safar ",
+          "destination": {
+           "url": "https://www.wadisafar.com/en/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_dec25_cond&utm_term=brandedresidence-faena_en&utm_content=interiorredcarousel_display_en#register-interest",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ]
+       ]
+      },
+      {
+       "id": "2001269865081081856",
+       "name": "[Copy] Diriyah Company_Tactical _Cityscape Al Hadawi 2025_UF_KSA_Prospecting_AR_",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-12-17T12:34:52Z",
+       "components": [
+        {
+         "media_key": "13_2001258447581442049",
+         "media_metadata": {
+          "13_2001258447581442049": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/2001258447581442049/vid/avc1/540x540/PA-A9gqvkNuXqsfF.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/2001258447581442049/img/kjn9lKcbNNZ8-QHi.jpg",
+           "width": 1200,
+           "height": 1200,
+           "video_duration": 9909,
+           "video_aspect_ratio": "1:1"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "منازل الحداوي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=hs-cityscape_dec25_awr&utm_term=cityscape_ar&utm_content=video7s_video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2001270515047288834",
+       "name": "[Copy] Diriyah Company_Tactical _Cityscape Al Hadawi 2025_UF_KSA_Prospecting_EN_",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-12-17T12:37:27Z",
+       "components": [
+        {
+         "media_key": "13_2001258886435622917",
+         "media_metadata": {
+          "13_2001258886435622917": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/2001258886435622917/vid/avc1/540x540/0U-U9NLzCKqPhGxS.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/2001258886435622917/img/ioa4IBpn30aFR4R3.jpg",
+           "width": 1200,
+           "height": 1200,
+           "video_duration": 14881,
+           "video_aspect_ratio": "1:1"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Manazel AlHadawi",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=hs-cityscape_dec25_awr&utm_term=cityscape_en&utm_content=launchvideo15s_video_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2001283792036589569",
+       "name": "Diriyah Company_Tactical _Cityscape Al Hadawi 2025_UF_KSA_Prospecting_AR_Awarene",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-12-17T13:30:12Z",
+       "components": [
+        {
+         "media_key": "13_2001283452079915008",
+         "media_metadata": {
+          "13_2001283452079915008": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/2001283452079915008/vid/avc1/320x320/IB9ypQnACHFZBoY3.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/2001283452079915008/img/eMBcKk6S0jjINt6a.jpg",
+           "width": 1200,
+           "height": 1200,
+           "video_duration": 14781,
+           "video_aspect_ratio": "1:1"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "منازل الحداوي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=hs-cityscape_dec25_awr&utm_term=cityscape_ar&utm_content=launchvideo15s_video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2001284320175300608",
+       "name": "Diriyah Company_Tactical _Cityscape Al Hadawi 2025_UF_KSA_Prospecting_EN_Awarene",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-12-17T13:32:18Z",
+       "components": [
+        {
+         "media_key": "13_2001284176230625280",
+         "media_metadata": {
+          "13_2001284176230625280": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/2001284176230625280/vid/avc1/540x540/r2KS8joAX_yfJcBM.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/2001284176230625280/img/w_Ng4WzpmgHZqfuk.jpg",
+           "width": 1200,
+           "height": 1200,
+           "video_duration": 7707,
+           "video_aspect_ratio": "1:1"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Manazel AlHadawi",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=hs-cityscape_dec25_awr&utm_term=cityscape_en&utm_content=video7s_video_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2059148170479943680",
+       "name": "Bab Samhan x Qiddiya_Static KV1_ AR_ CPM",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-05-26T05:42:35Z",
+       "components": [
+        {
+         "media_key": "3_2059147361801138176",
+         "media_metadata": {
+          "3_2059147361801138176": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HJOPnaBW8AAvIXV.jpg",
+           "width": 1080,
+           "height": 1080
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "اسكن في الدرعية",
+         "destination": {
+          "url": "https://www.diriyah.sa/ar/hotels/bab-samhan?utm_source=x&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_awr&utm_term=ar&utm_content=display_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2059148284447653888",
+       "name": "Bab Samhan x Qiddiya_Static KV1_ EN_ CPM",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-05-26T05:43:02Z",
+       "components": [
+        {
+         "media_key": "3_2059147272869281792",
+         "media_metadata": {
+          "3_2059147272869281792": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HJOPiOuWgAApSNh.jpg",
+           "width": 1080,
+           "height": 1080
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Stay in Diriyah",
+         "destination": {
+          "url": "https://www.diriyah.sa/en/hotels/bab-samhan?utm_source=x&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_cond&utm_term=en&utm_content=display_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2059148533094137856",
+       "name": "Bab Samhan x Qiddiya_Static KV1_ AR_ CPC",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-05-26T05:44:02Z",
+       "components": [
+        {
+         "media_key": "3_2059147361801138176",
+         "media_metadata": {
+          "3_2059147361801138176": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HJOPnaBW8AAvIXV.jpg",
+           "width": 1080,
+           "height": 1080
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "اسكن في الدرعية",
+         "destination": {
+          "url": "https://www.diriyah.sa/ar/hotels/bab-samhan?utm_source=x&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=display_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2059148946573049856",
+       "name": "Eid KV_ Static KV1_ CPC_ AR",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-05-26T05:45:40Z",
+       "components": [
+        {
+         "media_key": "3_2059148903505702912",
+         "media_metadata": {
+          "3_2059148903505702912": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HJORBJUXsAAI0DE.jpg",
+           "width": 1080,
+           "height": 1080
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "عيدنا.. يزهى بكم",
+         "destination": {
+          "url": "https://www.diriyah.sa/ar?utm_source=x&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=display_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2059149086578581504",
+       "name": "Eid KV_ Static KV1_ CPC_ EN",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-05-26T05:46:14Z",
+       "components": [
+        {
+         "media_key": "3_2059149058791403520",
+         "media_metadata": {
+          "3_2059149058791403520": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HJORKLzXcAAhdZ8.jpg",
+           "width": 1080,
+           "height": 1080
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Eid, Better Together",
+         "destination": {
+          "url": "https://www.diriyah.sa/en?utm_source=x&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_cond&utm_term=en&utm_content=display_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2059159269992259584",
+       "name": "Bab Samhan x Qiddiya_Static KV1_ EN_ CPM",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-05-26T06:26:42Z",
+       "components": [
+        {
+         "media_key": "3_2059147272869281792",
+         "media_metadata": {
+          "3_2059147272869281792": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HJOPiOuWgAApSNh.jpg",
+           "width": 1080,
+           "height": 1080
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Stay in Diriyah",
+         "destination": {
+          "url": "https://www.diriyah.sa/en/hotels/bab-samhan?utm_source=x&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_awr&utm_term=en&utm_content=display_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2064345438220963840",
+       "name": "ManazelAlHadawi_AW_EN_KV1",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-06-09T13:54:40Z",
+       "components": [
+        {
+         "media_key": "3_2064320779555106816",
+         "media_metadata": {
+          "3_2064320779555106816": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HKXwz8_W8AAM5Il.jpg",
+           "width": 1080,
+           "height": 1080
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Manazel AlHadawi",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_awr&utm_term=manazel-alhadawi_en&utm_content=b01f5ba3_manazel-alhadawi-kv1_display_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2064345544223563776",
+       "name": "ManazelAlHadawi_AW_EN_KV2",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-06-09T13:55:06Z",
+       "components": [
+        {
+         "media_key": "3_2064320698185572352",
+         "media_metadata": {
+          "3_2064320698185572352": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HKXwvN3WYAAzMbQ.jpg",
+           "width": 1080,
+           "height": 1080
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Manazel AlHadawi",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_awr&utm_term=manazel-alhadawi_en&utm_content=manazel-alhadawi-kv2_display_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2064345558932996097",
+       "name": "ManazelAlHadawi_AW_AR_KV1",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-06-09T13:55:09Z",
+       "components": [
+        {
+         "media_key": "3_2064320816427237376",
+         "media_metadata": {
+          "3_2064320816427237376": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HKXw2GWXAAAMMbq.jpg",
+           "width": 1080,
+           "height": 1080
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "منازل الحداوي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_awr&utm_term=manazel-alhadawi_ar&utm_content=b01f5ba3_manazel-alhadawi-kv1_display_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2064345591254061056",
+       "name": "ManazelAlHadawi_TR_EN_KV1",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-06-09T13:55:17Z",
+       "components": [
+        {
+         "media_key": "3_2064320779555106816",
+         "media_metadata": {
+          "3_2064320779555106816": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HKXwz8_W8AAM5Il.jpg",
+           "width": 1080,
+           "height": 1080
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Manazel AlHadawi",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_cond&utm_term=manazel-alhadawi_en&utm_content=b01f5ba3_manazel-alhadawi-kv1_display_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2064345608651988992",
+       "name": "ManazelAlHadawi_TR_EN_KV2",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-06-09T13:55:21Z",
+       "components": [
+        {
+         "media_key": "3_2064320698185572352",
+         "media_metadata": {
+          "3_2064320698185572352": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HKXwvN3WYAAzMbQ.jpg",
+           "width": 1080,
+           "height": 1080
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Manazel AlHadawi",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_cond&utm_term=manazel-alhadawi_en&utm_content=manazel-alhadawi-kv2_display_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2064345622979772416",
+       "name": "ManazelAlHadawi_TR_AR_KV1",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-06-09T13:55:24Z",
+       "components": [
+        {
+         "media_key": "3_2064320816427237376",
+         "media_metadata": {
+          "3_2064320816427237376": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HKXw2GWXAAAMMbq.jpg",
+           "width": 1080,
+           "height": 1080
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "منازل الحداوي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_cond&utm_term=manazel-alhadawi_ar&utm_content=b01f5ba3_manazel-alhadawi-kv1_display_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2064345640449212416",
+       "name": "ManazelAlHadawi_TR_AR_KV2",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-06-09T13:55:29Z",
+       "components": [
+        {
+         "media_key": "3_2064320745799303168",
+         "media_metadata": {
+          "3_2064320745799303168": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HKXwx_PWQAAWmdY.jpg",
+           "width": 1080,
+           "height": 1080
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "منازل الحداوي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_cond&utm_term=manazel-alhadawi_ar&utm_content=manazel-alhadawi-kv2_display_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2064345700410818560",
+       "name": "ManazelAlHadawi_AW_AR_KV2",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-06-09T13:55:43Z",
+       "components": [
+        {
+         "media_key": "3_2064320745799303168",
+         "media_metadata": {
+          "3_2064320745799303168": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HKXwx_PWQAAWmdY.jpg",
+           "width": 1080,
+           "height": 1080
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "منازل الحداوي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_awr&utm_term=manazel-alhadawi_ar&utm_content=manazel-alhadawi-kv2_display_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2066477300753870848",
+       "name": "ManazelAlHadawi_AW_EN_KV2_1x1",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-06-15T11:05:56Z",
+       "components": [
+        {
+         "media_key": "3_2066477178389184512",
+         "media_metadata": {
+          "3_2066477178389184512": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HK2aC4pWwAAe1tf.jpg",
+           "width": 1080,
+           "height": 1080
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Manazel AlHadawi",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_jun26_awr&utm_term=3e71b680_residential_en&utm_content=manazel-alhadawi-kv2_display_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2066589319465148416",
+       "name": "ManazelAlHadawi_AW_AR_KV1",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-06-15T18:31:03Z",
+       "components": [
+        {
+         "media_key": "3_2064320745799303168",
+         "media_metadata": {
+          "3_2064320745799303168": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HKXwx_PWQAAWmdY.jpg",
+           "width": 1080,
+           "height": 1080
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "منازل الحداوي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_jun26_awr&utm_term=3e71b680_residential_ar&utm_content=manazel-alhadawi-kv2_display_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2070052220775661568",
+       "name": "ManazelAlHadawi_AW_EN_KV2_16x9",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-06-25T07:51:23Z",
+       "components": [
+        {
+         "media_key": "3_2070052191629385728",
+         "media_metadata": {
+          "3_2070052191629385728": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HLpNgCyWoAAkw9A.jpg",
+           "width": 1920,
+           "height": 1079
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Manazel AlHadawi",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_jun26_awr&utm_term=3e71b680_residential_en&utm_content=manazel-alhadawi-kv2_display_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2070052905458012160",
+       "name": "ManazelAlHadawi_AW_AR_KV2_16x9",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-06-25T07:54:07Z",
+       "components": [
+        {
+         "media_key": "3_2070052871802949632",
+         "media_metadata": {
+          "3_2070052871802949632": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HLpOHooXkAA5MC6.jpg",
+           "width": 1920,
+           "height": 1079
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "منازل الحداوي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_jun26_awr&utm_term=3e71b680_residential_ar&utm_content=manazel-alhadawi-kv2_display_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2074339069765578752",
+       "name": "ManazelAlHadawi_TRF_AR_KV2_1x1",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-10-06T17:17:11Z",
+       "components": [
+        {
+         "media_key": "3_2064320745799303168",
+         "media_metadata": {
+          "3_2064320745799303168": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HKXwx_PWQAAWmdY.jpg",
+           "width": 1080,
+           "height": 1080
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "منازل الحداوي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_jul26_cond&utm_term=3e71b680_residential_ar&utm_content=manazel-alhadawi-kv2_display_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2074339069790715904",
+       "name": "ManazelAlHadawi_TRF_AR_KV2_16x9",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-10-06T17:17:50Z",
+       "components": [
+        {
+         "media_key": "3_2070052871802949632",
+         "media_metadata": {
+          "3_2070052871802949632": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HLpOHooXkAA5MC6.jpg",
+           "width": 1920,
+           "height": 1079
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "منازل الحداوي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_jul26_cond&utm_term=3e71b680_residential_ar&utm_content=manazel-alhadawi-kv2_display_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2074339069773963264",
+       "name": "ManazelAlHadawi_TRF_EN_KV2_1x1",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-10-06T17:17:44Z",
+       "components": [
+        {
+         "media_key": "3_2066477178389184512",
+         "media_metadata": {
+          "3_2066477178389184512": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HK2aC4pWwAAe1tf.jpg",
+           "width": 1080,
+           "height": 1080
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Manazel AlHadawi",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_jul26_cond&utm_term=3e71b680_residential_en&utm_content=manazel-alhadawi-kv2_display_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2074339069761331200",
+       "name": "ManazelAlHadawi_TRF_EN_KV2_16x9",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-10-06T17:17:39Z",
+       "components": [
+        {
+         "media_key": "3_2070052191629385728",
+         "media_metadata": {
+          "3_2070052191629385728": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HLpNgCyWoAAkw9A.jpg",
+           "width": 1920,
+           "height": 1079
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Manazel AlHadawi",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_jul26_cond&utm_term=3e71b680_residential_en&utm_content=manazel-alhadawi-kv2_display_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2079185845697835008",
+       "name": "[Copy] Untitled",
+       "card_type": "IMAGE_CAROUSEL_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-07-20T12:45:09Z",
+       "components": [
+        {
+         "media_keys": [
+          "3_2076939913270820864",
+          "3_2076939969986273280",
+          "3_2076940005830766592",
+          "3_2076940128111431680",
+          "3_2076940154581790721",
+          "3_2076940181433659392"
+         ],
+         "media_metadata": {
+          "3_2076940005830766592": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HNLF7mNXMAABwCn.jpg",
+           "width": 1080,
+           "height": 1080
+          },
+          "3_2076939969986273280": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HNLF5grXoAA5Xh1.jpg",
+           "width": 1080,
+           "height": 1080
+          },
+          "3_2076940181433659392": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HNLGF0YWsAA9j0L.jpg",
+           "width": 1080,
+           "height": 1080
+          },
+          "3_2076939913270820864": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HNLF2NZWgAAso-p.jpg",
+           "width": 1080,
+           "height": 1080
+          },
+          "3_2076940154581790721": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HNLGEQWXsAEC8Jr.jpg",
+           "width": 1080,
+           "height": 1080
+          },
+          "3_2076940128111431680": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HNLGCtvWEAAqNwM.jpg",
+           "width": 1080,
+           "height": 1080
+          }
+         },
+         "type": "SWIPEABLE_MEDIA"
+        },
+        {
+         "title": "سجل اهتمامك",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_source=x&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_jul26_cond&utm_term=3e71b680_residential_ar&utm_content=display_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      }
+     ]
+    },
+    "meta": {
+     "mcp_result_projection": {
+      "fields": [
+       "id",
+       "name",
+       "card_type",
+       "deleted",
+       "updated_at",
+       "components",
+       "slides"
+      ],
+      "max_items": 2000
+     }
+    }
+   },
+   "meta": {
+    "requestId": "c37928c8-af16-4a56-aee1-a99d30077029",
+    "latencyMs": 2115
+   }
+  }
+ },
+ {
+  "tool_use_id": "toolu_01Kxg6rENQ3wD1aaBp3CgAK3",
+  "input": {
+   "action": "LIST_CARDS",
+   "account_id": "18ce55o46ul",
+   "path_params": {
+    "account_id": "18ce55o46ul"
+   },
+   "params": {
+    "card_ids": "2079186495856840704,2079187286579638272,2079187501411926016,2079856660311371777,2079856660340760576,2079860788211130368,2079860788173438977,2084847797317070848,2084847797304496128,2084847797304492032,2084847797308620800,2094014533492686848,2094014533022912512,2094053607263846401,2095131819687464963,2095139954829447168,2095139954837917698,2096314684513062916,2096314684697686024,2096314684525686786,2096314684496330757,2096314684542504961,2096314684550909955,2096480305540444163,2096480305544658949,2096480305565642757,2096480305544560640",
+    "with_deleted": true,
+    "include_legacy_cards": true,
+    "count": 200
+   },
+   "result_fields": [
+    "id",
+    "name",
+    "card_type",
+    "deleted",
+    "updated_at",
+    "components",
+    "slides"
+   ],
+   "max_items": 2000
+  },
+  "result": {
+   "success": true,
+   "data": {
+    "success": true,
+    "data": {
+     "request": {
+      "params": {
+       "count": 200,
+       "include_legacy_cards": true,
+       "account_id": "18ce55o46ul",
+       "card_ids": [
+        "2079186495856840704",
+        "2079187286579638272",
+        "2079187501411926016",
+        "2079856660311371777",
+        "2079856660340760576",
+        "2079860788211130368",
+        "2079860788173438977",
+        "2084847797317070848",
+        "2084847797304496128",
+        "2084847797304492032",
+        "2084847797308620800",
+        "2094014533492686848",
+        "2094014533022912512",
+        "2094053607263846401",
+        "2095131819687464963",
+        "2095139954829447168",
+        "2095139954837917698",
+        "2096314684513062916",
+        "2096314684697686024",
+        "2096314684525686786",
+        "2096314684496330757",
+        "2096314684542504961",
+        "2096314684550909955",
+        "2096480305540444163",
+        "2096480305544658949",
+        "2096480305565642757",
+        "2096480305544560640"
+       ],
+       "with_deleted": true
+      }
+     },
+     "next_cursor": null,
+     "data": [
+      {
+       "id": "2079186495856840704",
+       "name": "[Copy] Untitled",
+       "card_type": "IMAGE_CAROUSEL_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-07-20T12:47:44Z",
+       "components": [
+        {
+         "media_keys": [
+          "3_2076949735089340416",
+          "3_2076949766802444288",
+          "3_2076949795235614720",
+          "3_2076949818836918272",
+          "3_2076949843147214848",
+          "3_2076949866006134784"
+         ],
+         "media_metadata": {
+          "3_2076949843147214848": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HNLO4NEX0AAQxsa.jpg",
+           "width": 1080,
+           "height": 1080
+          },
+          "3_2076949866006134784": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HNLO5iOXQAAkQL6.jpg",
+           "width": 1080,
+           "height": 1080
+          },
+          "3_2076949795235614720": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HNLO1alW0AAN6Wa.jpg",
+           "width": 1080,
+           "height": 1080
+          },
+          "3_2076949735089340416": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HNLOx6hXgAA4_fY.jpg",
+           "width": 1080,
+           "height": 1080
+          },
+          "3_2076949766802444288": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HNLOzwqXEAA6_cM.jpg",
+           "width": 1080,
+           "height": 1080
+          },
+          "3_2076949818836918272": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HNLO2ygWIAAZC3P.jpg",
+           "width": 1080,
+           "height": 1080
+          }
+         },
+         "type": "SWIPEABLE_MEDIA"
+        },
+        {
+         "title": "🔗",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=x&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_jul26_cond&utm_term=3e71b680_residential_en&utm_content=display_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2079187286579638272",
+       "name": "[Copy] Untitled",
+       "card_type": "IMAGE_CAROUSEL_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-07-20T12:50:53Z",
+       "components": [
+        {
+         "media_keys": [
+          "3_2076949735089340416",
+          "3_2076949766802444288",
+          "3_2076949795235614720",
+          "3_2076949818836918272",
+          "3_2076949843147214848",
+          "3_2076949866006134784"
+         ],
+         "media_metadata": {
+          "3_2076949843147214848": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HNLO4NEX0AAQxsa.jpg",
+           "width": 1080,
+           "height": 1080
+          },
+          "3_2076949866006134784": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HNLO5iOXQAAkQL6.jpg",
+           "width": 1080,
+           "height": 1080
+          },
+          "3_2076949795235614720": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HNLO1alW0AAN6Wa.jpg",
+           "width": 1080,
+           "height": 1080
+          },
+          "3_2076949735089340416": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HNLOx6hXgAA4_fY.jpg",
+           "width": 1080,
+           "height": 1080
+          },
+          "3_2076949766802444288": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HNLOzwqXEAA6_cM.jpg",
+           "width": 1080,
+           "height": 1080
+          },
+          "3_2076949818836918272": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HNLO2ygWIAAZC3P.jpg",
+           "width": 1080,
+           "height": 1080
+          }
+         },
+         "type": "SWIPEABLE_MEDIA"
+        },
+        {
+         "title": "🔗",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=x&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_jul26_awr&utm_term=3e71b680_residential_en&utm_content=display_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2079187501411926016",
+       "name": "[Copy] Untitled",
+       "card_type": "IMAGE_CAROUSEL_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-07-20T12:51:44Z",
+       "components": [
+        {
+         "media_keys": [
+          "3_2076939913270820864",
+          "3_2076939969986273280",
+          "3_2076940005830766592",
+          "3_2076940128111431680",
+          "3_2076940154581790721",
+          "3_2076940181433659392"
+         ],
+         "media_metadata": {
+          "3_2076940005830766592": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HNLF7mNXMAABwCn.jpg",
+           "width": 1080,
+           "height": 1080
+          },
+          "3_2076939969986273280": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HNLF5grXoAA5Xh1.jpg",
+           "width": 1080,
+           "height": 1080
+          },
+          "3_2076940181433659392": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HNLGF0YWsAA9j0L.jpg",
+           "width": 1080,
+           "height": 1080
+          },
+          "3_2076939913270820864": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HNLF2NZWgAAso-p.jpg",
+           "width": 1080,
+           "height": 1080
+          },
+          "3_2076940154581790721": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HNLGEQWXsAEC8Jr.jpg",
+           "width": 1080,
+           "height": 1080
+          },
+          "3_2076940128111431680": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HNLGCtvWEAAqNwM.jpg",
+           "width": 1080,
+           "height": 1080
+          }
+         },
+         "type": "SWIPEABLE_MEDIA"
+        },
+        {
+         "title": "سجل اهتمامك",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_source=x&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_jul26_awr&utm_term=ar&utm_content=display_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2079856660311371777",
+       "name": "ManazelAlHadawi_CONV_AR_KV2_16x9",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-10-06T17:17:55Z",
+       "components": [
+        {
+         "media_key": "3_2065079394750578688",
+         "media_metadata": {
+          "3_2065079394750578688": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HKiixK0WQAAtAm-.jpg",
+           "width": 1920,
+           "height": 1079
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "منازل الحداوي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_jul26_conv&utm_term=3e71b680_residential_ar&utm_content=manazel-alhadawi-kv2_display_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2079856660340760576",
+       "name": "ManazelAlHadawi_CONV_AR_KV2_1x1",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-10-06T17:18:00Z",
+       "components": [
+        {
+         "media_key": "3_2064320745799303168",
+         "media_metadata": {
+          "3_2064320745799303168": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HKXwx_PWQAAWmdY.jpg",
+           "width": 1080,
+           "height": 1080
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "منازل الحداوي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_jul26_conv&utm_term=3e71b680_residential_ar&utm_content=manazel-alhadawi-kv2_display_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2079860788211130368",
+       "name": "ManazelAlHadawi_CONV_EN_KV2_16x9",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-10-06T17:18:10Z",
+       "components": [
+        {
+         "media_key": "3_2065034629904490496",
+         "media_metadata": {
+          "3_2065034629904490496": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HKh6DgxWYAATFhR.jpg",
+           "width": 1920,
+           "height": 1079
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Manazel AlHadawi",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_jul26_conv&utm_term=3e71b680_residential_en&utm_content=manazel-alhadawi-kv2_display_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2079860788173438977",
+       "name": "ManazelAlHadawi_CONV_EN_KV2_1x1",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-10-06T17:18:05Z",
+       "components": [
+        {
+         "media_key": "3_2066477178389184512",
+         "media_metadata": {
+          "3_2066477178389184512": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HK2aC4pWwAAe1tf.jpg",
+           "width": 1080,
+           "height": 1080
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Manazel AlHadawi",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_jul26_conv&utm_term=3e71b680_residential_en&utm_content=manazel-alhadawi-kv2_display_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2084847797317070848",
+       "name": "company_general_2026_sep_resi-video-1_adset-id-3c3fc87a_video_en",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-10-06T17:18:32Z",
+       "components": [
+        {
+         "media_key": "13_2084844863971815424",
+         "media_metadata": {
+          "13_2084844863971815424": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/2084844863971815424/vid/avc1/540x540/qFZcrnMgM5CxHp70.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/2084844863971815424/img/CkjrNuz8Tr6QP1_A.jpg",
+           "width": 1080,
+           "height": 1080,
+           "video_duration": 30000,
+           "video_aspect_ratio": "1:1"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Diriyah Residences",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=x&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_aug26_cond&utm_term=3e71b680_residential_en&utm_content=3c3fc87a_resi-video-1_video_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2084847797304496128",
+       "name": "company_general_2026_sep_resi-video-1_adset-id-3c3fc87a_video_en",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-10-06T17:18:20Z",
+       "components": [
+        {
+         "media_key": "13_2084844863971815424",
+         "media_metadata": {
+          "13_2084844863971815424": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/2084844863971815424/vid/avc1/540x540/qFZcrnMgM5CxHp70.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/2084844863971815424/img/CkjrNuz8Tr6QP1_A.jpg",
+           "width": 1080,
+           "height": 1080,
+           "video_duration": 30000,
+           "video_aspect_ratio": "1:1"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Diriyah Residences🔗",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=x&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_aug26_cond&utm_term=3e71b680_residential_en&utm_content=3c3fc87a_resi-video-1_video_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2084847797304492032",
+       "name": "company_general_2026_sep_resi-video-1_adset-id-3c3fc87a_video_ar",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-10-06T17:18:15Z",
+       "components": [
+        {
+         "media_key": "13_2084846916076986368",
+         "media_metadata": {
+          "13_2084846916076986368": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/2084846916076986368/vid/avc1/720x720/tEIPYtgcInPMzvLt.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/2084846916076986368/img/vHA33Q1XlCWjp5Qp.jpg",
+           "width": 2160,
+           "height": 2160,
+           "video_duration": 30000,
+           "video_aspect_ratio": "1:1"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "مساكن الدرعية",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_source=x&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_aug26_cond&utm_term=3e71b680_residential_ar&utm_content=3c3fc87a_resi-video-1_video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2084847797308620800",
+       "name": "company_general_2026_sep_resi-video-1_adset-id-3c3fc87a_video_ar",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-10-06T17:18:26Z",
+       "components": [
+        {
+         "media_key": "13_2084846916076986368",
+         "media_metadata": {
+          "13_2084846916076986368": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/2084846916076986368/vid/avc1/720x720/tEIPYtgcInPMzvLt.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/2084846916076986368/img/vHA33Q1XlCWjp5Qp.jpg",
+           "width": 2160,
+           "height": 2160,
+           "video_duration": 30000,
+           "video_aspect_ratio": "1:1"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "مساكن الدرعية",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_source=x&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_aug26_cond&utm_term=3e71b680_residential_ar&utm_content=3c3fc87a_resi-video-1_video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2094014533492686848",
+       "name": "ManazelAlHadawi_AW_AR_KV3_1x1",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-08-30T10:49:04Z",
+       "components": [
+        {
+         "media_key": "3_2094014482913619968",
+         "media_metadata": {
+          "3_2094014482913619968": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HQ9vE-CW8AAfqeX.jpg",
+           "width": 1081,
+           "height": 1081
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "منازل الحداوي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_awr&utm_term=3e71b680_residential_ar&utm_content=manazel-alhadawi-kv3_display_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2094014533022912512",
+       "name": "ManazelAlHadawi_AW_EN_KV3_1x1",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-08-30T10:49:04Z",
+       "components": [
+        {
+         "media_key": "3_2094014324381495296",
+         "media_metadata": {
+          "3_2094014324381495296": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HQ9u7vdWsAAh6Oa.jpg",
+           "width": 1081,
+           "height": 1081
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Manazel AlHadawi",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_awr&utm_term=3e71b680_residential_en&utm_content=manazel-alhadawi-kv3_display_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2094053607263846401",
+       "name": "ManazelAlHadawi_AR_CR2",
+       "card_type": "IMAGE_CAROUSEL_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-08-30T13:24:20Z",
+       "components": [
+        {
+         "media_keys": [
+          "3_2094052509501337600",
+          "3_2094052550102130688",
+          "3_2094052605286612992",
+          "3_2094052670495412224",
+          "3_2094052905246400514"
+         ],
+         "media_metadata": {
+          "3_2094052605286612992": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HQ-Rv-8XAAAf0tP.jpg",
+           "width": 1080,
+           "height": 1080
+          },
+          "3_2094052550102130688": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HQ-RsxXWoAANEhm.jpg",
+           "width": 1080,
+           "height": 1080
+          },
+          "3_2094052905246400514": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HQ-SBcYWIAIUxTJ.jpg",
+           "width": 1080,
+           "height": 1080
+          },
+          "3_2094052670495412224": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HQ-Rzx3WUAAEbDj.jpg",
+           "width": 1080,
+           "height": 1080
+          },
+          "3_2094052509501337600": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HQ-RqaHXsAAtEnP.jpg",
+           "width": 1080,
+           "height": 1080
+          }
+         },
+         "type": "SWIPEABLE_MEDIA"
+        },
+        {
+         "title": "منازل الحداوي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_awr&utm_term=3e71b680_residential_ar&utm_content=manazel-alhadawi-cr2_display_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2095131819687464963",
+       "name": "ManazelAlHadawi_EN_CR2_V2",
+       "card_type": "IMAGE_CAROUSEL_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-09-02T12:48:46Z",
+       "components": [
+        {
+         "media_keys": [
+          "3_2095131582503718913",
+          "3_2095131622626512897",
+          "3_2095131666050129925",
+          "3_2095131706541928448",
+          "3_2095131743711903747"
+         ],
+         "media_metadata": {
+          "3_2095131666050129925": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HRNnJliXIAU3o0O.jpg",
+           "width": 1080,
+           "height": 1080
+          },
+          "3_2095131706541928448": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HRNnL8YW8AA1C-_.jpg",
+           "width": 1080,
+           "height": 1080
+          },
+          "3_2095131743711903747": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HRNnOG2XwAMMtOo.jpg",
+           "width": 1080,
+           "height": 1080
+          },
+          "3_2095131582503718913": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HRNnEuTWEAEknyC.jpg",
+           "width": 1080,
+           "height": 1080
+          },
+          "3_2095131622626512897": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HRNnHDxXUAEP5vo.jpg",
+           "width": 1080,
+           "height": 1080
+          }
+         },
+         "type": "SWIPEABLE_MEDIA"
+        },
+        {
+         "title": "Manazel AlHadawi",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=adset-id-E1A001_manazel-alhadawi_en_all_mf_prospecting&utm_content=ad-id-AD1001_manazel-alhadawi-CR2",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2095139954829447168",
+       "name": "ManazelAlHadawi_AR_CR3_V2",
+       "card_type": "IMAGE_CAROUSEL_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-09-02T13:21:05Z",
+       "components": [
+        {
+         "media_keys": [
+          "3_2095139397419048962",
+          "3_2095139434400202753",
+          "3_2095139475391221761",
+          "3_2095139519477510144",
+          "3_2095139556098011139"
+         ],
+         "media_metadata": {
+          "3_2095139434400202753": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HRNuNw5WQAELye7.jpg",
+           "width": 1080,
+           "height": 1081
+          },
+          "3_2095139519477510144": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HRNuSt1W8AATDe9.jpg",
+           "width": 1080,
+           "height": 1081
+          },
+          "3_2095139556098011139": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HRNuU2QXcAMDqgi.jpg",
+           "width": 1080,
+           "height": 1081
+          },
+          "3_2095139475391221761": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HRNuQJmXkAEi9-R.jpg",
+           "width": 1080,
+           "height": 1080
+          },
+          "3_2095139397419048962": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HRNuLnIWoAIK0rb.jpg",
+           "width": 1080,
+           "height": 1081
+          }
+         },
+         "type": "SWIPEABLE_MEDIA"
+        },
+        {
+         "title": "منازل الحداوي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=adset-id-A1A002_manazel-alhadawi_ar_all_mf_prospecting&utm_content=ad-id-AD1003_manazel-alhadawi-CR3",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2095139954837917698",
+       "name": "ManazelAlHadawi_EN_CR3_V2",
+       "card_type": "IMAGE_CAROUSEL_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-09-02T13:21:05Z",
+       "components": [
+        {
+         "media_keys": [
+          "3_2095139775606833152",
+          "3_2095139806980231171",
+          "3_2095139843697160196",
+          "3_2095139872205860870",
+          "3_2095139905894486020"
+         ],
+         "media_metadata": {
+          "3_2095139843697160196": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HRNullpWMAQjMnL.jpg",
+           "width": 1080,
+           "height": 1080
+          },
+          "3_2095139806980231171": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HRNujc3WUAMNDfi.jpg",
+           "width": 1080,
+           "height": 1080
+          },
+          "3_2095139775606833152": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HRNuhn_WQAAhil7.jpg",
+           "width": 1080,
+           "height": 1081
+          },
+          "3_2095139872205860870": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HRNunP2WcAYDf9Y.jpg",
+           "width": 1080,
+           "height": 1081
+          },
+          "3_2095139905894486020": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HRNupNWWEAQAK2Q.jpg",
+           "width": 1080,
+           "height": 1081
+          }
+         },
+         "type": "SWIPEABLE_MEDIA"
+        },
+        {
+         "title": "Manazel AlHadawi",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=adset-id-E1A001_manazel-alhadawi_en_all_mf_prospecting&utm_content=ad-id-AD1001_manazel-alhadawi-CR3",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2096314684513062916",
+       "name": "ManazelAlHadawi_TRF_AR_KV3_1x1",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-10-06T17:18:43Z",
+       "components": [
+        {
+         "media_key": "3_2094014482913619968",
+         "media_metadata": {
+          "3_2094014482913619968": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HQ9vE-CW8AAfqeX.jpg",
+           "width": 1081,
+           "height": 1081
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "منازل الحداوي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_cond&utm_term=3e71b680_residential_ar&utm_content=manazel-alhadawi-kv3_display_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2096314684697686024",
+       "name": "ManazelAlHadawi_TRF_AR_CR2",
+       "card_type": "IMAGE_CAROUSEL_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-10-06T17:19:05Z",
+       "components": [
+        {
+         "media_keys": [
+          "3_2094052509501337600",
+          "3_2094052550102130688",
+          "3_2094052605286612992",
+          "3_2094052670495412224",
+          "3_2094052905246400514"
+         ],
+         "media_metadata": {
+          "3_2094052605286612992": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HQ-Rv-8XAAAf0tP.jpg",
+           "width": 1080,
+           "height": 1080
+          },
+          "3_2094052550102130688": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HQ-RsxXWoAANEhm.jpg",
+           "width": 1080,
+           "height": 1080
+          },
+          "3_2094052905246400514": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HQ-SBcYWIAIUxTJ.jpg",
+           "width": 1080,
+           "height": 1080
+          },
+          "3_2094052670495412224": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HQ-Rzx3WUAAEbDj.jpg",
+           "width": 1080,
+           "height": 1080
+          },
+          "3_2094052509501337600": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HQ-RqaHXsAAtEnP.jpg",
+           "width": 1080,
+           "height": 1080
+          }
+         },
+         "type": "SWIPEABLE_MEDIA"
+        },
+        {
+         "title": "منازل الحداوي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_cond&utm_term=3e71b680_residential_ar&utm_content=manazel-alhadawi-cr2_display_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2096314684525686786",
+       "name": "ManazelAlHadawi_TRF_AR_CR3",
+       "card_type": "IMAGE_CAROUSEL_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-10-06T17:18:49Z",
+       "components": [
+        {
+         "media_keys": [
+          "3_2095139397419048962",
+          "3_2095139434400202753",
+          "3_2095139475391221761",
+          "3_2095139519477510144",
+          "3_2095139556098011139"
+         ],
+         "media_metadata": {
+          "3_2095139434400202753": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HRNuNw5WQAELye7.jpg",
+           "width": 1080,
+           "height": 1081
+          },
+          "3_2095139519477510144": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HRNuSt1W8AATDe9.jpg",
+           "width": 1080,
+           "height": 1081
+          },
+          "3_2095139556098011139": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HRNuU2QXcAMDqgi.jpg",
+           "width": 1080,
+           "height": 1081
+          },
+          "3_2095139475391221761": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HRNuQJmXkAEi9-R.jpg",
+           "width": 1080,
+           "height": 1080
+          },
+          "3_2095139397419048962": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HRNuLnIWoAIK0rb.jpg",
+           "width": 1080,
+           "height": 1081
+          }
+         },
+         "type": "SWIPEABLE_MEDIA"
+        },
+        {
+         "title": "منازل الحداوي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_cond&utm_term=3e71b680_residential_ar&utm_content=manazel-alhadawi-cr3_display_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2096314684496330757",
+       "name": "ManazelAlHadawi_TRF_EN_KV3_1x1",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-10-06T17:18:37Z",
+       "components": [
+        {
+         "media_key": "3_2094014324381495296",
+         "media_metadata": {
+          "3_2094014324381495296": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HQ9u7vdWsAAh6Oa.jpg",
+           "width": 1081,
+           "height": 1081
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Manazel AlHadawi",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_cond&utm_term=3e71b680_residential_en&utm_content=manazel-alhadawi-kv3_display_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2096314684542504961",
+       "name": "ManazelAlHadawi_TRF_EN_CR2",
+       "card_type": "IMAGE_CAROUSEL_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-10-06T17:18:54Z",
+       "components": [
+        {
+         "media_keys": [
+          "3_2095131582503718913",
+          "3_2095131622626512897",
+          "3_2095131666050129925",
+          "3_2095131706541928448",
+          "3_2095131743711903747"
+         ],
+         "media_metadata": {
+          "3_2095131666050129925": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HRNnJliXIAU3o0O.jpg",
+           "width": 1080,
+           "height": 1080
+          },
+          "3_2095131706541928448": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HRNnL8YW8AA1C-_.jpg",
+           "width": 1080,
+           "height": 1080
+          },
+          "3_2095131743711903747": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HRNnOG2XwAMMtOo.jpg",
+           "width": 1080,
+           "height": 1080
+          },
+          "3_2095131582503718913": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HRNnEuTWEAEknyC.jpg",
+           "width": 1080,
+           "height": 1080
+          },
+          "3_2095131622626512897": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HRNnHDxXUAEP5vo.jpg",
+           "width": 1080,
+           "height": 1080
+          }
+         },
+         "type": "SWIPEABLE_MEDIA"
+        },
+        {
+         "title": "Manazel AlHadawi",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_cond&utm_term=3e71b680_residential_en&utm_content=manazel-alhadawi-cr2_display_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2096314684550909955",
+       "name": "ManazelAlHadawi_TRF_EN_CR3",
+       "card_type": "IMAGE_CAROUSEL_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-10-06T17:19:00Z",
+       "components": [
+        {
+         "media_keys": [
+          "3_2095139775606833152",
+          "3_2095139806980231171",
+          "3_2095139843697160196",
+          "3_2095139872205860870",
+          "3_2095139905894486020"
+         ],
+         "media_metadata": {
+          "3_2095139843697160196": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HRNullpWMAQjMnL.jpg",
+           "width": 1080,
+           "height": 1080
+          },
+          "3_2095139806980231171": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HRNujc3WUAMNDfi.jpg",
+           "width": 1080,
+           "height": 1080
+          },
+          "3_2095139775606833152": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HRNuhn_WQAAhil7.jpg",
+           "width": 1080,
+           "height": 1081
+          },
+          "3_2095139872205860870": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HRNunP2WcAYDf9Y.jpg",
+           "width": 1080,
+           "height": 1081
+          },
+          "3_2095139905894486020": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HRNupNWWEAQAK2Q.jpg",
+           "width": 1080,
+           "height": 1081
+          }
+         },
+         "type": "SWIPEABLE_MEDIA"
+        },
+        {
+         "title": "Manazel AlHadawi",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_cond&utm_term=3e71b680_residential_en&utm_content=manazel-alhadawi-cr3_display_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2096480305540444163",
+       "name": "ManazelAlHadawi_CONV_EN_KV2_16x9",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-10-06T17:19:11Z",
+       "components": [
+        {
+         "media_key": "3_2065034629904490496",
+         "media_metadata": {
+          "3_2065034629904490496": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HKh6DgxWYAATFhR.jpg",
+           "width": 1920,
+           "height": 1079
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Manazel AlHadawi",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_conv&utm_term=3e71b680_residential_en&utm_content=manazel-alhadawi-kv2_display_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2096480305544658949",
+       "name": "ManazelAlHadawi_CONV_EN_KV2_1x1",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-10-06T17:19:21Z",
+       "components": [
+        {
+         "media_key": "3_2066477178389184512",
+         "media_metadata": {
+          "3_2066477178389184512": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HK2aC4pWwAAe1tf.jpg",
+           "width": 1080,
+           "height": 1080
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Manazel AlHadawi",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_conv&utm_term=3e71b680_residential_en&utm_content=manazel-alhadawi-kv2_display_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2096480305565642757",
+       "name": "ManazelAlHadawi_CONV_AR_KV2_16x9",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-10-06T17:19:27Z",
+       "components": [
+        {
+         "media_key": "3_2065079394750578688",
+         "media_metadata": {
+          "3_2065079394750578688": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HKiixK0WQAAtAm-.jpg",
+           "width": 1920,
+           "height": 1079
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "منازل الحداوي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_conv&utm_term=3e71b680_residential_ar&utm_content=manazel-alhadawi-kv2_display_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2096480305544560640",
+       "name": "ManazelAlHadawi_CONV_AR_KV2_1x1",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-10-06T17:19:16Z",
+       "components": [
+        {
+         "media_key": "3_2064320745799303168",
+         "media_metadata": {
+          "3_2064320745799303168": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HKXwx_PWQAAWmdY.jpg",
+           "width": 1080,
+           "height": 1080
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "منازل الحداوي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_conv&utm_term=3e71b680_residential_ar&utm_content=manazel-alhadawi-kv2_display_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      }
+     ]
+    },
+    "meta": {
+     "mcp_result_projection": {
+      "fields": [
+       "id",
+       "name",
+       "card_type",
+       "deleted",
+       "updated_at",
+       "components",
+       "slides"
+      ],
+      "max_items": 2000
+     }
+    }
+   },
+   "meta": {
+    "requestId": "36a85d2e-0035-4696-b0d4-f8168e6cf8e9",
+    "latencyMs": 1539
+   }
+  }
+ },
+ {
+  "tool_use_id": "toolu_01XLB153Z2FdksDu3r8Tc2kp",
+  "input": {
+   "action": "LIST_CARDS",
+   "account_id": "18ce55o46ul",
+   "path_params": {
+    "account_id": "18ce55o46ul"
+   },
+   "params": {
+    "card_ids": "2097277725916475392,2097277725975126016,2097277725941587969,2097683254971097088,2097683254966968320,2097683254950100992,2097687842746990592,2097687842759610368,2097687842747023360,2097687842747023362,2097687842747011072,2097704795331031040,2099144633926209548,2099144790344679424,2099144944615321600,2099145096587366402,2099643542687637504,2104233687957319680,2104233811479494656,2104233843679256576,2104233795637624832,2104233827728232448,2104233860263505920,2105245104546156544,2105245147529117696,2105245196598599680",
+    "with_deleted": true,
+    "include_legacy_cards": true,
+    "count": 200
+   },
+   "result_fields": [
+    "id",
+    "name",
+    "card_type",
+    "deleted",
+    "updated_at",
+    "components",
+    "slides"
+   ],
+   "max_items": 2000
+  },
+  "result": {
+   "success": true,
+   "data": {
+    "success": true,
+    "data": {
+     "request": {
+      "params": {
+       "count": 200,
+       "include_legacy_cards": true,
+       "account_id": "18ce55o46ul",
+       "card_ids": [
+        "2097277725916475392",
+        "2097277725975126016",
+        "2097277725941587969",
+        "2097683254971097088",
+        "2097683254966968320",
+        "2097683254950100992",
+        "2097687842746990592",
+        "2097687842759610368",
+        "2097687842747023360",
+        "2097687842747023362",
+        "2097687842747011072",
+        "2097704795331031040",
+        "2099144633926209548",
+        "2099144790344679424",
+        "2099144944615321600",
+        "2099145096587366402",
+        "2099643542687637504",
+        "2104233687957319680",
+        "2104233811479494656",
+        "2104233843679256576",
+        "2104233795637624832",
+        "2104233827728232448",
+        "2104233860263505920",
+        "2105245104546156544",
+        "2105245147529117696",
+        "2105245196598599680"
+       ],
+       "with_deleted": true
+      }
+     },
+     "next_cursor": null,
+     "data": [
+      {
+       "id": "2097277725916475392",
+       "name": "KV1 EN",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-09-08T10:55:50Z",
+       "components": [
+        {
+         "media_key": "3_2097276958132379648",
+         "media_metadata": {
+          "3_2097276958132379648": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HRsGSBUXoAAUqTg.jpg",
+           "width": 4500,
+           "height": 4500
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Diriyah Residences",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=x&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_awr&utm_term=3e71b680_residential_en&utm_content=fa60e06a_resi-patio-kv1_display_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2097277725975126016",
+       "name": "KV2 EN",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-09-08T10:55:50Z",
+       "components": [
+        {
+         "media_key": "3_2097277456340471808",
+         "media_metadata": {
+          "3_2097277456340471808": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HRsGvBSb0AAjRQF.jpg",
+           "width": 4500,
+           "height": 4500
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Diriyah Residences",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=x&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_awr&utm_term=3e71b680_residential_en&utm_content=2f4ca35f_resi-patio-kv2_display_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2097277725941587969",
+       "name": "KV3 EN",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-09-08T10:55:50Z",
+       "components": [
+        {
+         "media_key": "3_2097277625513238528",
+         "media_metadata": {
+          "3_2097277625513238528": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HRsG43gXYAA6VEK.jpg",
+           "width": 4168,
+           "height": 4168
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Diriyah Residences",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=x&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_awr&utm_term=3e71b680_residential_en&utm_content=1469e841_resi-patio-kv3_display_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2097683254971097088",
+       "name": "LifeInDiriyah_KV3_1x1_Dark_EN_NA_Prospecting_16.08.2026_22.07.2026",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-09-09T13:47:15Z",
+       "components": [
+        {
+         "media_key": "3_2097277625513238528",
+         "media_metadata": {
+          "3_2097277625513238528": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HRsG43gXYAA6VEK.jpg",
+           "width": 4168,
+           "height": 4168
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Diriyah Residences",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=x&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_sep26_awr&utm_term=3e71b680_residential_en&utm_content=1469e841_resi-patio-kv3_display_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2097683254966968320",
+       "name": "LifeInDiriyah_KV2_1x1_Dark_EN_NA_Prospecting_16.08.2026_22.07.2026",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-09-09T13:47:15Z",
+       "components": [
+        {
+         "media_key": "3_2097277456340471808",
+         "media_metadata": {
+          "3_2097277456340471808": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HRsGvBSb0AAjRQF.jpg",
+           "width": 4500,
+           "height": 4500
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Diriyah Residences",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=x&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_sep26_awr&utm_term=3e71b680_residential_en&utm_content=2f4ca35f_resi-patio-kv2_display_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2097683254950100992",
+       "name": "LifeInDiriyah_KV1_1x1_Dark_EN_NA_Prospecting_16.08.2026_22.07.2026",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-09-09T13:47:15Z",
+       "components": [
+        {
+         "media_key": "3_2097276958132379648",
+         "media_metadata": {
+          "3_2097276958132379648": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HRsGSBUXoAAUqTg.jpg",
+           "width": 4500,
+           "height": 4500
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Diriyah Residences",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=x&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_sep26_awr&utm_term=3e71b680_residential_en&utm_content=fa60e06a_resi-patio-kv1_display_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2097687842746990592",
+       "name": "company_general_2026_sep_rcsr-kv1_adset-id-07eca5d8_display_en",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-09-09T14:05:29Z",
+       "components": [
+        {
+         "media_key": "3_2097685780575686656",
+         "media_metadata": {
+          "3_2097685780575686656": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HRx6GnmaEAAzBqK.jpg",
+           "width": 1080,
+           "height": 1080
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "A signature residential address.​",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/ritz-carlton-signature?utm_source=x&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_sep26&utm_term=87bde3ee_rcsr_en&utm_content=07eca5d8_rcsr-kv1_display_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2097687842759610368",
+       "name": "company_general_2026_sep_rcsr-kv2_adset-id-c2b96e29_display_en",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-09-17T06:34:36Z",
+       "components": [
+        {
+         "media_key": "3_2097686189692399616",
+         "media_metadata": {
+          "3_2097686189692399616": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HRx6ebrbsAA2RfY.jpg",
+           "width": 1080,
+           "height": 1080
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "A signature residential address.​",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/ritz-carlton-signature?utm_source=x&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_sep26&utm_term=87bde3ee_rcsr_en&utm_content=c2b96e29_rcsr-kv2_display_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2097687842747023360",
+       "name": "company_general_2026_sep_rcsr-kv3_adset-id-c4ffbd75_display_en",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-09-17T06:34:40Z",
+       "components": [
+        {
+         "media_key": "3_2097686332663590912",
+         "media_metadata": {
+          "3_2097686332663590912": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HRx6mwSa8AARvhB.jpg",
+           "width": 1080,
+           "height": 1080
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "A distinguished address to call home.​",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/ritz-carlton-signature?utm_source=x&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_sep26&utm_term=87bde3ee_rcsr_en&utm_content=c4ffbd75_rcsr-kv3_display_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2097687842747023362",
+       "name": "company_general_2026_sep_rcsr-kv1_adset-id-07eca5d8_display_ar",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-09-09T14:05:29Z",
+       "components": [
+        {
+         "media_key": "3_2097687157766750208",
+         "media_metadata": {
+          "3_2097687157766750208": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HRx7WyCWAAAfnVX.jpg",
+           "width": 1080,
+           "height": 1080
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "عنوان سكني مميز في الدرعية​",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living/ritz-carlton-signature?utm_source=x&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_sep26&utm_term=87bde3ee_rcsr_ar&utm_content=07eca5d8_rcsr-kv1_display_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2097687842747011072",
+       "name": "company_general_2026_sep_rcsr-kv2_adset-id-c2b96e29_display_ar",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-09-17T06:34:44Z",
+       "components": [
+        {
+         "media_key": "3_2097687510029586433",
+         "media_metadata": {
+          "3_2097687510029586433": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HRx7rSUWUAEGIgc.jpg",
+           "width": 1080,
+           "height": 1080
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "عنوان سكني مميز في الدرعية​",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living/ritz-carlton-signature?utm_source=x&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_sep26&utm_term=87bde3ee_rcsr_ar&utm_content=c2b96e29_rcsr-kv2_display_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2097704795331031040",
+       "name": "company_general_2026_sep_rcsr-kv3_adset-id-c4ffbd75_display_ar_V2",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-09-17T06:34:55Z",
+       "components": [
+        {
+         "media_key": "3_2097704745116782592",
+         "media_metadata": {
+          "3_2097704745116782592": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HRyLWgBWUAAccYH.jpg",
+           "width": 1080,
+           "height": 1080
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "مسكنك الخاص في الدرعية",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living/ritz-carlton-signature?utm_source=x&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_sep26&utm_term=87bde3ee_rcsr_ar&utm_content=c4ffbd75_rcsr-kv3_display_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2099144633926209548",
+       "name": "ManazelAlHadawi_EN_Video2Sub_24s_1x1",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-09-13T15:00:21Z",
+       "components": [
+        {
+         "media_key": "13_2099142586267045888",
+         "media_metadata": {
+          "13_2099142586267045888": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/2099142586267045888/vid/avc1/320x320/yE5L5ryAWhDl9Cc9.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/2099142586267045888/img/VQxCd0kIJip4hlJ_.jpg",
+           "width": 1080,
+           "height": 1080,
+           "video_duration": 24458,
+           "video_aspect_ratio": "1:1"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Manazel AlHadawi",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/our-residences/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26&utm_term=3e71b680_residential_en&utm_content=f00e1e93_mah-video2-sub_video_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2099144790344679424",
+       "name": "ManazelAlHadawi_EN_Video3Sub_18s_1x1",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-09-13T15:00:46Z",
+       "components": [
+        {
+         "media_key": "13_2099143033715564544",
+         "media_metadata": {
+          "13_2099143033715564544": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/2099143033715564544/vid/avc1/320x320/_9BFnNKbEVY-3ef5.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/2099143033715564544/img/uppfFBRe75353nat.jpg",
+           "width": 1080,
+           "height": 1080,
+           "video_duration": 17958,
+           "video_aspect_ratio": "1:1"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Manazel AlHadawi",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/our-residences/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26&utm_term=3e71b680_residential_en&utm_content=17ea79ac_mah-video3-sub_video_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2099144944615321600",
+       "name": "ManazelAlHadawi_AR_Video2Sub_24s_1x1",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-09-13T15:01:10Z",
+       "components": [
+        {
+         "media_key": "13_2099143601875996672",
+         "media_metadata": {
+          "13_2099143601875996672": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/2099143601875996672/vid/avc1/320x320/2GhiZVuKvfqYb8Bc.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/2099143601875996672/img/KWjxkAK69buRzip-.jpg",
+           "width": 1080,
+           "height": 1080,
+           "video_duration": 24458,
+           "video_aspect_ratio": "1:1"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "منازل الحداوي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living/our-residences/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26&utm_term=3e71b680_residential_ar&utm_content=f00e1e93_mah-video2-sub_video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2099145096587366402",
+       "name": "ManazelAlHadawi_AR_Video3Sub_18s_1x1",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-09-13T15:01:29Z",
+       "components": [
+        {
+         "media_key": "13_2099144096963342336",
+         "media_metadata": {
+          "13_2099144096963342336": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/2099144096963342336/vid/avc1/320x320/J_n0W3Aib4E9wBDU.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/2099144096963342336/img/c20b4y37L-V78JhP.jpg",
+           "width": 1080,
+           "height": 1080,
+           "video_duration": 17750,
+           "video_aspect_ratio": "1:1"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "منازل الحداوي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living/our-residences/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26&utm_term=3e71b680_residential_ar&utm_content=17ea79ac_mah-video3-sub_video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2099643542687637504",
+       "name": "company_general_2026_sep_dl-eduvideo1-15s_adset-id-5a8cb267_video_en",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-09-14T23:36:44Z",
+       "components": [
+        {
+         "media_key": "13_2099633015445938176",
+         "media_metadata": {
+          "13_2099633015445938176": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/2099633015445938176/vid/avc1/540x540/8nn8os-1XC0aPwS9.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/2099633015445938176/img/hRhnnuRoXMzLyKjr.jpg",
+           "width": 2160,
+           "height": 2160,
+           "video_duration": 15000,
+           "video_aspect_ratio": "1:1"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Diriyah Residences",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living?utm_source=x&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_sep26&utm_term=3e71b680_residential_en&utm_content=5a8cb267_dl-eduvideo1-15s_video_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2104233687957319680",
+       "name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv1_adset-id-8971b1f2_display_ar",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-09-27T15:36:20Z",
+       "components": [
+        {
+         "media_key": "3_2104231618097418240",
+         "media_metadata": {
+          "3_2104231618097418240": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HTO7ggnXkAAP7YB.jpg",
+           "width": 1081,
+           "height": 1081
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "شيدي ريزيدنسز وادي صفار",
+         "destination": {
+          "url": "https://www.wadisafar.com/ar/residences/chedi?utm_source=x&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_ar&utm_content=8971b1f2_thechedi-kv1_display_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2104233795637624832",
+       "name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv1_adset-id-8971b1f2_display_en",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-09-27T15:36:46Z",
+       "components": [
+        {
+         "media_key": "3_2104231577878200320",
+         "media_metadata": {
+          "3_2104231577878200320": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HTO7eKyXAAArit2.jpg",
+           "width": 1081,
+           "height": 1081
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "The Chedi Residences Wadi Safar",
+         "destination": {
+          "url": "https://www.wadisafar.com/en/residences/chedi?utm_source=x&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_en&utm_content=8971b1f2_thechedi-kv1_display_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2104233811479494656",
+       "name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv2_adset-id-ca5ff2b6_display_ar",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-09-27T15:36:50Z",
+       "components": [
+        {
+         "media_key": "3_2104231665950138368",
+         "media_metadata": {
+          "3_2104231665950138368": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HTO7jS4WIAAJCEy.jpg",
+           "width": 1081,
+           "height": 1081
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "شيدي ريزيدنسز وادي صفار",
+         "destination": {
+          "url": "https://www.wadisafar.com/ar/residences/chedi?utm_source=x&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_ar&utm_content=ca5ff2b6_thechedi-kv2_display_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2104233827728232448",
+       "name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv2_adset-id-ca5ff2b6_display_en",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-09-27T15:36:53Z",
+       "components": [
+        {
+         "media_key": "3_2104231705846394880",
+         "media_metadata": {
+          "3_2104231705846394880": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HTO7lngWsAA_sx5.jpg",
+           "width": 1081,
+           "height": 1081
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "The Chedi Residences Wadi Safar",
+         "destination": {
+          "url": "https://www.wadisafar.com/en/residences/chedi?utm_source=x&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_en&utm_content=ca5ff2b6_thechedi-kv2_display_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2104233843679256576",
+       "name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv3_adset-id-08c48732_display_ar",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-09-27T15:36:57Z",
+       "components": [
+        {
+         "media_key": "3_2104231754731077632",
+         "media_metadata": {
+          "3_2104231754731077632": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HTO7odnXwAAZlqu.jpg",
+           "width": 1081,
+           "height": 1081
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "شيدي ريزيدنسز وادي صفار",
+         "destination": {
+          "url": "https://www.wadisafar.com/ar/residences/chedi?utm_source=x&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_ar&utm_content=08c48732_thechedi-kv3_display_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2104233860263505920",
+       "name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv3_adset-id-08c48732_display_en",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-09-27T15:37:01Z",
+       "components": [
+        {
+         "media_key": "3_2104231785013895168",
+         "media_metadata": {
+          "3_2104231785013895168": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HTO7qObW4AAc0Fg.jpg",
+           "width": 1081,
+           "height": 1081
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "The Chedi Residences Wadi Safar",
+         "destination": {
+          "url": "https://www.wadisafar.com/en/residences/chedi?utm_source=x&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_en&utm_content=08c48732_thechedi-kv3_display_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2105245104546156544",
+       "name": "company_general_2026_sep_resi-patio-kv1_adset-id-fa60e06a_display_ar_v2",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-09-30T10:35:21Z",
+       "components": [
+        {
+         "media_key": "3_2104566009503891456",
+         "media_metadata": {
+          "3_2104566009503891456": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HTTroprXQAAY6pL.jpg",
+           "width": 4500,
+           "height": 4500
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "منازل الدرعية",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_source=x&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_sep26&utm_term=3e71b680_residential_ar&utm_content=fa60e06a_resi-patio-kv1_display_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2105245147529117696",
+       "name": "company_general_2026_sep_resi-patio-kv2_adset-id-2f4ca35f_display_ar_v2",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-09-30T10:35:31Z",
+       "components": [
+        {
+         "media_key": "3_2104567307666112512",
+         "media_metadata": {
+          "3_2104567307666112512": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HTTs0NtWwAAsd_3.jpg",
+           "width": 4500,
+           "height": 4500
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "منازل الدرعية",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_source=x&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_sep26&utm_term=3e71b680_residential_ar&utm_content=2f4ca35f_resi-patio-kv2_display_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2105245196598599680",
+       "name": "company_general_2026_sep_resi-patio-kv3_adset-id-1469e841_display_ar_v2",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2026-09-30T10:35:43Z",
+       "components": [
+        {
+         "media_key": "3_2104566384449503232",
+         "media_metadata": {
+          "3_2104566384449503232": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/HTTr-edXQAAy4LN.jpg",
+           "width": 4170,
+           "height": 4170
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "منازل الدرعية",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_source=x&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_sep26&utm_term=3e71b680_residential_ar&utm_content=1469e841_resi-patio-kv3_display_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      }
+     ]
+    },
+    "meta": {
+     "mcp_result_projection": {
+      "fields": [
+       "id",
+       "name",
+       "card_type",
+       "deleted",
+       "updated_at",
+       "components",
+       "slides"
+      ],
+      "max_items": 2000
+     }
+    }
+   },
+   "meta": {
+    "requestId": "30388847-63f1-49df-b392-b07328ca6d94",
+    "latencyMs": 1676
+   }
+  }
+ }
+]

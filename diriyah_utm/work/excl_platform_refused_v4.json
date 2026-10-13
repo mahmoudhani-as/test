@@ -1,0 +1,302 @@
+[
+ {
+  "platform": "tiktok",
+  "ad_id": "1818763664085073",
+  "slot": "ad.landing_page_url",
+  "why": "pre-read ad/get req 20261012173630C47E0628DBE58D305E3C: URL == now (CUSTOMIZED_USER manual SINGLE_VIDEO, adgroup 1814257734712353, call_to_action_id 7449766076000324625, ON_WEB_REGISTER). dry_run prev"
+ },
+ {
+  "platform": "tiktok",
+  "ad_id": "1852565376362642",
+  "slot": "ad.landing_page_url",
+  "why": "Spark Pull ad: destination URL editable only in Ads Manager. pre-read ad/get req 20261012175847D4A25FFC2E5CB76EF115: URL == now (AUTH_CODE Spark Pull ad, identity 7031391213458752514, tiktok_item_id 7"
+ },
+ {
+  "platform": "tiktok",
+  "ad_id": "1852561006268802",
+  "slot": "ad.landing_page_url",
+  "why": "Spark Pull ad: destination URL editable only in Ads Manager. pre-read ad/get req 20261012175847D4A25FFC2E5CB76EF115: URL == now (AUTH_CODE Spark Pull ad, identity 7031391213458752514, tiktok_item_id 7"
+ },
+ {
+  "platform": "tiktok",
+  "ad_id": "1852292998779105",
+  "slot": "ad.landing_page_url",
+  "why": "Spark Pull ad: destination URL editable only in Ads Manager. pre-read ad/get req 20261012175847D4A25FFC2E5CB76EF115: URL == now (AUTH_CODE Spark Pull ad, identity 7031391213458752514, tiktok_item_id 7"
+ },
+ {
+  "platform": "tiktok",
+  "ad_id": "1852292704262321",
+  "slot": "ad.landing_page_url",
+  "why": "Spark Pull ad: destination URL editable only in Ads Manager. Pre-read ad/get req 202610121759371B5E03A02651A33AC0AA: URL == now (AUTH_CODE Spark Pull ad, identity 7031391213458752514, tiktok_item_id 7"
+ },
+ {
+  "platform": "tiktok",
+  "ad_id": "1814339394401298",
+  "slot": "ad.landing_page_url",
+  "why": "Spark Pull ad: destination URL editable only in Ads Manager. Pre-read ad/get req 202610121810288FA85AA1F83ED85BA565: URL == now (AUTH_CODE Spark Pull ad, identity 7031391213458752514, tiktok_item_id 7"
+ },
+ {
+  "platform": "tiktok",
+  "ad_id": "1813235176424482",
+  "slot": "ad.landing_page_url",
+  "why": "Spark Pull ad: destination URL editable only in Ads Manager. Pre-read ad/get req 202610121810288FA85AA1F83ED85BA565: URL == now (AUTH_CODE Spark Pull ad, identity 7031391213458752514, tiktok_item_id 7"
+ },
+ {
+  "platform": "tiktok",
+  "ad_id": "1813234387612674",
+  "slot": "ad.landing_page_url",
+  "why": "Spark Pull ad: destination URL editable only in Ads Manager. Pre-read ad/get req 202610121810288FA85AA1F83ED85BA565: URL == now (AUTH_CODE Spark Pull ad, identity 7031391213458752514, tiktok_item_id 7"
+ },
+ {
+  "platform": "google",
+  "ad_id": "788673874481",
+  "slot": "ad.final_urls[0]",
+  "why": "Google Ads rejected MutateAds update (policyFindingError POLICY_FINDING): 'The resource has been disapproved since the policy summary includes policy topics of type PROHIBITED.' topic SYMBOLS, evidenc"
+ },
+ {
+  "platform": "google",
+  "ad_id": "788673874484",
+  "slot": "ad.final_urls[0]",
+  "why": "Google Ads rejected MutateAds update (policyFindingError POLICY_FINDING): 'The resource has been disapproved since the policy summary includes policy topics of type PROHIBITED.' topic SYMBOLS, evidenc"
+ },
+ {
+  "platform": "google",
+  "ad_id": "788772651013",
+  "slot": "ad.final_urls[0]",
+  "why": "Not written: Google Ads validate_only rejected this op with policyFindingError POLICY_FINDING 'The resource has been disapproved since the policy summary includes policy topics of type PROHIBITED' (to"
+ },
+ {
+  "platform": "google",
+  "ad_id": "788772651016",
+  "slot": "ad.final_urls[0]",
+  "why": "Not written: Google Ads validate_only rejected this op with policyFindingError POLICY_FINDING 'The resource has been disapproved since the policy summary includes policy topics of type PROHIBITED' (to"
+ },
+ {
+  "platform": "meta",
+  "ad_id": "120203161740580598",
+  "slot": "creative.object_story_spec.link_data.link",
+  "why": "Live slot equalled 'now'. Built an exact copy of creative 120203212129110598 (page/IG ids, link_data image_hash + CTA SIGN_UP, degrees_of_freedom_spec, authorization_category NONE) with only link_data"
+ },
+ {
+  "platform": "meta",
+  "ad_id": "120248718877690789",
+  "slot": "creative.asset_feed_spec.link_urls[0].website_url",
+  "why": "Live slot equalled 'now'. Built an exact copy of creative 3583018921846531 with only link_urls[0].website_url changed. It keeps object_story_spec page_id only (the original has NO instagram_user_id), "
+ },
+ {
+  "platform": "meta",
+  "ad_id": "120248718877680789",
+  "slot": "creative.asset_feed_spec.link_urls[0].website_url",
+  "why": "NO WRITE MADE (no creative created). Live slot equalled 'now' (re-read 12-Oct). The ad's creative 987901677407101 has object_story_spec page_id only and NO instagram_user_id. Its ad set 12024871838701"
+ },
+ {
+  "platform": "meta",
+  "ad_id": "120248718877660789",
+  "slot": "creative.asset_feed_spec.link_urls[0].website_url",
+  "why": "NO WRITE MADE (no creative created). Live slot equalled 'now' (re-read 12-Oct). The ad's creative 2334363007369846 has object_story_spec page_id only and NO instagram_user_id. Its ad set 1202487183870"
+ },
+ {
+  "platform": "meta",
+  "ad_id": "120251976797160058",
+  "slot": "creative.call_to_action.value.link",
+  "why": "NO WRITE MADE (no creative created). Live slot equalled 'now' (re-read 12-Oct). The ad's creative 2159505524618118 (shared by ads 120251976797160058 and 120252057800770058) is an existing Facebook Pag"
+ },
+ {
+  "platform": "meta",
+  "ad_id": "120252057800770058",
+  "slot": "creative.call_to_action.value.link",
+  "why": "NO WRITE MADE (no creative created). Live slot equalled 'now' (re-read 12-Oct). The ad's creative 2159505524618118 (shared by ads 120251976797160058 and 120252057800770058) is an existing Facebook Pag"
+ },
+ {
+  "platform": "meta",
+  "ad_id": "120252273693310058",
+  "slot": "creative.asset_feed_spec.link_urls[0].website_url",
+  "why": "Meta refused for a Page/profile permission reason. Live slot equalled 'now' (ad configured ACTIVE / effective ADSET_PAUSED, creative 1696985095759867, page 1245023868693595, IG 17841441699550567, thre"
+ },
+ {
+  "platform": "meta",
+  "ad_id": "120249470689200789",
+  "slot": "creative.object_story_spec.link_data.link",
+  "why": "13-Oct apply8: Meta refused the exact copy of this carousel - code 100 / subcode 2446581 count mismatch between child attachments and interactive_components_spec (parent link_data.image_hash); needs the user (Ads Manager, or a copy without the parent image)"
+ },
+ {
+  "platform": "meta",
+  "ad_id": "120249470689200789",
+  "slot": "creative.object_story_spec.link_data.child_attachments[0].link",
+  "why": "13-Oct apply8: Meta refused the exact copy of this carousel - code 100 / subcode 2446581 count mismatch between child attachments and interactive_components_spec (parent link_data.image_hash); needs the user (Ads Manager, or a copy without the parent image)"
+ },
+ {
+  "platform": "meta",
+  "ad_id": "120249470689200789",
+  "slot": "creative.object_story_spec.link_data.child_attachments[1].link",
+  "why": "13-Oct apply8: Meta refused the exact copy of this carousel - code 100 / subcode 2446581 count mismatch between child attachments and interactive_components_spec (parent link_data.image_hash); needs the user (Ads Manager, or a copy without the parent image)"
+ },
+ {
+  "platform": "meta",
+  "ad_id": "120249470689200789",
+  "slot": "creative.object_story_spec.link_data.child_attachments[2].link",
+  "why": "13-Oct apply8: Meta refused the exact copy of this carousel - code 100 / subcode 2446581 count mismatch between child attachments and interactive_components_spec (parent link_data.image_hash); needs the user (Ads Manager, or a copy without the parent image)"
+ },
+ {
+  "platform": "meta",
+  "ad_id": "120249470689220789",
+  "slot": "creative.object_story_spec.link_data.link",
+  "why": "13-Oct apply8: Meta refused the exact copy of this carousel - code 100 / subcode 2446581 count mismatch between child attachments and interactive_components_spec (parent link_data.image_hash); needs the user (Ads Manager, or a copy without the parent image)"
+ },
+ {
+  "platform": "meta",
+  "ad_id": "120249470689220789",
+  "slot": "creative.object_story_spec.link_data.child_attachments[0].link",
+  "why": "13-Oct apply8: Meta refused the exact copy of this carousel - code 100 / subcode 2446581 count mismatch between child attachments and interactive_components_spec (parent link_data.image_hash); needs the user (Ads Manager, or a copy without the parent image)"
+ },
+ {
+  "platform": "meta",
+  "ad_id": "120249470689220789",
+  "slot": "creative.object_story_spec.link_data.child_attachments[1].link",
+  "why": "13-Oct apply8: Meta refused the exact copy of this carousel - code 100 / subcode 2446581 count mismatch between child attachments and interactive_components_spec (parent link_data.image_hash); needs the user (Ads Manager, or a copy without the parent image)"
+ },
+ {
+  "platform": "meta",
+  "ad_id": "120249470689220789",
+  "slot": "creative.object_story_spec.link_data.child_attachments[2].link",
+  "why": "13-Oct apply8: Meta refused the exact copy of this carousel - code 100 / subcode 2446581 count mismatch between child attachments and interactive_components_spec (parent link_data.image_hash); needs the user (Ads Manager, or a copy without the parent image)"
+ },
+ {
+  "platform": "meta",
+  "ad_id": "120247112596620789",
+  "slot": "creative.object_story_spec.link_data.link",
+  "why": "13-Oct apply8: Meta refused the attach - code 100 / subcode 2875006 Media Not Wide Enough (image 326 px wide); new creative 842859065572596 left unattached; needs a >=500 px image or Ads Manager"
+ },
+ {
+  "platform": "tiktok",
+  "ad_id": "1851221512925201",
+  "slot": "ad.landing_page_url",
+  "why": "13-Oct apply9: Spark Pull ad - TikTok refuses ad/update (40002 Unable to get Spark Ad post information; the post 7574495687715474696 can no longer be fetched through its authorisation); Ads Manager or re-authorise the post"
+ },
+ {
+  "platform": "tiktok",
+  "ad_id": "1851220554959041",
+  "slot": "ad.landing_page_url",
+  "why": "13-Oct apply9: Spark Pull ad - TikTok refuses ad/update (40002 Unable to get Spark Ad post information; the post 7574495687715474696 can no longer be fetched through its authorisation); Ads Manager or re-authorise the post"
+ },
+ {
+  "platform": "tiktok",
+  "ad_id": "1851219748440274",
+  "slot": "ad.landing_page_url",
+  "why": "13-Oct apply9: Spark Pull ad - TikTok refuses ad/update (40002 Unable to get Spark Ad post information; the post 7574495687715474696 can no longer be fetched through its authorisation); Ads Manager or re-authorise the post"
+ },
+ {
+  "platform": "tiktok",
+  "ad_id": "1851217804632162",
+  "slot": "ad.landing_page_url",
+  "why": "13-Oct apply9: Spark Pull ad - TikTok refuses ad/update (40002 Unable to get Spark Ad post information; the post 7574495687715474696 can no longer be fetched through its authorisation); Ads Manager or re-authorise the post"
+ },
+ {
+  "platform": "tiktok",
+  "ad_id": "1851214899876081",
+  "slot": "ad.landing_page_url",
+  "why": "13-Oct apply9: Spark Pull ad - TikTok refuses ad/update (40002 Unable to get Spark Ad post information; the post 7574495687715474696 can no longer be fetched through its authorisation); Ads Manager or re-authorise the post"
+ },
+ {
+  "platform": "tiktok",
+  "ad_id": "1851213675904225",
+  "slot": "ad.landing_page_url",
+  "why": "13-Oct apply9: Spark Pull ad - TikTok refuses ad/update (40002 Unable to get Spark Ad post information; the post 7574495687715474696 can no longer be fetched through its authorisation); Ads Manager or re-authorise the post"
+ },
+ {
+  "platform": "meta",
+  "ad_id": "120249469841600789",
+  "slot": "creative.object_story_spec.link_data.link",
+  "why": "13-Oct apply9: Meta refused the exact copy of this carousel - code 100 / subcode 2446581 count mismatch between child attachments and interactive_components_spec (parent link_data.image_hash); needs Ads Manager or a copy without the parent image"
+ },
+ {
+  "platform": "meta",
+  "ad_id": "120249469841600789",
+  "slot": "creative.object_story_spec.link_data.child_attachments[0].link",
+  "why": "13-Oct apply9: Meta refused the exact copy of this carousel - code 100 / subcode 2446581 count mismatch between child attachments and interactive_components_spec (parent link_data.image_hash); needs Ads Manager or a copy without the parent image"
+ },
+ {
+  "platform": "meta",
+  "ad_id": "120249469841600789",
+  "slot": "creative.object_story_spec.link_data.child_attachments[1].link",
+  "why": "13-Oct apply9: Meta refused the exact copy of this carousel - code 100 / subcode 2446581 count mismatch between child attachments and interactive_components_spec (parent link_data.image_hash); needs Ads Manager or a copy without the parent image"
+ },
+ {
+  "platform": "meta",
+  "ad_id": "120249469841600789",
+  "slot": "creative.object_story_spec.link_data.child_attachments[2].link",
+  "why": "13-Oct apply9: Meta refused the exact copy of this carousel - code 100 / subcode 2446581 count mismatch between child attachments and interactive_components_spec (parent link_data.image_hash); needs Ads Manager or a copy without the parent image"
+ },
+ {
+  "platform": "meta",
+  "ad_id": "120249469841600789",
+  "slot": "creative.object_story_spec.link_data.child_attachments[3].link",
+  "why": "13-Oct apply9: Meta refused the exact copy of this carousel - code 100 / subcode 2446581 count mismatch between child attachments and interactive_components_spec (parent link_data.image_hash); needs Ads Manager or a copy without the parent image"
+ },
+ {
+  "platform": "meta",
+  "ad_id": "120249470780880789",
+  "slot": "creative.object_story_spec.link_data.link",
+  "why": "13-Oct apply9: Meta refused the exact copy of this carousel - code 100 / subcode 2446581 count mismatch between child attachments and interactive_components_spec (parent link_data.image_hash); needs Ads Manager or a copy without the parent image"
+ },
+ {
+  "platform": "meta",
+  "ad_id": "120249470780880789",
+  "slot": "creative.object_story_spec.link_data.child_attachments[0].link",
+  "why": "13-Oct apply9: Meta refused the exact copy of this carousel - code 100 / subcode 2446581 count mismatch between child attachments and interactive_components_spec (parent link_data.image_hash); needs Ads Manager or a copy without the parent image"
+ },
+ {
+  "platform": "meta",
+  "ad_id": "120249470780880789",
+  "slot": "creative.object_story_spec.link_data.child_attachments[1].link",
+  "why": "13-Oct apply9: Meta refused the exact copy of this carousel - code 100 / subcode 2446581 count mismatch between child attachments and interactive_components_spec (parent link_data.image_hash); needs Ads Manager or a copy without the parent image"
+ },
+ {
+  "platform": "meta",
+  "ad_id": "120249470780880789",
+  "slot": "creative.object_story_spec.link_data.child_attachments[2].link",
+  "why": "13-Oct apply9: Meta refused the exact copy of this carousel - code 100 / subcode 2446581 count mismatch between child attachments and interactive_components_spec (parent link_data.image_hash); needs Ads Manager or a copy without the parent image"
+ },
+ {
+  "platform": "meta",
+  "ad_id": "120249470780880789",
+  "slot": "creative.object_story_spec.link_data.child_attachments[3].link",
+  "why": "13-Oct apply9: Meta refused the exact copy of this carousel - code 100 / subcode 2446581 count mismatch between child attachments and interactive_components_spec (parent link_data.image_hash); needs Ads Manager or a copy without the parent image"
+ },
+ {
+  "platform": "google",
+  "ad_id": "810176354815",
+  "slot": "ad.final_urls[0]",
+  "why": "13-Oct apply9: Google refused the edit - policy PROHIBITED DESTINATION_NOT_WORKING on the target page (ad already DISAPPROVED); check the landing page"
+ },
+ {
+  "platform": "meta",
+  "ad_id": "120249469776610789",
+  "slot": "creative.object_story_spec.link_data.link",
+  "why": "13-Oct apply9: Meta refused the exact copy of this carousel - code 100 / subcode 2446581 count mismatch between child attachments and interactive_components_spec (parent link_data.image_hash); needs Ads Manager or a copy without the parent image"
+ },
+ {
+  "platform": "meta",
+  "ad_id": "120249469776610789",
+  "slot": "creative.object_story_spec.link_data.child_attachments[0].link",
+  "why": "13-Oct apply9: Meta refused the exact copy of this carousel - code 100 / subcode 2446581 count mismatch between child attachments and interactive_components_spec (parent link_data.image_hash); needs Ads Manager or a copy without the parent image"
+ },
+ {
+  "platform": "meta",
+  "ad_id": "120249469776610789",
+  "slot": "creative.object_story_spec.link_data.child_attachments[1].link",
+  "why": "13-Oct apply9: Meta refused the exact copy of this carousel - code 100 / subcode 2446581 count mismatch between child attachments and interactive_components_spec (parent link_data.image_hash); needs Ads Manager or a copy without the parent image"
+ },
+ {
+  "platform": "meta",
+  "ad_id": "120249469776610789",
+  "slot": "creative.object_story_spec.link_data.child_attachments[2].link",
+  "why": "13-Oct apply9: Meta refused the exact copy of this carousel - code 100 / subcode 2446581 count mismatch between child attachments and interactive_components_spec (parent link_data.image_hash); needs Ads Manager or a copy without the parent image"
+ },
+ {
+  "platform": "meta",
+  "ad_id": "120249469776610789",
+  "slot": "creative.object_story_spec.link_data.child_attachments[3].link",
+  "why": "13-Oct apply9: Meta refused the exact copy of this carousel - code 100 / subcode 2446581 count mismatch between child attachments and interactive_components_spec (parent link_data.image_hash); needs Ads Manager or a copy without the parent image"
+ }
+]

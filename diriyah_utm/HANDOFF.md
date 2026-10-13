@@ -1,7 +1,8 @@
 # Diriyah / Wadi Safar UTM fix: handoff
 
-Final state on 13-Oct-2026 (about 11:15 UTC): the approved writes were run (apply6 + resume apply7 on 12-Oct; apply8 on 13-Oct for the approved writes
-that had never been attempted), the written accounts re-read, final workbook sent. Everything needed to carry on is in this folder (`diriyah_utm/`).
+Final state on 13-Oct-2026 (about 12:50 UTC): the approved writes were run (apply6 + resume apply7 on 12-Oct; on 13-Oct apply8 for the approved writes that
+had never been attempted, then apply9 for the ones the safety check had blocked, after the user added permission rules), the written accounts re-read, final
+workbook sent. Everything needed to carry on is in this folder (`diriyah_utm/`).
 Copy it to your scratchpad and work there. Do not edit the repo's own app files (`Code.gs`, etc.); they are unrelated.
 
 ## What the user asked for and decided
@@ -30,8 +31,52 @@ The rules decided with the user, all binding:
   not worked around; at the end the user is told which permission rule lets them through. Stop everything if Whathead asks to sign in again.
 - **13-Oct:** after the final report the user said "continue please". The approved apply6 writes that had never been attempted (their batch stopped after a
   different unit's block) were run as `apply8/` under the same rules: after a block, record it and carry on; never retry or re-route a blocked write.
+- **13-Oct (permission rules):** the user committed `.claude/settings.json` with allow rules for the 5 Whathead ad tools (f92eb29), `Bash(python3:*)` and
+  `Bash(node:*)` (62b3c75) and `Workflow` (fce152a), switched the session to Accept edits mode and said "commence with reduce the errors". The safety-blocked
+  approved writes were then run as `apply9/`.
 
-## Final state (13-Oct-2026, about 11:15 UTC)
+## Final state (13-Oct-2026, about 12:50 UTC)
+
+**The run after the permission rules (`apply9/`).** The approved apply6 changes the safety check had blocked, without the Wadi Safar Meta ones: 293 changes in
+267 units (Google 178 ads + 17 sitelink assets, Meta 83 on 57 ads, TikTok 8, X 4, Snapchat 3), each equal to the apply6 plan with the live URL still the planned
+"now". Workflow `workflows/diriyah-apply-v9.js` (= v8 rules; Meta ads that share one creative and need the same change get one shared new creative).
+- In Auto mode the new rules did not take effect: Workflow launches and agents' python3 steps were still denied ("Auto-Mode Bypass" etc.), even after the
+  rules were committed and pulled. After the user switched the session to **Accept edits**, launches and steps went through with no denial. Runs launched
+  while still in Auto mode kept the classifier, so the 5 of them were stopped (11:45 UTC) and relaunched; the relaunched agents re-read every unit, recorded
+  the first runs' writes as AlreadyFixed and attached the 4 creatives those runs had created but not attached (no unattached creative is left).
+- Result (`apply9/check_apply.txt`; `apply9/runs.json`): **267 now live** (234 written by the relaunched runs + 33 by the stopped first runs), **22 refused**
+  by the platform (Meta: 3 Bab Samhan carousels, 15 slots, code 100 / 2446581; TikTok: 6 "Hero with Super" Spark Pull ads, post 7574495687715474696 no longer
+  resolves, 40002; Google: ad 810176354815, policy PROHIBITED DESTINATION_NOT_WORKING), **1 failed** (Meta ad 120252966441120058: Whathead gateway network
+  error, then a one-off 402 "billing must be configured"; safe to re-run), **3 skipped** (X cards also used by 3 promoted tweets created 13-Oct 10:48 UTC).
+- Re-read (`reread4/`, 13-Oct 12:05-12:27 UTC, the 8 accounts written; others copied from `reread3/out`): every write confirmed byte for byte, every slot
+  not written unchanged. Merged into `work/live_now.json` (previous: `work/live_now_13oct_morning.json`). `round9/` = what is still not right (264 slots;
+  227 changes in 173 units, built with `--exclude work/excl_platform_refused_v4.json` = v3 + the 22 refused).
+- The 45 Wadi Safar Meta slots are now listed as "Refused by the platform" ("Not tried": Meta refuses that Page / Instagram for this connection;
+  `work/wadi_safar_meta_needs_page.json`), not as safety-blocked.
+- X H&S-DiriyahCo: the advertiser paused campaign osvh1 (ManazelAlHadawi_AlwaysOn_UF_AWR) at 10:49 UTC and created campaign pg1tv with 14 new promoted tweets
+  (b6006i-v); so 14 ads are no longer switched on (switched-on ads 522 -> 508).
+
+**Current workbook:** `out/Diriyah_UTM_Verification_2026-10-13_final2.xlsx` (`bash scripts/build13b.sh`; `check_summary.py` 199 / 199). The morning's
+`..._2026-10-13_final.xlsx` is kept.
+
+| Scope | Before (11-Oct) | After 12-Oct | 13-Oct morning | **13-Oct, after the rules** |
+|---|---|---|---|---|
+| Ad URL slots | 3,339 wrong (100%) | 984 (29.5%) | 768 (23.0%) | **518 (15.5%)** |
+| Ads with a URL | 2,944 (100%) | 801 (27.2%) | 622 (21.1%) | **386 (13.1%)** |
+| Switched-on ads | 522 (100%) | 173 (33.1%) | 130 (24.9%) | **100 of 508 (19.7%)** |
+| Google sitelink assets | 380 (100%) | 21 (5.5%) | 21 (5.5%) | **4 (1.1%)** |
+
+Per platform, ad URL slots wrong now: Meta 27.8%, TikTok 15.3%, Snapchat 23.1%, X 17.3%, Google 0.6%, LinkedIn 0%.
+
+**What still needs the user now** ("Still needs you", 541 rows):
+- Held, TikTok Spark Push: 97 (decision: write anyway - TikTok re-publishes the post - or Ads Manager).
+- Refused by the platform: 168 ad slots - Meta 148 (Wadi Safar 92 incl. the 45 not tried, archived, Instagram-only page creatives, t.co, 5 Bab Samhan
+  carousels, 1 narrow image), TikTok 15 Spark Pull, Google 5 policy findings.
+- Manual: 243 (Snapchat 147 shared sub-creatives, X 93 tweet-text links / shared cards, Meta 3 existing Page posts) + 4 sitelink assets.
+- Failed 5 (TikTok 4 from the 12-Oct outage with both attempts used; Meta 1 gateway error, safe to re-run). Skipped 5 (Snapchat 2, X 3). Landing pages: 19.
+- Blocked by the safety check: none.
+
+## Earlier on 13-Oct (apply8, morning)
 
 **The 13-Oct run (`apply8/`).** It holds only approved apply6 changes that had never been attempted: their batch had stopped after the safety check blocked a
 different unit, after the TikTok outage, or without a result line. 258 changes on 206 units (Meta 105, Snapchat 41, TikTok 39, X 12, Google 9), each equal to
@@ -149,6 +194,10 @@ and CUSTOMIZED_USER ads (no post).
 
 ### Session safety check
 
+**13-Oct resolution:** with the allow rules committed and the session in **Accept edits** mode, nothing was denied. In Auto mode the same rules were not
+applied to Workflow launches or agents' python3 steps (they were still classified), and a run launched in Auto mode keeps that mode after the switch.
+
+
 The auto-mode classifier denied mostly the agents' local Bash steps that build a write payload or append a result line ("Modify Shared Resources", "Auto-Mode Bypass",
 "Real-World Transactions", once "Production Deploy"), and a few write calls. Per the docs (code.claude.com, permission-modes / workflows): a matching `permissions.allow`
 rule resolves before the classifier, and workflow subagents use the same rules; approval text inside a workflow agent's prompt does not count as the user's approval.
@@ -161,10 +210,10 @@ call was denied, and writes went through between the blocks.
 
 ## Next step (only on the user's word)
 
-`round8/` is the plan of everything still not right (648 slots; 516 changes in 336 units; `summary.txt`). It includes the safety-blocked, held and failed slots
-(the 28 refused slots of `work/excl_platform_refused_v3.json` are held out).
+`round9/` is the plan of everything still not right (264 slots; 227 changes in 173 units; `summary.txt`). It includes the held Spark Push, the Wadi Safar Meta
+slots, the failed and skipped ones (the 50 refused slots of `work/excl_platform_refused_v4.json` are held out).
 1. Check the connector (`whathead_workspace list_accounts`). Stop and tell the user if Whathead asks to sign in.
-2. Only if the user added the permission rule (see "Session safety check"): build the next run from `round8` without the held Spark Push ads
+2. Keep the session in Accept edits mode (see "Session safety check"). Build the next run from `round9` without the held Spark Push ads
    (`work/spark_check/spark_push_plan_ids.json`), the refused slots (archived, Page permission, Spark Pull expired, policy) and the manual ones, and run
    `workflows/diriyah-apply-v8.js` on it (results come back in the run output; save them with `scripts/save_apply_results.py`). Tell the agents to pass
    payloads straight to the Whathead tool. Wadi Safar Meta ads only after the Page / Instagram access is granted.
@@ -176,7 +225,7 @@ call was denied, and writes went through between the blocks.
 
 These are also in the workbook's "Questions for you" tab.
 - **TikTok Spark Push ads (new, 12-Oct):** an API URL edit makes TikTok re-publish the post and detach the ad from the original post. Write them anyway, or leave them to the user (Ads Manager)? 99 units in the plan are held.
-- **Safety-blocked writes:** 321 ad slots + 17 sitelink assets are ready but blocked; they need the permission rule (see "Session safety check") and the user's go-ahead.
+- **Safety-blocked writes:** none left (the permission rules + Accept edits mode let them through on 13-Oct).
 - **Meta platform refusals (13-Oct):** 2 Bab Samhan carousels (Ads Manager, or allow a copy without the parent image) and 1 ad with a 326 px image (needs a wider image).
 - **Wadi Safar Meta ads:** need the Advertiser role on Page 1245023868693595 and ad-account access to Instagram 17841441699550567.
 - **utm_medium:** the generator medium is used per source (google → paid-search, social → paid-social). Keep it, or keep old valid Mappings values?
@@ -212,7 +261,12 @@ These are also in the workbook's "Questions for you" tab.
 | `round7/` | Plan built from the 12-Oct final re-read (superseded by `round8/`) |
 | `apply8/` | 13-Oct run of the approved writes never attempted: `in_*.json`, `out_*.jsonl` (saved from the agents' returned results), `lane_reports.json`, `runs.json` (run ids, status, notes, unattached creative), `check_apply.txt`, `excluded_wadi_safar.json`, agents' `work_*` folders |
 | `reread3/` | 13-Oct keyed re-read: `jobs.json` (the 8 written accounts), `out/` (those 8 + the other 13 accounts copied from `reread2/out`), agents' `work_*` folders |
-| `round8/` | Plan built from the 13-Oct final re-read: everything still not right |
+| `round8/` | Plan built from the 13-Oct morning re-read (superseded by `round9/`) |
+| `apply9/` | 13-Oct run of the safety-blocked approved writes: `in_*.json`, `out_*.jsonl`, `lane_reports.json`, `runs.json` (incl. the stopped Auto-mode runs), `stopped_runs_live_calls.json`, `check_apply.txt`, agents' `work_*` folders |
+| `reread4/` | 13-Oct afternoon keyed re-read of the 8 accounts written by apply9 (`jobs.json`, `out/` incl. the other accounts copied from `reread3/out`) |
+| `round9/` | Plan built from the final re-read: everything still not right |
+| `work/excl_platform_refused_v4.json`, `work/wadi_safar_meta_needs_page.json` | v3 + the 22 slots refused on 13-Oct afternoon; the 45 Wadi Safar Meta slots (not tried, need Page / Instagram access) |
+| `work/live_now_13oct_morning.json` | The 13-Oct morning live state that `work/live_now.json` replaced |
 | `work/excl_platform_refused_v3.json` | v2 + the 9 Meta slots refused on 13-Oct (never retry) |
 | `work/live_now_12oct_final.json` | The 12-Oct final live state that `work/live_now.json` replaced on 13-Oct |
 | `work/live_now_12oct_final.json` / `work/live_now_12oct_morning.json` | The 12-Oct evening re-read / the 12-Oct morning re-read |
@@ -220,7 +274,8 @@ These are also in the workbook's "Questions for you" tab.
 | `reread/` | Keyed re-read jobs, inputs and outputs (`out/new_*.jsonl` = ads created since 11-Oct) |
 | `scripts/` | See below |
 | `workflows/*.js` | Saved Workflow scripts. Today's are `diriyah-apply-v5-*`, `diriyah-keyed-reread-*`, `diriyah-first-serving-dates-v2-*` and `diriyah-review-targets-v*-*` |
-| `out/Diriyah_UTM_Verification_2026-10-13_final.xlsx` | **Current workbook** (13-Oct; recalculated in LibreOffice) |
+| `out/Diriyah_UTM_Verification_2026-10-13_final2.xlsx` | **Current workbook** (13-Oct afternoon; recalculated in LibreOffice) |
+| `out/Diriyah_UTM_Verification_2026-10-13_final.xlsx` | 13-Oct morning workbook |
 | `out/Diriyah_UTM_Verification_2026-10-12_final.xlsx`, `…_interim.xlsx`, `…_at_pause.xlsx`, `…_at_signin_stop.xlsx` | Workbooks sent to the user on 12-Oct |
 
 Scripts:
@@ -237,7 +292,7 @@ Scripts:
 - `check_summary.py` recalculates a workbook with LibreOffice and checks every Summary cell against `work/summary_expected*.json` (`--replace` keeps the recalculated copy).
 - `interim_live.py` builds an interim live file from a partial re-read plus an apply run's read-backs.
 - `save_apply_results.py` saves the results the v8 agents return (workflow journals) as `<apply>/out_*.jsonl` and `lane_reports.json`.
-- `build13.sh` is the exact 13-Oct workbook build (run from `diriyah_utm/`).
+- `build13.sh` / `build13b.sh` are the exact 13-Oct morning / afternoon workbook builds (run from `diriyah_utm/`).
 
 ## Write recipes (proven on 11 and 12-Oct; also in the apply workflow script)
 

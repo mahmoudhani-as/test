@@ -1,0 +1,1008 @@
+[
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "800023610878",
+  "ad_ids": [
+   "800023610878"
+  ],
+  "ad_names": [
+   "Static B"
+  ],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.diriyah.sa/ar/bujairi-terrace?utm_source=gadg&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_lf_conversion_sales_gadg_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_display",
+  "after_expected": "https://www.diriyah.sa/ar/bujairi-terrace?utm_source=gadg&utm_campaign=visitor-diriyah-coe_mar26_conv&utm_term=ar&utm_content=display_ar",
+  "after_live": "https://www.diriyah.sa/ar/bujairi-terrace?utm_source=gadg&utm_campaign=visitor-diriyah-coe_mar26_conv&utm_term=ar&utm_content=display_ar",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 1/1, mask final_urls. Pre-read dc356697-5888-4c3f-8346-69c689cb5a73: cur == now. Dry-run d086a6a6-629e-49e8-9e24-7594f6e8847d: only final_urls. Live 4efde23d-2a02-416c-a48a-d20c2d8997a2 (idem 66bb738a-277b-4c7d-986a-1aabcc91b9fa): ok. Read-back b0043d96-9f9d-443b-be3a-3b5180922d56: == new byte for byte; no suffix/tracking at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED_LIMITED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "800023611001",
+  "ad_ids": [
+   "800023611001"
+  ],
+  "ad_names": [
+   "Static C"
+  ],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.diriyah.sa/ar/bujairi-terrace?utm_source=gadg&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_lf_conversion_sales_gadg_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_display",
+  "after_expected": "https://www.diriyah.sa/ar/bujairi-terrace?utm_source=gadg&utm_campaign=visitor-diriyah-coe_mar26_conv&utm_term=ar&utm_content=display_ar",
+  "after_live": "https://www.diriyah.sa/ar/bujairi-terrace?utm_source=gadg&utm_campaign=visitor-diriyah-coe_mar26_conv&utm_term=ar&utm_content=display_ar",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 1/22, mask final_urls. Pre-read b0043d96-9f9d-443b-be3a-3b5180922d56: cur == now. Dry-run 48901003-8c6f-4a81-8487-4590823d0f24: only final_urls. Live af0802cc-1700-42c7-8d98-71c5ec0b229b (idem 38a72291-3136-4377-9e85-f23e1f73bf9b): ok. Read-back 183f367a-f51a-4668-afee-864e265c1b5e: == new byte for byte; no suffix/tracking at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED_LIMITED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "800012537002",
+  "ad_ids": [
+   "800012537002"
+  ],
+  "ad_names": [
+   "Static AR"
+  ],
+  "slot": "ad.final_urls[0]",
+  "before": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=gadg&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_lf_conversion_sales_gadg_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_display",
+  "after_expected": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=gadg&utm_campaign=visitor-diriyah-coe_mar26_conv&utm_term=ar&utm_content=display_ar",
+  "after_live": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=gadg&utm_campaign=visitor-diriyah-coe_mar26_conv&utm_term=ar&utm_content=display_ar",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 2/22, mask final_urls. Pre-read b0043d96-9f9d-443b-be3a-3b5180922d56: cur == now. Dry-run 48901003-8c6f-4a81-8487-4590823d0f24: only final_urls. Live af0802cc-1700-42c7-8d98-71c5ec0b229b (idem 38a72291-3136-4377-9e85-f23e1f73bf9b): ok. Read-back 183f367a-f51a-4668-afee-864e265c1b5e: == new byte for byte; no suffix/tracking at any level. Ad PAUSED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "800012537005",
+  "ad_ids": [
+   "800012537005"
+  ],
+  "ad_names": [
+   "Video Ar"
+  ],
+  "slot": "ad.final_urls[0]",
+  "before": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=gadg&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_lf_conversion_sales_gadg_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_video",
+  "after_expected": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=gadg&utm_campaign=visitor-diriyah-coe_mar26_conv&utm_term=ar&utm_content=video_ar",
+  "after_live": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=gadg&utm_campaign=visitor-diriyah-coe_mar26_conv&utm_term=ar&utm_content=video_ar",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 3/22, mask final_urls. Pre-read b0043d96-9f9d-443b-be3a-3b5180922d56: cur == now. Dry-run 48901003-8c6f-4a81-8487-4590823d0f24: only final_urls. Live af0802cc-1700-42c7-8d98-71c5ec0b229b (idem 38a72291-3136-4377-9e85-f23e1f73bf9b): ok. Read-back 183f367a-f51a-4668-afee-864e265c1b5e: == new byte for byte; no suffix/tracking at any level. Ad PAUSED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "800024754694",
+  "ad_ids": [
+   "800024754694"
+  ],
+  "ad_names": [
+   "Static AR"
+  ],
+  "slot": "ad.final_urls[0]",
+  "before": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=gadg&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_lf_conversion_sales_gadg_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_display",
+  "after_expected": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=gadg&utm_campaign=visitor-diriyah-coe_mar26_conv&utm_term=ar&utm_content=display_ar",
+  "after_live": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=gadg&utm_campaign=visitor-diriyah-coe_mar26_conv&utm_term=ar&utm_content=display_ar",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 4/22, mask final_urls. Pre-read b0043d96-9f9d-443b-be3a-3b5180922d56: cur == now. Dry-run 48901003-8c6f-4a81-8487-4590823d0f24: only final_urls. Live af0802cc-1700-42c7-8d98-71c5ec0b229b (idem 38a72291-3136-4377-9e85-f23e1f73bf9b): ok. Read-back 183f367a-f51a-4668-afee-864e265c1b5e: == new byte for byte; no suffix/tracking at any level. Ad PAUSED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "800798099951",
+  "ad_ids": [
+   "800798099951"
+  ],
+  "ad_names": [
+   "Static AR - EID"
+  ],
+  "slot": "ad.final_urls[0]",
+  "before": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=gadg&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_lf_conversion_sales_gadg_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_display",
+  "after_expected": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=gadg&utm_campaign=visitor-diriyah-coe_mar26_conv&utm_term=ar&utm_content=display_ar",
+  "after_live": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=gadg&utm_campaign=visitor-diriyah-coe_mar26_conv&utm_term=ar&utm_content=display_ar",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 5/22, mask final_urls. Pre-read b0043d96-9f9d-443b-be3a-3b5180922d56: cur == now. Dry-run 48901003-8c6f-4a81-8487-4590823d0f24: only final_urls. Live af0802cc-1700-42c7-8d98-71c5ec0b229b (idem 38a72291-3136-4377-9e85-f23e1f73bf9b): ok. Read-back 183f367a-f51a-4668-afee-864e265c1b5e: == new byte for byte; no suffix/tracking at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "800012537008",
+  "ad_ids": [
+   "800012537008"
+  ],
+  "ad_names": [
+   "Static En"
+  ],
+  "slot": "ad.final_urls[0]",
+  "before": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=gadg&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_lf_conversion_sales_gadg_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_display",
+  "after_expected": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=gadg&utm_campaign=visitor-diriyah-coe_mar26_conv&utm_term=en&utm_content=display_en",
+  "after_live": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=gadg&utm_campaign=visitor-diriyah-coe_mar26_conv&utm_term=en&utm_content=display_en",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 6/22, mask final_urls. Pre-read b0043d96-9f9d-443b-be3a-3b5180922d56: cur == now. Dry-run 48901003-8c6f-4a81-8487-4590823d0f24: only final_urls. Live af0802cc-1700-42c7-8d98-71c5ec0b229b (idem 38a72291-3136-4377-9e85-f23e1f73bf9b): ok. Read-back 183f367a-f51a-4668-afee-864e265c1b5e: == new byte for byte; no suffix/tracking at any level. Ad PAUSED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "800012537011",
+  "ad_ids": [
+   "800012537011"
+  ],
+  "ad_names": [
+   "Video En"
+  ],
+  "slot": "ad.final_urls[0]",
+  "before": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=gadg&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_lf_conversion_sales_gadg_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_video",
+  "after_expected": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=gadg&utm_campaign=visitor-diriyah-coe_mar26_conv&utm_term=en&utm_content=video_en",
+  "after_live": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=gadg&utm_campaign=visitor-diriyah-coe_mar26_conv&utm_term=en&utm_content=video_en",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 7/22, mask final_urls. Pre-read b0043d96-9f9d-443b-be3a-3b5180922d56: cur == now. Dry-run 48901003-8c6f-4a81-8487-4590823d0f24: only final_urls. Live af0802cc-1700-42c7-8d98-71c5ec0b229b (idem 38a72291-3136-4377-9e85-f23e1f73bf9b): ok. Read-back 183f367a-f51a-4668-afee-864e265c1b5e: == new byte for byte; no suffix/tracking at any level. Ad PAUSED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "800024754697",
+  "ad_ids": [
+   "800024754697"
+  ],
+  "ad_names": [
+   "Static En"
+  ],
+  "slot": "ad.final_urls[0]",
+  "before": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=gadg&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_lf_conversion_sales_gadg_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_display",
+  "after_expected": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=gadg&utm_campaign=visitor-diriyah-coe_mar26_conv&utm_term=en&utm_content=display_en",
+  "after_live": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=gadg&utm_campaign=visitor-diriyah-coe_mar26_conv&utm_term=en&utm_content=display_en",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 8/22, mask final_urls. Pre-read b0043d96-9f9d-443b-be3a-3b5180922d56: cur == now. Dry-run 48901003-8c6f-4a81-8487-4590823d0f24: only final_urls. Live af0802cc-1700-42c7-8d98-71c5ec0b229b (idem 38a72291-3136-4377-9e85-f23e1f73bf9b): ok. Read-back 183f367a-f51a-4668-afee-864e265c1b5e: == new byte for byte; no suffix/tracking at any level. Ad PAUSED, campaign PAUSED unchanged; approval APPROVED_LIMITED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "800798099954",
+  "ad_ids": [
+   "800798099954"
+  ],
+  "ad_names": [
+   "Static En - EID"
+  ],
+  "slot": "ad.final_urls[0]",
+  "before": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=gadg&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_lf_conversion_sales_gadg_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_display",
+  "after_expected": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=gadg&utm_campaign=visitor-diriyah-coe_mar26_conv&utm_term=en&utm_content=display_en",
+  "after_live": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=gadg&utm_campaign=visitor-diriyah-coe_mar26_conv&utm_term=en&utm_content=display_en",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 9/22, mask final_urls. Pre-read b0043d96-9f9d-443b-be3a-3b5180922d56: cur == now. Dry-run 48901003-8c6f-4a81-8487-4590823d0f24: only final_urls. Live af0802cc-1700-42c7-8d98-71c5ec0b229b (idem 38a72291-3136-4377-9e85-f23e1f73bf9b): ok. Read-back 183f367a-f51a-4668-afee-864e265c1b5e: == new byte for byte; no suffix/tracking at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "807081977677",
+  "ad_ids": [
+   "807081977677"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.wadisafar.com/ar",
+  "after_expected": "https://www.wadisafar.com/ar?utm_source=google&utm_medium=paid-search&utm_campaign=cond&utm_term=ar&utm_content=search_ar",
+  "after_live": "https://www.wadisafar.com/ar?utm_source=google&utm_medium=paid-search&utm_campaign=cond&utm_term=ar&utm_content=search_ar",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 10/22, mask final_urls. Pre-read b0043d96-9f9d-443b-be3a-3b5180922d56: cur == now. Dry-run 48901003-8c6f-4a81-8487-4590823d0f24: only final_urls. Live af0802cc-1700-42c7-8d98-71c5ec0b229b (idem 38a72291-3136-4377-9e85-f23e1f73bf9b): ok. Read-back 183f367a-f51a-4668-afee-864e265c1b5e: == new byte for byte; no suffix/tracking at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "807081977680",
+  "ad_ids": [
+   "807081977680"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.wadisafar.com/ar",
+  "after_expected": "https://www.wadisafar.com/ar?utm_source=google&utm_medium=paid-search&utm_campaign=cond&utm_term=ar&utm_content=search_ar",
+  "after_live": "https://www.wadisafar.com/ar?utm_source=google&utm_medium=paid-search&utm_campaign=cond&utm_term=ar&utm_content=search_ar",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 11/22, mask final_urls. Pre-read b0043d96-9f9d-443b-be3a-3b5180922d56: cur == now. Dry-run 48901003-8c6f-4a81-8487-4590823d0f24: only final_urls. Live af0802cc-1700-42c7-8d98-71c5ec0b229b (idem 38a72291-3136-4377-9e85-f23e1f73bf9b): ok. Read-back 183f367a-f51a-4668-afee-864e265c1b5e: == new byte for byte; no suffix/tracking at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "807081977671",
+  "ad_ids": [
+   "807081977671"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.wadisafar.com/en",
+  "after_expected": "https://www.wadisafar.com/en?utm_source=google&utm_medium=paid-search&utm_campaign=cond&utm_term=en&utm_content=search_en",
+  "after_live": "https://www.wadisafar.com/en?utm_source=google&utm_medium=paid-search&utm_campaign=cond&utm_term=en&utm_content=search_en",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 12/22, mask final_urls. Pre-read b0043d96-9f9d-443b-be3a-3b5180922d56: cur == now. Dry-run 48901003-8c6f-4a81-8487-4590823d0f24: only final_urls. Live af0802cc-1700-42c7-8d98-71c5ec0b229b (idem 38a72291-3136-4377-9e85-f23e1f73bf9b): ok. Read-back 183f367a-f51a-4668-afee-864e265c1b5e: == new byte for byte; no suffix/tracking at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "807081977674",
+  "ad_ids": [
+   "807081977674"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.wadisafar.com/en",
+  "after_expected": "https://www.wadisafar.com/en?utm_source=google&utm_medium=paid-search&utm_campaign=cond&utm_term=en&utm_content=search_en",
+  "after_live": "https://www.wadisafar.com/en?utm_source=google&utm_medium=paid-search&utm_campaign=cond&utm_term=en&utm_content=search_en",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 13/22, mask final_urls. Pre-read b0043d96-9f9d-443b-be3a-3b5180922d56: cur == now. Dry-run 48901003-8c6f-4a81-8487-4590823d0f24: only final_urls. Live af0802cc-1700-42c7-8d98-71c5ec0b229b (idem 38a72291-3136-4377-9e85-f23e1f73bf9b): ok. Read-back 183f367a-f51a-4668-afee-864e265c1b5e: == new byte for byte; no suffix/tracking at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "807081977683",
+  "ad_ids": [
+   "807081977683"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.wadisafar.com/ar",
+  "after_expected": "https://www.wadisafar.com/ar?utm_source=google&utm_medium=paid-search&utm_campaign=cond&utm_term=ar&utm_content=search_ar",
+  "after_live": "https://www.wadisafar.com/ar?utm_source=google&utm_medium=paid-search&utm_campaign=cond&utm_term=ar&utm_content=search_ar",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 14/22, mask final_urls. Pre-read b0043d96-9f9d-443b-be3a-3b5180922d56: cur == now. Dry-run 48901003-8c6f-4a81-8487-4590823d0f24: only final_urls. Live af0802cc-1700-42c7-8d98-71c5ec0b229b (idem 38a72291-3136-4377-9e85-f23e1f73bf9b): ok. Read-back 183f367a-f51a-4668-afee-864e265c1b5e: == new byte for byte; no suffix/tracking at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "807081977686",
+  "ad_ids": [
+   "807081977686"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.wadisafar.com/ar",
+  "after_expected": "https://www.wadisafar.com/ar?utm_source=google&utm_medium=paid-search&utm_campaign=cond&utm_term=ar&utm_content=search_ar",
+  "after_live": "https://www.wadisafar.com/ar?utm_source=google&utm_medium=paid-search&utm_campaign=cond&utm_term=ar&utm_content=search_ar",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 15/22, mask final_urls. Pre-read b0043d96-9f9d-443b-be3a-3b5180922d56: cur == now. Dry-run 48901003-8c6f-4a81-8487-4590823d0f24: only final_urls. Live af0802cc-1700-42c7-8d98-71c5ec0b229b (idem 38a72291-3136-4377-9e85-f23e1f73bf9b): ok. Read-back 183f367a-f51a-4668-afee-864e265c1b5e: == new byte for byte; no suffix/tracking at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "807081977689",
+  "ad_ids": [
+   "807081977689"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.wadisafar.com/en",
+  "after_expected": "https://www.wadisafar.com/en?utm_source=google&utm_medium=paid-search&utm_campaign=cond&utm_term=en&utm_content=search_en",
+  "after_live": "https://www.wadisafar.com/en?utm_source=google&utm_medium=paid-search&utm_campaign=cond&utm_term=en&utm_content=search_en",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 16/22, mask final_urls. Pre-read b0043d96-9f9d-443b-be3a-3b5180922d56: cur == now. Dry-run 48901003-8c6f-4a81-8487-4590823d0f24: only final_urls. Live af0802cc-1700-42c7-8d98-71c5ec0b229b (idem 38a72291-3136-4377-9e85-f23e1f73bf9b): ok. Read-back 183f367a-f51a-4668-afee-864e265c1b5e: == new byte for byte; no suffix/tracking at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "807081977692",
+  "ad_ids": [
+   "807081977692"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.wadisafar.com/en",
+  "after_expected": "https://www.wadisafar.com/en?utm_source=google&utm_medium=paid-search&utm_campaign=cond&utm_term=en&utm_content=search_en",
+  "after_live": "https://www.wadisafar.com/en?utm_source=google&utm_medium=paid-search&utm_campaign=cond&utm_term=en&utm_content=search_en",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 17/22, mask final_urls. Pre-read b0043d96-9f9d-443b-be3a-3b5180922d56: cur == now. Dry-run 48901003-8c6f-4a81-8487-4590823d0f24: only final_urls. Live af0802cc-1700-42c7-8d98-71c5ec0b229b (idem 38a72291-3136-4377-9e85-f23e1f73bf9b): ok. Read-back 183f367a-f51a-4668-afee-864e265c1b5e: == new byte for byte; no suffix/tracking at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "810176320945",
+  "ad_ids": [
+   "810176320945"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_google_ar&utm_term=adset-id-ee00c8_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-987e7a_test_ad_name_search",
+  "after_expected": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_may26_cond&utm_term=ar&utm_content=search_ar",
+  "after_live": "https://www.diriyah.sa/ar/dine?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_may26_cond&utm_term=ar&utm_content=search_ar",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 1/1, mask final_urls,final_url_suffix. Pre-read 183f367a-f51a-4668-afee-864e265c1b5e: cur (final_urls[0] + ad-level final_url_suffix holding the old UTMs) == now. Dry-run 5f9d2140-57ae-4b9d-8a29-69028104e23f: only final_urls + final_url_suffix \"\". Live 8d5b905b-5342-4e36-9260-9727504d7ad2 (idem 162940b5-4e13-447e-8fe1-9cea9550a549): ok. Read-back bb991ac7-a61d-4c3a-aa6c-1a70a533198c: == new byte for byte; suffix cleared, none at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "810176354815",
+  "ad_ids": [
+   "810176354815"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.diriyah.sa/ar/dine/sarabeth?utm_source=google&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_google_ar&utm_term=adset-id-ee00c8_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-987e7a_test_ad_name_search",
+  "after_expected": "https://www.diriyah.sa/ar/dine/sarabeth?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=search_ar",
+  "after_live": "https://www.diriyah.sa/ar/dine/sarabeth?utm_source=google&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_google_ar&utm_term=adset-id-ee00c8_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-987e7a_test_ad_name_search",
+  "result": "Failed",
+  "new_entity_ids": "",
+  "detail": "Not written, Google refused: MutateAds live 484b99d4-2797-4461-b159-889930628c67 (idem effb48e4-11f0-438f-9cc8-ed3970fb1d8d, partial_failure, op 1/34, mask final_urls,final_url_suffix) partialFailureError policyFindingError POLICY_FINDING \"The resource has been disapproved since the policy summary includes policy topics of type PROHIBITED.\" topic PROHIBITED DESTINATION_NOT_WORKING, Google requestId mhMwifMugc5uWAvnbxB0WA. Pre-read bb991ac7-a61d-4c3a-aa6c-1a70a533198c: cur == now; dry-run 794e155d-f276-4b09-bd8d-3fa3611de35d: only final_urls + final_url_suffix \"\". Read-back d3c4da44-06ee-4890-b4a8-cdac0d272d97: unchanged (= now). Ad PAUSED and already DISAPPROVED before the write; campaign PAUSED. Not retried (deterministic policy refusal; the destination must work first)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "810176320948",
+  "ad_ids": [
+   "810176320948"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.diriyah.sa/ar/bujairi-terrace?utm_source=google&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_google_ar&utm_term=adset-id-ee00c8_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-987e7a_test_ad_name_search",
+  "after_expected": "https://www.diriyah.sa/ar/bujairi-terrace?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_may26_cond&utm_term=ar&utm_content=search_ar",
+  "after_live": "https://www.diriyah.sa/ar/bujairi-terrace?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_may26_cond&utm_term=ar&utm_content=search_ar",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 2/34, mask final_urls,final_url_suffix. Pre-read bb991ac7-a61d-4c3a-aa6c-1a70a533198c: cur (final_urls[0] + ad-level final_url_suffix holding the old UTMs) == now. Dry-run 794e155d-f276-4b09-bd8d-3fa3611de35d: only final_urls + final_url_suffix \"\". Live 484b99d4-2797-4461-b159-889930628c67 (idem effb48e4-11f0-438f-9cc8-ed3970fb1d8d): ok. Read-back d3c4da44-06ee-4890-b4a8-cdac0d272d97: == new byte for byte; suffix cleared, none at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "810216170844",
+  "ad_ids": [
+   "810216170844"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.diriyah.sa/en/zallal?utm_source=google&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_zallal_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_google_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-987e7a_test_ad_name_search",
+  "after_expected": "https://www.diriyah.sa/en/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_may26_cond&utm_term=en&utm_content=search_en",
+  "after_live": "https://www.diriyah.sa/en/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_may26_cond&utm_term=en&utm_content=search_en",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 3/34, mask final_urls,final_url_suffix. Pre-read bb991ac7-a61d-4c3a-aa6c-1a70a533198c: cur (final_urls[0] + ad-level final_url_suffix holding the old UTMs) == now. Dry-run 794e155d-f276-4b09-bd8d-3fa3611de35d: only final_urls + final_url_suffix \"\". Live 484b99d4-2797-4461-b159-889930628c67 (idem effb48e4-11f0-438f-9cc8-ed3970fb1d8d): ok. Read-back d3c4da44-06ee-4890-b4a8-cdac0d272d97: == new byte for byte; suffix cleared, none at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "810216170847",
+  "ad_ids": [
+   "810216170847"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.diriyah.sa/en/zallal?utm_source=google&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_zallal_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_google_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-987e7a_test_ad_name_search",
+  "after_expected": "https://www.diriyah.sa/en/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_may26_cond&utm_term=en&utm_content=search_en",
+  "after_live": "https://www.diriyah.sa/en/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_may26_cond&utm_term=en&utm_content=search_en",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 4/34, mask final_urls,final_url_suffix. Pre-read bb991ac7-a61d-4c3a-aa6c-1a70a533198c: cur (final_urls[0] + ad-level final_url_suffix holding the old UTMs) == now. Dry-run 794e155d-f276-4b09-bd8d-3fa3611de35d: only final_urls + final_url_suffix \"\". Live 484b99d4-2797-4461-b159-889930628c67 (idem effb48e4-11f0-438f-9cc8-ed3970fb1d8d): ok. Read-back d3c4da44-06ee-4890-b4a8-cdac0d272d97: == new byte for byte; suffix cleared, none at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "810216170850",
+  "ad_ids": [
+   "810216170850"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_zallal_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_google_ar&utm_term=adset-id-ee00c8_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-987e7a_test_ad_name_search",
+  "after_expected": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_may26_cond&utm_term=ar&utm_content=search_ar",
+  "after_live": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_may26_cond&utm_term=ar&utm_content=search_ar",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 5/34, mask final_urls,final_url_suffix. Pre-read bb991ac7-a61d-4c3a-aa6c-1a70a533198c: cur (final_urls[0] + ad-level final_url_suffix holding the old UTMs) == now. Dry-run 794e155d-f276-4b09-bd8d-3fa3611de35d: only final_urls + final_url_suffix \"\". Live 484b99d4-2797-4461-b159-889930628c67 (idem effb48e4-11f0-438f-9cc8-ed3970fb1d8d): ok. Read-back d3c4da44-06ee-4890-b4a8-cdac0d272d97: == new byte for byte; suffix cleared, none at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "810216170853",
+  "ad_ids": [
+   "810216170853"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_zallal_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_google_ar&utm_term=adset-id-ee00c8_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-987e7a_test_ad_name_search",
+  "after_expected": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_may26_cond&utm_term=ar&utm_content=search_ar",
+  "after_live": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_may26_cond&utm_term=ar&utm_content=search_ar",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 6/34, mask final_urls,final_url_suffix. Pre-read bb991ac7-a61d-4c3a-aa6c-1a70a533198c: cur (final_urls[0] + ad-level final_url_suffix holding the old UTMs) == now. Dry-run 794e155d-f276-4b09-bd8d-3fa3611de35d: only final_urls + final_url_suffix \"\". Live 484b99d4-2797-4461-b159-889930628c67 (idem effb48e4-11f0-438f-9cc8-ed3970fb1d8d): ok. Read-back d3c4da44-06ee-4890-b4a8-cdac0d272d97: == new byte for byte; suffix cleared, none at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "810216170856",
+  "ad_ids": [
+   "810216170856"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_zallal_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_google_ar&utm_term=adset-id-ee00c8_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-987e7a_test_ad_name_search",
+  "after_expected": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_may26_cond&utm_term=ar&utm_content=search_ar",
+  "after_live": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_may26_cond&utm_term=ar&utm_content=search_ar",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 7/34, mask final_urls,final_url_suffix. Pre-read bb991ac7-a61d-4c3a-aa6c-1a70a533198c: cur (final_urls[0] + ad-level final_url_suffix holding the old UTMs) == now. Dry-run 794e155d-f276-4b09-bd8d-3fa3611de35d: only final_urls + final_url_suffix \"\". Live 484b99d4-2797-4461-b159-889930628c67 (idem effb48e4-11f0-438f-9cc8-ed3970fb1d8d): ok. Read-back d3c4da44-06ee-4890-b4a8-cdac0d272d97: == new byte for byte; suffix cleared, none at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "810216170859",
+  "ad_ids": [
+   "810216170859"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.diriyah.sa/ar/dine/archi?utm_source=google&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_zallal_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_google_ar&utm_term=adset-id-ee00c8_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-987e7a_test_ad_name_search",
+  "after_expected": "https://www.diriyah.sa/ar/dine/archi?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_may26_cond&utm_term=ar&utm_content=search_ar",
+  "after_live": "https://www.diriyah.sa/ar/dine/archi?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_may26_cond&utm_term=ar&utm_content=search_ar",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 8/34, mask final_urls,final_url_suffix. Pre-read bb991ac7-a61d-4c3a-aa6c-1a70a533198c: cur (final_urls[0] + ad-level final_url_suffix holding the old UTMs) == now. Dry-run 794e155d-f276-4b09-bd8d-3fa3611de35d: only final_urls + final_url_suffix \"\". Live 484b99d4-2797-4461-b159-889930628c67 (idem effb48e4-11f0-438f-9cc8-ed3970fb1d8d): ok. Read-back d3c4da44-06ee-4890-b4a8-cdac0d272d97: == new byte for byte; suffix cleared, none at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "810216170862",
+  "ad_ids": [
+   "810216170862"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.diriyah.sa/ar/dine/oulu?utm_source=google&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_zallal_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_google_ar&utm_term=adset-id-ee00c8_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-987e7a_test_ad_name_search",
+  "after_expected": "https://www.diriyah.sa/ar/dine/oulu?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_may26_cond&utm_term=ar&utm_content=search_ar",
+  "after_live": "https://www.diriyah.sa/ar/dine/oulu?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_may26_cond&utm_term=ar&utm_content=search_ar",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 9/34, mask final_urls,final_url_suffix. Pre-read bb991ac7-a61d-4c3a-aa6c-1a70a533198c: cur (final_urls[0] + ad-level final_url_suffix holding the old UTMs) == now. Dry-run 794e155d-f276-4b09-bd8d-3fa3611de35d: only final_urls + final_url_suffix \"\". Live 484b99d4-2797-4461-b159-889930628c67 (idem effb48e4-11f0-438f-9cc8-ed3970fb1d8d): ok. Read-back d3c4da44-06ee-4890-b4a8-cdac0d272d97: == new byte for byte; suffix cleared, none at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "810216170865",
+  "ad_ids": [
+   "810216170865"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.diriyah.sa/ar/dine/aseeb?utm_source=google&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_zallal_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_google_ar&utm_term=adset-id-ee00c8_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-987e7a_test_ad_name_search",
+  "after_expected": "https://www.diriyah.sa/ar/dine/aseeb?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_may26_cond&utm_term=ar&utm_content=search_ar",
+  "after_live": "https://www.diriyah.sa/ar/dine/aseeb?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_may26_cond&utm_term=ar&utm_content=search_ar",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 10/34, mask final_urls,final_url_suffix. Pre-read bb991ac7-a61d-4c3a-aa6c-1a70a533198c: cur (final_urls[0] + ad-level final_url_suffix holding the old UTMs) == now. Dry-run 794e155d-f276-4b09-bd8d-3fa3611de35d: only final_urls + final_url_suffix \"\". Live 484b99d4-2797-4461-b159-889930628c67 (idem effb48e4-11f0-438f-9cc8-ed3970fb1d8d): ok. Read-back d3c4da44-06ee-4890-b4a8-cdac0d272d97: == new byte for byte; suffix cleared, none at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "810216170868",
+  "ad_ids": [
+   "810216170868"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.diriyah.sa/ar/dine/villa-fayrouz?utm_source=google&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_zallal_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_google_ar&utm_term=adset-id-ee00c8_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-987e7a_test_ad_name_search",
+  "after_expected": "https://www.diriyah.sa/ar/dine/villa-fayrouz?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_may26_cond&utm_term=ar&utm_content=search_ar",
+  "after_live": "https://www.diriyah.sa/ar/dine/villa-fayrouz?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_may26_cond&utm_term=ar&utm_content=search_ar",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 11/34, mask final_urls,final_url_suffix. Pre-read bb991ac7-a61d-4c3a-aa6c-1a70a533198c: cur (final_urls[0] + ad-level final_url_suffix holding the old UTMs) == now. Dry-run 794e155d-f276-4b09-bd8d-3fa3611de35d: only final_urls + final_url_suffix \"\". Live 484b99d4-2797-4461-b159-889930628c67 (idem effb48e4-11f0-438f-9cc8-ed3970fb1d8d): ok. Read-back d3c4da44-06ee-4890-b4a8-cdac0d272d97: == new byte for byte; suffix cleared, none at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "815035512947",
+  "ad_ids": [
+   "815035512947"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.diriyah.sa/en/dine/aok-kitchen?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Restaurants&utm_term=adgroup-id-XXXXXX_zallal-restaurants_en_aok&utm_content=ad-id-RSA1_zallal-restaurants_aok_search&utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Restaurants&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}",
+  "after_expected": "https://www.diriyah.sa/en/dine/aok-kitchen?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-restaurants_jul26&utm_term=zallal-restaurants_en&utm_content=zallal-restaurants-aok_search_en",
+  "after_live": "https://www.diriyah.sa/en/dine/aok-kitchen?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-restaurants_jul26&utm_term=zallal-restaurants_en&utm_content=zallal-restaurants-aok_search_en",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 12/34, mask final_urls,final_url_suffix. Pre-read bb991ac7-a61d-4c3a-aa6c-1a70a533198c: cur (final_urls[0] + ad-level final_url_suffix holding the old UTMs) == now. Dry-run 794e155d-f276-4b09-bd8d-3fa3611de35d: only final_urls + final_url_suffix \"\". Live 484b99d4-2797-4461-b159-889930628c67 (idem effb48e4-11f0-438f-9cc8-ed3970fb1d8d): ok. Read-back d3c4da44-06ee-4890-b4a8-cdac0d272d97: == new byte for byte; suffix cleared, none at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "815035512950",
+  "ad_ids": [
+   "815035512950"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.diriyah.sa/en/dine/archi?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Restaurants&utm_term=adgroup-id-XXXXXX_zallal-restaurants_en_archi&utm_content=ad-id-RSA1_zallal-restaurants_archi_search&utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Restaurants&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}",
+  "after_expected": "https://www.diriyah.sa/en/dine/archi?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-restaurants_jul26&utm_term=zallal-restaurants_en&utm_content=zallal-restaurants-archi_search_en",
+  "after_live": "https://www.diriyah.sa/en/dine/archi?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-restaurants_jul26&utm_term=zallal-restaurants_en&utm_content=zallal-restaurants-archi_search_en",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 13/34, mask final_urls,final_url_suffix. Pre-read bb991ac7-a61d-4c3a-aa6c-1a70a533198c: cur (final_urls[0] + ad-level final_url_suffix holding the old UTMs) == now. Dry-run 794e155d-f276-4b09-bd8d-3fa3611de35d: only final_urls + final_url_suffix \"\". Live 484b99d4-2797-4461-b159-889930628c67 (idem effb48e4-11f0-438f-9cc8-ed3970fb1d8d): ok. Read-back d3c4da44-06ee-4890-b4a8-cdac0d272d97: == new byte for byte; suffix cleared, none at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "815035512953",
+  "ad_ids": [
+   "815035512953"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.diriyah.sa/en/dine/aseeb?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Restaurants&utm_term=adgroup-id-XXXXXX_zallal-restaurants_en_aseeb&utm_content=ad-id-RSA1_zallal-restaurants_aseeb_search&utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Restaurants&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}",
+  "after_expected": "https://www.diriyah.sa/en/dine/aseeb?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-restaurants_jul26&utm_term=zallal-restaurants_en&utm_content=zallal-restaurants-aseeb_search_en",
+  "after_live": "https://www.diriyah.sa/en/dine/aseeb?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-restaurants_jul26&utm_term=zallal-restaurants_en&utm_content=zallal-restaurants-aseeb_search_en",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 14/34, mask final_urls,final_url_suffix. Pre-read bb991ac7-a61d-4c3a-aa6c-1a70a533198c: cur (final_urls[0] + ad-level final_url_suffix holding the old UTMs) == now. Dry-run 794e155d-f276-4b09-bd8d-3fa3611de35d: only final_urls + final_url_suffix \"\". Live 484b99d4-2797-4461-b159-889930628c67 (idem effb48e4-11f0-438f-9cc8-ed3970fb1d8d): ok. Read-back d3c4da44-06ee-4890-b4a8-cdac0d272d97: == new byte for byte; suffix cleared, none at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "815035512956",
+  "ad_ids": [
+   "815035512956"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.diriyah.sa/en/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Restaurants&utm_term=adgroup-id-XXXXXX_zallal-restaurants_en_generic&utm_content=ad-id-RSA1_zallal-restaurants_generic_search&utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Restaurants&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}",
+  "after_expected": "https://www.diriyah.sa/en/zallal?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-restaurants_jul26&utm_term=zallal-restaurants_en&utm_content=zallal-restaurants-generic_search_en",
+  "after_live": "https://www.diriyah.sa/en/zallal?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-restaurants_jul26&utm_term=zallal-restaurants_en&utm_content=zallal-restaurants-generic_search_en",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 15/34, mask final_urls,final_url_suffix. Pre-read bb991ac7-a61d-4c3a-aa6c-1a70a533198c: cur (final_urls[0] + ad-level final_url_suffix holding the old UTMs) == now. Dry-run 794e155d-f276-4b09-bd8d-3fa3611de35d: only final_urls + final_url_suffix \"\". Live 484b99d4-2797-4461-b159-889930628c67 (idem effb48e4-11f0-438f-9cc8-ed3970fb1d8d): ok. Read-back d3c4da44-06ee-4890-b4a8-cdac0d272d97: == new byte for byte; suffix cleared, none at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "815035512959",
+  "ad_ids": [
+   "815035512959"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.diriyah.sa/en/dine/oulu?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Restaurants&utm_term=adgroup-id-XXXXXX_zallal-restaurants_en_oulu&utm_content=ad-id-RSA1_zallal-restaurants_oulu_search&utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Restaurants&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}",
+  "after_expected": "https://www.diriyah.sa/en/dine/oulu?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-restaurants_jul26&utm_term=zallal-restaurants_en&utm_content=zallal-restaurants-oulu_search_en",
+  "after_live": "https://www.diriyah.sa/en/dine/oulu?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-restaurants_jul26&utm_term=zallal-restaurants_en&utm_content=zallal-restaurants-oulu_search_en",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 16/34, mask final_urls,final_url_suffix. Pre-read bb991ac7-a61d-4c3a-aa6c-1a70a533198c: cur (final_urls[0] + ad-level final_url_suffix holding the old UTMs) == now. Dry-run 794e155d-f276-4b09-bd8d-3fa3611de35d: only final_urls + final_url_suffix \"\". Live 484b99d4-2797-4461-b159-889930628c67 (idem effb48e4-11f0-438f-9cc8-ed3970fb1d8d): ok. Read-back d3c4da44-06ee-4890-b4a8-cdac0d272d97: == new byte for byte; suffix cleared, none at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "815035513082",
+  "ad_ids": [
+   "815035513082"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.diriyah.sa/en/dine/peets-coffee?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Restaurants&utm_term=adgroup-id-XXXXXX_zallal-restaurants_en_peets-coffee&utm_content=ad-id-RSA1_zallal-restaurants_peets-coffee_search&utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Restaurants&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}",
+  "after_expected": "https://www.diriyah.sa/en/dine/peets-coffee?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-restaurants_jul26&utm_term=zallal-restaurants_en&utm_content=zallal-restaurants-peets-coffee_search_en",
+  "after_live": "https://www.diriyah.sa/en/dine/peets-coffee?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-restaurants_jul26&utm_term=zallal-restaurants_en&utm_content=zallal-restaurants-peets-coffee_search_en",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 17/34, mask final_urls,final_url_suffix. Pre-read bb991ac7-a61d-4c3a-aa6c-1a70a533198c: cur (final_urls[0] + ad-level final_url_suffix holding the old UTMs) == now. Dry-run 794e155d-f276-4b09-bd8d-3fa3611de35d: only final_urls + final_url_suffix \"\". Live 484b99d4-2797-4461-b159-889930628c67 (idem effb48e4-11f0-438f-9cc8-ed3970fb1d8d): ok. Read-back d3c4da44-06ee-4890-b4a8-cdac0d272d97: == new byte for byte; suffix cleared, none at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "815035513085",
+  "ad_ids": [
+   "815035513085"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.diriyah.sa/en/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Restaurants&utm_term=adgroup-id-XXXXXX_zallal-restaurants_en_restaurants&utm_content=ad-id-RSA1_zallal-restaurants_restaurants_search&utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Restaurants&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}",
+  "after_expected": "https://www.diriyah.sa/en/zallal?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-restaurants_jul26&utm_term=zallal-restaurants_en&utm_content=zallal-restaurants-restaurants_search_en",
+  "after_live": "https://www.diriyah.sa/en/zallal?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-restaurants_jul26&utm_term=zallal-restaurants_en&utm_content=zallal-restaurants-restaurants_search_en",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 18/34, mask final_urls,final_url_suffix. Pre-read bb991ac7-a61d-4c3a-aa6c-1a70a533198c: cur (final_urls[0] + ad-level final_url_suffix holding the old UTMs) == now. Dry-run 794e155d-f276-4b09-bd8d-3fa3611de35d: only final_urls + final_url_suffix \"\". Live 484b99d4-2797-4461-b159-889930628c67 (idem effb48e4-11f0-438f-9cc8-ed3970fb1d8d): ok. Read-back d3c4da44-06ee-4890-b4a8-cdac0d272d97: == new byte for byte; suffix cleared, none at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "815035513088",
+  "ad_ids": [
+   "815035513088"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.diriyah.sa/en/dine/villa-fayrouz?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Restaurants&utm_term=adgroup-id-XXXXXX_zallal-restaurants_en_villa-fayrouz&utm_content=ad-id-RSA1_zallal-restaurants_villa-fayrouz_search&utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Restaurants&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}",
+  "after_expected": "https://www.diriyah.sa/en/dine/villa-fayrouz?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-restaurants_jul26&utm_term=zallal-restaurants_en&utm_content=zallal-restaurants-villa-fayrouz_search_en",
+  "after_live": "https://www.diriyah.sa/en/dine/villa-fayrouz?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-restaurants_jul26&utm_term=zallal-restaurants_en&utm_content=zallal-restaurants-villa-fayrouz_search_en",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 19/34, mask final_urls,final_url_suffix. Pre-read bb991ac7-a61d-4c3a-aa6c-1a70a533198c: cur (final_urls[0] + ad-level final_url_suffix holding the old UTMs) == now. Dry-run 794e155d-f276-4b09-bd8d-3fa3611de35d: only final_urls + final_url_suffix \"\". Live 484b99d4-2797-4461-b159-889930628c67 (idem effb48e4-11f0-438f-9cc8-ed3970fb1d8d): ok. Read-back d3c4da44-06ee-4890-b4a8-cdac0d272d97: == new byte for byte; suffix cleared, none at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "815035513091",
+  "ad_ids": [
+   "815035513091"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.diriyah.sa/ar/dine/aok-kitchen?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Restaurants&utm_term=adgroup-id-XXXXXX_zallal-restaurants_ar_aok&utm_content=ad-id-RSA1_zallal-restaurants_aok_search&utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Restaurants&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}",
+  "after_expected": "https://www.diriyah.sa/ar/dine/aok-kitchen?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-restaurants_jul26&utm_term=zallal-restaurants_ar&utm_content=zallal-restaurants-aok_search_ar",
+  "after_live": "https://www.diriyah.sa/ar/dine/aok-kitchen?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-restaurants_jul26&utm_term=zallal-restaurants_ar&utm_content=zallal-restaurants-aok_search_ar",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 20/34, mask final_urls,final_url_suffix. Pre-read 5a853c51-dda1-4319-bc3b-296dd3deb052: cur (final_urls[0] + ad-level final_url_suffix holding the old UTMs) == now. Dry-run 794e155d-f276-4b09-bd8d-3fa3611de35d: only final_urls + final_url_suffix \"\". Live 484b99d4-2797-4461-b159-889930628c67 (idem effb48e4-11f0-438f-9cc8-ed3970fb1d8d): ok. Read-back 3e4f586c-72e4-4a70-ad14-716981ba3790: == new byte for byte; suffix cleared, none at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "815035513094",
+  "ad_ids": [
+   "815035513094"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.diriyah.sa/ar/dine/archi?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Restaurants&utm_term=adgroup-id-XXXXXX_zallal-restaurants_ar_archi&utm_content=ad-id-RSA1_zallal-restaurants_archi_search&utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Restaurants&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}",
+  "after_expected": "https://www.diriyah.sa/ar/dine/archi?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-restaurants_jul26&utm_term=zallal-restaurants_ar&utm_content=zallal-restaurants-archi_search_ar",
+  "after_live": "https://www.diriyah.sa/ar/dine/archi?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-restaurants_jul26&utm_term=zallal-restaurants_ar&utm_content=zallal-restaurants-archi_search_ar",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 21/34, mask final_urls,final_url_suffix. Pre-read 5a853c51-dda1-4319-bc3b-296dd3deb052: cur (final_urls[0] + ad-level final_url_suffix holding the old UTMs) == now. Dry-run 794e155d-f276-4b09-bd8d-3fa3611de35d: only final_urls + final_url_suffix \"\". Live 484b99d4-2797-4461-b159-889930628c67 (idem effb48e4-11f0-438f-9cc8-ed3970fb1d8d): ok. Read-back 3e4f586c-72e4-4a70-ad14-716981ba3790: == new byte for byte; suffix cleared, none at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "815035513097",
+  "ad_ids": [
+   "815035513097"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.diriyah.sa/ar/dine/aseeb?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Restaurants&utm_term=adgroup-id-XXXXXX_zallal-restaurants_ar_aseeb&utm_content=ad-id-RSA1_zallal-restaurants_aseeb_search&utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Restaurants&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}",
+  "after_expected": "https://www.diriyah.sa/ar/dine/aseeb?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-restaurants_jul26&utm_term=zallal-restaurants_ar&utm_content=zallal-restaurants-aseeb_search_ar",
+  "after_live": "https://www.diriyah.sa/ar/dine/aseeb?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-restaurants_jul26&utm_term=zallal-restaurants_ar&utm_content=zallal-restaurants-aseeb_search_ar",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 22/34, mask final_urls,final_url_suffix. Pre-read 5a853c51-dda1-4319-bc3b-296dd3deb052: cur (final_urls[0] + ad-level final_url_suffix holding the old UTMs) == now. Dry-run 794e155d-f276-4b09-bd8d-3fa3611de35d: only final_urls + final_url_suffix \"\". Live 484b99d4-2797-4461-b159-889930628c67 (idem effb48e4-11f0-438f-9cc8-ed3970fb1d8d): ok. Read-back 3e4f586c-72e4-4a70-ad14-716981ba3790: == new byte for byte; suffix cleared, none at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "815035513100",
+  "ad_ids": [
+   "815035513100"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Restaurants&utm_term=adgroup-id-XXXXXX_zallal-restaurants_ar_generic&utm_content=ad-id-RSA1_zallal-restaurants_generic_search&utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Restaurants&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}",
+  "after_expected": "https://www.diriyah.sa/ar/zallal?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-restaurants_jul26&utm_term=zallal-restaurants_ar&utm_content=zallal-restaurants-generic_search_ar",
+  "after_live": "https://www.diriyah.sa/ar/zallal?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-restaurants_jul26&utm_term=zallal-restaurants_ar&utm_content=zallal-restaurants-generic_search_ar",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 23/34, mask final_urls,final_url_suffix. Pre-read 5a853c51-dda1-4319-bc3b-296dd3deb052: cur (final_urls[0] + ad-level final_url_suffix holding the old UTMs) == now. Dry-run 794e155d-f276-4b09-bd8d-3fa3611de35d: only final_urls + final_url_suffix \"\". Live 484b99d4-2797-4461-b159-889930628c67 (idem effb48e4-11f0-438f-9cc8-ed3970fb1d8d): ok. Read-back 3e4f586c-72e4-4a70-ad14-716981ba3790: == new byte for byte; suffix cleared, none at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "815035513103",
+  "ad_ids": [
+   "815035513103"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.diriyah.sa/ar/dine/oulu?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Restaurants&utm_term=adgroup-id-XXXXXX_zallal-restaurants_ar_oulu&utm_content=ad-id-RSA1_zallal-restaurants_oulu_search&utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Restaurants&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}",
+  "after_expected": "https://www.diriyah.sa/ar/dine/oulu?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-restaurants_jul26&utm_term=zallal-restaurants_ar&utm_content=zallal-restaurants-oulu_search_ar",
+  "after_live": "https://www.diriyah.sa/ar/dine/oulu?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-restaurants_jul26&utm_term=zallal-restaurants_ar&utm_content=zallal-restaurants-oulu_search_ar",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 24/34, mask final_urls,final_url_suffix. Pre-read 5a853c51-dda1-4319-bc3b-296dd3deb052: cur (final_urls[0] + ad-level final_url_suffix holding the old UTMs) == now. Dry-run 794e155d-f276-4b09-bd8d-3fa3611de35d: only final_urls + final_url_suffix \"\". Live 484b99d4-2797-4461-b159-889930628c67 (idem effb48e4-11f0-438f-9cc8-ed3970fb1d8d): ok. Read-back 3e4f586c-72e4-4a70-ad14-716981ba3790: == new byte for byte; suffix cleared, none at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "815035513106",
+  "ad_ids": [
+   "815035513106"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.diriyah.sa/ar/dine/peets-coffee?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Restaurants&utm_term=adgroup-id-XXXXXX_zallal-restaurants_ar_peets-coffee&utm_content=ad-id-RSA1_zallal-restaurants_peets-coffee_search&utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Restaurants&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}",
+  "after_expected": "https://www.diriyah.sa/ar/dine/peets-coffee?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-restaurants_jul26&utm_term=zallal-restaurants_ar&utm_content=zallal-restaurants-peets-coffee_search_ar",
+  "after_live": "https://www.diriyah.sa/ar/dine/peets-coffee?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-restaurants_jul26&utm_term=zallal-restaurants_ar&utm_content=zallal-restaurants-peets-coffee_search_ar",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 25/34, mask final_urls,final_url_suffix. Pre-read 5a853c51-dda1-4319-bc3b-296dd3deb052: cur (final_urls[0] + ad-level final_url_suffix holding the old UTMs) == now. Dry-run 794e155d-f276-4b09-bd8d-3fa3611de35d: only final_urls + final_url_suffix \"\". Live 484b99d4-2797-4461-b159-889930628c67 (idem effb48e4-11f0-438f-9cc8-ed3970fb1d8d): ok. Read-back 3e4f586c-72e4-4a70-ad14-716981ba3790: == new byte for byte; suffix cleared, none at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "815035513109",
+  "ad_ids": [
+   "815035513109"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Restaurants&utm_term=adgroup-id-XXXXXX_zallal-restaurants_ar_restaurants&utm_content=ad-id-RSA1_zallal-restaurants_restaurants_search&utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Restaurants&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}",
+  "after_expected": "https://www.diriyah.sa/ar/zallal?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-restaurants_jul26&utm_term=zallal-restaurants_ar&utm_content=zallal-restaurants-restaurants_search_ar",
+  "after_live": "https://www.diriyah.sa/ar/zallal?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-restaurants_jul26&utm_term=zallal-restaurants_ar&utm_content=zallal-restaurants-restaurants_search_ar",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 26/34, mask final_urls,final_url_suffix. Pre-read 5a853c51-dda1-4319-bc3b-296dd3deb052: cur (final_urls[0] + ad-level final_url_suffix holding the old UTMs) == now. Dry-run 794e155d-f276-4b09-bd8d-3fa3611de35d: only final_urls + final_url_suffix \"\". Live 484b99d4-2797-4461-b159-889930628c67 (idem effb48e4-11f0-438f-9cc8-ed3970fb1d8d): ok. Read-back 3e4f586c-72e4-4a70-ad14-716981ba3790: == new byte for byte; suffix cleared, none at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "815035513112",
+  "ad_ids": [
+   "815035513112"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.diriyah.sa/ar/dine/villa-fayrouz?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Restaurants&utm_term=adgroup-id-XXXXXX_zallal-restaurants_ar_villa-fayrouz&utm_content=ad-id-RSA1_zallal-restaurants_villa-fayrouz_search&utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Restaurants&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}",
+  "after_expected": "https://www.diriyah.sa/ar/dine/villa-fayrouz?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-restaurants_jul26&utm_term=zallal-restaurants_ar&utm_content=zallal-restaurants-villa-fayrouz_search_ar",
+  "after_live": "https://www.diriyah.sa/ar/dine/villa-fayrouz?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-restaurants_jul26&utm_term=zallal-restaurants_ar&utm_content=zallal-restaurants-villa-fayrouz_search_ar",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 27/34, mask final_urls,final_url_suffix. Pre-read 5a853c51-dda1-4319-bc3b-296dd3deb052: cur (final_urls[0] + ad-level final_url_suffix holding the old UTMs) == now. Dry-run 794e155d-f276-4b09-bd8d-3fa3611de35d: only final_urls + final_url_suffix \"\". Live 484b99d4-2797-4461-b159-889930628c67 (idem effb48e4-11f0-438f-9cc8-ed3970fb1d8d): ok. Read-back 3e4f586c-72e4-4a70-ad14-716981ba3790: == new byte for byte; suffix cleared, none at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "815039270831",
+  "ad_ids": [
+   "815039270831"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.diriyah.sa/en/shopping/base-and-boon?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Others&utm_term=adgroup-id-XXXXXX_zallal-others_en_base-and-boon&utm_content=ad-id-RSA1_zallal-others_base-and-boon_search&utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Others&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}",
+  "after_expected": "https://www.diriyah.sa/en/shopping/base-and-boon?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-others_jul26&utm_term=zallal-others_en&utm_content=zallal-others-base-and-boon_search_en",
+  "after_live": "https://www.diriyah.sa/en/shopping/base-and-boon?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-others_jul26&utm_term=zallal-others_en&utm_content=zallal-others-base-and-boon_search_en",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 28/34, mask final_urls,final_url_suffix. Pre-read 5a853c51-dda1-4319-bc3b-296dd3deb052: cur (final_urls[0] + ad-level final_url_suffix holding the old UTMs) == now. Dry-run 794e155d-f276-4b09-bd8d-3fa3611de35d: only final_urls + final_url_suffix \"\". Live 484b99d4-2797-4461-b159-889930628c67 (idem effb48e4-11f0-438f-9cc8-ed3970fb1d8d): ok. Read-back 3e4f586c-72e4-4a70-ad14-716981ba3790: == new byte for byte; suffix cleared, none at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "815035513115",
+  "ad_ids": [
+   "815035513115"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.diriyah.sa/en/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Others&utm_term=adgroup-id-XXXXXX_zallal-others_en_culture-and-experience&utm_content=ad-id-RSA1_zallal-others_culture-and-experience_search&utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Others&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}",
+  "after_expected": "https://www.diriyah.sa/en/zallal?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-others_jul26&utm_term=zallal-others_en&utm_content=zallal-others-culture-and-experience_search_en",
+  "after_live": "https://www.diriyah.sa/en/zallal?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-others_jul26&utm_term=zallal-others_en&utm_content=zallal-others-culture-and-experience_search_en",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 29/34, mask final_urls,final_url_suffix. Pre-read 5a853c51-dda1-4319-bc3b-296dd3deb052: cur (final_urls[0] + ad-level final_url_suffix holding the old UTMs) == now. Dry-run 794e155d-f276-4b09-bd8d-3fa3611de35d: only final_urls + final_url_suffix \"\". Live 484b99d4-2797-4461-b159-889930628c67 (idem effb48e4-11f0-438f-9cc8-ed3970fb1d8d): ok. Read-back 3e4f586c-72e4-4a70-ad14-716981ba3790: == new byte for byte; suffix cleared, none at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "815035513118",
+  "ad_ids": [
+   "815035513118"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.diriyah.sa/en/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Others&utm_term=adgroup-id-XXXXXX_zallal-others_en_generic-competitive&utm_content=ad-id-RSA1_zallal-others_generic-competitive_search&utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Others&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}",
+  "after_expected": "https://www.diriyah.sa/en/zallal?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-others_jul26&utm_term=zallal-others_en&utm_content=zallal-others-generic-competitive_search_en",
+  "after_live": "https://www.diriyah.sa/en/zallal?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-others_jul26&utm_term=zallal-others_en&utm_content=zallal-others-generic-competitive_search_en",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 30/34, mask final_urls,final_url_suffix. Pre-read 5a853c51-dda1-4319-bc3b-296dd3deb052: cur (final_urls[0] + ad-level final_url_suffix holding the old UTMs) == now. Dry-run 794e155d-f276-4b09-bd8d-3fa3611de35d: only final_urls + final_url_suffix \"\". Live 484b99d4-2797-4461-b159-889930628c67 (idem effb48e4-11f0-438f-9cc8-ed3970fb1d8d): ok. Read-back 3e4f586c-72e4-4a70-ad14-716981ba3790: == new byte for byte; suffix cleared, none at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "815039270834",
+  "ad_ids": [
+   "815039270834"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.diriyah.sa/en/shopping/saudi-artisanal-company?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Others&utm_term=adgroup-id-XXXXXX_zallal-others_en_saudi-artisinal-company&utm_content=ad-id-RSA1_zallal-others_saudi-artisinal-company_search&utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Others&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}",
+  "after_expected": "https://www.diriyah.sa/en/shopping/saudi-artisanal-company?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-others_jul26&utm_term=zallal-others_en&utm_content=zallal-others-saudi-artisinal-company_search_en",
+  "after_live": "https://www.diriyah.sa/en/shopping/saudi-artisanal-company?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-others_jul26&utm_term=zallal-others_en&utm_content=zallal-others-saudi-artisinal-company_search_en",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 31/34, mask final_urls,final_url_suffix. Pre-read 5a853c51-dda1-4319-bc3b-296dd3deb052: cur (final_urls[0] + ad-level final_url_suffix holding the old UTMs) == now. Dry-run 794e155d-f276-4b09-bd8d-3fa3611de35d: only final_urls + final_url_suffix \"\". Live 484b99d4-2797-4461-b159-889930628c67 (idem effb48e4-11f0-438f-9cc8-ed3970fb1d8d): ok. Read-back 3e4f586c-72e4-4a70-ad14-716981ba3790: == new byte for byte; suffix cleared, none at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "815039270837",
+  "ad_ids": [
+   "815039270837"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.diriyah.sa/ar/shopping/base-and-boon?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Others&utm_term=adgroup-id-XXXXXX_zallal-others_ar_base-and-boon&utm_content=ad-id-RSA1_zallal-others_base-and-boon_search&utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Others&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}",
+  "after_expected": "https://www.diriyah.sa/ar/shopping/base-and-boon?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-others_jul26&utm_term=zallal-others_ar&utm_content=zallal-others-base-and-boon_search_ar",
+  "after_live": "https://www.diriyah.sa/ar/shopping/base-and-boon?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-others_jul26&utm_term=zallal-others_ar&utm_content=zallal-others-base-and-boon_search_ar",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 32/34, mask final_urls,final_url_suffix. Pre-read 5a853c51-dda1-4319-bc3b-296dd3deb052: cur (final_urls[0] + ad-level final_url_suffix holding the old UTMs) == now. Dry-run 794e155d-f276-4b09-bd8d-3fa3611de35d: only final_urls + final_url_suffix \"\". Live 484b99d4-2797-4461-b159-889930628c67 (idem effb48e4-11f0-438f-9cc8-ed3970fb1d8d): ok. Read-back 3e4f586c-72e4-4a70-ad14-716981ba3790: == new byte for byte; suffix cleared, none at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "815035513121",
+  "ad_ids": [
+   "815035513121"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Others&utm_term=adgroup-id-XXXXXX_zallal-others_ar_culture-and-experience&utm_content=ad-id-RSA1_zallal-others_culture-and-experience_search",
+  "after_expected": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-others_jul26&utm_term=zallal-others_ar&utm_content=zallal-others-culture-and-experience_search_ar",
+  "after_live": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-others_jul26&utm_term=zallal-others_ar&utm_content=zallal-others-culture-and-experience_search_ar",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 18/22, mask final_urls. Pre-read b0043d96-9f9d-443b-be3a-3b5180922d56: cur == now. Dry-run 48901003-8c6f-4a81-8487-4590823d0f24: only final_urls. Live af0802cc-1700-42c7-8d98-71c5ec0b229b (idem 38a72291-3136-4377-9e85-f23e1f73bf9b): ok. Read-back 183f367a-f51a-4668-afee-864e265c1b5e: == new byte for byte; no suffix/tracking at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "815035513124",
+  "ad_ids": [
+   "815035513124"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Others&utm_term=adgroup-id-XXXXXX_zallal-others_ar_generic-competitive&utm_content=ad-id-RSA1_zallal-others_generic-competitive_search",
+  "after_expected": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-others_jul26&utm_term=zallal-others_ar&utm_content=zallal-others-generic-competitive_search_ar",
+  "after_live": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-others_jul26&utm_term=zallal-others_ar&utm_content=zallal-others-generic-competitive_search_ar",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 19/22, mask final_urls. Pre-read b0043d96-9f9d-443b-be3a-3b5180922d56: cur == now. Dry-run 48901003-8c6f-4a81-8487-4590823d0f24: only final_urls. Live af0802cc-1700-42c7-8d98-71c5ec0b229b (idem 38a72291-3136-4377-9e85-f23e1f73bf9b): ok. Read-back 183f367a-f51a-4668-afee-864e265c1b5e: == new byte for byte; no suffix/tracking at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "815039270840",
+  "ad_ids": [
+   "815039270840"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.diriyah.sa/ar/shopping/saudi-artisanal-company?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Others&utm_term=adgroup-id-XXXXXX_zallal-others_ar_saudi-artisinal-company&utm_content=ad-id-RSA1_zallal-others_saudi-artisinal-company_search",
+  "after_expected": "https://www.diriyah.sa/ar/shopping/saudi-artisanal-company?utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-others_jul26&utm_term=zallal-others_ar&utm_content=zallal-others-saudi-artisinal-company_search_ar",
+  "after_live": "https://www.diriyah.sa/ar/shopping/saudi-artisanal-company?utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal-others_jul26&utm_term=zallal-others_ar&utm_content=zallal-others-saudi-artisinal-company_search_ar",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 20/22, mask final_urls. Pre-read b0043d96-9f9d-443b-be3a-3b5180922d56: cur == now. Dry-run 48901003-8c6f-4a81-8487-4590823d0f24: only final_urls. Live af0802cc-1700-42c7-8d98-71c5ec0b229b (idem 38a72291-3136-4377-9e85-f23e1f73bf9b): ok. Read-back 183f367a-f51a-4668-afee-864e265c1b5e: == new byte for byte; no suffix/tracking at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "815035513127",
+  "ad_ids": [
+   "815035513127"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.diriyah.sa/en/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Brand&utm_term=adgroup-id-XXXXXX_zallal-brand_en_brand-zallal&utm_content=ad-id-RSA1_zallal-brand_brand-zallal_search&utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_EN_Zallal_Brand&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}",
+  "after_expected": "https://www.diriyah.sa/en/zallal?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal_jul26&utm_term=zallal-brand_en&utm_content=zallal-brand-brand-zallal_search_en",
+  "after_live": "https://www.diriyah.sa/en/zallal?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal_jul26&utm_term=zallal-brand_en&utm_content=zallal-brand-brand-zallal_search_en",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 33/34, mask final_urls,final_url_suffix. Pre-read 5a853c51-dda1-4319-bc3b-296dd3deb052: cur (final_urls[0] + ad-level final_url_suffix holding the old UTMs) == now. Dry-run 794e155d-f276-4b09-bd8d-3fa3611de35d: only final_urls + final_url_suffix \"\". Live 484b99d4-2797-4461-b159-889930628c67 (idem effb48e4-11f0-438f-9cc8-ed3970fb1d8d): ok. Read-back 3e4f586c-72e4-4a70-ad14-716981ba3790: == new byte for byte; suffix cleared, none at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "815035513130",
+  "ad_ids": [
+   "815035513130"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.diriyah.sa/ar/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Brand&utm_term=adgroup-id-XXXXXX_zallal-brand_ar_brand-zallal&utm_content=ad-id-RSA1_zallal-brand_brand-zallal_search&http://utm_source=google&utm_medium=cpc&utm_campaign=Diriyah_Company_Tactical_Summer_2026_KSA_Search_AR_Zallal_Brand&utm_content=summer_campaign_visit_diriyah_zallal&utm_term={keyword}&matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}",
+  "after_expected": "https://www.diriyah.sa/ar/zallal?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal_jul26&utm_term=zallal-brand_ar&utm_content=zallal-brand-brand-zallal_search_ar",
+  "after_live": "https://www.diriyah.sa/ar/zallal?matchtype={matchtype}&device={device}&network={network}&creative={creative}&campaignid={campaignid}&adgroupid={adgroupid}&utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-summer-zallal_jul26&utm_term=zallal-brand_ar&utm_content=zallal-brand-brand-zallal_search_ar",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 34/34, mask final_urls,final_url_suffix. Pre-read 5a853c51-dda1-4319-bc3b-296dd3deb052: cur (final_urls[0] + ad-level final_url_suffix holding the old UTMs) == now. Dry-run 794e155d-f276-4b09-bd8d-3fa3611de35d: only final_urls + final_url_suffix \"\". Live 484b99d4-2797-4461-b159-889930628c67 (idem effb48e4-11f0-438f-9cc8-ed3970fb1d8d): ok. Read-back 3e4f586c-72e4-4a70-ad14-716981ba3790: == new byte for byte; suffix cleared, none at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "816137399034",
+  "ad_ids": [
+   "816137399034"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.marriott.com/offers/theme-park-experience-off-227242/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Bab_Samhan_x_Qiddiya_2026_KSA_Traffic_Google_Search_EN_Generic&utm_term=adgroup-id-XXXXXX_bab-samhan-x-qiddiya_en_generic&utm_content=ad-id-RSA1_bab-samhan-x-qiddiya-rsa1_search",
+  "after_expected": "https://www.marriott.com/offers/theme-park-experience-off-227242/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah?utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-bab-samhan-x-qiddiya_jul26_cond&utm_term=bab-samhan-x-qiddiya_en&utm_content=bab-samhan-x-qiddiya_search_en",
+  "after_live": "https://www.marriott.com/offers/theme-park-experience-off-227242/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah?utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-bab-samhan-x-qiddiya_jul26_cond&utm_term=bab-samhan-x-qiddiya_en&utm_content=bab-samhan-x-qiddiya_search_en",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 21/22, mask final_urls. Pre-read b0043d96-9f9d-443b-be3a-3b5180922d56: cur == now. Dry-run 48901003-8c6f-4a81-8487-4590823d0f24: only final_urls. Live af0802cc-1700-42c7-8d98-71c5ec0b229b (idem 38a72291-3136-4377-9e85-f23e1f73bf9b): ok. Read-back 183f367a-f51a-4668-afee-864e265c1b5e: == new byte for byte; no suffix/tracking at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ },
+ {
+  "platform": "google",
+  "account_id": "8324286739",
+  "unit_type": "ad",
+  "unit": "816137399160",
+  "ad_ids": [
+   "816137399160"
+  ],
+  "ad_names": [],
+  "slot": "ad.final_urls[0]",
+  "before": "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=google&utm_medium=paid-search&utm_campaign=Diriyah_Company_Tactical_Bab_Samhan_x_Qiddiya_2026_KSA_Traffic_Google_Search_AR_Generic&utm_term=adgroup-id-XXXXXX_bab-samhan-x-qiddiya_ar_generic&utm_content=ad-id-RSA1_bab-samhan-x-qiddiya-rsa1_search",
+  "after_expected": "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-bab-samhan-x-qiddiya_jul26_cond&utm_term=bab-samhan-x-qiddiya_ar&utm_content=bab-samhan-x-qiddiya_search_ar",
+  "after_live": "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-bab-samhan-x-qiddiya_jul26_cond&utm_term=bab-samhan-x-qiddiya_ar&utm_content=bab-samhan-x-qiddiya_search_ar",
+  "result": "Fixed",
+  "new_entity_ids": "",
+  "detail": "MutateAds op 22/22, mask final_urls. Pre-read b0043d96-9f9d-443b-be3a-3b5180922d56: cur == now. Dry-run 48901003-8c6f-4a81-8487-4590823d0f24: only final_urls. Live af0802cc-1700-42c7-8d98-71c5ec0b229b (idem 38a72291-3136-4377-9e85-f23e1f73bf9b): ok. Read-back 183f367a-f51a-4668-afee-864e265c1b5e: == new byte for byte; no suffix/tracking at any level. Ad ENABLED, campaign PAUSED unchanged; approval APPROVED -> UNKNOWN (Google re-review)."
+ }
+]

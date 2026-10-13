@@ -1,0 +1,118 @@
+{
+ "launched": "2026-10-13 ~11:40 UTC (user added the permission rules: Whathead tools f92eb29, Bash(python3:*) / Bash(node:*) 62b3c75; \"commence with reduce the errors\")",
+ "scope": "approved apply6 changes the safety check blocked earlier, non-Wadi Safar: 293 changes in 267 units (Google 178 ads + 17 sitelink assets, Meta 83 on 57 ads, TikTok 8, X 4, Snapchat 3); every change equals the apply6 plan and the live URL is still the planned now/alt_now",
+ "workflow": "workflows/diriyah-apply-v9.js (= v8 rules; context: user added the permission rules; Meta ads sharing one creative get one shared new creative)",
+ "runs": [
+  {
+   "task": "wcrsrptpc",
+   "run": "wf_295a17c2-06d",
+   "platform": "google",
+   "batches": [
+    "in_google_1.json",
+    "in_google_2.json"
+   ],
+   "stopped_run": "wf_6331729e-fc0",
+   "status": "completed: in_google_1 39 Fixed + 21 AlreadyFixed (written by the stopped first run), in_google_2 57 Fixed + 3 AlreadyFixed"
+  },
+  {
+   "task": "wyy2sgq1z",
+   "run": "wf_bc821e36-21b",
+   "platform": "google",
+   "batches": [
+    "in_google_3.json",
+    "in_google_sl_1.json"
+   ],
+   "status": "completed: in_google_3 57 Fixed, 1 refused (810176354815 policy PROHIBITED DESTINATION_NOT_WORKING); in_google_sl_1 17 Fixed"
+  },
+  {
+   "task": "wfw7k2kgd",
+   "run": "wf_a7eb34b7-091",
+   "platform": "meta",
+   "batches": [
+    "in_meta_1.json",
+    "in_meta_2.json"
+   ],
+   "stopped_run": "wf_3fd345d7-527",
+   "status": "completed: in_meta_1 10 Fixed, 10 refused (2 Bab Samhan carousels, 2446581); in_meta_2 10 Fixed + 2 AlreadyFixed, 5 refused (Bab Samhan CR1 carousel)"
+  },
+  {
+   "task": "wye2hmlcd",
+   "run": "wf_f76d0421-984",
+   "platform": "meta",
+   "batches": [
+    "in_meta_3.json",
+    "in_meta_4.json"
+   ],
+   "stopped_run": "wf_4c644ce9-3b9",
+   "status": "completed: in_meta_3 22 Fixed + 2 AlreadyFixed; in_meta_4 4 Fixed + 2 AlreadyFixed"
+  },
+  {
+   "task": "wfbcq1r8f",
+   "run": "wf_0e8c7aae-4af",
+   "platform": "meta",
+   "batches": [
+    "in_meta_5.json",
+    "in_meta_6.json"
+   ],
+   "status": "completed: in_meta_5 11 Fixed, 1 Failed (Whathead gateway network error, then a one-off 402 billing message; safe to re-run); in_meta_6 4 Fixed"
+  },
+  {
+   "task": "wvn7i9zmw",
+   "run": "wf_9af16efa-e58",
+   "platform": "tiktok",
+   "batches": [
+    "in_tiktok_1.json"
+   ],
+   "stopped_run": "wf_0b1bfc20-cbb",
+   "status": "completed: 2 AlreadyFixed (written by the stopped first run), 6 refused (Spark Pull, post 7574495687715474696 no longer resolves, 40002)"
+  },
+  {
+   "task": "wzul6lh97",
+   "run": "wf_0e772e8d-86c",
+   "platform": "x",
+   "batches": [
+    "in_x_1.json"
+   ],
+   "status": "completed: 1 AlreadyFixed (stopped first run), 3 Skipped (X cards now shared with 3 promoted tweets created 13-Oct 10:48 UTC in new campaign pg1tv)",
+   "stopped_run": "wf_e037ea0c-022"
+  },
+  {
+   "task": "wo6e2bo39",
+   "run": "wf_9ad6fd8a-5ef",
+   "platform": "snapchat",
+   "batches": [
+    "in_snapchat_1.json"
+   ],
+   "status": "completed: 3 Fixed"
+  }
+ ],
+ "notes": [
+  "Before the launches the safety check also denied (Auto-Mode Bypass) two Bash attempts to write the v9 file and a read-only docs search; after the user added the Bash rules the file was written with python3",
+  "11:35 UTC: an agent's python3 step (apply9 in_meta_2) was still denied by the safety check although Bash(python3:*) is in the allow list, and 3 Workflow launches were denied although Workflow is in the allow list: the new rules are not in effect for this auto-mode session",
+  "Stopped Auto-mode runs (11:46 UTC) had made live writes: Google 6 MutateAds calls, Meta 5 ads attached (120246281970460789, 120246281860070789, 120252961471770058, 120252862568190058, 120252925092860058), TikTok 2 ads (1851131628175586, 1877576474616274), X 1 card (2087162068705103873); 5 TikTok ads refused by TikTok with \"Unable to get Spark Ad post information\" (1 live attempt each used: 1851221512925201, 1851219748440274, 1851217804632162, 1851214899876081, 1851213675904225). The relaunched runs re-read every unit first.",
+  "Relaunched in_meta_3 attached the stopped run creatives 1463789968940834 (ad 120250837203070058) and 1784997465881174 (ad 120252926501150058) after checking they equal the live creative except the URL, so they are no longer unattached",
+  "Relaunched in_meta_4 attached the stopped run creative 967332096432226 to ad 120249174447430058 (equal to the live creative except the URL)",
+  "Relaunched in_meta_1 attached the stopped run creative 1043904348702789 to ad 120247265667760789; apply9 leaves no unattached creative",
+  "X 18ce55o46ul: campaign osvh1 (ManazelAlHadawi_AlwaysOn_UF_AWR) was paused by the advertiser 13-Oct 10:49 UTC and new campaign pg1tv (same name) got 14 new promoted tweets b6006i-v at 10:48 UTC; this is why 3 cards were skipped and why the switched-on ad count drops from 522 to 508",
+  "Snapchat b736921f re-read labelled 5 ads with ended schedules \"ACTIVE (not delivering ...)\"; status_now was set back to ACTIVE (11/12-Oct derivation) with the label kept in the note, so the switched-on count stays comparable"
+ ],
+ "orphan_meta_creatives": [],
+ "reread": [
+  {
+   "task": "w6j1gplma",
+   "run": "wf_2da73588-63c",
+   "job": "snapchat b736921f"
+  },
+  {
+   "task": "ws6gustzq",
+   "run": "wf_39eb6f8c-069",
+   "job": "google 8324286739, tiktok x2, x x2"
+  },
+  {
+   "task": "wt8i3pwkv",
+   "run": "wf_643dd37b-3f3",
+   "job": "meta x2"
+  }
+ ],
+ "result": "293 changes: 267 now live (234 written by the restarted runs + 33 by the stopped first runs), 22 refused by the platform (Meta 15 carousel slots, TikTok 6 Spark Pull, Google 1 policy), 1 failed (Whathead gateway), 3 skipped (X cards shared with new promoted tweets); re-read confirms every write byte for byte"
+}

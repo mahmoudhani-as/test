@@ -1,0 +1,3385 @@
+[
+ {
+  "tool_use_id": "toolu_01DtS2vdaTyQc9sHCW2L2ca9",
+  "input": {
+   "action": "LIST_CARDS",
+   "account_id": "18ce55o46ul",
+   "path_params": {
+    "account_id": "18ce55o46ul"
+   },
+   "params": {
+    "card_ids": "1912386810686173184,1912386810694586368,1912387715095482368,1912387715087114240,1912388439762223105,1912388439887994880,1912388723896934400,1912388723867598848,1912389913716117504,1912389913770631169,1912389717758251008,1912389717779189760,1919749772044333056,1919749773810159616,1919750344499699713,1919750344977842176,1919751799654785024",
+    "with_deleted": true,
+    "include_legacy_cards": true,
+    "count": 200
+   },
+   "result_fields": [
+    "id",
+    "name",
+    "card_type",
+    "deleted",
+    "updated_at",
+    "components",
+    "slides"
+   ],
+   "max_items": 2000
+  },
+  "result": {
+   "success": true,
+   "data": {
+    "success": true,
+    "data": {
+     "request": {
+      "params": {
+       "count": 200,
+       "include_legacy_cards": true,
+       "account_id": "18ce55o46ul",
+       "card_ids": [
+        "1912386810686173184",
+        "1912386810694586368",
+        "1912387715095482368",
+        "1912387715087114240",
+        "1912388439762223105",
+        "1912388439887994880",
+        "1912388723896934400",
+        "1912388723867598848",
+        "1912389913716117504",
+        "1912389913770631169",
+        "1912389717758251008",
+        "1912389717779189760",
+        "1919749772044333056",
+        "1919749773810159616",
+        "1919750344499699713",
+        "1919750344977842176",
+        "1919751799654785024"
+       ],
+       "with_deleted": true
+      }
+     },
+     "next_cursor": null,
+     "data": [
+      {
+       "id": "1912386810694586368",
+       "name": "[Copy] Diriyah_Tactical_Branded Residence Campaign - Armani_LF_UAE_Prospecting_A",
+       "card_type": "IMAGE_MULTI_DEST_CAROUSEL_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-04-16T06:05:20Z",
+       "slides": [
+        [
+         {
+          "media_key": "3_1910662339788955648",
+          "media_metadata": {
+           "3_1910662339788955648": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQJRmDWYAAYGCi.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "أرماني ريزيدنسز الدرعية",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv1-option2_display_ar#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910662400958689280",
+          "media_metadata": {
+           "3_1910662400958689280": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQJVJ7WcAASHFb.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "أرماني ريزيدنسز الدرعية",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv1-option2_display_ar#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910662436195045376",
+          "media_metadata": {
+           "3_1910662436195045376": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQJXNMWkAAjmzV.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "أرماني ريزيدنسز الدرعية",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv1-option2_display_ar#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910662459653836801",
+          "media_metadata": {
+           "3_1910662459653836801": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQJYklXUAEvE5c.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "أرماني ريزيدنسز الدرعية",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv1-option2_display_ar#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ]
+       ]
+      },
+      {
+       "id": "1912386810686173184",
+       "name": "[Copy] Diriyah_Tactical_Branded Residence Campaign - Armani_LF_UAE_Prospecting_A",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-04-16T06:05:20Z",
+       "components": [
+        {
+         "media_key": "3_1910662096682971136",
+         "media_metadata": {
+          "3_1910662096682971136": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/GoQJDcaXcAAsezN.jpg",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "أرماني ريزيدنسز الدرعية",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv1-option2_display_ar#appointment-form",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1912387715087114240",
+       "name": "[Copy] Diriyah_Tactical_Branded Residence Campaign - Armani_LF_UAE_Prospecting_E",
+       "card_type": "IMAGE_MULTI_DEST_CAROUSEL_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-04-16T06:08:56Z",
+       "slides": [
+        [
+         {
+          "media_key": "3_1910661436117790720",
+          "media_metadata": {
+           "3_1910661436117790720": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQIc_nWsAAUPDL.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Armani Residences Diriyah",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv1-option2_display_en#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910661484058697728",
+          "media_metadata": {
+           "3_1910661484058697728": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQIfyNW4AAu_6T.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Armani Residences Diriyah",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv1-option2_display_en#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910661515436236800",
+          "media_metadata": {
+           "3_1910661515436236800": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQIhnGWIAAQD9v.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Armani Residences Diriyah",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv1-option2_display_en#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910661544695730176",
+          "media_metadata": {
+           "3_1910661544695730176": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQIjUGWkAAnBQl.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Armani Residences Diriyah",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv1-option2_display_en#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ]
+       ]
+      },
+      {
+       "id": "1912387715095482368",
+       "name": "[Copy] Diriyah_Tactical_Branded Residence Campaign - Armani_LF_UAE_Prospecting_E",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-04-16T06:08:56Z",
+       "components": [
+        {
+         "media_key": "3_1910660692086022144",
+         "media_metadata": {
+          "3_1910660692086022144": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/GoQHxr4W4AAIctb.jpg",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Armani Residences Diriyah",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv1-option2_display_en#appointment-form",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1912388439762223105",
+       "name": "[Copy] Diriyah_Tactical_Branded Residence Campaign - Armani_LF_QAT_Prospecting_E",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-04-16T06:11:49Z",
+       "components": [
+        {
+         "media_key": "3_1910660692086022144",
+         "media_metadata": {
+          "3_1910660692086022144": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/GoQHxr4W4AAIctb.jpg",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Armani Residences Diriyah",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv1-option2_display_en#appointment-form",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1912388439887994880",
+       "name": "[Copy] Diriyah_Tactical_Branded Residence Campaign - Armani_LF_QAT_Prospecting_E",
+       "card_type": "IMAGE_MULTI_DEST_CAROUSEL_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-04-16T06:11:49Z",
+       "slides": [
+        [
+         {
+          "media_key": "3_1910661436117790720",
+          "media_metadata": {
+           "3_1910661436117790720": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQIc_nWsAAUPDL.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Armani Residences Diriyah",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv1-option2_display_en#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910661484058697728",
+          "media_metadata": {
+           "3_1910661484058697728": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQIfyNW4AAu_6T.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Armani Residences Diriyah",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv1-option2_display_en#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910661515436236800",
+          "media_metadata": {
+           "3_1910661515436236800": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQIhnGWIAAQD9v.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Armani Residences Diriyah",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv1-option2_display_en#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910661544695730176",
+          "media_metadata": {
+           "3_1910661544695730176": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQIjUGWkAAnBQl.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Armani Residences Diriyah",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv1-option2_display_en#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ]
+       ]
+      },
+      {
+       "id": "1912388723867598848",
+       "name": "[Copy] Diriyah_Tactical_Branded Residence Campaign - Armani_LF_QAT_Prospecting_A",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-04-16T06:12:56Z",
+       "components": [
+        {
+         "media_key": "3_1910662096682971136",
+         "media_metadata": {
+          "3_1910662096682971136": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/GoQJDcaXcAAsezN.jpg",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "أرماني ريزيدنسز الدرعية",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv1-option2_display_ar#appointment-form",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1912388723896934400",
+       "name": "[Copy] Diriyah_Tactical_Branded Residence Campaign - Armani_LF_QAT_Prospecting_E",
+       "card_type": "IMAGE_MULTI_DEST_CAROUSEL_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-04-16T06:12:56Z",
+       "slides": [
+        [
+         {
+          "media_key": "3_1910662339788955648",
+          "media_metadata": {
+           "3_1910662339788955648": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQJRmDWYAAYGCi.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "أرماني ريزيدنسز الدرعية",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv1-option2_display_ar#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910662400958689280",
+          "media_metadata": {
+           "3_1910662400958689280": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQJVJ7WcAASHFb.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "أرماني ريزيدنسز الدرعية",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv1-option2_display_ar#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910662436195045376",
+          "media_metadata": {
+           "3_1910662436195045376": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQJXNMWkAAjmzV.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "أرماني ريزيدنسز الدرعية",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv1-option2_display_ar#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910662459653836801",
+          "media_metadata": {
+           "3_1910662459653836801": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQJYklXUAEvE5c.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "أرماني ريزيدنسز الدرعية",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv1-option2_display_ar#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ]
+       ]
+      },
+      {
+       "id": "1912389717779189760",
+       "name": "[Copy] Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KWT_Prospecting_E",
+       "card_type": "IMAGE_MULTI_DEST_CAROUSEL_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-04-16T06:16:53Z",
+       "slides": [
+        [
+         {
+          "media_key": "3_1910662339788955648",
+          "media_metadata": {
+           "3_1910662339788955648": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQJRmDWYAAYGCi.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "أرماني ريزيدنسز الدرعية",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv1-option2_display_ar#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910662400958689280",
+          "media_metadata": {
+           "3_1910662400958689280": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQJVJ7WcAASHFb.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "أرماني ريزيدنسز الدرعية",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv1-option2_display_ar#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910662436195045376",
+          "media_metadata": {
+           "3_1910662436195045376": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQJXNMWkAAjmzV.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "أرماني ريزيدنسز الدرعية",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv1-option2_display_ar#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910662459653836801",
+          "media_metadata": {
+           "3_1910662459653836801": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQJYklXUAEvE5c.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "أرماني ريزيدنسز الدرعية",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv1-option2_display_ar#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ]
+       ]
+      },
+      {
+       "id": "1912389717758251008",
+       "name": "[Copy] Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KWT_Prospecting_A",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-04-16T06:16:53Z",
+       "components": [
+        {
+         "media_key": "3_1910662096682971136",
+         "media_metadata": {
+          "3_1910662096682971136": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/GoQJDcaXcAAsezN.jpg",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "أرماني ريزيدنسز الدرعية",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv1-option2_display_ar#appointment-form",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1912389913716117504",
+       "name": "[Copy] Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KWT_Prospecting_E",
+       "card_type": "IMAGE_MULTI_DEST_CAROUSEL_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-04-16T06:17:40Z",
+       "slides": [
+        [
+         {
+          "media_key": "3_1910661436117790720",
+          "media_metadata": {
+           "3_1910661436117790720": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQIc_nWsAAUPDL.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Armani Residences Diriyah",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv1-option2_display_en#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910661484058697728",
+          "media_metadata": {
+           "3_1910661484058697728": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQIfyNW4AAu_6T.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Armani Residences Diriyah",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv1-option2_display_en#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910661515436236800",
+          "media_metadata": {
+           "3_1910661515436236800": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQIhnGWIAAQD9v.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Armani Residences Diriyah",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv1-option2_display_en#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1910661544695730176",
+          "media_metadata": {
+           "3_1910661544695730176": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GoQIjUGWkAAnBQl.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Armani Residences Diriyah",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv1-option2_display_en#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ]
+       ]
+      },
+      {
+       "id": "1912389913770631169",
+       "name": "[Copy] Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KWT_Prospecting_E",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-04-16T06:17:40Z",
+       "components": [
+        {
+         "media_key": "3_1910660692086022144",
+         "media_metadata": {
+          "3_1910660692086022144": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/GoQHxr4W4AAIctb.jpg",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Armani Residences Diriyah",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_apr25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv1-option2_display_en#appointment-form",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1919749772044333056",
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_UAE_Prospecting_EN_Conve",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-05-06T13:43:07Z",
+       "components": [
+        {
+         "media_key": "3_1919745855617110016",
+         "media_metadata": {
+          "3_1919745855617110016": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/GqROrzcWEAAlJZK.jpg",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Armani Residences Diriyah",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_may25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv2_display_en#appointment-form",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1919749773810159616",
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_UAE_Prospecting_EN_Conve",
+       "card_type": "IMAGE_MULTI_DEST_CAROUSEL_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-05-06T13:43:08Z",
+       "slides": [
+        [
+         {
+          "media_key": "3_1919746594833924096",
+          "media_metadata": {
+           "3_1919746594833924096": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GqRPW1PXgAA8U2l.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Armani Residences Diriyah",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_may25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv2_display_en#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1919746664341909504",
+          "media_metadata": {
+           "3_1919746664341909504": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GqRPa4LXMAAvbKk.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Armani Residences Diriyah",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_may25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv2_display_en#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1919746691818823680",
+          "media_metadata": {
+           "3_1919746691818823680": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GqRPceiXoAAjt6B.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Armani Residences Diriyah",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_may25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv2_display_en#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1919746712408674304",
+          "media_metadata": {
+           "3_1919746712408674304": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GqRPdrPX0AAIrwO.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Armani Residences Diriyah",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_may25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv2_display_en#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ]
+       ]
+      },
+      {
+       "id": "1919750344499699713",
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_UAE_Prospecting_AR_Conve",
+       "card_type": "IMAGE_MULTI_DEST_CAROUSEL_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-05-06T13:45:24Z",
+       "slides": [
+        [
+         {
+          "media_key": "3_1919747299518906368",
+          "media_metadata": {
+           "3_1919747299518906368": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GqRP_2ZXAAAMzJd.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "أرماني ريزيدنسز الدرعية",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_may25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv2_display_ar#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1919747342464385024",
+          "media_metadata": {
+           "3_1919747342464385024": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GqRQCWYXAAAWf29.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "أرماني ريزيدنسز الدرعية",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_may25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv2_display_ar#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1919747377373614080",
+          "media_metadata": {
+           "3_1919747377373614080": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GqRQEYbXkAAwO7R.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "أرماني ريزيدنسز الدرعية",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_may25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv2_display_ar#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1919747404179390464",
+          "media_metadata": {
+           "3_1919747404179390464": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GqRQF8SXQAAlQfN.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "أرماني ريزيدنسز الدرعية",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_may25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv2_display_ar#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ]
+       ]
+      },
+      {
+       "id": "1919750344977842176",
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_UAE_Prospecting_AR_Conve",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-05-06T13:45:24Z",
+       "components": [
+        {
+         "media_key": "3_1919747660178714624",
+         "media_metadata": {
+          "3_1919747660178714624": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/GqRQU19W8AAdBVN.jpg",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "أرماني ريزيدنسز الدرعية",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_may25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv2_display_ar#appointment-form",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1919751799654785024",
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_QAT_Prospecting_EN_Conve",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-05-06T13:51:11Z",
+       "components": [
+        {
+         "media_key": "3_1919745855617110016",
+         "media_metadata": {
+          "3_1919745855617110016": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/GqROrzcWEAAlJZK.jpg",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Armani Residences Diriyah",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_may25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv2_display_en#appointment-form",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      }
+     ]
+    },
+    "meta": {
+     "mcp_result_projection": {
+      "fields": [
+       "id",
+       "name",
+       "card_type",
+       "deleted",
+       "updated_at",
+       "components",
+       "slides"
+      ],
+      "max_items": 2000
+     }
+    }
+   },
+   "meta": {
+    "requestId": "4bd5c5cb-9780-4bfc-82fd-bd377ac4c8fb",
+    "latencyMs": 2062
+   }
+  }
+ },
+ {
+  "tool_use_id": "toolu_01Kf9xRAnCuYWMnkLpYXMpVK",
+  "input": {
+   "action": "LIST_CARDS",
+   "account_id": "18ce55o46ul",
+   "path_params": {
+    "account_id": "18ce55o46ul"
+   },
+   "params": {
+    "card_ids": "1919752321589813248,1919752979822899200,1919755999860097024,1919755999075811329,1919756617333010432,1930221439011151872,1930222357114662912,1930253368733081601,1930253116143718401,1936000373359276032,1939277991173120001,1939278077017886720,1939279123635187712,1939279190970585088,1939280075595345921,1939280015088361472,1981346931684388864,1981346931575283712,1981346931558531072,1981366605344018432,1981366488448847872,1981653826768896000,1981654064334323712,1983173498001596416,1983496628012257280,1987903173680656384,1987903178810269696",
+    "with_deleted": true,
+    "include_legacy_cards": true,
+    "count": 200
+   },
+   "result_fields": [
+    "id",
+    "name",
+    "card_type",
+    "deleted",
+    "updated_at",
+    "components",
+    "slides"
+   ],
+   "max_items": 2000
+  },
+  "result": {
+   "success": true,
+   "data": {
+    "success": true,
+    "data": {
+     "request": {
+      "params": {
+       "count": 200,
+       "include_legacy_cards": true,
+       "account_id": "18ce55o46ul",
+       "card_ids": [
+        "1919752321589813248",
+        "1919752979822899200",
+        "1919755999860097024",
+        "1919755999075811329",
+        "1919756617333010432",
+        "1930221439011151872",
+        "1930222357114662912",
+        "1930253368733081601",
+        "1930253116143718401",
+        "1936000373359276032",
+        "1939277991173120001",
+        "1939278077017886720",
+        "1939279123635187712",
+        "1939279190970585088",
+        "1939280075595345921",
+        "1939280015088361472",
+        "1981346931684388864",
+        "1981346931575283712",
+        "1981346931558531072",
+        "1981366605344018432",
+        "1981366488448847872",
+        "1981653826768896000",
+        "1981654064334323712",
+        "1983173498001596416",
+        "1983496628012257280",
+        "1987903173680656384",
+        "1987903178810269696"
+       ],
+       "with_deleted": true
+      }
+     },
+     "next_cursor": null,
+     "data": [
+      {
+       "id": "1919752321589813248",
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_QAT_Prospecting_EN_Conve",
+       "card_type": "IMAGE_MULTI_DEST_CAROUSEL_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-05-06T13:53:15Z",
+       "slides": [
+        [
+         {
+          "media_key": "3_1919746594833924096",
+          "media_metadata": {
+           "3_1919746594833924096": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GqRPW1PXgAA8U2l.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Armani Residences Diriyah",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_may25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv2_display_en#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1919746664341909504",
+          "media_metadata": {
+           "3_1919746664341909504": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GqRPa4LXMAAvbKk.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Armani Residences Diriyah",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_may25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv2_display_en#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1919746691818823680",
+          "media_metadata": {
+           "3_1919746691818823680": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GqRPceiXoAAjt6B.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Armani Residences Diriyah",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_may25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv2_display_en#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1919746712408674304",
+          "media_metadata": {
+           "3_1919746712408674304": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GqRPdrPX0AAIrwO.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Armani Residences Diriyah",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_may25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv2_display_en#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ]
+       ]
+      },
+      {
+       "id": "1919752979822899200",
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_QAT_Prospecting_AR_Conve",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-05-06T13:55:52Z",
+       "components": [
+        {
+         "media_key": "3_1919747660178714624",
+         "media_metadata": {
+          "3_1919747660178714624": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/GqRQU19W8AAdBVN.jpg",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "أرماني ريزيدنسز الدرعية",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_may25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv2_display_ar#appointment-form",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1919755999075811329",
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KWT_Prospecting_EN_Conve",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-05-06T14:07:52Z",
+       "components": [
+        {
+         "media_key": "3_1919745855617110016",
+         "media_metadata": {
+          "3_1919745855617110016": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/GqROrzcWEAAlJZK.jpg",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Armani Residences Diriyah",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_may25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv2_display_en#appointment-form",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1919755999860097024",
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KWT_Prospecting_EN_Conve",
+       "card_type": "IMAGE_MULTI_DEST_CAROUSEL_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-05-06T14:07:52Z",
+       "slides": [
+        [
+         {
+          "media_key": "3_1919746594833924096",
+          "media_metadata": {
+           "3_1919746594833924096": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GqRPW1PXgAA8U2l.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Armani Residences Diriyah",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_may25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv2_display_en#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1919746664341909504",
+          "media_metadata": {
+           "3_1919746664341909504": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GqRPa4LXMAAvbKk.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Armani Residences Diriyah",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_may25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv2_display_en#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1919746691818823680",
+          "media_metadata": {
+           "3_1919746691818823680": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GqRPceiXoAAjt6B.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Armani Residences Diriyah",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_may25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv2_display_en#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1919746712408674304",
+          "media_metadata": {
+           "3_1919746712408674304": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GqRPdrPX0AAIrwO.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "Armani Residences Diriyah",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_may25_conv&utm_term=brandedresidencearmani_en&utm_content=armanikv2_display_en#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ]
+       ]
+      },
+      {
+       "id": "1919756617333010432",
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KWT_Prospecting_AR_Conve",
+       "card_type": "IMAGE_MULTI_DEST_CAROUSEL_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-05-06T14:10:19Z",
+       "slides": [
+        [
+         {
+          "media_key": "3_1919747299518906368",
+          "media_metadata": {
+           "3_1919747299518906368": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GqRP_2ZXAAAMzJd.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "أرماني ريزيدنسز الدرعية",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_may25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv2_display_ar#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1919747342464385024",
+          "media_metadata": {
+           "3_1919747342464385024": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GqRQCWYXAAAWf29.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "أرماني ريزيدنسز الدرعية",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_may25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv2_display_ar#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1919747377373614080",
+          "media_metadata": {
+           "3_1919747377373614080": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GqRQEYbXkAAwO7R.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "أرماني ريزيدنسز الدرعية",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_may25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv2_display_ar#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_1919747404179390464",
+          "media_metadata": {
+           "3_1919747404179390464": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/GqRQF8SXQAAlQfN.jpg",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "أرماني ريزيدنسز الدرعية",
+          "destination": {
+           "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_may25_conv&utm_term=brandedresidencearmani_ar&utm_content=armanikv2_display_ar#appointment-form",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ]
+       ]
+      },
+      {
+       "id": "1930221439011151872",
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KSA_Prospecting_EN_Conve",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-06-04T11:13:47Z",
+       "components": [
+        {
+         "media_key": "13_1930221119249739776",
+         "media_metadata": {
+          "13_1930221119249739776": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1930221119249739776/vid/avc1/720x720/49FM1Kqa0OigQW5p.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1930221119249739776/img/GwLKIJQNu5HLHrdS.jpg",
+           "width": 1080,
+           "height": 1080,
+           "video_duration": 15040,
+           "video_aspect_ratio": "1:1"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Armani Residences Diriyah",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_jun25_conv&utm_term=brandedresidencearmani_en&utm_content=botanical_video_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1930222357114662912",
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KSA_Prospecting_AR_Conve",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-06-04T11:17:26Z",
+       "components": [
+        {
+         "media_key": "13_1930221119249739776",
+         "media_metadata": {
+          "13_1930221119249739776": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1930221119249739776/vid/avc1/720x720/49FM1Kqa0OigQW5p.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1930221119249739776/img/GwLKIJQNu5HLHrdS.jpg",
+           "width": 1080,
+           "height": 1080,
+           "video_duration": 15040,
+           "video_aspect_ratio": "1:1"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "أرماني ريزيدنسز الدرعية",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_jun25_conv&utm_term=brandedresidencearmani_ar&utm_content=botanical_video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1930253116143718401",
+       "name": "[Copy] Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KSA_Prospecting_A",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-06-04T13:19:39Z",
+       "components": [
+        {
+         "media_key": "13_1930220432516358144",
+         "media_metadata": {
+          "13_1930220432516358144": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1930220432516358144/vid/avc1/320x320/Ul3XURnPoSdG-y9j.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1930220432516358144/img/8C2P52FjCqWOfI-A.jpg",
+           "width": 1080,
+           "height": 1080,
+           "video_duration": 15040,
+           "video_aspect_ratio": "1:1"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "أرماني ريزيدنسز الدرعية",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_jun25_conv&utm_term=brandedresidencearmani_ar&utm_content=royal_video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1930253368733081601",
+       "name": "[Copy] Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KSA_Prospecting_E",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-06-04T13:20:40Z",
+       "components": [
+        {
+         "media_key": "13_1930220432516358144",
+         "media_metadata": {
+          "13_1930220432516358144": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1930220432516358144/vid/avc1/320x320/Ul3XURnPoSdG-y9j.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1930220432516358144/img/8C2P52FjCqWOfI-A.jpg",
+           "width": 1080,
+           "height": 1080,
+           "video_duration": 15040,
+           "video_aspect_ratio": "1:1"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Armani Residences Diriyah",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_jun25_conv&utm_term=brandedresidencearmani_en&utm_content=royal_video_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1936000373359276032",
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KSA_Prospecting_EN_Conve",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-06-20T09:57:12Z",
+       "components": [
+        {
+         "media_key": "3_1935999677989613568",
+         "media_metadata": {
+          "3_1935999677989613568": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/Gt4NcyPXcAACsg9.jpg",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Armani Residences Diriyah",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/armani?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidencearmani_jun25_conv&utm_term=brandedresidencearmani_en&utm_content=poolside_display_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1939277991173120001",
+       "name": "[Copy] Diriyah_Tactical_Diriyah Living Campaign_UF_KSA_Prospecting_AR_Awareness_",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-06-29T11:01:17Z",
+       "components": [
+        {
+         "media_key": "13_1919729255409233920",
+         "media_metadata": {
+          "13_1919729255409233920": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1919729255409233920/vid/avc1/480x270/qhnw-3tgW2eWv9_N.mp4?tag=16",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1919729255409233920/img/YgIlePaTGk3PQm3G.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 15000,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "الدرعية قصة نحكيها في كل مسكن. ",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living?utm_source=x&utm_medium=paid-social&utm_campaign=hs-diriyahliving_jun25_awr&utm_term=diriyahliving_ar&utm_content=video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1939278077017886720",
+       "name": "[Copy] Diriyah_Tactical_Diriyah Living Campaign_UF_KSA_Prospecting_EN_Awareness_",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-06-29T11:01:38Z",
+       "components": [
+        {
+         "media_key": "13_1919729255434366977",
+         "media_metadata": {
+          "13_1919729255434366977": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1919729255434366977/vid/avc1/480x270/OaaQ3H_-lNW-EgOU.mp4?tag=16",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1919729255434366977/img/7aubO7wZdHKPNHYu.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 15000,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Diriyah is a story told in every residence.",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living?utm_source=x&utm_medium=paid-social&utm_campaign=hs-diriyahliving_jun25_awr&utm_term=diriyahliving_en&utm_content=video_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1939279123635187712",
+       "name": "[Copy] Diriyah_Tactical_Diriyah Living Campaign_UF_KSA_Prospecting_AR_Awareness_",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-06-29T11:05:47Z",
+       "components": [
+        {
+         "media_key": "13_1922961322456555520",
+         "media_metadata": {
+          "13_1922961322456555520": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1922961322456555520/vid/avc1/1280x720/w9wdpoSV5x0MIEgD.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1922961322456555520/img/8rONe919vOwU8TGU.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 15000,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "الحياة في الدرعية",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living?utm_source=x&utm_medium=paid-social&utm_campaign=hs-diriyahliving_jun25_awr&utm_term=diriyahliving_ar&utm_content=video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1939279190970585088",
+       "name": "[Copy] Diriyah_Tactical_Diriyah Living Campaign_UF_KSA_Prospecting_EN_Awareness_",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-06-29T11:06:03Z",
+       "components": [
+        {
+         "media_key": "13_1922922199784026112",
+         "media_metadata": {
+          "13_1922922199784026112": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1922922199784026112/vid/avc1/1280x720/A4x4DRQ_szVO7-wB.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1922922199784026112/img/oMBq54AXwXMeoV0N.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 15000,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Diriyah Living",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living?utm_source=x&utm_medium=paid-social&utm_campaign=hs-diriyahliving_jun25_awr&utm_term=diriyahliving_en&utm_content=video_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1939280015088361472",
+       "name": "[Copy] Diriyah_Tactical_Diriyah Living Campaign_UF_KSA_Prospecting_AR_Awareness_",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-06-29T11:09:20Z",
+       "components": [
+        {
+         "media_key": "13_1926989283384037376",
+         "media_metadata": {
+          "13_1926989283384037376": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1926989283384037376/vid/avc1/1280x720/wWsl7fB6q592Q_6d.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1926989283384037376/img/LzMjoWCVgUM6VgVj.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 15000,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "الحياة_في_الدرعية ",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living?utm_source=x&utm_medium=paid-social&utm_campaign=hs-diriyahliving_jun25_awr&utm_term=diriyahliving_ar&utm_content=retail_video_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1939280075595345921",
+       "name": "[Copy] Diriyah_Tactical_Diriyah Living Campaign_UF_KSA_Prospecting_EN_Awareness_",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-06-29T11:09:34Z",
+       "components": [
+        {
+         "media_key": "13_1926988789190135808",
+         "media_metadata": {
+          "13_1926988789190135808": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1926988789190135808/vid/avc1/1280x720/CnoMBjSispFpKMTS.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1926988789190135808/img/lTdvjgo2eJoetBIV.jpg",
+           "width": 1920,
+           "height": 1080,
+           "video_duration": 15000,
+           "video_aspect_ratio": "16:9"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Diriyah Living",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living?utm_source=x&utm_medium=paid-social&utm_campaign=hs-diriyahliving_jun25_awr&utm_term=diriyahliving_en&utm_content=retail_video_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1981346931558531072",
+       "name": "Carousel",
+       "card_type": "IMAGE_CAROUSEL_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-10-23T13:08:14Z",
+       "components": [
+        {
+         "media_keys": [
+          "3_1981346514686382080",
+          "3_1981346541337010177",
+          "3_1981346567924621313",
+          "3_1981346593501548545"
+         ],
+         "media_metadata": {
+          "3_1981346567924621313": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/G38oNLYWIAEgFR1.png",
+           "width": 800,
+           "height": 800
+          },
+          "3_1981346593501548545": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/G38oOqqXEAEqNhh.png",
+           "width": 800,
+           "height": 800
+          },
+          "3_1981346514686382080": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/G38oKFDXEAA1p2u.png",
+           "width": 800,
+           "height": 800
+          },
+          "3_1981346541337010177": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/G38oLoVXYAEF-93.png",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "SWIPEABLE_MEDIA"
+        },
+        {
+         "title": "فلل فاخرة مكونة من ٤، ٥، ٦ غرف نوم​",
+         "destination": {
+          "url": "https://www.wadisafar.com/ar/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_awr&utm_term=brandedresidence-faena_ar&utm_content=display_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1981346931575283712",
+       "name": "Diriyah_Tactical_Faena 2025_UF_KSA_Prospecting_AR_Awareness_X_Live Pool Red",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-10-23T13:08:14Z",
+       "components": [
+        {
+         "media_key": "3_1981345316340113408",
+         "media_metadata": {
+          "3_1981345316340113408": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/G38nEU3WIAAsxJU.png",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "فلل فاخرة مكونة من ٤، ٥، ٦ غرف نوم​",
+         "destination": {
+          "url": "https://www.wadisafar.com/ar/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_awr&utm_term=brandedresidence-faena_ar&utm_content=livepoolred_display_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1981346931684388864",
+       "name": "carousel",
+       "card_type": "IMAGE_CAROUSEL_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-10-23T13:08:14Z",
+       "components": [
+        {
+         "media_keys": [
+          "3_1981345935901757440",
+          "3_1981345966813745152",
+          "3_1981346009335648257",
+          "3_1981346033427791872"
+         ],
+         "media_metadata": {
+          "3_1981345935901757440": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/G38noY6WkAAgc5U.png",
+           "width": 800,
+           "height": 800
+          },
+          "3_1981346033427791872": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/G38nuEOXwAAbnfV.png",
+           "width": 800,
+           "height": 800
+          },
+          "3_1981346009335648257": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/G38nsqeW0AEWXHU.png",
+           "width": 800,
+           "height": 800
+          },
+          "3_1981345966813745152": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/G38nqMEWEAAT0EV.png",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "SWIPEABLE_MEDIA"
+        },
+        {
+         "title": "A collection of 4, 5 & 6 bedroom residences​",
+         "destination": {
+          "url": "https://www.wadisafar.com/en/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_awr&utm_term=brandedresidence-faena_en&utm_content=display_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1981366488448847872",
+       "name": "Diriyah_Tactical_Faena 2025_UF_KSA_Prospecting_EN_Awareness_X_Live Pool Red NEW",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-10-23T14:25:57Z",
+       "components": [
+        {
+         "media_key": "3_1981344719729750016",
+         "media_metadata": {
+          "3_1981344719729750016": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/G38mhmUWcAAoXS5.png",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Faena Residences",
+         "destination": {
+          "url": "https://www.wadisafar.com/en/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_awr&utm_term=brandedresidence-faena_en&utm_content=livepoolred_display_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1981366605344018432",
+       "name": "Diriyah_Tactical_Faena 2025_UF_KSA_Prospecting_AR_Awareness_X_Live Pool Red NEW",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-10-23T14:26:25Z",
+       "components": [
+        {
+         "media_key": "3_1981345316340113408",
+         "media_metadata": {
+          "3_1981345316340113408": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/G38nEU3WIAAsxJU.png",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "فايينا ريزيدنسز",
+         "destination": {
+          "url": "https://www.wadisafar.com/ar/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_awr&utm_term=brandedresidence-faena_ar&utm_content=livepoolred_display_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1981653826768896000",
+       "name": "Diriyah_Tactical_Faena 2025_UF_KSA_Prospecting_AR_Awareness_X_Live Pool Red NEW",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-10-24T09:27:44Z",
+       "components": [
+        {
+         "media_key": "3_1981653379492229120",
+         "media_metadata": {
+          "3_1981653379492229120": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/G4A_P9iWMAAwNzh.jpg",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "فلل فاخرة مكونة من ٤، ٥، ٦ غرف نوم​",
+         "destination": {
+          "url": "https://www.wadisafar.com/ar/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_oct25_awr&utm_term=brandedresidence-faena_ar&utm_content=livepoolred_display_ar",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1981654064334323712",
+       "name": "Diriyah_Tactical_Faena 2025_UF_KSA_Prospecting_EN_Awareness_X_Live Pool Red NEW",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-10-24T09:28:40Z",
+       "components": [
+        {
+         "media_key": "3_1981654016300896256",
+         "media_metadata": {
+          "3_1981654016300896256": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/G4A_1B1XUAAOpM5.jpg",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "A collection of 4, 5 & 6 bedroom residences​",
+         "destination": {
+          "url": "https://www.wadisafar.com/en/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_oct25_awr&utm_term=brandedresidence-faena_en&utm_content=livepoolred_display_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1983173498001596416",
+       "name": "Diriyah Company_Tactical _Faena 2025_UF_KSA_Prospecting_EN_Video Views_Video 12s",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-10-28T14:06:22Z",
+       "components": [
+        {
+         "media_key": "13_1983168790046126080",
+         "media_metadata": {
+          "13_1983168790046126080": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1983168790046126080/vid/avc1/720x720/Pl9YlX-69IUT5OCJ.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1983168790046126080/img/DcOSHICN3vr0KSbO.jpg",
+           "width": 1080,
+           "height": 1080,
+           "video_duration": 12920,
+           "video_aspect_ratio": "1:1"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Live Artfully",
+         "destination": {
+          "url": "https://www.wadisafar.com/en/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_oct25_awr&utm_term=brandedresidence-faena_en&utm_content=video_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1983496628012257280",
+       "name": "[Copy] Diriyah Company_Tactical _Faena 2025_UF_KSA_Prospecting_EN_Video Views_Vi",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-10-29T11:30:22Z",
+       "components": [
+        {
+         "media_key": "13_1983168790046126080",
+         "media_metadata": {
+          "13_1983168790046126080": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1983168790046126080/vid/avc1/720x720/Pl9YlX-69IUT5OCJ.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1983168790046126080/img/DcOSHICN3vr0KSbO.jpg",
+           "width": 1080,
+           "height": 1080,
+           "video_duration": 12920,
+           "video_aspect_ratio": "1:1"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Live Artfully",
+         "destination": {
+          "url": "https://www.wadisafar.com/en/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_oct25_awr&utm_term=brandedresidence-faena_en&utm_content=video_en",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1987903173680656384",
+       "name": "Diriyah Company_Tactical_Faena 2025_UF_KSA_Prospecting_AR_Awareness_X_Live Bonfi",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-11-10T15:20:24Z",
+       "components": [
+        {
+         "media_key": "3_1985607455296966656",
+         "media_metadata": {
+          "3_1985607455296966656": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/G45LddxX0AAOMOD.jpg",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "فلل فاخرة مكونة من ٤، ٥، ٦ غرف نوم​",
+         "destination": {
+          "url": "https://www.wadisafar.com/ar/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_nov25_awr&utm_term=brandedresidence-faena_ar&utm_content=livebonfirered_display_ar#register-interest",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1987903178810269696",
+       "name": "Diriyah Company_Tactical_Faena 2025_UF_KSA_Prospecting_AR_Awareness_X_Live Pool",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-11-10T15:20:26Z",
+       "components": [
+        {
+         "media_key": "3_1981653379492229120",
+         "media_metadata": {
+          "3_1981653379492229120": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/G4A_P9iWMAAwNzh.jpg",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "فلل فاخرة مكونة من ٤، ٥، ٦ غرف نوم​",
+         "destination": {
+          "url": "https://www.wadisafar.com/ar/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_nov25_awr&utm_term=brandedresidence-faena_ar&utm_content=livepoolred_display_ar#register-interest",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      }
+     ]
+    },
+    "meta": {
+     "mcp_result_projection": {
+      "fields": [
+       "id",
+       "name",
+       "card_type",
+       "deleted",
+       "updated_at",
+       "components",
+       "slides"
+      ],
+      "max_items": 2000
+     }
+    }
+   },
+   "meta": {
+    "requestId": "f9a1ac8e-e6c6-47f8-8368-d77327390a19",
+    "latencyMs": 1956
+   }
+  }
+ },
+ {
+  "tool_use_id": "toolu_01V3CJVdznLGGMAJXyDxN64A",
+  "input": {
+   "action": "LIST_CARDS",
+   "account_id": "18ce55o46ul",
+   "path_params": {
+    "account_id": "18ce55o46ul"
+   },
+   "params": {
+    "card_ids": "1987903172560797696,1987904742929182721,1987904743000387584,1987904743835144192,1987908413834334208,1987908503613362176,1987908909416538112,1987913496387063808,1988616427952373760,1988614793859825664,1988615084005044224,1988617862228164608,1988618863576231936,1988619605846446081,1988619457267408897,1988620020814053376,1988620482959339520,1988620958174007296,1988620482900611072,1988909079880953856,1988915363996946432,1988916740835930112,1999450826465783808,1999450826486743042,1999450826457382913,1999450826524491778,1999450826897764352,1999450826570715136,2000940602851258368",
+    "with_deleted": true,
+    "include_legacy_cards": true,
+    "count": 200
+   },
+   "result_fields": [
+    "id",
+    "name",
+    "card_type",
+    "deleted",
+    "updated_at",
+    "components",
+    "slides"
+   ],
+   "max_items": 2000
+  },
+  "result": {
+   "success": true,
+   "data": {
+    "success": true,
+    "data": {
+     "request": {
+      "params": {
+       "count": 200,
+       "include_legacy_cards": true,
+       "account_id": "18ce55o46ul",
+       "card_ids": [
+        "1987903172560797696",
+        "1987904742929182721",
+        "1987904743000387584",
+        "1987904743835144192",
+        "1987908413834334208",
+        "1987908503613362176",
+        "1987908909416538112",
+        "1987913496387063808",
+        "1988616427952373760",
+        "1988614793859825664",
+        "1988615084005044224",
+        "1988617862228164608",
+        "1988618863576231936",
+        "1988619605846446081",
+        "1988619457267408897",
+        "1988620020814053376",
+        "1988620482959339520",
+        "1988620958174007296",
+        "1988620482900611072",
+        "1988909079880953856",
+        "1988915363996946432",
+        "1988916740835930112",
+        "1999450826465783808",
+        "1999450826486743042",
+        "1999450826457382913",
+        "1999450826524491778",
+        "1999450826897764352",
+        "1999450826570715136",
+        "2000940602851258368"
+       ],
+       "with_deleted": true
+      }
+     },
+     "next_cursor": null,
+     "data": [
+      {
+       "id": "1987903172560797696",
+       "name": "Diriyah Company_Tactical _Faena 2025_UF_KSA_Prospecting_AR_Video Views_Video 12s",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-11-10T15:20:24Z",
+       "components": [
+        {
+         "media_key": "13_1983168790046126080",
+         "media_metadata": {
+          "13_1983168790046126080": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1983168790046126080/vid/avc1/720x720/Pl9YlX-69IUT5OCJ.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1983168790046126080/img/DcOSHICN3vr0KSbO.jpg",
+           "width": 1080,
+           "height": 1080,
+           "video_duration": 12920,
+           "video_aspect_ratio": "1:1"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "انعم برغد العيش في تحفة فنية",
+         "destination": {
+          "url": "https://www.wadisafar.com/ar/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_nov25_awr&utm_term=brandedresidence-faena_ar&utm_content=faenavideo_video_ar#register-interest",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1987904742929182721",
+       "name": "Diriyah Company_Tactical_Faena 2025_UF_KSA_Prospecting_EN_Awareness_X_Live Pool",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-11-10T15:26:38Z",
+       "components": [
+        {
+         "media_key": "3_1981654016300896256",
+         "media_metadata": {
+          "3_1981654016300896256": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/G4A_1B1XUAAOpM5.jpg",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "A collection of 4, 5 & 6 bedroom residences​",
+         "destination": {
+          "url": "https://www.wadisafar.com/en/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_nov25_awr&utm_term=brandedresidence-faena_en&utm_content=livepoolred_display_en#register-interest",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1987904743000387584",
+       "name": "Diriyah Company_Tactical _Faena 2025_UF_KSA_Prospecting_EN_Video Views_Video 12s",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-11-10T15:26:38Z",
+       "components": [
+        {
+         "media_key": "13_1983168790046126080",
+         "media_metadata": {
+          "13_1983168790046126080": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1983168790046126080/vid/avc1/720x720/Pl9YlX-69IUT5OCJ.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1983168790046126080/img/DcOSHICN3vr0KSbO.jpg",
+           "width": 1080,
+           "height": 1080,
+           "video_duration": 12920,
+           "video_aspect_ratio": "1:1"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Live Artfully",
+         "destination": {
+          "url": "https://www.wadisafar.com/en/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_nov25_awr&utm_term=brandedresidence-faena_en&utm_content=faenavideo_video_en#register-interest",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1987904743835144192",
+       "name": "Diriyah Company_Tactical_Faena 2025_UF_KSA_Prospecting_EN_Awareness_X_Live Bonfi",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-11-10T15:26:39Z",
+       "components": [
+        {
+         "media_key": "3_1985607953966149632",
+         "media_metadata": {
+          "3_1985607953966149632": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/G45L6fdXsAANspv.jpg",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "A collection of 4, 5 & 6 bedroom residences​",
+         "destination": {
+          "url": "https://www.wadisafar.com/en/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_nov25_awr&utm_term=brandedresidence-faena_en&utm_content=livebonfirered_display_en#register-interest",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1987908413834334208",
+       "name": "Diriyah Company_Tactical _Faena 2025_UF_KSA_Prospecting_EN_Video Views_Video 12s",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-11-10T15:41:14Z",
+       "components": [
+        {
+         "media_key": "13_1983168790046126080",
+         "media_metadata": {
+          "13_1983168790046126080": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1983168790046126080/vid/avc1/720x720/Pl9YlX-69IUT5OCJ.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1983168790046126080/img/DcOSHICN3vr0KSbO.jpg",
+           "width": 1080,
+           "height": 1080,
+           "video_duration": 12920,
+           "video_aspect_ratio": "1:1"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Live Artfully",
+         "destination": {
+          "url": "https://www.wadisafar.com/en/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_nov25&utm_term=brandedresidence-faena_en&utm_content=faenavideo_video_en#register-interest",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1987908503613362176",
+       "name": "Diriyah Company_Tactical _Faena 2025_UF_KSA_Prospecting_AR_Video Views_Video 12s",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-11-10T15:41:35Z",
+       "components": [
+        {
+         "media_key": "13_1983168790046126080",
+         "media_metadata": {
+          "13_1983168790046126080": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1983168790046126080/vid/avc1/720x720/Pl9YlX-69IUT5OCJ.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1983168790046126080/img/DcOSHICN3vr0KSbO.jpg",
+           "width": 1080,
+           "height": 1080,
+           "video_duration": 12920,
+           "video_aspect_ratio": "1:1"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "انعم برغد العيش في تحفة فنية",
+         "destination": {
+          "url": "https://www.wadisafar.com/ar/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_nov25&utm_term=brandedresidence-faena_ar&utm_content=faenavideo_video_ar#register-interest",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1987908909416538112",
+       "name": "Diriyah Company_Tactical _Faena 2025_MF_KSA_Prospecting_EN_Traffic_Live Red Caro",
+       "card_type": "IMAGE_CAROUSEL_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-11-10T15:43:12Z",
+       "components": [
+        {
+         "media_keys": [
+          "3_1981655223299940352",
+          "3_1981655253683429376",
+          "3_1981655277486092288",
+          "3_1981655303750889472"
+         ],
+         "media_metadata": {
+          "3_1981655303750889472": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/G4BA_99XMAAARjw.jpg",
+           "width": 800,
+           "height": 800
+          },
+          "3_1981655277486092288": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/G4BA-cHWMAAz1lN.jpg",
+           "width": 800,
+           "height": 800
+          },
+          "3_1981655253683429376": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/G4BA9DcWYAAbNS1.jpg",
+           "width": 800,
+           "height": 800
+          },
+          "3_1981655223299940352": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/G4BA7SQXIAACADd.jpg",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "SWIPEABLE_MEDIA"
+        },
+        {
+         "title": "A collection of 4, 5 & 6 bedroom residences​",
+         "destination": {
+          "url": "https://www.wadisafar.com/en/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_nov25_cond&utm_term=brandedresidence-faena_en&utm_content=liveredcarousel_display_en#register-interest",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1987913496387063808",
+       "name": "Diriyah Company_Tactical _Faena 2025_MF_KSA_Prospecting_AR_Traffic_Live Red Caro",
+       "card_type": "IMAGE_CAROUSEL_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-11-10T16:01:25Z",
+       "components": [
+        {
+         "media_keys": [
+          "3_1981667745772060672",
+          "3_1981667771285958656",
+          "3_1981667796510519296",
+          "3_1981667817385525249"
+         ],
+         "media_metadata": {
+          "3_1981667771285958656": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/G4BMVrJW8AA47eP.jpg",
+           "width": 800,
+           "height": 800
+          },
+          "3_1981667796510519296": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/G4BMXJHXMAA6KHW.jpg",
+           "width": 800,
+           "height": 800
+          },
+          "3_1981667745772060672": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/G4BMUMGXwAApNrg.jpg",
+           "width": 800,
+           "height": 800
+          },
+          "3_1981667817385525249": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/G4BMYW4WgAE6rna.jpg",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "SWIPEABLE_MEDIA"
+        },
+        {
+         "title": "فلل فاخرة مكونة من ٤، ٥، ٦ غرف نوم​",
+         "destination": {
+          "url": "https://www.wadisafar.com/ar/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_nov25_cond&utm_term=brandedresidence-faena_ar&utm_content=liveredcarousel_display_ar#register-interest",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1988614793859825664",
+       "name": "Diriyah Company_Tactical _Faena 2025_UF_KSA_Prospecting_AR_Video Views_Video Cut",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-11-12T14:28:08Z",
+       "components": [
+        {
+         "media_key": "13_1988614349154549760",
+         "media_metadata": {
+          "13_1988614349154549760": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1988614349154549760/vid/avc1/540x540/DRBu0OvnZzg56YNK.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1988614349154549760/img/uTH6Wy3SqcbxBfoR.jpg",
+           "width": 1080,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "1:1"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "فايينا ريزيدنسز وادي صفار",
+         "destination": {
+          "url": "https://www.wadisafar.com/ar/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_nov25_awr&utm_term=brandedresidence-faena_ar&utm_content=faenacutdowns1_video_ar#register-interest",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1988615084005044224",
+       "name": "Diriyah Company_Tactical _Faena 2025_UF_KSA_Prospecting_EN_Video Views_Video Cut",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-11-12T14:29:17Z",
+       "components": [
+        {
+         "media_key": "13_1988616193570476032",
+         "media_metadata": {
+          "13_1988616193570476032": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1988616193570476032/vid/avc1/720x720/3c7KwaeRoC3SiRpL.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1988616193570476032/img/xGDiUL-GYGjn3dJk.jpg",
+           "width": 1080,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "1:1"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Faena Residences Wadi Safar ",
+         "destination": {
+          "url": "https://www.wadisafar.com/en/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_nov25_awr&utm_term=brandedresidence-faena_en&utm_content=faenacutdowns1_video_en#register-interest",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1988616427952373760",
+       "name": "Diriyah Company_Tactical _Faena 2025_UF_KSA_Prospecting_EN_Video Views_Video Cut",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-11-12T14:34:37Z",
+       "components": [
+        {
+         "media_key": "13_1988616193570476032",
+         "media_metadata": {
+          "13_1988616193570476032": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1988616193570476032/vid/avc1/720x720/3c7KwaeRoC3SiRpL.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1988616193570476032/img/xGDiUL-GYGjn3dJk.jpg",
+           "width": 1080,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "1:1"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Faena Residences Wadi Safar ",
+         "destination": {
+          "url": "https://www.wadisafar.com/en/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_nov25&utm_term=brandedresidence-faena_en&utm_content=faenacutdowns1_video_en#register-interest",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1988617862228164608",
+       "name": "Diriyah Company_Tactical _Faena 2025_UF_KSA_Prospecting_AR_Video Views_Video Cut",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-11-12T14:40:19Z",
+       "components": [
+        {
+         "media_key": "13_1988617649560211456",
+         "media_metadata": {
+          "13_1988617649560211456": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1988617649560211456/vid/avc1/540x540/9FTrXyriZUOZWUwM.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1988617649560211456/img/3gfv3mSxRiFvTLqJ.jpg",
+           "width": 1080,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "1:1"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "فايينا ريزيدنسز وادي صفار",
+         "destination": {
+          "url": "https://www.wadisafar.com/ar/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_nov25&utm_term=brandedresidence-faena_ar&utm_content=faenacutdowns1_video_ar#register-interest",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1988618863576231936",
+       "name": "Diriyah Company_Tactical _Faena 2025_UF_KSA_Prospecting_EN_Video Views_Video Cut",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-11-12T14:44:18Z",
+       "components": [
+        {
+         "media_key": "13_1988618468074377216",
+         "media_metadata": {
+          "13_1988618468074377216": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1988618468074377216/vid/avc1/720x720/ZsO7o99SuiPT7ugU.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1988618468074377216/img/z9msZtNN0jq9vFTk.jpg",
+           "width": 1080,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "1:1"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Faena Residences Wadi Safar ",
+         "destination": {
+          "url": "https://www.wadisafar.com/en/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_nov25_awr&utm_term=brandedresidence-faena_en&utm_content=faenacutdowns2_video_en#register-interest",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1988619457267408897",
+       "name": "Diriyah Company_Tactical _Faena 2025_UF_KSA_Prospecting_EN_Video Views_Video Cut",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-11-12T14:46:40Z",
+       "components": [
+        {
+         "media_key": "13_1988619322118504448",
+         "media_metadata": {
+          "13_1988619322118504448": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1988619322118504448/vid/avc1/320x320/20ZcvEdf1eMfDLOR.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1988619322118504448/img/45yrEq4PISWqJOxd.jpg",
+           "width": 1080,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "1:1"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Faena Residences Wadi Safar ",
+         "destination": {
+          "url": "https://www.wadisafar.com/en/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_nov25_awr&utm_term=brandedresidence-faena_en&utm_content=faenacutdowns3_video_en#register-interest",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1988619605846446081",
+       "name": "Diriyah Company_Tactical _Faena 2025_UF_KSA_Prospecting_AR_Video Views_Video Cut",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-11-12T14:47:15Z",
+       "components": [
+        {
+         "media_key": "13_1988617649560211456",
+         "media_metadata": {
+          "13_1988617649560211456": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1988617649560211456/vid/avc1/540x540/9FTrXyriZUOZWUwM.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1988617649560211456/img/3gfv3mSxRiFvTLqJ.jpg",
+           "width": 1080,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "1:1"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "فايينا ريزيدنسز وادي صفار",
+         "destination": {
+          "url": "https://www.wadisafar.com/ar/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_nov25_awr&utm_term=brandedresidence-faena_ar&utm_content=faenacutdowns2_video_ar#register-interest",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1988620020814053376",
+       "name": "Diriyah Company_Tactical _Faena 2025_UF_KSA_Prospecting_AR_Video Views_Video Cut",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-11-12T14:48:54Z",
+       "components": [
+        {
+         "media_key": "13_1988619528939667456",
+         "media_metadata": {
+          "13_1988619528939667456": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1988619528939667456/vid/avc1/320x320/3n3R9Hkucjd5Vefb.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1988619528939667456/img/NzlpmgRDcFRc6zhr.jpg",
+           "width": 1080,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "1:1"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "فايينا ريزيدنسز وادي صفار",
+         "destination": {
+          "url": "https://www.wadisafar.com/ar/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_nov25_awr&utm_term=brandedresidence-faena_ar&utm_content=faenacutdowns3_video_ar#register-interest",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1988620482900611072",
+       "name": "Diriyah Company_Tactical _Faena 2025_UF_KSA_Prospecting_EN_Video Views_Video Cut",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-11-12T14:50:44Z",
+       "components": [
+        {
+         "media_key": "13_1988620286984691712",
+         "media_metadata": {
+          "13_1988620286984691712": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1988620286984691712/vid/avc1/540x540/01FSDuiZjjnGYbf8.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1988620286984691712/img/cG7tQC1_j4bE4B0P.jpg",
+           "width": 1080,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "1:1"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Faena Residences Wadi Safar ",
+         "destination": {
+          "url": "https://www.wadisafar.com/en/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_nov25&utm_term=brandedresidence-faena_en&utm_content=faenacutdowns2_video_en#register-interest",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1988620482959339520",
+       "name": "Diriyah Company_Tactical _Faena 2025_UF_KSA_Prospecting_EN_Video Views_Video Cut",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-11-12T14:50:44Z",
+       "components": [
+        {
+         "media_key": "13_1988620403896623104",
+         "media_metadata": {
+          "13_1988620403896623104": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1988620403896623104/vid/avc1/320x320/dcg8X9XgyoY4Goqq.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1988620403896623104/img/s73cO66HMPfy862X.jpg",
+           "width": 1080,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "1:1"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Faena Residences Wadi Safar ",
+         "destination": {
+          "url": "https://www.wadisafar.com/en/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_nov25&utm_term=brandedresidence-faena_en&utm_content=faenacutdowns3_video_en#register-interest",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1988620958174007296",
+       "name": "Diriyah Company_Tactical _Faena 2025_UF_KSA_Prospecting_AR_Video Views_Video Cut",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-11-12T14:52:37Z",
+       "components": [
+        {
+         "media_key": "13_1988620835092144128",
+         "media_metadata": {
+          "13_1988620835092144128": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1988620835092144128/vid/avc1/320x320/t_mHkdN4CTbQg1qZ.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1988620835092144128/img/pxoyddxqlrZ1ZNE4.jpg",
+           "width": 1080,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "1:1"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "فايينا ريزيدنسز وادي صفار",
+         "destination": {
+          "url": "https://www.wadisafar.com/ar/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_nov25&utm_term=brandedresidence-faena_ar&utm_content=faenacutdowns3_video_ar#register-interest",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1988909079880953856",
+       "name": "Diriyah Company_Tactical_Faena 2025_UF_KSA_Prospecting_AR_Awareness_X_Faena Cutd",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-11-13T09:57:31Z",
+       "components": [
+        {
+         "media_key": "13_1988622917022945280",
+         "media_metadata": {
+          "13_1988622917022945280": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1988622917022945280/vid/avc1/320x320/p4cKtiXJyM4hZyEH.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1988622917022945280/img/NKiVc96oCha_gGgn.jpg",
+           "width": 1080,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "1:1"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "فلل فاخرة مكونة من ٤، ٥، ٦ غرف نوم​",
+         "destination": {
+          "url": "https://www.wadisafar.com/ar/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_awr&utm_term=brandedresidence-faena_ar&utm_content=faenacutdowns2_video_ar#register-interest",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1988915363996946432",
+       "name": "Diriyah Company_Tactical_Faena 2025_UF_KSA_Prospecting_AR_Awareness_X_Faena Cutd",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-11-13T10:22:29Z",
+       "components": [
+        {
+         "media_key": "13_1988622917022945280",
+         "media_metadata": {
+          "13_1988622917022945280": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1988622917022945280/vid/avc1/320x320/p4cKtiXJyM4hZyEH.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1988622917022945280/img/NKiVc96oCha_gGgn.jpg",
+           "width": 1080,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "1:1"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "فايينا ريزيدنسز وادي صفار",
+         "destination": {
+          "url": "https://www.wadisafar.com/ar/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_nov25_awr&utm_term=brandedresidence-faena_ar&utm_content=faenacutdowns2_video_ar#register-interest",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1988916740835930112",
+       "name": "Diriyah Company_Tactical _Faena 2025_UF_KSA_Prospecting_AR_Video Views_Faena Cut",
+       "card_type": "VIDEO_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-11-13T10:27:57Z",
+       "components": [
+        {
+         "media_key": "13_1988622917022945280",
+         "media_metadata": {
+          "13_1988622917022945280": {
+           "type": "VIDEO",
+           "url": "https://video.twimg.com/amplify_video/1988622917022945280/vid/avc1/320x320/p4cKtiXJyM4hZyEH.mp4?tag=14",
+           "video_poster_url": "https://pbs.twimg.com/amplify_video_thumb/1988622917022945280/img/NKiVc96oCha_gGgn.jpg",
+           "width": 1080,
+           "height": 1080,
+           "video_duration": 15048,
+           "video_aspect_ratio": "1:1"
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "فايينا ريزيدنسز وادي صفار",
+         "destination": {
+          "url": "https://www.wadisafar.com/ar/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_nov25&utm_term=brandedresidence-faena_ar&utm_content=faenacutdowns2_video_ar#register-interest",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1999450826457382913",
+       "name": "Diriyah Company_Tactical _Cityscape Al Hadawi 2025_LF_KSA_Prospecting_EN_Convers",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-12-12T12:06:39Z",
+       "components": [
+        {
+         "media_key": "3_1999365470840057856",
+         "media_metadata": {
+          "3_1999365470840057856": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/G78sTXmacAAC1fS.jpg",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Manazel AlHadawi",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=hs-cityscape_dec25_conv&utm_term=cityscape_en&utm_content=entrance_display_en#register-interest-form",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1999450826465783808",
+       "name": "Diriyah Company_Tactical_Cityscape Al Hadawi 2025_LF_KSA_Prospecting_EN_Conversi",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-12-12T12:06:39Z",
+       "components": [
+        {
+         "media_key": "3_1999365366108315648",
+         "media_metadata": {
+          "3_1999365366108315648": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/G78sNRca4AAH47N.jpg",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Manazel AlHadawi",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=hs-cityscape_dec25_conv&utm_term=cityscape_en&utm_content=launchbuilding_display_en#register-interest-form",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1999450826486743042",
+       "name": "Diriyah Company_Tactical _Cityscape Al Hadawi 2025_LF_KSA_Prospecting_EN_Convers",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-12-12T12:06:39Z",
+       "components": [
+        {
+         "media_key": "3_1999439110063398913",
+         "media_metadata": {
+          "3_1999439110063398913": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/G79vRvFaIAEmyqE.jpg",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "Manazel AlHadawi",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=hs-cityscape_dec25_conv&utm_term=cityscape_en&utm_content=launchpool_display_en#register-interest-form",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1999450826524491778",
+       "name": "Diriyah Company_Tactical _Cityscape Al Hadawi 2025_LF_KSA_Prospecting_AR_Convers",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-12-12T12:06:39Z",
+       "components": [
+        {
+         "media_key": "3_1999441612037042176",
+         "media_metadata": {
+          "3_1999441612037042176": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/G79xjXqaMAAL948.jpg",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "منازل الحداوي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=hs-cityscape_dec25_conv&utm_term=cityscape_ar&utm_content=launchbuilding_display_ar#register-interest-form",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1999450826570715136",
+       "name": "Diriyah Company_Tactical _Cityscape Al Hadawi 2025_LF_KSA_Prospecting_AR_Convers",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-12-12T12:06:39Z",
+       "components": [
+        {
+         "media_key": "3_1999442043714830340",
+         "media_metadata": {
+          "3_1999442043714830340": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/G79x8fyagAQ7JPV.jpg",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "منازل الحداوي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=hs-cityscape_dec25_conv&utm_term=cityscape_ar&utm_content=entrance_display_ar#register-interest-form",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "1999450826897764352",
+       "name": "Diriyah Company_Tactical _Cityscape Al Hadawi 2025_LF_KSA_Prospecting_AR_Convers",
+       "card_type": "IMAGE_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-12-12T12:06:39Z",
+       "components": [
+        {
+         "media_key": "3_1999441778886557696",
+         "media_metadata": {
+          "3_1999441778886557696": {
+           "type": "IMAGE",
+           "url": "https://pbs.twimg.com/media/G79xtFObwAAw5Qw.jpg",
+           "width": 800,
+           "height": 800
+          }
+         },
+         "type": "MEDIA"
+        },
+        {
+         "title": "منازل الحداوي",
+         "destination": {
+          "url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=x&utm_medium=paid-social&utm_campaign=hs-cityscape_dec25_conv&utm_term=cityscape_ar&utm_content=launchpool_display_ar#register-interest-form",
+          "type": "WEBSITE"
+         },
+         "type": "DETAILS"
+        }
+       ]
+      },
+      {
+       "id": "2000940602851258368",
+       "name": "Interior Beige Carousel - AR",
+       "card_type": "IMAGE_MULTI_DEST_CAROUSEL_WEBSITE",
+       "deleted": false,
+       "updated_at": "2025-12-16T14:46:30Z",
+       "slides": [
+        [
+         {
+          "media_key": "3_2000901567587684352",
+          "media_metadata": {
+           "3_2000901567587684352": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/G8ShX96WEAAuY4q.png",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "فايينا ريزيدنسز وادي صفار",
+          "destination": {
+           "url": "https://www.wadisafar.com/ar/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_dec25_cond&utm_term=brandedresidence-faena_ar&utm_content=interiorbeigecarousel_display_ar#register-interest",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_2000901610516447236",
+          "media_metadata": {
+           "3_2000901610516447236": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/G8Shad1XAAQv-02.png",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "فايينا ريزيدنسز وادي صفار",
+          "destination": {
+           "url": "https://www.wadisafar.com/ar/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_dec25_cond&utm_term=brandedresidence-faena_ar&utm_content=interiorbeigecarousel_display_ar#register-interest",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_2000901876422729733",
+          "media_metadata": {
+           "3_2000901876422729733": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/G8Shp8aW4AUkgxE.png",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "فايينا ريزيدنسز وادي صفار",
+          "destination": {
+           "url": "https://www.wadisafar.com/ar/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_dec25_cond&utm_term=brandedresidence-faena_ar&utm_content=interiorbeigecarousel_display_ar#register-interest",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ],
+        [
+         {
+          "media_key": "3_2000901902175748103",
+          "media_metadata": {
+           "3_2000901902175748103": {
+            "type": "IMAGE",
+            "url": "https://pbs.twimg.com/media/G8ShrcWWwAcqI5J.png",
+            "width": 800,
+            "height": 800
+           }
+          },
+          "type": "MEDIA"
+         },
+         {
+          "title": "فايينا ريزيدنسز وادي صفار",
+          "destination": {
+           "url": "https://www.wadisafar.com/ar/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_dec25_cond&utm_term=brandedresidence-faena_ar&utm_content=interiorbeigecarousel_display_ar#register-interest",
+           "type": "WEBSITE"
+          },
+          "type": "DETAILS"
+         }
+        ]
+       ]
+      }
+     ]
+    },
+    "meta": {
+     "mcp_result_projection": {
+      "fields": [
+       "id",
+       "name",
+       "card_type",
+       "deleted",
+       "updated_at",
+       "components",
+       "slides"
+      ],
+      "max_items": 2000
+     }
+    }
+   },
+   "meta": {
+    "requestId": "fb1e75ac-4c1c-40f5-8b1f-8a0e078e683e",
+    "latencyMs": 1671
+   }
+  }
+ }
+]

@@ -1,0 +1,3196 @@
+[
+ {
+  "tool_use_id": "toolu_01Tzqs5W98L6n66hPwBdhFwQ",
+  "input": {
+   "action": "GET_AD_ACCOUNT",
+   "account_id": "18ce55o46ul",
+   "path_params": {
+    "account_id": "18ce55o46ul"
+   },
+   "compact": true
+  },
+  "result": {
+   "success": true,
+   "data": {
+    "success": true,
+    "data": {
+     "request": {
+      "params": {
+       "account_id": "18ce55o46ul"
+      }
+     },
+     "data": {
+      "name": "H&S-DiriyahCo",
+      "timezone": "Asia/Riyadh",
+      "timezone_switch_at": "2024-02-17T21:00:00Z",
+      "country_code": "SA",
+      "id": "18ce55o46ul",
+      "created_at": "2024-02-15T13:18:56Z",
+      "updated_at": "2026-10-13T10:54:03Z",
+      "approval_status": "ACCEPTED",
+      "deleted": false
+     }
+    },
+    "meta": {
+     "mcp_result_projection": {
+      "compact": true
+     }
+    }
+   },
+   "meta": {
+    "requestId": "866ffc00-0a29-41a8-9765-866d36ddff46",
+    "latencyMs": 1574
+   }
+  }
+ },
+ {
+  "tool_use_id": "toolu_01BUKCyvPBJYX1n7jgV2cBQy",
+  "input": {
+   "action": "LIST_CAMPAIGNS",
+   "account_id": "18ce55o46ul",
+   "path_params": {
+    "account_id": "18ce55o46ul"
+   },
+   "params": {
+    "count": 1000,
+    "with_deleted": true,
+    "with_draft": true,
+    "with_total_count": true
+   },
+   "result_fields": [
+    "id",
+    "name",
+    "entity_status",
+    "servable",
+    "reasons_not_servable",
+    "effective_status",
+    "deleted",
+    "start_time",
+    "end_time",
+    "created_at",
+    "updated_at"
+   ],
+   "max_items": 2000,
+   "compact": true
+  },
+  "result": {
+   "success": true,
+   "data": {
+    "success": true,
+    "data": {
+     "request": {
+      "params": {
+       "count": 1000,
+       "with_draft": true,
+       "with_total_count": true,
+       "account_id": "18ce55o46ul",
+       "with_deleted": true
+      }
+     },
+     "data": [
+      {
+       "id": "lbcie",
+       "name": "DiriyahCompany_FoundingDay2024_UF_VID_KSA_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "created_at": "2024-02-22T14:15:54Z",
+       "updated_at": "2026-07-30T12:00:50Z"
+      },
+      {
+       "id": "lhels",
+       "name": "RitzCarlton_2024Superseded_LF_CONV_KSA_ENAR_X",
+       "entity_status": "PAUSED",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "PAUSED_BY_ADVERTISER",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "PAUSED",
+       "deleted": false,
+       "created_at": "2024-03-22T13:24:51Z",
+       "updated_at": "2026-07-30T12:01:02Z"
+      },
+      {
+       "id": "lhton",
+       "name": "RitzCarlton_2024_LF_CONV_KSA_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "created_at": "2024-03-25T11:29:42Z",
+       "updated_at": "2026-07-30T12:01:06Z"
+      },
+      {
+       "id": "li86r",
+       "name": "Corinthia_2024Superseded_LF_CONV_KSA_ENAR_X",
+       "entity_status": "PAUSED",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "PAUSED_BY_ADVERTISER",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "PAUSED",
+       "deleted": false,
+       "created_at": "2024-03-27T13:41:00Z",
+       "updated_at": "2026-07-30T12:01:10Z"
+      },
+      {
+       "id": "ljl8a",
+       "name": "Corinthia_2024_UF_AWR_KSA_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "created_at": "2024-04-05T10:56:48Z",
+       "updated_at": "2026-07-30T12:01:32Z"
+      },
+      {
+       "id": "ln687",
+       "name": "Baccarat_2024_LF_CONV_KSA_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "created_at": "2024-04-30T15:15:12Z",
+       "updated_at": "2026-07-30T12:01:35Z"
+      },
+      {
+       "id": "lnegm",
+       "name": "Baccarat_2024_UF_AWR_KSA_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "created_at": "2024-05-02T06:51:26Z",
+       "updated_at": "2026-07-30T12:01:39Z"
+      },
+      {
+       "id": "lqz63",
+       "name": "Corinthia_2024_LF_CONV_KSA_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "created_at": "2024-05-30T08:53:45Z",
+       "updated_at": "2026-07-30T12:01:52Z"
+      },
+      {
+       "id": "m5abp",
+       "name": "SaudiNationalDay_2024_UF_AWR_KSA_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "created_at": "2024-09-20T13:05:19Z",
+       "updated_at": "2026-07-30T12:01:56Z"
+      },
+      {
+       "id": "m8vjv",
+       "name": "CityOfEarth_Phase12024_UF_AWR_KSA_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "created_at": "2024-10-17T10:32:11Z",
+       "updated_at": "2026-07-30T12:02:00Z"
+      },
+      {
+       "id": "mck6c",
+       "name": "Diriyah Company_Tactical_Ritz Signature 2024_UF_KSA_Awareness_X_EN/AR",
+       "entity_status": "DRAFT",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "DRAFT",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "DRAFT",
+       "deleted": false,
+       "created_at": "2024-11-12T15:06:27Z",
+       "updated_at": "2025-07-30T14:22:20Z"
+      },
+      {
+       "id": "mcka1",
+       "name": "Diriyah Company_Tactical_Raffles_UF_KSA_Awareness_X_EN/AR",
+       "entity_status": "DRAFT",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "DRAFT",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "DRAFT",
+       "deleted": false,
+       "created_at": "2024-11-12T15:23:18Z",
+       "updated_at": "2025-07-07T06:13:46Z"
+      },
+      {
+       "id": "mcpqv",
+       "name": "Diriyah Company_Tactical_Ritz Signature 2024_UF_KSA_Awareness_X_EN/AR",
+       "entity_status": "DRAFT",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "DRAFT",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "DRAFT",
+       "deleted": false,
+       "created_at": "2024-11-13T13:28:18Z",
+       "updated_at": "2025-07-30T14:22:12Z"
+      },
+      {
+       "id": "mvycf",
+       "name": "CityOfEarth_Phase22025_UF_AWR_KSA_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "created_at": "2025-03-21T13:08:41Z",
+       "updated_at": "2026-07-30T12:02:12Z"
+      },
+      {
+       "id": "n020e",
+       "name": "DiriyahCompany_BusinessOfFashion2025_UF_AWR_UAE_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "created_at": "2025-04-08T10:08:27Z",
+       "updated_at": "2026-07-30T12:02:16Z"
+      },
+      {
+       "id": "n0xpw",
+       "name": "Armani_2025_LF_CONV_KSA_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "created_at": "2025-04-11T11:56:01Z",
+       "updated_at": "2026-07-30T12:02:19Z"
+      },
+      {
+       "id": "n0xr0",
+       "name": "Armani_2025_LF_CONV_UAE_ENAR_X",
+       "entity_status": "PAUSED",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "PAUSED_BY_ADVERTISER",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "PAUSED",
+       "deleted": false,
+       "created_at": "2025-04-11T11:59:53Z",
+       "updated_at": "2026-07-30T12:02:30Z"
+      },
+      {
+       "id": "n0xs0",
+       "name": "Armani_2025_LF_CONV_QAT_ENAR_X",
+       "entity_status": "PAUSED",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "PAUSED_BY_ADVERTISER",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "PAUSED",
+       "deleted": false,
+       "created_at": "2025-04-11T12:03:50Z",
+       "updated_at": "2026-07-30T12:02:34Z"
+      },
+      {
+       "id": "n0xt2",
+       "name": "Armani_2025_LF_CONV_KWT_ENAR_X",
+       "entity_status": "PAUSED",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "PAUSED_BY_ADVERTISER",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "PAUSED",
+       "deleted": false,
+       "created_at": "2025-04-11T12:07:25Z",
+       "updated_at": "2026-07-30T12:02:37Z"
+      },
+      {
+       "id": "n1i36",
+       "name": "LifeInDiriyah_Proposition2025_UF_AWR_KSA_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "created_at": "2025-04-14T11:18:44Z",
+       "updated_at": "2026-07-30T12:02:47Z"
+      },
+      {
+       "id": "n42ik",
+       "name": "DiriyahCompany_ATM2025_UF_AWR_UAE_ENAR_X",
+       "entity_status": "PAUSED",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "PAUSED_BY_ADVERTISER",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "PAUSED",
+       "deleted": false,
+       "created_at": "2025-04-24T14:30:32Z",
+       "updated_at": "2026-07-30T12:02:50Z"
+      },
+      {
+       "id": "n6vys",
+       "name": "LifeInDiriyah_Residential2025_UF_AWR_KSA_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "created_at": "2025-05-05T11:58:10Z",
+       "updated_at": "2026-07-30T12:04:35Z"
+      },
+      {
+       "id": "n9kxx",
+       "name": "LifeInDiriyah_Commercial2025_UF_AWR_KSA_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "created_at": "2025-05-15T07:52:18Z",
+       "updated_at": "2026-07-30T12:04:20Z"
+      },
+      {
+       "id": "nbxps",
+       "name": "LifeInDiriyah_Retail2025_UF_AWR_KSA_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "created_at": "2025-05-26T13:12:48Z",
+       "updated_at": "2026-07-30T12:04:25Z"
+      },
+      {
+       "id": "nyalc",
+       "name": "SaudiNationalDay_2025_UF_AWR_KSA_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "created_at": "2025-09-21T07:05:12Z",
+       "updated_at": "2026-07-30T12:04:38Z"
+      },
+      {
+       "id": "nyall",
+       "name": "SaudiNationalDay_2025_UF_VID_KSA_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "created_at": "2025-09-21T07:09:29Z",
+       "updated_at": "2026-07-30T12:04:42Z"
+      },
+      {
+       "id": "o1tby",
+       "name": "Faena_2025_UF_AWR_KSA_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "created_at": "2025-10-23T13:08:16Z",
+       "updated_at": "2026-07-30T12:04:54Z"
+      },
+      {
+       "id": "o1th7",
+       "name": "Faena_2025_MF_TRF_KSA_ENAR_X",
+       "entity_status": "PAUSED",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "PAUSED_BY_ADVERTISER",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "PAUSED",
+       "deleted": false,
+       "created_at": "2025-10-23T13:37:37Z",
+       "updated_at": "2026-07-30T12:04:58Z"
+      },
+      {
+       "id": "o2aud",
+       "name": "Faena_2025_UF_VID_KSA_ENAR_X",
+       "entity_status": "ACTIVE",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "EXPIRED",
+       "deleted": false,
+       "created_at": "2025-10-28T13:51:29Z",
+       "updated_at": "2026-07-30T12:05:02Z"
+      },
+      {
+       "id": "o7bnz",
+       "name": "ManazelAlHadawi_2025_UF_AWR_KSA_ENAR_X",
+       "entity_status": "PAUSED",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "PAUSED_BY_ADVERTISER",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "PAUSED",
+       "deleted": false,
+       "created_at": "2025-12-12T10:50:35Z",
+       "updated_at": "2026-07-30T12:05:12Z"
+      },
+      {
+       "id": "o7bth",
+       "name": "ManazelAlHadawi_2025_LF_CONV_KSA_ENAR_X",
+       "entity_status": "PAUSED",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "PAUSED_BY_ADVERTISER",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "PAUSED",
+       "deleted": false,
+       "created_at": "2025-12-12T11:37:21Z",
+       "updated_at": "2026-07-30T12:05:16Z"
+      },
+      {
+       "id": "oom3v",
+       "name": "BabSamhan_EidSummer2026Superseded_UF_AWR_KSA_ENAR_X",
+       "entity_status": "PAUSED",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "PAUSED_BY_ADVERTISER",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "PAUSED",
+       "deleted": false,
+       "created_at": "2026-05-26T05:51:17Z",
+       "updated_at": "2026-07-30T12:05:19Z"
+      },
+      {
+       "id": "oom4e",
+       "name": "BabSamhan_EidSummer2026Superseded_MF_TRF_KSA_ENAR_X",
+       "entity_status": "PAUSED",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "PAUSED_BY_ADVERTISER",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "PAUSED",
+       "deleted": false,
+       "created_at": "2026-05-26T05:54:27Z",
+       "updated_at": "2026-07-30T12:05:30Z"
+      },
+      {
+       "id": "oom4m",
+       "name": "Zallal_Summer2026Superseded_MF_TRF_KSA_ENAR_X",
+       "entity_status": "PAUSED",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "PAUSED_BY_ADVERTISER",
+        "FUNDING_PROBLEM"
+       ],
+       "effective_status": "PAUSED",
+       "deleted": false,
+       "created_at": "2026-05-26T05:56:43Z",
+       "updated_at": "2026-07-30T12:05:34Z"
+      },
+      {
+       "id": "orbmh",
+       "name": "ManazelAlHadawi_AlwaysOnSuperseded_UF_AWR_KSA_ENAR_X_20260603-20260930_BO11111",
+       "entity_status": "PAUSED",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "PAUSED_BY_ADVERTISER"
+       ],
+       "effective_status": "PAUSED",
+       "deleted": false,
+       "created_at": "2026-06-09T12:26:56Z",
+       "updated_at": "2026-07-30T12:05:38Z"
+      },
+      {
+       "id": "orbmk",
+       "name": "ManazelAlHadawi_AlwaysOnSuperseded_MF_TRF_KSA_ENAR_X_20260603-20260930_BO11111",
+       "entity_status": "PAUSED",
+       "servable": false,
+       "reasons_not_servable": [
+        "EXPIRED",
+        "PAUSED_BY_ADVERTISER"
+       ],
+       "effective_status": "PAUSED",
+       "deleted": false,
+       "created_at": "2026-06-09T12:26:59Z",
+       "updated_at": "2026-07-30T12:05:49Z"
+      },
+      {
+       "id": "osvh1",
+       "name": "ManazelAlHadawi_AlwaysOn_UF_AWR_KSA_ENAR_X_20260603-20260930_BO11111",
+       "entity_status": "PAUSED",
+       "servable": false,
+       "reasons_not_servable": [
+        "PAUSED_BY_ADVERTISER"
+       ],
+       "effective_status": "PAUSED",
+       "deleted": false,
+       "created_at": "2026-06-15T10:15:42Z",
+       "updated_at": "2026-10-13T10:49:14Z"
+      },
+      {
+       "id": "ou6sp",
+       "name": "LifeInDiriyah_AlwaysOnSuperseded_UF_AWR_KSA_ENAR_X_20260623-20261223_BO11111",
+       "entity_status": "PAUSED",
+       "servable": false,
+       "reasons_not_servable": [
+        "PAUSED_BY_ADVERTISER"
+       ],
+       "effective_status": "PAUSED",
+       "deleted": false,
+       "created_at": "2026-06-23T10:44:48Z",
+       "updated_at": "2026-07-30T12:05:57Z"
+      },
+      {
+       "id": "ou7mx",
+       "name": "LifeInDiriyah_AlwaysOn_UF_AWR_KSA_ENAR_X_20260623-20261223_BO11111",
+       "entity_status": "ACTIVE",
+       "servable": true,
+       "reasons_not_servable": [],
+       "effective_status": "RUNNING",
+       "deleted": false,
+       "created_at": "2026-06-23T13:02:29Z",
+       "updated_at": "2026-09-21T23:17:04Z"
+      },
+      {
+       "id": "owpmd",
+       "name": "ManazelAlHadawi_AlwaysOn_MF_TRF_KSA_ENAR_X_20260603-20260930_BO11111",
+       "entity_status": "ACTIVE",
+       "servable": true,
+       "reasons_not_servable": [],
+       "effective_status": "RUNNING",
+       "deleted": false,
+       "created_at": "2026-07-07T03:45:49Z",
+       "updated_at": "2026-09-22T14:11:02Z"
+      },
+      {
+       "id": "oysbu",
+       "name": "LifeInDiriyah_AlwaysOn_MF_TRF_KSA_ENAR_X_20260623-20261223_BO11111",
+       "entity_status": "ACTIVE",
+       "servable": true,
+       "reasons_not_servable": [],
+       "effective_status": "RUNNING",
+       "deleted": false,
+       "created_at": "2026-07-15T13:25:40Z",
+       "updated_at": "2026-09-28T17:11:43Z"
+      },
+      {
+       "id": "p00bw",
+       "name": "ManazelAlHadawi_AlwaysOn_LF_CONV_KSA_ENAR_X_20260603-20260930_BO11111",
+       "entity_status": "ACTIVE",
+       "servable": true,
+       "reasons_not_servable": [],
+       "effective_status": "RUNNING",
+       "deleted": false,
+       "created_at": "2026-07-22T09:10:45Z",
+       "updated_at": "2026-10-13T10:31:28Z"
+      },
+      {
+       "id": "p8rhd",
+       "name": "x_company_general_tac_2026_sep_ritz-carlton-signature_cam-id-bb1cac08_mf_cond",
+       "entity_status": "ACTIVE",
+       "servable": true,
+       "reasons_not_servable": [],
+       "effective_status": "RUNNING",
+       "deleted": false,
+       "created_at": "2026-09-09T14:05:31Z",
+       "updated_at": "2026-10-01T10:42:13Z"
+      },
+      {
+       "id": "p9ppt",
+       "name": "x_company_general_tac_2026_sep_ritz-carlton-signature_cam-id-bb1cac08_lf_conv",
+       "entity_status": "ACTIVE",
+       "servable": true,
+       "reasons_not_servable": [],
+       "effective_status": "RUNNING",
+       "deleted": false,
+       "created_at": "2026-09-14T14:56:31Z",
+       "updated_at": "2026-09-21T14:16:58Z"
+      },
+      {
+       "id": "pcgaq",
+       "name": "x_wadi-safar_wadi-safar-chedi_tac_2026_sep_thechediresidences_cam-id-1788ef28_mf_cond_ksa",
+       "entity_status": "PAUSED",
+       "servable": false,
+       "reasons_not_servable": [
+        "DELETED",
+        "PAUSED_BY_ADVERTISER"
+       ],
+       "effective_status": "DELETED",
+       "deleted": true,
+       "created_at": "2026-09-27T15:08:18Z",
+       "updated_at": "2026-09-28T10:07:11Z"
+      },
+      {
+       "id": "pcgar",
+       "name": "x_wadi-safar_wadi-safar-chedi_tac_2026_sep_thechediresidences_cam-id-1788ef28_lf_conv_ksa",
+       "entity_status": "PAUSED",
+       "servable": false,
+       "reasons_not_servable": [
+        "DELETED",
+        "PAUSED_BY_ADVERTISER"
+       ],
+       "effective_status": "DELETED",
+       "deleted": true,
+       "created_at": "2026-09-27T15:08:22Z",
+       "updated_at": "2026-09-29T10:35:58Z"
+      },
+      {
+       "id": "pcl3j",
+       "name": "x_wadi-safar_wadi-safar-chedi_tac_2026_sep_thechediresidences_cam-id-1788ef28_mf_cond_ksa",
+       "entity_status": "PAUSED",
+       "servable": false,
+       "reasons_not_servable": [
+        "DELETED",
+        "PAUSED_BY_ADVERTISER"
+       ],
+       "effective_status": "DELETED",
+       "deleted": true,
+       "created_at": "2026-09-28T10:06:39Z",
+       "updated_at": "2026-09-29T10:35:55Z"
+      },
+      {
+       "id": "pct00",
+       "name": "x_wadi-safar_wadi-safar-chedi_tac_2026_sep_thechediresidences_cam-id-1788ef28_mf_cond_ksa",
+       "entity_status": "ACTIVE",
+       "servable": true,
+       "reasons_not_servable": [],
+       "effective_status": "RUNNING",
+       "deleted": false,
+       "created_at": "2026-09-29T10:33:24Z",
+       "updated_at": "2026-09-29T10:33:24Z"
+      },
+      {
+       "id": "pct0p",
+       "name": "x_wadi-safar_wadi-safar-chedi_tac_2026_sep_thechediresidences_cam-id-1788ef28_lf_conv_ksa",
+       "entity_status": "ACTIVE",
+       "servable": true,
+       "reasons_not_servable": [],
+       "effective_status": "RUNNING",
+       "deleted": false,
+       "created_at": "2026-09-29T10:35:37Z",
+       "updated_at": "2026-09-29T10:47:01Z"
+      },
+      {
+       "id": "pg1tv",
+       "name": "ManazelAlHadawi_AlwaysOn_UF_AWR_KSA_ENAR_X_20260603-20260930_BO11111",
+       "entity_status": "ACTIVE",
+       "servable": true,
+       "reasons_not_servable": [],
+       "effective_status": "RUNNING",
+       "deleted": false,
+       "created_at": "2026-10-13T10:48:18Z",
+       "updated_at": "2026-10-13T10:49:11Z"
+      }
+     ],
+     "total_count": 50
+    },
+    "meta": {
+     "mcp_result_projection": {
+      "fields": [
+       "id",
+       "name",
+       "entity_status",
+       "servable",
+       "reasons_not_servable",
+       "effective_status",
+       "deleted",
+       "start_time",
+       "end_time",
+       "created_at",
+       "updated_at"
+      ],
+      "max_items": 2000,
+      "compact": true
+     }
+    }
+   },
+   "meta": {
+    "requestId": "98d18938-5eea-406e-adc8-3d56802b4eb6",
+    "latencyMs": 1529
+   }
+  }
+ },
+ {
+  "tool_use_id": "toolu_01MvT2ypAPdwrLMGrQDj5j2J",
+  "input": {
+   "action": "LIST_LINE_ITEMS",
+   "account_id": "18ce55o46ul",
+   "path_params": {
+    "account_id": "18ce55o46ul"
+   },
+   "params": {
+    "count": 1000,
+    "with_deleted": true,
+    "with_draft": true,
+    "with_total_count": true
+   },
+   "result_fields": [
+    "id",
+    "campaign_id",
+    "name",
+    "entity_status",
+    "servable",
+    "effective_status",
+    "deleted",
+    "start_time",
+    "end_time",
+    "created_at",
+    "updated_at"
+   ],
+   "max_items": 2000,
+   "compact": true
+  },
+  "result": {
+   "success": true,
+   "data": {
+    "success": true,
+    "data": {
+     "request": {
+      "params": {
+       "count": 1000,
+       "with_draft": true,
+       "with_total_count": true,
+       "account_id": "18ce55o46ul",
+       "with_deleted": true
+      }
+     },
+     "data": [
+      {
+       "id": "rcy9d",
+       "campaign_id": "lbcie",
+       "name": "Founding Day_Video_AR",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2024-02-22T14:06:18Z",
+       "end_time": "2024-02-26T11:00:00Z",
+       "created_at": "2024-02-22T14:15:55Z",
+       "updated_at": "2024-02-26T09:28:42Z"
+      },
+      {
+       "id": "rlq9v",
+       "campaign_id": "lhels",
+       "name": "AR",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2024-03-22T12:58:14Z",
+       "end_time": "2024-06-29T21:00:00Z",
+       "created_at": "2024-03-22T13:24:51Z",
+       "updated_at": "2024-03-22T13:24:51Z"
+      },
+      {
+       "id": "rlq9w",
+       "campaign_id": "lhels",
+       "name": "EN",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2024-03-22T13:15:30Z",
+       "end_time": "2024-06-29T21:00:00Z",
+       "created_at": "2024-03-22T13:24:51Z",
+       "updated_at": "2024-03-22T13:24:51Z"
+      },
+      {
+       "id": "rmd1v",
+       "campaign_id": "lhton",
+       "name": "AR",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2024-03-25T12:30:00Z",
+       "end_time": "2024-06-29T21:00:00Z",
+       "created_at": "2024-03-25T11:29:42Z",
+       "updated_at": "2024-03-25T11:30:55Z"
+      },
+      {
+       "id": "rmd1w",
+       "campaign_id": "lhton",
+       "name": "EN",
+       "entity_status": "PAUSED",
+       "deleted": false,
+       "start_time": "2024-03-25T12:30:00Z",
+       "end_time": "2024-06-29T21:00:00Z",
+       "created_at": "2024-03-25T11:29:42Z",
+       "updated_at": "2024-03-25T12:55:34Z"
+      },
+      {
+       "id": "rmxsz",
+       "campaign_id": "li86r",
+       "name": "Corinthia",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2024-03-27T13:28:26Z",
+       "end_time": "2024-05-31T21:00:00Z",
+       "created_at": "2024-03-27T13:41:00Z",
+       "updated_at": "2024-03-27T15:01:00Z"
+      },
+      {
+       "id": "rox2l",
+       "campaign_id": "ljl8a",
+       "name": "Corinthia_Reach",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2024-04-05T10:41:41Z",
+       "end_time": "2024-06-29T21:00:00Z",
+       "created_at": "2024-04-05T10:56:48Z",
+       "updated_at": "2024-04-05T10:56:48Z"
+      },
+      {
+       "id": "ru3i7",
+       "campaign_id": "ln687",
+       "name": "H&S_Baccarat_Leads_Arabic",
+       "entity_status": "PAUSED",
+       "deleted": false,
+       "start_time": "2024-04-30T21:00:00Z",
+       "end_time": "2024-06-29T21:00:00Z",
+       "created_at": "2024-04-30T15:15:12Z",
+       "updated_at": "2024-05-22T11:22:23Z"
+      },
+      {
+       "id": "ru76s",
+       "campaign_id": "ln687",
+       "name": "H&S_Baccarat_Leads_English",
+       "entity_status": "PAUSED",
+       "deleted": false,
+       "start_time": "2024-04-30T21:00:00Z",
+       "end_time": "2024-06-29T21:00:00Z",
+       "created_at": "2024-05-01T06:22:03Z",
+       "updated_at": "2024-05-22T11:19:25Z"
+      },
+      {
+       "id": "rueqb",
+       "campaign_id": "lnegm",
+       "name": "Promoted Posts - English",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2024-05-02T06:42:17Z",
+       "end_time": "2024-06-29T21:00:00Z",
+       "created_at": "2024-05-02T06:51:26Z",
+       "updated_at": "2024-05-02T07:33:33Z"
+      },
+      {
+       "id": "rueza",
+       "campaign_id": "lnegm",
+       "name": "Promoted Posts - Arabic",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2024-05-02T06:42:17Z",
+       "end_time": "2024-06-29T21:00:00Z",
+       "created_at": "2024-05-02T07:35:45Z",
+       "updated_at": "2024-05-02T07:35:45Z"
+      },
+      {
+       "id": "ryi2d",
+       "campaign_id": "ln687",
+       "name": "[Copy] H&S_Baccarat_Leads_English",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2024-05-22T14:00:00Z",
+       "end_time": "2024-06-29T21:00:00Z",
+       "created_at": "2024-05-22T11:19:08Z",
+       "updated_at": "2024-05-22T11:19:08Z"
+      },
+      {
+       "id": "ryi2z",
+       "campaign_id": "ln687",
+       "name": "[Copy] H&S_Baccarat_Leads_Arabic",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2024-05-22T14:00:00Z",
+       "end_time": "2024-06-29T21:00:00Z",
+       "created_at": "2024-05-22T11:22:08Z",
+       "updated_at": "2024-05-22T11:22:08Z"
+      },
+      {
+       "id": "s0b6k",
+       "campaign_id": "lqz63",
+       "name": "Corinthia English Leads",
+       "entity_status": "PAUSED",
+       "deleted": false,
+       "start_time": "2024-05-30T11:00:00Z",
+       "end_time": "2024-06-29T21:00:00Z",
+       "created_at": "2024-05-30T08:53:45Z",
+       "updated_at": "2024-06-07T06:42:23Z"
+      },
+      {
+       "id": "s0b6l",
+       "campaign_id": "lqz63",
+       "name": "Corinthia Arabic Leads",
+       "entity_status": "PAUSED",
+       "deleted": false,
+       "start_time": "2024-05-30T11:00:00Z",
+       "end_time": "2024-06-29T21:00:00Z",
+       "created_at": "2024-05-30T08:53:45Z",
+       "updated_at": "2024-06-07T06:44:25Z"
+      },
+      {
+       "id": "s21kw",
+       "campaign_id": "lqz63",
+       "name": "[Copy] Corinthia English Leads",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2024-05-30T11:00:00Z",
+       "end_time": "2024-06-29T21:00:00Z",
+       "created_at": "2024-06-07T06:42:03Z",
+       "updated_at": "2024-06-07T06:42:03Z"
+      },
+      {
+       "id": "s21mr",
+       "campaign_id": "lqz63",
+       "name": "[Copy] Corinthia Arabic Leads",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2024-05-30T11:00:00Z",
+       "end_time": "2024-06-29T21:00:00Z",
+       "created_at": "2024-06-07T06:44:14Z",
+       "updated_at": "2024-06-07T06:44:14Z"
+      },
+      {
+       "id": "srnph",
+       "campaign_id": "m5abp",
+       "name": "BI_KSA_AUD_NA_NA_NA",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2024-09-20T12:00:00Z",
+       "end_time": "2024-09-25T20:55:00Z",
+       "created_at": "2024-09-20T13:05:19Z",
+       "updated_at": "2024-09-22T06:14:44Z"
+      },
+      {
+       "id": "t0360",
+       "campaign_id": "m8vjv",
+       "name": "Diriyah_Tactical_City of Earth_UF_KSA_AUD_AR_Awareness_X",
+       "entity_status": "PAUSED",
+       "deleted": false,
+       "start_time": "2024-10-17T09:52:58Z",
+       "end_time": "2024-11-30T20:30:00Z",
+       "created_at": "2024-10-17T10:32:11Z",
+       "updated_at": "2024-11-27T11:21:39Z"
+      },
+      {
+       "id": "t73ow",
+       "campaign_id": "mck6c",
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Ritz Signature_UF_KSA_Prospecting_EN_Awareness_X",
+       "entity_status": "DRAFT",
+       "deleted": false,
+       "start_time": "2024-11-12T14:46:23Z",
+       "end_time": "2025-04-07T20:30:00Z",
+       "created_at": "2024-11-12T15:06:27Z",
+       "updated_at": "2024-11-13T13:18:12Z"
+      },
+      {
+       "id": "t73ox",
+       "campaign_id": "mck6c",
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Ritz Signature_UF_KSA_Prospecting_AR_Awareness_X",
+       "entity_status": "DRAFT",
+       "deleted": false,
+       "start_time": "2024-11-12T14:46:23Z",
+       "end_time": "2025-04-07T20:30:00Z",
+       "created_at": "2024-11-12T15:06:27Z",
+       "updated_at": "2024-11-13T13:18:52Z"
+      },
+      {
+       "id": "t73tr",
+       "campaign_id": "mcka1",
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Raffles_UF_KSA_Prospecting_EN_Awareness_X",
+       "entity_status": "DRAFT",
+       "deleted": false,
+       "start_time": "2024-11-12T15:07:45Z",
+       "end_time": "2025-04-07T20:30:00Z",
+       "created_at": "2024-11-12T15:23:18Z",
+       "updated_at": "2024-11-13T13:13:07Z"
+      },
+      {
+       "id": "t73ts",
+       "campaign_id": "mcka1",
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Raffles_UF_KSA_Prospecting_EN_Awareness_X",
+       "entity_status": "DRAFT",
+       "deleted": false,
+       "start_time": "2024-11-12T15:07:45Z",
+       "end_time": "2025-04-07T20:30:00Z",
+       "created_at": "2024-11-12T15:23:18Z",
+       "updated_at": "2024-11-13T13:13:25Z"
+      },
+      {
+       "id": "t7d4m",
+       "campaign_id": "mcpqv",
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Ritz Signature_UF_KSA_Prospecting_EN_Awareness_X",
+       "entity_status": "DRAFT",
+       "deleted": false,
+       "start_time": "2024-11-13T13:20:24Z",
+       "end_time": "2024-11-14T14:00:00Z",
+       "created_at": "2024-11-13T13:28:18Z",
+       "updated_at": "2024-11-13T13:28:18Z"
+      },
+      {
+       "id": "t7d4n",
+       "campaign_id": "mcpqv",
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Ritz Signature_UF_KSA_Prospecting_AR_Awareness_X",
+       "entity_status": "DRAFT",
+       "deleted": false,
+       "start_time": "2024-11-13T13:20:24Z",
+       "end_time": "2024-11-14T14:00:00Z",
+       "created_at": "2024-11-13T13:28:18Z",
+       "updated_at": "2024-11-13T13:28:18Z"
+      },
+      {
+       "id": "t8nfd",
+       "campaign_id": "m8vjv",
+       "name": "Diriyah_Tactical_City of Earth_UF_KSA_AUD_AR_Awareness_X-Geo",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2024-10-17T09:52:58Z",
+       "end_time": "2024-12-08T20:30:00Z",
+       "created_at": "2024-11-18T10:49:44Z",
+       "updated_at": "2024-12-02T13:28:34Z"
+      },
+      {
+       "id": "u4vrx",
+       "campaign_id": "mvycf",
+       "name": "Diriyah_Tactical_City of Earth_UF_KSA_AUD_AR_Awareness_X",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2025-03-21T13:02:52Z",
+       "end_time": "2025-04-12T20:30:00Z",
+       "created_at": "2025-03-21T13:08:41Z",
+       "updated_at": "2025-03-25T07:12:07Z"
+      },
+      {
+       "id": "uazn9",
+       "campaign_id": "n020e",
+       "name": "Diriyah_Tactical_Business Of Fashion_UF_UAE_Prospecting_EN_Awareness_X",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2025-04-08T10:00:01Z",
+       "end_time": "2025-04-13T20:30:00Z",
+       "created_at": "2025-04-08T10:08:27Z",
+       "updated_at": "2025-04-10T06:34:32Z"
+      },
+      {
+       "id": "uazna",
+       "campaign_id": "n020e",
+       "name": "Diriyah_Tactical_Business Of Fashion_UF_KSA_Prospecting_AR_Awareness_X",
+       "entity_status": "PAUSED",
+       "deleted": false,
+       "start_time": "2025-04-08T10:00:01Z",
+       "end_time": "2025-04-13T20:30:00Z",
+       "created_at": "2025-04-08T10:08:27Z",
+       "updated_at": "2025-04-08T14:36:11Z"
+      },
+      {
+       "id": "ucb7w",
+       "campaign_id": "n0xpw",
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KSA_Prospecting_EN_Conversion_X",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2025-04-11T11:33:57Z",
+       "end_time": "2025-06-30T20:30:00Z",
+       "created_at": "2025-04-11T11:56:01Z",
+       "updated_at": "2025-06-17T07:29:48Z"
+      },
+      {
+       "id": "ucb7x",
+       "campaign_id": "n0xpw",
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KSA_Prospecting_AR_Conversion_X",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2025-04-11T11:33:57Z",
+       "end_time": "2025-06-30T20:30:00Z",
+       "created_at": "2025-04-11T11:56:01Z",
+       "updated_at": "2025-06-17T07:29:21Z"
+      },
+      {
+       "id": "ucb96",
+       "campaign_id": "n0xr0",
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_UAE_Prospecting_EN_Conversion_X",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2025-04-11T11:33:57Z",
+       "end_time": "2025-06-14T20:30:00Z",
+       "created_at": "2025-04-11T11:59:53Z",
+       "updated_at": "2025-04-11T11:59:53Z"
+      },
+      {
+       "id": "ucb97",
+       "campaign_id": "n0xr0",
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_UAE_Prospecting_AR_Conversion_X",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2025-04-11T11:33:57Z",
+       "end_time": "2025-06-14T20:30:00Z",
+       "created_at": "2025-04-11T11:59:53Z",
+       "updated_at": "2025-04-11T11:59:53Z"
+      },
+      {
+       "id": "ucba9",
+       "campaign_id": "n0xs0",
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_QAT_Prospecting_EN_Conversion_X",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2025-04-11T11:33:57Z",
+       "end_time": "2025-06-14T20:30:00Z",
+       "created_at": "2025-04-11T12:03:50Z",
+       "updated_at": "2025-04-11T12:03:50Z"
+      },
+      {
+       "id": "ucbaa",
+       "campaign_id": "n0xs0",
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_QAT_Prospecting_AR_Conversion_X",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2025-04-11T11:33:57Z",
+       "end_time": "2025-06-14T20:30:00Z",
+       "created_at": "2025-04-11T12:03:50Z",
+       "updated_at": "2025-04-11T12:03:50Z"
+      },
+      {
+       "id": "ucbbn",
+       "campaign_id": "n0xt2",
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KWT_Prospecting_EN_Conversion_X",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2025-04-11T11:33:57Z",
+       "end_time": "2025-06-14T20:30:00Z",
+       "created_at": "2025-04-11T12:07:25Z",
+       "updated_at": "2025-04-11T12:07:25Z"
+      },
+      {
+       "id": "ucbbo",
+       "campaign_id": "n0xt2",
+       "name": "Diriyah_Tactical_Branded Residence Campaign - Armani_LF_KWT_Prospecting_AR_Conversion_X",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2025-04-11T11:33:57Z",
+       "end_time": "2025-06-14T20:30:00Z",
+       "created_at": "2025-04-11T12:07:25Z",
+       "updated_at": "2025-04-11T12:07:25Z"
+      },
+      {
+       "id": "ud4nc",
+       "campaign_id": "n1i36",
+       "name": "Diriyah_Tactical_Diriyah Living Campaign_UF_KSA_Prospecting_EN_Awareness_X",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2025-04-14T11:13:18Z",
+       "end_time": "2025-06-30T20:30:00Z",
+       "created_at": "2025-04-14T11:18:44Z",
+       "updated_at": "2025-06-13T14:01:46Z"
+      },
+      {
+       "id": "ud4nd",
+       "campaign_id": "n1i36",
+       "name": "Diriyah_Tactical_Diriyah Living Campaign_UF_KSA_Prospecting_AR_Awareness_X",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2025-04-14T11:13:18Z",
+       "end_time": "2025-06-30T20:30:00Z",
+       "created_at": "2025-04-14T11:18:44Z",
+       "updated_at": "2025-06-13T14:46:53Z"
+      },
+      {
+       "id": "ugw1e",
+       "campaign_id": "n42ik",
+       "name": "Diriyah_Tactical_ATM Dubai 2025_UF_UAE_Prospecting_EN_Awareness_X",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2025-04-24T14:21:33Z",
+       "end_time": "2025-05-02T20:30:00Z",
+       "created_at": "2025-04-24T14:30:32Z",
+       "updated_at": "2025-05-01T10:06:26Z"
+      },
+      {
+       "id": "ugypl",
+       "campaign_id": "n42ik",
+       "name": "Diriyah_Tactical_ATM Dubai 2025_UF_UAE_Prospecting_AR_Awareness_X",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2025-04-24T14:21:33Z",
+       "end_time": "2025-05-02T20:30:00Z",
+       "created_at": "2025-04-24T19:36:26Z",
+       "updated_at": "2025-05-01T11:21:01Z"
+      },
+      {
+       "id": "ukzmb",
+       "campaign_id": "n6vys",
+       "name": "Diriyah_Tactical_Diriyah Living Campaign_UF_KSA_Prospecting_EN_Awareness_X",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2025-05-05T11:24:00Z",
+       "end_time": "2025-06-30T20:30:00Z",
+       "created_at": "2025-05-05T11:58:10Z",
+       "updated_at": "2025-06-27T12:23:16Z"
+      },
+      {
+       "id": "ukzmc",
+       "campaign_id": "n6vys",
+       "name": "Diriyah_Tactical_Diriyah Living Campaign_UF_KSA_Prospecting_AR_Awareness_X",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2025-05-05T11:24:00Z",
+       "end_time": "2025-06-30T20:30:00Z",
+       "created_at": "2025-05-05T11:58:10Z",
+       "updated_at": "2025-06-27T12:23:16Z"
+      },
+      {
+       "id": "upaxk",
+       "campaign_id": "n9kxx",
+       "name": "Diriyah_Tactical_Diriyah Living Campaign_UF_KSA_Prospecting_EN_Awareness_X_Commercial",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2025-05-15T07:45:13Z",
+       "end_time": "2025-06-30T20:30:00Z",
+       "created_at": "2025-05-15T07:52:18Z",
+       "updated_at": "2025-06-13T14:45:18Z"
+      },
+      {
+       "id": "upaxl",
+       "campaign_id": "n9kxx",
+       "name": "Diriyah_Tactical_Diriyah Living Campaign_UF_KSA_Prospecting_AR_Awareness_X_Commercial",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2025-05-15T07:45:13Z",
+       "end_time": "2025-06-30T20:30:00Z",
+       "created_at": "2025-05-15T07:52:18Z",
+       "updated_at": "2025-06-13T14:44:45Z"
+      },
+      {
+       "id": "ut1m2",
+       "campaign_id": "nbxps",
+       "name": "Diriyah_Tactical_Diriyah Living Campaign_UF_KSA_Prospecting_EN_Awareness_X_Retail",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2025-05-26T13:03:00Z",
+       "end_time": "2025-06-30T20:30:00Z",
+       "created_at": "2025-05-26T13:12:48Z",
+       "updated_at": "2025-06-27T12:23:16Z"
+      },
+      {
+       "id": "ut1m3",
+       "campaign_id": "nbxps",
+       "name": "Diriyah_Tactical_Diriyah Living Campaign_UF_KSA_Prospecting_AR_Awareness_X_Retail",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2025-05-26T13:03:00Z",
+       "end_time": "2025-06-30T20:30:00Z",
+       "created_at": "2025-05-26T13:12:48Z",
+       "updated_at": "2025-06-27T12:23:16Z"
+      },
+      {
+       "id": "vqahv",
+       "campaign_id": "nyalc",
+       "name": "Diriyah_Tactical_Saudi National Day_UF_KSA_Prospecting_EN/AR_Awareness_X_Boosted",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2025-09-21T06:57:32Z",
+       "end_time": "2025-09-25T17:30:00Z",
+       "created_at": "2025-09-21T07:05:12Z",
+       "updated_at": "2025-09-22T10:51:57Z"
+      },
+      {
+       "id": "vqahw",
+       "campaign_id": "nyalc",
+       "name": "Diriyah_Tactical_Saudi National Day_UF_KSA_Prospecting_EN/AR_Awareness_Meta_Cutdowns",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2025-09-21T06:57:32Z",
+       "end_time": "2025-09-25T17:30:00Z",
+       "created_at": "2025-09-21T07:05:12Z",
+       "updated_at": "2025-09-22T10:52:19Z"
+      },
+      {
+       "id": "vqai8",
+       "campaign_id": "nyall",
+       "name": "Diriyah_Tactical_Saudi National Day_UF_KSA_Prospecting_EN/AR_Awareness_X_Boosted",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2025-09-21T07:05:36Z",
+       "end_time": "2025-09-25T17:30:00Z",
+       "created_at": "2025-09-21T07:09:29Z",
+       "updated_at": "2025-09-21T07:09:29Z"
+      },
+      {
+       "id": "vqai9",
+       "campaign_id": "nyall",
+       "name": "Diriyah_Tactical_Saudi National Day_UF_KSA_Prospecting_EN/AR_Awareness_X_Cutdowns",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2025-09-21T07:05:36Z",
+       "end_time": "2025-09-25T17:30:00Z",
+       "created_at": "2025-09-21T07:09:29Z",
+       "updated_at": "2025-09-21T07:09:29Z"
+      },
+      {
+       "id": "vuzbb",
+       "campaign_id": "o1tby",
+       "name": "Diriyah Company_Tactical_Faena 2025_UF_KSA_Prospecting_EN_Awareness_X_",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2025-10-23T12:56:33Z",
+       "end_time": "2025-12-30T20:00:00Z",
+       "created_at": "2025-10-23T13:08:16Z",
+       "updated_at": "2025-12-29T11:57:02Z"
+      },
+      {
+       "id": "vuzbc",
+       "campaign_id": "o1tby",
+       "name": "Diriyah Company_Tactical_Faena 2025_UF_KSA_Prospecting_AR_Awareness_X_",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2025-10-23T12:56:33Z",
+       "end_time": "2025-12-30T20:00:00Z",
+       "created_at": "2025-10-23T13:08:16Z",
+       "updated_at": "2025-12-29T11:56:57Z"
+      },
+      {
+       "id": "vuzi6",
+       "campaign_id": "o1th7",
+       "name": "Diriyah Company_Tactical_Faena 2025_UF_KSA_Prospecting_EN_Traffic_X",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2025-10-23T13:27:07Z",
+       "end_time": "2025-12-30T20:00:00Z",
+       "created_at": "2025-10-23T13:37:37Z",
+       "updated_at": "2025-12-29T11:53:59Z"
+      },
+      {
+       "id": "vuzi7",
+       "campaign_id": "o1th7",
+       "name": "Diriyah Company_Tactical_Faena 2025_UF_KSA_Prospecting_AR_Traffic_X",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2025-10-23T13:27:07Z",
+       "end_time": "2025-12-30T20:00:00Z",
+       "created_at": "2025-10-23T13:37:37Z",
+       "updated_at": "2025-12-29T11:53:50Z"
+      },
+      {
+       "id": "vvmp9",
+       "campaign_id": "o2aud",
+       "name": "Diriyah Company_Tactical_Faena 2025_UF_KSA_Prospecting_EN_Video Views_X",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2025-10-28T13:42:29Z",
+       "end_time": "2025-12-30T20:00:00Z",
+       "created_at": "2025-10-28T13:51:29Z",
+       "updated_at": "2025-12-29T11:52:46Z"
+      },
+      {
+       "id": "vvmpa",
+       "campaign_id": "o2aud",
+       "name": "Diriyah Company_Tactical_Faena 2025_UF_KSA_Prospecting_AR_Video Views_X",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2025-10-28T13:42:29Z",
+       "end_time": "2025-12-30T20:00:00Z",
+       "created_at": "2025-10-28T13:51:29Z",
+       "updated_at": "2025-12-29T11:52:25Z"
+      },
+      {
+       "id": "w30jb",
+       "campaign_id": "o7bnz",
+       "name": "Diriyah Company_Tactical_Cityscape Al Hadawi 2025_UF_KSA_Prospecting_EN_Awareness_X",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2025-12-12T10:32:25Z",
+       "end_time": "2026-01-31T15:00:00Z",
+       "created_at": "2025-12-12T10:50:35Z",
+       "updated_at": "2025-12-17T12:22:19Z"
+      },
+      {
+       "id": "w30jc",
+       "campaign_id": "o7bnz",
+       "name": "Diriyah Company_Tactical_Cityscape Al Hadawi 2025_UF_KSA_Prospecting_AR_Awareness_X",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2025-12-12T10:32:25Z",
+       "end_time": "2026-01-31T15:00:00Z",
+       "created_at": "2025-12-12T10:50:35Z",
+       "updated_at": "2025-12-17T12:22:27Z"
+      },
+      {
+       "id": "w30sy",
+       "campaign_id": "o7bth",
+       "name": "Diriyah Company_Tactical_Cityscape Al Hadawi 2025_LF_KSA_Prospecting_EN_Conversion_X",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2025-12-12T11:10:59Z",
+       "end_time": "2026-01-31T15:00:00Z",
+       "created_at": "2025-12-12T11:37:21Z",
+       "updated_at": "2025-12-12T14:10:02Z"
+      },
+      {
+       "id": "w30sz",
+       "campaign_id": "o7bth",
+       "name": "Diriyah Company_Tactical_Cityscape Al Hadawi 2025_LF_KSA_Prospecting_AR_Conversion_X",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2025-12-12T11:10:59Z",
+       "end_time": "2026-01-31T15:00:00Z",
+       "created_at": "2025-12-12T11:37:21Z",
+       "updated_at": "2025-12-12T14:10:11Z"
+      },
+      {
+       "id": "wqcn9",
+       "campaign_id": "oom3v",
+       "name": "Bab Samhan_Summer_2026_KSA_Awareness_X_AR",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2026-05-26T05:47:01Z",
+       "end_time": "2026-06-29T21:00:00Z",
+       "created_at": "2026-05-26T05:51:17Z",
+       "updated_at": "2026-05-26T06:26:43Z"
+      },
+      {
+       "id": "wqcna",
+       "campaign_id": "oom3v",
+       "name": "Bab Samhan_Summer_2026_KSA_Awareness_X_EN",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2026-05-26T05:47:01Z",
+       "end_time": "2026-06-29T21:00:00Z",
+       "created_at": "2026-05-26T05:51:17Z",
+       "updated_at": "2026-05-26T06:26:43Z"
+      },
+      {
+       "id": "wqco6",
+       "campaign_id": "oom4e",
+       "name": "Visit Diriyah_Tactical _Bab Samhan Eid KV Summer Campaign 2026_KSA_Consideration_X_EN",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2026-05-26T05:51:32Z",
+       "end_time": "2026-06-29T21:00:00Z",
+       "created_at": "2026-05-26T05:54:27Z",
+       "updated_at": "2026-05-26T06:26:38Z"
+      },
+      {
+       "id": "wqco7",
+       "campaign_id": "oom4e",
+       "name": "Visit Diriyah_Tactical _Bab Samhan Eid KV Summer Campaign 2026_KSA_Consideration_X_AR",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2026-05-26T05:51:32Z",
+       "end_time": "2026-06-29T21:00:00Z",
+       "created_at": "2026-05-26T05:54:27Z",
+       "updated_at": "2026-05-26T06:26:38Z"
+      },
+      {
+       "id": "wqcoi",
+       "campaign_id": "oom4m",
+       "name": "Visit Diriyah_Tactical _Eid KV Summer Campaign 2026_KSA_Consideration_X_EN",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2026-05-26T05:51:32Z",
+       "end_time": "2026-05-28T08:59:00Z",
+       "created_at": "2026-05-26T05:56:43Z",
+       "updated_at": "2026-05-26T06:27:11Z"
+      },
+      {
+       "id": "wqcoj",
+       "campaign_id": "oom4m",
+       "name": "Visit Diriyah_Tactical _Eid KV Summer Campaign 2026_KSA_Consideration_X_AR ",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2026-05-26T05:51:32Z",
+       "end_time": "2026-05-28T08:59:00Z",
+       "created_at": "2026-05-26T05:56:43Z",
+       "updated_at": "2026-05-26T06:27:11Z"
+      },
+      {
+       "id": "wuylx",
+       "campaign_id": "orbmh",
+       "name": "sa_Diriyah_ManazelAlHadawi_AO_03.06.2026_30.09.2026_Awareness_paidsocial_x_BO11111_AR",
+       "entity_status": "PAUSED",
+       "deleted": false,
+       "start_time": "2026-06-09T13:00:00Z",
+       "end_time": "2026-09-30T20:59:59Z",
+       "created_at": "2026-06-09T12:29:57Z",
+       "updated_at": "2026-06-09T12:47:46Z"
+      },
+      {
+       "id": "wuym2",
+       "campaign_id": "orbmh",
+       "name": "sa_Diriyah_ManazelAlHadawi_AO_03.06.2026_30.09.2026_Awareness_paidsocial_x_BO11111_EN",
+       "entity_status": "PAUSED",
+       "deleted": false,
+       "start_time": "2026-06-09T13:00:00Z",
+       "end_time": "2026-09-30T20:59:59Z",
+       "created_at": "2026-06-09T12:30:17Z",
+       "updated_at": "2026-06-09T12:47:43Z"
+      },
+      {
+       "id": "wuym7",
+       "campaign_id": "orbmk",
+       "name": "sa_Diriyah_ManazelAlHadawi_AO_03.06.2026_30.09.2026_Traffic_paidsocial_x_BO11111_AR",
+       "entity_status": "PAUSED",
+       "deleted": false,
+       "start_time": "2026-06-09T13:00:00Z",
+       "end_time": "2026-09-30T20:59:59Z",
+       "created_at": "2026-06-09T12:30:41Z",
+       "updated_at": "2026-06-09T12:47:45Z"
+      },
+      {
+       "id": "wuym8",
+       "campaign_id": "orbmk",
+       "name": "sa_Diriyah_ManazelAlHadawi_AO_03.06.2026_30.09.2026_Traffic_paidsocial_x_BO11111_EN",
+       "entity_status": "PAUSED",
+       "deleted": false,
+       "start_time": "2026-06-09T13:00:00Z",
+       "end_time": "2026-09-30T20:59:59Z",
+       "created_at": "2026-06-09T12:30:45Z",
+       "updated_at": "2026-06-09T12:47:50Z"
+      },
+      {
+       "id": "wyz5p",
+       "campaign_id": "osvh1",
+       "name": "sa_Diriyah_ManazelAlHadawi_AO_03.06.2026_30.09.2026_Awareness_paidsocial_x_BO11111_AR",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2026-06-09T13:00:00Z",
+       "end_time": "2026-10-30T20:59:59Z",
+       "created_at": "2026-06-15T10:15:42Z",
+       "updated_at": "2026-09-29T10:12:55Z"
+      },
+      {
+       "id": "wyz5q",
+       "campaign_id": "osvh1",
+       "name": "sa_Diriyah_ManazelAlHadawi_AO_03.06.2026_30.09.2026_Awareness_paidsocial_x_BO11111_EN",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2026-06-09T13:00:00Z",
+       "end_time": "2026-10-30T20:59:59Z",
+       "created_at": "2026-06-15T10:15:42Z",
+       "updated_at": "2026-09-29T10:13:06Z"
+      },
+      {
+       "id": "x19v3",
+       "campaign_id": "ou6sp",
+       "name": "sa_Diriyah_LiveInDiriyah_AO_23.06.2026_23.12.2026_Awareness_paidsocial_x_BO11111_AR",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2026-06-23T10:38:57Z",
+       "end_time": "2026-10-30T21:00:00Z",
+       "created_at": "2026-06-23T10:44:48Z",
+       "updated_at": "2026-06-23T11:48:27Z"
+      },
+      {
+       "id": "x19v4",
+       "campaign_id": "ou6sp",
+       "name": "sa_Diriyah_LiveInDiriyah_AO_23.06.2026_23.12.2026_Awareness_paidsocial_x_BO11111_EN",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2026-06-23T10:38:57Z",
+       "end_time": "2026-10-30T21:00:00Z",
+       "created_at": "2026-06-23T10:44:48Z",
+       "updated_at": "2026-06-23T11:48:27Z"
+      },
+      {
+       "id": "x1aty",
+       "campaign_id": "ou7mx",
+       "name": "sa_Diriyah_LiveInDiriyah_Teaser_AO_23.06.2026_23.12.2026_Awareness_paidsocial_x_BO11111_AR_Riyadh",
+       "entity_status": "PAUSED",
+       "deleted": false,
+       "start_time": "2026-06-23T13:02:03Z",
+       "end_time": "2026-09-30T20:00:00Z",
+       "created_at": "2026-06-23T13:02:29Z",
+       "updated_at": "2026-09-08T10:51:24Z"
+      },
+      {
+       "id": "x1auw",
+       "campaign_id": "ou7mx",
+       "name": "sa_Diriyah_LiveInDiriyah_AO_23.06.2026_22.07.2026_Awareness_paidsocial_x_BO11111_EN_Riyadh",
+       "entity_status": "PAUSED",
+       "deleted": false,
+       "start_time": "2026-06-23T13:02:03Z",
+       "end_time": "2026-09-30T20:00:00Z",
+       "created_at": "2026-06-23T13:04:59Z",
+       "updated_at": "2026-09-08T10:51:24Z"
+      },
+      {
+       "id": "x5gyw",
+       "campaign_id": "owpmd",
+       "name": "sa_Diriyah_ManazelAlHadawi_AO_03.06.2026_30.09.2026_Consideration_paidsocial_x_BO11111_AR",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2026-07-07T03:45:49Z",
+       "end_time": "2026-10-30T21:00:00Z",
+       "created_at": "2026-07-07T03:45:49Z",
+       "updated_at": "2026-10-13T10:31:50Z"
+      },
+      {
+       "id": "x5gyx",
+       "campaign_id": "owpmd",
+       "name": "sa_Diriyah_ManazelAlHadawi_AO_03.06.2026_30.09.2026_Consideration_paidsocial_x_BO11111_EN",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2026-07-07T03:45:49Z",
+       "end_time": "2026-10-30T21:00:00Z",
+       "created_at": "2026-07-07T03:45:49Z",
+       "updated_at": "2026-10-13T10:31:54Z"
+      },
+      {
+       "id": "x8xco",
+       "campaign_id": "oysbu",
+       "name": "sa_Diriyah_LiveInDiriyah_Teaser_AO_23.06.2026_22.07.2026_Consideration_paidsocial_x_BO11111_EN_Riyadh",
+       "entity_status": "PAUSED",
+       "deleted": false,
+       "start_time": "2026-07-15T13:25:40Z",
+       "end_time": "2026-12-29T21:00:00Z",
+       "created_at": "2026-07-15T13:25:40Z",
+       "updated_at": "2026-09-28T17:11:43Z"
+      },
+      {
+       "id": "x8xcp",
+       "campaign_id": "oysbu",
+       "name": "sa_Diriyah_LiveInDiriyah_Teaser_AO_23.06.2026_22.07.2026_Consideration_paidsocial_x_BO11111_AR_Riyadh",
+       "entity_status": "PAUSED",
+       "deleted": false,
+       "start_time": "2026-07-15T13:25:40Z",
+       "end_time": "2026-12-29T21:00:00Z",
+       "created_at": "2026-07-15T13:25:40Z",
+       "updated_at": "2026-09-28T17:11:43Z"
+      },
+      {
+       "id": "xa7zz",
+       "campaign_id": "oysbu",
+       "name": "sa_Diriyah_LiveInDiriyah_Teaser_AO_23.06.2026_22.07.2026_Consideration_paidsocial_x_BO11111_AR_Jeddah&EasternProvince",
+       "entity_status": "PAUSED",
+       "deleted": false,
+       "start_time": "2026-07-20T12:45:10Z",
+       "end_time": "2026-12-29T21:00:00Z",
+       "created_at": "2026-07-20T12:45:10Z",
+       "updated_at": "2026-09-28T17:11:43Z"
+      },
+      {
+       "id": "xa808",
+       "campaign_id": "oysbu",
+       "name": "sa_Diriyah_LiveInDiriyah_Teaser_AO_23.06.2026_22.07.2026_Consideration_paidsocial_x_BO11111_EN_Jeddah&EasternProvince",
+       "entity_status": "PAUSED",
+       "deleted": false,
+       "start_time": "2026-07-20T12:47:45Z",
+       "end_time": "2026-12-29T21:00:00Z",
+       "created_at": "2026-07-20T12:47:45Z",
+       "updated_at": "2026-09-28T17:11:43Z"
+      },
+      {
+       "id": "xa80r",
+       "campaign_id": "ou7mx",
+       "name": "sa_Diriyah_LiveInDiriyah_AO_23.06.2026_22.07.2026_Awareness_paidsocial_x_BO11111_EN_Jeddah&EasternProvince",
+       "entity_status": "PAUSED",
+       "deleted": false,
+       "start_time": "2026-07-20T12:50:53Z",
+       "end_time": "2026-09-30T20:00:00Z",
+       "created_at": "2026-07-20T12:50:54Z",
+       "updated_at": "2026-09-08T10:51:24Z"
+      },
+      {
+       "id": "xa80w",
+       "campaign_id": "ou7mx",
+       "name": "sa_Diriyah_LiveInDiriyah_Teaser_AO_23.06.2026_23.12.2026_Awareness_paidsocial_x_BO11111_AR_Jeddah&EasternProvince",
+       "entity_status": "PAUSED",
+       "deleted": false,
+       "start_time": "2026-07-20T12:51:45Z",
+       "end_time": "2026-09-30T20:00:00Z",
+       "created_at": "2026-07-20T12:51:45Z",
+       "updated_at": "2026-09-08T10:51:24Z"
+      },
+      {
+       "id": "xalju",
+       "campaign_id": "p00bw",
+       "name": "sa_Diriyah_ManazelAlHadawi_AO_03.06.2026_30.09.2026_Conversions_paidsocial_x_BO11111_AR",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2026-07-22T09:10:45Z",
+       "end_time": "2026-10-30T21:00:00Z",
+       "created_at": "2026-07-22T09:10:45Z",
+       "updated_at": "2026-10-13T10:31:57Z"
+      },
+      {
+       "id": "xalpa",
+       "campaign_id": "p00bw",
+       "name": "sa_Diriyah_ManazelAlHadawi_AO_03.06.2026_30.09.2026_Conversion_paidsocial_x_BO11111_EN",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2026-07-22T09:27:09Z",
+       "end_time": "2026-10-30T21:00:00Z",
+       "created_at": "2026-07-22T09:27:10Z",
+       "updated_at": "2026-10-13T10:32:01Z"
+      },
+      {
+       "id": "xczfl",
+       "campaign_id": "ou7mx",
+       "name": "sa_Diriyah_LiveInDiriyah_Residential_AO_23.06.2026_23.12.2026_Awareness_paidsocial_x_BO11111_AR_Riyadh",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2026-08-03T14:19:41Z",
+       "end_time": "2027-06-23T20:59:00Z",
+       "created_at": "2026-08-03T14:19:41Z",
+       "updated_at": "2026-09-21T23:17:04Z"
+      },
+      {
+       "id": "xczfm",
+       "campaign_id": "ou7mx",
+       "name": "sa_Diriyah_LiveInDiriyah_Residential_AO_23.06.2026_23.12.2026_Awareness_paidsocial_x_BO11111_AR_Jeddah&EasternProvince",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2026-08-03T14:19:41Z",
+       "end_time": "2026-09-30T20:00:00Z",
+       "created_at": "2026-08-03T14:19:41Z",
+       "updated_at": "2026-09-08T10:51:24Z"
+      },
+      {
+       "id": "xczfn",
+       "campaign_id": "ou7mx",
+       "name": "sa_Diriyah_LiveInDiriyah_Residential_AO_23.06.2026_22.07.2026_Awareness_paidsocial_x_BO11111_EN_Jeddah&EasternProvince",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2026-08-03T14:19:41Z",
+       "end_time": "2026-09-30T20:00:00Z",
+       "created_at": "2026-08-03T14:19:41Z",
+       "updated_at": "2026-09-08T10:51:24Z"
+      },
+      {
+       "id": "xczfo",
+       "campaign_id": "ou7mx",
+       "name": "sa_Diriyah_LiveInDiriyah_Residential_AO_23.06.2026_22.07.2026_Awareness_paidsocial_x_BO11111_EN_Riyadh",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2026-08-03T14:19:41Z",
+       "end_time": "2026-09-30T20:00:00Z",
+       "created_at": "2026-08-03T14:19:41Z",
+       "updated_at": "2026-09-28T16:39:12Z"
+      },
+      {
+       "id": "xdbe1",
+       "campaign_id": "oysbu",
+       "name": "sa_Diriyah_LiveInDiriyah_Residential_AO_23.06.2026_22.07.2026_Consideration_paidsocial_x_BO11111_EN_Riyadh",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2026-08-05T03:43:44Z",
+       "end_time": "2026-12-30T20:59:00Z",
+       "created_at": "2026-08-05T03:43:45Z",
+       "updated_at": "2026-09-28T17:11:43Z"
+      },
+      {
+       "id": "xdbe2",
+       "campaign_id": "oysbu",
+       "name": "sa_Diriyah_LiveInDiriyah_Residential_AO_23.06.2026_22.07.2026_Consideration_paidsocial_x_BO11111_EN_Jeddah&EasternProvince",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2026-08-05T03:43:44Z",
+       "end_time": "2026-12-30T20:59:00Z",
+       "created_at": "2026-08-05T03:43:45Z",
+       "updated_at": "2026-09-28T17:11:43Z"
+      },
+      {
+       "id": "xdbe3",
+       "campaign_id": "oysbu",
+       "name": "sa_Diriyah_LiveInDiriyah_Residential_AO_23.06.2026_22.07.2026_Consideration_paidsocial_x_BO11111_AR_Jeddah&EasternProvince",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2026-08-05T03:43:44Z",
+       "end_time": "2026-12-30T20:59:00Z",
+       "created_at": "2026-08-05T03:43:45Z",
+       "updated_at": "2026-09-28T17:11:43Z"
+      },
+      {
+       "id": "xdbe4",
+       "campaign_id": "oysbu",
+       "name": "sa_Diriyah_LiveInDiriyah_Residential_AO_23.06.2026_22.07.2026_Consideration_paidsocial_x_BO11111_AR_Riyadh",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2026-08-05T03:43:44Z",
+       "end_time": "2026-12-30T20:59:00Z",
+       "created_at": "2026-08-05T03:43:45Z",
+       "updated_at": "2026-09-28T17:11:43Z"
+      },
+      {
+       "id": "xkkxa",
+       "campaign_id": "p00bw",
+       "name": "sa_Diriyah_ManazelAlHadawi_AO_03.06.2026_30.09.2026_Conversion_paidsocial_x_BO11111_EN_+45Male_Test",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2026-09-06T06:07:11Z",
+       "end_time": "2026-10-30T21:00:00Z",
+       "created_at": "2026-09-06T06:07:12Z",
+       "updated_at": "2026-10-13T10:32:04Z"
+      },
+      {
+       "id": "xkkxb",
+       "campaign_id": "p00bw",
+       "name": "sa_Diriyah_ManazelAlHadawi_AO_03.06.2026_30.09.2026_Conversions_paidsocial_x_BO11111_AR_+45Male_Test",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2026-09-06T06:07:11Z",
+       "end_time": "2026-10-30T21:00:00Z",
+       "created_at": "2026-09-06T06:07:12Z",
+       "updated_at": "2026-10-13T10:32:07Z"
+      },
+      {
+       "id": "xlgpt",
+       "campaign_id": "p8rhd",
+       "name": "company_general_2026_sep_rcsr_adset-id-87bde3ee_en_all_mf_prospecting",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2026-09-09T14:05:30Z",
+       "end_time": "2026-11-21T20:59:00Z",
+       "created_at": "2026-09-09T14:05:31Z",
+       "updated_at": "2026-10-01T10:42:03Z"
+      },
+      {
+       "id": "xlgpu",
+       "campaign_id": "p8rhd",
+       "name": "company_general_2026_sep_rcsr_adset-id-87bde3ee_ar_all_mf_prospecting",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2026-09-09T14:05:30Z",
+       "end_time": "2026-11-21T20:59:00Z",
+       "created_at": "2026-09-09T14:05:31Z",
+       "updated_at": "2026-10-01T10:42:13Z"
+      },
+      {
+       "id": "xmn9j",
+       "campaign_id": "p9ppt",
+       "name": "company_general_2026_sep_rcsr_adset-id-87bde3ee_ar_all_lf_prospecting",
+       "entity_status": "ACTIVE",
+       "deleted": true,
+       "start_time": "2026-09-14T16:00:00Z",
+       "end_time": "2026-12-06T20:00:00Z",
+       "created_at": "2026-09-14T14:56:44Z",
+       "updated_at": "2026-09-14T14:58:31Z"
+      },
+      {
+       "id": "xmn9v",
+       "campaign_id": "p9ppt",
+       "name": "company_general_2026_sep_rcsr_adset-id-87bde3ee_en_all_lf_prospecting",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2026-09-14T16:00:00Z",
+       "end_time": "2026-11-21T20:59:00Z",
+       "created_at": "2026-09-14T14:57:46Z",
+       "updated_at": "2026-10-01T10:42:21Z"
+      },
+      {
+       "id": "xmna0",
+       "campaign_id": "p9ppt",
+       "name": "company_general_2026_sep_rcsr_adset-id-87bde3ee_ar_all_lf_prospecting",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2026-09-14T16:00:00Z",
+       "end_time": "2026-11-21T20:59:00Z",
+       "created_at": "2026-09-14T14:58:03Z",
+       "updated_at": "2026-10-01T10:42:30Z"
+      },
+      {
+       "id": "xq7tr",
+       "campaign_id": "pcgaq",
+       "name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi_adset-id-ee4e5f3f_ar_all_mf_prospecting",
+       "entity_status": "PAUSED",
+       "deleted": true,
+       "start_time": "2026-09-27T16:00:00Z",
+       "end_time": "2026-12-26T20:59:00Z",
+       "created_at": "2026-09-27T15:08:36Z",
+       "updated_at": "2026-09-28T10:07:11Z"
+      },
+      {
+       "id": "xq7ts",
+       "campaign_id": "pcgaq",
+       "name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi_adset-id-ee4e5f3f_en_all_mf_prospecting",
+       "entity_status": "PAUSED",
+       "deleted": true,
+       "start_time": "2026-09-27T16:00:00Z",
+       "end_time": "2026-12-26T20:59:00Z",
+       "created_at": "2026-09-27T15:08:40Z",
+       "updated_at": "2026-09-28T10:07:11Z"
+      },
+      {
+       "id": "xq7yr",
+       "campaign_id": "pcgar",
+       "name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi_adset-id-ee4e5f3f_ar_all_mf_prospecting",
+       "entity_status": "PAUSED",
+       "deleted": true,
+       "start_time": "2026-09-27T16:00:00Z",
+       "end_time": "2026-12-26T20:59:00Z",
+       "created_at": "2026-09-27T15:34:57Z",
+       "updated_at": "2026-09-27T15:36:00Z"
+      },
+      {
+       "id": "xqe5a",
+       "campaign_id": "pcl3j",
+       "name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi_adset-id-ee4e5f3f_ar_all_mf_prospecting",
+       "entity_status": "ACTIVE",
+       "deleted": true,
+       "start_time": "2026-09-28T10:06:38Z",
+       "end_time": "2026-12-26T20:59:00Z",
+       "created_at": "2026-09-28T10:06:39Z",
+       "updated_at": "2026-09-29T10:35:55Z"
+      },
+      {
+       "id": "xqe5b",
+       "campaign_id": "pcl3j",
+       "name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi_adset-id-ee4e5f3f_en_all_mf_prospecting",
+       "entity_status": "ACTIVE",
+       "deleted": true,
+       "start_time": "2026-09-28T10:06:38Z",
+       "end_time": "2026-12-26T20:59:00Z",
+       "created_at": "2026-09-28T10:06:39Z",
+       "updated_at": "2026-09-29T10:35:55Z"
+      },
+      {
+       "id": "xqphi",
+       "campaign_id": "pct00",
+       "name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi_adset-id-ee4e5f3f_ar_all_mf_prospecting",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2026-09-29T10:33:23Z",
+       "end_time": "2026-12-26T20:59:00Z",
+       "created_at": "2026-09-29T10:33:24Z",
+       "updated_at": "2026-09-29T10:33:24Z"
+      },
+      {
+       "id": "xqphj",
+       "campaign_id": "pct00",
+       "name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi_adset-id-ee4e5f3f_en_all_mf_prospecting",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2026-09-29T10:33:23Z",
+       "end_time": "2026-12-26T20:59:00Z",
+       "created_at": "2026-09-29T10:33:24Z",
+       "updated_at": "2026-09-29T10:33:24Z"
+      },
+      {
+       "id": "xqpir",
+       "campaign_id": "pct0p",
+       "name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi_adset-id-ee4e5f3f_ar_all_mf_prospecting",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2026-09-29T10:35:36Z",
+       "end_time": "2026-12-26T20:59:00Z",
+       "created_at": "2026-09-29T10:35:37Z",
+       "updated_at": "2026-09-29T10:46:51Z"
+      },
+      {
+       "id": "xqpma",
+       "campaign_id": "pct0p",
+       "name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi_adset-id-ee4e5f3f_en_all_mf_prospecting",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2026-09-29T10:45:00Z",
+       "end_time": "2026-12-26T20:59:00Z",
+       "created_at": "2026-09-29T10:42:40Z",
+       "updated_at": "2026-09-29T10:46:51Z"
+      },
+      {
+       "id": "xwb2t",
+       "campaign_id": "pg1tv",
+       "name": "sa_Diriyah_ManazelAlHadawi_AO_03.06.2026_30.09.2026_Awareness_paidsocial_x_BO11111_AR",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2026-10-13T11:00:00Z",
+       "end_time": "2026-10-30T20:59:59Z",
+       "created_at": "2026-10-13T10:48:28Z",
+       "updated_at": "2026-10-13T10:49:04Z"
+      },
+      {
+       "id": "xwb2v",
+       "campaign_id": "pg1tv",
+       "name": "sa_Diriyah_ManazelAlHadawi_AO_03.06.2026_30.09.2026_Awareness_paidsocial_x_BO11111_EN",
+       "entity_status": "ACTIVE",
+       "deleted": false,
+       "start_time": "2026-10-13T11:00:00Z",
+       "end_time": "2026-10-30T20:59:59Z",
+       "created_at": "2026-10-13T10:48:32Z",
+       "updated_at": "2026-10-13T10:49:07Z"
+      }
+     ],
+     "total_count": 113
+    },
+    "meta": {
+     "mcp_result_projection": {
+      "fields": [
+       "id",
+       "campaign_id",
+       "name",
+       "entity_status",
+       "servable",
+       "effective_status",
+       "deleted",
+       "start_time",
+       "end_time",
+       "created_at",
+       "updated_at"
+      ],
+      "max_items": 2000,
+      "compact": true
+     }
+    }
+   },
+   "meta": {
+    "requestId": "cced7bfc-b6f5-4945-a6ea-df78fc064104",
+    "latencyMs": 1622
+   }
+  }
+ },
+ {
+  "tool_use_id": "toolu_015U8wVeCkCF3bp3g38ZPFjS",
+  "input": {
+   "action": "LIST_PROMOTED_TWEETS",
+   "account_id": "18ce55o46ul",
+   "path_params": {
+    "account_id": "18ce55o46ul"
+   },
+   "params": {
+    "count": 1000,
+    "with_deleted": true,
+    "with_total_count": true
+   },
+   "result_fields": [
+    "id",
+    "tweet_id",
+    "line_item_id",
+    "entity_status",
+    "approval_status",
+    "deleted",
+    "created_at",
+    "updated_at"
+   ],
+   "max_items": 2000,
+   "compact": true
+  },
+  "result": {
+   "success": true,
+   "data": {
+    "success": true,
+    "data": {
+     "request": {
+      "params": {
+       "account_id": "18ce55o46ul",
+       "count": 1000,
+       "with_total_count": true,
+       "with_deleted": true
+      }
+     },
+     "data": [
+      {
+       "id": "aafueh",
+       "tweet_id": "1760669748155842602",
+       "line_item_id": "rcy9d",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": true,
+       "created_at": "2024-02-22T14:15:55Z",
+       "updated_at": "2024-02-23T11:47:26Z"
+      },
+      {
+       "id": "aahptc",
+       "tweet_id": "1760643148299018516",
+       "line_item_id": "rcy9d",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-02-23T11:04:43Z",
+       "updated_at": "2024-03-01T02:50:01Z"
+      },
+      {
+       "id": "abkmx7",
+       "tweet_id": "1770502704646832387",
+       "line_item_id": "rlq9v",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-03-22T13:24:51Z",
+       "updated_at": "2024-03-22T13:24:53Z"
+      },
+      {
+       "id": "abkmx8",
+       "tweet_id": "1770580251371774227",
+       "line_item_id": "rlq9v",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-03-22T13:24:51Z",
+       "updated_at": "2024-03-22T13:24:54Z"
+      },
+      {
+       "id": "abkmx9",
+       "tweet_id": "1770504437762547997",
+       "line_item_id": "rlq9w",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-03-22T13:24:51Z",
+       "updated_at": "2024-03-22T13:24:55Z"
+      },
+      {
+       "id": "abkmxa",
+       "tweet_id": "1770580500681244870",
+       "line_item_id": "rlq9w",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-03-22T13:24:51Z",
+       "updated_at": "2024-03-22T13:24:55Z"
+      },
+      {
+       "id": "abo3nm",
+       "tweet_id": "1772247060135506069",
+       "line_item_id": "rmd1v",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-03-25T13:00:00Z",
+       "updated_at": "2024-03-25T13:00:01Z"
+      },
+      {
+       "id": "abo3o3",
+       "tweet_id": "1772247064849654225",
+       "line_item_id": "rmd1w",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-03-25T13:00:02Z",
+       "updated_at": "2024-03-25T13:00:07Z"
+      },
+      {
+       "id": "abo3oe",
+       "tweet_id": "1772247067488092600",
+       "line_item_id": "rmd1v",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-03-25T13:00:02Z",
+       "updated_at": "2024-03-25T13:00:07Z"
+      },
+      {
+       "id": "abo3or",
+       "tweet_id": "1772247073938932223",
+       "line_item_id": "rmd1w",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-03-25T13:00:04Z",
+       "updated_at": "2024-03-25T13:00:11Z"
+      },
+      {
+       "id": "abqg5j",
+       "tweet_id": "1772981989869547973",
+       "line_item_id": "rmxsz",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-03-27T13:41:00Z",
+       "updated_at": "2024-03-27T13:41:01Z"
+      },
+      {
+       "id": "abqhyj",
+       "tweet_id": "1773001725844041933",
+       "line_item_id": "rmxsz",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-03-27T15:01:00Z",
+       "updated_at": "2024-03-27T15:01:41Z"
+      },
+      {
+       "id": "abz2zt",
+       "tweet_id": "1770895426884907422",
+       "line_item_id": "rox2l",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-04-05T10:56:48Z",
+       "updated_at": "2024-04-05T10:56:50Z"
+      },
+      {
+       "id": "abz2zu",
+       "tweet_id": "1770895429850247373",
+       "line_item_id": "rox2l",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-04-05T10:56:48Z",
+       "updated_at": "2024-04-05T10:56:50Z"
+      },
+      {
+       "id": "abz2zv",
+       "tweet_id": "1771255041711616201",
+       "line_item_id": "rox2l",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-04-05T10:56:48Z",
+       "updated_at": "2024-04-05T10:56:50Z"
+      },
+      {
+       "id": "abz2zw",
+       "tweet_id": "1771255043695530228",
+       "line_item_id": "rox2l",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-04-05T10:56:48Z",
+       "updated_at": "2024-04-05T10:56:50Z"
+      },
+      {
+       "id": "acl88y",
+       "tweet_id": "1785555377460838625",
+       "line_item_id": "ru3i7",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": true,
+       "created_at": "2024-05-01T06:22:32Z",
+       "updated_at": "2024-05-17T12:05:41Z"
+      },
+      {
+       "id": "acl88z",
+       "tweet_id": "1785555377469169786",
+       "line_item_id": "ru3i7",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": true,
+       "created_at": "2024-05-01T06:22:32Z",
+       "updated_at": "2024-05-17T12:05:39Z"
+      },
+      {
+       "id": "acl890",
+       "tweet_id": "1785555377683079667",
+       "line_item_id": "ru3i7",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": true,
+       "created_at": "2024-05-01T06:22:32Z",
+       "updated_at": "2024-05-17T12:05:38Z"
+      },
+      {
+       "id": "acl891",
+       "tweet_id": "1785555377628561862",
+       "line_item_id": "ru3i7",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": true,
+       "created_at": "2024-05-01T06:22:32Z",
+       "updated_at": "2024-05-17T12:05:37Z"
+      },
+      {
+       "id": "acl892",
+       "tweet_id": "1785555377490120895",
+       "line_item_id": "ru76s",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": true,
+       "created_at": "2024-05-01T06:22:32Z",
+       "updated_at": "2024-05-17T12:05:34Z"
+      },
+      {
+       "id": "acl893",
+       "tweet_id": "1785555377695637669",
+       "line_item_id": "ru76s",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": true,
+       "created_at": "2024-05-01T06:22:32Z",
+       "updated_at": "2024-05-17T12:05:36Z"
+      },
+      {
+       "id": "acl894",
+       "tweet_id": "1785555377699905736",
+       "line_item_id": "ru76s",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": true,
+       "created_at": "2024-05-01T06:22:32Z",
+       "updated_at": "2024-05-17T12:05:32Z"
+      },
+      {
+       "id": "acl895",
+       "tweet_id": "1785555377460850693",
+       "line_item_id": "ru76s",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": true,
+       "created_at": "2024-05-01T06:22:32Z",
+       "updated_at": "2024-05-17T12:05:31Z"
+      },
+      {
+       "id": "aclr4p",
+       "tweet_id": "1785261544986538410",
+       "line_item_id": "rueqb",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-05-02T06:51:26Z",
+       "updated_at": "2024-05-02T06:51:31Z"
+      },
+      {
+       "id": "aclr4q",
+       "tweet_id": "1784571933767389256",
+       "line_item_id": "rueqb",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-05-02T06:51:26Z",
+       "updated_at": "2024-05-02T06:51:31Z"
+      },
+      {
+       "id": "aclrov",
+       "tweet_id": "1785261539181608995",
+       "line_item_id": "rueza",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-05-02T07:35:45Z",
+       "updated_at": "2024-05-02T07:35:49Z"
+      },
+      {
+       "id": "aclrow",
+       "tweet_id": "1784557243377098915",
+       "line_item_id": "rueza",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-05-02T07:35:45Z",
+       "updated_at": "2024-05-02T07:35:48Z"
+      },
+      {
+       "id": "acx0mt",
+       "tweet_id": "1788928358132105460",
+       "line_item_id": "rueza",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-05-13T06:37:28Z",
+       "updated_at": "2024-05-13T06:37:30Z"
+      },
+      {
+       "id": "acx0mu",
+       "tweet_id": "1789332437090087265",
+       "line_item_id": "rueza",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-05-13T06:37:28Z",
+       "updated_at": "2024-05-13T06:37:30Z"
+      },
+      {
+       "id": "acx0nc",
+       "tweet_id": "1788928363530215573",
+       "line_item_id": "rueqb",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-05-13T06:38:42Z",
+       "updated_at": "2024-05-13T06:38:44Z"
+      },
+      {
+       "id": "acx0nd",
+       "tweet_id": "1789332442815340931",
+       "line_item_id": "rueqb",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-05-13T06:38:42Z",
+       "updated_at": "2024-05-13T06:38:43Z"
+      },
+      {
+       "id": "ad0sll",
+       "tweet_id": "1791401522850333047",
+       "line_item_id": "ru76s",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-05-17T09:33:01Z",
+       "updated_at": "2024-05-17T09:33:03Z"
+      },
+      {
+       "id": "ad0smj",
+       "tweet_id": "1791402025873293460",
+       "line_item_id": "ru3i7",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-05-17T09:35:01Z",
+       "updated_at": "2024-05-17T09:35:03Z"
+      },
+      {
+       "id": "ad45tc",
+       "tweet_id": "1793233342806262064",
+       "line_item_id": "ru3i7",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-05-22T10:52:00Z",
+       "updated_at": "2024-05-22T10:52:25Z"
+      },
+      {
+       "id": "ad4a7j",
+       "tweet_id": "1793280659030511986",
+       "line_item_id": "ryi2d",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-05-22T14:00:01Z",
+       "updated_at": "2024-05-22T14:00:03Z"
+      },
+      {
+       "id": "ad4a7s",
+       "tweet_id": "1793280666584350903",
+       "line_item_id": "ryi2z",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-05-22T14:00:04Z",
+       "updated_at": "2024-05-22T14:00:07Z"
+      },
+      {
+       "id": "adkgaf",
+       "tweet_id": "1798969892202598817",
+       "line_item_id": "s21kw",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-06-07T06:47:00Z",
+       "updated_at": "2024-06-07T06:48:15Z"
+      },
+      {
+       "id": "adkgag",
+       "tweet_id": "1798969892198097042",
+       "line_item_id": "s21kw",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-06-07T06:47:01Z",
+       "updated_at": "2024-06-07T06:48:15Z"
+      },
+      {
+       "id": "adkgb0",
+       "tweet_id": "1798970395401269371",
+       "line_item_id": "s21mr",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-06-07T06:49:00Z",
+       "updated_at": "2024-06-07T06:49:10Z"
+      },
+      {
+       "id": "adkgb2",
+       "tweet_id": "1798970395611283559",
+       "line_item_id": "s21mr",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-06-07T06:49:00Z",
+       "updated_at": "2024-06-07T06:49:10Z"
+      },
+      {
+       "id": "ahm82m",
+       "tweet_id": "1837100752356913371",
+       "line_item_id": "srnph",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-09-20T13:05:19Z",
+       "updated_at": "2024-09-20T13:21:10Z"
+      },
+      {
+       "id": "aix92u",
+       "tweet_id": "1846648852772016146",
+       "line_item_id": "t0360",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-10-17T10:32:11Z",
+       "updated_at": "2024-10-17T11:46:59Z"
+      },
+      {
+       "id": "aix92v",
+       "tweet_id": "1846648751626375476",
+       "line_item_id": "t0360",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-10-17T10:32:11Z",
+       "updated_at": "2024-10-17T11:46:59Z"
+      },
+      {
+       "id": "aj558d",
+       "tweet_id": "1846972271706907125",
+       "line_item_id": "t0360",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-10-22T04:46:51Z",
+       "updated_at": "2024-10-22T11:47:06Z"
+      },
+      {
+       "id": "aj558e",
+       "tweet_id": "1847296516697813299",
+       "line_item_id": "t0360",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-10-22T04:46:51Z",
+       "updated_at": "2024-10-22T11:47:16Z"
+      },
+      {
+       "id": "aj558f",
+       "tweet_id": "1847656765220917420",
+       "line_item_id": "t0360",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-10-22T04:46:51Z",
+       "updated_at": "2024-10-22T11:34:23Z"
+      },
+      {
+       "id": "aj5c5t",
+       "tweet_id": "1846972274294808667",
+       "line_item_id": "t0360",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-10-22T08:19:22Z",
+       "updated_at": "2024-10-22T11:26:19Z"
+      },
+      {
+       "id": "aj5c5u",
+       "tweet_id": "1847656768161063006",
+       "line_item_id": "t0360",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-10-22T08:19:22Z",
+       "updated_at": "2024-10-22T11:25:51Z"
+      },
+      {
+       "id": "aj8xmx",
+       "tweet_id": "1849136378358993388",
+       "line_item_id": "t0360",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-10-24T12:10:14Z",
+       "updated_at": "2024-10-24T13:22:39Z"
+      },
+      {
+       "id": "aj8xmy",
+       "tweet_id": "1849136476384120978",
+       "line_item_id": "t0360",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-10-24T12:10:14Z",
+       "updated_at": "2024-10-24T13:22:38Z"
+      },
+      {
+       "id": "ajjqmq",
+       "tweet_id": "1851883096653561895",
+       "line_item_id": "t0360",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-10-31T07:11:57Z",
+       "updated_at": "2024-10-31T07:25:41Z"
+      },
+      {
+       "id": "ajjqmr",
+       "tweet_id": "1851882851400323405",
+       "line_item_id": "t0360",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-10-31T07:11:57Z",
+       "updated_at": "2024-10-31T07:25:41Z"
+      },
+      {
+       "id": "ajjqms",
+       "tweet_id": "1851882606125539694",
+       "line_item_id": "t0360",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-10-31T07:11:57Z",
+       "updated_at": "2024-10-31T07:25:40Z"
+      },
+      {
+       "id": "ajjqmt",
+       "tweet_id": "1851882371416477828",
+       "line_item_id": "t0360",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-10-31T07:11:57Z",
+       "updated_at": "2024-10-31T07:25:40Z"
+      },
+      {
+       "id": "ajjqmu",
+       "tweet_id": "1851882112208515221",
+       "line_item_id": "t0360",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-10-31T07:11:57Z",
+       "updated_at": "2024-10-31T07:25:40Z"
+      },
+      {
+       "id": "ajjqmv",
+       "tweet_id": "1851881777712750693",
+       "line_item_id": "t0360",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-10-31T07:11:57Z",
+       "updated_at": "2024-10-31T07:25:42Z"
+      },
+      {
+       "id": "ajjqmw",
+       "tweet_id": "1851881354092523860",
+       "line_item_id": "t0360",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-10-31T07:11:57Z",
+       "updated_at": "2024-10-31T07:25:42Z"
+      },
+      {
+       "id": "ajjqmx",
+       "tweet_id": "1851881113838387417",
+       "line_item_id": "t0360",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-10-31T07:11:57Z",
+       "updated_at": "2024-10-31T07:25:42Z"
+      },
+      {
+       "id": "ajjqmy",
+       "tweet_id": "1851880899190706376",
+       "line_item_id": "t0360",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-10-31T07:11:57Z",
+       "updated_at": "2024-10-31T07:25:41Z"
+      },
+      {
+       "id": "ajjqmz",
+       "tweet_id": "1851880435954897108",
+       "line_item_id": "t0360",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-10-31T07:11:57Z",
+       "updated_at": "2024-10-31T07:25:41Z"
+      },
+      {
+       "id": "ajjqn0",
+       "tweet_id": "1851880180249207006",
+       "line_item_id": "t0360",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-10-31T07:11:57Z",
+       "updated_at": "2024-10-31T07:25:44Z"
+      },
+      {
+       "id": "ajjqn1",
+       "tweet_id": "1851879926548365388",
+       "line_item_id": "t0360",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-10-31T07:11:57Z",
+       "updated_at": "2024-10-31T07:25:43Z"
+      },
+      {
+       "id": "ajjqn2",
+       "tweet_id": "1851879454777200999",
+       "line_item_id": "t0360",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-10-31T07:11:57Z",
+       "updated_at": "2024-10-31T07:25:42Z"
+      },
+      {
+       "id": "ajjqn3",
+       "tweet_id": "1851879165135360505",
+       "line_item_id": "t0360",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-10-31T07:11:57Z",
+       "updated_at": "2024-10-31T07:25:42Z"
+      },
+      {
+       "id": "ajjqn4",
+       "tweet_id": "1851878633880567969",
+       "line_item_id": "t0360",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-10-31T07:11:57Z",
+       "updated_at": "2024-10-31T07:25:42Z"
+      },
+      {
+       "id": "ajjqn5",
+       "tweet_id": "1851878138487410745",
+       "line_item_id": "t0360",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-10-31T07:11:57Z",
+       "updated_at": "2024-10-31T07:25:45Z"
+      },
+      {
+       "id": "ajjqn6",
+       "tweet_id": "1851877874174759031",
+       "line_item_id": "t0360",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-10-31T07:11:57Z",
+       "updated_at": "2024-10-31T07:25:45Z"
+      },
+      {
+       "id": "ajjqn7",
+       "tweet_id": "1851877275593048490",
+       "line_item_id": "t0360",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-10-31T07:11:57Z",
+       "updated_at": "2024-10-31T07:25:43Z"
+      },
+      {
+       "id": "ajsvam",
+       "tweet_id": "1855931066298597734",
+       "line_item_id": "t73ow",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-11-12T15:06:28Z",
+       "updated_at": "2024-11-12T15:06:30Z"
+      },
+      {
+       "id": "ajsvan",
+       "tweet_id": "1855972408521351192",
+       "line_item_id": "t73ow",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-11-12T15:06:28Z",
+       "updated_at": "2024-11-12T15:06:31Z"
+      },
+      {
+       "id": "ajsvao",
+       "tweet_id": "1856277714333774092",
+       "line_item_id": "t73ow",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-11-12T15:06:28Z",
+       "updated_at": "2024-11-12T15:06:30Z"
+      },
+      {
+       "id": "ajsvap",
+       "tweet_id": "1856075280429003140",
+       "line_item_id": "t73ow",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": true,
+       "created_at": "2024-11-12T15:06:28Z",
+       "updated_at": "2024-11-13T13:18:12Z"
+      },
+      {
+       "id": "ajsvaq",
+       "tweet_id": "1856274428813795755",
+       "line_item_id": "t73ox",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-11-12T15:06:28Z",
+       "updated_at": "2024-11-12T15:06:30Z"
+      },
+      {
+       "id": "ajsvar",
+       "tweet_id": "1855972404176044318",
+       "line_item_id": "t73ox",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-11-12T15:06:28Z",
+       "updated_at": "2024-11-12T15:06:31Z"
+      },
+      {
+       "id": "ajsvas",
+       "tweet_id": "1855931062171414686",
+       "line_item_id": "t73ox",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-11-12T15:06:28Z",
+       "updated_at": "2024-11-12T15:06:31Z"
+      },
+      {
+       "id": "ajsvat",
+       "tweet_id": "1856075275768856614",
+       "line_item_id": "t73ox",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": true,
+       "created_at": "2024-11-12T15:06:28Z",
+       "updated_at": "2024-11-13T13:18:52Z"
+      },
+      {
+       "id": "ajsvks",
+       "tweet_id": "1855967858938822787",
+       "line_item_id": "t73tr",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-11-12T15:23:18Z",
+       "updated_at": "2024-11-12T15:23:20Z"
+      },
+      {
+       "id": "ajsvkt",
+       "tweet_id": "1856297403415945709",
+       "line_item_id": "t73tr",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-11-12T15:23:18Z",
+       "updated_at": "2024-11-12T15:23:20Z"
+      },
+      {
+       "id": "ajsvku",
+       "tweet_id": "1855936419488792997",
+       "line_item_id": "t73tr",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-11-12T15:23:18Z",
+       "updated_at": "2024-11-12T15:23:20Z"
+      },
+      {
+       "id": "ajsvkv",
+       "tweet_id": "1855967854379569655",
+       "line_item_id": "t73ts",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-11-12T15:23:18Z",
+       "updated_at": "2024-11-12T15:23:21Z"
+      },
+      {
+       "id": "ajsvkw",
+       "tweet_id": "1855936413923000809",
+       "line_item_id": "t73ts",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-11-12T15:23:18Z",
+       "updated_at": "2024-11-12T15:23:20Z"
+      },
+      {
+       "id": "ajsvkx",
+       "tweet_id": "1856297401423663522",
+       "line_item_id": "t73ts",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-11-12T15:23:18Z",
+       "updated_at": "2024-11-12T15:23:20Z"
+      },
+      {
+       "id": "ajtfsk",
+       "tweet_id": "1856075280429003140",
+       "line_item_id": "t7d4m",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-11-13T13:28:18Z",
+       "updated_at": "2024-11-13T13:28:20Z"
+      },
+      {
+       "id": "ajtfsl",
+       "tweet_id": "1856389667471474889",
+       "line_item_id": "t7d4m",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-11-13T13:28:18Z",
+       "updated_at": "2024-11-13T13:28:20Z"
+      },
+      {
+       "id": "ajtfsm",
+       "tweet_id": "1856075275768856614",
+       "line_item_id": "t7d4n",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-11-13T13:28:18Z",
+       "updated_at": "2024-11-13T13:28:20Z"
+      },
+      {
+       "id": "ajtfsn",
+       "tweet_id": "1856389665084907707",
+       "line_item_id": "t7d4n",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-11-13T13:28:18Z",
+       "updated_at": "2024-11-13T13:28:20Z"
+      },
+      {
+       "id": "ajzprs",
+       "tweet_id": "1858463662316609649",
+       "line_item_id": "t8nfd",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-11-18T10:54:00Z",
+       "updated_at": "2024-11-18T10:59:55Z"
+      },
+      {
+       "id": "ajzprt",
+       "tweet_id": "1858463662710854107",
+       "line_item_id": "t8nfd",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-11-18T10:54:00Z",
+       "updated_at": "2024-11-18T10:59:55Z"
+      },
+      {
+       "id": "ajzpru",
+       "tweet_id": "1858463662463480291",
+       "line_item_id": "t8nfd",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-11-18T10:54:00Z",
+       "updated_at": "2024-11-18T10:59:56Z"
+      },
+      {
+       "id": "ajzprv",
+       "tweet_id": "1858463662509551807",
+       "line_item_id": "t8nfd",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-11-18T10:54:00Z",
+       "updated_at": "2024-11-18T10:59:55Z"
+      },
+      {
+       "id": "ajzprw",
+       "tweet_id": "1858463662320865365",
+       "line_item_id": "t8nfd",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-11-18T10:54:01Z",
+       "updated_at": "2024-11-18T10:59:55Z"
+      },
+      {
+       "id": "ajzprx",
+       "tweet_id": "1858463662421492173",
+       "line_item_id": "t8nfd",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-11-18T10:54:01Z",
+       "updated_at": "2024-11-18T10:59:55Z"
+      },
+      {
+       "id": "ajzpry",
+       "tweet_id": "1858463662337618001",
+       "line_item_id": "t8nfd",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-11-18T10:54:01Z",
+       "updated_at": "2024-11-18T10:59:55Z"
+      },
+      {
+       "id": "ajzprz",
+       "tweet_id": "1858463662240907478",
+       "line_item_id": "t8nfd",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-11-18T10:54:01Z",
+       "updated_at": "2024-11-18T10:59:55Z"
+      },
+      {
+       "id": "ajzps5",
+       "tweet_id": "1858463788045132062",
+       "line_item_id": "t8nfd",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-11-18T10:54:30Z",
+       "updated_at": "2024-11-18T10:59:55Z"
+      },
+      {
+       "id": "ajzps6",
+       "tweet_id": "1858463788368064928",
+       "line_item_id": "t8nfd",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-11-18T10:54:30Z",
+       "updated_at": "2024-11-18T10:59:55Z"
+      },
+      {
+       "id": "ajzps7",
+       "tweet_id": "1858463788384891383",
+       "line_item_id": "t8nfd",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-11-18T10:54:30Z",
+       "updated_at": "2024-11-18T10:59:55Z"
+      },
+      {
+       "id": "ajzps8",
+       "tweet_id": "1858463788137365940",
+       "line_item_id": "t8nfd",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-11-18T10:54:30Z",
+       "updated_at": "2024-11-18T10:59:55Z"
+      },
+      {
+       "id": "ajzps9",
+       "tweet_id": "1858463788284219857",
+       "line_item_id": "t8nfd",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-11-18T10:54:30Z",
+       "updated_at": "2024-11-18T10:59:55Z"
+      },
+      "[458 more items truncated]"
+     ],
+     "total_count": 558
+    },
+    "meta": {
+     "mcp_result_projection": {
+      "fields": [
+       "id",
+       "tweet_id",
+       "line_item_id",
+       "entity_status",
+       "approval_status",
+       "deleted",
+       "created_at",
+       "updated_at"
+      ],
+      "max_items": 2000,
+      "compact": true
+     }
+    }
+   },
+   "meta": {
+    "requestId": "5d26fe5e-7ffd-41e1-99db-1fe3b3208a4e",
+    "latencyMs": 1918,
+    "mcp_output_budget": {
+     "truncated": true,
+     "max_bytes": 65536,
+     "serialized_bytes_before_budget": 66339,
+     "guidance": "Repeat the call with result_fields and max_items to request a smaller result."
+    }
+   }
+  }
+ }
+]

@@ -1,0 +1,204 @@
+{
+ "actor_id": "111467331865347",
+ "authorization_category": "NONE",
+ "enable_direct_install": false,
+ "enable_launch_instant_app": false,
+ "id": "1706460003998080",
+ "threads_user_id": "17841460099388007",
+ "instagram_user_id": "17841456393254006",
+ "name": "{{product.name}} 2026-06-17-83e0d5f5ba36da27cf202a729f85c9bb",
+ "object_type": "SHARE",
+ "object_story_spec": {
+  "page_id": "111467331865347",
+  "instagram_user_id": "17841456393254006"
+ },
+ "asset_feed_spec": {
+  "optimization_type": "PLACEMENT",
+  "call_to_action_types": [
+   "BOOK_TRAVEL"
+  ],
+  "ad_formats": [
+   "AUTOMATIC_FORMAT"
+  ],
+  "reasons_to_shop": false,
+  "shops_bundle": false,
+  "bodies": [
+   {
+    "text": "اكتشف منازل الحداوي، حيث يلتقي التراث بالراحة وروح المجتمع، في بيئة صُممت لتفاصيل الحياة اليومية.",
+    "adlabels": [
+     {
+      "name": "lbl_body",
+      "id": "120249183589660058"
+     },
+     {
+      "name": "placement_asset_fc8e31a47e3dabcd6_1781091238695",
+      "id": "120249674108270058"
+     }
+    ]
+   }
+  ],
+  "titles": [
+   {
+    "text": "منازل الحداوي في الدرعية",
+    "adlabels": [
+     {
+      "name": "lbl_title",
+      "id": "120249183589610058"
+     },
+     {
+      "name": "placement_asset_f735e6a9cf14ac5e7_1781091238695",
+      "id": "120249674108260058"
+     }
+    ]
+   }
+  ],
+  "descriptions": [
+   {
+    "text": "احجز الآن"
+   }
+  ],
+  "link_urls": [
+   {
+    "website_url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=facebook-instagram&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=adset-id-ADC5E5_manazel-alhadawi_ar_all_mf_prospecting&utm_content=ad-id-31A207_manazel-alhadawi-kv1_display",
+    "display_url": "www.diriyahcompany.sa",
+    "adlabels": [
+     {
+      "name": "lbl_url",
+      "id": "120249183589630058"
+     },
+     {
+      "name": "placement_asset_faa3558011a9a78b6_1781091238695",
+      "id": "120249674108280058"
+     }
+    ]
+   }
+  ],
+  "images": [
+   {
+    "hash": "6ebd52c61e3808285b7b6f5f8a1790e7",
+    "adlabels": [
+     {
+      "name": "lbl_feed",
+      "id": "120249183589650058"
+     }
+    ]
+   },
+   {
+    "hash": "5f2a709ef7b9964c280ea84ab6e4b9fb",
+    "adlabels": [
+     {
+      "name": "lbl_story",
+      "id": "120249183589620058"
+     },
+     {
+      "name": "placement_asset_f963ce8ceb3cb6c77_1781091238694",
+      "id": "120249674108250058"
+     }
+    ]
+   }
+  ],
+  "asset_customization_rules": [
+   {
+    "priority": 1,
+    "body_label": {
+     "name": "lbl_body",
+     "id": "120249183589660058"
+    },
+    "title_label": {
+     "name": "lbl_title",
+     "id": "120249183589610058"
+    },
+    "link_url_label": {
+     "name": "lbl_url",
+     "id": "120249183589630058"
+    },
+    "image_label": {
+     "name": "lbl_feed",
+     "id": "120249183589650058"
+    },
+    "customization_spec": {
+     "age_min": 13,
+     "age_max": 65,
+     "publisher_platforms": [
+      "facebook",
+      "instagram"
+     ],
+     "instagram_positions": [
+      "explore"
+     ],
+     "facebook_positions": [
+      "biz_disco_feed"
+     ]
+    }
+   },
+   {
+    "priority": 2,
+    "body_label": {
+     "name": "placement_asset_fc8e31a47e3dabcd6_1781091238695",
+     "id": "120249674108270058"
+    },
+    "title_label": {
+     "name": "placement_asset_f735e6a9cf14ac5e7_1781091238695",
+     "id": "120249674108260058"
+    },
+    "link_url_label": {
+     "name": "placement_asset_faa3558011a9a78b6_1781091238695",
+     "id": "120249674108280058"
+    },
+    "image_label": {
+     "name": "placement_asset_f963ce8ceb3cb6c77_1781091238694",
+     "id": "120249674108250058"
+    },
+    "customization_spec": {
+     "age_min": 13,
+     "age_max": 65,
+     "publisher_platforms": [
+      "instagram"
+     ],
+     "instagram_positions": [
+      "stream"
+     ]
+    }
+   },
+   {
+    "priority": 3,
+    "body_label": {
+     "name": "lbl_body",
+     "id": "120249183589660058"
+    },
+    "title_label": {
+     "name": "lbl_title",
+     "id": "120249183589610058"
+    },
+    "link_url_label": {
+     "name": "lbl_url",
+     "id": "120249183589630058"
+    },
+    "image_label": {
+     "name": "lbl_story",
+     "id": "120249183589620058"
+    },
+    "customization_spec": {
+     "age_min": 13,
+     "age_max": 65
+    }
+   }
+  ],
+  "additional_data": {
+   "multi_share_end_card": false,
+   "is_click_to_message": false
+  }
+ },
+ "creative_sourcing_spec": {
+  "destination_screenshot_spec": {
+   "enroll_status": "OPT_OUT"
+  }
+ },
+ "thumbnail_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t45.1600-4/716776047_122119591077256682_8987059401179905019_n.jpg?_nc_cat=106&ccb=1-7&_nc_ohc=8pYFdySWHpEQ7kNvwH5WDGV&_nc_oc=Adqf2iVdXGFIrZ2OBkcKYfSPG-vFJfw36zO6uciWTob0Wiq7Bc2YVIrMe7CjIW36848&_nc_zt=1&_nc_ht=scontent-iad6-1.xx&edm=ALfz3TcEAAAA&_nc_gid=y86LNXHm4Q1DaVUNQneRfQ&_nc_tpa=Q5bMBQJrD6a6JQXs0ZYjYe8i6ZWYlgQ61EhpMgQKg4-9HpZKvVSEmYywFu9BbEhHaA690lZRO7JvKZnN&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AQPeKWPPZm9NtvLUIVT9pN02iib1klkzyajLC7nXLHUKqA&oe=6AD4075C",
+ "use_page_actor_override": false,
+ "account_id": "2194833637927644",
+ "effective_authorization_category": "NONE",
+ "effective_object_story_id": "111467331865347_991290997216533",
+ "effective_instagram_media_id": "18108833929756158",
+ "status": "ACTIVE"
+}

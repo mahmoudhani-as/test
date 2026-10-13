@@ -1,0 +1,27 @@
+{
+ "request_id": "a78a83cc-5f39-4c61-b6b8-4034eaf2cbae",
+ "write": {
+  "unit1": {"dry_run_req": "252d8958-fc40-438b-bb24-5bc60e614b76", "live_req": "ec9edecc-3736-4bbd-b523-d0343453abcf", "idempotency_key": "3b607d87-0792-4988-a89c-03aadc6e5f08", "readback_req": "d74760d5-2220-45bd-8242-40c26d1e7cae"},
+  "batch16": {"preread_req": "dbac7a3e-04bb-4344-b791-b3413a25674e", "dry_run_req": "b631e52b-5453-47eb-8c6d-23ea89afcc58", "validate_only_req": "bbe450d6-87c2-45d1-9fee-29586a9b4604", "live_req": "cf7238a5-f143-46bb-b4cf-f790314a0ef1", "idempotency_key": "3efb90c2-a0a9-4d68-b153-bf3276ad48a9"}
+ },
+ "note": "final read-back 13-Oct of all 17 assets; all REVIEW_IN_PROGRESS; link text and both descriptions unchanged vs pre-read; no suffix/tracking/custom params/mobile urls",
+ "assets": {
+  "317269817108": ["https://www.diriyah.sa/ar/shopping/assouline-boutique?utm_source=google&utm_medium=paid-search&utm_campaign=hs-wintercampaign-bujairiterrace_cond&utm_term=4d320041_assouline_ar&utm_content=search_ar"],
+  "317269817126": ["https://www.diriyah.sa/ar/dine/altopiano?utm_source=google&utm_medium=paid-search&utm_campaign=hs-wintercampaign-bujairiterrace_cond&utm_term=ar&utm_content=search_ar"],
+  "317269817129": ["https://www.diriyah.sa/ar/dine/flamingo-room?utm_source=google&utm_medium=paid-search&utm_campaign=hs-wintercampaign-bujairiterrace_cond&utm_term=ar&utm_content=search_ar"],
+  "317269817141": ["https://www.diriyah.sa/ar/dine/sumthings?utm_source=google&utm_medium=paid-search&utm_campaign=hs-wintercampaign-bujairiterrace_cond&utm_term=ar&utm_content=search_ar"],
+  "317269817177": ["https://www.diriyah.sa/en/dine/long-chim?utm_source=google&utm_medium=paid-search&utm_campaign=hs-wintercampaign-bujairiterrace_cond&utm_term=en&utm_content=search_en"],
+  "317269817189": ["https://www.diriyah.sa/en/dine/sumthings?utm_source=google&utm_medium=paid-search&utm_campaign=hs-wintercampaign-bujairiterrace_cond&utm_term=en&utm_content=search_en"],
+  "317562674374": ["https://www.diriyah.sa/en/dine/peets-coffee?utm_source=google&utm_medium=paid-search&utm_term=en&utm_content=search_en"],
+  "331673391935": ["https://www.diriyah.sa/en/whats-on?utm_source=google&utm_medium=paid-search&utm_content=search_en"],
+  "331673391938": ["https://www.diriyah.sa/en/about?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_content=search_en"],
+  "365162388487": ["https://www.diriyah.sa/en/zallal?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=en&utm_content=search_en"],
+  "365162388490": ["https://www.diriyah.sa/en/history-and-culture?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=en&utm_content=search_en"],
+  "365162388493": ["https://www.diriyah.sa/en/dine/aok-kitchen?utm_source=google&utm_medium=paid-search&utm_term=en&utm_content=search_en"],
+  "365162388496": ["https://www.diriyah.sa/en/dine/villa-fayrouz?utm_source=google&utm_medium=paid-search&utm_campaign=visitor-diriyah-coe_cond&utm_term=en&utm_content=search_en"],
+  "365237652291": ["https://www.diriyah.sa/ar/dine/villa-mamas?utm_source=google&utm_medium=paid-search&utm_term=ar&utm_content=search_ar"],
+  "388973983772": ["https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-bab-samhan-x-qiddiya_cond&utm_term=bab-samhan-x-qiddiya_ar&utm_content=search_ar"],
+  "388973983775": ["https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-bab-samhan-x-qiddiya_cond&utm_term=bab-samhan-x-qiddiya_ar&utm_content=search_ar"],
+  "388973983778": ["https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=google&utm_medium=paid-search&utm_campaign=diriyah-company-bab-samhan-x-qiddiya_cond&utm_term=bab-samhan-x-qiddiya_ar&utm_content=search_ar"]
+ }
+}

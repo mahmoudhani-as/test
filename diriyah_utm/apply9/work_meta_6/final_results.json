@@ -1,0 +1,78 @@
+[
+ {
+  "platform": "meta",
+  "account_id": "2194833637927644",
+  "unit_type": "ad",
+  "unit": "120252926233800058",
+  "ad_ids": [
+   "120252926233800058"
+  ],
+  "ad_names": [
+   "ManazelAlHadawi_Video10s_EN_NA_Prospecting_03.06.2026_30.09.2026_+45Male_Test"
+  ],
+  "slot": "creative.object_story_spec.video_data.call_to_action.value.link",
+  "before": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=facebook-instagram&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=adset-id-E1EF65_manazel-alhadawi_en_all_mf_prospecting&utm_content=ad-id-172172_manazel-alhadawi-video1_video_+45Male_Test",
+  "after_expected": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=meta&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_cond&utm_term=manazel-alhadawi_en&utm_content=video_en",
+  "after_live": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=meta&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_cond&utm_term=manazel-alhadawi_en&utm_content=video_en",
+  "result": "Fixed",
+  "new_entity_ids": "27611920031817279",
+  "detail": "Live slot == now (pre-read ad req 76641035-279a-49f8-bbe5-fd116c2ac84a, creative 2236878360214668 req 14c85f9e-37ab-443e-be4f-4b5d25d72206; ad PAUSED, video_data creative). Built an exact copy of the creative (name, page_id + instagram_user_id, video_data video_id/title/message/image_hash/CTA BOOK_TRAVEL link_format VIDEO_LPP, 83-feature OPT_OUT degrees_of_freedom_spec, creative_sourcing_spec, media_sourcing_spec, format_transformation_spec, threads_user_id) with only the CTA link set to new; video_data.image_url not sent (Meta-derived proxy of the same image_hash). Dry-run preview body == payload (req 8c600eb8-9026-4a03-a12f-60edeb8b0ed6); live POST /act_2194833637927644/adcreatives req c4fb4794-3a94-4b6a-859f-55cd3ba7f445 -> new creative 27611920031817279 (read back req bd301d9b-2806-4a75-a8bb-767a916d77ca: identical to the original except the URL; Meta appended its own date-hash suffix to the creative name and re-signed the image_url proxy for the same image_hash). Attach: dry-run req de7da341-8c11-432b-afe3-a69c5818f281, live POST /120252926233800058 creative={creative_id:27611920031817279} (no status sent) req cd8bd619-45cb-47e3-9483-2e890ecc4f17 success. Verify read req 33abb7a9-c0d4-4841-a749-06c01953f321: ad uses 27611920031817279, slot == new byte for byte, no url_tags; status/configured_status still PAUSED, effective_status IN_PROCESS (back in review, expected). Old creative 2236878360214668 untouched."
+ },
+ {
+  "platform": "meta",
+  "account_id": "2194833637927644",
+  "unit_type": "ad",
+  "unit": "120252926501110058",
+  "ad_ids": [
+   "120252926501110058"
+  ],
+  "ad_names": [
+   "ManazelAlHadawi_CR1_AR_NA_Prospecting_03.06.2026_30.09.2026_+45Male_Test"
+  ],
+  "slot": "creative.asset_feed_spec.link_urls[0].website_url",
+  "before": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=facebook-instagram&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=adset-id-ADC5E5_manazel-alhadawi_ar_all_mf_prospecting&utm_content=ad-id-259EF1_manazel-alhadawi-CR1",
+  "after_expected": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=meta&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_conv&utm_term=manazel-alhadawi_ar&utm_content=manazel-alhadawi-cr1_display_ar",
+  "after_live": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=meta&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_conv&utm_term=manazel-alhadawi_ar&utm_content=manazel-alhadawi-cr1_display_ar",
+  "result": "Fixed",
+  "new_entity_ids": "4435799496637060",
+  "detail": "Live slots == now (pre-read ad req ce600f41-d39c-4e81-a459-8542b5404e7c, creative 2538355423317941 req f77ba4f1-2e25-4f91-8ad5-9ec537b096eb; ad PAUSED, asset_feed_spec carousel: 12 images, 3 carousels, 3 placement rules, 2 link_urls). Built an exact copy (object_story_spec page/IG ids, full asset_feed_spec incl. labels, asset_customization_rules, carousels, additional_data, 8-feature OPT_OUT degrees_of_freedom_spec, format_transformation_spec, threads_user_id, authorization_category NONE, portrait_customizations) with only link_urls[0] and link_urls[1] website_url set to new. First dry run timed out at the gateway (req 9cd253a8-59e6-47d0-b4f6-2e48bd92546a, dry run only, nothing sent); retried dry run req 59eef175-1446-40f4-893f-cedaf787e6de, preview body == payload. Live POST /act_2194833637927644/adcreatives req 3420b422-0f70-4cc6-a397-815f607bf355 -> new creative 4435799496637060 (read back req 0772017f-4620-445d-bd61-fc35fdd74d6a: all assets/labels/rules identical; Meta-side only: name date-hash suffix, the 75 unspecified degrees_of_freedom features filled in as OPT_OUT (original 8 kept, no OPT_IN), default creative_sourcing_spec destination_screenshot OPT_OUT, array order). One new creative serves both slots. Attach: dry-run req f15fe8f0-5c67-44b7-8b71-c558d82f6564, live POST /120252926501110058 creative={creative_id:4435799496637060} (no status sent) req 15f99c8d-81f2-4ad0-9162-93efd1912328 success. Verify read req bad94382-7143-4fe0-9bb3-75275bb97daa: ad uses 4435799496637060, no url_tags; status/configured_status still PAUSED, effective_status IN_PROCESS (review, expected). This slot (asset label 120250076159310058) reads back == new byte for byte (Meta lists the two link_urls in swapped order on read; both hold the new URL)."
+ },
+ {
+  "platform": "meta",
+  "account_id": "2194833637927644",
+  "unit_type": "ad",
+  "unit": "120252926501110058",
+  "ad_ids": [
+   "120252926501110058"
+  ],
+  "ad_names": [
+   "ManazelAlHadawi_CR1_AR_NA_Prospecting_03.06.2026_30.09.2026_+45Male_Test"
+  ],
+  "slot": "creative.asset_feed_spec.link_urls[1].website_url",
+  "before": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=facebook-instagram&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=adset-id-ADC5E5_manazel-alhadawi_ar_all_mf_prospecting&utm_content=ad-id-259EF1_manazel-alhadawi-CR1_+45Male_Test",
+  "after_expected": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=meta&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_conv&utm_term=manazel-alhadawi_ar&utm_content=manazel-alhadawi-cr1_display_ar",
+  "after_live": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=meta&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_conv&utm_term=manazel-alhadawi_ar&utm_content=manazel-alhadawi-cr1_display_ar",
+  "result": "Fixed",
+  "new_entity_ids": "4435799496637060",
+  "detail": "Live slots == now (pre-read ad req ce600f41-d39c-4e81-a459-8542b5404e7c, creative 2538355423317941 req f77ba4f1-2e25-4f91-8ad5-9ec537b096eb; ad PAUSED, asset_feed_spec carousel: 12 images, 3 carousels, 3 placement rules, 2 link_urls). Built an exact copy (object_story_spec page/IG ids, full asset_feed_spec incl. labels, asset_customization_rules, carousels, additional_data, 8-feature OPT_OUT degrees_of_freedom_spec, format_transformation_spec, threads_user_id, authorization_category NONE, portrait_customizations) with only link_urls[0] and link_urls[1] website_url set to new. First dry run timed out at the gateway (req 9cd253a8-59e6-47d0-b4f6-2e48bd92546a, dry run only, nothing sent); retried dry run req 59eef175-1446-40f4-893f-cedaf787e6de, preview body == payload. Live POST /act_2194833637927644/adcreatives req 3420b422-0f70-4cc6-a397-815f607bf355 -> new creative 4435799496637060 (read back req 0772017f-4620-445d-bd61-fc35fdd74d6a: all assets/labels/rules identical; Meta-side only: name date-hash suffix, the 75 unspecified degrees_of_freedom features filled in as OPT_OUT (original 8 kept, no OPT_IN), default creative_sourcing_spec destination_screenshot OPT_OUT, array order). One new creative serves both slots. Attach: dry-run req f15fe8f0-5c67-44b7-8b71-c558d82f6564, live POST /120252926501110058 creative={creative_id:4435799496637060} (no status sent) req 15f99c8d-81f2-4ad0-9162-93efd1912328 success. Verify read req bad94382-7143-4fe0-9bb3-75275bb97daa: ad uses 4435799496637060, no url_tags; status/configured_status still PAUSED, effective_status IN_PROCESS (review, expected). This slot (asset label 120250076124160058, the one with display_url www.diriyahcompany.sa) reads back == new byte for byte (Meta lists the two link_urls in swapped order on read; both hold the new URL)."
+ },
+ {
+  "platform": "meta",
+  "account_id": "2194833637927644",
+  "unit_type": "ad",
+  "unit": "120251844312230058",
+  "ad_ids": [
+   "120251844312230058"
+  ],
+  "ad_names": [
+   "LifeInDiriyah_Ad2_Carousel_Boosted_AR_NA_Prospecting_23.06.2026_22.07.2026"
+  ],
+  "slot": "creative.call_to_action.value.link",
+  "before": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_medium=paid-social&utm_content=ad1&utm_source=IG&utm_campaign=lifeindiriyah_jun2026&utm_term=adset-id-9a4d62_life-in-diriyah_ar_all_mf_prospecting&fbclid=iwy2xjawsotkblehrua2flbqixmabicmlketeyqmpkb2pqbzbnvllpslgwc3j0ywzhchbfawqpmte5mjexnzi4mtq0nta0aaeemomvpm-m7buih44-zwbnmwsgn4z5fmpt4lbj2zdkqlcx8lqcfdhdxfg0ycy_aem_nvqjwsgqkuok_sp2x_glka",
+  "after_expected": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_source=meta&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_jul26_awr&utm_term=life-in-diriyah_ar&utm_content=ad2_display_ar",
+  "after_live": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_source=meta&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_jul26_awr&utm_term=life-in-diriyah_ar&utm_content=ad2_display_ar",
+  "result": "Fixed",
+  "new_entity_ids": "1072754602416428",
+  "detail": "Live slot == now (pre-read ad req f8f541d5-0f37-409c-9d01-b0f333bcd49b, creative 27727306463599335 req 0506d9ad-2baa-4544-9c47-3ca46a7d1f27; ad configured ACTIVE, effective ADSET_PAUSED; boosted Instagram carousel post, source_instagram_media_id 18038273774805129). Built with the boosted-post recipe: name, object_id 111467331865347 (page/actor), instagram_user_id, source_instagram_media_id, call_to_action LEARN_MORE with only the link set to new, plus contextual_multi_ads OPT_IN, threads_user_id, authorization_category NONE, portrait_customizations optimal_num_cards, all as read. Dry-run preview body == payload (req 77ad8003-aed3-4fe6-9c28-e73b648b43c6); live POST /act_2194833637927644/adcreatives req b2330b5b-892d-4baf-bc6c-fa3134c59f88 -> new creative 1072754602416428 (read back req b072dac0-f7a1-4491-bf6b-c65168eab78e: same Instagram media (effective_instagram_media_id 17874113580652872, permalink DaxmiuGjKxt), so the post keeps its likes/comments; body/title/CTA type/flags identical; Meta-side only: name date-hash suffix, default all-OPT_OUT degrees_of_freedom_spec and creative_sourcing_spec). Attach: dry-run req be45dd24-8575-47a9-b48d-a57d070da18c, live POST /120251844312230058 creative={creative_id:1072754602416428} (no status sent) req c5b6c062-4ca3-4c13-9235-b8e803188037 success. Verify read req ca2e7ffe-3364-4d6b-bff3-4ea2d0f8627f: ad uses 1072754602416428, CTA link == new byte for byte, no url_tags; configured_status still ACTIVE (ad set still paused), effective_status IN_PROCESS (review, expected). The old 'now' URL carried an fbclid, which is gone."
+ }
+]

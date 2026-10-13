@@ -1,0 +1,1455 @@
+[
+ {
+  "tool_use_id": "toolu_01FFdTSMEggnvdvQ1dVUmW53",
+  "input": {
+   "action": "snapchat_adsquad_list",
+   "ad_account_id": "b736921f-da3e-4889-8620-d3b0969c69b0",
+   "query": {
+    "limit": 100
+   },
+   "result_fields": [
+    "id",
+    "name",
+    "campaign_id",
+    "status",
+    "start_time",
+    "end_time",
+    "delivery_status",
+    "updated_at"
+   ]
+  },
+  "result": {
+   "success": true,
+   "data": {
+    "success": true,
+    "action": "snapchat_adaccounts_ad_account_id_adsquads_get",
+    "method": "GET",
+    "host": "adsapi.snapchat.com",
+    "path": "/v1/adaccounts/b736921f-da3e-4889-8620-d3b0969c69b0/adsquads",
+    "dryRun": false,
+    "data": {
+     "request_status": "SUCCESS",
+     "request_id": "dbbafe75-ebc2-46ae-ae22-82cf01c7b0ef",
+     "adsquads": [
+      {
+       "adsquad": {
+        "id": "009d8e9c-8083-443d-9b91-2b19a60f08b7",
+        "name": "Bab Samhan X Qiddiya_2026_KSA_Awareness_Snapchat_EN",
+        "campaign_id": "fe087dd3-4b12-45a1-b910-ab4ac6cdf83b",
+        "status": "ACTIVE",
+        "start_time": "2026-06-24T09:24:07.710Z",
+        "end_time": "2026-08-31T20:59:59.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-08-03T09:02:35.251Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "02630ec1-e600-4bf1-b7f9-fe4181bce5e6",
+        "name": "Saudi Arabia, All Genders, 20+",
+        "campaign_id": "0163123d-176e-459e-8bb3-b54f278b70f5",
+        "status": "ACTIVE",
+        "start_time": "2026-06-26T09:19:54.000Z",
+        "end_time": "2026-06-30T09:19:54.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_AD_SQUAD_CREATION_STATE_NOT_PUBLISHED",
+         "INVALID_AD_SQUAD_RESERVED_STATUS_NOT_ACTIVE",
+         "INVALID_START_TIME_AFTER_END_TIME"
+        ],
+        "updated_at": "2026-06-26T11:46:57.199Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "069eb0d0-0a9e-48bd-b91d-407f0f1447f0",
+        "name": "Visit Diriyah_Tactical_Bujari_KV_SummerCampaign2026_KSA_Consideration_Snapchat_AR",
+        "campaign_id": "4589793c-fade-4a3c-85e3-ec19c81e8b90",
+        "status": "PAUSED",
+        "start_time": "2026-07-07T04:08:44.630Z",
+        "end_time": "2026-08-31T20:59:59.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-09-12T17:17:11.184Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "0794e83e-a8db-4214-8ddb-96c4dbe2895e",
+        "name": "Bab Samhan X Qiddiya_2026_KSA_Consideration_Snapchat_EN",
+        "campaign_id": "0bf71bc2-64ee-43ac-b960-c9c41b0d1ce0",
+        "status": "ACTIVE",
+        "start_time": "2026-07-18T17:53:00.346Z",
+        "end_time": "2026-08-31T20:59:59.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-08-16T18:01:40.399Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "0857180c-0cd4-465d-8b1a-80c20f76bad6",
+        "name": "Visit Diriyah_Tactical_KV3_SummerCampaign2026_KSA_Awareness_Snapchat_AR",
+        "campaign_id": "21314f9c-dab9-43be-a882-8c7d0c76373b",
+        "status": "PAUSED",
+        "start_time": "2026-07-22T14:46:44.264Z",
+        "end_time": "2026-09-30T20:59:59.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-09-06T10:26:08.056Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "09622afb-03e1-4d31-a649-24577ebc007d",
+        "name": "Bujairi Terrace_Tactical _Bujairi Terrace Ramadan Live Campaign 2026_Tickets__KSA_Consideration_Snapchat_Ar",
+        "campaign_id": "8e11e9b4-1efa-4e03-baf4-f26c0160b79c",
+        "status": "ACTIVE",
+        "start_time": "2026-02-15T20:53:35.194Z",
+        "end_time": "2026-03-25T20:59:35.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-03-18T09:10:44.714Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "11fcd42b-02b0-429b-a23f-9c628d7d6961",
+        "name": "Visit Diriyah_Tactical_WC_KV_SummerCampaign2026_KSA_Consideration_Snapchat_EN",
+        "campaign_id": "4589793c-fade-4a3c-85e3-ec19c81e8b90",
+        "status": "PAUSED",
+        "start_time": "2026-06-11T09:55:25.698Z",
+        "end_time": "2026-06-26T20:59:59.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-09-12T17:17:11.545Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "13c5b5c7-40a6-4784-bb44-014f5f592ca5",
+        "name": "bujairi Terrace_Tactical _Bujairi Terrace  Ramadan Live Campaign 2026_Resturants__KSA_Consideration_Snapchat_EN",
+        "campaign_id": "8e11e9b4-1efa-4e03-baf4-f26c0160b79c",
+        "status": "PAUSED",
+        "start_time": "2026-02-15T20:53:35.194Z",
+        "end_time": "2026-03-25T20:59:35.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-03-17T09:55:10.391Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "15afa565-3a98-4300-9d00-824c76244483",
+        "name": "Visit (Eid) EN",
+        "campaign_id": "6b366638-30b5-41f7-bf9f-b1377e7a6985",
+        "status": "ACTIVE",
+        "start_time": "2026-05-24T15:19:29.000Z",
+        "end_time": "2026-08-31T20:59:00.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-05-21T15:43:54.433Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "1eb2c933-7c7b-421d-bbd0-54f70294b411",
+        "name": "Bab Samhan_Summer_2026_KSA_Consideration_Snapchat_EN",
+        "campaign_id": "5b6ac69d-ab6e-4cae-a73e-1d79163762f0",
+        "status": "ACTIVE",
+        "start_time": "2026-05-24T00:00:00.000Z",
+        "end_time": "2026-08-31T20:59:00.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-06-29T15:09:19.806Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "2309d090-d080-4ff1-8c09-76a7b41fb710",
+        "name": "company_general_2026_sep_visit-diriyah_adset-id-12ad6e5e_ar_all_mf_prospecting_snd-uf",
+        "campaign_id": "21314f9c-dab9-43be-a882-8c7d0c76373b",
+        "status": "ACTIVE",
+        "start_time": "2026-09-20T19:00:00.000Z",
+        "end_time": "2026-09-25T20:59:59.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-09-21T17:17:23.926Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "2b6757f5-09a8-4882-872b-377fa1808a58",
+        "name": "Visit Diriyah_Tactical_Assouline_KV_SummerCampaign2026_KSA_Awareness_Snapchat_AR",
+        "campaign_id": "21314f9c-dab9-43be-a882-8c7d0c76373b",
+        "status": "PAUSED",
+        "start_time": "2026-07-18T17:58:30.669Z",
+        "end_time": "2026-09-30T20:59:00.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-09-21T07:11:32.564Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "2bca30a5-c903-4a4f-811d-5712b4c592d5",
+        "name": "bujairi Terrace_Tactical _Bujairi Terrace  Ramadan Live Campaign 2026_Resturants__KSA_Consideration_Snapchat_AR",
+        "campaign_id": "8e11e9b4-1efa-4e03-baf4-f26c0160b79c",
+        "status": "PAUSED",
+        "start_time": "2026-02-15T20:53:35.194Z",
+        "end_time": "2026-03-25T20:59:35.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-03-17T09:55:10.421Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "2cc413d1-a4e9-43fa-b974-8568ba11f8b0",
+        "name": "bab-samhan-ar-awareness_ar_all_na_prospecting",
+        "campaign_id": "8b9db796-669c-49e9-8777-07edd6b023a8",
+        "status": "ACTIVE",
+        "start_time": "2026-05-24T13:04:22.000Z",
+        "end_time": "2026-08-31T20:59:00.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-05-21T19:03:40.101Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "2e8289bd-15ee-4dde-8862-0ea2db1c9f4b",
+        "name": "Bab Samhan X Qiddiya_2026_KSA_Consideration_Snapchat_AR",
+        "campaign_id": "0bf71bc2-64ee-43ac-b960-c9c41b0d1ce0",
+        "status": "ACTIVE",
+        "start_time": "2026-07-18T17:56:59.438Z",
+        "end_time": "2026-08-31T20:59:59.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-08-16T18:01:40.193Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "316758cb-05e0-420d-a162-fead999109ea",
+        "name": "Visit Diriyah_Tactical_WC_KV_SummerCampaign2026_KSA_Consideration_Snapchat_AR",
+        "campaign_id": "4589793c-fade-4a3c-85e3-ec19c81e8b90",
+        "status": "PAUSED",
+        "start_time": "2026-06-11T09:58:22.994Z",
+        "end_time": "2026-07-19T20:59:59.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-09-12T17:17:10.879Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "362214bf-a9da-4c38-894a-99359c3e44dd",
+        "name": "Visit Diriyah_Tactical_Bab Samhan Ramadan Live Campaign 2026_KSA_Prospecting_En_Awareness_Snapchat",
+        "campaign_id": "ab4e0797-07ca-4e96-b61d-9c0240de2eb1",
+        "status": "ACTIVE",
+        "start_time": "2026-02-15T21:00:08.000Z",
+        "end_time": "2026-03-25T20:59:00.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-03-15T08:29:26.291Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "43e0c2a5-307e-4f5e-8c32-5fa28600c744",
+        "name": "Bujairi Terrace_Tactical_Bujairi Terrace  Ramadan Live Campaign 2026 restaurants_KSA_Prospecting_en_Awareness_Snapchat",
+        "campaign_id": "7fc4c8cf-40cd-44cb-b1c3-481c7fc210f2",
+        "status": "PAUSED",
+        "start_time": "2026-02-15T15:01:45.261Z",
+        "end_time": "2026-03-25T20:59:00.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-03-17T09:55:09.408Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "51737625-eee1-4586-a5cb-95892cd3f0bf",
+        "name": "Visit Diriyah_Tactical _Zallal Ramadan Campaign 2026_KSA_Consideration_Snapchat_Ar",
+        "campaign_id": "77412dde-d9e0-4eb2-ac9e-5634ab411ec8",
+        "status": "ACTIVE",
+        "start_time": "2026-02-25T11:00:00.000Z",
+        "end_time": "2026-03-24T21:59:59.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-03-15T08:31:45.004Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "51fb9f0b-b82d-4395-bccb-3ec2462a3bd6",
+        "name": "bab-samhan-en-consideration_en_all_na_prospecting",
+        "campaign_id": "a3f24d5a-1fd3-4f3d-b52d-633e11a5bf84",
+        "status": "ACTIVE",
+        "start_time": "2026-05-24T15:19:29.000Z",
+        "end_time": "2026-08-31T20:59:00.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-05-21T19:02:58.117Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "55d10780-6390-4f23-a0c0-19c160a9c792",
+        "name": "Bujairi Terrace_Tactical _Bujairi Terrace Ramadan Live Campaign 2026_restaurants__KSA_Conversion_Snapchat_AR",
+        "campaign_id": "f33414a7-70c6-4ad8-9524-53b3476599bc",
+        "status": "PAUSED",
+        "start_time": "2026-02-25T20:30:08.792Z",
+        "end_time": "2026-03-25T20:59:00.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-03-17T09:55:11.782Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "572a1b53-046c-4db4-80bd-b7bf083e0429",
+        "name": "Visit Diriyah_Tactical _Bab Samhan Ramadan Live Campaign 2026_KSA_Consideration_Snapchat_EN",
+        "campaign_id": "2ba00c0b-d4bb-4776-b1a9-01b8e21f3fd2",
+        "status": "PAUSED",
+        "start_time": "2026-02-15T21:00:00.000Z",
+        "end_time": "2026-03-25T20:59:00.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-05-24T16:02:32.374Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "59b6cf20-524a-4a50-84bf-fb0ef5ea283a",
+        "name": "Bab Samhan_Summer_2026_KSA_Awareness_Snapchat_EN",
+        "campaign_id": "e27ee922-d10a-49a9-a09e-ad6a7e0830c5",
+        "status": "ACTIVE",
+        "start_time": "2026-05-24T00:00:00.000Z",
+        "end_time": "2026-06-30T20:59:00.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-06-29T15:07:47.298Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "5af1c2f7-724a-498b-8949-4ca794bbb587",
+        "name": "company_general_2026_sep_visit-diriyah_adset-id-12ad6e5e_ar_all_mf_prospecting_snd-mf",
+        "campaign_id": "4589793c-fade-4a3c-85e3-ec19c81e8b90",
+        "status": "ACTIVE",
+        "start_time": "2026-09-20T19:00:00.000Z",
+        "end_time": "2026-09-25T20:59:59.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-09-21T17:17:23.992Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "61564006-189f-40fb-a926-b1a42c054d46",
+        "name": "Visit Diriyah_Tactical _Bab Samhan Ramadan Live Campaign 2026_KSA_Consideration_Snapchat_Ar",
+        "campaign_id": "2ba00c0b-d4bb-4776-b1a9-01b8e21f3fd2",
+        "status": "PAUSED",
+        "start_time": "2026-02-15T21:00:00.000Z",
+        "end_time": "2026-03-25T20:59:00.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-05-24T16:02:31.347Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "627dd2dc-53af-42c2-b1ce-e64d3e65eec9",
+        "name": "Bujairi Terrace_Tactical_Bujairi Terrace  Ramadan Live Campaign 2026 tickets_KSA_Prospecting_En_Awareness_Snapchat",
+        "campaign_id": "7fc4c8cf-40cd-44cb-b1c3-481c7fc210f2",
+        "status": "ACTIVE",
+        "start_time": "2026-02-15T15:01:45.261Z",
+        "end_time": "2026-03-25T20:59:00.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-03-18T09:13:44.482Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "653f1912-a984-4f36-8503-c709961be829",
+        "name": "Visit Diriyah_Tactical_Intro_KV_SummerCampaign2026_KSA_Consideration_Snapchat_AR",
+        "campaign_id": "4589793c-fade-4a3c-85e3-ec19c81e8b90",
+        "status": "PAUSED",
+        "start_time": "2026-06-16T12:39:57.283Z",
+        "end_time": "2026-09-30T20:59:59.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-09-21T07:11:43.292Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "6962de66-3e7f-4198-8755-654cbe909f0b",
+        "name": "sa_Diriyah_ManazelAlHadawi_AO_03.06.2026_30.09.2026_CPC_paidsocial_snapchat_AR_Prospecting",
+        "campaign_id": "efea115b-5f7e-461a-8e74-7577baeda7f2",
+        "status": "PAUSED",
+        "start_time": "2026-06-03T00:00:00.000Z",
+        "end_time": "2026-09-30T23:59:00.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-06-02T15:50:49.080Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "6d0e74d2-47cf-44e3-8757-4d04fad3b812",
+        "name": "Visit Diriyah_Tactical _Shopping Ramadan Live Campaign 2026_KSA_Consideration_Snapchat_Ar",
+        "campaign_id": "ac07b8bb-0e49-49f7-aca5-15e0a697d48e",
+        "status": "ACTIVE",
+        "start_time": "2026-02-26T21:00:27.000Z",
+        "end_time": "2026-03-25T09:59:59.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-03-18T09:15:55.789Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "6fc29549-56db-4156-80f5-5899d4a5dffc",
+        "name": "bab-samhan-en-awareness_en_all_na_prospecting",
+        "campaign_id": "8b9db796-669c-49e9-8777-07edd6b023a8",
+        "status": "ACTIVE",
+        "start_time": "2026-05-24T13:04:22.000Z",
+        "end_time": "2026-08-31T20:59:00.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-05-21T19:03:26.707Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "71b30a4d-2fde-442e-adb1-923a088f7369",
+        "name": "Visit Diriyah_Tactical _ Eid KV Summer Campaign 2026_KSA_Consideration_Snapchat_EN",
+        "campaign_id": "4589793c-fade-4a3c-85e3-ec19c81e8b90",
+        "status": "PAUSED",
+        "start_time": "2026-05-24T00:00:00.000Z",
+        "end_time": "2026-05-28T20:59:59.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-09-12T17:17:10.851Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "7ae1693c-d642-4396-a887-a9fd5121e45c",
+        "name": "Visit Diriyah_Tactical_Retail_KV_SummerCampaign2026_KSA_Awareness_Snapchat_AR",
+        "campaign_id": "21314f9c-dab9-43be-a882-8c7d0c76373b",
+        "status": "PAUSED",
+        "start_time": "2026-08-11T11:18:20.866Z",
+        "end_time": "2026-09-30T20:59:59.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-09-21T07:11:29.728Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "7c91d7ee-8e40-45ed-9a5a-11d94e261322",
+        "name": "Visit Diriyah_Tactical_KV3_SummerCampaign2026_KSA_Awareness_Snapchat_EN",
+        "campaign_id": "21314f9c-dab9-43be-a882-8c7d0c76373b",
+        "status": "PAUSED",
+        "start_time": "2026-07-22T14:49:15.825Z",
+        "end_time": "2026-09-30T20:59:59.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-09-06T10:26:07.269Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "8278091a-9a1f-4e30-819f-3056b538ac36",
+        "name": "Visit Diriyah_Tactical_Retail_KV_SummerCampaign2026_KSA_Awareness_Snapchat_AR",
+        "campaign_id": "4589793c-fade-4a3c-85e3-ec19c81e8b90",
+        "status": "PAUSED",
+        "start_time": "2026-09-12T17:17:13.108Z",
+        "end_time": "2026-09-29T21:59:59.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-09-21T07:11:28.435Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "83dd2d04-6e15-4da9-8709-d57ecf31190a",
+        "name": "Bujairi Terrace_Tactical _Bujairi Terrace Ramadan Live Campaign 2026_Tickets__KSA_Consideration_Snapchat_EN",
+        "campaign_id": "8e11e9b4-1efa-4e03-baf4-f26c0160b79c",
+        "status": "ACTIVE",
+        "start_time": "2026-02-15T20:53:35.194Z",
+        "end_time": "2026-03-25T20:59:35.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-03-18T09:11:52.054Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "84a9de9c-1a55-4740-9bae-399de38ce963",
+        "name": "Visit Diriyah_Tactical_KV3_SummerCampaign2026_KSA_Awareness_Snapchat_AR",
+        "campaign_id": "4589793c-fade-4a3c-85e3-ec19c81e8b90",
+        "status": "PAUSED",
+        "start_time": "2026-07-29T12:16:16.196Z",
+        "end_time": "2026-09-30T20:59:59.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-09-12T17:17:11.073Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "857f7cef-383b-48e3-910e-5869ac2dd442",
+        "name": "Bab Samhan X Qiddiya_2026_KSA_Awareness_Snapchat_AR",
+        "campaign_id": "fe087dd3-4b12-45a1-b910-ab4ac6cdf83b",
+        "status": "ACTIVE",
+        "start_time": "2026-06-24T09:24:07.695Z",
+        "end_time": "2026-08-31T20:59:59.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-08-03T09:02:45.879Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "89de92ea-0ee3-4e58-b015-0d89850d8fec",
+        "name": "Bujairi Terrace_Tactical _Bujairi Terrace Ramadan Live Campaign 2026_restaurants__KSA_Conversion_Snapchat_EN",
+        "campaign_id": "f33414a7-70c6-4ad8-9524-53b3476599bc",
+        "status": "PAUSED",
+        "start_time": "2026-02-25T20:30:08.778Z",
+        "end_time": "2026-03-25T20:59:00.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-03-17T09:55:10.863Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "8b76883e-2984-4a67-8482-1f719f9db9cd",
+        "name": "Visit Diriyah_Tactical _ Eid KV Summer Campaign 2026_KSA_Consideration_Snapchat_AR",
+        "campaign_id": "4589793c-fade-4a3c-85e3-ec19c81e8b90",
+        "status": "PAUSED",
+        "start_time": "2026-05-24T00:00:00.000Z",
+        "end_time": "2026-05-28T20:59:59.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-09-12T17:17:11.077Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "94f7a28f-48c7-420d-9674-ee352d1512f7",
+        "name": "Visit (Eid) AR",
+        "campaign_id": "6b366638-30b5-41f7-bf9f-b1377e7a6985",
+        "status": "ACTIVE",
+        "start_time": "2026-05-24T15:19:29.000Z",
+        "end_time": "2026-08-31T20:59:00.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-05-21T15:43:54.291Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "98e8f388-1555-458b-8714-65a95f9012fc",
+        "name": "sa_Diriyah_ManazelAlHadawi_AO_03.06.2026_30.09.2026_CPM_paidsocial_snapchat_AR_Prospecting",
+        "campaign_id": "2e991d25-4156-4633-936d-ccb1c7ec8fcf",
+        "status": "PAUSED",
+        "start_time": "2026-06-03T00:00:00.000Z",
+        "end_time": "2026-09-30T23:59:00.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-06-02T15:50:33.594Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "a17b5e08-bf48-4873-ae81-43cd3e969929",
+        "name": "Visit Diriyah_Tactical_Bab Samhan Ramadan Live Campaign 2026_KSA_Prospecting_AR_Awareness_Snapchat",
+        "campaign_id": "ab4e0797-07ca-4e96-b61d-9c0240de2eb1",
+        "status": "ACTIVE",
+        "start_time": "2026-02-15T21:00:08.000Z",
+        "end_time": "2026-03-25T20:59:00.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-03-15T08:29:22.896Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "a959168f-13a4-4bee-a033-a63ff0e35e38",
+        "name": "Visit Diriyah_Tactical _shopping Ramadan Live Campaign 2026_KSA_Consideration_Snapchat_EN",
+        "campaign_id": "ac07b8bb-0e49-49f7-aca5-15e0a697d48e",
+        "status": "ACTIVE",
+        "start_time": "2026-02-26T21:00:56.000Z",
+        "end_time": "2026-03-25T20:59:59.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-03-18T09:15:18.062Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "b25f6ecb-df9d-49ec-9a6f-dd925ffc74e8",
+        "name": "Visit Diriyah_Tactical_Zallal Ramadan Campaign 2026_KSA_Prospecting_AR_Awareness_Snapchat",
+        "campaign_id": "aa20c5a0-b007-4921-b0bc-e15c3d0ab3a3",
+        "status": "ACTIVE",
+        "start_time": "2026-02-24T21:00:02.000Z",
+        "end_time": "2026-03-25T20:59:59.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-03-15T08:31:30.083Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "b58c27d5-f7cc-492c-a4c1-46d987a99b21",
+        "name": " Bujairi Terrace_Tactical_Bujairi Terrace  Ramadan Live Campaign 2026 restaurants_KSA_Prospecting_AR_Awareness_Snapchat",
+        "campaign_id": "7fc4c8cf-40cd-44cb-b1c3-481c7fc210f2",
+        "status": "PAUSED",
+        "start_time": "2026-02-15T15:01:45.261Z",
+        "end_time": "2026-03-25T20:59:00.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-03-17T09:55:09.667Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "bba3856c-f7f0-412f-949b-45bc63fd8a22",
+        "name": "Bujairi Terrace_Tactical _Bujairi Terrace Ramadan Live Campaign 2026_Tickets__KSA_Conversion_Snapchat_Ar",
+        "campaign_id": "f33414a7-70c6-4ad8-9524-53b3476599bc",
+        "status": "ACTIVE",
+        "start_time": "2026-02-25T20:30:08.762Z",
+        "end_time": "2026-03-25T20:59:00.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-03-18T09:13:25.484Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "bbe49411-b71e-4f8f-bc61-5e35f895cc87",
+        "name": "sa_Diriyah_ManazelAlHadawi_AO_03.06.2026_30.09.2026_CPM_paidsocial_snapchat_EN_Prospecting",
+        "campaign_id": "2e991d25-4156-4633-936d-ccb1c7ec8fcf",
+        "status": "PAUSED",
+        "start_time": "2026-06-03T00:00:00.000Z",
+        "end_time": "2026-09-30T23:59:00.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-06-02T15:50:13.962Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "c51b0bb4-cbd5-45dd-a808-5a4fbeb8d1c0",
+        "name": "bab-samhan-ar-consideration_ar_all_na_prospecting",
+        "campaign_id": "a3f24d5a-1fd3-4f3d-b52d-633e11a5bf84",
+        "status": "ACTIVE",
+        "start_time": "2026-05-24T15:19:29.000Z",
+        "end_time": "2026-08-31T20:59:00.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-05-21T19:03:13.319Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "c89bdfd9-345d-4327-8083-c2b9b4c2db41",
+        "name": "Visit Diriyah_Tactical_WC_KV_SummerCampaign2026_KSA_Awareness_Snapchat_AR",
+        "campaign_id": "21314f9c-dab9-43be-a882-8c7d0c76373b",
+        "status": "PAUSED",
+        "start_time": "2026-07-18T18:15:05.952Z",
+        "end_time": "2026-08-31T20:59:59.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-08-11T12:11:29.356Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "c8c75acc-2dca-40f3-93f1-bfba751847c8",
+        "name": "Visit Diriyah_Tactical_Intro_KV_SummerCampaign2026_KSA_Awareness_Snapchat_AR",
+        "campaign_id": "21314f9c-dab9-43be-a882-8c7d0c76373b",
+        "status": "PAUSED",
+        "start_time": "2026-07-18T18:05:05.941Z",
+        "end_time": "2026-09-30T20:59:59.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-09-21T07:11:31.332Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "cdb33dc0-de8d-4d18-a941-b5d9bda86e7b",
+        "name": "Visit Diriyah_Tactical_Zallal Ramadan Campaign 2026_KSA_Prospecting_En_Awareness_Snapchat",
+        "campaign_id": "aa20c5a0-b007-4921-b0bc-e15c3d0ab3a3",
+        "status": "ACTIVE",
+        "start_time": "2026-02-24T21:00:50.000Z",
+        "end_time": "2026-03-25T20:59:59.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-03-15T08:31:31.826Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "d13a0feb-66aa-4e6d-ba31-f14ef0f8c26b",
+        "name": "Bab Samhan_Summer_2026_KSA_Awareness_Snapchat_AR",
+        "campaign_id": "e27ee922-d10a-49a9-a09e-ad6a7e0830c5",
+        "status": "ACTIVE",
+        "start_time": "2026-05-24T00:00:00.000Z",
+        "end_time": "2026-06-30T20:59:00.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-06-29T15:08:00.048Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "d1f23fa5-53cf-4bb9-8ba7-5c2459e8296e",
+        "name": "Bujairi Terrace_Tactical_Bujairi Terrace  Ramadan Live Campaign 2026 tickets_KSA_Prospecting_AR_Awareness_Snapchat",
+        "campaign_id": "7fc4c8cf-40cd-44cb-b1c3-481c7fc210f2",
+        "status": "ACTIVE",
+        "start_time": "2026-02-15T15:01:45.261Z",
+        "end_time": "2026-03-25T20:59:00.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-03-18T09:09:58.806Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "d54e20e0-f297-4ea3-a79b-352d75e0aa37",
+        "name": "sa_Diriyah_ManazelAlHadawi_AO_03.06.2026_30.09.2026_CPL_paidsocial_snapchat_EN_Prospecting",
+        "campaign_id": "9a9ae749-bff3-4b90-8779-44e8f6cebdf6",
+        "status": "PAUSED",
+        "start_time": "2026-06-03T00:00:00.000Z",
+        "end_time": "2026-09-30T23:59:00.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-06-02T15:51:23.067Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "d6ad1697-a1cb-4d2c-986b-f2e22c24a082",
+        "name": "Bujairi Terrace_Tactical _Bujairi Terrace Ramadan Live Campaign 2026_Tickets__KSA_Conversion_Snapchat_EN",
+        "campaign_id": "f33414a7-70c6-4ad8-9524-53b3476599bc",
+        "status": "ACTIVE",
+        "start_time": "2026-02-25T20:30:08.747Z",
+        "end_time": "2026-03-25T20:59:00.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-03-18T09:12:45.272Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "e10d8a2b-40f3-486f-ad20-4fd047e1f1c5",
+        "name": "Visit Diriyah_Tactical_Assouline_KV_SummerCampaign2026_KSA_Consideration_Snapchat_AR",
+        "campaign_id": "4589793c-fade-4a3c-85e3-ec19c81e8b90",
+        "status": "PAUSED",
+        "start_time": "2026-06-25T15:05:07.467Z",
+        "end_time": "2026-09-30T20:59:59.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-09-21T07:11:33.261Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "e7253a7c-a32f-4ddd-8634-f953f8deb33f",
+        "name": "sa_Diriyah_ManazelAlHadawi_AO_03.06.2026_30.09.2026_CPC_paidsocial_snapchat_EN_Prospecting",
+        "campaign_id": "efea115b-5f7e-461a-8e74-7577baeda7f2",
+        "status": "PAUSED",
+        "start_time": "2026-06-03T00:00:00.000Z",
+        "end_time": "2026-09-30T23:59:00.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-06-02T15:50:40.591Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "ef6b8730-4e54-4891-9d73-0570afd44bdd",
+        "name": "Visit Diriyah_Tactical_KV3_SummerCampaign2026_KSA_Awareness_Snapchat_EN",
+        "campaign_id": "4589793c-fade-4a3c-85e3-ec19c81e8b90",
+        "status": "PAUSED",
+        "start_time": "2026-07-29T12:12:32.727Z",
+        "end_time": "2026-09-30T20:59:59.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-09-12T17:17:11.157Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "f3f60caa-bb27-41b0-a118-a087c110fbfb",
+        "name": "Visit Diriyah_Tactical _Zallal Ramadan Live Campaign 2026_KSA_Consideration_Snapchat_EN",
+        "campaign_id": "77412dde-d9e0-4eb2-ac9e-5634ab411ec8",
+        "status": "ACTIVE",
+        "start_time": "2026-02-24T21:00:37.000Z",
+        "end_time": "2026-03-25T20:59:59.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-03-15T08:31:46.658Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "fd10b65b-c6be-4ed9-a7a7-f2dd2613ee9f",
+        "name": "sa_Diriyah_ManazelAlHadawi_AO_03.06.2026_30.09.2026_CPL_paidsocial_snapchat_AR_Prospecting",
+        "campaign_id": "9a9ae749-bff3-4b90-8779-44e8f6cebdf6",
+        "status": "PAUSED",
+        "start_time": "2026-06-03T00:00:00.000Z",
+        "end_time": "2026-09-30T23:59:00.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-06-02T15:51:30.129Z"
+       }
+      },
+      {
+       "adsquad": {
+        "id": "feb8604c-fab0-439d-abd6-4c8cee114c47",
+        "name": "Bab Samhan_Summer_2026_KSA_Consideration_Snapchat_AR",
+        "campaign_id": "5b6ac69d-ab6e-4cae-a73e-1d79163762f0",
+        "status": "ACTIVE",
+        "start_time": "2026-05-24T00:00:00.000Z",
+        "end_time": "2026-08-31T20:59:00.000Z",
+        "delivery_status": [
+         "INVALID_END_TIME",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID"
+        ],
+        "updated_at": "2026-06-29T15:09:12.907Z"
+       }
+      }
+     ]
+    },
+    "meta": {
+     "requestId": "dbbafe75-ebc2-46ae-ae22-82cf01c7b0ef",
+     "waitedMs": 602,
+     "throttled": false,
+     "warnings": [],
+     "partialFailure": null,
+     "asyncReport": null,
+     "compatibility": null,
+     "compatibilitySkipped": true,
+     "mcp_result_projection": {
+      "fields": [
+       "id",
+       "name",
+       "campaign_id",
+       "status",
+       "start_time",
+       "end_time",
+       "delivery_status",
+       "updated_at"
+      ]
+     }
+    }
+   },
+   "meta": {
+    "requestId": "7f7d4bdb-7839-468e-aa00-206a3f7cdaf6",
+    "latencyMs": 2209
+   }
+  }
+ },
+ {
+  "tool_use_id": "toolu_017XDNtiU8jeLJ9sEFiqyzVJ",
+  "input": {
+   "action": "snapchat_campaign_list",
+   "ad_account_id": "b736921f-da3e-4889-8620-d3b0969c69b0",
+   "query": {
+    "limit": 100
+   },
+   "result_fields": [
+    "id",
+    "name",
+    "status",
+    "start_time",
+    "end_time",
+    "delivery_status",
+    "updated_at"
+   ]
+  },
+  "result": {
+   "success": true,
+   "data": {
+    "success": true,
+    "action": "snapchat_adaccounts_ad_account_id_campaigns_get",
+    "method": "GET",
+    "host": "adsapi.snapchat.com",
+    "path": "/v1/adaccounts/b736921f-da3e-4889-8620-d3b0969c69b0/campaigns",
+    "dryRun": false,
+    "data": {
+     "request_status": "SUCCESS",
+     "request_id": "ed2a1413-80f5-4497-b90e-eedd6a15616c",
+     "campaigns": [
+      {
+       "campaign": {
+        "id": "0163123d-176e-459e-8bb3-b54f278b70f5",
+        "name": "Reach & Frequency",
+        "status": "ACTIVE",
+        "start_time": "2026-06-25T09:25:31.834Z",
+        "delivery_status": [
+         "INVALID_CAMPAIGN_HAS_NO_ACTIVE_AD_SQUAD"
+        ],
+        "updated_at": "2026-06-25T09:29:28.044Z"
+       }
+      },
+      {
+       "campaign": {
+        "id": "0bf71bc2-64ee-43ac-b960-c9c41b0d1ce0",
+        "name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_ENAR_Snapchat",
+        "status": "PAUSED",
+        "start_time": "2026-07-18T17:47:33.725Z",
+        "end_time": "2026-08-31T20:59:00.000Z",
+        "delivery_status": [
+         "INVALID_CAMPAIGN_HAS_NO_ACTIVE_AD_SQUAD",
+         "INVALID_END_TIME",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_NOT_EFFECTIVE_ACTIVE"
+        ],
+        "updated_at": "2026-09-01T09:34:11.672Z"
+       }
+      },
+      {
+       "campaign": {
+        "id": "21314f9c-dab9-43be-a882-8c7d0c76373b",
+        "name": "VisitDiriyah_Summer2026_UF_AWR_KSA_ENAR_Snapchat",
+        "status": "ACTIVE",
+        "start_time": "2026-07-18T17:58:30.669Z",
+        "end_time": "2026-09-30T20:59:00.000Z",
+        "delivery_status": [
+         "INVALID_CAMPAIGN_HAS_NO_ACTIVE_AD_SQUAD",
+         "INVALID_END_TIME",
+         "INVALID_NOT_ACTIVE"
+        ],
+        "updated_at": "2026-09-21T17:16:53.945Z"
+       }
+      },
+      {
+       "campaign": {
+        "id": "2ba00c0b-d4bb-4776-b1a9-01b8e21f3fd2",
+        "name": "BabSamhan_Ramadan2026_MF_TRF_KSA_ENAR_Snapchat",
+        "status": "PAUSED",
+        "start_time": "2026-02-15T21:00:00.000Z",
+        "end_time": "2026-03-25T20:59:00.000Z",
+        "delivery_status": [
+         "INVALID_CAMPAIGN_HAS_NO_ACTIVE_AD_SQUAD",
+         "INVALID_END_TIME",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_NOT_EFFECTIVE_ACTIVE"
+        ],
+        "updated_at": "2026-07-29T16:36:14.753Z"
+       }
+      },
+      {
+       "campaign": {
+        "id": "2e991d25-4156-4633-936d-ccb1c7ec8fcf",
+        "name": "ManazelAlHadawi_AlwaysOn_UF_AWR_KSA_ENAR_Snapchat_20260603-20260930_BO11111",
+        "status": "PAUSED",
+        "start_time": "2026-06-03T00:00:00.000Z",
+        "end_time": "2026-09-30T00:00:00.000Z",
+        "delivery_status": [
+         "INVALID_CAMPAIGN_HAS_NO_ACTIVE_AD_SQUAD",
+         "INVALID_END_TIME",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_NOT_EFFECTIVE_ACTIVE"
+        ],
+        "updated_at": "2026-07-29T18:47:03.126Z"
+       }
+      },
+      {
+       "campaign": {
+        "id": "4589793c-fade-4a3c-85e3-ec19c81e8b90",
+        "name": "VisitDiriyah_Summer2026_MF_TRF_KSA_ENAR_Snapchat",
+        "status": "ACTIVE",
+        "start_time": "2026-05-24T00:00:00.000Z",
+        "end_time": "2026-09-30T20:59:00.000Z",
+        "delivery_status": [
+         "INVALID_CAMPAIGN_HAS_NO_ACTIVE_AD_SQUAD",
+         "INVALID_END_TIME",
+         "INVALID_NOT_ACTIVE"
+        ],
+        "updated_at": "2026-09-21T17:16:54.102Z"
+       }
+      },
+      {
+       "campaign": {
+        "id": "5b6ac69d-ab6e-4cae-a73e-1d79163762f0",
+        "name": "BabSamhan_EidSummer2026_MF_TRF_KSA_ENAR_Snapchat",
+        "status": "PAUSED",
+        "start_time": "2026-05-24T00:00:00.000Z",
+        "delivery_status": [
+         "INVALID_CAMPAIGN_HAS_NO_ACTIVE_AD_SQUAD",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_NOT_EFFECTIVE_ACTIVE"
+        ],
+        "updated_at": "2026-08-11T10:56:33.516Z"
+       }
+      },
+      {
+       "campaign": {
+        "id": "6b366638-30b5-41f7-bf9f-b1377e7a6985",
+        "name": "VisitDiriyah_VisitEidMay212026_MF_TRF_KSA_ENAR_Snapchat",
+        "status": "PAUSED",
+        "start_time": "2026-05-24T15:19:29.000Z",
+        "end_time": "2026-08-31T20:59:00.000Z",
+        "delivery_status": [
+         "INVALID_CAMPAIGN_HAS_NO_ACTIVE_AD_SQUAD",
+         "INVALID_END_TIME",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_NOT_EFFECTIVE_ACTIVE"
+        ],
+        "updated_at": "2026-07-29T18:47:25.725Z"
+       }
+      },
+      {
+       "campaign": {
+        "id": "77412dde-d9e0-4eb2-ac9e-5634ab411ec8",
+        "name": "Zallal_Ramadan2026_MF_TRF_KSA_ENAR_Snapchat",
+        "status": "PAUSED",
+        "start_time": "2026-02-24T10:21:12.514Z",
+        "end_time": "2026-03-25T20:59:59.000Z",
+        "delivery_status": [
+         "INVALID_CAMPAIGN_HAS_NO_ACTIVE_AD_SQUAD",
+         "INVALID_END_TIME",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_NOT_EFFECTIVE_ACTIVE"
+        ],
+        "updated_at": "2026-07-29T18:47:30.001Z"
+       }
+      },
+      {
+       "campaign": {
+        "id": "7fc4c8cf-40cd-44cb-b1c3-481c7fc210f2",
+        "name": "BujairiTerrace_Ramadan2026_UF_AWR_KSA_ENAR_Snapchat",
+        "status": "PAUSED",
+        "start_time": "2026-02-15T15:01:45.261Z",
+        "end_time": "2026-03-25T20:59:00.000Z",
+        "delivery_status": [
+         "INVALID_CAMPAIGN_HAS_NO_ACTIVE_AD_SQUAD",
+         "INVALID_END_TIME",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_NOT_EFFECTIVE_ACTIVE"
+        ],
+        "updated_at": "2026-07-29T18:47:34.538Z"
+       }
+      },
+      {
+       "campaign": {
+        "id": "8b9db796-669c-49e9-8777-07edd6b023a8",
+        "name": "BabSamhan_Summercampaign2026May_UF_AWR_KSA_AR_Snapchat",
+        "status": "PAUSED",
+        "start_time": "2026-05-24T13:04:22.000Z",
+        "end_time": "2026-08-31T20:59:00.000Z",
+        "delivery_status": [
+         "INVALID_CAMPAIGN_HAS_NO_ACTIVE_AD_SQUAD",
+         "INVALID_END_TIME",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_NOT_EFFECTIVE_ACTIVE"
+        ],
+        "updated_at": "2026-07-29T18:47:38.913Z"
+       }
+      },
+      {
+       "campaign": {
+        "id": "8e11e9b4-1efa-4e03-baf4-f26c0160b79c",
+        "name": "BujairiTerrace_Ramadan2026_MF_TRF_KSA_ENAR_Snapchat",
+        "status": "PAUSED",
+        "start_time": "2026-02-15T20:53:35.194Z",
+        "end_time": "2026-03-25T20:59:00.000Z",
+        "delivery_status": [
+         "INVALID_CAMPAIGN_HAS_NO_ACTIVE_AD_SQUAD",
+         "INVALID_END_TIME",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_NOT_EFFECTIVE_ACTIVE"
+        ],
+        "updated_at": "2026-07-29T18:47:52.432Z"
+       }
+      },
+      {
+       "campaign": {
+        "id": "9a9ae749-bff3-4b90-8779-44e8f6cebdf6",
+        "name": "ManazelAlHadawi_AlwaysOn_LF_LEAD_KSA_ENAR_Snapchat_20260603-20260930_BO11111",
+        "status": "PAUSED",
+        "start_time": "2026-06-03T00:00:00.000Z",
+        "end_time": "2026-09-30T00:00:00.000Z",
+        "delivery_status": [
+         "INVALID_CAMPAIGN_HAS_NO_ACTIVE_AD_SQUAD",
+         "INVALID_END_TIME",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_NOT_EFFECTIVE_ACTIVE"
+        ],
+        "updated_at": "2026-07-29T18:47:56.611Z"
+       }
+      },
+      {
+       "campaign": {
+        "id": "a3f24d5a-1fd3-4f3d-b52d-633e11a5bf84",
+        "name": "BabSamhan_Summercampaign2026May_MF_TRF_KSA_EN_Snapchat",
+        "status": "PAUSED",
+        "start_time": "2026-05-24T15:19:29.000Z",
+        "end_time": "2026-08-31T20:59:00.000Z",
+        "delivery_status": [
+         "INVALID_CAMPAIGN_HAS_NO_ACTIVE_AD_SQUAD",
+         "INVALID_END_TIME",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_NOT_EFFECTIVE_ACTIVE"
+        ],
+        "updated_at": "2026-07-29T18:48:00.760Z"
+       }
+      },
+      {
+       "campaign": {
+        "id": "aa20c5a0-b007-4921-b0bc-e15c3d0ab3a3",
+        "name": "Zallal_Ramadan2026_UF_AWR_KSA_ENAR_Snapchat",
+        "status": "PAUSED",
+        "start_time": "2026-02-24T10:24:27.008Z",
+        "end_time": "2026-03-25T20:59:59.000Z",
+        "delivery_status": [
+         "INVALID_CAMPAIGN_HAS_NO_ACTIVE_AD_SQUAD",
+         "INVALID_END_TIME",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_NOT_EFFECTIVE_ACTIVE"
+        ],
+        "updated_at": "2026-07-29T18:48:06.755Z"
+       }
+      },
+      {
+       "campaign": {
+        "id": "ab4e0797-07ca-4e96-b61d-9c0240de2eb1",
+        "name": "BabSamhan_Ramadan2026_UF_AWR_KSA_ENAR_Snapchat",
+        "status": "PAUSED",
+        "start_time": "2026-02-15T19:51:17.362Z",
+        "end_time": "2026-03-25T20:59:00.000Z",
+        "delivery_status": [
+         "INVALID_CAMPAIGN_HAS_NO_ACTIVE_AD_SQUAD",
+         "INVALID_END_TIME",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_NOT_EFFECTIVE_ACTIVE"
+        ],
+        "updated_at": "2026-07-29T18:48:13.235Z"
+       }
+      },
+      {
+       "campaign": {
+        "id": "ac07b8bb-0e49-49f7-aca5-15e0a697d48e",
+        "name": "VisitDiriyah_ShoppingRamadan2026_MF_TRF_KSA_ENAR_Snapchat",
+        "status": "PAUSED",
+        "start_time": "2026-02-26T12:37:49.135Z",
+        "end_time": "2026-04-05T21:59:59.000Z",
+        "delivery_status": [
+         "INVALID_CAMPAIGN_HAS_NO_ACTIVE_AD_SQUAD",
+         "INVALID_END_TIME",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_NOT_EFFECTIVE_ACTIVE"
+        ],
+        "updated_at": "2026-07-29T18:48:25.085Z"
+       }
+      },
+      {
+       "campaign": {
+        "id": "e27ee922-d10a-49a9-a09e-ad6a7e0830c5",
+        "name": "BabSamhan_EidSummer2026_UF_AWR_KSA_ENAR_Snapchat",
+        "status": "PAUSED",
+        "start_time": "2026-05-24T00:00:00.000Z",
+        "delivery_status": [
+         "INVALID_CAMPAIGN_HAS_NO_ACTIVE_AD_SQUAD",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_NOT_EFFECTIVE_ACTIVE"
+        ],
+        "updated_at": "2026-08-11T10:56:33.560Z"
+       }
+      },
+      {
+       "campaign": {
+        "id": "efea115b-5f7e-461a-8e74-7577baeda7f2",
+        "name": "ManazelAlHadawi_AlwaysOn_MF_TRF_KSA_ENAR_Snapchat_20260603-20260930_BO11111",
+        "status": "PAUSED",
+        "start_time": "2026-06-03T00:00:00.000Z",
+        "end_time": "2026-09-30T00:00:00.000Z",
+        "delivery_status": [
+         "INVALID_CAMPAIGN_HAS_NO_ACTIVE_AD_SQUAD",
+         "INVALID_END_TIME",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_NOT_EFFECTIVE_ACTIVE"
+        ],
+        "updated_at": "2026-07-29T18:48:34.053Z"
+       }
+      },
+      {
+       "campaign": {
+        "id": "f33414a7-70c6-4ad8-9524-53b3476599bc",
+        "name": "BujairiTerrace_Ramadan2026_LF_CONV_KSA_ENAR_Snapchat",
+        "status": "PAUSED",
+        "start_time": "2026-02-25T11:42:45.405Z",
+        "end_time": "2026-03-25T20:59:00.000Z",
+        "delivery_status": [
+         "INVALID_CAMPAIGN_HAS_NO_ACTIVE_AD_SQUAD",
+         "INVALID_END_TIME",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_NOT_EFFECTIVE_ACTIVE"
+        ],
+        "updated_at": "2026-07-29T18:48:38.259Z"
+       }
+      },
+      {
+       "campaign": {
+        "id": "fe087dd3-4b12-45a1-b910-ab4ac6cdf83b",
+        "name": "BabSamhanXQiddiya_2026_UF_AWR_KSA_ENAR_Snapchat",
+        "status": "PAUSED",
+        "start_time": "2026-06-24T09:24:04.600Z",
+        "delivery_status": [
+         "INVALID_CAMPAIGN_HAS_NO_ACTIVE_AD_SQUAD",
+         "INVALID_NOT_ACTIVE",
+         "INVALID_NOT_EFFECTIVE_ACTIVE"
+        ],
+        "updated_at": "2026-08-12T07:09:46.535Z"
+       }
+      }
+     ]
+    },
+    "meta": {
+     "requestId": "ed2a1413-80f5-4497-b90e-eedd6a15616c",
+     "waitedMs": 292,
+     "throttled": false,
+     "warnings": [],
+     "partialFailure": null,
+     "asyncReport": null,
+     "compatibility": null,
+     "compatibilitySkipped": true,
+     "mcp_result_projection": {
+      "fields": [
+       "id",
+       "name",
+       "status",
+       "start_time",
+       "end_time",
+       "delivery_status",
+       "updated_at"
+      ]
+     }
+    }
+   },
+   "meta": {
+    "requestId": "074bead3-56a2-454b-b73f-f9a0a2f06a0d",
+    "latencyMs": 1784
+   }
+  }
+ }
+]
