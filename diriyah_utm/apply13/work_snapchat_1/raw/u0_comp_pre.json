@@ -1,0 +1,76 @@
+{
+ "tool_use_id": "toolu_019cnzzMxSwKJYX4Vpwes4fT",
+ "input": {
+  "action": "snapchat_creative_get",
+  "path_params": {
+   "creative_id": "3fc370fb-15a6-4a5b-b358-90304f012ee6"
+  }
+ },
+ "result": {
+  "success": true,
+  "data": {
+   "success": true,
+   "action": "snapchat_creatives_creative_id_get",
+   "method": "GET",
+   "host": "adsapi.snapchat.com",
+   "path": "/v1/creatives/3fc370fb-15a6-4a5b-b358-90304f012ee6",
+   "dryRun": false,
+   "data": {
+    "request_status": "SUCCESS",
+    "request_id": "f7dd8887-610f-49c2-a783-a6461b69cba4",
+    "creatives": [
+     {
+      "sub_request_status": "SUCCESS",
+      "creative": {
+       "id": "3fc370fb-15a6-4a5b-b358-90304f012ee6",
+       "updated_at": "2026-07-08T12:38:25.907Z",
+       "created_at": "2026-07-08T08:04:02.064Z",
+       "name": "ManazelAlHadawi_CR1_AR_Considration",
+       "ad_account_id": "ebe8d66e-0e3e-4b71-9d37-5c53118d6481",
+       "type": "COMPOSITE",
+       "packaging_status": "SUCCESS",
+       "review_status": "APPROVED",
+       "review_status_details": "",
+       "shareable": true,
+       "playback_type": "LOOPING",
+       "headline": "منازل الحداوي في الدرعية",
+       "brand_name": "شركة الدرعية",
+       "render_type": "STATIC",
+       "top_snap_crop_position": "MIDDLE",
+       "composite_properties": {
+        "creative_ids": [
+         "daee8d42-9ce9-426f-85ed-a258cf61f983",
+         "b2fdf154-8f84-4054-9cca-de76d7bdfa4c",
+         "92f3fff0-094d-4252-9243-06e9a8c25e98",
+         "123f1d5f-0c39-4993-aa8e-c79ff63f81ab",
+         "45a9979a-8bf6-4c78-b3bd-53e19c3048dc",
+         "9541b380-108d-46d8-9f66-fa47a929362a"
+        ]
+       },
+       "ad_product": "SNAP_AD",
+       "profile_properties": {
+        "profile_id": "310a28f1-799a-4292-ae3a-b8a35beb9008"
+       },
+       "semantic_id": "-1792064248",
+       "creator_partnership_type": "NONE"
+      }
+     }
+    ]
+   },
+   "meta": {
+    "requestId": "f7dd8887-610f-49c2-a783-a6461b69cba4",
+    "waitedMs": 277,
+    "throttled": false,
+    "warnings": [],
+    "partialFailure": null,
+    "asyncReport": null,
+    "compatibility": null,
+    "compatibilitySkipped": true
+   }
+  },
+  "meta": {
+   "requestId": "1f41356b-6ab2-4446-bcd3-e3bc3155cde8",
+   "latencyMs": 1158
+  }
+ }
+}

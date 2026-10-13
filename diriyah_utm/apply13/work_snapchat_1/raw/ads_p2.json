@@ -1,0 +1,657 @@
+{
+ "tool_use_id": "toolu_01SuTR7GbnHEFwuVzt9fGyno",
+ "input": {
+  "action": "snapchat_ad_list",
+  "ad_account_id": "ebe8d66e-0e3e-4b71-9d37-5c53118d6481",
+  "query": {
+   "limit": 100,
+   "cursor": "QWRzLzZmNTQ3Zjg0LTllZjAtNDY3OC1hNGNiLWEyZTQ1MWJiYmRhMw"
+  },
+  "result_fields": [
+   "id",
+   "creative_id"
+  ],
+  "compact": true
+ },
+ "result": {
+  "success": true,
+  "data": {
+   "success": true,
+   "action": "snapchat_adaccounts_ad_account_id_ads_get",
+   "method": "GET",
+   "host": "adsapi.snapchat.com",
+   "path": "/v1/adaccounts/ebe8d66e-0e3e-4b71-9d37-5c53118d6481/ads",
+   "dryRun": false,
+   "data": {
+    "request_status": "SUCCESS",
+    "request_id": "5103cb60-64fe-4516-b04b-e7b7b45be573",
+    "paging": {
+     "next_link": "https://adsapi.snapchat.com/v1/adaccounts/ebe8d66e-0e3e-4b71-9d37-5c53118d6481/ads?cursor=QWRzL2VmMWNiYWZlLTE2YzEtNDE5YS04MDYxLTQxOGUxZDk0OTg1Zg&limit=100"
+    },
+    "ads": [
+     {
+      "ad": {
+       "id": "70349285-a164-43e2-8407-5be5ecc51a2c",
+       "creative_id": "75686406-5c3c-410a-822d-6b952b775128"
+      }
+     },
+     {
+      "ad": {
+       "id": "703ea9a0-65cb-4929-a274-b71b3c9bea57",
+       "creative_id": "b4f08b76-6fc9-4374-9398-8b8f30aa86e1"
+      }
+     },
+     {
+      "ad": {
+       "id": "70fd2675-fbf4-4f17-8f0e-d0d534223879",
+       "creative_id": "a11aa9d7-b3b8-433d-9b45-f68f4e45be05"
+      }
+     },
+     {
+      "ad": {
+       "id": "72d3442c-8e0e-40e8-8fea-e3f4a7c17b7e",
+       "creative_id": "5496f503-9066-4f26-bc64-0a8d8cf93001"
+      }
+     },
+     {
+      "ad": {
+       "id": "73cb6b3a-fb44-451a-9a3b-bceed85b55ae",
+       "creative_id": "f128448d-c933-4f52-a434-d606fb27d733"
+      }
+     },
+     {
+      "ad": {
+       "id": "75f60985-3e5c-40a9-8329-df8c0fef84d6",
+       "creative_id": "15969cec-b4dc-4aca-9d18-9faf22ac8d28"
+      }
+     },
+     {
+      "ad": {
+       "id": "762b1f3c-8076-4c90-9efc-375089873237",
+       "creative_id": "b11d7145-aca9-428a-88d8-106e0cb120e1"
+      }
+     },
+     {
+      "ad": {
+       "id": "76875470-d024-421b-b736-088d544ad479",
+       "creative_id": "0a2858d2-513b-4d2a-9fc9-c9e59050a9b6"
+      }
+     },
+     {
+      "ad": {
+       "id": "7804f3bf-2ec0-4019-b059-3d375d074538",
+       "creative_id": "fe2a3a27-8229-4f93-b12e-a16c1abf8215"
+      }
+     },
+     {
+      "ad": {
+       "id": "78322037-9495-47b8-a22b-ada7f3db8eef",
+       "creative_id": "4df901dd-e4b3-40da-8efa-81e0f4a289c0"
+      }
+     },
+     {
+      "ad": {
+       "id": "78953adb-7b35-4678-9e26-315bd7de8aa3",
+       "creative_id": "5b48187b-ec5d-4ae4-a0e8-dc06901d9979"
+      }
+     },
+     {
+      "ad": {
+       "id": "7a0ecc28-c7ef-43fa-aef3-35d3b2b61461",
+       "creative_id": "0002613e-a818-4a7c-8179-b54ec63cbba6"
+      }
+     },
+     {
+      "ad": {
+       "id": "7b5f2247-cb6e-4b1f-9ac8-14c03a3ad9d2",
+       "creative_id": "d4b6855b-eb4a-40e4-9ed1-1f95e509b4a2"
+      }
+     },
+     {
+      "ad": {
+       "id": "7bced69a-8f7f-417e-a057-72ade92da495",
+       "creative_id": "cd448fc3-5513-4086-a1a3-16a257572d31"
+      }
+     },
+     {
+      "ad": {
+       "id": "7c7bdf58-6301-4638-86e3-83e8f6d0c5f2",
+       "creative_id": "3a3741b2-096e-4e9f-92b0-e0728fc3cfa2"
+      }
+     },
+     {
+      "ad": {
+       "id": "7d1ef754-03f7-48a4-9bba-f5eb81a4a8f1",
+       "creative_id": "54f55229-b7db-42a4-9b2b-fc9b942c4e75"
+      }
+     },
+     {
+      "ad": {
+       "id": "7dfe63aa-d623-49ef-bbec-d8582e451a5f",
+       "creative_id": "e6788c94-9c10-44ed-b61b-1f350b494851"
+      }
+     },
+     {
+      "ad": {
+       "id": "7f4e968e-fe8a-4182-8d81-ef8ae4936da3",
+       "creative_id": "92d70bb2-4218-44ac-847d-d94ef096f63d"
+      }
+     },
+     {
+      "ad": {
+       "id": "7fbd1ede-31ff-4a03-b6f3-852f2aef85aa",
+       "creative_id": "7fd4cbb6-a9bd-46d2-a1a8-e0c0cce2779b"
+      }
+     },
+     {
+      "ad": {
+       "id": "82941c92-297b-4954-9d72-4c240f9d6ed0",
+       "creative_id": "5b48187b-ec5d-4ae4-a0e8-dc06901d9979"
+      }
+     },
+     {
+      "ad": {
+       "id": "837cc513-d530-4f22-8ccc-d09011fdcaa3",
+       "creative_id": "4f6db13a-3ee3-411b-9d14-976b1dc1930d"
+      }
+     },
+     {
+      "ad": {
+       "id": "843f81ac-5c11-4b27-a0b9-36d031da9778",
+       "creative_id": "bb299982-f661-4164-a526-61c7bcfe115b"
+      }
+     },
+     {
+      "ad": {
+       "id": "8a06effe-1df2-4c7b-be71-9278b0c01359",
+       "creative_id": "7fd4cbb6-a9bd-46d2-a1a8-e0c0cce2779b"
+      }
+     },
+     {
+      "ad": {
+       "id": "8bb2ae5f-c696-44d7-b71a-e8d82d733c61",
+       "creative_id": "7e5beba4-46a8-41f9-9987-1b69a356726e"
+      }
+     },
+     {
+      "ad": {
+       "id": "8bfef518-a550-4e70-8a8d-8225583baabb",
+       "creative_id": "cdde35eb-7b40-4c72-ad55-6475c9e12b50"
+      }
+     },
+     {
+      "ad": {
+       "id": "8c33703e-bd26-4699-b649-fdde14812227",
+       "creative_id": "4b5b819c-5c9a-47e3-9256-ad3f29b7ef27"
+      }
+     },
+     {
+      "ad": {
+       "id": "8debb3b3-fb74-4002-a264-3ffdb4e87cea",
+       "creative_id": "d375f2e9-b314-455d-8606-2fb7a4e9f817"
+      }
+     },
+     {
+      "ad": {
+       "id": "90501c88-6077-46b3-8101-141d75c97252",
+       "creative_id": "b31beaab-27c3-4392-a15b-703f45118c93"
+      }
+     },
+     {
+      "ad": {
+       "id": "907cd0bb-e590-4739-84b0-cd3a14d6eed8",
+       "creative_id": "bee7090f-642b-4d77-96ac-e06093213552"
+      }
+     },
+     {
+      "ad": {
+       "id": "9098a159-d9a3-4f7e-97ed-d89146d8b0fd",
+       "creative_id": "1f41219d-1e6e-4de2-b0bf-605a5f5699cf"
+      }
+     },
+     {
+      "ad": {
+       "id": "90a18a02-ec06-49e5-8f5a-5c45eafc2d17",
+       "creative_id": "7fd4cbb6-a9bd-46d2-a1a8-e0c0cce2779b"
+      }
+     },
+     {
+      "ad": {
+       "id": "91a31800-af04-4fd2-8f08-dbc2526d9944",
+       "creative_id": "9fe8a6f0-1853-46d9-a18d-045d471f4a5d"
+      }
+     },
+     {
+      "ad": {
+       "id": "91c53825-361b-435b-9906-a5629d37a2e6",
+       "creative_id": "0b139c9f-ba88-4a25-b8c2-42a252b676f9"
+      }
+     },
+     {
+      "ad": {
+       "id": "92fece6b-91fa-4f25-be49-f91f43f9cf18",
+       "creative_id": "ecd2f1bd-82bd-4137-9f5e-ce7ec10ab52d"
+      }
+     },
+     {
+      "ad": {
+       "id": "93803313-4330-414f-af3c-0b99cb4de436",
+       "creative_id": "ccd54d87-1af5-4905-aa5b-a360e8347d38"
+      }
+     },
+     {
+      "ad": {
+       "id": "94c52fc3-223a-4f9f-bcb9-979cf584889f",
+       "creative_id": "f5a4f09f-a5c9-480b-910d-1ddf0a7c260d"
+      }
+     },
+     {
+      "ad": {
+       "id": "961052ee-3211-4bce-b7b6-c6f6e7564720",
+       "creative_id": "d73d0e7b-8146-4600-a48d-3826d40c3a12"
+      }
+     },
+     {
+      "ad": {
+       "id": "96c25d12-d1b3-40c4-a115-541bfe9ed085",
+       "creative_id": "b1bcb7f5-54ba-42b6-841a-6c24f7718c80"
+      }
+     },
+     {
+      "ad": {
+       "id": "971656bf-3ee8-4ef9-8014-f3d970d3980c",
+       "creative_id": "e3d9fbdf-0253-496a-a116-7097933b77f7"
+      }
+     },
+     {
+      "ad": {
+       "id": "984d888d-563e-4d92-8eea-75e467108597",
+       "creative_id": "9c51acc9-55d4-4b7f-bdd6-209e7bc34c8b"
+      }
+     },
+     {
+      "ad": {
+       "id": "993d7fbf-e634-473a-b7cc-a2116516b654",
+       "creative_id": "4df901dd-e4b3-40da-8efa-81e0f4a289c0"
+      }
+     },
+     {
+      "ad": {
+       "id": "9b90b946-f409-487e-9898-09be87dee4bb",
+       "creative_id": "6d4c8e77-b9ec-4aaa-9b9a-c3dc9dbf068f"
+      }
+     },
+     {
+      "ad": {
+       "id": "9c8949c7-ff46-4469-a39b-f3ccc446ff7c",
+       "creative_id": "be196a04-5bdb-4321-93e1-626b33f0b1fb"
+      }
+     },
+     {
+      "ad": {
+       "id": "9db8cab9-cc0d-4d40-9511-959da64b702e",
+       "creative_id": "775ad340-61ef-4073-8ad2-2e4b1eab1f18"
+      }
+     },
+     {
+      "ad": {
+       "id": "9e78d611-bf53-423f-8553-56b65f3c61fa",
+       "creative_id": "9372ff08-e939-4e18-893d-f92cc2f772a6"
+      }
+     },
+     {
+      "ad": {
+       "id": "9f1ffac5-f8c3-4fc7-b8fd-66125f5b9093",
+       "creative_id": "06867fa5-9f50-45e2-b3f2-124de2b1d481"
+      }
+     },
+     {
+      "ad": {
+       "id": "a0c0c29c-a3a5-4417-b702-ea06c593fcb9",
+       "creative_id": "b988966d-e6e0-4875-b29a-409de7864bb9"
+      }
+     },
+     {
+      "ad": {
+       "id": "a36ad6d7-8aff-4dc1-8b9c-388198894da3",
+       "creative_id": "d59e0ba4-4399-46ca-8aa8-89e9c4e71416"
+      }
+     },
+     {
+      "ad": {
+       "id": "a4cc0d56-19f3-4a6d-9970-389a63af9369",
+       "creative_id": "c3198c2e-71de-4fee-ade3-465cadd731ff"
+      }
+     },
+     {
+      "ad": {
+       "id": "a4f6091c-ae72-4e5b-863b-de9b5205d628",
+       "creative_id": "594b433a-16ac-4ccb-86e2-4e748f090b6b"
+      }
+     },
+     {
+      "ad": {
+       "id": "a876c0f6-4194-4bc0-a141-eef017cd9b1d",
+       "creative_id": "e6788c94-9c10-44ed-b61b-1f350b494851"
+      }
+     },
+     {
+      "ad": {
+       "id": "a8db1877-3cd9-4022-974f-e4fafd52fac6",
+       "creative_id": "90208aa3-9b41-4f3a-bf3d-6531cfaaf41e"
+      }
+     },
+     {
+      "ad": {
+       "id": "a9c335de-f00f-4c60-b4e9-74159d23ee75",
+       "creative_id": "80e723fa-c071-405b-8c1d-514eaec0b669"
+      }
+     },
+     {
+      "ad": {
+       "id": "acb94354-c8e6-43a2-b019-03840b74f09c",
+       "creative_id": "2ec7ffd5-0d76-4476-ad1b-98ddd741ce46"
+      }
+     },
+     {
+      "ad": {
+       "id": "afa96b95-35e5-4b90-ad0d-7166a4da5aba",
+       "creative_id": "9c51acc9-55d4-4b7f-bdd6-209e7bc34c8b"
+      }
+     },
+     {
+      "ad": {
+       "id": "b1513a52-3f9d-4101-8014-7cabf6936fc1",
+       "creative_id": "573cb2c1-00ae-41e6-9e53-99f2e7af6be8"
+      }
+     },
+     {
+      "ad": {
+       "id": "b29898ce-89af-4e6f-821c-a52be0f6c1a9",
+       "creative_id": "131a98fd-fb5d-4660-b3ca-3e859a2dfa72"
+      }
+     },
+     {
+      "ad": {
+       "id": "b31c5a4d-d820-4634-9b4e-5f67e23e3b62",
+       "creative_id": "3b2997d1-5386-47c1-9b08-6cfd76304b56"
+      }
+     },
+     {
+      "ad": {
+       "id": "b43f7607-74d2-4de8-942d-ca9b7ffccf59",
+       "creative_id": "d44a9fe0-aed7-4370-8b8d-708e77356882"
+      }
+     },
+     {
+      "ad": {
+       "id": "b56aaf87-6f55-43ef-ba5a-9649ed6d6995",
+       "creative_id": "86d3e855-5f0b-4305-8a79-b77dc14e4276"
+      }
+     },
+     {
+      "ad": {
+       "id": "b7d905d8-de32-4c90-a44a-ceed2f4267bd",
+       "creative_id": "686800a0-d50c-48cd-b7f7-6e5f0d026f77"
+      }
+     },
+     {
+      "ad": {
+       "id": "b854a5e4-29f2-4cbf-a0b5-5e16c87e514d",
+       "creative_id": "5aa314d8-3ae5-4efd-868b-b08c0f414252"
+      }
+     },
+     {
+      "ad": {
+       "id": "ba4a051d-1154-4c50-9502-a6b705eb3f7c",
+       "creative_id": "92f0f5a1-6405-489c-bbe4-a76e8893d354"
+      }
+     },
+     {
+      "ad": {
+       "id": "bc0a1dd9-5a65-4272-9170-457a15e0d03a",
+       "creative_id": "9cfff83c-1eb3-48ad-8458-7ea365ce8ad2"
+      }
+     },
+     {
+      "ad": {
+       "id": "bdcc8842-0c28-4bea-97c2-6d37470cf3e1",
+       "creative_id": "871be5d3-55d9-4c88-be0b-13ff6469728c"
+      }
+     },
+     {
+      "ad": {
+       "id": "bea81384-a60b-4c9c-a46c-683bf7fe3a48",
+       "creative_id": "2db25dd3-8253-44ad-9408-f1fc8c967eb8"
+      }
+     },
+     {
+      "ad": {
+       "id": "c013da08-8881-48d4-a7ec-40bace37dbd5",
+       "creative_id": "92d70bb2-4218-44ac-847d-d94ef096f63d"
+      }
+     },
+     {
+      "ad": {
+       "id": "c02a96f8-75a1-4674-88fa-d9e0296947fb",
+       "creative_id": "d6005150-525f-4996-a159-b88541d3de4c"
+      }
+     },
+     {
+      "ad": {
+       "id": "c2b40e85-057c-4deb-80f2-0f30bc710433",
+       "creative_id": "a2a6e3e4-f769-4a4c-b016-df9d77e4ec10"
+      }
+     },
+     {
+      "ad": {
+       "id": "c53610b8-8d02-4c0b-912e-de8324d84220",
+       "creative_id": "2ec7ffd5-0d76-4476-ad1b-98ddd741ce46"
+      }
+     },
+     {
+      "ad": {
+       "id": "c890bb50-ad3f-45b3-852e-4243ede7df48",
+       "creative_id": "d6c7e68b-0f4d-4812-bfd8-35df40293fff"
+      }
+     },
+     {
+      "ad": {
+       "id": "c9811709-f03c-40db-9ff3-5900cbf34d1d",
+       "creative_id": "0a06be2c-972f-46e1-94be-9de7cf8bf4b2"
+      }
+     },
+     {
+      "ad": {
+       "id": "c9bb0ab7-ffed-4d43-bba8-b706005c181b",
+       "creative_id": "34fef148-d531-4657-bd1e-bb14d8fcf85b"
+      }
+     },
+     {
+      "ad": {
+       "id": "ca389fae-cdb7-4bd7-9915-53c85d18fa7c",
+       "creative_id": "b11d7145-aca9-428a-88d8-106e0cb120e1"
+      }
+     },
+     {
+      "ad": {
+       "id": "ccf1d318-fd86-4b32-a70c-c096073b7752",
+       "creative_id": "4b5b819c-5c9a-47e3-9256-ad3f29b7ef27"
+      }
+     },
+     {
+      "ad": {
+       "id": "d07f22e2-0f91-4b95-9853-881e5b2300e7",
+       "creative_id": "3b2997d1-5386-47c1-9b08-6cfd76304b56"
+      }
+     },
+     {
+      "ad": {
+       "id": "d1ac04c4-546a-4bf9-9f20-6c8a56637a32",
+       "creative_id": "fe7fafde-95be-43a5-9506-c9c56ff90db1"
+      }
+     },
+     {
+      "ad": {
+       "id": "d1da439f-afcf-4568-80b9-4e1770df4f5b",
+       "creative_id": "672f4ce5-342b-47cd-80e5-6beb7773ff83"
+      }
+     },
+     {
+      "ad": {
+       "id": "d1f25710-9a29-488c-a9e2-16099a99fab6",
+       "creative_id": "2ad06d9c-265e-4148-9f4c-e05456ccbe62"
+      }
+     },
+     {
+      "ad": {
+       "id": "d28d4c55-8ce6-4946-8bcb-de5d19370f01",
+       "creative_id": "fab23369-01d2-4343-918b-ee15fe977745"
+      }
+     },
+     {
+      "ad": {
+       "id": "d39db0b0-dc5f-44ed-b778-a6ed1911329c",
+       "creative_id": "519d84e4-9137-42fe-beea-18175d1759c7"
+      }
+     },
+     {
+      "ad": {
+       "id": "d547211d-daaf-474a-ba3b-ca982222ff79",
+       "creative_id": "5b48187b-ec5d-4ae4-a0e8-dc06901d9979"
+      }
+     },
+     {
+      "ad": {
+       "id": "d60377e0-a682-44bf-84fd-a11c01787c5f",
+       "creative_id": "9fe8a6f0-1853-46d9-a18d-045d471f4a5d"
+      }
+     },
+     {
+      "ad": {
+       "id": "d666ecec-31b5-41c4-b3ae-4a5f385e7e9b",
+       "creative_id": "87ee6b0b-8cf7-4a55-a3fc-7426b2e88360"
+      }
+     },
+     {
+      "ad": {
+       "id": "d8ba1ebe-c7ab-427c-b9c2-64e64e5c3207",
+       "creative_id": "161498cc-b7f7-44c9-9018-7082f9ede814"
+      }
+     },
+     {
+      "ad": {
+       "id": "d957f06c-7eaf-47ea-a23c-7ee2cfbf51d9",
+       "creative_id": "4f72630e-2308-4882-9422-1b2d04b7c25b"
+      }
+     },
+     {
+      "ad": {
+       "id": "db056e55-656c-4ef1-93b0-6449550b910f",
+       "creative_id": "92d70bb2-4218-44ac-847d-d94ef096f63d"
+      }
+     },
+     {
+      "ad": {
+       "id": "db09a8b2-1c84-47a0-a2fc-f1fa004b857a",
+       "creative_id": "b988966d-e6e0-4875-b29a-409de7864bb9"
+      }
+     },
+     {
+      "ad": {
+       "id": "de829faa-1261-46d0-aac0-dc2c2b2e3dfd",
+       "creative_id": "190a36bb-71c6-4503-8b48-3d56e0539b26"
+      }
+     },
+     {
+      "ad": {
+       "id": "e0615d9c-4a55-439a-952e-418e1b5dab73",
+       "creative_id": "31c3230d-5758-49e1-a35b-1b9add4e762d"
+      }
+     },
+     {
+      "ad": {
+       "id": "e110837b-3b17-4150-bb0e-8b161b592440",
+       "creative_id": "43846fdb-7b9f-4f9e-be81-440b3682709e"
+      }
+     },
+     {
+      "ad": {
+       "id": "e156a162-e4b3-4d84-b092-3fbc32bf2693",
+       "creative_id": "678d324e-6854-4bf6-a8e1-aca5efd9ad8f"
+      }
+     },
+     {
+      "ad": {
+       "id": "e21ed10b-cfc3-4452-9211-5661adec4d78",
+       "creative_id": "4df901dd-e4b3-40da-8efa-81e0f4a289c0"
+      }
+     },
+     {
+      "ad": {
+       "id": "e5f10bd7-1501-46b2-8bc6-fbdf8da60e5c",
+       "creative_id": "82e3d447-ed65-4b26-8f6e-e32877c5e0d9"
+      }
+     },
+     {
+      "ad": {
+       "id": "e644fd7b-7aec-4352-9d3f-da15cc275667",
+       "creative_id": "4d2ae7a1-e09c-4387-8935-f16a7a9e863c"
+      }
+     },
+     {
+      "ad": {
+       "id": "e9a5b9ca-60b3-46b3-af32-3f843ab02581",
+       "creative_id": "03334d76-32e1-41f1-af4a-3e808fefeef2"
+      }
+     },
+     {
+      "ad": {
+       "id": "ea3568ae-0918-43e1-9853-c424bcc6776a",
+       "creative_id": "132318a2-dad6-43c5-8994-fdda0416a52a"
+      }
+     },
+     {
+      "ad": {
+       "id": "ec57699d-2368-4cb8-bf09-0891ac43bc63",
+       "creative_id": "7f09c298-cedc-4d91-a309-510d17aeffed"
+      }
+     },
+     {
+      "ad": {
+       "id": "ed248cb7-69da-420d-a706-d550a284e4b3",
+       "creative_id": "ce1d6edd-5147-4aef-9ff2-bb72d6112b0d"
+      }
+     },
+     {
+      "ad": {
+       "id": "ef1cbafe-16c1-419a-8061-418e1d94985f",
+       "creative_id": "6174e5d1-1b68-49d1-80b5-3e8685dbb3c7"
+      }
+     }
+    ]
+   },
+   "meta": {
+    "requestId": "5103cb60-64fe-4516-b04b-e7b7b45be573",
+    "waitedMs": 454,
+    "throttled": false,
+    "warnings": [],
+    "partialFailure": null,
+    "asyncReport": null,
+    "compatibility": null,
+    "compatibilitySkipped": true,
+    "mcp_result_projection": {
+     "fields": [
+      "id",
+      "creative_id"
+     ],
+     "compact": true
+    }
+   }
+  },
+  "meta": {
+   "requestId": "7452ed9f-fc63-458f-ab4f-79e031c0cab0",
+   "latencyMs": 2464
+  }
+ }
+}

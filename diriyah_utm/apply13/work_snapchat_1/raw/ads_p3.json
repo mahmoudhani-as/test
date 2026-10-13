@@ -1,0 +1,114 @@
+{
+ "tool_use_id": "toolu_012NK8MeeD5ppkXGtyq8mVSW",
+ "input": {
+  "action": "snapchat_ad_list",
+  "ad_account_id": "ebe8d66e-0e3e-4b71-9d37-5c53118d6481",
+  "query": {
+   "limit": 100,
+   "cursor": "QWRzL2VmMWNiYWZlLTE2YzEtNDE5YS04MDYxLTQxOGUxZDk0OTg1Zg"
+  },
+  "result_fields": [
+   "id",
+   "creative_id"
+  ],
+  "compact": true
+ },
+ "result": {
+  "success": true,
+  "data": {
+   "success": true,
+   "action": "snapchat_adaccounts_ad_account_id_ads_get",
+   "method": "GET",
+   "host": "adsapi.snapchat.com",
+   "path": "/v1/adaccounts/ebe8d66e-0e3e-4b71-9d37-5c53118d6481/ads",
+   "dryRun": false,
+   "data": {
+    "request_status": "SUCCESS",
+    "request_id": "f6278c76-7689-4659-a28a-bf611f07974d",
+    "ads": [
+     {
+      "ad": {
+       "id": "f0140a30-136a-4bb9-b579-b9ba684ffd32",
+       "creative_id": "81d0486e-6035-4036-a0f4-908703afa6d9"
+      }
+     },
+     {
+      "ad": {
+       "id": "f1de615c-fa45-4f9f-81ee-2d7d8dbbae77",
+       "creative_id": "7ddde054-30bf-40e9-9eb1-ab51d94d9b69"
+      }
+     },
+     {
+      "ad": {
+       "id": "f3a74b14-082f-446d-bb8a-ed6fba406d5f",
+       "creative_id": "2ec7ffd5-0d76-4476-ad1b-98ddd741ce46"
+      }
+     },
+     {
+      "ad": {
+       "id": "f510b11d-81a4-4835-87da-ea5995afb0f2",
+       "creative_id": "2a31b042-3af7-4601-95e7-1770bde99e5a"
+      }
+     },
+     {
+      "ad": {
+       "id": "f61d9c39-118a-4a06-a2b1-6696304b7664",
+       "creative_id": "4fc8f958-b3fe-40e5-9f36-b575f2c9d55a"
+      }
+     },
+     {
+      "ad": {
+       "id": "f97aff65-bdc8-41ea-864a-8081ae64dc5c",
+       "creative_id": "3b2997d1-5386-47c1-9b08-6cfd76304b56"
+      }
+     },
+     {
+      "ad": {
+       "id": "fa635afe-f646-4c38-93a5-fd80239f980c",
+       "creative_id": "e6788c94-9c10-44ed-b61b-1f350b494851"
+      }
+     },
+     {
+      "ad": {
+       "id": "fae77d16-b5da-43ca-a085-81591497eee1",
+       "creative_id": "deb24163-9fe0-4dd6-8268-db96c80d105f"
+      }
+     },
+     {
+      "ad": {
+       "id": "fd6a936b-5d4d-47c8-b4d7-a615d1893e83",
+       "creative_id": "a9652497-79d7-493c-b77e-1fe78d208977"
+      }
+     },
+     {
+      "ad": {
+       "id": "ffd6c9a7-55aa-46a8-a42d-1f16c6147d42",
+       "creative_id": "3b2997d1-5386-47c1-9b08-6cfd76304b56"
+      }
+     }
+    ]
+   },
+   "meta": {
+    "requestId": "f6278c76-7689-4659-a28a-bf611f07974d",
+    "waitedMs": 296,
+    "throttled": false,
+    "warnings": [],
+    "partialFailure": null,
+    "asyncReport": null,
+    "compatibility": null,
+    "compatibilitySkipped": true,
+    "mcp_result_projection": {
+     "fields": [
+      "id",
+      "creative_id"
+     ],
+     "compact": true
+    }
+   }
+  },
+  "meta": {
+   "requestId": "818b3ac2-41ed-4c40-8bde-c676aa013284",
+   "latencyMs": 2251
+  }
+ }
+}

@@ -1,0 +1,251 @@
+{
+ "tool_use_id": "toolu_012ARqDhRBifQccCwWiz6XVH",
+ "input": {
+  "action": "snapchat_creative_get_by_ids",
+  "ad_account_id": "ebe8d66e-0e3e-4b71-9d37-5c53118d6481",
+  "payload": {
+   "ids": [
+    "363b16b2-f24a-41d1-9fe6-16862e5dd293",
+    "a0d5f40f-a98a-42a6-a117-1fc55840c985",
+    "f128448d-c933-4f52-a434-d606fb27d733",
+    "b1bcb7f5-54ba-42b6-841a-6c24f7718c80",
+    "672f4ce5-342b-47cd-80e5-6beb7773ff83",
+    "245c8617-1803-47cb-8600-1f98541c9ffa",
+    "5030e9db-b4dd-46e2-818c-55b311e9954e",
+    "578da6aa-ecd9-4bef-9c49-062e0bfeb619",
+    "a9d88149-c33b-4254-b0ad-d29577025bd9",
+    "99a3ed63-920a-478c-b6a7-fe00dd89e3ee",
+    "c010a8c6-64f3-4a29-9a63-99efe1b6840b"
+   ]
+  },
+  "result_fields": [
+   "id",
+   "type",
+   "review_status",
+   "updated_at",
+   "web_view_properties",
+   "composite_properties"
+  ]
+ },
+ "result": {
+  "success": true,
+  "data": {
+   "success": true,
+   "action": "snapchat_adaccounts_ad_account_id_get_creatives_by_ids_get",
+   "method": "POST",
+   "host": "adsapi.snapchat.com",
+   "path": "/v1/adaccounts/ebe8d66e-0e3e-4b71-9d37-5c53118d6481/get_creatives_by_ids",
+   "dryRun": false,
+   "data": {
+    "request_status": "SUCCESS",
+    "request_id": "de7fba33-5b83-499e-90f2-53b0cb823be9",
+    "creatives": [
+     {
+      "creative": {
+       "id": "363b16b2-f24a-41d1-9fe6-16862e5dd293",
+       "type": "COMPOSITE",
+       "review_status": "APPROVED",
+       "updated_at": "2026-06-17T10:38:36.920Z",
+       "composite_properties": {
+        "creative_ids": [
+         "245c8617-1803-47cb-8600-1f98541c9ffa",
+         "5030e9db-b4dd-46e2-818c-55b311e9954e",
+         "578da6aa-ecd9-4bef-9c49-062e0bfeb619",
+         "a9d88149-c33b-4254-b0ad-d29577025bd9",
+         "99a3ed63-920a-478c-b6a7-fe00dd89e3ee",
+         "c010a8c6-64f3-4a29-9a63-99efe1b6840b"
+        ]
+       }
+      }
+     },
+     {
+      "creative": {
+       "id": "a0d5f40f-a98a-42a6-a117-1fc55840c985",
+       "type": "COMPOSITE",
+       "review_status": "APPROVED",
+       "updated_at": "2026-06-15T09:51:19.214Z",
+       "composite_properties": {
+        "creative_ids": [
+         "daee8d42-9ce9-426f-85ed-a258cf61f983",
+         "b2fdf154-8f84-4054-9cca-de76d7bdfa4c",
+         "92f3fff0-094d-4252-9243-06e9a8c25e98",
+         "123f1d5f-0c39-4993-aa8e-c79ff63f81ab",
+         "45a9979a-8bf6-4c78-b3bd-53e19c3048dc",
+         "9541b380-108d-46d8-9f66-fa47a929362a"
+        ]
+       }
+      }
+     },
+     {
+      "creative": {
+       "id": "f128448d-c933-4f52-a434-d606fb27d733",
+       "type": "COMPOSITE",
+       "review_status": "APPROVED",
+       "updated_at": "2026-07-08T12:38:47.717Z",
+       "composite_properties": {
+        "creative_ids": [
+         "245c8617-1803-47cb-8600-1f98541c9ffa",
+         "5030e9db-b4dd-46e2-818c-55b311e9954e",
+         "578da6aa-ecd9-4bef-9c49-062e0bfeb619",
+         "a9d88149-c33b-4254-b0ad-d29577025bd9",
+         "99a3ed63-920a-478c-b6a7-fe00dd89e3ee",
+         "c010a8c6-64f3-4a29-9a63-99efe1b6840b"
+        ]
+       }
+      }
+     },
+     {
+      "creative": {
+       "id": "b1bcb7f5-54ba-42b6-841a-6c24f7718c80",
+       "type": "COMPOSITE",
+       "review_status": "APPROVED",
+       "updated_at": "2026-06-15T09:44:58.083Z",
+       "composite_properties": {
+        "creative_ids": [
+         "245c8617-1803-47cb-8600-1f98541c9ffa",
+         "5030e9db-b4dd-46e2-818c-55b311e9954e",
+         "578da6aa-ecd9-4bef-9c49-062e0bfeb619",
+         "a9d88149-c33b-4254-b0ad-d29577025bd9",
+         "99a3ed63-920a-478c-b6a7-fe00dd89e3ee",
+         "c010a8c6-64f3-4a29-9a63-99efe1b6840b"
+        ]
+       }
+      }
+     },
+     {
+      "creative": {
+       "id": "672f4ce5-342b-47cd-80e5-6beb7773ff83",
+       "type": "COMPOSITE",
+       "review_status": "APPROVED",
+       "updated_at": "2026-06-17T10:40:46.277Z",
+       "composite_properties": {
+        "creative_ids": [
+         "daee8d42-9ce9-426f-85ed-a258cf61f983",
+         "b2fdf154-8f84-4054-9cca-de76d7bdfa4c",
+         "92f3fff0-094d-4252-9243-06e9a8c25e98",
+         "123f1d5f-0c39-4993-aa8e-c79ff63f81ab",
+         "45a9979a-8bf6-4c78-b3bd-53e19c3048dc",
+         "9541b380-108d-46d8-9f66-fa47a929362a"
+        ]
+       }
+      }
+     },
+     {
+      "creative": {
+       "id": "245c8617-1803-47cb-8600-1f98541c9ffa",
+       "type": "WEB_VIEW",
+       "review_status": "APPROVED",
+       "updated_at": "2026-06-15T09:44:58.090Z",
+       "web_view_properties": {
+        "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=manazel-alhadawi_en_all_mf_prospecting&utm_content=manazel-alhadawi-CR1",
+        "allow_snap_javascript_sdk": false,
+        "use_immersive_mode": false,
+        "deep_link_urls": [],
+        "block_preload": true
+       }
+      }
+     },
+     {
+      "creative": {
+       "id": "5030e9db-b4dd-46e2-818c-55b311e9954e",
+       "type": "WEB_VIEW",
+       "review_status": "APPROVED",
+       "updated_at": "2026-06-15T09:44:58.100Z",
+       "web_view_properties": {
+        "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=manazel-alhadawi_en_all_mf_prospecting&utm_content=manazel-alhadawi-CR1",
+        "allow_snap_javascript_sdk": false,
+        "use_immersive_mode": false,
+        "deep_link_urls": [],
+        "block_preload": true
+       }
+      }
+     },
+     {
+      "creative": {
+       "id": "578da6aa-ecd9-4bef-9c49-062e0bfeb619",
+       "type": "WEB_VIEW",
+       "review_status": "APPROVED",
+       "updated_at": "2026-06-15T09:44:58.107Z",
+       "web_view_properties": {
+        "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=manazel-alhadawi_en_all_mf_prospecting&utm_content=manazel-alhadawi-CR1",
+        "allow_snap_javascript_sdk": false,
+        "use_immersive_mode": false,
+        "deep_link_urls": [],
+        "block_preload": true
+       }
+      }
+     },
+     {
+      "creative": {
+       "id": "a9d88149-c33b-4254-b0ad-d29577025bd9",
+       "type": "WEB_VIEW",
+       "review_status": "APPROVED",
+       "updated_at": "2026-06-15T09:44:58.115Z",
+       "web_view_properties": {
+        "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=manazel-alhadawi_en_all_mf_prospecting&utm_content=manazel-alhadawi-CR1",
+        "allow_snap_javascript_sdk": false,
+        "use_immersive_mode": false,
+        "deep_link_urls": [],
+        "block_preload": true
+       }
+      }
+     },
+     {
+      "creative": {
+       "id": "99a3ed63-920a-478c-b6a7-fe00dd89e3ee",
+       "type": "WEB_VIEW",
+       "review_status": "APPROVED",
+       "updated_at": "2026-06-15T09:44:58.122Z",
+       "web_view_properties": {
+        "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=manazel-alhadawi_en_all_mf_prospecting&utm_content=manazel-alhadawi-CR1",
+        "allow_snap_javascript_sdk": false,
+        "use_immersive_mode": false,
+        "deep_link_urls": [],
+        "block_preload": true
+       }
+      }
+     },
+     {
+      "creative": {
+       "id": "c010a8c6-64f3-4a29-9a63-99efe1b6840b",
+       "type": "WEB_VIEW",
+       "review_status": "APPROVED",
+       "updated_at": "2026-06-15T09:44:58.129Z",
+       "web_view_properties": {
+        "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=manazel-alhadawi_en_all_mf_prospecting&utm_content=manazel-alhadawi-CR1",
+        "allow_snap_javascript_sdk": false,
+        "use_immersive_mode": false,
+        "deep_link_urls": [],
+        "block_preload": true
+       }
+      }
+     }
+    ]
+   },
+   "meta": {
+    "requestId": "de7fba33-5b83-499e-90f2-53b0cb823be9",
+    "waitedMs": 415,
+    "throttled": false,
+    "warnings": [],
+    "partialFailure": null,
+    "asyncReport": null,
+    "compatibility": null,
+    "compatibilitySkipped": true,
+    "mcp_result_projection": {
+     "fields": [
+      "id",
+      "type",
+      "review_status",
+      "updated_at",
+      "web_view_properties",
+      "composite_properties"
+     ]
+    }
+   }
+  },
+  "meta": {
+   "requestId": "ba18711e-c95c-4ea9-8b03-3f08a151ee48",
+   "latencyMs": 2369
+  }
+ }
+}

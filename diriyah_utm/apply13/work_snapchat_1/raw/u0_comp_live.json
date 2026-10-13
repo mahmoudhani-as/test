@@ -1,0 +1,83 @@
+{
+ "tool_use_id": "toolu_012emrgDM353nhFJcvrymCE1",
+ "input": {
+  "action": "snapchat_adaccounts_ad_account_id_creatives_update",
+  "ad_account_id": "ebe8d66e-0e3e-4b71-9d37-5c53118d6481",
+  "dry_run": false,
+  "payload": {
+   "creatives": [
+    {
+     "id": "3fc370fb-15a6-4a5b-b358-90304f012ee6",
+     "updated_at": "2026-07-08T12:38:25.907Z",
+     "created_at": "2026-07-08T08:04:02.064Z",
+     "name": "ManazelAlHadawi_CR1_AR_Considration",
+     "ad_account_id": "ebe8d66e-0e3e-4b71-9d37-5c53118d6481",
+     "type": "COMPOSITE",
+     "packaging_status": "SUCCESS",
+     "review_status": "APPROVED",
+     "review_status_details": "",
+     "shareable": true,
+     "playback_type": "LOOPING",
+     "headline": "منازل الحداوي في الدرعية",
+     "brand_name": "شركة الدرعية",
+     "render_type": "STATIC",
+     "top_snap_crop_position": "MIDDLE",
+     "composite_properties": {
+      "creative_ids": [
+       "b26128a0-a7d6-4f0d-96ae-3db542be9ce7",
+       "0e36c905-0b6a-48a6-a91b-c815ceb62963",
+       "5df3ba9e-2ac3-4f91-8169-50485fc82286",
+       "074b9734-2e5c-4672-b6a0-553c9e4cf7d8",
+       "f3cd6b47-b2bc-48f9-bdbb-7483c6879e16",
+       "dbd50f8b-cbbe-480e-b13f-f9f352484c0c"
+      ]
+     },
+     "ad_product": "SNAP_AD",
+     "profile_properties": {
+      "profile_id": "310a28f1-799a-4292-ae3a-b8a35beb9008"
+     },
+     "semantic_id": "-1792064248",
+     "creator_partnership_type": "NONE"
+    }
+   ]
+  }
+ },
+ "result": {
+  "success": true,
+  "data": {
+   "success": false,
+   "error": {
+    "code": "ERROR",
+    "message": "Snapchat native request failed.",
+    "details": {
+     "action": "snapchat_adaccounts_ad_account_id_creatives_update",
+     "upstream_status": 200,
+     "upstream_message": {
+      "request_status": "ERROR",
+      "request_id": "e782bf1c-ac85-4a93-90d9-d5c81aa69577",
+      "creatives": [
+       {
+        "sub_request_error_reason": "Error code: E2003, message: Property could not be updated after the Ad is in flight : [creative_ids]",
+        "sub_request_status": "ERROR"
+       }
+      ]
+     },
+     "snapchat": {
+      "request_status": "ERROR",
+      "request_id": "e782bf1c-ac85-4a93-90d9-d5c81aa69577",
+      "creatives": [
+       {
+        "sub_request_error_reason": "Error code: E2003, message: Property could not be updated after the Ad is in flight : [creative_ids]",
+        "sub_request_status": "ERROR"
+       }
+      ]
+     }
+    }
+   }
+  },
+  "meta": {
+   "requestId": "e3c7a368-b2ae-4306-aed6-b3b1e0cd0a83",
+   "latencyMs": 2327
+  }
+ }
+}

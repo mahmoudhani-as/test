@@ -1,0 +1,6 @@
+{
+ "launched": "2026-10-13 ~15:20 UTC (user: \"continue until everything is fixed\"; the approved Snapchat split, done inside each ad's own Story composite)",
+ "workflow": "workflows/diriyah-apply-v13.js (recipe snap_composite_swap)",
+ "runs": [{"task": "wk472gsmw", "run": "wf_8ebc107e-47d", "platform": "snapchat", "batches": ["in_snapchat_1.json"]}],
+ "outcome": "Snapchat refused the composite update on the first unit: E2003 'Property could not be updated after the Ad is in flight : [creative_ids]'. Stopped: 6 Failed, 30 NotAttempted. No ad, composite or existing sub-creative changed (re-read after the refusal). 6 copy creatives were created and left unattached (b26128a0, 0e36c905, 5df3ba9e, 074b9734, f3cd6b47, dbd50f8b). Afterwards the user said: do not create new ads."
+}
