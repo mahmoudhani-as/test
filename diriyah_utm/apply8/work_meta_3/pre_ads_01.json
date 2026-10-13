@@ -1,0 +1,472 @@
+{
+ "120245681020310789": {
+  "id": "120245681020310789",
+  "name": "Bab Samhan x Qiddiya_StaticKV1_EN",
+  "account_id": "1198625455580757",
+  "campaign_id": "120245679983880789",
+  "adset_id": "120245681020270789",
+  "status": "ACTIVE",
+  "configured_status": "ACTIVE",
+  "effective_status": "CAMPAIGN_PAUSED",
+  "updated_time": "2026-06-15T18:04:21+0300",
+  "creative": {
+   "id": "2402235616919973",
+   "name": "{{product.name}} 2026-06-15-a39f2042e9ec1a8e593f9fff1f496993",
+   "account_id": "1198625455580757",
+   "actor_id": "102966688906483",
+   "object_type": "SHARE",
+   "status": "ACTIVE",
+   "object_story_spec": {
+    "page_id": "102966688906483"
+   },
+   "asset_feed_spec": {
+    "images": [
+     {
+      "adlabels": [
+       {
+        "name": "placement_asset_f5d2e8a107bf20096_1779715028749",
+        "id": "120245680886180789"
+       }
+      ],
+      "hash": "e8949438dfe3a54600feb00691baa353",
+      "image_crops": {
+       "100x100": [
+        [
+         0,
+         0
+        ],
+        [
+         1080,
+         1080
+        ]
+       ]
+      }
+     },
+     {
+      "adlabels": [
+       {
+        "name": "placement_asset_f411b34303a2a9844_1779715028754",
+        "id": "120245680886190789"
+       }
+      ],
+      "hash": "d4bc836fb7e845b19546ddc0fd03fdb6"
+     }
+    ],
+    "bodies": [
+     {
+      "adlabels": [
+       {
+        "name": "placement_asset_ff0b220bda72b1bb1_1779715028755",
+        "id": "120245680886200789"
+       },
+       {
+        "name": "placement_asset_f6c7307310004273c_1779715028750",
+        "id": "120245680886210789"
+       }
+      ],
+      "text": "Stay in Diriyah and enjoy more — from your stay to experiences in Qiddiya"
+     },
+     {
+      "adlabels": [
+       {
+        "name": "placement_asset_f6c7307310004273c_1779715028750",
+        "id": "120245680886210789"
+       }
+      ],
+      "text": "Stay in Diriyah"
+     },
+     {
+      "adlabels": [
+       {
+        "name": "placement_asset_f6c7307310004273c_1779715028750",
+        "id": "120245680886210789"
+       }
+      ],
+      "text": "Stay & Explore Qiddiya"
+     }
+    ],
+    "call_to_action_types": [
+     "LEARN_MORE"
+    ],
+    "descriptions": [
+     {
+      "text": ""
+     }
+    ],
+    "link_urls": [
+     {
+      "adlabels": [
+       {
+        "name": "placement_asset_ffce2550885efcb82_1779715028755",
+        "id": "120245680886160789"
+       },
+       {
+        "name": "placement_asset_f7850742be6c1388f_1779715028752",
+        "id": "120245680886170789"
+       }
+      ],
+      "website_url": "https://www.diriyah.sa/en/hotels/bab-samhan?utm_source=instagram&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_instagram_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-987e7a_test_ad_name_display",
+      "display_url": ""
+     }
+    ],
+    "titles": [
+     {
+      "adlabels": [
+       {
+        "name": "placement_asset_f23ac2e7ec92f41f5_1779715028755",
+        "id": "120245680886140789"
+       },
+       {
+        "name": "placement_asset_f4edfd126c2356291_1779715028750",
+        "id": "120245680886150789"
+       }
+      ],
+      "text": "Stay at Bab Samhan"
+     }
+    ],
+    "ad_formats": [
+     "AUTOMATIC_FORMAT"
+    ],
+    "asset_customization_rules": [
+     {
+      "customization_spec": {
+       "age_max": 65,
+       "age_min": 13,
+       "publisher_platforms": [
+        "instagram"
+       ],
+       "instagram_positions": [
+        "story",
+        "reels"
+       ]
+      },
+      "image_label": {
+       "name": "placement_asset_f411b34303a2a9844_1779715028754",
+       "id": "120245680886190789"
+      },
+      "body_label": {
+       "name": "placement_asset_ff0b220bda72b1bb1_1779715028755",
+       "id": "120245680886200789"
+      },
+      "link_url_label": {
+       "name": "placement_asset_ffce2550885efcb82_1779715028755",
+       "id": "120245680886160789"
+      },
+      "title_label": {
+       "name": "placement_asset_f23ac2e7ec92f41f5_1779715028755",
+       "id": "120245680886140789"
+      },
+      "priority": 1
+     },
+     {
+      "customization_spec": {
+       "age_max": 65,
+       "age_min": 13
+      },
+      "image_label": {
+       "name": "placement_asset_f5d2e8a107bf20096_1779715028749",
+       "id": "120245680886180789"
+      },
+      "body_label": {
+       "name": "placement_asset_f6c7307310004273c_1779715028750",
+       "id": "120245680886210789"
+      },
+      "link_url_label": {
+       "name": "placement_asset_f7850742be6c1388f_1779715028752",
+       "id": "120245680886170789"
+      },
+      "title_label": {
+       "name": "placement_asset_f4edfd126c2356291_1779715028750",
+       "id": "120245680886150789"
+      },
+      "priority": 2
+     }
+    ],
+    "optimization_type": "PLACEMENT",
+    "additional_data": {
+     "multi_share_end_card": false,
+     "is_click_to_message": false
+    },
+    "reasons_to_shop": false,
+    "shops_bundle": false
+   },
+   "creative_sourcing_spec": {
+    "destination_screenshot_spec": {
+     "enroll_status": "OPT_OUT"
+    }
+   },
+   "threads_user_id": "17841415776034388",
+   "authorization_category": "NONE",
+   "effective_object_story_id": "102966688906483_1056460576894172",
+   "use_page_actor_override": false,
+   "instagram_user_id": "17841449897651638",
+   "effective_authorization_category": "NONE"
+  }
+ },
+ "120245681020290789": {
+  "id": "120245681020290789",
+  "name": "Bab Samhan x Qiddiya_StaticKV1_AR",
+  "account_id": "1198625455580757",
+  "campaign_id": "120245679980040789",
+  "adset_id": "120245681020250789",
+  "status": "ACTIVE",
+  "configured_status": "ACTIVE",
+  "effective_status": "CAMPAIGN_PAUSED",
+  "updated_time": "2026-06-15T18:00:43+0300",
+  "creative": {
+   "id": "1557385079078199",
+   "name": "{{product.name}} 2026-06-15-067f07d21a09319d46562825a73748a1",
+   "account_id": "1198625455580757",
+   "actor_id": "102966688906483",
+   "object_type": "SHARE",
+   "status": "ACTIVE",
+   "object_story_spec": {
+    "page_id": "102966688906483"
+   },
+   "asset_feed_spec": {
+    "images": [
+     {
+      "adlabels": [
+       {
+        "name": "placement_asset_fdd6b93080153e0d4_1779715131577",
+        "id": "120245680932040789"
+       }
+      ],
+      "hash": "704c4cd489709563858a724656381658"
+     },
+     {
+      "adlabels": [
+       {
+        "name": "placement_asset_fb14aaf039b6378ea_1779715131575",
+        "id": "120245680932010789"
+       }
+      ],
+      "hash": "45bad1d78252df890a62bd045bf34991",
+      "image_crops": {
+       "90x160": [
+        [
+         0,
+         0
+        ],
+        [
+         1080,
+         1920
+        ]
+       ]
+      }
+     },
+     {
+      "adlabels": [
+       {
+        "name": "placement_asset_ff24d2800c85681ea_1781508435910",
+        "id": "120247109271580789"
+       }
+      ],
+      "hash": "899c5097a7b5af996a9934c04adddcc8"
+     }
+    ],
+    "bodies": [
+     {
+      "adlabels": [
+       {
+        "name": "placement_asset_f1637ba1ba60df24f_1779715131577",
+        "id": "120245680932050789"
+       },
+       {
+        "name": "placement_asset_f424a01f3dd63f3d4_1779715131575",
+        "id": "120245680932060789"
+       },
+       {
+        "name": "placement_asset_f7d613313d2ef1ba6_1781508435912",
+        "id": "120247109271590789"
+       }
+      ],
+      "text": "اسكن في الدرعية واستمتع بتجربة متكاملة — من إقامتك إلى تجارب في القدية"
+     },
+     {
+      "adlabels": [
+       {
+        "name": "placement_asset_f424a01f3dd63f3d4_1779715131575",
+        "id": "120245680932060789"
+       },
+       {
+        "name": "placement_asset_f7d613313d2ef1ba6_1781508435912",
+        "id": "120247109271590789"
+       }
+      ],
+      "text": "اسكن في الدرعية"
+     },
+     {
+      "adlabels": [
+       {
+        "name": "placement_asset_f424a01f3dd63f3d4_1779715131575",
+        "id": "120245680932060789"
+       },
+       {
+        "name": "placement_asset_f7d613313d2ef1ba6_1781508435912",
+        "id": "120247109271590789"
+       }
+      ],
+      "text": "من إقامتك إلى القدية"
+     }
+    ],
+    "call_to_action_types": [
+     "LEARN_MORE"
+    ],
+    "descriptions": [
+     {
+      "text": ""
+     }
+    ],
+    "link_urls": [
+     {
+      "adlabels": [
+       {
+        "name": "placement_asset_fb51f95411f5322cd_1779715131577",
+        "id": "120245680932070789"
+       },
+       {
+        "name": "placement_asset_f1302af4422939bcb_1779715131576",
+        "id": "120245680932080789"
+       },
+       {
+        "name": "placement_asset_f77583c2dbc56eb8a_1781508435912",
+        "id": "120247109271560789"
+       }
+      ],
+      "website_url": "https://www.diriyah.sa/ar/hotels/bab-samhan?utm_source=instagram&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan_tactical_visitor-diriyah-coe_2026_may_uf_awareness_reach-awareness_instagram_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-987e7a_test_ad_name_display",
+      "display_url": ""
+     }
+    ],
+    "titles": [
+     {
+      "adlabels": [
+       {
+        "name": "placement_asset_f96174ac9d5938fb2_1779715131575",
+        "id": "120245680932020789"
+       },
+       {
+        "name": "placement_asset_f5f1c80487794fd7d_1779715131577",
+        "id": "120245680932030789"
+       },
+       {
+        "name": "placement_asset_fcf9c26392dcf97c4_1781508435912",
+        "id": "120247109271570789"
+       }
+      ],
+      "text": "اسكن في باب سمحان"
+     }
+    ],
+    "ad_formats": [
+     "AUTOMATIC_FORMAT"
+    ],
+    "asset_customization_rules": [
+     {
+      "customization_spec": {
+       "age_max": 65,
+       "age_min": 13,
+       "publisher_platforms": [
+        "instagram"
+       ],
+       "instagram_positions": [
+        "stream"
+       ]
+      },
+      "image_label": {
+       "name": "placement_asset_fdd6b93080153e0d4_1779715131577",
+       "id": "120245680932040789"
+      },
+      "body_label": {
+       "name": "placement_asset_f1637ba1ba60df24f_1779715131577",
+       "id": "120245680932050789"
+      },
+      "link_url_label": {
+       "name": "placement_asset_fb51f95411f5322cd_1779715131577",
+       "id": "120245680932070789"
+      },
+      "title_label": {
+       "name": "placement_asset_f5f1c80487794fd7d_1779715131577",
+       "id": "120245680932030789"
+      },
+      "priority": 1
+     },
+     {
+      "customization_spec": {
+       "age_max": 65,
+       "age_min": 13,
+       "publisher_platforms": [
+        "instagram"
+       ],
+       "instagram_positions": [
+        "story",
+        "reels"
+       ]
+      },
+      "image_label": {
+       "name": "placement_asset_ff24d2800c85681ea_1781508435910",
+       "id": "120247109271580789"
+      },
+      "body_label": {
+       "name": "placement_asset_f7d613313d2ef1ba6_1781508435912",
+       "id": "120247109271590789"
+      },
+      "link_url_label": {
+       "name": "placement_asset_f77583c2dbc56eb8a_1781508435912",
+       "id": "120247109271560789"
+      },
+      "title_label": {
+       "name": "placement_asset_fcf9c26392dcf97c4_1781508435912",
+       "id": "120247109271570789"
+      },
+      "priority": 2
+     },
+     {
+      "customization_spec": {
+       "age_max": 65,
+       "age_min": 13
+      },
+      "image_label": {
+       "name": "placement_asset_fb14aaf039b6378ea_1779715131575",
+       "id": "120245680932010789"
+      },
+      "body_label": {
+       "name": "placement_asset_f424a01f3dd63f3d4_1779715131575",
+       "id": "120245680932060789"
+      },
+      "link_url_label": {
+       "name": "placement_asset_f1302af4422939bcb_1779715131576",
+       "id": "120245680932080789"
+      },
+      "title_label": {
+       "name": "placement_asset_f96174ac9d5938fb2_1779715131575",
+       "id": "120245680932020789"
+      },
+      "priority": 3
+     }
+    ],
+    "optimization_type": "PLACEMENT",
+    "additional_data": {
+     "multi_share_end_card": false,
+     "is_click_to_message": false
+    },
+    "reasons_to_shop": false,
+    "shops_bundle": false
+   },
+   "contextual_multi_ads": {
+    "enroll_status": "OPT_OUT"
+   },
+   "creative_sourcing_spec": {
+    "destination_screenshot_spec": {
+     "enroll_status": "OPT_OUT"
+    }
+   },
+   "threads_user_id": "17841415776034388",
+   "authorization_category": "NONE",
+   "effective_object_story_id": "102966688906483_1056460566894173",
+   "effective_instagram_media_id": "18417892387179170",
+   "use_page_actor_override": false,
+   "instagram_user_id": "17841449897651638",
+   "effective_authorization_category": "NONE"
+  }
+ }
+}

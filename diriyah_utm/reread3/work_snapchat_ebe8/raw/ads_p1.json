@@ -1,0 +1,1505 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "snapchat_adaccounts_ad_account_id_ads_get",
+    "method": "GET",
+    "host": "adsapi.snapchat.com",
+    "path": "/v1/adaccounts/ebe8d66e-0e3e-4b71-9d37-5c53118d6481/ads",
+    "dryRun": false,
+    "data": {
+      "request_status": "SUCCESS",
+      "request_id": "d725ce44-1256-459d-92a1-0de962722fde",
+      "paging": {
+        "next_link": "https://adsapi.snapchat.com/v1/adaccounts/ebe8d66e-0e3e-4b71-9d37-5c53118d6481/ads?cursor=QWRzLzY1MTMyODc0LWE0NmUtNGFkZi05MTYwLWFkNzZhNmUwZWFmNA&limit=85"
+      },
+      "ads": [
+        {
+          "ad": {
+            "id": "01f0c2bf-051e-4f70-8341-3474c834f29c",
+            "name": "company_general_2026_sep_resi-patio-kv3_adset-id-1469e841_display_ar",
+            "status": "ACTIVE",
+            "ad_squad_id": "58949327-0a13-4b6e-9bb1-176db5061892",
+            "creative_id": "9c51acc9-55d4-4b7f-bdd6-209e7bc34c8b",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "VALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-09-28T17:27:25.464Z",
+            "updated_at": "2026-09-30T13:28:21.348Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "037408fb-2122-42e3-a2dd-9e66ae09fee4",
+            "name": "company_ritz-signature_2026_aug_rcsr-kv1_adset-id-07eca5d8_display_en_v2",
+            "status": "ACTIVE",
+            "ad_squad_id": "61049c69-88b5-4e38-8b60-50fe6dacfb04",
+            "creative_id": "03898407-5e88-45a6-943c-f9932e0c9425",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-09-08T07:04:13.462Z",
+            "updated_at": "2026-10-12T11:30:53.916Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "05732ddb-6cec-4bcb-a829-837f2d6acb5b",
+            "name": "ManazelAlHadawi_CR3_EN",
+            "status": "ACTIVE",
+            "ad_squad_id": "8fadf2c1-eae2-4f3c-ad76-f5ebed001943",
+            "creative_id": "add50001-3a03-43d0-8e7b-ebdce3d40324",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID"
+            ],
+            "type": "STORY",
+            "created_at": "2026-09-05T17:48:53.719Z",
+            "updated_at": "2026-10-13T10:11:29.381Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "05739f0d-0819-431a-b00f-fee82fe818ab",
+            "name": "company_ritz-signature_2026_aug_rcsr-kv3_adset-id-c4ffbd75_display_en_v2",
+            "status": "ACTIVE",
+            "ad_squad_id": "b6964013-3aa3-46b9-9642-c6e4954cc845",
+            "creative_id": "dffb8ed9-75fa-4f71-93a6-b66c6ea7a3f5",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "VALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-09-02T15:36:38.653Z",
+            "updated_at": "2026-10-12T11:31:18.236Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "05e51648-9272-489e-961a-db70d99c010d",
+            "name": "ManazelAlHadawi_CR1_AR_Conversions",
+            "status": "PAUSED",
+            "ad_squad_id": "d61bba60-e7cb-452c-a372-39ea25d4b303",
+            "creative_id": "e388454c-ac0f-49be-8cdd-14928db7ff9f",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "STORY",
+            "created_at": "2026-07-08T08:16:07.441Z",
+            "updated_at": "2026-09-15T14:23:16.150Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "06e25152-b4da-4f51-b983-9d61e32d1cc3",
+            "name": "ManazelAlHadawi_KV1_EN_Leads_v2",
+            "status": "PAUSED",
+            "ad_squad_id": "01081699-e332-4667-b251-b96b25a88b44",
+            "creative_id": "ee91f887-957b-427c-897a-9467491d78c0",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-06-04T15:23:42.597Z",
+            "updated_at": "2026-09-16T19:04:30.563Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "070b31e0-8bb3-472e-aa63-ea5dae40dfd7",
+            "name": "company_ritz-signature_2026_aug_rcsr-kv2_adset-id-c2b96e29_display_en_v2_test",
+            "status": "ACTIVE",
+            "ad_squad_id": "b6964013-3aa3-46b9-9642-c6e4954cc845",
+            "creative_id": "73181bc7-6317-48c3-bcc7-d1ae4815e383",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "VALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-08-26T14:03:13.745Z",
+            "updated_at": "2026-10-12T11:31:42.268Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "07e537ce-c6aa-4fc8-858b-e6e308eceea9",
+            "name": "ManazelAlHadawi_Video1_6s_EN_Awareness",
+            "status": "PAUSED",
+            "ad_squad_id": "bf27c1d9-a0c7-4c90-abd5-2f7436939014",
+            "creative_id": "ed06611e-048a-49b5-bad2-35b347b9d908",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-07-01T14:02:40.880Z",
+            "updated_at": "2026-10-12T09:42:55.138Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "087d03d7-944c-4c33-8677-d936e27de4ae",
+            "name": "company_ritz-signature_2026_aug_rcsr-kv2_adset-id-c2b96e29_display_en",
+            "status": "PAUSED",
+            "ad_squad_id": "b6964013-3aa3-46b9-9642-c6e4954cc845",
+            "creative_id": "2626114f-3dff-492d-acd5-2217dc3a70b1",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-08-13T10:55:50.174Z",
+            "updated_at": "2026-10-12T11:32:01.658Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "0925b5a7-c6db-4107-98f4-67e76807b099",
+            "name": "ManazelAlHadawi_KV2_EN_Traffic_v2",
+            "status": "PAUSED",
+            "ad_squad_id": "8fadf2c1-eae2-4f3c-ad76-f5ebed001943",
+            "creative_id": "4daec384-bea9-4774-8447-c86ac73fad91",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-06-04T15:23:19.980Z",
+            "updated_at": "2026-10-12T11:33:04.050Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "0ab83756-c59b-4e1e-8e8b-c4d8e3a46a6b",
+            "name": "company_general_2026_sep_resi-video-1_adset-id-3c3fc87a_video_ar",
+            "status": "ACTIVE",
+            "ad_squad_id": "58949327-0a13-4b6e-9bb1-176db5061892",
+            "creative_id": "543be9b5-bd05-4498-a881-ddff8bc45d1b",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "VALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-08-05T04:18:08.258Z",
+            "updated_at": "2026-10-11T11:57:40.697Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "0dcb5911-f7e3-4a43-b60e-b220594d495c",
+            "name": "ManazelAlHadawi_CR1_AR_Considration",
+            "status": "PAUSED",
+            "ad_squad_id": "852ca250-88c3-4f3d-a83b-352b726ed137",
+            "creative_id": "3fc370fb-15a6-4a5b-b358-90304f012ee6",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "STORY",
+            "created_at": "2026-07-08T08:04:05.324Z",
+            "updated_at": "2026-09-15T14:18:17.698Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "0e4672be-bcf0-4e1d-a1e2-0fbf8f1170bf",
+            "name": "LifeInDiriyah_KV3_Dark_EN_NA_Prospecting_23.06.2026_04.07.2026",
+            "status": "ACTIVE",
+            "ad_squad_id": "78eeb5c7-a311-434c-a2f0-c30b9a5e400b",
+            "creative_id": "7eaca3a2-7089-488c-9b18-da4cff3fbde4",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "VALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-09-12T13:19:51.064Z",
+            "updated_at": "2026-10-11T11:57:45.333Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "110cfb50-f654-4052-8ffe-c2c887592609",
+            "name": "company_ritz-signature_2026_aug_rcsr-kv3_adset-id-c4ffbd75_display_ar",
+            "status": "PAUSED",
+            "ad_squad_id": "6598977a-57f0-452d-8a99-aa029734fa33",
+            "creative_id": "9445554a-d926-46e0-95e8-73fcce15d937",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-08-29T14:57:08.550Z",
+            "updated_at": "2026-10-11T11:02:08.727Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "1119cb2b-5cf2-431b-95c6-7e29b025b753",
+            "name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv3_adset-id-08c48732_display_ar",
+            "status": "ACTIVE",
+            "ad_squad_id": "5c77ecad-b50f-4d5c-aef2-1db59bff1927",
+            "creative_id": "2db25dd3-8253-44ad-9408-f1fc8c967eb8",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "VALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-09-28T07:44:48.273Z",
+            "updated_at": "2026-10-12T09:55:39.552Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "1220378b-a816-4358-ac6a-2a199b90c141",
+            "name": "company_manazel-alhadawi_2026_sep_mah-video3_adset-id-2306103e_video_ar",
+            "status": "PAUSED",
+            "ad_squad_id": "d61bba60-e7cb-452c-a372-39ea25d4b303",
+            "creative_id": "238f7ffb-ad7b-4586-b3a4-493f8e38e85b",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-09-10T13:32:15.946Z",
+            "updated_at": "2026-10-12T09:44:02.876Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "129dc22f-0808-4274-a1a0-7c9522b52f5d",
+            "name": "ManazelAlHadawi_KV2_EN_Leads_v2",
+            "status": "PAUSED",
+            "ad_squad_id": "eb275dce-e340-42b0-8af7-965103f670ca",
+            "creative_id": "9b0ae601-ca3c-4142-ba68-5a6234f6a4d1",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-07-08T08:20:45.257Z",
+            "updated_at": "2026-09-15T14:21:49.948Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "13bb37d2-352d-4fae-b570-cea602a4c2d0",
+            "name": "ManazelAlHadawi_CR3_AR",
+            "status": "ACTIVE",
+            "ad_squad_id": "ef5882d1-3fc7-4499-9caf-ee73bf47187d",
+            "creative_id": "2ca30262-2673-4f79-a6c4-72b9cd7182f0",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "VALID"
+            ],
+            "type": "STORY",
+            "created_at": "2026-09-05T12:47:39.816Z",
+            "updated_at": "2026-10-13T10:14:46.019Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "14498ec3-11df-4fd4-a65b-3cdb127bb301",
+            "name": "ManazelAlHadawi_CR2_EN",
+            "status": "ACTIVE",
+            "ad_squad_id": "4faec822-a523-4d88-a8ab-6c12770e8730",
+            "creative_id": "5615f7e1-c7cc-454f-8faa-5116e1260d46",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "VALID"
+            ],
+            "type": "STORY",
+            "created_at": "2026-09-05T12:38:21.147Z",
+            "updated_at": "2026-10-13T10:14:37.188Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "155b547b-fcff-4eef-bab6-9114eece6630",
+            "name": "company_ritz-signature_2026_aug_rcsr-kv2_adset-id-c2b96e29_display_en_v2",
+            "status": "ACTIVE",
+            "ad_squad_id": "b6964013-3aa3-46b9-9642-c6e4954cc845",
+            "creative_id": "efc54b9b-c9d5-4c78-88da-bdc063232d49",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "VALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-09-02T15:34:52.634Z",
+            "updated_at": "2026-10-12T11:33:37.367Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "16a9097a-26e3-4924-9bfb-0db3e9164dc1",
+            "name": "company_ritz-signature_2026_aug_rcsr-kv1_adset-id-07eca5d8_display_en_v2",
+            "status": "ACTIVE",
+            "ad_squad_id": "b6964013-3aa3-46b9-9642-c6e4954cc845",
+            "creative_id": "5892d9a2-4c34-4bbe-a610-21d381fc4255",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "VALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-09-02T15:33:00.341Z",
+            "updated_at": "2026-10-12T11:34:16.402Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "1a9c512b-6742-4363-9da5-f5e54e72be60",
+            "name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv3_adset-id-08c48732_display_en",
+            "status": "ACTIVE",
+            "ad_squad_id": "b08fdb34-ee4b-4321-bc0f-a82375477642",
+            "creative_id": "546ac7f1-ead4-4187-ac38-fdb439bf6ad8",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "VALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-09-29T09:50:54.806Z",
+            "updated_at": "2026-10-11T11:00:45.201Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "1adfd7d3-9137-416b-8237-fa8afc85d7d3",
+            "name": "ManazelAlHadawi_KV2_EN_Traffic_NewLogo",
+            "status": "ACTIVE",
+            "ad_squad_id": "8fadf2c1-eae2-4f3c-ad76-f5ebed001943",
+            "creative_id": "3b055d88-d3f3-47b1-8c0f-91e0c412964e",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-06-10T11:33:59.630Z",
+            "updated_at": "2026-10-12T09:44:06.805Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "1b055e39-982a-4faf-9e30-17767cdecd1a",
+            "name": "company_ritz-signature_2026_aug_rcsr-kv1_adset-id-07eca5d8_display_ar_v2_test",
+            "status": "ACTIVE",
+            "ad_squad_id": "8d471b9c-acaf-4f8a-8876-73654a8255aa",
+            "creative_id": "9a53e4a0-49cb-4b5c-af1f-229cce8af16c",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "VALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-08-26T14:08:14.413Z",
+            "updated_at": "2026-10-12T11:24:49.756Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "1d06bfdc-6a6e-496b-9b76-0790eed365e8",
+            "name": "ManazelAlHadawi_CR2_AR",
+            "status": "ACTIVE",
+            "ad_squad_id": "d61bba60-e7cb-452c-a372-39ea25d4b303",
+            "creative_id": "036b26c0-8cde-45c2-acda-8adcf7a28250",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "VALID"
+            ],
+            "type": "STORY",
+            "created_at": "2026-09-05T11:06:07.015Z",
+            "updated_at": "2026-10-13T09:54:21.876Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "1e0aaba7-6f19-40c2-aa86-342978792d01",
+            "name": "LifeInDiriyah_KV3_Dark_EN_NA_Prospecting_23.06.2026_04.07.2026",
+            "status": "ACTIVE",
+            "ad_squad_id": "f8f0d99d-c002-44ee-a6a0-53fc3b10b1c4",
+            "creative_id": "3c498dc7-0169-4dba-8eb9-c17d0303ce7a",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "VALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-09-12T13:14:46.383Z",
+            "updated_at": "2026-10-11T11:53:57.980Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "1ee1acb3-40c5-47d9-bf9e-72c1bd5ce27a",
+            "name": "ManazelAlHadawi_Video10s_EN",
+            "status": "PAUSED",
+            "ad_squad_id": "eb275dce-e340-42b0-8af7-965103f670ca",
+            "creative_id": "f86022ce-1f0f-418e-8c83-670c9460db4c",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-07-21T08:22:29.688Z",
+            "updated_at": "2026-10-12T11:37:04.865Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "213a61e0-58c8-4e67-8e4c-a01d04b1a6c0",
+            "name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv1_adset-id-8971b1f2_display_en",
+            "status": "ACTIVE",
+            "ad_squad_id": "b08fdb34-ee4b-4321-bc0f-a82375477642",
+            "creative_id": "90208aa3-9b41-4f3a-bf3d-6531cfaaf41e",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "VALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-09-29T09:50:54.805Z",
+            "updated_at": "2026-10-11T11:02:01.995Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "242d6f13-1bea-4957-b917-0fdbb73614ec",
+            "name": "ManazelAlHadawi_KV2_EN_Leads_NewLogo",
+            "status": "ACTIVE",
+            "ad_squad_id": "01081699-e332-4667-b251-b96b25a88b44",
+            "creative_id": "7321c0e4-620b-4dab-afa5-86245bcde2f4",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-06-13T19:25:16.341Z",
+            "updated_at": "2026-10-11T12:04:56.989Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "25bb6254-4157-4ede-b3f4-ba474ad7239c",
+            "name": "ManazelAlHadawi_CR2_AR",
+            "status": "ACTIVE",
+            "ad_squad_id": "3eb87287-2d13-441f-bcb8-ee1e2d9446a5",
+            "creative_id": "8fe52909-b034-4fd2-a665-c180dd656673",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "VALID"
+            ],
+            "type": "STORY",
+            "created_at": "2026-08-30T12:57:27.238Z",
+            "updated_at": "2026-10-12T22:22:07.967Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "26c027a9-e739-4c87-b8b2-9712e70b92c1",
+            "name": "company_ritz-signature_2026_aug_rcsr-kv3_adset-id-c4ffbd75_display_ar_v2_test",
+            "status": "ACTIVE",
+            "ad_squad_id": "8d471b9c-acaf-4f8a-8876-73654a8255aa",
+            "creative_id": "76eb3bfb-e4c4-4995-9e4d-90645b519ed2",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "VALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-08-26T14:14:08.225Z",
+            "updated_at": "2026-10-12T22:24:37.869Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "26cb154d-d9b1-45c8-a8e9-3e16e93caf0b",
+            "name": "company_ritz-signature_2026_aug_rcsr-kv3_adset-id-c4ffbd75_display_ar",
+            "status": "PAUSED",
+            "ad_squad_id": "8d471b9c-acaf-4f8a-8876-73654a8255aa",
+            "creative_id": "92d3e3fd-7456-47a2-8753-931fd043d55a",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-08-13T10:55:50.507Z",
+            "updated_at": "2026-10-11T10:52:45.294Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "2780bd07-aac8-439e-a0f9-94f89ac2426a",
+            "name": "LifeInDiriyah_Video1_Dark_EN_NA_Prospecting_23.06.2026_04.07.2026",
+            "status": "ACTIVE",
+            "ad_squad_id": "480be7f6-183b-4ceb-91d0-6b128f4700de",
+            "creative_id": "55fd44f6-5df9-4c3e-9ca2-744f9e38d97b",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "VALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-08-05T04:00:10.520Z",
+            "updated_at": "2026-10-11T12:04:22.997Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "2cac4164-ddfc-4aae-9987-01cb55b5d1d9",
+            "name": "ManazelAlHadawi_KV1_EN_Leads_v2",
+            "status": "PAUSED",
+            "ad_squad_id": "eb275dce-e340-42b0-8af7-965103f670ca",
+            "creative_id": "ee91f887-957b-427c-897a-9467491d78c0",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-07-08T08:20:44.982Z",
+            "updated_at": "2026-09-15T14:21:25.840Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "2d349cc8-51ab-41f4-87fd-0c559345f5ef",
+            "name": "company_ritz-signature_2026_aug_rcsr-kv1_adset-id-07eca5d8_display_en",
+            "status": "PAUSED",
+            "ad_squad_id": "61049c69-88b5-4e38-8b60-50fe6dacfb04",
+            "creative_id": "84761dd1-a8a0-4656-b336-c88545798e2a",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-08-29T14:57:08.668Z",
+            "updated_at": "2026-10-11T10:47:26.566Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "2d97a13e-776b-474a-a3c2-2571b4cd1bce",
+            "name": "company_general_2026_sep_resi-video-1_adset-id-3c3fc87a_video_ar",
+            "status": "ACTIVE",
+            "ad_squad_id": "1be0628e-0c2a-4df0-87f7-6cd1f2b44ef8",
+            "creative_id": "99f1f05c-4258-4214-84c8-b9e98ba186b2",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "VALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-08-05T04:14:50.773Z",
+            "updated_at": "2026-10-11T11:57:48.656Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "2e2791f2-a38c-4e61-8f9f-600acf4806ea",
+            "name": "company_manazel-alhadawi_2026_sep_mah-video3-sub_adset-id-17ea79ac_video_ar",
+            "status": "ACTIVE",
+            "ad_squad_id": "d61bba60-e7cb-452c-a372-39ea25d4b303",
+            "creative_id": "5f8aa8fe-dd57-4b83-8c36-516e056e1ca7",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "VALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-09-10T13:32:16.114Z",
+            "updated_at": "2026-10-11T12:04:45.096Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "30f3d133-78c5-40db-a513-b71f6d3f27e1",
+            "name": "ManazelAlHadawi_CR1_EN_Traffic",
+            "status": "PAUSED",
+            "ad_squad_id": "8fadf2c1-eae2-4f3c-ad76-f5ebed001943",
+            "creative_id": "363b16b2-f24a-41d1-9fe6-16862e5dd293",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "STORY",
+            "created_at": "2026-06-17T10:38:06.448Z",
+            "updated_at": "2026-09-15T14:19:51.260Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "32b995aa-43b1-468d-9f31-123cde97062e",
+            "name": "ManazelAlHadawi_CR3_EN",
+            "status": "ACTIVE",
+            "ad_squad_id": "bf27c1d9-a0c7-4c90-abd5-2f7436939014",
+            "creative_id": "cc0d77b4-ec23-4d37-903e-b4da279bcdb0",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "VALID"
+            ],
+            "type": "STORY",
+            "created_at": "2026-08-30T14:07:25.545Z",
+            "updated_at": "2026-10-12T22:26:40.080Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "3319ef8b-345b-4a7f-b170-ae62860e0337",
+            "name": "LifeInDiriyah_Ad1_Video_Boosted_EN_NA_Prospecting_23.06.2026_04.07.2026",
+            "status": "ACTIVE",
+            "ad_squad_id": "f0a554fb-4e95-45e2-8324-9876d7cf3766",
+            "creative_id": "281f7321-b4f2-49fb-a9a2-cd1418aeb138",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-07-15T13:07:59.742Z",
+            "updated_at": "2026-10-11T11:54:01.200Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "338b4b16-1693-462e-bc52-460e5de7c824",
+            "name": "LifeInDiriyah_CR1_Boosted_AR_NA_Prospecting_23.06.2026_22.07.2026_V2",
+            "status": "ACTIVE",
+            "ad_squad_id": "03a34ce5-12ba-4e19-b56c-338a4b4050d9",
+            "creative_id": "b4f08b76-6fc9-4374-9398-8b8f30aa86e1",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID"
+            ],
+            "type": "STORY",
+            "created_at": "2026-07-20T11:52:43.153Z",
+            "updated_at": "2026-10-12T22:29:51.661Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "3394cb0b-2473-4289-bde7-ed55d3303f48",
+            "name": "ManazelAlHadawi_KV2_AR_Traffic_v2",
+            "status": "ACTIVE",
+            "ad_squad_id": "852ca250-88c3-4f3d-a83b-352b726ed137",
+            "creative_id": "10b8e3db-544f-40ef-9204-62ab177f4f94",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-06-04T15:23:34.908Z",
+            "updated_at": "2026-10-12T22:31:11.577Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "35bc214c-4700-4d58-b61f-016dc096c6d9",
+            "name": "ManazelAlHadawi_Video10s_AR",
+            "status": "PAUSED",
+            "ad_squad_id": "d61bba60-e7cb-452c-a372-39ea25d4b303",
+            "creative_id": "41858f1c-8097-4118-b8d2-c760435928cb",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-07-12T11:36:24.641Z",
+            "updated_at": "2026-10-12T22:32:29.364Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "36c97c7d-2903-4d80-a89b-e18d155b1283",
+            "name": "ManazelAlHadawi_CR2_AR",
+            "status": "ACTIVE",
+            "ad_squad_id": "ef5882d1-3fc7-4499-9caf-ee73bf47187d",
+            "creative_id": "f44f5023-5557-4093-b4c1-c11dcc2aeced",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "VALID"
+            ],
+            "type": "STORY",
+            "created_at": "2026-09-05T12:47:39.942Z",
+            "updated_at": "2026-10-12T22:34:57.247Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "388e6dfe-4b7f-424a-8ad3-05a145386caa",
+            "name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv1_adset-id-8971b1f2_display_en",
+            "status": "ACTIVE",
+            "ad_squad_id": "7bb76c14-42f3-428c-ade7-87fe0d480a92",
+            "creative_id": "75686406-5c3c-410a-822d-6b952b775128",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "VALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-09-29T09:51:05.915Z",
+            "updated_at": "2026-10-11T11:00:24.346Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "39697456-23bb-4fb3-af6b-d9884d9d1485",
+            "name": "company_manazel-alhadawi_2026_sep_mah-video2_adset-id-1c0240c5_video_en",
+            "status": "PAUSED",
+            "ad_squad_id": "eb275dce-e340-42b0-8af7-965103f670ca",
+            "creative_id": "2b311b67-6e38-4193-a505-59f459963bce",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-09-10T14:18:47.188Z",
+            "updated_at": "2026-10-12T09:48:06.172Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "3d390a83-b8ea-4137-93c7-8968efb0cf23",
+            "name": "LifeInDiriyah_CR1_Video_Boosted_EN_NA_Prospecting_23.06.2026_22.07.2026_V2",
+            "status": "ACTIVE",
+            "ad_squad_id": "f0a554fb-4e95-45e2-8324-9876d7cf3766",
+            "creative_id": "4c1febe5-7c02-4950-8e3e-9810ef06298e",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID"
+            ],
+            "type": "STORY",
+            "created_at": "2026-07-16T07:55:58.753Z",
+            "updated_at": "2026-10-12T22:36:48.899Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "3f91d8c4-5213-42cf-9142-0a21a31ccebe",
+            "name": "LifeInDiriyah_CR1_Video_Boosted_AR_NA_Prospecting_23.06.2026_22.07.2026",
+            "status": "PAUSED",
+            "ad_squad_id": "763319dc-50e8-46a4-81c1-2393a851f94d",
+            "creative_id": "92f0f5a1-6405-489c-bbe4-a76e8893d354",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "STORY",
+            "created_at": "2026-07-15T13:07:59.800Z",
+            "updated_at": "2026-10-06T17:20:19.663Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "3fca9630-7091-49a9-b5f2-72c0d4b0b168",
+            "name": "ManazelAlHadawi_CR1_AR_Conversions",
+            "status": "PAUSED",
+            "ad_squad_id": "fbd7bd19-bbe3-49fa-b2c2-dca6d583e823",
+            "creative_id": "e388454c-ac0f-49be-8cdd-14928db7ff9f",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "STORY",
+            "created_at": "2026-07-08T08:10:55.256Z",
+            "updated_at": "2026-09-16T19:04:15.396Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "421f10de-72ac-44d4-aa6a-72370c933161",
+            "name": "LifeInDiriyah_Video2_15s_Dark_AR_NA_Prospecting_16.08.2026_04.07.2026",
+            "status": "PAUSED",
+            "ad_squad_id": "ba21ea80-b5cb-4c08-b226-ea96bed265d5",
+            "creative_id": "3225d615-843f-4cd5-8ff2-31009548fe09",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-08-16T10:54:27.032Z",
+            "updated_at": "2026-10-12T22:37:26.970Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "456bcc3d-718f-43d4-b6fa-92411295fb94",
+            "name": "ManazelAlHadawi_CR3_EN",
+            "status": "ACTIVE",
+            "ad_squad_id": "4faec822-a523-4d88-a8ab-6c12770e8730",
+            "creative_id": "ee48894c-4ae7-4395-a3a4-ad11bd9e6ef6",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "VALID"
+            ],
+            "type": "STORY",
+            "created_at": "2026-09-05T12:38:21.290Z",
+            "updated_at": "2026-10-12T22:39:52.794Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "46e6755f-cfec-497f-ac6c-148ee4a356cd",
+            "name": "ManazelAlHadawi_KV1_Static_EN_NA_Prospecting_03.06.2026_30.09.2026 - Creative",
+            "status": "PAUSED",
+            "ad_squad_id": "8fadf2c1-eae2-4f3c-ad76-f5ebed001943",
+            "creative_id": "5b48187b-ec5d-4ae4-a0e8-dc06901d9979",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-06-03T13:29:38.763Z",
+            "updated_at": "2026-09-15T14:18:20.320Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "47c12226-5680-4427-92d2-c60d90dfba6f",
+            "name": "company_ritz-signature_2026_aug_rcsr-kv1_adset-id-07eca5d8_display_ar_v2",
+            "status": "ACTIVE",
+            "ad_squad_id": "8d471b9c-acaf-4f8a-8876-73654a8255aa",
+            "creative_id": "879433b7-2a1c-4fa8-b141-e8cf733d1515",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "VALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-09-02T15:24:27.267Z",
+            "updated_at": "2026-10-12T22:42:10.886Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "482342a1-885f-4eaf-96e3-7bc4ea38f8ae",
+            "name": "company_ritz-signature_2026_aug_rcsr-kv3_adset-id-c4ffbd75_display_en",
+            "status": "PAUSED",
+            "ad_squad_id": "b6964013-3aa3-46b9-9642-c6e4954cc845",
+            "creative_id": "2a9ef4e4-4f10-400b-ba7d-8032333ec299",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-08-13T10:55:50.312Z",
+            "updated_at": "2026-10-11T10:54:21.536Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "4a206ca8-4680-4977-92e6-7e0c620be31b",
+            "name": "ManazelAlHadawi_CR1_EN_Conversions",
+            "status": "PAUSED",
+            "ad_squad_id": "01081699-e332-4667-b251-b96b25a88b44",
+            "creative_id": "ed8cdb8e-b8c9-450b-bc8c-6d23551a3dd2",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "STORY",
+            "created_at": "2026-07-08T08:12:45.092Z",
+            "updated_at": "2026-09-16T19:04:37.470Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "4ab36fa9-7a51-493e-a279-e3b7a2043125",
+            "name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv3_adset-id-08c48732_display_en",
+            "status": "ACTIVE",
+            "ad_squad_id": "3bc70bfc-d84f-4929-95e1-f543490791a8",
+            "creative_id": "b31beaab-27c3-4392-a15b-703f45118c93",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "VALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-09-28T07:44:53.822Z",
+            "updated_at": "2026-10-12T09:55:15.953Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "4bcc7650-1b51-4a44-82bc-f93b3ba749c2",
+            "name": "ManazelAlHadawi_KV2_EN_Leads_v2",
+            "status": "PAUSED",
+            "ad_squad_id": "01081699-e332-4667-b251-b96b25a88b44",
+            "creative_id": "9b0ae601-ca3c-4142-ba68-5a6234f6a4d1",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-06-04T15:23:50.034Z",
+            "updated_at": "2026-09-16T19:04:21.607Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "4bfd23f3-8a03-4f9f-ac76-c8f333606520",
+            "name": "ManazelAlHadawi_KV1_EN_Traffic_NewLogo",
+            "status": "PAUSED",
+            "ad_squad_id": "8fadf2c1-eae2-4f3c-ad76-f5ebed001943",
+            "creative_id": "03ef6e10-7a6b-4a70-bf46-b496257ebea1",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-06-10T11:37:42.145Z",
+            "updated_at": "2026-10-12T09:49:34.093Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "4c1244d8-01cb-40f7-a98d-7498319bd184",
+            "name": "ManazelAlHadawi_KV1_EN_Awareness_NewLogo",
+            "status": "PAUSED",
+            "ad_squad_id": "bf27c1d9-a0c7-4c90-abd5-2f7436939014",
+            "creative_id": "fca6f638-5c02-4a5c-aaaa-3308c172ffee",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-06-13T19:36:13.843Z",
+            "updated_at": "2026-10-12T09:51:48.303Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "4cccb157-5fae-4284-9f08-206a24a73999",
+            "name": "ManazelAlHadawi_KV1_Static_AR_NA_Prospecting_03.06.2026_30.09.2026 - Creative",
+            "status": "PAUSED",
+            "ad_squad_id": "852ca250-88c3-4f3d-a83b-352b726ed137",
+            "creative_id": "92d70bb2-4218-44ac-847d-d94ef096f63d",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-06-03T13:29:54.541Z",
+            "updated_at": "2026-09-15T14:17:53.646Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "4cf6a266-c095-4e83-b544-85125f09a907",
+            "name": "company_manazel-alhadawi_2026_sep_mah-video2-sub_adset-id-f00e1e93_video_en",
+            "status": "ACTIVE",
+            "ad_squad_id": "eb275dce-e340-42b0-8af7-965103f670ca",
+            "creative_id": "217cc0c5-1d65-43ed-a75a-0d4a649e47cb",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "VALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-09-10T14:18:47.057Z",
+            "updated_at": "2026-10-12T09:49:48.172Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "4d22ff87-d96f-4cf1-92f9-6d7513277d64",
+            "name": "ManazelAlHadawi_CR3_AR",
+            "status": "ACTIVE",
+            "ad_squad_id": "3eb87287-2d13-441f-bcb8-ee1e2d9446a5",
+            "creative_id": "8fd6c310-8285-4f71-8e90-b50ca4102900",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "VALID"
+            ],
+            "type": "STORY",
+            "created_at": "2026-08-30T14:03:33.937Z",
+            "updated_at": "2026-10-12T22:43:14.165Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "4d8bdc5a-dc52-4340-8440-c24bf93a4914",
+            "name": "ManazelAlHadawi_Video10s_AR_V2",
+            "status": "PAUSED",
+            "ad_squad_id": "852ca250-88c3-4f3d-a83b-352b726ed137",
+            "creative_id": "0b4200cb-cf54-4209-9a7e-9757eb92ca92",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-07-27T14:34:48.645Z",
+            "updated_at": "2026-10-12T22:45:09.289Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "4ed9c3ff-36b9-41cd-957f-9bb50c894e56",
+            "name": "ManazelAlHadawi_CR1_AR_Awareness",
+            "status": "PAUSED",
+            "ad_squad_id": "3eb87287-2d13-441f-bcb8-ee1e2d9446a5",
+            "creative_id": "a0d5f40f-a98a-42a6-a117-1fc55840c985",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "STORY",
+            "created_at": "2026-06-15T09:49:33.776Z",
+            "updated_at": "2026-09-15T19:25:43.658Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "520c5ea1-9f33-4e65-820e-321df01bcd11",
+            "name": "company_ritz-signature_2026_aug_rcsr-kv2_adset-id-c2b96e29_display_ar_v2",
+            "status": "ACTIVE",
+            "ad_squad_id": "ff24e485-f885-41ca-afce-0222e594d70f",
+            "creative_id": "9f8f78ab-5ec7-4313-947c-760de49773f8",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "VALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-09-09T09:41:38.842Z",
+            "updated_at": "2026-10-12T22:45:22.458Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "521b72d8-4e63-48bc-90d9-a1ddeaf6b96c",
+            "name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv2_adset-id-ca5ff2b6_display_en",
+            "status": "ACTIVE",
+            "ad_squad_id": "fd4c9ca8-6565-46bf-9414-e2de68a51b9b",
+            "creative_id": "bb299982-f661-4164-a526-61c7bcfe115b",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "VALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-09-28T09:52:37.935Z",
+            "updated_at": "2026-10-12T09:55:39.073Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "526ca470-00d0-4b10-a8b7-0da82155e63e",
+            "name": "company_ritz-signature_2026_aug_rcsr-kv1_adset-id-07eca5d8_display_en_v2_test",
+            "status": "ACTIVE",
+            "ad_squad_id": "b6964013-3aa3-46b9-9642-c6e4954cc845",
+            "creative_id": "8d27c51d-7075-4630-8ece-9cb87369520c",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "VALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-08-26T13:57:41.448Z",
+            "updated_at": "2026-10-12T22:45:39.506Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "52cf313a-a7b1-4dcf-9380-505fd2fc1ee6",
+            "name": "ManazelAlHadawi_KV3_EN",
+            "status": "ACTIVE",
+            "ad_squad_id": "eb275dce-e340-42b0-8af7-965103f670ca",
+            "creative_id": "3b763aa0-90ff-4b2b-8512-f4ea47548bef",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "VALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-09-05T11:01:14.580Z",
+            "updated_at": "2026-10-11T12:03:00.684Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "53397262-eafe-49ba-9a9a-a406b84d8f90",
+            "name": "ManazelAlHadawi_KV2_Static_EN_Leads",
+            "status": "PAUSED",
+            "ad_squad_id": "01081699-e332-4667-b251-b96b25a88b44",
+            "creative_id": "e6788c94-9c10-44ed-b61b-1f350b494851",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-06-03T13:30:19.522Z",
+            "updated_at": "2026-09-16T19:04:27.665Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "56bea85a-101b-4914-9c16-a7b54242e98a",
+            "name": "LifeInDiriyah_KV1_Dark_EN_NA_Prospecting_23.06.2026_04.07.2026",
+            "status": "ACTIVE",
+            "ad_squad_id": "f8f0d99d-c002-44ee-a6a0-53fc3b10b1c4",
+            "creative_id": "994c7acf-bbf8-4c50-91e1-88dc0d16d0fd",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "VALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-09-12T13:14:46.235Z",
+            "updated_at": "2026-10-11T11:57:40.322Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "5750e817-427d-4a9e-8bdd-0a3a47f1a1df",
+            "name": "company_ritz-signature_2026_aug_rcsr-kv3_adset-id-c4ffbd75_display_ar_v2",
+            "status": "ACTIVE",
+            "ad_squad_id": "ff24e485-f885-41ca-afce-0222e594d70f",
+            "creative_id": "f8324a8b-cc4e-47ff-bf42-7c61d2117269",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "VALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-09-09T09:43:02.153Z",
+            "updated_at": "2026-10-12T22:37:06.352Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "57616fea-2f01-4f11-9fa3-24abcc227fc0",
+            "name": "ManazelAlHadawi_Video10s_AR_V2",
+            "status": "PAUSED",
+            "ad_squad_id": "d61bba60-e7cb-452c-a372-39ea25d4b303",
+            "creative_id": "ac582d1b-f160-4466-a544-41239ca982ef",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-07-27T14:40:17.998Z",
+            "updated_at": "2026-10-12T22:49:29.237Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "57c7f6d6-7e9f-4008-b430-864c23a6c7a6",
+            "name": "LifeInDiriyah_CR1_Video_Boosted_AR_NA_Prospecting_23.06.2026_22.07.2026",
+            "status": "ACTIVE",
+            "ad_squad_id": "8e1a26be-cde4-42c0-8c2d-9a14df83bd3b",
+            "creative_id": "70da0be7-ece1-4657-80f3-0afaf06ef609",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID"
+            ],
+            "type": "STORY",
+            "created_at": "2026-07-14T14:36:35.830Z",
+            "updated_at": "2026-10-12T22:50:17.719Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "57ead8ac-fc9b-4561-8f69-a796c8fb4288",
+            "name": "company_ritz-signature_2026_aug_rcsr-kv2_adset-id-c2b96e29_display_en_v2",
+            "status": "ACTIVE",
+            "ad_squad_id": "2501ea51-96e5-4b45-8f94-5e79774f274a",
+            "creative_id": "ad42413f-ed86-4b99-a770-56d6ec8ceb2b",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "VALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-09-09T08:58:55.680Z",
+            "updated_at": "2026-10-12T22:15:33.264Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "581025ac-5ba8-4f54-ab7f-ed2018c0efb0",
+            "name": "ManazelAlHadawi_KV1_EN_Awareness_v2",
+            "status": "PAUSED",
+            "ad_squad_id": "bf27c1d9-a0c7-4c90-abd5-2f7436939014",
+            "creative_id": "4cfe175a-1d19-4f8e-957d-44d926d7f385",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-06-04T15:22:43.649Z",
+            "updated_at": "2026-10-12T22:17:10.740Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "585f9453-fe1c-4869-bcc0-008736b1f9df",
+            "name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv2_adset-id-ca5ff2b6_display_ar",
+            "status": "ACTIVE",
+            "ad_squad_id": "5c77ecad-b50f-4d5c-aef2-1db59bff1927",
+            "creative_id": "1f41219d-1e6e-4de2-b0bf-605a5f5699cf",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "VALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-09-28T07:44:48.273Z",
+            "updated_at": "2026-10-12T09:55:41.605Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "5aabafa6-e941-4da3-a723-b1248fa07a74",
+            "name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv1_adset-id-8971b1f2_display_ar",
+            "status": "ACTIVE",
+            "ad_squad_id": "6877ca6e-fb06-4f54-ba63-ef7d858e1753",
+            "creative_id": "5c20e072-9d1b-4e64-8f9a-dc94975131ac",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "VALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-09-29T09:51:00.469Z",
+            "updated_at": "2026-10-11T11:00:25.463Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "5c1a92fc-a102-4520-aa56-4ad053d22ec9",
+            "name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv1_adset-id-8971b1f2_display_ar",
+            "status": "ACTIVE",
+            "ad_squad_id": "5c77ecad-b50f-4d5c-aef2-1db59bff1927",
+            "creative_id": "5c20e072-9d1b-4e64-8f9a-dc94975131ac",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "VALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-09-28T07:44:48.272Z",
+            "updated_at": "2026-10-12T09:55:36.564Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "5d046e91-6a73-458b-9b2b-fbe3ac5daf90",
+            "name": "ManazelAlHadawi_Video10s_EN",
+            "status": "PAUSED",
+            "ad_squad_id": "bf27c1d9-a0c7-4c90-abd5-2f7436939014",
+            "creative_id": "b1d181c6-a9b5-4a06-8616-aa0ac62c21ef",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-07-01T14:02:41.082Z",
+            "updated_at": "2026-10-12T14:15:29.809Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "5e1f4d19-b8d1-4636-8aeb-def9c4a693f2",
+            "name": "company_ritz-signature_2026_aug_rcsr-kv1_adset-id-07eca5d8_display_ar",
+            "status": "PAUSED",
+            "ad_squad_id": "6598977a-57f0-452d-8a99-aa029734fa33",
+            "creative_id": "de36d6b5-ee82-4e12-a51b-781afb70c2a6",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-08-29T14:57:08.678Z",
+            "updated_at": "2026-10-11T10:51:50.980Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "5ee637f0-fa25-41db-bc73-3292b2e8f728",
+            "name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv3_adset-id-08c48732_display_en",
+            "status": "ACTIVE",
+            "ad_squad_id": "fd4c9ca8-6565-46bf-9414-e2de68a51b9b",
+            "creative_id": "546ac7f1-ead4-4187-ac38-fdb439bf6ad8",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "VALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-09-28T09:52:37.935Z",
+            "updated_at": "2026-10-12T09:55:40.369Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "60293a71-ef51-4ffb-ae93-f7586f29fabd",
+            "name": "ManazelAlHadawi_CR1_EN_Conversions",
+            "status": "PAUSED",
+            "ad_squad_id": "eb275dce-e340-42b0-8af7-965103f670ca",
+            "creative_id": "ed8cdb8e-b8c9-450b-bc8c-6d23551a3dd2",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "STORY",
+            "created_at": "2026-07-08T08:20:45.124Z",
+            "updated_at": "2026-09-15T14:21:41.989Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "62a5c9c3-9557-4c46-99fb-b4f44417cc97",
+            "name": "ManazelAlHadawi_CR2_EN",
+            "status": "ACTIVE",
+            "ad_squad_id": "eb275dce-e340-42b0-8af7-965103f670ca",
+            "creative_id": "60a1215e-7cc5-4695-93cf-84f1634455d7",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "VALID"
+            ],
+            "type": "STORY",
+            "created_at": "2026-09-05T10:59:15.783Z",
+            "updated_at": "2026-10-12T14:17:50.325Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "64cf679d-0aad-4abc-8907-ec0b61811ca4",
+            "name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv2_adset-id-ca5ff2b6_display_en",
+            "status": "ACTIVE",
+            "ad_squad_id": "7bb76c14-42f3-428c-ade7-87fe0d480a92",
+            "creative_id": "81d0486e-6035-4036-a0f4-908703afa6d9",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "VALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-09-29T09:51:05.915Z",
+            "updated_at": "2026-10-11T11:00:31.650Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "65132874-a46e-4adf-9160-ad76a6e0eaf4",
+            "name": "company_ritz-signature_2026_aug_rcsr-kv1_adset-id-07eca5d8_display_ar",
+            "status": "PAUSED",
+            "ad_squad_id": "8d471b9c-acaf-4f8a-8876-73654a8255aa",
+            "creative_id": "2a64c854-fcbd-4844-9698-7ef60e81489b",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-08-13T10:55:50.627Z",
+            "updated_at": "2026-10-11T10:54:31.912Z"
+          }
+        }
+      ]
+    },
+    "meta": {
+      "requestId": "d725ce44-1256-459d-92a1-0de962722fde",
+      "waitedMs": 367,
+      "throttled": false,
+      "warnings": [],
+      "partialFailure": null,
+      "asyncReport": null,
+      "compatibility": null,
+      "compatibilitySkipped": true,
+      "mcp_result_projection": {
+        "fields": [
+          "id",
+          "name",
+          "status",
+          "ad_squad_id",
+          "creative_id",
+          "review_status",
+          "review_status_reasons",
+          "delivery_status",
+          "type",
+          "created_at",
+          "updated_at"
+        ],
+        "compact": true
+      }
+    }
+  },
+  "meta": {
+    "requestId": "2874d31f-499f-4e96-8578-0af5913f5c54",
+    "latencyMs": 2076
+  }
+}

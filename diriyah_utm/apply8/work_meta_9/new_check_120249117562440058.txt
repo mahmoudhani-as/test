@@ -1,0 +1,12 @@
+read req 8aa9f208-23c3-4625-9fda-3efdaca9d93c | new creative 1065630003190423 | status IN_PROCESS | url_tags None
+  new slot == new (bytes): True creative.asset_feed_spec.link_urls[0].website_url
+website_url by link_url adlabel  orig: {"120249183589630058": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=facebook-instagram&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=adset-id-E1EF65_manazel-alhadawi_en_all_mf_prospecting&utm_content=ad-id-43825A_manazel-alhadawi-kv1_display"}
+website_url by link_url adlabel  new : {"120249183589630058": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=meta&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_jun26_awr&utm_term=manazel-alhadawi_en&utm_content=b01f5ba3_manazel-alhadawi-kv1_display_en"}
+label-keyed diff original -> new creative (asset_feed_spec arrays sorted by adlabel ids):
+    ~ .asset_feed_spec.link_urls[0].website_url: "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=facebook-instagram&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=adset-id-E1EF65_manazel-alhadawi_en_all_mf_prospecting&utm_content=ad-id-43825A_manazel-alhadawi-kv1_display" -> "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=meta&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_jun26_awr&utm_term=manazel-alhadawi_en&utm_content=b01f5ba3_manazel-alhadawi-kv1_display_en"
+    + .degrees_of_freedom_spec = {"creative_features_spec": {"adapt_to_placement": {"enroll_status": "OPT_OUT"}, "add_text_overlay": {"enroll_status": "OPT_OUT"}, "ads_with_benefits": {"enroll_status": "OPT_OUT"}, "advantage_plus_creative": {"enroll_status": "OPT_OUT"}, "app_highlights": {"enroll_status": "OPT_OUT"}, "audio": {"enr
+    - .effective_instagram_media_id = "18100870043160099"
+    ~ .effective_object_story_id: "111467331865347_988519960826970" -> "111467331865347_1094935713518727"
+    ~ .id: "2184584202334135" -> "1065630003190423"
+    ~ .name: "{{product.name}} 2026-06-13-89434d0efd3e26975f30a43618b4bada" -> "{{product.name}} 2026-06-13-89434d0efd3e26975f30a43618b4bada 2026-10-13-aa0efdeaeed9b4c067d13a752e020152"
+    ~ .status: "ACTIVE" -> "IN_PROCESS"

@@ -1,0 +1,294 @@
+{
+ "name": "{{product.name}} 2026-07-09-18223d2f125105d0b016b7931a934a9c",
+ "object_story_spec": {
+  "page_id": "102966688906483"
+ },
+ "asset_feed_spec": {
+  "optimization_type": "PLACEMENT",
+  "call_to_action_types": [
+   "LEARN_MORE"
+  ],
+  "ad_formats": [
+   "AUTOMATIC_FORMAT"
+  ],
+  "reasons_to_shop": false,
+  "shops_bundle": false,
+  "bodies": [
+   {
+    "text": "تابعوا كأس العالم في الدرعية، وعيشوا أجواء تاريخية.",
+    "adlabels": [
+     {
+      "name": "placement_asset_f2d91547d3694f1d2_1783604490717",
+      "id": "120248461507450789"
+     },
+     {
+      "name": "placement_asset_ffa790ceb561c730b_1783604490721",
+      "id": "120248461507460789"
+     }
+    ]
+   }
+  ],
+  "titles": [
+   {
+    "text": "الوعد في الدرعية",
+    "adlabels": [
+     {
+      "name": "placement_asset_f0b6cc0475fe7aa48_1783604490721",
+      "id": "120248461507410789"
+     },
+     {
+      "name": "placement_asset_fdc4764334c41239b_1783604490717",
+      "id": "120248461507420789"
+     }
+    ]
+   },
+   {
+    "text": "تابعوا كأس العالم",
+    "adlabels": [
+     {
+      "name": "placement_asset_f0b6cc0475fe7aa48_1783604490721",
+      "id": "120248461507410789"
+     },
+     {
+      "name": "placement_asset_fdc4764334c41239b_1783604490717",
+      "id": "120248461507420789"
+     }
+    ]
+   }
+  ],
+  "descriptions": [
+   {
+    "text": ""
+   }
+  ],
+  "link_urls": [
+   {
+    "website_url": "https://www.diriyah.sa/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_jul26_cond&utm_term=ar&utm_content=kv3-v2_video_ar",
+    "display_url": "",
+    "adlabels": [
+     {
+      "name": "placement_asset_f30ac5a90740322f3_1783604490719",
+      "id": "120248461507470789"
+     },
+     {
+      "name": "placement_asset_fdf1b4e8dbdc49ef9_1783604490721",
+      "id": "120248461507500789"
+     }
+    ]
+   }
+  ],
+  "images": [
+   {
+    "hash": "2e38d6865960f3f1630463ec95bd6462",
+    "adlabels": [
+     {
+      "name": "placement_asset_fcbd1fd220cb5417f_1783604490717",
+      "id": "120248461507480789"
+     }
+    ],
+    "image_crops": {
+     "100x100": [
+      [
+       0,
+       369
+      ],
+      [
+       1081,
+       1450
+      ]
+     ]
+    }
+   },
+   {
+    "hash": "13482f8b285f89239b5a6bdcec601ae4",
+    "adlabels": [
+     {
+      "name": "placement_asset_f1d20a2085671b8f3_1783604490721",
+      "id": "120248461507490789"
+     }
+    ]
+   }
+  ],
+  "asset_customization_rules": [
+   {
+    "priority": 1,
+    "body_label": {
+     "name": "placement_asset_ffa790ceb561c730b_1783604490721",
+     "id": "120248461507460789"
+    },
+    "title_label": {
+     "name": "placement_asset_f0b6cc0475fe7aa48_1783604490721",
+     "id": "120248461507410789"
+    },
+    "link_url_label": {
+     "name": "placement_asset_fdf1b4e8dbdc49ef9_1783604490721",
+     "id": "120248461507500789"
+    },
+    "image_label": {
+     "name": "placement_asset_f1d20a2085671b8f3_1783604490721",
+     "id": "120248461507490789"
+    },
+    "customization_spec": {
+     "age_min": 13,
+     "age_max": 65,
+     "publisher_platforms": [
+      "instagram"
+     ],
+     "instagram_positions": [
+      "stream"
+     ]
+    }
+   },
+   {
+    "priority": 2,
+    "body_label": {
+     "name": "placement_asset_f2d91547d3694f1d2_1783604490717",
+     "id": "120248461507450789"
+    },
+    "title_label": {
+     "name": "placement_asset_fdc4764334c41239b_1783604490717",
+     "id": "120248461507420789"
+    },
+    "link_url_label": {
+     "name": "placement_asset_f30ac5a90740322f3_1783604490719",
+     "id": "120248461507470789"
+    },
+    "image_label": {
+     "name": "placement_asset_fcbd1fd220cb5417f_1783604490717",
+     "id": "120248461507480789"
+    },
+    "customization_spec": {
+     "age_min": 13,
+     "age_max": 65
+    }
+   }
+  ],
+  "additional_data": {
+   "multi_share_end_card": false,
+   "is_click_to_message": false
+  }
+ },
+ "degrees_of_freedom_spec": {
+  "creative_features_spec": {
+   "advantage_plus_creative": {
+    "enroll_status": "OPT_OUT"
+   },
+   "cv_transformation": {
+    "enroll_status": "OPT_OUT"
+   },
+   "enable_ncs_testimonials": {
+    "enroll_status": "OPT_OUT"
+   },
+   "enhance_cta": {
+    "enroll_status": "OPT_OUT"
+   },
+   "image_animation": {
+    "enroll_status": "OPT_OUT"
+   },
+   "image_brightness_and_contrast": {
+    "enroll_status": "OPT_OUT"
+   },
+   "image_templates": {
+    "enroll_status": "OPT_OUT"
+   },
+   "image_touchups": {
+    "enroll_status": "OPT_OUT"
+   },
+   "inline_comment": {
+    "enroll_status": "OPT_OUT"
+   },
+   "pac_recomposition": {
+    "enroll_status": "OPT_IN"
+   },
+   "pac_relaxation": {
+    "enroll_status": "OPT_OUT"
+   },
+   "product_browsing": {
+    "enroll_status": "OPT_OUT"
+   },
+   "reveal_details_over_time": {
+    "enroll_status": "OPT_OUT"
+   },
+   "show_destination_blurbs": {
+    "enroll_status": "OPT_OUT"
+   },
+   "site_extensions": {
+    "enroll_status": "OPT_OUT"
+   },
+   "text_optimizations": {
+    "enroll_status": "OPT_OUT"
+   }
+  }
+ },
+ "creative_sourcing_spec": {
+  "destination_screenshot_spec": {
+   "enroll_status": "OPT_OUT"
+  },
+  "site_links_spec": [
+   {
+    "site_link_url": "https://diriyah.sa/en/dine",
+    "site_link_title": "Dine",
+    "site_link_image_hash": "a12afe2a984712fc909197cecf651825"
+   },
+   {
+    "site_link_url": "https://diriyah.sa/en/things-to-do",
+    "site_link_title": "Things To Do",
+    "site_link_image_hash": "b4c4f2fe27c4bef9a59c91be869c592b"
+   },
+   {
+    "site_link_url": "https://diriyah.sa/en/about",
+    "site_link_title": "About",
+    "site_link_image_hash": "35b9e94380f895a3608cc3facd10c2c8"
+   },
+   {
+    "site_link_url": "https://diriyah.sa/en/news",
+    "site_link_title": "News",
+    "site_link_image_hash": "c84559292e19c5b3f7e7ea9f60390ae4"
+   },
+   {
+    "site_link_url": "https://diriyah.sa/en/dine/angelina",
+    "site_link_title": "Angelina",
+    "site_link_image_hash": "71e73733992fb9e2a64c1c6a10771faf"
+   },
+   {
+    "site_link_url": "https://diriyah.sa/en/dine/joeandthejuice",
+    "site_link_title": "Joe & The Juice",
+    "site_link_image_hash": "e9fda6d44788a0a4c0c92371bcf678cf"
+   },
+   {
+    "site_link_url": "https://diriyah.sa",
+    "site_link_title": "Diriyah Tourism",
+    "site_link_image_hash": "211aa1e75d9698703ac7f98fddb5ccb6"
+   },
+   {
+    "site_link_url": "https://diriyah.sa",
+    "site_link_title": "عرض المزيد",
+    "site_link_image_hash": "371020513121d6f575ab628d17434ec9"
+   }
+  ]
+ },
+ "media_sourcing_spec": {
+  "related_media": {
+   "images": [
+    {
+     "hash": "ae6a8cdcb1e39c30a0212803cce278c0",
+     "opt_in_status": "opt_out",
+     "creation_source": "WEBSITE_MEDIA"
+    },
+    {
+     "hash": "7b6e45f49d41fca22355627cca407770",
+     "opt_in_status": "opt_out",
+     "creation_source": "WEBSITE_MEDIA"
+    },
+    {
+     "hash": "d50742b552c7054d4ec3700a7a77db9f",
+     "opt_in_status": "opt_out",
+     "creation_source": "WEBSITE_MEDIA"
+    }
+   ]
+  }
+ },
+ "threads_user_id": "17841415776034388",
+ "authorization_category": "NONE",
+ "instagram_user_id": "17841449897651638"
+}

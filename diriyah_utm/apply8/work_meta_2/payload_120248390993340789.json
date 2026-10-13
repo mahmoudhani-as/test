@@ -1,0 +1,266 @@
+{
+ "name": "{{product.name}} 2026-07-09-11f7818123c38cd989d9f5306a7b4f27",
+ "object_story_spec": {
+  "page_id": "102966688906483"
+ },
+ "asset_feed_spec": {
+  "optimization_type": "PLACEMENT",
+  "call_to_action_types": [
+   "LEARN_MORE"
+  ],
+  "ad_formats": [
+   "AUTOMATIC_FORMAT"
+  ],
+  "reasons_to_shop": false,
+  "shops_bundle": false,
+  "bodies": [
+   {
+    "text": "تابعوا كأس العالم في الدرعية، وعيشوا أجواء تاريخية.",
+    "adlabels": [
+     {
+      "name": "placement_asset_fcf8aa621230fafe2_1783604421413",
+      "id": "120248461494880789"
+     },
+     {
+      "name": "placement_asset_feb5386d4640265df_1783604421416",
+      "id": "120248461494890789"
+     }
+    ]
+   }
+  ],
+  "titles": [
+   {
+    "text": "الوعد في الدرعية",
+    "adlabels": [
+     {
+      "name": "placement_asset_fef39216c61eacd0a_1783604421413",
+      "id": "120248461494860789"
+     },
+     {
+      "name": "placement_asset_fbc62231d5ebdb386_1783604421416",
+      "id": "120248461494870789"
+     }
+    ]
+   }
+  ],
+  "descriptions": [
+   {
+    "text": ""
+   }
+  ],
+  "link_urls": [
+   {
+    "website_url": "https://www.diriyah.sa/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_cond&utm_term=ar&utm_content=kv3_display_ar",
+    "display_url": "",
+    "adlabels": [
+     {
+      "name": "placement_asset_feccd47a38dd9e823_1783604421416",
+      "id": "120248461494900789"
+     },
+     {
+      "name": "placement_asset_f6ac474080a942596_1783604421414",
+      "id": "120248461494910789"
+     }
+    ]
+   }
+  ],
+  "images": [
+   {
+    "hash": "7fdc016def1400a826d3de911a486b30",
+    "adlabels": [
+     {
+      "name": "placement_asset_f699298eb28188507_1783604421413",
+      "id": "120248461494850789"
+     }
+    ]
+   },
+   {
+    "hash": "13482f8b285f89239b5a6bdcec601ae4",
+    "adlabels": [
+     {
+      "name": "placement_asset_f6f2c6c22d4aa3302_1783604421416",
+      "id": "120248461494840789"
+     }
+    ]
+   }
+  ],
+  "asset_customization_rules": [
+   {
+    "priority": 1,
+    "body_label": {
+     "name": "placement_asset_feb5386d4640265df_1783604421416",
+     "id": "120248461494890789"
+    },
+    "title_label": {
+     "name": "placement_asset_fbc62231d5ebdb386_1783604421416",
+     "id": "120248461494870789"
+    },
+    "link_url_label": {
+     "name": "placement_asset_feccd47a38dd9e823_1783604421416",
+     "id": "120248461494900789"
+    },
+    "image_label": {
+     "name": "placement_asset_f6f2c6c22d4aa3302_1783604421416",
+     "id": "120248461494840789"
+    },
+    "customization_spec": {
+     "age_min": 13,
+     "age_max": 65,
+     "publisher_platforms": [
+      "instagram"
+     ],
+     "instagram_positions": [
+      "stream"
+     ]
+    }
+   },
+   {
+    "priority": 2,
+    "body_label": {
+     "name": "placement_asset_fcf8aa621230fafe2_1783604421413",
+     "id": "120248461494880789"
+    },
+    "title_label": {
+     "name": "placement_asset_fef39216c61eacd0a_1783604421413",
+     "id": "120248461494860789"
+    },
+    "link_url_label": {
+     "name": "placement_asset_f6ac474080a942596_1783604421414",
+     "id": "120248461494910789"
+    },
+    "image_label": {
+     "name": "placement_asset_f699298eb28188507_1783604421413",
+     "id": "120248461494850789"
+    },
+    "customization_spec": {
+     "age_min": 13,
+     "age_max": 65
+    }
+   }
+  ],
+  "additional_data": {
+   "multi_share_end_card": false,
+   "is_click_to_message": false
+  }
+ },
+ "degrees_of_freedom_spec": {
+  "creative_features_spec": {
+   "advantage_plus_creative": {
+    "enroll_status": "OPT_OUT"
+   },
+   "cv_transformation": {
+    "enroll_status": "OPT_OUT"
+   },
+   "enable_ncs_testimonials": {
+    "enroll_status": "OPT_OUT"
+   },
+   "enhance_cta": {
+    "enroll_status": "OPT_OUT"
+   },
+   "image_animation": {
+    "enroll_status": "OPT_OUT"
+   },
+   "image_brightness_and_contrast": {
+    "enroll_status": "OPT_OUT"
+   },
+   "image_templates": {
+    "enroll_status": "OPT_OUT"
+   },
+   "image_touchups": {
+    "enroll_status": "OPT_OUT"
+   },
+   "inline_comment": {
+    "enroll_status": "OPT_OUT"
+   },
+   "pac_relaxation": {
+    "enroll_status": "OPT_OUT"
+   },
+   "product_browsing": {
+    "enroll_status": "OPT_OUT"
+   },
+   "reveal_details_over_time": {
+    "enroll_status": "OPT_OUT"
+   },
+   "show_destination_blurbs": {
+    "enroll_status": "OPT_OUT"
+   },
+   "site_extensions": {
+    "enroll_status": "OPT_OUT"
+   },
+   "text_optimizations": {
+    "enroll_status": "OPT_OUT"
+   }
+  }
+ },
+ "creative_sourcing_spec": {
+  "destination_screenshot_spec": {
+   "enroll_status": "OPT_OUT"
+  },
+  "site_links_spec": [
+   {
+    "site_link_url": "https://diriyah.sa/en/dine",
+    "site_link_title": "Dine",
+    "site_link_image_hash": "a12afe2a984712fc909197cecf651825"
+   },
+   {
+    "site_link_url": "https://diriyah.sa/en/things-to-do",
+    "site_link_title": "Things To Do",
+    "site_link_image_hash": "b4c4f2fe27c4bef9a59c91be869c592b"
+   },
+   {
+    "site_link_url": "https://diriyah.sa/en/about",
+    "site_link_title": "About",
+    "site_link_image_hash": "35b9e94380f895a3608cc3facd10c2c8"
+   },
+   {
+    "site_link_url": "https://diriyah.sa/en/news",
+    "site_link_title": "News",
+    "site_link_image_hash": "c84559292e19c5b3f7e7ea9f60390ae4"
+   },
+   {
+    "site_link_url": "https://diriyah.sa/en/dine/angelina",
+    "site_link_title": "Angelina",
+    "site_link_image_hash": "71e73733992fb9e2a64c1c6a10771faf"
+   },
+   {
+    "site_link_url": "https://diriyah.sa/en/dine/joeandthejuice",
+    "site_link_title": "Joe & The Juice",
+    "site_link_image_hash": "e9fda6d44788a0a4c0c92371bcf678cf"
+   },
+   {
+    "site_link_url": "https://diriyah.sa",
+    "site_link_title": "Diriyah Tourism",
+    "site_link_image_hash": "211aa1e75d9698703ac7f98fddb5ccb6"
+   },
+   {
+    "site_link_url": "https://diriyah.sa",
+    "site_link_title": "عرض المزيد",
+    "site_link_image_hash": "371020513121d6f575ab628d17434ec9"
+   }
+  ]
+ },
+ "media_sourcing_spec": {
+  "related_media": {
+   "images": [
+    {
+     "hash": "ae6a8cdcb1e39c30a0212803cce278c0",
+     "opt_in_status": "opt_out",
+     "creation_source": "WEBSITE_MEDIA"
+    },
+    {
+     "hash": "7b6e45f49d41fca22355627cca407770",
+     "opt_in_status": "opt_out",
+     "creation_source": "WEBSITE_MEDIA"
+    },
+    {
+     "hash": "d50742b552c7054d4ec3700a7a77db9f",
+     "opt_in_status": "opt_out",
+     "creation_source": "WEBSITE_MEDIA"
+    }
+   ]
+  }
+ },
+ "threads_user_id": "17841415776034388",
+ "authorization_category": "NONE",
+ "instagram_user_id": "17841449897651638"
+}

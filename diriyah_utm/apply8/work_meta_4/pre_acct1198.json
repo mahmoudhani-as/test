@@ -1,0 +1,1598 @@
+{
+ "120246281852090789": {
+  "id": "120246281852090789",
+  "name": "ManazelAlHadawi_KV1_Static_AssetCustomization_EN_NA_Prospecting_03.06.2026_30.09.2026",
+  "account_id": "1198625455580757",
+  "adset_id": "120246281357030789",
+  "campaign_id": "120246281254540789",
+  "status": "PAUSED",
+  "configured_status": "PAUSED",
+  "effective_status": "PAUSED",
+  "updated_time": "2026-06-02T18:44:57+0300",
+  "creative": {
+   "id": "1992207048322976",
+   "name": "ManazelAlHadawi_KV1_EN_Traffic_Creative 2026-06-02-687f86704d26eff9034c26df5ea87488",
+   "account_id": "1198625455580757",
+   "actor_id": "102966688906483",
+   "object_type": "SHARE",
+   "status": "ACTIVE",
+   "object_story_spec": {
+    "page_id": "102966688906483"
+   },
+   "asset_feed_spec": {
+    "images": [
+     {
+      "adlabels": [
+       {
+        "name": "feed_1x1",
+        "id": "120246281812470789"
+       }
+      ],
+      "hash": "4133f0eb69cf780b5f02ee8f90834d13"
+     },
+     {
+      "adlabels": [
+       {
+        "name": "story_9x16",
+        "id": "120246281812460789"
+       }
+      ],
+      "hash": "9f6589a441c4706eb241021cc27e17a4"
+     }
+    ],
+    "bodies": [
+     {
+      "text": "A life inspired by history"
+     }
+    ],
+    "call_to_action_types": [
+     "LEARN_MORE"
+    ],
+    "descriptions": [
+     {
+      "text": "Register now"
+     }
+    ],
+    "link_urls": [
+     {
+      "website_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi"
+     }
+    ],
+    "titles": [
+     {
+      "text": "Manazel Alhadawi in Diriyah"
+     }
+    ],
+    "ad_formats": [
+     "SINGLE_IMAGE"
+    ],
+    "asset_customization_rules": [
+     {
+      "customization_spec": {
+       "age_max": 65,
+       "age_min": 13,
+       "publisher_platforms": [
+        "facebook",
+        "instagram"
+       ],
+       "facebook_positions": [
+        "feed"
+       ],
+       "instagram_positions": [
+        "stream",
+        "explore",
+        "explore_home",
+        "profile_feed"
+       ]
+      },
+      "image_label": {
+       "name": "feed_1x1",
+       "id": "120246281812470789"
+      },
+      "priority": 1
+     },
+     {
+      "customization_spec": {
+       "age_max": 65,
+       "age_min": 13,
+       "publisher_platforms": [
+        "facebook",
+        "instagram"
+       ],
+       "facebook_positions": [
+        "instream_video",
+        "story"
+       ],
+       "instagram_positions": [
+        "story",
+        "reels"
+       ]
+      },
+      "image_label": {
+       "name": "story_9x16",
+       "id": "120246281812460789"
+      },
+      "priority": 2
+     }
+    ],
+    "optimization_type": "PLACEMENT",
+    "additional_data": {
+     "multi_share_end_card": false,
+     "is_click_to_message": false
+    },
+    "reasons_to_shop": false,
+    "shops_bundle": false
+   },
+   "degrees_of_freedom_spec": {
+    "creative_features_spec": {
+     "adapt_to_placement": {
+      "enroll_status": "OPT_OUT"
+     },
+     "add_text_overlay": {
+      "enroll_status": "OPT_OUT"
+     },
+     "ads_with_benefits": {
+      "enroll_status": "OPT_OUT"
+     },
+     "advantage_plus_creative": {
+      "enroll_status": "OPT_OUT"
+     },
+     "app_highlights": {
+      "enroll_status": "OPT_OUT"
+     },
+     "audio": {
+      "enroll_status": "OPT_OUT"
+     },
+     "auto_promotion_tag": {
+      "enroll_status": "OPT_OUT"
+     },
+     "biz_ai": {
+      "enroll_status": "OPT_OUT"
+     },
+     "carousel_to_video": {
+      "enroll_status": "OPT_OUT"
+     },
+     "catalog_feed_tag": {
+      "enroll_status": "OPT_OUT"
+     },
+     "creative_stickers": {
+      "enroll_status": "OPT_OUT"
+     },
+     "customize_product_recommendation": {
+      "enroll_status": "OPT_OUT"
+     },
+     "cv_transformation": {
+      "enroll_status": "OPT_OUT"
+     },
+     "description_automation": {
+      "enroll_status": "OPT_OUT"
+     },
+     "dha_optimization": {
+      "enroll_status": "OPT_OUT"
+     },
+     "dynamic_cta_text": {
+      "enroll_status": "OPT_OUT"
+     },
+     "dynamic_partner_content": {
+      "enroll_status": "OPT_OUT"
+     },
+     "enable_ncs_testimonials": {
+      "enroll_status": "OPT_OUT"
+     },
+     "enhance_cta": {
+      "enroll_status": "OPT_OUT"
+     },
+     "fb_feed_tag": {
+      "enroll_status": "OPT_OUT"
+     },
+     "fb_reels_tag": {
+      "enroll_status": "OPT_OUT"
+     },
+     "fb_story_tag": {
+      "enroll_status": "OPT_OUT"
+     },
+     "feed_caption_optimization": {
+      "enroll_status": "OPT_OUT"
+     },
+     "generate_cta": {
+      "enroll_status": "OPT_OUT"
+     },
+     "hide_price": {
+      "enroll_status": "OPT_OUT"
+     },
+     "hyperlink_formatting": {
+      "enroll_status": "OPT_OUT"
+     },
+     "ig_feed_tag": {
+      "enroll_status": "OPT_OUT"
+     },
+     "ig_glados_feed": {
+      "enroll_status": "OPT_OUT"
+     },
+     "ig_reels_tag": {
+      "enroll_status": "OPT_OUT"
+     },
+     "ig_stream_tag": {
+      "enroll_status": "OPT_OUT"
+     },
+     "ig_video_native_subtitle": {
+      "enroll_status": "OPT_OUT"
+     },
+     "image_animation": {
+      "enroll_status": "OPT_OUT"
+     },
+     "image_auto_crop": {
+      "enroll_status": "OPT_OUT"
+     },
+     "image_background_gen": {
+      "enroll_status": "OPT_OUT"
+     },
+     "image_banner": {
+      "enroll_status": "OPT_OUT"
+     },
+     "image_brightness_and_contrast": {
+      "enroll_status": "OPT_OUT"
+     },
+     "image_end_card": {
+      "enroll_status": "OPT_OUT"
+     },
+     "image_enhancement": {
+      "enroll_status": "OPT_OUT"
+     },
+     "image_templates": {
+      "enroll_status": "OPT_OUT"
+     },
+     "image_text_translation": {
+      "enroll_status": "OPT_OUT"
+     },
+     "image_touchups": {
+      "enroll_status": "OPT_OUT"
+     },
+     "image_uncrop": {
+      "enroll_status": "OPT_OUT"
+     },
+     "inline_comment": {
+      "enroll_status": "OPT_OUT"
+     },
+     "local_store_extension": {
+      "enroll_status": "OPT_OUT"
+     },
+     "media_liquidity_animated_image": {
+      "enroll_status": "OPT_OUT"
+     },
+     "media_order": {
+      "enroll_status": "OPT_OUT"
+     },
+     "media_type_automation": {
+      "enroll_status": "OPT_OUT"
+     },
+     "multi_creative_post_carousel": {
+      "enroll_status": "OPT_OUT"
+     },
+     "multi_photo_to_video": {
+      "enroll_status": "OPT_OUT"
+     },
+     "music_generation": {
+      "enroll_status": "OPT_OUT"
+     },
+     "pac_genai_recomposition": {
+      "enroll_status": "OPT_OUT"
+     },
+     "pac_recomposition": {
+      "enroll_status": "OPT_OUT"
+     },
+     "pac_relaxation": {
+      "enroll_status": "OPT_OUT"
+     },
+     "product_browsing": {
+      "enroll_status": "OPT_OUT"
+     },
+     "product_extensions": {
+      "enroll_status": "OPT_OUT"
+     },
+     "product_metadata_automation": {
+      "enroll_status": "OPT_OUT"
+     },
+     "product_tags": {
+      "enroll_status": "OPT_OUT"
+     },
+     "profile_card": {
+      "enroll_status": "OPT_OUT"
+     },
+     "profile_extension": {
+      "enroll_status": "OPT_OUT"
+     },
+     "replace_media_text": {
+      "enroll_status": "OPT_OUT"
+     },
+     "reveal_details_over_time": {
+      "enroll_status": "OPT_OUT"
+     },
+     "show_destination_blurbs": {
+      "enroll_status": "OPT_OUT"
+     },
+     "show_summary": {
+      "enroll_status": "OPT_OUT"
+     },
+     "site_extensions": {
+      "enroll_status": "OPT_OUT"
+     },
+     "standard_enhancements_catalog": {
+      "enroll_status": "OPT_OUT"
+     },
+     "text_extraction_for_headline": {
+      "enroll_status": "OPT_OUT"
+     },
+     "text_extraction_for_tap_target": {
+      "enroll_status": "OPT_OUT"
+     },
+     "text_formatting_optimization": {
+      "enroll_status": "OPT_OUT"
+     },
+     "text_generation": {
+      "enroll_status": "OPT_OUT"
+     },
+     "text_optimizations": {
+      "enroll_status": "OPT_OUT"
+     },
+     "text_overlay_translation": {
+      "enroll_status": "OPT_OUT"
+     },
+     "text_translation": {
+      "enroll_status": "OPT_OUT"
+     },
+     "translate_voiceover": {
+      "enroll_status": "OPT_OUT"
+     },
+     "video_auto_crop": {
+      "enroll_status": "OPT_OUT"
+     },
+     "video_filtering": {
+      "enroll_status": "OPT_OUT"
+     },
+     "video_highlight": {
+      "enroll_status": "OPT_OUT"
+     },
+     "video_highlights": {
+      "enroll_status": "OPT_OUT"
+     },
+     "video_to_image": {
+      "enroll_status": "OPT_OUT"
+     },
+     "video_uncrop": {
+      "enroll_status": "OPT_OUT"
+     },
+     "video_uncrop_9x16_to_9x18": {
+      "enroll_status": "OPT_OUT"
+     },
+     "wa_mm_image_filtering": {
+      "enroll_status": "OPT_OUT"
+     },
+     "wa_mm_text_truncation_length": {
+      "enroll_status": "OPT_OUT"
+     }
+    }
+   },
+   "instagram_user_id": "17841449897651638",
+   "instagram_permalink_url": "https://www.instagram.com/p/DZFsN-VABPR/",
+   "effective_instagram_media_id": "18172611340372202",
+   "effective_object_story_id": "102966688906483_1045047571368806",
+   "use_page_actor_override": false,
+   "effective_authorization_category": "NONE",
+   "creative_sourcing_spec": {
+    "destination_screenshot_spec": {
+     "enroll_status": "OPT_OUT"
+    }
+   },
+   "threads_user_id": "17841415776034388"
+  },
+  "adcreatives": {
+   "data": [
+    {
+     "id": "1992207048322976",
+     "name": "ManazelAlHadawi_KV1_EN_Traffic_Creative 2026-06-02-687f86704d26eff9034c26df5ea87488",
+     "object_story_spec": {
+      "page_id": "102966688906483"
+     },
+     "asset_feed_spec": {
+      "images": [
+       {
+        "adlabels": [
+         {
+          "name": "feed_1x1",
+          "id": "120246281812470789"
+         }
+        ],
+        "hash": "4133f0eb69cf780b5f02ee8f90834d13"
+       },
+       {
+        "adlabels": [
+         {
+          "name": "story_9x16",
+          "id": "120246281812460789"
+         }
+        ],
+        "hash": "9f6589a441c4706eb241021cc27e17a4"
+       }
+      ],
+      "bodies": [
+       {
+        "text": "A life inspired by history"
+       }
+      ],
+      "call_to_action_types": [
+       "LEARN_MORE"
+      ],
+      "descriptions": [
+       {
+        "text": "Register now"
+       }
+      ],
+      "link_urls": [
+       {
+        "website_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi"
+       }
+      ],
+      "titles": [
+       {
+        "text": "Manazel Alhadawi in Diriyah"
+       }
+      ],
+      "ad_formats": [
+       "SINGLE_IMAGE"
+      ],
+      "asset_customization_rules": [
+       {
+        "customization_spec": {
+         "age_max": 65,
+         "age_min": 13,
+         "publisher_platforms": [
+          "facebook",
+          "instagram"
+         ],
+         "facebook_positions": [
+          "feed"
+         ],
+         "instagram_positions": [
+          "stream",
+          "explore",
+          "explore_home",
+          "profile_feed"
+         ]
+        },
+        "image_label": {
+         "name": "feed_1x1",
+         "id": "120246281812470789"
+        },
+        "priority": 1
+       },
+       {
+        "customization_spec": {
+         "age_max": 65,
+         "age_min": 13,
+         "publisher_platforms": [
+          "facebook",
+          "instagram"
+         ],
+         "facebook_positions": [
+          "instream_video",
+          "story"
+         ],
+         "instagram_positions": [
+          "story",
+          "reels"
+         ]
+        },
+        "image_label": {
+         "name": "story_9x16",
+         "id": "120246281812460789"
+        },
+        "priority": 2
+       }
+      ],
+      "optimization_type": "PLACEMENT",
+      "additional_data": {
+       "multi_share_end_card": false,
+       "is_click_to_message": false
+      },
+      "reasons_to_shop": false,
+      "shops_bundle": false
+     },
+     "instagram_user_id": "17841449897651638",
+     "threads_user_id": "17841415776034388",
+     "creative_sourcing_spec": {
+      "destination_screenshot_spec": {
+       "enroll_status": "OPT_OUT"
+      }
+     }
+    }
+   ]
+  }
+ },
+ "120245688087050789": {
+  "id": "120245688087050789",
+  "name": "Visit Diriyah_Eid KV_EN_Multi-Format",
+  "account_id": "1198625455580757",
+  "adset_id": "120245688021790789",
+  "campaign_id": "120245687982710789",
+  "status": "ACTIVE",
+  "configured_status": "ACTIVE",
+  "effective_status": "ADSET_PAUSED",
+  "updated_time": "2026-05-25T19:18:32+0300",
+  "creative": {
+   "id": "1679721116410217",
+   "name": "{{product.name}} 2026-05-25-9df61d19ade6dd74ae63daa898d242db",
+   "account_id": "1198625455580757",
+   "actor_id": "102966688906483",
+   "object_type": "SHARE",
+   "status": "ACTIVE",
+   "object_story_spec": {
+    "page_id": "102966688906483"
+   },
+   "asset_feed_spec": {
+    "images": [
+     {
+      "adlabels": [
+       {
+        "name": "placement_asset_fde46833fae9029ea_1779725290761",
+        "id": "120245688113340789"
+       }
+      ],
+      "hash": "b2b41f5c07aedd190513a60d4cd3f0e2"
+     },
+     {
+      "adlabels": [
+       {
+        "name": "placement_asset_fc24bf9b8a1d54736_1779725290763",
+        "id": "120245688113410789"
+       }
+      ],
+      "hash": "f451ef357f606e296442522ff19c1775"
+     }
+    ],
+    "bodies": [
+     {
+      "adlabels": [
+       {
+        "name": "placement_asset_f7918d18317689636_1779725290761",
+        "id": "120245688113380789"
+       },
+       {
+        "name": "placement_asset_f2e874d1c654233e7_1779725290763",
+        "id": "120245688113390789"
+       }
+      ],
+      "text": "Eid is better when shared… celebrate with us in Diriyah"
+     },
+     {
+      "adlabels": [
+       {
+        "name": "placement_asset_f7918d18317689636_1779725290761",
+        "id": "120245688113380789"
+       }
+      ],
+      "text": "Eid, Better Together"
+     }
+    ],
+    "call_to_action_types": [
+     "LEARN_MORE"
+    ],
+    "descriptions": [
+     {
+      "text": ""
+     }
+    ],
+    "link_urls": [
+     {
+      "adlabels": [
+       {
+        "name": "placement_asset_f0bd6b6ce27b0c881_1779725290763",
+        "id": "120245688113370789"
+       },
+       {
+        "name": "placement_asset_f20e216f4e33da591_1779725290762",
+        "id": "120245688113400789"
+       }
+      ],
+      "website_url": "https://www.diriyah.sa/en?utm_source=instagram&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_instagram_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-987e7a_test_ad_name_display",
+      "display_url": ""
+     }
+    ],
+    "titles": [
+     {
+      "adlabels": [
+       {
+        "name": "placement_asset_fda7b505aa91302bb_1779725290763",
+        "id": "120245688113350789"
+       },
+       {
+        "name": "placement_asset_f6f176cea968207d8_1779725290761",
+        "id": "120245688113360789"
+       }
+      ],
+      "text": "Celebrate Eid in Diriyah"
+     }
+    ],
+    "ad_formats": [
+     "AUTOMATIC_FORMAT"
+    ],
+    "asset_customization_rules": [
+     {
+      "customization_spec": {
+       "age_max": 65,
+       "age_min": 13,
+       "publisher_platforms": [
+        "instagram"
+       ],
+       "instagram_positions": [
+        "story",
+        "reels",
+        "ig_search"
+       ]
+      },
+      "image_label": {
+       "name": "placement_asset_fc24bf9b8a1d54736_1779725290763",
+       "id": "120245688113410789"
+      },
+      "body_label": {
+       "name": "placement_asset_f2e874d1c654233e7_1779725290763",
+       "id": "120245688113390789"
+      },
+      "link_url_label": {
+       "name": "placement_asset_f0bd6b6ce27b0c881_1779725290763",
+       "id": "120245688113370789"
+      },
+      "title_label": {
+       "name": "placement_asset_fda7b505aa91302bb_1779725290763",
+       "id": "120245688113350789"
+      },
+      "priority": 1
+     },
+     {
+      "customization_spec": {
+       "age_max": 65,
+       "age_min": 13
+      },
+      "image_label": {
+       "name": "placement_asset_fde46833fae9029ea_1779725290761",
+       "id": "120245688113340789"
+      },
+      "body_label": {
+       "name": "placement_asset_f7918d18317689636_1779725290761",
+       "id": "120245688113380789"
+      },
+      "link_url_label": {
+       "name": "placement_asset_f20e216f4e33da591_1779725290762",
+       "id": "120245688113400789"
+      },
+      "title_label": {
+       "name": "placement_asset_f6f176cea968207d8_1779725290761",
+       "id": "120245688113360789"
+      },
+      "priority": 2
+     }
+    ],
+    "optimization_type": "PLACEMENT",
+    "additional_data": {
+     "multi_share_end_card": false,
+     "is_click_to_message": false
+    },
+    "reasons_to_shop": false,
+    "shops_bundle": false
+   },
+   "degrees_of_freedom_spec": {
+    "creative_features_spec": {
+     "adapt_to_placement": {
+      "enroll_status": "OPT_OUT"
+     },
+     "add_text_overlay": {
+      "enroll_status": "OPT_OUT"
+     },
+     "ads_with_benefits": {
+      "enroll_status": "OPT_OUT"
+     },
+     "advantage_plus_creative": {
+      "enroll_status": "OPT_OUT"
+     },
+     "app_highlights": {
+      "enroll_status": "OPT_OUT"
+     },
+     "audio": {
+      "enroll_status": "OPT_OUT"
+     },
+     "biz_ai": {
+      "enroll_status": "OPT_OUT"
+     },
+     "carousel_to_video": {
+      "enroll_status": "OPT_OUT"
+     },
+     "catalog_feed_tag": {
+      "enroll_status": "OPT_OUT"
+     },
+     "creative_stickers": {
+      "enroll_status": "OPT_OUT"
+     },
+     "cv_transformation": {
+      "enroll_status": "OPT_OUT"
+     },
+     "description_automation": {
+      "enroll_status": "OPT_OUT"
+     },
+     "dha_optimization": {
+      "enroll_status": "OPT_OUT"
+     },
+     "dynamic_partner_content": {
+      "enroll_status": "OPT_OUT"
+     },
+     "enable_ncs_testimonials": {
+      "enroll_status": "OPT_OUT"
+     },
+     "enhance_cta": {
+      "enroll_status": "OPT_OUT"
+     },
+     "feed_caption_optimization": {
+      "enroll_status": "OPT_OUT"
+     },
+     "generate_cta": {
+      "enroll_status": "OPT_OUT"
+     },
+     "hide_price": {
+      "enroll_status": "OPT_OUT"
+     },
+     "ig_video_native_subtitle": {
+      "enroll_status": "OPT_OUT"
+     },
+     "image_animation": {
+      "enroll_status": "OPT_OUT"
+     },
+     "image_auto_crop": {
+      "enroll_status": "OPT_OUT"
+     },
+     "image_background_gen": {
+      "enroll_status": "OPT_OUT"
+     },
+     "image_brightness_and_contrast": {
+      "enroll_status": "OPT_OUT"
+     },
+     "image_enhancement": {
+      "enroll_status": "OPT_OUT"
+     },
+     "image_templates": {
+      "enroll_status": "OPT_OUT"
+     },
+     "image_text_translation": {
+      "enroll_status": "OPT_OUT"
+     },
+     "image_touchups": {
+      "enroll_status": "OPT_OUT"
+     },
+     "image_uncrop": {
+      "enroll_status": "OPT_OUT"
+     },
+     "inline_comment": {
+      "enroll_status": "OPT_OUT"
+     },
+     "local_store_extension": {
+      "enroll_status": "OPT_OUT"
+     },
+     "media_liquidity_animated_image": {
+      "enroll_status": "OPT_OUT"
+     },
+     "media_order": {
+      "enroll_status": "OPT_OUT"
+     },
+     "media_type_automation": {
+      "enroll_status": "OPT_OUT"
+     },
+     "multi_photo_to_video": {
+      "enroll_status": "OPT_OUT"
+     },
+     "pac_recomposition": {
+      "enroll_status": "OPT_OUT"
+     },
+     "pac_relaxation": {
+      "enroll_status": "OPT_OUT"
+     },
+     "product_browsing": {
+      "enroll_status": "OPT_OUT"
+     },
+     "product_extensions": {
+      "enroll_status": "OPT_OUT"
+     },
+     "product_metadata_automation": {
+      "enroll_status": "OPT_OUT"
+     },
+     "profile_card": {
+      "enroll_status": "OPT_OUT"
+     },
+     "replace_media_text": {
+      "enroll_status": "OPT_OUT"
+     },
+     "reveal_details_over_time": {
+      "enroll_status": "OPT_OUT"
+     },
+     "show_destination_blurbs": {
+      "enroll_status": "OPT_OUT"
+     },
+     "show_summary": {
+      "enroll_status": "OPT_OUT"
+     },
+     "site_extensions": {
+      "enroll_status": "OPT_OUT"
+     },
+     "standard_enhancements_catalog": {
+      "enroll_status": "OPT_OUT"
+     },
+     "text_optimizations": {
+      "enroll_status": "OPT_OUT"
+     },
+     "text_translation": {
+      "enroll_status": "OPT_OUT"
+     },
+     "translate_voiceover": {
+      "enroll_status": "OPT_OUT"
+     },
+     "video_auto_crop": {
+      "enroll_status": "OPT_OUT"
+     },
+     "video_filtering": {
+      "enroll_status": "OPT_OUT"
+     },
+     "video_highlight": {
+      "enroll_status": "OPT_OUT"
+     },
+     "video_highlights": {
+      "enroll_status": "OPT_OUT"
+     },
+     "video_to_image": {
+      "enroll_status": "OPT_OUT"
+     },
+     "video_uncrop": {
+      "enroll_status": "OPT_OUT"
+     },
+     "wa_mm_image_filtering": {
+      "enroll_status": "OPT_OUT"
+     }
+    }
+   },
+   "call_to_action": {
+    "type": "LEARN_MORE",
+    "value": {
+     "link": "https://www.diriyah.sa/en?utm_source=instagram&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_instagram_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-987e7a_test_ad_name_display"
+    }
+   },
+   "instagram_user_id": "17841449897651638",
+   "instagram_permalink_url": "https://www.instagram.com/p/DYxJ8ocgAO7/",
+   "effective_instagram_media_id": "18185151130378154",
+   "effective_object_story_id": "102966688906483_1038098822063681",
+   "use_page_actor_override": false,
+   "authorization_category": "NONE",
+   "effective_authorization_category": "NONE",
+   "creative_sourcing_spec": {
+    "destination_screenshot_spec": {
+     "enroll_status": "OPT_OUT"
+    }
+   },
+   "threads_user_id": "17841415776034388"
+  },
+  "adcreatives": {
+   "data": [
+    {
+     "id": "1679721116410217",
+     "name": "{{product.name}} 2026-05-25-9df61d19ade6dd74ae63daa898d242db",
+     "object_story_spec": {
+      "page_id": "102966688906483"
+     },
+     "asset_feed_spec": {
+      "images": [
+       {
+        "adlabels": [
+         {
+          "name": "placement_asset_fde46833fae9029ea_1779725290761",
+          "id": "120245688113340789"
+         }
+        ],
+        "hash": "b2b41f5c07aedd190513a60d4cd3f0e2"
+       },
+       {
+        "adlabels": [
+         {
+          "name": "placement_asset_fc24bf9b8a1d54736_1779725290763",
+          "id": "120245688113410789"
+         }
+        ],
+        "hash": "f451ef357f606e296442522ff19c1775"
+       }
+      ],
+      "bodies": [
+       {
+        "adlabels": [
+         {
+          "name": "placement_asset_f7918d18317689636_1779725290761",
+          "id": "120245688113380789"
+         },
+         {
+          "name": "placement_asset_f2e874d1c654233e7_1779725290763",
+          "id": "120245688113390789"
+         }
+        ],
+        "text": "Eid is better when shared… celebrate with us in Diriyah"
+       },
+       {
+        "adlabels": [
+         {
+          "name": "placement_asset_f7918d18317689636_1779725290761",
+          "id": "120245688113380789"
+         }
+        ],
+        "text": "Eid, Better Together"
+       }
+      ],
+      "call_to_action_types": [
+       "LEARN_MORE"
+      ],
+      "descriptions": [
+       {
+        "text": ""
+       }
+      ],
+      "link_urls": [
+       {
+        "adlabels": [
+         {
+          "name": "placement_asset_f0bd6b6ce27b0c881_1779725290763",
+          "id": "120245688113370789"
+         },
+         {
+          "name": "placement_asset_f20e216f4e33da591_1779725290762",
+          "id": "120245688113400789"
+         }
+        ],
+        "website_url": "https://www.diriyah.sa/en?utm_source=instagram&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_instagram_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-987e7a_test_ad_name_display",
+        "display_url": ""
+       }
+      ],
+      "titles": [
+       {
+        "adlabels": [
+         {
+          "name": "placement_asset_fda7b505aa91302bb_1779725290763",
+          "id": "120245688113350789"
+         },
+         {
+          "name": "placement_asset_f6f176cea968207d8_1779725290761",
+          "id": "120245688113360789"
+         }
+        ],
+        "text": "Celebrate Eid in Diriyah"
+       }
+      ],
+      "ad_formats": [
+       "AUTOMATIC_FORMAT"
+      ],
+      "asset_customization_rules": [
+       {
+        "customization_spec": {
+         "age_max": 65,
+         "age_min": 13,
+         "publisher_platforms": [
+          "instagram"
+         ],
+         "instagram_positions": [
+          "story",
+          "reels",
+          "ig_search"
+         ]
+        },
+        "image_label": {
+         "name": "placement_asset_fc24bf9b8a1d54736_1779725290763",
+         "id": "120245688113410789"
+        },
+        "body_label": {
+         "name": "placement_asset_f2e874d1c654233e7_1779725290763",
+         "id": "120245688113390789"
+        },
+        "link_url_label": {
+         "name": "placement_asset_f0bd6b6ce27b0c881_1779725290763",
+         "id": "120245688113370789"
+        },
+        "title_label": {
+         "name": "placement_asset_fda7b505aa91302bb_1779725290763",
+         "id": "120245688113350789"
+        },
+        "priority": 1
+       },
+       {
+        "customization_spec": {
+         "age_max": 65,
+         "age_min": 13
+        },
+        "image_label": {
+         "name": "placement_asset_fde46833fae9029ea_1779725290761",
+         "id": "120245688113340789"
+        },
+        "body_label": {
+         "name": "placement_asset_f7918d18317689636_1779725290761",
+         "id": "120245688113380789"
+        },
+        "link_url_label": {
+         "name": "placement_asset_f20e216f4e33da591_1779725290762",
+         "id": "120245688113400789"
+        },
+        "title_label": {
+         "name": "placement_asset_f6f176cea968207d8_1779725290761",
+         "id": "120245688113360789"
+        },
+        "priority": 2
+       }
+      ],
+      "optimization_type": "PLACEMENT",
+      "additional_data": {
+       "multi_share_end_card": false,
+       "is_click_to_message": false
+      },
+      "reasons_to_shop": false,
+      "shops_bundle": false
+     },
+     "instagram_user_id": "17841449897651638",
+     "threads_user_id": "17841415776034388",
+     "authorization_category": "NONE",
+     "creative_sourcing_spec": {
+      "destination_screenshot_spec": {
+       "enroll_status": "OPT_OUT"
+      }
+     },
+     "call_to_action": {
+      "type": "LEARN_MORE",
+      "value": {
+       "link": "https://www.diriyah.sa/en?utm_source=instagram&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_instagram_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-987e7a_test_ad_name_display"
+      }
+     }
+    }
+   ]
+  }
+ },
+ "120245688083930789": {
+  "id": "120245688083930789",
+  "name": "Visit Diriyah_Eid KV_AR_Multi-Format",
+  "account_id": "1198625455580757",
+  "adset_id": "120245688016010789",
+  "campaign_id": "120245687982710789",
+  "status": "ACTIVE",
+  "configured_status": "ACTIVE",
+  "effective_status": "ADSET_PAUSED",
+  "updated_time": "2026-05-25T19:18:26+0300",
+  "creative": {
+   "id": "1494121382352114",
+   "name": "{{product.name}} 2026-05-25-e868b2051f38bbb42fd8fce50348dab1",
+   "account_id": "1198625455580757",
+   "actor_id": "102966688906483",
+   "object_type": "SHARE",
+   "status": "ACTIVE",
+   "object_story_spec": {
+    "page_id": "102966688906483"
+   },
+   "asset_feed_spec": {
+    "images": [
+     {
+      "adlabels": [
+       {
+        "name": "placement_asset_ffc9201988c007ad2_1779725269463",
+        "id": "120245688111030789"
+       }
+      ],
+      "hash": "18470ba14043ee1d41709ab7fc309d74"
+     },
+     {
+      "adlabels": [
+       {
+        "name": "placement_asset_f8c7eab9b98f10028_1779725269468",
+        "id": "120245688111040789"
+       }
+      ],
+      "hash": "67f21fd3dfc449d6ed9fae8db347ad25"
+     }
+    ],
+    "bodies": [
+     {
+      "adlabels": [
+       {
+        "name": "placement_asset_f29a9d18d50933ad6_1779725269469",
+        "id": "120245688111070789"
+       },
+       {
+        "name": "placement_asset_ff74fd63b7da239a1_1779725269464",
+        "id": "120245688111080789"
+       }
+      ],
+      "text": "عيدنا يكتمل بجيتكم.. شاركونا أجواء العيد في الدرعية"
+     },
+     {
+      "adlabels": [
+       {
+        "name": "placement_asset_ff74fd63b7da239a1_1779725269464",
+        "id": "120245688111080789"
+       }
+      ],
+      "text": "عيدنا.. يزهى بكم"
+     }
+    ],
+    "call_to_action_types": [
+     "LEARN_MORE"
+    ],
+    "descriptions": [
+     {
+      "text": ""
+     }
+    ],
+    "link_urls": [
+     {
+      "adlabels": [
+       {
+        "name": "placement_asset_f1acc081dda2de0dc_1779725269469",
+        "id": "120245688111010789"
+       },
+       {
+        "name": "placement_asset_fc3a5d1d599dd5ea1_1779725269466",
+        "id": "120245688111020789"
+       }
+      ],
+      "website_url": "https://www.diriyah.sa/ar?utm_source=instagram&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_instagram_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-987e7a_test_ad_name_display",
+      "display_url": ""
+     }
+    ],
+    "titles": [
+     {
+      "adlabels": [
+       {
+        "name": "placement_asset_f3e82dd979649cd95_1779725269465",
+        "id": "120245688111050789"
+       },
+       {
+        "name": "placement_asset_f1b23cd06b6936722_1779725269469",
+        "id": "120245688111060789"
+       }
+      ],
+      "text": "أجواء العيد في الدرعية"
+     }
+    ],
+    "ad_formats": [
+     "AUTOMATIC_FORMAT"
+    ],
+    "asset_customization_rules": [
+     {
+      "customization_spec": {
+       "age_max": 65,
+       "age_min": 13,
+       "publisher_platforms": [
+        "instagram"
+       ],
+       "instagram_positions": [
+        "story",
+        "reels",
+        "ig_search"
+       ]
+      },
+      "image_label": {
+       "name": "placement_asset_f8c7eab9b98f10028_1779725269468",
+       "id": "120245688111040789"
+      },
+      "body_label": {
+       "name": "placement_asset_f29a9d18d50933ad6_1779725269469",
+       "id": "120245688111070789"
+      },
+      "link_url_label": {
+       "name": "placement_asset_f1acc081dda2de0dc_1779725269469",
+       "id": "120245688111010789"
+      },
+      "title_label": {
+       "name": "placement_asset_f1b23cd06b6936722_1779725269469",
+       "id": "120245688111060789"
+      },
+      "priority": 1
+     },
+     {
+      "customization_spec": {
+       "age_max": 65,
+       "age_min": 13
+      },
+      "image_label": {
+       "name": "placement_asset_ffc9201988c007ad2_1779725269463",
+       "id": "120245688111030789"
+      },
+      "body_label": {
+       "name": "placement_asset_ff74fd63b7da239a1_1779725269464",
+       "id": "120245688111080789"
+      },
+      "link_url_label": {
+       "name": "placement_asset_fc3a5d1d599dd5ea1_1779725269466",
+       "id": "120245688111020789"
+      },
+      "title_label": {
+       "name": "placement_asset_f3e82dd979649cd95_1779725269465",
+       "id": "120245688111050789"
+      },
+      "priority": 2
+     }
+    ],
+    "optimization_type": "PLACEMENT",
+    "additional_data": {
+     "multi_share_end_card": false,
+     "is_click_to_message": false
+    },
+    "reasons_to_shop": false,
+    "shops_bundle": false
+   },
+   "degrees_of_freedom_spec": {
+    "creative_features_spec": {
+     "adapt_to_placement": {
+      "enroll_status": "OPT_OUT"
+     },
+     "add_text_overlay": {
+      "enroll_status": "OPT_OUT"
+     },
+     "ads_with_benefits": {
+      "enroll_status": "OPT_OUT"
+     },
+     "advantage_plus_creative": {
+      "enroll_status": "OPT_OUT"
+     },
+     "app_highlights": {
+      "enroll_status": "OPT_OUT"
+     },
+     "audio": {
+      "enroll_status": "OPT_OUT"
+     },
+     "biz_ai": {
+      "enroll_status": "OPT_OUT"
+     },
+     "carousel_to_video": {
+      "enroll_status": "OPT_OUT"
+     },
+     "catalog_feed_tag": {
+      "enroll_status": "OPT_OUT"
+     },
+     "creative_stickers": {
+      "enroll_status": "OPT_OUT"
+     },
+     "cv_transformation": {
+      "enroll_status": "OPT_OUT"
+     },
+     "description_automation": {
+      "enroll_status": "OPT_OUT"
+     },
+     "dha_optimization": {
+      "enroll_status": "OPT_OUT"
+     },
+     "dynamic_partner_content": {
+      "enroll_status": "OPT_OUT"
+     },
+     "enable_ncs_testimonials": {
+      "enroll_status": "OPT_OUT"
+     },
+     "enhance_cta": {
+      "enroll_status": "OPT_OUT"
+     },
+     "feed_caption_optimization": {
+      "enroll_status": "OPT_OUT"
+     },
+     "generate_cta": {
+      "enroll_status": "OPT_OUT"
+     },
+     "hide_price": {
+      "enroll_status": "OPT_OUT"
+     },
+     "ig_video_native_subtitle": {
+      "enroll_status": "OPT_OUT"
+     },
+     "image_animation": {
+      "enroll_status": "OPT_OUT"
+     },
+     "image_auto_crop": {
+      "enroll_status": "OPT_OUT"
+     },
+     "image_background_gen": {
+      "enroll_status": "OPT_OUT"
+     },
+     "image_brightness_and_contrast": {
+      "enroll_status": "OPT_OUT"
+     },
+     "image_enhancement": {
+      "enroll_status": "OPT_OUT"
+     },
+     "image_templates": {
+      "enroll_status": "OPT_OUT"
+     },
+     "image_text_translation": {
+      "enroll_status": "OPT_OUT"
+     },
+     "image_touchups": {
+      "enroll_status": "OPT_OUT"
+     },
+     "image_uncrop": {
+      "enroll_status": "OPT_OUT"
+     },
+     "inline_comment": {
+      "enroll_status": "OPT_OUT"
+     },
+     "local_store_extension": {
+      "enroll_status": "OPT_OUT"
+     },
+     "media_liquidity_animated_image": {
+      "enroll_status": "OPT_OUT"
+     },
+     "media_order": {
+      "enroll_status": "OPT_OUT"
+     },
+     "media_type_automation": {
+      "enroll_status": "OPT_OUT"
+     },
+     "multi_photo_to_video": {
+      "enroll_status": "OPT_OUT"
+     },
+     "pac_recomposition": {
+      "enroll_status": "OPT_OUT"
+     },
+     "pac_relaxation": {
+      "enroll_status": "OPT_OUT"
+     },
+     "product_browsing": {
+      "enroll_status": "OPT_OUT"
+     },
+     "product_extensions": {
+      "enroll_status": "OPT_OUT"
+     },
+     "product_metadata_automation": {
+      "enroll_status": "OPT_OUT"
+     },
+     "profile_card": {
+      "enroll_status": "OPT_OUT"
+     },
+     "replace_media_text": {
+      "enroll_status": "OPT_OUT"
+     },
+     "reveal_details_over_time": {
+      "enroll_status": "OPT_OUT"
+     },
+     "show_destination_blurbs": {
+      "enroll_status": "OPT_OUT"
+     },
+     "show_summary": {
+      "enroll_status": "OPT_OUT"
+     },
+     "site_extensions": {
+      "enroll_status": "OPT_OUT"
+     },
+     "standard_enhancements_catalog": {
+      "enroll_status": "OPT_OUT"
+     },
+     "text_optimizations": {
+      "enroll_status": "OPT_OUT"
+     },
+     "text_translation": {
+      "enroll_status": "OPT_OUT"
+     },
+     "translate_voiceover": {
+      "enroll_status": "OPT_OUT"
+     },
+     "video_auto_crop": {
+      "enroll_status": "OPT_OUT"
+     },
+     "video_filtering": {
+      "enroll_status": "OPT_OUT"
+     },
+     "video_highlight": {
+      "enroll_status": "OPT_OUT"
+     },
+     "video_highlights": {
+      "enroll_status": "OPT_OUT"
+     },
+     "video_to_image": {
+      "enroll_status": "OPT_OUT"
+     },
+     "video_uncrop": {
+      "enroll_status": "OPT_OUT"
+     },
+     "wa_mm_image_filtering": {
+      "enroll_status": "OPT_OUT"
+     }
+    }
+   },
+   "call_to_action": {
+    "type": "LEARN_MORE",
+    "value": {
+     "link": "https://www.diriyah.sa/ar?utm_source=instagram&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_instagram_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-987e7a_test_ad_name_display"
+    }
+   },
+   "instagram_user_id": "17841449897651638",
+   "instagram_permalink_url": "https://www.instagram.com/p/DYxJ5tKgCdq/",
+   "effective_instagram_media_id": "18105434800781874",
+   "effective_object_story_id": "102966688906483_1038098828730347",
+   "use_page_actor_override": false,
+   "authorization_category": "NONE",
+   "effective_authorization_category": "NONE",
+   "creative_sourcing_spec": {
+    "destination_screenshot_spec": {
+     "enroll_status": "OPT_OUT"
+    }
+   },
+   "threads_user_id": "17841415776034388"
+  },
+  "adcreatives": {
+   "data": [
+    {
+     "id": "1494121382352114",
+     "name": "{{product.name}} 2026-05-25-e868b2051f38bbb42fd8fce50348dab1",
+     "object_story_spec": {
+      "page_id": "102966688906483"
+     },
+     "asset_feed_spec": {
+      "images": [
+       {
+        "adlabels": [
+         {
+          "name": "placement_asset_ffc9201988c007ad2_1779725269463",
+          "id": "120245688111030789"
+         }
+        ],
+        "hash": "18470ba14043ee1d41709ab7fc309d74"
+       },
+       {
+        "adlabels": [
+         {
+          "name": "placement_asset_f8c7eab9b98f10028_1779725269468",
+          "id": "120245688111040789"
+         }
+        ],
+        "hash": "67f21fd3dfc449d6ed9fae8db347ad25"
+       }
+      ],
+      "bodies": [
+       {
+        "adlabels": [
+         {
+          "name": "placement_asset_f29a9d18d50933ad6_1779725269469",
+          "id": "120245688111070789"
+         },
+         {
+          "name": "placement_asset_ff74fd63b7da239a1_1779725269464",
+          "id": "120245688111080789"
+         }
+        ],
+        "text": "عيدنا يكتمل بجيتكم.. شاركونا أجواء العيد في الدرعية"
+       },
+       {
+        "adlabels": [
+         {
+          "name": "placement_asset_ff74fd63b7da239a1_1779725269464",
+          "id": "120245688111080789"
+         }
+        ],
+        "text": "عيدنا.. يزهى بكم"
+       }
+      ],
+      "call_to_action_types": [
+       "LEARN_MORE"
+      ],
+      "descriptions": [
+       {
+        "text": ""
+       }
+      ],
+      "link_urls": [
+       {
+        "adlabels": [
+         {
+          "name": "placement_asset_f1acc081dda2de0dc_1779725269469",
+          "id": "120245688111010789"
+         },
+         {
+          "name": "placement_asset_fc3a5d1d599dd5ea1_1779725269466",
+          "id": "120245688111020789"
+         }
+        ],
+        "website_url": "https://www.diriyah.sa/ar?utm_source=instagram&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_instagram_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-987e7a_test_ad_name_display",
+        "display_url": ""
+       }
+      ],
+      "titles": [
+       {
+        "adlabels": [
+         {
+          "name": "placement_asset_f3e82dd979649cd95_1779725269465",
+          "id": "120245688111050789"
+         },
+         {
+          "name": "placement_asset_f1b23cd06b6936722_1779725269469",
+          "id": "120245688111060789"
+         }
+        ],
+        "text": "أجواء العيد في الدرعية"
+       }
+      ],
+      "ad_formats": [
+       "AUTOMATIC_FORMAT"
+      ],
+      "asset_customization_rules": [
+       {
+        "customization_spec": {
+         "age_max": 65,
+         "age_min": 13,
+         "publisher_platforms": [
+          "instagram"
+         ],
+         "instagram_positions": [
+          "story",
+          "reels",
+          "ig_search"
+         ]
+        },
+        "image_label": {
+         "name": "placement_asset_f8c7eab9b98f10028_1779725269468",
+         "id": "120245688111040789"
+        },
+        "body_label": {
+         "name": "placement_asset_f29a9d18d50933ad6_1779725269469",
+         "id": "120245688111070789"
+        },
+        "link_url_label": {
+         "name": "placement_asset_f1acc081dda2de0dc_1779725269469",
+         "id": "120245688111010789"
+        },
+        "title_label": {
+         "name": "placement_asset_f1b23cd06b6936722_1779725269469",
+         "id": "120245688111060789"
+        },
+        "priority": 1
+       },
+       {
+        "customization_spec": {
+         "age_max": 65,
+         "age_min": 13
+        },
+        "image_label": {
+         "name": "placement_asset_ffc9201988c007ad2_1779725269463",
+         "id": "120245688111030789"
+        },
+        "body_label": {
+         "name": "placement_asset_ff74fd63b7da239a1_1779725269464",
+         "id": "120245688111080789"
+        },
+        "link_url_label": {
+         "name": "placement_asset_fc3a5d1d599dd5ea1_1779725269466",
+         "id": "120245688111020789"
+        },
+        "title_label": {
+         "name": "placement_asset_f3e82dd979649cd95_1779725269465",
+         "id": "120245688111050789"
+        },
+        "priority": 2
+       }
+      ],
+      "optimization_type": "PLACEMENT",
+      "additional_data": {
+       "multi_share_end_card": false,
+       "is_click_to_message": false
+      },
+      "reasons_to_shop": false,
+      "shops_bundle": false
+     },
+     "instagram_user_id": "17841449897651638",
+     "threads_user_id": "17841415776034388",
+     "authorization_category": "NONE",
+     "creative_sourcing_spec": {
+      "destination_screenshot_spec": {
+       "enroll_status": "OPT_OUT"
+      }
+     },
+     "call_to_action": {
+      "type": "LEARN_MORE",
+      "value": {
+       "link": "https://www.diriyah.sa/ar?utm_source=instagram&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_instagram_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-987e7a_test_ad_name_display"
+      }
+     }
+    }
+   ]
+  }
+ }
+}

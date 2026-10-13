@@ -1,0 +1,24 @@
+ads_p01|ads: status!=REMOVED AND ad.id > 0 ORDER BY ad.id LIMIT 55|returned 55|first 694644171510|last 788610532039
+ads_p02|ads: status!=REMOVED AND ad.id >= 788610532039 ORDER BY ad.id LIMIT 55|returned 55|first 788610532039|last 788858323628
+ads_p03|ads: status!=REMOVED AND ad.id >= 788858323628 ORDER BY ad.id LIMIT 55|returned 55|first 788858323628|last 797562451424
+ads_p04|ads: status!=REMOVED AND ad.id >= 797562451424 ORDER BY ad.id LIMIT 50|returned 50|first 797562451424|last 797795488743
+ads_p05|ads: status!=REMOVED AND ad.id >= 797795488743 ORDER BY ad.id LIMIT 50|returned 50|first 797795488743|last 800798099954
+ads_p06|ads: status!=REMOVED AND ad.id >= 800798099954 ORDER BY ad.id LIMIT 50|returned 50|first 800798099954|last 800840046858
+ads_p07|ads: status!=REMOVED AND ad.id >= 800840046858 ORDER BY ad.id LIMIT 50|returned 50|first 800840046858|last 810142225146
+ads_p08|ads: status!=REMOVED AND ad.id >= 810142225146 ORDER BY ad.id LIMIT 50|returned 50|first 810142225146|last 810216170832
+ads_p09|ads: status!=REMOVED AND ad.id >= 810216170832 ORDER BY ad.id LIMIT 50|returned 50|first 810216170832|last 815035513103
+ads_p10|ads: status!=REMOVED AND ad.id >= 814959405781 ORDER BY ad.id LIMIT 60 (last page: fewer than LIMIT returned; overlaps p09 from its row 36 so the output is persisted to a file)|returned 39|first 814959405781|last 820366191104
+assets_p01|assets: type=SITELINK AND asset.id > 0 ORDER BY asset.id LIMIT 110|returned 110|first 132625081449|last 331604152895
+assets_p02|assets: type=SITELINK AND asset.id >= 331604152838 ORDER BY asset.id LIMIT 140 (last page: fewer than LIMIT; overlaps p01 from its row 90 so the output is persisted)|returned 101|first 331604152838|last 388973983778
+camps_p01|campaigns: all statuses, campaign.id > 0 ORDER BY campaign.id LIMIT 100 (inline result copied from transcript; fewer than LIMIT -> complete)|returned 92|first 21123620760|last 24021197929
+calinks_p01|campaign_asset SITELINK (any status): campaign.id >= 0 ORDER BY campaign.id, asset.id LIMIT 115|returned 115|first 21800976130|last 23587072267
+calinks_p02|campaign_asset SITELINK (any status): campaign.id >= 23587072267 ORDER BY campaign.id, asset.id LIMIT 115|returned 115|first 23587072267|last 23880571622
+calinks_p03|campaign_asset SITELINK (any status): campaign.id >= 23880571622 ORDER BY campaign.id, asset.id LIMIT 115|returned 115|first 23880571622|last 24016789193
+calinks_p04|campaign_asset SITELINK (any status): campaign.id >= 24016789193 ORDER BY campaign.id, asset.id LIMIT 115 (inline result copied from transcript; fewer than LIMIT -> last page)|returned 12|first 24016789193|last 24021197929
+agalinks_p01|ad_group_asset SITELINK (any status): ad_group.id >= 0 ORDER BY ad_group.id LIMIT 110|returned 110|first 158939173343|last 190378605341
+agalinks_p02|ad_group_asset SITELINK (any status): ad_group.id >= 190378605341 ORDER BY ad_group.id LIMIT 125|returned 125|first 190378605341|last 193552251076
+agalinks_p03|ad_group_asset SITELINK (any status): ad_group.id >= 193552251076 ORDER BY ad_group.id LIMIT 125|returned 125|first 193552251076|last 194932199204
+agalinks_p04|ad_group_asset SITELINK (any status): ad_group.id >= 194932199204 ORDER BY ad_group.id LIMIT 125|returned 125|first 194932199204|last 197035498927
+agalinks_p05|ad_group_asset SITELINK (any status): ad_group.id >= 197035498927 ORDER BY ad_group.id LIMIT 125|returned 125|first 197035498927|last 197035511687
+agalinks_p06|ad_group_asset SITELINK (any status): ad_group.id >= 197035511687 ORDER BY ad_group.id LIMIT 125|returned 125|first 197035511687|last 200132387664
+agalinks_p07|ad_group_asset SITELINK (any status): ad_group.id >= 200132387664 ORDER BY ad_group.id LIMIT 125 (inline result copied from transcript; fewer than LIMIT -> last page)|returned 27|first 200132387664|last 200132387904

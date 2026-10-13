@@ -1,0 +1,172 @@
+{
+ "name": "{{product.name}} 2026-07-16-04471d0090244ad9f88288662e66adf4",
+ "object_story_spec": {
+  "page_id": "102966688906483"
+ },
+ "asset_feed_spec": {
+  "images": [
+   {
+    "adlabels": [
+     {
+      "name": "placement_asset_fd779e12710c0052f_1784208266859",
+      "id": "120248664906140789"
+     }
+    ],
+    "hash": "a897a8ce01fe41a431c005594349f6c6"
+   },
+   {
+    "adlabels": [
+     {
+      "name": "placement_asset_f67ae75eed1b323c5_1784208266862",
+      "id": "120248664906290789"
+     }
+    ],
+    "hash": "44fcbf09651f6420e7a234287fd116fb"
+   }
+  ],
+  "bodies": [
+   {
+    "adlabels": [
+     {
+      "name": "placement_asset_f42413246b5dc097a_1784208266875",
+      "id": "120248664906260789"
+     },
+     {
+      "name": "placement_asset_f279a9f1d510b0132_1784208266870",
+      "id": "120248664906280789"
+     }
+    ],
+    "text": "Stay at Bab Samhan Hotel and enjoy 2 tickets to Six Flags or Aquarabia,breakfast for two, plus dining and spa discounts."
+   }
+  ],
+  "call_to_action_types": [
+   "BOOK_TRAVEL"
+  ],
+  "descriptions": [
+   {
+    "text": ""
+   }
+  ],
+  "link_urls": [
+   {
+    "adlabels": [
+     {
+      "name": "placement_asset_f678709574ad9fbf4_1784208266873",
+      "id": "120248664906150789"
+     },
+     {
+      "name": "placement_asset_f88f1ef2c0a3790ae_1784208266875",
+      "id": "120248664906250789"
+     }
+    ],
+    "website_url": "https://www.marriott.com/offers/theme-park-experience-off-227242/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah?utm_source=meta&utm_medium=paid-social&utm_campaign=visitor-diriyah_jun26_awr&utm_term=en&utm_content=kv1_display_en",
+    "display_url": ""
+   }
+  ],
+  "titles": [
+   {
+    "adlabels": [
+     {
+      "name": "placement_asset_f63c497537826ddca_1784208266872",
+      "id": "120248664906270789"
+     },
+     {
+      "name": "placement_asset_f718b180173b931dc_1784208266875",
+      "id": "120248664906300789"
+     }
+    ],
+    "text": "Stay in Diriyah, Play in Qiddiya"
+   }
+  ],
+  "ad_formats": [
+   "AUTOMATIC_FORMAT"
+  ],
+  "asset_customization_rules": [
+   {
+    "customization_spec": {
+     "age_max": 65,
+     "age_min": 13,
+     "publisher_platforms": [
+      "instagram"
+     ],
+     "instagram_positions": [
+      "story",
+      "reels"
+     ]
+    },
+    "image_label": {
+     "name": "placement_asset_f67ae75eed1b323c5_1784208266862",
+     "id": "120248664906290789"
+    },
+    "body_label": {
+     "name": "placement_asset_f42413246b5dc097a_1784208266875",
+     "id": "120248664906260789"
+    },
+    "link_url_label": {
+     "name": "placement_asset_f88f1ef2c0a3790ae_1784208266875",
+     "id": "120248664906250789"
+    },
+    "title_label": {
+     "name": "placement_asset_f718b180173b931dc_1784208266875",
+     "id": "120248664906300789"
+    },
+    "priority": 1
+   },
+   {
+    "customization_spec": {
+     "age_max": 65,
+     "age_min": 13
+    },
+    "image_label": {
+     "name": "placement_asset_fd779e12710c0052f_1784208266859",
+     "id": "120248664906140789"
+    },
+    "body_label": {
+     "name": "placement_asset_f279a9f1d510b0132_1784208266870",
+     "id": "120248664906280789"
+    },
+    "link_url_label": {
+     "name": "placement_asset_f678709574ad9fbf4_1784208266873",
+     "id": "120248664906150789"
+    },
+    "title_label": {
+     "name": "placement_asset_f63c497537826ddca_1784208266872",
+     "id": "120248664906270789"
+    },
+    "priority": 2
+   }
+  ],
+  "optimization_type": "PLACEMENT",
+  "additional_data": {
+   "multi_share_end_card": false,
+   "is_click_to_message": false
+  },
+  "reasons_to_shop": false,
+  "shops_bundle": false
+ },
+ "degrees_of_freedom_spec": {
+  "creative_features_spec": {
+   "pac_recomposition": {
+    "enroll_status": "OPT_OUT",
+    "customizations": {
+     "recomposition_type": {
+      "vertical": "smart_crop"
+     }
+    }
+   },
+   "pac_relaxation": {
+    "enroll_status": "OPT_OUT"
+   },
+   "text_translation": {
+    "enroll_status": "OPT_OUT"
+   }
+  }
+ },
+ "creative_sourcing_spec": {
+  "destination_screenshot_spec": {
+   "enroll_status": "OPT_OUT"
+  }
+ },
+ "threads_user_id": "17841415776034388",
+ "authorization_category": "NONE"
+}

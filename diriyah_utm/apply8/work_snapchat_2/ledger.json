@@ -1,0 +1,260 @@
+{
+ "0": {
+  "pre": [
+   5
+  ],
+  "dry": 6,
+  "live": 7,
+  "post": [
+   8
+  ],
+  "final": [
+   83
+  ]
+ },
+ "1": {
+  "pre": [
+   9
+  ],
+  "dry": 10,
+  "live": 11,
+  "post": [
+   12
+  ],
+  "final": [
+   83
+  ]
+ },
+ "2": {
+  "pre": [
+   13
+  ],
+  "dry": 14,
+  "live": 15,
+  "post": [
+   16
+  ],
+  "final": [
+   83
+  ]
+ },
+ "3": {
+  "pre": [
+   17
+  ],
+  "dry": 18,
+  "live": 19,
+  "post": [
+   20
+  ],
+  "final": [
+   83
+  ]
+ },
+ "4": {
+  "pre": [
+   21
+  ],
+  "dry": 22,
+  "live": 23,
+  "post": [
+   24
+  ],
+  "final": [
+   83
+  ]
+ },
+ "5": {
+  "pre": [
+   25
+  ],
+  "dry": 26,
+  "live": 27,
+  "post": [
+   28
+  ],
+  "final": [
+   83
+  ]
+ },
+ "6": {
+  "pre": [
+   29
+  ],
+  "dry": 30,
+  "live": 31,
+  "post": [
+   32
+  ],
+  "final": [
+   83
+  ]
+ },
+ "7": {
+  "pre": [
+   33
+  ],
+  "dry": 34,
+  "live": 35,
+  "post": [
+   36
+  ],
+  "final": [
+   83
+  ]
+ },
+ "8": {
+  "pre": [
+   37
+  ],
+  "dry": 38,
+  "result_all": "Failed",
+  "note": "blocked by session safety check: Bash 'python3 h.py calls 38 && python3 h.py dry 8 38' (byte-exact check of the snapchat_adaccounts_ad_account_id_creatives_update dry_run preview that must pass before the live PUT) denied: 'Permission for this action was denied by the Claude Code auto mode classifier. Reason: [Modify Shared Resources].' Not retried and not re-routed. Only the dry_run=true preview was sent (gateway req 17250875-d9c8-425d-8464-4f1655b6e28b, makes no change); the live PUT was NOT sent. Final read-only re-read (POST get_creatives_by_ids req 39af4bc6-3d6b-45cc-9d95-58160ef7ec76) confirms the creative is untouched: URL still == now, updated_at 2026-03-17T09:59:21.189Z, review_status APPROVED."
+ },
+ "9": {
+  "pre": [
+   39
+  ],
+  "dry": 40,
+  "live": 41,
+  "post": [
+   42
+  ],
+  "final": [
+   83
+  ]
+ },
+ "10": {
+  "pre": [
+   43
+  ],
+  "dry": 44,
+  "live": 45,
+  "post": [
+   46
+  ],
+  "final": [
+   83
+  ]
+ },
+ "11": {
+  "pre": [
+   47
+  ],
+  "dry": 48,
+  "live": 49,
+  "post": [
+   50
+  ],
+  "final": [
+   83
+  ]
+ },
+ "12": {
+  "pre": [
+   51
+  ],
+  "dry": 52,
+  "live": 53,
+  "post": [
+   54
+  ],
+  "final": [
+   83
+  ]
+ },
+ "13": {
+  "pre": [
+   55
+  ],
+  "dry": 56,
+  "live": 57,
+  "post": [
+   58
+  ],
+  "final": [
+   83
+  ]
+ },
+ "14": {
+  "pre": [
+   59
+  ],
+  "dry": 60,
+  "live": 61,
+  "post": [
+   62
+  ],
+  "final": [
+   83
+  ]
+ },
+ "15": {
+  "pre": [
+   63
+  ],
+  "dry": 64,
+  "live": 65,
+  "post": [
+   66
+  ],
+  "final": [
+   83
+  ]
+ },
+ "16": {
+  "pre": [
+   67
+  ],
+  "dry": 68,
+  "live": 69,
+  "post": [
+   70
+  ],
+  "final": [
+   83
+  ]
+ },
+ "17": {
+  "pre": [
+   71
+  ],
+  "dry": 72,
+  "live": 73,
+  "post": [
+   74
+  ],
+  "parent_note": "side effect: parent composite add50001-3a03-43d0-8e7b-ebdce3d40324 (not written) review_status APPROVED -> PENDING_REVIEW, updated_at/semantic_id regenerated (read-back POST get_creatives_by_ids req 5d52ef1a-45a4-45e9-b405-6c7a19b3e44f); its composite_properties.creative_ids and all other fields unchanged",
+  "final": [
+   84
+  ]
+ },
+ "18": {
+  "pre": [
+   75
+  ],
+  "dry": 76,
+  "live": 77,
+  "post": [
+   78
+  ],
+  "parent_note": "side effect: parent composite 2ca30262-2673-4f79-a6c4-72b9cd7182f0 (not written) review_status APPROVED -> PENDING_REVIEW, updated_at/semantic_id regenerated (read-back POST get_creatives_by_ids req bb5c0de4-b53f-453a-b2d3-76740bda3131); its composite_properties.creative_ids and all other fields unchanged",
+  "final": [
+   84
+  ]
+ },
+ "19": {
+  "pre": [
+   79
+  ],
+  "dry": 80,
+  "live": 81,
+  "post": [
+   82
+  ],
+  "parent_note": "side effect: parent composite 5615f7e1-c7cc-454f-8faa-5116e1260d46 (not written) review_status APPROVED -> PENDING_REVIEW, updated_at/semantic_id regenerated (read-back POST get_creatives_by_ids req 8e1fbf85-d891-455e-8c3e-1a6d3e50c94d); its composite_properties.creative_ids and all other fields unchanged",
+  "final": [
+   84
+  ]
+ }
+}

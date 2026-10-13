@@ -46,6 +46,14 @@ def lane_status(k):
     if re.search(r'^AUTH:|sign in again', se):
         return PENDING, ('not written: Whathead asked to sign in again (batch ' + b_ + '). ' + se)[:400]
     return None
+DAY_OF = lambda f: '11-Oct' if re.search(r'(^|/)apply2?/', f) else '13-Oct' if re.search(r'(^|/)apply8/', f) else '12-Oct'
+A8 = set()   # slots of the 13-Oct run (apply8 = approved writes the 12-Oct run never reached)
+for f_ in glob.glob(f'{W}/apply8/in_*.json'):
+    if 'apply8' not in APPLY_LIST: break
+    for u_ in json.load(open(f_)):
+        for ch_ in u_['changes']:
+            for a_ in u_['ad_ids']: A8.add((u_['platform'], str(a_), ch_['slot']))
+UNREC8 = 'written on 13-Oct by the run of the approved writes not reached on 12-Oct; the agent returned no verified result for it - confirmed by the final re-read'
 UNREC = 'written on 12-Oct by the final run; its result line could not be recorded (the session safety check denied the local logging step) - confirmed by the final re-read'
 PENDING = os.environ.get('PENDING_LABEL') or 'Being applied now'   # e.g. 'Paused - not yet written'
 G = glob.glob(f'{W}/in/e2e*.xlsx')[0]
@@ -74,15 +82,15 @@ REFUSED = {}   # slots a platform refuses through its API (never retried): REFUS
 for rf_ in (os.environ.get('REFUSED_FILE') or 'work/excl_platform_refused_v2.json').split(','):
     if os.path.exists(f'{W}/{rf_}'):
         for e in json.load(open(f'{W}/{rf_}')): REFUSED[(e['platform'], str(e['ad_id']), e['slot'])] = e.get('why') or ''
-REFUSE_RX = re.compile(r'Spark Pull|editable only in Ads Manager|archived|POLICY_FINDING|PROHIBITED|disapproved|requires? an Instagram|Instagram account|https?://t\.co/|t\.co link|Page/profile permission|Page permission|required_permission', re.I)
+REFUSE_RX = re.compile(r'Spark Pull|editable only in Ads Manager|archived|POLICY_FINDING|PROHIBITED|disapproved|requires? an Instagram|Instagram account|https?://t\.co/|t\.co link|Page/profile permission|Page permission|required_permission|interactive components|interactive_components_spec|2446581|Media Not Wide Enough|2875006', re.I)
 RUN_LABEL = lambda f: {'apply': '11-Oct', 'apply2': '11-Oct', 'apply3': '11-Oct', 'apply4': '12-Oct', 'apply5': '12-Oct (before the pause)',
-                       'apply6': '12-Oct (final run)', 'apply7': '12-Oct (final run, resumed 22:00 UTC)'}.get(f.split('/')[0], '12-Oct (final run)')
+                       'apply6': '12-Oct (final run)', 'apply7': '12-Oct (final run, resumed 22:00 UTC)', 'apply8': '13-Oct (approved writes not reached on 12-Oct)'}.get(f.split('/')[0], '12-Oct (final run)')
 NONAME = lambda p: '(Google ads have no name)' if p == 'google' else '(no ad name)'
 
 # ---------- every write ----------
 runs = collections.defaultdict(list)
 for f in sorted(glob.glob(f'{W}/apply*/out_*.jsonl')):
-    day = '11-Oct' if re.search(r'/apply2?/', f) else '12-Oct'
+    day = DAY_OF(f)
     for line in open(f):
         if not line.strip(): continue
         try: a = json.loads(line)
@@ -114,6 +122,11 @@ def status_of(s, t, live):
     if live.get('found') is False: return 'Gone', live.get('note') or 'ad / slot no longer exists', ''
     url = live.get('url')
     if tgt and same(url, tgt):
+        if FINAL and k in A8:
+            l8 = [a for a in rs if a['_day'] == '13-Oct']
+            if any(a['result'] == 'Fixed' for a in l8): return 'Fixed 13-Oct', next(a.get('detail') or '' for a in l8 if a['result'] == 'Fixed')[:300], '13-Oct'
+            if l8 and l8[-1]['result'] == 'AlreadyFixed': return 'Correct', 'already correct when re-read on 13-Oct before the write (no write needed)', ''
+            return 'Fixed 13-Oct', (UNREC8 + ('. Agent result: ' + (l8[-1].get('detail') or '') if l8 else ''))[:400], '13-Oct'
         if (s['platform'], str(s.get('ad_id'))) in MAIN_SESSION: return 'Fixed 12-Oct', 'written from the main session (agent stopped by the safety check)', '12-Oct'
         if any(a['result'] in ('Fixed',) for a in last12): return 'Fixed 12-Oct', next(a.get('detail') for a in last12 if a['result'] == 'Fixed')[:300], '12-Oct'
         if FINAL and any(a['result'] == 'AlreadyFixed' and in_apply(a['_file']) for a in rs):
@@ -185,6 +198,8 @@ for s in S:
         seen.add(a)
     live = LIVE.get('|'.join(k))
     st, why, day = status_of(s, t, live)
+    if FINAL and st == BL and s['platform'] == 'meta' and re.search(r'wadi', str(s.get('campaign_name') or ''), re.I):   # Wadi Safar Page: Meta refused every Wadi Safar ad it was asked to write
+        why = ('Wadi Safar Meta ad: Meta also needs Page / Instagram access before it accepts this edit (it refused the Wadi Safar ads it was asked to write, missing Page permission). ' + (why or ''))[:400]
     url_now = (live or {}).get('url')
     vnow = 'GONE' if st == 'Gone' else ('CORRECT' if t and t.get('target') and same(url_now, t['target']) else 'WRONG')
     if st == 'Not re-read': vnow = 'NOT RE-READ'
@@ -246,7 +261,7 @@ f1, l1 = table(ws, H, rows, 'EveryURL', [9, 22, 40, 38, 44, 22, 8, 16, 8, 26, 70
                wrap_cols=(3, 4, 5, 11, 13, 14, 16, 17, 20))
 for col in ('Verdict before', 'Verdict now', 'Ad verdict before', 'Ad verdict now'):
     colour(ws, C[col], f1 + 1, l1, (('WRONG', RED), ('CORRECT', GREEN)))
-colour(ws, C['Status'], f1 + 1, l1, (('Fixed 12-Oct', GREEN), ('Fixed 11-Oct', GREEN), ('Correct', GREEN), ('Manual - you', AMBER),
+colour(ws, C['Status'], f1 + 1, l1, (('Fixed 12-Oct', GREEN), ('Fixed 13-Oct', GREEN), ('Fixed 11-Oct', GREEN), ('Correct', GREEN), ('Manual - you', AMBER),
                                       ('Not applied - needs your OK', BLUE), (PENDING, BLUE), ('Failed', RED), ('Skipped', AMBER), ('Changed by someone else', AMBER),
                                       (RF, AMBER), (BL, BLUE), (HELD, BLUE)))
 EU = "'Every URL'"
@@ -256,7 +271,7 @@ rng = lambda h: f"{EU}!${C[h]}${f1+1}:${C[h]}${l1}"
 wa = wb.create_sheet('Changes applied')
 ca = []
 for f in sorted(glob.glob(f'{W}/apply*/out_*.jsonl')):
-    day = '11-Oct' if re.search(r'/apply2?/', f) else '12-Oct'
+    day = DAY_OF(f)
     for line in open(f):
         if not line.strip(): continue
         try: a = json.loads(line)
@@ -279,6 +294,10 @@ for (p, aid) in sorted(MAIN_SESSION):
                'Yes' if lv and same(lv.get('url'), tg) else '', 'Yes' if lv and same(lv.get('url'), tg) else '', 'Fixed',
                '', 'written from the main session after the agent was stopped by the safety check (dry-run, MutateAds final_urls, GAQL read-back byte-equal, status ENABLED unchanged)'])
 for r in recs:
+    if (r['why'] or '').startswith(UNREC8):
+        s_ = r['s']; pl = FPLAN.get(key(s_)) or {}
+        ca.append(['13-Oct', '13-Oct (no verified result line)', s_['platform'], s_.get('account_id'), s_.get('ad_name') or NONAME(s_['platform']), str(s_.get('ad_id')),
+                   str(s_.get('ad_id')), s_.get('slot'), pl.get('url_now') or '', r['url_now'], 'Yes', 'Yes', 'Fixed (confirmed by re-read)', '', r['why'][:400]])
     if r['why'] == UNREC:
         s_ = r['s']; pl = FPLAN.get(key(s_)) or {}
         ca.append(['12-Oct', '12-Oct (final run; no result line)', s_['platform'], s_.get('account_id'), s_.get('ad_name') or NONAME(s_['platform']), str(s_.get('ad_id')),
@@ -299,6 +318,7 @@ if FINAL:
     def next_step(st, p, why):
         w = why or ''
         if st == HELD: return 'Your decision: write it through the API anyway (TikTok then re-publishes the post and the ad loses the original post\'s likes and comments), or change the URL in TikTok Ads Manager and check the ad keeps its post'
+        if st == BL and w.startswith('Wadi Safar Meta ad'): return 'First grant the connected Meta user the Advertiser role on Wadi Safar Page 1245023868693595 and ad-account access to Instagram 17841441699550567 (wadisafarsa), then allow the blocked tools (see "Questions for you") and re-run - or set the correct URL in Ads Manager'
         if st == BL: return 'Approved and ready: allow the blocked Whathead write tool (see "Questions for you") and re-run, or set the correct URL by hand'
         if st == RF:
             if p == 'meta' and re.search(r'archived', w, re.I): return 'Meta does not allow edits to archived ads and they do not serve; nothing to do unless you restore or duplicate the ad - then use the correct URL'
@@ -306,6 +326,8 @@ if FINAL:
             if p == 'meta' and re.search(r'Missing Page permission|Page permission reason|required_permission|subcode 3858749', w): return 'Meta refuses: the connected Meta user has no Advertiser role on this Page (e.g. Wadi Safar Page 1245023868693595). Grant the role in Business Settings and re-run, or edit the URL in Ads Manager'
             if p == 'meta' and re.search(r'Instagram', w, re.I): return 'Instagram-only ad set with a page-only creative: Meta needs an Instagram account on the creative; edit the URL in Ads Manager'
             if p == 'meta' and re.search(r'(?<![A-Za-z0-9])t\.co(?![A-Za-z0-9])', w): return 'The ad links to a t.co short link (Meta would show "t.co" as the headline): replace it with the correct URL in Ads Manager'
+            if p == 'meta' and re.search(r'interactive components|interactive_components_spec|2446581', w): return 'Meta refuses an exact copy of this carousel (its cards and its interactive components no longer match, because of the parent image): set the URL in Ads Manager, or allow a copy without the parent image (that changes the creative beyond the URL)'
+            if p == 'meta' and re.search(r'Media Not Wide Enough|2875006', w): return 'Meta refuses to attach a copy: the ad image is only 326 px wide. Upload an image at least 500 px wide, or set the URL in Ads Manager'
             if p == 'tiktok' and re.search(r'Spark Pull', w, re.I): return 'Spark Pull ad with expired creator authorisation: renew the authorisation or edit the destination URL in TikTok Ads Manager'
             if p == 'google' and re.search(r'POLICY|PROHIBITED|disapproved|policy', w): return 'Google refuses edits while the ad has a policy finding: fix the ad text (or recreate the ad), then set the correct final URL'
             return 'The platform refused the API edit: set the correct URL in the platform UI'
@@ -436,9 +458,12 @@ if FINAL:   # results of the final run (last result line per change, as check_ap
                 except Exception: continue
                 last[(a.get('platform'), str(a.get('unit')), a.get('slot'))] = a
     fr = collections.Counter()
+    U8K = {key(r['s']) for r in recs if (r['why'] or '').startswith(UNREC8)}
     for a in last.values():
         d = a.get('detail') or ''; r_ = a['result']
         if r_ in ('Fixed', 'AlreadyFixed'): fr[r_] += 1
+        elif any((a.get('platform'), str(x), a.get('slot')) in U8K for x in a.get('ad_ids') or []): fr['written_unverified'] += 1
+        elif re.search(r'existing (Facebook )?Page post|stored on the post itself', d): fr['manual'] += 1
         elif r_ == 'NotAttempted' and re.search(r'Spark Push', d): fr['held'] += 1
         elif re.search(r'safety check', d, re.I): fr['blocked'] += 1
         elif REFUSE_RX.search(d): fr['refused'] += 1
@@ -446,9 +471,11 @@ if FINAL:   # results of the final run (last result line per change, as check_ap
         else: fr[r_] += 1
     no_line = max(0, n_ch - len(last))
     unrec = sum(1 for r in recs if r['why'] == UNREC)
-    txt = (f'Final run on 12-Oct, after you approved every remaining write ({n_ch} changes): {fr["Fixed"]} written and read back byte for byte, '
+    txt = (f'Final run on 12-Oct' + (' (and on 13-Oct for the approved writes it had not reached)' if A8 else '') + f', after you approved every remaining write ({n_ch} changes): {fr["Fixed"]} written and read back byte for byte, '
            f'{fr["AlreadyFixed"]} already correct when re-read (no write needed), {fr["held"]} TikTok Spark Push changes held for your decision, '
            f'{fr["refused"]} refused by the platform, {fr["blocked"]} blocked by this session\'s safety check, {fr["Failed"]} failed, '
+           + (f'{fr["manual"]} left to you (the link lives on an existing Page post), ' if fr['manual'] else '')
+           + (f'{fr["written_unverified"]} written on 13-Oct whose verification step the safety check denied (the final re-read confirms them), ' if fr['written_unverified'] else '') +
            f'{fr["Skipped"]} skipped because the live URL had changed since the plan, {fr["NotAttempted"] + fr["signin"]} not attempted (TikTok API outage, sign-in prompt or a stopped batch), '
            f'{no_line} with no result line because their batch stopped first. A further {unrec} URL slots were written and verified by agents that could not log them '
            f'(the safety check denied the logging step); the final re-read confirms them. The status of every URL comes from the final re-read; everything still not right is in "Still needs you".')
@@ -550,7 +577,7 @@ if FINAL:
     row += 2
     sm.cell(row, 1, 'Where every URL stands now (number of URL slots; sitelinks: number of assets)').font = H2; row += 1
     OTHER = ['Failed', 'Skipped', 'Changed by someone else', PENDING, 'Not applied - needs your OK']
-    cols = [('Fixed 12-Oct', ['Fixed 12-Oct']), ('Fixed 11-Oct', ['Fixed 11-Oct']), ('Already correct', ['Correct']), ('Manual - you', ['Manual - you']),
+    cols = [('Fixed 12-Oct', ['Fixed 12-Oct'])] + ([('Fixed 13-Oct', ['Fixed 13-Oct'])] if A8 else []) + [('Fixed 11-Oct', ['Fixed 11-Oct']), ('Already correct', ['Correct']), ('Manual - you', ['Manual - you']),
             (RF, [RF]), (BL, [BL]), (HELD, [HELD]), ('Failed / skipped / other not fixed', OTHER), ('Gone / not re-read', ['Gone', 'Not re-read'])]
     hdr_row(row, ['Platform'] + [c_[0] for c_ in cols] + ['Total']); row += 1
     for p in plats + ['ALL', 'google sitelinks']:
@@ -567,8 +594,8 @@ if FINAL:
     notes = [
         'A URL is right only when the live URL equals the URL the final rules give (parameter order ignored). Before (11-Oct) every URL was wrong.',
         '"Wrong now" includes every URL listed in "Still needs you": manual, refused by the platform, blocked by the safety check, and anything else not fixed.',
-        '"Refused by the platform": the platform API will not take this edit (archived Meta ads, TikTok Spark Pull ads with expired authorisation, Google ads with policy findings, Meta page-only creatives in Instagram-only ad sets, the t.co link). These are never retried.',
-        '"Blocked by safety check": you approved it and the URL is ready, but this session\'s safety check stopped the live write.',
+        '"Refused by the platform": the platform API will not take this edit (Meta: archived ads, Wadi Safar Page / Instagram permission, page-only creatives in Instagram-only ad sets, the t.co link, 2 Bab Samhan carousels whose exact copy Meta rejects, 1 image too narrow; TikTok Spark Pull ads with expired authorisation; Google ads with policy findings). These are never retried.',
+        '"Blocked by safety check": you approved it and the URL is ready, but this session\'s safety check stopped the live write (the Wadi Safar Meta ads among them also need Page / Instagram access first).',
         '"Held - your decision": TikTok Spark Push ads. An API URL edit makes TikTok re-publish the post 30-60 minutes later and detach the ad from its original post, so they were not written. See "TikTok posts re-published" for the ads already affected by the earlier runs.',
         '"Manual - you": shared creatives / cards / sitelinks that would need two different URLs, links inside tweet text, and sitelinks with no single correct URL.',
         'Every write was re-read before and after; "Changes applied" has the before / after read-back of each one (column Run shows which run).',

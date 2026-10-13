@@ -1,0 +1,1237 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "meta_ad_account_id_adcreatives_get_2",
+    "method": "GET",
+    "host": "graph.facebook.com",
+    "path": "/v25.0/act_1198625455580757/adcreatives",
+    "dryRun": false,
+    "data": {
+      "data": [
+        {
+          "id": "39010539465228027",
+          "name": "عزّنا بطبعنا 2026-09-21-12768613160595234a15912e18e1b357",
+          "account_id": "1198625455580757",
+          "actor_id": "102966688906483",
+          "status": "ACTIVE",
+          "object_type": "SHARE",
+          "object_story_spec": {
+            "page_id": "102966688906483",
+            "instagram_user_id": "17841449897651638",
+            "link_data": {
+              "link": "https://www.diriyah.sa/ar?utm_source=instagram&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_sep26&utm_term=12ad6e5e_visit-diriyah_ar&utm_content=0df8a722_sc-snd-kv1_display_ar",
+              "message": "عزّنا بأهلنا.. بشجاعتهم، وكرمهم، وهمّتهم، وأصالتهم. في يومنا الوطني، نحتفي بأهل الوطن اللي بعزمهم يكتبون قصة وطن.",
+              "name": "عزّنا بطبعنا",
+              "description": "احتفلوا معنا باليوم الوطني",
+              "image_hash": "72a9546b01a9963747a0bf4092a7d3e8",
+              "call_to_action": {
+                "type": "LEARN_MORE",
+                "value": {
+                  "link": "https://www.diriyah.sa/ar?utm_source=instagram&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_sep26&utm_term=12ad6e5e_visit-diriyah_ar&utm_content=0df8a722_sc-snd-kv1_display_ar"
+                }
+              },
+              "use_flexible_image_aspect_ratio": true
+            }
+          },
+          "degrees_of_freedom_spec": {
+            "creative_features_spec": {
+              "adapt_to_placement": {
+                "enroll_status": "OPT_OUT"
+              },
+              "add_text_overlay": {
+                "enroll_status": "OPT_OUT"
+              },
+              "ads_with_benefits": {
+                "enroll_status": "OPT_OUT"
+              },
+              "advantage_plus_creative": {
+                "enroll_status": "OPT_OUT"
+              },
+              "app_highlights": {
+                "enroll_status": "OPT_OUT"
+              },
+              "audio": {
+                "enroll_status": "OPT_OUT"
+              },
+              "biz_ai": {
+                "enroll_status": "OPT_OUT"
+              },
+              "carousel_to_video": {
+                "enroll_status": "OPT_OUT"
+              },
+              "catalog_feed_tag": {
+                "enroll_status": "OPT_OUT"
+              },
+              "creative_stickers": {
+                "enroll_status": "OPT_OUT"
+              },
+              "cv_transformation": {
+                "enroll_status": "OPT_OUT"
+              },
+              "description_automation": {
+                "enroll_status": "OPT_OUT"
+              },
+              "dha_optimization": {
+                "enroll_status": "OPT_OUT"
+              },
+              "dynamic_partner_content": {
+                "enroll_status": "OPT_OUT"
+              },
+              "enable_ncs_testimonials": {
+                "enroll_status": "OPT_OUT"
+              },
+              "enhance_cta": {
+                "enroll_status": "OPT_OUT"
+              },
+              "feed_caption_optimization": {
+                "enroll_status": "OPT_OUT"
+              },
+              "generate_cta": {
+                "enroll_status": "OPT_OUT"
+              },
+              "hide_price": {
+                "enroll_status": "OPT_OUT"
+              },
+              "ig_video_native_subtitle": {
+                "enroll_status": "OPT_OUT"
+              },
+              "image_animation": {
+                "enroll_status": "OPT_OUT"
+              },
+              "image_auto_crop": {
+                "enroll_status": "OPT_OUT"
+              },
+              "image_background_gen": {
+                "enroll_status": "OPT_OUT"
+              },
+              "image_brightness_and_contrast": {
+                "enroll_status": "OPT_OUT"
+              },
+              "image_enhancement": {
+                "enroll_status": "OPT_OUT"
+              },
+              "image_templates": {
+                "enroll_status": "OPT_OUT"
+              },
+              "image_text_translation": {
+                "enroll_status": "OPT_OUT"
+              },
+              "image_touchups": {
+                "enroll_status": "OPT_OUT"
+              },
+              "image_uncrop": {
+                "enroll_status": "OPT_OUT"
+              },
+              "inline_comment": {
+                "enroll_status": "OPT_OUT"
+              },
+              "local_store_extension": {
+                "enroll_status": "OPT_OUT"
+              },
+              "media_liquidity_animated_image": {
+                "enroll_status": "OPT_OUT"
+              },
+              "media_order": {
+                "enroll_status": "OPT_OUT"
+              },
+              "media_type_automation": {
+                "enroll_status": "OPT_OUT"
+              },
+              "multi_photo_to_video": {
+                "enroll_status": "OPT_OUT"
+              },
+              "pac_relaxation": {
+                "enroll_status": "OPT_OUT"
+              },
+              "product_browsing": {
+                "enroll_status": "OPT_OUT"
+              },
+              "product_metadata_automation": {
+                "enroll_status": "OPT_OUT"
+              },
+              "profile_card": {
+                "enroll_status": "OPT_OUT"
+              },
+              "replace_media_text": {
+                "enroll_status": "OPT_OUT"
+              },
+              "reveal_details_over_time": {
+                "enroll_status": "OPT_OUT"
+              },
+              "show_destination_blurbs": {
+                "enroll_status": "OPT_OUT"
+              },
+              "show_summary": {
+                "enroll_status": "OPT_OUT"
+              },
+              "site_extensions": {
+                "enroll_status": "OPT_OUT"
+              },
+              "standard_enhancements_catalog": {
+                "enroll_status": "OPT_OUT"
+              },
+              "text_optimizations": {
+                "enroll_status": "OPT_OUT"
+              },
+              "text_translation": {
+                "enroll_status": "OPT_OUT"
+              },
+              "translate_voiceover": {
+                "enroll_status": "OPT_OUT"
+              },
+              "video_auto_crop": {
+                "enroll_status": "OPT_OUT"
+              },
+              "video_filtering": {
+                "enroll_status": "OPT_OUT"
+              },
+              "__mcp_truncated_keys": 6
+            }
+          },
+          "creative_sourcing_spec": {
+            "destination_screenshot_spec": {
+              "enroll_status": "OPT_OUT"
+            }
+          },
+          "threads_user_id": "17841415776034388",
+          "authorization_category": "NONE",
+          "call_to_action": {
+            "type": "LEARN_MORE",
+            "value": {
+              "link": "https://www.diriyah.sa/ar?utm_source=instagram&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_sep26&utm_term=12ad6e5e_visit-diriyah_ar&utm_content=0df8a722_sc-snd-kv1_display_ar"
+            }
+          },
+          "call_to_action_type": "LEARN_MORE",
+          "instagram_user_id": "17841449897651638",
+          "use_page_actor_override": false,
+          "image_hash": "72a9546b01a9963747a0bf4092a7d3e8",
+          "body": "عزّنا بأهلنا.. بشجاعتهم، وكرمهم، وهمّتهم، وأصالتهم. في يومنا الوطني، نحتفي بأهل الوطن اللي بعزمهم يكتبون قصة وطن.",
+          "title": "عزّنا بطبعنا",
+          "effective_object_story_id": "102966688906483_1138931158647113",
+          "effective_instagram_media_id": "18107902226617461"
+        },
+        {
+          "id": "37416267271349871",
+          "name": "اسكن في الدرعية والعب في القدية 2026-07-29-aa09a460cb3c7c6216728a614bbb6c7d",
+          "account_id": "1198625455580757",
+          "actor_id": "102966688906483",
+          "status": "ACTIVE",
+          "object_type": "SHARE",
+          "object_story_spec": {
+            "page_id": "102966688906483",
+            "instagram_user_id": "17841449897651638",
+            "link_data": {
+              "link": "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=instagram&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan2_tactical_visitor-diriyahJune2026_reach-awareness_instagram_en&utm_term=adset-id-ee00c8_test_adset_name_ar_all_mf_prospecting&utm_content=KV3",
+              "message": "استمتع بإقامة في فندق باب سمحان تشمل تذكرتين إلى Six Flags أو أكواربيا، وفطور لشخصين، بالإضافة إلى خصومات على المطاعم والسبا",
+              "name": "اسكن في الدرعية والعب في القدية",
+              "image_hash": "c8a95e7ad6af588fe98b33ec96b85627",
+              "call_to_action": {
+                "type": "BOOK_TRAVEL",
+                "value": {
+                  "link": "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=instagram&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan2_tactical_visitor-diriyahJune2026_reach-awareness_instagram_en&utm_term=adset-id-ee00c8_test_adset_name_ar_all_mf_prospecting&utm_content=KV3"
+                }
+              },
+              "use_flexible_image_aspect_ratio": true
+            }
+          },
+          "degrees_of_freedom_spec": {
+            "creative_features_spec": {
+              "advantage_plus_creative": {
+                "enroll_status": "OPT_OUT"
+              },
+              "cv_transformation": {
+                "enroll_status": "OPT_OUT"
+              },
+              "enhance_cta": {
+                "enroll_status": "OPT_OUT"
+              },
+              "image_animation": {
+                "enroll_status": "OPT_OUT"
+              },
+              "image_brightness_and_contrast": {
+                "enroll_status": "OPT_OUT"
+              },
+              "image_templates": {
+                "enroll_status": "OPT_OUT"
+              },
+              "image_touchups": {
+                "enroll_status": "OPT_OUT"
+              },
+              "inline_comment": {
+                "enroll_status": "OPT_IN"
+              },
+              "pac_relaxation": {
+                "enroll_status": "OPT_OUT"
+              },
+              "product_browsing": {
+                "enroll_status": "OPT_OUT"
+              },
+              "reveal_details_over_time": {
+                "enroll_status": "OPT_OUT"
+              },
+              "show_destination_blurbs": {
+                "enroll_status": "OPT_OUT"
+              },
+              "site_extensions": {
+                "enroll_status": "OPT_OUT"
+              },
+              "standard_enhancements": {
+                "enroll_status": "OPT_OUT"
+              },
+              "text_optimizations": {
+                "enroll_status": "OPT_OUT"
+              }
+            }
+          },
+          "creative_sourcing_spec": {
+            "site_links_spec": [
+              {
+                "site_link_title": "Book Your Summer Trip",
+                "site_link_url": "https://marriott.com/default.mi",
+                "site_link_image_hash": "6927b488f9f304ac002d000e081232e3",
+                "site_link_image_url": "https://www.facebook.com/ads/image/?d=AQK8aFYwtWiGQ2K6OsHD_3szYuqtknharSz-YOuyVdcCO1YcLHeYtnoAXBRALqoLelV6qCNSnZDNqSrlOaQSlqoCc-PiNJFLLeAfUnaVFUHkbQupK6bXkhy11dMc68GgMYZ0kS0KuFiDqjgmsrDnbWIo"
+              },
+              {
+                "site_link_title": "Sheraton Jumeirah Beach Resort | Elevated Modern Hotel",
+                "site_link_url": "https://marriott.com/reservation/rateListMenu.mi",
+                "site_link_image_hash": "df15047b2d5a18d8cb7e2b358b571362",
+                "site_link_image_url": "https://www.facebook.com/ads/image/?d=AQKMMGXdMlzIlVZzgVPZ85vsUMgUm_Jq36_XP4E8Y2G3qMKhNlywwSzdF74YR5yPsEXGj79z-IbbDFOqCm14eAqyMPIj6rZfCf65OFPJ7KEND6KyYXMZOvmGSiGYfIb1OlgUAKaQzxkHrv-rONpdPVLv"
+              },
+              {
+                "site_link_title": "Westin Heavenly Bed",
+                "site_link_url": "https://shop.marriott.com/shop/mattresses",
+                "site_link_image_hash": "90d6780bc1259542766700d2590cea39",
+                "site_link_image_url": "https://www.facebook.com/ads/image/?d=AQIV9W0T6QFjmmiLM1l8cBiF6Eo8xJU_EBzpCFiaFt1ImQHnLOiuXOJP9rfYPRGqwdc9i2cb9WXH_jSvmuRWfzAs_2nkQPkKITdCIVLkLfKnNAWVndBUHOCuwj2RShZIVIS9DbPqHZncmDx2vMkE7DOE"
+              },
+              {
+                "site_link_title": "Soaps & Lotions",
+                "site_link_url": "https://shop.marriott.com/shop/bath/soaps-and-lotions",
+                "site_link_image_hash": "ec919ac106ffdcd08ea65bcaf5f19438",
+                "site_link_image_url": "https://www.facebook.com/ads/image/?d=AQL3P_k3JYDZ7fLCpcfoLDVvxBgWVzgadmtWc0q97pR5qukn7Q4Af0GpByOnhb-FwGqAU8Enaf_OSbE8jx_242LySCHNyJ6DCRInZJf1TjgBnwsSKiA3WKJmUIRu0RjV2amvwA51SUtiNCohVAHuiZCT"
+              },
+              {
+                "site_link_title": "Bedding",
+                "site_link_url": "https://shop.marriott.com/shop/bedding/",
+                "site_link_image_hash": "11972f7c40e6b135e6fc72397b34cf6b",
+                "site_link_image_url": "https://www.facebook.com/ads/image/?d=AQK9Dks8rcf6E3iVKoDQZTV98hirYXCDVT80RCmxMpzh8BPNs3gTiCr0P5uzFxUzEbAqZ5zPXlf8GYTJxGhAed_vA0OSDvvWFQIhub1hUR_EETyEHZ2TUSbYmxihUVydKbN1auazlKq8ECQvDnW0IcS_"
+              },
+              {
+                "site_link_title": "Towels",
+                "site_link_url": "https://shop.marriott.com/shop/bath/towels",
+                "site_link_image_hash": "582aaf16f357e5a889c988e1bb73390b",
+                "site_link_image_url": "https://www.facebook.com/ads/image/?d=AQIWlggaEUjHEja3Y1QeQQOqhJX9mRteTW0w6LpsvU9bRImN9B08suLBzvATZolsM2hT035HqfRaoFnOax1n4AFETOkMSUiFDNI23x7MCLBP_vkxq0Je4wFYmgyHmBapPmnkVGIWg3bnff2Oqb_k8S60"
+              },
+              {
+                "site_link_title": "Room & Home Diffusers",
+                "site_link_url": "https://shop.marriott.com/shop/fragrance/room-and-home-diffusers",
+                "site_link_image_hash": "4aa5e6b087110ac80a1464fb331e8e2a",
+                "site_link_image_url": "https://www.facebook.com/ads/image/?d=AQKXgBsvhzqezz1dZdCeKP_4px1q9Zg95Kfu3iS9qzDubJMkA_xMKE6E0WpUCoTs2nrJuv43Xa-6bqK81i0HLlmAAutgVUtF56FpE500M-uqSGJAsWTEw8rX0IOFRgjM8y9diXnaeYj4Mnl-xDbPn7Wi"
+              },
+              {
+                "site_link_title": "The Ritz-carlton Bed",
+                "site_link_url": "https://shop.marriott.com/brands/the-ritz-carlton/mattresses",
+                "site_link_image_hash": "521cc50ca41283145f7092b4ae176482",
+                "site_link_image_url": "https://www.facebook.com/ads/image/?d=AQJIdPAHJfLymWgl_RSM3j50td_p6fxot_SoVVTN3bvjO-ia6mLrUCCgjtk4xbf2e2BkdhjOnghq7Gug5amIgZQp75pfm5lxr2_QWIF71urQVfCTD0xbqOcqQj1tRxK3bkvj0GHwuNtUlkbX8UVTUwJu"
+              },
+              {
+                "site_link_title": "Pillows",
+                "site_link_url": "https://shop.marriott.com/brands/westin/pillows",
+                "site_link_image_hash": "a1595b7e3cf9d2772ff073c8c4f63231",
+                "site_link_image_url": "https://www.facebook.com/ads/image/?d=AQIHJpMYErwbcxXDmLiqVdzXTh6AE3Gdo59DStwjAVDU4DZ_xWbyfUUU68hb0tYlmCwapM2fCWKPA1HBfmpn2oQDrAzeBC4SfTvMdOq1ZYvtXuHYwTu6Sc1j55KhEMxUwLm_BqpEXssJxFr1RoMxPQHq"
+              },
+              {
+                "site_link_title": "Bundles",
+                "site_link_url": "https://shop.marriott.com/shop/bundles",
+                "site_link_image_hash": "86b39f0c76d75832c108badd2c7f58ad",
+                "site_link_image_url": "https://www.facebook.com/ads/image/?d=AQInpmNPHFfHQEttsCn3X3DhoItGWvTGfRKOyIrc6cToOX2CRXB-bcymaQFv39ldvn_aIxFgNd22detS3Y4i_Blh9Mn4r8MSng7sgQnssuP0IchOgHZsQlofIrEETRLt-XynhKrJ90UokwRyC7tN6O6m"
+              },
+              "[5 more items truncated]"
+            ]
+          },
+          "threads_user_id": "17841415776034388",
+          "authorization_category": "NONE",
+          "call_to_action": {
+            "type": "BOOK_TRAVEL",
+            "value": {
+              "link": "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=instagram&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan2_tactical_visitor-diriyahJune2026_reach-awareness_instagram_en&utm_term=adset-id-ee00c8_test_adset_name_ar_all_mf_prospecting&utm_content=KV3"
+            }
+          },
+          "call_to_action_type": "BOOK_TRAVEL",
+          "instagram_user_id": "17841449897651638",
+          "use_page_actor_override": false,
+          "image_hash": "c8a95e7ad6af588fe98b33ec96b85627",
+          "body": "استمتع بإقامة في فندق باب سمحان تشمل تذكرتين إلى Six Flags أو أكواربيا، وفطور لشخصين، بالإضافة إلى خصومات على المطاعم والسبا",
+          "title": "اسكن في الدرعية والعب في القدية",
+          "effective_object_story_id": "102966688906483_1092873273252902",
+          "effective_instagram_media_id": "18105093667876811"
+        },
+        {
+          "id": "37123101317337878",
+          "name": "اسكن في الدرعية والعب في القدية 2026-07-22-bb5eeef6f53ba42560ab183690af68a2",
+          "account_id": "1198625455580757",
+          "actor_id": "102966688906483",
+          "status": "ACTIVE",
+          "object_type": "VIDEO",
+          "object_story_spec": {
+            "page_id": "102966688906483",
+            "instagram_user_id": "17841449897651638",
+            "video_data": {
+              "video_id": "1565364098562495",
+              "title": "اسكن في الدرعية والعب في القدية",
+              "message": "استمتع بإقامة في فندق باب سمحان تشمل تذكرتين إلى Six Flags أو أكواربيا، وفطور لشخصين، بالإضافة إلى خصومات على المطاعم والسبا",
+              "call_to_action": {
+                "type": "BOOK_TRAVEL",
+                "value": {
+                  "link": "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=instagram&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan2_tactical_visitor-diriyahJune2026_reach-awareness_instagram_en&utm_term=adset-id-ee00c8_test_adset_name_ar_all_mf_prospecting&utm_content=KV1"
+                }
+              },
+              "image_url": "https://www.facebook.com/ads/image/?d=AQLGXgSAxFsgjJaHJvIYObDeHKOvAe3SWojyNrOazoqcPf-aCUUKK_pptCcPxSyqb2kUfLxnJ3uzKQrZRMT8tm7jD9Xq10h8hM1STAdGp2gUOAQ05ab1i-F7FC5YKzmiwWxc_QJzMkfG6VvN2GZRQYHj",
+              "image_hash": "8e1e5bf9a851b16a22ec1e9d78dded63"
+            }
+          },
+          "contextual_multi_ads": {
+            "enroll_status": "OPT_OUT"
+          },
+          "creative_sourcing_spec": {
+            "destination_screenshot_spec": {
+              "enroll_status": "OPT_OUT"
+            }
+          },
+          "threads_user_id": "17841415776034388",
+          "authorization_category": "NONE",
+          "call_to_action": {
+            "type": "BOOK_TRAVEL",
+            "value": {
+              "link": "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=instagram&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan2_tactical_visitor-diriyahJune2026_reach-awareness_instagram_en&utm_term=adset-id-ee00c8_test_adset_name_ar_all_mf_prospecting&utm_content=KV1"
+            }
+          },
+          "call_to_action_type": "BOOK_TRAVEL",
+          "instagram_user_id": "17841449897651638",
+          "use_page_actor_override": false,
+          "video_id": "1531627014537555",
+          "body": "استمتع بإقامة في فندق باب سمحان تشمل تذكرتين إلى Six Flags أو أكواربيا، وفطور لشخصين، بالإضافة إلى خصومات على المطاعم والسبا",
+          "title": "اسكن في الدرعية والعب في القدية",
+          "effective_object_story_id": "102966688906483_1087859860420910",
+          "effective_instagram_media_id": "18109754926799734"
+        },
+        {
+          "id": "36246341801680515",
+          "name": "Eid Celebration in Diriyah 2026-06-12-c7c85e21e7288041374529e374aba111",
+          "account_id": "1198625455580757",
+          "actor_id": "102966688906483",
+          "status": "ACTIVE",
+          "object_type": "SHARE",
+          "object_story_spec": {
+            "page_id": "102966688906483",
+            "instagram_user_id": "17841449897651638",
+            "link_data": {
+              "link": "https://www.diriyah.sa/en?utm_source=instagram&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_instagram_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-987e7a_test_ad_name_display",
+              "image_hash": "537f6d3cfc26b25c9c84d781227780fd",
+              "call_to_action": {
+                "type": "LEARN_MORE",
+                "value": {
+                  "link": "https://www.diriyah.sa/en?utm_source=instagram&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_instagram_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-987e7a_test_ad_name_display"
+                }
+              },
+              "use_flexible_image_aspect_ratio": true
+            }
+          },
+          "asset_feed_spec": {
+            "bodies": [
+              {
+                "text": "Who's ready for a thrilling experience?\nJoin us in Diriyah to cheer on the Green Falcons!\nFun, excitement & electrifying atmosphere guaranteed!\n\nWill you be there?"
+              },
+              {
+                "text": "Who's ready for an unforgettable experience?\nJoin us in Diriyah to cheer on the Green Falcons!\nFun atmosphere, exciting matches - you won't want to miss it! Are you in?"
+              },
+              {
+                "text": "Who's ready for a thrilling match?\nJoin us in Diriyah and cheer on the Green Falcons with thousands of fans!\nFun, excitement & electric atmosphere guaranteed! \nWill you be there?"
+              },
+              {
+                "text": "Get ready for an unforgettable experience!\nCheer on the Green Falcons with us in Diriyah\nFun atmosphere guaranteed! \nWill you be there?"
+              },
+              {
+                "text": "Who's ready to cheer on the Green Falcons?\n\nJoin us in Diriyah for an unforgettable experience!\nFun atmosphere guaranteed\nCheer with fellow fans\n\nWill you be there?"
+              },
+              {
+                "text": "Together for Saudi"
+              },
+              {
+                "text": "Come to Diriyah and cheer for the Green Falcons with us in a fun, exciting atmosphere."
+              }
+            ],
+            "descriptions": [
+              {
+                "text": ""
+              }
+            ],
+            "titles": [
+              {
+                "text": "Eid Celebration in Diriyah"
+              },
+              {
+                "text": "Cheer with the Green Falcons"
+              },
+              {
+                "text": "Join the Green Falcons' Eid Frenzy in Diriyah"
+              },
+              {
+                "text": "Join the Green Falcons' Thunderous Cheer"
+              },
+              {
+                "text": "Celebrate Eid in Diriyah"
+              }
+            ],
+            "optimization_type": "DEGREES_OF_FREEDOM"
+          },
+          "creative_sourcing_spec": {
+            "site_links_spec": [
+              {
+                "site_link_title": "Dine",
+                "site_link_url": "https://diriyah.sa/en/dine",
+                "site_link_image_hash": "a12afe2a984712fc909197cecf651825",
+                "site_link_image_url": "https://www.facebook.com/ads/image/?d=AQJ6SyC8T15Vuccd8kCjLBbGctuDzPdH2nKKPcAMgOoxIDhOGapuQMVO-LbafTMWpjwduXqxChtSgc72Ba_cQNVTMFiHHshHFyc0Wz2L1M_pNnFoU8koZmggG4SRBZDAhxXOGdwaD77eUV68k3eERkX6"
+              },
+              {
+                "site_link_title": "Things To Do",
+                "site_link_url": "https://diriyah.sa/en/things-to-do",
+                "site_link_image_hash": "b4c4f2fe27c4bef9a59c91be869c592b",
+                "site_link_image_url": "https://www.facebook.com/ads/image/?d=AQKk_xWMhftFwxpX10zpHlp3mrF1W5jA8Nq5JiqphhKxFEnAVOr0g0wuuMklP6hpHnNKM5p8UjL9W_puWH6OxY5TlhQY_gmI-4gkKUPjhgS3TwUOME5rxYK3jfFWbDx6EmE4vgx22bhd7Ld7jrFUBvBF"
+              },
+              {
+                "site_link_title": "About",
+                "site_link_url": "https://diriyah.sa/en/about",
+                "site_link_image_hash": "35b9e94380f895a3608cc3facd10c2c8",
+                "site_link_image_url": "https://www.facebook.com/ads/image/?d=AQKk-g6Fb2l3BZhZiX5K48IQWDXHGR8K5RlDs60uYSoVXxzgPwol_ofnVFTozla4hV5JYFgB7Tobo3SjTawpWrGKGmSFnq4PuVwzi6br1Di62DfuxbJ4jFLrhQNhVwLTQQoJh5MmUh8gI_R3tAJUhs5V"
+              },
+              {
+                "site_link_title": "News",
+                "site_link_url": "https://diriyah.sa/en/news",
+                "site_link_image_hash": "c84559292e19c5b3f7e7ea9f60390ae4",
+                "site_link_image_url": "https://www.facebook.com/ads/image/?d=AQJR3vzjc9gmLsiQFIsuZBizPcY-AGBLy5ADDf8Ofrq51-jlwXfqYDgaAy9hSW2xdeiov8b4Xe9sA91wmpD87MztXTvIJ03zUM0F5qc_WYfuOi7WJzCQBrA12hZIAXZvuRp8a2c9T9PIcyFo7wqsopQa"
+              },
+              {
+                "site_link_title": "Angelina",
+                "site_link_url": "https://diriyah.sa/en/dine/angelina",
+                "site_link_image_hash": "71e73733992fb9e2a64c1c6a10771faf",
+                "site_link_image_url": "https://www.facebook.com/ads/image/?d=AQLNgVhrKq93aqwrFxuBDcONec9tsifoYHeuFfcvGRfbvdMBi9MNk3wWnUL1wSrSPDaAq55gmIDsvCsgHGYKPXVM0ZpPS8gQIQP5IsZcHwa_270wQzlHOcsPHbaBHbUIZ3khUw7FzNbhuRLWzOPXtlFo"
+              },
+              {
+                "site_link_title": "Joe & The Juice",
+                "site_link_url": "https://diriyah.sa/en/dine/joeandthejuice",
+                "site_link_image_hash": "e9fda6d44788a0a4c0c92371bcf678cf",
+                "site_link_image_url": "https://www.facebook.com/ads/image/?d=AQKlrkNsNH1aa_1lHUIHQF0QYJrUNIcW_U6Uy--TzYudusWTWdT1kJD7poAzniKS5pxQ-7rcEkziNPCmDMt7DeiHSppBtK-Ll4_A7YazhnaLJcOYuM-xArLwxkxAlvIhF9LArh4HSX-eDvEVRTip3Yuz"
+              },
+              {
+                "site_link_title": "Diriyah Tourism",
+                "site_link_url": "https://diriyah.sa",
+                "site_link_image_hash": "211aa1e75d9698703ac7f98fddb5ccb6",
+                "site_link_image_url": "https://www.facebook.com/ads/image/?d=AQJL2t61MxEZ1u7poYVMYLJFBRJdvvpRP0uttgExNamGluM1Z8VAoeIZOvTLVCHRldYVCHcfgDBzY1H6s7lSLoNu_4EczAoPCX2n06LphSV3pHiiysid-B_2GoLBPhw8f6WIS30DxaghFzr4tCAF8MVN"
+              },
+              {
+                "site_link_title": "عرض المزيد",
+                "site_link_url": "https://diriyah.sa",
+                "site_link_image_hash": "371020513121d6f575ab628d17434ec9",
+                "site_link_image_url": "https://www.facebook.com/ads/image/?d=AQIzN7zr9RDO7MaYnbB24DW6iNNsOjFbqiY0_1UTJmcDvn9AnzMBgzJmALV-7e9xFWQZB9ZLQV7yHSrVUo7N6-otjAcnJ_qKTeQOgEgFGVwxERv9o6fw3vrL7fLx3jNhlTrQFtK4N_CrnRgad1E7ad2I"
+              }
+            ],
+            "destination_screenshot_spec": {
+              "enroll_status": "OPT_OUT"
+            }
+          },
+          "threads_user_id": "17841415776034388",
+          "authorization_category": "NONE",
+          "call_to_action": {
+            "type": "LEARN_MORE",
+            "value": {
+              "link": "https://www.diriyah.sa/en?utm_source=instagram&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_instagram_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-987e7a_test_ad_name_display"
+            }
+          },
+          "call_to_action_type": "LEARN_MORE",
+          "instagram_user_id": "17841449897651638",
+          "use_page_actor_override": false,
+          "image_hash": "537f6d3cfc26b25c9c84d781227780fd",
+          "body": "Who's ready for a thrilling experience?\nJoin us in Diriyah to cheer on the Green Falcons!\nFun, excitement & electrifying atmosphere guaranteed!\n\nWill you be there?",
+          "title": "Eid Celebration in Diriyah",
+          "effective_object_story_id": "102966688906483_1053736907166539",
+          "effective_instagram_media_id": "18138311821555949"
+        },
+        {
+          "id": "29327815596806303",
+          "name": "عزّنا بطبعنا 2026-09-20-bbc1c5b086f91dd9c53702de0c26e1a8",
+          "account_id": "1198625455580757",
+          "actor_id": "102966688906483",
+          "status": "ACTIVE",
+          "object_type": "SHARE",
+          "object_story_spec": {
+            "page_id": "102966688906483",
+            "instagram_user_id": "17841449897651638",
+            "link_data": {
+              "link": "https://www.diriyah.sa/ar?utm_source=instagram&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_sep26&utm_term=12ad6e5e_visit-diriyah_ar&utm_content=0df8a722_sc-snd-kv1_display_ar",
+              "message": "عزّنا بأهلنا.. بشجاعتهم، وكرمهم، وهمّتهم، وأصالتهم. في يومنا الوطني، نحتفي بأهل الوطن اللي بعزمهم يكتبون قصة وطن.",
+              "name": "عزّنا بطبعنا",
+              "description": "احتفلوا معنا باليوم الوطني",
+              "image_hash": "6ded4bdd363eef2571415d969e19e9bc",
+              "call_to_action": {
+                "type": "LEARN_MORE",
+                "value": {
+                  "link": "https://www.diriyah.sa/ar?utm_source=instagram&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_sep26&utm_term=12ad6e5e_visit-diriyah_ar&utm_content=0df8a722_sc-snd-kv1_display_ar"
+                }
+              },
+              "use_flexible_image_aspect_ratio": false
+            }
+          },
+          "degrees_of_freedom_spec": {
+            "creative_features_spec": {
+              "adapt_to_placement": {
+                "enroll_status": "OPT_OUT"
+              },
+              "add_text_overlay": {
+                "enroll_status": "OPT_OUT"
+              },
+              "ads_with_benefits": {
+                "enroll_status": "OPT_OUT"
+              },
+              "advantage_plus_creative": {
+                "enroll_status": "OPT_OUT"
+              },
+              "app_highlights": {
+                "enroll_status": "OPT_OUT"
+              },
+              "audio": {
+                "enroll_status": "OPT_OUT"
+              },
+              "biz_ai": {
+                "enroll_status": "OPT_OUT"
+              },
+              "carousel_to_video": {
+                "enroll_status": "OPT_OUT"
+              },
+              "catalog_feed_tag": {
+                "enroll_status": "OPT_OUT"
+              },
+              "creative_stickers": {
+                "enroll_status": "OPT_OUT"
+              },
+              "cv_transformation": {
+                "enroll_status": "OPT_OUT"
+              },
+              "description_automation": {
+                "enroll_status": "OPT_OUT"
+              },
+              "dha_optimization": {
+                "enroll_status": "OPT_OUT"
+              },
+              "dynamic_partner_content": {
+                "enroll_status": "OPT_OUT"
+              },
+              "enable_ncs_testimonials": {
+                "enroll_status": "OPT_OUT"
+              },
+              "enhance_cta": {
+                "enroll_status": "OPT_OUT"
+              },
+              "feed_caption_optimization": {
+                "enroll_status": "OPT_OUT"
+              },
+              "generate_cta": {
+                "enroll_status": "OPT_OUT"
+              },
+              "hide_price": {
+                "enroll_status": "OPT_OUT"
+              },
+              "ig_video_native_subtitle": {
+                "enroll_status": "OPT_OUT"
+              },
+              "image_animation": {
+                "enroll_status": "OPT_OUT"
+              },
+              "image_auto_crop": {
+                "enroll_status": "OPT_OUT"
+              },
+              "image_background_gen": {
+                "enroll_status": "OPT_OUT"
+              },
+              "image_brightness_and_contrast": {
+                "enroll_status": "OPT_OUT"
+              },
+              "image_enhancement": {
+                "enroll_status": "OPT_OUT"
+              },
+              "image_templates": {
+                "enroll_status": "OPT_OUT"
+              },
+              "image_text_translation": {
+                "enroll_status": "OPT_OUT"
+              },
+              "image_touchups": {
+                "enroll_status": "OPT_OUT"
+              },
+              "image_uncrop": {
+                "enroll_status": "OPT_OUT"
+              },
+              "inline_comment": {
+                "enroll_status": "OPT_OUT"
+              },
+              "local_store_extension": {
+                "enroll_status": "OPT_OUT"
+              },
+              "media_liquidity_animated_image": {
+                "enroll_status": "OPT_OUT"
+              },
+              "media_order": {
+                "enroll_status": "OPT_OUT"
+              },
+              "media_type_automation": {
+                "enroll_status": "OPT_OUT"
+              },
+              "multi_photo_to_video": {
+                "enroll_status": "OPT_OUT"
+              },
+              "pac_recomposition": {
+                "enroll_status": "OPT_OUT"
+              },
+              "pac_relaxation": {
+                "enroll_status": "OPT_OUT"
+              },
+              "product_browsing": {
+                "enroll_status": "OPT_OUT"
+              },
+              "product_extensions": {
+                "enroll_status": "OPT_OUT"
+              },
+              "product_metadata_automation": {
+                "enroll_status": "OPT_OUT"
+              },
+              "profile_card": {
+                "enroll_status": "OPT_OUT"
+              },
+              "replace_media_text": {
+                "enroll_status": "OPT_OUT"
+              },
+              "reveal_details_over_time": {
+                "enroll_status": "OPT_OUT"
+              },
+              "show_destination_blurbs": {
+                "enroll_status": "OPT_OUT"
+              },
+              "show_summary": {
+                "enroll_status": "OPT_OUT"
+              },
+              "site_extensions": {
+                "enroll_status": "OPT_OUT"
+              },
+              "standard_enhancements_catalog": {
+                "enroll_status": "OPT_OUT"
+              },
+              "text_optimizations": {
+                "enroll_status": "OPT_OUT"
+              },
+              "text_translation": {
+                "enroll_status": "OPT_OUT"
+              },
+              "translate_voiceover": {
+                "enroll_status": "OPT_OUT"
+              },
+              "__mcp_truncated_keys": 8
+            }
+          },
+          "creative_sourcing_spec": {
+            "destination_screenshot_spec": {
+              "enroll_status": "OPT_OUT"
+            }
+          },
+          "threads_user_id": "17841415776034388",
+          "authorization_category": "NONE",
+          "call_to_action": {
+            "type": "LEARN_MORE",
+            "value": {
+              "link": "https://www.diriyah.sa/ar?utm_source=instagram&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_sep26&utm_term=12ad6e5e_visit-diriyah_ar&utm_content=0df8a722_sc-snd-kv1_display_ar"
+            }
+          },
+          "call_to_action_type": "LEARN_MORE",
+          "instagram_user_id": "17841449897651638",
+          "use_page_actor_override": false,
+          "image_hash": "6ded4bdd363eef2571415d969e19e9bc",
+          "body": "عزّنا بأهلنا.. بشجاعتهم، وكرمهم، وهمّتهم، وأصالتهم. في يومنا الوطني، نحتفي بأهل الوطن اللي بعزمهم يكتبون قصة وطن.",
+          "title": "عزّنا بطبعنا",
+          "effective_object_story_id": "102966688906483_1138130252060537",
+          "effective_instagram_media_id": "17992918478842903"
+        },
+        {
+          "id": "28678027948451289",
+          "name": "اسكن في الدرعية والعب في القدية 2026-07-18-b0fe040f7bad10883fc341575166b867",
+          "account_id": "1198625455580757",
+          "actor_id": "102966688906483",
+          "status": "ACTIVE",
+          "object_type": "SHARE",
+          "object_story_spec": {
+            "page_id": "102966688906483",
+            "instagram_user_id": "17841449897651638",
+            "link_data": {
+              "link": "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=instagram&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan2_tactical_visitor-diriyahJune2026_reach-awareness_instagram_en&utm_term=adset-id-ee00c8_test_adset_name_ar_all_mf_prospecting&utm_content=KV",
+              "message": "استمتع بإقامة في فندق باب سمحان تشمل تذكرتين إلى Six Flags أو أكواربيا، وفطور لشخصين، بالإضافة إلى خصومات على المطاعم والسبا",
+              "name": "اسكن في الدرعية والعب في القدية",
+              "image_hash": "51387896edfc2073c993561a2cfc8b40",
+              "call_to_action": {
+                "type": "BOOK_TRAVEL",
+                "value": {
+                  "link": "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=instagram&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan2_tactical_visitor-diriyahJune2026_reach-awareness_instagram_en&utm_term=adset-id-ee00c8_test_adset_name_ar_all_mf_prospecting&utm_content=KV"
+                }
+              },
+              "use_flexible_image_aspect_ratio": true
+            }
+          },
+          "degrees_of_freedom_spec": {
+            "creative_features_spec": {
+              "advantage_plus_creative": {
+                "enroll_status": "OPT_OUT"
+              },
+              "cv_transformation": {
+                "enroll_status": "OPT_OUT"
+              },
+              "enhance_cta": {
+                "enroll_status": "OPT_OUT"
+              },
+              "image_animation": {
+                "enroll_status": "OPT_OUT"
+              },
+              "image_brightness_and_contrast": {
+                "enroll_status": "OPT_OUT"
+              },
+              "image_templates": {
+                "enroll_status": "OPT_OUT"
+              },
+              "image_touchups": {
+                "enroll_status": "OPT_OUT"
+              },
+              "inline_comment": {
+                "enroll_status": "OPT_IN"
+              },
+              "pac_relaxation": {
+                "enroll_status": "OPT_OUT"
+              },
+              "product_browsing": {
+                "enroll_status": "OPT_OUT"
+              },
+              "reveal_details_over_time": {
+                "enroll_status": "OPT_OUT"
+              },
+              "show_destination_blurbs": {
+                "enroll_status": "OPT_OUT"
+              },
+              "site_extensions": {
+                "enroll_status": "OPT_OUT"
+              },
+              "standard_enhancements": {
+                "enroll_status": "OPT_OUT"
+              },
+              "text_optimizations": {
+                "enroll_status": "OPT_OUT"
+              }
+            }
+          },
+          "creative_sourcing_spec": {
+            "site_links_spec": [
+              {
+                "site_link_title": "Book Your Summer Trip",
+                "site_link_url": "https://marriott.com/default.mi",
+                "site_link_image_hash": "6927b488f9f304ac002d000e081232e3",
+                "site_link_image_url": "https://www.facebook.com/ads/image/?d=AQLunZhp9EDhs2-2y7RC9mStleP59xU2jso7VIf6Zxfacabn2Ilw0iMiNahIiynWF65fI4OyeR4QDrEpS8R7rrb4_6SOyrF7hBOGDub6w_-Wdh4oJflZQ_6b-dUXY258bBUlbtgfP-iAc1s0fk6B0nuk"
+              },
+              {
+                "site_link_title": "Sheraton Jumeirah Beach Resort | Elevated Modern Hotel",
+                "site_link_url": "https://marriott.com/reservation/rateListMenu.mi",
+                "site_link_image_hash": "df15047b2d5a18d8cb7e2b358b571362",
+                "site_link_image_url": "https://www.facebook.com/ads/image/?d=AQKuf4ZdOJQSPaYBXrTWnZ9-9D_EwJJZzQ50RM83fKMbM4sNQu7RzhN3RB8fO0aO9njo3FCyrxKLBWXWRQNU2wxsg_A6f2mMvRpeca8lGgt9Vxl_eQA--3_d7dmsqqqZFaMo6iSTHK_Mf4iv2zMyy2dz"
+              },
+              {
+                "site_link_title": "Westin Heavenly Bed",
+                "site_link_url": "https://shop.marriott.com/shop/mattresses",
+                "site_link_image_hash": "90d6780bc1259542766700d2590cea39",
+                "site_link_image_url": "https://www.facebook.com/ads/image/?d=AQJXk7irIOcR_VoCXlYt7lj0XfMY1T1LWPyN7HLLFIsb5Q-TCxIup__E3sqZnBsEIkcx-dxMMabqYT4I1RTpLHUM8FjrB5rSGLALh0VwJ15aBkwOZ1k9UG1AeQ5rLMibvGfs8_TGzakAHr_NVJIYPPpZ"
+              },
+              {
+                "site_link_title": "Soaps & Lotions",
+                "site_link_url": "https://shop.marriott.com/shop/bath/soaps-and-lotions",
+                "site_link_image_hash": "ec919ac106ffdcd08ea65bcaf5f19438",
+                "site_link_image_url": "https://www.facebook.com/ads/image/?d=AQKCUWGay8VANCxdVsqC6kyC1bYSHxPln1MKQix06SH4DPFgRNPBBaYBWCcgEc8saf--Rbdl8RxDHkLGl1gy1odYVQetB0IvCfNDBAwnqiI7bKNwb0FUQejAGmXikF2CWqSfAxR19lzRf1OTzJY10Sef"
+              },
+              {
+                "site_link_title": "Bedding",
+                "site_link_url": "https://shop.marriott.com/shop/bedding/",
+                "site_link_image_hash": "11972f7c40e6b135e6fc72397b34cf6b",
+                "site_link_image_url": "https://www.facebook.com/ads/image/?d=AQL_q46NWBRsDQ9gM4XNUXIVnXa4QehQyqHOJLVXAarnKdluXXgW9zzyrtPUBy6MdxKJ-T0kc0ldaHCbGDTzXAk0JzNAnT2wctTEL2w3_i-8c0qor2SGSY1MSvfRWnHKhozlN7wgaNDyPJIF0T1YFcLP"
+              },
+              {
+                "site_link_title": "Towels",
+                "site_link_url": "https://shop.marriott.com/shop/bath/towels",
+                "site_link_image_hash": "582aaf16f357e5a889c988e1bb73390b",
+                "site_link_image_url": "https://www.facebook.com/ads/image/?d=AQJ2ChxGw45nP5pr_8p4exawDXyr5LgON347c7R7oFHF2b0lCAuIBtGrKfCjLZo5CaKYqmLtkvcmFj-IkdkXfkc6ZR_UQYIYuC7uFrBNXCcVGhB4pLf3gttwLxrd24-tJtGzPzrqCiSoTISkFoLXB7xY"
+              },
+              {
+                "site_link_title": "Room & Home Diffusers",
+                "site_link_url": "https://shop.marriott.com/shop/fragrance/room-and-home-diffusers",
+                "site_link_image_hash": "4aa5e6b087110ac80a1464fb331e8e2a",
+                "site_link_image_url": "https://www.facebook.com/ads/image/?d=AQLV-cNOVhfsQTdbD4m50BIZmoCie-iRufKYO-1s7Sw-tDRHMjoLvaNRm8RUsxdpBmJdL-B-QsU7eMQmQCpMi10PG9t7vK_htfSRzI4n2PiTIPReHjb200r5unyG3UjV8sTuaiOOxFiTwXnAsIC7Z5bL"
+              },
+              {
+                "site_link_title": "The Ritz-carlton Bed",
+                "site_link_url": "https://shop.marriott.com/brands/the-ritz-carlton/mattresses",
+                "site_link_image_hash": "521cc50ca41283145f7092b4ae176482",
+                "site_link_image_url": "https://www.facebook.com/ads/image/?d=AQKtK4OGdCBtkqn2KT76edI8lKHWqg7phH-f3JIQ4xOEftLhV5zKhS9oRvIh52grUAQTQXM7nlsJ07MkGWoMvKaJ36E11LG5Rftw_vtoLB6St6A1YKX--paWqofCOLhPFTxon9WChpabE_nt2K0gtq0z"
+              },
+              {
+                "site_link_title": "Pillows",
+                "site_link_url": "https://shop.marriott.com/brands/westin/pillows",
+                "site_link_image_hash": "a1595b7e3cf9d2772ff073c8c4f63231",
+                "site_link_image_url": "https://www.facebook.com/ads/image/?d=AQKHfRcseiGgzgRFw1oQl-tLNDwQbfh-a2_tMWtlG669qYuukX0PbGgo6XoHtCtL0kLgau38Gr7qS-ZxA6A6nh7ziKIfAaKHSHhhW78IqGpzzFCso7vP0IPX3AmkpgoVvZelb8wJdhTLPyod9g6cj-gL"
+              },
+              {
+                "site_link_title": "Bundles",
+                "site_link_url": "https://shop.marriott.com/shop/bundles",
+                "site_link_image_hash": "86b39f0c76d75832c108badd2c7f58ad",
+                "site_link_image_url": "https://www.facebook.com/ads/image/?d=AQIHe9cSS5rCJcvMf06jkj-I-EvRBxXWeLjxDrYj6YOxhkDEMxrVotQy34ZzOcMaQh7Y88fda_CbOzDWX_cOUVqH0DEHnCylA9mpOemqaEM1BG54IJfCpTSuVfFqgIfwzVyZbJyUSFI_B3kFaxNVRGLW"
+              },
+              "[5 more items truncated]"
+            ]
+          },
+          "threads_user_id": "17841415776034388",
+          "call_to_action": {
+            "type": "BOOK_TRAVEL",
+            "value": {
+              "link": "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=instagram&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan2_tactical_visitor-diriyahJune2026_reach-awareness_instagram_en&utm_term=adset-id-ee00c8_test_adset_name_ar_all_mf_prospecting&utm_content=KV"
+            }
+          },
+          "call_to_action_type": "BOOK_TRAVEL",
+          "instagram_user_id": "17841449897651638",
+          "use_page_actor_override": false,
+          "image_hash": "51387896edfc2073c993561a2cfc8b40",
+          "body": "استمتع بإقامة في فندق باب سمحان تشمل تذكرتين إلى Six Flags أو أكواربيا، وفطور لشخصين، بالإضافة إلى خصومات على المطاعم والسبا",
+          "title": "اسكن في الدرعية والعب في القدية",
+          "effective_object_story_id": "102966688906483_1084363380770558",
+          "effective_instagram_media_id": "18094821908457391"
+        },
+        {
+          "id": "28255674237363903",
+          "name": "اسكن في الدرعية والعب في القدية 2026-07-29-04f6683febec617fe527c4d3bbda5de4",
+          "account_id": "1198625455580757",
+          "actor_id": "102966688906483",
+          "status": "ACTIVE",
+          "object_type": "SHARE",
+          "object_story_spec": {
+            "page_id": "102966688906483",
+            "instagram_user_id": "17841449897651638",
+            "link_data": {
+              "link": "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=instagram&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan2_tactical_visitor-diriyahJune2026_reach-awareness_instagram_en&utm_term=adset-id-ee00c8_test_adset_name_ar_all_mf_prospecting&utm_content=KV1",
+              "message": "استمتع بإقامة في فندق باب سمحان تشمل تذكرتين إلى Six Flags أو أكواربيا، وفطور لشخصين، بالإضافة إلى خصومات على المطاعم والسبا",
+              "name": "اسكن في الدرعية والعب في القدية",
+              "image_hash": "e7e6ea9814ed6b34df93b3807c7c6fe7",
+              "call_to_action": {
+                "type": "BOOK_TRAVEL",
+                "value": {
+                  "link": "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=instagram&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan2_tactical_visitor-diriyahJune2026_reach-awareness_instagram_en&utm_term=adset-id-ee00c8_test_adset_name_ar_all_mf_prospecting&utm_content=KV1"
+                }
+              },
+              "use_flexible_image_aspect_ratio": true
+            }
+          },
+          "degrees_of_freedom_spec": {
+            "creative_features_spec": {
+              "advantage_plus_creative": {
+                "enroll_status": "OPT_OUT"
+              },
+              "cv_transformation": {
+                "enroll_status": "OPT_OUT"
+              },
+              "enhance_cta": {
+                "enroll_status": "OPT_OUT"
+              },
+              "image_animation": {
+                "enroll_status": "OPT_OUT"
+              },
+              "image_brightness_and_contrast": {
+                "enroll_status": "OPT_OUT"
+              },
+              "image_templates": {
+                "enroll_status": "OPT_OUT"
+              },
+              "image_touchups": {
+                "enroll_status": "OPT_OUT"
+              },
+              "inline_comment": {
+                "enroll_status": "OPT_IN"
+              },
+              "pac_relaxation": {
+                "enroll_status": "OPT_OUT"
+              },
+              "product_browsing": {
+                "enroll_status": "OPT_OUT"
+              },
+              "reveal_details_over_time": {
+                "enroll_status": "OPT_OUT"
+              },
+              "show_destination_blurbs": {
+                "enroll_status": "OPT_OUT"
+              },
+              "site_extensions": {
+                "enroll_status": "OPT_OUT"
+              },
+              "standard_enhancements": {
+                "enroll_status": "OPT_OUT"
+              },
+              "text_optimizations": {
+                "enroll_status": "OPT_OUT"
+              }
+            }
+          },
+          "creative_sourcing_spec": {
+            "site_links_spec": [
+              {
+                "site_link_title": "Dine",
+                "site_link_url": "https://diriyah.sa/en/dine",
+                "site_link_image_hash": "a12afe2a984712fc909197cecf651825",
+                "site_link_image_url": "https://www.facebook.com/ads/image/?d=AQLSo2WKC56wj9XvsHyFYM0HIX_QGOUThmVgTNcz_Ra2qb-O5Hlc4q3W3fX9udnZNl7s2A22nM6XEmPkvqqe6WIe_0lineG9lhXH-Jfdb5P-rqHlBlllInw2FivERMZDZcTH1jZJ96Tnu2ej2bra05px"
+              },
+              {
+                "site_link_title": "See More",
+                "site_link_url": "https://diriyah.sa/en/bujairi-terrace",
+                "site_link_image_hash": "87651b3802f860feba85c7aeae90a3fa",
+                "site_link_image_url": "https://www.facebook.com/ads/image/?d=AQLzqwnVTbNc08R6QLtwr75bhmoJnU1oqkNrJb6_GiXlK8j4cbdMbdszSgePRiBJaQ6aAx3wk51QKGVvmE6NtVQaHYGWa5UdpflzQvZPQSYxjKf-2ERw9J2FAGEcVmsAXPKpzQ8fWM5c2BV0wJicOPvJ"
+              },
+              {
+                "site_link_title": "Things To Do",
+                "site_link_url": "https://diriyah.sa/en/things-to-do",
+                "site_link_image_hash": "b4c4f2fe27c4bef9a59c91be869c592b",
+                "site_link_image_url": "https://www.facebook.com/ads/image/?d=AQJHWRySVAso_5tCz588CkRGcowfnr2XF87IwvZhcZLJMIED94jT7ExVMMbVg4vEH2j-Ojs2WZOYXyw1g9-TZQgpaRQNEyT0Z2WhjqLDV9sePbNjY17PKb814XEEopEiPfVDyhaEzOPTy4EEObl3Qsm4"
+              },
+              {
+                "site_link_title": "About",
+                "site_link_url": "https://diriyah.sa/en/about",
+                "site_link_image_hash": "35b9e94380f895a3608cc3facd10c2c8",
+                "site_link_image_url": "https://www.facebook.com/ads/image/?d=AQKG-7rIVoBHsXMEjVGO86prmAVkCXSSZH5lzii_BLTCXE1n41DOlXWLoAnh7SV2HnxQK1sn3AjQQx7zR3U0g47zLAcV6FJRbdxjpyH879jPywkBwrfQPvE_LY7g-BCaCPh96xnlmx8xydCFL4TJ1dSv"
+              },
+              {
+                "site_link_title": "News",
+                "site_link_url": "https://diriyah.sa/en/news",
+                "site_link_image_hash": "c84559292e19c5b3f7e7ea9f60390ae4",
+                "site_link_image_url": "https://www.facebook.com/ads/image/?d=AQLq4ipWloBGVkV1enyVk7kkzXn7PwU6983gtNqtS4dsa532C-DnlDTGBq2fqSiKEnHZzmY2H7o5XfKhGwsQTR3UAFlY73DtoBDuBgUjDjkpYU8E9JHkcdoSj9Yqod9nW_zzyvdY1okLz1RAwdWIn_7T"
+              },
+              {
+                "site_link_title": "Angelina",
+                "site_link_url": "https://diriyah.sa/en/dine/angelina",
+                "site_link_image_hash": "71e73733992fb9e2a64c1c6a10771faf",
+                "site_link_image_url": "https://www.facebook.com/ads/image/?d=AQLJ-Pb3RfzZ-OrQlUWKpCUkBCOvQuwGUC8Vjb-3MCN9HiWBYnyHvlIVjLXGPVxxk11VVIqYB7tN27e2qkWn0iyC_HYbHtDAPEsGs3Y8a_hPkUm5moTwMPhjKivvzkkwzNMZ3Xchaz6o2tIzakhuCgaP"
+              },
+              {
+                "site_link_title": "Joe & The Juice",
+                "site_link_url": "https://diriyah.sa/en/dine/joeandthejuice",
+                "site_link_image_hash": "e9fda6d44788a0a4c0c92371bcf678cf",
+                "site_link_image_url": "https://www.facebook.com/ads/image/?d=AQJgjD1yWrWTQQWCJL1Vm-xqoqVPRybdEQ5xSD4iCQsVLNd4G_7HvfeTKjh7uqnybS3-qlkjzRqoXKqh3vGUd0oUkIYIPkCAvKU0IYDx0w195zC3IiFO5PTyP4tsmKVuKh0JpmZPii1gYt85gHaWz3Jk"
+              },
+              {
+                "site_link_title": "Diriyah Tourism",
+                "site_link_url": "https://diriyah.sa",
+                "site_link_image_hash": "211aa1e75d9698703ac7f98fddb5ccb6",
+                "site_link_image_url": "https://www.facebook.com/ads/image/?d=AQK49_8uZDXIxGO17pjRTJSuZtIO5jDAZFst8JKDL4C5zFFk_FtG3RleNRpPSM1FAPYEK3S_DgKZRTyZ6TfBL2g5nLgudaGQsDb3PmdTkU85x1NW2XvgUhUB24zKotqF-z5_jVu4j13DS0NFa4sCjQbk"
+              },
+              {
+                "site_link_title": "عرض المزيد",
+                "site_link_url": "https://diriyah.sa",
+                "site_link_image_hash": "371020513121d6f575ab628d17434ec9",
+                "site_link_image_url": "https://www.facebook.com/ads/image/?d=AQI754I2YTEyvaNrEvVgf4qHtXh-rqISVBfdxFuZKojDrVKb383nDErlnhiRzY4lFDeDdGAIM5o-lb4uFWAl-pE7HzUVP131zKUtMdx0pQKQEdWcS09aFAc-m32iEK6fGrVco2COVX64LHy21BQ8HJMS"
+              }
+            ]
+          },
+          "threads_user_id": "17841415776034388",
+          "call_to_action": {
+            "type": "BOOK_TRAVEL",
+            "value": {
+              "link": "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=instagram&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan2_tactical_visitor-diriyahJune2026_reach-awareness_instagram_en&utm_term=adset-id-ee00c8_test_adset_name_ar_all_mf_prospecting&utm_content=KV1"
+            }
+          },
+          "call_to_action_type": "BOOK_TRAVEL",
+          "instagram_user_id": "17841449897651638",
+          "use_page_actor_override": false,
+          "image_hash": "e7e6ea9814ed6b34df93b3807c7c6fe7",
+          "body": "استمتع بإقامة في فندق باب سمحان تشمل تذكرتين إلى Six Flags أو أكواربيا، وفطور لشخصين، بالإضافة إلى خصومات على المطاعم والسبا",
+          "title": "اسكن في الدرعية والعب في القدية",
+          "effective_object_story_id": "102966688906483_1092871559919740",
+          "effective_instagram_media_id": "17942586207315418"
+        },
+        {
+          "id": "28129914543272513",
+          "name": "الوعد في الدرعية 2026-07-29-c63201860d670982b212d1cebdfa2a5e",
+          "account_id": "1198625455580757",
+          "actor_id": "102966688906483",
+          "status": "ACTIVE",
+          "object_type": "SHARE",
+          "object_story_spec": {
+            "page_id": "102966688906483",
+            "instagram_user_id": "17841449897651638",
+            "link_data": {
+              "link": "https://www.diriyah.sa/ar?utm_source=instagram&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_instagram_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=Intro_10s",
+              "message": "كل زيارة فيها شيء جديد.. لحظات تعيشونها، وتجارب ما تُنسى.",
+              "name": "الوعد في الدرعية",
+              "image_hash": "b73fee54421a971fc7f13997a9dc0aea",
+              "call_to_action": {
+                "type": "LEARN_MORE",
+                "value": {
+                  "link": "https://www.diriyah.sa/ar?utm_source=instagram&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_instagram_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=Intro_10s"
+                }
+              },
+              "use_flexible_image_aspect_ratio": true
+            }
+          },
+          "degrees_of_freedom_spec": {
+            "creative_features_spec": {
+              "product_browsing": {
+                "enroll_status": "OPT_OUT"
+              }
+            }
+          },
+          "threads_user_id": "17841415776034388",
+          "authorization_category": "NONE",
+          "call_to_action": {
+            "type": "LEARN_MORE",
+            "value": {
+              "link": "https://www.diriyah.sa/ar?utm_source=instagram&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_instagram_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=Intro_10s"
+            }
+          },
+          "call_to_action_type": "LEARN_MORE",
+          "instagram_user_id": "17841449897651638",
+          "use_page_actor_override": false,
+          "image_hash": "b73fee54421a971fc7f13997a9dc0aea",
+          "body": "كل زيارة فيها شيء جديد.. لحظات تعيشونها، وتجارب ما تُنسى.",
+          "title": "الوعد في الدرعية",
+          "effective_object_story_id": "102966688906483_1093066129900283",
+          "effective_instagram_media_id": "18053711243537675"
+        },
+        {
+          "id": "28066432376315503",
+          "name": "Meet Me in Diriyah 2026-07-29-c87db9ed33d2bcd9c6888e6ef2495877",
+          "account_id": "1198625455580757",
+          "actor_id": "102966688906483",
+          "status": "ACTIVE",
+          "object_type": "SHARE",
+          "object_story_spec": {
+            "page_id": "102966688906483",
+            "instagram_user_id": "17841449897651638",
+            "link_data": {
+              "link": "https://www.diriyah.sa/en?utm_source=instagram&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_instagram_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=KV2",
+              "message": "Every visit brings something new... Moments to share, experiences to remember.",
+              "name": "Meet Me in Diriyah",
+              "image_hash": "83d37793e83b203a3c0edc836711ef1b",
+              "call_to_action": {
+                "type": "LEARN_MORE",
+                "value": {
+                  "link": "https://www.diriyah.sa/en?utm_source=instagram&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_instagram_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=KV2"
+                }
+              },
+              "use_flexible_image_aspect_ratio": true
+            }
+          },
+          "degrees_of_freedom_spec": {
+            "creative_features_spec": {
+              "product_browsing": {
+                "enroll_status": "OPT_OUT"
+              }
+            }
+          },
+          "threads_user_id": "17841415776034388",
+          "authorization_category": "NONE",
+          "call_to_action": {
+            "type": "LEARN_MORE",
+            "value": {
+              "link": "https://www.diriyah.sa/en?utm_source=instagram&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_instagram_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=KV2"
+            }
+          },
+          "call_to_action_type": "LEARN_MORE",
+          "instagram_user_id": "17841449897651638",
+          "use_page_actor_override": false,
+          "image_hash": "83d37793e83b203a3c0edc836711ef1b",
+          "body": "Every visit brings something new... Moments to share, experiences to remember.",
+          "title": "Meet Me in Diriyah",
+          "effective_object_story_id": "102966688906483_1093066926566870",
+          "effective_instagram_media_id": "17944318104255052"
+        },
+        {
+          "id": "28010792531847190",
+          "name": "Stay in Diriyah, Play in Qiddiya 2026-07-18-d69736a5cbdf37f4e8e152e86bb530f2",
+          "account_id": "1198625455580757",
+          "actor_id": "102966688906483",
+          "status": "ACTIVE",
+          "object_type": "SHARE",
+          "object_story_spec": {
+            "page_id": "102966688906483",
+            "instagram_user_id": "17841449897651638",
+            "link_data": {
+              "link": "https://www.marriott.com/offers/theme-park-experience-off-227242/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah?utm_source=instagram&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan2_tactical_visitor-diriyahJune2026_reach-awareness_instagram_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=KV4",
+              "message": "Stay at Bab Samhan Hotel and enjoy 2 tickets to Six Flags or Aquarabia,breakfast for two, plus dining and spa discounts.",
+              "name": "Stay in Diriyah, Play in Qiddiya",
+              "image_hash": "92f5817a9c4cbbc610356b1720ad1aea",
+              "call_to_action": {
+                "type": "BOOK_TRAVEL",
+                "value": {
+                  "link": "https://www.marriott.com/offers/theme-park-experience-off-227242/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah?utm_source=instagram&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan2_tactical_visitor-diriyahJune2026_reach-awareness_instagram_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=KV4"
+                }
+              },
+              "use_flexible_image_aspect_ratio": true
+            }
+          },
+          "degrees_of_freedom_spec": {
+            "creative_features_spec": {
+              "reveal_details_over_time": {
+                "enroll_status": "OPT_IN"
+              },
+              "standard_enhancements": {
+                "enroll_status": "OPT_OUT"
+              }
+            }
+          },
+          "creative_sourcing_spec": {
+            "destination_screenshot_spec": {
+              "enroll_status": "OPT_OUT"
+            }
+          },
+          "threads_user_id": "17841415776034388",
+          "authorization_category": "NONE",
+          "call_to_action": {
+            "type": "BOOK_TRAVEL",
+            "value": {
+              "link": "https://www.marriott.com/offers/theme-park-experience-off-227242/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah?utm_source=instagram&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan2_tactical_visitor-diriyahJune2026_reach-awareness_instagram_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=KV4"
+            }
+          },
+          "call_to_action_type": "BOOK_TRAVEL",
+          "instagram_user_id": "17841449897651638",
+          "use_page_actor_override": false,
+          "image_hash": "92f5817a9c4cbbc610356b1720ad1aea",
+          "body": "Stay at Bab Samhan Hotel and enjoy 2 tickets to Six Flags or Aquarabia,breakfast for two, plus dining and spa discounts.",
+          "title": "Stay in Diriyah, Play in Qiddiya",
+          "effective_object_story_id": "102966688906483_1084368087436754",
+          "effective_instagram_media_id": "18067578356466149"
+        },
+        "[15 more items truncated]"
+      ]
+    },
+    "meta": {
+      "requestId": null,
+      "waitedMs": 869,
+      "throttled": false,
+      "warnings": [],
+      "compatibility": null,
+      "compatibilitySkipped": true
+    }
+  },
+  "meta": {
+    "requestId": "383524ef-583f-417c-b7df-e3b73193999e",
+    "latencyMs": 2876,
+    "mcp_output_budget": {
+      "truncated": true,
+      "max_bytes": 65536,
+      "serialized_bytes_before_budget": 168823,
+      "guidance": "Repeat the call with result_fields and max_items to request a smaller result."
+    }
+  }
+}

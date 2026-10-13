@@ -1,0 +1,138 @@
+{
+ "launched": "2026-10-13 ~09:45 UTC (user said 'continue please' after the final report)",
+ "scope": "approved apply6 changes that were never attempted (their batch stopped after a different unit's safety-check block, the TikTok outage, or a lost result line). 206 units / 258 changes. Not retried: changes the safety check already blocked, held Spark Push, platform-refused, skipped. 16 Wadi Safar Meta ads excluded (Page/IG access refused by Meta): apply8/excluded_wadi_safar.json",
+ "workflow": "workflows/diriyah-apply-v8.js (= v6 rules; after a block: record it and carry on with the next unit, stop after 3 blocked units in a row; results returned in the run output, no result files written by agents)",
+ "runs": [
+  {
+   "task": "w84mrvxr7",
+   "run": "wf_68a96956-5be",
+   "platform": "meta",
+   "batches": [
+    "in_meta_1.json",
+    "in_meta_5.json",
+    "in_meta_9.json"
+   ],
+   "status": "completed 10:41 UTC: in_meta_1 7 Fixed, 8 refused by Meta (2 Bab Samhan carousels: code 100/2446581 interactive components count mismatch from the parent image_hash), 11 blocked (3 ads, payload step denied); in_meta_5 11 Fixed, 1 blocked; in_meta_9 14 Fixed"
+  },
+  {
+   "task": "wjsymlic5",
+   "run": "wf_da2b1dd0-972",
+   "platform": "meta",
+   "batches": [
+    "in_meta_2.json",
+    "in_meta_6.json"
+   ],
+   "status": "completed 10:18 UTC: in_meta_2 11 Fixed, 1 refused by Meta (ad 120247112596620789: attach refused, code 100/2875006 Media Not Wide Enough, image 326 px wide; new creative 842859065572596 left unattached); in_meta_6 12 Fixed (incl. 120253320126610058 with the 11-Oct creative 4372459552897444)"
+  },
+  {
+   "task": "ws0ud2bg2",
+   "run": "wf_8334046c-d3e",
+   "platform": "meta",
+   "batches": [
+    "in_meta_3.json",
+    "in_meta_7.json"
+   ],
+   "status": "completed 10:11 UTC: in_meta_3 1 Fixed, 4 blocked, 7 not attempted (stopped: one denied pre-read parse blocked 4 units at once); in_meta_7 8 Fixed, 3 blocked, 1 existing Page post (manual)"
+  },
+  {
+   "task": "wprh0cb0z",
+   "run": "wf_b623ea88-16c",
+   "platform": "meta",
+   "batches": [
+    "in_meta_4.json",
+    "in_meta_8.json"
+   ],
+   "status": "completed 10:27 UTC: in_meta_4 24 Fixed (ads 120251976401200058 + 120251890790670058, both in the batch, share one new creative as they shared one before); in_meta_8 16 Fixed, 3 blocked (2 ads, payload step denied, nothing written)"
+  },
+  {
+   "task": "w4k9txfh4",
+   "run": "wf_6a795359-362",
+   "platform": "tiktok",
+   "batches": [
+    "in_tiktok_1.json"
+   ],
+   "status": "completed 10:00 UTC: 20 Fixed, no safety-check denial"
+  },
+  {
+   "task": "wp4qchro6",
+   "run": "wf_28f2cda9-d52",
+   "platform": "tiktok",
+   "batches": [
+    "in_tiktok_2.json"
+   ],
+   "status": "completed 10:03 UTC: 19 Fixed, no safety-check denial"
+  },
+  {
+   "task": "wohhe3wed",
+   "run": "wf_0ce6d6bd-8cc",
+   "platform": "snapchat",
+   "batches": [
+    "in_snapchat_1.json",
+    "in_snapchat_3.json"
+   ],
+   "status": "completed 10:05 UTC: in_snapchat_1 21 Fixed / 1 blocked (88dcce9d, local pre-write check denied, nothing written); in_snapchat_3 5 Fixed. After the block the in_snapchat_1 agent compared URLs from the API output without local scripts; the re-read verifies them byte for byte"
+  },
+  {
+   "task": "w8wbkb86u",
+   "run": "wf_12f54105-e78",
+   "platform": "snapchat",
+   "batches": [
+    "in_snapchat_2.json"
+   ],
+   "status": "completed 10:14 UTC: 27 Fixed, 1 blocked (57dbb032, dry-run check denied, live PUT never sent)"
+  },
+  {
+   "task": "w9kulixun",
+   "run": "wf_3e34ff06-5fe",
+   "platform": "x",
+   "batches": [
+    "in_x_1.json"
+   ],
+   "status": "completed 09:56 UTC: 9 Fixed, 3 Failed (safety check: 1 before the write, 2 after the write at the verify step)"
+  },
+  {
+   "task": "w92890jzm",
+   "run": "wf_07fe993d-d69",
+   "platform": "google",
+   "batches": [
+    "in_google_1.json"
+   ],
+   "status": "completed 09:53 UTC: 7 Fixed, 2 Failed (write sent, verification step blocked by the safety check)"
+  }
+ ],
+ "reread": [
+  {
+   "task": "wdciae35z",
+   "run": "wf_24b2ecf9-a6a",
+   "job": "google 8324286739 (after the Google apply8 run completed)"
+  },
+  {
+   "task": "w5p3xmtni",
+   "run": "wf_4e697ce7-021",
+   "job": "x 18ce55o46uh (after the X apply8 run completed)"
+  },
+  {
+   "task": "wmjy5k0ge",
+   "run": "wf_217b1da5-0ec",
+   "job": "tiktok 7338057963233443842 + 7338074303931449345 (after both TikTok apply8 runs completed)"
+  },
+  {
+   "task": "wzww3uh4c",
+   "run": "wf_80cb2e13-cbd",
+   "job": "snapchat b736921f + ebe8d66e (after both Snapchat apply8 runs completed)"
+  },
+  {
+   "task": "wvholq729",
+   "run": "wf_cd9d0385-2e4",
+   "job": "meta 1198625455580757 + 2194833637927644 (after every Meta apply8 run completed)"
+  }
+ ],
+ "orphan_meta_creatives": [
+  "842859065572596 (apply8 in_meta_2, ad 120247112596620789: Meta refused the attach - Media Not Wide Enough)"
+ ],
+ "notes": [
+  "TikTok 7338074303931449345: 6 Upgraded Smart+ ads were created 13-Oct 09:46 UTC and 6 manual ads 12-Oct 23:59 UTC in the ritz-signature campaigns by someone else (our agents called only get/update actions); listed in New ads since 11-Oct",
+  "TikTok 7338057963233443842: ads modified by someone else at 06:28 UTC 13-Oct and 12-Oct 23:03-00:08 UTC (URLs still equal to plan now, so written per the rules)",
+  "Meta: ads that shared one creative got one new creative each (in_meta_5: creative 1632863468347851 served 6 ads, 28580412141610679 2 ads; in_meta_8: 1442950770931553 and 1335498464643865, 2 ads each), so each now has its own dark post (likes/comments no longer pooled); in_meta_4 kept ads 120251976401200058 + 120251890790670058 on one shared new creative 3317044228481888"
+ ]
+}

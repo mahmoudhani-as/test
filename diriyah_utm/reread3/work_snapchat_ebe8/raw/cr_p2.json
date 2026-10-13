@@ -1,0 +1,1293 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "snapchat_adaccounts_ad_account_id_creatives_get",
+    "method": "GET",
+    "host": "adsapi.snapchat.com",
+    "path": "/v1/adaccounts/ebe8d66e-0e3e-4b71-9d37-5c53118d6481/creatives",
+    "dryRun": false,
+    "data": {
+      "request_status": "SUCCESS",
+      "request_id": "fe0d3b00-a746-4e93-ac98-2856d7896aa0",
+      "paging": {
+        "next_link": "https://adsapi.snapchat.com/v1/adaccounts/ebe8d66e-0e3e-4b71-9d37-5c53118d6481/creatives?cursor=Q3JlYXRpdmVzVjIvNjNkZDk4YzUtYjBiYS00Mjg2LWIyNDAtMmVmNzZiNTI2NDg0&limit=65"
+      },
+      "creatives": [
+        {
+          "creative": {
+            "id": "2ec7ffd5-0d76-4476-ad1b-98ddd741ce46",
+            "name": "company_general_2026_sep_resi-patio-kv1_adset-id-fa60e06a_display_ar",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-09-28T17:26:24.375Z",
+            "updated_at": "2026-09-28T17:27:40.010Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_sep26&utm_term=3e71b680_residential_ar&utm_content=fa60e06a_resi-patio-kv1_display_ar",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            }
+          }
+        },
+        {
+          "creative": {
+            "id": "30b1fb6b-ddad-476b-a3f2-0e209dedb39b",
+            "name": "ManazelAlHadawi_CR2_AR",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-08-30T12:57:20.141Z",
+            "updated_at": "2026-10-12T22:21:57.765Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_awr&utm_term=manazel-alhadawi_ar&utm_content=manazel-alhadawi-cr2_display_ar",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "utm_autofix_permission": "OPT_IN"
+          }
+        },
+        {
+          "creative": {
+            "id": "31c3230d-5758-49e1-a35b-1b9add4e762d",
+            "name": "ManazelAlHadawi_KV3_EN",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-08-30T10:17:43.846Z",
+            "updated_at": "2026-10-12T09:50:29.040Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_awr&utm_term=manazel-alhadawi_en&utm_content=manazel-alhadawi-kv3_display_en",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": false,
+              "web_browser_type": "SNAP"
+            }
+          }
+        },
+        {
+          "creative": {
+            "id": "3225d615-843f-4cd5-8ff2-31009548fe09",
+            "name": "LifeInDiriyah_Video2_15s_Dark_AR_NA_Prospecting_16.08.2026_04.07.2026",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-08-16T10:54:25.828Z",
+            "updated_at": "2026-10-12T22:37:26.791Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/ar/diriyah-living?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_awr&utm_term=3e71b680_residential_ar&utm_content=video-2-15s_video_ar",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "utm_autofix_permission": "OPT_IN"
+          }
+        },
+        {
+          "creative": {
+            "id": "32b29608-74eb-4083-ad35-edb2fcdd363a",
+            "name": "ManazelAlHadawi_CR3_EN",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-09-05T17:48:47.682Z",
+            "updated_at": "2026-10-13T10:11:29.180Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_cond&utm_term=manazel-alhadawi_en&utm_content=manazel-alhadawi-cr3_display_en",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "utm_autofix_permission": "OPT_IN"
+          }
+        },
+        {
+          "creative": {
+            "id": "32d96850-c3ff-4079-ba95-2a793420ea57",
+            "name": "ManazelAlHadawi_CR2_EN",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-08-30T13:02:40.064Z",
+            "updated_at": "2026-10-12T14:24:17.542Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_awr&utm_term=manazel-alhadawi_en&utm_content=manazel-alhadawi-cr2_display_en",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "utm_autofix_permission": "OPT_IN"
+          }
+        },
+        {
+          "creative": {
+            "id": "33b96774-a7d1-420c-b1ae-1df2b1fb587b",
+            "name": "ManazelAlHadawi_CR3_AR",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-08-30T14:03:26.243Z",
+            "updated_at": "2026-10-12T22:43:04.294Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_awr&utm_term=manazel-alhadawi_ar&utm_content=manazel-alhadawi-cr3_display_ar",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "utm_autofix_permission": "OPT_IN"
+          }
+        },
+        {
+          "creative": {
+            "id": "34fef148-d531-4657-bd1e-bb14d8fcf85b",
+            "name": "company_manazel-alhadawi_2026_sep_mah-video3-sub_adset-id-17ea79ac_video_en",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-09-10T14:18:42.177Z",
+            "updated_at": "2026-10-11T12:01:29.095Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/en/diriyah-living/our-residences/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_conv&utm_term=3e71b680_residential_en&utm_content=17ea79ac_mah-video3-sub_video_en",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": false,
+              "web_browser_type": "SNAP"
+            }
+          }
+        },
+        {
+          "creative": {
+            "id": "363b16b2-f24a-41d1-9fe6-16862e5dd293",
+            "name": "ManazelAlHadawi_CR1_EN_Traffic",
+            "type": "COMPOSITE",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-06-17T10:38:02.452Z",
+            "updated_at": "2026-06-17T10:38:36.920Z",
+            "composite_properties": {
+              "creative_ids": [
+                "245c8617-1803-47cb-8600-1f98541c9ffa",
+                "5030e9db-b4dd-46e2-818c-55b311e9954e",
+                "578da6aa-ecd9-4bef-9c49-062e0bfeb619",
+                "a9d88149-c33b-4254-b0ad-d29577025bd9",
+                "99a3ed63-920a-478c-b6a7-fe00dd89e3ee",
+                "c010a8c6-64f3-4a29-9a63-99efe1b6840b"
+              ]
+            }
+          }
+        },
+        {
+          "creative": {
+            "id": "376b4270-3a1d-4117-8e8d-62ad7ba06b23",
+            "name": "ManazelAlHadawi_CR2_EN",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-08-30T13:02:40.178Z",
+            "updated_at": "2026-10-12T14:24:17.552Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_awr&utm_term=manazel-alhadawi_en&utm_content=manazel-alhadawi-cr2_display_en",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "utm_autofix_permission": "OPT_IN"
+          }
+        },
+        {
+          "creative": {
+            "id": "385a190e-91a4-4faf-b90c-4105f5a533aa",
+            "name": "company_ritz-signature_2026_aug_rcsr-kv3_adset-id-c4ffbd75_display_en",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-08-29T14:57:04.826Z",
+            "updated_at": "2026-10-11T10:45:16.484Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/en/diriyah-living/our-residences/ritz-carlton-signature?utm_source=snapchat&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_aug26_conv&utm_term=87bde3ee_rcsr_en&utm_content=c4ffbd75_rcsr-kv3_display_en",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "utm_autofix_permission": "OPT_IN"
+          }
+        },
+        {
+          "creative": {
+            "id": "3864d4f7-b493-46dc-af94-6dcd20ea8a3c",
+            "name": "LifeInDiriyah_CR1_Video_Boosted_AR_NA_Prospecting_23.06.2026_22.07.2026",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-07-15T13:07:53.116Z",
+            "updated_at": "2026-10-06T17:19:36.405Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_content=cr1&utm_source=snapchat&utm_medium=paid-social&utm_term=adset-id-9a4d62_life-in-diriyah_ar_all_mf_prospecting&utm_campaign=lifeindiriyah_jun2026",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "utm_autofix_permission": "OPT_IN"
+          }
+        },
+        {
+          "creative": {
+            "id": "3a3741b2-096e-4e9f-92b0-e0728fc3cfa2",
+            "name": "Copy of company_ritz-signature_2026_aug_rcsr-kv1_adset-id-07eca5d8_display_en_v2",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-09-08T06:49:48.193Z",
+            "updated_at": "2026-10-12T14:30:25.370Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/en/diriyah-living/our-residences/ritz-carlton-signature?utm_source=snapchat&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_sep26_conv&utm_term=87bde3ee_rcsr_en&utm_content=07eca5d8_rcsr-kv1_display_en",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "utm_autofix_permission": "OPT_IN"
+          }
+        },
+        {
+          "creative": {
+            "id": "3b055d88-d3f3-47b1-8c0f-91e0c412964e",
+            "name": "Copy of ManazelAlHadawi_KV2_EN_Traffic_v2",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-06-10T11:33:56.779Z",
+            "updated_at": "2026-10-12T09:44:06.643Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_jun26_cond&utm_term=manazel-alhadawi_en&utm_content=manazel-alhadawi-kv2_display_en",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": false,
+              "web_browser_type": "SNAP"
+            }
+          }
+        },
+        {
+          "creative": {
+            "id": "3b2997d1-5386-47c1-9b08-6cfd76304b56",
+            "name": "ManazelAlHadawi_KV2_Static_AR_NA_Prospecting_03.06.2026_30.09.2026 - Creative",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-06-03T11:53:05.862Z",
+            "updated_at": "2026-09-15T14:17:53.055Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=manazel-alhadawi_ar_all_mf_prospecting&utm_content=manazel-alhadawi-kv2_display",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": false,
+              "web_browser_type": "SNAP"
+            }
+          }
+        },
+        {
+          "creative": {
+            "id": "3b763aa0-90ff-4b2b-8512-f4ea47548bef",
+            "name": "ManazelAlHadawi_KV3_EN",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-09-05T11:01:10.032Z",
+            "updated_at": "2026-10-11T12:03:00.475Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_conv&utm_term=3e71b680_residential_en&utm_content=manazel-alhadawi-kv3_display_en",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": false,
+              "web_browser_type": "SNAP"
+            }
+          }
+        },
+        {
+          "creative": {
+            "id": "3c498dc7-0169-4dba-8eb9-c17d0303ce7a",
+            "name": "LifeInDiriyah_KV3_Dark_EN_NA_Prospecting_23.06.2026_04.07.2026",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-09-12T13:14:44.207Z",
+            "updated_at": "2026-10-11T11:53:57.812Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_sep26_cond&utm_term=3e71b680_residential_en&utm_content=1469e841_resi-patio-kv3_display_en",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "utm_autofix_permission": "OPT_IN"
+          }
+        },
+        {
+          "creative": {
+            "id": "3d390777-bdb9-4a93-a1f1-588404f40156",
+            "name": "ManazelAlHadawi_CR3_EN",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-09-05T10:57:08.258Z",
+            "updated_at": "2026-10-12T22:19:29.098Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_conv&utm_term=3e71b680_residential_en&utm_content=manazel-alhadawi-cr3_display_en",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "utm_autofix_permission": "OPT_IN"
+          }
+        },
+        {
+          "creative": {
+            "id": "3edb8396-3a39-4178-b194-d05b1985e6f6",
+            "name": "AMCP retest 2026-09-29 | company_ritz-signature_2026_aug_rcsr-kv2_adset-id-c2b96e29_display_ar_v2",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-09-29T00:25:24.545Z",
+            "updated_at": "2026-09-29T00:30:05.843Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/ar/diriyah-living/our-residences/ritz-carlton-signature?utm_source=snapchat&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_aug26&utm_term=87bde3ee_rcsr_ar&utm_content=c2b96e29_rcsr-kv2_display_ar",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            }
+          }
+        },
+        {
+          "creative": {
+            "id": "3fc370fb-15a6-4a5b-b358-90304f012ee6",
+            "name": "ManazelAlHadawi_CR1_AR_Considration",
+            "type": "COMPOSITE",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-07-08T08:04:02.064Z",
+            "updated_at": "2026-07-08T12:38:25.907Z",
+            "composite_properties": {
+              "creative_ids": [
+                "daee8d42-9ce9-426f-85ed-a258cf61f983",
+                "b2fdf154-8f84-4054-9cca-de76d7bdfa4c",
+                "92f3fff0-094d-4252-9243-06e9a8c25e98",
+                "123f1d5f-0c39-4993-aa8e-c79ff63f81ab",
+                "45a9979a-8bf6-4c78-b3bd-53e19c3048dc",
+                "9541b380-108d-46d8-9f66-fa47a929362a"
+              ]
+            }
+          }
+        },
+        {
+          "creative": {
+            "id": "40c62fea-cfe6-46fd-aff9-6ae947d067d3",
+            "name": "LifeInDiriyah_CR1_Boosted_EN_NA_Prospecting_23.06.2026_22.07.2026_V2",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-07-20T12:05:35.810Z",
+            "updated_at": "2026-10-12T14:30:58.487Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_jul26_cond&utm_term=life-in-diriyah_en&utm_content=cr1-v2_display_en",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "utm_autofix_permission": "OPT_IN"
+          }
+        },
+        {
+          "creative": {
+            "id": "410b4d4b-ee7b-4088-8ea8-419936dd403f",
+            "name": "LifeInDiriyah_CR1_Video_Boosted_EN_NA_Prospecting_23.06.2026_22.07.2026",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-07-15T13:07:53.342Z",
+            "updated_at": "2026-10-11T12:01:22.284Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_jul26_cond&utm_term=life-in-diriyah_en&utm_content=cr1_video_en",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "utm_autofix_permission": "OPT_IN"
+          }
+        },
+        {
+          "creative": {
+            "id": "41858f1c-8097-4118-b8d2-c760435928cb",
+            "name": "ManazelAlHadawi_KV3_Video10s_AR_Leads",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-07-12T11:36:22.388Z",
+            "updated_at": "2026-10-12T22:32:29.173Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_jul26_conv&utm_term=3e71b680_residential_ar&utm_content=video_ar",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": false,
+              "web_browser_type": "SNAP"
+            }
+          }
+        },
+        {
+          "creative": {
+            "id": "42e6b2f7-3c58-4b4e-accb-2693ba6eba53",
+            "name": "ManazelAlHadawi_CR3_AR",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-09-05T11:12:05.695Z",
+            "updated_at": "2026-10-12T14:34:16.773Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_conv&utm_term=3e71b680_residential_ar&utm_content=manazel-alhadawi-cr3_display_ar",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "utm_autofix_permission": "OPT_IN"
+          }
+        },
+        {
+          "creative": {
+            "id": "43846fdb-7b9f-4f9e-be81-440b3682709e",
+            "name": "ManazelAlHadawi_KV2_AR_Leads_v2",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-06-04T15:14:45.305Z",
+            "updated_at": "2026-07-08T08:16:32.036Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=adset-id-6AA7C3_manazel-alhadawi_ar_all_mf_prospecting&utm_content=ad-id-4F05A1_manazel-alhadawi-kv2_display",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": false,
+              "web_browser_type": "SNAP"
+            }
+          }
+        },
+        {
+          "creative": {
+            "id": "43cb6433-70f4-496a-95c5-af697d47382a",
+            "name": "ManazelAlHadawi_CR3_EN",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-09-05T10:57:08.135Z",
+            "updated_at": "2026-10-12T22:19:29.213Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_conv&utm_term=3e71b680_residential_en&utm_content=manazel-alhadawi-cr3_display_en",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "utm_autofix_permission": "OPT_IN"
+          }
+        },
+        {
+          "creative": {
+            "id": "44b727b4-f8b5-4285-89fe-d922e877b4a3",
+            "name": "ManazelAlHadawi_CR3_EN",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-08-30T14:07:19.262Z",
+            "updated_at": "2026-10-12T22:26:39.865Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_awr&utm_term=manazel-alhadawi_en&utm_content=manazel-alhadawi-cr3_display_en",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "utm_autofix_permission": "OPT_IN"
+          }
+        },
+        {
+          "creative": {
+            "id": "45a9979a-8bf6-4c78-b3bd-53e19c3048dc",
+            "name": "ManazelAlHadawi_CR1_AR_Awareness",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-06-15T09:49:30.168Z",
+            "updated_at": "2026-06-15T09:51:19.249Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=manazel-alhadawi_ar_all_mf_prospecting&utm_content=manazel-alhadawi-CR1",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "utm_autofix_permission": "OPT_IN"
+          }
+        },
+        {
+          "creative": {
+            "id": "468e079d-7cdb-416d-b4ed-c01ac7658172",
+            "name": "LifeInDiriyah_CR1_Boosted_EN_NA_Prospecting_23.06.2026_22.07.2026_V2",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-07-20T12:05:35.998Z",
+            "updated_at": "2026-10-12T14:30:58.443Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_jul26_cond&utm_term=life-in-diriyah_en&utm_content=cr1-v2_display_en",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "utm_autofix_permission": "OPT_IN"
+          }
+        },
+        {
+          "creative": {
+            "id": "47c7abca-48c9-475c-8b33-0840214992d0",
+            "name": "ManazelAlHadawi_CR3_AR",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-09-05T17:53:22.878Z",
+            "updated_at": "2026-10-12T14:28:28.573Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_cond&utm_term=manazel-alhadawi_ar&utm_content=manazel-alhadawi-cr3_display_ar",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "utm_autofix_permission": "OPT_IN"
+          }
+        },
+        {
+          "creative": {
+            "id": "4910a414-c503-459a-ae7f-eceadc872ccb",
+            "name": "ManazelAlHadawi_CR2_EN",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-09-05T12:38:13.449Z",
+            "updated_at": "2026-10-13T10:14:24.157Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_conv&utm_term=manazel-alhadawi_en&utm_content=manazel-alhadawi-cr2_display_en",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "utm_autofix_permission": "OPT_IN"
+          }
+        },
+        {
+          "creative": {
+            "id": "4b5b819c-5c9a-47e3-9256-ad3f29b7ef27",
+            "name": "ManazelAlHadawi_KV1_AR_Leads_v2",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-06-04T15:14:40.825Z",
+            "updated_at": "2026-07-08T08:16:26.897Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=adset-id-6AA7C3_manazel-alhadawi_ar_all_mf_prospecting&utm_content=ad-id-FBF5EC_manazel-alhadawi-kv1_display",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": false,
+              "web_browser_type": "SNAP"
+            }
+          }
+        },
+        {
+          "creative": {
+            "id": "4c1febe5-7c02-4950-8e3e-9810ef06298e",
+            "name": "LifeInDiriyah_CR1_Video_Boosted_EN_NA_Prospecting_23.06.2026_22.07.2026_V2",
+            "type": "COMPOSITE",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-07-16T07:55:57.531Z",
+            "updated_at": "2026-10-12T22:36:29.902Z",
+            "composite_properties": {
+              "creative_ids": [
+                "25476c1c-87b0-4537-b237-55c809175de5",
+                "e9e18a6b-ad7d-43a7-b0b5-3af5e45d52b1",
+                "8d4f47e3-1107-425a-b49d-c37615e19cd4",
+                "2a92055e-85b1-4f06-aed3-92867ac602c8",
+                "2c67650c-1a45-4c80-b6b5-fe623a408fa9",
+                "7b6a50b9-8bde-462a-91d3-5d9d733b618d"
+              ]
+            }
+          }
+        },
+        {
+          "creative": {
+            "id": "4cfe175a-1d19-4f8e-957d-44d926d7f385",
+            "name": "ManazelAlHadawi_KV1_EN_Awareness_v2",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-06-04T15:13:54.852Z",
+            "updated_at": "2026-10-12T22:17:10.573Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_jun26_awr&utm_term=manazel-alhadawi_en&utm_content=b01f5ba3_manazel-alhadawi-kv1_display_en",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": false,
+              "web_browser_type": "SNAP"
+            }
+          }
+        },
+        {
+          "creative": {
+            "id": "4d2ae7a1-e09c-4387-8935-f16a7a9e863c",
+            "name": "ManazelAlHadawi_Video1_10s_EN",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "PENDING_REVIEW",
+            "created_at": "2026-07-21T08:17:49.694Z",
+            "updated_at": "2026-10-12T09:39:29.926Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_cond&utm_term=manazel-alhadawi_ar&utm_content=manazel-alhadawi-video1_video_en",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "utm_autofix_permission": "OPT_IN"
+          }
+        },
+        {
+          "creative": {
+            "id": "4daec384-bea9-4774-8447-c86ac73fad91",
+            "name": "ManazelAlHadawi_KV2_EN_Traffic_v2",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-06-04T15:14:18.102Z",
+            "updated_at": "2026-10-12T11:32:50.235Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_jun26_cond&utm_term=manazel-alhadawi_en&utm_content=manazel-alhadawi-kv2-v2_display_en",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": false,
+              "web_browser_type": "SNAP"
+            }
+          }
+        },
+        {
+          "creative": {
+            "id": "4df901dd-e4b3-40da-8efa-81e0f4a289c0",
+            "name": "company_general_2026_sep_resi-patio-kv2_adset-id-2f4ca35f_display_ar",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-09-28T17:26:24.375Z",
+            "updated_at": "2026-09-28T17:27:45.407Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_sep26&utm_term=3e71b680_residential_ar&utm_content=2f4ca35f_resi-patio-kv2_display_ar",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            }
+          }
+        },
+        {
+          "creative": {
+            "id": "4f3f1b65-2072-4bb2-9cca-c40866d49768",
+            "name": "LifeInDiriyah_CR1_Video_Boosted_EN_NA_Prospecting_23.06.2026_22.07.2026",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-07-15T13:07:53.000Z",
+            "updated_at": "2026-10-11T12:01:22.291Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_jul26_cond&utm_term=life-in-diriyah_en&utm_content=cr1_video_en",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "utm_autofix_permission": "OPT_IN"
+          }
+        },
+        {
+          "creative": {
+            "id": "4f6db13a-3ee3-411b-9d14-976b1dc1930d",
+            "name": "LifeInDiriyah_Video2_15s_Dark_EN_NA_Prospecting_16.08.2026_04.07.2026",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-08-16T10:28:04.416Z",
+            "updated_at": "2026-10-12T14:31:33.623Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/en/diriyah-living?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_awr&utm_term=3e71b680_residential_en&utm_content=video-2-15s_video_en",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "utm_autofix_permission": "OPT_IN"
+          }
+        },
+        {
+          "creative": {
+            "id": "4f72630e-2308-4882-9422-1b2d04b7c25b",
+            "name": "LifeInDiriyah_Ad1_Video_Boosted_AR_NA_Prospecting_23.06.2026_04.07.2026",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-06-25T12:37:08.063Z",
+            "updated_at": "2026-10-11T12:05:04.855Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_jun26_awr&utm_term=life-in-diriyah_ar&utm_content=ad1_video_ar",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "utm_autofix_permission": "OPT_IN"
+          }
+        },
+        {
+          "creative": {
+            "id": "4fc8f958-b3fe-40e5-9f36-b575f2c9d55a",
+            "name": "LifeInDiriyah_CR1_Boosted_EN_NA_Prospecting_23.06.2026_22.07.2026_V2",
+            "type": "COMPOSITE",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-07-20T12:05:38.546Z",
+            "updated_at": "2026-10-12T14:30:58.433Z",
+            "composite_properties": {
+              "creative_ids": [
+                "468e079d-7cdb-416d-b4ed-c01ac7658172",
+                "b65848de-e72a-4908-87b3-16f900d7bec4",
+                "ebec20a5-34e7-4b03-9329-a7d0707066b6",
+                "e7d0366a-ffe4-414c-aa2f-033775a64a84",
+                "10ad0b5c-3bcf-49c3-84fd-cccc64b131ba",
+                "40c62fea-cfe6-46fd-aff9-6ae947d067d3"
+              ]
+            }
+          }
+        },
+        {
+          "creative": {
+            "id": "5030e9db-b4dd-46e2-818c-55b311e9954e",
+            "name": "ManazelAlHadawi_CR1_EN_Awareness",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-06-15T09:43:32.007Z",
+            "updated_at": "2026-06-15T09:44:58.100Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=manazel-alhadawi_en_all_mf_prospecting&utm_content=manazel-alhadawi-CR1",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "utm_autofix_permission": "OPT_IN"
+          }
+        },
+        {
+          "creative": {
+            "id": "519d84e4-9137-42fe-beea-18175d1759c7",
+            "name": "company_manazel-alhadawi_2026_sep_mah-video3_adset-id-2306103e_video_en",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-09-10T14:18:41.846Z",
+            "updated_at": "2026-10-12T09:54:12.947Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/en/diriyah-living/our-residences/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_conv&utm_term=3e71b680_residential_en&utm_content=2306103e_mah-video3_video_en",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": false,
+              "web_browser_type": "SNAP"
+            }
+          }
+        },
+        {
+          "creative": {
+            "id": "520d834f-0ccb-4cc8-aa0b-9bafac3b8eb7",
+            "name": "LifeInDiriyah_CR1_Video_Boosted_EN_NA_Prospecting_23.06.2026_22.07.2026",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-07-15T13:07:50.469Z",
+            "updated_at": "2026-10-11T12:01:22.247Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_jul26_cond&utm_term=life-in-diriyah_en&utm_content=cr1_video_en",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "utm_autofix_permission": "OPT_IN"
+          }
+        },
+        {
+          "creative": {
+            "id": "543be9b5-bd05-4498-a881-ddff8bc45d1b",
+            "name": "LifeInDiriyah_Ad1_Video_Dark_AR_NA_Prospecting_23.06.2026_04.07.2026",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-08-05T04:18:04.617Z",
+            "updated_at": "2026-10-11T11:57:40.503Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/ar/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_aug26_cond&utm_term=3e71b680_residential_ar&utm_content=3c3fc87a_resi-video-1_video_ar",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "utm_autofix_permission": "OPT_IN"
+          }
+        },
+        {
+          "creative": {
+            "id": "546ac7f1-ead4-4187-ac38-fdb439bf6ad8",
+            "name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv3_adset-id-08c48732_display_en",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-09-28T09:51:43.011Z",
+            "updated_at": "2026-10-11T11:00:43.996Z",
+            "web_view_properties": {
+              "url": "https://www.wadisafar.com/en/residences/chedi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_cond&utm_term=ee4e5f3f_thechedi_en&utm_content=08c48732_thechedi-kv3_display_en",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            }
+          }
+        },
+        {
+          "creative": {
+            "id": "5496f503-9066-4f26-bc64-0a8d8cf93001",
+            "name": "company_ritz-signature_2026_aug_rcsr-kv2_adset-id-c2b96e29_display_ar",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-08-13T10:55:47.110Z",
+            "updated_at": "2026-10-12T14:26:08.086Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/ar/diriyah-living/our-residences/ritz-carlton-signature?utm_source=snapchat&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_cond&utm_term=87bde3ee_rcsr_en-ar&utm_content=c2b96e29_rcsr-kv2_display_ar",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "utm_autofix_permission": "OPT_IN"
+          }
+        },
+        {
+          "creative": {
+            "id": "54f55229-b7db-42a4-9b2b-fc9b942c4e75",
+            "name": "company_general_2026_sep_resi-video-1_adset-id-3c3fc87a_video_en",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-08-05T04:10:17.446Z",
+            "updated_at": "2026-10-11T11:57:41.450Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_aug26_cond&utm_term=3e71b680_residential_en&utm_content=3c3fc87a_resi-video-1_video_en",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "utm_autofix_permission": "OPT_IN"
+          }
+        },
+        {
+          "creative": {
+            "id": "55fd44f6-5df9-4c3e-9ca2-744f9e38d97b",
+            "name": "LifeInDiriyah_Video1_Dark_EN_NA_Prospecting_23.06.2026_04.07.2026",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-08-05T04:00:06.487Z",
+            "updated_at": "2026-10-11T12:04:22.802Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_aug26_awr&utm_term=3e71b680_residential_en&utm_content=video1_video_en",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "utm_autofix_permission": "OPT_IN"
+          }
+        },
+        {
+          "creative": {
+            "id": "5615f7e1-c7cc-454f-8faa-5116e1260d46",
+            "name": "ManazelAlHadawi_CR2_EN",
+            "type": "COMPOSITE",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-09-05T12:38:17.747Z",
+            "updated_at": "2026-10-13T10:14:24.148Z",
+            "composite_properties": {
+              "creative_ids": [
+                "4910a414-c503-459a-ae7f-eceadc872ccb",
+                "7be11557-e5af-4550-833b-3402466d7d62",
+                "1bfc5190-f158-4f1c-acbd-a948970525d9",
+                "c09a1f13-f279-4608-ac45-db3e09e58d43",
+                "d36c5e37-f4b7-4c77-a015-779502eb0aff"
+              ]
+            }
+          }
+        },
+        {
+          "creative": {
+            "id": "573cb2c1-00ae-41e6-9e53-99f2e7af6be8",
+            "name": "ManazelAlHadawi_KV3_EN",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-09-05T12:38:13.339Z",
+            "updated_at": "2026-10-11T12:07:55.163Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_conv&utm_term=manazel-alhadawi_en&utm_content=manazel-alhadawi-kv3_display_en",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": false,
+              "web_browser_type": "SNAP"
+            }
+          }
+        },
+        {
+          "creative": {
+            "id": "578da6aa-ecd9-4bef-9c49-062e0bfeb619",
+            "name": "ManazelAlHadawi_CR1_EN_Awareness",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-06-15T09:43:32.088Z",
+            "updated_at": "2026-06-15T09:44:58.107Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=manazel-alhadawi_en_all_mf_prospecting&utm_content=manazel-alhadawi-CR1",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "utm_autofix_permission": "OPT_IN"
+          }
+        },
+        {
+          "creative": {
+            "id": "5892d9a2-4c34-4bbe-a610-21d381fc4255",
+            "name": "company_ritz-signature_2026_aug_rcsr-kv1_adset-id-07eca5d8_display_en_v2",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-09-02T15:32:55.965Z",
+            "updated_at": "2026-10-12T11:34:16.191Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/en/diriyah-living/our-residences/ritz-carlton-signature?utm_source=snapchat&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_sep26_cond&utm_term=87bde3ee_rcsr_en-ar&utm_content=07eca5d8_rcsr-kv1_display_en",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "utm_autofix_permission": "OPT_IN"
+          }
+        },
+        {
+          "creative": {
+            "id": "594b433a-16ac-4ccb-86e2-4e748f090b6b",
+            "name": "ManazelAlHadawi_KV2_AR_Awareness_v2",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-06-04T15:14:09.450Z",
+            "updated_at": "2026-10-12T14:22:36.098Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_jun26_awr&utm_term=manazel-alhadawi_ar&utm_content=manazel-alhadawi-kv2-v2_display_ar",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": false,
+              "web_browser_type": "SNAP"
+            }
+          }
+        },
+        {
+          "creative": {
+            "id": "5a319942-10fb-4736-91d5-6ea6b16be47a",
+            "name": "ManazelAlHadawi_CR1_AR_Conversions",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-07-08T08:10:51.162Z",
+            "updated_at": "2026-07-08T08:12:07.348Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=manazel-alhadawi_ar_all_mf_prospecting&utm_content=manazel-alhadawi-CR1",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "utm_autofix_permission": "OPT_IN"
+          }
+        },
+        {
+          "creative": {
+            "id": "5aa314d8-3ae5-4efd-868b-b08c0f414252",
+            "name": "company_ritz-signature_2026_aug_rcsr-kv3_adset-id-c4ffbd75_display_en_v2_test",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-08-26T14:04:43.273Z",
+            "updated_at": "2026-10-12T14:21:57.534Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/en/diriyah-living/our-residences/ritz-carlton-signature?utm_source=snapchat&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_sep26_cond&utm_term=87bde3ee_rcsr_en-ar&utm_content=c4ffbd75_rcsr-kv3_display_en",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "utm_autofix_permission": "OPT_IN"
+          }
+        },
+        {
+          "creative": {
+            "id": "5b48187b-ec5d-4ae4-a0e8-dc06901d9979",
+            "name": "ManazelAlHadawi_KV1_Static_EN_NA_Prospecting_03.06.2026_30.09.2026 - Creative",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-06-03T11:53:16.454Z",
+            "updated_at": "2026-09-15T14:18:14.952Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=manazel-alhadawi_en_all_mf_prospecting&utm_content=manazel-alhadawi-kv1_display",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": false,
+              "web_browser_type": "SNAP"
+            }
+          }
+        },
+        {
+          "creative": {
+            "id": "5bc50f7b-d806-4873-9b03-00816243719d",
+            "name": "ManazelAlHadawi_CR1_EN_Conversions",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-07-08T08:12:41.046Z",
+            "updated_at": "2026-07-08T13:06:32.846Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=manazel-alhadawi_en_all_mf_prospecting&utm_content=manazel-alhadawi-CR1",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "utm_autofix_permission": "OPT_IN"
+          }
+        },
+        {
+          "creative": {
+            "id": "5c20e072-9d1b-4e64-8f9a-dc94975131ac",
+            "name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv1_adset-id-8971b1f2_display_ar",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-09-28T07:44:06.864Z",
+            "updated_at": "2026-10-11T11:00:25.218Z",
+            "web_view_properties": {
+              "url": "https://www.wadisafar.com/ar/residences/chedi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_conv&utm_term=ee4e5f3f_thechedi_ar&utm_content=8971b1f2_thechedi-kv1_display_ar#book-appointment",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            }
+          }
+        },
+        {
+          "creative": {
+            "id": "5c8c6df0-fcb0-4162-bc02-dd1dac5aff3b",
+            "name": "ManazelAlHadawi_CR3_AR",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-09-05T11:12:05.351Z",
+            "updated_at": "2026-10-12T14:34:16.782Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_conv&utm_term=3e71b680_residential_ar&utm_content=manazel-alhadawi-cr3_display_ar",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "utm_autofix_permission": "OPT_IN"
+          }
+        },
+        {
+          "creative": {
+            "id": "5f8aa8fe-dd57-4b83-8c36-516e056e1ca7",
+            "name": "company_manazel-alhadawi_2026_sep_mah-video3-sub_adset-id-17ea79ac_video_ar",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-09-10T13:32:09.718Z",
+            "updated_at": "2026-10-11T12:04:44.922Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/ar/diriyah-living/our-residences/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_conv&utm_term=3e71b680_residential_ar&utm_content=17ea79ac_mah-video3-sub_video_ar",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "utm_autofix_permission": "OPT_IN"
+          }
+        },
+        {
+          "creative": {
+            "id": "60a1215e-7cc5-4695-93cf-84f1634455d7",
+            "name": "ManazelAlHadawi_CR2_EN",
+            "type": "COMPOSITE",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-09-05T10:59:14.387Z",
+            "updated_at": "2026-10-12T14:17:24.708Z",
+            "composite_properties": {
+              "creative_ids": [
+                "eab0736d-a8d4-4af0-a733-38ea9078dd20",
+                "089ef4ec-4636-45d3-8511-6e1bd7889d7a",
+                "b2cfccfc-b117-46fc-8927-3e1d3bdbf870",
+                "eb12f404-1c38-4f69-8c20-e5145960f83d",
+                "23fb71a7-ad0a-4325-9652-0c550c41a625"
+              ]
+            }
+          }
+        },
+        {
+          "creative": {
+            "id": "6174e5d1-1b68-49d1-80b5-3e8685dbb3c7",
+            "name": "company_ritz-signature_2026_aug_rcsr-kv2_adset-id-c2b96e29_display_ar_v2",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-09-02T15:27:27.589Z",
+            "updated_at": "2026-10-12T14:25:58.468Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/ar/diriyah-living/our-residences/ritz-carlton-signature?utm_source=snapchat&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_sep26_cond&utm_term=87bde3ee_rcsr_en-ar&utm_content=c2b96e29_rcsr-kv2_display_ar",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "utm_autofix_permission": "OPT_IN"
+          }
+        },
+        {
+          "creative": {
+            "id": "62083daf-d5e3-4b1e-bd62-7735a8fdcf9c",
+            "name": "ManazelAlHadawi_CR2_EN",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-08-30T13:02:40.262Z",
+            "updated_at": "2026-10-12T14:24:17.534Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_awr&utm_term=manazel-alhadawi_en&utm_content=manazel-alhadawi-cr2_display_en",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "utm_autofix_permission": "OPT_IN"
+          }
+        },
+        {
+          "creative": {
+            "id": "63dd98c5-b0ba-4286-b240-2ef76b526484",
+            "name": "ManazelAlHadawi_CR2_EN",
+            "type": "WEB_VIEW",
+            "ad_product": "SNAP_AD",
+            "review_status": "APPROVED",
+            "created_at": "2026-08-30T13:02:40.464Z",
+            "updated_at": "2026-10-12T14:24:17.523Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_awr&utm_term=manazel-alhadawi_en&utm_content=manazel-alhadawi-cr2_display_en",
+              "allow_snap_javascript_sdk": false,
+              "use_immersive_mode": false,
+              "deep_link_urls": [],
+              "block_preload": true
+            },
+            "utm_autofix_permission": "OPT_IN"
+          }
+        }
+      ]
+    },
+    "meta": {
+      "requestId": "fe0d3b00-a746-4e93-ac98-2856d7896aa0",
+      "waitedMs": 212,
+      "throttled": false,
+      "warnings": [],
+      "partialFailure": null,
+      "asyncReport": null,
+      "compatibility": null,
+      "compatibilitySkipped": true,
+      "mcp_result_projection": {
+        "fields": [
+          "id",
+          "name",
+          "type",
+          "ad_product",
+          "review_status",
+          "created_at",
+          "updated_at",
+          "web_view_properties",
+          "composite_properties",
+          "deep_link_properties",
+          "collection_properties",
+          "app_install_properties",
+          "lead_generation_properties",
+          "utm_autofix_permission"
+        ],
+        "compact": true
+      }
+    }
+  },
+  "meta": {
+    "requestId": "981e4e7c-9434-4f4a-8ce5-dd66f22d097f",
+    "latencyMs": 1957
+  }
+}

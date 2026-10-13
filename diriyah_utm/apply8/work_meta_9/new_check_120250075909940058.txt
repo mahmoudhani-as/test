@@ -1,0 +1,89 @@
+read req 89ed286a-dd53-4531-a0e1-21e736f1b466 | new creative 1773623520371773 | status IN_PROCESS | url_tags None
+  new slot == new (bytes): True creative.asset_feed_spec.link_urls[0].website_url
+  new slot == new (bytes): True creative.asset_feed_spec.link_urls[1].website_url
+website_url by link_url adlabel  orig: {"120250076124160058": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=facebook-instagram&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=adset-id-ADC5E5_manazel-alhadawi_ar_all_mf_prospecting&utm_content=ad-id-259EF1_manazel-alhadawi-CR1", "120250076159310058": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=facebook-instagram&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=adset-id-ADC5E5_manazel-alhadawi_ar_all_mf_prospecting&utm_content=ad-id-259EF1_manazel-alhadawi-CR1"}
+website_url by link_url adlabel  new : {"120250076159310058": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=meta&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_jun26_awr&utm_term=manazel-alhadawi_ar&utm_content=manazel-alhadawi-cr1_display_ar", "120250076124160058": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=meta&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_jun26_awr&utm_term=manazel-alhadawi_ar&utm_content=manazel-alhadawi-cr1_display_ar"}
+label-keyed diff original -> new creative (asset_feed_spec arrays sorted by adlabel ids):
+    ~ .asset_feed_spec.link_urls[0].website_url: "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=facebook-instagram&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=adset-id-ADC5E5_manazel-alhadawi_ar_all_mf_prospecting&utm_content=ad-id-259EF1_manazel-alhadawi-CR1" -> "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=meta&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_jun26_awr&utm_term=manazel-alhadawi_ar&utm_content=manazel-alhadawi-cr1_display_ar"
+    ~ .asset_feed_spec.link_urls[1].website_url: "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=facebook-instagram&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=adset-id-ADC5E5_manazel-alhadawi_ar_all_mf_prospecting&utm_content=ad-id-259EF1_manazel-alhadawi-CR1" -> "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=meta&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_jun26_awr&utm_term=manazel-alhadawi_ar&utm_content=manazel-alhadawi-cr1_display_ar"
+    + .creative_sourcing_spec = {"destination_screenshot_spec": {"enroll_status": "OPT_OUT"}}
+    + .degrees_of_freedom_spec.creative_features_spec.adapt_to_placement = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.add_text_overlay = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.ads_with_benefits = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.app_highlights = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.audio = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.auto_promotion_tag = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.biz_ai = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.carousel_to_video = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.catalog_feed_tag = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.creative_stickers = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.customize_product_recommendation = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.cv_transformation = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.dha_optimization = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.dynamic_cta_text = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.dynamic_partner_content = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.enable_ncs_testimonials = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.enhance_cta = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.fb_feed_tag = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.fb_reels_tag = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.fb_story_tag = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.feed_caption_optimization = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.generate_cta = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.hide_price = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.hyperlink_formatting = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.ig_feed_tag = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.ig_glados_feed = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.ig_reels_tag = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.ig_stream_tag = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.ig_video_native_subtitle = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.image_animation = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.image_auto_crop = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.image_background_gen = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.image_banner = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.image_brightness_and_contrast = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.image_end_card = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.image_enhancement = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.image_templates = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.image_text_translation = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.local_store_extension = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.media_liquidity_animated_image = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.media_type_automation = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.multi_creative_post_carousel = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.multi_photo_to_video = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.music_generation = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.pac_genai_recomposition = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.pac_recomposition = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.pac_relaxation = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.product_extensions = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.product_metadata_automation = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.product_tags = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.profile_extension = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.replace_media_text = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.reveal_details_over_time = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.show_destination_blurbs = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.show_summary = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.site_extensions = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.standard_enhancements_catalog = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.text_extraction_for_headline = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.text_extraction_for_tap_target = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.text_formatting_optimization = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.text_generation = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.text_optimizations = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.text_overlay_translation = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.text_translation = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.translate_voiceover = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.video_auto_crop = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.video_filtering = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.video_highlight = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.video_highlights = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.video_to_image = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.video_uncrop = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.video_uncrop_9x16_to_9x18 = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.video_voiceover = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.wa_mm_image_filtering = {"enroll_status": "OPT_OUT"}
+    + .degrees_of_freedom_spec.creative_features_spec.wa_mm_text_truncation_length = {"enroll_status": "OPT_OUT"}
+    - .effective_instagram_media_id = "18092359205347295"
+    ~ .effective_object_story_id: "111467331865347_992526800426286" -> "111467331865347_1094930436852588"
+    ~ .id: "961139406985024" -> "1773623520371773"
+    ~ .name: "{{product.name}} 2026-06-18-2466d88a414fb03bbead1a6cd30648fb" -> "{{product.name}} 2026-06-18-2466d88a414fb03bbead1a6cd30648fb 2026-10-13-79bb17c01aa5de4847b6ee6de4e7af23"
+    ~ .status: "ACTIVE" -> "IN_PROCESS"
