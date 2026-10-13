@@ -1,0 +1,98 @@
+{
+ "tool_use_id": "toolu_01JCs9io5dad53QJv6y5H2ZT",
+ "input": {
+  "action": "snapchat_creative_create",
+  "ad_account_id": "ebe8d66e-0e3e-4b71-9d37-5c53118d6481",
+  "dry_run": true,
+  "payload": {
+   "creatives": [
+    {
+     "name": "ManazelAlHadawi_CR1_AR_Conversions",
+     "ad_account_id": "ebe8d66e-0e3e-4b71-9d37-5c53118d6481",
+     "type": "COMPOSITE",
+     "shareable": true,
+     "playback_type": "LOOPING",
+     "headline": "منازل الحداوي في الدرعية",
+     "brand_name": "شركة الدرعية",
+     "render_type": "STATIC",
+     "top_snap_crop_position": "MIDDLE",
+     "composite_properties": {
+      "creative_ids": [
+       "5cdc7fea-a548-47f8-8dfb-b6e5c4bb2c44",
+       "d7df3b18-89de-4cc4-80e4-6fe685cc3e7e",
+       "d40fbcb4-9195-4a81-9720-c4ede8632957",
+       "39526597-021a-406a-98ff-0ac44187d139",
+       "840ce99f-b3f0-49ba-bcad-bda5ea7ef2d6",
+       "164a5d98-f12a-4c0e-9aea-b64c8a66f642"
+      ]
+     },
+     "ad_product": "SNAP_AD",
+     "profile_properties": {
+      "profile_id": "310a28f1-799a-4292-ae3a-b8a35beb9008"
+     },
+     "creator_partnership_type": "NONE"
+    }
+   ]
+  }
+ },
+ "result": {
+  "success": true,
+  "data": {
+   "success": true,
+   "action": "snapchat_adaccounts_ad_account_id_creatives_create",
+   "dryRun": true,
+   "data": {
+    "request": {
+     "method": "POST",
+     "url": "https://adsapi.snapchat.com/v1/adaccounts/ebe8d66e-0e3e-4b71-9d37-5c53118d6481/creatives",
+     "host": "adsapi.snapchat.com",
+     "path": "/v1/adaccounts/ebe8d66e-0e3e-4b71-9d37-5c53118d6481/creatives",
+     "headers": {
+      "Accept": "application/json",
+      "Authorization": "Bearer [redacted]",
+      "Content-Type": "application/json"
+     },
+     "query": {},
+     "bodyFormat": "json",
+     "body": {
+      "creatives": [
+       {
+        "ad_account_id": "ebe8d66e-0e3e-4b71-9d37-5c53118d6481",
+        "ad_product": "SNAP_AD",
+        "brand_name": "شركة الدرعية",
+        "composite_properties": {
+         "creative_ids": [
+          "5cdc7fea-a548-47f8-8dfb-b6e5c4bb2c44",
+          "d7df3b18-89de-4cc4-80e4-6fe685cc3e7e",
+          "d40fbcb4-9195-4a81-9720-c4ede8632957",
+          "39526597-021a-406a-98ff-0ac44187d139",
+          "840ce99f-b3f0-49ba-bcad-bda5ea7ef2d6",
+          "164a5d98-f12a-4c0e-9aea-b64c8a66f642"
+         ]
+        },
+        "creator_partnership_type": "NONE",
+        "headline": "منازل الحداوي في الدرعية",
+        "name": "ManazelAlHadawi_CR1_AR_Conversions",
+        "playback_type": "LOOPING",
+        "profile_properties": {
+         "profile_id": "310a28f1-799a-4292-ae3a-b8a35beb9008"
+        },
+        "render_type": "STATIC",
+        "shareable": true,
+        "top_snap_crop_position": "MIDDLE",
+        "type": "COMPOSITE"
+       }
+      ]
+     }
+    },
+    "warnings": [],
+    "compatibility": null,
+    "compatibilitySkipped": true
+   }
+  },
+  "meta": {
+   "requestId": "bb926237-c997-4582-bf0e-adea467fd5bc",
+   "latencyMs": 1285
+  }
+ }
+}

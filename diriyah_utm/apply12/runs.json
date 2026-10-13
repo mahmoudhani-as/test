@@ -1,0 +1,15 @@
+{
+ "launched": "2026-10-13 ~13:00 UTC",
+ "workflow": "workflows/diriyah-apply-v12.js (v11 + recipe tiktok_text_trim_ok)",
+ "runs": [
+  {
+   "task": "wqnv5a4a8",
+   "run": "wf_70132f4f-b61",
+   "platform": "tiktok",
+   "batches": [
+    "in_tiktok_1.json"
+   ],
+   "note": "ad 1859902673516705: gateway trims the trailing no-break space of ad_text; written under the user's fix everything you can"
+  }
+ ]
+}

@@ -1,8 +1,9 @@
 # Diriyah / Wadi Safar UTM fix: handoff
 
-Final state on 13-Oct-2026 (about 12:50 UTC): the approved writes were run (apply6 + resume apply7 on 12-Oct; on 13-Oct apply8 for the approved writes that
-had never been attempted, then apply9 for the ones the safety check had blocked, after the user added permission rules), the written accounts re-read, final
-workbook sent. Everything needed to carry on is in this folder (`diriyah_utm/`).
+Final state on 13-Oct-2026 (about 14:45 UTC): the approved writes were run (apply6 + resume apply7 on 12-Oct; on 13-Oct apply8 for the approved writes that
+had never been attempted, apply9 for the ones the safety check had blocked after the user added permission rules, then apply10-12 for retries and for what
+the user approved in the afternoon: "run until its 0%", TikTok Spark Push, Snapchat split, Meta carousels, "fix everything you can"), the written accounts
+re-read, final workbook `out/Diriyah_UTM_Verification_2026-10-13_final3.xlsx` sent. Everything needed to carry on is in this folder (`diriyah_utm/`).
 Copy it to your scratchpad and work there. Do not edit the repo's own app files (`Code.gs`, etc.); they are unrelated.
 
 ## What the user asked for and decided
@@ -34,8 +35,70 @@ The rules decided with the user, all binding:
 - **13-Oct (permission rules):** the user committed `.claude/settings.json` with allow rules for the 5 Whathead ad tools (f92eb29), `Bash(python3:*)` and
   `Bash(node:*)` (62b3c75) and `Workflow` (fce152a), switched the session to Accept edits mode and said "commence with reduce the errors". The safety-blocked
   approved writes were then run as `apply9/`.
+- **13-Oct afternoon:** the user said "run until its 0%", then approved (AskUserQuestion, multi-select): "TikTok Spark Push (97)" (write them, knowing TikTok
+  re-publishes the post 30-60 min later and the ad loses the original post's likes / comments), "Split Snapchat (147)" (copy shared sub-creatives, switch
+  the ads to the copies), "Meta carousels (23)" (copy the Bab Samhan carousels without the parent image), and typed "fix everything you can".
+  Not approved: creating new ads, pausing ads, new tweets, deleting anything.
 
-## Final state (13-Oct-2026, about 12:50 UTC)
+## Final state (13-Oct-2026, about 14:45 UTC)
+
+**Runs after "run until its 0%" (all in Accept edits mode; no safety-check denial, Whathead never asked to sign in):**
+- `apply10/` (workflow `diriyah-apply-v10.js`): transient failures. 5 Fixed: Meta ad 120252966441120058 (earlier gateway error), Snapchat sub-creative
+  f7e6faad (shared by ads 338b4b16 / 703ea9a0, its URL was an earlier version of the plan), 3 TikTok ads from the 12-Oct outage. TikTok 1859902673516705
+  was held by its agent (the gateway trims a trailing no-break space from its ad_text) and written in `apply12/` (`diriyah-apply-v12.js`, recipe
+  `tiktok_text_trim_ok`) under "fix everything you can".
+- `apply11/` (workflow `diriyah-apply-v11.js`: per-unit recipes, see "Write recipes"): **129 Fixed** - TikTok Spark Push 97 of 97, Meta Bab Samhan carousels
+  23 slots on 5 ads (copy without the parent image), Meta Instagram-only ads 3 (copy with the Page's Instagram account 17841449897651638), Meta ads boosting
+  a Page post 5 (exact copy with the same object_story_id and only the CTA link changed - the ads keep the original Facebook post; Instagram gets new ad media),
+  Meta t.co ad 1 (headline set explicitly). **Not possible:** Snapchat split - Snapchat refuses to change an existing ad's creative_id (E1008, both PUT and
+  PATCH), so the 4 Snapchat runs (147 changes) were stopped; 26 copy creatives were created and left unattached (not deleted). Wadi Safar Meta (92 slots):
+  the canary was refused with code 10 / 3858749 "Missing Page permission" (Page 1245023868693595), so the other 87 were not tried; the Wadi carousels with a
+  parent image will also need the no-parent-image copy (their exact copy was refused with 2446581).
+- **Rule conflict (told to the user):** 6 written slots are on the user's never-retry list `work/excl_platform_refused_v2.json`: the 3 Instagram-only ads
+  (120248718877690789, ...680789, ...660789), the 2 Page-post ads 120251976797160058 / 120252057800770058 and the t.co ad 120203161740580598. Only
+  ...690789 had been refused by Meta before (page-only copy); the others were listed without a refused write. Reversible: re-attach the old creatives
+  (3583018921846531 and the other two KV creatives in `apply11/work_meta_meta_ig_identity_1/`, 2159505524618118, 120203212129110598).
+- **Spark Push side effect (accepted by the user):** TikTok re-published the post of **86 of the 97** ads at 13:21-13:57 UTC (the ad now runs on a new
+  post); 11 kept their post. TikTok accepted the same-item shape (same tiktok_item_id, no video_id) only on the 9 organic-post ads without a pushed video
+  (all 9 kept their post); on ads with a pushed video it refused it every time it was tried (40002 "The identity of Spark Ads cannot be updated"), so 88
+  were written with the old shape: 86 re-published, 2 kept their post (1826384400556033, already re-posted on 11-Oct, and 1869522694992065). List: sheet
+  "TikTok posts re-published" (`work/spark_check/spark_item_check.json`, 141 rows incl. the 55 from 11/12-Oct).
+- **TikTok ad text trimmed (gateway side effect):** the Whathead gateway strips a leading / trailing space or no-break space from ad_text. 38 ads in total:
+  19 on 12-Oct (apply4/5/6/7) and 19 on 13-Oct (18 Spark Push + 1859902673516705); on 1825848526683217 TikTok kept the caption. The user was first told
+  "27 + 1" (a rough text match); 38 is the checked count. List: sheet "TikTok text trimmed" (`work/tiktok_text_trimmed.json`).
+- **Unattached copies (nothing deleted):** 33 - Snapchat 26 (snap_split), Meta 7 (one id not recorded). Sheet "Unattached copies" (`work/unattached_copies.json`).
+
+**Re-read (`reread5/`):** the 9 accounts written or tried after 12:30 UTC, 13-Oct 13:45-14:38 UTC (TikTok at 14:27-14:38, after the re-publish; workflow
+`diriyah-keyed-reread-v2.js` also recorded tiktok_item_id); the other accounts copied from `reread4/out` (Google Visit Diriyah and X 13-Oct 12:05-12:34,
+the rest 12-Oct). Merged into `work/live_now.json` (previous: `work/live_now_13oct_afternoon.json`). Every one of the 136 URL slots written by apply10-12 is
+confirmed byte for byte; no other URL changed. The 4 Snapchat snap_split accounts show no ad switched and no URL changed.
+`round10/` = what is still not right (157 slots that need an edit: Wadi Safar 91 + archived 26 + 3 X cards + 1 Spark Pull; the rest manual / held), built with
+`--exclude work/excl_platform_refused_v5.json` (= v4 minus the 29 slots fixed on 13-Oct).
+
+**Final workbook:** `out/Diriyah_UTM_Verification_2026-10-13_final3.xlsx` (`bash scripts/build13c.sh`: build + LibreOffice recalc + `check_summary.py`,
+199 / 199). New sheets: "Unattached copies", "TikTok text trimmed"; "Live writes" in "Questions for you" now counts the writes per day and run.
+
+| Scope | Before (11-Oct) | After 12-Oct | 13-Oct morning | 13-Oct after the rules | **13-Oct final** |
+|---|---|---|---|---|---|
+| Ad URL slots | 3,339 wrong (100%) | 984 (29.5%) | 768 (23.0%) | 518 (15.5%) | **382 (11.4%)** |
+| Ads with a URL | 2,944 (100%) | 801 (27.2%) | 622 (21.1%) | 386 (13.1%) | **268 (9.1%)** |
+| Switched-on ads | 522 (100%) | 173 (33.1%) | 130 (24.9%) | 100 of 508 (19.7%) | **98 of 508 (19.3%)** |
+| Google sitelink assets | 380 (100%) | 21 (5.5%) | 21 (5.5%) | 4 (1.1%) | **4 (1.1%)** |
+
+Per platform, ad URL slots wrong now: Meta 21.8% (119), TikTok 2.0% (15), Snapchat 22.8% (147), X 17.3% (96), Google 0.6% (5), LinkedIn 0%.
+Writes made and read back (one per changed slot; a shared creative counts once): 3,427 = 11-Oct 375, 12-Oct 2,434, 13-Oct 618 (apply8 216, apply9 267,
+apply10 5, apply11 129, apply12 1).
+
+**What still needs the user** ("Still needs you"; nothing is blocked, held or failed any more):
+- Refused by the platform 139: Meta 119 (Wadi Safar 92 - Page / Instagram access; 26 archived ads; 1 image 326 px wide), TikTok 15 Spark Pull (creator
+  authorisation expired / post gone), Google 5 policy findings.
+- Manual 240 + 4 sitelink assets: Snapchat 147 shared sub-creatives (only new ads would split them: not approved), X 93 tweet-text links / shared cards
+  (new tweets needed: not approved), Google 4 sitelinks shared by Search and Demand Gen.
+- Skipped 3: X cards also used by 3 promoted tweets the advertiser created on 13-Oct 10:48 UTC. Landing pages to check: 19.
+- Snapchat Diriyah Gate (623ccdb3): 2 old "Founding day" ads were rejected at re-review after the 12-Oct URL edit ("page not found" for
+  https://www.dgda.gov.sa/ar); their campaigns ended in 2025, so nothing delivers either way.
+
+## Earlier on 13-Oct (apply9, about 12:50 UTC)
 
 **The run after the permission rules (`apply9/`).** The approved apply6 changes the safety check had blocked, without the Wadi Safar Meta ones: 293 changes in
 267 units (Google 178 ads + 17 sitelink assets, Meta 83 on 57 ads, TikTok 8, X 4, Snapchat 3), each equal to the apply6 plan with the live URL still the planned
@@ -56,8 +119,8 @@ The rules decided with the user, all binding:
 - X H&S-DiriyahCo: the advertiser paused campaign osvh1 (ManazelAlHadawi_AlwaysOn_UF_AWR) at 10:49 UTC and created campaign pg1tv with 14 new promoted tweets
   (b6006i-v); so 14 ads are no longer switched on (switched-on ads 522 -> 508).
 
-**Current workbook:** `out/Diriyah_UTM_Verification_2026-10-13_final2.xlsx` (`bash scripts/build13b.sh`; `check_summary.py` 199 / 199). The morning's
-`..._2026-10-13_final.xlsx` is kept.
+**Workbook then:** `out/Diriyah_UTM_Verification_2026-10-13_final2.xlsx` (`bash scripts/build13b.sh`; `check_summary.py` 199 / 199; superseded by final3).
+The morning's `..._2026-10-13_final.xlsx` is kept.
 
 | Scope | Before (11-Oct) | After 12-Oct | 13-Oct morning | **13-Oct, after the rules** |
 |---|---|---|---|---|
@@ -68,7 +131,7 @@ The rules decided with the user, all binding:
 
 Per platform, ad URL slots wrong now: Meta 27.8%, TikTok 15.3%, Snapchat 23.1%, X 17.3%, Google 0.6%, LinkedIn 0%.
 
-**What still needs the user now** ("Still needs you", 541 rows):
+**What still needed the user at 12:50 UTC** ("Still needs you", 541 rows; see the final state above for now):
 - Held, TikTok Spark Push: 97 (decision: write anyway - TikTok re-publishes the post - or Ads Manager).
 - Refused by the platform: 168 ad slots - Meta 148 (Wadi Safar 92 incl. the 45 not tried, archived, Instagram-only page creatives, t.co, 5 Bab Samhan
   carousels, 1 narrow image), TikTok 15 Spark Pull, Google 5 policy findings.
@@ -190,7 +253,8 @@ The ad loses the original post's likes and comments, and the API refuses to poin
 **55 Spark Push ads written on 11/12-Oct now run on a new post** (53 from the earlier runs + 2 written in apply6 before the hold: 1838548423250993 at 13:55 UTC by a lane that was stopped before it logged the result, re-published 14:28 UTC as post 7695788106468871432, and 1825846574224498 at 13:57 UTC, re-published 14:30 UTC as post 7695788703565810964; list with old and new post ids in the workbook sheet "TikTok posts re-published").
 Not affected: Upgraded Smart+ ads (9 of 9 kept their post), Spark Pull ads sent with the same tiktok_item_id (2 of 2), carousels without a post (71 of 71 still have none),
 and CUSTOMIZED_USER ads (no post).
-**Every Spark Push ad is now held** (`NotAttempted`, "held for the user") until the user decides; the apply script no longer contains the old recipe.
+On 12-Oct every Spark Push ad was held. **On 13-Oct the user approved writing them** (accepting the re-publish); `apply11/` wrote all 97 and TikTok re-published
+86 of them (see "Final state").
 
 ### Session safety check
 
@@ -210,23 +274,26 @@ call was denied, and writes went through between the blocks.
 
 ## Next step (only on the user's word)
 
-`round9/` is the plan of everything still not right (264 slots; 227 changes in 173 units; `summary.txt`). It includes the held Spark Push, the Wadi Safar Meta
-slots, the failed and skipped ones (the 50 refused slots of `work/excl_platform_refused_v4.json` are held out).
-1. Check the connector (`whathead_workspace list_accounts`). Stop and tell the user if Whathead asks to sign in.
-2. Keep the session in Accept edits mode (see "Session safety check"). Build the next run from `round9` without the held Spark Push ads
-   (`work/spark_check/spark_push_plan_ids.json`), the refused slots (archived, Page permission, Spark Pull expired, policy) and the manual ones, and run
-   `workflows/diriyah-apply-v8.js` on it (results come back in the run output; save them with `scripts/save_apply_results.py`). Tell the agents to pass
-   payloads straight to the Whathead tool. Wadi Safar Meta ads only after the Page / Instagram access is granted.
-3. Spark Push ads: write them only if the user accepts that TikTok re-publishes the post; otherwise they stay on the user's list.
-4. Re-read the touched accounts (copy the other accounts' files as in `reread3/`), `merge_live.py`, `round_plan.py`, rebuild the workbook (`scripts/build13.sh`
-   with the new folders) and run `check_summary.py`.
+Nothing left can be written through the APIs under the current approvals. `round10/` is the plan of what is still not right (157 slots that need an edit:
+91 Wadi Safar Meta + 26 archived Meta + 3 X cards + 1 Spark Pull; `summary.txt`; manual and refused slots are listed but not batched). Options that need the
+user's word:
+1. **Wadi Safar Meta (92 slots):** after the Page / Instagram access is granted, run the Wadi units from `round10/` with `workflows/diriyah-apply-v11.js`
+   (recipe `meta_wadi_canary` for the first unit, then normal; the carousels with a parent image need `meta_carousel_no_parent_image`).
+2. **Snapchat split (147):** only possible by creating a new ad per split (copy creative + new ad) and pausing the old ad - not approved (new ads start
+   without history and go through review). The 26 unattached copies from 13-Oct could be reused.
+3. **X (96):** new promoted tweets with the right card URLs (and the 3 cards shared with the advertiser's new tweets) - not approved.
+4. Before any run: check the connector (`whathead_workspace list_accounts`), keep the session in Accept edits mode, use `diriyah-apply-v11.js`
+   (results come back in the run output; `scripts/save_apply_results.py`), then re-read (`diriyah-keyed-reread-v2.js`; copy the other accounts' files as in
+   `reread5/`), `merge_live.py`, `round_plan.py`, `scripts/build13c.sh` with the new folders.
 
 ## Open questions for the user
 
 These are also in the workbook's "Questions for you" tab.
-- **TikTok Spark Push ads (new, 12-Oct):** an API URL edit makes TikTok re-publish the post and detach the ad from the original post. Write them anyway, or leave them to the user (Ads Manager)? 99 units in the plan are held.
+- **TikTok Spark Push ads:** decided 13-Oct (written; 86 posts re-published). The re-published ads can only be pointed back at their old post in TikTok Ads Manager, if at all.
 - **Safety-blocked writes:** none left (the permission rules + Accept edits mode let them through on 13-Oct).
-- **Meta platform refusals (13-Oct):** 2 Bab Samhan carousels (Ads Manager, or allow a copy without the parent image) and 1 ad with a 326 px image (needs a wider image).
+- **Meta platform refusals:** the Bab Samhan carousels are fixed (copy without the parent image, approved 13-Oct); 1 ad with a 326 px image still needs a wider image.
+- **Snapchat split / X new tweets:** both need new ads or tweets (and pausing the old ads) - the user has not approved that.
+- **6 slots of the never-retry list written on 13-Oct** (see "Final state"): keep them, or re-attach the old creatives?
 - **Wadi Safar Meta ads:** need the Advertiser role on Page 1245023868693595 and ad-account access to Instagram 17841441699550567.
 - **utm_medium:** the generator medium is used per source (google → paid-search, social → paid-social). Keep it, or keep old valid Mappings values?
 - **Demand Gen (`gadg`):** the generator has no row for it, so the medium is left out. Should it be paid-display or paid-video?
@@ -244,7 +311,7 @@ These are also in the workbook's "Questions for you" tab.
 | `live/*.jsonl` | 11-Oct live inventory: one row per URL slot, with ids, names and statuses |
 | `work/scored.json` | The same rows with violations: the "before" |
 | `work/targets.json` | **Final correct URL per slot** (5,028 slots; 20 mixed Search/Demand Gen sitelinks have no single target) |
-| `work/live_now.json` | Final keyed re-read (13-Oct merge of `reread3/out`): `platform\|ad_id\|slot` → `{url, status_now, found, note}` |
+| `work/live_now.json` | Final keyed re-read (13-Oct merge of `reread5/out`): `platform\|ad_id\|slot` → `{url, status_now, found, note}` |
 | `work/first_serving_all.json`, `work/serving_out_*.json` | First serving dates and never-served notes |
 | `work/month_fixes.json`, `work/consistency_fixes.json` | Every month change and every name harmonisation, with the reason |
 | `work/legacy_clash_items.json`, `work/omit_items.json` | How each part of each legacy or omit target was sourced, shown as "How each part was sourced" in the workbook |
@@ -264,7 +331,14 @@ These are also in the workbook's "Questions for you" tab.
 | `round8/` | Plan built from the 13-Oct morning re-read (superseded by `round9/`) |
 | `apply9/` | 13-Oct run of the safety-blocked approved writes: `in_*.json`, `out_*.jsonl`, `lane_reports.json`, `runs.json` (incl. the stopped Auto-mode runs), `stopped_runs_live_calls.json`, `check_apply.txt`, agents' `work_*` folders |
 | `reread4/` | 13-Oct afternoon keyed re-read of the 8 accounts written by apply9 (`jobs.json`, `out/` incl. the other accounts copied from `reread3/out`) |
-| `round9/` | Plan built from the final re-read: everything still not right |
+| `round9/` | Plan built from the 13-Oct 12:30 re-read (superseded by `round10/`) |
+| `apply10/`, `apply11/`, `apply12/` | 13-Oct afternoon runs: retries; the approved recipes (Spark Push, Meta carousels / Instagram / Page post / t.co, Snapchat split - refused E1008, Wadi canary); the text-trim ad. Each has `in_*.json`, `out_*.jsonl`, `lane_reports.json`, `runs.json`, `check_apply.txt`, agents' `work_*` folders; `apply11/snapchat_unattached_creatives.json` |
+| `reread5/` | 13-Oct final keyed re-read of the 9 accounts written or tried after 12:30 UTC (`jobs_meta_snap.json`, `jobs_tiktok.json`, `out/` incl. the other accounts copied from `reread4/out`) |
+| `round10/` | Plan built from the final re-read: everything still not right |
+| `work/excl_platform_refused_v5.json`, `work/wadi_safar_meta_needs_page_v2.json` | v4 minus the 29 slots fixed on 13-Oct; the 92 Wadi Safar Meta slots with the 13-Oct canary result |
+| `work/unattached_copies.json`, `work/tiktok_text_trimmed.json` | The 33 unattached creative copies; the 38 TikTok ads whose ad_text whitespace the gateway trimmed |
+| `work/spark_check/apply11_*` | 13-Oct Spark Push: ads written with their original post (`apply11_spark_written.json`) and the 14:27-14:38 post check per account |
+| `work/live_now_13oct_afternoon.json` | The 13-Oct 12:30 live state that `work/live_now.json` replaced |
 | `work/excl_platform_refused_v4.json`, `work/wadi_safar_meta_needs_page.json` | v3 + the 22 slots refused on 13-Oct afternoon; the 45 Wadi Safar Meta slots (not tried, need Page / Instagram access) |
 | `work/live_now_13oct_morning.json` | The 13-Oct morning live state that `work/live_now.json` replaced |
 | `work/excl_platform_refused_v3.json` | v2 + the 9 Meta slots refused on 13-Oct (never retry) |
@@ -273,8 +347,9 @@ These are also in the workbook's "Questions for you" tab.
 | `reread2/` | Keyed re-read for the final numbers: `jobs.json` (paths for this scratchpad), `job_groups.json` (A/B/C done, "later" = the 9 accounts apply6 writes to), `runs.json`, `out/` |
 | `reread/` | Keyed re-read jobs, inputs and outputs (`out/new_*.jsonl` = ads created since 11-Oct) |
 | `scripts/` | See below |
-| `workflows/*.js` | Saved Workflow scripts. Today's are `diriyah-apply-v5-*`, `diriyah-keyed-reread-*`, `diriyah-first-serving-dates-v2-*` and `diriyah-review-targets-v*-*` |
-| `out/Diriyah_UTM_Verification_2026-10-13_final2.xlsx` | **Current workbook** (13-Oct afternoon; recalculated in LibreOffice) |
+| `workflows/*.js` | Saved Workflow scripts. The latest are `diriyah-apply-v11.js` / `-v12.js` (recipes) and `diriyah-keyed-reread-v2.js` (re-read + optional per-job extra read) |
+| `out/Diriyah_UTM_Verification_2026-10-13_final3.xlsx` | **Current workbook** (13-Oct final; recalculated in LibreOffice) |
+| `out/Diriyah_UTM_Verification_2026-10-13_final2.xlsx` | 13-Oct 12:50 workbook |
 | `out/Diriyah_UTM_Verification_2026-10-13_final.xlsx` | 13-Oct morning workbook |
 | `out/Diriyah_UTM_Verification_2026-10-12_final.xlsx`, `…_interim.xlsx`, `…_at_pause.xlsx`, `…_at_signin_stop.xlsx` | Workbooks sent to the user on 12-Oct |
 
@@ -292,19 +367,27 @@ Scripts:
 - `check_summary.py` recalculates a workbook with LibreOffice and checks every Summary cell against `work/summary_expected*.json` (`--replace` keeps the recalculated copy).
 - `interim_live.py` builds an interim live file from a partial re-read plus an apply run's read-backs.
 - `save_apply_results.py` saves the results the v8 agents return (workflow journals) as `<apply>/out_*.jsonl` and `lane_reports.json`.
-- `build13.sh` / `build13b.sh` are the exact 13-Oct morning / afternoon workbook builds (run from `diriyah_utm/`).
+- `build13.sh` / `build13b.sh` / `build13c.sh` are the exact 13-Oct morning / 12:50 / final workbook builds (run from `diriyah_utm/`; `build13c.sh` also recalculates and checks).
+- `build_final2.py` sorts the apply folders in run order (apply10-12 after apply9; `round_plan.py` too), treats apply8-12 as 13-Oct, and adds the sheets "Unattached copies" and "TikTok text trimmed" when their `work/` files exist.
 
-## Write recipes (proven on 11 and 12-Oct; also in the apply workflow script)
+## Write recipes (proven on 11-13 Oct; also in the apply workflow scripts)
 
 Every write follows the same sequence: re-read the live entity → if the URL is not "now" or "alt_now", skip → `dry_run:true` → check that only the URL changes → `dry_run:false` → read back and compare byte for byte. At most 2 live attempts per write, never delete anything, and stop all lanes when the Whathead sign-in expires. Check side effects after 60+ minutes on a sample, not only immediately (the TikTok re-publish showed up 30-60 min later).
 
 - **Meta.** Creatives are immutable. Create a new creative that is identical except for the URL, then `POST /<ad_id>` with `creative={"creative_id":…}`. Do not send status. The ad goes back to review (`IN_PROCESS`).
-- **Snapchat.** Full-object `PUT /v1/adaccounts/{id}/creatives` with only `web_view_properties.url` changed. For composite creatives, edit each sub-creative. Sub-creatives shared by ads that need different URLs are manual.
+  - Carousels with a parent `link_data.image_hash`: Meta refuses the exact copy (100 / 2446581); a copy without the parent image (cards unchanged) is accepted (approved 13-Oct).
+  - Instagram-only ad sets with a page-only creative: add `object_story_spec.instagram_user_id` (the Instagram account the Page uses).
+  - Ads boosting an existing Page post: an exact copy with the same `object_story_id` and only `call_to_action.value.link` changed is accepted; the ad keeps the Facebook post (Instagram gets new ad media).
+  - A t.co link: set `link_data.name` to the shown headline, otherwise Meta scrapes "t.co" as the headline.
+  - Wadi Safar Page 1245023868693595: refused for this connection (10 / 3858749) until the user grants access.
+- **Snapchat.** Full-object `PUT /v1/adaccounts/{id}/creatives` with only `web_view_properties.url` changed. For composite creatives, edit each sub-creative. Sub-creatives shared by ads that need different URLs are manual: an existing ad's `creative_id` cannot be changed (E1008, PUT and PATCH), so a split needs new ads.
 - **TikTok.**
   - Manual ads: full `/v1.3/ad/update/` with `utm_params` matching the new URL (no `utm_id`). Send pixel and item ids as exact strings, because the gateway loses precision.
   - Smart+ ads: `smart_plus/ad/update`.
-  - **Spark Push ads (BC_AUTH_TT with a tiktok_item_id): DO NOT write them with the old recipe** (video_id, no tiktok_item_id). It passes the immediate read-back,
-    but TikTok re-publishes the post 30-60 min later and detaches the ad from the original post (53 of 76 ads on 11/12-Oct). They are held for the user's decision.
+  - **Spark Push ads (BC_AUTH_TT with a tiktok_item_id):** the old recipe (video_id, no tiktok_item_id) passes the immediate read-back, but TikTok re-publishes
+    the post 30-60 min later and detaches the ad from the original post (55 on 11/12-Oct, 86 of 88 on 13-Oct). Same tiktok_item_id without video_id works only
+    for organic-post ads (9 of 9 kept their post); for pushed videos TikTok refuses it (40002). Write them only with the user's OK (given 13-Oct for the 97).
+  - The gateway trims a leading / trailing space or no-break space from `ad_text` (38 ads so far; sheet "TikTok text trimmed").
   - Spark Pull ads (AUTH_CODE): send the same tiktok_item_id and identity unchanged (2 of 2 kept their post). With expired authorization they cannot be edited, so they are manual.
   - BC_AUTH_TT carousels without a tiktok_item_id: full update as read (71 of 71 still have no post afterwards).
 - **Google.** For ads, `AdService` MutateAds `final_urls` with `update_mask` `final_urls`. For sitelinks, `AssetService` MutateAssets on the asset. One asset carries one URL for all its placements.

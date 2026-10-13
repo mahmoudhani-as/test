@@ -1,0 +1,70 @@
+{
+ "tool_use_id": "toolu_014bkP1C6GQoTpnamSJPnoTh",
+ "input": {
+  "action": "snapchat_ad_replace",
+  "path_params": {
+   "ad_squad_id": "fbd7bd19-bbe3-49fa-b2c2-dca6d583e823"
+  },
+  "dry_run": false,
+  "payload": {
+   "ads": [
+    {
+     "id": "3fca9630-7091-49a9-b5f2-72c0d4b0b168",
+     "updated_at": "2026-09-16T19:04:15.396Z",
+     "created_at": "2026-07-08T08:10:55.256Z",
+     "name": "ManazelAlHadawi_CR1_AR_Conversions",
+     "ad_squad_id": "fbd7bd19-bbe3-49fa-b2c2-dca6d583e823",
+     "creative_id": "9b14a0a5-71d0-4f53-8f70-d069e3ddcd2b",
+     "status": "PAUSED",
+     "type": "STORY",
+     "render_type": "STATIC",
+     "review_status": "APPROVED",
+     "delivery_status": [
+      "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+      "INVALID_EFFECTIVE_INVALID",
+      "INVALID_NOT_EFFECTIVE_ACTIVE",
+      "INVALID_NOT_ACTIVE"
+     ]
+    }
+   ]
+  }
+ },
+ "result": {
+  "success": true,
+  "data": {
+   "success": false,
+   "error": {
+    "code": "ERROR",
+    "message": "Snapchat native request failed.",
+    "details": {
+     "action": "snapchat_adsquads_ad_squad_id_ads_update",
+     "upstream_status": 200,
+     "upstream_message": {
+      "request_status": "ERROR",
+      "request_id": "d2e13979-a3b1-4c0d-82be-d685058a80a4",
+      "ads": [
+       {
+        "sub_request_error_reason": "Error code: E1008, message: Request cannot be processed due to validation error : [This field cannot be updated. Field creativeId: original value e388454c-ac0f-49be-8cdd-14928db7ff9f does not match update value 9b14a0a5-71d0-4f53-8f70-d069e3ddcd2b.]",
+        "sub_request_status": "ERROR"
+       }
+      ]
+     },
+     "snapchat": {
+      "request_status": "ERROR",
+      "request_id": "d2e13979-a3b1-4c0d-82be-d685058a80a4",
+      "ads": [
+       {
+        "sub_request_error_reason": "Error code: E1008, message: Request cannot be processed due to validation error : [This field cannot be updated. Field creativeId: original value e388454c-ac0f-49be-8cdd-14928db7ff9f does not match update value 9b14a0a5-71d0-4f53-8f70-d069e3ddcd2b.]",
+        "sub_request_status": "ERROR"
+       }
+      ]
+     }
+    }
+   }
+  },
+  "meta": {
+   "requestId": "96a6f966-456d-419f-96d5-67a4f25239a2",
+   "latencyMs": 870
+  }
+ }
+}

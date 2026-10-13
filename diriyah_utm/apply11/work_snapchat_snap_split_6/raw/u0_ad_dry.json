@@ -1,0 +1,84 @@
+{
+ "tool_use_id": "toolu_01MwL6oHAZGWMDfH4SPHMXAV",
+ "input": {
+  "action": "snapchat_ad_replace",
+  "path_params": {
+   "ad_squad_id": "fbd7bd19-bbe3-49fa-b2c2-dca6d583e823"
+  },
+  "dry_run": true,
+  "payload": {
+   "ads": [
+    {
+     "id": "3fca9630-7091-49a9-b5f2-72c0d4b0b168",
+     "updated_at": "2026-09-16T19:04:15.396Z",
+     "created_at": "2026-07-08T08:10:55.256Z",
+     "name": "ManazelAlHadawi_CR1_AR_Conversions",
+     "ad_squad_id": "fbd7bd19-bbe3-49fa-b2c2-dca6d583e823",
+     "creative_id": "9b14a0a5-71d0-4f53-8f70-d069e3ddcd2b",
+     "status": "PAUSED",
+     "type": "STORY",
+     "render_type": "STATIC",
+     "review_status": "APPROVED",
+     "delivery_status": [
+      "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+      "INVALID_EFFECTIVE_INVALID",
+      "INVALID_NOT_EFFECTIVE_ACTIVE",
+      "INVALID_NOT_ACTIVE"
+     ]
+    }
+   ]
+  }
+ },
+ "result": {
+  "success": true,
+  "data": {
+   "success": true,
+   "action": "snapchat_adsquads_ad_squad_id_ads_update",
+   "dryRun": true,
+   "data": {
+    "request": {
+     "method": "PUT",
+     "url": "https://adsapi.snapchat.com/v1/adsquads/fbd7bd19-bbe3-49fa-b2c2-dca6d583e823/ads",
+     "host": "adsapi.snapchat.com",
+     "path": "/v1/adsquads/fbd7bd19-bbe3-49fa-b2c2-dca6d583e823/ads",
+     "headers": {
+      "Accept": "application/json",
+      "Authorization": "Bearer [redacted]",
+      "Content-Type": "application/json"
+     },
+     "query": {},
+     "bodyFormat": "json",
+     "body": {
+      "ads": [
+       {
+        "ad_squad_id": "fbd7bd19-bbe3-49fa-b2c2-dca6d583e823",
+        "created_at": "2026-07-08T08:10:55.256Z",
+        "creative_id": "9b14a0a5-71d0-4f53-8f70-d069e3ddcd2b",
+        "delivery_status": [
+         "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+         "INVALID_EFFECTIVE_INVALID",
+         "INVALID_NOT_EFFECTIVE_ACTIVE",
+         "INVALID_NOT_ACTIVE"
+        ],
+        "id": "3fca9630-7091-49a9-b5f2-72c0d4b0b168",
+        "name": "ManazelAlHadawi_CR1_AR_Conversions",
+        "render_type": "STATIC",
+        "review_status": "APPROVED",
+        "status": "PAUSED",
+        "type": "STORY",
+        "updated_at": "2026-09-16T19:04:15.396Z"
+       }
+      ]
+     }
+    },
+    "warnings": [],
+    "compatibility": null,
+    "compatibilitySkipped": true
+   }
+  },
+  "meta": {
+   "requestId": "6b5908f9-b272-415b-8557-a1e7cc420e9a",
+   "latencyMs": 872
+  }
+ }
+}

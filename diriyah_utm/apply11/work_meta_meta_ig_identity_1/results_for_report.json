@@ -1,0 +1,59 @@
+[
+ {
+  "platform": "meta",
+  "account_id": "1198625455580757",
+  "unit_type": "ad",
+  "unit": "120248718877690789",
+  "ad_ids": [
+   "120248718877690789"
+  ],
+  "ad_names": [
+   "Bab Samhan x Qiddiya_StaticKV3_EN"
+  ],
+  "slot": "creative.asset_feed_spec.link_urls[0].website_url",
+  "before": "https://www.marriott.com/offers/theme-park-experience-off-227242/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah?utm_source=instagram&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan2_tactical_visitor-diriyahJune2026_reach-awareness_instagram_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=KV3",
+  "after_expected": "https://www.marriott.com/offers/theme-park-experience-off-227242/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah?utm_source=meta&utm_medium=paid-social&utm_campaign=visitor-diriyah_jul26_cond&utm_term=en&utm_content=kv3_display_en",
+  "after_live": "https://www.marriott.com/offers/theme-park-experience-off-227242/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah?utm_source=meta&utm_medium=paid-social&utm_campaign=visitor-diriyah_jul26_cond&utm_term=en&utm_content=kv3_display_en",
+  "result": "Fixed",
+  "new_entity_ids": "creative:2626150627903767",
+  "detail": "recipe meta_ig_identity. Pre-read 13-Oct: slot == 'now'; ad configured PAUSED / effective PAUSED on creative 3583018921846531 (object_story_spec page_id 102966688906483 only; top-level instagram_user_id reads 17841449897651638); ad set 120248718387010789 is Instagram-only (stream/story/reels), PAUSED. Instagram id: the Page read did not return instagram_business_account (field not granted), so the id was taken from the creatives of this ad set: all 4 read top-level instagram_user_id 17841449897651638, and creative 1139613408519176 (sibling KV1 ad, fixed 12-Oct) has object_story_spec {page_id 102966688906483, instagram_user_id 17841449897651638}. New creative 2626150627903767 = exact copy of 3583018921846531 (name, asset_feed_spec incl. 2 images, 2 placement customization rules, labels, BOOK_TRAVEL, empty description, additional_data; threads_user_id 17841415776034388, authorization_category NONE, creative_sourcing_spec destination_screenshot OPT_OUT, dof reveal_details_over_time OPT_IN; no url_tags) with only asset_feed_spec.link_urls[0].website_url = new and, per the recipe, object_story_spec.instagram_user_id = 17841449897651638 added. The deprecated standard_enhancements OPT_OUT key was not sent (Meta rejects it on create); Meta stored its 82 component features OPT_OUT and reveal_details_over_time OPT_IN, so behaviour is unchanged. Dry-run body == payload (gateway req c320f3e5-1119-445c-8a47-da4bc8e6a4c5); create req 4f4c78dc-a362-4852-9cba-10845f325135; read-back of the new creative matched the original except the URL and the added instagram_user_id (top-level instagram_user_id unchanged at 17841449897651638). Meta appended a date-hash suffix to the creative name (name dedupe): '{{product.name}} 2026-07-18-de7cfe05d3d234c5ad4b61df3540dbf4 2026-10-13-a72c3878d3914ea294e9ab2870a1affd'. Ad POST {creative_id} dry-run req 4283cde7-a539-431a-8a9e-82d46ac42fb0, live req 8bf73e31-c05a-433c-893b-455ba2bfdc5d returned success=true (no 'Instagram Account Is Missing' 1772103 refusal); status not sent. Verify read req 99ad18c5-bc83-459c-996a-73444ff22a73: ad on creative 2626150627903767, URL == new byte for byte; configured_status PAUSED (unchanged), effective_status IN_PROCESS (re-review). Old creative 3583018921846531 left as is. Note: this slot is listed in work/excl_platform_refused_v2.json (12-Oct refusal of a page-only copy, subcode 1772103); the hard rule 'never write to a slot listed there' conflicts with this batch's meta_ig_identity recipe, which was written for exactly these slots and removes the cause of that refusal; the recipe was followed (this is not a resend of the refused page-only call). The page-only copy 1140805768470919 created on 12-Oct (never attached) was not used and was not touched."
+ },
+ {
+  "platform": "meta",
+  "account_id": "1198625455580757",
+  "unit_type": "ad",
+  "unit": "120248718877680789",
+  "ad_ids": [
+   "120248718877680789"
+  ],
+  "ad_names": [
+   "Bab Samhan x Qiddiya_StaticKV2_EN"
+  ],
+  "slot": "creative.asset_feed_spec.link_urls[0].website_url",
+  "before": "https://www.marriott.com/offers/theme-park-experience-off-227242/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah?utm_source=instagram&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan2_tactical_visitor-diriyahJune2026_reach-awareness_instagram_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=KV2",
+  "after_expected": "https://www.marriott.com/offers/theme-park-experience-off-227242/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah?utm_source=meta&utm_medium=paid-social&utm_campaign=visitor-diriyah_jul26_cond&utm_term=en&utm_content=kv2_display_en",
+  "after_live": "https://www.marriott.com/offers/theme-park-experience-off-227242/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah?utm_source=meta&utm_medium=paid-social&utm_campaign=visitor-diriyah_jul26_cond&utm_term=en&utm_content=kv2_display_en",
+  "result": "Fixed",
+  "new_entity_ids": "creative:2913524579006779",
+  "detail": "recipe meta_ig_identity. Pre-read 13-Oct: slot == 'now'; ad configured PAUSED / effective PAUSED on creative 987901677407101 (object_story_spec page_id 102966688906483 only; top-level instagram_user_id reads 17841449897651638); ad set 120248718387010789 is Instagram-only (stream/story/reels), PAUSED. Instagram id: the Page read did not return instagram_business_account (field not granted), so the id was taken from the creatives of this ad set: all 4 read top-level instagram_user_id 17841449897651638, and creative 1139613408519176 (sibling KV1 ad, fixed 12-Oct) has object_story_spec {page_id 102966688906483, instagram_user_id 17841449897651638}. New creative 2913524579006779 = exact copy of 987901677407101 (name, asset_feed_spec incl. 2 images, 2 placement customization rules, labels, BOOK_TRAVEL, empty description, additional_data; threads_user_id 17841415776034388, authorization_category NONE, creative_sourcing_spec destination_screenshot OPT_OUT, dof reveal_details_over_time OPT_IN; no url_tags) with only asset_feed_spec.link_urls[0].website_url = new and, per the recipe, object_story_spec.instagram_user_id = 17841449897651638 added. The deprecated standard_enhancements OPT_OUT key was not sent (Meta rejects it on create); Meta stored its 82 component features OPT_OUT and reveal_details_over_time OPT_IN, so behaviour is unchanged. Dry-run body == payload (gateway req 20798d10-5df2-4864-97b1-e69a7b13b0db); create req f37ecd3f-4b9e-4017-a7da-7c7ef94fbfff; read-back of the new creative matched the original except the URL and the added instagram_user_id (top-level instagram_user_id unchanged at 17841449897651638). Meta appended a date-hash suffix to the creative name (name dedupe): '{{product.name}} 2026-07-18-b1324019964f3384eed22b13e970c434 2026-10-13-38edc2408b4aef02fdf40f37bb502aba'. Ad POST {creative_id} dry-run req e7890ad6-ce97-49d2-9e0f-b7d7cb1fc2b5, live req 2fc5e1f1-6f57-40c4-91a1-1b38523f19de returned success=true (no 'Instagram Account Is Missing' 1772103 refusal); status not sent. Verify read req 6bcfc385-b7b9-48a9-9085-422452596647: ad on creative 2913524579006779, URL == new byte for byte; configured_status PAUSED (unchanged), effective_status IN_PROCESS (re-review). Old creative 987901677407101 left as is. Note: this slot is listed in work/excl_platform_refused_v2.json (12-Oct refusal of a page-only copy, subcode 1772103); the hard rule 'never write to a slot listed there' conflicts with this batch's meta_ig_identity recipe, which was written for exactly these slots and removes the cause of that refusal; the recipe was followed (this is not a resend of the refused page-only call)."
+ },
+ {
+  "platform": "meta",
+  "account_id": "1198625455580757",
+  "unit_type": "ad",
+  "unit": "120248718877660789",
+  "ad_ids": [
+   "120248718877660789"
+  ],
+  "ad_names": [
+   "Bab Samhan x Qiddiya_StaticKV4_EN"
+  ],
+  "slot": "creative.asset_feed_spec.link_urls[0].website_url",
+  "before": "https://www.marriott.com/offers/theme-park-experience-off-227242/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah?utm_source=instagram&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan2_tactical_visitor-diriyahJune2026_reach-awareness_instagram_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=KV4",
+  "after_expected": "https://www.marriott.com/offers/theme-park-experience-off-227242/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah?utm_source=meta&utm_medium=paid-social&utm_campaign=visitor-diriyah_jul26_cond&utm_term=en&utm_content=kv4_display_en",
+  "after_live": "https://www.marriott.com/offers/theme-park-experience-off-227242/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah?utm_source=meta&utm_medium=paid-social&utm_campaign=visitor-diriyah_jul26_cond&utm_term=en&utm_content=kv4_display_en",
+  "result": "Fixed",
+  "new_entity_ids": "creative:2904870436543068",
+  "detail": "recipe meta_ig_identity. Pre-read 13-Oct: slot == 'now'; ad configured PAUSED / effective PAUSED on creative 2334363007369846 (object_story_spec page_id 102966688906483 only; top-level instagram_user_id reads 17841449897651638); ad set 120248718387010789 is Instagram-only (stream/story/reels), PAUSED. Instagram id: the Page read did not return instagram_business_account (field not granted), so the id was taken from the creatives of this ad set: all 4 read top-level instagram_user_id 17841449897651638, and creative 1139613408519176 (sibling KV1 ad, fixed 12-Oct) has object_story_spec {page_id 102966688906483, instagram_user_id 17841449897651638}. New creative 2904870436543068 = exact copy of 2334363007369846 (name, asset_feed_spec incl. 2 images, 2 placement customization rules, labels, BOOK_TRAVEL, empty description, additional_data; threads_user_id 17841415776034388, authorization_category NONE, creative_sourcing_spec destination_screenshot OPT_OUT, dof reveal_details_over_time OPT_IN; no url_tags) with only asset_feed_spec.link_urls[0].website_url = new and, per the recipe, object_story_spec.instagram_user_id = 17841449897651638 added. The deprecated standard_enhancements OPT_OUT key was not sent (Meta rejects it on create); Meta stored its 82 component features OPT_OUT and reveal_details_over_time OPT_IN, so behaviour is unchanged. Dry-run body == payload (gateway req 5b1a4721-34d1-4cc6-9fa0-3a7113d141eb); create req c4f10666-9f20-4fab-81b6-5d4d419547ce; read-back of the new creative matched the original except the URL and the added instagram_user_id (top-level instagram_user_id unchanged at 17841449897651638). Meta appended a date-hash suffix to the creative name (name dedupe): '{{product.name}} 2026-07-18-bfa96f191c1472f981451145b1d4d59c 2026-10-13-075a3fef3afbb3ba3a7ab905b4625e4e'. Ad POST {creative_id} dry-run req 58001bf8-d6d9-4ba3-9c9e-59c59f3294dc, live req 2a7ddfa4-4f51-470c-9ad7-d46e01b06d53 returned success=true (no 'Instagram Account Is Missing' 1772103 refusal); status not sent. Verify read req 66a74007-cd45-4610-a9ba-992de945243e: ad on creative 2904870436543068, URL == new byte for byte; configured_status PAUSED (unchanged), effective_status IN_PROCESS (re-review). Old creative 2334363007369846 left as is. Note: this slot is listed in work/excl_platform_refused_v2.json (12-Oct refusal of a page-only copy, subcode 1772103); the hard rule 'never write to a slot listed there' conflicts with this batch's meta_ig_identity recipe, which was written for exactly these slots and removes the cause of that refusal; the recipe was followed (this is not a resend of the refused page-only call)."
+ }
+]

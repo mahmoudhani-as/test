@@ -1,0 +1,1497 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "snapchat_adaccounts_ad_account_id_ads_get",
+    "method": "GET",
+    "host": "adsapi.snapchat.com",
+    "path": "/v1/adaccounts/b736921f-da3e-4889-8620-d3b0969c69b0/ads",
+    "dryRun": false,
+    "data": {
+      "request_status": "SUCCESS",
+      "request_id": "96143cdb-37fa-42cc-9b01-9d3843b1cc85",
+      "paging": {
+        "next_link": "https://adsapi.snapchat.com/v1/adaccounts/b736921f-da3e-4889-8620-d3b0969c69b0/ads?cursor=QWRzLzdkYTk2ZjRkLTE1OTEtNDVkNS04MDFmLTRkOGJhZTc5ZjViNQ&limit=80"
+      },
+      "ads": [
+        {
+          "ad": {
+            "id": "02316824-0475-4044-8542-de53f46562a4",
+            "name": "company_general_2026_sep_sc-snd-kv1_adset-id-0df8a722_display_ar",
+            "status": "ACTIVE",
+            "ad_squad_id": "2309d090-d080-4ff1-8c09-76a7b41fb710",
+            "creative_id": "bbf54c86-a346-4445-b6b0-66a8ce782f7a",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_EFFECTIVE_INVALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-09-20T14:48:03.513Z",
+            "updated_at": "2026-09-21T14:00:07.249Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "02a7ee94-f305-480f-adef-39643fd08771",
+            "name": "Bab Samhan x Qiddiya_CR7_EN",
+            "status": "ACTIVE",
+            "ad_squad_id": "0794e83e-a8db-4214-8ddb-96c4dbe2895e",
+            "creative_id": "ec8092f9-5171-430c-99a7-c838f0622225",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID"
+            ],
+            "type": "STORY",
+            "created_at": "2026-08-16T18:01:44.756Z",
+            "updated_at": "2026-10-12T11:28:49.692Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "03ed2fce-4ff4-4a1e-89d2-c4f7c6529dde",
+            "name": "Visit Diriyah_WC_KV3_AR_1080x1920_V2",
+            "status": "ACTIVE",
+            "ad_squad_id": "316758cb-05e0-420d-a162-fead999109ea",
+            "creative_id": "ada0f431-4040-4f70-8191-316a015167c9",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-07-09T06:52:27.110Z",
+            "updated_at": "2026-10-12T14:20:14.072Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "04549771-c28c-4042-ad60-7bf56c789f24",
+            "name": "Safezoned Tickets - EN - EID KV",
+            "status": "ACTIVE",
+            "ad_squad_id": "83dd2d04-6e15-4da9-8709-d57ecf31190a",
+            "creative_id": "9fea9544-46df-4e7b-91db-557c7cbe439d",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-03-18T09:11:53.037Z",
+            "updated_at": "2026-10-12T11:29:49.597Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "05c3e6b8-03c6-4062-be37-66374a9355b1",
+            "name": "Visit Diriyah_KV3_Summer_EN",
+            "status": "ACTIVE",
+            "ad_squad_id": "ef6b8730-4e54-4891-9d73-0570afd44bdd",
+            "creative_id": "23a5eeaf-938a-4ae0-9de3-28a0190d5099",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-07-29T12:12:35.862Z",
+            "updated_at": "2026-10-12T11:29:46.777Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "06e56343-af7c-41ca-805b-7aec6ce17c5e",
+            "name": "Visit Diriyah_Intro_VideoKV_45s_AR_1080x1920_V2",
+            "status": "PAUSED",
+            "ad_squad_id": "653f1912-a984-4f36-8503-c709961be829",
+            "creative_id": "bd8c4ef1-3824-4b1d-b632-d30154483f7c",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-07-09T14:50:44.237Z",
+            "updated_at": "2026-10-12T14:20:16.985Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "08f20b64-9eb7-4781-82de-995445c692a0",
+            "name": "Visit Diriyah_Intro_VideoKV_15s_AR_1080x1920_V2",
+            "status": "PAUSED",
+            "ad_squad_id": "653f1912-a984-4f36-8503-c709961be829",
+            "creative_id": "c59bdbb7-90ef-4383-bbfd-0676ca89140d",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-07-09T14:53:07.089Z",
+            "updated_at": "2026-10-12T14:22:11.618Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "0ab3747c-543f-4294-bc41-8752d612c9fb",
+            "name": "Bab Samhan x Qiddiya_StaticKV1_EN",
+            "status": "ACTIVE",
+            "ad_squad_id": "59b6cf20-524a-4a50-84bf-fb0ef5ea283a",
+            "creative_id": "acd11532-fff5-4a49-a861-0637d96d2a7f",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-05-24T16:00:17.107Z",
+            "updated_at": "2026-10-12T11:33:54.342Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "0b1a61b7-9a72-45ea-8e41-5facd23de8c0",
+            "name": "Bab Samhan x Qiddiya_Static_KV3_EN",
+            "status": "PAUSED",
+            "ad_squad_id": "0794e83e-a8db-4214-8ddb-96c4dbe2895e",
+            "creative_id": "6c1a9420-bf3d-4f2f-8288-915167e8e7ec",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-07-18T17:53:05.203Z",
+            "updated_at": "2026-10-12T11:33:48.735Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "0d61a7f8-d9c7-4154-8df0-6cf77e4a0fad",
+            "name": "Bab Samhan x Qiddiya_StaticKV1_EN_Creative",
+            "status": "PAUSED",
+            "ad_squad_id": "009d8e9c-8083-443d-9b91-2b19a60f08b7",
+            "creative_id": "126ab959-5cc0-42b8-a156-c49be0051573",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-06-24T09:24:14.650Z",
+            "updated_at": "2026-07-21T17:29:49.298Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "101d86e9-4bd9-4ca1-9c90-df8c7c6c82fe",
+            "name": "ManazelAlHadawi_KV1_Static_AR_NA_Prospecting_03.06.2026_30.09.2026",
+            "status": "PAUSED",
+            "ad_squad_id": "6962de66-3e7f-4198-8755-654cbe909f0b",
+            "creative_id": "b2482ffb-6e2b-4225-8fc8-ef834fbf3a08",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-06-02T16:00:12.692Z",
+            "updated_at": "2026-06-02T16:01:06.739Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "1330ceaa-b72f-492e-918d-4bd8ebb7590b",
+            "name": "Bab Samhan - Static AR - KV1",
+            "status": "PAUSED",
+            "ad_squad_id": "61564006-189f-40fb-a926-b1a42c054d46",
+            "creative_id": "631d5b1a-1a03-4dbf-bda7-e23e116f8b2f",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-02-25T13:24:01.826Z",
+            "updated_at": "2026-10-12T11:33:47.451Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "13a10af0-63a3-4c3b-8021-596a26ee7f07",
+            "name": "Visit Diriyah_KV3_Summer_AR",
+            "status": "ACTIVE",
+            "ad_squad_id": "84a9de9c-1a55-4740-9bae-399de38ce963",
+            "creative_id": "919d908f-14c1-4573-8aca-d2802504fd40",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-07-29T12:16:19.697Z",
+            "updated_at": "2026-10-12T14:24:12.532Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "18b69908-e9b7-40f7-ad6a-7d010bb680ec",
+            "name": "Visit Diriyah_Intro_VideoKV_45s_AR_1080x1920",
+            "status": "PAUSED",
+            "ad_squad_id": "653f1912-a984-4f36-8503-c709961be829",
+            "creative_id": "92c8c0df-ddb3-4b34-b577-a3b09d1cbf5b",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-06-16T12:40:01.539Z",
+            "updated_at": "2026-10-12T14:24:03.779Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "1934d65d-c000-48b0-a373-25b3b5923e20",
+            "name": "Bab Samhan - Static AR - KV1",
+            "status": "PAUSED",
+            "ad_squad_id": "a17b5e08-bf48-4873-ae81-43cd3e969929",
+            "creative_id": "f4c6e506-b9c7-481a-95bf-f52a82f16a39",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-02-18T12:28:21.391Z",
+            "updated_at": "2026-10-12T14:07:59.467Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "1c432d48-15a1-4f39-ad8b-1e1123923200",
+            "name": "Visit Diriyah_Eid KV_AR_1080x1920",
+            "status": "ACTIVE",
+            "ad_squad_id": "8b76883e-2984-4a67-8482-1f719f9db9cd",
+            "creative_id": "e8e184f7-a396-401f-8499-346502fcccf4",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-05-24T17:07:06.770Z",
+            "updated_at": "2026-10-13T12:45:38.871Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "1f1c4057-865d-4012-988c-2ac3ea5d29be",
+            "name": "Tickets - Static AR - KV1",
+            "status": "PAUSED",
+            "ad_squad_id": "09622afb-03e1-4d31-a649-24577ebc007d",
+            "creative_id": "8a4bcffe-453e-45b3-a15d-466d41bd2111",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-03-02T12:22:17.567Z",
+            "updated_at": "2026-10-13T09:56:28.296Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "1fd064fc-af01-4417-b70c-8f89898f209d",
+            "name": "Bab Samhan x Qiddiya_StaticKV3_EN_Creative",
+            "status": "PAUSED",
+            "ad_squad_id": "009d8e9c-8083-443d-9b91-2b19a60f08b7",
+            "creative_id": "5db71ec7-cc84-43f7-928e-44f4517d0f93",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-06-24T09:24:14.784Z",
+            "updated_at": "2026-10-13T09:57:20.673Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "20e697c6-ab44-4742-be84-5df05f18edf2",
+            "name": "Restaurants - Static EN - KV2",
+            "status": "PAUSED",
+            "ad_squad_id": "89de92ea-0ee3-4e58-b015-0d89850d8fec",
+            "creative_id": "88dcce9d-0c8c-4737-9296-02d8dfec6ee7",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-03-04T10:16:48.073Z",
+            "updated_at": "2026-10-13T11:58:49.190Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "23ecb21d-7ca9-482e-82de-a7a879bf86b3",
+            "name": "Restaurants - Static AR - KV2",
+            "status": "PAUSED",
+            "ad_squad_id": "2bca30a5-c903-4a4f-811d-5712b4c592d5",
+            "creative_id": "38bb7f7d-a849-4a3d-be70-edbb07eeff38",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-03-04T10:16:31.724Z",
+            "updated_at": "2026-10-13T09:59:34.611Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "23f021aa-8743-4e47-881c-81f4d491f405",
+            "name": "BT Dining Film​ AR",
+            "status": "PAUSED",
+            "ad_squad_id": "b58c27d5-f7cc-492c-a4c1-46d987a99b21",
+            "creative_id": "4bb095d2-5acd-445f-8c1e-f9e3aa2eb1eb",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-02-18T12:49:07.712Z",
+            "updated_at": "2026-10-13T10:00:51.964Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "24a5909e-0905-4e3f-94be-4ae48693ecbb",
+            "name": "Visit Diriyah_Intro45s_Video_AR_1080x1920",
+            "status": "PAUSED",
+            "ad_squad_id": "316758cb-05e0-420d-a162-fead999109ea",
+            "creative_id": "421a3522-ab45-4811-a132-f411e6bd675b",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-06-12T10:12:16.673Z",
+            "updated_at": "2026-10-13T12:51:38.367Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "24b9e2b5-3c69-48a8-8f24-f43651f1ba4f",
+            "name": "Bab Samhan - Static EN - KV1",
+            "status": "PAUSED",
+            "ad_squad_id": "362214bf-a9da-4c38-894a-99359c3e44dd",
+            "creative_id": "f37bab86-b1f0-43db-bbc3-464becbdc15e",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-02-25T13:23:54.618Z",
+            "updated_at": "2026-10-13T10:02:20.436Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "2601128f-120c-4577-a129-b2184709bccb",
+            "name": "Restaurants - Static EN - KV1",
+            "status": "PAUSED",
+            "ad_squad_id": "43e0c2a5-307e-4f5e-8c32-5fa28600c744",
+            "creative_id": "2fa678b0-1352-4985-b3ac-ab8938ac9c71",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-02-19T10:39:00.164Z",
+            "updated_at": "2026-10-13T10:03:05.995Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "26c8ac5b-8a9d-4cda-a6f0-f673bcc2dcaf",
+            "name": "Bab Samhan x Qiddiya_CR5_AR",
+            "status": "ACTIVE",
+            "ad_squad_id": "2e8289bd-15ee-4dde-8862-0ea2db1c9f4b",
+            "creative_id": "7d5a31df-9e72-4015-a9e1-63c22590dc83",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID"
+            ],
+            "type": "STORY",
+            "created_at": "2026-08-16T17:54:18.059Z",
+            "updated_at": "2026-10-13T10:04:54.919Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "276b4978-514c-491d-9a90-3b05fd79300d",
+            "name": "Shopping AR static",
+            "status": "PAUSED",
+            "ad_squad_id": "6d0e74d2-47cf-44e3-8757-4d04fad3b812",
+            "creative_id": "de3d8b33-a149-4509-944c-beb6162ec579",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-02-26T12:37:54.987Z",
+            "updated_at": "2026-10-13T09:55:25.134Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "279e8290-45ee-46c9-8736-1a2b7a2d1e37",
+            "name": "Video En Corrected",
+            "status": "PAUSED",
+            "ad_squad_id": "627dd2dc-53af-42c2-b1ce-e64d3e65eec9",
+            "creative_id": "dc4740eb-d512-4b42-8102-67bc3b0452b4",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-02-19T11:56:25.653Z",
+            "updated_at": "2026-10-13T10:06:02.269Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "292a381b-499a-4169-9b52-5db8674ec37a",
+            "name": "Zallal - Static AR - KV1",
+            "status": "PAUSED",
+            "ad_squad_id": "b25f6ecb-df9d-49ec-9a6f-dd925ffc74e8",
+            "creative_id": "8fc370e6-af1f-4f9e-aec8-9a4be5f6e69a",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-02-24T10:24:32.172Z",
+            "updated_at": "2026-10-13T09:57:50.410Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "2992d82a-8f29-430f-98fe-149aa23e3637",
+            "name": "Bab Samhan x Qiddiya_Static_KV4_EN_Creative_V2",
+            "status": "ACTIVE",
+            "ad_squad_id": "009d8e9c-8083-443d-9b91-2b19a60f08b7",
+            "creative_id": "a37133b8-b91f-4ec2-ac90-5b6ccc257672",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-07-16T13:18:04.412Z",
+            "updated_at": "2026-10-12T11:31:41.268Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "29e53846-6eef-408b-aade-fb05ed3e4c73",
+            "name": "Tickets - Static EN - KV2",
+            "status": "PAUSED",
+            "ad_squad_id": "627dd2dc-53af-42c2-b1ce-e64d3e65eec9",
+            "creative_id": "a90fe504-6e32-457c-8d47-efcc02b37c3e",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-03-05T12:54:47.167Z",
+            "updated_at": "2026-10-13T10:07:30.791Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "2b8f9e67-1b77-46d8-9a15-93ff9594463f",
+            "name": "bab-samhan-ar-consideration-ad_display",
+            "status": "ACTIVE",
+            "ad_squad_id": "c51b0bb4-cbd5-45dd-a808-5a4fbeb8d1c0",
+            "creative_id": "7af09d48-1dfb-4f39-bf91-e1993e5d9087",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-05-21T15:24:23.553Z",
+            "updated_at": "2026-05-21T19:07:00.668Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "2ba95fc0-5b97-4a7c-a350-817f9b131edc",
+            "name": "Bab Samhan x Qiddiya_StaticKV1_AR",
+            "status": "PAUSED",
+            "ad_squad_id": "2e8289bd-15ee-4dde-8862-0ea2db1c9f4b",
+            "creative_id": "4d50b8dc-9b09-4ac9-b302-6c0e15387ede",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-07-18T17:57:04.771Z",
+            "updated_at": "2026-10-13T10:08:18.273Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "2d06f085-9ea7-475f-a9ea-5eb40f12d152",
+            "name": "Visit Diriyah_WC_KV3_AR_1080x1920",
+            "status": "ACTIVE",
+            "ad_squad_id": "c89bdfd9-345d-4327-8083-c2b9b4c2db41",
+            "creative_id": "2db4dc49-faab-444b-b60a-d63dfbeb6ba3",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-07-18T18:15:08.959Z",
+            "updated_at": "2026-10-13T12:58:52.227Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "2e285f7b-a966-4fc5-8832-869b88393a08",
+            "name": "Visit Diriyah_WC_Video30s_AR_1080x1920",
+            "status": "ACTIVE",
+            "ad_squad_id": "c89bdfd9-345d-4327-8083-c2b9b4c2db41",
+            "creative_id": "a36fa9d1-3f7a-406d-9e30-81b9a511a7da",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-07-18T18:15:09.186Z",
+            "updated_at": "2026-10-13T12:59:25.484Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "334ae346-2124-421b-ba4a-49b376ef647b",
+            "name": "Video AR",
+            "status": "PAUSED",
+            "ad_squad_id": "51737625-eee1-4586-a5cb-95892cd3f0bf",
+            "creative_id": "359ad090-c3ab-4b54-9b97-fa4e7483e0c0",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-02-26T16:42:37.146Z",
+            "updated_at": "2026-10-13T10:09:51.825Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "34144608-2e11-482c-804b-2875f50fe56a",
+            "name": "Bab Samhan x Qiddiya_StaticKV3_AR",
+            "status": "PAUSED",
+            "ad_squad_id": "2e8289bd-15ee-4dde-8862-0ea2db1c9f4b",
+            "creative_id": "0f83c2ce-8e9f-463b-a6c2-6efb057c6702",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-07-18T17:57:04.284Z",
+            "updated_at": "2026-10-13T10:11:09.070Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "350a455d-0c77-45e7-9fac-a418bb04f3f8",
+            "name": "ManazelAlHadawi_KV1_Static_EN_NA_Prospecting_03.06.2026_30.09.2026",
+            "status": "PAUSED",
+            "ad_squad_id": "d54e20e0-f297-4ea3-a79b-352d75e0aa37",
+            "creative_id": "278d398f-39e1-47ff-a89e-a0107a5c51a6",
+            "review_status": "REJECTED",
+            "review_status_reasons": [
+              "Your Brand Name does not reflect the Paying Advertiser. Paying Advertiser examples include your Organization Name, Product Name, Parent Company, Artist Name or Co-Branded Partnerships. Please update your Brand Name to be reflective of the content you are advertising, resubmit for review, and our team will take another look."
+            ],
+            "delivery_status": [
+              "INVALID_NOT_APPROVED_REVIEW_STATUS",
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-06-02T16:00:30.693Z",
+            "updated_at": "2026-06-02T18:47:34.516Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "36a534a6-8d59-475c-91e3-1e76ad7467e5",
+            "name": "Bab Samhan x Qiddiya_StaticKV2_AR_Creative",
+            "status": "ACTIVE",
+            "ad_squad_id": "857f7cef-383b-48e3-910e-5869ac2dd442",
+            "creative_id": "3f77ff06-188e-4de4-9a5c-305e03e7743d",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-06-24T09:24:14.053Z",
+            "updated_at": "2026-07-21T17:29:48.606Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "37ea0e10-6c36-4a9c-a075-606675ab92eb",
+            "name": "Restaurants - Static AR - KV2",
+            "status": "PAUSED",
+            "ad_squad_id": "55d10780-6390-4f23-a0c0-19c160a9c792",
+            "creative_id": "7e9e1366-da87-4ded-989d-3999b46a0ab6",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-03-04T10:16:52.872Z",
+            "updated_at": "2026-10-12T14:05:52.185Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "389c0196-a329-4fbd-804b-8705e63931c0",
+            "name": "Video EN",
+            "status": "PAUSED",
+            "ad_squad_id": "f3f60caa-bb27-41b0-a118-a087c110fbfb",
+            "creative_id": "0aae315d-62d2-485c-a164-ddf12595e989",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-02-26T16:43:27.961Z",
+            "updated_at": "2026-10-12T14:07:49.188Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "3923e2c7-c503-42f9-8a4d-cf0d4d07b2ed",
+            "name": "Bab Samhan x Qiddiya_CR6_AR",
+            "status": "ACTIVE",
+            "ad_squad_id": "2e8289bd-15ee-4dde-8862-0ea2db1c9f4b",
+            "creative_id": "a192c8b9-bc57-468a-8fbc-95e1ee19c9d1",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID"
+            ],
+            "type": "STORY",
+            "created_at": "2026-08-16T17:54:18.180Z",
+            "updated_at": "2026-10-12T14:13:27.011Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "3b17a7b6-1fa4-46d5-ad3b-fe309762aa78",
+            "name": "Bab Samhan x Qiddiya_StaticKV1_AR",
+            "status": "ACTIVE",
+            "ad_squad_id": "feb8604c-fab0-439d-abd6-4c8cee114c47",
+            "creative_id": "b9524039-94b3-43d3-b058-ea76a8b059b2",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-05-24T17:42:48.291Z",
+            "updated_at": "2026-10-12T14:14:21.878Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "3ba3a5c5-d992-401e-bb87-90be88575271",
+            "name": "En Video Eid Visit",
+            "status": "ACTIVE",
+            "ad_squad_id": "a959168f-13a4-4bee-a033-a63ff0e35e38",
+            "creative_id": "4a38dda9-25f1-4caa-8df5-2569475fb404",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-03-16T11:05:06.701Z",
+            "updated_at": "2026-10-12T14:15:47.987Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "3cc5bf33-aa47-47e6-8494-804fa7f2367a",
+            "name": "Shopping EN static",
+            "status": "PAUSED",
+            "ad_squad_id": "a959168f-13a4-4bee-a033-a63ff0e35e38",
+            "creative_id": "d06571ce-a420-45d3-8f9c-b9c4810fa631",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-02-26T12:37:54.775Z",
+            "updated_at": "2026-10-12T14:17:58.043Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "3d4d030f-1ea2-4fe2-abe4-36566430f061",
+            "name": "Bab Samhan x Qiddiya_StaticKV3_AR_Creative",
+            "status": "ACTIVE",
+            "ad_squad_id": "02630ec1-e600-4bf1-b7f9-fe4181bce5e6",
+            "creative_id": "91e29924-4bdb-4b27-8e59-a4328882da62",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_EFFECTIVE_INVALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-06-25T09:29:31.778Z",
+            "updated_at": "2026-06-29T07:20:29.885Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "42ec4dd9-580e-4eb9-8b96-9012e34dc055",
+            "name": "ManazelAlHadawi_KV2_Static_AR_NA_Prospecting_03.06.2026_30.09.2026",
+            "status": "PAUSED",
+            "ad_squad_id": "fd10b65b-c6be-4ed9-a7a7-f2dd2613ee9f",
+            "creative_id": "9c990972-77ac-4880-be48-6b84f72aeb2a",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-06-02T16:00:55.260Z",
+            "updated_at": "2026-06-02T17:36:09.490Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "43866755-1f54-48b7-8d67-6a823601efd7",
+            "name": "Visit Diriyah_Eid KV_EN_1080x1920",
+            "status": "ACTIVE",
+            "ad_squad_id": "71b30a4d-2fde-442e-adb1-923a088f7369",
+            "creative_id": "bc1d7434-1892-48e0-ab89-e2589455806a",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-05-24T17:07:22.079Z",
+            "updated_at": "2026-10-12T14:18:53.731Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "4435f30b-a1d9-4554-aee0-dafab9e1ae1d",
+            "name": "ManazelAlHadawi_KV2_Static_EN_NA_Prospecting_03.06.2026_30.09.2026",
+            "status": "PAUSED",
+            "ad_squad_id": "e7253a7c-a32f-4ddd-8634-f953f8deb33f",
+            "creative_id": "b75dd8ec-bb0e-4b6a-a117-fea2b302a6bf",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-06-02T16:00:03.069Z",
+            "updated_at": "2026-06-02T18:55:03.405Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "4a459bab-33c8-4200-a112-c7a34990edae",
+            "name": "ManazelAlHadawi_KV1_Static_AR_NA_Prospecting_03.06.2026_30.09.2026",
+            "status": "PAUSED",
+            "ad_squad_id": "98e8f388-1555-458b-8714-65a95f9012fc",
+            "creative_id": "b2482ffb-6e2b-4225-8fc8-ef834fbf3a08",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-06-02T15:59:38.996Z",
+            "updated_at": "2026-06-02T17:35:20.547Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "4ab710aa-3d9b-47f9-9c50-a8e17b40b8ce",
+            "name": "VisitDiriyah_Assouline_KV2_Video_AR_V3",
+            "status": "ACTIVE",
+            "ad_squad_id": "e10d8a2b-40f3-486f-ad20-4fd047e1f1c5",
+            "creative_id": "6659b5c7-08ed-400c-a6d7-5c5314a8b593",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-07-09T14:42:25.660Z",
+            "updated_at": "2026-10-12T17:11:33.981Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "4be03a46-3d4e-4bdc-8e2b-cfa7e44020df",
+            "name": "Bab Samhan x Qiddiya_Static_KV1_EN",
+            "status": "PAUSED",
+            "ad_squad_id": "0794e83e-a8db-4214-8ddb-96c4dbe2895e",
+            "creative_id": "93be3464-9a56-47c9-b39d-7d4dfc08b9c6",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-07-18T17:53:05.652Z",
+            "updated_at": "2026-10-12T14:21:35.863Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "4c404814-a283-4dbf-9727-27485dada0bd",
+            "name": "Copy of Video En Corrected",
+            "status": "PAUSED",
+            "ad_squad_id": "d6ad1697-a1cb-4d2c-986b-f2e22c24a082",
+            "creative_id": "737fb64c-5351-4d40-a481-268f37cad729",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-02-25T20:30:15.056Z",
+            "updated_at": "2026-10-12T14:23:32.851Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "4cedead6-9230-44c3-9b5f-8caeff33bfe4",
+            "name": "Bab Samhan x Qiddiya_Static_KV1_EN_Creative_V2",
+            "status": "ACTIVE",
+            "ad_squad_id": "009d8e9c-8083-443d-9b91-2b19a60f08b7",
+            "creative_id": "67519a34-5749-43c7-975c-7e8beb95c2bd",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-07-16T12:59:08.953Z",
+            "updated_at": "2026-10-12T14:24:43.464Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "4f6e5ec9-802c-4dda-bf48-6e1c7476c8c9",
+            "name": "Visit Diriyah_RetailVideo1_AR",
+            "status": "ACTIVE",
+            "ad_squad_id": "7ae1693c-d642-4396-a887-a9fd5121e45c",
+            "creative_id": "21fb0140-aae1-4917-9cc9-adddfb142588",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-08-11T11:18:23.822Z",
+            "updated_at": "2026-10-12T17:18:01.297Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "5200ef8e-68a0-495f-94cd-c3cf02e77e2f",
+            "name": "Bab Samhan - Video EN",
+            "status": "PAUSED",
+            "ad_squad_id": "572a1b53-046c-4db4-80bd-b7bf083e0429",
+            "creative_id": "9c7cd41c-cdfd-41da-a270-20dbcd1f06eb",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-02-26T10:53:50.265Z",
+            "updated_at": "2026-10-12T14:28:01.564Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "5990f129-42c6-4a01-8685-7ec53a999ee9",
+            "name": "Tickets - Static AR - KV1",
+            "status": "PAUSED",
+            "ad_squad_id": "bba3856c-f7f0-412f-949b-45bc63fd8a22",
+            "creative_id": "6f956e6b-8fa4-45ef-b57c-24de68c3b5e4",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-03-02T12:23:43.754Z",
+            "updated_at": "2026-10-12T14:29:14.344Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "5b4dca24-93e8-4fe6-b851-4e7dfa845e35",
+            "name": "Bab Samhan x Qiddiya_StaticKV1_EN_Creative",
+            "status": "ACTIVE",
+            "ad_squad_id": "02630ec1-e600-4bf1-b7f9-fe4181bce5e6",
+            "creative_id": "126ab959-5cc0-42b8-a156-c49be0051573",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_EFFECTIVE_INVALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-06-25T09:29:31.638Z",
+            "updated_at": "2026-06-29T07:20:23.159Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "5dd966c8-ee28-4256-8522-2f1d8e134f94",
+            "name": "Visit Diriyah_Intro_VideoKV_45s_AR",
+            "status": "ACTIVE",
+            "ad_squad_id": "316758cb-05e0-420d-a162-fead999109ea",
+            "creative_id": "72508891-eff3-4d09-a64b-3674eea1121d",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-08-19T19:03:07.718Z",
+            "updated_at": "2026-10-12T17:21:27.912Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "5e0a1cac-b927-4870-b802-07136f22fd9a",
+            "name": "VisitDiriyah_Assouline_KV2_Video_AR_V2",
+            "status": "PAUSED",
+            "ad_squad_id": "e10d8a2b-40f3-486f-ad20-4fd047e1f1c5",
+            "creative_id": "74ac4675-6dcd-4242-9fec-7002388bee6e",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-06-30T13:40:42.868Z",
+            "updated_at": "2026-10-12T17:24:29.907Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "6005265f-bb82-4fb2-bdba-19e043700b2e",
+            "name": "Video AR",
+            "status": "PAUSED",
+            "ad_squad_id": "b25f6ecb-df9d-49ec-9a6f-dd925ffc74e8",
+            "creative_id": "53c46b89-1dbc-4e36-93d5-7a07ef090a2e",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-02-26T16:39:48.129Z",
+            "updated_at": "2026-10-12T14:33:46.418Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "631ec154-7f31-4259-81ce-a92ae300179f",
+            "name": "Tickets - Static EN - KV1",
+            "status": "PAUSED",
+            "ad_squad_id": "83dd2d04-6e15-4da9-8709-d57ecf31190a",
+            "creative_id": "f8f2f464-63f9-401c-b19e-fcc78666ff4f",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-03-02T12:20:29.714Z",
+            "updated_at": "2026-10-12T14:34:45.696Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "64abe0be-a00e-4514-86a3-f853b4cbf384",
+            "name": "Bab Samhan x Qiddiya_StaticKV2_EN_Creative",
+            "status": "PAUSED",
+            "ad_squad_id": "009d8e9c-8083-443d-9b91-2b19a60f08b7",
+            "creative_id": "72c8a725-fcf9-447a-83d1-94748e10b327",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-06-24T09:24:14.942Z",
+            "updated_at": "2026-10-12T22:16:52.998Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "655db625-cf71-43e1-914b-9224b5da8e2f",
+            "name": "Visit Diriyah_Intro_VideoKV_30s_AR",
+            "status": "ACTIVE",
+            "ad_squad_id": "653f1912-a984-4f36-8503-c709961be829",
+            "creative_id": "a65de3ad-dd47-4c64-8069-59d55089dc9a",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-08-19T19:06:13.261Z",
+            "updated_at": "2026-10-13T01:10:10.732Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "66a12d86-da1a-4f94-8037-9b60c0c0f305",
+            "name": "COE - EN - VISIT - EID",
+            "status": "PAUSED",
+            "ad_squad_id": "a959168f-13a4-4bee-a033-a63ff0e35e38",
+            "creative_id": "8afbed18-7ad1-4d76-91a2-ea9d99e94b05",
+            "review_status": "REJECTED",
+            "review_status_reasons": [
+              "Your ad's language does not match the primary language of the target audience. For example, your ad is in Spanish and targeting English speakers. Ads should be in the primary language of the region where they will appear. Please edit, resubmit for review, and our team will take another look."
+            ],
+            "delivery_status": [
+              "INVALID_NOT_APPROVED_REVIEW_STATUS",
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-03-16T12:03:42.009Z",
+            "updated_at": "2026-10-12T14:05:54.761Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "67f797ae-7a35-4f5f-b043-4a14d410d7b2",
+            "name": "Visit Diriyah_RetailVideo1_AR",
+            "status": "ACTIVE",
+            "ad_squad_id": "8278091a-9a1f-4e30-819f-3056b538ac36",
+            "creative_id": "b2290ce9-4b27-479b-8fde-27aa8c2c95f0",
+            "review_status": "PENDING",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_PENDING_REVIEW_STATUS"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-09-12T17:17:16.237Z",
+            "updated_at": "2026-10-13T11:49:07.393Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "681496c9-428e-47f2-961b-b2104070c54a",
+            "name": "Restaurants - Static AR - KV1",
+            "status": "PAUSED",
+            "ad_squad_id": "2bca30a5-c903-4a4f-811d-5712b4c592d5",
+            "creative_id": "a0dd2a10-0715-427e-9a24-5778253985cf",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-02-19T09:28:21.602Z",
+            "updated_at": "2026-10-13T10:11:05.564Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "6ae8909e-160b-4ff8-841a-c81801770085",
+            "name": "Bab Samhan - Video EN",
+            "status": "PAUSED",
+            "ad_squad_id": "362214bf-a9da-4c38-894a-99359c3e44dd",
+            "creative_id": "84806e4e-7517-4abf-8c1b-f3c4eb75027b",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-02-26T11:01:57.682Z",
+            "updated_at": "2026-10-13T09:54:57.105Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "6b7c9245-462e-469b-b811-5e126b3d9381",
+            "name": "Safezoned Tickets - EN - EID KV",
+            "status": "ACTIVE",
+            "ad_squad_id": "627dd2dc-53af-42c2-b1ce-e64d3e65eec9",
+            "creative_id": "8cf21989-f789-4777-adc5-c2ce5abad9e5",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-03-18T09:13:45.858Z",
+            "updated_at": "2026-10-13T09:55:39.951Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "6bb750ce-1957-49a1-802a-2f78d193a7fe",
+            "name": "VisitDiriyah_Assouline_KV1_Static_AR",
+            "status": "PAUSED",
+            "ad_squad_id": "e10d8a2b-40f3-486f-ad20-4fd047e1f1c5",
+            "creative_id": "9213841a-9d6d-400c-b710-883028546985",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-06-25T15:05:11.222Z",
+            "updated_at": "2026-10-13T12:47:06.716Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "6dd8f5e9-8129-4845-b78f-5ce503760731",
+            "name": "Bab Samhan - Video AR",
+            "status": "PAUSED",
+            "ad_squad_id": "a17b5e08-bf48-4873-ae81-43cd3e969929",
+            "creative_id": "5a3bd70a-90ce-4aa8-adfd-580a59ee2837",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-02-26T11:00:10.221Z",
+            "updated_at": "2026-10-13T09:57:29.371Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "6f7494cf-c50f-442a-83c9-de23403554e4",
+            "name": "Tickets - Static AR - KV2",
+            "status": "PAUSED",
+            "ad_squad_id": "09622afb-03e1-4d31-a649-24577ebc007d",
+            "creative_id": "bdaa2428-2b0d-4a7b-a9ff-463057a69c39",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-03-05T14:06:59.907Z",
+            "updated_at": "2026-10-13T09:58:38.563Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "6ff1fa63-9bf9-4d51-a0cb-658d7b41c603",
+            "name": "Bab Samhan x Qiddiya_Static_KV2_EN_Creative_V2",
+            "status": "ACTIVE",
+            "ad_squad_id": "009d8e9c-8083-443d-9b91-2b19a60f08b7",
+            "creative_id": "34212114-2a77-4d24-a962-7f67815d2b1d",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-07-16T13:00:41.399Z",
+            "updated_at": "2026-10-13T09:59:37.651Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "7274a2f9-7e0f-4cd7-be0c-37d86ce7d22e",
+            "name": "Tickets - AR - EID KV",
+            "status": "PAUSED",
+            "ad_squad_id": "bba3856c-f7f0-412f-949b-45bc63fd8a22",
+            "creative_id": "c1673ebc-8a37-4067-ab3a-869aa2051daf",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-03-16T12:30:42.498Z",
+            "updated_at": "2026-10-13T10:00:07.588Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "7333dc05-5e64-4959-b48c-a1970fb0cfda",
+            "name": "Bab Samhan x Qiddiya_StaticKV1_AR_Creative",
+            "status": "ACTIVE",
+            "ad_squad_id": "857f7cef-383b-48e3-910e-5869ac2dd442",
+            "creative_id": "0019b75f-f569-4f5d-a0b2-1b38dbf30096",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-06-24T09:24:14.204Z",
+            "updated_at": "2026-10-13T10:01:31.678Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "73bcb75a-30e6-4d53-bf6f-f93cf204a4c9",
+            "name": "Tickets - Ar - EID KV",
+            "status": "PAUSED",
+            "ad_squad_id": "09622afb-03e1-4d31-a649-24577ebc007d",
+            "creative_id": "57dbb032-163e-4ebe-a397-1471d2565f19",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-03-16T12:25:27.208Z",
+            "updated_at": "2026-10-13T12:00:21.414Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "7406adc8-fa51-494e-ac3c-64521dd1ede9",
+            "name": "Copy of Tickets Ar",
+            "status": "PAUSED",
+            "ad_squad_id": "bba3856c-f7f0-412f-949b-45bc63fd8a22",
+            "creative_id": "bb147d57-039f-4cd1-8131-d6459383ac1c",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-02-25T20:30:15.150Z",
+            "updated_at": "2026-10-13T10:03:41.990Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "757d1f66-441f-44e5-af20-373d8d2d6d67",
+            "name": "Safezoned COE - EN - VISIT - EID",
+            "status": "ACTIVE",
+            "ad_squad_id": "a959168f-13a4-4bee-a033-a63ff0e35e38",
+            "creative_id": "b02a3473-5251-48f4-8f66-68ce595748b5",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-03-18T09:15:19.059Z",
+            "updated_at": "2026-10-13T10:04:55.947Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "7b354361-e42a-4220-b3a6-2b1dc57d73b3",
+            "name": "Visit Diriyah_Intro_VideoKV_45s_AR",
+            "status": "ACTIVE",
+            "ad_squad_id": "c8c75acc-2dca-40f3-93f1-bfba751847c8",
+            "creative_id": "261d454a-5ad5-4791-a7d3-a05588d5bae8",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-08-11T12:11:31.426Z",
+            "updated_at": "2026-10-13T12:55:30.227Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "7c2d1f7f-86fd-4533-8cad-55f765339547",
+            "name": "bab-samhan-en-consideration-ad_display",
+            "status": "ACTIVE",
+            "ad_squad_id": "51fb9f0b-b82d-4395-bccb-3ec2462a3bd6",
+            "creative_id": "c074b1a2-15ad-4543-b6ab-c50ebe66ef79",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-05-21T15:24:23.452Z",
+            "updated_at": "2026-05-21T19:06:25.168Z"
+          }
+        },
+        {
+          "ad": {
+            "id": "7da96f4d-1591-45d5-801f-4d8bae79f5b5",
+            "name": "Tickets - AR - EID KV",
+            "status": "PAUSED",
+            "ad_squad_id": "d1f23fa5-53cf-4bb9-8ba7-5c2459e8296e",
+            "creative_id": "a5c57c10-1219-4b16-8c21-402ad0c704e4",
+            "review_status": "APPROVED",
+            "delivery_status": [
+              "INVALID_NOT_EFFECTIVE_ACTIVE",
+              "INVALID_EFFECTIVE_INVALID",
+              "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE",
+              "INVALID_NOT_ACTIVE"
+            ],
+            "type": "REMOTE_WEBPAGE",
+            "created_at": "2026-03-16T12:22:14.991Z",
+            "updated_at": "2026-10-13T10:06:14.398Z"
+          }
+        }
+      ]
+    },
+    "meta": {
+      "requestId": "96143cdb-37fa-42cc-9b01-9d3843b1cc85",
+      "waitedMs": 532,
+      "throttled": false,
+      "warnings": [],
+      "partialFailure": null,
+      "asyncReport": null,
+      "compatibility": null,
+      "compatibilitySkipped": true,
+      "mcp_result_projection": {
+        "fields": [
+          "id",
+          "name",
+          "status",
+          "ad_squad_id",
+          "creative_id",
+          "review_status",
+          "review_status_reasons",
+          "delivery_status",
+          "type",
+          "created_at",
+          "updated_at"
+        ],
+        "compact": true
+      }
+    }
+  },
+  "meta": {
+    "requestId": "1d389526-0573-4fb5-affe-20f1470cc81c",
+    "latencyMs": 2325
+  }
+}

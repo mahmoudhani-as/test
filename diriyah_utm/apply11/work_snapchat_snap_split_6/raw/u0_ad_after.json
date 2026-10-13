@@ -1,0 +1,61 @@
+{
+ "tool_use_id": "toolu_01GqmJHPRayH2yt4tVN5LGe8",
+ "input": {
+  "action": "snapchat_ad_get",
+  "path_params": {
+   "ad_id": "3fca9630-7091-49a9-b5f2-72c0d4b0b168"
+  }
+ },
+ "result": {
+  "success": true,
+  "data": {
+   "success": true,
+   "action": "snapchat_ads_ad_id_get",
+   "method": "GET",
+   "host": "adsapi.snapchat.com",
+   "path": "/v1/ads/3fca9630-7091-49a9-b5f2-72c0d4b0b168",
+   "dryRun": false,
+   "data": {
+    "request_status": "SUCCESS",
+    "request_id": "6a25af93-5081-4fb9-ab5c-d4e83734dda8",
+    "ads": [
+     {
+      "sub_request_status": "SUCCESS",
+      "ad": {
+       "id": "3fca9630-7091-49a9-b5f2-72c0d4b0b168",
+       "updated_at": "2026-09-16T19:04:15.396Z",
+       "created_at": "2026-07-08T08:10:55.256Z",
+       "name": "ManazelAlHadawi_CR1_AR_Conversions",
+       "ad_squad_id": "fbd7bd19-bbe3-49fa-b2c2-dca6d583e823",
+       "creative_id": "e388454c-ac0f-49be-8cdd-14928db7ff9f",
+       "status": "PAUSED",
+       "type": "STORY",
+       "render_type": "STATIC",
+       "review_status": "APPROVED",
+       "delivery_status": [
+        "INVALID_NOT_EFFECTIVE_ACTIVE",
+        "INVALID_NOT_ACTIVE",
+        "INVALID_EFFECTIVE_INVALID",
+        "INVALID_NO_CREATIVE_EFFECTIVE_ACTIVE"
+       ]
+      }
+     }
+    ]
+   },
+   "meta": {
+    "requestId": "6a25af93-5081-4fb9-ab5c-d4e83734dda8",
+    "waitedMs": 182,
+    "throttled": false,
+    "warnings": [],
+    "partialFailure": null,
+    "asyncReport": null,
+    "compatibility": null,
+    "compatibilitySkipped": true
+   }
+  },
+  "meta": {
+   "requestId": "03a51859-0ee1-40d5-bfbe-93bcb09fe0a2",
+   "latencyMs": 947
+  }
+ }
+}

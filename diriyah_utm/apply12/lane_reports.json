@@ -1,0 +1,16 @@
+{
+ "in_tiktok_1.json": {
+  "run": "wf_70132f4f-b61",
+  "systemic_error": "",
+  "counts": {
+   "fixed": 1,
+   "already_fixed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "not_attempted": 0
+  },
+  "n_results": 1,
+  "changes_without_result": 0,
+  "notes": "apply12 in_tiktok_1.json: 1 unit / 1 change, Fixed with 1 live attempt (recipe tiktok_text_trim_ok). The ad is not in excl_platform_refused_v2.json. No safety-check denial and no sign-in prompt. Side effect, as the recipe allows: the gateway trimmed the trailing U+00A0 from ad_text, and TikTok now stores the text without it. No other field changed. No new entity was created and no tiktok_item_id/post exists before or after. The run used the transcript-parsing helpers adapted from apply10 (byte-exact inputs and results). Work files are in /tmp/claude-0/-home-user-test/5e42174a-3db2-542f-afff-62945df1761d/scratchpad/diriyah_utm/apply12/work_tiktok_1/ (common.py, build.py, check.py, payload_1859902673516705.json). The payload is byte-identical to the reviewed apply10/apply7 payload."
+ }
+}

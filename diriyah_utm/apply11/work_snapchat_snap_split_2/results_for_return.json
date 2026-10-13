@@ -1,0 +1,192 @@
+[
+ {
+  "platform": "snapchat",
+  "account_id": "7eee5995-3ea6-4419-9d2d-726f927578b2",
+  "unit_type": "ad",
+  "unit": "220baf2e-85d5-4b9a-be8a-26e239875a4d",
+  "ad_ids": [
+   "220baf2e-85d5-4b9a-be8a-26e239875a4d"
+  ],
+  "ad_names": [
+   "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv1_adset-id-8971b1f2_display_en"
+  ],
+  "slot": "creative.web_view_properties.url",
+  "before": "https://www.wadisafar.com/en/residences/chedi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_en&utm_content=8971b1f2_thechedi-kv1_display_en#book-appointment",
+  "after_expected": "https://www.wadisafar.com/en/residences/chedi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_conv&utm_term=ee4e5f3f_thechedi_en&utm_content=8971b1f2_thechedi-kv1_display_en#book-appointment",
+  "after_live": "https://www.wadisafar.com/en/residences/chedi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_en&utm_content=8971b1f2_thechedi-kv1_display_en#book-appointment",
+  "result": "Failed",
+  "new_entity_ids": "fbf7fafd-e334-4f16-9be8-41f5803d2166 (copy creative created, URL == new, PENDING_REVIEW; NOT attached to any ad, left in place, not deleted)",
+  "detail": "snap_split. Pre-read: ad 220baf2e PAUSED on shared creative 5131682d (WEB_VIEW), URL == now (req 38837a32 / 464582a8). Step 1 OK: POST /v1/adaccounts/7eee5995-3ea6-4419-9d2d-726f927578b2/creatives (dry-run checked: every settable field as read, only web_view_properties.url changed) -> creative fbf7fafd-e334-4f16-9be8-41f5803d2166, req 74b63fb3-cf98-4e27-b85b-8fd310b719b9, url == new, review_status PENDING_REVIEW. Step 2 REFUSED by Snapchat (2 live attempts used): PUT /v1/adsquads/57f0d48e-bc49-4aca-ab04-6f635e7efed6/ads with the full ad object as read, only creative_id changed (req 4028ef64-fac0-47d4-ba01-8990a6afaac0), then PATCH /v1/adsquads/57f0d48e-bc49-4aca-ab04-6f635e7efed6/ads/220baf2e-85d5-4b9a-be8a-26e239875a4d [replace /creative_id] (req dfd281db-5e43-4d89-a0a6-74f28ba4d078): both 'Error code: E1008, message: Request cannot be processed due to validation error : [This field cannot be updated. Field creativeId: original value 5131682d-a402-4319-b1e5-6e656d0b0dfb does not match update value fbf7fafd-e334-4f16-9be8-41f5803d2166.]'. Read-back (req cd1d15f2-ce01-467e-ad3d-b5a0a2e9efd4 / 4542f6e6-80cc-432d-b7d7-2ce3cea220bc): ad unchanged (creative 5131682d, status PAUSED, review APPROVED, updated_at 2026-09-27T15:06:13.128Z); old creative 5131682d unchanged (URL == now, updated_at unchanged). Side effect: the unattached copy creative fbf7fafd exists in the account."
+ },
+ {
+  "platform": "snapchat",
+  "account_id": "7eee5995-3ea6-4419-9d2d-726f927578b2",
+  "unit_type": "ad",
+  "unit": "472219f6-05b2-4a01-9058-b603ca360bcc",
+  "ad_ids": [
+   "472219f6-05b2-4a01-9058-b603ca360bcc"
+  ],
+  "ad_names": [
+   "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv3_adset-id-08c48732_display_ar"
+  ],
+  "slot": "creative.web_view_properties.url",
+  "before": "https://www.wadisafar.com/ar/residences/chedi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_ar&utm_content=08c48732_thechedi-kv3_display_ar#book-appointment",
+  "after_expected": "https://www.wadisafar.com/ar/residences/chedi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_conv&utm_term=ee4e5f3f_thechedi_ar&utm_content=08c48732_thechedi-kv3_display_ar#book-appointment",
+  "after_live": "https://www.wadisafar.com/ar/residences/chedi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_ar&utm_content=08c48732_thechedi-kv3_display_ar#book-appointment",
+  "result": "NotAttempted",
+  "new_entity_ids": "",
+  "detail": "not attempted: stopped after unit 1 on a systemic platform refusal - Snapchat does not allow changing creative_id on an existing ad (E1008 'This field cannot be updated. Field creativeId', via PUT and PATCH on ad 220baf2e), so the snap_split ad switch cannot be done through the API. No write sent for this unit. Read-only check (req c9cfbe48-2e99-4299-bea5-28d5a0a3e71c / dba71b1d-dca2-4088-b4ec-e447524c132c): ad 472219f6-05b2-4a01-9058-b603ca360bcc still PAUSED on creative d97a8a24-a4a6-47a9-b469-bab9d70a9600, URL == now."
+ },
+ {
+  "platform": "snapchat",
+  "account_id": "7eee5995-3ea6-4419-9d2d-726f927578b2",
+  "unit_type": "ad",
+  "unit": "5d13c8a6-2f73-430d-b645-9434f2f2a90a",
+  "ad_ids": [
+   "5d13c8a6-2f73-430d-b645-9434f2f2a90a"
+  ],
+  "ad_names": [
+   "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv2_adset-id-ca5ff2b6_display_ar"
+  ],
+  "slot": "creative.web_view_properties.url",
+  "before": "https://www.wadisafar.com/ar/residences/chedi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_ar&utm_content=ca5ff2b6_thechedi-kv2_display_ar#book-appointment",
+  "after_expected": "https://www.wadisafar.com/ar/residences/chedi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_cond&utm_term=ee4e5f3f_thechedi_ar&utm_content=ca5ff2b6_thechedi-kv2_display_ar#book-appointment",
+  "after_live": "https://www.wadisafar.com/ar/residences/chedi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_ar&utm_content=ca5ff2b6_thechedi-kv2_display_ar#book-appointment",
+  "result": "NotAttempted",
+  "new_entity_ids": "",
+  "detail": "not attempted: stopped after unit 1 on a systemic platform refusal - Snapchat does not allow changing creative_id on an existing ad (E1008 'This field cannot be updated. Field creativeId', via PUT and PATCH on ad 220baf2e), so the snap_split ad switch cannot be done through the API. No write sent for this unit. Read-only check (req c9cfbe48-2e99-4299-bea5-28d5a0a3e71c / dba71b1d-dca2-4088-b4ec-e447524c132c): ad 5d13c8a6-2f73-430d-b645-9434f2f2a90a still PAUSED on creative 506089d6-5f51-46fb-8d0a-0b0735bdf6bf, URL == now."
+ },
+ {
+  "platform": "snapchat",
+  "account_id": "7eee5995-3ea6-4419-9d2d-726f927578b2",
+  "unit_type": "ad",
+  "unit": "742785a0-e232-4c3d-af9e-fb72548dd897",
+  "ad_ids": [
+   "742785a0-e232-4c3d-af9e-fb72548dd897"
+  ],
+  "ad_names": [
+   "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv1_adset-id-8971b1f2_display_ar"
+  ],
+  "slot": "creative.web_view_properties.url",
+  "before": "https://www.wadisafar.com/ar/residences/chedi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_ar&utm_content=8971b1f2_thechedi-kv1_display_ar#book-appointment",
+  "after_expected": "https://www.wadisafar.com/ar/residences/chedi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_conv&utm_term=ee4e5f3f_thechedi_ar&utm_content=8971b1f2_thechedi-kv1_display_ar#book-appointment",
+  "after_live": "https://www.wadisafar.com/ar/residences/chedi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_ar&utm_content=8971b1f2_thechedi-kv1_display_ar#book-appointment",
+  "result": "NotAttempted",
+  "new_entity_ids": "",
+  "detail": "not attempted: stopped after unit 1 on a systemic platform refusal - Snapchat does not allow changing creative_id on an existing ad (E1008 'This field cannot be updated. Field creativeId', via PUT and PATCH on ad 220baf2e), so the snap_split ad switch cannot be done through the API. No write sent for this unit. Read-only check (req c9cfbe48-2e99-4299-bea5-28d5a0a3e71c / dba71b1d-dca2-4088-b4ec-e447524c132c): ad 742785a0-e232-4c3d-af9e-fb72548dd897 still PAUSED on creative 3065624f-879d-4f0e-9660-422ae301e2a4, URL == now."
+ },
+ {
+  "platform": "snapchat",
+  "account_id": "7eee5995-3ea6-4419-9d2d-726f927578b2",
+  "unit_type": "ad",
+  "unit": "7cf44543-92f6-4d01-9cd4-bd96735ec3db",
+  "ad_ids": [
+   "7cf44543-92f6-4d01-9cd4-bd96735ec3db"
+  ],
+  "ad_names": [
+   "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv3_adset-id-08c48732_display_ar"
+  ],
+  "slot": "creative.web_view_properties.url",
+  "before": "https://www.wadisafar.com/ar/residences/chedi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_ar&utm_content=08c48732_thechedi-kv3_display_ar#book-appointment",
+  "after_expected": "https://www.wadisafar.com/ar/residences/chedi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_cond&utm_term=ee4e5f3f_thechedi_ar&utm_content=08c48732_thechedi-kv3_display_ar#book-appointment",
+  "after_live": "https://www.wadisafar.com/ar/residences/chedi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_ar&utm_content=08c48732_thechedi-kv3_display_ar#book-appointment",
+  "result": "NotAttempted",
+  "new_entity_ids": "",
+  "detail": "not attempted: stopped after unit 1 on a systemic platform refusal - Snapchat does not allow changing creative_id on an existing ad (E1008 'This field cannot be updated. Field creativeId', via PUT and PATCH on ad 220baf2e), so the snap_split ad switch cannot be done through the API. No write sent for this unit. Read-only check (req c9cfbe48-2e99-4299-bea5-28d5a0a3e71c / dba71b1d-dca2-4088-b4ec-e447524c132c): ad 7cf44543-92f6-4d01-9cd4-bd96735ec3db still PAUSED on creative d97a8a24-a4a6-47a9-b469-bab9d70a9600, URL == now."
+ },
+ {
+  "platform": "snapchat",
+  "account_id": "7eee5995-3ea6-4419-9d2d-726f927578b2",
+  "unit_type": "ad",
+  "unit": "817ce69f-7f6e-403c-8b38-1e73df5be076",
+  "ad_ids": [
+   "817ce69f-7f6e-403c-8b38-1e73df5be076"
+  ],
+  "ad_names": [
+   "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv2_adset-id-ca5ff2b6_display_en"
+  ],
+  "slot": "creative.web_view_properties.url",
+  "before": "https://www.wadisafar.com/en/residences/chedi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_en&utm_content=ca5ff2b6_thechedi-kv2_display_en#book-appointment",
+  "after_expected": "https://www.wadisafar.com/en/residences/chedi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_cond&utm_term=ee4e5f3f_thechedi_en&utm_content=ca5ff2b6_thechedi-kv2_display_en#book-appointment",
+  "after_live": "https://www.wadisafar.com/en/residences/chedi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_en&utm_content=ca5ff2b6_thechedi-kv2_display_en#book-appointment",
+  "result": "NotAttempted",
+  "new_entity_ids": "",
+  "detail": "not attempted: stopped after unit 1 on a systemic platform refusal - Snapchat does not allow changing creative_id on an existing ad (E1008 'This field cannot be updated. Field creativeId', via PUT and PATCH on ad 220baf2e), so the snap_split ad switch cannot be done through the API. No write sent for this unit. Read-only check (req c9cfbe48-2e99-4299-bea5-28d5a0a3e71c / dba71b1d-dca2-4088-b4ec-e447524c132c): ad 817ce69f-7f6e-403c-8b38-1e73df5be076 still PAUSED on creative 8295d92a-69b2-48cc-aca8-167913724d87, URL == now."
+ },
+ {
+  "platform": "snapchat",
+  "account_id": "7eee5995-3ea6-4419-9d2d-726f927578b2",
+  "unit_type": "ad",
+  "unit": "9a3b10af-81a8-4024-9a93-c9c225906b5a",
+  "ad_ids": [
+   "9a3b10af-81a8-4024-9a93-c9c225906b5a"
+  ],
+  "ad_names": [
+   "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv1_adset-id-8971b1f2_display_en"
+  ],
+  "slot": "creative.web_view_properties.url",
+  "before": "https://www.wadisafar.com/en/residences/chedi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_en&utm_content=8971b1f2_thechedi-kv1_display_en#book-appointment",
+  "after_expected": "https://www.wadisafar.com/en/residences/chedi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_cond&utm_term=ee4e5f3f_thechedi_en&utm_content=8971b1f2_thechedi-kv1_display_en#book-appointment",
+  "after_live": "https://www.wadisafar.com/en/residences/chedi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_en&utm_content=8971b1f2_thechedi-kv1_display_en#book-appointment",
+  "result": "NotAttempted",
+  "new_entity_ids": "",
+  "detail": "not attempted: stopped after unit 1 on a systemic platform refusal - Snapchat does not allow changing creative_id on an existing ad (E1008 'This field cannot be updated. Field creativeId', via PUT and PATCH on ad 220baf2e), so the snap_split ad switch cannot be done through the API. No write sent for this unit. Read-only check (req c9cfbe48-2e99-4299-bea5-28d5a0a3e71c / dba71b1d-dca2-4088-b4ec-e447524c132c): ad 9a3b10af-81a8-4024-9a93-c9c225906b5a still PAUSED on creative 5131682d-a402-4319-b1e5-6e656d0b0dfb, URL == now."
+ },
+ {
+  "platform": "snapchat",
+  "account_id": "7eee5995-3ea6-4419-9d2d-726f927578b2",
+  "unit_type": "ad",
+  "unit": "adc59f1e-6c8a-4fa8-bffe-75a3d5314f37",
+  "ad_ids": [
+   "adc59f1e-6c8a-4fa8-bffe-75a3d5314f37"
+  ],
+  "ad_names": [
+   "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv3_adset-id-08c48732_display_en"
+  ],
+  "slot": "creative.web_view_properties.url",
+  "before": "https://www.wadisafar.com/en/residences/chedi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_en&utm_content=08c48732_thechedi-kv3_display_en#book-appointment",
+  "after_expected": "https://www.wadisafar.com/en/residences/chedi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_cond&utm_term=ee4e5f3f_thechedi_en&utm_content=08c48732_thechedi-kv3_display_en#book-appointment",
+  "after_live": "https://www.wadisafar.com/en/residences/chedi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_en&utm_content=08c48732_thechedi-kv3_display_en#book-appointment",
+  "result": "NotAttempted",
+  "new_entity_ids": "",
+  "detail": "not attempted: stopped after unit 1 on a systemic platform refusal - Snapchat does not allow changing creative_id on an existing ad (E1008 'This field cannot be updated. Field creativeId', via PUT and PATCH on ad 220baf2e), so the snap_split ad switch cannot be done through the API. No write sent for this unit. Read-only check (req c9cfbe48-2e99-4299-bea5-28d5a0a3e71c / dba71b1d-dca2-4088-b4ec-e447524c132c): ad adc59f1e-6c8a-4fa8-bffe-75a3d5314f37 still PAUSED on creative 895e5e31-b0a2-477a-bf03-e7630bfbc43c, URL == now."
+ },
+ {
+  "platform": "snapchat",
+  "account_id": "7eee5995-3ea6-4419-9d2d-726f927578b2",
+  "unit_type": "ad",
+  "unit": "dc36bd0c-5dcf-4385-b571-dee8569931e3",
+  "ad_ids": [
+   "dc36bd0c-5dcf-4385-b571-dee8569931e3"
+  ],
+  "ad_names": [
+   "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv3_adset-id-08c48732_display_en"
+  ],
+  "slot": "creative.web_view_properties.url",
+  "before": "https://www.wadisafar.com/en/residences/chedi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_en&utm_content=08c48732_thechedi-kv3_display_en#book-appointment",
+  "after_expected": "https://www.wadisafar.com/en/residences/chedi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_conv&utm_term=ee4e5f3f_thechedi_en&utm_content=08c48732_thechedi-kv3_display_en#book-appointment",
+  "after_live": "https://www.wadisafar.com/en/residences/chedi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_en&utm_content=08c48732_thechedi-kv3_display_en#book-appointment",
+  "result": "NotAttempted",
+  "new_entity_ids": "",
+  "detail": "not attempted: stopped after unit 1 on a systemic platform refusal - Snapchat does not allow changing creative_id on an existing ad (E1008 'This field cannot be updated. Field creativeId', via PUT and PATCH on ad 220baf2e), so the snap_split ad switch cannot be done through the API. No write sent for this unit. Read-only check (req c9cfbe48-2e99-4299-bea5-28d5a0a3e71c / dba71b1d-dca2-4088-b4ec-e447524c132c): ad dc36bd0c-5dcf-4385-b571-dee8569931e3 still PAUSED on creative 895e5e31-b0a2-477a-bf03-e7630bfbc43c, URL == now."
+ },
+ {
+  "platform": "snapchat",
+  "account_id": "7eee5995-3ea6-4419-9d2d-726f927578b2",
+  "unit_type": "ad",
+  "unit": "e98548ee-7c38-4251-9ea0-a35e33636788",
+  "ad_ids": [
+   "e98548ee-7c38-4251-9ea0-a35e33636788"
+  ],
+  "ad_names": [
+   "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv1_adset-id-8971b1f2_display_ar"
+  ],
+  "slot": "creative.web_view_properties.url",
+  "before": "https://www.wadisafar.com/ar/residences/chedi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_ar&utm_content=8971b1f2_thechedi-kv1_display_ar#book-appointment",
+  "after_expected": "https://www.wadisafar.com/ar/residences/chedi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_cond&utm_term=ee4e5f3f_thechedi_ar&utm_content=8971b1f2_thechedi-kv1_display_ar#book-appointment",
+  "after_live": "https://www.wadisafar.com/ar/residences/chedi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_ar&utm_content=8971b1f2_thechedi-kv1_display_ar#book-appointment",
+  "result": "NotAttempted",
+  "new_entity_ids": "",
+  "detail": "not attempted: stopped after unit 1 on a systemic platform refusal - Snapchat does not allow changing creative_id on an existing ad (E1008 'This field cannot be updated. Field creativeId', via PUT and PATCH on ad 220baf2e), so the snap_split ad switch cannot be done through the API. No write sent for this unit. Read-only check (req c9cfbe48-2e99-4299-bea5-28d5a0a3e71c / dba71b1d-dca2-4088-b4ec-e447524c132c): ad e98548ee-7c38-4251-9ea0-a35e33636788 still PAUSED on creative 3065624f-879d-4f0e-9660-422ae301e2a4, URL == now."
+ }
+]

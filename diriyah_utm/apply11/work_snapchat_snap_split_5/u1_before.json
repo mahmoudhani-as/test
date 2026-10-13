@@ -1,0 +1,53 @@
+{
+  "ad_read_request_id": "3eacf1c7-49ce-4e88-aa2b-cdc767cb5a27",
+  "creative_read_request_id": "fa15a054-58b4-447a-a2ac-462debd428b1",
+  "ads": [
+    {
+      "id": "e4bc040c-be5c-44e7-b0ad-54b9d0b9255a",
+      "updated_at": "2026-06-02T16:01:18.649Z",
+      "created_at": "2026-06-02T16:00:21.434Z",
+      "name": "ManazelAlHadawi_KV2_Static_AR_NA_Prospecting_03.06.2026_30.09.2026",
+      "ad_squad_id": "6962de66-3e7f-4198-8755-654cbe909f0b",
+      "creative_id": "9c990972-77ac-4880-be48-6b84f72aeb2a",
+      "status": "PAUSED",
+      "type": "REMOTE_WEBPAGE",
+      "render_type": "STATIC",
+      "review_status": "APPROVED",
+      "delivery_status": [
+        "INVALID_EFFECTIVE_INVALID",
+        "INVALID_NOT_EFFECTIVE_ACTIVE",
+        "INVALID_NOT_ACTIVE"
+      ]
+    }
+  ],
+  "creative": {
+    "id": "9c990972-77ac-4880-be48-6b84f72aeb2a",
+    "updated_at": "2026-06-02T16:01:18.452Z",
+    "created_at": "2026-06-02T15:58:54.229Z",
+    "name": "ManazelAlHadawi_KV2_AR_Creative",
+    "ad_account_id": "b736921f-da3e-4889-8620-d3b0969c69b0",
+    "type": "WEB_VIEW",
+    "packaging_status": "SUCCESS",
+    "review_status": "APPROVED",
+    "review_status_details": "",
+    "shareable": true,
+    "headline": "حياة تنبض بالتاريخ في الدرعية.",
+    "brand_name": "منازل الحداوي",
+    "call_to_action": "MORE",
+    "render_type": "STATIC",
+    "top_snap_media_id": "1ff213cb-e51e-4763-b6ef-1962604fa694",
+    "top_snap_crop_position": "MIDDLE",
+    "web_view_properties": {
+      "url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi",
+      "allow_snap_javascript_sdk": false,
+      "use_immersive_mode": false,
+      "deep_link_urls": [],
+      "block_preload": false
+    },
+    "ad_product": "SNAP_AD",
+    "profile_properties": {
+      "profile_id": "bd4ea29c-9b42-4bdc-bd1c-a37848d4c5a7"
+    },
+    "semantic_id": "-291203556"
+  }
+}

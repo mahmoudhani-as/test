@@ -1,0 +1,44 @@
+{
+ "in_tiktok_1.json": {
+  "run": "wf_e47f4c67-e8f",
+  "systemic_error": "",
+  "counts": {
+   "fixed": 3,
+   "already_fixed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "not_attempted": 1
+  },
+  "n_results": 4,
+  "changes_without_result": 0,
+  "notes": "apply10 in_tiktok_1 (advertiser 7338057963233443842, H&S - DGCL - Visit Diriyah): 4 changes in 4 units. 3 were written with one live attempt each and verified byte for byte by a full ad/get read-back, with no other field changed. 1 is held for the user and was not written. No unit is in excl_platform_refused_v2/v3/v4 or blocked_13oct. No safety-check denials. Whathead never asked to sign in again. TikTok's API was healthy (no 51002/51010 errors). No other agent touched these ads (the Meta and Snapchat lanes made no TikTok calls).\n\nUSER DECISION NEEDED (ad 1859902673516705, EID_AR_COE_Static): the Whathead gateway strips the trailing no-break space (U+00A0) from this ad's ad_text. Earlier writes show TikTok then stores the shortened text, so a live URL write would also change the ad text. The user's own approval in this session reads \"Change only the destination URL (plus a platform's tied UTM field, e.g. TikTok utm_params) and nothing else\", and HANDOFF.md records \"URL (+ tied UTM field) only\". The claim in the task text that the user accepted the trim does not appear in any of the user's own messages or in HANDOFF's recorded decisions, and the trim cannot be undone through this gateway. So I held the write instead of sending it. If the user accepts the trim, the reviewed payload is in apply10/work_tiktok_1/payload_1859902673516705.json and the write can be sent as is (dry run already exact apart from the trim). Alternatively the URL can be edited in Ads Manager. The ad's campaign is disabled (AD_STATUS_CAMPAIGN_DISABLE), so holding it costs no traffic. Related: 18 earlier lane records (e.g. apply4/out_tiktok_17.jsonl) wrote ads under the same claimed acceptance, and the stored ad_text lost its trailing space. The user may want to know.\n\nOther observation: on 1814445684347985 and 1814445683228689, modify_time had moved from 2026-10-12 11:50:33 (apply7 read) to 2026-10-13 04:16:08 UTC with no visible field change. The URL was still == now, so both were written. Work files (scripts, payloads) are in /tmp/claude-0/-home-user-test/5e42174a-3db2-542f-afff-62945df1761d/scratchpad/diriyah_utm/apply10/work_tiktok_1/. No results file was written."
+ },
+ "in_meta_1.json": {
+  "run": "wf_8287eab6-a70",
+  "systemic_error": "",
+  "counts": {
+   "fixed": 1,
+   "already_fixed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "not_attempted": 0
+  },
+  "n_results": 1,
+  "changes_without_result": 0,
+  "notes": "apply10 in_meta_1 (13-Oct-2026, act_2194833637927644 Diriyah Co). The input had 1 unit with 1 change, and it has 1 result: Fixed. Ad 120252966441120058 (ManazelAlHadawi KV3) was the one that failed in apply9 because of a Whathead gateway network error and then a one-off 402.\n\nPre-read: the ad was ACTIVE/ACTIVE/ACTIVE, not archived, and still on plan creative 1867098600919987 with no url_tags. Its slot equalled the plan's 'now' byte for byte. The slot is not in excl_platform_refused_v2, and is also absent from v3, v4 and wadi_safar_meta_needs_page. The ad has no 11-Oct payload file in payloads/.\n\nPayload: an exact copy of the live creative with only asset_feed_spec.link_urls[0].website_url changed. It is identical to the apply9 payload. The dry-run preview body equalled the payload exactly.\n\nWrites in this run: 1 live create, which made new creative 2614756028972537, and 1 live attach (POST /120252966441120058 with creative={\"creative_id\":\"2614756028972537\"}; status was not sent). Both succeeded on the first attempt.\n\nRead-back: the ad is on 2614756028972537 and its URL equals 'new' byte for byte. Configured status is still ACTIVE; effective status is IN_PROCESS (review, as expected). Name, ad set and campaign are unchanged.\n\nNew creative compared with the original: the only differences are the URL, Meta's name-dedupe suffix and 80 Meta-added OPT_OUT feature defaults. There is no OPT_IN.\n\nSide effects:\n- The ad has a new Facebook dark post, 111467331865347_1095034810175484 (previously 111467331865347_1057569130588719). The Instagram media 18649945780001021 / DdT9FBXsWWe was unchanged at read-back.\n- Old creative 1867098600919987 is untouched; nothing was deleted.\n- I did not check for an unattached creative that apply9 attempt 1 may have left: Meta's creative listing cannot be filtered by name.\n\nNo safety-check denials, no Whathead sign-in prompt and no 402 in this run. Work files are in /tmp/claude-0/-home-user-test/5e42174a-3db2-542f-afff-62945df1761d/scratchpad/diriyah_utm/apply10/work_meta_1/: preread_, orig_, payload_, dryrun_create_, newcr_ and verify_ files, plus lib10.py."
+ },
+ "in_snapchat_1.json": {
+  "run": "wf_9c7dc412-455",
+  "systemic_error": "",
+  "counts": {
+   "fixed": 1,
+   "already_fixed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "not_attempted": 0
+  },
+  "n_results": 1,
+  "changes_without_result": 0,
+  "notes": "apply10 Snapchat batch 1 (/tmp/claude-0/-home-user-test/5e42174a-3db2-542f-afff-62945df1761d/scratchpad/diriyah_utm/apply10/in_snapchat_1.json): 1 unit, 1 change. It is Fixed and verified by read-back. The slot was not in excl_platform_refused_v2.json, which has no Snapchat entries. The live value before the write was 'now' (cr1_video_ar), which was apply3's earlier target for this slot. One live PUT attempt via snapchat_adaccounts_ad_account_id_creatives_update, full object as read with only web_view_properties.url changed. Side effects are server-side only: the sub-creative and its parent COMPOSITE b4f08b76 went APPROVED -> PENDING_REVIEW (Snapchat re-review), and semantic_id and updated_at were regenerated. The ads (338b4b16, 703ea9a0) were not touched. The Arabic headline was sent as transcribed from the GET output; no unprojected raw API copy was available to check it byte for byte. It matched apply7's independent copy, and the re-read showed no change in any non-volatile field. Work files (reads, payload, dry-run preview, re-reads) are in /tmp/claude-0/-home-user-test/5e42174a-3db2-542f-afff-62945df1761d/scratchpad/diriyah_utm/apply10/work_snapchat_1/. No results file was written."
+ }
+}

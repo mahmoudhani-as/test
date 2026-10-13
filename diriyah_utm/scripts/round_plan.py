@@ -22,7 +22,7 @@ NOW = {}   # optional keyed re-read: work/live_now.json {platform|ad_id|slot: ur
 LIVE_FILE = os.environ.get('LIVE_FILE') or f'{W}/work/live_now.json'
 if os.path.exists(LIVE_FILE): NOW = json.load(open(LIVE_FILE))
 fixed, tried = {}, collections.defaultdict(list)
-for f in sorted(glob.glob(f'{W}/apply*/out_*.jsonl')):
+for f in sorted(glob.glob(f'{W}/apply*/out_*.jsonl'), key=lambda f: (int(re.match(r'apply(\d*)', os.path.relpath(f, W)).group(1) or 1), f)):   # run order (apply10-12 after apply9)
     for l in open(f):
         if not l.strip(): continue
         x = json.loads(l)

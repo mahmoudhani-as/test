@@ -1,0 +1,32 @@
+{
+ "launched": "2026-10-13 ~12:50 UTC (user: \"run until its 0%\")",
+ "workflow": "workflows/diriyah-apply-v10.js",
+ "runs": [
+  {
+   "task": "w5g1pt6bw",
+   "run": "wf_e47f4c67-e8f",
+   "platform": "tiktok",
+   "batches": [
+    "in_tiktok_1.json"
+   ]
+  },
+  {
+   "task": "wee5l17gc",
+   "run": "wf_8287eab6-a70",
+   "platform": "meta",
+   "batches": [
+    "in_meta_1.json"
+   ],
+   "status": "completed: 1 Fixed"
+  },
+  {
+   "task": "wv99xvu4m",
+   "run": "wf_9c7dc412-455",
+   "platform": "snapchat",
+   "batches": [
+    "in_snapchat_1.json"
+   ],
+   "status": "completed: 1 Fixed (sub-creative f7e6faad, ads 338b4b16 + 703ea9a0)"
+  }
+ ]
+}

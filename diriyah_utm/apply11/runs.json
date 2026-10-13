@@ -1,0 +1,97 @@
+{
+ "launched": "2026-10-13 ~13:00 UTC (user: \"run until its 0%\", then approved TikTok Spark Push (97), Split Snapchat (147), Meta carousels (23), \"fix everything you can\")",
+ "workflow": "workflows/diriyah-apply-v11.js (v10 + per-unit recipes: spark_push, snap_split, meta_carousel_no_parent_image, meta_page_post, meta_ig_identity, meta_tco_headline, meta_wadi_canary)",
+ "runs": [
+  {
+   "task": "wi1zzm3sa",
+   "run": "wf_12f907cd-edb",
+   "platform": "tiktok",
+   "batches": [
+    "in_tiktok_spark_push_1.json",
+    "in_tiktok_spark_push_4.json"
+   ]
+  },
+  {
+   "task": "we09sd0ga",
+   "run": "wf_6bf665e0-65e",
+   "platform": "tiktok",
+   "batches": [
+    "in_tiktok_spark_push_2.json",
+    "in_tiktok_spark_push_5.json"
+   ]
+  },
+  {
+   "task": "w4dqy615t",
+   "run": "wf_f3821b5a-328",
+   "platform": "tiktok",
+   "batches": [
+    "in_tiktok_spark_push_3.json"
+   ]
+  },
+  {
+   "task": "wughj703m",
+   "run": "wf_ac5a7a47-2b5",
+   "platform": "snapchat",
+   "batches": [
+    "in_snapchat_snap_split_1.json",
+    "in_snapchat_snap_split_5.json"
+   ]
+  },
+  {
+   "task": "wx8jcfgdc",
+   "run": "wf_875fbfdc-036",
+   "platform": "snapchat",
+   "batches": [
+    "in_snapchat_snap_split_2.json",
+    "in_snapchat_snap_split_6.json"
+   ]
+  },
+  {
+   "task": "wz3vszhmw",
+   "run": "wf_285d3357-12c",
+   "platform": "snapchat",
+   "batches": [
+    "in_snapchat_snap_split_3.json",
+    "in_snapchat_snap_split_7.json"
+   ]
+  },
+  {
+   "task": "w9yt4t09h",
+   "run": "wf_3774299d-bd5",
+   "platform": "snapchat",
+   "batches": [
+    "in_snapchat_snap_split_4.json",
+    "in_snapchat_snap_split_8.json"
+   ]
+  },
+  {
+   "task": "w3ojrjtp7",
+   "run": "wf_6844fedb-30f",
+   "platform": "meta",
+   "batches": [
+    "in_meta_meta_page_post_1.json",
+    "in_meta_meta_tco_headline_1.json"
+   ]
+  },
+  {
+   "task": "wc8i8pkxk",
+   "run": "wf_908cdb52-b22",
+   "platform": "meta",
+   "batches": [
+    "in_meta_meta_wadi_canary_1.json",
+    "in_meta_meta_ig_identity_1.json"
+   ]
+  },
+  {
+   "task": "wt3000x14",
+   "run": "wf_3ea65700-94c",
+   "platform": "meta",
+   "batches": [
+    "in_meta_meta_carousel_no_parent_image_1.json"
+   ]
+  }
+ ],
+ "not_included": "Meta archived 26, Meta narrow image 1, TikTok Spark Pull 15, Google policy 5, X tweet-text 20 + shared cards 76 (need new tweets), Google sitelinks 4 shared (would need link removals)",
+ "snapchat_outcome": "All 4 Snapchat runs (8 snap_split batches, 147 changes) ended without a write to an existing ad: Snapchat returns E1008 when an ad is switched to another creative. Batches 3 and 7 recorded it (1 Failed + 9 NotAttempted each); the other 3 runs were stopped by the orchestrator. 26 copy creatives were created and left unattached (apply11/snapchat_unattached_creatives.json) - nothing deleted.",
+ "completed": "TikTok Spark Push 97/97 Fixed (wf_12f907cd-edb, wf_6bf665e0-65e, wf_f3821b5a-328); Meta 32 Fixed (carousels 23, IG identity 3, page posts 5, t.co 1); Wadi canary refused (Page permission); Snapchat E1008."
+}

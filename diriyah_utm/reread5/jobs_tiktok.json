@@ -1,0 +1,26 @@
+[
+ {
+  "platform": "tiktok",
+  "account_id": "7338057963233443842",
+  "account_name": "H&S - DGCL - Visit Diriyah",
+  "in_file": "/tmp/claude-0/-home-user-test/5e42174a-3db2-542f-afff-62945df1761d/scratchpad/diriyah_utm/reread/in/tiktok_7338057963233443842.json",
+  "n_rows": 629,
+  "n_ads": 629,
+  "n_url": 574,
+  "out_file": "/tmp/claude-0/-home-user-test/5e42174a-3db2-542f-afff-62945df1761d/scratchpad/diriyah_utm/reread5/out/tiktok_7338057963233443842.jsonl",
+  "new_file": "/tmp/claude-0/-home-user-test/5e42174a-3db2-542f-afff-62945df1761d/scratchpad/diriyah_utm/reread5/out/new_tiktok_7338057963233443842.jsonl",
+  "extra": "TikTok Spark Push post check. The file /tmp/claude-0/-home-user-test/5e42174a-3db2-542f-afff-62945df1761d/scratchpad/diriyah_utm/work/spark_check/apply11_spark_7338057963233443842.json lists the 93 Spark Push ads of this account that were written on 13-Oct between 12:51 and 13:19 UTC, each with orig_item = its tiktok_item_id just before the write. For each listed ad add \"tiktok_item_id_now\" and \"identity_type_now\" to its out line (from the same ad/get read). Then write /tmp/claude-0/-home-user-test/5e42174a-3db2-542f-afff-62945df1761d/scratchpad/diriyah_utm/work/spark_check/apply11_spark_check_7338057963233443842.json as a JSON list with one entry per listed ad: {\"ad_id\",\"orig_item\",\"current_item\",\"changed\": current_item != orig_item,\"orig_created\",\"cur_created\"}. For changed ones, read the create time (UTC 'YYYY-MM-DD HH:MM') of both posts with a read-only post lookup (for example identity/video/info with the ad's identity); leave them null if no read-only lookup gives them. Report in notes how many changed."
+ },
+ {
+  "platform": "tiktok",
+  "account_id": "7338074303931449345",
+  "account_name": "H&S - DGCL - Diriyah Gate",
+  "in_file": "/tmp/claude-0/-home-user-test/5e42174a-3db2-542f-afff-62945df1761d/scratchpad/diriyah_utm/reread/in/tiktok_7338074303931449345.json",
+  "n_rows": 185,
+  "n_ads": 185,
+  "n_url": 183,
+  "out_file": "/tmp/claude-0/-home-user-test/5e42174a-3db2-542f-afff-62945df1761d/scratchpad/diriyah_utm/reread5/out/tiktok_7338074303931449345.jsonl",
+  "new_file": "/tmp/claude-0/-home-user-test/5e42174a-3db2-542f-afff-62945df1761d/scratchpad/diriyah_utm/reread5/out/new_tiktok_7338074303931449345.jsonl",
+  "extra": "TikTok Spark Push post check. The file /tmp/claude-0/-home-user-test/5e42174a-3db2-542f-afff-62945df1761d/scratchpad/diriyah_utm/work/spark_check/apply11_spark_7338074303931449345.json lists the 4 Spark Push ads of this account that were written on 13-Oct between 12:51 and 13:19 UTC, each with orig_item = its tiktok_item_id just before the write. For each listed ad add \"tiktok_item_id_now\" and \"identity_type_now\" to its out line (from the same ad/get read). Then write /tmp/claude-0/-home-user-test/5e42174a-3db2-542f-afff-62945df1761d/scratchpad/diriyah_utm/work/spark_check/apply11_spark_check_7338074303931449345.json as a JSON list with one entry per listed ad: {\"ad_id\",\"orig_item\",\"current_item\",\"changed\": current_item != orig_item,\"orig_created\",\"cur_created\"}. For changed ones, read the create time (UTC 'YYYY-MM-DD HH:MM') of both posts with a read-only post lookup (for example identity/video/info with the ad's identity); leave them null if no read-only lookup gives them. Report in notes how many changed."
+ }
+]

@@ -1,0 +1,28 @@
+{
+ "ad_update_attempt": {
+  "action": "snapchat_adsquads_ad_squad_id_ads_update (PUT /v1/adsquads/852ca250-88c3-4f3d-a83b-352b726ed137/ads)",
+  "dry_run_request_id": "943c77a7-474a-4270-b6bf-86cca765c4e9",
+  "live_snap_request_id": "5ce1c241-613c-495b-a35c-7aa4e9b05a26",
+  "gateway_request_id": "debd26d9-5b1a-44a1-a3db-da659cbff23b",
+  "error": "Error code: E1008, message: Request cannot be processed due to validation error : [This field cannot be updated. Field creativeId: original value 3fc370fb-15a6-4a5b-b358-90304f012ee6 does not match update value 22cc50a4-aca3-432d-8c17-9125e9f10dcb.]"
+ },
+ "after_read": {
+  "ad_get_request_id": "9a665221-561b-4cf8-94ba-3618f4e9fd59",
+  "creatives_get_request_id": "9d463f01-db1f-474d-9424-f273bd08e24d",
+  "ad_creative_id": "3fc370fb-15a6-4a5b-b358-90304f012ee6",
+  "ad_status": "PAUSED",
+  "ad_updated_at": "2026-09-15T14:18:17.698Z",
+  "old_subs_unchanged": true,
+  "new_composite": "22cc50a4-aca3-432d-8c17-9125e9f10dcb",
+  "new_composite_review_status": "PENDING_REVIEW",
+  "new_subs": [
+   "f65e2998-3f6c-4109-b11e-76eb40aede77",
+   "f3da5207-af79-4618-b5f7-265ff8368a74",
+   "0643e497-d5f2-4532-b78a-e682541f1136",
+   "0e202e65-4a4e-4397-b454-46c63134f52e",
+   "462cc5f2-3b8b-4a06-a79d-e6c417f42021",
+   "139f9783-027f-499d-8cd6-dd9b5c23ecb5"
+  ],
+  "new_subs_url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_jul26_cond&utm_term=manazel-alhadawi_ar&utm_content=manazel-alhadawi-cr1_display_ar"
+ }
+}

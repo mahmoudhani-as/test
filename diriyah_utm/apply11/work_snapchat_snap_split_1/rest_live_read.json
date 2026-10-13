@@ -1,0 +1,47 @@
+{
+  "request_ids": {
+    "ebe8_ads": "29c16a48-fbe5-4d32-8766-a1dbce6f723f",
+    "ebe8_creatives_en_and_composites": "3d03a35a-2ce4-4277-9808-3ccd6753ba50",
+    "ebe8_creatives_ar_subs": "9d463f01-db1f-474d-9424-f273bd08e24d",
+    "623c_ads": "51e47a2c-cc9c-483b-a841-b9ce88308dc8",
+    "623c_creative": "24248857-1977-47dc-bf98-b278cbd77281",
+    "7eee_ads": "74bf68fb-6922-4edc-af88-625e5a3dbb45",
+    "7eee_creatives": "33fbfabd-ad8f-4c71-a789-cc9ee0e57328"
+  },
+  "ads": {
+    "30f3d133-78c5-40db-a513-b71f6d3f27e1": {"creative_id": "363b16b2-f24a-41d1-9fe6-16862e5dd293", "status": "PAUSED", "type": "STORY"},
+    "4ed9c3ff-36b9-41cd-957f-9bb50c894e56": {"creative_id": "a0d5f40f-a98a-42a6-a117-1fc55840c985", "status": "PAUSED", "type": "STORY"},
+    "73cb6b3a-fb44-451a-9a3b-bceed85b55ae": {"creative_id": "f128448d-c933-4f52-a434-d606fb27d733", "status": "PAUSED", "type": "STORY"},
+    "96c25d12-d1b3-40c4-a115-541bfe9ed085": {"creative_id": "b1bcb7f5-54ba-42b6-841a-6c24f7718c80", "status": "PAUSED", "type": "STORY"},
+    "d1da439f-afcf-4568-80b9-4e1770df4f5b": {"creative_id": "672f4ce5-342b-47cd-80e5-6beb7773ff83", "status": "PAUSED", "type": "STORY"},
+    "02da1fcb-58e4-4742-a1ee-b3fc3e0387e9": {"creative_id": "6751c922-c15a-4dd8-bba2-580579842381", "status": "ACTIVE", "type": "REMOTE_WEBPAGE"},
+    "4a098bdd-6db5-4fdb-8523-a7aa9eb94029": {"creative_id": "6751c922-c15a-4dd8-bba2-580579842381", "status": "ACTIVE", "type": "REMOTE_WEBPAGE"},
+    "1d81af98-7db5-463c-84ea-7f31f83ef679": {"creative_id": "6751c922-c15a-4dd8-bba2-580579842381", "status": "ACTIVE", "type": "REMOTE_WEBPAGE"},
+    "01f06718-ea89-42a2-a96a-2e126eb863cd": {"creative_id": "8295d92a-69b2-48cc-aca8-167913724d87", "status": "PAUSED", "type": "REMOTE_WEBPAGE"},
+    "1d981a74-796c-47c3-b11b-26896877b489": {"creative_id": "506089d6-5f51-46fb-8d0a-0b0735bdf6bf", "status": "PAUSED", "type": "REMOTE_WEBPAGE"}
+  },
+  "composites": {
+    "363b16b2-f24a-41d1-9fe6-16862e5dd293": ["245c8617-1803-47cb-8600-1f98541c9ffa", "5030e9db-b4dd-46e2-818c-55b311e9954e", "578da6aa-ecd9-4bef-9c49-062e0bfeb619", "a9d88149-c33b-4254-b0ad-d29577025bd9", "99a3ed63-920a-478c-b6a7-fe00dd89e3ee", "c010a8c6-64f3-4a29-9a63-99efe1b6840b"],
+    "a0d5f40f-a98a-42a6-a117-1fc55840c985": ["daee8d42-9ce9-426f-85ed-a258cf61f983", "b2fdf154-8f84-4054-9cca-de76d7bdfa4c", "92f3fff0-094d-4252-9243-06e9a8c25e98", "123f1d5f-0c39-4993-aa8e-c79ff63f81ab", "45a9979a-8bf6-4c78-b3bd-53e19c3048dc", "9541b380-108d-46d8-9f66-fa47a929362a"],
+    "f128448d-c933-4f52-a434-d606fb27d733": ["245c8617-1803-47cb-8600-1f98541c9ffa", "5030e9db-b4dd-46e2-818c-55b311e9954e", "578da6aa-ecd9-4bef-9c49-062e0bfeb619", "a9d88149-c33b-4254-b0ad-d29577025bd9", "99a3ed63-920a-478c-b6a7-fe00dd89e3ee", "c010a8c6-64f3-4a29-9a63-99efe1b6840b"],
+    "b1bcb7f5-54ba-42b6-841a-6c24f7718c80": ["245c8617-1803-47cb-8600-1f98541c9ffa", "5030e9db-b4dd-46e2-818c-55b311e9954e", "578da6aa-ecd9-4bef-9c49-062e0bfeb619", "a9d88149-c33b-4254-b0ad-d29577025bd9", "99a3ed63-920a-478c-b6a7-fe00dd89e3ee", "c010a8c6-64f3-4a29-9a63-99efe1b6840b"],
+    "672f4ce5-342b-47cd-80e5-6beb7773ff83": ["daee8d42-9ce9-426f-85ed-a258cf61f983", "b2fdf154-8f84-4054-9cca-de76d7bdfa4c", "92f3fff0-094d-4252-9243-06e9a8c25e98", "123f1d5f-0c39-4993-aa8e-c79ff63f81ab", "45a9979a-8bf6-4c78-b3bd-53e19c3048dc", "9541b380-108d-46d8-9f66-fa47a929362a"]
+  },
+  "urls": {
+    "245c8617-1803-47cb-8600-1f98541c9ffa": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=manazel-alhadawi_en_all_mf_prospecting&utm_content=manazel-alhadawi-CR1",
+    "5030e9db-b4dd-46e2-818c-55b311e9954e": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=manazel-alhadawi_en_all_mf_prospecting&utm_content=manazel-alhadawi-CR1",
+    "578da6aa-ecd9-4bef-9c49-062e0bfeb619": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=manazel-alhadawi_en_all_mf_prospecting&utm_content=manazel-alhadawi-CR1",
+    "a9d88149-c33b-4254-b0ad-d29577025bd9": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=manazel-alhadawi_en_all_mf_prospecting&utm_content=manazel-alhadawi-CR1",
+    "99a3ed63-920a-478c-b6a7-fe00dd89e3ee": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=manazel-alhadawi_en_all_mf_prospecting&utm_content=manazel-alhadawi-CR1",
+    "c010a8c6-64f3-4a29-9a63-99efe1b6840b": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=manazel-alhadawi_en_all_mf_prospecting&utm_content=manazel-alhadawi-CR1",
+    "daee8d42-9ce9-426f-85ed-a258cf61f983": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=manazel-alhadawi_ar_all_mf_prospecting&utm_content=manazel-alhadawi-CR1",
+    "b2fdf154-8f84-4054-9cca-de76d7bdfa4c": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=manazel-alhadawi_ar_all_mf_prospecting&utm_content=manazel-alhadawi-CR1",
+    "92f3fff0-094d-4252-9243-06e9a8c25e98": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=manazel-alhadawi_ar_all_mf_prospecting&utm_content=manazel-alhadawi-CR1",
+    "123f1d5f-0c39-4993-aa8e-c79ff63f81ab": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=manazel-alhadawi_ar_all_mf_prospecting&utm_content=manazel-alhadawi-CR1",
+    "45a9979a-8bf6-4c78-b3bd-53e19c3048dc": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=manazel-alhadawi_ar_all_mf_prospecting&utm_content=manazel-alhadawi-CR1",
+    "9541b380-108d-46d8-9f66-fa47a929362a": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=manazel-alhadawi_ar_all_mf_prospecting&utm_content=manazel-alhadawi-CR1",
+    "6751c922-c15a-4dd8-bba2-580579842381": "https://www.dgda.gov.sa/ar",
+    "8295d92a-69b2-48cc-aca8-167913724d87": "https://www.wadisafar.com/en/residences/chedi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_en&utm_content=ca5ff2b6_thechedi-kv2_display_en#book-appointment",
+    "506089d6-5f51-46fb-8d0a-0b0735bdf6bf": "https://www.wadisafar.com/ar/residences/chedi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26&utm_term=ee4e5f3f_thechedi_ar&utm_content=ca5ff2b6_thechedi-kv2_display_ar#book-appointment"
+  }
+}

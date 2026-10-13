@@ -1,0 +1,192 @@
+[
+ {
+  "platform": "snapchat",
+  "account_id": "b736921f-da3e-4889-8620-d3b0969c69b0",
+  "unit_type": "ad",
+  "unit": "5b4dca24-93e8-4fe6-b851-4e7dfa845e35",
+  "ad_ids": [
+   "5b4dca24-93e8-4fe6-b851-4e7dfa845e35"
+  ],
+  "ad_names": [
+   "Bab Samhan x Qiddiya_StaticKV1_EN_Creative"
+  ],
+  "slot": "creative.web_view_properties.url",
+  "before": "https://www.marriott.com/offers/theme-park-experience-off-227242/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah?utm_source=snapchat&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan_tactical_visitor-diriyah_June2026_reach-awareness_snapchat_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=KV1",
+  "after_expected": "https://www.marriott.com/offers/theme-park-experience-off-227242/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=visitor-diriyah_awr&utm_content=kv1_display_en",
+  "after_live": "https://www.marriott.com/offers/theme-park-experience-off-227242/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah?utm_source=snapchat&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan_tactical_visitor-diriyah_June2026_reach-awareness_snapchat_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=KV1",
+  "result": "Failed",
+  "new_entity_ids": "e530c9da-8151-45cc-b0b6-ada886ad8e21",
+  "detail": "snap_split, systemic platform refusal at the ad switch. Pre-read 13-Oct (creative GET req 5d2b840e-ae21-49c0-84f0-a82540cf7b2d, ad GET req 8a4e7e20-7e3a-4299-b302-aa2e9270df37): ad 5b4dca24 (ACTIVE) on shared WEB_VIEW creative 126ab959-5cc0-42b8-a156-c49be0051573, slot == now. Step 1 done: created copy creative e530c9da-8151-45cc-b0b6-ada886ad8e21 (POST /v1/adaccounts/b736921f-da3e-4889-8620-d3b0969c69b0/creatives; dry-run body == payload; live req 80b27286-7b8a-4311-a9dd-82a4497b14f1; every settable field copied as read, only web_view_properties.url = new). Independent GET req e4e73970-180b-4c95-88df-bc963ad0a5b6: new creative url == new byte for byte, all other copied fields identical, review_status PENDING_REVIEW. Step 2 refused by Snapchat (2 live attempts, the maximum): attempt 1 PUT /v1/adsquads/02630ec1-e600-4bf1-b7f9-fe4181bce5e6/ads with the full ad as read, only creative_id changed (dry-run preview: only creative_id differed) -> request_status ERROR, req 3978f824-b19c-4db7-9a2a-19e624f3a248: 'Error code: E1008, message: Request cannot be processed due to validation error : [This field cannot be updated. Field creativeId: original value 126ab959-5cc0-42b8-a156-c49be0051573 does not match update value e530c9da-8151-45cc-b0b6-ada886ad8e21.]'; attempt 2 PATCH /v1/adsquads/02630ec1-e600-4bf1-b7f9-fe4181bce5e6/ads/5b4dca24-93e8-4fe6-b851-4e7dfa845e35 json-patch [replace /creative_id] -> same E1008, req 807032be-4fb7-4161-96ec-d4513f0eed45. Re-read after (ad GET req 1a87b1a8-9534-4bb2-a70e-1079a0723c5e, creative GET req 2b1fb7a1-2b18-46f9-a8c9-c51921cac385): ad byte-identical to before (creative_id 126ab959, status ACTIVE, updated_at 2026-06-29T07:20:23.159Z); original creative byte-identical (url == now, APPROVED). Side effect: copy creative e530c9da-8151-45cc-b0b6-ada886ad8e21 exists unattached (no ad uses it, PENDING_REVIEW); left in place, nothing deleted."
+ },
+ {
+  "platform": "snapchat",
+  "account_id": "b736921f-da3e-4889-8620-d3b0969c69b0",
+  "unit_type": "ad",
+  "unit": "7c2d1f7f-86fd-4533-8cad-55f765339547",
+  "ad_ids": [
+   "7c2d1f7f-86fd-4533-8cad-55f765339547"
+  ],
+  "ad_names": [
+   "bab-samhan-en-consideration-ad_display"
+  ],
+  "slot": "creative.web_view_properties.url",
+  "before": "https://www.diriyah.sa/en/hotels/bab-samhan?utm_source=snapchat&utm_medium=paid-social&utm_campaign=cam-id-oe4l0i_mindshare_diriyah-destination_bab-samhan_tactical_bab-samhan-consideration-may2026_2026_may_mf_consideration_traffic_snapchat_en&utm_term=adset-id-hq9a8g_bab-samhan-en-consideration_en_all_na_prospecting&utm_content=ad-id-kd1m1l_bab-samhan-en-consideration-ad_display",
+  "after_expected": "https://www.diriyah.sa/en/hotels/bab-samhan?utm_source=snapchat&utm_medium=paid-social&utm_campaign=bab-samhan_cond&utm_term=bab-samhan_en&utm_content=bab-samhan-ad_display_en",
+  "after_live": "https://www.diriyah.sa/en/hotels/bab-samhan?utm_source=snapchat&utm_medium=paid-social&utm_campaign=cam-id-oe4l0i_mindshare_diriyah-destination_bab-samhan_tactical_bab-samhan-consideration-may2026_2026_may_mf_consideration_traffic_snapchat_en&utm_term=adset-id-hq9a8g_bab-samhan-en-consideration_en_all_na_prospecting&utm_content=ad-id-kd1m1l_bab-samhan-en-consideration-ad_display",
+  "result": "NotAttempted",
+  "new_entity_ids": "",
+  "detail": "not attempted: stopped after the first unit (ad 5b4dca24) hit a systemic Snapchat refusal - Snapchat refuses to change creative_id on an existing ad: E1008 'This field cannot be updated. Field creativeId' (PUT req 3978f824-b19c-4db7-9a2a-19e624f3a248, PATCH req 807032be-4fb7-4161-96ec-d4513f0eed45), so the snap_split ad switch cannot be done through the API. Live read 13-Oct (creatives-by-ids req 0ec1986b-d27e-4710-aa95-14420ed7062c, ads-by-ids req 365b7c15-af44-4826-8bd0-d4a9f8a9ef15): ad 7c2d1f7f-86fd-4533-8cad-55f765339547 (status ACTIVE, review APPROVED) still on WEB_VIEW creative c074b1a2-15ad-4543-b6ab-c50ebe66ef79 (review APPROVED) which is also used by in-batch ad(s) 8dc9a7c9-2f98-47e8-b337-ae0f1ca2239c; slot == now (now). No creative created, no write sent."
+ },
+ {
+  "platform": "snapchat",
+  "account_id": "b736921f-da3e-4889-8620-d3b0969c69b0",
+  "unit_type": "ad",
+  "unit": "813b92f8-3704-4ebd-a0a6-70320616113a",
+  "ad_ids": [
+   "813b92f8-3704-4ebd-a0a6-70320616113a"
+  ],
+  "ad_names": [
+   "ManazelAlHadawi_KV1_Static_EN_NA_Prospecting_03.06.2026_30.09.2026"
+  ],
+  "slot": "creative.web_view_properties.url",
+  "before": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi",
+  "after_expected": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_awr&utm_term=en&utm_content=b01f5ba3_manazel-alhadawi-kv1_display_en",
+  "after_live": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi",
+  "result": "NotAttempted",
+  "new_entity_ids": "",
+  "detail": "not attempted: stopped after the first unit (ad 5b4dca24) hit a systemic Snapchat refusal - Snapchat refuses to change creative_id on an existing ad: E1008 'This field cannot be updated. Field creativeId' (PUT req 3978f824-b19c-4db7-9a2a-19e624f3a248, PATCH req 807032be-4fb7-4161-96ec-d4513f0eed45), so the snap_split ad switch cannot be done through the API. Live read 13-Oct (creatives-by-ids req 0ec1986b-d27e-4710-aa95-14420ed7062c, ads-by-ids req 365b7c15-af44-4826-8bd0-d4a9f8a9ef15): ad 813b92f8-3704-4ebd-a0a6-70320616113a (status PAUSED, review APPROVED) still on WEB_VIEW creative 278d398f-39e1-47ff-a89e-a0107a5c51a6 (review DISAPPROVED) which is also used by in-batch ad(s) b4d3faba-fd53-4760-9a58-f45dc0ef4b39; slot == now (now). No creative created, no write sent."
+ },
+ {
+  "platform": "snapchat",
+  "account_id": "b736921f-da3e-4889-8620-d3b0969c69b0",
+  "unit_type": "ad",
+  "unit": "824d1692-c893-4f89-8b33-612dfd350e5e",
+  "ad_ids": [
+   "824d1692-c893-4f89-8b33-612dfd350e5e"
+  ],
+  "ad_names": [
+   "Bab Samhan x Qiddiya_StaticKV2_AR_Creative"
+  ],
+  "slot": "creative.web_view_properties.url",
+  "before": "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=snapchat&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan_tactical_visitor-diriyah_June2026_reach-awareness_snapchat_ar&utm_term=adset-id-ee00c8_test_adset_name_ar_all_mf_prospecting&utm_content=KV2",
+  "after_expected": "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=snapchat&utm_medium=paid-social&utm_campaign=visitor-diriyah_awr&utm_term=ar&utm_content=kv2_display_ar",
+  "after_live": "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=snapchat&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan_tactical_visitor-diriyah_June2026_reach-awareness_snapchat_ar&utm_term=adset-id-ee00c8_test_adset_name_ar_all_mf_prospecting&utm_content=KV2",
+  "result": "NotAttempted",
+  "new_entity_ids": "",
+  "detail": "not attempted: stopped after the first unit (ad 5b4dca24) hit a systemic Snapchat refusal - Snapchat refuses to change creative_id on an existing ad: E1008 'This field cannot be updated. Field creativeId' (PUT req 3978f824-b19c-4db7-9a2a-19e624f3a248, PATCH req 807032be-4fb7-4161-96ec-d4513f0eed45), so the snap_split ad switch cannot be done through the API. Live read 13-Oct (creatives-by-ids req 0ec1986b-d27e-4710-aa95-14420ed7062c, ads-by-ids req 365b7c15-af44-4826-8bd0-d4a9f8a9ef15): ad 824d1692-c893-4f89-8b33-612dfd350e5e (status ACTIVE, review APPROVED) still on WEB_VIEW creative 3f77ff06-188e-4de4-9a5c-305e03e7743d (review APPROVED); slot == now (now). No creative created, no write sent."
+ },
+ {
+  "platform": "snapchat",
+  "account_id": "b736921f-da3e-4889-8620-d3b0969c69b0",
+  "unit_type": "ad",
+  "unit": "8dc9a7c9-2f98-47e8-b337-ae0f1ca2239c",
+  "ad_ids": [
+   "8dc9a7c9-2f98-47e8-b337-ae0f1ca2239c"
+  ],
+  "ad_names": [
+   "bab-samhan-en-awareness-ad_display"
+  ],
+  "slot": "creative.web_view_properties.url",
+  "before": "https://www.diriyah.sa/en/hotels/bab-samhan?utm_source=snapchat&utm_medium=paid-social&utm_campaign=cam-id-oe4l0i_mindshare_diriyah-destination_bab-samhan_tactical_bab-samhan-consideration-may2026_2026_may_mf_consideration_traffic_snapchat_en&utm_term=adset-id-hq9a8g_bab-samhan-en-consideration_en_all_na_prospecting&utm_content=ad-id-kd1m1l_bab-samhan-en-consideration-ad_display",
+  "after_expected": "https://www.diriyah.sa/en/hotels/bab-samhan?utm_source=snapchat&utm_medium=paid-social&utm_campaign=bab-samhan_awr&utm_term=bab-samhan_en&utm_content=bab-samhan-ad_display_en",
+  "after_live": "https://www.diriyah.sa/en/hotels/bab-samhan?utm_source=snapchat&utm_medium=paid-social&utm_campaign=cam-id-oe4l0i_mindshare_diriyah-destination_bab-samhan_tactical_bab-samhan-consideration-may2026_2026_may_mf_consideration_traffic_snapchat_en&utm_term=adset-id-hq9a8g_bab-samhan-en-consideration_en_all_na_prospecting&utm_content=ad-id-kd1m1l_bab-samhan-en-consideration-ad_display",
+  "result": "NotAttempted",
+  "new_entity_ids": "",
+  "detail": "not attempted: stopped after the first unit (ad 5b4dca24) hit a systemic Snapchat refusal - Snapchat refuses to change creative_id on an existing ad: E1008 'This field cannot be updated. Field creativeId' (PUT req 3978f824-b19c-4db7-9a2a-19e624f3a248, PATCH req 807032be-4fb7-4161-96ec-d4513f0eed45), so the snap_split ad switch cannot be done through the API. Live read 13-Oct (creatives-by-ids req 0ec1986b-d27e-4710-aa95-14420ed7062c, ads-by-ids req 365b7c15-af44-4826-8bd0-d4a9f8a9ef15): ad 8dc9a7c9-2f98-47e8-b337-ae0f1ca2239c (status ACTIVE, review APPROVED) still on WEB_VIEW creative c074b1a2-15ad-4543-b6ab-c50ebe66ef79 (review APPROVED) which is also used by in-batch ad(s) 7c2d1f7f-86fd-4533-8cad-55f765339547; slot == now (now). No creative created, no write sent."
+ },
+ {
+  "platform": "snapchat",
+  "account_id": "b736921f-da3e-4889-8620-d3b0969c69b0",
+  "unit_type": "ad",
+  "unit": "96847f82-2f36-4c82-b150-7ff58253b4cb",
+  "ad_ids": [
+   "96847f82-2f36-4c82-b150-7ff58253b4cb"
+  ],
+  "ad_names": [
+   "bab-samhan-ar-awareness-ad_display"
+  ],
+  "slot": "creative.web_view_properties.url",
+  "before": "https://www.diriyah.sa/ar/hotels/bab-samhan?utm_source=snapchat&utm_medium=paid-social&utm_campaign=cam-id-oe4l0i_mindshare_diriyah-destination_bab-samhan_tactical_bab-samhan-consideration-may2026_2026_may_mf_consideration_traffic_snapchat_ar&utm_term=adset-id-hq9a8g_bab-samhan-ar-consideration_ar_all_na_prospecting&utm_content=ad-id-kd1m1l_bab-samhan-ar-consideration-ad_display",
+  "after_expected": "https://www.diriyah.sa/ar/hotels/bab-samhan?utm_source=snapchat&utm_medium=paid-social&utm_campaign=bab-samhan_awr&utm_term=bab-samhan_ar&utm_content=bab-samhan-ad_display_ar",
+  "after_live": "https://www.diriyah.sa/ar/hotels/bab-samhan?utm_source=snapchat&utm_medium=paid-social&utm_campaign=cam-id-oe4l0i_mindshare_diriyah-destination_bab-samhan_tactical_bab-samhan-consideration-may2026_2026_may_mf_consideration_traffic_snapchat_ar&utm_term=adset-id-hq9a8g_bab-samhan-ar-consideration_ar_all_na_prospecting&utm_content=ad-id-kd1m1l_bab-samhan-ar-consideration-ad_display",
+  "result": "NotAttempted",
+  "new_entity_ids": "",
+  "detail": "not attempted: stopped after the first unit (ad 5b4dca24) hit a systemic Snapchat refusal - Snapchat refuses to change creative_id on an existing ad: E1008 'This field cannot be updated. Field creativeId' (PUT req 3978f824-b19c-4db7-9a2a-19e624f3a248, PATCH req 807032be-4fb7-4161-96ec-d4513f0eed45), so the snap_split ad switch cannot be done through the API. Live read 13-Oct (creatives-by-ids req 0ec1986b-d27e-4710-aa95-14420ed7062c, ads-by-ids req 365b7c15-af44-4826-8bd0-d4a9f8a9ef15): ad 96847f82-2f36-4c82-b150-7ff58253b4cb (status ACTIVE, review APPROVED) still on WEB_VIEW creative 7af09d48-1dfb-4f39-bf91-e1993e5d9087 (review APPROVED); slot == now (now). No creative created, no write sent."
+ },
+ {
+  "platform": "snapchat",
+  "account_id": "b736921f-da3e-4889-8620-d3b0969c69b0",
+  "unit_type": "ad",
+  "unit": "97e088c4-b52c-4dd8-a8d8-2bb1ee100537",
+  "ad_ids": [
+   "97e088c4-b52c-4dd8-a8d8-2bb1ee100537"
+  ],
+  "ad_names": [
+   "ManazelAlHadawi_KV1_Static_AR_NA_Prospecting_03.06.2026_30.09.2026"
+  ],
+  "slot": "creative.web_view_properties.url",
+  "before": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi",
+  "after_expected": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_conv&utm_term=ar&utm_content=b01f5ba3_manazel-alhadawi-kv1_display_ar",
+  "after_live": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi",
+  "result": "NotAttempted",
+  "new_entity_ids": "",
+  "detail": "not attempted: stopped after the first unit (ad 5b4dca24) hit a systemic Snapchat refusal - Snapchat refuses to change creative_id on an existing ad: E1008 'This field cannot be updated. Field creativeId' (PUT req 3978f824-b19c-4db7-9a2a-19e624f3a248, PATCH req 807032be-4fb7-4161-96ec-d4513f0eed45), so the snap_split ad switch cannot be done through the API. Live read 13-Oct (creatives-by-ids req 0ec1986b-d27e-4710-aa95-14420ed7062c, ads-by-ids req 365b7c15-af44-4826-8bd0-d4a9f8a9ef15): ad 97e088c4-b52c-4dd8-a8d8-2bb1ee100537 (status PAUSED, review APPROVED) still on WEB_VIEW creative b2482ffb-6e2b-4225-8fc8-ef834fbf3a08 (review APPROVED); slot == now (now). No creative created, no write sent."
+ },
+ {
+  "platform": "snapchat",
+  "account_id": "b736921f-da3e-4889-8620-d3b0969c69b0",
+  "unit_type": "ad",
+  "unit": "b4d3faba-fd53-4760-9a58-f45dc0ef4b39",
+  "ad_ids": [
+   "b4d3faba-fd53-4760-9a58-f45dc0ef4b39"
+  ],
+  "ad_names": [
+   "ManazelAlHadawi_KV1_Static_EN_NA_Prospecting_03.06.2026_30.09.2026"
+  ],
+  "slot": "creative.web_view_properties.url",
+  "before": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi",
+  "after_expected": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_cond&utm_term=en&utm_content=b01f5ba3_manazel-alhadawi-kv1_display_en",
+  "after_live": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi",
+  "result": "NotAttempted",
+  "new_entity_ids": "",
+  "detail": "not attempted: stopped after the first unit (ad 5b4dca24) hit a systemic Snapchat refusal - Snapchat refuses to change creative_id on an existing ad: E1008 'This field cannot be updated. Field creativeId' (PUT req 3978f824-b19c-4db7-9a2a-19e624f3a248, PATCH req 807032be-4fb7-4161-96ec-d4513f0eed45), so the snap_split ad switch cannot be done through the API. Live read 13-Oct (creatives-by-ids req 0ec1986b-d27e-4710-aa95-14420ed7062c, ads-by-ids req 365b7c15-af44-4826-8bd0-d4a9f8a9ef15): ad b4d3faba-fd53-4760-9a58-f45dc0ef4b39 (status PAUSED, review REJECTED) still on WEB_VIEW creative 278d398f-39e1-47ff-a89e-a0107a5c51a6 (review DISAPPROVED) which is also used by in-batch ad(s) 813b92f8-3704-4ebd-a0a6-70320616113a; slot == now (now). No creative created, no write sent."
+ },
+ {
+  "platform": "snapchat",
+  "account_id": "b736921f-da3e-4889-8620-d3b0969c69b0",
+  "unit_type": "ad",
+  "unit": "be302bdf-567b-4e27-a59b-cf3d3faa9114",
+  "ad_ids": [
+   "be302bdf-567b-4e27-a59b-cf3d3faa9114"
+  ],
+  "ad_names": [
+   "ManazelAlHadawi_KV2_Static_AR_NA_Prospecting_03.06.2026_30.09.2026"
+  ],
+  "slot": "creative.web_view_properties.url",
+  "before": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi",
+  "after_expected": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_awr&utm_term=ar&utm_content=display_ar",
+  "after_live": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi",
+  "result": "NotAttempted",
+  "new_entity_ids": "",
+  "detail": "not attempted: stopped after the first unit (ad 5b4dca24) hit a systemic Snapchat refusal - Snapchat refuses to change creative_id on an existing ad: E1008 'This field cannot be updated. Field creativeId' (PUT req 3978f824-b19c-4db7-9a2a-19e624f3a248, PATCH req 807032be-4fb7-4161-96ec-d4513f0eed45), so the snap_split ad switch cannot be done through the API. Live read 13-Oct (creatives-by-ids req 0ec1986b-d27e-4710-aa95-14420ed7062c, ads-by-ids req 365b7c15-af44-4826-8bd0-d4a9f8a9ef15): ad be302bdf-567b-4e27-a59b-cf3d3faa9114 (status PAUSED, review APPROVED) still on WEB_VIEW creative 9c990972-77ac-4880-be48-6b84f72aeb2a (review APPROVED); slot == now (now). No creative created, no write sent."
+ },
+ {
+  "platform": "snapchat",
+  "account_id": "b736921f-da3e-4889-8620-d3b0969c69b0",
+  "unit_type": "ad",
+  "unit": "dba2ad19-b1eb-4cf8-90e9-9aa43ee2182b",
+  "ad_ids": [
+   "dba2ad19-b1eb-4cf8-90e9-9aa43ee2182b"
+  ],
+  "ad_names": [
+   "ManazelAlHadawi_KV2_Static_EN_NA_Prospecting_03.06.2026_30.09.2026"
+  ],
+  "slot": "creative.web_view_properties.url",
+  "before": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi",
+  "after_expected": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=snapchat&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_conv&utm_term=en&utm_content=display_en",
+  "after_live": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi",
+  "result": "NotAttempted",
+  "new_entity_ids": "",
+  "detail": "not attempted: stopped after the first unit (ad 5b4dca24) hit a systemic Snapchat refusal - Snapchat refuses to change creative_id on an existing ad: E1008 'This field cannot be updated. Field creativeId' (PUT req 3978f824-b19c-4db7-9a2a-19e624f3a248, PATCH req 807032be-4fb7-4161-96ec-d4513f0eed45), so the snap_split ad switch cannot be done through the API. Live read 13-Oct (creatives-by-ids req 0ec1986b-d27e-4710-aa95-14420ed7062c, ads-by-ids req 365b7c15-af44-4826-8bd0-d4a9f8a9ef15): ad dba2ad19-b1eb-4cf8-90e9-9aa43ee2182b (status PAUSED, review REJECTED) still on WEB_VIEW creative b75dd8ec-bb0e-4b6a-a117-fea2b302a6bf (review APPROVED); slot == now (now). No creative created, no write sent."
+ }
+]
