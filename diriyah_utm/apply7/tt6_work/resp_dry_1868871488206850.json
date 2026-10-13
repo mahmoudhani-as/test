@@ -1,0 +1,67 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_smart_plus_ad_update",
+    "dryRun": true,
+    "data": {
+      "request": {
+        "method": "POST",
+        "url": "https://business-api.tiktok.com/open_api/v1.3/smart_plus/ad/update/",
+        "path": "/v1.3/smart_plus/ad/update/",
+        "headers": {
+          "Access-Token": "[redacted]",
+          "Accept": "application/json",
+          "Content-Type": "application/json"
+        },
+        "query": {},
+        "bodyFormat": "json",
+        "body": {
+          "advertiser_id": "7338057963233443842",
+          "ad_configuration": {
+            "call_to_action_id": "7656510401231834119",
+            "dark_post_status": "ON",
+            "tracking_info": {
+              "brand_safety_postbid_partner": "UNSET",
+              "tracking_pixel_id": "0"
+            },
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "visitor-diriyah_jul26_awr"
+              },
+              {
+                "key": "utm_term",
+                "value": "ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "kv3_display_ar"
+              }
+            ]
+          },
+          "landing_page_url_list": [
+            {
+              "landing_page_url": "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=tiktok&utm_medium=paid-social&utm_campaign=visitor-diriyah_jul26_awr&utm_term=ar&utm_content=kv3_display_ar"
+            }
+          ],
+          "smart_plus_ad_id": "1868871488206850"
+        }
+      },
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "c4ae31a1-107c-4fdc-a5ec-5195601f72fe",
+    "latencyMs": 1354
+  }
+}

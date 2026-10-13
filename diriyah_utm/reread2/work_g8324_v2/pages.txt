@@ -1,0 +1,25 @@
+# name|query lower bound (ad_group_ad.ad.id >)|LIMIT|returned|first id|last id   (all: WHERE ad_group_ad.status != 'REMOVED' ORDER BY ad_group_ad.ad.id)
+ads_p01|0|60|60|694644171510|788610532054
+ads_p02|788610532054|56|56|788610532057|797539716950
+ads_p03|797539716950|56|56|797539716953|797795488503
+ads_p04|797795488503|52|52|797795488506|797893430546
+ads_p05|797893430546|50|50|797893430549|800840046630
+ads_p06|800840046630|52|52|800840046633|800840046906
+ads_p07|800840046906|52|52|800840046909|810142225323
+ads_p08|810142225323|52|52|810142225326|814959405739
+ads_p09|814959405739|42|42|814959405742|815039270846
+ads_p10|top 44 by ad id DESC (no lower bound)|44|44|820366191104|814959405766
+# all 482 input ads returned; union of ads_p01..p10 is contiguous over the whole id range -> no other non-removed ads exist
+assets_p01|asset.id IN (first 86 input sitelink asset ids)|-|86|176613733859|331604152868
+assets_p02|asset.id IN (last 86 input sitelink asset ids)|-|86|331604152871|388973983778
+# campaign_asset: WHERE field_type = SITELINK AND status != REMOVED ORDER BY campaign.id, asset.id
+calinks_p01|no bound|120 (output cut to first 100 rows by the MCP; trailing marker dropped)|100|21800976130~176613733859|23567139803~334545996428
+calinks_p02|campaign.id >= 23567139803|104|104|23567139803~334545996428|23879380970~331604152871
+calinks_p03|campaign.id >= 23879380970|104|104|23879380970~317269817168|23990742923~317269817171
+calinks_p04|top 104 ORDER BY campaign.id DESC, asset.id DESC|104|104|24021197929~388973983778|23985743673~331604152871
+# campaign_asset union contiguous: 352 distinct non-removed campaign SITELINK links = exactly the 352 input campaign placements
+# ad_group_asset: WHERE field_type = SITELINK AND status != REMOVED ORDER BY ad_group.id; next page restarts at ad_group.id >= last ad group (overlap)
+agalinks_p01|no bound|150|150|188968437054|193526091779
+agalinks_p02|ad_group.id >= 193526091779|155|155|193526091779|194932198724
+agalinks_p03|ad_group.id >= 194932198724|158|158|194932198724|197035498927
+agalinks_p04|ad_group.id >= 197035498927|158|158|197035498927|197035511967

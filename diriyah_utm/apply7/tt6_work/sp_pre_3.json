@@ -1,0 +1,556 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_smart_plus_ad_get",
+    "method": "GET",
+    "path": "/v1.3/smart_plus/ad/get/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "20261013061911B621BD93036B2A3FAF9E",
+      "data": {
+        "list": [
+          {
+            "ad_configuration": {
+              "call_to_action_id": "7663922862339738642",
+              "dark_post_status": "ON",
+              "product_info_enabled": "NON_CATALOG",
+              "tracking_info": {
+                "brand_safety_postbid_partner": "UNSET",
+                "tracking_pixel_id": "0"
+              }
+            },
+            "ad_name": "Bab Samhan x Qiddiya_StaticKV2_EN",
+            "ad_text_list": [
+              {
+                "ad_text": "Luxury stay at Bab Samhan plus two complimentary tickets in Qiddiya City"
+              }
+            ],
+            "adgroup_id": "1871074554986610",
+            "adgroup_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_Prospect_EN",
+            "advertiser_id": "7338057963233443842",
+            "campaign_id": "1871073182572593",
+            "campaign_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_ENAR_TikTok",
+            "create_time": "2026-07-18 17:35:21",
+            "creative_list": [
+              {
+                "ad_material_id": "1871074941399058",
+                "creative_info": {
+                  "ad_format": "CAROUSEL_ADS",
+                  "identity_authorized_bc_id": "6807778858780065797",
+                  "identity_id": "e4770252-b97f-5a97-873d-46a13d7ef867",
+                  "identity_type": "BC_AUTH_TT",
+                  "image_info": [
+                    {
+                      "web_uri": "ad-site-i18n-sg/202607165d0d9ffce0d4303f4d1e8770"
+                    }
+                  ],
+                  "material_name": "Tik tok_Artboard 25-04_6VyeY803.jpg",
+                  "music_info": {
+                    "music_id": "7643491990893579024"
+                  }
+                },
+                "material_operation_status": "ENABLE",
+                "smart_plus_creative_id": "1871074941403314"
+              }
+            ],
+            "deeplink_list": [],
+            "landing_page_url_list": [
+              {
+                "landing_page_url": "https://www.marriott.com/offers/theme-park-experience-off-227242/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah?utm_source=tiktok&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan_tactical_visitor-diriyah_June2026_reach-awareness_tiktok_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=KV1"
+              }
+            ],
+            "modify_time": "2026-08-17 17:01:52",
+            "operation_status": "DISABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "smart_plus_ad_id": "1871074700154689"
+          },
+          {
+            "ad_configuration": {
+              "call_to_action_id": "7663942608623832082",
+              "dark_post_status": "ON",
+              "tracking_info": {
+                "brand_safety_postbid_partner": "UNSET",
+                "tracking_pixel_id": "0"
+              },
+              "utm_params": [
+                {
+                  "key": "utm_source",
+                  "value": "tiktok"
+                },
+                {
+                  "key": "utm_medium",
+                  "value": "cpm"
+                },
+                {
+                  "key": "utm_campaign",
+                  "value": "cam-id-2e61ab_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_tiktok_en"
+                },
+                {
+                  "key": "utm_term",
+                  "value": "adset-id-ee00c8_test_adset_name_en_all_mf_prospecting"
+                },
+                {
+                  "key": "utm_content",
+                  "value": "KV2"
+                }
+              ]
+            },
+            "ad_name": "VisitDiriyah_WC_Video10s_AR_1080x1920",
+            "ad_text_list": [
+              {
+                "ad_text": "تابعوا كأس العالم في الدرعية"
+              }
+            ],
+            "adgroup_id": "1871079315049634",
+            "adgroup_name": "VisitDiriyah_SummerCampaign2026_UF_AWR_KSA_WC_AR",
+            "advertiser_id": "7338057963233443842",
+            "campaign_id": "1871078865315857",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_UF_AWR_KSA_ENAR_TikTok",
+            "create_time": "2026-07-18 18:51:38",
+            "creative_list": [
+              {
+                "ad_material_id": "1871079745074178",
+                "creative_info": {
+                  "ad_format": "SINGLE_VIDEO",
+                  "identity_authorized_bc_id": "6807778858780065797",
+                  "identity_id": "e4770252-b97f-5a97-873d-46a13d7ef867",
+                  "identity_type": "BC_AUTH_TT",
+                  "image_info": [
+                    {
+                      "web_uri": "tos-alisg-p-0051c001-sg/ogpBXAHwzQBVsEQq5VFfBBgOGNhtPGIqNeDxDL"
+                    }
+                  ],
+                  "material_name": "10s V (witout flags)_LmMQ2Vrq.mp4",
+                  "video_info": {
+                    "file_name": "10s V (witout flags)_LmMQ2Vrq.mp4",
+                    "video_id": "v10033g50000d9bj7ivog65oql6o731g"
+                  }
+                },
+                "material_operation_status": "ENABLE",
+                "smart_plus_creative_id": "1871079745077314"
+              }
+            ],
+            "deeplink_list": [],
+            "landing_page_url_list": [
+              {
+                "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_tiktok_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=KV2"
+              }
+            ],
+            "modify_time": "2026-09-06 10:27:54",
+            "operation_status": "DISABLE",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE",
+            "smart_plus_ad_id": "1871079653396498"
+          },
+          {
+            "ad_configuration": {
+              "call_to_action_id": "7674684255129046037",
+              "dark_post_status": "ON",
+              "product_info": {
+                "product_titles": [
+                  "hotel"
+                ]
+              },
+              "product_info_enabled": "NON_CATALOG",
+              "tracking_info": {
+                "brand_safety_postbid_partner": "UNSET",
+                "tracking_pixel_id": "0"
+              },
+              "utm_params": [
+                {
+                  "key": "utm_source",
+                  "value": "tiktok"
+                },
+                {
+                  "key": "utm_medium",
+                  "value": "cpm"
+                },
+                {
+                  "key": "utm_campaign",
+                  "value": "cam-id-2e61ab_mindshare_diriyah-company_bab-samhan_tactical_visitor-diriyah_June2026_reach-awareness_tiktok_ar"
+                },
+                {
+                  "key": "utm_term",
+                  "value": "adset-id-ee00c8_test_adset_name_ar_all_mf_prospecting"
+                },
+                {
+                  "key": "utm_content",
+                  "value": "CR6"
+                }
+              ]
+            },
+            "ad_name": "Bab Samhan x Qiddiya_CR6_AR",
+            "ad_text_list": [
+              {
+                "ad_text": "اسكن في الدرعية والعب في القدية مع تذكرتين مجاناً"
+              },
+              {
+                "ad_text": "إقامة في باب سمحان وتجارب لا تُنسى في القدية"
+              },
+              {
+                "ad_text": "الثقافة والمغامرة في رحلة واحدة"
+              },
+              {
+                "ad_text": "استمتع بإقامة فاخرة وتذكرتين إلى القدية"
+              },
+              {
+                "ad_text": "استمتع بإقامة مليئة بالمرح والراحة في فندق باب سمحان"
+              }
+            ],
+            "adgroup_id": "1871074109544626",
+            "adgroup_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_Prospect_AR",
+            "advertiser_id": "7338057963233443842",
+            "campaign_id": "1871073182572593",
+            "campaign_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_ENAR_TikTok",
+            "create_time": "2026-08-16 17:34:54",
+            "creative_list": [
+              {
+                "ad_material_id": "1873702228932674",
+                "creative_info": {
+                  "ad_format": "CAROUSEL_ADS",
+                  "identity_authorized_bc_id": "6807778858780065797",
+                  "identity_id": "e4770252-b97f-5a97-873d-46a13d7ef867",
+                  "identity_type": "BC_AUTH_TT",
+                  "image_info": [
+                    {
+                      "web_uri": "ad-site-i18n-sg/202608165d0dc7f146682fff458abc62"
+                    }
+                  ],
+                  "material_name": "2_ftqYhCBI.jpg",
+                  "music_info": {
+                    "music_id": "7643491990893579024"
+                  }
+                },
+                "material_operation_status": "ENABLE",
+                "smart_plus_creative_id": "1873702228938802"
+              },
+              {
+                "ad_material_id": "1873702228932642",
+                "creative_info": {
+                  "ad_format": "CAROUSEL_ADS",
+                  "identity_authorized_bc_id": "6807778858780065797",
+                  "identity_id": "e4770252-b97f-5a97-873d-46a13d7ef867",
+                  "identity_type": "BC_AUTH_TT",
+                  "image_info": [
+                    {
+                      "web_uri": "ad-site-i18n-sg/202608165d0d2a4b98ec4efb471b8e3d"
+                    }
+                  ],
+                  "material_name": "3_C09g8rUW.jpg",
+                  "music_info": {
+                    "music_id": "7643491990893579024"
+                  }
+                },
+                "material_operation_status": "ENABLE",
+                "smart_plus_creative_id": "1873702228938834"
+              },
+              {
+                "ad_material_id": "1873702228932658",
+                "creative_info": {
+                  "ad_format": "CAROUSEL_ADS",
+                  "identity_authorized_bc_id": "6807778858780065797",
+                  "identity_id": "e4770252-b97f-5a97-873d-46a13d7ef867",
+                  "identity_type": "BC_AUTH_TT",
+                  "image_info": [
+                    {
+                      "web_uri": "ad-site-i18n-sg/202608165d0d7ad1b340fe2240c3a88c"
+                    }
+                  ],
+                  "material_name": "1_pk1E3bHo.jpg",
+                  "music_info": {
+                    "music_id": "7643491990893579024"
+                  }
+                },
+                "material_operation_status": "ENABLE",
+                "smart_plus_creative_id": "1873702228939986"
+              }
+            ],
+            "deeplink_list": [],
+            "landing_page_url_list": [
+              {
+                "landing_page_url": "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=tiktok&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan_tactical_visitor-diriyah_June2026_reach-awareness_tiktok_ar&utm_term=adset-id-ee00c8_test_adset_name_ar_all_mf_prospecting&utm_content=CR6"
+              }
+            ],
+            "modify_time": "2026-08-19 18:17:22",
+            "operation_status": "DISABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "smart_plus_ad_id": "1873701437734482"
+          },
+          {
+            "ad_configuration": {
+              "call_to_action_id": "7674685305672272916",
+              "dark_post_status": "ON",
+              "product_info": {
+                "product_titles": [
+                  "theme park experience"
+                ]
+              },
+              "product_info_enabled": "NON_CATALOG",
+              "tracking_info": {
+                "brand_safety_postbid_partner": "UNSET",
+                "tracking_pixel_id": "0"
+              },
+              "utm_params": [
+                {
+                  "key": "utm_source",
+                  "value": "tiktok"
+                },
+                {
+                  "key": "utm_medium",
+                  "value": "cpm"
+                },
+                {
+                  "key": "utm_campaign",
+                  "value": "cam-id-2e61ab_mindshare_diriyah-company_bab-samhan_tactical_visitor-diriyah_June2026_reach-awareness_tiktok_en"
+                },
+                {
+                  "key": "utm_term",
+                  "value": "adset-id-ee00c8_test_adset_name_en_all_mf_prospecting"
+                },
+                {
+                  "key": "utm_content",
+                  "value": "CR7"
+                }
+              ]
+            },
+            "ad_name": "Bab Samhan x Qiddiya_CR7_EN",
+            "ad_text_list": [
+              {
+                "ad_text": "Stay in Diriyah. Play in Qiddiya"
+              },
+              {
+                "ad_text": "Luxury stay at Bab Samhan plus two complimentary tickets in Qiddiya City"
+              },
+              {
+                "ad_text": "Culture meets adventure"
+              },
+              {
+                "ad_text": "Your summer getaway starts here"
+              },
+              {
+                "ad_text": "Experience culture and excitement together in one unforgettable getaway"
+              }
+            ],
+            "adgroup_id": "1871074554986610",
+            "adgroup_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_Prospect_EN",
+            "advertiser_id": "7338057963233443842",
+            "campaign_id": "1871073182572593",
+            "campaign_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_ENAR_TikTok",
+            "create_time": "2026-08-16 17:38:54",
+            "creative_list": [
+              {
+                "ad_material_id": "1873702480317666",
+                "creative_info": {
+                  "ad_format": "CAROUSEL_ADS",
+                  "identity_authorized_bc_id": "6807778858780065797",
+                  "identity_id": "e4770252-b97f-5a97-873d-46a13d7ef867",
+                  "identity_type": "BC_AUTH_TT",
+                  "image_info": [
+                    {
+                      "web_uri": "ad-site-i18n-sg/202608165d0d2d06572dfb07447b99a2"
+                    }
+                  ],
+                  "material_name": "2_VsoQpjvW.jpg",
+                  "music_info": {
+                    "music_id": "7643491990893579024"
+                  }
+                },
+                "material_operation_status": "ENABLE",
+                "smart_plus_creative_id": "1873702480325746"
+              },
+              {
+                "ad_material_id": "1873702480317650",
+                "creative_info": {
+                  "ad_format": "CAROUSEL_ADS",
+                  "identity_authorized_bc_id": "6807778858780065797",
+                  "identity_id": "e4770252-b97f-5a97-873d-46a13d7ef867",
+                  "identity_type": "BC_AUTH_TT",
+                  "image_info": [
+                    {
+                      "web_uri": "ad-site-i18n-sg/202608165d0d29215bd05e704eff95c6"
+                    }
+                  ],
+                  "material_name": "3_UPxyJ1G3.jpg",
+                  "music_info": {
+                    "music_id": "7643491990893579024"
+                  }
+                },
+                "material_operation_status": "ENABLE",
+                "smart_plus_creative_id": "1873702480326754"
+              },
+              {
+                "ad_material_id": "1873702480316546",
+                "creative_info": {
+                  "ad_format": "CAROUSEL_ADS",
+                  "identity_authorized_bc_id": "6807778858780065797",
+                  "identity_id": "e4770252-b97f-5a97-873d-46a13d7ef867",
+                  "identity_type": "BC_AUTH_TT",
+                  "image_info": [
+                    {
+                      "web_uri": "ad-site-i18n-sg/202608165d0d93bdd4cac4ea4cf795c9"
+                    }
+                  ],
+                  "material_name": "4_OzAtkHiv.jpg",
+                  "music_info": {
+                    "music_id": "7643491990893579024"
+                  }
+                },
+                "material_operation_status": "ENABLE",
+                "smart_plus_creative_id": "1873702480324914"
+              },
+              {
+                "ad_material_id": "1873702480317634",
+                "creative_info": {
+                  "ad_format": "CAROUSEL_ADS",
+                  "identity_authorized_bc_id": "6807778858780065797",
+                  "identity_id": "e4770252-b97f-5a97-873d-46a13d7ef867",
+                  "identity_type": "BC_AUTH_TT",
+                  "image_info": [
+                    {
+                      "web_uri": "ad-site-i18n-sg/202608165d0d57a9da3169d44b448d7e"
+                    }
+                  ],
+                  "material_name": "1_t0PjMHTW.jpg",
+                  "music_info": {
+                    "music_id": "7643491990893579024"
+                  }
+                },
+                "material_operation_status": "ENABLE",
+                "smart_plus_creative_id": "1873702480325714"
+              }
+            ],
+            "deeplink_list": [],
+            "landing_page_url_list": [
+              {
+                "landing_page_url": "https://www.marriott.com/offers/theme-park-experience-off-227242/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah?utm_source=tiktok&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan_tactical_visitor-diriyah_June2026_reach-awareness_tiktok_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=CR7"
+              }
+            ],
+            "modify_time": "2026-08-19 18:05:54",
+            "operation_status": "DISABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "smart_plus_ad_id": "1873702214677794"
+          },
+          {
+            "ad_configuration": {
+              "call_to_action_id": "7675009434963184660",
+              "dark_post_status": "ON",
+              "product_info": {
+                "product_titles": [
+                  "hotel"
+                ]
+              },
+              "product_info_enabled": "NON_CATALOG",
+              "tracking_info": {
+                "brand_safety_postbid_partner": "UNSET",
+                "tracking_pixel_id": "0"
+              },
+              "utm_params": [
+                {
+                  "key": "utm_source",
+                  "value": "tiktok"
+                },
+                {
+                  "key": "utm_medium",
+                  "value": "cpm"
+                },
+                {
+                  "key": "utm_campaign",
+                  "value": "cam-id-2e61ab_mindshare_diriyah-company_bab-samhan_tactical_visitor-diriyah_June2026_reach-awareness_tiktok_ar"
+                },
+                {
+                  "key": "utm_term",
+                  "value": "adset-id-ee00c8_test_adset_name_ar_all_mf_prospecting"
+                },
+                {
+                  "key": "utm_content",
+                  "value": "CR6"
+                }
+              ]
+            },
+            "ad_name": "Bab Samhan x Qiddiya_CR6_AR_V2",
+            "ad_text_list": [
+              {
+                "ad_text": "اسكن في الدرعية والعب في القدية مع تذكرتين مجاناً"
+              },
+              {
+                "ad_text": "إقامة في باب سمحان وتجارب لا تُنسى في القدية"
+              },
+              {
+                "ad_text": "الثقافة والمغامرة في رحلة واحدة"
+              },
+              {
+                "ad_text": "استمتع بإقامة فاخرة وتذكرتين إلى القدية"
+              },
+              {
+                "ad_text": "استمتع بإقامة مليئة بالمرح والراحة في فندق باب سمحان"
+              }
+            ],
+            "adgroup_id": "1871074109544626",
+            "adgroup_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_Prospect_AR",
+            "advertiser_id": "7338057963233443842",
+            "campaign_id": "1871073182572593",
+            "campaign_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_ENAR_TikTok",
+            "create_time": "2026-08-17 14:36:48",
+            "creative_list": [
+              {
+                "ad_material_id": "1873781621457153",
+                "creative_info": {
+                  "ad_format": "CAROUSEL_ADS",
+                  "identity_authorized_bc_id": "6807778858780065797",
+                  "identity_id": "e4770252-b97f-5a97-873d-46a13d7ef867",
+                  "identity_type": "BC_AUTH_TT",
+                  "image_info": [
+                    {
+                      "web_uri": "ad-site-i18n-sg/202608165d0d7ad1b340fe2240c3a88c"
+                    },
+                    {
+                      "web_uri": "ad-site-i18n-sg/202608165d0dc7f146682fff458abc62"
+                    },
+                    {
+                      "web_uri": "ad-site-i18n-sg/202608165d0d2a4b98ec4efb471b8e3d"
+                    }
+                  ],
+                  "material_name": "Carousel_20260817_173541",
+                  "music_info": {
+                    "music_id": "7643491990893579024"
+                  }
+                },
+                "material_operation_status": "ENABLE",
+                "smart_plus_creative_id": "1873781621469457"
+              }
+            ],
+            "deeplink_list": [],
+            "landing_page_url_list": [
+              {
+                "landing_page_url": "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=tiktok&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan_tactical_visitor-diriyah_June2026_reach-awareness_tiktok_ar&utm_term=adset-id-ee00c8_test_adset_name_ar_all_mf_prospecting&utm_content=CR6"
+              }
+            ],
+            "modify_time": "2026-08-19 18:23:31",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "smart_plus_ad_id": "1873781413173346"
+          }
+        ],
+        "page_info": {
+          "page": 1,
+          "page_size": 50,
+          "total_number": 5,
+          "total_page": 1
+        }
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "20261013061911B621BD93036B2A3FAF9E",
+      "waitedMs": 1579,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "64014279-af35-4565-b830-d66fcbf39d57",
+    "latencyMs": 3441
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_update",
+    "method": "POST",
+    "path": "/v1.3/ad/update/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "202610130623375D71483FA52312439541",
+      "data": {
+        "ad_ids": [
+          "1859903519347842"
+        ],
+        "need_audit": false,
+        "creatives": [
+          {
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "visitor-diriyah-coe_mar26_cond",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "en",
+                "key": "utm_term"
+              },
+              {
+                "value": "display_en",
+                "key": "utm_content"
+              }
+            ],
+            "adgroup_name": "BujairiTerrace_ShoppingRamadan2026_MF_TRF_KSA_Prospect_EN",
+            "ad_format": "CAROUSEL_ADS",
+            "modify_time": "2026-10-12 22:23:39",
+            "viewability_vast_url": null,
+            "landing_page_urls": null,
+            "impression_tracking_url": null,
+            "ad_id": "1859903519347842",
+            "music_id": "7618164299491592977",
+            "adgroup_id": "1858189280224433",
+            "ad_ref_pixel_id": 7347671240183693000,
+            "click_tracking_url": null,
+            "create_time": "2026-03-17 10:14:02",
+            "advertiser_id": "7338057963233443842",
+            "app_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "ad_texts": null,
+            "call_to_action_id": "7618573551301348368",
+            "creative_type": null,
+            "carousel_image_labels": null,
+            "identity_type": "BC_AUTH_TT",
+            "playable_url": "",
+            "brand_safety_postbid_partner": "UNSET",
+            "viewability_postbid_partner": "UNSET",
+            "page_id": null,
+            "campaign_id": "1858189280224401",
+            "profile_image_url": "",
+            "campaign_name": "BujairiTerrace_ShoppingRamadan2026_MF_TRF_KSA_ENAR_TikTok",
+            "deeplink": "",
+            "video_id": null,
+            "is_new_structure": true,
+            "fallback_type": "UNSET",
+            "brand_safety_vast_url": null,
+            "image_ids": [
+              "ad-site-i18n-sg/202603185d0df3dea5aebc4d49a2b1b2"
+            ],
+            "dark_post_status": "ON",
+            "tracking_pixel_id": 7347671240183693000,
+            "ad_name": "EID_EN_COE_Static",
+            "deeplink_type": "NORMAL",
+            "is_aco": false,
+            "product_info": {
+              "selling_points": null,
+              "product_titles": null,
+              "product_image_list": null
+            },
+            "avatar_icon_web_uri": "",
+            "display_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "landing_page_url": "https://www.diriyah.sa/en?utm_source=tiktok&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_mar26_cond&utm_term=en&utm_content=display_en",
+            "campaign_automation_type": "MANUAL",
+            "ad_text": "Step into the spirit of Eid at Diriyah. Moments of culture, connection, and celebration await.",
+            "creative_authorized": false,
+            "creative_auto_enhancement_strategy_list": [],
+            "operation_status": "ENABLE",
+            "branded_content_disabled": false,
+            "card_id": null,
+            "vast_moat_enabled": false,
+            "identity_authorized_bc_id": "6807778858780065797",
+            "optimization_event": "LANDING_PAGE_VIEW",
+            "identity_id": "e4770252-b97f-5a97-873d-46a13d7ef867"
+          }
+        ]
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "202610130623375D71483FA52312439541",
+      "waitedMs": 2049,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "2b76d1a6-31d3-47cd-8ab0-ea60f3e1c907",
+    "latencyMs": 3651
+  }
+}

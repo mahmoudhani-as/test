@@ -1,0 +1,7 @@
+dry call: action UPDATE_CARD | path_params {'account_id': '18ce55o46ul', 'card_id': '2079186495856840704'} | dry_run True
+sent payload == built payload: True
+{"success": true, "data": {"success": true, "dry_run": true, "action": "x_accounts_account_id_cards_card_id_put", "compatibility_action": "UPDATE_CARD", "method": "PUT", "endpoint": "/12/accounts/{account_id}/cards/{card_id}", "request": {"accountId": "18ce55o46ul", "account_id": "18ce55o46ul", "cardId": "2079186495856840704", "card_id": "2079186495856840704", "payload": {"components": [{"media_keys": ["3_2076949735089340416", "3_2076949766802444288", "3_2076949795235614720", "3_2076949818836918272", "3_2076949843147214848", "3_2076949866006134784"], "type": "SWIPEABLE_MEDIA"}, {"destination": {"type": "WEBSITE", "url": "https://www.diriyahcompany.sa/en/life-in-diriyah?utm_source=x&utm_medium=paid-social&utm_campaign=2c0ef446_diriyah-living_jul26_cond&utm_term=3e71b680_residential_en&utm_content=display_en"}, "title": "🔗", "type": "DETAILS"}], "name": "[Copy] Untitled"}}, "warnings": ["Dry run only. Pass dry_run:false to execute after reviewing the native request."]}, "meta": {"requestId": "a35eaaeb-5826-4333-8d51-82081195c545", "latencyMs": 289}}
+preview payload == built payload: True
+URL slots changed by preview vs card as read: ['card.components[1].destination.url']
+non-URL parts identical to card as read: True
+    card.components[1].destination.url preview == new byte for byte: True

@@ -1,0 +1,19 @@
+{
+ "platform": "tiktok",
+ "account_id": "7338074303931449345",
+ "unit_type": "ad",
+ "unit": "1871315166237921",
+ "ad_ids": [
+  "1871315166237921"
+ ],
+ "ad_names": [
+  "Manazel_Video_10s_EN"
+ ],
+ "slot": "ad.landing_page_url",
+ "before": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=adset-id-0DE601_manazel-alhadawi_en_all_mf_prospecting&utm_content=ad-id-2CEFE3_manazel-alhadawi-video1_video&utm_id=__CAMPAIGN_ID__",
+ "after_expected": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_jul26_cond&utm_term=manazel-alhadawi_en&utm_content=manazel-alhadawi-video1_video_en",
+ "after_live": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=adset-id-0DE601_manazel-alhadawi_en_all_mf_prospecting&utm_content=ad-id-2CEFE3_manazel-alhadawi-video1_video&utm_id=__CAMPAIGN_ID__",
+ "result": "NotAttempted",
+ "new_entity_ids": "",
+ "detail": "held for the user: Spark Push ad (BC_AUTH_TT, tiktok_item_id 7664924502161247496) - an API URL edit makes TikTok re-publish the post 30-60 min later and detach the ad from its original post (53 of 75 earlier writes); not written until the user decides. URL == now. No dry run or write sent. SPARK_PUSH_HOLD SINGLE_VIDEO ad (identity_type BC_AUTH_TT, identity 0f6eebaa-ba16-5ad3-aa97-4171805e2af1, BC 6807778858780065797); read ad/get req 20261013064138363C82312F69B0E84C66 (utm_params 5 keys source/medium/campaign/content/id incl. utm_id; DISABLE / AD_STATUS_CAMPAIGN_DISABLE; modify_time 2026-10-12 10:23:28). cur = landing_page_url plus the utm_params keys missing from it (utm_id=__CAMPAIGN_ID__); note: stored utm_params differ from the URL for utm_content (URL 'ad-id-2CEFE3_manazel-alhadawi-video1_video', utm_params 'ad-id-2CEFE3_manazel-alhadawi-kv2_display')."
+}

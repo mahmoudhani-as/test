@@ -1,0 +1,17 @@
+[
+ {
+  "order": 9,
+  "input_equals_payload": true,
+  "is_error": false,
+  "other_args": {
+   "action": "tiktok_smart_plus_ad_update",
+   "dry_run": false
+  },
+  "success": true,
+  "error": null,
+  "code": 0,
+  "message": "OK",
+  "request_id": "202610130634542A3730DEE78110C4E643",
+  "data": "{\"ad_configuration\": {\"call_to_action_id\": \"7687605718756658184\", \"catalog_creative_info\": {}, \"creative_auto_enhancement_strategy_list\": [\"IMAGE_QUALITY\", \"IMAGE_RESIZE\"], \"dark_post_status\": \"ON\", \"deeplink_utm_params\": [], \"product_info\": {}, \"product_info_enabled\": \"NON_CATALOG\", \"tracking_info\": {\"app_tracking_info_list\": [], \"brand_safety_postbid_partner\": \"UNSET\", \"tracking_pixel_id\": \"0\"}, \"utm_params\": [{\"key\": \"utm_source\", \"value\": \"tiktok\"}, {\"key\": \"utm_medium\", \"value\": \"paid-social\"}, {\"key\": \"utm_campaign\", \"value\": \"cond\"}, {\"key\": \"utm_term\", \"value\": \"ar\"}, {\"key\": \"utm_cont"
+ }
+]

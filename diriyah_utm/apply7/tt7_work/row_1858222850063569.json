@@ -1,0 +1,19 @@
+{
+ "platform": "tiktok",
+ "account_id": "7338057963233443842",
+ "unit_type": "ad",
+ "unit": "1858222850063569",
+ "ad_ids": [
+  "1858222850063569"
+ ],
+ "ad_names": [
+  "Video_EN"
+ ],
+ "slot": "smart_plus_ad.landing_page_url_list[0].landing_page_url",
+ "before": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_conv&utm_term=en&utm_content=video_en",
+ "after_expected": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_conv&utm_term=en&utm_content=video_en",
+ "after_live": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_conv&utm_term=en&utm_content=video_en",
+ "result": "AlreadyFixed",
+ "new_entity_ids": "",
+ "detail": "Upgraded Smart+ ad, 1 material(s): material 1858222850065489 SINGLE_VIDEO BC_AUTH_TT identity 7d136a20-71e2-5fb6-9927-ad76b915fac7 / BC 6807778858780065797 no tiktok_item_id video v10033g50000d6be1pfog65go95s7cd0 1 image(s). Read smart_plus/ad/get req 20261013063557FD241043CF8B46FCE6A2: landing_page_url_list[0] byte-identical; operation_status ENABLE, secondary_status AD_STATUS_CAMPAIGN_DISABLE, modify_time 2026-10-12 12:53:42. No write made."
+}

@@ -1,0 +1,19 @@
+{
+ "platform": "tiktok",
+ "account_id": "7338057963233443842",
+ "unit_type": "ad",
+ "unit": "1858130818275617",
+ "ad_ids": [
+  "1858130818275617"
+ ],
+ "ad_names": [
+  "Ad name2026-02-25 23:34:46"
+ ],
+ "slot": "smart_plus_ad.landing_page_url_list[0].landing_page_url",
+ "before": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_source=tiktok&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_lf_conversion_sales_tiktok_en&utm_medium=paid-social&utm_content=ad-id-7aee00_test_ad_name_video",
+ "after_expected": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_feb26_conv&utm_term=en&utm_content=en",
+ "after_live": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_feb26_conv&utm_term=en&utm_content=en",
+ "result": "Fixed",
+ "new_entity_ids": "",
+ "detail": "Upgraded Smart+ ad (creative_list: SINGLE_VIDEO BC_AUTH_TT identity 7d136a20-71e2-5fb6-9927-ad76b915fac7, video v10033g50000d6be1pfog65go95s7cd0, no tiktok_item_id; ad_configuration keys ['call_to_action_id', 'creative_auto_add_toggle', 'dark_post_status', 'product_info', 'product_info_enabled', 'product_set_id', 'tracking_info']). Pre-read smart_plus/ad/get req 202610130642305A7CD164A142B7EB1412: URL == now (no utm_params; DISABLE / AD_STATUS_CAMPAIGN_DISABLE; modify_time 2026-03-04 12:35:52). smart_plus/ad/update payload: landing_page_url_list as read with only [0].landing_page_url = new, ad_configuration as read (the ad has no utm_params; none added); creative_list, ad_text_list, ad_name and status NOT sent. dry_run: call input == built payload (True), preview body == payload (True), warnings []. live attempt 1: input == dry-run payload (True), code 0 OK req 20261013064258383FCA1E03F089F9B70E. Re-read smart_plus/ad/get req 202610130643239A73785E60521F05C0CB: landing_page_url_list[0].landing_page_url == new byte for byte; no utm_params (unchanged: none); creative_list tiktok_item_id before [None] / after [None]; other fields changed: none; DISABLE / AD_STATUS_CAMPAIGN_DISABLE; modify_time 2026-03-04 12:35:52 -> 2026-10-12 22:43:01."
+}

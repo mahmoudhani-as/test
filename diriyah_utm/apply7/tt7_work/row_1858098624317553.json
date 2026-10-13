@@ -1,0 +1,19 @@
+{
+ "platform": "tiktok",
+ "account_id": "7338057963233443842",
+ "unit_type": "ad",
+ "unit": "1858098624317553",
+ "ad_ids": [
+  "1858098624317553"
+ ],
+ "ad_names": [
+  "Ad name2026-02-25 15:01:32"
+ ],
+ "slot": "smart_plus_ad.landing_page_url_list[0].landing_page_url",
+ "before": "https://www.diriyah.com?utm_source=tiktok&utm_medium=paid-social&utm_term=en",
+ "after_expected": "https://www.diriyah.com?utm_source=tiktok&utm_medium=paid-social&utm_term=en",
+ "after_live": "https://www.diriyah.com?utm_source=tiktok&utm_medium=paid-social&utm_term=en",
+ "result": "AlreadyFixed",
+ "new_entity_ids": "",
+ "detail": "Upgraded Smart+ ad, 1 material(s): material 1858098772308146 SINGLE_VIDEO AUTH_CODE identity 7152223086950990849 tiktok_item_id 7603091708733132052. Read smart_plus/ad/get req 202610130635388848B057D967A1004E49: landing_page_url_list[0] byte-identical; operation_status ENABLE, secondary_status AD_STATUS_CAMPAIGN_DISABLE, modify_time 2026-10-12 13:07:04. No write made."
+}

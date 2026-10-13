@@ -1,0 +1,18 @@
+{
+ "ad": "1871074346111618",
+ "n_dry_calls": 1,
+ "order": 2,
+ "input_equals_payload": true,
+ "other_args": {
+  "action": "tiktok_smart_plus_ad_update",
+  "dry_run": true
+ },
+ "success": true,
+ "error": null,
+ "dry_path": "/v1.3/smart_plus/ad/update/",
+ "dry_method": "POST",
+ "preview_body_equals_payload": true,
+ "preview_vs_pre_only_url_and_utm": true,
+ "preview_vs_pre_msgs": [],
+ "warnings": null
+}

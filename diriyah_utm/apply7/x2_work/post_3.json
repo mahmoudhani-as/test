@@ -1,0 +1,42 @@
+{
+ "card_after": {
+  "name": "Eid KV_ Static KV1_ CPC_ AR",
+  "components": [
+   {
+    "media_key": "3_2059148903505702912",
+    "media_metadata": {
+     "3_2059148903505702912": {
+      "type": "IMAGE",
+      "url": "https://pbs.twimg.com/media/HJORBJUXsAAI0DE.jpg",
+      "width": 1080,
+      "height": 1080
+     }
+    },
+    "type": "MEDIA"
+   },
+   {
+    "title": "عيدنا.. يزهى بكم",
+    "destination": {
+     "url": "https://www.diriyah.sa/ar?utm_source=x&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=display_ar",
+     "type": "WEBSITE"
+    },
+    "type": "DETAILS"
+   }
+  ],
+  "id": "2059148946573049856",
+  "created_at": "2026-05-26T05:45:40Z",
+  "card_uri": "card://2059148946573049856",
+  "updated_at": "2026-05-26T05:45:40Z",
+  "deleted": false,
+  "card_type": "IMAGE_WEBSITE"
+ },
+ "get_tool": "toolu_01Qr5GRS84b8bDqSFGxe2Whf",
+ "get_rid": "61f2264b-54b5-467c-bcf9-a401870715aa",
+ "slots": {
+  "card.components[1].destination.url": {
+   "after_live": "https://www.diriyah.sa/ar?utm_source=x&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=display_ar",
+   "eq_new_bytes": true
+  }
+ },
+ "rest_unchanged": true
+}

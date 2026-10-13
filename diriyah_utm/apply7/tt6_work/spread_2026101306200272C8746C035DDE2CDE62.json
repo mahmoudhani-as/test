@@ -1,0 +1,91 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_smart_plus_ad_get",
+    "method": "GET",
+    "path": "/v1.3/smart_plus/ad/get/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "2026101306200272C8746C035DDE2CDE62",
+      "data": {
+        "list": [
+          {
+            "ad_configuration": {
+              "call_to_action_id": "7663919085465488391",
+              "dark_post_status": "ON",
+              "product_info_enabled": "NON_CATALOG",
+              "tracking_info": {
+                "brand_safety_postbid_partner": "UNSET",
+                "tracking_pixel_id": "0"
+              }
+            },
+            "ad_name": "Bab Samhan x Qiddiya_StaticKV3_EN",
+            "ad_text_list": [
+              {
+                "ad_text": "Luxury stay at Bab Samhan plus two complimentary tickets in Qiddiya City."
+              }
+            ],
+            "adgroup_id": "1871073239927937",
+            "adgroup_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_Prospect_EN",
+            "advertiser_id": "7338057963233443842",
+            "campaign_id": "1871073182572593",
+            "campaign_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_ENAR_TikTok",
+            "create_time": "2026-07-18 17:20:19",
+            "creative_list": [
+              {
+                "ad_material_id": "1871073996445762",
+                "creative_info": {
+                  "ad_format": "CAROUSEL_ADS",
+                  "identity_authorized_bc_id": "6807778858780065797",
+                  "identity_id": "e4770252-b97f-5a97-873d-46a13d7ef867",
+                  "identity_type": "BC_AUTH_TT",
+                  "image_info": [
+                    {
+                      "web_uri": "ad-site-i18n-sg/202607165d0d732009f2a9124c3a965d"
+                    }
+                  ],
+                  "material_name": "Tik tok_Artboard 25-02_mShvLITd.jpg",
+                  "music_info": {
+                    "music_id": "7643491990893579024"
+                  }
+                },
+                "material_operation_status": "ENABLE",
+                "smart_plus_creative_id": "1871073998273650"
+              }
+            ],
+            "deeplink_list": [],
+            "landing_page_url_list": [
+              {
+                "landing_page_url": "https://www.marriott.com/offers/theme-park-experience-off-227242/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah?utm_source=tiktok&utm_medium=paid-social&utm_campaign=visitor-diriyah_cond&utm_term=en&utm_content=kv3_display_en"
+              }
+            ],
+            "modify_time": "2026-10-12 22:19:54",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "smart_plus_ad_id": "1871073846007906"
+          }
+        ],
+        "page_info": {
+          "page": 1,
+          "page_size": 10,
+          "total_number": 1,
+          "total_page": 1
+        }
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "2026101306200272C8746C035DDE2CDE62",
+      "waitedMs": 2689,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "fd920e72-5be5-4851-85c5-7e8be6f6171e",
+    "latencyMs": 4424
+  }
+}

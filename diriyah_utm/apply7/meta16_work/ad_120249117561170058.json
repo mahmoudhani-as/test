@@ -1,0 +1,286 @@
+{
+ "id": "120249117561170058",
+ "name": "ManazelAlHadawi_KV2_Static_AssetCustomization_AR_NA_Prospecting_03.06.2026_30.09.2026",
+ "account_id": "2194833637927644",
+ "campaign_id": "120249117554400058",
+ "adset_id": "120249117556420058",
+ "status": "ACTIVE",
+ "configured_status": "ACTIVE",
+ "effective_status": "ACTIVE",
+ "created_time": "2026-06-03T19:27:32+0300",
+ "updated_time": "2026-06-17T12:11:02+0300",
+ "tracking_specs": [
+  {
+   "action.type": [
+    "onsite_conversion"
+   ]
+  },
+  {
+   "action.type": [
+    "onsite_conversion"
+   ],
+   "conversion_id": [
+    "30280544161544703"
+   ]
+  },
+  {
+   "action.type": [
+    "post_interaction_gross"
+   ],
+   "page": [
+    "102966688906483"
+   ],
+   "post": [
+    "1045050738035156"
+   ]
+  },
+  {
+   "action.type": [
+    "post_interaction_gross"
+   ],
+   "page": [
+    "111467331865347"
+   ],
+   "post": [
+    "980173348328298"
+   ]
+  },
+  {
+   "action.type": [
+    "post_engagement"
+   ],
+   "page": [
+    "111467331865347"
+   ],
+   "post": [
+    "991290937216539"
+   ]
+  },
+  {
+   "action.type": [
+    "post_interaction_gross"
+   ],
+   "page": [
+    "111467331865347"
+   ],
+   "post": [
+    "991290937216539"
+   ]
+  },
+  {
+   "action.type": [
+    "link_click"
+   ],
+   "post": [
+    "991290937216539"
+   ],
+   "post.wall": [
+    "111467331865347"
+   ]
+  },
+  {
+   "action.type": [
+    "attention_event"
+   ],
+   "creative": [
+    "986888877430444"
+   ]
+  }
+ ],
+ "adset": {
+  "id": "120249117556420058",
+  "name": "sa_Diriyah_ManazelAlHadawi_AO_03.06.2026_30.09.2026_CPM_paidsocial_meta_AR_Prospecting",
+  "targeting": {
+   "age_max": 65,
+   "age_min": 30,
+   "geo_locations": {
+    "countries": [
+     "SA"
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "locales": [
+    28
+   ],
+   "brand_safety_content_filter_levels": [
+    "FEED_RELAXED"
+   ],
+   "targeting_relaxation_types": {
+    "lookalike": 0,
+    "custom_audience": 0
+   },
+   "publisher_platforms": [
+    "instagram"
+   ],
+   "instagram_positions": [
+    "stream",
+    "story",
+    "reels"
+   ],
+   "device_platforms": [
+    "mobile",
+    "desktop"
+   ]
+  }
+ },
+ "creative": {
+  "id": "986888877430444",
+  "name": "{{product.name}} 2026-06-17-477b7c25f3895835356b2dc5826f0e09",
+  "account_id": "2194833637927644",
+  "actor_id": "111467331865347",
+  "object_type": "SHARE",
+  "status": "ACTIVE",
+  "object_story_spec": {
+   "page_id": "111467331865347",
+   "instagram_user_id": "17841456393254006"
+  },
+  "asset_feed_spec": {
+   "images": [
+    {
+     "adlabels": [
+      {
+       "name": "lbl_feed",
+       "id": "120249183589650058"
+      }
+     ],
+     "hash": "fe0bd7a767e0b5311bc5b347f61d4720"
+    },
+    {
+     "adlabels": [
+      {
+       "name": "lbl_story",
+       "id": "120249183589620058"
+      }
+     ],
+     "hash": "949de28a54467be75bc27a0624595165"
+    }
+   ],
+   "bodies": [
+    {
+     "adlabels": [
+      {
+       "name": "lbl_body",
+       "id": "120249183589660058"
+      }
+     ],
+     "text": "اكتشف منازل الحداوي، حيث يلتقي التراث بالراحة وروح المجتمع، في بيئة صُممت لتفاصيل الحياة اليومية."
+    }
+   ],
+   "call_to_action_types": [
+    "BOOK_TRAVEL"
+   ],
+   "descriptions": [
+    {
+     "text": "احجز الآن"
+    }
+   ],
+   "link_urls": [
+    {
+     "adlabels": [
+      {
+       "name": "lbl_url",
+       "id": "120249183589630058"
+      }
+     ],
+     "website_url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=facebook-instagram&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=adset-id-ADC5E5_manazel-alhadawi_ar_all_mf_prospecting&utm_content=ad-id-259EF1_manazel-alhadawi-kv2_display",
+     "display_url": "www.diriyahcompany.sa"
+    }
+   ],
+   "titles": [
+    {
+     "adlabels": [
+      {
+       "name": "lbl_title",
+       "id": "120249183589610058"
+      }
+     ],
+     "text": "منازل الحداوي في الدرعية"
+    }
+   ],
+   "ad_formats": [
+    "AUTOMATIC_FORMAT"
+   ],
+   "asset_customization_rules": [
+    {
+     "customization_spec": {
+      "age_max": 65,
+      "age_min": 13,
+      "publisher_platforms": [
+       "facebook",
+       "instagram"
+      ],
+      "facebook_positions": [
+       "biz_disco_feed"
+      ],
+      "instagram_positions": [
+       "stream",
+       "explore"
+      ]
+     },
+     "image_label": {
+      "name": "lbl_feed",
+      "id": "120249183589650058"
+     },
+     "body_label": {
+      "name": "lbl_body",
+      "id": "120249183589660058"
+     },
+     "link_url_label": {
+      "name": "lbl_url",
+      "id": "120249183589630058"
+     },
+     "title_label": {
+      "name": "lbl_title",
+      "id": "120249183589610058"
+     },
+     "priority": 1
+    },
+    {
+     "customization_spec": {
+      "age_max": 65,
+      "age_min": 13
+     },
+     "image_label": {
+      "name": "lbl_story",
+      "id": "120249183589620058"
+     },
+     "body_label": {
+      "name": "lbl_body",
+      "id": "120249183589660058"
+     },
+     "link_url_label": {
+      "name": "lbl_url",
+      "id": "120249183589630058"
+     },
+     "title_label": {
+      "name": "lbl_title",
+      "id": "120249183589610058"
+     },
+     "priority": 2
+    }
+   ],
+   "optimization_type": "PLACEMENT",
+   "additional_data": {
+    "multi_share_end_card": false,
+    "is_click_to_message": false
+   },
+   "reasons_to_shop": false,
+   "shops_bundle": false
+  },
+  "creative_sourcing_spec": {
+   "destination_screenshot_spec": {
+    "enroll_status": "OPT_OUT"
+   }
+  },
+  "threads_user_id": "17841460099388007",
+  "authorization_category": "NONE",
+  "effective_object_story_id": "111467331865347_991290937216539",
+  "effective_instagram_media_id": "18082742210181724",
+  "use_page_actor_override": false,
+  "instagram_user_id": "17841456393254006",
+  "effective_authorization_category": "NONE"
+ }
+}

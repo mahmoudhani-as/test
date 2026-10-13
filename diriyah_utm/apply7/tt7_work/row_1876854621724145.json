@@ -1,0 +1,19 @@
+{
+ "platform": "tiktok",
+ "account_id": "7338057963233443842",
+ "unit_type": "ad",
+ "unit": "1876854621724145",
+ "ad_ids": [
+  "1876854621724145"
+ ],
+ "ad_names": [
+  "Ad name2026-09-20 03:41:10"
+ ],
+ "slot": "smart_plus_ad.landing_page_url_list[0].landing_page_url",
+ "before": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_tiktok_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=45s",
+ "after_expected": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cond&utm_term=ar&utm_content=video_ar",
+ "after_live": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cond&utm_term=ar&utm_content=video_ar",
+ "result": "Fixed",
+ "new_entity_ids": "",
+ "detail": "Upgraded Smart+ ad, 1 material(s): material 1876856875339938 CAROUSEL_ADS BC_AUTH_TT identity 0f6eebaa-ba16-5ad3-aa97-4171805e2af1 / BC 6807778858780065797 no tiktok_item_id 1 image(s). Pre-read smart_plus/ad/get req 20261013063346D623A82347AA854BF9F5: landing_page_url_list[0] cur == now (byte-identical); ad_configuration.utm_params had 5 keys {\"utm_source\": \"tiktok\", \"utm_medium\": \"cpm\", \"utm_campaign\": \"cam-id-2e61ab_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_tiktok_en\", \"utm_term\": \"adset-id-ee00c8_test_adset_name_en_all_mf_prospecting\", \"utm_content\": \"45s\"}; tracking_pixel_id \"0\"; call_to_action_id \"7687605718756658184\"; operation_status DISABLE, secondary_status AD_STATUS_CAMPAIGN_DISABLE, modify_time 2026-09-20 13:23:58. Dry run: call input == built payload True, preview body == payload True, preview vs live read differs only in the URL (+utm_params) True (smart_plus_ad_id + landing_page_url_list with only [0].landing_page_url = new + ad_configuration as read (call_to_action_id, creative_auto_enhancement_strategy_list, dark_post_status, product_info_enabled, tracking_info) with utm_params = the 5 UTMs of new, no utm_id; creative_list / ad_text_list / ad_name / status not sent). Live smart_plus/ad/update: attempt 1: code 0 OK req 202610130634542A3730DEE78110C4E643. Read-back smart_plus/ad/get req 20261013063504A3ECC617723C49BC5021: landing_page_url_list[0] == new byte for byte; utm_params 5 keys matching new, no utm_id; other fields (ad_configuration, creative_list, ad_text_list, ad_name, other URL entries, adgroup, operation_status) unchanged: True; post ids before [None] after [None]; operation_status DISABLE -> DISABLE, secondary_status AD_STATUS_CAMPAIGN_DISABLE -> AD_STATUS_CAMPAIGN_DISABLE; modify_time 2026-09-20 13:23:58 -> 2026-10-12 22:34:58. No post involved (carousel, no tiktok_item_id). Plan value kept as given: utm_content says video_ar while the creative is a CAROUSEL_ADS image."
+}

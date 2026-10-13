@@ -1,0 +1,1066 @@
+[
+ {
+  "tool_use_id": "toolu_01CM8EFPb4feXtRRukKBBizf",
+  "input": {
+   "action": "x_accounts_account_id_promoted_tweets_get",
+   "path_params": {
+    "account_id": "18ce55o46uh"
+   },
+   "params": {
+    "count": 1000
+   },
+   "result_fields": [
+    "id",
+    "line_item_id",
+    "tweet_id",
+    "entity_status",
+    "approval_status",
+    "deleted",
+    "created_at",
+    "updated_at"
+   ]
+  },
+  "result": {
+   "success": true,
+   "data": {
+    "success": true,
+    "data": {
+     "request": {
+      "params": {
+       "account_id": "18ce55o46uh",
+       "count": 1000
+      }
+     },
+     "next_cursor": null,
+     "data": [
+      {
+       "id": "aafpvw",
+       "line_item_id": "rcx8s",
+       "tweet_id": "1760361848858104222",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-02-22T12:21:35Z",
+       "updated_at": "2024-03-01T02:50:31Z"
+      },
+      {
+       "id": "abgvku",
+       "line_item_id": "rkvi3",
+       "tweet_id": "1766938870468214983",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-03-19T19:15:54Z",
+       "updated_at": "2024-03-19T19:15:55Z"
+      },
+      {
+       "id": "abgvkv",
+       "line_item_id": "rkvi4",
+       "tweet_id": "1766938872531869885",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-03-19T19:15:54Z",
+       "updated_at": "2024-03-19T19:15:55Z"
+      },
+      {
+       "id": "abgvmu",
+       "line_item_id": "rkvit",
+       "tweet_id": "1766938870468214983",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-03-19T19:19:44Z",
+       "updated_at": "2024-03-19T19:19:45Z"
+      },
+      {
+       "id": "abgvmv",
+       "line_item_id": "rkviu",
+       "tweet_id": "1766938872531869885",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-03-19T19:19:44Z",
+       "updated_at": "2024-03-19T19:19:45Z"
+      },
+      {
+       "id": "abgvty",
+       "line_item_id": "rkvju",
+       "tweet_id": "1766938870468214983",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-03-19T19:25:17Z",
+       "updated_at": "2024-03-19T19:25:17Z"
+      },
+      {
+       "id": "abgvtz",
+       "line_item_id": "rkvjv",
+       "tweet_id": "1766938872531869885",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-03-19T19:25:17Z",
+       "updated_at": "2024-03-19T19:25:17Z"
+      },
+      {
+       "id": "abgvw2",
+       "line_item_id": "rkvkb",
+       "tweet_id": "1766938870468214983",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-03-19T19:27:09Z",
+       "updated_at": "2024-03-19T19:27:11Z"
+      },
+      {
+       "id": "abgvw3",
+       "line_item_id": "rkvkc",
+       "tweet_id": "1766938872531869885",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-03-19T19:27:09Z",
+       "updated_at": "2024-03-19T19:27:11Z"
+      },
+      {
+       "id": "abo3e1",
+       "line_item_id": "rmdyu",
+       "tweet_id": "1772243416082010485",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-03-25T12:45:32Z",
+       "updated_at": "2024-03-25T12:45:33Z"
+      },
+      {
+       "id": "abo3e2",
+       "line_item_id": "rmdyv",
+       "tweet_id": "1772243416211914881",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-03-25T12:45:32Z",
+       "updated_at": "2024-03-25T12:45:33Z"
+      },
+      {
+       "id": "abo3hf",
+       "line_item_id": "rme0i",
+       "tweet_id": "1772244853872619780",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-03-25T12:51:15Z",
+       "updated_at": "2024-03-25T12:51:17Z"
+      },
+      {
+       "id": "abo3hg",
+       "line_item_id": "rme0i",
+       "tweet_id": "1772244853943836882",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-03-25T12:51:15Z",
+       "updated_at": "2024-03-25T12:51:17Z"
+      },
+      {
+       "id": "abq938",
+       "line_item_id": "rmdyv",
+       "tweet_id": "1772912443561308410",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-03-27T09:04:00Z",
+       "updated_at": "2024-03-27T09:04:05Z"
+      },
+      {
+       "id": "abq939",
+       "line_item_id": "rmdyv",
+       "tweet_id": "1772912443670368757",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-03-27T09:04:00Z",
+       "updated_at": "2024-03-27T09:04:05Z"
+      },
+      {
+       "id": "abq94a",
+       "line_item_id": "rme0i",
+       "tweet_id": "1772912946743771434",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-03-27T09:06:00Z",
+       "updated_at": "2024-03-27T09:06:01Z"
+      },
+      {
+       "id": "abq958",
+       "line_item_id": "rme0i",
+       "tweet_id": "1772913198275965270",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-03-27T09:07:00Z",
+       "updated_at": "2024-03-27T09:07:01Z"
+      },
+      {
+       "id": "abvn85",
+       "line_item_id": "rmdyv",
+       "tweet_id": "1774773456082538779",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-04-01T12:19:00Z",
+       "updated_at": "2024-04-01T12:19:01Z"
+      },
+      {
+       "id": "abvn8r",
+       "line_item_id": "rme0i",
+       "tweet_id": "1774773959206346793",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-04-01T12:21:00Z",
+       "updated_at": "2024-04-01T12:21:01Z"
+      },
+      {
+       "id": "abvnam",
+       "line_item_id": "rmdyv",
+       "tweet_id": "1774774462493438224",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-04-01T12:23:00Z",
+       "updated_at": "2024-04-01T12:23:01Z"
+      },
+      {
+       "id": "abvnau",
+       "line_item_id": "rme0i",
+       "tweet_id": "1774774714113708081",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-04-01T12:24:00Z",
+       "updated_at": "2024-04-01T12:24:02Z"
+      },
+      {
+       "id": "agdlyj",
+       "line_item_id": "siegc",
+       "tweet_id": "1826872445891948916",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-08-23T07:05:10Z",
+       "updated_at": "2024-08-23T07:15:20Z"
+      },
+      {
+       "id": "ahzpee",
+       "line_item_id": "siegd",
+       "tweet_id": "1839355280859242662",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-09-26T17:42:32Z",
+       "updated_at": "2024-09-26T17:42:42Z"
+      },
+      {
+       "id": "ahzpef",
+       "line_item_id": "siegd",
+       "tweet_id": "1839355112525066254",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-09-26T17:42:32Z",
+       "updated_at": "2024-09-26T17:42:41Z"
+      },
+      {
+       "id": "ahzpeg",
+       "line_item_id": "siegd",
+       "tweet_id": "1839354947194015853",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-09-26T17:42:32Z",
+       "updated_at": "2024-09-26T17:42:42Z"
+      },
+      {
+       "id": "ahzpeh",
+       "line_item_id": "siegd",
+       "tweet_id": "1839354776414499233",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-09-26T17:42:32Z",
+       "updated_at": "2024-09-26T17:42:42Z"
+      },
+      {
+       "id": "ahzpei",
+       "line_item_id": "siegd",
+       "tweet_id": "1839354560529543565",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-09-26T17:42:32Z",
+       "updated_at": "2024-09-26T17:42:42Z"
+      },
+      {
+       "id": "ahzpej",
+       "line_item_id": "siegd",
+       "tweet_id": "1839354381835370531",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-09-26T17:42:32Z",
+       "updated_at": "2024-09-26T17:42:42Z"
+      },
+      {
+       "id": "ai0v6j",
+       "line_item_id": "stuju",
+       "tweet_id": "1839554836242849881",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-09-27T06:37:05Z",
+       "updated_at": "2024-09-27T06:55:12Z"
+      },
+      {
+       "id": "ai118w",
+       "line_item_id": "stuju",
+       "tweet_id": "1839383133956751837",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-09-27T09:21:38Z",
+       "updated_at": "2024-09-27T09:21:49Z"
+      },
+      {
+       "id": "aiaj9s",
+       "line_item_id": "stuju",
+       "tweet_id": "1841429922528563645",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-10-02T10:48:00Z",
+       "updated_at": "2024-10-02T10:59:13Z"
+      },
+      {
+       "id": "aiaj9u",
+       "line_item_id": "stuju",
+       "tweet_id": "1841429922679861699",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-10-02T10:48:00Z",
+       "updated_at": "2024-10-02T10:53:22Z"
+      },
+      {
+       "id": "aiaj9v",
+       "line_item_id": "stuju",
+       "tweet_id": "1841429922822398181",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-10-02T10:48:00Z",
+       "updated_at": "2024-10-02T10:53:21Z"
+      },
+      {
+       "id": "aiaj9w",
+       "line_item_id": "stuju",
+       "tweet_id": "1841429922486641023",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-10-02T10:48:01Z",
+       "updated_at": "2024-10-02T10:59:14Z"
+      },
+      {
+       "id": "ajho6m",
+       "line_item_id": "t1kcr",
+       "tweet_id": "1851289113351377403",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-10-29T15:56:09Z",
+       "updated_at": "2024-12-17T11:19:57Z"
+      },
+      {
+       "id": "ajho6w",
+       "line_item_id": "t1kcs",
+       "tweet_id": "1851289327307051193",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-10-29T15:56:54Z",
+       "updated_at": "2024-12-17T11:19:56Z"
+      },
+      {
+       "id": "ajho7j",
+       "line_item_id": "t1kg6",
+       "tweet_id": "1851288724954648668",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-10-29T15:58:05Z",
+       "updated_at": "2024-12-17T11:19:50Z"
+      },
+      {
+       "id": "ajho7o",
+       "line_item_id": "t1kg7",
+       "tweet_id": "1851288481877934518",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-10-29T15:58:44Z",
+       "updated_at": "2024-12-17T11:19:48Z"
+      },
+      {
+       "id": "ak9ubh",
+       "line_item_id": "tayip",
+       "tweet_id": "1861792266073084137",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-11-27T15:34:38Z",
+       "updated_at": "2024-12-01T10:27:09Z"
+      },
+      {
+       "id": "ak9ubi",
+       "line_item_id": "tayip",
+       "tweet_id": "1861040742161891505",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-11-27T15:34:38Z",
+       "updated_at": "2024-11-27T15:34:40Z"
+      },
+      {
+       "id": "ak9ubj",
+       "line_item_id": "tayiq",
+       "tweet_id": "1861791930495144368",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-11-27T15:34:38Z",
+       "updated_at": "2024-12-01T10:27:08Z"
+      },
+      {
+       "id": "ak9ubk",
+       "line_item_id": "tayiq",
+       "tweet_id": "1861040742161891505",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-11-27T15:34:38Z",
+       "updated_at": "2024-11-27T15:34:40Z"
+      },
+      {
+       "id": "akv99d",
+       "line_item_id": "tfobc",
+       "tweet_id": "1867652012139327641",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-18T08:28:50Z",
+       "updated_at": "2024-12-18T08:29:36Z"
+      },
+      {
+       "id": "akvesw",
+       "line_item_id": "tfobd",
+       "tweet_id": "1867652012139327641",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-18T12:04:39Z",
+       "updated_at": "2024-12-18T12:04:39Z"
+      },
+      {
+       "id": "akvhva",
+       "line_item_id": "t1kcr",
+       "tweet_id": "1869293370163511794",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-18T15:01:29Z",
+       "updated_at": "2024-12-18T15:13:30Z"
+      },
+      {
+       "id": "akvhvb",
+       "line_item_id": "t1kcr",
+       "tweet_id": "1869291143533363316",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-18T15:01:29Z",
+       "updated_at": "2024-12-18T15:13:29Z"
+      },
+      {
+       "id": "akvhvi",
+       "line_item_id": "t1kcs",
+       "tweet_id": "1869294536255787049",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-18T15:02:27Z",
+       "updated_at": "2024-12-18T15:13:25Z"
+      },
+      {
+       "id": "akvhvj",
+       "line_item_id": "t1kcs",
+       "tweet_id": "1869296197883568552",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-18T15:02:27Z",
+       "updated_at": "2024-12-18T15:13:24Z"
+      },
+      {
+       "id": "akvhw4",
+       "line_item_id": "t1kg6",
+       "tweet_id": "1869290938801295444",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-18T15:04:07Z",
+       "updated_at": "2024-12-18T15:16:39Z"
+      },
+      {
+       "id": "akvhw5",
+       "line_item_id": "t1kg6",
+       "tweet_id": "1869293202705903829",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-18T15:04:07Z",
+       "updated_at": "2024-12-18T15:16:37Z"
+      },
+      {
+       "id": "akvhwf",
+       "line_item_id": "t1kg7",
+       "tweet_id": "1869294343208460687",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-18T15:05:14Z",
+       "updated_at": "2024-12-18T15:05:16Z"
+      },
+      {
+       "id": "akvhwg",
+       "line_item_id": "t1kg7",
+       "tweet_id": "1869296025027878970",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-18T15:05:14Z",
+       "updated_at": "2024-12-18T15:05:16Z"
+      },
+      {
+       "id": "akwijy",
+       "line_item_id": "t1dvc",
+       "tweet_id": "1869336863560859671",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T09:00:54Z",
+       "updated_at": "2024-12-19T09:02:48Z"
+      },
+      {
+       "id": "akwish",
+       "line_item_id": "t1dvb",
+       "tweet_id": "1869341314803958186",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T09:01:12Z",
+       "updated_at": "2024-12-19T09:02:52Z"
+      },
+      {
+       "id": "akwj1o",
+       "line_item_id": "t1dz2",
+       "tweet_id": "1869338445463834942",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T09:02:34Z",
+       "updated_at": "2024-12-19T09:07:14Z"
+      },
+      {
+       "id": "akwjka",
+       "line_item_id": "t1dz3",
+       "tweet_id": "1869337129098051760",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T09:03:59Z",
+       "updated_at": "2024-12-19T09:12:08Z"
+      },
+      {
+       "id": "akwjot",
+       "line_item_id": "t46go",
+       "tweet_id": "1869671513919733946",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T09:10:00Z",
+       "updated_at": "2024-12-19T09:14:24Z"
+      },
+      {
+       "id": "akwjou",
+       "line_item_id": "t46g8",
+       "tweet_id": "1869671514032755148",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T09:10:00Z",
+       "updated_at": "2024-12-19T09:14:24Z"
+      },
+      {
+       "id": "akwohd",
+       "line_item_id": "tfzrn",
+       "tweet_id": "1869730499259666810",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T13:04:24Z",
+       "updated_at": "2024-12-19T13:04:26Z"
+      },
+      {
+       "id": "akwohe",
+       "line_item_id": "tfzro",
+       "tweet_id": "1869730499297759614",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T13:04:24Z",
+       "updated_at": "2024-12-19T13:04:26Z"
+      },
+      {
+       "id": "akwokq",
+       "line_item_id": "tfzsu",
+       "tweet_id": "1869732362365317214",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T13:11:48Z",
+       "updated_at": "2024-12-19T13:11:50Z"
+      },
+      {
+       "id": "akwokr",
+       "line_item_id": "tfzsv",
+       "tweet_id": "1869732362369589388",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T13:11:48Z",
+       "updated_at": "2024-12-19T13:11:50Z"
+      },
+      {
+       "id": "akwosw",
+       "line_item_id": "tfztw",
+       "tweet_id": "1869733590927384863",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T13:16:41Z",
+       "updated_at": "2024-12-19T13:16:44Z"
+      },
+      {
+       "id": "akwosx",
+       "line_item_id": "tfztx",
+       "tweet_id": "1869733590952489124",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T13:16:41Z",
+       "updated_at": "2024-12-19T13:16:46Z"
+      },
+      {
+       "id": "akwow2",
+       "line_item_id": "tfzv0",
+       "tweet_id": "1869734762505764926",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T13:21:20Z",
+       "updated_at": "2024-12-19T13:21:31Z"
+      },
+      {
+       "id": "akwow3",
+       "line_item_id": "tfzv1",
+       "tweet_id": "1869734762320937371",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T13:21:20Z",
+       "updated_at": "2024-12-19T13:21:30Z"
+      },
+      {
+       "id": "akwpbp",
+       "line_item_id": "tfzx1",
+       "tweet_id": "1869737941456625823",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T13:33:58Z",
+       "updated_at": "2024-12-19T13:36:31Z"
+      },
+      {
+       "id": "akwpbq",
+       "line_item_id": "tfzx1",
+       "tweet_id": "1869737941448241321",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T13:33:58Z",
+       "updated_at": "2024-12-19T13:36:30Z"
+      },
+      {
+       "id": "akwpbr",
+       "line_item_id": "tfzx1",
+       "tweet_id": "1869737941079306338",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T13:33:58Z",
+       "updated_at": "2024-12-19T13:36:30Z"
+      },
+      {
+       "id": "akwpbs",
+       "line_item_id": "tfzx2",
+       "tweet_id": "1869737941125214298",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T13:33:58Z",
+       "updated_at": "2024-12-19T13:36:30Z"
+      },
+      {
+       "id": "akwpbt",
+       "line_item_id": "tfzx2",
+       "tweet_id": "1869737942127899047",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T13:33:58Z",
+       "updated_at": "2024-12-19T13:36:31Z"
+      },
+      {
+       "id": "akwpbu",
+       "line_item_id": "tfzx2",
+       "tweet_id": "1869737941825646873",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T13:33:58Z",
+       "updated_at": "2024-12-19T13:36:30Z"
+      },
+      {
+       "id": "akwpj5",
+       "line_item_id": "tfzyg",
+       "tweet_id": "1869739709909606645",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T13:41:00Z",
+       "updated_at": "2024-12-19T13:45:45Z"
+      },
+      {
+       "id": "akwpj6",
+       "line_item_id": "tfzyh",
+       "tweet_id": "1869739709724770305",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T13:41:00Z",
+       "updated_at": "2024-12-19T13:45:45Z"
+      },
+      {
+       "id": "akwplv",
+       "line_item_id": "tfzz9",
+       "tweet_id": "1869740712113176601",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T13:44:59Z",
+       "updated_at": "2024-12-19T13:52:00Z"
+      },
+      {
+       "id": "akwplw",
+       "line_item_id": "tfzz9",
+       "tweet_id": "1869740712683835729",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T13:44:59Z",
+       "updated_at": "2024-12-19T13:52:00Z"
+      },
+      {
+       "id": "akwplx",
+       "line_item_id": "tfzz9",
+       "tweet_id": "1869740711844655165",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T13:44:59Z",
+       "updated_at": "2024-12-19T13:52:00Z"
+      },
+      {
+       "id": "akwply",
+       "line_item_id": "tfzza",
+       "tweet_id": "1869740712214090097",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T13:44:59Z",
+       "updated_at": "2024-12-19T13:52:29Z"
+      },
+      {
+       "id": "akwplz",
+       "line_item_id": "tfzza",
+       "tweet_id": "1869740712658362550",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T13:44:59Z",
+       "updated_at": "2024-12-19T13:52:00Z"
+      },
+      {
+       "id": "akwpm0",
+       "line_item_id": "tfzza",
+       "tweet_id": "1869740712704520376",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T13:44:59Z",
+       "updated_at": "2024-12-19T13:52:00Z"
+      },
+      {
+       "id": "akwpqc",
+       "line_item_id": "tg00g",
+       "tweet_id": "1869742149723726312",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T13:50:42Z",
+       "updated_at": "2024-12-19T13:54:38Z"
+      },
+      {
+       "id": "akwpqd",
+       "line_item_id": "tg00g",
+       "tweet_id": "1869742149665018345",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T13:50:42Z",
+       "updated_at": "2024-12-19T13:54:39Z"
+      },
+      {
+       "id": "akwpqe",
+       "line_item_id": "tg00g",
+       "tweet_id": "1869742149652365527",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T13:50:42Z",
+       "updated_at": "2024-12-19T14:04:54Z"
+      },
+      {
+       "id": "akwpqf",
+       "line_item_id": "tg00h",
+       "tweet_id": "1869742149568192920",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T13:50:42Z",
+       "updated_at": "2024-12-19T13:54:37Z"
+      },
+      {
+       "id": "akwpqg",
+       "line_item_id": "tg00h",
+       "tweet_id": "1869742149647876105",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T13:50:42Z",
+       "updated_at": "2024-12-19T13:54:38Z"
+      },
+      {
+       "id": "akwpqh",
+       "line_item_id": "tg00h",
+       "tweet_id": "1869742149333348525",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T13:50:42Z",
+       "updated_at": "2024-12-19T13:54:38Z"
+      },
+      {
+       "id": "akwpw1",
+       "line_item_id": "tg027",
+       "tweet_id": "1869743590387126634",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T13:56:25Z",
+       "updated_at": "2024-12-19T13:56:28Z"
+      },
+      {
+       "id": "akwpw2",
+       "line_item_id": "tg027",
+       "tweet_id": "1869743590374515148",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T13:56:25Z",
+       "updated_at": "2024-12-19T13:56:28Z"
+      },
+      {
+       "id": "akwpw3",
+       "line_item_id": "tg027",
+       "tweet_id": "1869743590982762945",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T13:56:25Z",
+       "updated_at": "2024-12-19T13:56:28Z"
+      },
+      {
+       "id": "akwpw4",
+       "line_item_id": "tg028",
+       "tweet_id": "1869743590945005751",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T13:56:25Z",
+       "updated_at": "2024-12-19T13:56:28Z"
+      },
+      {
+       "id": "akwpw5",
+       "line_item_id": "tg028",
+       "tweet_id": "1869743590324244619",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T13:56:25Z",
+       "updated_at": "2024-12-19T13:56:28Z"
+      },
+      {
+       "id": "akwpw6",
+       "line_item_id": "tg028",
+       "tweet_id": "1869743591121440921",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T13:56:25Z",
+       "updated_at": "2024-12-19T13:56:28Z"
+      },
+      {
+       "id": "akwq4j",
+       "line_item_id": "tg03a",
+       "tweet_id": "1869745029885169816",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T14:02:08Z",
+       "updated_at": "2024-12-19T14:15:15Z"
+      },
+      {
+       "id": "akwq4k",
+       "line_item_id": "tg03a",
+       "tweet_id": "1869745029872271524",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T14:02:08Z",
+       "updated_at": "2024-12-19T14:14:44Z"
+      },
+      {
+       "id": "akwq4l",
+       "line_item_id": "tg03a",
+       "tweet_id": "1869745030476312896",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T14:02:08Z",
+       "updated_at": "2024-12-19T14:14:44Z"
+      },
+      {
+       "id": "akwq4m",
+       "line_item_id": "tg03b",
+       "tweet_id": "1869745029809410410",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T14:02:08Z",
+       "updated_at": "2024-12-19T14:14:45Z"
+      },
+      {
+       "id": "akwq4n",
+       "line_item_id": "tg03b",
+       "tweet_id": "1869745029910253761",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T14:02:08Z",
+       "updated_at": "2024-12-19T14:14:45Z"
+      },
+      {
+       "id": "akwq4o",
+       "line_item_id": "tg03b",
+       "tweet_id": "1869745030098821472",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2024-12-19T14:02:08Z",
+       "updated_at": "2024-12-19T14:14:45Z"
+      },
+      {
+       "id": "antnx6",
+       "line_item_id": "u1c0k",
+       "tweet_id": "1899019142436446293",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2025-03-10T08:47:00Z",
+       "updated_at": "2025-03-10T08:47:02Z"
+      },
+      {
+       "id": "anto7o",
+       "line_item_id": "u1c0j",
+       "tweet_id": "1899020904081846338",
+       "entity_status": "ACTIVE",
+       "approval_status": "ACCEPTED",
+       "deleted": false,
+       "created_at": "2025-03-10T08:54:00Z",
+       "updated_at": "2025-03-10T08:54:08Z"
+      },
+      "[108 more items truncated]"
+     ]
+    },
+    "meta": {
+     "mcp_result_projection": {
+      "fields": [
+       "id",
+       "line_item_id",
+       "tweet_id",
+       "entity_status",
+       "approval_status",
+       "deleted",
+       "created_at",
+       "updated_at"
+      ]
+     }
+    }
+   },
+   "meta": {
+    "requestId": "3563491e-809a-49cb-a29b-2091f3a3379b",
+    "latencyMs": 1735,
+    "mcp_output_budget": {
+     "truncated": true,
+     "max_bytes": 65536,
+     "serialized_bytes_before_budget": 66262,
+     "guidance": "Repeat the call with result_fields and max_items to request a smaller result."
+    }
+   }
+  }
+ }
+]

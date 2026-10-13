@@ -1,0 +1,67 @@
+{
+ "card_before": {
+  "name": "Carousel",
+  "components": [
+   {
+    "media_keys": [
+     "3_1981346514686382080",
+     "3_1981346541337010177",
+     "3_1981346567924621313",
+     "3_1981346593501548545"
+    ],
+    "media_metadata": {
+     "3_1981346567924621313": {
+      "type": "IMAGE",
+      "url": "https://pbs.twimg.com/media/G38oNLYWIAEgFR1.png",
+      "width": 800,
+      "height": 800
+     },
+     "3_1981346593501548545": {
+      "type": "IMAGE",
+      "url": "https://pbs.twimg.com/media/G38oOqqXEAEqNhh.png",
+      "width": 800,
+      "height": 800
+     },
+     "3_1981346514686382080": {
+      "type": "IMAGE",
+      "url": "https://pbs.twimg.com/media/G38oKFDXEAA1p2u.png",
+      "width": 800,
+      "height": 800
+     },
+     "3_1981346541337010177": {
+      "type": "IMAGE",
+      "url": "https://pbs.twimg.com/media/G38oLoVXYAEF-93.png",
+      "width": 800,
+      "height": 800
+     }
+    },
+    "type": "SWIPEABLE_MEDIA"
+   },
+   {
+    "title": "فلل فاخرة مكونة من ٤، ٥، ٦ غرف نوم​",
+    "destination": {
+     "url": "https://www.wadisafar.com/ar/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_awr&utm_term=brandedresidence-faena_ar&utm_content=display_ar",
+     "type": "WEBSITE"
+    },
+    "type": "DETAILS"
+   }
+  ],
+  "id": "1981346931558531072",
+  "created_at": "2025-10-23T13:08:14Z",
+  "card_uri": "card://1981346931558531072",
+  "updated_at": "2025-10-23T13:08:14Z",
+  "deleted": false,
+  "card_type": "IMAGE_CAROUSEL_WEBSITE"
+ },
+ "status": {
+  "card.components[1].destination.url": {
+   "cur": "https://www.wadisafar.com/ar/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_awr&utm_term=brandedresidence-faena_ar&utm_content=display_ar",
+   "st": "AlreadyFixed",
+   "cur_eq_new_exact": true,
+   "cur_eq_now_exact": false,
+   "cur_in_alt_exact": false,
+   "which": ""
+  }
+ },
+ "get_req": "3d9d0836-7aee-4d24-a26a-094929df6169"
+}

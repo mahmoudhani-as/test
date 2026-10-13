@@ -1,0 +1,19 @@
+{
+ "checked_at": "2026-10-12 23:55-23:57 UTC (read-only ad/get + smart_plus/ad/get of every TikTok ad in the apply6 plan: 252 ads + 79 Smart+)",
+ "standard_ads_with_a_post_created_on_or_after_11_oct": {
+  "1826384400556033": {
+   "post": "7695385229300600070",
+   "created": "2026-10-11T12:24:56+00:00"
+  },
+  "1825846574224498": {
+   "post": "7695788703565810964",
+   "created": "2026-10-12T14:30:37+00:00"
+  },
+  "1838548423250993": {
+   "post": "7695788106468871432",
+   "created": "2026-10-12T14:28:18+00:00"
+  }
+ },
+ "smart_plus": "64 + 15 Smart+ ads read: no creative has a post created on or after 11-Oct (most have no tiktok_item_id at all)",
+ "conclusion": "Only Spark Push ads written with the old recipe got new posts: 1826384400556033 (11-Oct write), 1838548423250993 (12-Oct 13:55 UTC, first apply6 TikTok lane, stopped before it logged the result) and 1825846574224498 (12-Oct 13:57 UTC). No ad written after the Spark Push hold got a new post; CUSTOMIZED_USER ads and carousels still have no post; Spark Pull and Smart+ posts are unchanged."
+}

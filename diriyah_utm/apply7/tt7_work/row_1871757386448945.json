@@ -1,0 +1,19 @@
+{
+ "platform": "tiktok",
+ "account_id": "7338057963233443842",
+ "unit_type": "ad",
+ "unit": "1871757386448945",
+ "ad_ids": [
+  "1871757386448945"
+ ],
+ "ad_names": [
+  "Bab Samhan x Qiddiya_Video1_45s_AR"
+ ],
+ "slot": "smart_plus_ad.landing_page_url_list[0].landing_page_url",
+ "before": "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=tiktok&utm_medium=paid-social&utm_campaign=visitor-diriyah_jul26_cond&utm_term=ar&utm_content=video1_video_ar",
+ "after_expected": "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=tiktok&utm_medium=paid-social&utm_campaign=visitor-diriyah_jul26_cond&utm_term=ar&utm_content=video1_video_ar",
+ "after_live": "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=tiktok&utm_medium=paid-social&utm_campaign=visitor-diriyah_jul26_cond&utm_term=ar&utm_content=video1_video_ar",
+ "result": "AlreadyFixed",
+ "new_entity_ids": "",
+ "detail": "Upgraded Smart+ ad, 1 material(s): material 1871757616127090 SINGLE_VIDEO BC_AUTH_TT identity e4770252-b97f-5a97-873d-46a13d7ef867 / BC 6807778858780065797 no tiktok_item_id video v10033g50000d9fqqifog65iegte1mng 1 image(s). Read smart_plus/ad/get req 20261013063346D623A82347AA854BF9F5: landing_page_url_list[0] byte-identical; operation_status ENABLE, secondary_status AD_STATUS_CAMPAIGN_DISABLE, modify_time 2026-10-12 12:09:16. No write made."
+}

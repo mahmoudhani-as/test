@@ -1,0 +1,116 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_get",
+    "method": "GET",
+    "path": "/v1.3/ad/get/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "20261013060949714E39C082A525F20EF3",
+      "data": {
+        "list": [
+          {
+            "click_tracking_url": null,
+            "profile_image_url": "",
+            "viewability_postbid_partner": "UNSET",
+            "optimization_event": "LANDING_PAGE_VIEW",
+            "avatar_icon_web_uri": "",
+            "card_id": null,
+            "display_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "creative_authorized": false,
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "ad_ref_pixel_id": 7347671240183693000,
+            "vast_moat_enabled": false,
+            "campaign_name": "BujairiTerrace_ShoppingRamadan2026_MF_TRF_KSA_ENAR_TikTok",
+            "campaign_automation_type": "MANUAL",
+            "operation_status": "ENABLE",
+            "app_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "call_to_action_id": null,
+            "ad_text": "احتفلوا بأجواء العيد في الدرعية واستمتعوا بتجارب ثقافية مميزة ",
+            "landing_page_urls": null,
+            "deeplink": "",
+            "creative_auto_enhancement_strategy_list": [],
+            "identity_id": "e4770252-b97f-5a97-873d-46a13d7ef867",
+            "tracking_pixel_id": 7347671240183693000,
+            "call_to_action": "LEARN_MORE",
+            "carousel_image_labels": null,
+            "adgroup_id": "1858189280424113",
+            "deeplink_type": "NORMAL",
+            "identity_authorized_bc_id": "6807778858780065797",
+            "modify_time": "2026-03-18 12:37:06",
+            "impression_tracking_url": null,
+            "video_id": null,
+            "create_time": "2026-03-17 10:11:24",
+            "branded_content_disabled": false,
+            "fallback_type": "UNSET",
+            "playable_url": "",
+            "image_ids": [
+              "ad-site-i18n-sg/202603185d0df3dea5aebc4d49a2b1b2"
+            ],
+            "identity_type": "BC_AUTH_TT",
+            "page_id": null,
+            "adgroup_name": "BujairiTerrace_ShoppingRamadan2026_MF_TRF_KSA_Prospect_AR",
+            "advertiser_id": "7338057963233443842",
+            "ad_texts": null,
+            "ad_id": "1859902673516705",
+            "music_id": "7618164299491592977",
+            "brand_safety_postbid_partner": "UNSET",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-7aee00_test_ad_name_display"
+              }
+            ],
+            "product_info": {
+              "selling_points": null,
+              "product_titles": null,
+              "product_image_list": null
+            },
+            "creative_type": null,
+            "viewability_vast_url": null,
+            "is_aco": false,
+            "campaign_id": "1858189280224401",
+            "is_new_structure": true,
+            "brand_safety_vast_url": null,
+            "ad_format": "CAROUSEL_ADS",
+            "dark_post_status": "ON",
+            "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_tiktok_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_display",
+            "ad_name": "EID_AR_COE_Static"
+          }
+        ],
+        "page_info": {
+          "page": 1,
+          "page_size": 10,
+          "total_page": 1,
+          "total_number": 1
+        }
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "20261013060949714E39C082A525F20EF3",
+      "waitedMs": 1675,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "068c80fb-9597-4f3e-96bc-845b03fa9305",
+    "latencyMs": 3384
+  }
+}

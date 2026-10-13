@@ -1,0 +1,67 @@
+{
+ "card_before": {
+  "name": "carousel",
+  "components": [
+   {
+    "media_keys": [
+     "3_1981345935901757440",
+     "3_1981345966813745152",
+     "3_1981346009335648257",
+     "3_1981346033427791872"
+    ],
+    "media_metadata": {
+     "3_1981345935901757440": {
+      "type": "IMAGE",
+      "url": "https://pbs.twimg.com/media/G38noY6WkAAgc5U.png",
+      "width": 800,
+      "height": 800
+     },
+     "3_1981346033427791872": {
+      "type": "IMAGE",
+      "url": "https://pbs.twimg.com/media/G38nuEOXwAAbnfV.png",
+      "width": 800,
+      "height": 800
+     },
+     "3_1981346009335648257": {
+      "type": "IMAGE",
+      "url": "https://pbs.twimg.com/media/G38nsqeW0AEWXHU.png",
+      "width": 800,
+      "height": 800
+     },
+     "3_1981345966813745152": {
+      "type": "IMAGE",
+      "url": "https://pbs.twimg.com/media/G38nqMEWEAAT0EV.png",
+      "width": 800,
+      "height": 800
+     }
+    },
+    "type": "SWIPEABLE_MEDIA"
+   },
+   {
+    "title": "A collection of 4, 5 & 6 bedroom residences​",
+    "destination": {
+     "url": "https://www.wadisafar.com/en/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_awr&utm_term=brandedresidence-faena_en&utm_content=display_en",
+     "type": "WEBSITE"
+    },
+    "type": "DETAILS"
+   }
+  ],
+  "id": "1981346931684388864",
+  "created_at": "2025-10-23T13:08:14Z",
+  "card_uri": "card://1981346931684388864",
+  "updated_at": "2025-10-23T13:08:14Z",
+  "deleted": false,
+  "card_type": "IMAGE_CAROUSEL_WEBSITE"
+ },
+ "status": {
+  "card.components[1].destination.url": {
+   "cur": "https://www.wadisafar.com/en/residences/faena?utm_source=x&utm_medium=paid-social&utm_campaign=hs-brandedresidence-faena_awr&utm_term=brandedresidence-faena_en&utm_content=display_en",
+   "st": "AlreadyFixed",
+   "cur_eq_new_exact": true,
+   "cur_eq_now_exact": false,
+   "cur_in_alt_exact": false,
+   "which": ""
+  }
+ },
+ "get_req": "3a80cbeb-363f-4687-99be-b5d5771a1cc8"
+}

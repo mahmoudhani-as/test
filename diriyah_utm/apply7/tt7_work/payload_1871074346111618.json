@@ -1,0 +1,127 @@
+{
+ "payload": {
+  "advertiser_id": "7338057963233443842",
+  "smart_plus_ad_id": "1871074346111618",
+  "landing_page_url_list": [
+   {
+    "landing_page_url": "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=tiktok&utm_medium=paid-social&utm_campaign=visitor-diriyah_jul26_cond&utm_term=ar&utm_content=kv3_display_ar"
+   }
+  ],
+  "ad_configuration": {
+   "call_to_action_id": "7663921243359382536",
+   "dark_post_status": "ON",
+   "product_info_enabled": "NON_CATALOG",
+   "tracking_info": {
+    "brand_safety_postbid_partner": "UNSET",
+    "tracking_pixel_id": "0"
+   }
+  }
+ },
+ "pre_request_id": "20261013063214A6AEEB7F20D6087CCA98",
+ "pre_order": 1,
+ "pre_rec": {
+  "ad_configuration": {
+   "call_to_action_id": "7663921243359382536",
+   "dark_post_status": "ON",
+   "product_info_enabled": "NON_CATALOG",
+   "tracking_info": {
+    "brand_safety_postbid_partner": "UNSET",
+    "tracking_pixel_id": "0"
+   }
+  },
+  "ad_name": "Bab Samhan x Qiddiya_StaticKV3_AR",
+  "ad_text_list": [
+   {
+    "ad_text": "استمتع بإقامة مليئة بالمرح والراحة في فندق باب سمحان"
+   }
+  ],
+  "adgroup_id": "1871074109544626",
+  "adgroup_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_Prospect_AR",
+  "advertiser_id": "7338057963233443842",
+  "campaign_id": "1871073182572593",
+  "campaign_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_ENAR_TikTok",
+  "create_time": "2026-07-18 17:28:50",
+  "creative_list": [
+   {
+    "ad_material_id": "1871074534927505",
+    "creative_info": {
+     "ad_format": "CAROUSEL_ADS",
+     "identity_authorized_bc_id": "6807778858780065797",
+     "identity_id": "e4770252-b97f-5a97-873d-46a13d7ef867",
+     "identity_type": "BC_AUTH_TT",
+     "image_info": [
+      {
+       "web_uri": "ad-site-i18n-sg/202607055d0d3a41e4e6d6df419faf9e"
+      }
+     ],
+     "material_name": "KV3 AR_GqIThXHY.png",
+     "music_info": {
+      "music_id": "7643491990893579024"
+     }
+    },
+    "material_operation_status": "ENABLE",
+    "smart_plus_creative_id": "1871074535227522"
+   }
+  ],
+  "deeplink_list": [],
+  "landing_page_url_list": [
+   {
+    "landing_page_url": "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=tiktok&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan_tactical_visitor-diriyah_June2026_reach-awareness_tiktok_ar&utm_term=adset-id-ee00c8_test_adset_name_ar_all_mf_prospecting&utm_content=KV1"
+   }
+  ],
+  "modify_time": "2026-08-17 17:02:03",
+  "operation_status": "DISABLE",
+  "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+  "smart_plus_ad_id": "1871074346111618"
+ },
+ "classify": {
+  "ad": "1871074346111618",
+  "read_order": 1,
+  "request_id": "20261013063214A6AEEB7F20D6087CCA98",
+  "ad_name": "Bab Samhan x Qiddiya_StaticKV3_AR",
+  "plan_ad_name": "Bab Samhan x Qiddiya_StaticKV3_AR",
+  "advertiser_id": "7338057963233443842",
+  "campaign_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_ENAR_TikTok",
+  "operation_status": "DISABLE",
+  "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+  "modify_time": "2026-08-17 17:02:03",
+  "ac_keys": [
+   "call_to_action_id",
+   "dark_post_status",
+   "product_info_enabled",
+   "tracking_info"
+  ],
+  "ac_bignums": [],
+  "pixel": "0",
+  "cta_id": "7663921243359382536",
+  "materials": [
+   {
+    "ad_material_id": "1871074534927505",
+    "ad_format": "CAROUSEL_ADS",
+    "identity_type": "BC_AUTH_TT",
+    "identity_id": "e4770252-b97f-5a97-873d-46a13d7ef867",
+    "bc": "6807778858780065797",
+    "tiktok_item_id": null,
+    "video_id": null,
+    "n_images": 1,
+    "status": "ENABLE"
+   }
+  ],
+  "spark": [],
+  "n_text": 1,
+  "changes": [
+   {
+    "slot": "smart_plus_ad.landing_page_url_list[0].landing_page_url",
+    "decision": "Write",
+    "why": "cur == now (byte-identical)",
+    "url_field": "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=tiktok&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan_tactical_visitor-diriyah_June2026_reach-awareness_tiktok_ar&utm_term=adset-id-ee00c8_test_adset_name_ar_all_mf_prospecting&utm_content=KV1",
+    "cur": "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=tiktok&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan_tactical_visitor-diriyah_June2026_reach-awareness_tiktok_ar&utm_term=adset-id-ee00c8_test_adset_name_ar_all_mf_prospecting&utm_content=KV1",
+    "n_lp": 1,
+    "extra_utm": [],
+    "conflict": [],
+    "utm_params": null,
+    "has_utm_params": false
+   }
+  ]
+ }
+}

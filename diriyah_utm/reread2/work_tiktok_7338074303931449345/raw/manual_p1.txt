@@ -1,0 +1,1200 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_get",
+    "method": "GET",
+    "path": "/v1.3/ad/get/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "2026101307004563B403CDC1DEF4699760",
+      "data": {
+        "list": [
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-10-12 10:03:27",
+            "adgroup_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi_adset-id-ee4e5f3f_ar_all_mf_prospecting-lal",
+            "campaign_id": "1877577331531202",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.wadisafar.com/ar/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_cond&utm_term=ee4e5f3f_thechedi_ar&utm_content=8971b1f2_thechedi-kv1_display_ar",
+            "adgroup_id": "1878837723835730",
+            "campaign_name": "tiktok_wadi-safar_wadi-safar-chedi_tac_2026_sep_thechediresidences_cam-id-1788ef28_mf_cond_ksa",
+            "operation_status": "DISABLE",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv1_adset-id-8971b1f2_display_ar-lal",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE",
+            "modify_time": "2026-10-12 10:29:13",
+            "page_id": null,
+            "ad_id": "1878837854458945"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-10-12 10:03:27",
+            "adgroup_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi_adset-id-ee4e5f3f_ar_all_mf_prospecting-lal",
+            "campaign_id": "1877577331531202",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.wadisafar.com/ar/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_cond&utm_term=ee4e5f3f_thechedi_ar&utm_content=ca5ff2b6_thechedi-kv2_display_ar",
+            "adgroup_id": "1878837723835730",
+            "campaign_name": "tiktok_wadi-safar_wadi-safar-chedi_tac_2026_sep_thechediresidences_cam-id-1788ef28_mf_cond_ksa",
+            "operation_status": "DISABLE",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv2_adset-id-ca5ff2b6_display_ar-lal",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE",
+            "modify_time": "2026-10-12 10:29:13",
+            "page_id": null,
+            "ad_id": "1878837854457969"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-10-12 10:03:27",
+            "adgroup_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi_adset-id-ee4e5f3f_ar_all_mf_prospecting-lal",
+            "campaign_id": "1877577331531202",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.wadisafar.com/ar/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_cond&utm_term=ee4e5f3f_thechedi_ar&utm_content=08c48732_thechedi-kv3_display_ar",
+            "adgroup_id": "1878837723835730",
+            "campaign_name": "tiktok_wadi-safar_wadi-safar-chedi_tac_2026_sep_thechediresidences_cam-id-1788ef28_mf_cond_ksa",
+            "operation_status": "DISABLE",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv3_adset-id-08c48732_display_ar-lal",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE",
+            "modify_time": "2026-10-12 10:29:13",
+            "page_id": null,
+            "ad_id": "1878837854457953"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-10-12 10:03:17",
+            "adgroup_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi_adset-id-ee4e5f3f_en_all_mf_prospecting-lal",
+            "campaign_id": "1877577331531202",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.wadisafar.com/en/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_cond&utm_term=ee4e5f3f_thechedi_en&utm_content=8971b1f2_thechedi-kv1_display_en",
+            "adgroup_id": "1878837716603089",
+            "campaign_name": "tiktok_wadi-safar_wadi-safar-chedi_tac_2026_sep_thechediresidences_cam-id-1788ef28_mf_cond_ksa",
+            "operation_status": "DISABLE",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv1_adset-id-8971b1f2_display_en-lal",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE",
+            "modify_time": "2026-10-12 10:29:07",
+            "page_id": null,
+            "ad_id": "1878837843032322"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-10-12 10:03:17",
+            "adgroup_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi_adset-id-ee4e5f3f_en_all_mf_prospecting-lal",
+            "campaign_id": "1877577331531202",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.wadisafar.com/en/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_cond&utm_term=ee4e5f3f_thechedi_en&utm_content=ca5ff2b6_thechedi-kv2_display_en",
+            "adgroup_id": "1878837716603089",
+            "campaign_name": "tiktok_wadi-safar_wadi-safar-chedi_tac_2026_sep_thechediresidences_cam-id-1788ef28_mf_cond_ksa",
+            "operation_status": "DISABLE",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv2_adset-id-ca5ff2b6_display_en-lal",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE",
+            "modify_time": "2026-10-12 10:29:07",
+            "page_id": null,
+            "ad_id": "1878837843030978"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-10-12 10:03:17",
+            "adgroup_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi_adset-id-ee4e5f3f_en_all_mf_prospecting-lal",
+            "campaign_id": "1877577331531202",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.wadisafar.com/en/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_cond&utm_term=ee4e5f3f_thechedi_en&utm_content=08c48732_thechedi-kv3_display_en",
+            "adgroup_id": "1878837716603089",
+            "campaign_name": "tiktok_wadi-safar_wadi-safar-chedi_tac_2026_sep_thechediresidences_cam-id-1788ef28_mf_cond_ksa",
+            "operation_status": "DISABLE",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv3_adset-id-08c48732_display_en-lal",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE",
+            "modify_time": "2026-10-12 10:29:07",
+            "page_id": null,
+            "ad_id": "1878837843030962"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-10-12 10:03:05",
+            "adgroup_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi_adset-id-ee4e5f3f_ar_all_mf_prospecting-lal",
+            "campaign_id": "1877577219262146",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.wadisafar.com/ar/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_conv&utm_term=ee4e5f3f_thechedi_ar&utm_content=8971b1f2_thechedi-kv1_display_ar#book-appointment",
+            "adgroup_id": "1878837684097537",
+            "campaign_name": "tiktok_wadi-safar_wadi-safar-chedi_tac_2026_sep_thechediresidences_cam-id-1788ef28_lf_conv_ksa",
+            "operation_status": "DISABLE",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv1_adset-id-8971b1f2_display_ar-lal",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE",
+            "modify_time": "2026-10-12 10:29:45",
+            "page_id": null,
+            "ad_id": "1878837822539937"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-10-12 10:03:05",
+            "adgroup_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi_adset-id-ee4e5f3f_ar_all_mf_prospecting-lal",
+            "campaign_id": "1877577219262146",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.wadisafar.com/ar/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_conv&utm_term=ee4e5f3f_thechedi_ar&utm_content=ca5ff2b6_thechedi-kv2_display_ar#book-appointment",
+            "adgroup_id": "1878837684097537",
+            "campaign_name": "tiktok_wadi-safar_wadi-safar-chedi_tac_2026_sep_thechediresidences_cam-id-1788ef28_lf_conv_ksa",
+            "operation_status": "DISABLE",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv2_adset-id-ca5ff2b6_display_ar-lal",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE",
+            "modify_time": "2026-10-12 10:29:45",
+            "page_id": null,
+            "ad_id": "1878837817331073"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-10-12 10:03:05",
+            "adgroup_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi_adset-id-ee4e5f3f_ar_all_mf_prospecting-lal",
+            "campaign_id": "1877577219262146",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.wadisafar.com/ar/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_conv&utm_term=ee4e5f3f_thechedi_ar&utm_content=08c48732_thechedi-kv3_display_ar#book-appointment",
+            "adgroup_id": "1878837684097537",
+            "campaign_name": "tiktok_wadi-safar_wadi-safar-chedi_tac_2026_sep_thechediresidences_cam-id-1788ef28_lf_conv_ksa",
+            "operation_status": "DISABLE",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv3_adset-id-08c48732_display_ar-lal",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE",
+            "modify_time": "2026-10-12 10:29:45",
+            "page_id": null,
+            "ad_id": "1878837817319457"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-10-12 10:02:41",
+            "adgroup_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi_adset-id-ee4e5f3f_en_all_mf_prospecting-lal",
+            "campaign_id": "1877577219262146",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.wadisafar.com/en/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_conv&utm_term=ee4e5f3f_thechedi_en&utm_content=8971b1f2_thechedi-kv1_display_en#book-appointment",
+            "adgroup_id": "1878837689856625",
+            "campaign_name": "tiktok_wadi-safar_wadi-safar-chedi_tac_2026_sep_thechediresidences_cam-id-1788ef28_lf_conv_ksa",
+            "operation_status": "DISABLE",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv1_adset-id-8971b1f2_display_en-lal",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE",
+            "modify_time": "2026-10-12 10:28:15",
+            "page_id": null,
+            "ad_id": "1878837796156913"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-10-12 10:02:41",
+            "adgroup_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi_adset-id-ee4e5f3f_en_all_mf_prospecting-lal",
+            "campaign_id": "1877577219262146",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.wadisafar.com/en/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_conv&utm_term=ee4e5f3f_thechedi_en&utm_content=ca5ff2b6_thechedi-kv2_display_en#book-appointment",
+            "adgroup_id": "1878837689856625",
+            "campaign_name": "tiktok_wadi-safar_wadi-safar-chedi_tac_2026_sep_thechediresidences_cam-id-1788ef28_lf_conv_ksa",
+            "operation_status": "DISABLE",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv2_adset-id-ca5ff2b6_display_en-lal",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE",
+            "modify_time": "2026-10-12 10:28:15",
+            "page_id": null,
+            "ad_id": "1878837790253057"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-10-12 10:02:41",
+            "adgroup_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi_adset-id-ee4e5f3f_en_all_mf_prospecting-lal",
+            "campaign_id": "1877577219262146",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.wadisafar.com/en/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_conv&utm_term=ee4e5f3f_thechedi_en&utm_content=08c48732_thechedi-kv3_display_en#book-appointment",
+            "adgroup_id": "1878837689856625",
+            "campaign_name": "tiktok_wadi-safar_wadi-safar-chedi_tac_2026_sep_thechediresidences_cam-id-1788ef28_lf_conv_ksa",
+            "operation_status": "DISABLE",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv3_adset-id-08c48732_display_en-lal",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE",
+            "modify_time": "2026-10-12 10:28:15",
+            "page_id": null,
+            "ad_id": "1878837789425825"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-09-29 09:58:06",
+            "adgroup_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi_adset-id-ee4e5f3f_en_all_mf_remarketing",
+            "campaign_id": "1877577331531202",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.wadisafar.com/en/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_cond&utm_term=ee4e5f3f_thechedi_en&utm_content=08c48732_thechedi-kv3_display_en",
+            "adgroup_id": "1877659670445393",
+            "campaign_name": "tiktok_wadi-safar_wadi-safar-chedi_tac_2026_sep_thechediresidences_cam-id-1788ef28_mf_cond_ksa",
+            "operation_status": "ENABLE",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv3_adset-id-08c48732_display_en",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_DELIVERY_OK",
+            "modify_time": "2026-10-11 11:22:05",
+            "page_id": null,
+            "ad_id": "1877659757012226"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-09-29 09:58:06",
+            "adgroup_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi_adset-id-ee4e5f3f_en_all_mf_remarketing",
+            "campaign_id": "1877577331531202",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.wadisafar.com/en/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_cond&utm_term=ee4e5f3f_thechedi_en&utm_content=ca5ff2b6_thechedi-kv2_display_en",
+            "adgroup_id": "1877659670445393",
+            "campaign_name": "tiktok_wadi-safar_wadi-safar-chedi_tac_2026_sep_thechediresidences_cam-id-1788ef28_mf_cond_ksa",
+            "operation_status": "ENABLE",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv2_adset-id-ca5ff2b6_display_en",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_DELIVERY_OK",
+            "modify_time": "2026-10-11 11:22:05",
+            "page_id": null,
+            "ad_id": "1877659757012210"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-09-29 09:58:06",
+            "adgroup_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi_adset-id-ee4e5f3f_en_all_mf_remarketing",
+            "campaign_id": "1877577331531202",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.wadisafar.com/en/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_cond&utm_term=ee4e5f3f_thechedi_en&utm_content=8971b1f2_thechedi-kv1_display_en",
+            "adgroup_id": "1877659670445393",
+            "campaign_name": "tiktok_wadi-safar_wadi-safar-chedi_tac_2026_sep_thechediresidences_cam-id-1788ef28_mf_cond_ksa",
+            "operation_status": "ENABLE",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv1_adset-id-8971b1f2_display_en",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_DELIVERY_OK",
+            "modify_time": "2026-10-11 11:22:05",
+            "page_id": null,
+            "ad_id": "1877659757012194"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-09-29 09:58:01",
+            "adgroup_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi_adset-id-ee4e5f3f_ar_all_mf_remarketing",
+            "campaign_id": "1877577331531202",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.wadisafar.com/ar/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_cond&utm_term=ee4e5f3f_thechedi_ar&utm_content=08c48732_thechedi-kv3_display_ar",
+            "adgroup_id": "1877659668601074",
+            "campaign_name": "tiktok_wadi-safar_wadi-safar-chedi_tac_2026_sep_thechediresidences_cam-id-1788ef28_mf_cond_ksa",
+            "operation_status": "ENABLE",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv3_adset-id-08c48732_display_ar",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_DELIVERY_OK",
+            "modify_time": "2026-10-11 11:19:26",
+            "page_id": null,
+            "ad_id": "1877659750918481"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-09-29 09:58:01",
+            "adgroup_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi_adset-id-ee4e5f3f_ar_all_mf_remarketing",
+            "campaign_id": "1877577331531202",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.wadisafar.com/ar/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_cond&utm_term=ee4e5f3f_thechedi_ar&utm_content=ca5ff2b6_thechedi-kv2_display_ar",
+            "adgroup_id": "1877659668601074",
+            "campaign_name": "tiktok_wadi-safar_wadi-safar-chedi_tac_2026_sep_thechediresidences_cam-id-1788ef28_mf_cond_ksa",
+            "operation_status": "ENABLE",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv2_adset-id-ca5ff2b6_display_ar",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_DELIVERY_OK",
+            "modify_time": "2026-10-11 11:19:26",
+            "page_id": null,
+            "ad_id": "1877659750918465"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-09-29 09:58:01",
+            "adgroup_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi_adset-id-ee4e5f3f_ar_all_mf_remarketing",
+            "campaign_id": "1877577331531202",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.wadisafar.com/ar/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_cond&utm_term=ee4e5f3f_thechedi_ar&utm_content=8971b1f2_thechedi-kv1_display_ar",
+            "adgroup_id": "1877659668601074",
+            "campaign_name": "tiktok_wadi-safar_wadi-safar-chedi_tac_2026_sep_thechediresidences_cam-id-1788ef28_mf_cond_ksa",
+            "operation_status": "ENABLE",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv1_adset-id-8971b1f2_display_ar",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_DELIVERY_OK",
+            "modify_time": "2026-10-11 11:19:26",
+            "page_id": null,
+            "ad_id": "1877659750917681"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-09-29 09:58:18",
+            "adgroup_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi_adset-id-ee4e5f3f_en_all_mf_remarketing",
+            "campaign_id": "1877577219262146",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.wadisafar.com/en/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_conv&utm_term=ee4e5f3f_thechedi_en&utm_content=08c48732_thechedi-kv3_display_en#book-appointment",
+            "adgroup_id": "1877659666327858",
+            "campaign_name": "tiktok_wadi-safar_wadi-safar-chedi_tac_2026_sep_thechediresidences_cam-id-1788ef28_lf_conv_ksa",
+            "operation_status": "ENABLE",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv3_adset-id-08c48732_display_en",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_DELIVERY_OK",
+            "modify_time": "2026-10-11 11:14:48",
+            "page_id": null,
+            "ad_id": "1877659726321810"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-09-29 09:58:18",
+            "adgroup_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi_adset-id-ee4e5f3f_en_all_mf_remarketing",
+            "campaign_id": "1877577219262146",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.wadisafar.com/en/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_conv&utm_term=ee4e5f3f_thechedi_en&utm_content=ca5ff2b6_thechedi-kv2_display_en#book-appointment",
+            "adgroup_id": "1877659666327858",
+            "campaign_name": "tiktok_wadi-safar_wadi-safar-chedi_tac_2026_sep_thechediresidences_cam-id-1788ef28_lf_conv_ksa",
+            "operation_status": "ENABLE",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv2_adset-id-ca5ff2b6_display_en",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_DELIVERY_OK",
+            "modify_time": "2026-10-11 11:14:48",
+            "page_id": null,
+            "ad_id": "1877659726300338"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-09-29 09:58:18",
+            "adgroup_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi_adset-id-ee4e5f3f_en_all_mf_remarketing",
+            "campaign_id": "1877577219262146",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.wadisafar.com/en/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_conv&utm_term=ee4e5f3f_thechedi_en&utm_content=8971b1f2_thechedi-kv1_display_en#book-appointment",
+            "adgroup_id": "1877659666327858",
+            "campaign_name": "tiktok_wadi-safar_wadi-safar-chedi_tac_2026_sep_thechediresidences_cam-id-1788ef28_lf_conv_ksa",
+            "operation_status": "ENABLE",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv1_adset-id-8971b1f2_display_en",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_DELIVERY_OK",
+            "modify_time": "2026-10-11 11:14:48",
+            "page_id": null,
+            "ad_id": "1877659726290209"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-09-29 09:58:12",
+            "adgroup_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi_adset-id-ee4e5f3f_ar_all_mf_remarketing",
+            "campaign_id": "1877577219262146",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.wadisafar.com/ar/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_conv&utm_term=ee4e5f3f_thechedi_ar&utm_content=08c48732_thechedi-kv3_display_ar#book-appointment",
+            "adgroup_id": "1877659650163809",
+            "campaign_name": "tiktok_wadi-safar_wadi-safar-chedi_tac_2026_sep_thechediresidences_cam-id-1788ef28_lf_conv_ksa",
+            "operation_status": "ENABLE",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv3_adset-id-08c48732_display_ar",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_DELIVERY_OK",
+            "modify_time": "2026-10-11 11:15:51",
+            "page_id": null,
+            "ad_id": "1877659587418242"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-09-29 09:58:12",
+            "adgroup_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi_adset-id-ee4e5f3f_ar_all_mf_remarketing",
+            "campaign_id": "1877577219262146",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.wadisafar.com/ar/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_conv&utm_term=ee4e5f3f_thechedi_ar&utm_content=ca5ff2b6_thechedi-kv2_display_ar#book-appointment",
+            "adgroup_id": "1877659650163809",
+            "campaign_name": "tiktok_wadi-safar_wadi-safar-chedi_tac_2026_sep_thechediresidences_cam-id-1788ef28_lf_conv_ksa",
+            "operation_status": "ENABLE",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv2_adset-id-ca5ff2b6_display_ar",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_DELIVERY_OK",
+            "modify_time": "2026-10-11 11:15:51",
+            "page_id": null,
+            "ad_id": "1877659353623905"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-09-29 09:58:12",
+            "adgroup_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi_adset-id-ee4e5f3f_ar_all_mf_remarketing",
+            "campaign_id": "1877577219262146",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.wadisafar.com/ar/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_conv&utm_term=ee4e5f3f_thechedi_ar&utm_content=8971b1f2_thechedi-kv1_display_ar#book-appointment",
+            "adgroup_id": "1877659650163809",
+            "campaign_name": "tiktok_wadi-safar_wadi-safar-chedi_tac_2026_sep_thechediresidences_cam-id-1788ef28_lf_conv_ksa",
+            "operation_status": "ENABLE",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv1_adset-id-8971b1f2_display_ar",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_DELIVERY_OK",
+            "modify_time": "2026-10-11 11:15:51",
+            "page_id": null,
+            "ad_id": "1877659352837122"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-09-28 12:17:47",
+            "adgroup_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi_adset-id-ee4e5f3f_en_all_mf_prospecting",
+            "campaign_id": "1877577331531202",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.wadisafar.com/en/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_cond&utm_term=ee4e5f3f_thechedi_en&utm_content=08c48732_thechedi-kv3_display_en",
+            "adgroup_id": "1877577401018625",
+            "campaign_name": "tiktok_wadi-safar_wadi-safar-chedi_tac_2026_sep_thechediresidences_cam-id-1788ef28_mf_cond_ksa",
+            "operation_status": "ENABLE",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv3_adset-id-08c48732_display_en",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_DELIVERY_OK",
+            "modify_time": "2026-10-11 11:22:06",
+            "page_id": null,
+            "ad_id": "1877577948807938"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-09-28 12:17:52",
+            "adgroup_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi_adset-id-ee4e5f3f_en_all_mf_prospecting",
+            "campaign_id": "1877577219262146",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.wadisafar.com/en/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_conv&utm_term=ee4e5f3f_thechedi_en&utm_content=08c48732_thechedi-kv3_display_en#book-appointment",
+            "adgroup_id": "1877576425436738",
+            "campaign_name": "tiktok_wadi-safar_wadi-safar-chedi_tac_2026_sep_thechediresidences_cam-id-1788ef28_lf_conv_ksa",
+            "operation_status": "ENABLE",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv3_adset-id-08c48732_display_en",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_DELIVERY_OK",
+            "modify_time": "2026-10-11 11:14:48",
+            "page_id": null,
+            "ad_id": "1877577944517761"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-09-28 12:17:17",
+            "adgroup_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi_adset-id-ee4e5f3f_en_all_mf_prospecting",
+            "campaign_id": "1877577331531202",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.wadisafar.com/en/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_cond&utm_term=ee4e5f3f_thechedi_en&utm_content=ca5ff2b6_thechedi-kv2_display_en",
+            "adgroup_id": "1877577401018625",
+            "campaign_name": "tiktok_wadi-safar_wadi-safar-chedi_tac_2026_sep_thechediresidences_cam-id-1788ef28_mf_cond_ksa",
+            "operation_status": "ENABLE",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv2_adset-id-ca5ff2b6_display_en",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_DELIVERY_OK",
+            "modify_time": "2026-10-11 11:22:05",
+            "page_id": null,
+            "ad_id": "1877577915769057"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-09-28 12:17:06",
+            "adgroup_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi_adset-id-ee4e5f3f_ar_all_mf_prospecting",
+            "campaign_id": "1877577331531202",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.wadisafar.com/ar/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_cond&utm_term=ee4e5f3f_thechedi_ar&utm_content=08c48732_thechedi-kv3_display_ar",
+            "adgroup_id": "1877577382946833",
+            "campaign_name": "tiktok_wadi-safar_wadi-safar-chedi_tac_2026_sep_thechediresidences_cam-id-1788ef28_mf_cond_ksa",
+            "operation_status": "ENABLE",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv3_adset-id-08c48732_display_ar",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_DELIVERY_OK",
+            "modify_time": "2026-10-11 11:19:31",
+            "page_id": null,
+            "ad_id": "1877577904984274"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-09-28 12:17:06",
+            "adgroup_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi_adset-id-ee4e5f3f_ar_all_mf_prospecting",
+            "campaign_id": "1877577331531202",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.wadisafar.com/ar/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_cond&utm_term=ee4e5f3f_thechedi_ar&utm_content=ca5ff2b6_thechedi-kv2_display_ar",
+            "adgroup_id": "1877577382946833",
+            "campaign_name": "tiktok_wadi-safar_wadi-safar-chedi_tac_2026_sep_thechediresidences_cam-id-1788ef28_mf_cond_ksa",
+            "operation_status": "ENABLE",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv2_adset-id-ca5ff2b6_display_ar",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_DELIVERY_OK",
+            "modify_time": "2026-10-11 11:19:31",
+            "page_id": null,
+            "ad_id": "1877577904984258"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-09-28 12:17:22",
+            "adgroup_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi_adset-id-ee4e5f3f_en_all_mf_prospecting",
+            "campaign_id": "1877577219262146",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.wadisafar.com/en/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_conv&utm_term=ee4e5f3f_thechedi_en&utm_content=ca5ff2b6_thechedi-kv2_display_en#book-appointment",
+            "adgroup_id": "1877576425436738",
+            "campaign_name": "tiktok_wadi-safar_wadi-safar-chedi_tac_2026_sep_thechediresidences_cam-id-1788ef28_lf_conv_ksa",
+            "operation_status": "ENABLE",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv2_adset-id-ca5ff2b6_display_en",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_DELIVERY_OK",
+            "modify_time": "2026-10-11 11:14:48",
+            "page_id": null,
+            "ad_id": "1877577831759090"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-09-28 12:17:11",
+            "adgroup_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi_adset-id-ee4e5f3f_ar_all_mf_prospecting",
+            "campaign_id": "1877577219262146",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.wadisafar.com/ar/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_conv&utm_term=ee4e5f3f_thechedi_ar&utm_content=08c48732_thechedi-kv3_display_ar#book-appointment",
+            "adgroup_id": "1877577300671218",
+            "campaign_name": "tiktok_wadi-safar_wadi-safar-chedi_tac_2026_sep_thechediresidences_cam-id-1788ef28_lf_conv_ksa",
+            "operation_status": "ENABLE",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv3_adset-id-08c48732_display_ar",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_DELIVERY_OK",
+            "modify_time": "2026-10-11 11:15:52",
+            "page_id": null,
+            "ad_id": "1877577819309330"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-09-28 12:17:11",
+            "adgroup_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi_adset-id-ee4e5f3f_ar_all_mf_prospecting",
+            "campaign_id": "1877577219262146",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.wadisafar.com/ar/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_conv&utm_term=ee4e5f3f_thechedi_ar&utm_content=ca5ff2b6_thechedi-kv2_display_ar#book-appointment",
+            "adgroup_id": "1877577300671218",
+            "campaign_name": "tiktok_wadi-safar_wadi-safar-chedi_tac_2026_sep_thechediresidences_cam-id-1788ef28_lf_conv_ksa",
+            "operation_status": "ENABLE",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv2_adset-id-ca5ff2b6_display_ar",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_DELIVERY_OK",
+            "modify_time": "2026-10-11 11:15:52",
+            "page_id": null,
+            "ad_id": "1877577811896673"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-09-28 12:12:16",
+            "adgroup_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi_adset-id-ee4e5f3f_en_all_mf_prospecting",
+            "campaign_id": "1877577331531202",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.wadisafar.com/en/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_cond&utm_term=ee4e5f3f_thechedi_en&utm_content=8971b1f2_thechedi-kv1_display_en",
+            "adgroup_id": "1877577401018625",
+            "campaign_name": "tiktok_wadi-safar_wadi-safar-chedi_tac_2026_sep_thechediresidences_cam-id-1788ef28_mf_cond_ksa",
+            "operation_status": "ENABLE",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv1_adset-id-8971b1f2_display_en",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_DELIVERY_OK",
+            "modify_time": "2026-10-11 11:22:05",
+            "page_id": null,
+            "ad_id": "1877577601788177"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-09-28 12:12:22",
+            "adgroup_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi_adset-id-ee4e5f3f_en_all_mf_prospecting",
+            "campaign_id": "1877577219262146",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.wadisafar.com/en/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_conv&utm_term=ee4e5f3f_thechedi_en&utm_content=8971b1f2_thechedi-kv1_display_en#book-appointment",
+            "adgroup_id": "1877576425436738",
+            "campaign_name": "tiktok_wadi-safar_wadi-safar-chedi_tac_2026_sep_thechediresidences_cam-id-1788ef28_lf_conv_ksa",
+            "operation_status": "ENABLE",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv1_adset-id-8971b1f2_display_en",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_DELIVERY_OK",
+            "modify_time": "2026-10-11 11:14:48",
+            "page_id": null,
+            "ad_id": "1877577535130289"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-09-28 12:10:57",
+            "adgroup_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi_adset-id-ee4e5f3f_ar_all_mf_prospecting",
+            "campaign_id": "1877577331531202",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.wadisafar.com/ar/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_cond&utm_term=ee4e5f3f_thechedi_ar&utm_content=8971b1f2_thechedi-kv1_display_ar",
+            "adgroup_id": "1877577382946833",
+            "campaign_name": "tiktok_wadi-safar_wadi-safar-chedi_tac_2026_sep_thechediresidences_cam-id-1788ef28_mf_cond_ksa",
+            "operation_status": "ENABLE",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv1_adset-id-8971b1f2_display_ar",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_DELIVERY_OK",
+            "modify_time": "2026-10-11 11:19:31",
+            "page_id": null,
+            "ad_id": "1877577517765745"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-09-28 12:11:40",
+            "adgroup_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi_adset-id-ee4e5f3f_ar_all_mf_prospecting",
+            "campaign_id": "1877577219262146",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.wadisafar.com/ar/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_conv&utm_term=ee4e5f3f_thechedi_ar&utm_content=8971b1f2_thechedi-kv1_display_ar#book-appointment",
+            "adgroup_id": "1877577300671218",
+            "campaign_name": "tiktok_wadi-safar_wadi-safar-chedi_tac_2026_sep_thechediresidences_cam-id-1788ef28_lf_conv_ksa",
+            "operation_status": "ENABLE",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv1_adset-id-8971b1f2_display_ar",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_DELIVERY_OK",
+            "modify_time": "2026-10-11 11:15:52",
+            "page_id": null,
+            "ad_id": "1877577467458162"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-09-28 11:56:41",
+            "adgroup_name": "ManazelAlHadawi_AlwaysOn_LF_LEAD_KSA_Prospect_AR",
+            "campaign_id": "1866980789517937",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.diriyah.com/?utm_source=tiktok&utm_campaign=__CAMPAIGN_NAME__&utm_medium=paid",
+            "adgroup_id": "1866980922970497",
+            "campaign_name": "ManazelAlHadawi_AlwaysOn_LF_LEAD_KSA_ENAR_TikTok_20260603-20260930_BO11111",
+            "operation_status": "ENABLE",
+            "ad_name": "TEST 123",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "modify_time": "2026-10-12 10:23:20",
+            "page_id": null,
+            "ad_id": "1877576474616274"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-09-14 22:49:26",
+            "adgroup_name": "company_ritz-signature_2026_aug_rcsr_adset-id-87bde3ee_en-ar_all_mf_prospecting",
+            "campaign_id": "1873400500742577",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/ritz-carlton-signature?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_aug26&utm_term=87bde3ee_rcsr_en&utm_content=5a8cb267_dl-eduvideo1-15s_video_en",
+            "adgroup_id": "1873400500744209",
+            "campaign_name": "tiktok_company_ritz-signature_tac_2026_aug_ritz-carlton-signature_cam-id-bb1cac08_mf_cond",
+            "operation_status": "DISABLE",
+            "ad_name": "company_ritz-signature_2026_aug_dl-eduvideo1-15s_adset-id-5a8cb267_video_en",
+            "ad_format": "SINGLE_VIDEO",
+            "secondary_status": "AD_STATUS_DELETE",
+            "modify_time": "2026-09-14 23:22:41",
+            "page_id": null,
+            "ad_id": "1876349325247505"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-09-05 18:49:07",
+            "adgroup_name": "ManazelAlHadawi_AlwaysOn_MF_TRF_KSA_Prospect_EN",
+            "campaign_id": "1866980731743666",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_cond&utm_term=manazel-alhadawi_en&utm_content=manazel-alhadawi-cr3_display_en",
+            "adgroup_id": "1866980923591713",
+            "campaign_name": "ManazelAlHadawi_AlwaysOn_MF_TRF_KSA_ENAR_TikTok_20260603-20260930_BO11111",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "7ebeb0a8_manazel-alhadawi-2026_sep26_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "manazel-alhadawi_en"
+              },
+              {
+                "key": "utm_content",
+                "value": "manazel-alhadawi-cr3_display_en"
+              }
+            ],
+            "operation_status": "DISABLE",
+            "ad_name": "ManazelAlHadawi_CR3_EN",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "modify_time": "2026-10-12 10:23:28",
+            "page_id": null,
+            "ad_id": "1875518266298689"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-09-05 18:41:05",
+            "adgroup_name": "ManazelAlHadawi_AlwaysOn_MF_TRF_KSA_Prospect_EN",
+            "campaign_id": "1866980731743666",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_cond&utm_term=manazel-alhadawi_en&utm_content=manazel-alhadawi-cr2_display_en",
+            "adgroup_id": "1866980923591713",
+            "campaign_name": "ManazelAlHadawi_AlwaysOn_MF_TRF_KSA_ENAR_TikTok_20260603-20260930_BO11111",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "7ebeb0a8_manazel-alhadawi-2026_sep26_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "manazel-alhadawi_en"
+              },
+              {
+                "key": "utm_content",
+                "value": "manazel-alhadawi-cr2_display_en"
+              }
+            ],
+            "operation_status": "DISABLE",
+            "ad_name": "ManazelAlHadawi_CR2_EN",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "modify_time": "2026-10-12 10:23:28",
+            "page_id": null,
+            "ad_id": "1875517732804737"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-09-05 18:31:47",
+            "adgroup_name": "ManazelAlHadawi_AlwaysOn_MF_TRF_KSA_Prospect_EN",
+            "campaign_id": "1866980731743666",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_cond&utm_term=manazel-alhadawi_en&utm_content=manazel-alhadawi-kv3_display_en",
+            "adgroup_id": "1866980923591713",
+            "campaign_name": "ManazelAlHadawi_AlwaysOn_MF_TRF_KSA_ENAR_TikTok_20260603-20260930_BO11111",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "7ebeb0a8_manazel-alhadawi-2026_sep26_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "manazel-alhadawi_en"
+              },
+              {
+                "key": "utm_content",
+                "value": "manazel-alhadawi-kv3_display_en"
+              }
+            ],
+            "operation_status": "ENABLE",
+            "ad_name": "Manazel AlHadawi_KV3_EN",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "modify_time": "2026-10-12 10:23:28",
+            "page_id": null,
+            "ad_id": "1875517614095538"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-09-05 18:28:45",
+            "adgroup_name": "ManazelAlHadawi_AlwaysOn_MF_TRF_KSA_Prospect_AR",
+            "campaign_id": "1866980731743666",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_cond&utm_term=manazel-alhadawi_ar&utm_content=manazel-alhadawi-cr3_display_ar",
+            "adgroup_id": "1866980925443409",
+            "campaign_name": "ManazelAlHadawi_AlwaysOn_MF_TRF_KSA_ENAR_TikTok_20260603-20260930_BO11111",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "7ebeb0a8_manazel-alhadawi-2026_sep26_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "manazel-alhadawi_ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "manazel-alhadawi-cr3_display_ar"
+              }
+            ],
+            "operation_status": "DISABLE",
+            "ad_name": "ManazelAlHadawi_CR3_AR",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "modify_time": "2026-10-12 10:23:48",
+            "page_id": null,
+            "ad_id": "1875517253114161"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-09-05 18:23:59",
+            "adgroup_name": "ManazelAlHadawi_AlwaysOn_MF_TRF_KSA_Prospect_AR",
+            "campaign_id": "1866980731743666",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_cond&utm_term=manazel-alhadawi_ar&utm_content=manazel-alhadawi-cr2_display_ar",
+            "adgroup_id": "1866980925443409",
+            "campaign_name": "ManazelAlHadawi_AlwaysOn_MF_TRF_KSA_ENAR_TikTok_20260603-20260930_BO11111",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "7ebeb0a8_manazel-alhadawi-2026_sep26_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "manazel-alhadawi_ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "manazel-alhadawi-cr2_display_ar"
+              }
+            ],
+            "operation_status": "DISABLE",
+            "ad_name": "ManazelAlHadawi_CR2_AR",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "modify_time": "2026-10-12 10:23:48",
+            "page_id": null,
+            "ad_id": "1875516837301810"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-09-05 18:17:56",
+            "adgroup_name": "ManazelAlHadawi_AlwaysOn_MF_TRF_KSA_Prospect_AR",
+            "campaign_id": "1866980731743666",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_cond&utm_term=manazel-alhadawi_ar&utm_content=manazel-alhadawi-kv3_display_ar",
+            "adgroup_id": "1866980925443409",
+            "campaign_name": "ManazelAlHadawi_AlwaysOn_MF_TRF_KSA_ENAR_TikTok_20260603-20260930_BO11111",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "7ebeb0a8_manazel-alhadawi-2026_sep26_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "manazel-alhadawi_ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "manazel-alhadawi-kv3_display_ar"
+              }
+            ],
+            "operation_status": "ENABLE",
+            "ad_name": "Manaze AlHadawi_KV3_AR",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "modify_time": "2026-10-12 10:23:48",
+            "page_id": null,
+            "ad_id": "1875516626259026"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-09-03 11:14:47",
+            "adgroup_name": "company_ritz-signature_2026_aug_rcsr_adset-id-87bde3ee_en-ar_all_mf_prospecting",
+            "campaign_id": "1873400500742577",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/ritz-carlton-signature?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_sep26_cond&utm_term=87bde3ee_rcsr_en-ar&utm_content=c2b96e29_rcsr-kv2_display_en",
+            "adgroup_id": "1873400500744209",
+            "campaign_name": "tiktok_company_ritz-signature_tac_2026_aug_ritz-carlton-signature_cam-id-bb1cac08_mf_cond",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "bb1cac08_ritz-carlton-signature_sep26_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "87bde3ee_rcsr_en-ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "c2b96e29_rcsr-kv2_display_en"
+              }
+            ],
+            "operation_status": "ENABLE",
+            "ad_name": "company_ritz-signature_2026_aug_rcsr-kv2_adset-id-c2b96e29_display_en_v2",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_REAUDIT",
+            "modify_time": "2026-10-12 22:47:38",
+            "page_id": null,
+            "ad_id": "1875308964893057"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-09-03 11:11:55",
+            "adgroup_name": "company_ritz-signature_2026_aug_rcsr_adset-id-87bde3ee_en-ar_all_mf_prospecting",
+            "campaign_id": "1873400500742577",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar/diriyah-living/ritz-carlton-signature?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_sep26_cond&utm_term=87bde3ee_rcsr_en-ar&utm_content=c2b96e29_rcsr-kv2_display_ar",
+            "adgroup_id": "1873400500742593",
+            "campaign_name": "tiktok_company_ritz-signature_tac_2026_aug_ritz-carlton-signature_cam-id-bb1cac08_mf_cond",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "bb1cac08_ritz-carlton-signature_sep26_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "87bde3ee_rcsr_en-ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "c2b96e29_rcsr-kv2_display_ar"
+              }
+            ],
+            "operation_status": "ENABLE",
+            "ad_name": "company_ritz-signature_2026_aug_rcsr-kv2_adset-id-c2b96e29_display_ar_v2",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_REAUDIT",
+            "modify_time": "2026-10-12 22:48:59",
+            "page_id": null,
+            "ad_id": "1875308678808706"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-09-02 15:52:44",
+            "adgroup_name": "company_ritz-signature_2026_aug_rcsr_adset-id-87bde3ee_en-ar_all_mf_prospecting",
+            "campaign_id": "1873400500742577",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar/diriyah-living/ritz-carlton-signature?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_sep26_cond&utm_term=87bde3ee_rcsr_en-ar&utm_content=c4ffbd75_rcsr-kv3_display_ar",
+            "adgroup_id": "1873400500742593",
+            "campaign_name": "tiktok_company_ritz-signature_tac_2026_aug_ritz-carlton-signature_cam-id-bb1cac08_mf_cond",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "bb1cac08_ritz-carlton-signature_sep26_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "87bde3ee_rcsr_en-ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "c4ffbd75_rcsr-kv3_display_ar"
+              }
+            ],
+            "operation_status": "ENABLE",
+            "ad_name": "company_ritz-signature_2026_aug_rcsr-kv3_adset-id-c4ffbd75_display_ar_v2",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_REAUDIT",
+            "modify_time": "2026-10-12 22:49:45",
+            "page_id": null,
+            "ad_id": "1875235828140209"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-09-02 15:48:28",
+            "adgroup_name": "company_ritz-signature_2026_aug_rcsr_adset-id-87bde3ee_en-ar_all_mf_prospecting",
+            "campaign_id": "1873400500742577",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar/diriyah-living/ritz-carlton-signature?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_sep26_cond&utm_term=87bde3ee_rcsr_en-ar&utm_content=07eca5d8_rcsr-kv1_display_ar",
+            "adgroup_id": "1873400500742593",
+            "campaign_name": "tiktok_company_ritz-signature_tac_2026_aug_ritz-carlton-signature_cam-id-bb1cac08_mf_cond",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "bb1cac08_ritz-carlton-signature_sep26_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "87bde3ee_rcsr_en-ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "07eca5d8_rcsr-kv1_display_ar"
+              }
+            ],
+            "operation_status": "ENABLE",
+            "ad_name": "company_ritz-signature_2026_aug_rcsr-kv1_adset-id-07eca5d8_display_ar_v2",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_REAUDIT",
+            "modify_time": "2026-10-12 22:50:32",
+            "page_id": null,
+            "ad_id": "1875235585284129"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-08-30 13:54:56",
+            "adgroup_name": "ManazelAlHadawi_AlwaysOn_UF_AWR_KSA_Prospect_EN",
+            "campaign_id": "1866980762445266",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_awr&utm_term=manazel-alhadawi_en&utm_content=manazel-alhadawi-cr3_display_en",
+            "adgroup_id": "1866980896932194",
+            "campaign_name": "ManazelAlHadawi_AlwaysOn_UF_AWR_KSA_ENAR_TikTok_20260603-20260930_BO11111",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "7ebeb0a8_manazel-alhadawi-2026_sep26_awr"
+              },
+              {
+                "key": "utm_term",
+                "value": "manazel-alhadawi_en"
+              },
+              {
+                "key": "utm_content",
+                "value": "manazel-alhadawi-cr3_display_en"
+              }
+            ],
+            "operation_status": "DISABLE",
+            "ad_name": "ManazelAlHadawi_CR3_EN",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "modify_time": "2026-10-12 10:30:22",
+            "page_id": null,
+            "ad_id": "1874956515381633"
+          },
+          {
+            "landing_page_urls": null,
+            "create_time": "2026-08-30 13:51:47",
+            "adgroup_name": "ManazelAlHadawi_AlwaysOn_UF_AWR_KSA_Prospect_AR",
+            "campaign_id": "1866980762445266",
+            "campaign_automation_type": "MANUAL",
+            "deeplink": "",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_awr&utm_term=manazel-alhadawi_ar&utm_content=manazel-alhadawi-cr3_display_ar",
+            "adgroup_id": "1866980899041010",
+            "campaign_name": "ManazelAlHadawi_AlwaysOn_UF_AWR_KSA_ENAR_TikTok_20260603-20260930_BO11111",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "7ebeb0a8_manazel-alhadawi-2026_sep26_awr"
+              },
+              {
+                "key": "utm_term",
+                "value": "manazel-alhadawi_ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "manazel-alhadawi-cr3_display_ar"
+              }
+            ],
+            "operation_status": "DISABLE",
+            "ad_name": "ManazelAlHadawi_CR3_AR",
+            "ad_format": "CAROUSEL_ADS",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "modify_time": "2026-10-12 10:28:23",
+            "page_id": null,
+            "ad_id": "1874956278666242"
+          }
+        ],
+        "page_info": {
+          "page": 1,
+          "page_size": 50,
+          "total_page": 3,
+          "total_number": 106
+        }
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "2026101307004563B403CDC1DEF4699760",
+      "waitedMs": 930,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "f0e7a3d6-2aec-4c1b-868f-7588a4a93735",
+    "latencyMs": 2790
+  }
+}

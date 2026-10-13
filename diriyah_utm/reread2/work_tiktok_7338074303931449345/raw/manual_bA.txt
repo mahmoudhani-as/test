@@ -1,0 +1,1396 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_get",
+    "method": "GET",
+    "path": "/v1.3/ad/get/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "2026101307041718882A491841653CC364",
+      "data": {
+        "list": [
+          {
+            "ad_id": "1878837854458945",
+            "page_id": null,
+            "adgroup_id": "1878837723835730",
+            "landing_page_urls": null,
+            "modify_time": "2026-10-12 10:29:13",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv1_adset-id-8971b1f2_display_ar-lal",
+            "deeplink": "",
+            "campaign_id": "1877577331531202",
+            "operation_status": "DISABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-10-12 10:03:27",
+            "landing_page_url": "https://www.wadisafar.com/ar/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_cond&utm_term=ee4e5f3f_thechedi_ar&utm_content=8971b1f2_thechedi-kv1_display_ar",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE"
+          },
+          {
+            "ad_id": "1878837854457969",
+            "page_id": null,
+            "adgroup_id": "1878837723835730",
+            "landing_page_urls": null,
+            "modify_time": "2026-10-12 10:29:13",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv2_adset-id-ca5ff2b6_display_ar-lal",
+            "deeplink": "",
+            "campaign_id": "1877577331531202",
+            "operation_status": "DISABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-10-12 10:03:27",
+            "landing_page_url": "https://www.wadisafar.com/ar/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_cond&utm_term=ee4e5f3f_thechedi_ar&utm_content=ca5ff2b6_thechedi-kv2_display_ar",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE"
+          },
+          {
+            "ad_id": "1878837854457953",
+            "page_id": null,
+            "adgroup_id": "1878837723835730",
+            "landing_page_urls": null,
+            "modify_time": "2026-10-12 10:29:13",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv3_adset-id-08c48732_display_ar-lal",
+            "deeplink": "",
+            "campaign_id": "1877577331531202",
+            "operation_status": "DISABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-10-12 10:03:27",
+            "landing_page_url": "https://www.wadisafar.com/ar/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_cond&utm_term=ee4e5f3f_thechedi_ar&utm_content=08c48732_thechedi-kv3_display_ar",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE"
+          },
+          {
+            "ad_id": "1878837843032322",
+            "page_id": null,
+            "adgroup_id": "1878837716603089",
+            "landing_page_urls": null,
+            "modify_time": "2026-10-12 10:29:07",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv1_adset-id-8971b1f2_display_en-lal",
+            "deeplink": "",
+            "campaign_id": "1877577331531202",
+            "operation_status": "DISABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-10-12 10:03:17",
+            "landing_page_url": "https://www.wadisafar.com/en/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_cond&utm_term=ee4e5f3f_thechedi_en&utm_content=8971b1f2_thechedi-kv1_display_en",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE"
+          },
+          {
+            "ad_id": "1878837843030978",
+            "page_id": null,
+            "adgroup_id": "1878837716603089",
+            "landing_page_urls": null,
+            "modify_time": "2026-10-12 10:29:07",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv2_adset-id-ca5ff2b6_display_en-lal",
+            "deeplink": "",
+            "campaign_id": "1877577331531202",
+            "operation_status": "DISABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-10-12 10:03:17",
+            "landing_page_url": "https://www.wadisafar.com/en/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_cond&utm_term=ee4e5f3f_thechedi_en&utm_content=ca5ff2b6_thechedi-kv2_display_en",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE"
+          },
+          {
+            "ad_id": "1878837843030962",
+            "page_id": null,
+            "adgroup_id": "1878837716603089",
+            "landing_page_urls": null,
+            "modify_time": "2026-10-12 10:29:07",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv3_adset-id-08c48732_display_en-lal",
+            "deeplink": "",
+            "campaign_id": "1877577331531202",
+            "operation_status": "DISABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-10-12 10:03:17",
+            "landing_page_url": "https://www.wadisafar.com/en/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_cond&utm_term=ee4e5f3f_thechedi_en&utm_content=08c48732_thechedi-kv3_display_en",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE"
+          },
+          {
+            "ad_id": "1877659757012226",
+            "page_id": null,
+            "adgroup_id": "1877659670445393",
+            "landing_page_urls": null,
+            "modify_time": "2026-10-11 11:22:05",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv3_adset-id-08c48732_display_en",
+            "deeplink": "",
+            "campaign_id": "1877577331531202",
+            "operation_status": "ENABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-09-29 09:58:06",
+            "landing_page_url": "https://www.wadisafar.com/en/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_cond&utm_term=ee4e5f3f_thechedi_en&utm_content=08c48732_thechedi-kv3_display_en",
+            "secondary_status": "AD_STATUS_DELIVERY_OK"
+          },
+          {
+            "ad_id": "1877659757012210",
+            "page_id": null,
+            "adgroup_id": "1877659670445393",
+            "landing_page_urls": null,
+            "modify_time": "2026-10-11 11:22:05",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv2_adset-id-ca5ff2b6_display_en",
+            "deeplink": "",
+            "campaign_id": "1877577331531202",
+            "operation_status": "ENABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-09-29 09:58:06",
+            "landing_page_url": "https://www.wadisafar.com/en/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_cond&utm_term=ee4e5f3f_thechedi_en&utm_content=ca5ff2b6_thechedi-kv2_display_en",
+            "secondary_status": "AD_STATUS_DELIVERY_OK"
+          },
+          {
+            "ad_id": "1877659757012194",
+            "page_id": null,
+            "adgroup_id": "1877659670445393",
+            "landing_page_urls": null,
+            "modify_time": "2026-10-11 11:22:05",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv1_adset-id-8971b1f2_display_en",
+            "deeplink": "",
+            "campaign_id": "1877577331531202",
+            "operation_status": "ENABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-09-29 09:58:06",
+            "landing_page_url": "https://www.wadisafar.com/en/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_cond&utm_term=ee4e5f3f_thechedi_en&utm_content=8971b1f2_thechedi-kv1_display_en",
+            "secondary_status": "AD_STATUS_DELIVERY_OK"
+          },
+          {
+            "ad_id": "1877659750918481",
+            "page_id": null,
+            "adgroup_id": "1877659668601074",
+            "landing_page_urls": null,
+            "modify_time": "2026-10-11 11:19:26",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv3_adset-id-08c48732_display_ar",
+            "deeplink": "",
+            "campaign_id": "1877577331531202",
+            "operation_status": "ENABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-09-29 09:58:01",
+            "landing_page_url": "https://www.wadisafar.com/ar/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_cond&utm_term=ee4e5f3f_thechedi_ar&utm_content=08c48732_thechedi-kv3_display_ar",
+            "secondary_status": "AD_STATUS_DELIVERY_OK"
+          },
+          {
+            "ad_id": "1877659750918465",
+            "page_id": null,
+            "adgroup_id": "1877659668601074",
+            "landing_page_urls": null,
+            "modify_time": "2026-10-11 11:19:26",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv2_adset-id-ca5ff2b6_display_ar",
+            "deeplink": "",
+            "campaign_id": "1877577331531202",
+            "operation_status": "ENABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-09-29 09:58:01",
+            "landing_page_url": "https://www.wadisafar.com/ar/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_cond&utm_term=ee4e5f3f_thechedi_ar&utm_content=ca5ff2b6_thechedi-kv2_display_ar",
+            "secondary_status": "AD_STATUS_DELIVERY_OK"
+          },
+          {
+            "ad_id": "1877659750917681",
+            "page_id": null,
+            "adgroup_id": "1877659668601074",
+            "landing_page_urls": null,
+            "modify_time": "2026-10-11 11:19:26",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv1_adset-id-8971b1f2_display_ar",
+            "deeplink": "",
+            "campaign_id": "1877577331531202",
+            "operation_status": "ENABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-09-29 09:58:01",
+            "landing_page_url": "https://www.wadisafar.com/ar/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_cond&utm_term=ee4e5f3f_thechedi_ar&utm_content=8971b1f2_thechedi-kv1_display_ar",
+            "secondary_status": "AD_STATUS_DELIVERY_OK"
+          },
+          {
+            "ad_id": "1877659726321810",
+            "page_id": null,
+            "adgroup_id": "1877659666327858",
+            "landing_page_urls": null,
+            "modify_time": "2026-10-11 11:14:48",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv3_adset-id-08c48732_display_en",
+            "deeplink": "",
+            "campaign_id": "1877577219262146",
+            "operation_status": "ENABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-09-29 09:58:18",
+            "landing_page_url": "https://www.wadisafar.com/en/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_conv&utm_term=ee4e5f3f_thechedi_en&utm_content=08c48732_thechedi-kv3_display_en#book-appointment",
+            "secondary_status": "AD_STATUS_DELIVERY_OK"
+          },
+          {
+            "ad_id": "1877659726300338",
+            "page_id": null,
+            "adgroup_id": "1877659666327858",
+            "landing_page_urls": null,
+            "modify_time": "2026-10-11 11:14:48",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv2_adset-id-ca5ff2b6_display_en",
+            "deeplink": "",
+            "campaign_id": "1877577219262146",
+            "operation_status": "ENABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-09-29 09:58:18",
+            "landing_page_url": "https://www.wadisafar.com/en/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_conv&utm_term=ee4e5f3f_thechedi_en&utm_content=ca5ff2b6_thechedi-kv2_display_en#book-appointment",
+            "secondary_status": "AD_STATUS_DELIVERY_OK"
+          },
+          {
+            "ad_id": "1877659726290209",
+            "page_id": null,
+            "adgroup_id": "1877659666327858",
+            "landing_page_urls": null,
+            "modify_time": "2026-10-11 11:14:48",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv1_adset-id-8971b1f2_display_en",
+            "deeplink": "",
+            "campaign_id": "1877577219262146",
+            "operation_status": "ENABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-09-29 09:58:18",
+            "landing_page_url": "https://www.wadisafar.com/en/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_conv&utm_term=ee4e5f3f_thechedi_en&utm_content=8971b1f2_thechedi-kv1_display_en#book-appointment",
+            "secondary_status": "AD_STATUS_DELIVERY_OK"
+          },
+          {
+            "ad_id": "1877659587418242",
+            "page_id": null,
+            "adgroup_id": "1877659650163809",
+            "landing_page_urls": null,
+            "modify_time": "2026-10-11 11:15:51",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv3_adset-id-08c48732_display_ar",
+            "deeplink": "",
+            "campaign_id": "1877577219262146",
+            "operation_status": "ENABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-09-29 09:58:12",
+            "landing_page_url": "https://www.wadisafar.com/ar/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_conv&utm_term=ee4e5f3f_thechedi_ar&utm_content=08c48732_thechedi-kv3_display_ar#book-appointment",
+            "secondary_status": "AD_STATUS_DELIVERY_OK"
+          },
+          {
+            "ad_id": "1877577948807938",
+            "page_id": null,
+            "adgroup_id": "1877577401018625",
+            "landing_page_urls": null,
+            "modify_time": "2026-10-11 11:22:06",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv3_adset-id-08c48732_display_en",
+            "deeplink": "",
+            "campaign_id": "1877577331531202",
+            "operation_status": "ENABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-09-28 12:17:47",
+            "landing_page_url": "https://www.wadisafar.com/en/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_cond&utm_term=ee4e5f3f_thechedi_en&utm_content=08c48732_thechedi-kv3_display_en",
+            "secondary_status": "AD_STATUS_DELIVERY_OK"
+          },
+          {
+            "ad_id": "1877577915769057",
+            "page_id": null,
+            "adgroup_id": "1877577401018625",
+            "landing_page_urls": null,
+            "modify_time": "2026-10-11 11:22:05",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv2_adset-id-ca5ff2b6_display_en",
+            "deeplink": "",
+            "campaign_id": "1877577331531202",
+            "operation_status": "ENABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-09-28 12:17:17",
+            "landing_page_url": "https://www.wadisafar.com/en/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_cond&utm_term=ee4e5f3f_thechedi_en&utm_content=ca5ff2b6_thechedi-kv2_display_en",
+            "secondary_status": "AD_STATUS_DELIVERY_OK"
+          },
+          {
+            "ad_id": "1877577904984274",
+            "page_id": null,
+            "adgroup_id": "1877577382946833",
+            "landing_page_urls": null,
+            "modify_time": "2026-10-11 11:19:31",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv3_adset-id-08c48732_display_ar",
+            "deeplink": "",
+            "campaign_id": "1877577331531202",
+            "operation_status": "ENABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-09-28 12:17:06",
+            "landing_page_url": "https://www.wadisafar.com/ar/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_cond&utm_term=ee4e5f3f_thechedi_ar&utm_content=08c48732_thechedi-kv3_display_ar",
+            "secondary_status": "AD_STATUS_DELIVERY_OK"
+          },
+          {
+            "ad_id": "1877577904984258",
+            "page_id": null,
+            "adgroup_id": "1877577382946833",
+            "landing_page_urls": null,
+            "modify_time": "2026-10-11 11:19:31",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv2_adset-id-ca5ff2b6_display_ar",
+            "deeplink": "",
+            "campaign_id": "1877577331531202",
+            "operation_status": "ENABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-09-28 12:17:06",
+            "landing_page_url": "https://www.wadisafar.com/ar/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_cond&utm_term=ee4e5f3f_thechedi_ar&utm_content=ca5ff2b6_thechedi-kv2_display_ar",
+            "secondary_status": "AD_STATUS_DELIVERY_OK"
+          },
+          {
+            "ad_id": "1877577601788177",
+            "page_id": null,
+            "adgroup_id": "1877577401018625",
+            "landing_page_urls": null,
+            "modify_time": "2026-10-11 11:22:05",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv1_adset-id-8971b1f2_display_en",
+            "deeplink": "",
+            "campaign_id": "1877577331531202",
+            "operation_status": "ENABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-09-28 12:12:16",
+            "landing_page_url": "https://www.wadisafar.com/en/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_cond&utm_term=ee4e5f3f_thechedi_en&utm_content=8971b1f2_thechedi-kv1_display_en",
+            "secondary_status": "AD_STATUS_DELIVERY_OK"
+          },
+          {
+            "ad_id": "1877577517765745",
+            "page_id": null,
+            "adgroup_id": "1877577382946833",
+            "landing_page_urls": null,
+            "modify_time": "2026-10-11 11:19:31",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "wadi-safar_wadi-safar-chedi_2026_sep_thechedi-kv1_adset-id-8971b1f2_display_ar",
+            "deeplink": "",
+            "campaign_id": "1877577331531202",
+            "operation_status": "ENABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-09-28 12:10:57",
+            "landing_page_url": "https://www.wadisafar.com/ar/residences/chedi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=1788ef28_thechediresidences_sep26_cond&utm_term=ee4e5f3f_thechedi_ar&utm_content=8971b1f2_thechedi-kv1_display_ar",
+            "secondary_status": "AD_STATUS_DELIVERY_OK"
+          },
+          {
+            "ad_id": "1877576474616274",
+            "page_id": null,
+            "adgroup_id": "1866980922970497",
+            "landing_page_urls": null,
+            "modify_time": "2026-10-12 10:23:20",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "TEST 123",
+            "deeplink": "",
+            "campaign_id": "1866980789517937",
+            "operation_status": "ENABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-09-28 11:56:41",
+            "landing_page_url": "https://www.diriyah.com/?utm_source=tiktok&utm_campaign=__CAMPAIGN_NAME__&utm_medium=paid",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE"
+          },
+          {
+            "ad_id": "1876349325247505",
+            "page_id": null,
+            "adgroup_id": "1873400500744209",
+            "landing_page_urls": null,
+            "modify_time": "2026-09-14 23:22:41",
+            "ad_format": "SINGLE_VIDEO",
+            "ad_name": "company_ritz-signature_2026_aug_dl-eduvideo1-15s_adset-id-5a8cb267_video_en",
+            "deeplink": "",
+            "campaign_id": "1873400500742577",
+            "operation_status": "DISABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-09-14 22:49:26",
+            "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/ritz-carlton-signature?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_aug26&utm_term=87bde3ee_rcsr_en&utm_content=5a8cb267_dl-eduvideo1-15s_video_en",
+            "secondary_status": "AD_STATUS_DELETE"
+          },
+          {
+            "ad_id": "1874952313665937",
+            "page_id": null,
+            "adgroup_id": "1866980896932194",
+            "landing_page_urls": null,
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "7ebeb0a8_manazel-alhadawi-2026_sep26_awr"
+              },
+              {
+                "key": "utm_term",
+                "value": "manazel-alhadawi_en"
+              },
+              {
+                "key": "utm_content",
+                "value": "manazel-alhadawi-cr2_display_en"
+              }
+            ],
+            "modify_time": "2026-10-12 10:30:22",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "ManazelAlHadawi_CR2_EN",
+            "deeplink": "",
+            "campaign_id": "1866980762445266",
+            "operation_status": "DISABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-08-30 12:50:44",
+            "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_awr&utm_term=manazel-alhadawi_en&utm_content=manazel-alhadawi-cr2_display_en",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE"
+          },
+          {
+            "ad_id": "1874951789893937",
+            "page_id": null,
+            "adgroup_id": "1866980899041010",
+            "landing_page_urls": null,
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "7ebeb0a8_manazel-alhadawi-2026_sep26_awr"
+              },
+              {
+                "key": "utm_term",
+                "value": "manazel-alhadawi_ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "manazel-alhadawi-cr2_display_ar"
+              }
+            ],
+            "modify_time": "2026-10-12 10:28:23",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "ManazelAlHadawi_CR2_AR",
+            "deeplink": "",
+            "campaign_id": "1866980762445266",
+            "operation_status": "DISABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-08-30 12:45:05",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_awr&utm_term=manazel-alhadawi_ar&utm_content=manazel-alhadawi-cr2_display_ar",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE"
+          },
+          {
+            "ad_id": "1874943317387714",
+            "page_id": null,
+            "adgroup_id": "1866980896932194",
+            "landing_page_urls": null,
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "7ebeb0a8_manazel-alhadawi-2026_sep26_awr"
+              },
+              {
+                "key": "utm_term",
+                "value": "manazel-alhadawi_en"
+              },
+              {
+                "key": "utm_content",
+                "value": "manazel-alhadawi-kv3_display_en"
+              }
+            ],
+            "modify_time": "2026-10-12 10:30:22",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "Manazel AlHadawi_KV3_EN",
+            "deeplink": "",
+            "campaign_id": "1866980762445266",
+            "operation_status": "ENABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-08-30 10:31:40",
+            "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_awr&utm_term=manazel-alhadawi_en&utm_content=manazel-alhadawi-kv3_display_en",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE"
+          },
+          {
+            "ad_id": "1873416558636498",
+            "page_id": null,
+            "adgroup_id": "1873400500742593",
+            "landing_page_urls": null,
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "bb1cac08_ritz-carlton-signature_aug26_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "87bde3ee_rcsr_en-ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "c4ffbd75_rcsr-kv3_display_ar"
+              }
+            ],
+            "modify_time": "2026-10-11 11:17:00",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "company_ritz-signature_2026_aug_rcsr-kv3_adset-id-c4ffbd75_display_ar",
+            "deeplink": "",
+            "campaign_id": "1873400500742577",
+            "operation_status": "DISABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-08-13 13:54:20",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar/diriyah-living/ritz-carlton-signature?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_aug26_cond&utm_term=87bde3ee_rcsr_en-ar&utm_content=c4ffbd75_rcsr-kv3_display_ar",
+            "secondary_status": "AD_STATUS_DISABLE"
+          },
+          {
+            "ad_id": "1873400500746369",
+            "page_id": null,
+            "adgroup_id": "1873400500744209",
+            "landing_page_urls": null,
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "bb1cac08_ritz-carlton-signature_sep26_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "87bde3ee_rcsr_en-ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "07eca5d8_rcsr-kv1_display_en"
+              }
+            ],
+            "modify_time": "2026-10-12 22:53:16",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "company_ritz-signature_2026_aug_rcsr-kv1_adset-id-07eca5d8_display_en_v2",
+            "deeplink": "",
+            "campaign_id": "1873400500742577",
+            "operation_status": "ENABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-08-13 09:59:34",
+            "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/ritz-carlton-signature?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_sep26_cond&utm_term=87bde3ee_rcsr_en-ar&utm_content=07eca5d8_rcsr-kv1_display_en",
+            "secondary_status": "AD_STATUS_REAUDIT"
+          },
+          {
+            "ad_id": "1873400500745297",
+            "page_id": null,
+            "adgroup_id": "1873400500744209",
+            "landing_page_urls": null,
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "ManazelAlHadawi_Jun2026"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-2AE88C_manazel-alhadawi-kv2_display"
+              }
+            ],
+            "modify_time": "2026-08-13 10:04:53",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "Manazel_KV1_EN_Traffic_NewLogo",
+            "deeplink": "",
+            "campaign_id": "1873400500742577",
+            "operation_status": "ENABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-08-13 09:59:34",
+            "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=adset-id-A61B61_manazel-alhadawi_en_all_mf_prospecting&utm_content=ad-id-2AE88C_manazel-alhadawi-kv2_display",
+            "secondary_status": "AD_STATUS_DELETE"
+          },
+          {
+            "ad_id": "1873400500745281",
+            "page_id": null,
+            "adgroup_id": "1873400500744209",
+            "landing_page_urls": null,
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "ManazelAlHadawi_Jun2026"
+              },
+              {
+                "key": "utm_term",
+                "value": "adset-id-A61B61_manazel-alhadawi_en_all_mf_prospecting"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-2AE88C_manazel-alhadawi-CR1"
+              },
+              {
+                "key": "utm_id",
+                "value": "__CAMPAIGN_ID__"
+              }
+            ],
+            "modify_time": "2026-08-13 10:04:53",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "Manazel_CR1_EN_Traffic",
+            "deeplink": "",
+            "campaign_id": "1873400500742577",
+            "operation_status": "ENABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-08-13 09:59:34",
+            "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=adset-id-A61B61_manazel-alhadawi_en_all_mf_prospecting&utm_content=ad-id-2AE88C_manazel-alhadawi-CR1&utm_id=__CAMPAIGN_ID__",
+            "secondary_status": "AD_STATUS_DELETE"
+          },
+          {
+            "ad_id": "1873400500744193",
+            "page_id": null,
+            "adgroup_id": "1873400500742593",
+            "landing_page_urls": null,
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "bb1cac08_ritz-carlton-signature_aug26_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "87bde3ee_rcsr_en-ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "07eca5d8_rcsr-kv1_display_ar"
+              }
+            ],
+            "modify_time": "2026-10-11 11:17:00",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "company_ritz-signature_2026_aug_rcsr-kv1_adset-id-07eca5d8_display_ar",
+            "deeplink": "",
+            "campaign_id": "1873400500742577",
+            "operation_status": "DISABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-08-13 09:59:35",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar/diriyah-living/ritz-carlton-signature?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_aug26_cond&utm_term=87bde3ee_rcsr_en-ar&utm_content=07eca5d8_rcsr-kv1_display_ar",
+            "secondary_status": "AD_STATUS_DISABLE"
+          },
+          {
+            "ad_id": "1869522880650450",
+            "page_id": null,
+            "adgroup_id": "1866980899041010",
+            "landing_page_urls": null,
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "7ebeb0a8_manazel-alhadawi-2026_awr"
+              },
+              {
+                "key": "utm_term",
+                "value": "manazel-alhadawi_ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "manazel-alhadawi-video1_video_ar"
+              }
+            ],
+            "modify_time": "2026-10-12 10:28:23",
+            "ad_format": "SINGLE_VIDEO",
+            "ad_name": "Manazel_Video1_6s_AR_Awareness",
+            "deeplink": "",
+            "campaign_id": "1866980762445266",
+            "operation_status": "DISABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-07-01 14:30:36",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_awr&utm_term=manazel-alhadawi_ar&utm_content=manazel-alhadawi-video1_video_ar",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE"
+          },
+          {
+            "ad_id": "1869522694992065",
+            "page_id": null,
+            "adgroup_id": "1866980896932194",
+            "landing_page_urls": null,
+            "utm_params": [
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "ManazelAlHadawi_Jun2026"
+              },
+              {
+                "key": "utm_term",
+                "value": "adset-id-0DE601_manazel-alhadawi_en_all_mf_prospecting"
+              },
+              {
+                "key": "utm_content",
+                "value": "ad-id-2CEFE3_manazel-alhadawi-kv2_display"
+              },
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              }
+            ],
+            "modify_time": "2026-10-12 10:30:22",
+            "ad_format": "SINGLE_VIDEO",
+            "ad_name": "Manazel_Video_10s_EN",
+            "deeplink": "",
+            "campaign_id": "1866980762445266",
+            "operation_status": "DISABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-07-01 14:25:13",
+            "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=ManazelAlHadawi_Jun2026&utm_term=adset-id-0DE601_manazel-alhadawi_en_all_mf_prospecting&utm_content=ad-id-2CEFE3_manazel-alhadawi-video1_video",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE"
+          },
+          {
+            "ad_id": "1869522559450418",
+            "page_id": null,
+            "adgroup_id": "1866980896932194",
+            "landing_page_urls": null,
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "7ebeb0a8_manazel-alhadawi-2026_awr"
+              },
+              {
+                "key": "utm_term",
+                "value": "manazel-alhadawi_en"
+              },
+              {
+                "key": "utm_content",
+                "value": "manazel-alhadawi-video1_video_en"
+              }
+            ],
+            "modify_time": "2026-10-12 10:30:22",
+            "ad_format": "SINGLE_VIDEO",
+            "ad_name": "Manazel_Video1_6s_EN_Awareness",
+            "deeplink": "",
+            "campaign_id": "1866980762445266",
+            "operation_status": "DISABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-07-01 14:25:13",
+            "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_awr&utm_term=manazel-alhadawi_en&utm_content=manazel-alhadawi-video1_video_en",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE"
+          },
+          {
+            "ad_id": "1868343268844705",
+            "page_id": null,
+            "adgroup_id": "1868343018484034",
+            "landing_page_urls": null,
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "7ebeb0a8_manazel-alhadawi-2026_conv"
+              },
+              {
+                "key": "utm_term",
+                "value": "manazel-alhadawi_en"
+              },
+              {
+                "key": "utm_content",
+                "value": "b01f5ba3_manazel-alhadawi-kv1_display_en"
+              }
+            ],
+            "modify_time": "2026-10-12 10:24:20",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "Manazel_KV1_EN_Leads",
+            "deeplink": "",
+            "campaign_id": "1868342987843714",
+            "operation_status": "DISABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-06-18 13:56:50",
+            "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_conv&utm_term=manazel-alhadawi_en&utm_content=b01f5ba3_manazel-alhadawi-kv1_display_en",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE"
+          },
+          {
+            "ad_id": "1868343236433154",
+            "page_id": null,
+            "adgroup_id": "1868343018484034",
+            "landing_page_urls": null,
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "7ebeb0a8_manazel-alhadawi-2026_conv"
+              },
+              {
+                "key": "utm_term",
+                "value": "manazel-alhadawi_en"
+              },
+              {
+                "key": "utm_content",
+                "value": "manazel-alhadawi-kv2_display_en"
+              }
+            ],
+            "modify_time": "2026-10-12 10:24:20",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "Manazel_KV2_EN_Leads",
+            "deeplink": "",
+            "campaign_id": "1868342987843714",
+            "operation_status": "DISABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-06-18 13:57:01",
+            "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_conv&utm_term=manazel-alhadawi_en&utm_content=manazel-alhadawi-kv2_display_en",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE"
+          },
+          {
+            "ad_id": "1868343229454465",
+            "page_id": null,
+            "adgroup_id": "1868343018484034",
+            "landing_page_urls": null,
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "7ebeb0a8_manazel-alhadawi-2026_conv"
+              },
+              {
+                "key": "utm_term",
+                "value": "manazel-alhadawi_en"
+              },
+              {
+                "key": "utm_content",
+                "value": "b01f5ba3_manazel-alhadawi-kv1_display_en"
+              }
+            ],
+            "modify_time": "2026-10-12 10:24:21",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "Manazel_KV1_EN_Leads_NewLogo",
+            "deeplink": "",
+            "campaign_id": "1868342987843714",
+            "operation_status": "ENABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-06-18 13:56:26",
+            "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_conv&utm_term=manazel-alhadawi_en&utm_content=b01f5ba3_manazel-alhadawi-kv1_display_en",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE"
+          },
+          {
+            "ad_id": "1868236519630866",
+            "page_id": null,
+            "adgroup_id": "1866980896932194",
+            "landing_page_urls": null,
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "7ebeb0a8_manazel-alhadawi-2026_jun26_awr"
+              },
+              {
+                "key": "utm_term",
+                "value": "manazel-alhadawi_en"
+              },
+              {
+                "key": "utm_content",
+                "value": "manazel-alhadawi-cr1_display_en"
+              }
+            ],
+            "modify_time": "2026-10-12 10:30:22",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "Manazel_CR1_EN_Awareness",
+            "deeplink": "",
+            "campaign_id": "1866980762445266",
+            "operation_status": "DISABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-06-17 09:48:29",
+            "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_jun26_awr&utm_term=manazel-alhadawi_en&utm_content=manazel-alhadawi-cr1_display_en",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE"
+          },
+          {
+            "ad_id": "1868234951981105",
+            "page_id": null,
+            "adgroup_id": "1866980922970497",
+            "landing_page_urls": null,
+            "modify_time": "2026-10-12 10:23:20",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "Manazel_CR1_AR_Traffic",
+            "deeplink": "",
+            "campaign_id": "1866980789517937",
+            "operation_status": "DISABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-06-17 09:21:48",
+            "landing_page_url": "",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE"
+          },
+          {
+            "ad_id": "1868147145111842",
+            "page_id": null,
+            "adgroup_id": "1866980925443409",
+            "landing_page_urls": null,
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "7ebeb0a8_manazel-alhadawi-2026_jun26_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "manazel-alhadawi_ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "manazel-alhadawi-cr1_display_ar"
+              }
+            ],
+            "modify_time": "2026-10-12 10:23:48",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "Manazel_CR1_AR_Traffic_New",
+            "deeplink": "",
+            "campaign_id": "1866980731743666",
+            "operation_status": "DISABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-06-16 10:00:15",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_jun26_cond&utm_term=manazel-alhadawi_ar&utm_content=manazel-alhadawi-cr1_display_ar",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE"
+          },
+          {
+            "ad_id": "1868066369485090",
+            "page_id": null,
+            "adgroup_id": "1866980925443409",
+            "landing_page_urls": null,
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "7ebeb0a8_manazel-alhadawi-2026_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "manazel-alhadawi_ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "manazel-alhadawi-cr1_display_ar"
+              }
+            ],
+            "modify_time": "2026-10-12 10:23:48",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "Manazel_CR1_AR_Traffic",
+            "deeplink": "",
+            "campaign_id": "1866980731743666",
+            "operation_status": "DISABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-06-15 12:42:38",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_cond&utm_term=manazel-alhadawi_ar&utm_content=manazel-alhadawi-cr1_display_ar",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE"
+          },
+          {
+            "ad_id": "1867942981345521",
+            "page_id": null,
+            "adgroup_id": "1866980924948850",
+            "landing_page_urls": null,
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "7ebeb0a8_manazel-alhadawi-2026_jun26_conv"
+              },
+              {
+                "key": "utm_term",
+                "value": "manazel-alhadawi_en"
+              },
+              {
+                "key": "utm_content",
+                "value": "manazel-alhadawi-kv2_display_en"
+              }
+            ],
+            "modify_time": "2026-10-12 10:21:38",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "Manazel_KV2_EN_Leads_NewLogo",
+            "deeplink": "",
+            "campaign_id": "1866980789517937",
+            "operation_status": "ENABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-06-14 03:57:26",
+            "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_jun26_conv&utm_term=manazel-alhadawi_en&utm_content=manazel-alhadawi-kv2_display_en",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE"
+          },
+          {
+            "ad_id": "1867942624037298",
+            "page_id": null,
+            "adgroup_id": "1866980896932194",
+            "landing_page_urls": null,
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "7ebeb0a8_manazel-alhadawi-2026_jun26_awr"
+              },
+              {
+                "key": "utm_term",
+                "value": "manazel-alhadawi_en"
+              },
+              {
+                "key": "utm_content",
+                "value": "b01f5ba3_manazel-alhadawi-kv1_display_en"
+              }
+            ],
+            "modify_time": "2026-10-12 10:30:22",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "Manazel_KV1_EN_Awareness_NewLogo",
+            "deeplink": "",
+            "campaign_id": "1866980762445266",
+            "operation_status": "DISABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-06-14 04:01:25",
+            "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_jun26_awr&utm_term=manazel-alhadawi_en&utm_content=b01f5ba3_manazel-alhadawi-kv1_display_en",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE"
+          },
+          {
+            "ad_id": "1867610005042338",
+            "page_id": null,
+            "adgroup_id": "1866980923591713",
+            "landing_page_urls": null,
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "7ebeb0a8_manazel-alhadawi-2026_jun26_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "manazel-alhadawi_en"
+              },
+              {
+                "key": "utm_content",
+                "value": "manazel-alhadawi-kv2_display_en"
+              }
+            ],
+            "modify_time": "2026-10-12 10:23:28",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "Manazel_KV2_EN_Traffic_NewLogo",
+            "deeplink": "",
+            "campaign_id": "1866980731743666",
+            "operation_status": "ENABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-06-10 11:45:07",
+            "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_jun26_cond&utm_term=manazel-alhadawi_en&utm_content=manazel-alhadawi-kv2_display_en",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE"
+          },
+          {
+            "ad_id": "1866981154128657",
+            "page_id": null,
+            "adgroup_id": "1866980922970497",
+            "landing_page_urls": null,
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "7ebeb0a8_manazel-alhadawi-2026_jun26_conv"
+              },
+              {
+                "key": "utm_term",
+                "value": "manazel-alhadawi_ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "manazel-alhadawi-kv2_display_ar"
+              }
+            ],
+            "modify_time": "2026-10-12 10:23:20",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "Manazel_KV2_AR_Leads",
+            "deeplink": "",
+            "campaign_id": "1866980789517937",
+            "operation_status": "ENABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-06-03 13:06:58",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_jun26_conv&utm_term=manazel-alhadawi_ar&utm_content=manazel-alhadawi-kv2_display_ar",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE"
+          },
+          {
+            "ad_id": "1866981141935281",
+            "page_id": null,
+            "adgroup_id": "1866980924948850",
+            "landing_page_urls": null,
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "7ebeb0a8_manazel-alhadawi-2026_jun26_conv"
+              },
+              {
+                "key": "utm_term",
+                "value": "manazel-alhadawi_en"
+              },
+              {
+                "key": "utm_content",
+                "value": "b01f5ba3_manazel-alhadawi-kv1_display_en"
+              }
+            ],
+            "modify_time": "2026-10-12 10:21:38",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "Manazel_KV1_EN_Leads",
+            "deeplink": "",
+            "campaign_id": "1866980789517937",
+            "operation_status": "DISABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-06-03 13:06:23",
+            "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_jun26_conv&utm_term=manazel-alhadawi_en&utm_content=b01f5ba3_manazel-alhadawi-kv1_display_en",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE"
+          },
+          {
+            "ad_id": "1866981107228001",
+            "page_id": null,
+            "adgroup_id": "1866980925443409",
+            "landing_page_urls": null,
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "7ebeb0a8_manazel-alhadawi-2026_jun26_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "manazel-alhadawi_ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "manazel-alhadawi-kv2_display_ar"
+              }
+            ],
+            "modify_time": "2026-10-12 10:23:48",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "Manazel_KV2_AR_Traffic",
+            "deeplink": "",
+            "campaign_id": "1866980731743666",
+            "operation_status": "ENABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-06-03 13:06:07",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_jun26_cond&utm_term=manazel-alhadawi_ar&utm_content=manazel-alhadawi-kv2_display_ar",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE"
+          },
+          {
+            "ad_id": "1866981077098546",
+            "page_id": null,
+            "adgroup_id": "1866980923591713",
+            "landing_page_urls": null,
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "7ebeb0a8_manazel-alhadawi-2026_jun26_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "manazel-alhadawi_en"
+              },
+              {
+                "key": "utm_content",
+                "value": "manazel-alhadawi-kv2_display_en"
+              }
+            ],
+            "modify_time": "2026-10-12 10:23:28",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "Manazel_KV2_EN_Traffic",
+            "deeplink": "",
+            "campaign_id": "1866980731743666",
+            "operation_status": "DISABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-06-03 13:05:30",
+            "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_jun26_cond&utm_term=manazel-alhadawi_en&utm_content=manazel-alhadawi-kv2_display_en",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE"
+          },
+          {
+            "ad_id": "1866981055202898",
+            "page_id": null,
+            "adgroup_id": "1866980896932194",
+            "landing_page_urls": null,
+            "modify_time": "2026-10-12 10:30:22",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "Manazel_KV2_EN_Awareness",
+            "deeplink": "",
+            "campaign_id": "1866980762445266",
+            "operation_status": "DISABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-06-03 13:04:52",
+            "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_jun26_awr&utm_term=manazel-alhadawi_en&utm_content=manazel-alhadawi-kv2_display_en",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE"
+          },
+          {
+            "ad_id": "1866981047368769",
+            "page_id": null,
+            "adgroup_id": "1866980899041010",
+            "landing_page_urls": null,
+            "modify_time": "2026-10-12 10:28:22",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "Manazel_KV2_AR_Awareness",
+            "deeplink": "",
+            "campaign_id": "1866980762445266",
+            "operation_status": "ENABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-06-03 13:05:10",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_jun26_awr&utm_term=manazel-alhadawi_ar&utm_content=manazel-alhadawi-kv2_display_ar",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE"
+          },
+          {
+            "ad_id": "1866981015440609",
+            "page_id": null,
+            "adgroup_id": "1866980896932194",
+            "landing_page_urls": null,
+            "modify_time": "2026-10-12 10:30:22",
+            "ad_format": "CAROUSEL_ADS",
+            "ad_name": "Manazel_KV1_EN_Awareness",
+            "deeplink": "",
+            "campaign_id": "1866980762445266",
+            "operation_status": "DISABLE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-06-03 13:04:42",
+            "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_jun26_awr&utm_term=manazel-alhadawi_en&utm_content=b01f5ba3_manazel-alhadawi-kv1_display_en",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE"
+          }
+        ],
+        "page_info": {
+          "page": 1,
+          "page_size": 100,
+          "total_page": 1,
+          "total_number": 52
+        }
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "2026101307041718882A491841653CC364",
+      "waitedMs": 1177,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "cbd34ffa-21f5-4908-8f1b-3ab371e5917a",
+    "latencyMs": 2833
+  }
+}

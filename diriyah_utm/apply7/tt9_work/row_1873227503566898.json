@@ -1,0 +1,19 @@
+{
+ "platform": "tiktok",
+ "account_id": "7338057963233443842",
+ "unit_type": "ad",
+ "unit": "1873227503566898",
+ "ad_ids": [
+  "1873227503566898"
+ ],
+ "ad_names": [
+  "Visit Diriyah_IntroVideo1_30s_AR"
+ ],
+ "slot": "smart_plus_ad.landing_page_url_list[0].landing_page_url",
+ "before": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_aug_mf_awareness_tiktok_ar&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=30s",
+ "after_expected": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_aug26_awr&utm_term=ar&utm_content=video_ar",
+ "after_live": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_aug26_awr&utm_term=ar&utm_content=video_ar",
+ "result": "Fixed",
+ "new_entity_ids": "",
+ "detail": "Upgraded Smart+ ad (creative_list: SINGLE_VIDEO BC_AUTH_TT identity e4770252-b97f-5a97-873d-46a13d7ef867, video v10033g50000d9tgqlnog65k4h338h7g, no tiktok_item_id; ad_configuration keys ['call_to_action_id', 'dark_post_status', 'tracking_info', 'utm_params']). Pre-read smart_plus/ad/get req 20261013064023CE727609687225B83C63: URL == now (utm_params 5 keys source/medium/campaign/term/content, no utm_id; ENABLE / AD_STATUS_ADGROUP_DISABLE; modify_time 2026-08-19 07:04:38). smart_plus/ad/update payload: landing_page_url_list as read with only [0].landing_page_url = new, ad_configuration as read with only utm_params = the 5 UTMs of new (no utm_id); creative_list, ad_text_list, ad_name and status NOT sent. dry_run: call input == built payload (True), preview body == payload (True), warnings []. live attempt 1: input == dry-run payload (True), error {\"code\": \"VALIDATION_ERROR\", \"message\": \"Internal error.\", \"details\": {\"serverCode\": \"TIKTOK_API_ERROR\", \"upstream_status\": 400, \"upstream_details\": {\"action\": \"tiktok_smart_plus_ad_update\", \"tiktok\": {\"code\": 52404, \"message\": \"Internal error.\", \"request_id\": \"2026101306410237E82E4723B52EA6E0B9\"}}}}; live attempt 2: input == dry-run payload (True), code 0 OK req 2026101306435838428E4A06E8928B9585. Re-read smart_plus/ad/get req 202610130644114489865BC3470EF9AE21: landing_page_url_list[0].landing_page_url == new byte for byte; utm_params 5 keys source/medium/campaign/term/content, no utm_id (matching new); creative_list tiktok_item_id before [None] / after [None]; other fields changed: none; ENABLE / AD_STATUS_ADGROUP_DISABLE; modify_time 2026-08-19 07:04:38 -> 2026-10-12 22:44:03. Attempt 1 failed upstream (TikTok 52404 'Internal error.', req 2026101306410237E82E4723B52EA6E0B9); re-reads req 2026101306411027E8BDD2318F84DB9733 and 202610130643239A73785E60521F05C0CB after it: the ad was byte-identical to the pre-read (URL == now, modify_time unchanged); the same payload was dry-run again (input and preview == payload) before attempt 2 (last allowed attempt), which succeeded."
+}

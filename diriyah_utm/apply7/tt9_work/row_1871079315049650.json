@@ -1,0 +1,19 @@
+{
+ "platform": "tiktok",
+ "account_id": "7338057963233443842",
+ "unit_type": "ad",
+ "unit": "1871079315049650",
+ "ad_ids": [
+  "1871079315049650"
+ ],
+ "ad_names": [
+  "VisitDiriyah_WC_KV3_AR_1080x1920"
+ ],
+ "slot": "smart_plus_ad.landing_page_url_list[0].landing_page_url",
+ "before": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_tiktok_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=KV2",
+ "after_expected": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_jul26_awr&utm_term=ar&utm_content=kv3_display_ar",
+ "after_live": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_jul26_awr&utm_term=ar&utm_content=kv3_display_ar",
+ "result": "Fixed",
+ "new_entity_ids": "",
+ "detail": "Upgraded Smart+ ad (creative_list: CAROUSEL_ADS BC_AUTH_TT identity e4770252-b97f-5a97-873d-46a13d7ef867, no tiktok_item_id; ad_configuration keys ['call_to_action_id', 'dark_post_status', 'tracking_info', 'utm_params']). Pre-read smart_plus/ad/get req 202610130633254A822B837B8D711E0642: URL == now (utm_params 5 keys source/medium/campaign/term/content, no utm_id; DISABLE / AD_STATUS_ADGROUP_DISABLE; modify_time 2026-09-06 10:27:50). smart_plus/ad/update payload: landing_page_url_list as read with only [0].landing_page_url = new, ad_configuration as read with only utm_params = the 5 UTMs of new (no utm_id); creative_list, ad_text_list, ad_name and status NOT sent. dry_run: call input == built payload (True), preview body == payload (True), warnings []. live attempt 1: input == dry-run payload (True), code 0 OK req 202610130633558088A8C27964D9C85DC7. Re-read smart_plus/ad/get req 2026101306341440AA0FBCFC9514A1CE4B: landing_page_url_list[0].landing_page_url == new byte for byte; utm_params 5 keys source/medium/campaign/term/content, no utm_id (matching new); creative_list tiktok_item_id before [None] / after [None]; other fields changed: none; DISABLE / AD_STATUS_ADGROUP_DISABLE; modify_time 2026-09-06 10:27:50 -> 2026-10-12 22:33:56."
+}

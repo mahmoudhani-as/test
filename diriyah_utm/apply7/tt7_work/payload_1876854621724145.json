@@ -1,0 +1,202 @@
+{
+ "payload": {
+  "advertiser_id": "7338057963233443842",
+  "smart_plus_ad_id": "1876854621724145",
+  "landing_page_url_list": [
+   {
+    "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cond&utm_term=ar&utm_content=video_ar"
+   }
+  ],
+  "ad_configuration": {
+   "call_to_action_id": "7687605718756658184",
+   "creative_auto_enhancement_strategy_list": [
+    "IMAGE_QUALITY",
+    "IMAGE_RESIZE"
+   ],
+   "dark_post_status": "ON",
+   "product_info_enabled": "NON_CATALOG",
+   "tracking_info": {
+    "brand_safety_postbid_partner": "UNSET",
+    "tracking_pixel_id": "0"
+   },
+   "utm_params": [
+    {
+     "key": "utm_source",
+     "value": "tiktok"
+    },
+    {
+     "key": "utm_medium",
+     "value": "paid-social"
+    },
+    {
+     "key": "utm_campaign",
+     "value": "cond"
+    },
+    {
+     "key": "utm_term",
+     "value": "ar"
+    },
+    {
+     "key": "utm_content",
+     "value": "video_ar"
+    }
+   ]
+  }
+ },
+ "pre_request_id": "20261013063346D623A82347AA854BF9F5",
+ "pre_order": 5,
+ "pre_rec": {
+  "ad_configuration": {
+   "call_to_action_id": "7687605718756658184",
+   "creative_auto_enhancement_strategy_list": [
+    "IMAGE_QUALITY",
+    "IMAGE_RESIZE"
+   ],
+   "dark_post_status": "ON",
+   "product_info_enabled": "NON_CATALOG",
+   "tracking_info": {
+    "brand_safety_postbid_partner": "UNSET",
+    "tracking_pixel_id": "0"
+   },
+   "utm_params": [
+    {
+     "key": "utm_source",
+     "value": "tiktok"
+    },
+    {
+     "key": "utm_medium",
+     "value": "cpm"
+    },
+    {
+     "key": "utm_campaign",
+     "value": "cam-id-2e61ab_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_tiktok_en"
+    },
+    {
+     "key": "utm_term",
+     "value": "adset-id-ee00c8_test_adset_name_en_all_mf_prospecting"
+    },
+    {
+     "key": "utm_content",
+     "value": "45s"
+    }
+   ]
+  },
+  "ad_name": "Ad name2026-09-20 03:41:10",
+  "ad_text_list": [
+   {
+    "ad_text": "DNU"
+   }
+  ],
+  "adgroup_id": "1876854621720769",
+  "adgroup_name": "Ad group 20260920034059",
+  "advertiser_id": "7338057963233443842",
+  "campaign_id": "1876854589570129",
+  "campaign_name": "Traffic20260920154057",
+  "create_time": "2026-09-20 13:16:38",
+  "creative_list": [
+   {
+    "ad_material_id": "1876856875339938",
+    "creative_info": {
+     "ad_format": "CAROUSEL_ADS",
+     "identity_authorized_bc_id": "6807778858780065797",
+     "identity_id": "0f6eebaa-ba16-5ad3-aa97-4171805e2af1",
+     "identity_type": "BC_AUTH_TT",
+     "image_info": [
+      {
+       "web_uri": "ad-site-i18n-sg/202609205d0d0da1cd31ff824600b932"
+      }
+     ],
+     "material_name": "national day_1080 x 1920 px-02_AouRS6Y8.jpg",
+     "music_info": {
+      "music_id": "7687605594496322322"
+     }
+    },
+    "material_operation_status": "ENABLE",
+    "smart_plus_creative_id": "1876856875343154"
+   }
+  ],
+  "deeplink_list": [],
+  "landing_page_url_list": [
+   {
+    "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_tiktok_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=45s"
+   }
+  ],
+  "modify_time": "2026-09-20 13:23:58",
+  "operation_status": "DISABLE",
+  "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+  "smart_plus_ad_id": "1876854621724145"
+ },
+ "classify": {
+  "ad": "1876854621724145",
+  "read_order": 5,
+  "request_id": "20261013063346D623A82347AA854BF9F5",
+  "ad_name": "Ad name2026-09-20 03:41:10",
+  "plan_ad_name": "Ad name2026-09-20 03:41:10",
+  "advertiser_id": "7338057963233443842",
+  "campaign_name": "Traffic20260920154057",
+  "operation_status": "DISABLE",
+  "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+  "modify_time": "2026-09-20 13:23:58",
+  "ac_keys": [
+   "call_to_action_id",
+   "creative_auto_enhancement_strategy_list",
+   "dark_post_status",
+   "product_info_enabled",
+   "tracking_info",
+   "utm_params"
+  ],
+  "ac_bignums": [],
+  "pixel": "0",
+  "cta_id": "7687605718756658184",
+  "materials": [
+   {
+    "ad_material_id": "1876856875339938",
+    "ad_format": "CAROUSEL_ADS",
+    "identity_type": "BC_AUTH_TT",
+    "identity_id": "0f6eebaa-ba16-5ad3-aa97-4171805e2af1",
+    "bc": "6807778858780065797",
+    "tiktok_item_id": null,
+    "video_id": null,
+    "n_images": 1,
+    "status": "ENABLE"
+   }
+  ],
+  "spark": [],
+  "n_text": 1,
+  "changes": [
+   {
+    "slot": "smart_plus_ad.landing_page_url_list[0].landing_page_url",
+    "decision": "Write",
+    "why": "cur == now (byte-identical)",
+    "url_field": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_tiktok_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=45s",
+    "cur": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_tiktok_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=45s",
+    "n_lp": 1,
+    "extra_utm": [],
+    "conflict": [],
+    "utm_params": [
+     {
+      "key": "utm_source",
+      "value": "tiktok"
+     },
+     {
+      "key": "utm_medium",
+      "value": "cpm"
+     },
+     {
+      "key": "utm_campaign",
+      "value": "cam-id-2e61ab_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_tiktok_en"
+     },
+     {
+      "key": "utm_term",
+      "value": "adset-id-ee00c8_test_adset_name_en_all_mf_prospecting"
+     },
+     {
+      "key": "utm_content",
+      "value": "45s"
+     }
+    ],
+    "has_utm_params": true
+   }
+  ]
+ }
+}

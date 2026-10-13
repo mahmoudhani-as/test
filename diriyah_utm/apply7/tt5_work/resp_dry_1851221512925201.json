@@ -1,0 +1,69 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_update",
+    "dryRun": true,
+    "data": {
+      "request": {
+        "method": "POST",
+        "url": "https://business-api.tiktok.com/open_api/v1.3/ad/update/",
+        "path": "/v1.3/ad/update/",
+        "headers": {
+          "Access-Token": "[redacted]",
+          "Accept": "application/json",
+          "Content-Type": "application/json"
+        },
+        "query": {},
+        "bodyFormat": "json",
+        "body": {
+          "advertiser_id": "7338057963233443842",
+          "adgroup_id": "1849225757881409",
+          "creatives": [
+            {
+              "ad_format": "SINGLE_VIDEO",
+              "ad_id": "1851221512925201",
+              "ad_name": "Visit Diriyah_Tactical_Visit Diriyah Winter Campaign 2025_UF_QAT_Prospecting_EN_Awareness_Hero with Super",
+              "call_to_action": "LEARN_MORE",
+              "creative_authorized": true,
+              "identity_id": "7031391213458752514",
+              "identity_type": "AUTH_CODE",
+              "landing_page_url": "https://www.diriyah.sa/en?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-visitdiriyah_dec25_awr&utm_term=wintercampaign-visitdiriyah_en&utm_content=herowithsuper_video_en",
+              "promotional_music_disabled": true,
+              "tiktok_item_id": "7574495687715474696",
+              "utm_params": [
+                {
+                  "key": "utm_source",
+                  "value": "tiktok"
+                },
+                {
+                  "key": "utm_medium",
+                  "value": "paid-social"
+                },
+                {
+                  "key": "utm_campaign",
+                  "value": "hs-wintercampaign-visitdiriyah_dec25_awr"
+                },
+                {
+                  "key": "utm_term",
+                  "value": "wintercampaign-visitdiriyah_en"
+                },
+                {
+                  "key": "utm_content",
+                  "value": "herowithsuper_video_en"
+                }
+              ],
+              "vast_moat_enabled": false
+            }
+          ]
+        }
+      },
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "a658cddd-275f-4db0-a018-5c52e0dc591f",
+    "latencyMs": 1356
+  }
+}

@@ -1,0 +1,191 @@
+{
+ "payload": {
+  "advertiser_id": "7338057963233443842",
+  "smart_plus_ad_id": "1873225871586577",
+  "landing_page_url_list": [
+   {
+    "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_aug26_awr&utm_term=ar&utm_content=retailvideo_video_ar"
+   }
+  ],
+  "ad_configuration": {
+   "call_to_action_id": "7672735502981811221",
+   "dark_post_status": "ON",
+   "tracking_info": {
+    "brand_safety_postbid_partner": "UNSET",
+    "tracking_pixel_id": "0"
+   },
+   "utm_params": [
+    {
+     "key": "utm_source",
+     "value": "tiktok"
+    },
+    {
+     "key": "utm_medium",
+     "value": "paid-social"
+    },
+    {
+     "key": "utm_campaign",
+     "value": "4ae01e79_summer-campaign_aug26_awr"
+    },
+    {
+     "key": "utm_term",
+     "value": "ar"
+    },
+    {
+     "key": "utm_content",
+     "value": "retailvideo_video_ar"
+    }
+   ]
+  }
+ },
+ "action": "tiktok_smart_plus_ad_update",
+ "pre_read": "2026101306341440AA0FBCFC9514A1CE4B",
+ "pre_order": 9,
+ "pre_rec": {
+  "ad_configuration": {
+   "call_to_action_id": "7672735502981811221",
+   "dark_post_status": "ON",
+   "tracking_info": {
+    "brand_safety_postbid_partner": "UNSET",
+    "tracking_pixel_id": "0"
+   },
+   "utm_params": [
+    {
+     "key": "utm_source",
+     "value": "tiktok"
+    },
+    {
+     "key": "utm_medium",
+     "value": "cpm"
+    },
+    {
+     "key": "utm_campaign",
+     "value": "4ae01e79_summer-campaign_aug26_awr"
+    },
+    {
+     "key": "utm_term",
+     "value": "ar"
+    },
+    {
+     "key": "utm_content",
+     "value": "retailvideo_video_ar"
+    }
+   ]
+  },
+  "ad_name": "Visit Diriyah_RetailVideo1_AR",
+  "ad_text_list": [
+   {
+    "ad_text": "الوعد في الدرعية"
+   }
+  ],
+  "adgroup_id": "1873225871586561",
+  "adgroup_name": "VisitDiriyah_SummerCampaign2026_UF_AWR_KSA_Retail_AR",
+  "advertiser_id": "7338057963233443842",
+  "campaign_id": "1871078865315857",
+  "campaign_name": "VisitDiriyah_SummerCampaign2026_UF_AWR_KSA_ENAR_TikTok",
+  "create_time": "2026-08-11 11:32:59",
+  "creative_list": [
+   {
+    "ad_material_id": "1873226473579698",
+    "creative_info": {
+     "ad_format": "SINGLE_VIDEO",
+     "identity_authorized_bc_id": "6807778858780065797",
+     "identity_id": "e4770252-b97f-5a97-873d-46a13d7ef867",
+     "identity_type": "BC_AUTH_TT",
+     "image_info": [
+      {
+       "web_uri": "tos-alisg-p-0051c001-sg/okg29ApAB6GDMfg7GGQ1T7LNxfEFFAeDICMevE"
+      }
+     ],
+     "material_name": "VERTICAL PREMIUM 08_Bujari Shopping_V1 (AR) (2)_wztrRyaU.mp4",
+     "video_info": {
+      "file_name": "VERTICAL PREMIUM 08_Bujari Shopping_V1 (AR) (2)_wztrRyaU.mp4",
+      "video_id": "v10033g50000d9tgfnvog65goeu5qks0"
+     }
+    },
+    "material_operation_status": "ENABLE",
+    "smart_plus_creative_id": "1873226473582770"
+   }
+  ],
+  "deeplink_list": [],
+  "landing_page_url_list": [
+   {
+    "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=cpm&utm_campaign=4ae01e79_summer-campaign_aug26_awr&utm_term=ar&utm_content=retailvideo_video_ar"
+   }
+  ],
+  "modify_time": "2026-10-12 09:56:21",
+  "operation_status": "ENABLE",
+  "secondary_status": "AD_STATUS_ADGROUP_DISABLE",
+  "smart_plus_ad_id": "1873225871586577"
+ },
+ "info": {
+  "ad": "1873225871586577",
+  "read_order": 9,
+  "request_id": "2026101306341440AA0FBCFC9514A1CE4B",
+  "kind": "sp",
+  "cls": "SMART_PLUS",
+  "decision": "Write",
+  "match": "now",
+  "cur": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=cpm&utm_campaign=4ae01e79_summer-campaign_aug26_awr&utm_term=ar&utm_content=retailvideo_video_ar",
+  "url_field": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=cpm&utm_campaign=4ae01e79_summer-campaign_aug26_awr&utm_term=ar&utm_content=retailvideo_video_ar",
+  "utm_params": [
+   {
+    "key": "utm_source",
+    "value": "tiktok"
+   },
+   {
+    "key": "utm_medium",
+    "value": "cpm"
+   },
+   {
+    "key": "utm_campaign",
+    "value": "4ae01e79_summer-campaign_aug26_awr"
+   },
+   {
+    "key": "utm_term",
+    "value": "ar"
+   },
+   {
+    "key": "utm_content",
+    "value": "retailvideo_video_ar"
+   }
+  ],
+  "utm_extra": [],
+  "utm_conflict": [],
+  "ad_name_matches_plan": true,
+  "ad_name": "Visit Diriyah_RetailVideo1_AR",
+  "op": "ENABLE",
+  "sec": "AD_STATUS_ADGROUP_DISABLE",
+  "modify_time": "2026-10-12 09:56:21",
+  "adgroup_id": "1873225871586561",
+  "advertiser_ok": true,
+  "slot_index": 0,
+  "n_lp": 1,
+  "materials": [
+   {
+    "ad_material_id": "1873226473579698",
+    "fmt": "SINGLE_VIDEO",
+    "identity_type": "BC_AUTH_TT",
+    "identity_id": "e4770252-b97f-5a97-873d-46a13d7ef867",
+    "item": null,
+    "video": "v10033g50000d9tgfnvog65goeu5qks0",
+    "n_images": 1,
+    "status": "ENABLE"
+   }
+  ],
+  "ac_keys": [
+   "call_to_action_id",
+   "dark_post_status",
+   "tracking_info",
+   "utm_params"
+  ],
+  "texts": [
+   {
+    "trailing_ws": false,
+    "leading_ws": false,
+    "nonprint": []
+   }
+  ]
+ },
+ "probs": []
+}

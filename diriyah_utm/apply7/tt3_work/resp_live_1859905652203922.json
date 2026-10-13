@@ -1,0 +1,118 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_update",
+    "method": "POST",
+    "path": "/v1.3/ad/update/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "20261013062333F6EE7BD1670ACEC5B2EC",
+      "data": {
+        "ad_ids": [
+          "1859905652203922"
+        ],
+        "need_audit": false,
+        "creatives": [
+          {
+            "playable_url": "",
+            "operation_status": "ENABLE",
+            "creative_authorized": false,
+            "brand_safety_vast_url": null,
+            "viewability_postbid_partner": "UNSET",
+            "viewability_vast_url": null,
+            "landing_page_urls": null,
+            "adgroup_id": "1857546910327858",
+            "optimization_event": "LANDING_PAGE_VIEW",
+            "ad_id": "1859905652203922",
+            "profile_image_url": "",
+            "deeplink": "",
+            "creative_auto_enhancement_strategy_list": [
+              "IMAGE_QUALITY"
+            ],
+            "is_new_structure": true,
+            "call_to_action_id": "7618523044180446209",
+            "is_aco": false,
+            "ad_format": "CAROUSEL_ADS",
+            "brand_safety_postbid_partner": "UNSET",
+            "app_name": "bujairiterrace",
+            "card_id": null,
+            "create_time": "2026-03-17 10:47:58",
+            "identity_authorized_bc_id": "6807778858780065797",
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "identity_type": "BC_AUTH_TT",
+            "avatar_icon_web_uri": "",
+            "branded_content_disabled": false,
+            "campaign_automation_type": "MANUAL",
+            "dark_post_status": "ON",
+            "display_name": "bujairiterrace",
+            "video_id": null,
+            "impression_tracking_url": null,
+            "tracking_pixel_id": 7347671240183693000,
+            "click_tracking_url": null,
+            "modify_time": "2026-10-12 22:23:34",
+            "image_ids": [
+              "ad-site-i18n-sg/202603185d0d89ed1b848df343c29a86"
+            ],
+            "campaign_id": "1857288757610529",
+            "deeplink_type": "NORMAL",
+            "adgroup_name": "BujairiTerrace_Ramadan2026_MF_TRF_KSA_Tickets_AR",
+            "creative_type": null,
+            "music_id": "7618164299491592977",
+            "fallback_type": "UNSET",
+            "ad_name": "Copy 1 of BT KV_AR_STATIC_EID",
+            "ad_texts": null,
+            "landing_page_url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_mar26_cond&utm_term=ar&utm_content=display_ar",
+            "carousel_image_labels": null,
+            "campaign_name": "BujairiTerrace_Ramadan2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_ref_pixel_id": 7347671240183693000,
+            "page_id": null,
+            "vast_moat_enabled": false,
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "visitor-diriyah-coe_mar26_cond",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "ar",
+                "key": "utm_term"
+              },
+              {
+                "value": "display_ar",
+                "key": "utm_content"
+              }
+            ],
+            "product_info": {
+              "product_titles": null,
+              "selling_points": null,
+              "product_image_list": null
+            },
+            "ad_text": "احتفلوا بأجواء العيد بنكهات مميزة وإطلالات جميلة في مطل البجيري.",
+            "advertiser_id": "7338057963233443842"
+          }
+        ]
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "20261013062333F6EE7BD1670ACEC5B2EC",
+      "waitedMs": 2139,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "872fd2ca-f7f5-40c4-ae02-d1c1f77dd374",
+    "latencyMs": 3638
+  }
+}

@@ -1,0 +1,191 @@
+{
+ "payload": {
+  "advertiser_id": "7338057963233443842",
+  "smart_plus_ad_id": "1873227503566898",
+  "landing_page_url_list": [
+   {
+    "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_aug26_awr&utm_term=ar&utm_content=video_ar"
+   }
+  ],
+  "ad_configuration": {
+   "call_to_action_id": "7672742473025768469",
+   "dark_post_status": "ON",
+   "tracking_info": {
+    "brand_safety_postbid_partner": "UNSET",
+    "tracking_pixel_id": "0"
+   },
+   "utm_params": [
+    {
+     "key": "utm_source",
+     "value": "tiktok"
+    },
+    {
+     "key": "utm_medium",
+     "value": "paid-social"
+    },
+    {
+     "key": "utm_campaign",
+     "value": "4ae01e79_summer-campaign_aug26_awr"
+    },
+    {
+     "key": "utm_term",
+     "value": "ar"
+    },
+    {
+     "key": "utm_content",
+     "value": "video_ar"
+    }
+   ]
+  }
+ },
+ "action": "tiktok_smart_plus_ad_update",
+ "pre_read": "20261013064023CE727609687225B83C63",
+ "pre_order": 21,
+ "pre_rec": {
+  "ad_configuration": {
+   "call_to_action_id": "7672742473025768469",
+   "dark_post_status": "ON",
+   "tracking_info": {
+    "brand_safety_postbid_partner": "UNSET",
+    "tracking_pixel_id": "0"
+   },
+   "utm_params": [
+    {
+     "key": "utm_source",
+     "value": "tiktok"
+    },
+    {
+     "key": "utm_medium",
+     "value": "cpm"
+    },
+    {
+     "key": "utm_campaign",
+     "value": "cam-id-2e61ab_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_aug_mf_awareness_tiktok_ar"
+    },
+    {
+     "key": "utm_term",
+     "value": "adset-id-ee00c8_test_adset_name_en_all_mf_prospecting"
+    },
+    {
+     "key": "utm_content",
+     "value": "30s"
+    }
+   ]
+  },
+  "ad_name": "Visit Diriyah_IntroVideo1_30s_AR",
+  "ad_text_list": [
+   {
+    "ad_text": "الوعد في الدرعية"
+   }
+  ],
+  "adgroup_id": "1871079009517650",
+  "adgroup_name": "VisitDiriyah_SummerCampaign2026_UF_AWR_KSA_Intro_AR",
+  "advertiser_id": "7338057963233443842",
+  "campaign_id": "1871078865315857",
+  "campaign_name": "VisitDiriyah_SummerCampaign2026_UF_AWR_KSA_ENAR_TikTok",
+  "create_time": "2026-08-11 12:00:31",
+  "creative_list": [
+   {
+    "ad_material_id": "1873228205704274",
+    "creative_info": {
+     "ad_format": "SINGLE_VIDEO",
+     "identity_authorized_bc_id": "6807778858780065797",
+     "identity_id": "e4770252-b97f-5a97-873d-46a13d7ef867",
+     "identity_type": "BC_AUTH_TT",
+     "image_info": [
+      {
+       "web_uri": "tos-alisg-p-0051c001-sg/o0CxbgGD95heqeWj7kMRgotICeQLIGURDQAAbE"
+      }
+     ],
+     "material_name": "1080 × 1920 30s_ouTX09Pv.mov",
+     "video_info": {
+      "file_name": "1080 × 1920 30s_ouTX09Pv.mov",
+      "video_id": "v10033g50000d9tgqlnog65k4h338h7g"
+     }
+    },
+    "material_operation_status": "ENABLE",
+    "smart_plus_creative_id": "1873228205705330"
+   }
+  ],
+  "deeplink_list": [],
+  "landing_page_url_list": [
+   {
+    "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_aug_mf_awareness_tiktok_ar&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=30s"
+   }
+  ],
+  "modify_time": "2026-08-19 07:04:38",
+  "operation_status": "ENABLE",
+  "secondary_status": "AD_STATUS_ADGROUP_DISABLE",
+  "smart_plus_ad_id": "1873227503566898"
+ },
+ "info": {
+  "ad": "1873227503566898",
+  "read_order": 21,
+  "request_id": "20261013064023CE727609687225B83C63",
+  "kind": "sp",
+  "cls": "SMART_PLUS",
+  "decision": "Write",
+  "match": "now",
+  "cur": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_aug_mf_awareness_tiktok_ar&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=30s",
+  "url_field": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_aug_mf_awareness_tiktok_ar&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=30s",
+  "utm_params": [
+   {
+    "key": "utm_source",
+    "value": "tiktok"
+   },
+   {
+    "key": "utm_medium",
+    "value": "cpm"
+   },
+   {
+    "key": "utm_campaign",
+    "value": "cam-id-2e61ab_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_aug_mf_awareness_tiktok_ar"
+   },
+   {
+    "key": "utm_term",
+    "value": "adset-id-ee00c8_test_adset_name_en_all_mf_prospecting"
+   },
+   {
+    "key": "utm_content",
+    "value": "30s"
+   }
+  ],
+  "utm_extra": [],
+  "utm_conflict": [],
+  "ad_name_matches_plan": true,
+  "ad_name": "Visit Diriyah_IntroVideo1_30s_AR",
+  "op": "ENABLE",
+  "sec": "AD_STATUS_ADGROUP_DISABLE",
+  "modify_time": "2026-08-19 07:04:38",
+  "adgroup_id": "1871079009517650",
+  "advertiser_ok": true,
+  "slot_index": 0,
+  "n_lp": 1,
+  "materials": [
+   {
+    "ad_material_id": "1873228205704274",
+    "fmt": "SINGLE_VIDEO",
+    "identity_type": "BC_AUTH_TT",
+    "identity_id": "e4770252-b97f-5a97-873d-46a13d7ef867",
+    "item": null,
+    "video": "v10033g50000d9tgqlnog65k4h338h7g",
+    "n_images": 1,
+    "status": "ENABLE"
+   }
+  ],
+  "ac_keys": [
+   "call_to_action_id",
+   "dark_post_status",
+   "tracking_info",
+   "utm_params"
+  ],
+  "texts": [
+   {
+    "trailing_ws": false,
+    "leading_ws": false,
+    "nonprint": []
+   }
+  ]
+ },
+ "probs": []
+}

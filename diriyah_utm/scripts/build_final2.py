@@ -18,7 +18,35 @@ from omit import check_omit
 W, OUT = sys.argv[1], sys.argv[2]
 REREAD = sys.argv[3] if len(sys.argv) > 3 else 'reread'   # folder of the latest keyed re-read (its out/new_*.jsonl = ads created since 11-Oct)
 PLAN = sys.argv[4] if len(sys.argv) > 4 else 'round4'      # folder of the latest pending plan (diff.json)
-APPLY = os.environ.get('APPLY') or PLAN                      # folder of the latest apply run (its out_*.jsonl)
+APPLY = os.environ.get('APPLY') or PLAN                      # folder(s) of the final apply run, comma-separated (e.g. apply6,apply7 = run + resume)
+APPLY_LIST = [x.strip() for x in APPLY.split(',') if x.strip()]
+in_apply = lambda f: any(f.startswith(a + '/') for a in APPLY_LIST)
+FPLAN = {}   # the final run's plan: slot -> plan row (url_now at the pause); used for writes whose result line could not be recorded
+if os.path.exists(f'{W}/{APPLY_LIST[0]}/diff.json'):
+    for d_ in json.load(open(f'{W}/{APPLY_LIST[0]}/diff.json')): FPLAN[(d_['platform'], str(d_['ad_id']), d_['slot'])] = d_
+SPARK_PUSH = set(json.load(open(f'{W}/work/spark_check/spark_push_plan_ids.json'))['ad_ids']) if os.path.exists(f'{W}/work/spark_check/spark_push_plan_ids.json') else set()
+LANE = {}   # slot -> stop reason of the final-run batch that held it (from <apply>/lane_reports.json), for units the agent never wrote a result line for
+for ap in APPLY_LIST:
+    rp = f'{W}/{ap}/lane_reports.json'
+    if not os.path.exists(rp): continue
+    reps = json.load(open(rp))
+    for f_ in glob.glob(f'{W}/{ap}/in_*.json'):
+        se = (reps.get(os.path.basename(f_)) or {}).get('systemic_error') or ''
+        for u_ in json.load(open(f_)):
+            for ch_ in u_['changes']:
+                for a_ in u_['ad_ids']: LANE[(u_['platform'], str(a_), ch_['slot'])] = (ap + '/' + os.path.basename(f_), se)
+def lane_status(k):
+    b_, se = LANE.get(k, ('', ''))
+    if re.search(r'safety check|SAFETY|BLOCKED|classifier', se):
+        return BL, ('not written: the final-run batch ' + b_ + ' stopped after the session safety check denied a step. ' + se)[:400]
+    if re.search(r'PERMISSION|Page permission', se):
+        return RF, ('not written: the platform refused the batch ' + b_ + '. ' + se)[:400]
+    if re.search(r'OUTAGE|timed out|51002|Service Unavailable', se):
+        return PENDING, ('not written: a TikTok API outage stopped the batch ' + b_ + ' (re-run later). ' + se)[:400]
+    if re.search(r'^AUTH:|sign in again', se):
+        return PENDING, ('not written: Whathead asked to sign in again (batch ' + b_ + '). ' + se)[:400]
+    return None
+UNREC = 'written on 12-Oct by the final run; its result line could not be recorded (the session safety check denied the local logging step) - confirmed by the final re-read'
 PENDING = os.environ.get('PENDING_LABEL') or 'Being applied now'   # e.g. 'Paused - not yet written'
 G = glob.glob(f'{W}/in/e2e*.xlsx')[0]
 N = Deriver(G, {}).N
@@ -46,8 +74,9 @@ REFUSED = {}   # slots a platform refuses through its API (never retried): REFUS
 for rf_ in (os.environ.get('REFUSED_FILE') or 'work/excl_platform_refused_v2.json').split(','):
     if os.path.exists(f'{W}/{rf_}'):
         for e in json.load(open(f'{W}/{rf_}')): REFUSED[(e['platform'], str(e['ad_id']), e['slot'])] = e.get('why') or ''
-REFUSE_RX = re.compile(r'Spark Pull|editable only in Ads Manager|archived|POLICY_FINDING|PROHIBITED|disapproved|requires? an Instagram|Instagram account|https?://t\.co/|t\.co link|Page/profile permission', re.I)
-RUN_LABEL = lambda f: {'apply': '11-Oct', 'apply2': '11-Oct', 'apply3': '11-Oct', 'apply4': '12-Oct', 'apply5': '12-Oct (before the pause)'}.get(f.split('/')[0], '12-Oct (final run)')
+REFUSE_RX = re.compile(r'Spark Pull|editable only in Ads Manager|archived|POLICY_FINDING|PROHIBITED|disapproved|requires? an Instagram|Instagram account|https?://t\.co/|t\.co link|Page/profile permission|Page permission|required_permission', re.I)
+RUN_LABEL = lambda f: {'apply': '11-Oct', 'apply2': '11-Oct', 'apply3': '11-Oct', 'apply4': '12-Oct', 'apply5': '12-Oct (before the pause)',
+                       'apply6': '12-Oct (final run)', 'apply7': '12-Oct (final run, resumed 22:00 UTC)'}.get(f.split('/')[0], '12-Oct (final run)')
 NONAME = lambda p: '(Google ads have no name)' if p == 'google' else '(no ad name)'
 
 # ---------- every write ----------
@@ -87,9 +116,10 @@ def status_of(s, t, live):
     if tgt and same(url, tgt):
         if (s['platform'], str(s.get('ad_id'))) in MAIN_SESSION: return 'Fixed 12-Oct', 'written from the main session (agent stopped by the safety check)', '12-Oct'
         if any(a['result'] in ('Fixed',) for a in last12): return 'Fixed 12-Oct', next(a.get('detail') for a in last12 if a['result'] == 'Fixed')[:300], '12-Oct'
-        if any(a['result'] == 'Fixed' for a in rs): return 'Fixed 11-Oct', 'written 11-Oct and still matches the final rules', '11-Oct'
-        if FINAL and any(a['result'] == 'AlreadyFixed' and a['_file'].startswith(APPLY + '/') for a in rs):
+        if FINAL and any(a['result'] == 'AlreadyFixed' and in_apply(a['_file']) for a in rs):
             return 'Fixed 12-Oct', 'already correct when the final run re-read it (no write needed): written earlier on 12-Oct by the run that was paused before it recorded the result', '12-Oct'
+        if FINAL and k in FPLAN: return 'Fixed 12-Oct', UNREC, '12-Oct'
+        if any(a['result'] == 'Fixed' for a in rs): return 'Fixed 11-Oct', 'written 11-Oct and still matches the final rules', '11-Oct'
         if any(a['result'] == 'AlreadyFixed' for a in last12): return 'Fixed 11-Oct', 'already correct when re-read before the 12-Oct write', '11-Oct'
         return 'Correct', 'live URL already matches the final rules', ''
     if t and t.get('manual'): return 'Manual - you', t['manual'], ''
@@ -98,7 +128,12 @@ def status_of(s, t, live):
         o = OMIT.get(k) or {}
         return 'Manual - you', (o.get('manual') or 'no single correct URL for this slot'), ''
     if k in REFUSED: return RF, ('the platform refused this edit through its API (never retried): ' + REFUSED[k])[:400], ''
-    a5 = [a for a in rs if a['_file'].startswith(APPLY + '/')]
+    a5 = [a for a in rs if in_apply(a['_file'])]
+    if FINAL and s['platform'] == 'tiktok' and str(s.get('ad_id')) in SPARK_PUSH:
+        return HELD, 'TikTok Spark Push ad (brand-account post), held for your decision: an API URL edit makes TikTok re-publish the post 30-60 min later and detach the ad from the original post (55 ads were affected by the 11/12-Oct writes)', ''
+    last_b = LANE.get(k, ('', ''))[0]
+    no_line_in_last = bool(last_b) and not any(a['_file'] == last_b.replace('/in_', '/out_').replace('.json', '.jsonl') for a in rs)
+    if FINAL and k in DIFF and (not a5 or no_line_in_last) and lane_status(k): return lane_status(k) + ('',)
     if k in DIFF and not a5: return PENDING, ('reviewed URL ready; not written: the final run has no write result for it' if FINAL else 'reviewed URL ready; the writes were paused before this one was reached' if PENDING != 'Being applied now' else 'reviewed URL is in the write queue that was still running when this workbook was built'), ''
     bad = [a for a in (a5 or last12) if a['result'] in ('Failed', 'Skipped', 'NotAttempted')]
     if bad:
@@ -107,12 +142,16 @@ def status_of(s, t, live):
             return HELD, ('TikTok Spark Push ad, held for your decision: an API URL edit makes TikTok re-publish the post and detach the ad from the original post. ' + d)[:400], ''
         if FINAL and re.search(r'safety check', d, re.I):
             return BL, ('approved and reviewed, but this session\'s safety check stopped the live write: ' + d)[:400], ''
+        if FINAL and REFUSE_RX.search(d) and not re.search(r'sign-?in|re-?authent', d, re.I):
+            return RF, 'the platform does not allow this edit through its API: ' + d[:300], ''
         if FINAL and (b['result'] == 'NotAttempted' or re.search(r'sign-?in|re-?authent', d, re.I)):
             return PENDING, ('not written yet: ' + ('Whathead asked to sign in again before this write. ' if re.search(r'sign-?in|re-?authent', d, re.I) else '') + d)[:400], ''
         if b['result'] == 'NotAttempted' or re.search(r'safety check|sign-?in', d, re.I):
             return 'Not applied - needs your OK', ('not written: ' + d)[:400] if FINAL else 'planned and reviewed, not written: the session safety check stopped this live write', ''
         if REFUSE_RX.search(d):
             return (RF if FINAL else 'Manual - you'), 'the platform does not allow this edit through its API: ' + d[:300], ''
+        if FINAL and re.search(r'existing (Facebook )?Page post|stored on the post itself', d):
+            return 'Manual - you', ('the link is stored on an existing Facebook Page post that this ad boosts: edit the post\'s link in Meta, or decide to replace the post. ' + d)[:400], ''
         return {'Failed': 'Failed', 'Skipped': 'Skipped'}[b['result']], d[:400], ''
     if any(a['result'] == 'Fixed' and same(url, a.get('after_live')) for a in rs):
         if FINAL: return PENDING, 'written earlier with a previous version of the rules; the final rules change it once more and the final run has no write result for it', ''
@@ -239,6 +278,12 @@ for (p, aid) in sorted(MAIN_SESSION):
     ca.append(['12-Oct', '12-Oct', p, s_['account_id'] if s_ else '', NONAME(p), aid, aid, s_['slot'] if s_ else '', s_['url'] if s_ else '', (lv or {}).get('url') or '',
                'Yes' if lv and same(lv.get('url'), tg) else '', 'Yes' if lv and same(lv.get('url'), tg) else '', 'Fixed',
                '', 'written from the main session after the agent was stopped by the safety check (dry-run, MutateAds final_urls, GAQL read-back byte-equal, status ENABLED unchanged)'])
+for r in recs:
+    if r['why'] == UNREC:
+        s_ = r['s']; pl = FPLAN.get(key(s_)) or {}
+        ca.append(['12-Oct', '12-Oct (final run; no result line)', s_['platform'], s_.get('account_id'), s_.get('ad_name') or NONAME(s_['platform']), str(s_.get('ad_id')),
+                   str(s_.get('ad_id')), s_.get('slot'), pl.get('url_now') or '', r['url_now'], 'Yes', 'Yes', 'Fixed (confirmed by re-read)', '',
+                   'the agent wrote and verified this change but the session safety check denied the step that logs it; before = the live URL in the plan at the pause, after = the final re-read'])
 table(wa, ['Day', 'Run', 'Platform', 'Account ID', 'Ad name(s)', 'Ad ID(s)', 'Edited entity', 'URL slot', 'Before', 'After (read back live)', 'Read-back = planned',
            'Matches final rules', 'Result', 'New entity (e.g. creative)', 'Detail'], ca, 'ChangesApplied',
       [8, 16, 9, 14, 44, 22, 22, 26, 70, 70, 10, 14, 11, 16, 60], wrap_cols=(5, 9, 10, 15))
@@ -257,6 +302,8 @@ if FINAL:
         if st == BL: return 'Approved and ready: allow the blocked Whathead write tool (see "Questions for you") and re-run, or set the correct URL by hand'
         if st == RF:
             if p == 'meta' and re.search(r'archived', w, re.I): return 'Meta does not allow edits to archived ads and they do not serve; nothing to do unless you restore or duplicate the ad - then use the correct URL'
+            if p == 'meta' and re.search(r'permission', w, re.I) and re.search(r'Instagram account', w): return 'Meta refuses: the connected Meta user has no permission on the Instagram account this creative uses (e.g. wadisafarsa). Grant it in Business Settings and re-run, or edit the URL in Ads Manager'
+            if p == 'meta' and re.search(r'Missing Page permission|Page permission reason|required_permission|subcode 3858749', w): return 'Meta refuses: the connected Meta user has no Advertiser role on this Page (e.g. Wadi Safar Page 1245023868693595). Grant the role in Business Settings and re-run, or edit the URL in Ads Manager'
             if p == 'meta' and re.search(r'Instagram', w, re.I): return 'Instagram-only ad set with a page-only creative: Meta needs an Instagram account on the creative; edit the URL in Ads Manager'
             if p == 'meta' and re.search(r'(?<![A-Za-z0-9])t\.co(?![A-Za-z0-9])', w): return 'The ad links to a t.co short link (Meta would show "t.co" as the headline): replace it with the correct URL in Ads Manager'
             if p == 'tiktok' and re.search(r'Spark Pull', w, re.I): return 'Spark Pull ad with expired creator authorisation: renew the authorisation or edit the destination URL in TikTok Ads Manager'
@@ -380,23 +427,33 @@ if old:
 wq = wb.create_sheet('Questions for you')
 LIVE_ROW = None
 if FINAL:   # results of the final run (last result line per change, as check_apply.py)
-    n_ch = sum(len(u['changes']) for f in glob.glob(f'{W}/{APPLY}/in_*.json') for u in json.load(open(f)))
+    n_ch = sum(len(u['changes']) for f in glob.glob(f'{W}/{APPLY_LIST[0]}/in_*.json') for u in json.load(open(f)))   # the approved plan (first folder)
     last = {}
-    for f in sorted(glob.glob(f'{W}/{APPLY}/out_*.jsonl')):
-        for line in open(f):
-            try: a = json.loads(line)
-            except Exception: continue
-            last[(os.path.basename(f), str(a.get('unit')), a.get('slot'))] = a
+    for ap in APPLY_LIST:                                   # later folders (the resume) override earlier ones, per change
+        for f in sorted(glob.glob(f'{W}/{ap}/out_*.jsonl')):
+            for line in open(f):
+                try: a = json.loads(line)
+                except Exception: continue
+                last[(a.get('platform'), str(a.get('unit')), a.get('slot'))] = a
     fr = collections.Counter()
     for a in last.values():
-        d = a.get('detail') or ''
-        if re.search(r'safety check', d, re.I): fr['blocked'] += 1
-        elif a['result'] in ('Failed', 'Skipped') and REFUSE_RX.search(d): fr['refused'] += 1
-        else: fr[a['result']] += 1
+        d = a.get('detail') or ''; r_ = a['result']
+        if r_ in ('Fixed', 'AlreadyFixed'): fr[r_] += 1
+        elif r_ == 'NotAttempted' and re.search(r'Spark Push', d): fr['held'] += 1
+        elif re.search(r'safety check', d, re.I): fr['blocked'] += 1
+        elif REFUSE_RX.search(d): fr['refused'] += 1
+        elif re.search(r'sign-?in|re-?authent', d, re.I): fr['signin'] += 1
+        else: fr[r_] += 1
+    no_line = max(0, n_ch - len(last))
+    unrec = sum(1 for r in recs if r['why'] == UNREC)
     txt = (f'Final run on 12-Oct, after you approved every remaining write ({n_ch} changes): {fr["Fixed"]} written and read back byte for byte, '
-           f'{fr["AlreadyFixed"]} already correct when re-read (no write needed), {fr["refused"]} refused by the platform, {fr["blocked"]} blocked by this session\'s safety check, '
-           f'{fr["Skipped"]} skipped because the live URL had changed since the plan, {fr["Failed"]} failed, {fr["NotAttempted"]} not attempted. Everything that is still not right is in "Still needs you".')
+           f'{fr["AlreadyFixed"]} already correct when re-read (no write needed), {fr["held"]} TikTok Spark Push changes held for your decision, '
+           f'{fr["refused"]} refused by the platform, {fr["blocked"]} blocked by this session\'s safety check, {fr["Failed"]} failed, '
+           f'{fr["Skipped"]} skipped because the live URL had changed since the plan, {fr["NotAttempted"] + fr["signin"]} not attempted (TikTok API outage, sign-in prompt or a stopped batch), '
+           f'{no_line} with no result line because their batch stopped first. A further {unrec} URL slots were written and verified by agents that could not log them '
+           f'(the safety check denied the logging step); the final re-read confirms them. The status of every URL comes from the final re-read; everything still not right is in "Still needs you".')
     if fr['blocked']: txt += ' ' + (os.environ.get('PERMISSION_RULE') or 'To let the blocked writes through, add an allow rule for the blocked Whathead write tool to the Claude Code permission settings.')
+    LIVE_ROW = ('Live writes', txt, 'Done' if not fr['blocked'] else 'Done - some writes need a permission rule')
     if os.environ.get('INTERIM'):
         txt = (f'INTERIM - {os.environ["INTERIM"]}. So far in the final run: ' + txt.split('): ', 1)[1].replace(' Everything that is still not right', ' The rest of the changes have no result yet ("' + PENDING + '"). Everything that is still not right')
                + f' (approved total: {n_ch} changes)')
@@ -447,7 +504,7 @@ sm['A2'].font = NOTE; sm['A2'].alignment = WRAP; sm.merge_cells('A2:N2'); sm.row
 EXP = {}   # python-side value of every Summary formula cell (checked against the LibreOffice recalculation)
 if FINAL:
     sm['A2'] = ('Every ad and every final-URL slot in every ad account whose name contains "Diriyah" or "Wadi" (Meta, TikTok, Snapchat, X, Google Ads, LinkedIn). '
-                'Before = live pull 11-Oct-2026. After = keyed live re-read of the same slots on 12-Oct-2026, after the final write run, compared with the URL the final rules give. Ad name is on every row of "Every URL".')
+                'Before = live pull 11-Oct-2026. After = keyed live re-read of the same slots on ' + (os.environ.get('REREAD_DATE') or '12-Oct-2026') + ', after the final write run, compared with the URL the final rules give. Ad name is on every row of "Every URL".')
     plats = ['meta', 'tiktok', 'snapchat', 'x', 'google', 'linkedin']
     P, K, VB, VN, ST, FR = rng('Platform'), rng('Kind'), rng('Verdict before'), rng('Verdict now'), rng('Status'), rng('First row of ad')
     AB, AN, ON, PL = rng('Ad verdict before'), rng('Ad verdict now'), rng('Switched on'), rng('Slot placements') if 'Slot placements' in C else rng('Sitelink placements')

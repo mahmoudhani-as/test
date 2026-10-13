@@ -1,0 +1,46 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_smart_plus_ad_update",
+    "dryRun": true,
+    "data": {
+      "request": {
+        "method": "POST",
+        "url": "https://business-api.tiktok.com/open_api/v1.3/smart_plus/ad/update/",
+        "path": "/v1.3/smart_plus/ad/update/",
+        "headers": {
+          "Access-Token": "[redacted]",
+          "Accept": "application/json",
+          "Content-Type": "application/json"
+        },
+        "query": {},
+        "bodyFormat": "json",
+        "body": {
+          "advertiser_id": "7338057963233443842",
+          "ad_configuration": {
+            "call_to_action_id": "7663922862339722258",
+            "dark_post_status": "ON",
+            "product_info_enabled": "NON_CATALOG",
+            "tracking_info": {
+              "brand_safety_postbid_partner": "UNSET",
+              "tracking_pixel_id": "0"
+            }
+          },
+          "landing_page_url_list": [
+            {
+              "landing_page_url": "https://www.marriott.com/offers/theme-park-experience-off-227242/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah?utm_source=tiktok&utm_medium=paid-social&utm_campaign=visitor-diriyah_jul26_cond&utm_term=en&utm_content=kv3_display_en"
+            }
+          ],
+          "smart_plus_ad_id": "1871074766532881"
+        }
+      },
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "20fd757b-e615-4f28-8d88-bf5ab5b45652",
+    "latencyMs": 1321
+  }
+}

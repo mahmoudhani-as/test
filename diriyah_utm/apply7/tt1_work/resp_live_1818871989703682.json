@@ -1,0 +1,14 @@
+{
+  "success": false,
+  "error": {
+    "code": "BACKEND_ERROR",
+    "message": "tiktok API request timed out after 40000ms",
+    "details": {
+      "serverCode": "TIKTOK_NATIVE_FAILED"
+    }
+  },
+  "meta": {
+    "requestId": "d41c0b66-5629-4204-bbbe-811365a757f7",
+    "latencyMs": 41449
+  }
+}

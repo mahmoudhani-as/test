@@ -1,0 +1,786 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_get",
+    "method": "GET",
+    "path": "/v1.3/ad/get/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "20261013060252DF85A532B1D7B87B1F36",
+      "data": {
+        "list": [
+          {
+            "fallback_type": "UNSET",
+            "brand_safety_vast_url": null,
+            "avatar_icon_web_uri": "",
+            "landing_page_urls": null,
+            "click_tracking_url": null,
+            "ad_ref_pixel_id": 7347671240183693000,
+            "deeplink": "",
+            "music_id": null,
+            "modify_time": "2026-02-03 21:05:23",
+            "vast_moat_enabled": false,
+            "is_aco": false,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/o8oMk8gQE6DA5QJFkeBWPnjZ0rBBNDD3IdXKfR"
+            ],
+            "tiktok_item_id": "7584027102542843137",
+            "operation_status": "DISABLE",
+            "tracking_pixel_id": 7347671240183693000,
+            "campaign_id": "1851567754233138",
+            "identity_type": "BC_AUTH_TT",
+            "creative_type": null,
+            "identity_authorized_bc_id": "6846326855419559942",
+            "card_id": null,
+            "display_name": "",
+            "landing_page_url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-bujairiterraceramadan-2025-mar-uf%2Fmf-traffic&utm_id=2280&utm_term=bujairiterraceramadan-en-all-mf&utm_content=bujarieid-video-aud-ksa",
+            "dark_post_status": "ON",
+            "optimization_event": "LANDING_PAGE_VIEW",
+            "deeplink_type": "NORMAL",
+            "brand_safety_postbid_partner": "UNSET",
+            "call_to_action_id": "7584022061757058055",
+            "viewability_postbid_partner": "UNSET",
+            "carousel_image_labels": null,
+            "advertiser_id": "7338057963233443842",
+            "creative_authorized": true,
+            "adgroup_id": "1851567599547410",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "ad_text": "Eid shines brightest where our roots run deep From Bujairi Terrace, warm wishes to you",
+            "viewability_vast_url": null,
+            "ad_format": "SINGLE_VIDEO",
+            "profile_image_url": "",
+            "ad_id": "1851567599547426",
+            "ad_texts": null,
+            "adgroup_name": "Zallal_Winter2025_MF_TRF_KSA_Prospect_EN",
+            "page_id": null,
+            "is_new_structure": true,
+            "impression_tracking_url": null,
+            "ad_name": "Diriyah_Tactical_BT Ramadan Campaign - Activations_MF_KSA_Prospecting_EN_Consideration_Tiktok_BUJARIEID",
+            "playable_url": "",
+            "app_name": null,
+            "campaign_automation_type": "MANUAL",
+            "campaign_name": "Zallal_Winter2025_MF_TRF_KSA_ENAR_TikTok",
+            "video_id": "v10033g50000cvj4cunog65q0aroh590",
+            "utm_params": [
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-bujairiterraceramadan-2025-mar-uf%2Fmf-traffic"
+              },
+              {
+                "key": "utm_id",
+                "value": "2280"
+              },
+              {
+                "key": "utm_content",
+                "value": "bujarieid-video-aud-ksa"
+              },
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              }
+            ],
+            "create_time": "2025-12-15 09:59:09",
+            "branded_content_disabled": false
+          },
+          {
+            "brand_safety_vast_url": null,
+            "avatar_icon_web_uri": "",
+            "landing_page_urls": null,
+            "click_tracking_url": null,
+            "deeplink": "",
+            "music_id": null,
+            "modify_time": "2026-02-03 21:05:23",
+            "vast_moat_enabled": false,
+            "is_aco": false,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/oAdAeCQ3fVMHbwAJ9oxFWV3D8ygBZSQGggIhfq"
+            ],
+            "tiktok_item_id": "7582964353041714448",
+            "operation_status": "ENABLE",
+            "tracking_pixel_id": 0,
+            "campaign_id": "1846499273458721",
+            "identity_type": "BC_AUTH_TT",
+            "creative_type": null,
+            "identity_authorized_bc_id": "6846326855419559942",
+            "card_id": null,
+            "display_name": "",
+            "landing_page_url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness&utm_id=7904&utm_term=wintercampaign-bujairiterrace-en-all-na&utm_content=tickets-btherovideo-video-ksa",
+            "dark_post_status": "ON",
+            "optimization_event": null,
+            "deeplink_type": "NORMAL",
+            "brand_safety_postbid_partner": "UNSET",
+            "call_to_action_id": null,
+            "viewability_postbid_partner": "UNSET",
+            "carousel_image_labels": null,
+            "advertiser_id": "7338057963233443842",
+            "creative_authorized": true,
+            "adgroup_id": "1846499273459793",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "identity_id": "7d136a20-71e2-5fb6-9927-ad76b915fac7",
+            "ad_text": "Experience world-class moments and Najdi charm this winter at Bujairi Terrace",
+            "viewability_vast_url": null,
+            "ad_format": "SINGLE_VIDEO",
+            "profile_image_url": "",
+            "ad_id": "1851308950412465",
+            "ad_texts": null,
+            "adgroup_name": "Bujairi Terrace_Tactical_Bujairi Terrace Winter Campaign 2025 Tickets_UF_KSA_Prospecting_AR_Awareness_TikTok",
+            "page_id": null,
+            "creative_auto_enhancement_strategy_list": [],
+            "is_new_structure": true,
+            "impression_tracking_url": null,
+            "ad_name": "Bujairi_Terrace_Tactical_Bujairi_Terrace_Tickets_Winter_Campaign_UF_KSA_Prospecting_EN_Awareness_BT Hero Video",
+            "playable_url": "",
+            "app_name": "",
+            "campaign_automation_type": "MANUAL",
+            "campaign_name": "BujairiTerrace_Winter2025Tickets_UF_AWR_KSA_ENAR_TikTok",
+            "video_id": "v10033g50000d4trvc7og65mahv02ifg",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-bujairiterrace-2025-dec-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "7904"
+              },
+              {
+                "key": "utm_term",
+                "value": "wintercampaign-bujairiterrace-en-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "tickets-btherovideo-video-ksa"
+              }
+            ],
+            "create_time": "2025-12-12 13:29:40",
+            "branded_content_disabled": false,
+            "call_to_action": "BOOK_NOW"
+          },
+          {
+            "brand_safety_vast_url": null,
+            "avatar_icon_web_uri": "",
+            "landing_page_urls": null,
+            "click_tracking_url": null,
+            "deeplink": "",
+            "music_id": null,
+            "modify_time": "2026-10-12 10:46:30",
+            "vast_moat_enabled": false,
+            "is_aco": false,
+            "image_ids": [],
+            "tiktok_item_id": "7574495687715474696",
+            "operation_status": "ENABLE",
+            "tracking_pixel_id": 0,
+            "campaign_id": "1849225757880529",
+            "identity_type": "AUTH_CODE",
+            "creative_type": null,
+            "card_id": null,
+            "display_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "landing_page_url": "https://www.diriyah.sa/en?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-visitdiriyah-2025-nov-uf-reach-awareness&utm_id=7873&utm_term=wintercampaign-visitdiriyah-en-all-na&utm_content=herowithsuper-sponsoredpost-qat",
+            "optimization_event": null,
+            "deeplink_type": "NORMAL",
+            "brand_safety_postbid_partner": "UNSET",
+            "call_to_action_id": null,
+            "viewability_postbid_partner": "UNSET",
+            "carousel_image_labels": null,
+            "advertiser_id": "7338057963233443842",
+            "creative_authorized": true,
+            "adgroup_id": "1849225757881409",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "identity_id": "7031391213458752514",
+            "ad_text": "",
+            "viewability_vast_url": null,
+            "ad_format": "SINGLE_VIDEO",
+            "profile_image_url": "",
+            "ad_id": "1851221512925201",
+            "ad_texts": null,
+            "adgroup_name": "VisitDiriyah_Winter2025_UF_AWR_QAT_Prospect_EN",
+            "page_id": null,
+            "is_new_structure": true,
+            "impression_tracking_url": null,
+            "ad_name": "Visit Diriyah_Tactical_Visit Diriyah Winter Campaign 2025_UF_QAT_Prospecting_EN_Awareness_Hero with Super",
+            "playable_url": "",
+            "app_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "campaign_automation_type": "MANUAL",
+            "campaign_name": "VisitDiriyah_Winter2025_UF_AWR_QAT_ENAR_TikTok_20HS2521114",
+            "video_id": null,
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-visitdiriyah-2025-nov-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "7873"
+              },
+              {
+                "key": "utm_content",
+                "value": "herowithsuper-sponsoredpost-qat"
+              }
+            ],
+            "create_time": "2025-12-11 14:18:19",
+            "call_to_action": "LEARN_MORE",
+            "promotional_music_disabled": true
+          },
+          {
+            "brand_safety_vast_url": null,
+            "avatar_icon_web_uri": "",
+            "landing_page_urls": null,
+            "click_tracking_url": null,
+            "deeplink": "",
+            "music_id": null,
+            "modify_time": "2026-10-12 10:46:57",
+            "vast_moat_enabled": false,
+            "is_aco": false,
+            "image_ids": [],
+            "tiktok_item_id": "7574495687715474696",
+            "operation_status": "ENABLE",
+            "tracking_pixel_id": 0,
+            "campaign_id": "1849225757880529",
+            "identity_type": "AUTH_CODE",
+            "creative_type": null,
+            "card_id": null,
+            "display_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-visitdiriyah-2025-nov-uf-reach-awareness&utm_id=7875&utm_term=wintercampaign-visitdiriyah-ar-all-na&utm_content=herowithsuper-sponsoredpost-qat",
+            "optimization_event": null,
+            "deeplink_type": "NORMAL",
+            "brand_safety_postbid_partner": "UNSET",
+            "call_to_action_id": null,
+            "viewability_postbid_partner": "UNSET",
+            "carousel_image_labels": null,
+            "advertiser_id": "7338057963233443842",
+            "creative_authorized": true,
+            "adgroup_id": "1849225757880545",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "identity_id": "7031391213458752514",
+            "ad_text": "",
+            "viewability_vast_url": null,
+            "ad_format": "SINGLE_VIDEO",
+            "profile_image_url": "",
+            "ad_id": "1851220554959041",
+            "ad_texts": null,
+            "adgroup_name": "VisitDiriyah_Winter2025_UF_AWR_QAT_Prospect_AR",
+            "page_id": null,
+            "is_new_structure": true,
+            "impression_tracking_url": null,
+            "ad_name": "Visit Diriyah_Tactical_Visit Diriyah Winter Campaign 2025_UF_QAT_Prospecting_AR_Awareness_Hero with Super",
+            "playable_url": "",
+            "app_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "campaign_automation_type": "MANUAL",
+            "campaign_name": "VisitDiriyah_Winter2025_UF_AWR_QAT_ENAR_TikTok_20HS2521114",
+            "video_id": null,
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-visitdiriyah-2025-nov-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "7875"
+              },
+              {
+                "key": "utm_content",
+                "value": "herowithsuper-sponsoredpost-qat"
+              }
+            ],
+            "create_time": "2025-12-11 14:01:41",
+            "call_to_action": "LEARN_MORE",
+            "promotional_music_disabled": true
+          },
+          {
+            "brand_safety_vast_url": null,
+            "avatar_icon_web_uri": "",
+            "landing_page_urls": null,
+            "click_tracking_url": null,
+            "deeplink": "",
+            "music_id": null,
+            "modify_time": "2026-10-12 10:46:53",
+            "vast_moat_enabled": false,
+            "is_aco": false,
+            "image_ids": [],
+            "tiktok_item_id": "7574495687715474696",
+            "operation_status": "ENABLE",
+            "tracking_pixel_id": 0,
+            "campaign_id": "1849225582518386",
+            "identity_type": "AUTH_CODE",
+            "creative_type": null,
+            "card_id": null,
+            "display_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "landing_page_url": "https://www.diriyah.sa/en?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-visitdiriyah-2025-nov-uf-reach-awareness&utm_id=7865&utm_term=wintercampaign-visitdiriyah-en-all-na&utm_content=herowithsuper-sponsoredpost-kwt",
+            "optimization_event": null,
+            "deeplink_type": "NORMAL",
+            "brand_safety_postbid_partner": "UNSET",
+            "call_to_action_id": null,
+            "viewability_postbid_partner": "UNSET",
+            "carousel_image_labels": null,
+            "advertiser_id": "7338057963233443842",
+            "creative_authorized": true,
+            "adgroup_id": "1849225582519298",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "identity_id": "7031391213458752514",
+            "ad_text": "",
+            "viewability_vast_url": null,
+            "ad_format": "SINGLE_VIDEO",
+            "profile_image_url": "",
+            "ad_id": "1851219748440274",
+            "ad_texts": null,
+            "adgroup_name": "Visit Diriyah_Tactical_Visit Diriyah Winter Campaign 2025_UF_KWT_Prospecting_EN_Awareness_TikTok",
+            "page_id": null,
+            "is_new_structure": true,
+            "impression_tracking_url": null,
+            "ad_name": "Visit Diriyah_Tactical_Visit Diriyah Winter Campaign 2025_UF_KWT_Prospecting_EN_Awareness_Hero with Super",
+            "playable_url": "",
+            "app_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "campaign_automation_type": "MANUAL",
+            "campaign_name": "VisitDiriyah_Winter2025_UF_AWR_KWT_ENAR_TikTok_20HS2521112",
+            "video_id": null,
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-visitdiriyah-2025-nov-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "7865"
+              },
+              {
+                "key": "utm_content",
+                "value": "herowithsuper-sponsoredpost-kwt"
+              }
+            ],
+            "create_time": "2025-12-11 13:47:32",
+            "call_to_action": "LEARN_MORE",
+            "promotional_music_disabled": true
+          },
+          {
+            "brand_safety_vast_url": null,
+            "avatar_icon_web_uri": "",
+            "landing_page_urls": null,
+            "click_tracking_url": null,
+            "deeplink": "",
+            "music_id": null,
+            "modify_time": "2026-10-12 11:14:30",
+            "vast_moat_enabled": false,
+            "is_aco": false,
+            "image_ids": [],
+            "tiktok_item_id": "7574495687715474696",
+            "operation_status": "ENABLE",
+            "tracking_pixel_id": 0,
+            "campaign_id": "1849225582518386",
+            "identity_type": "AUTH_CODE",
+            "creative_type": null,
+            "card_id": null,
+            "display_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-visitdiriyah-2025-nov-uf-reach-awareness&utm_id=7867&utm_term=wintercampaign-visitdiriyah-ar-all-na&utm_content=herowithsuper-sponsoredpost-kwt",
+            "optimization_event": null,
+            "deeplink_type": "NORMAL",
+            "brand_safety_postbid_partner": "UNSET",
+            "call_to_action_id": null,
+            "viewability_postbid_partner": "UNSET",
+            "carousel_image_labels": null,
+            "advertiser_id": "7338057963233443842",
+            "creative_authorized": true,
+            "adgroup_id": "1849225582519330",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "identity_id": "7031391213458752514",
+            "ad_text": "",
+            "viewability_vast_url": null,
+            "ad_format": "SINGLE_VIDEO",
+            "profile_image_url": "",
+            "ad_id": "1851217804632162",
+            "ad_texts": null,
+            "adgroup_name": "VisitDiriyah_Winter2025_UF_AWR_KWT_Prospect_AR",
+            "page_id": null,
+            "is_new_structure": true,
+            "impression_tracking_url": null,
+            "ad_name": "Visit Diriyah_Tactical_Visit Diriyah Winter Campaign 2025_UF_KWT_Prospecting_AR_Awareness_Hero with Super",
+            "playable_url": "",
+            "app_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "campaign_automation_type": "MANUAL",
+            "campaign_name": "VisitDiriyah_Winter2025_UF_AWR_KWT_ENAR_TikTok_20HS2521112",
+            "video_id": null,
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-visitdiriyah-2025-nov-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "7867"
+              },
+              {
+                "key": "utm_content",
+                "value": "herowithsuper-sponsoredpost-kwt"
+              }
+            ],
+            "create_time": "2025-12-11 13:27:02",
+            "call_to_action": "LEARN_MORE",
+            "promotional_music_disabled": true
+          },
+          {
+            "brand_safety_vast_url": null,
+            "avatar_icon_web_uri": "",
+            "landing_page_urls": null,
+            "click_tracking_url": null,
+            "deeplink": "",
+            "music_id": null,
+            "modify_time": "2026-10-12 11:17:00",
+            "vast_moat_enabled": false,
+            "is_aco": false,
+            "image_ids": [],
+            "tiktok_item_id": "7574495687715474696",
+            "operation_status": "ENABLE",
+            "tracking_pixel_id": 0,
+            "campaign_id": "1849225045517458",
+            "identity_type": "AUTH_CODE",
+            "creative_type": null,
+            "card_id": null,
+            "display_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-visitdiriyah-2025-nov-uf-reach-awareness&utm_id=7859&utm_term=wintercampaign-visitdiriyah-ar-all-na&utm_content=herowithsuper-sponsoredpost-uae",
+            "optimization_event": null,
+            "deeplink_type": "NORMAL",
+            "brand_safety_postbid_partner": "UNSET",
+            "call_to_action_id": null,
+            "viewability_postbid_partner": "UNSET",
+            "carousel_image_labels": null,
+            "advertiser_id": "7338057963233443842",
+            "creative_authorized": true,
+            "adgroup_id": "1849225045517474",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "identity_id": "7031391213458752514",
+            "ad_text": "",
+            "viewability_vast_url": null,
+            "ad_format": "SINGLE_VIDEO",
+            "profile_image_url": "",
+            "ad_id": "1851214899876081",
+            "ad_texts": null,
+            "adgroup_name": "VisitDiriyah_Winter2025_UF_AWR_UAE_Prospect_AR",
+            "page_id": null,
+            "is_new_structure": true,
+            "impression_tracking_url": null,
+            "ad_name": "Visit Diriyah_Tactical_Visit Diriyah Winter Campaign 2025_UF_UAE_Prospecting_AR_Awareness_Hero with Super",
+            "playable_url": "",
+            "app_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "campaign_automation_type": "MANUAL",
+            "campaign_name": "VisitDiriyah_Winter2025_UF_AWR_UAE_ENAR_TikTok_20HS2521110",
+            "video_id": null,
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-visitdiriyah-2025-nov-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "7859"
+              },
+              {
+                "key": "utm_content",
+                "value": "herowithsuper-sponsoredpost-uae"
+              }
+            ],
+            "create_time": "2025-12-11 12:32:05",
+            "call_to_action": "LEARN_MORE",
+            "promotional_music_disabled": true
+          },
+          {
+            "brand_safety_vast_url": null,
+            "avatar_icon_web_uri": "",
+            "landing_page_urls": null,
+            "click_tracking_url": null,
+            "deeplink": "",
+            "music_id": null,
+            "modify_time": "2026-10-12 11:13:50",
+            "vast_moat_enabled": false,
+            "is_aco": false,
+            "image_ids": [],
+            "tiktok_item_id": "7574495687715474696",
+            "operation_status": "ENABLE",
+            "tracking_pixel_id": 0,
+            "campaign_id": "1849225045517458",
+            "identity_type": "AUTH_CODE",
+            "creative_type": null,
+            "card_id": null,
+            "display_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "landing_page_url": "https://www.diriyah.sa/en?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-visitdiriyah-2025-nov-uf-reach-awareness&utm_id=7857&utm_term=wintercampaign-visitdiriyah-en-all-na&utm_content=herowithsuper-sponsoredpost-uae",
+            "optimization_event": null,
+            "deeplink_type": "NORMAL",
+            "brand_safety_postbid_partner": "UNSET",
+            "call_to_action_id": null,
+            "viewability_postbid_partner": "UNSET",
+            "carousel_image_labels": null,
+            "advertiser_id": "7338057963233443842",
+            "creative_authorized": true,
+            "adgroup_id": "1849225045518530",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "identity_id": "7031391213458752514",
+            "ad_text": "",
+            "viewability_vast_url": null,
+            "ad_format": "SINGLE_VIDEO",
+            "profile_image_url": "",
+            "ad_id": "1851213675904225",
+            "ad_texts": null,
+            "adgroup_name": "VisitDiriyah_Winter2025_UF_AWR_UAE_Prospect_EN",
+            "page_id": null,
+            "is_new_structure": true,
+            "impression_tracking_url": null,
+            "ad_name": "Visit Diriyah_Tactical_Visit Diriyah Winter Campaign 2025_UF_UAE_Prospecting_EN_Awareness_Hero with Super",
+            "playable_url": "",
+            "app_name": "Visit 𝐃𝐈𝐑𝐈𝐘𝐀𝐇",
+            "campaign_automation_type": "MANUAL",
+            "campaign_name": "VisitDiriyah_Winter2025_UF_AWR_UAE_ENAR_TikTok_20HS2521110",
+            "video_id": null,
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-visitdiriyah-2025-nov-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "7857"
+              },
+              {
+                "key": "utm_content",
+                "value": "herowithsuper-sponsoredpost-uae"
+              }
+            ],
+            "create_time": "2025-12-11 12:16:55",
+            "call_to_action": "LEARN_MORE",
+            "promotional_music_disabled": true
+          },
+          {
+            "brand_safety_vast_url": null,
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202504235d0ddc1b8ba9571646aca4ab",
+            "landing_page_urls": null,
+            "click_tracking_url": null,
+            "ad_ref_pixel_id": 7347671240183693000,
+            "deeplink": null,
+            "music_id": null,
+            "modify_time": "2026-10-12 10:29:53",
+            "vast_moat_enabled": false,
+            "is_aco": false,
+            "image_ids": [
+              "tos-alisg-v-afad33-sg/ooEqSRrdPCJPbALfyKILrFEDvTDUopALWf3egg"
+            ],
+            "operation_status": "DISABLE",
+            "tracking_pixel_id": 7347671240183693000,
+            "campaign_id": "1851131628173522",
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "identity_type": "CUSTOMIZED_USER",
+            "creative_type": null,
+            "card_id": null,
+            "display_name": "DiriyahCo",
+            "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=hs-wintercampaign-visitdiriyah-2025-nov-uf-reach-awareness&utm_id=7757&utm_term=wintercampaign-visitdiriyah-ar-all-na&utm_content=herowithsuper-video",
+            "optimization_event": "ON_WEB_REGISTER",
+            "brand_safety_postbid_partner": "UNSET",
+            "call_to_action_id": "7582241864724663312",
+            "viewability_postbid_partner": "UNSET",
+            "carousel_image_labels": null,
+            "advertiser_id": "7338057963233443842",
+            "creative_authorized": true,
+            "adgroup_id": "1851131628175570",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "identity_id": "7552973066290216968",
+            "ad_text": "xxx",
+            "viewability_vast_url": null,
+            "ad_format": "SINGLE_VIDEO",
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202504235d0ddc1b8ba9571646aca4ab",
+            "product_info": {
+              "product_titles": null,
+              "selling_points": null,
+              "product_image_list": null
+            },
+            "ad_id": "1851131628175586",
+            "ad_texts": null,
+            "adgroup_name": "ManazelAlHadawi_2025_LF_CONV_KSA_Prospect_EN",
+            "page_id": null,
+            "is_new_structure": true,
+            "impression_tracking_url": null,
+            "ad_name": "7553225668982243345_2025-12-10 17:33:37",
+            "playable_url": "",
+            "app_name": "",
+            "campaign_automation_type": "MANUAL",
+            "campaign_name": "ManazelAlHadawi_2025_LF_CONV_KSA_ENAR_TikTok_20HS2516710-20HS26411",
+            "video_id": "v106e9g50001d394rvnog65p5npan8rg",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "hs-wintercampaign-visitdiriyah-2025-nov-uf-reach-awareness"
+              },
+              {
+                "key": "utm_id",
+                "value": "7757"
+              },
+              {
+                "key": "utm_term",
+                "value": "wintercampaign-visitdiriyah-ar-all-na"
+              },
+              {
+                "key": "utm_content",
+                "value": "herowithsuper-video"
+              }
+            ],
+            "create_time": "2025-12-10 14:51:27"
+          },
+          {
+            "brand_safety_vast_url": null,
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "landing_page_urls": null,
+            "click_tracking_url": null,
+            "deeplink": "",
+            "music_id": null,
+            "modify_time": "2026-10-12 14:51:41",
+            "vast_moat_enabled": false,
+            "is_aco": false,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/oUingIDBhInFFQBVhQfBNetuamrLRkD1AEB2VE"
+            ],
+            "operation_status": "ENABLE",
+            "tracking_pixel_id": 7347671240183693000,
+            "campaign_id": "1813630708433922",
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "identity_type": "CUSTOMIZED_USER",
+            "creative_type": null,
+            "card_id": null,
+            "display_name": "Visit Diriyah",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cityofearth-2024-oct-uf-reach-awareness&utm_term=cityofearth-ar-all-mf&utm_content=video",
+            "optimization_event": null,
+            "deeplink_type": "NORMAL",
+            "brand_safety_postbid_partner": "UNSET",
+            "call_to_action_id": null,
+            "viewability_postbid_partner": "UNSET",
+            "carousel_image_labels": null,
+            "advertiser_id": "7338057963233443842",
+            "creative_authorized": true,
+            "adgroup_id": "1813630708433938",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "identity_id": "7350277519361425409",
+            "ad_text": "للعالم مستقبل واحد..وللدرعية مستقبل تاريخي",
+            "viewability_vast_url": null,
+            "ad_format": "SINGLE_VIDEO",
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "ad_id": "1814416244943889",
+            "ad_texts": null,
+            "adgroup_name": "Diriyah_Tactical_City of Earth_UF_KSA_Prospecting_EN/AR_Awareness_TikTok",
+            "page_id": null,
+            "is_new_structure": true,
+            "impression_tracking_url": null,
+            "ad_name": "Diriyah_Tactical_City of Earth_UF_KSA_Pospecting_AR_Awareness_TikTok_M_Green 6s",
+            "playable_url": "",
+            "app_name": "",
+            "campaign_automation_type": "MANUAL",
+            "campaign_name": "CityOfEarth_Phase12024_UF_AWR_KSA_ENAR_TikTok",
+            "video_id": "v10033g50000csh4arfog65jf9uk3br0",
+            "utm_params": [
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cityofearth-2024-oct-uf-reach-awareness"
+              },
+              {
+                "key": "utm_content",
+                "value": "video"
+              },
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              }
+            ],
+            "create_time": "2024-10-31 08:09:36",
+            "call_to_action": "LEARN_MORE"
+          }
+        ],
+        "page_info": {
+          "page": 1,
+          "page_size": 100,
+          "total_page": 1,
+          "total_number": 10
+        }
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "20261013060252DF85A532B1D7B87B1F36",
+      "waitedMs": 2774,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "d1d55deb-b065-47b8-bd97-6d10089068f8",
+    "latencyMs": 4677
+  }
+}

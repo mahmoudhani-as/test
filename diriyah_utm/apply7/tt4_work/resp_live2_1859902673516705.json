@@ -1,0 +1,24 @@
+{
+  "success": false,
+  "error": {
+    "code": "VALIDATION_ERROR",
+    "message": "Couldn't load, refresh to try again.",
+    "details": {
+      "serverCode": "TIKTOK_API_ERROR",
+      "upstream_status": 400,
+      "upstream_details": {
+        "action": "tiktok_ad_update",
+        "tiktok": {
+          "code": 40002,
+          "message": "Couldn't load, refresh to try again.",
+          "request_id": "20261013061021F307AF8B66A44B320154",
+          "data": {}
+        }
+      }
+    }
+  },
+  "meta": {
+    "requestId": "c773c702-c18b-4eba-8fc6-eded1a74fe1f",
+    "latencyMs": 9741
+  }
+}

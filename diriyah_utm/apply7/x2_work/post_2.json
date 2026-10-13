@@ -1,0 +1,42 @@
+{
+ "card_after": {
+  "name": "Eid KV_ Static KV1_ CPC_ EN",
+  "components": [
+   {
+    "media_key": "3_2059149058791403520",
+    "media_metadata": {
+     "3_2059149058791403520": {
+      "type": "IMAGE",
+      "url": "https://pbs.twimg.com/media/HJORKLzXcAAhdZ8.jpg",
+      "width": 1080,
+      "height": 1080
+     }
+    },
+    "type": "MEDIA"
+   },
+   {
+    "title": "Eid, Better Together",
+    "destination": {
+     "url": "https://www.diriyah.sa/en?utm_source=x&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_cond&utm_term=en&utm_content=display_en",
+     "type": "WEBSITE"
+    },
+    "type": "DETAILS"
+   }
+  ],
+  "id": "2059149086578581504",
+  "created_at": "2026-05-26T05:46:14Z",
+  "card_uri": "card://2059149086578581504",
+  "updated_at": "2026-05-26T05:46:14Z",
+  "deleted": false,
+  "card_type": "IMAGE_WEBSITE"
+ },
+ "get_tool": "toolu_01BRjzqUWy7moLqDA8Hvn2QP",
+ "get_rid": "be70b20b-e93f-4a02-a07a-b864a4f80384",
+ "slots": {
+  "card.components[1].destination.url": {
+   "after_live": "https://www.diriyah.sa/en?utm_source=x&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_cond&utm_term=en&utm_content=display_en",
+   "eq_new_bytes": true
+  }
+ },
+ "rest_unchanged": true
+}

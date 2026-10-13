@@ -1,0 +1,107 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_update",
+    "method": "POST",
+    "path": "/v1.3/ad/update/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "202610130615469BBCACF9F7BBA5F11547",
+      "data": {
+        "ad_ids": [
+          "1818871489400866"
+        ],
+        "need_audit": false,
+        "creatives": [
+          {
+            "deeplink": "",
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "ad_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_UF_Oman_Prospecting_AR_Awareness_TIKTOK_Juice Video 12s - AR",
+            "playable_url": "",
+            "landing_page_url": "https://www.diriyah.sa/ar/dine?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bujairiterracewinter_dec24_awr&utm_term=bujairiterracewinter_ar&utm_content=juicevideo12s_video_ar",
+            "identity_id": "7350277519361425409",
+            "ad_text": "احتفِ بالموسم معنا وتذوق ألذ المشروبات في مطل البجيري.احجز الآن!",
+            "vast_moat_enabled": false,
+            "card_id": null,
+            "modify_time": "2026-10-12 22:15:46",
+            "viewability_postbid_partner": "UNSET",
+            "ad_id": "1818871489400866",
+            "video_id": "v10033g50000cth6lfvog65kqesclifg",
+            "advertiser_id": "7338057963233443842",
+            "campaign_id": "1818871482899490",
+            "music_id": null,
+            "impression_tracking_url": null,
+            "ad_format": "SINGLE_VIDEO",
+            "display_name": "Visit Diriyah",
+            "carousel_image_labels": null,
+            "ad_texts": null,
+            "viewability_vast_url": null,
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "adgroup_id": "1818871486243857",
+            "campaign_automation_type": "MANUAL",
+            "is_new_structure": true,
+            "creative_type": null,
+            "adgroup_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_UP_Oman_Prospecting_AR_Awareness_TIKTOK",
+            "create_time": "2024-12-19 12:23:46",
+            "landing_page_urls": null,
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "bujairiterracewinter_dec24_awr",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "bujairiterracewinter_ar",
+                "key": "utm_term"
+              },
+              {
+                "value": "juicevideo12s_video_ar",
+                "key": "utm_content"
+              }
+            ],
+            "brand_safety_postbid_partner": "UNSET",
+            "campaign_name": "BujairiTerrace_Winter2024Restaurants_UF_AWR_OMN_ENAR_TikTok",
+            "click_tracking_url": null,
+            "tracking_pixel_id": 7347671240183693000,
+            "creative_authorized": false,
+            "is_aco": false,
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/oIfGiRfADCCEwVApp1DkgOI3xEDVwabvNFfGV3"
+            ],
+            "app_name": "",
+            "operation_status": "ENABLE",
+            "optimization_event": null,
+            "call_to_action": "LEARN_MORE",
+            "identity_type": "CUSTOMIZED_USER",
+            "brand_safety_vast_url": null,
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "deeplink_type": "NORMAL",
+            "page_id": null,
+            "call_to_action_id": null
+          }
+        ]
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "202610130615469BBCACF9F7BBA5F11547",
+      "waitedMs": 1237,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "d0ee9bba-8fa0-4b18-9bc4-ea8a3103098e",
+    "latencyMs": 3118
+  }
+}

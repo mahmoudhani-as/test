@@ -1,0 +1,173 @@
+{
+          "asset_feed_spec": {
+            "ad_formats": [
+              "AUTOMATIC_FORMAT"
+            ],
+            "additional_data": {
+              "is_click_to_message": false,
+              "multi_share_end_card": false
+            },
+            "asset_customization_rules": [
+              {
+                "body_label": {
+                  "id": "120252908973920058",
+                  "name": "placement_asset_f67f8b0ba71624426_1788349699103"
+                },
+                "customization_spec": {
+                  "age_max": 65,
+                  "age_min": 13,
+                  "instagram_positions": [
+                    "story",
+                    "reels"
+                  ],
+                  "publisher_platforms": [
+                    "instagram"
+                  ]
+                },
+                "image_label": {
+                  "id": "120252908973940058",
+                  "name": "placement_asset_fc86ceb28107163e6_1788349699096"
+                },
+                "link_url_label": {
+                  "id": "120252908973980058",
+                  "name": "placement_asset_f4303f532e9d463eb_1788349699103"
+                },
+                "priority": 1,
+                "title_label": {
+                  "id": "120252908973950058",
+                  "name": "placement_asset_fc9b30734de92b7ca_1788349699103"
+                }
+              },
+              {
+                "body_label": {
+                  "id": "120252908973960058",
+                  "name": "placement_asset_fb61ad95c9d8e0c9d_1788349699100"
+                },
+                "customization_spec": {
+                  "age_max": 65,
+                  "age_min": 13
+                },
+                "image_label": {
+                  "id": "120252908973930058",
+                  "name": "placement_asset_ff2265c1649c50cad_1788349699093"
+                },
+                "link_url_label": {
+                  "id": "120252908973970058",
+                  "name": "placement_asset_ff390d01f5e634315_1788349699103"
+                },
+                "priority": 2,
+                "title_label": {
+                  "id": "120252908973990058",
+                  "name": "placement_asset_fa49b9a59f37958f6_1788349699102"
+                }
+              }
+            ],
+            "bodies": [
+              {
+                "adlabels": [
+                  {
+                    "id": "120252908973920058",
+                    "name": "placement_asset_f67f8b0ba71624426_1788349699103"
+                  },
+                  {
+                    "id": "120252908973960058",
+                    "name": "placement_asset_fb61ad95c9d8e0c9d_1788349699100"
+                  }
+                ],
+                "text": "Discover Manazel AlHadawi, where heritage, comfort, and community come together in a setting designed for everyday life."
+              }
+            ],
+            "call_to_action_types": [
+              "BOOK_TRAVEL"
+            ],
+            "descriptions": [
+              {
+                "text": "Book Now"
+              }
+            ],
+            "images": [
+              {
+                "adlabels": [
+                  {
+                    "id": "120252908973930058",
+                    "name": "placement_asset_ff2265c1649c50cad_1788349699093"
+                  }
+                ],
+                "hash": "2f9f5671352a2acb6955a604695f682f"
+              },
+              {
+                "adlabels": [
+                  {
+                    "id": "120252908973940058",
+                    "name": "placement_asset_fc86ceb28107163e6_1788349699096"
+                  }
+                ],
+                "hash": "619e344b60924101951eaa08130ab123"
+              }
+            ],
+            "link_urls": [
+              {
+                "adlabels": [
+                  {
+                    "id": "120252908973970058",
+                    "name": "placement_asset_ff390d01f5e634315_1788349699103"
+                  },
+                  {
+                    "id": "120252908973980058",
+                    "name": "placement_asset_f4303f532e9d463eb_1788349699103"
+                  }
+                ],
+                "display_url": "",
+                "website_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=meta&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_sep26_awr&utm_term=manazel-alhadawi_en&utm_content=manazel-alhadawi-kv3_display_en"
+              }
+            ],
+            "optimization_type": "PLACEMENT",
+            "reasons_to_shop": false,
+            "shops_bundle": false,
+            "titles": [
+              {
+                "adlabels": [
+                  {
+                    "id": "120252908973950058",
+                    "name": "placement_asset_fc9b30734de92b7ca_1788349699103"
+                  },
+                  {
+                    "id": "120252908973990058",
+                    "name": "placement_asset_fa49b9a59f37958f6_1788349699102"
+                  }
+                ],
+                "text": "Manazel AlHadawi in Diriyah"
+              }
+            ]
+          },
+          "authorization_category": "NONE",
+          "creative_sourcing_spec": {
+            "destination_screenshot_spec": {
+              "enroll_status": "OPT_OUT"
+            }
+          },
+          "degrees_of_freedom_spec": {
+            "creative_features_spec": {
+              "pac_recomposition": {
+                "customizations": {
+                  "recomposition_type": {
+                    "vertical": "smart_crop"
+                  }
+                },
+                "enroll_status": "OPT_OUT"
+              },
+              "pac_relaxation": {
+                "enroll_status": "OPT_OUT"
+              },
+              "text_translation": {
+                "enroll_status": "OPT_OUT"
+              }
+            }
+          },
+          "name": "Manazel AlHadawi in Diriyah 2026-09-02-360780e7ac7ff3466d94007c148ec2ef",
+          "object_story_spec": {
+            "instagram_user_id": "17841456393254006",
+            "page_id": "111467331865347"
+          },
+          "threads_user_id": "17841460099388007"
+}

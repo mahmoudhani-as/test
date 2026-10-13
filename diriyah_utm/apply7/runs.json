@@ -1,0 +1,166 @@
+{
+ "launched": "2026-10-12 ~22:02 UTC (resume after the Whathead sign-in stop; user said 'Continue')",
+ "scope": "apply6 changes without a result + the 14 stopped at the sign-in prompt; safety-blocked, held (Spark Push), refused and skipped changes are NOT retried",
+ "runs": [
+  {
+   "task": "wx4y9c2oj",
+   "run": "wf_f81b3e89-e53",
+   "platform": "meta",
+   "batches": [
+    "in_meta_1.json",
+    "in_meta_5.json",
+    "in_meta_9.json",
+    "in_meta_13.json"
+   ],
+   "status": "completed"
+  },
+  {
+   "task": "w5f95hm9u",
+   "run": "wf_5a03c5af-d08",
+   "platform": "meta",
+   "batches": [
+    "in_meta_2.json",
+    "in_meta_6.json",
+    "in_meta_10.json",
+    "in_meta_14.json"
+   ],
+   "status": "completed"
+  },
+  {
+   "task": "wommr25xq",
+   "run": "wf_9bd5cc46-e1f",
+   "platform": "meta",
+   "batches": [
+    "in_meta_3.json",
+    "in_meta_7.json",
+    "in_meta_11.json",
+    "in_meta_15.json"
+   ],
+   "status": "completed"
+  },
+  {
+   "task": "w90dpfo77",
+   "run": "wf_f9a27cf6-819",
+   "platform": "meta",
+   "batches": [
+    "in_meta_4.json",
+    "in_meta_8.json",
+    "in_meta_12.json",
+    "in_meta_16.json"
+   ],
+   "status": "completed; in_meta_12 and in_meta_16 not run (false sign-in match on the word \"authorized\" in a Meta permission error) - re-run as ws9vq0prq"
+  },
+  {
+   "task": "w11o1w6kl",
+   "run": "wf_96598b86-20e",
+   "platform": "tiktok",
+   "batches": [
+    "in_tiktok_1.json",
+    "in_tiktok_4.json",
+    "in_tiktok_7.json",
+    "in_tiktok_10.json"
+   ],
+   "status": "completed"
+  },
+  {
+   "task": "wlg74aemb",
+   "run": "wf_a77bf62d-a6a",
+   "platform": "tiktok",
+   "batches": [
+    "in_tiktok_2.json",
+    "in_tiktok_5.json",
+    "in_tiktok_8.json"
+   ],
+   "status": "completed"
+  },
+  {
+   "task": "wdyqna3o2",
+   "run": "wf_e62cae8e-5aa",
+   "platform": "tiktok",
+   "batches": [
+    "in_tiktok_3.json",
+    "in_tiktok_6.json",
+    "in_tiktok_9.json"
+   ],
+   "status": "completed"
+  },
+  {
+   "task": "wbfyh5qna",
+   "run": "wf_52b9c4cc-a51",
+   "platform": "snapchat",
+   "batches": [
+    "in_snapchat_1.json"
+   ],
+   "status": "completed"
+  },
+  {
+   "task": "wq1pbihre",
+   "run": "wf_c5081068-a7f",
+   "platform": "snapchat",
+   "batches": [
+    "in_snapchat_2.json"
+   ],
+   "status": "completed"
+  },
+  {
+   "task": "wp4f7r53u",
+   "run": "wf_ca2b546e-1d0",
+   "platform": "x",
+   "batches": [
+    "in_x_1.json"
+   ],
+   "status": "completed"
+  },
+  {
+   "task": "wldclwrzs",
+   "run": "wf_b0959460-29d",
+   "platform": "x",
+   "batches": [
+    "in_x_2.json"
+   ],
+   "status": "completed"
+  },
+  {
+   "task": "ws9vq0prq",
+   "run": "wf_59848314-ad3",
+   "platform": "meta",
+   "batches": [
+    "in_meta_12.json",
+    "in_meta_16.json"
+   ],
+   "note": "re-run of the two batches skipped by the false sign-in match; lane stop regex fixed to ^AUTH:|needs you to sign in|sign in again|re-authenticat",
+   "status": "completed"
+  }
+ ],
+ "reread": [
+  {
+   "task": "wfk10mmla",
+   "run": "wf_90e643f0-ddd",
+   "job": "google 8324286739"
+  },
+  {
+   "task": "wblz1jdim",
+   "run": "wf_a4323da7-858",
+   "job": "x 18ce55o46uh + 18ce55o46ul (after both X apply7 runs completed)"
+  },
+  {
+   "task": "wb22y4ya2",
+   "run": "wf_b2025ac9-ce8",
+   "job": "snapchat b736921f + ebe8d66e (after both Snapchat apply7 runs completed)"
+  },
+  {
+   "task": "wa9qr19vb",
+   "run": "wf_cb334695-ecb",
+   "job": "meta 1198625455580757 + 2194833637927644 (after every Meta apply7 run completed)"
+  }
+ ],
+ "orphan_meta_creatives": [
+  "28547059748288778 (11/12-Oct, t.co ad, not attached on purpose)",
+  "1140805768470919 (12-Oct)",
+  "27884071617934891 (apply6 stop, ad 120249469841600789; lacks parent image_hash)",
+  "1440906904902303 (apply6 stop, ad 120250238503900058)",
+  "1090353203851507 (apply7 in_meta_6, ad 120253320121970058; created, attach not sent after a safety-check denial)",
+  "unknown id, apply7 in_meta_4 attempt 1 for ad 120251890634670058 (name \"Diriyah Company 2026-07-16-1ced... 2026-10-12-<hash>\")",
+  "possible, apply7 in_meta_2 attempt 1 for ad 120247265321210789 (503 transport error; not found in the 200 creatives the gateway lists)"
+ ]
+}

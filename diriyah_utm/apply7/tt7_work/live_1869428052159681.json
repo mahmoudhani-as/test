@@ -1,0 +1,17 @@
+[
+ {
+  "order": 15,
+  "input_equals_payload": true,
+  "is_error": false,
+  "other_args": {
+   "action": "tiktok_smart_plus_ad_update",
+   "dry_run": false
+  },
+  "success": true,
+  "error": null,
+  "code": 0,
+  "message": "OK",
+  "request_id": "2026101306365160B44FCC93BCBE08038B",
+  "data": "{\"ad_configuration\": {\"call_to_action_id\": \"7657177428950813703\", \"catalog_creative_info\": {}, \"dark_post_status\": \"ON\", \"deeplink_utm_params\": [], \"product_info\": {}, \"tracking_info\": {\"app_tracking_info_list\": [], \"brand_safety_postbid_partner\": \"UNSET\", \"tracking_pixel_id\": \"0\"}, \"utm_params\": [{\"key\": \"utm_source\", \"value\": \"tiktok\"}, {\"key\": \"utm_medium\", \"value\": \"paid-social\"}, {\"key\": \"utm_campaign\", \"value\": \"visitor-diriyah_jul26_awr\"}, {\"key\": \"utm_term\", \"value\": \"ar\"}, {\"key\": \"utm_content\", \"value\": \"video1_video_ar\"}]}, \"ad_name\": \"Bab Samhan x Qiddiya_Video1_45s_AR\", \"ad_text_l"
+ }
+]

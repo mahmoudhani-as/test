@@ -1,0 +1,107 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_update",
+    "method": "POST",
+    "path": "/v1.3/ad/update/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "20261013062309B854A5CC4CE85196F170",
+      "data": {
+        "ad_ids": [
+          "1818871484265474"
+        ],
+        "need_audit": false,
+        "creatives": [
+          {
+            "click_tracking_url": null,
+            "profile_image_url": "https://p21-ad-sg.ibyteimg.com/obj/ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "viewability_postbid_partner": "UNSET",
+            "optimization_event": null,
+            "avatar_icon_web_uri": "ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+            "card_id": null,
+            "display_name": "Visit Diriyah",
+            "creative_authorized": false,
+            "vast_moat_enabled": false,
+            "campaign_name": "BujairiTerrace_Winter2024Restaurants_UF_AWR_OMN_ENAR_TikTok",
+            "campaign_automation_type": "MANUAL",
+            "operation_status": "ENABLE",
+            "app_name": "",
+            "call_to_action_id": null,
+            "ad_text": "Treat yourself to our finest beverages at Bujairi Terrace. Book now!",
+            "landing_page_urls": null,
+            "deeplink": "",
+            "identity_id": "7350277519361425409",
+            "tracking_pixel_id": 7347671240183693000,
+            "call_to_action": "LEARN_MORE",
+            "carousel_image_labels": null,
+            "adgroup_id": "1818871482899506",
+            "deeplink_type": "NORMAL",
+            "modify_time": "2026-10-12 22:23:09",
+            "impression_tracking_url": null,
+            "video_id": "v10033g50000cth6lfvog65vn8648rng",
+            "create_time": "2024-12-19 12:23:43",
+            "playable_url": "",
+            "image_ids": [
+              "tos-alisg-p-0051c001-sg/oU6RxwMfIXArQeFieEQAg1MHGea282EEdDqrAu"
+            ],
+            "identity_type": "CUSTOMIZED_USER",
+            "page_id": null,
+            "adgroup_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_UF_Oman_Prospecting_EN_Awareness_TIKTOK",
+            "advertiser_id": "7338057963233443842",
+            "ad_texts": null,
+            "ad_id": "1818871484265474",
+            "music_id": null,
+            "brand_safety_postbid_partner": "UNSET",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "bujairiterracewinter_dec24_awr"
+              },
+              {
+                "key": "utm_term",
+                "value": "bujairiterracewinter_en"
+              },
+              {
+                "key": "utm_content",
+                "value": "juicevideo12s_video_en"
+              }
+            ],
+            "aigc_disclosure_type": "NOT_DECLARED",
+            "creative_type": null,
+            "viewability_vast_url": null,
+            "is_aco": false,
+            "campaign_id": "1818871482899490",
+            "is_new_structure": true,
+            "brand_safety_vast_url": null,
+            "ad_format": "SINGLE_VIDEO",
+            "landing_page_url": "https://www.diriyah.sa/en/dine?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bujairiterracewinter_dec24_awr&utm_term=bujairiterracewinter_en&utm_content=juicevideo12s_video_en",
+            "ad_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_UF_Oman_Prospecting_EN_Awareness_TIKTOK_Juice Video 12s - EN"
+          }
+        ]
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "20261013062309B854A5CC4CE85196F170",
+      "waitedMs": 1334,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "b372f563-a300-4fbc-b2c8-5db20678fb27",
+    "latencyMs": 2883
+  }
+}

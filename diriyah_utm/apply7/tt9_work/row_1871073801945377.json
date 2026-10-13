@@ -1,0 +1,19 @@
+{
+ "platform": "tiktok",
+ "account_id": "7338057963233443842",
+ "unit_type": "ad",
+ "unit": "1871073801945377",
+ "ad_ids": [
+  "1871073801945377"
+ ],
+ "ad_names": [
+  "Bab Samhan x Qiddiya_StaticKV2_EN"
+ ],
+ "slot": "smart_plus_ad.landing_page_url_list[0].landing_page_url",
+ "before": "https://www.marriott.com/offers/theme-park-experience-off-227242/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah?utm_source=tiktok&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan_tactical_visitor-diriyah_June2026_reach-awareness_tiktok_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=KV1",
+ "after_expected": "https://www.marriott.com/offers/theme-park-experience-off-227242/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah?utm_source=tiktok&utm_medium=paid-social&utm_campaign=visitor-diriyah_cond&utm_term=en&utm_content=kv2_display_en",
+ "after_live": "https://www.marriott.com/offers/theme-park-experience-off-227242/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah?utm_source=tiktok&utm_medium=paid-social&utm_campaign=visitor-diriyah_cond&utm_term=en&utm_content=kv2_display_en",
+ "result": "Fixed",
+ "new_entity_ids": "",
+ "detail": "Upgraded Smart+ ad (creative_list: CAROUSEL_ADS BC_AUTH_TT identity e4770252-b97f-5a97-873d-46a13d7ef867, no tiktok_item_id; ad_configuration keys ['call_to_action_id', 'dark_post_status', 'product_info_enabled', 'tracking_info']). Pre-read smart_plus/ad/get req 2026101306353660B44FCC93BCBE07DDDB: URL == now (no utm_params; ENABLE / AD_STATUS_CAMPAIGN_DISABLE; modify_time 2026-07-18 17:29:36). smart_plus/ad/update payload: landing_page_url_list as read with only [0].landing_page_url = new, ad_configuration as read (the ad has no utm_params; none added); creative_list, ad_text_list, ad_name and status NOT sent. dry_run: call input == built payload (True), preview body == payload (True), warnings []. live attempt 1: input == dry-run payload (True), code 0 OK req 2026101306364348F289A88AFB989FD65D. Re-read smart_plus/ad/get req 20261013063701551C243328AEF3FFC199: landing_page_url_list[0].landing_page_url == new byte for byte; no utm_params (unchanged: none); creative_list tiktok_item_id before [None] / after [None]; other fields changed: none; ENABLE / AD_STATUS_CAMPAIGN_DISABLE; modify_time 2026-07-18 17:29:36 -> 2026-10-12 22:36:44."
+}

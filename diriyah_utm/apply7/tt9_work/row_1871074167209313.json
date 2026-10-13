@@ -1,0 +1,19 @@
+{
+ "platform": "tiktok",
+ "account_id": "7338057963233443842",
+ "unit_type": "ad",
+ "unit": "1871074167209313",
+ "ad_ids": [
+  "1871074167209313"
+ ],
+ "ad_names": [
+  "Bab Samhan x Qiddiya_StaticKV1_AR"
+ ],
+ "slot": "smart_plus_ad.landing_page_url_list[0].landing_page_url",
+ "before": "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=tiktok&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan_tactical_visitor-diriyah_June2026_reach-awareness_tiktok_ar&utm_term=adset-id-ee00c8_test_adset_name_ar_all_mf_prospecting&utm_content=KV1",
+ "after_expected": "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=tiktok&utm_medium=paid-social&utm_campaign=visitor-diriyah_jul26_cond&utm_term=ar&utm_content=kv1_display_ar",
+ "after_live": "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=tiktok&utm_medium=paid-social&utm_campaign=visitor-diriyah_jul26_cond&utm_term=ar&utm_content=kv1_display_ar",
+ "result": "Fixed",
+ "new_entity_ids": "",
+ "detail": "Upgraded Smart+ ad (creative_list: CAROUSEL_ADS BC_AUTH_TT identity e4770252-b97f-5a97-873d-46a13d7ef867, no tiktok_item_id; ad_configuration keys ['call_to_action_id', 'creative_auto_enhancement_strategy_list', 'dark_post_status', 'product_info', 'product_info_enabled', 'tracking_info']). Pre-read smart_plus/ad/get req 20261013063701551C243328AEF3FFC199: URL == now (no utm_params; DISABLE / AD_STATUS_CAMPAIGN_DISABLE; modify_time 2026-08-17 17:02:00). smart_plus/ad/update payload: landing_page_url_list as read with only [0].landing_page_url = new, ad_configuration as read (the ad has no utm_params; none added); creative_list, ad_text_list, ad_name and status NOT sent. dry_run: call input == built payload (True), preview body == payload (True), warnings []. live attempt 1: input == dry-run payload (True), error {\"code\": \"VALIDATION_ERROR\", \"message\": \"Internal service error.\", \"details\": {\"serverCode\": \"TIKTOK_API_ERROR\", \"upstream_status\": 400, \"upstream_details\": {\"action\": \"tiktok_smart_plus_ad_update\", \"tiktok\": {\"code\": 51002, \"message\": \"Internal service error.\", \"request_id\": \"202610130638133F1593C61D68EAAF605C\"}}}}; live attempt 2: input == dry-run payload (True), code 0 OK req 20261013064005D041C4FD11D093C12C0D. Re-read smart_plus/ad/get req 20261013064023CE727609687225B83C63: landing_page_url_list[0].landing_page_url == new byte for byte; no utm_params (unchanged: none); creative_list tiktok_item_id before [None] / after [None]; other fields changed: none; DISABLE / AD_STATUS_CAMPAIGN_DISABLE; modify_time 2026-08-17 17:02:00 -> 2026-10-12 22:40:06. Attempt 1 failed upstream (TikTok 51002 'Internal service error.', req 202610130638133F1593C61D68EAAF605C); re-read req 20261013063833DF85A532B1D7B88024F5 after it: URL still == now and every field identical to the pre-read except modify_time (2026-08-17 17:02:00 -> 2026-10-12 22:38:14, bumped by TikTok although nothing changed); the same payload was dry-run again (input and preview == payload) before attempt 2 (last allowed attempt), which succeeded."
+}

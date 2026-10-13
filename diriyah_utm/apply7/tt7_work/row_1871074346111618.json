@@ -1,0 +1,19 @@
+{
+ "platform": "tiktok",
+ "account_id": "7338057963233443842",
+ "unit_type": "ad",
+ "unit": "1871074346111618",
+ "ad_ids": [
+  "1871074346111618"
+ ],
+ "ad_names": [
+  "Bab Samhan x Qiddiya_StaticKV3_AR"
+ ],
+ "slot": "smart_plus_ad.landing_page_url_list[0].landing_page_url",
+ "before": "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=tiktok&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan_tactical_visitor-diriyah_June2026_reach-awareness_tiktok_ar&utm_term=adset-id-ee00c8_test_adset_name_ar_all_mf_prospecting&utm_content=KV1",
+ "after_expected": "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=tiktok&utm_medium=paid-social&utm_campaign=visitor-diriyah_jul26_cond&utm_term=ar&utm_content=kv3_display_ar",
+ "after_live": "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=tiktok&utm_medium=paid-social&utm_campaign=visitor-diriyah_jul26_cond&utm_term=ar&utm_content=kv3_display_ar",
+ "result": "Fixed",
+ "new_entity_ids": "",
+ "detail": "Upgraded Smart+ ad, 1 material(s): material 1871074534927505 CAROUSEL_ADS BC_AUTH_TT identity e4770252-b97f-5a97-873d-46a13d7ef867 / BC 6807778858780065797 no tiktok_item_id 1 image(s). Pre-read smart_plus/ad/get req 20261013063214A6AEEB7F20D6087CCA98: landing_page_url_list[0] cur == now (byte-identical); ad_configuration.utm_params absent; tracking_pixel_id \"0\"; call_to_action_id \"7663921243359382536\"; operation_status DISABLE, secondary_status AD_STATUS_CAMPAIGN_DISABLE, modify_time 2026-08-17 17:02:03. Dry run: call input == built payload True, preview body == payload True, preview vs live read differs only in the URL (+utm_params) True (smart_plus_ad_id + landing_page_url_list with only [0].landing_page_url = new + ad_configuration as read (call_to_action_id, dark_post_status, product_info_enabled, tracking_info) with utm_params left as read (none); creative_list / ad_text_list / ad_name / status not sent). Live smart_plus/ad/update: attempt 1: code 0 OK req 20261013063244E5C3A33A4CFE3BB8402B. Read-back smart_plus/ad/get req 2026101306331895033A7E77337EEC5B21: landing_page_url_list[0] == new byte for byte; utm_params 0 keys matching new, no utm_id; other fields (ad_configuration, creative_list, ad_text_list, ad_name, other URL entries, adgroup, operation_status) unchanged: True; post ids before [None] after [None]; operation_status DISABLE -> DISABLE, secondary_status AD_STATUS_CAMPAIGN_DISABLE -> AD_STATUS_CAMPAIGN_DISABLE; modify_time 2026-08-17 17:02:03 -> 2026-10-12 22:32:45. The update response listed empty defaults (utm_params [], catalog_creative_info {}, product_info {}, deeplink_utm_params []) that the read-back does not show; no post involved (carousel, no tiktok_item_id)."
+}

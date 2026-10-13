@@ -1,0 +1,644 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_get",
+    "method": "GET",
+    "path": "/v1.3/ad/get/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "202610130624112E929BF4CFEED299EA8D",
+      "data": {
+        "list": [
+          {
+            "ad_id": "1859905652203922",
+            "landing_page_url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=tiktok&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_mar26_cond&utm_term=ar&utm_content=display_ar",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "visitor-diriyah-coe_mar26_cond",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "ar",
+                "key": "utm_term"
+              },
+              {
+                "value": "display_ar",
+                "key": "utm_content"
+              }
+            ],
+            "modify_time": "2026-10-12 22:23:34",
+            "identity_type": "BC_AUTH_TT",
+            "operation_status": "ENABLE",
+            "ad_text": "احتفلوا بأجواء العيد بنكهات مميزة وإطلالات جميلة في مطل البجيري."
+          },
+          {
+            "ad_id": "1859903519347842",
+            "landing_page_url": "https://www.diriyah.sa/en?utm_source=tiktok&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_mar26_cond&utm_term=en&utm_content=display_en",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "visitor-diriyah-coe_mar26_cond",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "en",
+                "key": "utm_term"
+              },
+              {
+                "value": "display_en",
+                "key": "utm_content"
+              }
+            ],
+            "modify_time": "2026-10-12 22:23:39",
+            "identity_type": "BC_AUTH_TT",
+            "operation_status": "ENABLE",
+            "ad_text": "Step into the spirit of Eid at Diriyah. Moments of culture, connection, and celebration await."
+          },
+          {
+            "ad_id": "1814445683228689",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cityofearth-2024-oct-uf-reach-awareness&utm_term=cityofearth-ar-all-mf&utm_content=video",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cityofearth-2024-oct-uf-reach-awareness",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "video",
+                "key": "utm_content"
+              }
+            ],
+            "modify_time": "2026-10-12 11:50:33",
+            "identity_type": "CUSTOMIZED_USER",
+            "operation_status": "ENABLE",
+            "ad_text": "للعالم مستقبل واحد..وللدرعية مستقبل تاريخي"
+          },
+          {
+            "ad_id": "1814445680372753",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cityofearth_oct24_awr&utm_term=cityofearth_en-ar&utm_content=video_ar",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cityofearth_oct24_awr",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "cityofearth_en-ar",
+                "key": "utm_term"
+              },
+              {
+                "value": "video_ar",
+                "key": "utm_content"
+              }
+            ],
+            "modify_time": "2026-10-12 22:17:34",
+            "identity_type": "CUSTOMIZED_USER",
+            "operation_status": "ENABLE",
+            "ad_text": "للعالم مستقبل واحد..وللدرعية مستقبل تاريخي"
+          },
+          {
+            "ad_id": "1814445680366609",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cityofearth_oct24_awr&utm_term=cityofearth_en-ar&utm_content=video_ar",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cityofearth_oct24_awr",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "cityofearth_en-ar",
+                "key": "utm_term"
+              },
+              {
+                "value": "video_ar",
+                "key": "utm_content"
+              }
+            ],
+            "modify_time": "2026-10-12 22:17:46",
+            "identity_type": "CUSTOMIZED_USER",
+            "operation_status": "ENABLE",
+            "ad_text": "للعالم مستقبل واحد..وللدرعية مستقبل تاريخي"
+          },
+          {
+            "ad_id": "1814418146114561",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cityofearth_oct24_awr&utm_term=cityofearth_en-ar&utm_content=video_ar",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cityofearth_oct24_awr",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "cityofearth_en-ar",
+                "key": "utm_term"
+              },
+              {
+                "value": "video_ar",
+                "key": "utm_content"
+              }
+            ],
+            "modify_time": "2026-10-12 22:15:31",
+            "identity_type": "CUSTOMIZED_USER",
+            "operation_status": "ENABLE",
+            "ad_text": "للعالم مستقبل واحد..وللدرعية مستقبل تاريخي"
+          },
+          {
+            "ad_id": "1814418146108417",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cityofearth_oct24_awr&utm_term=cityofearth_en-ar&utm_content=video_ar",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cityofearth_oct24_awr",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "cityofearth_en-ar",
+                "key": "utm_term"
+              },
+              {
+                "value": "video_ar",
+                "key": "utm_content"
+              }
+            ],
+            "modify_time": "2026-10-12 22:18:54",
+            "identity_type": "CUSTOMIZED_USER",
+            "operation_status": "ENABLE",
+            "ad_text": "للعالم مستقبل واحد..وللدرعية مستقبل تاريخي"
+          },
+          {
+            "ad_id": "1814418146102273",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cityofearth_oct24_awr&utm_term=cityofearth_en-ar&utm_content=video_ar",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cityofearth_oct24_awr",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "cityofearth_en-ar",
+                "key": "utm_term"
+              },
+              {
+                "value": "video_ar",
+                "key": "utm_content"
+              }
+            ],
+            "modify_time": "2026-10-12 22:19:02",
+            "identity_type": "CUSTOMIZED_USER",
+            "operation_status": "ENABLE",
+            "ad_text": "للعالم مستقبل واحد..وللدرعية مستقبل تاريخي"
+          },
+          {
+            "ad_id": "1814418145780737",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cityofearth_oct24_awr&utm_term=cityofearth_en-ar&utm_content=video_ar",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cityofearth_oct24_awr",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "cityofearth_en-ar",
+                "key": "utm_term"
+              },
+              {
+                "value": "video_ar",
+                "key": "utm_content"
+              }
+            ],
+            "modify_time": "2026-10-12 14:51:42",
+            "identity_type": "CUSTOMIZED_USER",
+            "operation_status": "ENABLE",
+            "ad_text": "للعالم مستقبل واحد..وللدرعية مستقبل تاريخي"
+          },
+          {
+            "ad_id": "1814418145775681",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cityofearth_oct24_awr&utm_term=cityofearth_en-ar&utm_content=video_ar",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cityofearth_oct24_awr",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "cityofearth_en-ar",
+                "key": "utm_term"
+              },
+              {
+                "value": "video_ar",
+                "key": "utm_content"
+              }
+            ],
+            "modify_time": "2026-10-12 22:19:08",
+            "identity_type": "CUSTOMIZED_USER",
+            "operation_status": "ENABLE",
+            "ad_text": "للعالم مستقبل واحد..وللدرعية مستقبل تاريخي"
+          },
+          {
+            "ad_id": "1814418145769473",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cityofearth_oct24_awr&utm_term=cityofearth_en-ar&utm_content=video_ar",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cityofearth_oct24_awr",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "cityofearth_en-ar",
+                "key": "utm_term"
+              },
+              {
+                "value": "video_ar",
+                "key": "utm_content"
+              }
+            ],
+            "modify_time": "2026-10-12 22:19:14",
+            "identity_type": "CUSTOMIZED_USER",
+            "operation_status": "ENABLE",
+            "ad_text": "للعالم مستقبل واحد..وللدرعية مستقبل تاريخي"
+          },
+          {
+            "ad_id": "1814418145764353",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cityofearth_oct24_awr&utm_term=cityofearth_en-ar&utm_content=video_ar",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cityofearth_oct24_awr",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "cityofearth_en-ar",
+                "key": "utm_term"
+              },
+              {
+                "value": "video_ar",
+                "key": "utm_content"
+              }
+            ],
+            "modify_time": "2026-10-12 22:20:22",
+            "identity_type": "CUSTOMIZED_USER",
+            "operation_status": "ENABLE",
+            "ad_text": "للعالم مستقبل واحد..وللدرعية مستقبل تاريخي"
+          },
+          {
+            "ad_id": "1814418145294337",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cityofearth_oct24_awr&utm_term=cityofearth_en-ar&utm_content=video_ar",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cityofearth_oct24_awr",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "cityofearth_en-ar",
+                "key": "utm_term"
+              },
+              {
+                "value": "video_ar",
+                "key": "utm_content"
+              }
+            ],
+            "modify_time": "2026-10-12 22:20:27",
+            "identity_type": "CUSTOMIZED_USER",
+            "operation_status": "ENABLE",
+            "ad_text": "للعالم مستقبل واحد..وللدرعية مستقبل تاريخي"
+          },
+          {
+            "ad_id": "1814418145289217",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cityofearth_oct24_awr&utm_term=cityofearth_en-ar&utm_content=video_ar",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cityofearth_oct24_awr",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "cityofearth_en-ar",
+                "key": "utm_term"
+              },
+              {
+                "value": "video_ar",
+                "key": "utm_content"
+              }
+            ],
+            "modify_time": "2026-10-12 22:20:35",
+            "identity_type": "CUSTOMIZED_USER",
+            "operation_status": "ENABLE",
+            "ad_text": "للعالم مستقبل واحد..وللدرعية مستقبل تاريخي"
+          },
+          {
+            "ad_id": "1814418145283073",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cityofearth_oct24_awr&utm_term=cityofearth_en-ar&utm_content=video_ar",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cityofearth_oct24_awr",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "cityofearth_en-ar",
+                "key": "utm_term"
+              },
+              {
+                "value": "video_ar",
+                "key": "utm_content"
+              }
+            ],
+            "modify_time": "2026-10-12 22:20:40",
+            "identity_type": "CUSTOMIZED_USER",
+            "operation_status": "ENABLE",
+            "ad_text": "للعالم مستقبل واحد..وللدرعية مستقبل تاريخي"
+          },
+          {
+            "ad_id": "1814418145277953",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cityofearth_oct24_awr&utm_term=cityofearth_en-ar&utm_content=video_ar",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cityofearth_oct24_awr",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "cityofearth_en-ar",
+                "key": "utm_term"
+              },
+              {
+                "value": "video_ar",
+                "key": "utm_content"
+              }
+            ],
+            "modify_time": "2026-10-12 22:21:49",
+            "identity_type": "CUSTOMIZED_USER",
+            "operation_status": "ENABLE",
+            "ad_text": "للعالم مستقبل واحد..وللدرعية مستقبل تاريخي"
+          },
+          {
+            "ad_id": "1814418145271809",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cityofearth_oct24_awr&utm_term=cityofearth_en-ar&utm_content=video_ar",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cityofearth_oct24_awr",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "cityofearth_en-ar",
+                "key": "utm_term"
+              },
+              {
+                "value": "video_ar",
+                "key": "utm_content"
+              }
+            ],
+            "modify_time": "2026-10-12 22:21:55",
+            "identity_type": "CUSTOMIZED_USER",
+            "operation_status": "ENABLE",
+            "ad_text": "للعالم مستقبل واحد..وللدرعية مستقبل تاريخي"
+          },
+          {
+            "ad_id": "1814418143542289",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cityofearth_oct24_awr&utm_term=cityofearth_en-ar&utm_content=video_ar",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cityofearth_oct24_awr",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "cityofearth_en-ar",
+                "key": "utm_term"
+              },
+              {
+                "value": "video_ar",
+                "key": "utm_content"
+              }
+            ],
+            "modify_time": "2026-10-12 22:22:01",
+            "identity_type": "CUSTOMIZED_USER",
+            "operation_status": "ENABLE",
+            "ad_text": "للعالم مستقبل واحد..وللدرعية مستقبل تاريخي"
+          },
+          {
+            "ad_id": "1814418143536193",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cityofearth_oct24_awr&utm_term=cityofearth_en-ar&utm_content=video_ar",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cityofearth_oct24_awr",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "cityofearth_en-ar",
+                "key": "utm_term"
+              },
+              {
+                "value": "video_ar",
+                "key": "utm_content"
+              }
+            ],
+            "modify_time": "2026-10-12 22:22:07",
+            "identity_type": "CUSTOMIZED_USER",
+            "operation_status": "ENABLE",
+            "ad_text": "للعالم مستقبل واحد..وللدرعية مستقبل تاريخي"
+          },
+          {
+            "ad_id": "1814418143531073",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cityofearth_oct24_awr&utm_term=cityofearth_en-ar&utm_content=video_ar",
+            "utm_params": [
+              {
+                "value": "tiktok",
+                "key": "utm_source"
+              },
+              {
+                "value": "paid-social",
+                "key": "utm_medium"
+              },
+              {
+                "value": "cityofearth_oct24_awr",
+                "key": "utm_campaign"
+              },
+              {
+                "value": "cityofearth_en-ar",
+                "key": "utm_term"
+              },
+              {
+                "value": "video_ar",
+                "key": "utm_content"
+              }
+            ],
+            "modify_time": "2026-10-12 22:23:28",
+            "identity_type": "CUSTOMIZED_USER",
+            "operation_status": "ENABLE",
+            "ad_text": "للعالم مستقبل واحد..وللدرعية مستقبل تاريخي"
+          }
+        ],
+        "page_info": {
+          "page": 1,
+          "page_size": 50,
+          "total_page": 1,
+          "total_number": 20
+        }
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "202610130624112E929BF4CFEED299EA8D",
+      "waitedMs": 1857,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false,
+      "mcp_result_projection": {
+        "fields": [
+          "ad_id",
+          "landing_page_url",
+          "utm_params",
+          "modify_time",
+          "identity_type",
+          "tiktok_item_id",
+          "operation_status",
+          "ad_text"
+        ]
+      }
+    }
+  },
+  "meta": {
+    "requestId": "c7382a9f-4a67-439f-861a-986f89ad9aac",
+    "latencyMs": 3409
+  }
+}

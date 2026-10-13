@@ -1,0 +1,718 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_get",
+    "method": "GET",
+    "path": "/v1.3/ad/get/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "2026101306581418882A491841653C52F8",
+      "data": {
+        "list": [
+          {
+            "ad_name": "Image carousel 1_company_general_2026_sep_sc-snd-kv1_adset-id-0df8a722_display_ar",
+            "adgroup_name": "company_general_2026_sep_visit-diriyah_adset-id-12ad6e5e_ar_all_mf_prospecting_snd-uf",
+            "modify_time": "2026-09-20 14:48:52",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_DONE",
+            "campaign_automation_type": "UPGRADED_SMART_PLUS_CREATIVE",
+            "create_time": "2026-09-20 14:48:52",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_UF_AWR_KSA_ENAR_TikTok",
+            "ad_id": "1876862669874673"
+          },
+          {
+            "ad_name": "Image carousel 1_company_general_2026_sep_sc-snd-kv1_adset-id-0df8a722_display_ar",
+            "adgroup_name": "company_general_2026_sep_visit-diriyah_adset-id-12ad6e5e_ar_all_mf_prospecting_snd-uf",
+            "modify_time": "2026-09-20 14:48:52",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_DELETE",
+            "campaign_automation_type": "UPGRADED_SMART_PLUS_CREATIVE",
+            "create_time": "2026-09-20 14:14:33",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_UF_AWR_KSA_ENAR_TikTok",
+            "ad_id": "1876860515854721"
+          },
+          {
+            "ad_name": "Image carousel 1_company_general_2026_sep_sc-snd-kv1_adset-id-0df8a722_display_ar",
+            "adgroup_name": "company_general_2026_sep_visit-diriyah_adset-id-12ad6e5e_ar_all_mf_prospecting_snd-uf",
+            "modify_time": "2026-09-20 14:14:33",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_DELETE",
+            "campaign_automation_type": "UPGRADED_SMART_PLUS_CREATIVE",
+            "create_time": "2026-09-20 14:14:05",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_UF_AWR_KSA_ENAR_TikTok",
+            "ad_id": "1876860486964385"
+          },
+          {
+            "ad_name": "Image carousel 1_company_general_2026_sep_sc-snd-kv1_adset-id-0df8a722_display_ar",
+            "adgroup_name": "company_general_2026_sep_visit-diriyah_adset-id-12ad6e5e_ar_all_mf_prospecting_snd-uf",
+            "modify_time": "2026-09-20 14:14:05",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_DELETE",
+            "campaign_automation_type": "UPGRADED_SMART_PLUS_CREATIVE",
+            "create_time": "2026-09-20 13:30:56",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_UF_AWR_KSA_ENAR_TikTok",
+            "ad_id": "1876857771968594"
+          },
+          {
+            "ad_name": "company_general_2026_sep_sc-snd-kv1_adset-id-0df8a722_display_ar",
+            "adgroup_name": "company_general_2026_sep_visit-diriyah_adset-id-12ad6e5e_ar_all_mf_prospecting_snd-mf",
+            "modify_time": "2026-10-12 10:02:13",
+            "operation_status": "ENABLE",
+            "ad_format": "CAROUSEL_ADS",
+            "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_sep26_cond&utm_term=12ad6e5e_visit-diriyah_ar&utm_content=0df8a722_sc-snd-kv1_display_ar",
+            "secondary_status": "AD_STATUS_DONE",
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-09-20 13:30:40",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_id": "1876857755701361"
+          },
+          {
+            "ad_name": "national day_1080 x 1920 px-02_AouRS6Y8.jpg_Ad name2026-09-20 04:26:19",
+            "adgroup_name": "Ad group 20260920042555",
+            "modify_time": "2026-09-20 13:27:05",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_automation_type": "UPGRADED_SMART_PLUS_CREATIVE",
+            "create_time": "2026-09-20 13:27:05",
+            "campaign_name": "Reach20260920162547",
+            "ad_id": "1876857531403265"
+          },
+          {
+            "ad_name": "national day_1080 x 1920 px-02_AouRS6Y8.jpg_Ad name2026-09-20 03:41:10",
+            "adgroup_name": "Ad group 20260920034059",
+            "modify_time": "2026-09-20 13:16:38",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_automation_type": "UPGRADED_SMART_PLUS_CREATIVE",
+            "create_time": "2026-09-20 13:16:38",
+            "campaign_name": "Traffic20260920154057",
+            "ad_id": "1876856875343154"
+          },
+          {
+            "ad_name": "Family Dinner at Assouline VERTICAL AR_ShfunmK8.mp4_VisitDiriyah_Assouline_KV2_Video_AR_V2",
+            "adgroup_name": "VisitDiriyah_AssoulineSummerCampaign2026_UF_AWR_KSA_Prospect_AR",
+            "modify_time": "2026-09-12 17:23:12",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_automation_type": "UPGRADED_SMART_PLUS_CREATIVE",
+            "create_time": "2026-09-12 17:23:12",
+            "campaign_name": "VisitDiriyah_AssoulineSummerCampaign2026_UF_AWR_KSA_ENAR_TikTok",
+            "ad_id": "1876147612612498"
+          },
+          {
+            "ad_name": "Visit Diriyah_Intro_VideoKV_45s_AR",
+            "adgroup_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_Intro_AR",
+            "modify_time": "2026-10-12 12:19:20",
+            "operation_status": "ENABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_aug26_cond&utm_term=ar&utm_content=video_ar",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "4ae01e79_summer-campaign_aug26_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "video_ar"
+              }
+            ],
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-08-19 19:17:33",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_id": "1873980396894449"
+          },
+          {
+            "ad_name": "Visit Diriyah_Intro_VideoKV_30s_AR",
+            "adgroup_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_Intro_AR",
+            "modify_time": "2026-10-12 12:19:20",
+            "operation_status": "ENABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_aug26_cond&utm_term=ar&utm_content=video_ar",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "4ae01e79_summer-campaign_aug26_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "video_ar"
+              }
+            ],
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-08-19 19:17:33",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_id": "1873980236189841"
+          },
+          {
+            "ad_name": "Visit Diriyah_RetailVideo1_AR",
+            "adgroup_name": "VisitDiriyah_SummerCampaign2026_UF_AWR_KSA_Retail_AR",
+            "modify_time": "2026-10-12 11:43:48",
+            "operation_status": "ENABLE",
+            "ad_format": "SINGLE_VIDEO",
+            "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_aug26_cond&utm_term=ar&utm_content=video_ar",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "4ae01e79_summer-campaign_aug26_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "video_ar"
+              }
+            ],
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-08-19 19:13:51",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_id": "1873980045278530"
+          },
+          {
+            "ad_name": "Carousel_20260817_173737_Bab Samhan x Qiddiya_CR7_EN_V2",
+            "adgroup_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_Prospect_EN",
+            "modify_time": "2026-08-17 14:38:47",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_automation_type": "UPGRADED_SMART_PLUS_CREATIVE",
+            "create_time": "2026-08-17 14:38:47",
+            "campaign_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_id": "1873781747354834"
+          },
+          {
+            "ad_name": "Carousel_20260817_173541_Bab Samhan x Qiddiya_CR6_AR_V2",
+            "adgroup_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_Prospect_AR",
+            "modify_time": "2026-08-17 14:36:48",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_automation_type": "UPGRADED_SMART_PLUS_CREATIVE",
+            "create_time": "2026-08-17 14:36:48",
+            "campaign_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_id": "1873781621469457"
+          },
+          {
+            "ad_name": "Carousel_20260817_173200_Bab Samhan x Qiddiya_CR5_AR_V2",
+            "adgroup_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_Prospect_AR",
+            "modify_time": "2026-08-17 14:34:24",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_automation_type": "UPGRADED_SMART_PLUS_CREATIVE",
+            "create_time": "2026-08-17 14:34:24",
+            "campaign_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_id": "1873781468311105"
+          },
+          {
+            "ad_name": "3_UPxyJ1G3.jpg_Bab Samhan x Qiddiya_CR7_EN",
+            "adgroup_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_Prospect_EN",
+            "modify_time": "2026-08-16 17:38:54",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_automation_type": "UPGRADED_SMART_PLUS_CREATIVE",
+            "create_time": "2026-08-16 17:38:54",
+            "campaign_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_id": "1873702480326754"
+          },
+          {
+            "ad_name": "2_VsoQpjvW.jpg_Bab Samhan x Qiddiya_CR7_EN",
+            "adgroup_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_Prospect_EN",
+            "modify_time": "2026-08-16 17:38:54",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_automation_type": "UPGRADED_SMART_PLUS_CREATIVE",
+            "create_time": "2026-08-16 17:38:54",
+            "campaign_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_id": "1873702480325746"
+          },
+          {
+            "ad_name": "1_t0PjMHTW.jpg_Bab Samhan x Qiddiya_CR7_EN",
+            "adgroup_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_Prospect_EN",
+            "modify_time": "2026-08-16 17:38:54",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_automation_type": "UPGRADED_SMART_PLUS_CREATIVE",
+            "create_time": "2026-08-16 17:38:54",
+            "campaign_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_id": "1873702480325714"
+          },
+          {
+            "ad_name": "4_OzAtkHiv.jpg_Bab Samhan x Qiddiya_CR7_EN",
+            "adgroup_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_Prospect_EN",
+            "modify_time": "2026-08-16 17:38:54",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_automation_type": "UPGRADED_SMART_PLUS_CREATIVE",
+            "create_time": "2026-08-16 17:38:54",
+            "campaign_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_id": "1873702480324914"
+          },
+          {
+            "ad_name": "1_mL9FZ7HN.jpg_Bab Samhan x Qiddiya_CR5_AR",
+            "adgroup_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_Prospect_AR",
+            "modify_time": "2026-08-16 17:34:55",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_automation_type": "UPGRADED_SMART_PLUS_CREATIVE",
+            "create_time": "2026-08-16 17:34:55",
+            "campaign_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_id": "1873702229053522"
+          },
+          {
+            "ad_name": "3_HWyYOa7i.jpg_Bab Samhan x Qiddiya_CR5_AR",
+            "adgroup_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_Prospect_AR",
+            "modify_time": "2026-08-16 17:34:55",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_automation_type": "UPGRADED_SMART_PLUS_CREATIVE",
+            "create_time": "2026-08-16 17:34:55",
+            "campaign_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_id": "1873702229052514"
+          },
+          {
+            "ad_name": "2_jGQDFpqH.jpg_Bab Samhan x Qiddiya_CR5_AR",
+            "adgroup_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_Prospect_AR",
+            "modify_time": "2026-08-16 17:34:55",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_automation_type": "UPGRADED_SMART_PLUS_CREATIVE",
+            "create_time": "2026-08-16 17:34:55",
+            "campaign_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_id": "1873702229052482"
+          },
+          {
+            "ad_name": "1_pk1E3bHo.jpg_Bab Samhan x Qiddiya_CR6_AR",
+            "adgroup_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_Prospect_AR",
+            "modify_time": "2026-08-16 17:34:54",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_automation_type": "UPGRADED_SMART_PLUS_CREATIVE",
+            "create_time": "2026-08-16 17:34:54",
+            "campaign_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_id": "1873702228939986"
+          },
+          {
+            "ad_name": "3_C09g8rUW.jpg_Bab Samhan x Qiddiya_CR6_AR",
+            "adgroup_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_Prospect_AR",
+            "modify_time": "2026-08-16 17:34:54",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_automation_type": "UPGRADED_SMART_PLUS_CREATIVE",
+            "create_time": "2026-08-16 17:34:54",
+            "campaign_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_id": "1873702228938834"
+          },
+          {
+            "ad_name": "2_ftqYhCBI.jpg_Bab Samhan x Qiddiya_CR6_AR",
+            "adgroup_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_Prospect_AR",
+            "modify_time": "2026-08-16 17:34:54",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_automation_type": "UPGRADED_SMART_PLUS_CREATIVE",
+            "create_time": "2026-08-16 17:34:54",
+            "campaign_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_id": "1873702228938802"
+          },
+          {
+            "ad_name": "1080 × 1920 45s 01_bSwjCvVE.mov_Visit Diriyah_IntroVideo1_45s_AR",
+            "adgroup_name": "VisitDiriyah_SummerCampaign2026_UF_AWR_KSA_Intro_AR",
+            "modify_time": "2026-08-11 12:00:29",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE",
+            "campaign_automation_type": "UPGRADED_SMART_PLUS_CREATIVE",
+            "create_time": "2026-08-11 12:00:29",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_UF_AWR_KSA_ENAR_TikTok",
+            "ad_id": "1873228205959298"
+          },
+          {
+            "ad_name": "1080 × 1920 30s_ouTX09Pv.mov_Visit Diriyah_IntroVideo1_30s_AR",
+            "adgroup_name": "VisitDiriyah_SummerCampaign2026_UF_AWR_KSA_Intro_AR",
+            "modify_time": "2026-08-11 12:00:31",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE",
+            "campaign_automation_type": "UPGRADED_SMART_PLUS_CREATIVE",
+            "create_time": "2026-08-11 12:00:31",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_UF_AWR_KSA_ENAR_TikTok",
+            "ad_id": "1873228205705330"
+          },
+          {
+            "ad_name": "VERTICAL PREMIUM 08_Bujari Shopping_V1 (AR) (2)_wztrRyaU.mp4_Visit Diriyah_RetailVideo1_AR",
+            "adgroup_name": "VisitDiriyah_SummerCampaign2026_UF_AWR_KSA_Retail_AR",
+            "modify_time": "2026-08-11 11:32:59",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE",
+            "campaign_automation_type": "UPGRADED_SMART_PLUS_CREATIVE",
+            "create_time": "2026-08-11 11:32:59",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_UF_AWR_KSA_ENAR_TikTok",
+            "ad_id": "1873226473582770"
+          },
+          {
+            "ad_name": "VisitDiriyah_KV3_Summer_EN",
+            "adgroup_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_KV3_EN",
+            "modify_time": "2026-10-12 11:50:36",
+            "operation_status": "ENABLE",
+            "ad_format": "CAROUSEL_ADS",
+            "landing_page_url": "https://www.diriyah.sa/en?utm_source=tiktok&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_jul26_cond&utm_term=en&utm_content=kv3_display_en",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "4ae01e79_summer-campaign_jul26_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "en"
+              },
+              {
+                "key": "utm_content",
+                "value": "kv3_display_en"
+              }
+            ],
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-07-29 12:36:34",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_id": "1872052506408241"
+          },
+          {
+            "ad_name": "VisitDiriyah_KV3_Summer_AR",
+            "adgroup_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_KV3_AR",
+            "modify_time": "2026-10-12 11:55:39",
+            "operation_status": "ENABLE",
+            "ad_format": "CAROUSEL_ADS",
+            "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_jul26_cond&utm_term=ar&utm_content=kv3_display_ar",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "4ae01e79_summer-campaign_jul26_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "kv3_display_ar"
+              }
+            ],
+            "campaign_automation_type": "MANUAL",
+            "create_time": "2026-07-29 12:31:39",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_id": "1872052250122337"
+          },
+          {
+            "ad_name": "OVERALL HEADLINE EN_1080 x 1920 px_MjoTurdp.jpg_VisitDiriyah_KV3_Summer_EN",
+            "adgroup_name": "VisitDiriyah_SummerCampaign2026_UF_AWR_KSA_KV3_EN",
+            "modify_time": "2026-07-29 11:10:47",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE",
+            "campaign_automation_type": "UPGRADED_SMART_PLUS_CREATIVE",
+            "create_time": "2026-07-29 11:10:47",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_UF_AWR_KSA_ENAR_TikTok",
+            "ad_id": "1872047318228225"
+          },
+          {
+            "ad_name": "OVERALL HEADLINE02_1080 x 1920 px_Yah6HeQ2.jpg_VisitDiriyah_KV3_Summer_AR",
+            "adgroup_name": "VisitDiriyah_SummerCampaign2026_UF_AWR_KSA_KV3_AR",
+            "modify_time": "2026-07-29 11:09:38",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE",
+            "campaign_automation_type": "UPGRADED_SMART_PLUS_CREATIVE",
+            "create_time": "2026-07-29 11:09:38",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_UF_AWR_KSA_ENAR_TikTok",
+            "ad_id": "1872047246061810"
+          },
+          {
+            "ad_name": "طولي فاينل_rs1pJKuw.mp4_Bab Samhan x Qiddiya_Video1_45s_AR",
+            "adgroup_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_Prospect_AR",
+            "modify_time": "2026-07-26 06:26:10",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_automation_type": "UPGRADED_SMART_PLUS_CREATIVE",
+            "create_time": "2026-07-26 06:26:10",
+            "campaign_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_id": "1871757616129394"
+          },
+          {
+            "ad_name": "1080x1920 Reels EN_3XPrwuHZ.jpg_VisitDiriyah_KV3_Summer_EN",
+            "adgroup_name": "VisitDiriyah_SummerCampaign2026_UF_AWR_KSA_KV3_EN",
+            "modify_time": "2026-07-29 11:10:47",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_DELETE",
+            "campaign_automation_type": "UPGRADED_SMART_PLUS_CREATIVE",
+            "create_time": "2026-07-22 14:34:51",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_UF_AWR_KSA_ENAR_TikTok",
+            "ad_id": "1871425976502417"
+          },
+          {
+            "ad_name": "1080x1920 Reels AR_16iTAdeB.jpg_VisitDiriyah_KV3_Summer_AR",
+            "adgroup_name": "VisitDiriyah_SummerCampaign2026_UF_AWR_KSA_KV3_AR",
+            "modify_time": "2026-07-29 11:09:38",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_DELETE",
+            "campaign_automation_type": "UPGRADED_SMART_PLUS_CREATIVE",
+            "create_time": "2026-07-22 14:31:07",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_UF_AWR_KSA_ENAR_TikTok",
+            "ad_id": "1871425743363106"
+          },
+          {
+            "ad_name": "طولي فاينل_rs1pJKuw.mp4_Bab Samhan x Qiddiya_Video1_45s_AR",
+            "adgroup_name": "BabSamhanXQiddiya_2026_UF_AWR_KSA_Prospect_AR",
+            "modify_time": "2026-07-21 17:35:11",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_automation_type": "UPGRADED_SMART_PLUS_CREATIVE",
+            "create_time": "2026-07-21 17:35:11",
+            "campaign_name": "BabSamhanXQiddiya_2026_UF_AWR_KSA_ENAR_TikTok",
+            "ad_id": "1871346727760913"
+          },
+          {
+            "ad_name": "30s V (witout flags)_EmC35I0x.mp4_VisitDiriyah_WC_Video30s_AR_1080x1920",
+            "adgroup_name": "VisitDiriyah_SummerCampaign2026_UF_AWR_KSA_WC_AR",
+            "modify_time": "2026-07-18 18:51:38",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE",
+            "campaign_automation_type": "UPGRADED_SMART_PLUS_CREATIVE",
+            "create_time": "2026-07-18 18:51:38",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_UF_AWR_KSA_ENAR_TikTok",
+            "ad_id": "1871079745077346"
+          },
+          {
+            "ad_name": "10s V (witout flags)_LmMQ2Vrq.mp4_VisitDiriyah_WC_Video10s_AR_1080x1920",
+            "adgroup_name": "VisitDiriyah_SummerCampaign2026_UF_AWR_KSA_WC_AR",
+            "modify_time": "2026-07-18 18:51:38",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE",
+            "campaign_automation_type": "UPGRADED_SMART_PLUS_CREATIVE",
+            "create_time": "2026-07-18 18:51:38",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_UF_AWR_KSA_ENAR_TikTok",
+            "ad_id": "1871079745077314"
+          },
+          {
+            "ad_name": "wc_1080 x 1920 px_mxtYO4i9.jpg_VisitDiriyah_WC_KV3_AR_1080x1920",
+            "adgroup_name": "VisitDiriyah_SummerCampaign2026_UF_AWR_KSA_WC_AR",
+            "modify_time": "2026-07-18 18:51:41",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE",
+            "campaign_automation_type": "UPGRADED_SMART_PLUS_CREATIVE",
+            "create_time": "2026-07-18 18:51:41",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_UF_AWR_KSA_ENAR_TikTok",
+            "ad_id": "1871079744577698"
+          },
+          {
+            "ad_name": "summer vid 10s v draft2_LZS2kYhO.mp4_Visit Diriyah_Intro_VideoKV_10s_AR",
+            "adgroup_name": "VisitDiriyah_SummerCampaign2026_UF_AWR_KSA_Intro_AR",
+            "modify_time": "2026-07-18 18:45:32",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE",
+            "campaign_automation_type": "UPGRADED_SMART_PLUS_CREATIVE",
+            "create_time": "2026-07-18 18:45:32",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_UF_AWR_KSA_ENAR_TikTok",
+            "ad_id": "1871079356873761"
+          },
+          {
+            "ad_name": "Summer adaptations AR_1080 x 1920 px copy 2_u0aOvZ9Q.jpg_VisitDiriyah_Assouline_KV1_Static_AR",
+            "adgroup_name": "VisitDiriyah_AssoulineSummerCampaign2026_UF_AWR_KSA_Prospect_AR",
+            "modify_time": "2026-07-18 18:39:16",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_automation_type": "UPGRADED_SMART_PLUS_CREATIVE",
+            "create_time": "2026-07-18 18:39:16",
+            "campaign_name": "VisitDiriyah_AssoulineSummerCampaign2026_UF_AWR_KSA_ENAR_TikTok",
+            "ad_id": "1871078959333569"
+          },
+          {
+            "ad_name": "Tik tok_Artboard 25-01_86T5VH4F.jpg_Bab Samhan x Qiddiya_StaticKV1_EN",
+            "adgroup_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_Prospect_EN",
+            "modify_time": "2026-07-18 17:35:22",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_automation_type": "UPGRADED_SMART_PLUS_CREATIVE",
+            "create_time": "2026-07-18 17:35:22",
+            "campaign_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_id": "1871074943568018"
+          },
+          {
+            "ad_name": "Tik tok_Artboard 25-04_6VyeY803.jpg_Bab Samhan x Qiddiya_StaticKV2_EN",
+            "adgroup_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_Prospect_EN",
+            "modify_time": "2026-07-18 17:35:21",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_automation_type": "UPGRADED_SMART_PLUS_CREATIVE",
+            "create_time": "2026-07-18 17:35:21",
+            "campaign_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_id": "1871074941403314"
+          },
+          {
+            "ad_name": "Tik tok_Artboard 25-02_mShvLITd.jpg_Bab Samhan x Qiddiya_StaticKV3_EN",
+            "adgroup_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_Prospect_EN",
+            "modify_time": "2026-07-18 17:35:19",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_automation_type": "UPGRADED_SMART_PLUS_CREATIVE",
+            "create_time": "2026-07-18 17:35:19",
+            "campaign_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_id": "1871074941235506"
+          },
+          {
+            "ad_name": "Tik tok_Artboard 25-03_gMUhJ8ZK.jpg_Bab Samhan x Qiddiya_StaticKV4_EN",
+            "adgroup_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_Prospect_EN",
+            "modify_time": "2026-07-18 17:35:19",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_automation_type": "UPGRADED_SMART_PLUS_CREATIVE",
+            "create_time": "2026-07-18 17:35:19",
+            "campaign_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_id": "1871074941235458"
+          },
+          {
+            "ad_name": "KV4 AR_y26jhWMB.png_Bab Samhan x Qiddiya_StaticKV4_AR",
+            "adgroup_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_Prospect_AR",
+            "modify_time": "2026-07-18 17:29:21",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_automation_type": "UPGRADED_SMART_PLUS_CREATIVE",
+            "create_time": "2026-07-18 17:29:21",
+            "campaign_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_id": "1871074568630450"
+          },
+          {
+            "ad_name": "KV1 AR_P5Vo4mlx.png_Bab Samhan x Qiddiya_StaticKV1_AR",
+            "adgroup_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_Prospect_AR",
+            "modify_time": "2026-07-18 17:28:52",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_automation_type": "UPGRADED_SMART_PLUS_CREATIVE",
+            "create_time": "2026-07-18 17:28:52",
+            "campaign_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_id": "1871074536592385"
+          },
+          {
+            "ad_name": "KV2 AR_XGdsUQk0.jpg_Bab Samhan x Qiddiya_StaticKV2_AR",
+            "adgroup_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_Prospect_AR",
+            "modify_time": "2026-07-18 17:28:51",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_automation_type": "UPGRADED_SMART_PLUS_CREATIVE",
+            "create_time": "2026-07-18 17:28:51",
+            "campaign_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_id": "1871074535380145"
+          },
+          {
+            "ad_name": "KV3 AR_GqIThXHY.png_Bab Samhan x Qiddiya_StaticKV3_AR",
+            "adgroup_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_Prospect_AR",
+            "modify_time": "2026-07-18 17:28:50",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_automation_type": "UPGRADED_SMART_PLUS_CREATIVE",
+            "create_time": "2026-07-18 17:28:50",
+            "campaign_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_id": "1871074535227522"
+          },
+          {
+            "ad_name": "KV4 AR_y26jhWMB.png_Bab Samhan x Qiddiya_StaticKV4_AR",
+            "adgroup_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_Prospect_AR",
+            "modify_time": "2026-07-18 17:29:21",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_DELETE",
+            "campaign_automation_type": "UPGRADED_SMART_PLUS_CREATIVE",
+            "create_time": "2026-07-18 17:28:50",
+            "campaign_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_id": "1871074535225554"
+          },
+          {
+            "ad_name": "Tik tok_Artboard 25-04_6VyeY803.jpg_Bab Samhan x Qiddiya_StaticKV2_EN",
+            "adgroup_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_Prospect_EN",
+            "modify_time": "2026-07-18 17:20:20",
+            "operation_status": "ENABLE",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE",
+            "campaign_automation_type": "UPGRADED_SMART_PLUS_CREATIVE",
+            "create_time": "2026-07-18 17:20:20",
+            "campaign_name": "BabSamhanXQiddiya_2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_id": "1871074000109938"
+          },
+          "[50 more items truncated]"
+        ],
+        "page_info": {
+          "page": 1,
+          "page_size": 100,
+          "total_page": 8,
+          "total_number": 792
+        }
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "2026101306581418882A491841653C52F8",
+      "waitedMs": 1527,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false,
+      "mcp_result_projection": {
+        "compact": true
+      }
+    }
+  },
+  "meta": {
+    "requestId": "b792154c-63cd-4efe-a7f9-f6b3caf1abe1",
+    "latencyMs": 3236,
+    "mcp_output_budget": {
+      "truncated": true,
+      "max_bytes": 65536,
+      "serialized_bytes_before_budget": 71340,
+      "guidance": "Repeat the call with result_fields and max_items to request a smaller result."
+    }
+  }
+}

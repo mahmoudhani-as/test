@@ -1,0 +1,76 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_update",
+    "dryRun": true,
+    "data": {
+      "request": {
+        "method": "POST",
+        "url": "https://business-api.tiktok.com/open_api/v1.3/ad/update/",
+        "path": "/v1.3/ad/update/",
+        "headers": {
+          "Access-Token": "[redacted]",
+          "Accept": "application/json",
+          "Content-Type": "application/json"
+        },
+        "query": {},
+        "bodyFormat": "json",
+        "body": {
+          "advertiser_id": "7338057963233443842",
+          "adgroup_id": "1818871486243857",
+          "creatives": [
+            {
+              "ad_format": "SINGLE_VIDEO",
+              "ad_id": "1818871489400866",
+              "ad_name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_UF_Oman_Prospecting_AR_Awareness_TIKTOK_Juice Video 12s - AR",
+              "ad_text": "احتفِ بالموسم معنا وتذوق ألذ المشروبات في مطل البجيري.احجز الآن!",
+              "aigc_disclosure_type": "NOT_DECLARED",
+              "avatar_icon_web_uri": "ad-site-i18n-sg/202403255d0d9c0ab5dbd10045069af4",
+              "call_to_action": "LEARN_MORE",
+              "creative_authorized": false,
+              "display_name": "Visit Diriyah",
+              "identity_id": "7350277519361425409",
+              "identity_type": "CUSTOMIZED_USER",
+              "image_ids": [
+                "tos-alisg-p-0051c001-sg/oIfGiRfADCCEwVApp1DkgOI3xEDVwabvNFfGV3"
+              ],
+              "landing_page_url": "https://www.diriyah.sa/ar/dine?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bujairiterracewinter_dec24_awr&utm_term=bujairiterracewinter_ar&utm_content=juicevideo12s_video_ar",
+              "tracking_pixel_id": "7347671240183693330",
+              "utm_params": [
+                {
+                  "key": "utm_source",
+                  "value": "tiktok"
+                },
+                {
+                  "key": "utm_medium",
+                  "value": "paid-social"
+                },
+                {
+                  "key": "utm_campaign",
+                  "value": "bujairiterracewinter_dec24_awr"
+                },
+                {
+                  "key": "utm_term",
+                  "value": "bujairiterracewinter_ar"
+                },
+                {
+                  "key": "utm_content",
+                  "value": "juicevideo12s_video_ar"
+                }
+              ],
+              "vast_moat_enabled": false,
+              "video_id": "v10033g50000cth6lfvog65kqesclifg"
+            }
+          ]
+        }
+      },
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "038aa428-90b3-449b-97d3-a2ef7699edc3",
+    "latencyMs": 1526
+  }
+}

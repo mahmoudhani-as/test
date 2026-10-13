@@ -65,7 +65,7 @@ const lane = async (list, ph) => {
     if (stop) { out.push({ file: f, not_run: stop }); continue }
     const r = await run(f, ph)
     out.push({ file: f, ...(r || { died: true }) })
-    if (r && r.systemic_error && /AUTH|sign in|re-?authent/i.test(r.systemic_error)) { stop = 'AUTH: ' + r.systemic_error; log(`${P}: Whathead sign-in expired - stopping`) }
+    if (r && r.systemic_error && /^AUTH:|needs you to sign in|sign in again|re-?authenticat/i.test(r.systemic_error)) { stop = 'AUTH: ' + r.systemic_error; log(`${P}: Whathead sign-in expired - stopping`) }
   }
   return out
 }

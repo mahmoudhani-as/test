@@ -1,0 +1,62 @@
+{
+  "id": "2018160938831703",
+  "name": "{{product.name}} 2026-08-05-4eef1db2c4372a0a0a0ecdfab59b38c9",
+  "status": "ACTIVE",
+  "object_type": "SHARE",
+  "object_story_spec": {
+    "page_id": "1245023868693595",
+    "instagram_user_id": "17841441699550567"
+  },
+  "asset_feed_spec": {
+    "images": [
+      {"adlabels": [{"name": "placement_asset_f3dd602e36a6ae16c_1785664598024", "id": "120252273612130058"}], "hash": "5404c05e785db0f537854e4502f8ab63"},
+      {"adlabels": [{"name": "placement_asset_f4bee05ab0a16170b_1785664598029", "id": "120252273612140058"}], "hash": "15ada7713441eb1e26823e6705ac8ce1"}
+    ],
+    "bodies": [
+      {"adlabels": [{"name": "placement_asset_fdb74e20e23f406f1_1785664598026", "id": "120252273612110058"}, {"name": "placement_asset_fdacca5770274db26_1785664598029", "id": "120252273612120058"}], "text": "حياةٌ لا تُقاس، بل تُروى"}
+    ],
+    "call_to_action_types": ["LEARN_MORE"],
+    "descriptions": [{"text": ""}],
+    "link_urls": [
+      {"adlabels": [{"name": "placement_asset_f57c9f1bc312bae53_1785664598029", "id": "120252273612090058"}, {"name": "placement_asset_f55d3f7c804be3663_1785664598028", "id": "120252273612100058"}], "website_url": "https://www.wadisafar.com/ar?utm_source=meta&utm_medium=paid-social&utm_campaign=wadisafar_localcampaign2026&utm_term={{adset.name}}&utm_content={{ad.name}}", "display_url": ""}
+    ],
+    "titles": [
+      {"adlabels": [{"name": "placement_asset_f2cd73675898353ef_1785664598026", "id": "120252273612150058"}, {"name": "placement_asset_f0a7a9e92e3e4c295_1785664598029", "id": "120252273612160058"}], "text": "وادي صفار"}
+    ],
+    "ad_formats": ["AUTOMATIC_FORMAT"],
+    "asset_customization_rules": [
+      {"customization_spec": {"age_max": 65, "age_min": 13, "publisher_platforms": ["instagram"], "instagram_positions": ["story", "reels"]},
+       "image_label": {"name": "placement_asset_f4bee05ab0a16170b_1785664598029", "id": "120252273612140058"},
+       "body_label": {"name": "placement_asset_fdacca5770274db26_1785664598029", "id": "120252273612120058"},
+       "link_url_label": {"name": "placement_asset_f57c9f1bc312bae53_1785664598029", "id": "120252273612090058"},
+       "title_label": {"name": "placement_asset_f0a7a9e92e3e4c295_1785664598029", "id": "120252273612160058"},
+       "priority": 1},
+      {"customization_spec": {"age_max": 65, "age_min": 13},
+       "image_label": {"name": "placement_asset_f3dd602e36a6ae16c_1785664598024", "id": "120252273612130058"},
+       "body_label": {"name": "placement_asset_fdb74e20e23f406f1_1785664598026", "id": "120252273612110058"},
+       "link_url_label": {"name": "placement_asset_f55d3f7c804be3663_1785664598028", "id": "120252273612100058"},
+       "title_label": {"name": "placement_asset_f2cd73675898353ef_1785664598026", "id": "120252273612150058"},
+       "priority": 2}
+    ],
+    "optimization_type": "PLACEMENT",
+    "additional_data": {"multi_share_end_card": false, "is_click_to_message": false},
+    "reasons_to_shop": false,
+    "shops_bundle": false
+  },
+  "degrees_of_freedom_spec": {
+    "creative_features_spec": {
+      "pac_recomposition": {"enroll_status": "OPT_OUT", "customizations": {"recomposition_type": {"vertical": "smart_crop"}}},
+      "pac_relaxation": {"enroll_status": "OPT_OUT"},
+      "product_browsing": {"enroll_status": "OPT_OUT"}
+    }
+  },
+  "call_to_action": {"type": "LEARN_MORE"},
+  "effective_object_story_id": "1245023868693595_122104466559291621",
+  "instagram_user_id": "17841441699550567",
+  "effective_instagram_media_id": "18181599367409202",
+  "actor_id": "1245023868693595",
+  "threads_user_id": "17841450509740015",
+  "authorization_category": "NONE",
+  "creative_sourcing_spec": {"destination_screenshot_spec": {"enroll_status": "OPT_OUT"}},
+  "use_page_actor_override": false
+}

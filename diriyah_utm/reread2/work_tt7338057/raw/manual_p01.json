@@ -1,0 +1,1312 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_get",
+    "method": "GET",
+    "path": "/v1.3/ad/get/",
+    "dryRun": false,
+    "data": {
+      "code": 0,
+      "message": "OK",
+      "request_id": "20261013070031F8262A65A92879E91FE4",
+      "data": {
+        "list": [
+          {
+            "create_time": "2026-09-20 13:30:40",
+            "modify_time": "2026-10-12 10:02:13",
+            "operation_status": "ENABLE",
+            "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_sep26_cond&utm_term=12ad6e5e_visit-diriyah_ar&utm_content=0df8a722_sc-snd-kv1_display_ar",
+            "adgroup_name": "company_general_2026_sep_visit-diriyah_adset-id-12ad6e5e_ar_all_mf_prospecting_snd-mf",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_format": "CAROUSEL_ADS",
+            "campaign_automation_type": "MANUAL",
+            "ad_name": "company_general_2026_sep_sc-snd-kv1_adset-id-0df8a722_display_ar",
+            "ad_id": "1876857755701361",
+            "secondary_status": "AD_STATUS_DONE"
+          },
+          {
+            "create_time": "2026-08-19 19:17:33",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "4ae01e79_summer-campaign_aug26_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "video_ar"
+              }
+            ],
+            "modify_time": "2026-10-12 12:19:20",
+            "operation_status": "ENABLE",
+            "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_aug26_cond&utm_term=ar&utm_content=video_ar",
+            "adgroup_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_Intro_AR",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_automation_type": "MANUAL",
+            "ad_name": "Visit Diriyah_Intro_VideoKV_45s_AR",
+            "ad_id": "1873980396894449",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE"
+          },
+          {
+            "create_time": "2026-08-19 19:17:33",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "4ae01e79_summer-campaign_aug26_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "video_ar"
+              }
+            ],
+            "modify_time": "2026-10-12 12:19:20",
+            "operation_status": "ENABLE",
+            "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_aug26_cond&utm_term=ar&utm_content=video_ar",
+            "adgroup_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_Intro_AR",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_automation_type": "MANUAL",
+            "ad_name": "Visit Diriyah_Intro_VideoKV_30s_AR",
+            "ad_id": "1873980236189841",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE"
+          },
+          {
+            "create_time": "2026-08-19 19:13:51",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "4ae01e79_summer-campaign_aug26_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "video_ar"
+              }
+            ],
+            "modify_time": "2026-10-12 11:43:48",
+            "operation_status": "ENABLE",
+            "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_aug26_cond&utm_term=ar&utm_content=video_ar",
+            "adgroup_name": "VisitDiriyah_SummerCampaign2026_UF_AWR_KSA_Retail_AR",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_automation_type": "MANUAL",
+            "ad_name": "Visit Diriyah_RetailVideo1_AR",
+            "ad_id": "1873980045278530",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE"
+          },
+          {
+            "create_time": "2026-07-29 12:36:34",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "4ae01e79_summer-campaign_jul26_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "en"
+              },
+              {
+                "key": "utm_content",
+                "value": "kv3_display_en"
+              }
+            ],
+            "modify_time": "2026-10-12 11:50:36",
+            "operation_status": "ENABLE",
+            "landing_page_url": "https://www.diriyah.sa/en?utm_source=tiktok&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_jul26_cond&utm_term=en&utm_content=kv3_display_en",
+            "adgroup_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_KV3_EN",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_format": "CAROUSEL_ADS",
+            "campaign_automation_type": "MANUAL",
+            "ad_name": "VisitDiriyah_KV3_Summer_EN",
+            "ad_id": "1872052506408241",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE"
+          },
+          {
+            "create_time": "2026-07-29 12:31:39",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "4ae01e79_summer-campaign_jul26_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "kv3_display_ar"
+              }
+            ],
+            "modify_time": "2026-10-12 11:55:39",
+            "operation_status": "ENABLE",
+            "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_jul26_cond&utm_term=ar&utm_content=kv3_display_ar",
+            "adgroup_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_KV3_AR",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_format": "CAROUSEL_ADS",
+            "campaign_automation_type": "MANUAL",
+            "ad_name": "VisitDiriyah_KV3_Summer_AR",
+            "ad_id": "1872052250122337",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE"
+          },
+          {
+            "create_time": "2026-07-15 07:25:10",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "4ae01e79_summer-campaign_jul26_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "video_ar"
+              }
+            ],
+            "modify_time": "2026-10-12 12:17:10",
+            "operation_status": "ENABLE",
+            "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_jul26_cond&utm_term=ar&utm_content=video_ar",
+            "adgroup_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_WC_AR",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_automation_type": "MANUAL",
+            "ad_name": "VisitDiriyah_WC_Video30s_AR_1080x1920",
+            "ad_id": "1870764408348689",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE"
+          },
+          {
+            "create_time": "2026-07-15 07:25:10",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "4ae01e79_summer-campaign_jul26_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "video_ar"
+              }
+            ],
+            "modify_time": "2026-10-12 12:17:10",
+            "operation_status": "ENABLE",
+            "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_jul26_cond&utm_term=ar&utm_content=video_ar",
+            "adgroup_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_WC_AR",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_automation_type": "MANUAL",
+            "ad_name": "VisitDiriyah_WC_Video10s_AR_1080x1920",
+            "ad_id": "1870764144262370",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE"
+          },
+          {
+            "create_time": "2026-07-15 07:25:06",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "4ae01e79_summer-campaign_jul26_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "video_ar"
+              }
+            ],
+            "modify_time": "2026-10-12 12:19:21",
+            "operation_status": "DISABLE",
+            "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_jul26_cond&utm_term=ar&utm_content=video_ar",
+            "adgroup_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_Intro_AR",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_automation_type": "MANUAL",
+            "ad_name": "Copy 1 of Visit Diriyah_Intro_VideoKV_45s_AR",
+            "ad_id": "1870248919207058",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE"
+          },
+          {
+            "create_time": "2026-07-09 14:36:43",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "jul26_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "display_ar"
+              }
+            ],
+            "modify_time": "2026-10-12 12:18:02",
+            "operation_status": "DISABLE",
+            "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=jul26_cond&utm_term=ar&utm_content=display_ar",
+            "adgroup_name": "VisitDiriyah_AssoulineSummerCampaign2026_MF_TRF_KSA_Prospect_AR",
+            "campaign_name": "VisitDiriyah_AssoulineSummerCampaign2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_format": "CAROUSEL_ADS",
+            "campaign_automation_type": "MANUAL",
+            "ad_name": "VisitDiriyah_Assouline_KV1_Static_AR",
+            "ad_id": "1870248238189777",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE"
+          },
+          {
+            "create_time": "2026-07-09 06:46:15",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "4ae01e79_summer-campaign_jul26_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "kv3-v2_display_ar"
+              }
+            ],
+            "modify_time": "2026-10-12 12:17:09",
+            "operation_status": "ENABLE",
+            "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_jul26_cond&utm_term=ar&utm_content=kv3-v2_display_ar",
+            "adgroup_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_WC_AR",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_format": "CAROUSEL_ADS",
+            "campaign_automation_type": "MANUAL",
+            "ad_name": "VisitDiriyah_WC_KV3_AR_1080x1920_v2",
+            "ad_id": "1870218637503601",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE"
+          },
+          {
+            "create_time": "2026-07-07 14:18:06",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "4ae01e79_summer-campaign_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "kv3_display_ar"
+              }
+            ],
+            "modify_time": "2026-10-12 12:17:09",
+            "operation_status": "DISABLE",
+            "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_cond&utm_term=ar&utm_content=kv3_display_ar",
+            "adgroup_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_WC_AR",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_format": "CAROUSEL_ADS",
+            "campaign_automation_type": "MANUAL",
+            "ad_name": "VisitDiriyah_WC_KV3_AR_1080x1920",
+            "ad_id": "1870065831696066",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE"
+          },
+          {
+            "create_time": "2026-07-07 14:14:25",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "4ae01e79_summer-campaign_jul26_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "en"
+              },
+              {
+                "key": "utm_content",
+                "value": "kv3_display_en"
+              }
+            ],
+            "modify_time": "2026-10-12 12:20:00",
+            "operation_status": "ENABLE",
+            "landing_page_url": "https://www.diriyah.sa/en?utm_source=tiktok&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_jul26_cond&utm_term=en&utm_content=kv3_display_en",
+            "adgroup_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_WC_EN",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_format": "CAROUSEL_ADS",
+            "campaign_automation_type": "MANUAL",
+            "ad_name": "VisitDiriyah_WC_KV3_EN_1080x1920",
+            "ad_id": "1870065093036193",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE"
+          },
+          {
+            "create_time": "2026-07-07 03:53:51",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "TT"
+              },
+              {
+                "key": "utm_id",
+                "value": "__CAMPAIGN_ID__"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "__CAMPAIGN_NAME__"
+              }
+            ],
+            "modify_time": "2026-07-07 03:54:27",
+            "operation_status": "ENABLE",
+            "landing_page_url": "https://www.diriyah.sa/ar?utm_source=TT&utm_id=__CAMPAIGN_ID__&utm_campaign=__CAMPAIGN_NAME__",
+            "adgroup_name": "VisitDiriyah_AssoulineSummerCampaign2026_MF_TRF_KSA_Bujari_AR",
+            "campaign_name": "VisitDiriyah_AssoulineSummerCampaign2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_automation_type": "MANUAL",
+            "ad_name": "VisitDiriyah_Assouline_KV2_Video_AR",
+            "ad_id": "1870026351595762",
+            "secondary_status": "AD_STATUS_DELETE"
+          },
+          {
+            "create_time": "2026-07-07 03:53:51",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "TT"
+              },
+              {
+                "key": "utm_id",
+                "value": "__CAMPAIGN_ID__"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "__CAMPAIGN_NAME__"
+              }
+            ],
+            "modify_time": "2026-07-07 03:54:27",
+            "operation_status": "ENABLE",
+            "landing_page_url": "https://www.diriyah.sa/ar?utm_source=TT&utm_id=__CAMPAIGN_ID__&utm_campaign=__CAMPAIGN_NAME__",
+            "adgroup_name": "VisitDiriyah_AssoulineSummerCampaign2026_MF_TRF_KSA_Bujari_AR",
+            "campaign_name": "VisitDiriyah_AssoulineSummerCampaign2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_format": "CAROUSEL_ADS",
+            "campaign_automation_type": "MANUAL",
+            "ad_name": "VisitDiriyah_Assouline_KV1_Static_AR",
+            "ad_id": "1870026351595746",
+            "secondary_status": "AD_STATUS_DELETE"
+          },
+          {
+            "create_time": "2026-07-07 03:53:51",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "video_ar"
+              }
+            ],
+            "modify_time": "2026-10-12 12:18:47",
+            "operation_status": "ENABLE",
+            "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cond&utm_term=ar&utm_content=video_ar",
+            "adgroup_name": "VisitDiriyah_AssoulineSummerCampaign2026_MF_TRF_KSA_Bujari_AR",
+            "campaign_name": "VisitDiriyah_AssoulineSummerCampaign2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_automation_type": "MANUAL",
+            "ad_name": "VisitDiriyah_Bujari_KV1_Video_AR",
+            "ad_id": "1870026351595730",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE"
+          },
+          {
+            "create_time": "2026-06-30 13:34:34",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "jul26_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "video_ar"
+              }
+            ],
+            "modify_time": "2026-10-12 12:18:02",
+            "operation_status": "ENABLE",
+            "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=jul26_cond&utm_term=ar&utm_content=video_ar",
+            "adgroup_name": "VisitDiriyah_AssoulineSummerCampaign2026_MF_TRF_KSA_Prospect_AR",
+            "campaign_name": "VisitDiriyah_AssoulineSummerCampaign2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_automation_type": "MANUAL",
+            "ad_name": "VisitDiriyah_Assouline_KV2_Video_AR_V2",
+            "ad_id": "1869428806322337",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE"
+          },
+          {
+            "create_time": "2026-07-07 14:14:23",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "4ae01e79_summer-campaign_jul26_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "en"
+              },
+              {
+                "key": "utm_content",
+                "value": "video_en"
+              }
+            ],
+            "modify_time": "2026-10-12 12:12:25",
+            "operation_status": "ENABLE",
+            "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_jul26_cond&utm_term=en&utm_content=video_en",
+            "adgroup_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_Intro_EN",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_automation_type": "MANUAL",
+            "ad_name": "Visit Diriyah_Intro_VideoKV_10s_EN",
+            "ad_id": "1868982520260770",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE"
+          },
+          {
+            "create_time": "2026-06-25 15:14:26",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "4ae01e79_summer-campaign_jul26_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "video_ar"
+              }
+            ],
+            "modify_time": "2026-10-12 12:19:21",
+            "operation_status": "ENABLE",
+            "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_jul26_cond&utm_term=ar&utm_content=video_ar",
+            "adgroup_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_Intro_AR",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_automation_type": "MANUAL",
+            "ad_name": "Visit Diriyah_Intro_VideoKV_10s_AR_V2",
+            "ad_id": "1868982091567169",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE"
+          },
+          {
+            "create_time": "2026-06-25 14:55:37",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "jul26_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "display_ar"
+              }
+            ],
+            "modify_time": "2026-10-12 12:18:02",
+            "operation_status": "DISABLE",
+            "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=jul26_cond&utm_term=ar&utm_content=display_ar",
+            "adgroup_name": "VisitDiriyah_AssoulineSummerCampaign2026_MF_TRF_KSA_Prospect_AR",
+            "campaign_name": "VisitDiriyah_AssoulineSummerCampaign2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_format": "CAROUSEL_ADS",
+            "campaign_automation_type": "MANUAL",
+            "ad_name": "VisitDiriyah_Assouline_KV1_Static_AR",
+            "ad_id": "1868980974579730",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE"
+          },
+          {
+            "create_time": "2026-06-25 14:55:37",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "video_ar"
+              }
+            ],
+            "modify_time": "2026-10-12 12:18:02",
+            "operation_status": "DISABLE",
+            "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=cond&utm_term=ar&utm_content=video_ar",
+            "adgroup_name": "VisitDiriyah_AssoulineSummerCampaign2026_MF_TRF_KSA_Prospect_AR",
+            "campaign_name": "VisitDiriyah_AssoulineSummerCampaign2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_automation_type": "MANUAL",
+            "ad_name": "VisitDiriyah_Assouline_KV2_Video_AR",
+            "ad_id": "1868980363652273",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE"
+          },
+          {
+            "create_time": "2026-06-25 15:14:23",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "4ae01e79_summer-campaign_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "4d320041_assouline_ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "display_ar"
+              }
+            ],
+            "modify_time": "2026-10-12 12:18:20",
+            "operation_status": "ENABLE",
+            "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_cond&utm_term=4d320041_assouline_ar&utm_content=display_ar",
+            "adgroup_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_Assouline_AR",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_format": "CAROUSEL_ADS",
+            "campaign_automation_type": "MANUAL",
+            "ad_name": "VisitDiriyah_WC_KV_AR_1080x1920",
+            "ad_id": "1868980240050865",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE"
+          },
+          {
+            "create_time": "2026-06-25 15:14:23",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "4ae01e79_summer-campaign_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "4d320041_assouline_ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "video_ar"
+              }
+            ],
+            "modify_time": "2026-10-12 12:18:21",
+            "operation_status": "ENABLE",
+            "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_cond&utm_term=4d320041_assouline_ar&utm_content=video_ar",
+            "adgroup_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_Assouline_AR",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_automation_type": "MANUAL",
+            "ad_name": "VisitDiriyah_WC_VideoKV_AR_1080x1920",
+            "ad_id": "1868980240050849",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE"
+          },
+          {
+            "create_time": "2026-06-25 15:14:23",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "4ae01e79_summer-campaign_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "4d320041_assouline_ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "kv2_display_ar"
+              }
+            ],
+            "modify_time": "2026-10-12 12:18:21",
+            "operation_status": "ENABLE",
+            "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_cond&utm_term=4d320041_assouline_ar&utm_content=kv2_display_ar",
+            "adgroup_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_Assouline_AR",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_format": "CAROUSEL_ADS",
+            "campaign_automation_type": "MANUAL",
+            "ad_name": "VisitDiriyah_WC_KV2_AR_1080x1920",
+            "ad_id": "1868980240050833",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE"
+          },
+          {
+            "create_time": "2026-06-18 14:43:29",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "4ae01e79_summer-campaign_jun26_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "kv2_display_ar"
+              }
+            ],
+            "modify_time": "2026-10-12 12:17:09",
+            "operation_status": "DISABLE",
+            "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_jun26_cond&utm_term=ar&utm_content=kv2_display_ar",
+            "adgroup_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_WC_AR",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_format": "CAROUSEL_ADS",
+            "campaign_automation_type": "MANUAL",
+            "ad_name": "VisitDiriyah_WC_KV2_AR_1080x1920",
+            "ad_id": "1868345863895137",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE"
+          },
+          {
+            "create_time": "2026-06-17 12:48:14",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "4ae01e79_summer-campaign_jun26_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "en"
+              },
+              {
+                "key": "utm_content",
+                "value": "kv2_display_en"
+              }
+            ],
+            "modify_time": "2026-10-12 12:19:59",
+            "operation_status": "DISABLE",
+            "landing_page_url": "https://www.diriyah.sa/en?utm_source=tiktok&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_jun26_cond&utm_term=en&utm_content=kv2_display_en",
+            "adgroup_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_WC_EN",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_format": "CAROUSEL_ADS",
+            "campaign_automation_type": "MANUAL",
+            "ad_name": "VisitDiriyah_WC_KV2_EN_1080x1920",
+            "ad_id": "1868248115516898",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE"
+          },
+          {
+            "create_time": "2026-06-16 12:49:47",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "4ae01e79_summer-campaign_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "video_ar"
+              }
+            ],
+            "modify_time": "2026-10-12 12:19:20",
+            "operation_status": "DISABLE",
+            "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_cond&utm_term=ar&utm_content=video_ar",
+            "adgroup_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_Intro_AR",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_automation_type": "MANUAL",
+            "ad_name": "Visit Diriyah_Intro_VideoKV_10s_AR",
+            "ad_id": "1868157701920850",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE"
+          },
+          {
+            "create_time": "2026-06-16 12:49:47",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "4ae01e79_summer-campaign_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "video_ar"
+              }
+            ],
+            "modify_time": "2026-10-12 12:19:21",
+            "operation_status": "DISABLE",
+            "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_cond&utm_term=ar&utm_content=video_ar",
+            "adgroup_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_Intro_AR",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_automation_type": "MANUAL",
+            "ad_name": "Visit Diriyah_Intro_VideoKV_15s_AR",
+            "ad_id": "1868157424697697",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE"
+          },
+          {
+            "create_time": "2026-06-16 12:49:47",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "4ae01e79_summer-campaign_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "video_ar"
+              }
+            ],
+            "modify_time": "2026-10-12 12:19:20",
+            "operation_status": "DISABLE",
+            "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_cond&utm_term=ar&utm_content=video_ar",
+            "adgroup_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_Intro_AR",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_automation_type": "MANUAL",
+            "ad_name": "Visit Diriyah_Intro_VideoKV_45s_AR",
+            "ad_id": "1868157424697681",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE"
+          },
+          {
+            "create_time": "2026-06-12 11:21:44",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "4ae01e79_summer-campaign_jun26_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "video_ar"
+              }
+            ],
+            "modify_time": "2026-10-12 12:17:09",
+            "operation_status": "DISABLE",
+            "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_jun26_cond&utm_term=ar&utm_content=video_ar",
+            "adgroup_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_WC_AR",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_format": "SINGLE_VIDEO",
+            "campaign_automation_type": "MANUAL",
+            "ad_name": "VisitDiriyah_Intro45s_AR_1080x1920",
+            "ad_id": "1867789501021314",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE"
+          },
+          {
+            "create_time": "2026-06-11 07:26:10",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "4ae01e79_summer-campaign_jun26_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "en"
+              },
+              {
+                "key": "utm_content",
+                "value": "display_en"
+              }
+            ],
+            "modify_time": "2026-10-12 12:19:59",
+            "operation_status": "DISABLE",
+            "landing_page_url": "https://www.diriyah.sa/en?utm_source=tiktok&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_jun26_cond&utm_term=en&utm_content=display_en",
+            "adgroup_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_WC_EN",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_format": "CAROUSEL_ADS",
+            "campaign_automation_type": "MANUAL",
+            "ad_name": "VisitDiriyah_WC_KV_EN_1080x1920",
+            "ad_id": "1867684298785793",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE"
+          },
+          {
+            "create_time": "2026-06-11 07:22:08",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "4ae01e79_summer-campaign_jun26_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "ar"
+              },
+              {
+                "key": "utm_content",
+                "value": "display_ar"
+              }
+            ],
+            "modify_time": "2026-10-12 12:17:09",
+            "operation_status": "DISABLE",
+            "landing_page_url": "https://www.diriyah.sa/ar?utm_source=tiktok&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_jun26_cond&utm_term=ar&utm_content=display_ar",
+            "adgroup_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_WC_AR",
+            "campaign_name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_format": "CAROUSEL_ADS",
+            "campaign_automation_type": "MANUAL",
+            "ad_name": "VisitDiriyah_WC_KV_AR_1080x1920",
+            "ad_id": "1867683249188929",
+            "secondary_status": "AD_STATUS_ADGROUP_DISABLE"
+          },
+          {
+            "create_time": "2026-06-02 20:29:14",
+            "modify_time": "2026-10-12 12:18:13",
+            "operation_status": "DISABLE",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_conv&utm_term=ar&utm_content=display_ar",
+            "adgroup_name": "ManazelAlHadawi_AlwaysOn_LF_LEAD_KSA_Prospect_AR",
+            "campaign_name": "ManazelAlHadawi_AlwaysOn_LF_LEAD_KSA_ENAR_TikTok_20260603-20260930_BO11111",
+            "ad_format": "CAROUSEL_ADS",
+            "campaign_automation_type": "MANUAL",
+            "ad_name": "ManazelAlHadawi_KV2_Static_AR_NA_Prospecting_03.06.2026_30.09.2026",
+            "ad_id": "1866918360210721",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE"
+          },
+          {
+            "create_time": "2026-06-02 20:29:14",
+            "modify_time": "2026-10-12 12:18:13",
+            "operation_status": "DISABLE",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_conv&utm_term=ar&utm_content=b01f5ba3_manazel-alhadawi-kv1_display_ar",
+            "adgroup_name": "ManazelAlHadawi_AlwaysOn_LF_LEAD_KSA_Prospect_AR",
+            "campaign_name": "ManazelAlHadawi_AlwaysOn_LF_LEAD_KSA_ENAR_TikTok_20260603-20260930_BO11111",
+            "ad_format": "CAROUSEL_ADS",
+            "campaign_automation_type": "MANUAL",
+            "ad_name": "ManazelAlHadawi_KV1_Static_AR_NA_Prospecting_03.06.2026_30.09.2026",
+            "ad_id": "1866918360203345",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE"
+          },
+          {
+            "create_time": "2026-06-02 20:28:34",
+            "modify_time": "2026-10-12 14:51:24",
+            "operation_status": "DISABLE",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_awr&utm_term=ar&utm_content=display_ar",
+            "adgroup_name": "ManazelAlHadawi_AlwaysOn_UF_AWR_KSA_Prospect_AR",
+            "campaign_name": "ManazelAlHadawi_AlwaysOn_UF_AWR_KSA_ENAR_TikTok_20260603-20260930_BO11111",
+            "ad_format": "CAROUSEL_ADS",
+            "campaign_automation_type": "MANUAL",
+            "ad_name": "ManazelAlHadawi_KV2_Static_AR_NA_Prospecting_03.06.2026_30.09.2026",
+            "ad_id": "1866918349665473",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE"
+          },
+          {
+            "create_time": "2026-06-02 20:29:02",
+            "modify_time": "2026-10-12 14:49:14",
+            "operation_status": "DISABLE",
+            "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_conv&utm_term=en&utm_content=display_en",
+            "adgroup_name": "ManazelAlHadawi_AlwaysOn_LF_LEAD_KSA_Prospect_EN",
+            "campaign_name": "ManazelAlHadawi_AlwaysOn_LF_LEAD_KSA_ENAR_TikTok_20260603-20260930_BO11111",
+            "ad_format": "CAROUSEL_ADS",
+            "campaign_automation_type": "MANUAL",
+            "ad_name": "ManazelAlHadawi_KV2_Static_EN_NA_Prospecting_03.06.2026_30.09.2026",
+            "ad_id": "1866918348746034",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE"
+          },
+          {
+            "create_time": "2026-06-02 20:29:02",
+            "modify_time": "2026-10-12 14:49:14",
+            "operation_status": "DISABLE",
+            "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_conv&utm_term=en&utm_content=b01f5ba3_manazel-alhadawi-kv1_display_en",
+            "adgroup_name": "ManazelAlHadawi_AlwaysOn_LF_LEAD_KSA_Prospect_EN",
+            "campaign_name": "ManazelAlHadawi_AlwaysOn_LF_LEAD_KSA_ENAR_TikTok_20260603-20260930_BO11111",
+            "ad_format": "CAROUSEL_ADS",
+            "campaign_automation_type": "MANUAL",
+            "ad_name": "ManazelAlHadawi_KV1_Static_EN_NA_Prospecting_03.06.2026_30.09.2026",
+            "ad_id": "1866918348737778",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE"
+          },
+          {
+            "create_time": "2026-06-02 20:28:34",
+            "modify_time": "2026-10-12 14:51:24",
+            "operation_status": "DISABLE",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_awr&utm_term=ar&utm_content=b01f5ba3_manazel-alhadawi-kv1_display_ar",
+            "adgroup_name": "ManazelAlHadawi_AlwaysOn_UF_AWR_KSA_Prospect_AR",
+            "campaign_name": "ManazelAlHadawi_AlwaysOn_UF_AWR_KSA_ENAR_TikTok_20260603-20260930_BO11111",
+            "ad_format": "CAROUSEL_ADS",
+            "campaign_automation_type": "MANUAL",
+            "ad_name": "ManazelAlHadawi_KV1_Static_AR_NA_Prospecting_03.06.2026_30.09.2026",
+            "ad_id": "1866918333017521",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE"
+          },
+          {
+            "create_time": "2026-06-02 20:28:26",
+            "modify_time": "2026-10-12 14:52:30",
+            "operation_status": "DISABLE",
+            "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_awr&utm_term=en&utm_content=display_en",
+            "adgroup_name": "ManazelAlHadawi_AlwaysOn_UF_AWR_KSA_Prospect_EN",
+            "campaign_name": "ManazelAlHadawi_AlwaysOn_UF_AWR_KSA_ENAR_TikTok_20260603-20260930_BO11111",
+            "ad_format": "CAROUSEL_ADS",
+            "campaign_automation_type": "MANUAL",
+            "ad_name": "ManazelAlHadawi_KV2_Static_EN_NA_Prospecting_03.06.2026_30.09.2026",
+            "ad_id": "1866918251637090",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE"
+          },
+          {
+            "create_time": "2026-06-02 20:28:26",
+            "modify_time": "2026-10-12 14:52:30",
+            "operation_status": "DISABLE",
+            "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_awr&utm_term=en&utm_content=b01f5ba3_manazel-alhadawi-kv1_display_en",
+            "adgroup_name": "ManazelAlHadawi_AlwaysOn_UF_AWR_KSA_Prospect_EN",
+            "campaign_name": "ManazelAlHadawi_AlwaysOn_UF_AWR_KSA_ENAR_TikTok_20260603-20260930_BO11111",
+            "ad_format": "CAROUSEL_ADS",
+            "campaign_automation_type": "MANUAL",
+            "ad_name": "ManazelAlHadawi_KV1_Static_EN_NA_Prospecting_03.06.2026_30.09.2026",
+            "ad_id": "1866918251629650",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE"
+          },
+          {
+            "create_time": "2026-06-02 20:28:42",
+            "modify_time": "2026-10-12 14:57:18",
+            "operation_status": "DISABLE",
+            "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_cond&utm_term=en&utm_content=display_en",
+            "adgroup_name": "ManazelAlHadawi_AlwaysOn_MF_TRF_KSA_Prospect_EN",
+            "campaign_name": "ManazelAlHadawi_AlwaysOn_MF_TRF_KSA_ENAR_TikTok_20260603-20260930_BO11111",
+            "ad_format": "CAROUSEL_ADS",
+            "campaign_automation_type": "MANUAL",
+            "ad_name": "ManazelAlHadawi_KV2_Static_EN_NA_Prospecting_03.06.2026_30.09.2026",
+            "ad_id": "1866918044032098",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE"
+          },
+          {
+            "create_time": "2026-06-02 20:28:42",
+            "modify_time": "2026-10-12 14:57:18",
+            "operation_status": "DISABLE",
+            "landing_page_url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_cond&utm_term=en&utm_content=b01f5ba3_manazel-alhadawi-kv1_display_en",
+            "adgroup_name": "ManazelAlHadawi_AlwaysOn_MF_TRF_KSA_Prospect_EN",
+            "campaign_name": "ManazelAlHadawi_AlwaysOn_MF_TRF_KSA_ENAR_TikTok_20260603-20260930_BO11111",
+            "ad_format": "CAROUSEL_ADS",
+            "campaign_automation_type": "MANUAL",
+            "ad_name": "ManazelAlHadawi_KV1_Static_EN_NA_Prospecting_03.06.2026_30.09.2026",
+            "ad_id": "1866918044032082",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE"
+          },
+          {
+            "create_time": "2026-06-02 20:28:52",
+            "modify_time": "2026-10-12 14:55:55",
+            "operation_status": "DISABLE",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_cond&utm_term=ar&utm_content=display_ar",
+            "adgroup_name": "ManazelAlHadawi_AlwaysOn_MF_TRF_KSA_Prospect_AR",
+            "campaign_name": "ManazelAlHadawi_AlwaysOn_MF_TRF_KSA_ENAR_TikTok_20260603-20260930_BO11111",
+            "ad_format": "CAROUSEL_ADS",
+            "campaign_automation_type": "MANUAL",
+            "ad_name": "ManazelAlHadawi_KV2_Static_AR_NA_Prospecting_03.06.2026_30.09.2026",
+            "ad_id": "1866918010689665",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE"
+          },
+          {
+            "create_time": "2026-06-02 20:28:52",
+            "modify_time": "2026-10-12 14:55:55",
+            "operation_status": "DISABLE",
+            "landing_page_url": "https://www.diriyahcompany.sa/ar/diriyah-living/alhadawi?utm_source=tiktok&utm_medium=paid-social&utm_campaign=7ebeb0a8_manazel-alhadawi-2026_cond&utm_term=ar&utm_content=b01f5ba3_manazel-alhadawi-kv1_display_ar",
+            "adgroup_name": "ManazelAlHadawi_AlwaysOn_MF_TRF_KSA_Prospect_AR",
+            "campaign_name": "ManazelAlHadawi_AlwaysOn_MF_TRF_KSA_ENAR_TikTok_20260603-20260930_BO11111",
+            "ad_format": "CAROUSEL_ADS",
+            "campaign_automation_type": "MANUAL",
+            "ad_name": "ManazelAlHadawi_KV1_Static_AR_NA_Prospecting_03.06.2026_30.09.2026",
+            "ad_id": "1866918010688625",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE"
+          },
+          {
+            "create_time": "2026-05-24 18:00:30",
+            "utm_params": [
+              {
+                "key": "utm_source",
+                "value": "tiktok"
+              },
+              {
+                "key": "utm_medium",
+                "value": "paid-social"
+              },
+              {
+                "key": "utm_campaign",
+                "value": "visitor-diriyah-coe_may26_cond"
+              },
+              {
+                "key": "utm_term",
+                "value": "en"
+              },
+              {
+                "key": "utm_content",
+                "value": "display_en"
+              }
+            ],
+            "modify_time": "2026-10-12 12:26:19",
+            "operation_status": "ENABLE",
+            "landing_page_url": "https://www.diriyah.sa/en/hotels/bab-samhan?utm_source=tiktok&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_may26_cond&utm_term=en&utm_content=display_en",
+            "adgroup_name": "BabSamhan_Summer2026_MF_TRF_KSA_Prospect_EN",
+            "campaign_name": "BabSamhan_Summer2026_MF_TRF_KSA_ENAR_TikTok",
+            "ad_format": "CAROUSEL_ADS",
+            "campaign_automation_type": "MANUAL",
+            "ad_name": "Bab Samhan x Qiddiya_StaticKV1_EN",
+            "ad_id": "1866093524590690",
+            "secondary_status": "AD_STATUS_CAMPAIGN_DISABLE"
+          }
+        ],
+        "page_info": {
+          "page": 1,
+          "page_size": 45,
+          "total_page": 15,
+          "total_number": 643
+        }
+      }
+    },
+    "meta": {
+      "tiktokRequestId": "20261013070031F8262A65A92879E91FE4",
+      "waitedMs": 944,
+      "throttled": false,
+      "warnings": [],
+      "preflightBlocking": false,
+      "mcp_result_projection": {
+        "compact": true
+      }
+    }
+  },
+  "meta": {
+    "requestId": "e4c12464-f5f4-4efa-8fda-4686c6c4ffa9",
+    "latencyMs": 2857
+  }
+}

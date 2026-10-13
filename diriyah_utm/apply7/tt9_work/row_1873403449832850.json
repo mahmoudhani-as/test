@@ -1,0 +1,19 @@
+{
+ "platform": "tiktok",
+ "account_id": "7338074303931449345",
+ "unit_type": "ad",
+ "unit": "1873403449832850",
+ "ad_ids": [
+  "1873403449832850"
+ ],
+ "ad_names": [
+  "company_ritz-signature_2026_aug_rcsr-kv3_adset-id-c4ffbd75_display_en_v2"
+ ],
+ "slot": "ad.landing_page_url",
+ "before": "https://www.diriyahcompany.sa/en/diriyah-living/ritz-carlton-signature?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_aug26_cond&utm_term=87bde3ee_rcsr_en-ar&utm_content=c4ffbd75_rcsr-kv3_display_en",
+ "after_expected": "https://www.diriyahcompany.sa/en/diriyah-living/ritz-carlton-signature?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_sep26_cond&utm_term=87bde3ee_rcsr_en-ar&utm_content=c4ffbd75_rcsr-kv3_display_en",
+ "after_live": "https://www.diriyahcompany.sa/en/diriyah-living/ritz-carlton-signature?utm_source=tiktok&utm_medium=paid-social&utm_campaign=bb1cac08_ritz-carlton-signature_sep26_cond&utm_term=87bde3ee_rcsr_en-ar&utm_content=c4ffbd75_rcsr-kv3_display_en",
+ "result": "Fixed",
+ "new_entity_ids": "",
+ "detail": "BC_AUTH_TT_NO_ITEM CAROUSEL_ADS manual ad (identity 0f6eebaa-ba16-5ad3-aa97-4171805e2af1, no tiktok_item_id), adgroup 1873400500744209. Pre-read ad/get req 20261013065048B2FDE8BB2858376B7E1A: URL == now (utm_params 5 keys source/medium/campaign/term/content, no utm_id; ENABLE / AD_STATUS_DELIVERY_OK; modify_time 2026-10-11 11:11:20). Full ad/update with creative fields as read (ad_name, identity_type, identity_id, identity_authorized_bc_id, ad_format, image_ids, music_id, ad_text, call_to_action, dark_post_status, creative_auto_enhancement_strategy_list, creative_authorized, vast_moat_enabled; ad_text sent as read (no edge whitespace)) and only landing_page_url = new and utm_params = the 5 UTMs of new (no utm_id); no pixel on the ad, none sent; dry_run: call input == built payload (True), preview body == payload (True), warnings []. live attempt 1: input == dry-run payload (True), code 0 OK req 20261013065121A967B183BD6DBE6F17A3. Re-read ad/get req 20261013065132D3F52BBADB724540CB32: landing_page_url == new byte for byte; utm_params 5 keys source/medium/campaign/term/content, no utm_id (matching new); tiktok_item_id after: <absent>; other fields changed: none; ENABLE / AD_STATUS_REAUDIT; modify_time 2026-10-11 11:11:20 -> 2026-10-12 22:51:22. Side effect: secondary_status AD_STATUS_DELIVERY_OK -> AD_STATUS_REAUDIT (TikTok re-review after the edit; operation_status unchanged True)."
+}

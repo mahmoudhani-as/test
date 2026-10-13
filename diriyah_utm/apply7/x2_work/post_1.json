@@ -1,0 +1,42 @@
+{
+ "card_after": {
+  "name": "Bab Samhan x Qiddiya_Static KV1_ AR_ CPC",
+  "components": [
+   {
+    "media_key": "3_2059147361801138176",
+    "media_metadata": {
+     "3_2059147361801138176": {
+      "type": "IMAGE",
+      "url": "https://pbs.twimg.com/media/HJOPnaBW8AAvIXV.jpg",
+      "width": 1080,
+      "height": 1080
+     }
+    },
+    "type": "MEDIA"
+   },
+   {
+    "title": "اسكن في الدرعية",
+    "destination": {
+     "url": "https://www.diriyah.sa/ar/hotels/bab-samhan?utm_source=x&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=display_ar",
+     "type": "WEBSITE"
+    },
+    "type": "DETAILS"
+   }
+  ],
+  "id": "2059148533094137856",
+  "created_at": "2026-05-26T05:44:02Z",
+  "card_uri": "card://2059148533094137856",
+  "updated_at": "2026-05-26T05:44:02Z",
+  "deleted": false,
+  "card_type": "IMAGE_WEBSITE"
+ },
+ "get_tool": "toolu_018JArgqrZhU76wL3LifYfMr",
+ "get_rid": "4f8a755e-5a55-44ce-b95b-014dc3ad784f",
+ "slots": {
+  "card.components[1].destination.url": {
+   "after_live": "https://www.diriyah.sa/ar/hotels/bab-samhan?utm_source=x&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_cond&utm_term=ar&utm_content=display_ar",
+   "eq_new_bytes": true
+  }
+ },
+ "rest_unchanged": true
+}

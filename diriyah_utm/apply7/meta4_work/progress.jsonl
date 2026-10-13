@@ -1,0 +1,27 @@
+{"ad": "120251976797130058", "old_creative": "1420234169730485", "new_creative": "39749178558006694", "step": "created (live attempt 1 of 2)", "ts": "2026-10-12T22:11:11Z"}
+{"ad": "120251976797130058", "new_creative": "39749178558006694", "step": "attached (success=true), verify pending", "ts": "2026-10-12T22:12:50Z"}
+{"ad": "120251976797130058", "new_creative": "39749178558006694", "step": "verified+recorded Fixed (7 changes)", "ts": "2026-10-12T22:13:52Z"}
+{"ad": "120251890634670058", "old_creative": "2159316735014579", "new_creative": "UNKNOWN (response projected away; locating by name)", "step": "created (live attempt 1 of 2) success=true", "ts": "2026-10-12T22:16:58Z"}
+{"ad": "120251890634670058", "step": "new creative id unknown: live create attempt 1 returned success but the id was dropped by my result_fields projection; scan of act creatives (ids >= 1743428430470621) did not find it; scan stopped after the session safety check denied a local cursor step (Production Deploy). Ad not changed.", "ts": "2026-10-12T22:24:19Z"}
+{"ad": "120251890634670058", "old_creative": "2159316735014579", "new_creative": "1353207886700338", "step": "created (live attempt 2 of 2)", "ts": "2026-10-12T22:25:30Z"}
+{"ad": "120252643424960058", "old_creative": "1641727704346810", "new_creative": "2008751177195516", "step": "created (live attempt 1 of 2)", "ts": "2026-10-12T22:29:39Z"}
+{"ad": "120252643424960058", "new_creative": "2008751177195516", "step": "verified+recorded Fixed", "ts": "2026-10-12T22:30:43Z"}
+{"ad": "120252643482710058", "old_creative": "1800378077708672", "new_creative": "1120633780470271", "step": "created (live attempt 1 of 2)", "ts": "2026-10-12T22:32:43Z"}
+{"ad": "120252643482710058", "new_creative": "1120633780470271", "step": "attached (success=true), verify pending", "ts": "2026-10-12T22:34:04Z"}
+{"ad": "120252643353510058", "old_creative": "2269701087096533", "new_creative": "1601697865027133", "step": "created (live attempt 1 of 2)", "ts": "2026-10-12T22:34:04Z"}
+{"ad": "120252643482710058", "new_creative": "1120633780470271", "step": "verified+recorded Fixed", "ts": "2026-10-12T22:35:30Z"}
+{"ad": "120252643353510058", "new_creative": "1601697865027133", "step": "attached (success=true), verify pending", "ts": "2026-10-12T22:36:06Z"}
+{"ad": "120252643433750058", "old_creative": "2580304889148050", "new_creative": "1777602324227108", "step": "created (live attempt 1 of 2)", "ts": "2026-10-12T22:36:06Z"}
+{"ad": "120252643353510058", "new_creative": "1601697865027133", "step": "verified+recorded Fixed", "ts": "2026-10-12T22:36:40Z"}
+{"ad": "120252643433750058", "new_creative": "1777602324227108", "step": "attached (success=true), verified", "ts": "2026-10-12T22:37:43Z"}
+{"ad": "120252643433750058", "new_creative": "1777602324227108", "step": "verified+recorded Fixed", "ts": "2026-10-12T22:37:43Z"}
+{"ad": "120252643418710058", "old_creative": "38932600229720453", "new_creative": "1714374312972239", "step": "created (live attempt 1 of 2)", "ts": "2026-10-12T22:39:30Z"}
+{"ad": "120252643482720058", "old_creative": "2227418565320938", "new_creative": "4511727709107161", "step": "created (live attempt 1 of 2)", "ts": "2026-10-12T22:39:30Z"}
+{"ad": "120252643418710058", "new_creative": "1714374312972239", "step": "verified+recorded Fixed", "ts": "2026-10-12T22:40:29Z"}
+{"ad": "120252643482720058", "new_creative": "4511727709107161", "step": "verified+recorded Fixed", "ts": "2026-10-12T22:40:29Z"}
+{"ad": "120253101801220058 (+120253101800500058,120253101800490058,120253101800430058 share it)", "old_creative": "1406053448328258", "new_creative": "2140952053177542", "step": "created (live attempt 1 of 2)", "ts": "2026-10-12T22:42:08Z"}
+{"ad": "120253101801220058", "new_creative": "2140952053177542", "step": "verified+recorded Fixed", "ts": "2026-10-12T22:43:32Z"}
+{"ad": "120253101800500058", "new_creative": "2140952053177542", "step": "verified+recorded Fixed", "ts": "2026-10-12T22:43:32Z"}
+{"ad": "120253101800490058", "new_creative": "2140952053177542", "step": "verified+recorded Fixed", "ts": "2026-10-12T22:43:32Z"}
+{"ad": "120253101800430058", "new_creative": "2140952053177542", "step": "verified+recorded Fixed", "ts": "2026-10-12T22:43:32Z"}
+{"step": "batch done: 24/24 changes Fixed (12 ads). Final sweep ~22:50 UTC: 8 PAUSED ads back to effective PAUSED on new creatives; 4 ACTIVE ads (120253101801220058, 120253101800500058, 120253101800490058, 120253101800430058) on shared new creative 2140952053177542, configured ACTIVE, effective PENDING_REVIEW. One unattached extra creative from unit 2 attempt 1 (id unknown) remains, not deleted.", "ts": "2026-10-12T22:44:05Z"}

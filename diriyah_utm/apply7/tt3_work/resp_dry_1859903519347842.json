@@ -1,0 +1,75 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "tiktok_ad_update",
+    "dryRun": true,
+    "data": {
+      "request": {
+        "method": "POST",
+        "url": "https://business-api.tiktok.com/open_api/v1.3/ad/update/",
+        "path": "/v1.3/ad/update/",
+        "headers": {
+          "Access-Token": "[redacted]",
+          "Accept": "application/json",
+          "Content-Type": "application/json"
+        },
+        "query": {},
+        "bodyFormat": "json",
+        "body": {
+          "advertiser_id": "7338057963233443842",
+          "adgroup_id": "1858189280224433",
+          "creatives": [
+            {
+              "ad_format": "CAROUSEL_ADS",
+              "ad_id": "1859903519347842",
+              "ad_name": "EID_EN_COE_Static",
+              "ad_text": "Step into the spirit of Eid at Diriyah. Moments of culture, connection, and celebration await.",
+              "call_to_action_id": "7618573551301348368",
+              "creative_authorized": false,
+              "dark_post_status": "ON",
+              "identity_authorized_bc_id": "6807778858780065797",
+              "identity_id": "e4770252-b97f-5a97-873d-46a13d7ef867",
+              "identity_type": "BC_AUTH_TT",
+              "image_ids": [
+                "ad-site-i18n-sg/202603185d0df3dea5aebc4d49a2b1b2"
+              ],
+              "landing_page_url": "https://www.diriyah.sa/en?utm_source=tiktok&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_mar26_cond&utm_term=en&utm_content=display_en",
+              "music_id": "7618164299491592977",
+              "tracking_pixel_id": "7347671240183693330",
+              "utm_params": [
+                {
+                  "key": "utm_source",
+                  "value": "tiktok"
+                },
+                {
+                  "key": "utm_medium",
+                  "value": "paid-social"
+                },
+                {
+                  "key": "utm_campaign",
+                  "value": "visitor-diriyah-coe_mar26_cond"
+                },
+                {
+                  "key": "utm_term",
+                  "value": "en"
+                },
+                {
+                  "key": "utm_content",
+                  "value": "display_en"
+                }
+              ],
+              "vast_moat_enabled": false
+            }
+          ]
+        }
+      },
+      "warnings": [],
+      "preflightBlocking": false
+    }
+  },
+  "meta": {
+    "requestId": "9a15fedd-19f6-47fc-9785-d81f694e7034",
+    "latencyMs": 1206
+  }
+}

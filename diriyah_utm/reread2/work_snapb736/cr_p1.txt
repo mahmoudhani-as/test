@@ -1,0 +1,1246 @@
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "action": "snapchat_adaccounts_ad_account_id_creatives_get",
+    "method": "GET",
+    "host": "adsapi.snapchat.com",
+    "path": "/v1/adaccounts/b736921f-da3e-4889-8620-d3b0969c69b0/creatives",
+    "dryRun": false,
+    "data": {
+      "request_status": "SUCCESS",
+      "request_id": "47a4f282-0482-4b05-bc99-70c097da8048",
+      "paging": {
+        "next_link": "https://adsapi.snapchat.com/v1/adaccounts/b736921f-da3e-4889-8620-d3b0969c69b0/creatives?cursor=Q3JlYXRpdmVzVjIvODJkZTYwZjMtY2YzYi00NzdiLThmNDQtOTJkZWVjMDYyOGFl&limit=85"
+      },
+      "creatives": [
+        {
+          "creative": {
+            "id": "0019b75f-f569-4f5d-a0b2-1b38dbf30096",
+            "name": "Bab Samhan x Qiddiya_StaticKV1_AR_Creative",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-06-29T06:28:10.936Z",
+            "created_at": "2026-06-24T09:24:10.481Z",
+            "web_view_properties": {
+              "url": "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=snapchat&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan_tactical_visitor-diriyah_June2026_reach-awareness_snapchat_ar&utm_term=adset-id-ee00c8_test_adset_name_ar_all_mf_prospecting&utm_content=KV1"
+            },
+            "top_snap_media_id": "40409641-d8e5-4eb3-96c1-b7ac94aa1be4"
+          }
+        },
+        {
+          "creative": {
+            "id": "0070b4cd-7f6d-406b-87a5-889d0a9c70c2",
+            "name": "Copy of EN Static",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T11:33:25.848Z",
+            "created_at": "2026-02-25T20:30:10.082Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/en/bujairi-terrace?utm_source=snapchat&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_feb26_conv&utm_term=en&utm_content=display_en"
+            },
+            "top_snap_media_id": "7ac391d7-9ddc-41e1-8bbd-dfb1e8417875"
+          }
+        },
+        {
+          "creative": {
+            "id": "026689bb-f15d-4d6d-a155-a1750a62fe6d",
+            "name": "Bab Samhan x Qiddiya_CR7_EN",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T11:28:42.612Z",
+            "created_at": "2026-08-16T18:01:41.367Z",
+            "web_view_properties": {
+              "url": "https://www.marriott.com/offers/theme-park-experience-off-227242/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=visitor-diriyah_aug26_cond&utm_term=en&utm_content=cr7_display_en"
+            },
+            "top_snap_media_id": "3452b8c7-b3d8-4a07-b7c0-920ccd7b3328"
+          }
+        },
+        {
+          "creative": {
+            "id": "03b3528e-5dc1-4e09-ab8c-a2bfd4a92c36",
+            "name": "Shopping AR video",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T11:04:56.588Z",
+            "created_at": "2026-02-26T12:37:52.339Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/shopping?utm_source=snapchat&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_mar26_cond&utm_term=ar&utm_content=video_ar"
+            },
+            "top_snap_media_id": "46a51e7a-f509-45fb-8b14-ed52d7e0ca74"
+          }
+        },
+        {
+          "creative": {
+            "id": "079e701f-490d-4c65-9b48-184f6e4a1ccd",
+            "name": "Visit Diriyah_WC_Video30s_AR_1080x1920",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T14:15:14.445Z",
+            "created_at": "2026-07-15T07:59:49.008Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar?utm_source=snapchat&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_jul26_cond&utm_term=ar&utm_content=video_ar"
+            },
+            "top_snap_media_id": "01158152-bbe8-4f53-a373-bd974b8e3ab5"
+          }
+        },
+        {
+          "creative": {
+            "id": "0aae315d-62d2-485c-a164-ddf12595e989",
+            "name": "Video EN",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T14:07:49.001Z",
+            "created_at": "2026-02-26T16:43:26.976Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/en/zallal?utm_source=snapchat&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_mar26_cond&utm_term=en&utm_content=video_en"
+            },
+            "top_snap_media_id": "735cb97b-fd14-4919-a330-3d5085e384bf"
+          }
+        },
+        {
+          "creative": {
+            "id": "0d1a1e5c-9ff3-479c-9d28-5c35e18f2a1c",
+            "name": "Tickets - EN - EID KV",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T11:18:38.737Z",
+            "created_at": "2026-03-16T12:20:21.824Z",
+            "web_view_properties": {
+              "url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=snapchat&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_mar26_awr&utm_term=en&utm_content=display_en"
+            },
+            "top_snap_media_id": "d26f9c9d-4523-4573-a7a4-470172d06842"
+          }
+        },
+        {
+          "creative": {
+            "id": "0f83c2ce-8e9f-463b-a6c2-6efb057c6702",
+            "name": "Bab Samhan x Qiddiya_StaticKV3_AR",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-07-18T18:49:15.682Z",
+            "created_at": "2026-07-18T17:56:58.885Z",
+            "web_view_properties": {
+              "url": "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=snapchat&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan_tactical_visitor-diriyah_June2026_reach-awareness_snapchat_ar&utm_term=adset-id-ee00c8_test_adset_name_ar_all_mf_prospecting&utm_content=KV3"
+            },
+            "top_snap_media_id": "2e6036cc-2370-4021-9107-a98947493a2d"
+          }
+        },
+        {
+          "creative": {
+            "id": "1228bf3f-552a-42d0-94a8-2f184ecefef8",
+            "name": "Bab Samhan x Qiddiya_Video1_45s_AR",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-07-22T18:28:08.192Z",
+            "created_at": "2026-07-21T17:29:47.875Z",
+            "web_view_properties": {
+              "url": "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=snapchat&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan_tactical_visitor-diriyah_June2026_reach-awareness_snapchat_ar&utm_term=adset-id-ee00c8_test_adset_name_ar_all_mf_prospecting&utm_content=KV3"
+            },
+            "top_snap_media_id": "dd3ff3e0-6dcd-4cfe-9e0e-fb3cf3a0063f"
+          }
+        },
+        {
+          "creative": {
+            "id": "126ab959-5cc0-42b8-a156-c49be0051573",
+            "name": "Bab Samhan x Qiddiya_StaticKV1_EN_Creative",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-06-29T06:37:54.176Z",
+            "created_at": "2026-06-24T09:24:10.683Z",
+            "web_view_properties": {
+              "url": "https://www.marriott.com/offers/theme-park-experience-off-227242/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah?utm_source=snapchat&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan_tactical_visitor-diriyah_June2026_reach-awareness_snapchat_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=KV1"
+            },
+            "top_snap_media_id": "c9e3de64-7b3b-4922-b3c3-db092ed59a5a"
+          }
+        },
+        {
+          "creative": {
+            "id": "1568a7c1-8145-43e8-8526-e321d865e8b3",
+            "name": "Visit Diriyah_Intro_VideoKV_10s_AR_1080x1920",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T17:05:23.618Z",
+            "created_at": "2026-06-16T12:39:56.428Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar?utm_source=snapchat&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_cond&utm_term=ar&utm_content=video_ar"
+            },
+            "top_snap_media_id": "6c289199-5ed0-4568-98ac-b192d979b8af"
+          }
+        },
+        {
+          "creative": {
+            "id": "1768234f-7bff-4a9a-8703-aa8f541b7b6c",
+            "name": "VisitDiriyah_Assouline_KV2_Video_AR",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T14:09:43.689Z",
+            "created_at": "2026-07-18T18:03:33.674Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar?utm_source=snapchat&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_jul26_awr&utm_term=4d320041_assouline_ar&utm_content=kv2_video_ar"
+            },
+            "top_snap_media_id": "3a05fc62-7edd-4880-b852-bc5c551b703d"
+          }
+        },
+        {
+          "creative": {
+            "id": "1b8abca6-6d73-4e66-ae7f-6e87128b0b3c",
+            "name": "AR Video",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T11:29:37.184Z",
+            "created_at": "2026-02-26T10:40:41.137Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/hotels/bab-samhan?utm_source=snapchat&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_mar26_cond&utm_term=ar&utm_content=video_ar"
+            },
+            "top_snap_media_id": "01402351-6947-4c2b-9c29-9ef61d52c2fd"
+          }
+        },
+        {
+          "creative": {
+            "id": "1d649e18-8376-4e40-bea1-62b1bdcc68b5",
+            "name": "Visit Diriyah_WC KV2_AR_1080x1920",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T14:02:45.854Z",
+            "created_at": "2026-06-18T14:36:45.151Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar?utm_source=snapchat&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_jun26_cond&utm_term=ar&utm_content=kv2_display_ar"
+            },
+            "top_snap_media_id": "8a62989d-3f14-4ecd-bf56-bccf778a9a48"
+          }
+        },
+        {
+          "creative": {
+            "id": "209343c3-1bb8-4251-8802-a8b6347ad2f5",
+            "name": "Safezoned COE - AR - VISIT - EID",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T14:04:53.805Z",
+            "created_at": "2026-03-18T09:15:55.694Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar?utm_source=snapchat&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_mar26_cond&utm_term=ar&utm_content=ar"
+            },
+            "top_snap_media_id": "e2a40416-38c7-413c-ab84-b424d2d252ed"
+          }
+        },
+        {
+          "creative": {
+            "id": "217a09de-335b-4997-966f-8d08a54d3891",
+            "name": "Safezoned Tickets - AR - EID KV",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T14:12:38.969Z",
+            "created_at": "2026-03-18T09:09:59.264Z",
+            "web_view_properties": {
+              "url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=snapchat&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_mar26_awr&utm_term=ar&utm_content=display_ar"
+            },
+            "top_snap_media_id": "75e6f6f6-aecb-4993-96a3-5232c1f531d9"
+          }
+        },
+        {
+          "creative": {
+            "id": "21fb0140-aae1-4917-9cc9-adddfb142588",
+            "name": "Visit Diriyah_RetailVideo1_AR",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T17:18:01.057Z",
+            "created_at": "2026-08-11T11:18:18.642Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar?utm_source=snapchat&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_aug26_awr&utm_term=ar&utm_content=retailvideo_video_ar"
+            },
+            "top_snap_media_id": "69228ae0-0edc-4fdf-8804-e59f8e4e3959"
+          }
+        },
+        {
+          "creative": {
+            "id": "223e9412-d73f-4d42-9959-01924e63fb07",
+            "name": "Bab Samhan x Qiddiya_CR7_EN",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T11:28:42.631Z",
+            "created_at": "2026-08-16T18:01:41.647Z",
+            "web_view_properties": {
+              "url": "https://www.marriott.com/offers/theme-park-experience-off-227242/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=visitor-diriyah_aug26_cond&utm_term=en&utm_content=cr7_display_en"
+            },
+            "top_snap_media_id": "2dcff061-5253-4c1f-b400-f6ef13537cf8"
+          }
+        },
+        {
+          "creative": {
+            "id": "22dc1e76-79c0-4595-bc9e-b3310214049d",
+            "name": "Visit Diriyah_WC KV_EN_1080x1920",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-06-11T09:56:19.515Z",
+            "created_at": "2026-06-11T09:55:24.485Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/en?utm_source=snapchat&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_snapchat_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-987e7a_test_ad_name_display"
+            },
+            "top_snap_media_id": "f7cf54c3-556a-4103-a490-371309a39142"
+          }
+        },
+        {
+          "creative": {
+            "id": "23a5eeaf-938a-4ae0-9de3-28a0190d5099",
+            "name": "Visit Diriyah_KV3_Summer_EN",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T11:29:46.603Z",
+            "created_at": "2026-07-29T12:12:31.458Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/en?utm_source=snapchat&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_jul26_cond&utm_term=en&utm_content=kv3_display_en"
+            },
+            "top_snap_media_id": "dbb45b36-d1e1-446d-80bf-4d1745d3b1ad"
+          }
+        },
+        {
+          "creative": {
+            "id": "261d454a-5ad5-4791-a7d3-a05588d5bae8",
+            "name": "Visit Diriyah_Intro_VideoKV_45s_AR",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-08-11T15:13:27.557Z",
+            "created_at": "2026-08-11T12:11:29.431Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar?utm_source=snapchat&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_aug_mf_awareness_snapchat_ar&utm_term=adset_name_ar_all_mf_prospecting&utm_content=45s"
+            },
+            "top_snap_media_id": "4c7982cf-4a14-417e-a812-27c185935697"
+          }
+        },
+        {
+          "creative": {
+            "id": "278d398f-39e1-47ff-a89e-a0107a5c51a6",
+            "name": "ManazelAlHadawi_KV1_EN_Creative",
+            "type": "WEB_VIEW",
+            "review_status": "DISAPPROVED",
+            "updated_at": "2026-06-02T18:47:34.351Z",
+            "created_at": "2026-06-02T15:58:34.228Z",
+            "web_view_properties": {
+              "url": "https://www.diriyahcompany.sa/en/diriyah-living/alhadawi"
+            },
+            "top_snap_media_id": "2637d53d-2813-4153-937a-97fb1ff18252"
+          }
+        },
+        {
+          "creative": {
+            "id": "28f01400-605f-4255-83ca-39fcbe3a56be",
+            "name": "BT Dining KV​ AR",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T14:14:46.003Z",
+            "created_at": "2026-02-18T12:49:04.970Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/bujairi-terrace?utm_source=snapchat&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_feb26_awr&utm_term=ar&utm_content=display_ar"
+            },
+            "top_snap_media_id": "da7ed4d8-71e6-4691-9c05-458cc846d269"
+          }
+        },
+        {
+          "creative": {
+            "id": "2db4dc49-faab-444b-b60a-d63dfbeb6ba3",
+            "name": "Visit Diriyah_WC_KV3_AR_1080x1920",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-07-18T21:16:36.982Z",
+            "created_at": "2026-07-18T18:15:05.553Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar?utm_source=snapchat&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_snapchat_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=KV2"
+            },
+            "top_snap_media_id": "26149574-8b26-4930-8b55-cfc8efb0a7bc"
+          }
+        },
+        {
+          "creative": {
+            "id": "2e313a39-af72-4a52-bd55-16319a8f4009",
+            "name": "Copy of EN Video",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T11:16:04.995Z",
+            "created_at": "2026-02-25T20:30:09.989Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/en/bujairi-terrace?utm_source=snapchat&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_feb26_conv&utm_term=en&utm_content=video_en"
+            },
+            "top_snap_media_id": "db3678ca-924d-4f4d-8079-8abdd2407ca0"
+          }
+        },
+        {
+          "creative": {
+            "id": "2fa678b0-1352-4985-b3ac-ab8938ac9c71",
+            "name": "BT Dining EN",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-02-19T10:49:54.824Z",
+            "created_at": "2026-02-19T10:38:59.276Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/en/bujairi-terrace?utm_source=snapchat&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_snapchat_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_video"
+            },
+            "top_snap_media_id": "7ac391d7-9ddc-41e1-8bbd-dfb1e8417875"
+          }
+        },
+        {
+          "creative": {
+            "id": "3078ac50-a57c-4f0d-b45e-cd860b2453e4",
+            "name": "Bab Samhan x Qiddiya_CR7_EN",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T11:28:42.622Z",
+            "created_at": "2026-08-16T18:01:41.453Z",
+            "web_view_properties": {
+              "url": "https://www.marriott.com/offers/theme-park-experience-off-227242/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=visitor-diriyah_aug26_cond&utm_term=en&utm_content=cr7_display_en"
+            },
+            "top_snap_media_id": "6b60dddb-d47e-4f18-9c62-d4f58c4cba9a"
+          }
+        },
+        {
+          "creative": {
+            "id": "3171fa74-26e7-4f15-8117-a82819ac95a1",
+            "name": "Copy of AR Video",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T14:10:21.319Z",
+            "created_at": "2026-02-25T20:30:10.191Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/bujairi-terrace?utm_source=snapchat&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_feb26_conv&utm_term=ar&utm_content=video_ar"
+            },
+            "top_snap_media_id": "d22254e8-95e1-4bb7-9d3a-b73135248d62"
+          }
+        },
+        {
+          "creative": {
+            "id": "34212114-2a77-4d24-a962-7f67815d2b1d",
+            "name": "Bab Samhan x Qiddiya_Static_KV2_EN_Creative_V2",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-07-16T13:02:06.386Z",
+            "created_at": "2026-07-16T13:00:37.753Z",
+            "web_view_properties": {
+              "url": "https://www.marriott.com/offers/theme-park-experience-off-227242/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah?utm_source=snapchat&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan_tactical_visitor-diriyah_June2026_reach-awareness_snapchat_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=KV2"
+            },
+            "top_snap_media_id": "8f19b501-3096-4e33-90f2-e2e46f0869a6"
+          }
+        },
+        {
+          "creative": {
+            "id": "359ad090-c3ab-4b54-9b97-fa4e7483e0c0",
+            "name": "Video AR",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-02-26T16:45:55.859Z",
+            "created_at": "2026-02-26T16:42:35.962Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/zallal?utm_source=snapchat&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_zallal_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_snapchat_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_video"
+            },
+            "top_snap_media_id": "735cb97b-fd14-4919-a330-3d5085e384bf"
+          }
+        },
+        {
+          "creative": {
+            "id": "36d00b22-21d4-4be6-b2cd-a52722fb9694",
+            "name": "Bab Samhan x Qiddiya_CR6_AR",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T14:09:28.195Z",
+            "created_at": "2026-08-16T17:54:13.196Z",
+            "web_view_properties": {
+              "url": "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=snapchat&utm_medium=paid-social&utm_campaign=visitor-diriyah_aug26_cond&utm_term=ar&utm_content=cr6_display_ar"
+            },
+            "top_snap_media_id": "0e4e8332-8b9f-4070-80b3-6fc8ccdc481f"
+          }
+        },
+        {
+          "creative": {
+            "id": "38bb7f7d-a849-4a3d-be70-edbb07eeff38",
+            "name": "AR static",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-03-04T10:17:23.115Z",
+            "created_at": "2026-03-04T10:16:30.753Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/bujairi-terrace?utm_source=snapchat&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_snapchat_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_display"
+            },
+            "top_snap_media_id": "3ff71e6c-ffb5-4dd0-b19d-79b5eae8ed09"
+          }
+        },
+        {
+          "creative": {
+            "id": "39b5e036-30a9-4432-854a-d733962114f1",
+            "name": "Bab Samhan x Qiddiya_Static_KV3_EN_Creative_V2",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T11:19:13.165Z",
+            "created_at": "2026-07-16T13:02:13.977Z",
+            "web_view_properties": {
+              "url": "https://www.marriott.com/offers/theme-park-experience-off-227242/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=visitor-diriyah_jul26_awr&utm_term=en&utm_content=kv3-v2_display_en"
+            },
+            "top_snap_media_id": "47e0ba6a-e9cf-49ee-92a6-a399b45ee8a7"
+          }
+        },
+        {
+          "creative": {
+            "id": "39b8156e-f4db-4961-be80-42729c18e70f",
+            "name": "Bab Samhan x Qiddiya_StaticKV1_EN_Creative_Traffic",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T11:12:14.085Z",
+            "created_at": "2026-05-24T15:59:45.982Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/en/hotels/bab-samhan?utm_source=snapchat&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_may26_cond&utm_term=en&utm_content=display_en"
+            },
+            "top_snap_media_id": "4d4f30d1-b379-4355-9e6b-7585be4536b9"
+          }
+        },
+        {
+          "creative": {
+            "id": "3bbb3db2-5034-4a1f-97ef-0dcadf731bb4",
+            "name": "Safezoned Tickets - Ar - EID KV",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T14:12:57.448Z",
+            "created_at": "2026-03-18T09:10:44.667Z",
+            "web_view_properties": {
+              "url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=snapchat&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_mar26_cond&utm_term=ar&utm_content=display_ar"
+            },
+            "top_snap_media_id": "75e6f6f6-aecb-4993-96a3-5232c1f531d9"
+          }
+        },
+        {
+          "creative": {
+            "id": "3f77ff06-188e-4de4-9a5c-305e03e7743d",
+            "name": "Bab Samhan x Qiddiya_StaticKV2_AR_Creative",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-06-29T06:28:24.072Z",
+            "created_at": "2026-06-24T09:24:10.567Z",
+            "web_view_properties": {
+              "url": "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=snapchat&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan_tactical_visitor-diriyah_June2026_reach-awareness_snapchat_ar&utm_term=adset-id-ee00c8_test_adset_name_ar_all_mf_prospecting&utm_content=KV2"
+            },
+            "top_snap_media_id": "161ec44b-112e-417b-b1a9-8b145aed8ec3"
+          }
+        },
+        {
+          "creative": {
+            "id": "41db5fec-e918-41b3-b2d6-036aaa5077a5",
+            "name": "Visit Diriyah_Intro_VideoKV_10s_AR",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T17:03:09.396Z",
+            "created_at": "2026-07-18T18:08:06.305Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar?utm_source=snapchat&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_jul26_awr&utm_term=ar&utm_content=video_ar"
+            },
+            "top_snap_media_id": "6e3d14b0-8c26-438d-b5b8-8dadf7685348"
+          }
+        },
+        {
+          "creative": {
+            "id": "421a3522-ab45-4811-a132-f411e6bd675b",
+            "name": "Visit Diriyah_WC_VideoKV_AR_1080x1920",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-06-14T11:52:28.151Z",
+            "created_at": "2026-06-12T10:12:15.477Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar?utm_source=snapchat&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_may_mf_consideration_traffic_snapchat_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-987e7a_test_ad_name_display"
+            },
+            "top_snap_media_id": "130d0b2d-4931-4267-af1a-e272572cf63a"
+          }
+        },
+        {
+          "creative": {
+            "id": "4358bca7-6710-4094-ac63-cffa889dcd18",
+            "name": "Visit Diriyah_Intro_VideoKV_30s_AR",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T14:07:46.679Z",
+            "created_at": "2026-08-11T12:11:29.314Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar?utm_source=snapchat&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_aug26_awr&utm_term=ar&utm_content=video_ar"
+            },
+            "top_snap_media_id": "b11074c5-6c78-45c5-88f8-7b107d0beca2"
+          }
+        },
+        {
+          "creative": {
+            "id": "43bcd5e6-80e1-402b-a42e-714c1ec0e233",
+            "name": "Shopping En  Video",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T11:22:24.327Z",
+            "created_at": "2026-02-26T12:37:52.532Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/en/shopping?utm_source=snapchat&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_mar26_cond&utm_term=en&utm_content=video_en"
+            },
+            "top_snap_media_id": "46a51e7a-f509-45fb-8b14-ed52d7e0ca74"
+          }
+        },
+        {
+          "creative": {
+            "id": "4a38dda9-25f1-4caa-8df5-2569475fb404",
+            "name": "Shopping En  Video Eid",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T14:15:47.803Z",
+            "created_at": "2026-03-16T11:05:05.710Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/en?utm_source=snapchat&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_mar26_cond&utm_term=en&utm_content=video_en"
+            },
+            "top_snap_media_id": "62518e5e-bcc3-432a-b8eb-674f219f01e6"
+          }
+        },
+        {
+          "creative": {
+            "id": "4bb095d2-5acd-445f-8c1e-f9e3aa2eb1eb",
+            "name": "BT Dining Film​ AR",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-02-18T12:50:19.501Z",
+            "created_at": "2026-02-18T12:49:04.900Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/bujairi-terrace?utm_source=snapchat&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_snapchat_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_video"
+            },
+            "top_snap_media_id": "db3678ca-924d-4f4d-8079-8abdd2407ca0"
+          }
+        },
+        {
+          "creative": {
+            "id": "4cdce38b-4667-4570-83d0-9112d6856e22",
+            "name": "VisitDiriyah_Assouline_KV2_Video_AR",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T17:00:55.284Z",
+            "created_at": "2026-06-25T15:05:06.451Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar?utm_source=snapchat&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_cond&utm_term=4d320041_assouline_ar&utm_content=kv2_video_ar"
+            },
+            "top_snap_media_id": "a9d7bb0b-e702-4ccf-8758-33864445b600"
+          }
+        },
+        {
+          "creative": {
+            "id": "4d50b8dc-9b09-4ac9-b302-6c0e15387ede",
+            "name": "Bab Samhan x Qiddiya_StaticKV1_AR",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-07-18T18:45:26.470Z",
+            "created_at": "2026-07-18T17:56:59.152Z",
+            "web_view_properties": {
+              "url": "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=snapchat&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan_tactical_visitor-diriyah_June2026_reach-awareness_snapchat_ar&utm_term=adset-id-ee00c8_test_adset_name_ar_all_mf_prospecting&utm_content=KV1"
+            },
+            "top_snap_media_id": "40409641-d8e5-4eb3-96c1-b7ac94aa1be4"
+          }
+        },
+        {
+          "creative": {
+            "id": "4ea172e8-db22-4140-8663-6f105d6deb9e",
+            "name": "Static EN",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T11:21:39.807Z",
+            "created_at": "2026-02-19T10:47:16.981Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/en/hotels/bab-samhan?utm_source=snapchat&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_feb26_cond&utm_term=en&utm_content=display_en"
+            },
+            "top_snap_media_id": "0fd833e2-a458-40a8-9708-2328757f81f6"
+          }
+        },
+        {
+          "creative": {
+            "id": "4feaa40d-764f-4132-bf5f-992e1d8b9360",
+            "name": "company_general_2026_sep_sc-snd-kv1_adset-id-0df8a722_display_ar_uf",
+            "type": "WEB_VIEW",
+            "review_status": "PENDING_REVIEW",
+            "updated_at": "2026-09-20T14:12:39.274Z",
+            "created_at": "2026-09-20T14:12:39.274Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar?utm_source=snapchat&utm_medium=paid-social&utm_campaign=snapchat_company_general_tac_2026_sep_summer-campaign_cam-id-4ae01e79_uf_awr_ksa&utm_term=company_general_2026_sep_visit-diriyah_adset-id-12ad6e5e_ar_all_mf_prospecting_snd-uf&utm_content=company_general_2026_sep_sc-snd-kv1_adset-id-0df8a722_display_ar"
+            },
+            "top_snap_media_id": "9db251f7-a4eb-48ba-bfe4-21d0b7aad302"
+          }
+        },
+        {
+          "creative": {
+            "id": "53c46b89-1dbc-4e36-93d5-7a07ef090a2e",
+            "name": "Video AR",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T14:33:46.125Z",
+            "created_at": "2026-02-26T16:39:47.146Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/zallal?utm_source=snapchat&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_mar26_awr&utm_term=ar&utm_content=video_ar"
+            },
+            "top_snap_media_id": "735cb97b-fd14-4919-a330-3d5085e384bf"
+          }
+        },
+        {
+          "creative": {
+            "id": "564e7c3a-ff18-4907-bcbd-63fa379b56b0",
+            "name": "Safezoned Tickets - EN - EID KV",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T14:10:29.799Z",
+            "created_at": "2026-03-18T09:12:45.356Z",
+            "web_view_properties": {
+              "url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=snapchat&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_mar26_conv&utm_term=en&utm_content=display_en"
+            },
+            "top_snap_media_id": "75e6f6f6-aecb-4993-96a3-5232c1f531d9"
+          }
+        },
+        {
+          "creative": {
+            "id": "57dbb032-163e-4ebe-a397-1471d2565f19",
+            "name": "Tickets - Ar - EID KV",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-03-17T09:59:21.189Z",
+            "created_at": "2026-03-16T12:25:26.316Z",
+            "web_view_properties": {
+              "url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=snapchat&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_snapchat_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_display"
+            },
+            "top_snap_media_id": "d26f9c9d-4523-4573-a7a4-470172d06842"
+          }
+        },
+        {
+          "creative": {
+            "id": "5864e451-08b4-4876-9021-ba55516f47b5",
+            "name": "VisitDiriyah_Assouline_KV1_Static_AR_V2",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T14:04:55.673Z",
+            "created_at": "2026-07-09T14:45:33.790Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar?utm_source=snapchat&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_jul26_cond&utm_term=4d320041_assouline_ar&utm_content=kv1-v2_display_ar"
+            },
+            "top_snap_media_id": "08c32cf2-e3ab-4888-9c2e-4853619ba067"
+          }
+        },
+        {
+          "creative": {
+            "id": "587d22f6-2ff7-4518-a288-81e767f1b86e",
+            "name": "Bab Samhan x Qiddiya_StaticKV4_AR_Creative",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T14:15:29.643Z",
+            "created_at": "2026-06-24T09:24:10.276Z",
+            "web_view_properties": {
+              "url": "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=snapchat&utm_medium=paid-social&utm_campaign=visitor-diriyah_jul26_awr&utm_term=ar&utm_content=kv4_display_ar"
+            },
+            "top_snap_media_id": "f0c2b77f-9f34-472c-a22a-9ea6a9ad1e45"
+          }
+        },
+        {
+          "creative": {
+            "id": "593d084f-d8ea-4734-a4a5-4b48802c62e1",
+            "name": "Bab Samhan x Qiddiya_CR5_AR",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-08-16T17:56:06.467Z",
+            "created_at": "2026-08-16T17:54:13.094Z",
+            "web_view_properties": {
+              "url": "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=snapchat&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan_tactical_visitor-diriyah_June2026_reach-awareness_snapchat_ar&utm_term=adset-id-ee00c8_test_adset_name_ar_all_mf_prospecting&utm_content=CR5"
+            },
+            "top_snap_media_id": "d9e45eaa-c993-4668-ad24-12176f8e720d"
+          }
+        },
+        {
+          "creative": {
+            "id": "5a3bd70a-90ce-4aa8-adfd-580a59ee2837",
+            "name": "Video - AR - Updated",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-02-26T11:00:43.746Z",
+            "created_at": "2026-02-26T11:00:09.255Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/hotels/bab-samhan?utm_source=snapchat&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_bab-samhan-company_bab-samhan_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_snapchat_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_video"
+            },
+            "top_snap_media_id": "01402351-6947-4c2b-9c29-9ef61d52c2fd"
+          }
+        },
+        {
+          "creative": {
+            "id": "5b912271-9e3f-4871-8e7e-11a987828205",
+            "name": "Video En Corrected",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T11:18:51.000Z",
+            "created_at": "2026-02-19T12:52:21.849Z",
+            "web_view_properties": {
+              "url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=snapchat&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_feb26_cond&utm_term=en&utm_content=video_en"
+            },
+            "top_snap_media_id": "788fd345-1622-4744-afca-32f83488ad7b"
+          }
+        },
+        {
+          "creative": {
+            "id": "5db71ec7-cc84-43f7-928e-44f4517d0f93",
+            "name": "Bab Samhan x Qiddiya_StaticKV3_EN_Creative",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-06-29T08:21:46.501Z",
+            "created_at": "2026-06-24T09:24:10.176Z",
+            "web_view_properties": {
+              "url": "https://www.marriott.com/offers/theme-park-experience-off-227242/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah?utm_source=snapchat&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan_tactical_visitor-diriyah_June2026_reach-awareness_snapchat_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=KV3"
+            },
+            "top_snap_media_id": "86c0e4a3-e1ea-4e60-9fde-80f7ba446f33"
+          }
+        },
+        {
+          "creative": {
+            "id": "5fa281de-6239-4819-90e1-f120ffdfd941",
+            "name": "AR Video",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-02-19T09:29:19.069Z",
+            "created_at": "2026-02-19T09:28:18.483Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/bujairi-terrace?utm_source=snapchat&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_mf_consideration_traffic_snapchat_ar&utm_term=adset-id-7aee00_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_video"
+            },
+            "top_snap_media_id": "d22254e8-95e1-4bb7-9d3a-b73135248d62"
+          }
+        },
+        {
+          "creative": {
+            "id": "6029fe85-f4c8-46dc-a9e1-315d266e3b36",
+            "name": "Static - AR - Updated",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T11:26:56.216Z",
+            "created_at": "2026-02-25T13:22:45.014Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/en/hotels/bab-samhan?utm_source=snapchat&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_mar26_awr&utm_term=ar&utm_content=display_ar"
+            },
+            "top_snap_media_id": "ad1a3345-d23a-46e9-abeb-579f6dbc5eec"
+          }
+        },
+        {
+          "creative": {
+            "id": "61d63d0d-6810-4a3a-81d9-4e518b9495ca",
+            "name": "Visit Diriyah_WC KV_AR_1080x1920",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T14:09:35.916Z",
+            "created_at": "2026-06-11T09:58:22.109Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar?utm_source=snapchat&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_jun26_cond&utm_term=ar&utm_content=display_ar"
+            },
+            "top_snap_media_id": "1520f090-1dae-47f0-bfe7-662b15e3c181"
+          }
+        },
+        {
+          "creative": {
+            "id": "631d5b1a-1a03-4dbf-bda7-e23e116f8b2f",
+            "name": "AR static Updated",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T11:33:47.248Z",
+            "created_at": "2026-02-25T13:24:00.808Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/hotels/bab-samhan?utm_source=snapchat&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_mar26_cond&utm_term=ar&utm_content=display_ar"
+            },
+            "top_snap_media_id": "ad1a3345-d23a-46e9-abeb-579f6dbc5eec"
+          }
+        },
+        {
+          "creative": {
+            "id": "63f40ae8-5233-4395-9c29-524976e92490",
+            "name": "Visit Diriyah_WC KV2_EN_1080x1920",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T11:18:52.156Z",
+            "created_at": "2026-06-17T12:42:49.812Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/en?utm_source=snapchat&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_jun26_cond&utm_term=en&utm_content=kv2_display_en"
+            },
+            "top_snap_media_id": "29ab2e59-c135-4cff-95fd-b4cc1cfa8fd0"
+          }
+        },
+        {
+          "creative": {
+            "id": "65076c8f-1185-467c-aae9-89329a7c5fed",
+            "name": "Bab Samhan x Qiddiya_Video1_45s_AR",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T11:04:48.405Z",
+            "created_at": "2026-07-26T06:18:36.685Z",
+            "web_view_properties": {
+              "url": "https://www.marriott.com/ar/hotels/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah/overview/?utm_source=snapchat&utm_medium=paid-social&utm_campaign=visitor-diriyah_jul26_cond&utm_term=ar&utm_content=video1_video_ar"
+            },
+            "top_snap_media_id": "dd3ff3e0-6dcd-4cfe-9e0e-fb3cf3a0063f"
+          }
+        },
+        {
+          "creative": {
+            "id": "6659b5c7-08ed-400c-a6d7-5c5314a8b593",
+            "name": "VisitDiriyah_Assouline_KV2_Video_AR_V3",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T17:11:33.783Z",
+            "created_at": "2026-07-09T14:42:23.532Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar?utm_source=snapchat&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_jul26_cond&utm_term=4d320041_assouline_ar&utm_content=kv2-v3_video_ar"
+            },
+            "top_snap_media_id": "3a05fc62-7edd-4880-b852-bc5c551b703d"
+          }
+        },
+        {
+          "creative": {
+            "id": "67519a34-5749-43c7-975c-7e8beb95c2bd",
+            "name": "Bab Samhan x Qiddiya_Static_KV1_EN_Creative_V2",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T14:24:43.266Z",
+            "created_at": "2026-07-16T12:59:06.237Z",
+            "web_view_properties": {
+              "url": "https://www.marriott.com/offers/theme-park-experience-off-227242/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=visitor-diriyah_jul26_awr&utm_term=en&utm_content=kv1-v2_display_en"
+            },
+            "top_snap_media_id": "20d0bdbb-6993-4b2a-b8a9-073796d7681f"
+          }
+        },
+        {
+          "creative": {
+            "id": "686582f4-9a2a-4d23-ba9e-80760a47fcd6",
+            "name": "Static AR",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T11:14:36.078Z",
+            "created_at": "2026-03-05T14:24:09.179Z",
+            "web_view_properties": {
+              "url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=snapchat&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_mar26_conv&utm_term=ar&utm_content=display_ar"
+            },
+            "top_snap_media_id": "a482b96d-c465-49d3-88d1-5561102c950a"
+          }
+        },
+        {
+          "creative": {
+            "id": "6b1f5c17-aeb1-4766-bf63-1b7b85e73f94",
+            "name": "VisitDiriyah_Bujari_KV1_Video_AR",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T14:01:12.965Z",
+            "created_at": "2026-07-07T04:08:43.512Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar?utm_source=snapchat&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_cond&utm_term=ar&utm_content=kv1_video_ar"
+            },
+            "top_snap_media_id": "83a9e363-05b9-45fb-88b6-0c778bb75b1e"
+          }
+        },
+        {
+          "creative": {
+            "id": "6c19cc25-2b70-4ebb-ae73-ae607387689d",
+            "name": "Visit (Eid) AR",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-05-21T15:57:46.834Z",
+            "created_at": "2026-05-21T15:43:52.990Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/hotels/bab-samhan"
+            },
+            "top_snap_media_id": "3027fd1c-38c0-48e2-a4cb-a353549b5d1f"
+          }
+        },
+        {
+          "creative": {
+            "id": "6c1a9420-bf3d-4f2f-8288-915167e8e7ec",
+            "name": "Bab Samhan x Qiddiya_Static_KV3_EN",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T11:33:48.545Z",
+            "created_at": "2026-07-18T17:53:02.299Z",
+            "web_view_properties": {
+              "url": "https://www.marriott.com/offers/theme-park-experience-off-227242/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=visitor-diriyah_jul26_cond&utm_term=en&utm_content=kv3_display_en"
+            },
+            "top_snap_media_id": "47e0ba6a-e9cf-49ee-92a6-a399b45ee8a7"
+          }
+        },
+        {
+          "creative": {
+            "id": "6d3efb04-87a6-4028-8f62-2dddf3705b90",
+            "name": "Copy of AR static",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T11:15:29.235Z",
+            "created_at": "2026-02-25T20:30:10.282Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/bujairi-terrace?utm_source=snapchat&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_feb26_conv&utm_term=ar&utm_content=display_ar"
+            },
+            "top_snap_media_id": "da7ed4d8-71e6-4691-9c05-458cc846d269"
+          }
+        },
+        {
+          "creative": {
+            "id": "6f956e6b-8fa4-45ef-b57c-24de68c3b5e4",
+            "name": "Static",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T14:29:14.183Z",
+            "created_at": "2026-03-02T12:23:42.814Z",
+            "web_view_properties": {
+              "url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=snapchat&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_mar26_conv&utm_term=ar&utm_content=display_ar"
+            },
+            "top_snap_media_id": "5d18dac2-069b-49de-b1da-406ca9fe6361"
+          }
+        },
+        {
+          "creative": {
+            "id": "6ff09c62-2f8d-4e75-a8b7-978022da5f3b",
+            "name": "Visit Diriyah_WC KV3_EN_1080x1920",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T11:17:57.774Z",
+            "created_at": "2026-07-07T14:01:38.921Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/en?utm_source=snapchat&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_cond&utm_term=en&utm_content=kv3_display_en"
+            },
+            "top_snap_media_id": "5ddc4faf-3c0a-41f8-866e-638cfa2e00b5"
+          }
+        },
+        {
+          "creative": {
+            "id": "706f0279-8e80-43cf-ad61-519c3d23a3d1",
+            "name": "BT Dining Film​ EN",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T11:29:34.307Z",
+            "created_at": "2026-02-18T12:49:05.100Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/en/bujairi-terrace?utm_source=snapchat&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_feb26_awr&utm_term=en&utm_content=video_en"
+            },
+            "top_snap_media_id": "d22254e8-95e1-4bb7-9d3a-b73135248d62"
+          }
+        },
+        {
+          "creative": {
+            "id": "70dcbfcf-dfed-4122-bc89-7f7b01745b06",
+            "name": "Tickets - AR - EID KV",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-03-16T12:27:53.687Z",
+            "created_at": "2026-03-16T12:27:11.239Z",
+            "web_view_properties": {
+              "url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=snapchat&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_uf_mf_consideration_traffic_snapchat_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_display"
+            },
+            "top_snap_media_id": "d26f9c9d-4523-4573-a7a4-470172d06842"
+          }
+        },
+        {
+          "creative": {
+            "id": "72508891-eff3-4d09-a64b-3674eea1121d",
+            "name": "Visit Diriyah_Intro_VideoKV_45s_AR",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T17:21:27.699Z",
+            "created_at": "2026-08-19T19:03:01.188Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar?utm_source=snapchat&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_cond&utm_term=ar&utm_content=video_ar"
+            },
+            "top_snap_media_id": "4c7982cf-4a14-417e-a812-27c185935697"
+          }
+        },
+        {
+          "creative": {
+            "id": "72c8a725-fcf9-447a-83d1-94748e10b327",
+            "name": "Bab Samhan x Qiddiya_StaticKV2_EN_Creative",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T22:16:52.744Z",
+            "created_at": "2026-06-24T09:24:10.083Z",
+            "web_view_properties": {
+              "url": "https://www.marriott.com/offers/theme-park-experience-off-227242/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=visitor-diriyah_awr&utm_term=en&utm_content=kv2_display_en"
+            },
+            "top_snap_media_id": "4f7a4919-af86-4dde-9586-c3770ab000ac"
+          }
+        },
+        {
+          "creative": {
+            "id": "737fb64c-5351-4d40-a481-268f37cad729",
+            "name": "Copy of Video En Corrected",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T14:23:32.665Z",
+            "created_at": "2026-02-25T20:30:10.465Z",
+            "web_view_properties": {
+              "url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=snapchat&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_feb26_conv&utm_term=en&utm_content=video_en"
+            },
+            "top_snap_media_id": "788fd345-1622-4744-afca-32f83488ad7b"
+          }
+        },
+        {
+          "creative": {
+            "id": "74ac4675-6dcd-4242-9fec-7002388bee6e",
+            "name": "VisitDiriyah_Assouline_KV2_Video_AR_V2",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T17:24:29.753Z",
+            "created_at": "2026-06-30T13:40:41.384Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar?utm_source=snapchat&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_jul26_cond&utm_term=4d320041_assouline_ar&utm_content=kv2-v2_video_ar"
+            },
+            "top_snap_media_id": "3a05fc62-7edd-4880-b852-bc5c551b703d"
+          }
+        },
+        {
+          "creative": {
+            "id": "7875e66e-fe26-45b3-be15-466601b13af9",
+            "name": "Safezoned tickets - AR - EID KV",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T11:16:54.778Z",
+            "created_at": "2026-03-18T09:13:25.418Z",
+            "web_view_properties": {
+              "url": "https://tickets.bujairi.sa/ar/d/3552/diriyah-access?utm_source=snapchat&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_mar26_conv&utm_term=ar&utm_content=display_ar"
+            },
+            "top_snap_media_id": "75e6f6f6-aecb-4993-96a3-5232c1f531d9"
+          }
+        },
+        {
+          "creative": {
+            "id": "7af09d48-1dfb-4f39-bf91-e1993e5d9087",
+            "name": "Bab Samhan AR",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-05-21T19:06:51.980Z",
+            "created_at": "2026-05-21T14:54:50.196Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/hotels/bab-samhan?utm_source=snapchat&utm_medium=paid-social&utm_campaign=cam-id-oe4l0i_mindshare_diriyah-destination_bab-samhan_tactical_bab-samhan-consideration-may2026_2026_may_mf_consideration_traffic_snapchat_ar&utm_term=adset-id-hq9a8g_bab-samhan-ar-consideration_ar_all_na_prospecting&utm_content=ad-id-kd1m1l_bab-samhan-ar-consideration-ad_display"
+            },
+            "top_snap_media_id": "f27939ad-a0f2-4ae4-bd86-6c4f97bee8b9"
+          }
+        },
+        {
+          "creative": {
+            "id": "7c2e14dc-fdbd-4cd7-9589-36e8784f85bd",
+            "name": "Bab Samhan x Qiddiya_Static_KV4_EN",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T11:14:51.927Z",
+            "created_at": "2026-07-18T17:53:02.186Z",
+            "web_view_properties": {
+              "url": "https://www.marriott.com/offers/theme-park-experience-off-227242/ruhlc-bab-samhan-a-luxury-collection-hotel-diriyah?utm_source=snapchat&utm_medium=paid-social&utm_campaign=visitor-diriyah_jul26_cond&utm_term=en&utm_content=kv4_display_en"
+            },
+            "top_snap_media_id": "dab9f922-7ceb-441e-8747-2c08c371ddef"
+          }
+        },
+        {
+          "creative": {
+            "id": "7d5a31df-9e72-4015-a9e1-63c22590dc83",
+            "name": "Bab Samhan x Qiddiya_CR5_AR",
+            "type": "COMPOSITE",
+            "review_status": "APPROVED",
+            "updated_at": "2026-08-16T17:56:06.437Z",
+            "created_at": "2026-08-16T17:54:16.060Z",
+            "composite_properties": {
+              "creative_ids": [
+                "ed29b4ef-9b89-4e4e-b1cd-c9246179871c",
+                "9656e051-39b4-4b2a-ad83-4905b78d4ee3",
+                "593d084f-d8ea-4734-a4a5-4b48802c62e1"
+              ]
+            }
+          }
+        },
+        {
+          "creative": {
+            "id": "7e9e1366-da87-4ded-989d-3999b46a0ab6",
+            "name": "AR static",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T14:05:51.977Z",
+            "created_at": "2026-03-04T10:16:51.872Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar/bujairi-terrace?utm_source=snapchat&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_mar26_conv&utm_term=ar&utm_content=display_ar"
+            },
+            "top_snap_media_id": "3ff71e6c-ffb5-4dd0-b19d-79b5eae8ed09"
+          }
+        },
+        {
+          "creative": {
+            "id": "7ffef466-efd0-4ded-83d6-b9d968148bb2",
+            "name": "BT Dining KV​ EN",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-02-18T12:49:54.351Z",
+            "created_at": "2026-02-18T12:49:05.036Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/en/bujairi-terrace?utm_source=snapchat&utm_medium=paid-social&utm_campaign=cam-id-55ee95_mindshare_diriyah-company_bujairi_tactical_visitor-diriyah-coe_2026_feb_uf_awareness_reach-awareness_snapchat_en&utm_term=adset-id-7aee00_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-7aee00_test_ad_name_display"
+            },
+            "top_snap_media_id": "8e7208cc-58c1-47f8-b243-48cdee676168"
+          }
+        },
+        {
+          "creative": {
+            "id": "81988785-e493-49e1-a51e-1eddf3b56a5c",
+            "name": "Static EN - Updated",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T11:12:11.337Z",
+            "created_at": "2026-02-25T13:23:57.289Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/en/hotels/bab-samhan?utm_source=snapchat&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_mar26_cond&utm_term=en&utm_content=display_en"
+            },
+            "top_snap_media_id": "dbf214c9-aa8f-4c7c-969a-544f6f3f34ca"
+          }
+        },
+        {
+          "creative": {
+            "id": "82c05320-9d35-4b42-b962-0b30e547d3ea",
+            "name": "Visit Diriyah_Intro_VideoKV_15s_AR_1080x1920",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T14:21:51.373Z",
+            "created_at": "2026-06-16T12:39:56.598Z",
+            "web_view_properties": {
+              "url": "https://www.diriyah.sa/ar?utm_source=snapchat&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_cond&utm_term=ar&utm_content=video_ar"
+            },
+            "top_snap_media_id": "b9dd509d-f460-45dc-8f1b-4bdbf98c06c3"
+          }
+        },
+        {
+          "creative": {
+            "id": "82de60f3-cf3b-477b-8f44-92deec0628ae",
+            "name": "Tickets - EN - EID KV",
+            "type": "WEB_VIEW",
+            "review_status": "APPROVED",
+            "updated_at": "2026-10-12T11:27:37.371Z",
+            "created_at": "2026-03-16T12:29:02.702Z",
+            "web_view_properties": {
+              "url": "https://tickets.bujairi.sa/en/d/3552/diriyah-access?utm_source=snapchat&utm_medium=paid-social&utm_campaign=visitor-diriyah-coe_conv&utm_term=en&utm_content=display_en"
+            },
+            "top_snap_media_id": "d26f9c9d-4523-4573-a7a4-470172d06842"
+          }
+        }
+      ]
+    },
+    "meta": {
+      "requestId": "47a4f282-0482-4b05-bc99-70c097da8048",
+      "waitedMs": 334,
+      "throttled": false,
+      "warnings": [],
+      "partialFailure": null,
+      "asyncReport": null,
+      "compatibility": null,
+      "compatibilitySkipped": true,
+      "mcp_result_projection": {
+        "fields": [
+          "creative.id",
+          "creative.name",
+          "creative.type",
+          "creative.review_status",
+          "creative.updated_at",
+          "creative.created_at",
+          "creative.web_view_properties.url",
+          "creative.composite_properties",
+          "creative.deep_link_properties",
+          "creative.collection_properties",
+          "creative.app_install_properties",
+          "creative.lead_generation_properties",
+          "creative.top_snap_media_id",
+          "paging"
+        ],
+        "compact": true
+      }
+    }
+  },
+  "meta": {
+    "requestId": "f4203019-115a-4499-a612-ac1864402ead",
+    "latencyMs": 2058
+  }
+}
