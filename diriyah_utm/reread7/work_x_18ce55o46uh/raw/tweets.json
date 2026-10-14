@@ -1,0 +1,939 @@
+[
+ {
+  "tool_use_id": "toolu_012YbvTjpT9M7zEr4JjaTy7E",
+  "input": {
+   "action": "x_accounts_account_id_tweets_get",
+   "account_id": "18ce55o46uh",
+   "params": {
+    "tweet_ids": "1839383133956751837,1841429922679861699,1841429922822398181,1861040742161891505,2061430242628280471,2061430487013282215,2101685115818779091",
+    "tweet_type": "PUBLISHED",
+    "timeline_type": "ALL",
+    "trim_user": true,
+    "count": 200
+   }
+  },
+  "request_id": "eb36bfa5-2dff-4e80-a690-16a0127956c7",
+  "data": [
+   {
+    "coordinates": null,
+    "retweeted": false,
+    "name": null,
+    "conversation_settings": "EVERYONE",
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "entities": {
+     "user_mentions": [],
+     "urls": [
+      {
+       "url": "https://t.co/HQ0V8W83ec",
+       "expanded_url": "https://x.com/i/web/status/1839383133956751837",
+       "display_url": "x.com/i/web/status/1…",
+       "indices": [
+        251,
+        274
+       ]
+      }
+     ],
+     "symbols": [],
+     "media": [
+      {
+       "expanded_url": "https://x.com/VisitDiriyah/status/1839383133956751837/video/1",
+       "indices": [
+        275,
+        298
+       ],
+       "url": "https://t.co/USZ0KMzjg1",
+       "media_url": "http://pbs.twimg.com/ext_tw_video_thumb/1839347783561814018/pu/img/bx1T1Coec4_H0uaB.jpg",
+       "features": {},
+       "id_str": "1839347783561814018",
+       "id": 1839347783561814000,
+       "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/1839347783561814018/pu/img/bx1T1Coec4_H0uaB.jpg",
+       "sizes": {
+        "thumb": {
+         "w": 150,
+         "h": 150,
+         "resize": "crop"
+        },
+        "large": {
+         "w": 1920,
+         "h": 1080,
+         "resize": "fit"
+        },
+        "medium": {
+         "w": 1200,
+         "h": 675,
+         "resize": "fit"
+        },
+        "small": {
+         "w": 680,
+         "h": 383,
+         "resize": "fit"
+        }
+       },
+       "type": "photo",
+       "display_url": "pic.x.com/USZ0KMzjg1",
+       "original_info": {
+        "width": 1920,
+        "height": 1080
+       }
+      }
+     ],
+     "hashtags": [
+      {
+       "text": "الدرعية_ساحتك",
+       "indices": [
+        21,
+        35
+       ]
+      },
+      {
+       "text": "PlayInDiriyah",
+       "indices": [
+        222,
+        236
+       ]
+      }
+     ]
+    },
+    "display_text_range": [
+     0,
+     274
+    ],
+    "favorite_count": 263,
+    "in_reply_to_status_id_str": null,
+    "geo": null,
+    "id_str": "1839383133956751837",
+    "in_reply_to_user_id": null,
+    "truncated": false,
+    "retweet_count": 23,
+    "scheduled_status": null,
+    "id": 1839383133956752000,
+    "in_reply_to_status_id": null,
+    "possibly_sensitive": false,
+    "nullcast": false,
+    "created_at": "Thu Sep 26 19:14:47 +0000 2024",
+    "place": null,
+    "scheduled_at": null,
+    "tweet_type": "PUBLISHED",
+    "favorited": false,
+    "full_text": "هنا اللعب مختلف! لأن #الدرعية_ساحتك 🎮😍\nسيّر علينا في فورتنايت والعب بطريقة جديدة 🎟\nكود الدخول | 𝟏𝟓𝟐𝟔-𝟔𝟎𝟒𝟗-𝟓𝟏𝟓𝟒\n\nGet ready for a whole new level of gaming! 🎮😍\nJoin the action in Fortnite and discover an exciting new way to #PlayInDiriyah 🎟\n𝗠𝗮𝗽 𝗰𝗼𝗱𝗲 |… https://t.co/HQ0V8W83ec https://t.co/USZ0KMzjg1",
+    "lang": "ca",
+    "contributors": null,
+    "in_reply_to_screen_name": null,
+    "in_reply_to_user_id_str": null,
+    "user": {
+     "id": 1440275767837880300,
+     "id_str": "1440275767837880326"
+    },
+    "tweet_id": "1839383133956751837",
+    "extended_entities": {
+     "media": [
+      {
+       "expanded_url": "https://x.com/VisitDiriyah/status/1839383133956751837/video/1",
+       "indices": [
+        275,
+        298
+       ],
+       "url": "https://t.co/USZ0KMzjg1",
+       "media_url": "http://pbs.twimg.com/ext_tw_video_thumb/1839347783561814018/pu/img/bx1T1Coec4_H0uaB.jpg",
+       "features": {},
+       "id_str": "1839347783561814018",
+       "video_info": {
+        "aspect_ratio": [
+         16,
+         9
+        ],
+        "duration_millis": 35000,
+        "variants": [
+         {
+          "bitrate": 2176000,
+          "content_type": "video/mp4",
+          "url": "https://video.twimg.com/ext_tw_video/1839347783561814018/pu/vid/avc1/1280x720/a9hIax4_2zlTaAlu.mp4?tag=14"
+         },
+         {
+          "bitrate": 10368000,
+          "content_type": "video/mp4",
+          "url": "https://video.twimg.com/ext_tw_video/1839347783561814018/pu/vid/avc1/1920x1080/J4ZCIdvEDIowzIDk.mp4?tag=14"
+         },
+         {
+          "content_type": "application/x-mpegURL",
+          "url": "https://video.twimg.com/ext_tw_video/1839347783561814018/pu/pl/Jfr5QASCetRSShZ-.m3u8?tag=14"
+         },
+         {
+          "bitrate": 256000,
+          "content_type": "video/mp4",
+          "url": "https://video.twimg.com/ext_tw_video/1839347783561814018/pu/vid/avc1/480x270/OOp5Dlr-g5J51S5U.mp4?tag=14"
+         },
+         {
+          "bitrate": 832000,
+          "content_type": "video/mp4",
+          "url": "https://video.twimg.com/ext_tw_video/1839347783561814018/pu/vid/avc1/640x360/t6XrmTyvpsReat3q.mp4?tag=14"
+         }
+        ]
+       },
+       "additional_media_info": {
+        "monetizable": false
+       },
+       "id": 1839347783561814000,
+       "media_key": "7_1839347783561814018",
+       "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/1839347783561814018/pu/img/bx1T1Coec4_H0uaB.jpg",
+       "sizes": {
+        "thumb": {
+         "w": 150,
+         "h": 150,
+         "resize": "crop"
+        },
+        "large": {
+         "w": 1920,
+         "h": 1080,
+         "resize": "fit"
+        },
+        "medium": {
+         "w": 1200,
+         "h": 675,
+         "resize": "fit"
+        },
+        "small": {
+         "w": 680,
+         "h": 383,
+         "resize": "fit"
+        }
+       },
+       "type": "video",
+       "display_url": "pic.x.com/USZ0KMzjg1",
+       "original_info": {
+        "width": 1920,
+        "height": 1080
+       }
+      }
+     ]
+    }
+   },
+   {
+    "coordinates": null,
+    "retweeted": false,
+    "name": "Video_Fortnite_Generic_RICH_NA_EN_Cutdown ",
+    "conversation_settings": "EVERYONE",
+    "source": "<a href=\"https://help.twitter.com/en/using-twitter/how-to-tweet#source-labels\" rel=\"nofollow\">advertiser-interface</a>",
+    "entities": {
+     "user_mentions": [],
+     "urls": [
+      {
+       "url": "https://t.co/HQ0V8W83ec",
+       "expanded_url": "https://x.com/i/web/status/1839383133956751837",
+       "display_url": "x.com/i/web/status/1…",
+       "indices": [
+        139,
+        162
+       ]
+      }
+     ],
+     "symbols": [],
+     "media": [
+      {
+       "expanded_url": "https://x.com/VisitDiriyah/status/1841429922679861699/video/1",
+       "indices": [
+        163,
+        186
+       ],
+       "url": "https://t.co/BRliPbVDmf",
+       "media_url": "http://pbs.twimg.com/amplify_video_thumb/1841426190428471296/img/2BUib52zDtwr26FH.jpg",
+       "features": {},
+       "id_str": "1841426190428471296",
+       "id": 1841426190428471300,
+       "media_url_https": "https://pbs.twimg.com/amplify_video_thumb/1841426190428471296/img/2BUib52zDtwr26FH.jpg",
+       "sizes": {
+        "large": {
+         "w": 800,
+         "h": 800,
+         "resize": "fit"
+        },
+        "thumb": {
+         "w": 150,
+         "h": 150,
+         "resize": "crop"
+        },
+        "medium": {
+         "w": 800,
+         "h": 800,
+         "resize": "fit"
+        },
+        "small": {
+         "w": 680,
+         "h": 680,
+         "resize": "fit"
+        }
+       },
+       "type": "photo",
+       "display_url": "pic.x.com/BRliPbVDmf",
+       "original_info": {
+        "width": 800,
+        "height": 800
+       }
+      }
+     ],
+     "hashtags": [
+      {
+       "text": "PlayInDiriyah",
+       "indices": [
+        110,
+        124
+       ]
+      }
+     ]
+    },
+    "display_text_range": [
+     0,
+     162
+    ],
+    "favorite_count": 99,
+    "in_reply_to_status_id_str": null,
+    "geo": null,
+    "id_str": "1841429922679861699",
+    "scopes": {
+     "followers": false
+    },
+    "in_reply_to_user_id": null,
+    "truncated": false,
+    "retweet_count": 3,
+    "scheduled_status": null,
+    "id": 1841429922679861800,
+    "in_reply_to_status_id": null,
+    "possibly_sensitive": false,
+    "nullcast": true,
+    "created_at": "Wed Oct 02 10:48:00 +0000 2024",
+    "place": null,
+    "scheduled_at": null,
+    "tweet_type": "PUBLISHED",
+    "favorited": false,
+    "full_text": "Get ready for a whole new level of gaming! 🎮😍\nJoin the action in Fortnite and discover an exciting new way to #PlayInDiriyah 🎟\n𝗠𝗮𝗽 𝗰𝗼𝗱𝗲 |… https://t.co/HQ0V8W83ec https://t.co/BRliPbVDmf",
+    "lang": "en",
+    "contributors": null,
+    "in_reply_to_screen_name": null,
+    "in_reply_to_user_id_str": null,
+    "user": {
+     "id": 1440275767837880300,
+     "id_str": "1440275767837880326"
+    },
+    "tweet_id": "1841429922679861699",
+    "extended_entities": {
+     "media": [
+      {
+       "expanded_url": "https://x.com/VisitDiriyah/status/1841429922679861699/video/1",
+       "indices": [
+        163,
+        186
+       ],
+       "url": "https://t.co/BRliPbVDmf",
+       "media_url": "http://pbs.twimg.com/amplify_video_thumb/1841426190428471296/img/2BUib52zDtwr26FH.jpg",
+       "features": {},
+       "id_str": "1841426190428471296",
+       "video_info": {
+        "aspect_ratio": [
+         1,
+         1
+        ],
+        "duration_millis": 15000,
+        "variants": [
+         {
+          "content_type": "application/x-mpegURL",
+          "url": "https://video.twimg.com/amplify_video/1841426190428471296/pl/GUxgOs5pHsNBNljN.m3u8?tag=14"
+         },
+         {
+          "bitrate": 432000,
+          "content_type": "video/mp4",
+          "url": "https://video.twimg.com/amplify_video/1841426190428471296/vid/avc1/320x320/Ci1XLY8IpeNzrOp_.mp4?tag=14"
+         },
+         {
+          "bitrate": 1280000,
+          "content_type": "video/mp4",
+          "url": "https://video.twimg.com/amplify_video/1841426190428471296/vid/avc1/720x720/eE_lmX8UfNtQLaNy.mp4?tag=14"
+         },
+         {
+          "bitrate": 832000,
+          "content_type": "video/mp4",
+          "url": "https://video.twimg.com/amplify_video/1841426190428471296/vid/avc1/540x540/9Ym68WiKx2uSNGkZ.mp4?tag=14"
+         }
+        ]
+       },
+       "additional_media_info": {
+        "monetizable": false
+       },
+       "id": 1841426190428471300,
+       "media_key": "13_1841426190428471296",
+       "media_url_https": "https://pbs.twimg.com/amplify_video_thumb/1841426190428471296/img/2BUib52zDtwr26FH.jpg",
+       "sizes": {
+        "large": {
+         "w": 800,
+         "h": 800,
+         "resize": "fit"
+        },
+        "thumb": {
+         "w": 150,
+         "h": 150,
+         "resize": "crop"
+        },
+        "medium": {
+         "w": 800,
+         "h": 800,
+         "resize": "fit"
+        },
+        "small": {
+         "w": 680,
+         "h": 680,
+         "resize": "fit"
+        }
+       },
+       "type": "video",
+       "display_url": "pic.x.com/BRliPbVDmf",
+       "original_info": {
+        "width": 800,
+        "height": 800
+       }
+      }
+     ]
+    }
+   },
+   {
+    "coordinates": null,
+    "retweeted": false,
+    "name": "Video_Fortnite_Generic_RICH_REEL_EN_Cutdown ",
+    "conversation_settings": "EVERYONE",
+    "source": "<a href=\"https://help.twitter.com/en/using-twitter/how-to-tweet#source-labels\" rel=\"nofollow\">advertiser-interface</a>",
+    "entities": {
+     "user_mentions": [],
+     "urls": [
+      {
+       "url": "https://t.co/HQ0V8W83ec",
+       "expanded_url": "https://x.com/i/web/status/1839383133956751837",
+       "display_url": "x.com/i/web/status/1…",
+       "indices": [
+        139,
+        162
+       ]
+      }
+     ],
+     "symbols": [],
+     "media": [
+      {
+       "expanded_url": "https://x.com/VisitDiriyah/status/1841429922822398181/video/1",
+       "indices": [
+        163,
+        186
+       ],
+       "url": "https://t.co/DzukapzBb2",
+       "media_url": "http://pbs.twimg.com/amplify_video_thumb/1841426910540124160/img/nlbKTlXQ3PYLr4hn.jpg",
+       "features": {},
+       "id_str": "1841426910540124160",
+       "id": 1841426910540124200,
+       "media_url_https": "https://pbs.twimg.com/amplify_video_thumb/1841426910540124160/img/nlbKTlXQ3PYLr4hn.jpg",
+       "sizes": {
+        "thumb": {
+         "w": 150,
+         "h": 150,
+         "resize": "crop"
+        },
+        "small": {
+         "w": 383,
+         "h": 680,
+         "resize": "fit"
+        },
+        "medium": {
+         "w": 675,
+         "h": 1200,
+         "resize": "fit"
+        },
+        "large": {
+         "w": 1080,
+         "h": 1920,
+         "resize": "fit"
+        }
+       },
+       "type": "photo",
+       "display_url": "pic.x.com/DzukapzBb2",
+       "original_info": {
+        "width": 1080,
+        "height": 1920
+       }
+      }
+     ],
+     "hashtags": [
+      {
+       "text": "PlayInDiriyah",
+       "indices": [
+        110,
+        124
+       ]
+      }
+     ]
+    },
+    "display_text_range": [
+     0,
+     162
+    ],
+    "favorite_count": 103,
+    "in_reply_to_status_id_str": null,
+    "geo": null,
+    "id_str": "1841429922822398181",
+    "scopes": {
+     "followers": false
+    },
+    "in_reply_to_user_id": null,
+    "truncated": false,
+    "retweet_count": 9,
+    "scheduled_status": null,
+    "id": 1841429922822398200,
+    "in_reply_to_status_id": null,
+    "possibly_sensitive": false,
+    "nullcast": true,
+    "created_at": "Wed Oct 02 10:48:00 +0000 2024",
+    "place": null,
+    "scheduled_at": null,
+    "tweet_type": "PUBLISHED",
+    "favorited": false,
+    "full_text": "Get ready for a whole new level of gaming! 🎮😍\nJoin the action in Fortnite and discover an exciting new way to #PlayInDiriyah 🎟\n𝗠𝗮𝗽 𝗰𝗼𝗱𝗲 |… https://t.co/HQ0V8W83ec https://t.co/DzukapzBb2",
+    "lang": "en",
+    "contributors": null,
+    "in_reply_to_screen_name": null,
+    "in_reply_to_user_id_str": null,
+    "user": {
+     "id": 1440275767837880300,
+     "id_str": "1440275767837880326"
+    },
+    "tweet_id": "1841429922822398181",
+    "extended_entities": {
+     "media": [
+      {
+       "expanded_url": "https://x.com/VisitDiriyah/status/1841429922822398181/video/1",
+       "indices": [
+        163,
+        186
+       ],
+       "url": "https://t.co/DzukapzBb2",
+       "media_url": "http://pbs.twimg.com/amplify_video_thumb/1841426910540124160/img/nlbKTlXQ3PYLr4hn.jpg",
+       "features": {},
+       "id_str": "1841426910540124160",
+       "video_info": {
+        "aspect_ratio": [
+         9,
+         16
+        ],
+        "duration_millis": 15000,
+        "variants": [
+         {
+          "bitrate": 632000,
+          "content_type": "video/mp4",
+          "url": "https://video.twimg.com/amplify_video/1841426910540124160/vid/avc1/320x568/nVpAFPWeqEvrQvtO.mp4?tag=14"
+         },
+         {
+          "bitrate": 2176000,
+          "content_type": "video/mp4",
+          "url": "https://video.twimg.com/amplify_video/1841426910540124160/vid/avc1/720x1280/Z0RH37yfrF7h9HSA.mp4?tag=14"
+         },
+         {
+          "content_type": "application/x-mpegURL",
+          "url": "https://video.twimg.com/amplify_video/1841426910540124160/pl/zSCCnkybKtKlxjZ5.m3u8?tag=14&v=cfc"
+         },
+         {
+          "bitrate": 950000,
+          "content_type": "video/mp4",
+          "url": "https://video.twimg.com/amplify_video/1841426910540124160/vid/avc1/480x852/PU-xcplzKzalAiXQ.mp4?tag=14"
+         }
+        ]
+       },
+       "additional_media_info": {
+        "monetizable": false
+       },
+       "id": 1841426910540124200,
+       "media_key": "13_1841426910540124160",
+       "media_url_https": "https://pbs.twimg.com/amplify_video_thumb/1841426910540124160/img/nlbKTlXQ3PYLr4hn.jpg",
+       "sizes": {
+        "thumb": {
+         "w": 150,
+         "h": 150,
+         "resize": "crop"
+        },
+        "small": {
+         "w": 383,
+         "h": 680,
+         "resize": "fit"
+        },
+        "medium": {
+         "w": 675,
+         "h": 1200,
+         "resize": "fit"
+        },
+        "large": {
+         "w": 1080,
+         "h": 1920,
+         "resize": "fit"
+        }
+       },
+       "type": "video",
+       "display_url": "pic.x.com/DzukapzBb2",
+       "original_info": {
+        "width": 1080,
+        "height": 1920
+       }
+      }
+     ]
+    }
+   },
+   {
+    "coordinates": null,
+    "retweeted": false,
+    "name": null,
+    "conversation_settings": "EVERYONE",
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "entities": {
+     "user_mentions": [],
+     "urls": [
+      {
+       "url": "https://t.co/q400HYXQUv",
+       "expanded_url": "http://bit.ly/twbujairi",
+       "display_url": "bit.ly/twbujairi",
+       "indices": [
+        214,
+        237
+       ]
+      }
+     ],
+     "symbols": [],
+     "media": [
+      {
+       "expanded_url": "https://x.com/VisitDiriyah/status/1861040742161891505/video/1",
+       "indices": [
+        238,
+        261
+       ],
+       "url": "https://t.co/VeKiuNp5x1",
+       "media_url": "http://pbs.twimg.com/ext_tw_video_thumb/1861039351246778368/pu/img/zjOZYloDzG4NXwb-.jpg",
+       "features": {},
+       "id_str": "1861039351246778368",
+       "id": 1861039351246778400,
+       "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/1861039351246778368/pu/img/zjOZYloDzG4NXwb-.jpg",
+       "sizes": {
+        "thumb": {
+         "w": 150,
+         "h": 150,
+         "resize": "crop"
+        },
+        "large": {
+         "w": 2048,
+         "h": 1152,
+         "resize": "fit"
+        },
+        "medium": {
+         "w": 1200,
+         "h": 675,
+         "resize": "fit"
+        },
+        "small": {
+         "w": 680,
+         "h": 383,
+         "resize": "fit"
+        }
+       },
+       "type": "photo",
+       "display_url": "pic.x.com/VeKiuNp5x1",
+       "original_info": {
+        "width": 3840,
+        "height": 2160
+       }
+      }
+     ],
+     "hashtags": [
+      {
+       "text": "الدرعية",
+       "indices": [
+        70,
+        78
+       ]
+      },
+      {
+       "text": "الدرعية",
+       "indices": [
+        95,
+        103
+       ]
+      },
+      {
+       "text": "Diriyah",
+       "indices": [
+        170,
+        178
+       ]
+      },
+      {
+       "text": "Diriyah",
+       "indices": [
+        200,
+        208
+       ]
+      }
+     ]
+    },
+    "display_text_range": [
+     0,
+     237
+    ],
+    "favorite_count": 7,
+    "in_reply_to_status_id_str": null,
+    "geo": null,
+    "id_str": "1861040742161891505",
+    "in_reply_to_user_id": null,
+    "truncated": false,
+    "retweet_count": 5,
+    "scheduled_status": null,
+    "id": 1861040742161891600,
+    "in_reply_to_status_id": null,
+    "possibly_sensitive": false,
+    "nullcast": false,
+    "created_at": "Mon Nov 25 13:34:24 +0000 2024",
+    "place": null,
+    "scheduled_at": null,
+    "tweet_type": "PUBLISHED",
+    "favorited": false,
+    "full_text": "7 أيام مجانية لدخول البجيري .. احتفاءً بالذكرى السابعة السنوية لمشروع #الدرعية!\n\nحياكم الله في #الدرعية 🤎✨\n\n7 days of free tickets in honor of the 7th anniversary of the #Diriyah project!\n\nJoin us in #Diriyah 🤎\n🔗| https://t.co/q400HYXQUv https://t.co/VeKiuNp5x1",
+    "lang": "und",
+    "contributors": null,
+    "in_reply_to_screen_name": null,
+    "in_reply_to_user_id_str": null,
+    "user": {
+     "id": 1440275767837880300,
+     "id_str": "1440275767837880326"
+    },
+    "tweet_id": "1861040742161891505",
+    "extended_entities": {
+     "media": [
+      {
+       "expanded_url": "https://x.com/VisitDiriyah/status/1861040742161891505/video/1",
+       "indices": [
+        238,
+        261
+       ],
+       "url": "https://t.co/VeKiuNp5x1",
+       "media_url": "http://pbs.twimg.com/ext_tw_video_thumb/1861039351246778368/pu/img/zjOZYloDzG4NXwb-.jpg",
+       "features": {},
+       "id_str": "1861039351246778368",
+       "video_info": {
+        "aspect_ratio": [
+         16,
+         9
+        ],
+        "duration_millis": 40800,
+        "variants": [
+         {
+          "bitrate": 256000,
+          "content_type": "video/mp4",
+          "url": "https://video.twimg.com/ext_tw_video/1861039351246778368/pu/vid/avc1/480x270/DKgyiGvZm5qJSzbw.mp4?tag=14"
+         },
+         {
+          "bitrate": 832000,
+          "content_type": "video/mp4",
+          "url": "https://video.twimg.com/ext_tw_video/1861039351246778368/pu/vid/avc1/640x360/zxD6r5DD2WoIOAqR.mp4?tag=14"
+         },
+         {
+          "bitrate": 2176000,
+          "content_type": "video/mp4",
+          "url": "https://video.twimg.com/ext_tw_video/1861039351246778368/pu/vid/avc1/1280x720/abKZfXAm1R9NkrBz.mp4?tag=14"
+         },
+         {
+          "content_type": "application/x-mpegURL",
+          "url": "https://video.twimg.com/ext_tw_video/1861039351246778368/pu/pl/eTmE7CdwMy4_XrBx.m3u8?tag=14"
+         },
+         {
+          "bitrate": 10368000,
+          "content_type": "video/mp4",
+          "url": "https://video.twimg.com/ext_tw_video/1861039351246778368/pu/vid/avc1/1920x1080/p2aNOHh3qCRdfwhv.mp4?tag=14"
+         }
+        ]
+       },
+       "additional_media_info": {
+        "monetizable": false
+       },
+       "id": 1861039351246778400,
+       "media_key": "7_1861039351246778368",
+       "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/1861039351246778368/pu/img/zjOZYloDzG4NXwb-.jpg",
+       "sizes": {
+        "thumb": {
+         "w": 150,
+         "h": 150,
+         "resize": "crop"
+        },
+        "large": {
+         "w": 2048,
+         "h": 1152,
+         "resize": "fit"
+        },
+        "medium": {
+         "w": 1200,
+         "h": 675,
+         "resize": "fit"
+        },
+        "small": {
+         "w": 680,
+         "h": 383,
+         "resize": "fit"
+        }
+       },
+       "type": "video",
+       "display_url": "pic.x.com/VeKiuNp5x1",
+       "original_info": {
+        "width": 3840,
+        "height": 2160
+       }
+      }
+     ]
+    }
+   },
+   {
+    "coordinates": null,
+    "retweeted": false,
+    "name": "Bab Samhan x Qiddiya_Static KV1_ AR_ CPM",
+    "conversation_settings": "EVERYONE",
+    "source": "<a href=\"https://help.twitter.com/en/using-twitter/how-to-tweet#source-labels\" rel=\"nofollow\">Ads Manager Next</a>",
+    "entities": {
+     "hashtags": [],
+     "symbols": [],
+     "user_mentions": [],
+     "urls": []
+    },
+    "display_text_range": [
+     0,
+     77
+    ],
+    "favorite_count": 262,
+    "in_reply_to_status_id_str": null,
+    "geo": null,
+    "id_str": "2061430242628280471",
+    "scopes": {
+     "followers": false
+    },
+    "in_reply_to_user_id": null,
+    "truncated": false,
+    "retweet_count": 16,
+    "scheduled_status": null,
+    "id": 2061430242628280600,
+    "in_reply_to_status_id": null,
+    "nullcast": true,
+    "created_at": "Mon Jun 01 12:50:44 +0000 2026",
+    "place": null,
+    "scheduled_at": null,
+    "tweet_type": "PUBLISHED",
+    "favorited": false,
+    "card_uri": "card://2061430239109304320",
+    "full_text": "أقِم في فندق باب سمحان واستمتع بتجربة متكاملة — من إقامتك إلى تجارب في القدية",
+    "lang": "ar",
+    "contributors": [
+     1966064812137320400
+    ],
+    "in_reply_to_screen_name": null,
+    "in_reply_to_user_id_str": null,
+    "user": {
+     "id": 1440275767837880300,
+     "id_str": "1440275767837880326"
+    },
+    "tweet_id": "2061430242628280471"
+   },
+   {
+    "coordinates": null,
+    "retweeted": false,
+    "name": "Bab Samhan x Qiddiya_Static KV1_ EN_ CPM",
+    "conversation_settings": "EVERYONE",
+    "source": "<a href=\"https://help.twitter.com/en/using-twitter/how-to-tweet#source-labels\" rel=\"nofollow\">Ads Manager Next</a>",
+    "entities": {
+     "hashtags": [],
+     "symbols": [],
+     "user_mentions": [],
+     "urls": []
+    },
+    "display_text_range": [
+     0,
+     82
+    ],
+    "favorite_count": 237,
+    "in_reply_to_status_id_str": null,
+    "geo": null,
+    "id_str": "2061430487013282215",
+    "scopes": {
+     "followers": false
+    },
+    "in_reply_to_user_id": null,
+    "truncated": false,
+    "retweet_count": 10,
+    "scheduled_status": null,
+    "id": 2061430487013282300,
+    "in_reply_to_status_id": null,
+    "nullcast": true,
+    "created_at": "Mon Jun 01 12:51:42 +0000 2026",
+    "place": null,
+    "scheduled_at": null,
+    "tweet_type": "PUBLISHED",
+    "favorited": false,
+    "card_uri": "card://2061430484329242624",
+    "full_text": "Stay at Bab Samhan Hotel and enjoy more — from your stay to experiences in Qiddiya",
+    "lang": "en",
+    "contributors": [
+     1966064812137320400
+    ],
+    "in_reply_to_screen_name": null,
+    "in_reply_to_user_id_str": null,
+    "user": {
+     "id": 1440275767837880300,
+     "id_str": "1440275767837880326"
+    },
+    "tweet_id": "2061430487013282215"
+   },
+   {
+    "coordinates": null,
+    "retweeted": false,
+    "name": "company_general_2026_sep_sc-snd-kv1_adset-id-0df8a722_display_ar",
+    "conversation_settings": "EVERYONE",
+    "source": "<a href=\"https://www.whathead.com\" rel=\"nofollow\">Whathead</a>",
+    "entities": {
+     "hashtags": [],
+     "symbols": [],
+     "user_mentions": [],
+     "urls": []
+    },
+    "display_text_range": [
+     0,
+     113
+    ],
+    "favorite_count": 87,
+    "in_reply_to_status_id_str": null,
+    "geo": null,
+    "id_str": "2101685115818779091",
+    "scopes": {
+     "followers": false
+    },
+    "in_reply_to_user_id": null,
+    "truncated": false,
+    "retweet_count": 14,
+    "scheduled_status": null,
+    "id": 2101685115818779100,
+    "in_reply_to_status_id": null,
+    "nullcast": true,
+    "created_at": "Sun Sep 20 14:49:13 +0000 2026",
+    "place": null,
+    "scheduled_at": null,
+    "tweet_type": "PUBLISHED",
+    "favorited": false,
+    "card_uri": "card://2101685074437828608",
+    "full_text": "عزّنا بأهلنا.. بشجاعتهم، وكرمهم، وهمّتهم، وأصالتهم. في يومنا الوطني، نحتفي بأهل الوطن اللي بعزمهم يكتبون قصة وطن.",
+    "lang": "ar",
+    "contributors": [
+     1966064812137320400
+    ],
+    "in_reply_to_screen_name": null,
+    "in_reply_to_user_id_str": null,
+    "user": {
+     "id": 1440275767837880300,
+     "id_str": "1440275767837880326"
+    },
+    "tweet_id": "2101685115818779091"
+   }
+  ],
+  "total_count": null
+ }
+]

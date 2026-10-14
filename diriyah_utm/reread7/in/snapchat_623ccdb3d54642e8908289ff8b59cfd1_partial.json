@@ -1,0 +1,38 @@
+[
+ {
+  "ad_id": "02da1fcb-58e4-4742-a1ee-b3fc3e0387e9",
+  "ad_name": "Saudi National day",
+  "creative_id": "6751c922-c15a-4dd8-bba2-580579842381",
+  "slot": "web_view_properties.url",
+  "url_11oct": "https://www.dgda.gov.sa/ar",
+  "base_url_11oct": "https://www.dgda.gov.sa/ar",
+  "url_tags_11oct": null,
+  "status_11oct": "INVALID_EFFECTIVE_INVALID",
+  "notes_11oct": "ad.type=REMOTE_WEBPAGE; creative.type=WEB_VIEW; ad.review_status=APPROVED; creative.review_status=APPROVED; cta=MORE; creative shared by 3 ads in this account - editing it changes all of them; utm_autofix_permission=OPT_OUT",
+  "edit_method": "PUT /v1/adaccounts/{ad_account_id}/creatives with full creative object incl. changed web_view_properties.url (triggers re-review)"
+ },
+ {
+  "ad_id": "1d81af98-7db5-463c-84ea-7f31f83ef679",
+  "ad_name": "Saudi National day",
+  "creative_id": "6751c922-c15a-4dd8-bba2-580579842381",
+  "slot": "web_view_properties.url",
+  "url_11oct": "https://www.dgda.gov.sa/ar",
+  "base_url_11oct": "https://www.dgda.gov.sa/ar",
+  "url_tags_11oct": null,
+  "status_11oct": "INVALID_NOT_EFFECTIVE_ACTIVE,INVALID_EFFECTIVE_INVALID",
+  "notes_11oct": "ad.type=REMOTE_WEBPAGE; creative.type=WEB_VIEW; ad.review_status=APPROVED; creative.review_status=APPROVED; cta=MORE; creative shared by 3 ads in this account - editing it changes all of them; utm_autofix_permission=OPT_OUT",
+  "edit_method": "PUT /v1/adaccounts/{ad_account_id}/creatives with full creative object incl. changed web_view_properties.url (triggers re-review)"
+ },
+ {
+  "ad_id": "4a098bdd-6db5-4fdb-8523-a7aa9eb94029",
+  "ad_name": "Saudi National day",
+  "creative_id": "6751c922-c15a-4dd8-bba2-580579842381",
+  "slot": "web_view_properties.url",
+  "url_11oct": "https://www.dgda.gov.sa/ar",
+  "base_url_11oct": "https://www.dgda.gov.sa/ar",
+  "url_tags_11oct": null,
+  "status_11oct": "INVALID_EFFECTIVE_INVALID",
+  "notes_11oct": "ad.type=REMOTE_WEBPAGE; creative.type=WEB_VIEW; ad.review_status=APPROVED; creative.review_status=APPROVED; cta=MORE; creative shared by 3 ads in this account - editing it changes all of them; utm_autofix_permission=OPT_OUT",
+  "edit_method": "PUT /v1/adaccounts/{ad_account_id}/creatives with full creative object incl. changed web_view_properties.url (triggers re-review)"
+ }
+]

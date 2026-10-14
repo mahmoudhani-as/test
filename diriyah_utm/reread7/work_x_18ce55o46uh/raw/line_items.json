@@ -1,0 +1,132 @@
+[
+ {
+  "tool_use_id": "toolu_01UbRpcEBpNvafxuNKTtmBqM",
+  "input": {
+   "action": "x_accounts_account_id_line_items_get",
+   "account_id": "18ce55o46uh",
+   "params": {
+    "line_item_ids": "stuju,tayip,tayiq,wsbo0,wsbo1,wsbub,wsbuc,xob7m,xob7n,xom1o",
+    "with_deleted": true,
+    "with_draft": true,
+    "with_total_count": true,
+    "count": 200
+   },
+   "result_fields": [
+    "id",
+    "name",
+    "campaign_id",
+    "entity_status",
+    "start_time",
+    "end_time",
+    "deleted",
+    "draft_only",
+    "updated_at",
+    "servable"
+   ]
+  },
+  "request_id": "6de09fa7-630a-4465-93c8-aea96f9bd79d",
+  "data": [
+   {
+    "id": "stuju",
+    "name": "BI_KSA_AUD_NA_NA_NA",
+    "campaign_id": "m677w",
+    "entity_status": "ACTIVE",
+    "start_time": "2024-09-27T06:15:00Z",
+    "end_time": "2024-10-16T09:00:00Z",
+    "deleted": false,
+    "updated_at": "2025-07-07T09:14:51Z"
+   },
+   {
+    "id": "tayip",
+    "name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_UF_KSA_AUD_EN_Awareness_X",
+    "campaign_id": "meub8",
+    "entity_status": "ACTIVE",
+    "start_time": "2024-11-27T15:27:00Z",
+    "end_time": "2024-12-01T16:00:00Z",
+    "deleted": false,
+    "updated_at": "2025-07-07T09:14:51Z"
+   },
+   {
+    "id": "tayiq",
+    "name": "Diriyah_Tactical_Bujairi Terrace Winter Campaign_UF_KSA_AUD_AR_Awareness_X",
+    "campaign_id": "meub8",
+    "entity_status": "ACTIVE",
+    "start_time": "2024-11-27T15:27:00Z",
+    "end_time": "2024-12-01T16:00:00Z",
+    "deleted": false,
+    "updated_at": "2025-07-07T09:14:51Z"
+   },
+   {
+    "id": "wsbo0",
+    "name": "Bab Samhan_Summer_2026_KSA_Awareness_X_AR",
+    "campaign_id": "opujc",
+    "entity_status": "ACTIVE",
+    "start_time": "2026-06-02T09:00:49Z",
+    "end_time": "2026-08-30T22:30:00Z",
+    "deleted": false,
+    "updated_at": "2026-06-29T14:57:31Z"
+   },
+   {
+    "id": "wsbo1",
+    "name": "Bab Samhan_Summer_2026_KSA_Awareness_X_EN",
+    "campaign_id": "opujc",
+    "entity_status": "ACTIVE",
+    "start_time": "2026-06-02T09:02:12Z",
+    "end_time": "2026-08-30T22:30:00Z",
+    "deleted": false,
+    "updated_at": "2026-06-29T14:57:31Z"
+   },
+   {
+    "id": "wsbub",
+    "name": "Visit Diriyah_Tactical _Bab Samhan Eid KV Summer Campaign 2026_KSA_Consideration_X_AR",
+    "campaign_id": "opukr",
+    "entity_status": "ACTIVE",
+    "start_time": "2026-06-02T09:03:54Z",
+    "end_time": "2026-08-30T22:30:00Z",
+    "deleted": false,
+    "updated_at": "2026-06-29T14:58:17Z"
+   },
+   {
+    "id": "wsbuc",
+    "name": "Visit Diriyah_Tactical _Bab Samhan Eid KV Summer Campaign 2026_KSA_Consideration_X_EN",
+    "campaign_id": "opukr",
+    "entity_status": "ACTIVE",
+    "start_time": "2026-06-02T09:07:03Z",
+    "end_time": "2026-08-30T22:30:00Z",
+    "deleted": false,
+    "updated_at": "2026-06-29T14:58:17Z"
+   },
+   {
+    "id": "xob7m",
+    "name": "company_general_2026_sep_visit-diriyah_adset-id-12ad6e5e_ar_all_mf_prospecting_snd-uf",
+    "campaign_id": "ozi6p",
+    "entity_status": "ACTIVE",
+    "start_time": "2026-09-20T19:00:00Z",
+    "end_time": "2026-09-25T20:59:00Z",
+    "deleted": false,
+    "updated_at": "2026-09-20T13:33:37Z"
+   },
+   {
+    "id": "xob7n",
+    "name": "company_general_2026_sep_visit-diriyah_adset-id-12ad6e5e_ar_all_mf_prospecting_snd-mf",
+    "campaign_id": "oryzd",
+    "entity_status": "ACTIVE",
+    "start_time": "2026-09-20T19:00:00Z",
+    "end_time": "2026-09-25T20:59:00Z",
+    "deleted": false,
+    "updated_at": "2026-09-21T17:16:14Z"
+   },
+   {
+    "id": "xom1o",
+    "name": "company_general_2026_sep_visit-diriyah_adset-id-12ad6e5e_ar_all_mf_prospecting_snd-uf",
+    "campaign_id": "pb8p8",
+    "entity_status": "ACTIVE",
+    "start_time": "2026-09-21T15:41:32Z",
+    "end_time": "2026-09-25T20:59:00Z",
+    "deleted": false,
+    "updated_at": "2026-09-21T17:16:22Z"
+   }
+  ],
+  "total_count": 10
+ }
+]

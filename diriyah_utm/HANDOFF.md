@@ -1,6 +1,6 @@
 # Diriyah / Wadi Safar UTM fix: handoff
 
-Final state on 13-Oct-2026 (about 15:50 UTC): the approved writes were run (apply6 + resume apply7 on 12-Oct; on 13-Oct apply8 for the approved writes that
+**Latest: 14-Oct-2026 (about 15:30 UTC)** - see "14-Oct: the team's manual changes" below. Final state of our own runs on 13-Oct-2026 (about 15:50 UTC): the approved writes were run (apply6 + resume apply7 on 12-Oct; on 13-Oct apply8 for the approved writes that
 had never been attempted, apply9 for the ones the safety check had blocked after the user added permission rules, then apply10-12 for retries and for what
 the user approved in the afternoon: "run until its 0%", TikTok Spark Push, Snapchat split, Meta carousels, "fix everything you can"), the written accounts
 re-read; after "continue until everything is fixed" one more Snapchat route was tried (`apply13/`, refused by Snapchat); final workbook
@@ -44,7 +44,44 @@ The rules decided with the user, all binding:
   ones, new promoted-only X tweets, splitting 4 Google sitelinks) and about the Wadi Safar access, the user answered: **"do not create new ads, give me the
   full excel please"** and **"Leave Wadi Safar to me"**. So nothing more is to be written unless the user asks again.
 
-## Final state (13-Oct-2026, about 14:45 UTC)
+## 14-Oct: the team's manual changes (re-read and recount)
+
+On 14-Oct the user sent two working copies of the final4 workbook (`Diriyah_UTM_verify_1.xlsx`, last saved by Sripathi Lahari; `..._verify_2.xlsx`,
+by Jyoti Chaudhary) with a new "Status/Comments" column in "Still needs you" (and a "Google_Ads" sheet in file 2) and asked: "some manual changes
+happened, please calculate the % now". Their "Every URL", "Changes applied" and Summary sheets are identical to final4. Their notes (matched to our rows
+by platform + ad id + URLs, all 405 matched; `work/team_marks_14oct.json`): Meta Wadi Safar 80 "Updated" + 12 "Can't Edit, Delivery Completed",
+Meta archived 26 "This ad deleted", Meta narrow-image ad "Can't Edit...", TikTok Spark Pull 14 "Video Authorization expired" + 1 "Updated", Google 5
+policy ads "Done", 4 sitelinks "N/A", landing-page rows "Updated"/"Done"/"New URL is Same as Old"; Snapchat and X: no notes.
+
+**Re-read (`reread7/`, read-only, 14-Oct 14:47-15:20 UTC, workflow `diriyah-keyed-reread-v3.js` with a `partial` option):** full re-read of the 5 accounts
+the team edited (Meta Diriyah Co + Visit Diriyah, Google Visit Diriyah + Diriyah Gate, TikTok Visit Diriyah) and of every slot still wrong in Snapchat
+(4 accounts) and X (2). Merged with `scripts/merge_partial.py` into `reread8/out` (other accounts from `reread5/out`), then `work/live_now.json`
+(previous: `work/live_now_13oct_final.json`). Findings:
+- 85 slots now on the final-rules URL, all changed by hand on 14-Oct: Meta Wadi Safar 80 (34 ads, new creatives 11:27-12:25 UTC), Google 4
+  (788673874481/484, 788772651013/016), TikTok 1818763664085073.
+- Google 810176354815 ("Done"): the new final URL is right, but the ad's old final URL suffix (mindshare cpm test UTMs) is still set, so the served URL
+  carries every utm_* twice - still wrong; fix: clear the ad's Final URL suffix.
+- The 26 Meta ads noted "This ad deleted" still exist (ARCHIVED, as on 11-Oct) with the old URL - still counted as wrong.
+- Everything else the team noted (can't edit, authorisation expired, N/A, landing pages) is unchanged; Snapchat and X wrong slots are unchanged.
+- New since 13-Oct (not in the %): Snapchat Diriyah Company has 12 Wadi Safar Chedi ads created 14-Oct 10:49 UTC (partial re-read, not listed).
+
+**Workbook:** `out/Diriyah_UTM_Verification_2026-10-14.xlsx` (`bash scripts/build14.sh` with TEAM_REREAD / REREAD_DATE as in the commit; build + LibreOffice
+recalc + `check_summary.py` 207 / 207). New: status "Fixed 14-Oct (your team)" (own Summary column), a "Team note (14-Oct)" column in "Every URL"
+and "Still needs you", and the sheet "Team changes 14-Oct" (every noted or changed row: URL on 13-Oct, URL now, verdict, and whether the re-read agrees
+with the note). Builder env: `PREV_LIVE`, `TEAM_MARKS`, `TEAM_DAY`, `TEAM_REREAD`.
+
+| Scope | Before (11-Oct) | 13-Oct final | **14-Oct (after the team's changes)** |
+|---|---|---|---|
+| Ad URL slots | 3,339 wrong (100%) | 382 (11.4%) | **297 (8.9%)** |
+| Ads with a URL | 2,944 (100%) | 268 (9.1%) | **229 (7.8%)** |
+| Switched-on ads (508) | 508 (100%) | 98 (19.3%) | **72 (14.2%)** |
+| Google sitelink assets | 380 (100%) | 4 (1.1%) | **4 (1.1%)** |
+
+Per platform, ad URL slots wrong now: Meta 7.1% (39), TikTok 1.8% (14), Snapchat 22.8% (147), X 17.3% (96), Google 0.1% (1), LinkedIn 0%.
+Still wrong (297): Snapchat 147 and X 96 (manual: shared creatives / tweets), Meta 39 (26 archived, 12 Wadi Safar "can't edit", 1 narrow image),
+TikTok 14 (Spark Pull, authorisation expired), Google 1 (suffix) + 4 sitelink assets; X 3 skipped (cards shared with the advertiser's new tweets) are in the X 96.
+
+## Final state of our runs (13-Oct-2026, about 14:45 UTC)
 
 **Runs after "run until its 0%" (all in Accept edits mode; no safety-check denial, Whathead never asked to sign in):**
 - `apply10/` (workflow `diriyah-apply-v10.js`): transient failures. 5 Fixed: Meta ad 120252966441120058 (earlier gateway error), Snapchat sub-creative
@@ -346,6 +383,8 @@ These are also in the workbook's "Questions for you" tab.
 | `round9/` | Plan built from the 13-Oct 12:30 re-read (superseded by `round10/`) |
 | `apply10/`, `apply11/`, `apply12/` | 13-Oct afternoon runs: retries; the approved recipes (Spark Push, Meta carousels / Instagram / Page post / t.co, Snapchat split - refused E1008, Wadi canary); the text-trim ad. Each has `in_*.json`, `out_*.jsonl`, `lane_reports.json`, `runs.json`, `check_apply.txt`, agents' `work_*` folders; `apply11/snapchat_unattached_creatives.json` |
 | `apply13/` | The Snapchat composite-swap attempt (refused, E2003): `in_snapchat_1.json`, `out_snapchat_1.jsonl`, `lane_reports.json`, `runs.json`, `check_apply.txt`, `work_snapchat_1/` |
+| `reread7/`, `reread8/` | 14-Oct re-read after the team's manual changes (`jobs.json` with full and `partial` jobs, `in/` partial inputs, `out/`); `reread8/out` = merged (reread5 + reread7) |
+| `work/team_marks_14oct.json`, `work/live_now_13oct_final.json` | The team's 14-Oct notes matched to our rows; the 13-Oct final live state |
 | `reread5/` | 13-Oct final keyed re-read of the 9 accounts written or tried after 12:30 UTC (`jobs_meta_snap.json`, `jobs_tiktok.json`, `out/` incl. the other accounts copied from `reread4/out`) |
 | `round10/` | Plan built from the final re-read: everything still not right |
 | `work/excl_platform_refused_v5.json`, `work/wadi_safar_meta_needs_page_v2.json` | v4 minus the 29 slots fixed on 13-Oct; the 92 Wadi Safar Meta slots with the 13-Oct canary result |
@@ -361,7 +400,8 @@ These are also in the workbook's "Questions for you" tab.
 | `reread/` | Keyed re-read jobs, inputs and outputs (`out/new_*.jsonl` = ads created since 11-Oct) |
 | `scripts/` | See below |
 | `workflows/*.js` | Saved Workflow scripts. The latest are `diriyah-apply-v11.js` / `-v12.js` (recipes) and `diriyah-keyed-reread-v2.js` (re-read + optional per-job extra read) |
-| `out/Diriyah_UTM_Verification_2026-10-13_final4.xlsx` | **Current workbook** (13-Oct final, "the full excel"; recalculated in LibreOffice) |
+| `out/Diriyah_UTM_Verification_2026-10-14.xlsx` | **Current workbook** (14-Oct, after the team's manual changes; recalculated in LibreOffice) |
+| `out/Diriyah_UTM_Verification_2026-10-13_final4.xlsx` | 13-Oct final ("the full excel") |
 | `out/Diriyah_UTM_Verification_2026-10-13_final3.xlsx` | 13-Oct 14:45 workbook (same numbers) |
 | `out/Diriyah_UTM_Verification_2026-10-13_final2.xlsx` | 13-Oct 12:50 workbook |
 | `out/Diriyah_UTM_Verification_2026-10-13_final.xlsx` | 13-Oct morning workbook |
@@ -381,7 +421,7 @@ Scripts:
 - `check_summary.py` recalculates a workbook with LibreOffice and checks every Summary cell against `work/summary_expected*.json` (`--replace` keeps the recalculated copy).
 - `interim_live.py` builds an interim live file from a partial re-read plus an apply run's read-backs.
 - `save_apply_results.py` saves the results the v8 agents return (workflow journals) as `<apply>/out_*.jsonl` and `lane_reports.json`.
-- `build13.sh` / `build13b.sh` / `build13c.sh` / `build13d.sh` are the exact 13-Oct morning / 12:50 / 14:45 / final workbook builds (run from `diriyah_utm/`; `build13c.sh` also recalculates and checks).
+- `build13.sh` / `build13b.sh` / `build13c.sh` / `build13d.sh` / `build14.sh` are the exact 13-Oct morning / 12:50 / 14:45 / final and 14-Oct workbook builds (run from `diriyah_utm/`; `build13c.sh` also recalculates and checks).
 - `build_final2.py` sorts the apply folders in run order (apply10-12 after apply9; `round_plan.py` too), treats apply8-12 as 13-Oct, and adds the sheets "Unattached copies" and "TikTok text trimmed" when their `work/` files exist.
 
 ## Write recipes (proven on 11-13 Oct; also in the apply workflow scripts)

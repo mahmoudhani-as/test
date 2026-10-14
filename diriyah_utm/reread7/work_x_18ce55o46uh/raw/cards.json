@@ -1,0 +1,111 @@
+[
+ {
+  "tool_use_id": "toolu_01XM8Uxwx5Bepp85fdhM5GU2",
+  "input": {
+   "action": "x_accounts_account_id_cards_get",
+   "account_id": "18ce55o46uh",
+   "params": {
+    "card_ids": "2061430239109304320,2061430484329242624,2101685074437828608",
+    "with_deleted": true,
+    "count": 200
+   }
+  },
+  "request_id": "e10a8390-18dd-4753-b8c4-6307ad1dbbde",
+  "data": [
+   {
+    "name": "Bab Samhan x Qiddiya_Static KV1_ AR_ CPM",
+    "components": [
+     {
+      "media_key": "3_2061430140018511872",
+      "media_metadata": {
+       "3_2061430140018511872": {
+        "type": "IMAGE",
+        "url": "https://pbs.twimg.com/media/HJurylkWUAAU2ts.jpg",
+        "width": 1080,
+        "height": 1080
+       }
+      },
+      "type": "MEDIA"
+     },
+     {
+      "title": "اسكن في الدرعية",
+      "destination": {
+       "url": "https://www.diriyah.sa/ar/hotels/bab-samhan?utm_source=twitter&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan_tactical_visitor-diriyah-coe_2026_may_uf_awareness_reach-awareness_twitter_ar&utm_term=adset-id-ee00c8_test_adset_name_ar_all_mf_prospecting&utm_content=ad-id-987e7a_test_ad_name_display",
+       "type": "WEBSITE"
+      },
+      "type": "DETAILS"
+     }
+    ],
+    "id": "2061430239109304320",
+    "created_at": "2026-06-01T12:50:43Z",
+    "card_uri": "card://2061430239109304320",
+    "updated_at": "2026-06-01T12:50:43Z",
+    "deleted": false,
+    "card_type": "IMAGE_WEBSITE"
+   },
+   {
+    "name": "Bab Samhan x Qiddiya_Static KV1_ EN_ CPM",
+    "components": [
+     {
+      "media_key": "3_2061430384273858560",
+      "media_metadata": {
+       "3_2061430384273858560": {
+        "type": "IMAGE",
+        "url": "https://pbs.twimg.com/media/HJusAzfXIAAVe-1.jpg",
+        "width": 1080,
+        "height": 1080
+       }
+      },
+      "type": "MEDIA"
+     },
+     {
+      "title": "Stay in Diriyah",
+      "destination": {
+       "url": "https://www.diriyah.sa/en/hotels/bab-samhan?utm_source=twitter&utm_medium=cpm&utm_campaign=cam-id-2e61ab_mindshare_diriyah-company_bab-samhan_tactical_visitor-diriyah-coe_2026_may_uf_awareness_reach-awareness_twitter_en&utm_term=adset-id-ee00c8_test_adset_name_en_all_mf_prospecting&utm_content=ad-id-987e7a_test_ad_name_display",
+       "type": "WEBSITE"
+      },
+      "type": "DETAILS"
+     }
+    ],
+    "id": "2061430484329242624",
+    "created_at": "2026-06-01T12:51:41Z",
+    "card_uri": "card://2061430484329242624",
+    "updated_at": "2026-06-01T12:51:41Z",
+    "deleted": false,
+    "card_type": "IMAGE_WEBSITE"
+   },
+   {
+    "name": "company_general_2026_sep_sc-snd-kv1_adset-id-0df8a722_display_ar",
+    "components": [
+     {
+      "media_key": "3_2101652203148656640",
+      "media_metadata": {
+       "3_2101652203148656640": {
+        "type": "IMAGE",
+        "url": "https://pbs.twimg.com/media/HSqRizIXwAAj6SV.jpg",
+        "width": 1081,
+        "height": 1081
+       }
+      },
+      "type": "MEDIA"
+     },
+     {
+      "title": "عزّنا بطبعنا | اليوم الوطني السعودي في الدرعية",
+      "destination": {
+       "url": "https://www.diriyah.sa/ar?utm_source=x&utm_medium=paid-social&utm_campaign=4ae01e79_summer-campaign_sep26&utm_term=12ad6e5e_visit-diriyah_ar&utm_content=0df8a722_sc-snd-kv1_display_ar",
+       "type": "WEBSITE"
+      },
+      "type": "DETAILS"
+     }
+    ],
+    "id": "2101685074437828608",
+    "created_at": "2026-09-20T14:49:03Z",
+    "card_uri": "card://2101685074437828608",
+    "updated_at": "2026-09-20T14:49:03Z",
+    "deleted": false,
+    "card_type": "IMAGE_WEBSITE"
+   }
+  ],
+  "total_count": null
+ }
+]

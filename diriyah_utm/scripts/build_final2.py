@@ -98,6 +98,30 @@ MONTHFIX = {(f['platform'], f['ad_id'], f['slot']): f for f in json.load(open(f'
 norm = lambda u: (lambda p: (p.scheme, p.netloc.lower(), p.path, p.fragment, tuple(sorted(parse_qsl(p.query, keep_blank_values=True)))))(urlsplit((u or '').strip()))
 same = lambda a, b: a is not None and b is not None and norm(a) == norm(b)
 MAIN_SESSION = {('google', '812832821725'), ('google', '812832821731')}   # written from the main session on 12-Oct (see notes)
+# ---------- manual changes by the user's team after the 13-Oct final re-read (PREV_LIVE = that live state; TEAM_MARKS = their notes) ----------
+PREV = json.load(open(os.environ['PREV_LIVE'])) if os.environ.get('PREV_LIVE') else {}
+TEAM = {}
+if os.environ.get('TEAM_MARKS'):
+    for x_ in json.load(open(os.environ['TEAM_MARKS'])): TEAM[(x_['platform'], str(x_['ad_id']), x_['slot'])] = x_['comment']
+TD = os.environ.get('TEAM_DAY') or '14-Oct'
+TEAMFIX = 'Fixed ' + TD + ' (your team)'
+r_google = lambda s_: s_.get('platform') == 'google'
+team_note = lambda k: (' Team note (' + TD + '): ' + TEAM[k].rstrip('.') + '.') if k in TEAM else ''
+def _lang(u):   # language of the landing page path, and the ad language from utm_content / utm_term
+    p_ = urlsplit(u or ''); q_ = dict(parse_qsl(p_.query)); lp_ = re.search(r'/(en|ar)(/|$)', p_.path.lower())
+    cl_ = (q_.get('utm_content', '').split('_') or [''])[-1]; tl_ = (q_.get('utm_term', '').split('_') or [''])[-1]
+    return (lp_.group(1) if lp_ else None), (cl_ if cl_ in ('en', 'ar') else (tl_ if tl_ in ('en', 'ar') else None))
+LANGFIX = {}   # landing page moved to the ad's language by the team (UTMs unchanged): the new page becomes the correct URL
+if PREV:
+    for k_, t_ in T.items():
+        lv_ = (LIVE.get('|'.join(k_)) or {}).get('url'); tg_ = t_.get('target')
+        if not tg_ or not lv_ or same(lv_, tg_): continue
+        a_, b_ = urlsplit(lv_), urlsplit(tg_)
+        if (a_.scheme, a_.netloc.lower(), a_.fragment, sorted(parse_qsl(a_.query))) != (b_.scheme, b_.netloc.lower(), b_.fragment, sorted(parse_qsl(b_.query))): continue
+        pa_, pb_ = a_.path.lower().split('/'), b_.path.lower().split('/')
+        if len(pa_) != len(pb_) or sorted(x for x, y in zip(pa_, pb_) if x != y) + sorted(y for x, y in zip(pa_, pb_) if x != y) not in (['ar', 'en'], ['en', 'ar']): continue
+        lpn_, adl_ = _lang(lv_)
+        if lpn_ and adl_ and lpn_ == adl_: LANGFIX[k_] = tg_; t_['target'] = lv_
 FINAL = bool(os.environ.get('FINAL'))       # final build: every approved write has been run (no pause / no queue)
 RF, BL, HELD = 'Refused by the platform', 'Blocked by safety check', 'Held - your decision'
 REFUSED = {}   # slots a platform refuses through its API (never retried): REFUSED_FILE=comma-separated json lists [{platform, ad_id, slot, why}]
@@ -146,8 +170,13 @@ def status_of(s, t, live):
     rs = runs.get(k, [])
     last12 = [a for a in rs if a['_day'] == '12-Oct']
     if live is None: return 'Not re-read', 'the final re-read did not return this slot', ''
-    if live.get('found') is False: return 'Gone', live.get('note') or 'ad / slot no longer exists', ''
+    if live.get('found') is False: return 'Gone', ((live.get('note') or 'ad / slot no longer exists') + team_note(k))[:600], ''
     url = live.get('url')
+    if PREV and tgt and k not in LANGFIX:
+        pv_ = PREV.get('|'.join(k))
+        if pv_ is not None and not same(pv_.get('url'), url):
+            if same(url, tgt): return TEAMFIX, ('changed by hand in the platform after the 13-Oct re-read; the ' + TD + ' re-read shows the final-rules URL.' + team_note(k))[:600], TD
+            if same(pv_.get('url'), tgt): return 'Changed by someone else', ('correct on 13-Oct, changed afterwards (' + TD + ' re-read): ' + str(url) + team_note(k))[:600], ''
     if tgt and same(url, tgt):
         if FINAL and (k in A8 or any(a['_day'] == '13-Oct' for a in rs)):    # 13-Oct runs (sitelink placements are keyed per placement, not in A8)
             l8 = [a for a in rs if a['_day'] == '13-Oct']
@@ -232,11 +261,23 @@ for s in S:
     st, why, day = status_of(s, t, live)
     if FINAL and st == BL and s['platform'] == 'meta' and re.search(r'wadi', str(s.get('campaign_name') or ''), re.I):   # Wadi Safar Page: Meta refused every Wadi Safar ad it was asked to write
         why = ('Wadi Safar Meta ad: Meta also needs Page / Instagram access before it accepts this edit (it refused the Wadi Safar ads it was asked to write, missing Page permission). ' + (why or ''))[:400]
+    if k in LANGFIX: why = ('Landing page moved to the ad language by your team (' + TD + '; UTMs unchanged; the page was ' + urlsplit(LANGFIX[k]).path + '). ' + (why or ''))[:700]
+    if PREV and live and live.get('found') is not False and t and t.get('target') and not same((live or {}).get('url'), t['target']):
+        pv_ = (PREV.get('|'.join(k)) or {}).get('url'); u_ = (live or {}).get('url')
+        qk_ = [a for a, _ in parse_qsl(urlsplit(u_ or '').query, keep_blank_values=True)]
+        dup_ = sorted({a for a in qk_ if qk_.count(a) > 1})
+        if pv_ is not None and not same(pv_, u_):
+            why = ('Changed on ' + TD + ' (by your team), but not to the final-rules URL'
+                   + ((': the URL now carries ' + ', '.join(dup_) + ' twice - the ad\'s old final URL suffix (old UTMs) is still set on top of the new URL. Clear that suffix in Google Ads' if r_google(s) else ': these UTM parameters appear twice') if dup_ else '') + '. ' + (why or ''))[:800]
+        if re.search(r'delet', TEAM.get(k, ''), re.I):
+            why = ('Your team noted "' + TEAM[k] + '", but the ' + TD + ' re-read still returns this ad (status ' + str((live or {}).get('status_now')) + ') with the old URL, so it still counts. '
+                   'Archived ads never serve and cannot be edited; if you delete them in Ads Manager, the next re-read counts them as gone. ' + (why or ''))[:900]
+    if k in TEAM and 'Team note' not in (why or ''): why = (why or '') + team_note(k)
     url_now = (live or {}).get('url')
     vnow = 'GONE' if st == 'Gone' else ('CORRECT' if t and t.get('target') and same(url_now, t['target']) else 'WRONG')
     if st == 'Not re-read': vnow = 'NOT RE-READ'
     status_now = (live or {}).get('status_now') or s.get('effective_status') or s.get('ad_status')
-    recs.append(dict(s=s, t=t, kind=kind, st=st, why=why, day=day, url_now=url_now, vnow=vnow, status_now=status_now,
+    recs.append(dict(s=s, t=t, kind=kind, st=st, why=why, day=day, url_now=url_now, vnow=vnow, status_now=status_now, team=TEAM.get(k, ''), prev=((PREV.get('|'.join(k)) or {}).get('url') if PREV else None),
                      on=is_on(s, (live or {}).get('status_now')), before='WRONG' if s['verdict'] != 'CORRECT' else 'CORRECT',
                      placements=sum(1 for x in S if x.get('url') and kind == 'Sitelink' and x['account_id'] == s['account_id'] and str(x['ad_id']) == str(s['ad_id']))))
 recs.sort(key=lambda r: (r['s']['platform'], str(r['s'].get('account_name')), r['kind'], str(r['s'].get('campaign_name')), str(r['s'].get('adset_name')), str(r['s'].get('ad_name')), str(r['s'].get('ad_id')), str(r['s'].get('slot'))))
@@ -275,7 +316,7 @@ wb = Workbook()
 ws = wb.active; ws.title = 'Every URL'
 H = ['Platform', 'Account', 'Campaign', 'Ad set / ad group', 'Ad name', 'Ad ID', 'Kind', 'Delivery status now', 'Switched on', 'URL slot',
      'URL before fix (11-Oct)', 'Verdict before', 'What was wrong before', 'Correct URL (final rules)', 'Built by', 'Parts left out (12-Oct rule)',
-     'Live URL now (re-read)', 'Verdict now', 'Status', 'Detail / next step', 'Fixed on', 'Sitelink placements', 'First row of ad', 'Ad verdict before', 'Ad verdict now']
+     'Live URL now (re-read)', 'Verdict now', 'Status', 'Detail / next step', 'Fixed on', 'Sitelink placements', 'First row of ad', 'Ad verdict before', 'Ad verdict now'] + ([f'Team note ({TD})'] if TEAM else [])
 C = {h: get_column_letter(i) for i, h in enumerate(H, 1)}
 rows, firsts = [], set()
 for r in recs:
@@ -288,12 +329,12 @@ for r in recs:
                  r['kind'], r['status_now'], 'Yes' if r['on'] else 'No', s.get('slot'), s.get('url'), r['before'], wrong_before(s),
                  (t or {}).get('target') or '', (t or {}).get('source') or '', left_out(key(s), t), r['url_now'], r['vnow'], r['st'], r['why'], r['day'],
                  r['placements'] if r['kind'] == 'Sitelink' else '', first,
-                 agg(ad_b[ka]) if r['kind'] == 'Ad' else r['before'], agg(ad_n[ka]) if r['kind'] == 'Ad' else r['vnow']])
-f1, l1 = table(ws, H, rows, 'EveryURL', [9, 22, 40, 38, 44, 22, 8, 16, 8, 26, 70, 10, 40, 70, 10, 34, 70, 11, 20, 50, 9, 9, 7, 10, 10],
+                 agg(ad_b[ka]) if r['kind'] == 'Ad' else r['before'], agg(ad_n[ka]) if r['kind'] == 'Ad' else r['vnow']] + ([r.get('team') or ''] if TEAM else []))
+f1, l1 = table(ws, H, rows, 'EveryURL', [9, 22, 40, 38, 44, 22, 8, 16, 8, 26, 70, 10, 40, 70, 10, 34, 70, 11, 20, 50, 9, 9, 7, 10, 10] + ([30] if TEAM else []),
                wrap_cols=(3, 4, 5, 11, 13, 14, 16, 17, 20))
 for col in ('Verdict before', 'Verdict now', 'Ad verdict before', 'Ad verdict now'):
     colour(ws, C[col], f1 + 1, l1, (('WRONG', RED), ('CORRECT', GREEN)))
-colour(ws, C['Status'], f1 + 1, l1, (('Fixed 12-Oct', GREEN), ('Fixed 13-Oct', GREEN), ('Fixed 11-Oct', GREEN), ('Correct', GREEN), ('Manual - you', AMBER),
+colour(ws, C['Status'], f1 + 1, l1, (('Fixed 12-Oct', GREEN), ('Fixed 13-Oct', GREEN), (TEAMFIX, GREEN), ('Gone', BLUE), ('Fixed 11-Oct', GREEN), ('Correct', GREEN), ('Manual - you', AMBER),
                                       ('Not applied - needs your OK', BLUE), (PENDING, BLUE), ('Failed', RED), ('Skipped', AMBER), ('Changed by someone else', AMBER),
                                       (RF, AMBER), (BL, BLUE), (HELD, BLUE)))
 EU = "'Every URL'"
@@ -353,6 +394,7 @@ if FINAL:
         if st == HELD: return 'Your decision: write it through the API anyway (TikTok then re-publishes the post and the ad loses the original post\'s likes and comments), or change the URL in TikTok Ads Manager and check the ad keeps its post'
         if st == BL and w.startswith('Wadi Safar Meta ad'): return 'First grant the connected Meta user the Advertiser role on Wadi Safar Page 1245023868693595 and ad-account access to Instagram 17841441699550567 (wadisafarsa), then allow the blocked tools (see "Questions for you") and re-run - or set the correct URL in Ads Manager'
         if st == BL: return 'Approved and ready: allow the blocked Whathead write tool (see "Questions for you") and re-run, or set the correct URL by hand'
+        if 'twice' in w and 'final URL suffix' in w: return 'Google Ads > Ads > edit the ad > URL options > clear the old Final URL suffix (the final URL already carries the right UTMs)'
         if st == RF:
             if p == 'meta' and 'Wadi Safar Page' in w: return ('Grant the connected Meta user the Advertiser role on Wadi Safar Page 1245023868693595 and ad-account access to Instagram 17841441699550567 (wadisafarsa) in Business Settings, then ask for a re-run'
                                                              + (' (this carousel needs the copy without the parent image)' if 'parent image' in w else '') + ' - or set the correct URL in Ads Manager')
@@ -377,7 +419,7 @@ if FINAL:
         return 'See the detail; set the correct URL by hand or ask for a re-run'
     wm = wb.create_sheet('Still needs you')
     ma = [[r['st'], r['s']['platform'], r['s'].get('account_name'), r['s'].get('campaign_name'), r['s'].get('adset_name'), r['s'].get('ad_name') or NONAME(r['s']['platform']), str(r['s'].get('ad_id')),
-           r['kind'], r['status_now'], 'Yes' if r['on'] else 'No', r['why'], next_step(r['st'], r['s']['platform'], r['why']), r['s'].get('slot'), where_(r['s']['platform'], r['kind']), r['url_now'], (r['t'] or {}).get('target') or '']
+           r['kind'], r['status_now'], 'Yes' if r['on'] else 'No', r['why'], next_step(r['st'], r['s']['platform'], r['why']), r['s'].get('slot'), where_(r['s']['platform'], r['kind']), r['url_now'], (r['t'] or {}).get('target') or ''] + ([r.get('team') or ''] if TEAM else [])
           for r in recs if r['st'] in ORDER]
     for r in recs:      # landing pages whose language contradicts the ad (target keeps the ad's language; the page itself is the user's call)
         s = r['s']; tg = (r['t'] or {}).get('target')
@@ -388,11 +430,11 @@ if FINAL:
         if lp and cl and cl != lp.group(1):
             ma.append(['Check landing page', s['platform'], s.get('account_name'), s.get('campaign_name'), s.get('adset_name'), s.get('ad_name') or NONAME(s['platform']), str(s.get('ad_id')), r['kind'], r['status_now'],
                        'Yes' if r['on'] else 'No', f'the ad / ad group is {cl.upper()} but its landing page is /{lp.group(1)}/ - the UTM follows the ad; change the page if it is wrong',
-                       next_step('Check landing page', s['platform'], ''), s.get('slot'), where_(s['platform'], r['kind']), r['url_now'], tg])
+                       next_step('Check landing page', s['platform'], ''), s.get('slot'), where_(s['platform'], r['kind']), r['url_now'], tg] + ([r.get('team') or ''] if TEAM else []))
     ma.sort(key=lambda x: (ORDER.index(x[0]), x[1], str(x[2]), str(x[3]), str(x[5]), x[6]))
     table(wm, ['What it is', 'Platform', 'Account', 'Campaign', 'Ad set / ad group', 'Ad name', 'Ad ID', 'Kind', 'Delivery status now', 'Switched on', 'Why it is yours', 'Next step',
-               'URL slot', 'Where to edit', 'URL now', 'Correct URL (when one exists)'], ma or [['(nothing left)'] + [''] * 15], 'StillNeedsYou',
-          [22, 9, 22, 40, 36, 44, 22, 8, 16, 8, 55, 50, 26, 34, 70, 70], wrap_cols=(4, 5, 6, 11, 12, 15, 16))
+               'URL slot', 'Where to edit', 'URL now', 'Correct URL (when one exists)'] + ([f'Team note ({TD})'] if TEAM else []), ma or [['(nothing left)'] + [''] * (16 if TEAM else 15)], 'StillNeedsYou',
+          [22, 9, 22, 40, 36, 44, 22, 8, 16, 8, 55, 50, 26, 34, 70, 70] + ([30] if TEAM else []), wrap_cols=(4, 5, 6, 11, 12, 15, 16, 17))
     colour(wm, 'A', 2, max(2, len(ma) + 1), ((HELD, BLUE), (BL, BLUE), (RF, AMBER), ('Manual - you', AMBER), ('Failed', RED), ('Skipped', AMBER), ('Check landing page', GREEN)))
 else:
     # ---------------- Not applied - needs your OK ----------------
@@ -468,6 +510,35 @@ if FINAL and os.path.exists(UNA):
     ua = [[x['platform'], x.get('account_id'), x['creative_id'], x.get('name') or '', x.get('run') or '', x.get('for') or '', x.get('why') or ''] for x in json.load(open(UNA))]
     table(wu, ['Platform', 'Account ID', 'Creative ID', 'Creative name', 'Created in run', 'Made for (ad / creative)', 'Why it is not attached (none of these serves; nothing was deleted)'],
           ua or [['(none)'] + [''] * 6], 'Unattached', [9, 22, 40, 44, 16, 40, 90], wrap_cols=(4, 6, 7))
+
+# ---------------- Manual changes by the user's team (re-read after the 13-Oct final state) ----------------
+TEAMSHEET = f'Team changes {TD}'
+TCH = []   # (rec, changed, what) for every slot the team noted or that changed since the 13-Oct re-read
+if FINAL and (PREV or TEAM):
+    for r in recs:
+        k = key(r['s'])
+        changed = bool(PREV) and r['prev'] is not None and (r['st'] == 'Gone' or not same(r['prev'], r['url_now']))
+        if not changed and k not in TEAM: continue
+        if r['st'] == TEAMFIX: what = 'Fixed by your team: the live URL is now the final-rules URL'
+        elif k in LANGFIX: what = 'Landing page moved to the ad language, UTMs unchanged: correct'
+        elif r['st'] == 'Gone': what = 'Ad deleted: no longer counted as wrong'
+        elif changed and r['vnow'] == 'WRONG': what = 'Changed, but not to the final-rules URL: still wrong'
+        elif changed: what = 'Changed and correct'
+        elif r['vnow'] == 'WRONG': what = 'Not changed: still wrong'
+        else: what = 'Not changed: already correct'
+        note = TEAM.get(k, '')
+        expect = ('fixed' if re.search(r'updated|done', note, re.I) else 'gone' if re.search(r'delet', note, re.I) else 'unchanged' if note else '')
+        got = 'fixed' if (r['st'] == TEAMFIX or k in LANGFIX or (r['vnow'] == 'CORRECT' and changed)) else 'gone' if r['st'] == 'Gone' else ('unchanged' if not changed else 'changed')
+        agree = '' if not note else ('Yes' if expect == got or (expect == 'fixed' and r['vnow'] == 'CORRECT') or (expect == 'unchanged' and got == 'unchanged') else 'No')
+        TCH.append((r, changed, what, note, agree))
+    wtc = wb.create_sheet(TEAMSHEET)
+    tc = [[r['s']['platform'], r['s'].get('account_name'), r['s'].get('campaign_name'), r['s'].get('ad_name') or NONAME(r['s']['platform']), str(r['s'].get('ad_id')), r['kind'], r['s'].get('slot'),
+           note, r['prev'], r['url_now'], (r['t'] or {}).get('target') or '', r['vnow'], r['st'], what, agree] for r, changed, what, note, agree in TCH]
+    table(wtc, ['Platform', 'Account', 'Campaign', 'Ad name', 'Ad ID', 'Kind', 'URL slot', f'Team note ({TD})', 'URL on 13-Oct (re-read)', f'URL now ({TD} re-read)',
+                'Correct URL (final rules)', 'Verdict now', 'Status now', 'What the re-read shows', 'Re-read agrees with the note'],
+          tc or [['(no change found)'] + [''] * 14], 'TeamChanges', [9, 22, 36, 40, 22, 8, 26, 26, 60, 60, 60, 10, 20, 40, 12], wrap_cols=(3, 4, 9, 10, 11, 14))
+    colour(wtc, 'O', 2, max(2, len(tc) + 1), (('Yes', GREEN), ('No', RED)))
+    colour(wtc, 'L', 2, max(2, len(tc) + 1), (('WRONG', RED), ('CORRECT', GREEN)))
 
 # ---------------- TikTok ad texts trimmed by the gateway (side effect of a URL write) ----------------
 TRM = f'{W}/work/tiktok_text_trimmed.json'
@@ -565,6 +636,18 @@ if FINAL:   # results of the final run (last result line per change, as check_ap
                + f'Still not right after the final re-read: {sum(sa.values())} ad URL slots - ' + ', '.join(f'{k_} {v_}' for k_, v_ in sa.most_common()) +
                '. Each is listed with its reason and next step in "Still needs you"; the status of every URL comes from the final re-read.')
         fr['blocked'] = sum(1 for r in recs if r['st'] == BL)
+        if TCH:
+            n_fix = sum(1 for x in TCH if x[0]['st'] == TEAMFIX and x[0]['kind'] == 'Ad'); n_gone = sum(1 for x in TCH if x[0]['st'] == 'Gone' and x[0]['kind'] == 'Ad')
+            n_lang = sum(1 for x in TCH if key(x[0]['s']) in LANGFIX); n_cw = sum(1 for x in TCH if x[1] and x[0]['vnow'] == 'WRONG' and x[0]['st'] != 'Gone')
+            n_no = sum(1 for x in TCH if x[4] == 'No')
+            byp = collections.Counter(x[0]['s']['platform'] for x in TCH if x[0]['st'] == TEAMFIX and x[0]['kind'] == 'Ad')
+            n_del = sum(1 for x in TCH if re.search(r'delet', x[3], re.I) and x[0]['st'] != 'Gone')
+            txt += (f' On {TD} your team changed URLs by hand. The {TD} re-read ({os.environ.get("TEAM_REREAD") or TD}) shows {n_fix} more ad URL slots on the final-rules URL ('
+                    + ', '.join(f'{p_} {n_}' for p_, n_ in byp.most_common()) + ')'
+                    + (f', {n_gone} slots on deleted ads (counted as gone, not wrong)' if n_gone else '') + (f', {n_lang} landing pages moved to the ad language (UTMs unchanged)' if n_lang else '')
+                    + (f', and {n_cw} changed but still not right' if n_cw else '') + '.'
+                    + (f' {n_del} slots noted "This ad deleted" still exist (archived) with the old URL, so they still count.' if n_del else '')
+                    + f' Each noted row is checked in "{TEAMSHEET}".')
     LIVE_ROW = ('Live writes', txt, 'Done' if not fr['blocked'] else 'Done - some writes need a permission rule')
     if os.environ.get('INTERIM'):
         txt = (f'INTERIM - {os.environ["INTERIM"]}. So far in the final run: ' + txt.split('): ', 1)[1].replace(' Everything that is still not right', ' The rest of the changes have no result yet ("' + PENDING + '"). Everything that is still not right')
@@ -667,7 +750,7 @@ if FINAL:
     row += 2
     sm.cell(row, 1, 'Where every URL stands now (number of URL slots; sitelinks: number of assets)').font = H2; row += 1
     OTHER = ['Failed', 'Skipped', 'Changed by someone else', PENDING, 'Not applied - needs your OK']
-    cols = [('Fixed 12-Oct', ['Fixed 12-Oct'])] + ([('Fixed 13-Oct', ['Fixed 13-Oct'])] if A8 else []) + [('Fixed 11-Oct', ['Fixed 11-Oct']), ('Already correct', ['Correct']), ('Manual - you', ['Manual - you']),
+    cols = [('Fixed 12-Oct', ['Fixed 12-Oct'])] + ([('Fixed 13-Oct', ['Fixed 13-Oct'])] if A8 else []) + ([(TEAMFIX, [TEAMFIX])] if any(r['st'] == TEAMFIX for r in recs) else []) + [('Fixed 11-Oct', ['Fixed 11-Oct']), ('Already correct', ['Correct']), ('Manual - you', ['Manual - you']),
             (RF, [RF]), (BL, [BL]), (HELD, [HELD]), ('Failed / skipped / other not fixed', OTHER), ('Gone / not re-read', ['Gone', 'Not re-read'])]
     hdr_row(row, ['Platform'] + [c_[0] for c_ in cols] + ['Total']); row += 1
     for p in plats + ['ALL', 'google sitelinks']:

@@ -1,0 +1,134 @@
+[
+ {
+  "tool_use_id": "toolu_01EpCp8jaaHfZADpEztm2DhQ",
+  "input": {
+   "action": "x_accounts_account_id_campaigns_get",
+   "account_id": "18ce55o46uh",
+   "params": {
+    "campaign_ids": "m677w,meub8,opujc,opukr,ozi6p,oryzd,pb8p8",
+    "with_deleted": true,
+    "with_draft": true,
+    "with_total_count": true,
+    "count": 200
+   },
+   "result_fields": [
+    "id",
+    "name",
+    "entity_status",
+    "effective_status",
+    "servable",
+    "reasons_not_servable",
+    "start_time",
+    "end_time",
+    "deleted",
+    "draft_only",
+    "updated_at",
+    "funding_instrument_id"
+   ]
+  },
+  "request_id": "f151491a-523f-469f-b8c2-5d8d209f46f1",
+  "data": [
+   {
+    "id": "m677w",
+    "name": "VisitDiriyah_Fortnite2024_UF_AWR_KSA_ENAR_X",
+    "entity_status": "ACTIVE",
+    "effective_status": "EXPIRED",
+    "servable": false,
+    "reasons_not_servable": [
+     "EXPIRED",
+     "FUNDING_PROBLEM"
+    ],
+    "deleted": false,
+    "updated_at": "2026-07-30T12:08:45Z",
+    "funding_instrument_id": "181c97"
+   },
+   {
+    "id": "meub8",
+    "name": "BujairiTerrace_Winter2024TicketsV2_UF_AWR_KSA_ENAR_X",
+    "entity_status": "ACTIVE",
+    "effective_status": "EXPIRED",
+    "servable": false,
+    "reasons_not_servable": [
+     "EXPIRED",
+     "FUNDING_PROBLEM"
+    ],
+    "deleted": false,
+    "updated_at": "2026-07-30T12:09:23Z",
+    "funding_instrument_id": "182f24"
+   },
+   {
+    "id": "opujc",
+    "name": "BabSamhan_EidSummer2026V2_UF_AWR_KSA_ENAR_X",
+    "entity_status": "PAUSED",
+    "effective_status": "PAUSED",
+    "servable": false,
+    "reasons_not_servable": [
+     "EXPIRED",
+     "PAUSED_BY_ADVERTISER",
+     "FUNDING_PROBLEM"
+    ],
+    "deleted": false,
+    "updated_at": "2026-08-12T07:10:16Z",
+    "funding_instrument_id": "1c4fru"
+   },
+   {
+    "id": "opukr",
+    "name": "BabSamhan_EidSummer2026V2_MF_TRF_KSA_ENAR_X",
+    "entity_status": "PAUSED",
+    "effective_status": "PAUSED",
+    "servable": false,
+    "reasons_not_servable": [
+     "EXPIRED",
+     "PAUSED_BY_ADVERTISER",
+     "FUNDING_PROBLEM"
+    ],
+    "deleted": false,
+    "updated_at": "2026-08-12T07:10:12Z",
+    "funding_instrument_id": "1c4fru"
+   },
+   {
+    "id": "oryzd",
+    "name": "VisitDiriyah_SummerCampaign2026_MF_TRF_KSA_ENAR_X",
+    "entity_status": "ACTIVE",
+    "effective_status": "EXPIRED",
+    "servable": false,
+    "reasons_not_servable": [
+     "EXPIRED",
+     "FUNDING_PROBLEM"
+    ],
+    "deleted": false,
+    "updated_at": "2026-09-21T14:00:39Z",
+    "funding_instrument_id": "1c4fru"
+   },
+   {
+    "id": "ozi6p",
+    "name": "VisitDiriyah_SummerCampaign2026_UF_AWR_KSA_ENAR_X",
+    "entity_status": "ACTIVE",
+    "effective_status": "EXPIRED",
+    "servable": false,
+    "reasons_not_servable": [
+     "EXPIRED",
+     "FUNDING_PROBLEM"
+    ],
+    "deleted": false,
+    "updated_at": "2026-07-30T12:14:36Z",
+    "funding_instrument_id": "1ch0f6"
+   },
+   {
+    "id": "pb8p8",
+    "name": "VisitDiriyah_SummerCampaign2026_UF_AWR_KSA_ENAR_X (Copy)",
+    "entity_status": "ACTIVE",
+    "effective_status": "EXPIRED",
+    "servable": false,
+    "reasons_not_servable": [
+     "EXPIRED",
+     "FUNDING_PROBLEM"
+    ],
+    "deleted": false,
+    "updated_at": "2026-09-21T15:41:32Z",
+    "funding_instrument_id": "1c4fru"
+   }
+  ],
+  "total_count": 7
+ }
+]
